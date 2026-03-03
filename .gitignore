@@ -7,3 +7,5 @@
 #*.rtm
 #*.p3d
 *.komodoproject
+SQF/dayz_code/$PREFIX$
+SQF/dayz_code/$PBOPREFIX$.txt
