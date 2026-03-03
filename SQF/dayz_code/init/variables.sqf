@@ -519,4 +519,17 @@ if (!isDedicated) then {
 	DZE_allTrees		= dayz_trees + ["b_craet1.p3d"];	// include shrubs that the player can hide in
 	DZE_isOnBike		= false;
 	DZE_isBraking		= false;
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//			Epoch 1.0.8 Variables and Test Area
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////
+	#include "\z\addons\dayz_code\functions\include\vectors.hpp"
+
+	AGL_HELPER_CLASS = "Helper_10_DZE";
+
+	DZE_LOOT_HELPER	= AGL_HELPER_CLASS createVehicleLocal ORIGIN;
+	DZE_LOOT_HELPER setVectorDirAndUp [VECTOR_DIR,VECTOR_UP];
+
 };
