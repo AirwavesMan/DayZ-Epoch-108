@@ -25,7 +25,7 @@ if (DZE_Lock_Door != _objectCharacterID) exitWith {		// Unable to downgrade, you
 	localize "str_epoch_player_49" call dayz_rollingMessages;
 };
 
-local _playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
+local _playerNear = {isPlayer _x} count (_obj nearEntities ["CAManBase", 12]) > 1;
 
 if (_playerNear) exitWith {					// Another player is nearby. Only one player can be near to perform this action.
 	dayz_actionInProgress = false;

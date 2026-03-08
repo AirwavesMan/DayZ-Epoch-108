@@ -18,7 +18,7 @@ _warn = {
 		_watchDog = _handle getFSMVariable "_watchDog";
 		_senseSkill = _handle getFSMVariable "_senseSkill";
 		if (_watchDog) then {
-			_nearby = (getPosATL _dog) nearEntities ["CAManBase",_senseSkill];
+			_nearby = _dog nearEntities ["CAManBase",_senseSkill];
 			_nearby = _nearby - [player];
 			if (count _nearby > 0) then {
 				[_dog,"dog_growl",2,false] call dayz_zombieSpeak;

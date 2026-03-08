@@ -9,7 +9,7 @@ private ["_action","_backPackMag","_backPackWpn","_crate","_corpse","_cross","_g
 _corpse = (_this select 3) select 0;
 if (isNull _corpse) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
 
-_playerNear = {isPlayer _x} count (([_corpse] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
+_playerNear = {isPlayer _x} count (_corpse nearEntities ["CAManBase", 10]) > 1;
 if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _action = (_this select 3) select 1;

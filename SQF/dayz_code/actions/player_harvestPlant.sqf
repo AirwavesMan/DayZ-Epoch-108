@@ -31,7 +31,7 @@ if !(isNull _plant) then {
 	local _finished = ["Medic",1] call fn_loopAction;
 
 	if (_finished) then {
-		local _playerNear = {isPlayer _x} count (([_plant] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
+		local _playerNear = {isPlayer _x} count (_plant nearEntities ["CAManBase", 12]) > 1;
 		if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 		false call dz_fn_meleeMagazines; //Remove melee magazines (BIS_fnc_invAdd fix)

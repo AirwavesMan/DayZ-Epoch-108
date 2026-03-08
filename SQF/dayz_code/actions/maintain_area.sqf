@@ -25,7 +25,7 @@ dayz_actionInProgress = true;
 
 
 local _objects = nearestObjects [
-     (([player] call FNC_getPos) nearEntities ["Plastic_Pole_EP1_DZ", 15]) select 0
+     (player nearEntities ["Plastic_Pole_EP1_DZ", 15]) select 0
     ,DZE_maintainClasses, DZE_maintainRange
 ];
 

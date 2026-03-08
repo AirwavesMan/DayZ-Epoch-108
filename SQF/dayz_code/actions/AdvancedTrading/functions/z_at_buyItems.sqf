@@ -143,7 +143,7 @@ if (_enoughMoney) then {
 		_sign setPos _location;
 		_location = [_sign] call FNC_GetPos;
 		
-		if (surfaceIsWater _location && {count (_location nearEntities ["Ship",8]) > 0}) then {
+		if (surfaceIsWater _location && {count (_sign nearEntities ["Ship",8]) > 0}) then {
 			deleteVehicle _sign;
 			localize "STR_EPOCH_TRADE_OBSTRUCTED" call dayz_rollingMessages;
 		} else {

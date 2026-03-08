@@ -82,7 +82,7 @@ local _isPlotPole	= _objType == "Plastic_Pole_EP1_DZ";
 local _isFireBarrel	= _objType == "FireBarrel_DZ";
 local _isStorageItem	= _objType in DZE_refundStorageItemContents;	// non-lockable storage (sheds, crates etc.)
 
-local _playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
+local _playerNear = {isPlayer _x} count (_obj nearEntities ["CAManBase", 12]) > 1;
 
 if (_playerNear && (_isMine or _isAmmoSupplyWreck)) exitWith {
 	dayz_actionInProgress = false;
