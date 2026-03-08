@@ -42,7 +42,7 @@ _falling = (((_hit == "legs") && {(_source==_unit)}) && {((_ammo=="") && {(Dayz_
 						dayz_hitByTime = diag_tickTime;
 						_ammo = "RunOver";
 					};
-				} count (([_unit] call fnc_getPos) nearEntities [["Air","LandVehicle","Ship"],3]);
+				} count (_unit nearEntities [["Air","LandVehicle","Ship"],3]);
 			};
 		};
 	};

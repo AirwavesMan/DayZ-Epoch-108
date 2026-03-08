@@ -15,7 +15,7 @@ if !(ZSC_CurrentStorage isKindOf "AllVehicles") exitWith {
 	format[localize "STR_CL_ZSC_BANKING_NOT_AVAIL",_typeOf] call dayz_rollingMessages;
 };
 
-_playerNear = {isPlayer _x} count ((getPosATL cursortarget) nearEntities ["CAManBase", 10]) > 1;
+_playerNear = {isPlayer _x} count (cursorTarget nearEntities ["CAManBase", 10]) > 1;
 if (_playerNear) exitWith {
 	dayz_actionInProgress = false;
 	player setVariable["isBusy",false,true];

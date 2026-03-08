@@ -14,7 +14,7 @@ if ((vehicle player) == player) then {
 		if (locked _cTarget && {(_cTarget isKindOf "LandVehicle") or {_cTarget isKindOf "Air"} or {_cTarget isKindOf "Ship"}} && {(player distance _cTarget) <= _dis}) then {
 			_exit = true;
 		} else {
-			_nearestObjects = (position player) nearEntities [["Air", "Car", "Motorcycle", "Tank", "Ship"], 26];
+			_nearestObjects = player nearEntities [["Air", "Car", "Motorcycle", "Tank", "Ship"], 26];
 			if (count _nearestObjects >= 1) then {
 				{
 					_vehType = TypeOf _x;

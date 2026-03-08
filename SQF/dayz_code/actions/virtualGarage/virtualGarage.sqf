@@ -28,7 +28,7 @@ _storedVehicles = PVDZE_queryVehicleResult;
 PVDZE_queryVehicle = nil;
 PVDZE_queryVehicleResult = nil;
 
-_localVehicles = ([player] call FNC_getPos) nearEntities [["Air","LandVehicle","Ship"],Z_VehicleDistance];
+_localVehicles = player nearEntities [["Air","LandVehicle","Ship"],Z_VehicleDistance];
 _heliPad = nearestObjects [if (_isNearPlot) then {_plotCheck select 2} else {player},vg_heliPads,if (_isNearPlot) then {DZE_maintainRange} else {Z_VehicleDistance}];
 
 if (count _heliPad > 0 && {_isNearPlot}) then {ctrlShow[2853,true];};

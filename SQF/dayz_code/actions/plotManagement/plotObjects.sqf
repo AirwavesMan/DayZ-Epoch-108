@@ -2,7 +2,7 @@ private ["_range","_count","_colour","_ctrl","_target"];
 disableSerialization;
 
 _range = DZE_PlotPole select 0;
-_target = (([player] call FNC_getPos) nearEntities ["Plastic_Pole_EP1_DZ",15]) select 0;
+_target = (player nearEntities ["Plastic_Pole_EP1_DZ",15]) select 0;
 // Also count safes, lockboxes, vanilla buildables, tents and stashes against DZE_BuildingLimit
 _count = count (nearestObjects [_target,DZE_maintainClasses,_range]);
 

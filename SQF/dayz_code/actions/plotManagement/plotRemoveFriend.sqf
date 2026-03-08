@@ -2,7 +2,7 @@ private ["_pos","_plots","_thePlot","_friends","_toRemove","_newList","_ownerPUI
 
 _pos = _this select 0;
 if (_pos < 0) exitWith {};
-_plots = ([player] call FNC_getPos) nearEntities ["Plastic_Pole_EP1_DZ",15];
+_plots = (player nearEntities ["Plastic_Pole_EP1_DZ",15];
 _thePlot = _plots select 0;
 _friends = _thePlot getVariable ["plotfriends", []];
 _ownerPUID = _thePlot getVariable ["ownerPUID","0"];

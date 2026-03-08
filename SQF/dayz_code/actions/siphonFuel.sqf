@@ -11,7 +11,7 @@ _hasHose = "equip_hose" in magazines player;
 
 if (!_hasHose) exitWith {dayz_actionInProgress = false; localize "str_siphon_hose" call dayz_rollingMessages; };
 
-_PlayerNear = {isPlayer _x} count ((getPosATL _vehicle) nearEntities ["CAManBase", 12]) > 1;
+_PlayerNear = {isPlayer _x} count (_vehicle nearEntities ["CAManBase", 12]) > 1;
 if (_PlayerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _abort = false;

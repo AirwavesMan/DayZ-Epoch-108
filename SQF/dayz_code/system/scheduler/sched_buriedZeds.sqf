@@ -71,7 +71,7 @@ sched_buriedZeds = {
 					};
 				};
 			};
-		} count ((getPosATL player) nearEntities ["zZombie_Base", 30]);
+		} count (player nearEntities ["zZombie_Base", 30]);
 	};
 	//diag_log format [ "alive+ground: %1, inbuilding: %2  plr in:%3 %4", _a, _c, [_b, getPosATL player] call _checkInsideBuilding, _b  ];
 

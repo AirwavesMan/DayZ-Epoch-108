@@ -45,7 +45,7 @@ _exit = {
 
 if (isNull vkc_cursorTarget) exitWith {call _exit; systemChat localize "str_cursorTargetNotFound";};
 
-_playerNear = {isPlayer _x} count (([vkc_cursorTarget] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
+_playerNear = {isPlayer _x} count (vkc_cursorTarget nearEntities ["CAManBase", 10]) > 1;
 if (_playerNear) exitWith {call _exit; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 if !(vkc_cursorTarget isKindOf "Air" || {vkc_cursorTarget isKindOf "LandVehicle"} || {vkc_cursorTarget isKindOf "Ship"}) exitWith {call _exit; localize "STR_CL_VKC_FAIL_CURSOR" call dayz_rollingMessages;};

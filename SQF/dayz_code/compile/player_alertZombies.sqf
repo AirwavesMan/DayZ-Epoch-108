@@ -1,7 +1,7 @@
-local _unit = _this select 0;
-local _distance = _this select 1;
-local _doRun = _this select 2;
-local _pos = _this select 3;
+local _unit	= _this select 0;
+local _distance	= _this select 1;
+local _doRun	= _this select 2;
+local _posATL	= _this select 3;
 
 {
 	local _dis = _x distance _unit;
@@ -21,7 +21,7 @@ local _pos = _this select 3;
 					};
 				};
 			} else {
-				_x setVariable ["myDest",_pos,true];
+				_x setVariable ["myDest",_posATL,true];
 			};
 		};
 		if ((_dis > 50) && {_dis <= 71}) exitwith {
@@ -40,14 +40,14 @@ local _pos = _this select 3;
 						};
 					};
 				} else {
-					_x setVariable ["myDest",_pos,true];
+					_x setVariable ["myDest",_posATL,true];
 				};
 			} else {
-				_x setVariable ["myDest",_pos,true];
+				_x setVariable ["myDest",_posATL,true];
 			};
 		};
 		if (_dis > 70) exitwith {
-			_x setVariable ["myDest",_pos,true];
+			_x setVariable ["myDest",_posATL,true];
 		};
 	};
-} count (_pos nearEntities ["Zed_Base",_distance]);
+} count (_unit nearEntities ["Zed_Base",_distance]);

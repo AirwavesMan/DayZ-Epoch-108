@@ -17,7 +17,7 @@ local _obj	= _this;
 local _objType	= typeOf _obj;
 local _ownerID = _obj getVariable["ownerPUID","0"];
 
-local _playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
+local _playerNear = {isPlayer _x} count (_obj nearEntities ["CAManBase", 12]) > 1;
 if (_playerNear) exitWith {
 	dayz_actionInProgress = false;
 	localize "str_pickup_limit_5" call dayz_rollingMessages;		// Another player is nearby. Only one player can be near to perform this action.

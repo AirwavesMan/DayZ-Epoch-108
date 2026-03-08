@@ -19,7 +19,7 @@ local _packedClass = getText (configFile >> "CfgVehicles" >> _typeOf >> "packedC
 
 if (isNull _obj || !(alive _obj)) exitWith {dayz_actionInProgress = false;};
 
-local _playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
+local _playerNear = {isPlayer _x} count (_obj nearEntities ["CAManBase", 10]) > 1;
 if (_playerNear) exitWith {
 	dayz_actionInProgress = false;
 	localize "str_pickup_limit_5" call dayz_rollingMessages;			// Another player is nearby. Only one player can be near to perform this action.
@@ -60,7 +60,7 @@ if (isNull _obj || !_finished) exitWith {
 
 (findDisplay 106) closeDisplay 0; // Close gear
 
-_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;	// if another player has approached during the packing animation
+_playerNear = {isPlayer _x} count (_obj nearEntities ["CAManBase", 10]) > 1;	// if another player has approached during the packing animation
 if (_playerNear) exitWith {
 	dayz_actionInProgress = false;
 	localize "str_pickup_limit_5" call dayz_rollingMessages;					// Another player is nearby. Only one player can be near to perform this action.

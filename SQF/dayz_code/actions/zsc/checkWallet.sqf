@@ -7,7 +7,7 @@ _body = _this select 3;
 
 if (isNull _body) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
 
-_playerNear = {isPlayer _x} count ((getPosATL _body) nearEntities ["CAManBase", 10]) > 1;
+_playerNear = {isPlayer _x} count (_body nearEntities ["CAManBase", 10]) > 1;
 if (_playerNear) exitWith {dayz_actionInProgress = false;localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _isZombie = _body isKindOf "zZombie_Base";

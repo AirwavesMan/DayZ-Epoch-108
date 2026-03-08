@@ -152,7 +152,7 @@ if (isPlayer cursorTarget && _hasPatient) then {
 			_hasBloodBag = Array_Any(_playerMagazines, {_this in _bloodBags});
 		};
 
-		local _vehClose = (getPosATL player) nearEntities [["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"],5];
+		local _vehClose = player nearEntities [["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"],5];
 		local _action = [];
 		
 		//Allow player to drag

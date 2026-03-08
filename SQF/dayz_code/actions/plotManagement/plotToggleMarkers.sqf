@@ -14,7 +14,7 @@
 //	- Helpers now align to the pole direction.
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-local _pos	= [player] call FNC_getPos;					// player position
+//local _pos	= [player] call FNC_getPos;					// player position
 local _plot	= objNull;							// initialize
 local _toggle	= false;							// turn plot boundary on/off
 local _count	= count _this;							// parameter list
@@ -22,7 +22,7 @@ local _count	= count _this;							// parameter list
 if (_count > 0) then {								// may be called from fn_selfActions
 	_plot = _this select (_count -1);					// or modular_build
 } else {
-	_plot = (_pos nearEntities ["Plastic_Pole_EP1_DZ", 15]) select 0;	// or via the Dome button
+	_plot = (player nearEntities ["Plastic_Pole_EP1_DZ", 15]) select 0;	// or via the Dome button
 };
 if (!isNil "PP_Marks") then {
 

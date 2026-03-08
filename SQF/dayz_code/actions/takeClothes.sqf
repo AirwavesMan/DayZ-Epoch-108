@@ -15,7 +15,7 @@ s_player_clothes = -1;
 
 if (isNull _body) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
 
-_playerNear = {isPlayer _x} count (([_body] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
+_playerNear = {isPlayer _x} count (_body nearEntities ["CAManBase", 10]) > 1;
 if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _clothesTaken = _body getVariable["clothesTaken",false];

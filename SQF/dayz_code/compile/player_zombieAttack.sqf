@@ -162,8 +162,7 @@ if (_isVehicle) then {
 		};
 		
 		// broadcast hit noise
-		_pos = getPosATL player;
-		if ({isPlayer _x} count (_pos nearEntities ["CAManBase",40]) > 1) then {
+		if ({isPlayer _x} count (player nearEntities ["CAManBase",40]) > 1) then {
 			[_unit,"hit",0,false] call dayz_zombieSpeak;
 		} else {
 			[_unit,"hit",0,true] call dayz_zombieSpeak;
@@ -205,8 +204,7 @@ if (_isVehicle) then {
 					if (unitPos _unit != "UP") then {_unit setUnitPos "UP";};
 				
 					// broadcast hit noise
-					_pos = getPosATL player;
-					if ({isPlayer _x} count (_pos nearEntities ["CAManBase",40]) > 1) then {
+					if ({isPlayer _x} count (player nearEntities ["CAManBase",40]) > 1) then {
 						[_unit,"hit",0,false] call dayz_zombieSpeak;
 					} else {
 						[_unit,"hit",0,true] call dayz_zombieSpeak;

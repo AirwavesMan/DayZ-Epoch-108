@@ -128,7 +128,7 @@ local _cantSee = false;
 		
 		if (_isMutant && {DZE_BloodsuckerDeleteNearTrader && isInTraderCity}) then {deleteVehicle _x}; // Delete bloodsucker if the player is in a trader city
 	};
-} forEach ((getPosATL _refObj) nearEntities ["Zed_Base",100]);
+} forEach (_refObj nearEntities ["Zed_Base",100]);
 
 if (_attacked) then {
 	if (r_player_unconscious) then {

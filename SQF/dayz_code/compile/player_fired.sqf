@@ -61,7 +61,7 @@ if ((_ammo isKindOf "SmokeShell") || {_ammo isKindOf "GrenadeHandTimedWest"} || 
 						_x setVariable ["localtargets",_localtargets,false];
 					};
 				};
-			} count (_pos nearEntities ["zZombie_Base",50]);
+			} count (_projectile nearEntities ["zZombie_Base",50]);
 		} else {
 			while {alive _projectile} do {
 				_pos = getPosATL _projectile;
@@ -70,7 +70,7 @@ if ((_ammo isKindOf "SmokeShell") || {_ammo isKindOf "GrenadeHandTimedWest"} || 
 
 			{
 				_x setVariable ["myDest",_pos]; // removed networked var.  targets should be enough
-			} count (_pos nearEntities ["zZombie_Base",50]);
+			} count (_projectile nearEntities ["zZombie_Base",50]);
 		};
 	};
 } else {
