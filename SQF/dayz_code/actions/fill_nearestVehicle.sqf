@@ -8,7 +8,7 @@ if (isNull  _fuelSource) exitWith {dayz_actionInProgress = false; systemChat loc
 local _typeFuelSource = typeOf _fuelSource;
 local _abort = false;
 local _fuelSourceCapacity = 0;
-local _pos = [_fuelSource] call fnc_getPos;
+//local _pos = [_fuelSource] call fnc_getPos;
 local _fuelSourceFound = true;
 
 if (_isFuelTruck) then {
@@ -21,7 +21,7 @@ if (_isFuelTruck) then {
 			if (_x != _fuelSource && {!(_x isKindOf "StaticWeapon") && {!(typeOf _x in DZE_StaticWeapons)}}) exitWith {
 				_findNearestFuel set [count _findNearestFuel,_x];
 			};
-		} foreach nearestObjects [_pos,DayZ_fuelSources,10];
+		} forEach nearestObjects [_fuelSource,DayZ_fuelSources,10];
 
 		if (count _findNearestFuel > 0) then {
 			_fuelSource = _findNearestFuel select 0;
@@ -45,7 +45,7 @@ local _findNearestVehicle = [];
 	if (_x != _fuelSource && {!(_x isKindOf "StaticWeapon") && {!(typeOf _x in DZE_StaticWeapons)}}) exitWith {
 		_findNearestVehicle set [count _findNearestVehicle,_x];
 	};
-} foreach nearestObjects [_pos,["Air","LandVehicle","Ship"],30];	//	Using nearestObjects, because it is sorted by distance
+} forEach nearestObjects [_fuelSource,["Air","LandVehicle","Ship"],30];	//	Using nearestObjects, because it is sorted by distance
 
 if (count _findNearestVehicle > 0) then {
 	// select the nearest one

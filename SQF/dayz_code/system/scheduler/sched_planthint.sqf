@@ -13,7 +13,7 @@ sched_plantHint = {
 			deleteVehicle _x;
 		};
 		false
-	} count (nearestObjects [getPosATL player, ["Plant_Base"], 15]);
+	} count (nearestObjects [player, ["Plant_Base"], 15]);
 
 	objNull
 };

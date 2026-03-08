@@ -21,4 +21,4 @@ _findNearestlight = [];
 		};
 	};
 
-} count nearestObjects [([player] call FNC_getPos), [], 20];
+} count nearestObjects [player, [], 20];

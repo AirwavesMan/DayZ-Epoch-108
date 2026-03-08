@@ -23,7 +23,7 @@ _lights = ["a_fuelstation_sign.p3d","lampa_ind_zebr.p3d","lampa_ind.p3d","lampa_
 				};
 			};
 		};
-	} count nearestObjects [([_target] call FNC_getPos), [], _rng];
+	} count nearestObjects [_target, [], _rng];
 
 };
 

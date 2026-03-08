@@ -56,7 +56,7 @@ _falling = (((_hit == "legs") && {(_source==_unit)}) && {((_ammo=="") && {(Dayz_
 
 		//If _source contains no object exit. But lets not exit if the unit returns player. Maybe its his own fault.
 		if (isNull _source && {!(_ammo in ["Dragged","RunOver"])}) then {
-			_vehicleArray = nearestObjects [([vehicle _unit] call fnc_getPos),["Air","LandVehicle","Ship","TrapTripwireGrenade"],25];
+			_vehicleArray = nearestObjects [vehicle _unit,["Air","LandVehicle","Ship","TrapTripwireGrenade"],25];
 			//Don't exit if a drivable vehicle (or drivable vehicle wreck) is nearby, because vehicle explosions register as a null source
 			if (({typeOf _x != "ParachuteWest"} count _vehicleArray) == 0) then {
 				_end = true;

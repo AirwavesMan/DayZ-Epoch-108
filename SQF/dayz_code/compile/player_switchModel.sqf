@@ -5,7 +5,8 @@ _class = if (_isArray) then {_this select 0} else {_this};
 if (gear_done) then {disableUserInput true;disableUserInput true;};
 disableSerialization;
 
-_position = [player] call FNC_GetPos;
+//_position = [player] call FNC_GetPos;
+local _posASL = getPosASL player;
 _dir = getDir player;
 _currentAnim = animationState player;
 _currentCamera = cameraView;
@@ -117,13 +118,15 @@ _switchUnit = {
 	_rndx = floor(random 100);
 	_rndy = floor(random 100);
 	_oldUnit setPosATL [(respawn_west_original select 0) + _rndx, (respawn_west_original select 1) + _rndy, 0];	
-	
+/**	
 	if (surfaceIsWater _position) then {
 		_newUnit setPosASL _position;
 	} else {
 		_newUnit setPosATL _position;
 	};	
-	
+**/
+	_newUnit setPosASL _posASL;
+
 	if (surfaceIsWater respawn_west_original) then {_newUnit call fn_exitSwim;};
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} count magazines _oldUnit;
@@ -204,4 +207,5 @@ player setVariable ["BIS_noCoreConversations",true];
 //	publicVariable _playerObjName;
 
 call dayz_meleeMagazineCheck;
-{player reveal _x} count (nearestObjects [_position,["AllVehicles","WeaponHolder","Land_A_tent","BuiltItems","ModularItems","DZE_Base_Object"],75]);
+//{player reveal _x} count (nearestObjects [_position,["AllVehicles","WeaponHolder","Land_A_tent","BuiltItems","ModularItems","DZE_Base_Object"],75]);
+{player reveal _x} count (nearestObjects [player,["AllVehicles","WeaponHolder","Land_A_tent","BuiltItems","ModularItems","DZE_Base_Object"],75]);

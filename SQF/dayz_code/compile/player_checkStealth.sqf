@@ -62,7 +62,7 @@ local _scaleSound = (
 
 if (_scaleLight < 0.9) then {
 	local _scaler = 0;
-	local _nearFlare = nearestObject [getPosATL _vp,"RoadFlare"];
+	local _nearFlare = nearestObject [_vp,"RoadFlare"];
 
 	if (!isNull _nearFlare) then {
 		_scaler = (_nearFlare distance _vp);
@@ -79,7 +79,7 @@ if (_scaleLight < 0.9) then {
 		_scaleLight = ((_scaler / 50) * 2) + _scaleLight;
 	};
 
-	local _nearFire = nearestObject [getPosATL _vp,"Land_Fire"];
+	local _nearFire = nearestObject [_vp,"Land_Fire"];
 
 	if (!isNull _nearFire) then {
 		_scaler = 50 - (_nearFire distance _vp);

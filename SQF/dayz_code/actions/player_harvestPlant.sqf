@@ -24,7 +24,7 @@ local _type = "";
 			_plant = _obj;
 		};
 	};
-} count nearestObjects [([player] call FNC_getPos), [], 10];
+} count nearestObjects [player, [], 10];
 
 if !(isNull _plant) then {
 	[player,(getPosATL player),20,"chopwood"] spawn fnc_alertZombies;

@@ -9,7 +9,7 @@ if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {
 			// Exit since we found a tree
 			_tree = _x;
 		};
-	} count nearestObjects [getPosATL player, [], 20];
+	} count nearestObjects [player, [], 20];
 
 	if (!isNull _tree) then {
 		// get 2d distance

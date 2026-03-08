@@ -41,7 +41,7 @@ if (!_found) then {								// if none found, try the old method
 	{
 		_model = _x call fn_getModelName;
 		if (_model in DZE_rocks) exitWith {_found = true;};
-	} forEach nearestObjects [getPosATL player, [], 8];
+	} forEach nearestObjects [player, [], 8];
 };
 
 if (_found) then {

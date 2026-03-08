@@ -122,7 +122,7 @@ _fnc_getWeapons = {
 while {1==1} do {
 	_vehicle = vehicle player;
 	if (_vehicle != player) then {
-		_servicePoints = (nearestObjects [getPosATL _vehicle,DZE_SP_Classes,DZE_SP_MaxDistance]) - [_vehicle];
+		_servicePoints = (nearestObjects [_vehicle,DZE_SP_Classes,DZE_SP_MaxDistance]) - [_vehicle];
 		if (count _servicePoints > 0) then {
 			if (assignedDriver _vehicle == player) then {
 				_role = ["Driver", [-1]];

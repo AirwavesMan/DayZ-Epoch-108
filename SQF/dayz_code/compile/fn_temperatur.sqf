@@ -71,7 +71,8 @@ if ((vehicle player) != player) then {
 
 // Fire
 if (!_isInVehicle) then {
-	local _fireplaces = nearestObjects [_pos, ["flamable_DZ","Land_Fire","Land_Campfire"], 8];
+//	local _fireplaces = nearestObjects [_pos, ["flamable_DZ","Land_Fire","Land_Campfire"], 8];
+	local _fireplaces = nearestObjects [player, ["flamable_DZ","Land_Fire","Land_Campfire"], 8];
 
 	if (({inflamed _x} count _fireplaces) > 0) then {
 		// Math: factor * 1 / (0.5*(distance max 1)^2) 0.5 = 12.5% of the factor effect in a distance o 4 meters

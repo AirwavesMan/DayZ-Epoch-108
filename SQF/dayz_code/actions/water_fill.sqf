@@ -20,11 +20,11 @@ _posATL = ASLtoATL _posASL;
 
 _canFill = call {
 	//Return: [nearWaterHole, isPond]
-	if (count nearestObjects [_posATL,DZE_WaterSources,4] > 0) exitwith {[true,false]};
-	if (toLower worldName in ["chernarus","namalsk","napf"]) exitwith {(call fn_nearWaterHole)};
+	if (count nearestObjects [player,DZE_WaterSources,4] > 0) exitWith {[true,false]};
+	if (toLower worldName in ["chernarus","namalsk","napf"]) exitWith {(call fn_nearWaterHole)};
 	//Slow searches for maps without waterHoleProxy objects added yet
-	if ({["_well",str _x] call fnc_inString} count nearestObjects [_posATL,[],4] > 0) exitwith {[true,false]};
-	if ({["pond",str _x] call fnc_inString && {_posASL select 2 < ((getPosASL _x) select 2)}} count nearestObjects [player,[],50] > 0) exitwith {[true,true]};
+	if ({["_well",str _x] call fnc_inString} count nearestObjects [player,[],4] > 0) exitWith {[true,false]};
+	if ({["pond",str _x] call fnc_inString && {_posASL select 2 < ((getPosASL _x) select 2)}} count nearestObjects [player,[],50] > 0) exitWith {[true,true]};
 	[false,false];
 };
 
@@ -34,7 +34,7 @@ if !(_canFill select 0) exitWith {
 };
 
 //Check if guaranteed infected (only for ponds)
-_water = if (dayz_infectiousWaterholes && {_canFill select 1} && {count nearestObjects [_posATL,["Body","Body1","Body2","Mass_grave"],50] > 0}) then {"infected"} else {"safe"};
+_water = if (dayz_infectiousWaterholes && {_canFill select 1} && {count nearestObjects [player,["Body","Body1","Body2","Mass_grave"],50] > 0}) then {"infected"} else {"safe"};
 _water = "containerwater" + _water;
 _filled = 0;
 
