@@ -1,10 +1,10 @@
-#define Loot_NONE		0
+#define Loot_NONE               0
 /*
 Has no standard functionality.
 Can be used to leverage the weighted selection system for other purposes.
 */
 
-#define Loot_GROUP		1
+#define Loot_GROUP              1
 /*
 Picks another definition from the specified group.
 
@@ -15,8 +15,8 @@ Example:
 */
 
 
-#define Loot_WEAPON		2
-#define Loot_TOOL Loot_WEAPON
+#define Loot_WEAPON             2
+#define Loot_TOOL               Loot_WEAPON
 /*
 Spawns a weapon with the given classname.
 
@@ -27,7 +27,7 @@ Example:
 */
 
 
-#define Loot_MAGAZINE	3
+#define Loot_MAGAZINE           3
 /*
 Spawns a magazine with the given classnane.
 
@@ -38,7 +38,7 @@ Example:
 */
 
 
-#define Loot_PILE		4
+#define Loot_PILE               4
 /*
 Spawns a pile of loot with a random number of items in the range [min,max].
 Items are picked from the specified loot group.
@@ -51,7 +51,7 @@ Example:
 */
 
 
-#define Loot_BACKPACK	5
+#define Loot_BACKPACK           5
 /*
 Spawns a backpack on the ground, or inserts into object cargo.
 
@@ -62,7 +62,7 @@ Example:
 */
 
 
-#define Loot_VEHICLE	6
+#define Loot_VEHICLE            6
 /*
 Spawns a vehicle with the given classname.
 
@@ -73,7 +73,7 @@ Example:
 */
 
 
-#define Loot_CONTAINER	7
+#define Loot_CONTAINER          7
 /*
 Spawns a vehicle with the given classname. Fills with [min,max] items from given group.
 
@@ -84,7 +84,7 @@ Example:
 */
 
 
-#define Loot_CUSTOM		8
+#define Loot_CUSTOM             8
 /*
 Executes given script. Script must return an object reference.
 

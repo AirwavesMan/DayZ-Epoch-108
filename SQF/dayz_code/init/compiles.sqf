@@ -753,6 +753,68 @@ if (!isDedicated) then {
 	fnc_isInsideBuilding = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_isInsideBuilding.sqf";	//_isInside = [_unit,_building] call fnc_isInsideBuilding;
 	fnc_setCombat = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_setCombat.sqf";
 	if (worldName == "namalsk") then {player_objectAII = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_objectA2.sqf";};
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	#define path(s)                 _path = format ['\z\addons\dayz_code\functions\%1\', s]
+	#define FUNCTION(fn)            fn = compile preprocessFileLineNumbers (_path + 'fn.sqf')
+
+	path('arrays');
+
+	FUNCTION(DZE_fnc_selectDistinct);		// Returns a random selection of distinct entries from an array.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('geometry');
+
+	FUNCTION(DZE_fnc_inAngleSector);		// Returns true if a position lies within an angle sector.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('loot');
+
+	FUNCTION(DZE_fnc_buildingSpawnLoot);		// Spawns loot at the given building.
+	FUNCTION(DZE_fnc_buildingSpawnZombies);		// Spawns zombies at the given building.
+	FUNCTION(DZE_fnc_playerSpawnCheck);		// Check if nearby buildings need to spawn loot and zombies.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('objects');
+
+	FUNCTION(DZE_fnc_createBackpack);		// Creates a backpack of the given type and aligns it with either the terrain or a flat surface.
+	FUNCTION(DZE_fnc_revealObject);			// Reveals an object to all nearby players.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('positions');
+
+	FUNCTION(DZE_fnc_AGLToASL);			// Converts position from PositionAGL to PositionASL.
+	FUNCTION(DZE_fnc_safeZonePosCheck);		// Returns true if a contextual action is prohibited within a detected safe zone, or false if allowed.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('vectors');
+
+	FUNCTION(DZE_fnc_vectorCrossProduct);		// Returns the cross product of two 3D vectors.
+	FUNCTION(DZE_fnc_vectorDistance);		// Returns Euclidean distance between two 3D points.
+	FUNCTION(DZE_fnc_vectorMagnitude);		// Returns the magnitude of a 3D vector.
+
+///	path('vectors\v2');
+
+	path('vectors\v3');
+
+	FUNCTION(DZE_fnc_v3Add);			// Returns the sum of two 3D vectors.
+	FUNCTION(DZE_fnc_v3Diff);			// Subtracts one 3D vector from another (vector1 - vector2).
+	FUNCTION(DZE_fnc_v3Divide);			// Divides a 3D vector by a scalar.
+	FUNCTION(DZE_fnc_v3Multiply);			// Multiplies a 3D vector by a scalar.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('zombies');
+
+	FUNCTION(DZE_fnc_zombieGenerate);		// Spawns a zombie at the given location.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
 };
 
 //Both

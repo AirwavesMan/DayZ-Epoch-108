@@ -529,7 +529,15 @@ if (!isDedicated) then {
 
 	AGL_HELPER_CLASS = "Helper_10_DZE";
 
+	// dedicated loot helper
 	DZE_LOOT_HELPER	= AGL_HELPER_CLASS createVehicleLocal ORIGIN;
 	DZE_LOOT_HELPER setVectorDirAndUp [VECTOR_DIR,VECTOR_UP];
 
+	// dedicated zombie helper
+	DZE_ZOMBIE_HELPER = AGL_HELPER_CLASS createVehicleLocal ORIGIN;
+	DZE_ZOMBIE_HELPER setVectorDirAndUp [VECTOR_DIR,VECTOR_UP];
+
+	// general AGLToASL helper
+	DZE_AGLTOASL_HELPER = AGL_HELPER_CLASS createVehicleLocal ORIGIN;
+	DZE_AGLTOASL_HELPER setVectorDirAndUp [VECTOR_DIR,VECTOR_UP];
 };
