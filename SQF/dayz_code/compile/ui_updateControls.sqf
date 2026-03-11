@@ -6,7 +6,8 @@ uiSleep 1;
 //Refresh keyboard_keys after controls change
 if (_this) then {
 	keyboard_keys = nil;
-	[controlNull,1,false,false,false] call DZ_KeyDown_EH;
+///	[controlNull,1,false,false,false] call DZ_KeyDown_EH;
+	[controlNull,1,false,false,false] call DZE_fnc_onKeyDown;
 };
 /*
 //ActionKeys includes mouse button and joystick binds

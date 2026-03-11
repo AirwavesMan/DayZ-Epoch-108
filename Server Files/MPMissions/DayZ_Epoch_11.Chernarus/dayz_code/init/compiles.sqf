@@ -1,8 +1,12 @@
+#define path(s)                 _path = format ['dayz_code\functions\%1\', s]
+#define FUNCTION(fn)            fn = compile preprocessFileLineNumbers (_path + 'fn.sqf')
+#define CALL_SQF(file)          call compile preprocessFileLineNumbers (_path + 'file.sqf')
+
 if (isServer) then {
-	
+
 };
 
-if (!isDedicated) then {	
+if (!isDedicated) then {
 	//Add your custom or override functions here
 	//fnc_usec_selfActions = compile preprocessFileLineNumbers "dayz_code\compile\fn_selfActions.sqf";
 
@@ -18,5 +22,14 @@ if (!isDedicated) then {
 	if (DZE_Virtual_Garage) then {
 		Player_MaintainVG = compile preprocessFileLineNumbers "dayz_code\actions\virtualGarage\player_MaintainVG.sqf";
 	};
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('keyboard');
+
+	DZ_KeyDown_EH = DZE_fnc_onKeyDown;		// ** TEMPORARY ** for use with admin tools
+	CALL_SQF(kb_custom_keys);			// ** for use in mission file only **
+
+	///////////////////////////////////////////////////////////////////////////////////////////
 
 };

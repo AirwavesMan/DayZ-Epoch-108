@@ -525,7 +525,7 @@ if (!isDedicated) then {
 	//			Epoch 1.0.8 Variables and Test Area
 	//
 	///////////////////////////////////////////////////////////////////////////////////////////
-	#include "\z\addons\dayz_code\functions\include\vectors.hpp"
+	#include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 	AGL_HELPER_CLASS = "Helper_10_DZE";
 
@@ -540,4 +540,26 @@ if (!isDedicated) then {
 	// general AGLToASL helper
 	DZE_AGLTOASL_HELPER = AGL_HELPER_CLASS createVehicleLocal ORIGIN;
 	DZE_AGLTOASL_HELPER setVectorDirAndUp [VECTOR_DIR,VECTOR_UP];
+
+	DZE_buildKeysActive	= false;
+	KEY_MINUS		= false;
+	KEY_EQUALS		= false;
+	KEY_BACK		= false;
+	KEY_TAB			= false;
+	KEY_TAB_SHIFT		= false;
+	DZE_MOVE_IDX		= 0;
+	DZE_MOVE_Z		= false;
+	DZE_ROTATION_IDX	= 0;
+	DZE_ROTATE		= false;
+	KEY_T			= false;
+	KEY_P			= false;
+	KEY_F			= false;
+	KEY_H			= false;
+	KEY_L			= false;
+	KEY_SPACE		= false;
+
+	DZE_KEY_LOCK		= NO_LOCK;
+	currentChannel		= localize 'str_channel_group';	// [A3] Returns currently selected user chat channel on the UI
+
+
 };

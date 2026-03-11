@@ -38,7 +38,9 @@ class RscDisplayLoadMission;
 class RscDisplayMission: RscDisplayEmpty
 {
 	idd = 46;
-	onKeyDown = "_handled = if (isNil 'DZ_KeyDown_EH') then {false} else {_this call DZ_KeyDown_EH}; _handled"; //assigned much quicker than spawning init_keyboard
+///	onKeyDown	= "_handled = if (isNil 'DZ_KeyDown_EH') then {false} else {_this call DZ_KeyDown_EH}; _handled"; //assigned much quicker than spawning init_keyboard
+	onKeyDown	= "if (isNil 'DZE_fnc_onKeyDown') then {false} else {_this call DZE_fnc_onKeyDown};"; //assigned much quicker than spawning init_keyboard
+	onKeyUp		= "if (isNil 'DZE_fnc_onKeyUp') then {false} else {_this call DZE_fnc_onKeyUp};";
 };
 class RscDisplayConfigure {
 	idd = 4;

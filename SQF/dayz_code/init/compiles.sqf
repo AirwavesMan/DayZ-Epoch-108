@@ -580,6 +580,7 @@ if (!isDedicated) then {
 		};
     };
 
+/// **** TODO **** merge this with DZE_fnc_rollingMessages
 	dayz_rollingMessages = {
 		private "_showText";
 		disableSerialization;
@@ -758,6 +759,7 @@ if (!isDedicated) then {
 
 	#define path(s)                 _path = format ['\z\addons\dayz_code\functions\%1\', s]
 	#define FUNCTION(fn)            fn = compile preprocessFileLineNumbers (_path + 'fn.sqf')
+	#define call_sqf(file)          call compile preprocessFileLineNumbers (_path + 'file.sqf')
 
 	path('arrays');
 
@@ -768,6 +770,33 @@ if (!isDedicated) then {
 	path('geometry');
 
 	FUNCTION(DZE_fnc_inAngleSector);		// Returns true if a position lies within an angle sector.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('gui');
+
+	FUNCTION(DZE_fnc_rollingMessages);		// Display a rolling message at the lower center of screen.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('keyboard');
+
+	FUNCTION(DZE_fnc_onKeyDown);			// Handle key down operations.
+	FUNCTION(DZE_fnc_onKeyUp);			// Handle key up operations.
+	call_sqf(kb_functions);				// Keyboard functions.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('lights');
+
+///	FUNCTION(DZR_fnc_enableFlashlight);		//
+///	FUNCTION(DZR_fnc_getFlashlightData);		// Returns flashlight config values for current weapon.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('locations');
+
+///	FUNCTION(DZR_fnc_nearestLocationName);		// Returns the name of the nearest location within the given radius.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 

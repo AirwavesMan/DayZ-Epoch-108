@@ -12,6 +12,10 @@
 #define p9                      _this select 9
 #define p10                     _this select 10
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// be aware this next group can and will interfere with "\ca\editor\Data\Scripts\dikCodes.h"
+
 #define x0                      _x select 0
 #define x1                      _x select 1
 #define x2                      _x select 2
@@ -23,6 +27,8 @@
 #define x8                      _x select 8
 #define x9                      _x select 9
 #define x10                     _x select 10
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
 #define ifnType(i,t,v)          [v, _this select i] select (typeName (_this select i) == typeName t)
 #define param(i,b)              if (count _this > i) then {_this select i} else {b}

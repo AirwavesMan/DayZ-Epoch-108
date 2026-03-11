@@ -23083,15 +23083,35 @@
 			<Russian>Не вводите читы. Подождите 5 секунд чтобы продолжить.</Russian>
 			<German>Keine Eingabe von Cheats! Warte 5 Sekunden.</German>
 		</Key>
+		<Key ID="STR_EPOCH_CHEAT_KEYS_DISABLED">
+			<English>Cheat keys are disabled.</English>
+		</Key>
+		<Key ID="STR_EPOCH_NO_VOICE">
+			<English>No voice in %1.</English>
+			<Russian>Никакого голоса в %1.</Russian>
+			<German>Sprechen im %1 wurde blockiert.</German>
+		</Key>
+<!--
 		<Key ID="STR_EPOCH_NO_VOICE">
 			<English>No voice in %1. Wait five seconds to continue.</English>
 			<Russian>Никакого голоса в %1. Подождите 5 секунд чтобы продолжить.</Russian>
 			<German>Sprechen im %1 wurde blockiert, warte 5 Sekunden.</German>
 		</Key>
+-->
+		<Key ID="STR_EPOCH_NO_CHANNEL_SWITCH">
+			<English>No switching channels while VON is active.</English>
+			<Russian>Нет переключения каналов, когда VON активен.</Russian>
+			<German>Du kannst nicht zwischen den Kanälen wechseln solange VON aktiviert ist.</German>
+		</Key>
+<!--
 		<Key ID="STR_EPOCH_NO_CHANNEL_SWITCH">
 			<English>No switching channels while VON is active. Wait five seconds to continue.</English>
 			<Russian>Нет переключения каналов, когда VON активен. Подождите 5 секунд чтобы продолжить.</Russian>
 			<German>Du kannst nicht zwischen den Kanälen wechseln solange VON aktiviert ist, warte 5 Sekunden.</German>
+		</Key>
+-->
+		<Key ID="STR_EPOCH_NO_CHANNEL_SWITCH_CHAT">
+			<English>No switching channels while chat is active.</English>
 		</Key>
 		<Key ID="str_success_gutted_zombie">
 			<English>%1 has been gutted, zombie parts are now on the carcass.</English>

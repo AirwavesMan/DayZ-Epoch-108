@@ -43,6 +43,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // functions
+#define append(a1,a2)                           [a1,a2] call DZE_fnc_append
 
 // extensions
 #define addArray(a,v)                           a set [count a, v]
@@ -502,7 +503,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // functions
-#define append(a1,a2)                           [a1,a2] call DZR_fnc_append
 #define apply(a,c)                              [a,c] call DZR_fnc_apply
 #define arrayShuffle(a)                         a call DZR_fnc_arrayShuffle
 ///#define deleteAt(a,i)                           [a,i] call DZR_fnc_deleteAt
