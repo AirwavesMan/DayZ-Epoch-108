@@ -1,3 +1,4 @@
+/**
 if (isServer || {player isKindOf "PZombie_VB"}) exitWith {};
 
 private ["_holder", "_type", "_classname", "_actionSet", "_name"];
@@ -17,3 +18,4 @@ if ((!isNil "_holder") and {(!isNull _holder)}) then {
 		_holder setVariable["actionSet", true];
 	};
 };
+**/

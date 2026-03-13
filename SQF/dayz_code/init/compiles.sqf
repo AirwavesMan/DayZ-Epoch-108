@@ -761,9 +761,18 @@ if (!isDedicated) then {
 	#define FUNCTION(fn)            fn = compile preprocessFileLineNumbers (_path + 'fn.sqf')
 	#define call_sqf(file)          call compile preprocessFileLineNumbers (_path + 'file.sqf')
 
+	path('actions');
+
+	FUNCTION(DZE_fnc_actionTakeBackpack);		// Player takes specified backpack from the ground.
+	FUNCTION(DZE_fnc_playAction);			// Plays the specified action and returns whether the animation finished.
+	FUNCTION(DZE_fnc_playActionRaiseWeapon);	// Plays the raise weapon action and returns whether the animation finished.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
 	path('arrays');
 
 	FUNCTION(DZE_fnc_selectDistinct);		// Returns a random selection of distinct entries from an array.
+	FUNCTION(DZE_fnc_subSelect);			// Returns a sub-selection from an array or string.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -817,16 +826,32 @@ if (!isDedicated) then {
 
 	path('positions');
 
-	FUNCTION(DZE_fnc_AGLToASL);			// Converts position from PositionAGL to PositionASL.
+	FUNCTION(DZE_fnc_AGLToASL);			// [A3] Converts position from PositionAGL to PositionASL.
+	FUNCTION(DZE_fnc_modelCenterWorld);		// Returns the object's model center in PositionASL.
 	FUNCTION(DZE_fnc_safeZonePosCheck);		// Returns true if a contextual action is prohibited within a detected safe zone, or false if allowed.
+	FUNCTION(DZE_fnc_setPosWorld);			// [A3] Sets position of an object based on the model's center position.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('strings');
+
+	FUNCTION(DZE_fnc_getAnimation);			// Returns the specified sub-string of the unit's animation state.
+	FUNCTION(DZE_fnc_isStanding);			// Returns true if unit is standing.
+	FUNCTION(DZE_fnc_isWeaponLowered);		// Returns true if unit's weapon is lowered.
+	FUNCTION(DZE_fnc_isWeaponRaised);		// Returns true if unit's weapon is raised.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	path('vectors');
 
-	FUNCTION(DZE_fnc_vectorCrossProduct);		// Returns the cross product of two 3D vectors.
-	FUNCTION(DZE_fnc_vectorDistance);		// Returns Euclidean distance between two 3D points.
-	FUNCTION(DZE_fnc_vectorMagnitude);		// Returns the magnitude of a 3D vector.
+	FUNCTION(DZE_fnc_getRotationMatrix);		// Returns the object's world orientation as an [x,y,z] rotation matrix.
+	FUNCTION(DZE_fnc_matrixTranspose);		// [A3] Returns transposed version of the given matrix.
+	FUNCTION(DZE_fnc_matrixTranspose3x3);		// [A3] Returns transposed version of the given 3x3 matrix.
+	FUNCTION(DZE_fnc_vectorCrossProduct);		// [A3] Returns the cross product of two 3D vectors.
+	FUNCTION(DZE_fnc_vectorDistance);		// [A3] Returns Euclidean distance between two 3D points.
+	FUNCTION(DZE_fnc_vectorDotProduct);		// [A3] Returns the dot product of two 3D vectors.
+	FUNCTION(DZE_fnc_vectorMagnitude);		// [A3] Returns the magnitude of a 3D vector.
+	FUNCTION(DZE_fnc_vectorNormalized);		// [A3] Returns normalized vector (unit vector, vectorMagnitude == 1) of given 3D vector.
 
 ///	path('vectors\v2');
 

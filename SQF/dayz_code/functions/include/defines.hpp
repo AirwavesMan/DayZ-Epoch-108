@@ -1,6 +1,6 @@
 //#include "actions.hpp"
-//#include "animationState.hpp"
-//#include "asciiCodes.hpp"
+#include "animationState.hpp"
+#include "asciiCodes.hpp"
 //#include "config.hpp"
 //#include "cursor.hpp"
 //#include "debug.hpp"

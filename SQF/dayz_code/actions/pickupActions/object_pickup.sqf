@@ -36,6 +36,7 @@ _claimedBy = _holder getVariable["claimed","0"];
 
 if (_claimedBy != _playerID) exitWith { format[localize "str_player_beinglooted",_text] call dayz_rollingMessages; };
 
+/**
 if (_classname isKindOf "Bag_Base_EP1") exitWith {
 	_PlayerNear = {isPlayer _x} count (_holder nearEntities ["CAManBase", 12]) > 1;
 	if (_PlayerNear) exitWith {localize "str_pickup_limit_4" call dayz_rollingMessages;};
@@ -55,6 +56,7 @@ if (_classname isKindOf "Bag_Base_EP1") exitWith {
 	
 	call player_forceSave;
 };
+**/
 
 _config = (configFile >> _type >> _classname);
 

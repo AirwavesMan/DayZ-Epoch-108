@@ -1,0 +1,16 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	DZE_fnc_playActionRaiseWeapon
+//
+//	Description:	Plays the raise weapon action and returns whether the animation finished.
+//	Groups:		Actions
+//
+//	Syntax:		call DZE_fnc_playActionRaiseWeapon
+//
+//	Return Value:	Boolean
+//
+//	Called by:	Client
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+['WeaponOff', {player call DZE_fnc_isWeaponRaised}] call DZE_fnc_playAction

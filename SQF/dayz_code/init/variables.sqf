@@ -224,6 +224,7 @@ if (!isDedicated) then {
 		s_player_claimVehicle = -1;	
 		s_garage_dialog = -1;
 		s_player_deconstruct = -1;
+		s_player_takeBackpack = -1;
 	};
 	call dayz_resetSelfActions;
 
