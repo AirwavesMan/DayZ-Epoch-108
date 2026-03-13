@@ -489,9 +489,9 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	// Take Backpack
 	if (_cursorTarget isKindOf 'Bag_Base_EP1') then {
 		if (s_player_takeBackpack < 0) then {
+
 			local _newMax = getMaxMagazines(_typeOfCursorTarget);
-			local _action = format ['%1 (%2)', format [localize 'str_init_take', _text], _newMax];
-			if (_newMax < getMaxMagazines(typeOf unitBackpack player)) then {_action = format [TEXT_RED, _action]};
+			local _action = format ['%1 (%2)', format [localize 'str_init_take', _text], [_newMax, format [TEXT_RED, _newMax]] select (_newMax < getMaxMagazines(typeOf unitBackpack player))];
 
 			s_player_takeBackpack = player addAction [_action, '\z\addons\dayz_code\functions\actions\DZE_fnc_actionTakeBackpack.sqf', _cursorTarget, 0, false, true];
 		};
