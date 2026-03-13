@@ -562,5 +562,6 @@ if (!isDedicated) then {
 	DZE_KEY_LOCK		= NO_LOCK;
 	currentChannel		= localize 'str_channel_group';	// [A3] Returns currently selected user chat channel on the UI
 
+	TEXT_RED		= "<t color='#ff1010'>%1</t>";
 
 };

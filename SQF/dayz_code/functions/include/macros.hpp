@@ -214,7 +214,7 @@
 // functions
 
 // extensions
-
+#define getMaxMagazines(cls)                    getNumber (configFile >> 'CfgVehicles' >> cls >> 'transportMaxMagazines')
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
