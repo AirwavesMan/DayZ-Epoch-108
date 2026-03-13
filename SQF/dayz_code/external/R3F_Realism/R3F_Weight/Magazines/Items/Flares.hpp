@@ -1,19 +1,19 @@
-class HandRoadFlare : HandGrenade
+class HandRoadFlare
 {
 	weight = 0.7;
 };
 
-class HandChemBlue : HandGrenade
+class HandChemBlue
 {
 	weight = 0.1;
 };
 
-class HandChemGreen : HandGrenade
+class HandChemGreen
 {
 	weight = 0.1;
 };
 
-class HandChemRed : HandGrenade
+class HandChemRed
 {
 	weight = 0.1;
 };
