@@ -7,7 +7,7 @@
 //
 //	Syntax:		backpack call DZE_fnc_actionTakeBackpack
 //
-//	Return Value:	Number - Action Status
+//	Return Value:	Nothing
 //
 //	Called by:	Client
 //
