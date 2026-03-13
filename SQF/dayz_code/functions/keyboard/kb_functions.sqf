@@ -74,7 +74,7 @@ kb_openGroups = {
 
 	if (dayz_groupSystem) then {
 		if (dayz_requireRadio && {!('ItemRadio' in p_items)}) then {
-			localize 'STR_EPOCH_NEED_RADIO' call DZR_fnc_rollingMessages;
+			localize 'STR_EPOCH_NEED_RADIO' call DZE_fnc_rollingMessages;
 		} else {
 			if (isNull findDisplay 80000) then {
 				if (!isNil 'dayz_groupInit') then {[] spawn dayz_openGroupDialog};
@@ -387,7 +387,7 @@ kb_key_f = {
 	if (DZE_buildKeysActive) then {
 		if (NATURAL) then {KEY_F = true};
 	} else {
-		call DZR_fnc_toggleWeapons;
+		call DZE_fnc_toggleWeapons;
 	};
 	true
 **/
@@ -431,7 +431,7 @@ kb_handgun = {
 
 	// params: [displayOrControl, key, shift, ctrl, alt] https://community.bistudio.com/wiki/User_Interface_Event_Handlers#onKeyDown
 
-///	call DZR_fnc_switchWeapon ???
+///	call DZE_fnc_switchWeapon ???
 ///	true
 	false
 };
@@ -585,7 +585,7 @@ kb_gear = {
 				createGearDialog [player, 'RscDisplayGear'];
 			};
 
-			[DZR_cursorObject] spawn DZR_fnc_actionGear;
+			[DZR_cursorObject] spawn DZE_fnc_actionGear;
 		};
 	};
 	true

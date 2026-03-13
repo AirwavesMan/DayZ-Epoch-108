@@ -798,14 +798,14 @@ if (!isDedicated) then {
 
 	path('lights');
 
-///	FUNCTION(DZR_fnc_enableFlashlight);		//
-///	FUNCTION(DZR_fnc_getFlashlightData);		// Returns flashlight config values for current weapon.
+///	FUNCTION(DZE_fnc_enableFlashlight);		//
+///	FUNCTION(DZE_fnc_getFlashlightData);		// Returns flashlight config values for current weapon.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	path('locations');
 
-///	FUNCTION(DZR_fnc_nearestLocationName);		// Returns the name of the nearest location within the given radius.
+///	FUNCTION(DZE_fnc_nearestLocationName);		// Returns the name of the nearest location within the given radius.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 

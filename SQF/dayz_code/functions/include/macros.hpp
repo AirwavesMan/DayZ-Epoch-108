@@ -34,7 +34,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // functions
-#define climbOver(params)                       params spawn DZR_fnc_climbOver
+#define climbOver(params)                       params spawn DZE_fnc_climbOver
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -142,8 +142,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // functions
-#define detectClimbable(obj,cls)                [obj,cls] call DZR_fnc_detectClimbable
-///#define nearActors(params)                      params call DZR_fnc_detectActor
+#define detectClimbable(obj,cls)                [obj,cls] call DZE_fnc_detectClimbable
+///#define nearActors(params)                      params call DZE_fnc_detectActor
 
 // extensions
 
@@ -180,7 +180,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // functions
-#define displayText(t,x,y,l)                    [t,[x,y],l] spawn DZR_fnc_displayText
+#define displayText(t,x,y,l)                    [t,[x,y],l] spawn DZE_fnc_displayText
 
 // extensions
 
@@ -192,10 +192,10 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // functions
-#define createHashMap                           call DZR_fnc_createHashMap
-#define createHashMapFromArray(a)               a call DZR_fnc_createHashMapFromArray
-#define setHashMap(h,k,v)                       [h,k,v] call DZR_fnc_setHashMap
-#define values(h)                               h call DZR_fnc_values
+#define createHashMap                           call DZE_fnc_createHashMap
+#define createHashMapFromArray(a)               a call DZE_fnc_createHashMapFromArray
+#define setHashMap(h,k,v)                       [h,k,v] call DZE_fnc_setHashMap
+#define values(h)                               h call DZE_fnc_values
 
 // extensions
 #define getMissionVar                           missionNamespace getVariable
