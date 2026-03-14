@@ -784,6 +784,8 @@ if (!isDedicated) then {
 
 	path('gui');
 
+	FUNCTION(DZE_fnc_highlightText);		// Displays fixed or relative text over the specified object.
+	FUNCTION(DZE_fnc_lootText);			// Displays floating text above a lootpile.
 	FUNCTION(DZE_fnc_rollingMessages);		// Display a rolling message at the lower center of screen.
 
 	///////////////////////////////////////////////////////////////////////////////////////////

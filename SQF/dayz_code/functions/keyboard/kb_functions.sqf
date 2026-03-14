@@ -135,6 +135,18 @@ kb_layout = {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+kb_lootText = {
+
+	DZE_LOOT_TEXT = !DZE_LOOT_TEXT;
+	local _text = ['STR_EPOCH_TUT_LOCAL_OFF','STR_EPOCH_TUT_LOCAL_ON'] select DZE_LOOT_TEXT;
+	[format [localize 'STR_EPOCH_LOOT_TEXT', localize _text], 1] call DZE_fnc_rollingMessages;
+	profileNamespace setVariable ['lootText', DZE_LOOT_TEXT];
+	saveProfileNamespace;
+	true
+};
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
 kb_switchWeapon = {
 
 	// params: [displayOrControl, key, shift, ctrl, alt] https://community.bistudio.com/wiki/User_Interface_Event_Handlers#onKeyDown

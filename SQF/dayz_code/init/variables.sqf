@@ -564,4 +564,29 @@ if (!isDedicated) then {
 
 	TEXT_RED		= "<t color='#ff1010'>%1</t>";
 
+	DZE_LOOT_TEXT		= profileNamespace getVariable ['lootText', false];
+	DZE_key_highlightText	= false;	// true = highlight text function is currently busy, false = available
+
+	DZE_cursorTarget	= objNull;
+	DZE_cursorClass		= '';
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//				OSD resource layer registry
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	#define registerLayer(rsc)              rsc = _OSD_min + _OSD_ctr; _OSD_ctr = _OSD_ctr + 1
+
+	local _OSD_min	= 17;
+	local _OSD_ctr	= 0;
+
+///	registerLayer(DZE_rsc_snapDisplay);
+///	registerLayer(DZE_rsc_inspectDisplay);
+	registerLayer(DZE_rsc_lootText);
+///	registerLayer(DZE_rsc_vehicleText);
+///	registerLayer(DZE_rsc_zombieText);
+///	registerLayer(DZE_rsc_debugOverlay);
+///	registerLayer(DZE_rsc_ZLSTool);
+
 };

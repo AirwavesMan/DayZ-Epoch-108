@@ -34181,6 +34181,9 @@
 			<German>Grad:</German>
 			<Russian>Углы:</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_LOOT_TEXT">
+			<English>Display Loot Text: %1</English>
+		</Key>
 		<Key ID="STR_UI_STATUS_VANILLA">
 			<English>Vanilla</English>
 			<Russian>Обычный</Russian>

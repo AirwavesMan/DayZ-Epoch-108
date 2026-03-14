@@ -120,6 +120,15 @@
 // functions
 
 // extensions
+#define ammoName(cls)                           getText (configFile >> 'CfgAmmo' >> cls >> 'displayName')
+#define magazineName(cls)                       getText (configFile >> 'CfgMagazines' >> cls >> 'displayName')
+#define vehicleName(cls)                        getText (configFile >> 'CfgVehicles' >> cls >> 'displayName')
+#define vehicleNameBase(cls)                    getText (configFile >> 'CfgVehicles' >> cls >> 'displayNameBase')
+#define weaponName(cls)                         getText (configFile >> 'CfgWeapons' >> cls >> 'displayName')
+
+#define magName(cls)                            magazineName(cls)
+#define vehName(cls)                            vehicleName(cls)
+#define wpnName(cls)                            weaponName(cls)
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -612,15 +621,6 @@
 #define isBoolean(cfg)                          isNumber (cfg) && {getNumber (cfg) in [0,1]}
 #define isCommutable(cls)                       getNumber (configFile >> 'CfgVehicles' >> cls >> 'commutable') == 1
 #define isTool(cls)                             [['CfgWeapons',cls],['Tool']] call DZR_fnc_isKindOf
-#define ammoName(cls)                           getText (configFile >> 'CfgAmmo' >> cls >> 'displayName')
-#define magazineName(cls)                       getText (configFile >> 'CfgMagazines' >> cls >> 'displayName')
-#define vehicleName(cls)                        getText (configFile >> 'CfgVehicles' >> cls >> 'displayName')
-#define vehicleNameBase(cls)                    getText (configFile >> 'CfgVehicles' >> cls >> 'displayNameBase')
-#define weaponName(cls)                         getText (configFile >> 'CfgWeapons' >> cls >> 'displayName')
-
-#define magName(cls)                            magazineName(cls)
-#define vehName(cls)                            vehicleName(cls)
-#define wpnName(cls)                            weaponName(cls)
 
 ///#define magBase(cls)                            getText (configFile >> 'CfgMagazines' >> cls >> 'magazine')
 ///#define wpnBase(cls)                            getText (configFile >> 'CfgWeapons' >> cls >> 'weapon')

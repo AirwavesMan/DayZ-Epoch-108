@@ -224,6 +224,10 @@ if (_isVehicle) then {_distance = floor(player distance _cursorTarget)};	// trun
 local _noChange = ((_cursorTarget == DZE_prevTarget) && (_distance == DZE_prevDistance));
 
 if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo && (_distance <= _allowedDistance)) then {
+
+	DZE_cursorTarget = _cursorTarget;
+	DZE_cursorClass  = _typeOfCursorTarget;
+
 	local _isPlayer = isPlayer _cursorTarget;
 	local _isBicycle = _cursorTarget isKindOf "Bicycle";
 	local _isGenerator = _typeOfCursorTarget == "Generator_DZ";
@@ -258,6 +262,9 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	local _isLockedDoor = _typeOfCursorTarget in DZE_DoorsLocked;
 	local _isStatic = _typeOfCursorTarget in DZE_StaticWeapons;
 	local _isLockedStorage = _typeOfCursorTarget in DZE_LockedStorage;
+
+	// Highlight Lootpile
+	if (_typeOfCursorTarget isKindof 'WeaponHolder' && {DZE_LOOT_TEXT && {!DZE_key_highlightText}}) then {_cursorTarget call DZE_fnc_lootText};
 
 	//fuel tanks
 	if (_hasEmptyFuelCan) then {
@@ -1072,6 +1079,8 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	};
 } else {
 	DZE_prevDistance = _distance;
+	DZE_cursorTarget = objNull;
+	DZE_cursorClass  = '';
 	//Engineering
 	player removeAction s_player_plot_boundary;
 	s_player_plot_boundary = -1;

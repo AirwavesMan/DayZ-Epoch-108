@@ -37,6 +37,7 @@ if (isNil 'keyboard_keys') then {
 		[[DIK_F5],				{_this call kb_openGroups}],
 		[[DIK_F6],				{_this call kb_handed}],
 		[[DIK_F7],				{_this call kb_layout}],
+		[[DIK_F8],				{_this call kb_lootText}],
 
 		[[DIK_1, DIK_2, DIK_3],			{_this call kb_switchWeapon}],
 		[[DIK_0],				{_this call kb_autoRun}],
