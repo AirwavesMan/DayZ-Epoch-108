@@ -88,6 +88,8 @@ class SteyrAug_A3_Green_DZ: SteyrAug_A3_base {
 	class Attachments
 	{
 		Attachment_M203 = "SteyrAug_A3_GL_Green_DZ";
+		Attachment_Holo = "SteyrAug_A3_Holo_Green_DZ";
+		Attachment_ACOG = "SteyrAug_A3_ACOG_Green_DZ";			
 	};
 };
 
@@ -98,6 +100,8 @@ class SteyrAug_A3_Black_DZ: SteyrAug_A3_Green_DZ {
 	class Attachments
 	{
 		Attachment_M203 = "SteyrAug_A3_GL_Black_DZ";
+		Attachment_Holo = "SteyrAug_A3_Holo_Black_DZ";
+		Attachment_ACOG = "SteyrAug_A3_ACOG_Black_DZ";		
 	};
 };
 
@@ -108,6 +112,8 @@ class SteyrAug_A3_Blue_DZ: SteyrAug_A3_Green_DZ {
 	class Attachments
 	{
 		Attachment_M203 = "SteyrAug_A3_GL_Blue_DZ";
+		Attachment_Holo = "SteyrAug_A3_Holo_Blue_DZ";
+		Attachment_ACOG = "SteyrAug_A3_ACOG_Blue_DZ";			
 	};
 };
 
@@ -208,7 +214,7 @@ class SteyrAug_A3_Holo_Blue_DZ: SteyrAug_A3_Holo_Green_DZ {
 	
 	class Attachments
 	{
-		Attachment_M203 = "SteyrAug_A3_Holo_GL_Blue_DZ";
+		Attachment_M203 = "SteyrAug_A3_Holo_GL_Blue_DZ";		
 	};	
 	class ItemActions
 	{
@@ -228,7 +234,11 @@ class SteyrAug_A3_GL_Green_DZ: SteyrAug_A3_Green_DZ {
 	muzzles[] = {this, M203Muzzle};
 	handAnim[] = {"OFP2_ManSkeleton","\MIDF_Weapons\data\anim\A3_GL.rtm"};
 
-	class Attachments {};	
+	class Attachments
+	{
+		Attachment_Holo = "SteyrAug_A3_Holo_GL_Green_DZ";
+		Attachment_ACOG = "SteyrAug_A3_ACOG_GL_Green_DZ";			
+	};
 	
 	class ItemActions
 	{
@@ -243,6 +253,12 @@ class SteyrAug_A3_GL_Black_DZ: SteyrAug_A3_GL_Green_DZ {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_gl_black.paa";
 	model = "\MIDF_Weapons\Aug_a3\aug_a3_gl_black.p3d";
 	
+	class Attachments
+	{
+		Attachment_Holo = "SteyrAug_A3_Holo_GL_Black_DZ";
+		Attachment_ACOG = "SteyrAug_A3_ACOG_GL_Black_DZ";			
+	};	
+	
 	class ItemActions
 	{
 		class RemoveGL
@@ -255,6 +271,12 @@ class SteyrAug_A3_GL_Black_DZ: SteyrAug_A3_GL_Green_DZ {
 class SteyrAug_A3_GL_Blue_DZ: SteyrAug_A3_GL_Green_DZ {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_gl_blue.paa";
 	model = "\MIDF_Weapons\Aug_a3\aug_a3_gl_blue.p3d";
+	
+	class Attachments
+	{
+		Attachment_Holo = "SteyrAug_A3_Holo_GL_Blue_DZ";
+		Attachment_ACOG = "SteyrAug_A3_ACOG_GL_Blue_DZ";			
+	};		
 	
 	class ItemActions
 	{
