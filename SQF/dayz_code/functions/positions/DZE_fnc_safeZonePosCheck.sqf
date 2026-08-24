@@ -17,8 +17,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
-local _position		= p0;
-local _skipPos		= false;
+local _position	= p0;
+local _skipPos	= false;
 
 if (count _this > 1) then {
 
