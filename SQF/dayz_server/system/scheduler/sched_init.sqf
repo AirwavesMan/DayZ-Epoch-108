@@ -6,6 +6,7 @@ call compile preprocessFileLineNumbers (PATH+"sched_sync.sqf");
 call compile preprocessFileLineNumbers (PATH+"sched_safetyVehicle.sqf");
 call compile preprocessFileLineNumbers (PATH+"sched_event.sqf");
 call compile preprocessFileLineNumbers (PATH+"sched_traps.sqf");
+call compile preprocessFileLineNumbers (PATH+'sched_burningFire.sqf');
 if (DZE_Bury_Body || DZE_Butcher_Body) then {
 	call compile preprocessFileLineNumbers (PATH+"sched_lootCrates.sqf");
 };
@@ -22,7 +23,8 @@ local _list = [
 	 [ 900,		0,		sched_sync ],
 	 [ 120,		48,		sched_safetyVehicle ],
 	 [ 360,		480,	sched_fps ],
-	 [ 30,		60,		sched_traps,				sched_traps_init ]
+	 [ 30,		60,		sched_traps,				sched_traps_init ],
+	 [ 5,		0,		sched_burningFire ]
 ];
 
 if (DZE_Bury_Body || DZE_Butcher_Body) then {

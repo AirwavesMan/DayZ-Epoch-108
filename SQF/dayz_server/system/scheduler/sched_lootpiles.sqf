@@ -29,7 +29,7 @@ sched_lootpiles_5m = {
 				};
 				sched_lp_lootTotal = sched_lp_lootTotal + 1;
 			} forEach allMissionObjects _kind;	
-		} forEach [ "Blood_Trail_DZ", "ReammoBox", "Land_Fire_DZ", "flamable_DZ" ];
+		} forEach [ "Blood_Trail_DZ", "ReammoBox", "DZE_Land_Fire", "DZE_flamable" ];
 #ifdef SERVER_DEBUG		
 		diag_log ["sched_lootpiles_5mn: reset lootpiles check, total visited:", sched_lp_lootTotal, "listed:", count sched_lp_list];
 #endif
