@@ -1,22 +1,22 @@
 /**************Variables Compiled on Both Client and Server**************/
 
 Dayz_plants = ["Dayz_Plant1","Dayz_Plant2","Dayz_Plant3"];
-DZE_LockedGates = ["WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"];
-DZE_DoorsLocked = ["Metal_DrawbridgeLocked_DZ","Land_DZE_WoodDoorLocked","Land_DZE_LargeWoodDoorLocked","Land_DZE_GarageWoodDoorLocked","Land_DZE_WoodGateLocked","Land_DZE_WoodOpenTopGarageLocked","CinderWallDoorLocked_DZ","CinderWallDoorSmallLocked_DZ","CinderGateLocked_DZ","CinderGarageOpenTopLocked_DZ","CinderDoorHatchLocked_DZ","DoorLocked_DZ","CinderWallWindowLocked_DZ","Concrete_Bunker_Locked_DZ"];
+DZE_LockedGates = ["DZE_WoodenGate_1","DZE_WoodenGate_2","DZE_WoodenGate_3","DZE_WoodenGate_4"];
+DZE_DoorsLocked = ["DZE_Metal_DrawbridgeLocked","Land_DZE_WoodDoorLocked","Land_DZE_LargeWoodDoorLocked","Land_DZE_GarageWoodDoorLocked","Land_DZE_WoodGateLocked","Land_DZE_WoodOpenTopGarageLocked","DZE_CinderWallDoorLocked","DZE_CinderWallDoorSmallLocked","DZE_CinderGateLocked","DZE_CinderGarageOpenTopLocked","DZE_CinderDoorHatchLocked","DZE_DoorLocked","DZE_CinderWallWindowLocked","DZE_Concrete_Bunker_Locked"];
 DZE_DoorsLocked = DZE_DoorsLocked + DZE_LockedGates;
-DZE_modularDoors = ["Land_DZE_WoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_GarageWoodDoor","CinderWallDoor_DZ","CinderWallDoorSmall_DZ","WoodenGate_foundation_DZ","Land_DZE_WoodGate","Land_DZE_WoodOpenTopGarageDoor","CinderGate_DZ","CinderGarageOpenTop_DZ","CinderDoorHatch_DZ","Door_DZ","Concrete_Bunker_DZ","Metal_Drawbridge_DZ","CinderWallWindow_DZ"];
+DZE_modularDoors = ["Land_DZE_WoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_GarageWoodDoor","DZE_CinderWallDoor","DZE_CinderWallDoorSmall","DZE_WoodenGate_foundation","Land_DZE_WoodGate","Land_DZE_WoodOpenTopGarageDoor","DZE_CinderGate","DZE_CinderGarageOpenTop","DZE_CinderDoorHatch","DZE_Door","DZE_Concrete_Bunker","DZE_Metal_Drawbridge","DZE_CinderWallWindow"];
 DZE_modularDoors = DZE_modularDoors + DZE_LockedGates;
-DZE_LockedStorage = ["VaultStorageLocked","VaultStorage2Locked","LockboxStorageLocked","LockboxStorage2Locked","LockboxStorageWinterLocked","LockboxStorageWinter2Locked","TallSafeLocked"];
-DZE_UnLockedStorage = ["VaultStorage","VaultStorage2","LockboxStorage","LockboxStorage2","LockboxStorageWinter","LockboxStorageWinter2","TallSafe"];
-DZE_StaticWeapons = ["ZU23_AntiAir_Static_DZ","Igla_AntiAir_Launcher_Static_DZ","Rbs70_Launcher_Static_DZ","TOW_Tripod_Launcher_Static_DZ","Stinger_Tripod_Launcher_Static_DZ","SPG9_Launcher_Static_DZ","Metis_Launcher_Static_DZ","2b14_82mm_Mortar_Static_DZ","M252_Mortar_Static_DZ","SearchLight_Static_DZ","D30_Artillery_Static_DZ","M119_Artillery_Static_DZ","GPMG_TriPod_MG_Static_DZ","MK19_TriPod_GrenadeLauncher_Static_DZ","AGS30_GrenadeLauncher_Static_DZ","GMG_Tripod_GrenadeLauncher_Static_DZ","L2A1_Tripod_MG_Static_DZ","L2A1_MG_Static_DZ","KORD_MG_Static_DZ","KORD_Tripod_MG_Static_DZ","DSHKM_TriPod_MG_Static_DZ","DSHKM_MG_Static_DZ","M2_TriPod_MG_Static_DZ","M2_MG_Static_DZ","M240Nest_DZ"];
-DZE_isNewStorage = ["Generator_DZ","GunRack_DZ","GunRack2_DZ","WoodCrate_DZ","WoodCrate2_DZ","OutHouse_DZ","StorageShed_DZ","StorageShed2_DZ","WoodShack_DZ","WoodShack2_DZ","Wooden_shed_DZ","Wooden_shed2_DZ","WorkBench_DZE","Advanced_WorkBench_DZ","CookTripod_DZ","Stoneoven_DZ","Commode_DZ","Wardrobe_DZ","Fridge_DZ","Washing_Machine_DZ","Server_Rack_DZ","ATM_DZ","Armchair_DZ","Sofa_DZ","Arcade_DZ","Vendmachine1_DZ","Vendmachine2_DZ","StorageCrate_DZ","CamoStorageCrate_DZ","StorageBarrelRed1_DZ","StorageBarrelRed2_DZ","StorageBarrelEpoch1_DZ","StorageBarrelEpoch2_DZ","StorageBarrelYellow1_DZ","StorageBarrelYellow2_DZ","StorageBarrelBlack1_DZ","StorageBarrelBlack2_DZ","StorageBarrelGreenDark1_DZ","StorageBarrelGreenDark2_DZ","StorageBarrelMilk1_DZ","StorageBarrelMilk2_DZ","StorageBarrelGreen1_DZ","StorageBarrelGreen2_DZ","StorageBarrelGreenRusty1_DZ","StorageBarrelGreenRusty2_DZ","Rabbit_Hutch_DZE","Chicken_Coop_DZE","Doghouse_DZE","Postbox_DZE","Wild_Bee_Hive_DZE","Cow_Stable_DZE","Goat_Stable_DZE","Sheep_Stable_DZE","Boar_Stable_DZE","VaultStorageBroken","VaultStorageBroken2","TallSafeBroken","LockboxStorageBroken","LockboxStorage2Broken","LockboxStorageWinterBroken","LockboxStorageWinter2Broken"];
-DZE_Tents = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4","DesertTentStorage","DesertTentStorage0","DesertTentStorage1","DesertTentStorage2","DesertTentStorage3","DesertTentStorage4","TentStorageWinter","TentStorageWinter0","TentStorageWinter1","TentStorageWinter2","TentStorageWinter3","TentStorageWinter4","WinterDomeTentStorage","WinterDomeTentStorage0","WinterDomeTentStorage1","WinterDomeTentStorage2","WinterDomeTentStorage3","WinterDomeTentStorage4"];
-DZE_Stashes = ["StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","StashMedium4"];
-DZE_CamoNets = ["DesertCamoNet_DZ","WinterCamoNet_DZ","ForestCamoNet_DZ","WinterLargeCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ"];
-DZE_Plants = ["Plant_Pumpkin_DZE","Plant_Sunflower_DZE","Plant_Potato_DZE","Plant_Carrot_DZE","Plant_Hemp_DZE","Plant_Tea_DZE","Plant_Tobacco_DZE","Plant_Garlic_DZE","Plant_Comfrey_DZE"];
-DayZ_SafeObjects = ["Land_Fire_DZ","MetalFence_1_foundation_DZ","MetalFence_1_frame_DZ","MetalFence_halfpanel_DZ","MetalFence_thirdpanel_DZ","MetalFence_1_DZ","MetalFence_2_DZ","MetalFence_3_DZ","MetalFence_4_DZ","MetalFence_5_DZ","MetalFence_6_DZ","MetalFence_7_DZ","WoodenFence_1_foundation_DZ","WoodenFence_1_frame_DZ","WoodenFence_quaterpanel_DZ","WoodenFence_halfpanel_DZ","WoodenFence_thirdpanel_DZ","WoodenFence_1_DZ","WoodenFence_2_DZ","WoodenFence_3_DZ","WoodenFence_4_DZ","WoodenFence_5_DZ","WoodenFence_6_DZ","WoodenFence_7_DZ","WorkBench_DZ","FuelPump_DZ","FireBarrel_DZ","Plastic_Pole_EP1_DZ","CanvasHut_DZ","ParkBench_DZ","DeerStand_DZ","MetalGate_DZ","Fence_corrugated_DZ","StickFence_DZ","LightPole_DZ","Scaffolding_DZ","Hedgehog_DZ","MetalPanel_DZ","Fort_RazorWire","FortifiedWire_DZ","BarbedGate_DZ","WoodGate_DZ","ConcreteBarrier_DZ","ConcreteBarrierStriped_DZ","ConcreteWall_DZ","ConcretePipe_DZ","DragonTeeth_DZ","DragonTeethBig_DZ","SimpleFootbridge_DZ","WoodenFootbridge_DZ","Windbreak_DZ","MetalContainer1A_DZ","MetalContainer1B_DZ","MetalContainer1G_DZ","MetalContainer2D_DZ","Notebook_DZ","Water_Pump_DZ","Greenhouse_DZ","Bed_DZ","Table_DZ","Office_Chair_DZ","Garage_Green_DZ","Garage_White_DZ","Garage_Brown_DZ","Garage_Grey_DZ","Helipad_Civil_DZ","Helipad_Rescue_DZ","Helipad_Army_DZ","Helipad_Cross_DZ","Helipad_ParkBorder_DZ","CCTV_DZ","Satellite_Dish_DZE","Fueltank_DZE","Watertank_DZE","Watertower_DZE","CinderWallHalf_DZ","CinderWallHalf_Gap_DZ","CinderWall_DZ","CinderWallDoorway_DZ","CinderWallSmallDoorway_DZ","CinderGateFrame_DZ","CinderGarageOpenTopFrame_DZ","WoodRamp_DZ","WoodFloor_DZ","WoodFloorStairs_DZ","WoodFloorHalf_DZ","WoodFloorQuarter_DZ","WoodFloor4x_DZ","WoodTriangleFloor_DZ","WoodLargeWall_DZ","WoodLargeWallDoor_DZ","WoodLargeWallWin_DZ","WoodSmallWall_DZ","WoodSmallWallThird_DZ","WoodSmallWallWin_DZ","WoodSmallWallDoor_DZ","WoodTriangleWall_DZ","WoodGateFrame_DZ","WoodStairs_DZ","WoodStairsRails_DZ","WoodStairsSans_DZ","WoodLadder_DZ","WoodHandrail_DZ","WoodPillar_DZ","MetalFloor_DZ","MetalFloor_Half_DZ","MetalFloor_Quarter_DZ","MetalFloor4x_DZ","DoorFrame_DZ","MetalPillar_DZ","GlassFloor_DZ","GlassFloor_Half_DZ","GlassFloor_Quarter_DZ","ElevatorStart_DZ","ElevatorStop_Glass_DZ","Sandbag1_DZ","BagFenceRound_DZ","Land_HBarrier1_DZ","Land_HBarrier3_DZ","Land_HBarrier5_DZ","Land_HBarrier5Curved_DZ","Land_WarfareBarrier5x_DZ","Land_WarfareBarrier10x_DZ","Land_WarfareBarrier10xTall_DZ","SandNest_DZ","SandNestLarge_DZ","HeavyBagFence_DZ","HeavyBagFenceCorner_DZ","HeavyBagFenceRound_DZ","BearTrap_DZ","TrapBearTrapFlare","TrapBearTrapSmoke","Trap_Cans","TrapTripwireFlare","TrapTripwireGrenade","TrapTripwireSmoke","Compost_Barrel_Empty_DZE","Compost_Barrel_Full_DZE","Plant_Patch_Pumpkin_DZE","Plant_Patch_Sunflower_DZE","Plant_Patch_Carrot_DZE","Plant_Patch_Potato_DZE","Plant_Patch_Hemp_DZE","Plant_Patch_Tobacco_DZE","Plant_Patch_Tea_DZE","Plant_Patch_Garlic_DZE","Plant_Patch_Comfrey_DZE"];
+DZE_LockedStorage = ['DZE_SafeLocked','DZE_Safe2Locked','DZE_LockboxStorageLocked','DZE_LockboxStorage2Locked','DZE_LockboxStorageWinterLocked','DZE_LockboxStorageWinter2Locked','DZE_SafeTallLocked'];
+DZE_UnLockedStorage = ['DZE_Safe','DZE_Safe2','DZE_LockboxStorage','DZE_LockboxStorage2','DZE_LockboxStorageWinter','DZE_LockboxStorageWinter2','DZE_SafeTall'];
+DZE_StaticWeapons = ["DZE_ZU23_AntiAir_Static","DZE_Igla_AntiAir_Launcher_Static","DZE_Rbs70_Launcher_Static","DZE_TOW_Tripod_Launcher_Static","DZE_Stinger_Tripod_Launcher_Static","DZE_SPG9_Launcher_Static","DZE_Metis_Launcher_Static","DZE_2b14_82mm_Mortar_Static","DZE_M252_Mortar_Static","DZE_SearchLight_Static","DZE_D30_Artillery_Static","DZE_M119_Artillery_Static","DZE_GPMG_TriPod_GrenadeLauncher_Static","DZE_MK19_TriPod_GrenadeLauncher_Static","DZE_AGS30_GrenadeLauncher_Static","DZE_GMG_Tripod_MG_Static","DZE_L2A1_Tripod_MG_Static","DZE_L2A1_MG_Static","DZE_KORD_MG_Static","DZE_KORD_Tripod_MG_Static","DZE_DSHKM_TriPod_MG_Static","DZE_DSHKM_MG_Static","DZE_M2_TriPod_MG_Static","DZE_M2_MG_Static","DZE_M240Nest"];
+DZE_isNewStorage = ['DZE_Generator','DZE_GunRack','DZE_GunRack2','DZE_WoodCrate','DZE_WoodCrate2','DZE_OutHouse','DZE_StorageShed','DZE_StorageShed2','DZE_WoodShack','DZE_WoodShack2','DZE_Wooden_shed','DZE_Wooden_shed2','DZE_WorkBench','DZE_Advanced_WorkBench','DZE_CookTripod','DZE_Stoneoven','DZE_Commode','DZE_Wardrobe','DZE_Fridge','DZE_Washing_Machine','DZE_Server_Rack','DZE_ATM','DZE_Armchair','DZE_Sofa','DZE_Arcade','DZE_Vendmachine1','DZE_Vendmachine2','DZE_StorageCrate','DZE_CamoStorageCrate','DZE_StorageBarrelRed1','DZE_StorageBarrelRed2','DZE_StorageBarrelEpoch1','DZE_StorageBarrelEpoch2','DZE_StorageBarrelYellow1','DZE_StorageBarrelYellow2','DZE_StorageBarrelBlack1','DZE_StorageBarrelBlack2','DZE_StorageBarrelGreenDark1','DZE_StorageBarrelGreenDark2','DZE_StorageBarrelMilk1','DZE_StorageBarrelMilk2','DZE_StorageBarrelGreen1','DZE_StorageBarrelGreen2','DZE_StorageBarrelGreenRusty1','DZE_StorageBarrelGreenRusty2','DZE_Rabbit_Hutch','DZE_Chicken_Coop','DZE_Doghouse','DZE_Postbox','DZE_Wild_Bee_Hive','DZE_Cow_Stable','DZE_Goat_Stable','DZE_Sheep_Stable','DZE_Boar_Stable','DZE_SafeBroken','DZE_Safe2Broken','DZE_SafeTallBroken','DZE_LockboxStorageBroken','DZE_LockboxStorage2Broken','DZE_LockboxStorageWinterBroken','DZE_LockboxStorageWinter2Broken'];
+DZE_Tents = ['DZE_TentStorage','DZE_TentStorage0','DZE_TentStorage1','DZE_TentStorage2','DZE_TentStorage3','DZE_TentStorage4','DZE_DomeTentStorage','DZE_DomeTentStorage0','DZE_DomeTentStorage1','DZE_DomeTentStorage2','DZE_DomeTentStorage3','DZE_DomeTentStorage4','DZE_DesertTentStorage','DZE_DesertTentStorage0','DZE_DesertTentStorage1','DZE_DesertTentStorage2','DZE_DesertTentStorage3','DZE_DesertTentStorage4','DZE_TentStorageWinter','DZE_TentStorageWinter0','DZE_TentStorageWinter1','DZE_TentStorageWinter2','DZE_TentStorageWinter3','DZE_TentStorageWinter4','DZE_WinterDomeTentStorage','DZE_WinterDomeTentStorage0','DZE_WinterDomeTentStorage1','DZE_WinterDomeTentStorage2','DZE_WinterDomeTentStorage3','DZE_WinterDomeTentStorage4'];
+DZE_Stashes = ['DZE_StashSmall','DZE_StashSmall1','DZE_StashSmall2','DZE_StashSmall3','DZE_StashSmall4','DZE_StashMedium','DZE_StashMedium1','DZE_StashMedium2','DZE_StashMedium3','DZE_StashMedium4'];
+DZE_CamoNets = ["DZE_DesertCamoNet","DZE_WinterCamoNet","DZE_ForestCamoNet","DZE_WinterLargeCamoNet","DZE_DesertLargeCamoNet","DZE_ForestLargeCamoNet"];
+DZE_Plants = ["DZE_Plant_Pumpkin","DZE_Plant_Sunflower","DZE_Plant_Potato","DZE_Plant_Carrot","DZE_Plant_Hemp","DZE_Plant_Tea","DZE_Plant_Tobacco","DZE_Plant_Garlic","DZE_Plant_Comfrey"];
+DayZ_SafeObjects = ["DZE_Land_Fire","DZE_MetalFence_1_foundation","DZE_MetalFence_1_frame","DZE_MetalFence_halfpanel","DZE_MetalFence_thirdpanel","DZE_MetalFence_1","DZE_MetalFence_2","DZE_MetalFence_3","DZE_MetalFence_4","DZE_MetalFence_5","DZE_MetalFence_6","DZE_MetalFence_7","DZE_WoodenFence_1_foundation","DZE_WoodenFence_1_frame","DZE_WoodenFence_quaterpanel","DZE_WoodenFence_halfpanel","DZE_WoodenFence_thirdpanel","DZE_WoodenFence_1","DZE_WoodenFence_2","DZE_WoodenFence_3","DZE_WoodenFence_4","DZE_WoodenFence_5","DZE_WoodenFence_6","DZE_WoodenFence_7",'DZE_WorkBench',"DZE_FuelPump","DZE_FireBarrel",DZE_Territory_Marker,"DZE_CanvasHut","DZE_ParkBench","DZE_DeerStand","DZE_MetalGate","DZE_Fence_corrugated","DZE_StickFence","DZE_LightPole","DZE_Scaffolding","DZE_Hedgehog","DZE_MetalPanel","Fort_RazorWire","DZE_FortifiedWire","DZE_BarbedGate","DZE_WoodGate","DZE_ConcreteBarrier","DZE_ConcreteBarrierStriped","DZE_ConcreteWall","DZE_ConcretePipe","DZE_DragonTeeth","DZE_DragonTeethBig","DZE_SimpleFootbridge","DZE_WoodenFootbridge","DZE_Windbreak","DZE_MetalContainer1A","DZE_MetalContainer1B","DZE_MetalContainer1G","DZE_MetalContainer2D","DZE_Notebook","DZE_Water_Pump","DZE_Greenhouse","DZE_Bed","DZE_Table","DZE_Office_Chair","DZE_Garage_Green","DZE_Garage_White","DZE_Garage_Brown","DZE_Garage_Grey","DZE_Helipad_Civil","DZE_Helipad_Rescue","DZE_Helipad_Army","DZE_Helipad_Cross","DZE_Helipad_ParkBorder","DZE_CCTV","DZE_Satellite_Dish","DZE_Fueltank","DZE_Watertank","DZE_Watertower","DZE_CinderWallHalf","DZE_CinderWallHalf_Gap","DZE_CinderWall","DZE_CinderWallDoorway","DZE_CinderWallSmallDoorway","DZE_CinderGateFrame","DZE_CinderGarageOpenTopFrame","DZE_WoodRamp","DZE_WoodFloor","DZE_WoodFloorStairs","DZE_WoodFloorHalf","DZE_WoodFloorQuarter","DZE_WoodFloor4x","DZE_WoodTriangleFloor","DZE_WoodLargeWall","DZE_WoodLargeWallDoor","DZE_WoodLargeWallWin","DZE_WoodSmallWall","DZE_WoodSmallWallThird","DZE_WoodSmallWallWin","DZE_WoodSmallWallDoor","DZE_WoodTriangleWall","DZE_WoodGateFrame","DZE_WoodStairs","DZE_WoodStairsRails","DZE_WoodStairsSans","DZE_WoodLadder","DZE_WoodHandrail","DZE_WoodPillar","DZE_MetalFloor","DZE_MetalFloor_Half","DZE_MetalFloor_Quarter","DZE_MetalFloor4x","DZE_DoorFrame","DZE_MetalPillar","DZE_GlassFloor","DZE_GlassFloor_Half","DZE_GlassFloor_Quarter","DZE_ElevatorStart","DZE_ElevatorStop_Glass","DZE_Sandbag","DZE_BagFenceRound","DZE_Land_HBarrier1","DZE_Land_HBarrier3","DZE_Land_HBarrier5","DZE_Land_HBarrier5Curved","DZE_Land_WarfareBarrier5x","DZE_Land_WarfareBarrier10x","DZE_Land_WarfareBarrier10xTall","DZE_SandNest","DZE_SandNestLarge","DZE_HeavyBagFence","DZE_HeavyBagFenceCorner","DZE_HeavyBagFenceRound","DZE_BearTrap","TrapBearTrapFlare","TrapBearTrapSmoke","Trap_Cans","TrapTripwireFlare","TrapTripwireGrenade","TrapTripwireSmoke","DZE_Compost_Barrel_Empty","DZE_Compost_Barrel_Full","DZE_Plant_Patch_Pumpkin","DZE_Plant_Patch_Sunflower","DZE_Plant_Patch_Carrot","DZE_Plant_Patch_Potato","DZE_Plant_Patch_Hemp","DZE_Plant_Patch_Tobacco","DZE_Plant_Patch_Tea","DZE_Plant_Patch_Garlic","DZE_Plant_Patch_Comfrey"];
 DayZ_SafeObjects = DayZ_SafeObjects + DZE_DoorsLocked + DZE_LockedStorage + DZE_StaticWeapons + DZE_isNewStorage + DZE_Tents + DZE_Stashes + DZE_CamoNets + DZE_Plants + DZE_modularDoors;
-DayZ_GearedObjects = ["Car","Helicopter","Motorcycle","Ship","TentStorage_base","StashSmall_base","StashMedium_base","Plane","Tank"];
+DayZ_GearedObjects = ['Car','Helicopter','Motorcycle','Ship','DZE_Tent_Base','DZE_Stash_Base','Plane','Tank'];
 DayZ_GearedObjects = DayZ_GearedObjects + DZE_UnLockedStorage + DZE_isNewStorage;
 dayz_typedBags = ["bloodTester","bloodBagANEG","bloodBagAPOS","bloodBagBNEG","bloodBagBPOS","bloodBagABNEG","bloodBagABPOS","bloodBagONEG","bloodBagOPOS","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"];
 dayz_plant = ["pumpkin.p3d","p_helianthus.p3d","p_fiberplant_ep1.p3d","pumpkin.p3d","p_helianthus.p3d","p_urtica.p3d","p_carduus.p3d","p_fiberplant_ep1.p3d","c_wideleafplant.p3d","b_betulahumilis.p3d","comfrey_up_small.p3d","comfrey_up.p3d"];
@@ -59,21 +59,23 @@ if (isServer) then {
 	dayz_died = [];
 	allowConnection = false;
 	dayz_serverObjectMonitor = [];
+	// Fuel-using fireplaces processed by the server fire monitor.
+	DZE_fireObjects = [];
 	PlayerDeaths = [];
 
 	//Objects to remove when killed.
-	DayZ_removableObjects = ["Sandbag1_DZ","Hedgehog_DZ","Trap_Cans","TrapTripwireFlare","TrapBearTrapSmoke","TrapTripwireGrenade","TrapTripwireSmoke","TrapBearTrapFlare"];
+	DayZ_removableObjects = ["DZE_Sandbag","DZE_Hedgehog","Trap_Cans","TrapTripwireFlare","TrapBearTrapSmoke","TrapTripwireGrenade","TrapTripwireSmoke","TrapBearTrapFlare"];
 
 	// Epoch Additions
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
-	DZE_isLockedStorageUpgrade = ["VaultStorage2Locked","LockboxStorage2Locked","LockboxStorageWinter2Locked"];
+	DZE_isLockedStorageUpgrade = ['DZE_Safe2Locked','DZE_LockboxStorage2Locked','DZE_LockboxStorageWinter2Locked'];
 };
 
 /**************Variables Compiled on Clients Only**************/
 
 if (!isDedicated) then {
-	DZE_schedDebug = 0;	//	Debug some scheduler lines
-	DZE_playerFSMDebug = 0;	//	Debug whole player.fsm
+///	DZE_schedDebug		= 0;	// Debug some scheduler lines // no longer needed
+	DZE_playerFSMDebug	= 0;	// Debug whole player.fsm
 
 	// Rolling Msg system
 	Message_1 = "";
@@ -141,6 +143,9 @@ if (!isDedicated) then {
 	dayz_resetSelfActions = {
 		s_player_equip_carry = -1;
 		s_player_fire = -1;
+		s_player_fireFuelActions = [];
+		DZE_fireFuelTarget = objNull;
+		DZE_fireFuelMagazines = [];
 		s_player_cook = -1;
 		s_player_boil = -1;
 		s_player_thaw = -1;
@@ -199,8 +204,8 @@ if (!isDedicated) then {
 		s_player_toggleSnap = -1;
 		s_player_toggleSnapSelect = -1;
 		snapActions = -1;
-		s_player_plot_boundary = -1;
-		s_player_plotManagement = -1;
+		s_player_base_boundary = -1;
+		s_player_baseManagement = -1;
 		s_player_toggleDegree = -1;
 		degreeActions = -1;
 		s_player_toggleVector = -1;
@@ -275,7 +280,6 @@ if (!isDedicated) then {
 	skipGearSound = false;
 	TimeOutDisplayed = false;
 	playerHumanityCHK = 0;
-	helperDetach = false;
 
 	// Arrays
 	voice_actions = ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
@@ -287,11 +291,11 @@ if (!isDedicated) then {
 	MeleeAmmo = ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo","Bat_Swing_Ammo","BatBarbed_Swing_Ammo","BatNailed_Swing_Ammo","Fishing_Swing_Ammo","Sledge_Swing_Ammo","Chainsaw_Swing_Ammo"];
 	Dayz_Gutting = ["ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"];
 	DayZ_Ignitors = ["ItemMatchbox","Item5Matchbox","Item4Matchbox","Item3Matchbox","Item2Matchbox","Item1Matchbox"];
-	dayz_disallowedVault = ["TentStorage","BuiltItems","ModularItems","DZE_Base_Object","Generator_DZ"];
-	dayz_fuelpumparray = ["FuelPump_DZ","Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","FuelStation","Land_ibr_FuelStation_Feed","Land_fuelstation_army","Land_smd_fuelstation_army","Land_fuelstation","land_fuelstation_w","Land_benzina_schnell"];
+	dayz_disallowedVault = ['DZE_Tent_Base','BuiltItems','ModularItems','DZE_Base_Object','DZE_Generator'];
+	dayz_fuelpumparray = ["DZE_FuelPump","Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","FuelStation","Land_ibr_FuelStation_Feed","Land_fuelstation_army","Land_smd_fuelstation_army","Land_fuelstation","land_fuelstation_w","Land_benzina_schnell"];
 	DayZ_fuelCans = ["ItemJerrycan","ItemFuelcan","ItemFuelBarrel"];
 	DayZ_fuelCansEmpty = ["ItemJerrycanEmpty","ItemFuelcanEmpty","ItemFuelBarrelEmpty"];
-	DayZ_fuelSources = ["Land_Ind_TankSmall","Land_fuel_tank_big","Land_fuel_tank_stairs","Land_fuel_tank_stairs_ep1","Land_wagon_tanker","Land_fuelstation","Land_fuelstation_army","Land_smd_fuelstation_army","land_fuelstation_w","Land_benzina_schnell","Fueltank_DZE"];
+	DayZ_fuelSources = ["Land_Ind_TankSmall","Land_fuel_tank_big","Land_fuel_tank_stairs","Land_fuel_tank_stairs_ep1","Land_wagon_tanker","Land_fuelstation","Land_fuelstation_army","Land_smd_fuelstation_army","land_fuelstation_w","Land_benzina_schnell","DZE_Fueltank"];
 	dayz_plantOutput = ["FoodPumpkin","FoodSunFlowerSeed","ItemKiloHemp","FoodPumpkin","FoodSunFlowerSeed","FoodPotatoRaw","FoodCarrot","ItemKiloHemp","ItemKiloBlackTea","ItemTobaccoLeafs","equip_garlic_bulb","equip_comfreyleafs"];
 	dayz_plantTypes = ["","MAP_pumpkin","MAP_p_Helianthus","fiberplant"] + DZE_Plants;
 	DZE_frozenFood	= ["FoodCanFrozen1","FoodCanFrozen2"];
@@ -301,8 +305,8 @@ if (!isDedicated) then {
 	DZE_frozenFoods	= DZE_frozenFood + DZE_frozenDrink;
 	DZE_unboiledWater = ["ItemWaterBottleInfected","ItemWaterBottle","ItemWaterBottleSafe","ItemWaterbottle1oz","ItemWaterbottle2oz","ItemWaterbottle3oz","ItemWaterbottle4oz","ItemWaterbottle5oz","ItemWaterbottle6oz","ItemWaterbottle7oz","ItemWaterbottle8oz","ItemWaterbottle9oz","ItemPlasticWaterBottle","ItemPlasticWaterBottleInfected","ItemPlasticWaterBottleSafe","ItemPlasticWaterbottle1oz","ItemPlasticWaterbottle2oz","ItemPlasticWaterbottle3oz","ItemPlasticWaterbottle4oz","ItemPlasticWaterbottle5oz","ItemPlasticWaterbottle6oz","ItemPlasticWaterbottle7oz","ItemPlasticWaterbottle8oz","ItemPlasticWaterbottle9oz"];
 	DZE_LockableStorage = DZE_LockedStorage + DZE_UnLockedStorage;
-	DZE_UpgradableStorage = ["StorageShed_DZ","WoodShack_DZ","Wooden_shed_DZ","GunRack_DZ","WoodCrate_DZ","VaultStorageLocked","LockboxStorageLocked","LockboxStorageWinterLocked"];
-	DZE_LockboxesUnlocked = ["LockboxStorage","LockboxStorage2","LockboxStorageWinter","LockboxStorageWinter2"];
+	DZE_UpgradableStorage = ['DZE_StorageShed','DZE_WoodShack','DZE_Wooden_shed','DZE_GunRack','DZE_WoodCrate','DZE_SafeLocked','DZE_LockboxStorageLocked','DZE_LockboxStorageWinterLocked'];
+	DZE_LockboxesUnlocked = ['DZE_LockboxStorage','DZE_LockboxStorage2','DZE_LockboxStorageWinter','DZE_LockboxStorageWinter2'];
 	DZE_REPLACE_WEAPONS = [["Crossbow","DMR","M14_EP1","SVD","SVD_CAMO","M4SPR","VSS_vintorez"],["Crossbow_DZ","DMR_DZ","M14_CCO_DZ","SVD_PSO1_DZ","SVD_PSO1_Gh_DZ","M4SPR_DZE","VSS_vintorez_DZE"]];
 	DZE_replaceMagazines = [["vil_20Rnd_762x51_G3"],["vil_20Rnd_762x51_G3"]];
 	DZE_maintainClasses = DayZ_SafeObjects + DZE_UnLockedStorage;
@@ -312,52 +316,67 @@ if (!isDedicated) then {
 	DZE_tradeVehicle = ["trade_any_vehicle","trade_any_vehicle_free","trade_any_vehicle_old","trade_any_bicycle","trade_any_bicycle_old","trade_any_boat","trade_any_boat_old"];
 	DZE_tradeVehicleKeyless = ["trade_any_bicycle","trade_any_bicycle_old","trade_any_vehicle_free"];
 	DZE_tradeObject = DZE_tradeVehicle + ["trade_backpacks"];
-	DZE_Workshops = ["Wooden_shed_DZ","Wooden_shed2_DZ","WoodShack_DZ","WoodShack2_DZ","WorkBench_DZ","Advanced_WorkBench_DZ","WorkBench","WorkBench_DZE"];
+	DZE_Workshops = ['DZE_Wooden_shed','DZE_Wooden_shed2','DZE_WoodShack','DZE_WoodShack2','DZE_WorkBench','DZE_Advanced_WorkBench','WorkBench'];
 	dayz_treeTypes = ["","MAP_t_picea1s","MAP_t_picea2s","MAP_t_picea3f","MAP_t_pinusN2s","MAP_t_pinusS2f","MAP_t_populus3s","MAP_t_betula2s","MAP_t_fagus2s","MAP_t_fagus2W","MAP_t_malus1s"];
 	DayZ_DropDrageeObjects = DayZ_SafeObjects;
 	Dayz_fishingItems = ["MeleeFishingPole"];
-	DZE_maintainRange = (DZE_PlotPole select 0) + 0.1;	// Default: maintain building objects within plot radius + 0.1 meters.	
+	DZE_maintainRange = (DZE_baseRadius select 0) + 0.1;	// Default: maintain building objects within base radius + 0.1 meters.
 	DZE_refundStorageItemContents = DZE_isNewStorage; // array of non-lockable storage objects that will refund their contents when the object is removed
 	DZE_rocks = ["r_stone_01_ep1.p3d","r_tk_stone_01_ep1.p3d","r_tk_stone_02_ep1.p3d","r_tk_boulder_01_ep1.p3d","r_tk_boulder_02_ep1.p3d","r2_boulder1.p3d","r2_boulder2.p3d","r_boulder_03_ep1.p3d","r2_rock1.p3d","r2_rock2.p3d","r2_rocktower.p3d","r2_rockwall.p3d","r2_stone.p3d","skala3_3.p3d","skala3_2.p3d"];
-	DZE_WaterSources = ["Land_pumpa","Land_Barrel_water","Land_Misc_Well_C_EP1","Land_Misc_Well_L_EP1","land_smd_water_pump","Watertank_DZE","Watertower_DZE","Land_water_tank","MAP_water_tank"];
+	DZE_WaterSources = ["Land_pumpa","Land_Barrel_water","Land_Misc_Well_C_EP1","Land_Misc_Well_L_EP1","land_smd_water_pump","DZE_Watertank","DZE_Watertower","Land_water_tank","MAP_water_tank"];
 
 	// Helper Colors Require Reformatting
-	DZE_maxSnapObjectDiag = 18;    // Internal diagonal distance of the largest buildable & snappable object in the game, currently the Land_WarfareBarrier10xTall_DZ. DO NOT MODIFY THIS!
+	DZE_maxSnapObjectDiag = 18;    // Internal diagonal distance of the largest buildable & snappable object in the game, currently the DZE_Land_WarfareBarrier10xTall. DO NOT MODIFY THIS!
 	DZE_helperSize = [[3,"Sign_sphere100cm_EP1"],[2,"Sign_sphere25cm_EP1"],[1,"Sign_sphere10cm_EP1"]];	// array of helper sizes and corresponding class. Keep in reverse order for optimized lookup
 	DZE_helperSizeDefault = 3; // default to large sphere
 	DZE_NoRefundTransparency = 0.5;	// Red Basebuilding Helper Transparency. min = 0.1, max = 1
 	DZE_removeTransparency = 0.5;	// Green Basebuilding Helper Transparency. min = 0.1, max = 1
 	DZE_deconstructTransparency	= 0.5;	// Blue Basebuilding Helper Transparency. min = 0.1, max = 1
-	DZE_largeObjects = ["Watertower_DZE","DeerStand_DZ","MetalContainer2D_DZ","MetalContainer1G_DZ","MetalContainer1B_DZ","MetalContainer1A_DZ","DragonTeeth_DZ","DragonTeethBig_DZ","MetalFloor4x_DZ","Land_metal_floor_2x2_wreck","WoodFloor4x_DZ","Land_wood_floor_2x2_wreck","Scaffolding_DZ","CinderGateFrame_DZ","CinderGate_DZ","CinderGateLocked_DZ","WoodGateFrame_DZ","Land_DZE_WoodGate","Land_DZE_WoodGateLocked","WoodRamp_DZ","Metal_Drawbridge_DZ","Metal_DrawbridgeLocked_DZ","Land_WarfareBarrier10x_DZ","Land_WarfareBarrier10xTall_DZ","SandNestLarge_DZ"];	 // adjust _allowedDistance in fn_selfActions.sqf for large modular/crafted objects
+	DZE_largeObjects = ["DZE_Watertower","DZE_DeerStand","DZE_MetalContainer2D","DZE_MetalContainer1G","DZE_MetalContainer1B","DZE_MetalContainer1A","DZE_DragonTeeth","DZE_DragonTeethBig","DZE_MetalFloor4x","Land_metal_floor_2x2_wreck","DZE_WoodFloor4x","Land_wood_floor_2x2_wreck","DZE_Scaffolding","DZE_CinderGateFrame","DZE_CinderGate","DZE_CinderGateLocked","DZE_WoodGateFrame","Land_DZE_WoodGate","Land_DZE_WoodGateLocked","DZE_WoodRamp","DZE_Metal_Drawbridge","DZE_Metal_DrawbridgeLocked","DZE_Land_WarfareBarrier10x","DZE_Land_WarfareBarrier10xTall","DZE_SandNestLarge"];	 // adjust _allowedDistance in fn_selfActions.sqf for large modular/crafted objects
 	
 	DZE_NoRefundTexture	= [0, format["#(argb,8,8,3)color(1.00,0.00,0.00,%1,ca)", (DZE_NoRefundTransparency max 0.1)]	];	// red
 	DZE_removeTexture = [0, format["#(argb,8,8,3)color(0.15,1.00,0.40,%1,ca)", (DZE_removeTransparency max 0.1)]	];	// green
 	DZE_deconstructTexture = [0, format["#(argb,8,8,3)color(0.15,0.00,1.00,%1,ca)", (DZE_deconstructTransparency max 0.1)]	];	// blue
-	DZE_plotRed	= [0, format["#(argb,8,8,3)color(1.00,0.00,0.00,%1,ca)", (DZE_plotRedTransparency max 0.1)]	];	// red
-	DZE_plotGreen = [0, format["#(argb,8,8,3)color(0.00,1.00,0.50,%1,ca)", (DZE_plotGreenTransparency max 0.1)]	];	// green
+	DZE_baseRed	= [0, format["#(argb,8,8,3)color(1.00,0.00,0.00,%1,ca)", (DZE_baseRedTransparency max 0.1)]	];	// red
+	DZE_baseGreen = [0, format["#(argb,8,8,3)color(0.00,1.00,0.50,%1,ca)", (DZE_baseGreenTransparency max 0.1)]	];	// green
 
-	DZE_SNAP_POINT_RESET = [0,"#(argb,8,8,3)color(0.00,1.00,0.40,0.70,ca)"];		// green
-	DZE_SNAP_POINT_FOUND = [0,"#(argb,8,8,3)color(1.00,0.00,0.00,0.70,ca)"];		// red / detected
-	DZE_SNAP_HELPER_CLASS = "Sign_sphere10cm_EP1";
+	HELPER_LARGE = "Sign_sphere100cm_EP1";
 
-	DZE_T = false;	// terrain align
-	DZE_P = false;	// show/hide plot pole boundary
-	DZE_L = false;	// local mode
+	DZE_T = false;		// terrain align
+	DZE_P = false;		// show/hide base boundary
+	DZE_L = false;		// local mode
 	DZE_LOCAL_MODE = false;	// toggle between local axis and world axis while base building
-	DZE_H = false;	// hide/unhide panel
+	DZE_H = false;		// hide/unhide panel
 	DZE_HIDE_PANEL = false;
 	DZE_TAB = false;	// tab forwards through snapping points
 	DZE_TAB_SHIFT = false;	// tab backwards through snapping points
 	DZE_BACK = false;	// reset vectors
 	DZE_LEFT = false;	// bank left
 	DZE_RIGHT = false;	// bank right
-	DZE_UP = false;	// pitch forward
+	DZE_UP = false;		// pitch forward
 	DZE_DOWN = false;	// pitch back
 	DZE_MINUS = false;	// decrease angle
 	DZE_PLUS = false;	// increase angle (=+)
 	
 	snapGizmos = []; // may not need this
 	snapGizmosNearby = []; // may not need this
+	DZE_snapGeneratedPointTypes = [];
+	DZE_snapGeneratedPoints = [];
+	DZE_snapCandidatePadding = 0; // Movement reserve retained by the nearby-object broad phase.
+	DZE_snapHeldPointRadius = 0; // Maximum local radius of the held object's configured snap points.
+	DZE_snapStateSession = 0;
+	DZE_snapStateRevision = 0;
+	DZE_snapPointsSession = -1;
+	DZE_snapNearbyPointsSession = -1;
+	DZE_snapPointsReady = false;
+	DZE_snapRefresh = false;
+	DZE_snapRefreshSession = -1;
+	DZE_snapRefreshGeneration = 0;
+	DZE_snapDistanceCheckGeneration = 0;
+	DZE_snapDistanceCheckRevision = -1;
+	DZE_snapDistanceCheckRunning = false;
+	DZE_snapDistanceCheckHandle = 0 spawn {}; // Initialize as script data type; Arma 2 has no scriptNull.
+	DZE_snapDistanceSearchRevision = 0;
 
 	//temperature variables
 	dayz_temperatur = 36;
@@ -440,7 +459,7 @@ if (!isDedicated) then {
 	DZE_GERMAN	= 1;
 	DZE_HOTKEYS	= [[DZE_ENGLISH,"STR_EPOCH_ENGLISH"], [DZE_GERMAN,"STR_EPOCH_GERMAN"]];
     local _language    = DZE_ENGLISH;
-    if (localize "STR_EPOCH_TUT_BUILD" == "Bauen") then {_language = DZE_GERMAN};	
+    if (localize 'STR_SNAPPING_HELP_BUILD' == 'Bauen') then {_language = DZE_GERMAN};
 	DZE_KEYBOARD    = profileNamespace getVariable ["keyboardLayout", _language];
 	DZE_LEFT_HANDED	= profileNamespace getVariable ["leftHanded", false];
 	DZE_Q = false;
@@ -453,7 +472,6 @@ if (!isDedicated) then {
 	DZE_5 = false;
 	DZE_6 = false;
 	DZE_F = false;
-	DZE_cancelBuilding = false;
 	DZE_TEMP_treedmg = 1;
 	DZE_Surrender = false;
 	DZE_InRadiationZone = false;
@@ -514,7 +532,7 @@ if (!isDedicated) then {
 		["neck","pilot"]
 	];
 	dayz_insideBuilding	= objNull;	// building name the player is currently inside of, or objNull if player is outside
-	DZE_insideExceptions	= ["Garage_Green_DZ","Garage_White_DZ","Garage_Brown_DZ","Garage_Grey_DZ","Wooden_shed_DZ","Wooden_shed2_DZ","WoodShack_DZ","WoodShack2_DZ","StorageShed_DZ","StorageShed2_DZ","Concrete_Bunker_DZ","Concrete_Bunker_Locked_DZ","SandNestLarge_DZ"]; // list of base-building objects that allow checking if player is inside (fnc_isInsideBuilding)
+	DZE_insideExceptions	= ['DZE_Garage_Green','DZE_Garage_White','DZE_Garage_Brown','DZE_Garage_Grey','DZE_Wooden_shed','DZE_Wooden_shed2','DZE_WoodShack','DZE_WoodShack2','DZE_StorageShed','DZE_StorageShed2','DZE_Concrete_Bunker','DZE_Concrete_Bunker_Locked','DZE_SandNestLarge']; // list of base-building objects that allow checking if player is inside (fnc_isInsideBuilding)
 	DZE_sheltered		= 0.0;	// used in determining how much a player is sheltered from the environment
 	DZE_roofOverhead	= false;
 	DZE_allTrees		= dayz_trees + ["b_craet1.p3d"];	// include shrubs that the player can hide in
@@ -542,22 +560,67 @@ if (!isDedicated) then {
 	DZE_AGLTOASL_HELPER = AGL_HELPER_CLASS createVehicleLocal ORIGIN;
 	DZE_AGLTOASL_HELPER setVectorDirAndUp [VECTOR_DIR,VECTOR_UP];
 
-	DZE_buildKeysActive	= false;
-	KEY_MINUS		= false;
-	KEY_EQUALS		= false;
-	KEY_BACK		= false;
-	KEY_TAB			= false;
-	KEY_TAB_SHIFT		= false;
-	DZE_MOVE_IDX		= 0;
-	DZE_MOVE_Z		= false;
-	DZE_ROTATION_IDX	= 0;
-	DZE_ROTATE		= false;
-	KEY_T			= false;
-	KEY_P			= false;
-	KEY_F			= false;
-	KEY_H			= false;
-	KEY_L			= false;
-	KEY_SPACE		= false;
+///	DZE_buildKeysActive	= false;
+	BUILD_KEY_QUEUE		= [];
+	BUILD_STAGE		= BUILD_INACTIVE;
+	BUILD_ROTATION_MODE	= true;
+
+	local _defaultVectorDegrees = [0.01, 0.1, 1, 5, 15, 45, 90];
+	local _defaultVectorDegree = 45;
+	local _configuredVectorDegrees = if (!isNil 'DZE_vectorDegrees' && {typeName DZE_vectorDegrees == 'ARRAY'}) then {DZE_vectorDegrees} else {_defaultVectorDegrees};
+	local _configuredVectorDegree = if (!isNil 'DZE_curDegree' && {typeName DZE_curDegree == 'SCALAR' && {finite DZE_curDegree}}) then {DZE_curDegree} else {_defaultVectorDegree};
+
+	BUILD_DEGREES = [];
+	{
+		if (typeName _x == 'SCALAR' && {(finite _x) && {_x > 0 && {_x <= 360}}} && {!(_x in BUILD_DEGREES)}) then {
+			BUILD_DEGREES set [count BUILD_DEGREES,_x];
+		};
+	} forEach _configuredVectorDegrees;
+
+	if (count BUILD_DEGREES == 0) then {BUILD_DEGREES = +_defaultVectorDegrees};
+	BUILD_CUR_DEGREE = if (_configuredVectorDegree in BUILD_DEGREES) then {
+		_configuredVectorDegree
+	} else {
+		[BUILD_DEGREES select 0,_defaultVectorDegree] select (_defaultVectorDegree in BUILD_DEGREES)
+	};
+
+	#ifdef DEBUG_VECTOR_DEGREE_CONFIG
+		diag_log format ['[%1 Debug]: [Vector Degree Config]: Degrees: %2 | Starting degree: %3',['Client','Server'] select isServer,BUILD_DEGREES,BUILD_CUR_DEGREE];
+	#endif
+
+	{if (typeName _x == 'STRING') then {DZE_SafeZoneNoBuildItems set [_forEachIndex, [_x, DZE_SafeZoneNoBuildDistance]]}} forEach DZE_SafeZoneNoBuildItems;		// rebuild DZE_SafeZoneNoBuildItems to [[class, distance], [class, distance], [...]]
+
+	call {
+		if (toLower worldName in ['chernarus','chernarus_winter']) exitWith {build_minpos = [0,0]; build_maxpos = [20000,20000]};
+		if (toLower worldName in ['napf','ruegen','sauerland']) exitWith {build_minpos = [0,0]; build_maxpos = [26000,26000]};
+		if (toLower worldName in ['tavi','taviana']) exitWith {build_minpos = [0,0]; build_maxpos = [26000,26000]};
+		if (toLower worldName in ['fdf_isle1_a']) exitWith {build_minpos = [0,0]; build_maxpos = [20000,20000]};
+		build_minpos = [0,0]; build_maxpos = [20000,20000]; // Default
+	};
+
+///	KEY_MINUS		= false;
+///	KEY_EQUALS		= false;
+///	KEY_BACK		= false;
+///	KEY_TAB			= false;
+///	KEY_TAB_SHIFT		= false;
+///	DZE_MOVE_IDX		= 0;
+///	DZE_MOVE_Z		= false;
+///	DZE_ROTATION_IDX	= 0;
+///	DZE_ROTATE		= false;
+///	KEY_T			= false;
+///	KEY_P			= false;
+///	KEY_F			= false;
+///	KEY_H			= false;
+///	KEY_L			= false;
+///	KEY_SPACE		= false;
+
+	DZE_NOCOLOR		= [0,"#(argb,8,8,3)color(0,0,0,0,ca)"];			// transparent helper color
+	DZE_SNAP_POINT_RESET	= [0,"#(argb,8,8,3)color(0.00,1.00,0.40,0.70,ca)"];	// green
+	DZE_SNAP_POINT_FOUND	= [0,"#(argb,8,8,3)color(1.00,0.00,0.00,0.70,ca)"];	// red / detected
+	DZE_SNAP_HELPER_CLASS	= "Sign_sphere10cm_EP1";
+
+	DZE_JOURNAL_OPEN	= false;
+	
 
 	DZE_KEY_LOCK		= NO_LOCK;
 	currentChannel		= localize 'str_channel_group';	// [A3] Returns currently selected user chat channel on the UI
@@ -588,5 +651,7 @@ if (!isDedicated) then {
 ///	registerLayer(DZE_rsc_zombieText);
 ///	registerLayer(DZE_rsc_debugOverlay);
 ///	registerLayer(DZE_rsc_ZLSTool);
+
+	#include "surfaceNoise.sqf"
 
 };

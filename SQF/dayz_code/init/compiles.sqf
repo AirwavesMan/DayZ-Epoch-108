@@ -2,6 +2,10 @@ if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\init\server_functions.sqf";
 };
 
+#define path(s)                 _path = format ['\z\addons\dayz_code\functions\%1\', s]
+#define FUNCTION(fn)            fn = compile preprocessFileLineNumbers (_path + 'fn.sqf')
+#define call_sqf(file)          call compile preprocessFileLineNumbers (_path + 'file.sqf')
+
 if (!isDedicated) then {
 	//"filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 	//"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "filmic";		//DayZ Vanilla
@@ -46,7 +50,6 @@ if (!isDedicated) then {
 	player_humanityMorph = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_humanityMorph.sqf";
 	player_throwObject = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_throwObject.sqf";
 	player_alertZombies = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_alertZombies.sqf";
-	player_fireMonitor = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\fire_monitor.sqf";
 	player_countMagazines = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_countMagazines.sqf";
 	player_countMagazinesWBackpack = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_countMagazinesWBackpack.sqf";
 	player_regularSave = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_regularSave.sqf";
@@ -84,14 +87,6 @@ if (!isDedicated) then {
 	player_removeAttachment = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_removeAttachment.sqf";
 	player_fillWater = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\water_fill.sqf";
 	player_mineStone = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_mineStone.sqf";
-	player_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\modular_build.sqf";
-	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\snap_functions.sqf";
-	snap_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\snap_build.sqf";
-	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\vector_functions.sqf";
-	build_vectors = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\build_vectors.sqf";
-	dze_snap_building = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_snap_building.sqf";
-
-	FNC_find_plots = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_find_plots.sqf";
 	player_wearClothes = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_wearClothes.sqf";
 	player_dropWeapon = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_dropWeapon.sqf";
 	player_combineMag = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMags.sqf";
@@ -143,7 +138,6 @@ if (!isDedicated) then {
 	dze_deathMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_deathMessage.sqf";
 	dze_filterCheats = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_filterCheats.sqf";
 	dze_isnearest_player = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_isNearestPlayer.sqf";
-	dze_buildChecks = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_buildChecks.sqf";
 	dze_requiredItemsCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_requiredItemsCheck.sqf";
 	dze_surrender_off = {player setVariable ["DZE_Surrendered",false,true]; DZE_Surrender = false;};
 	epoch_generateKey = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\epoch_generateKey.sqf";
@@ -175,23 +169,7 @@ if (!isDedicated) then {
 	player_unlockVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockVault.sqf";
 	player_upgradeVehicle =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
 	fn_displayHelpers	= compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_displayHelpers.sqf";
-	PlotGetFriends = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotGetFriends.sqf";
-	PlotNearbyHumans = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotNearbyHumans.sqf";
-	PlotAddFriend = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotAddFriend.sqf";
-	PlotRemoveFriend = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotRemoveFriend.sqf";
-	PlotObjects = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotObjects.sqf";
-	PlotPreview = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotToggleMarkers.sqf";
-
-	if (DZE_doorManagement) then {
-		DoorGetFriends = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorGetFriends.sqf";
-		DoorNearbyHumans = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorNearbyHumans.sqf";
-		DoorAddFriend = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorAddFriend.sqf";
-		DoorRemoveFriend = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorRemoveFriend.sqf";
-		player_manageDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf";
-		player_enterCode = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\player_enterCode.sqf";
-	};
 	MaintainPlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\maintain_area.sqf";
-	FNC_check_access = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_check_access.sqf";
 	fnc_usec_damageHandler = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
 	fnc_radioState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\radioState.sqf"; // Toggle radio on and off
 	fnc_localizeMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_localizeMessage.sqf";
@@ -657,26 +635,6 @@ if (!isDedicated) then {
 	// recent murders menu
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_murderBoard.sqf";
 
-	dayz_inflame_showMenu = {
-		private ["_object","_ret","_flame","_islit","_hasTool","_whatIwant"];
-
-		_object = _this select 0;
-		_whatIwant = _this select 1;
-		_ret = false;
-
-		_islit = (inflamed _object);
-
-		_hasTool = false;
-		if (!_islit) then {
-			{
-				if (_x in items player) exitWith { _hasTool = true; };
-			} count DayZ_Ignitors;
-		};
-		_ret = (_whatIwant && {!_islit} && {_hasTool}) or (!_whatIwant && {_isLit});
-
-		_ret
-	};
-
 	dayz_reduceItems = {
 		private ["_item","_class","_amount","_qtyRemaining"];
 
@@ -706,39 +664,17 @@ if (!isDedicated) then {
 		true
 	};
 
-	dayz_inflame_showMenu_other = {
-		private ["_fireplace","_ret","_flame","_islit","_hasTool","_whatIwant"];
-
-		_fireplace = _this select 0;
-		_whatIwant = _this select 1;
-		_ret = false;
-		// return a boolean. true <=> player can put out the lit fire, can light a fire with match
-		_flame = nearestObjects [_fireplace, ["flamable_DZ"], 1];
-		_flame = if (count _flame > 0) then { _flame select 0 } else { objNull };
-		_islit = !(isNull _flame) && {(inflamed _flame)};
-		_hasTool = false;
-		if (!_islit) then {
-			{
-				if (_x in items player) exitWith { _hasTool = true; };
-			} count DayZ_Ignitors;
-		};
-		_ret = (_whatIwant && !_islit && _hasTool) or (!_whatIwant && _isLit);
-		//systemChat str [_flame, _hasTool, _islit, _ret];
-
-		_ret
-	};
-
 	DZE_PVE_Group_Check = {
 		private ["_player", "_body", "_nameBody", "_ingroup", "_name"];
 
 		_player = _this select 0;
 		_body = _this select 1;
-		_name = name _player;
+		_name = _player call DZE_fnc_getNamePlayer;
 		_nameBody = _body getVariable ["bodyName","unknown"];
 		_ingroup = false;
 
 		{
-			if (_nameBody == name _x) exitwith {
+			if (_nameBody == (_x call DZE_fnc_getNamePlayer)) exitwith {
 				_ingroup = true;
 			};
 		} count (units group _player);
@@ -757,36 +693,164 @@ if (!isDedicated) then {
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
-	#define path(s)                 _path = format ['\z\addons\dayz_code\functions\%1\', s]
-	#define FUNCTION(fn)            fn = compile preprocessFileLineNumbers (_path + 'fn.sqf')
-	#define call_sqf(file)          call compile preprocessFileLineNumbers (_path + 'file.sqf')
-
 	path('actions');
 
 	FUNCTION(DZE_fnc_actionTakeBackpack);		// Player takes specified backpack from the ground.
 	FUNCTION(DZE_fnc_playAction);			// Plays the specified action and returns whether the animation finished.
+	FUNCTION(DZE_fnc_playActionPutDown);		// Plays the put-down action and returns whether the animation finished.
 	FUNCTION(DZE_fnc_playActionRaiseWeapon);	// Plays the raise weapon action and returns whether the animation finished.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('actions\fire');
+
+	FUNCTION(DZE_fnc_actionInflame);		// Turns the flame effect on or off for an ignitable object.
+	FUNCTION(DZE_fnc_inflame);			// Controls the direct or networked proxy flame of a fireplace.
+	FUNCTION(DZE_fnc_inflameShowMenu);		// Checks whether a direct or proxy fire action should be displayed.
+	FUNCTION(DZE_fnc_isInflamed);			// Checks whether a fireplace or its networked proxy is burning.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	path('arrays');
 
+	FUNCTION(DZE_fnc_apply);			// [A3] Applies the given code to each element of the given array (without modifying the original array).
 	FUNCTION(DZE_fnc_selectDistinct);		// Returns a random selection of distinct entries from an array.
 	FUNCTION(DZE_fnc_subSelect);			// Returns a sub-selection from an array or string.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('base');
+
+	FUNCTION(DZE_fnc_findBases);			// Finds base markers within the configured base or minimum distance.
+	FUNCTION(DZE_fnc_checkAccess);			// Checks object ownership, friendship, base access and door access.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('base\baseManagement');
+	FUNCTION(DZE_fnc_baseToggleMarkers);		// Displays the active base boundary.
+	FUNCTION(DZE_fnc_baseAddFriend);		// Adds the selected nearby player to the active base's friend list.
+	FUNCTION(DZE_fnc_baseGetFriends);		// Refreshes the active base's friend list.
+	FUNCTION(DZE_fnc_baseManagement);		// Opens the management dialog for the selected base.
+	FUNCTION(DZE_fnc_baseNearbyHumans);	// Refreshes players eligible to become base friends.
+	FUNCTION(DZE_fnc_baseObjects);		// Displays the active base's object count.
+	FUNCTION(DZE_fnc_baseRemoveFriend);	// Removes the selected base friend.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	if (DZE_doorManagement) then {
+		path('base\doorManagement');
+
+		FUNCTION(DZE_fnc_doorAddFriend);		// Adds the selected nearby player to the active door's friend list.
+		FUNCTION(DZE_fnc_doorEnterCode);		// Opens the manual combination dialog.
+		FUNCTION(DZE_fnc_doorGetFriends);		// Refreshes the active door's friend list.
+		FUNCTION(DZE_fnc_doorManagement);		// Opens the management dialog for the selected door.
+		FUNCTION(DZE_fnc_doorNearbyHumans);	// Refreshes players eligible to become door friends.
+		FUNCTION(DZE_fnc_doorRemoveFriend);	// Removes the selected door friend.
+	};
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('build');
+
+	FUNCTION(DZE_fnc_generateCode);			// Collects or generates a valid code for a lockable build object.
+	FUNCTION(DZE_fnc_modularBuild);			// Construct a modular base-building object and save it to the database.
+	FUNCTION(DZE_fnc_overlapsRoad);			// Returns whether an object's bounding box overlaps a nearby road segment.
+	FUNCTION(DZE_fnc_queueBuildInput);		// Appends one build input to the active FIFO queue.
+
+	path('build\modularBuilding');
+
+	FUNCTION(DZE_fnc_buildAxialHelper);		// Creates local vertical helpers at the active plot center.
+	FUNCTION(DZE_fnc_buildCollisionCheck);		// Detects and handles player movement caused by preview collisions.
+	FUNCTION(DZE_fnc_buildPreviewAttach);		// Attaches the local build-preview helper to the player.
+	FUNCTION(DZE_fnc_buildPreviewCleanup);		// Deletes local build-preview objects and helpers.
+	FUNCTION(DZE_fnc_buildPreviewConfirm);		// Captures and confirms the final local preview transform.
+	FUNCTION(DZE_fnc_buildPreviewCreate);		// Creates the complete local build-preview context.
+	FUNCTION(DZE_fnc_buildPreviewDetach);		// Detaches the local build-preview helper from the player.
+	FUNCTION(DZE_fnc_buildPreviewMove);		// Moves the local build preview along the selected axis.
+	FUNCTION(DZE_fnc_buildPreviewPreventUnderground); // Cancels builds whose support point or model center is underground.
+	FUNCTION(DZE_fnc_buildPreviewReset);		// Restores the local build preview and its menus.
+	FUNCTION(DZE_fnc_buildPreviewSetup);		// Initializes the local build-preview attachment chain.
+	FUNCTION(DZE_fnc_buildResetMenus);		// Resets snap and vector action menus after a transform reset.
+	FUNCTION(DZE_fnc_buildTerrainAlign);		// Aligns the local build preview with the terrain surface.
+
+	path('build\validation');
+
+	FUNCTION(DZE_fnc_buildExit);			// Cleans up and reports a cancelled build.
+	FUNCTION(DZE_fnc_buildValidate);			// Executes one table of build-validation functions.
+	FUNCTION(DZE_fnc_buildValidationBlacklisted);	// Rejects building near blacklisted building classes.
+	FUNCTION(DZE_fnc_buildValidationCancelled);	// Rejects a build cancelled by the player.
+	FUNCTION(DZE_fnc_buildValidationExistingPlot);	// Rejects a new plot overlapping an existing plot.
+	FUNCTION(DZE_fnc_buildValidationHeight);		// Enforces the configured build-height limit.
+	FUNCTION(DZE_fnc_buildValidationMap);		// Enforces the configured map extents.
+	FUNCTION(DZE_fnc_buildValidationMovement);	// Rejects sustained fast movement during preview placement.
+	FUNCTION(DZE_fnc_buildValidationNearestPlot);	// Resolves the single active base.
+	FUNCTION(DZE_fnc_buildValidationNearObject);	// Rejects building near configured exclusion classes.
+	FUNCTION(DZE_fnc_buildValidationObjectLimit);	// Enforces the maintained-object limit.
+	FUNCTION(DZE_fnc_buildValidationPlotAccess);	// Validates access to the active plot.
+	FUNCTION(DZE_fnc_buildValidationPlotDistance);	// Enforces player and preview distance from the active plot.
+	FUNCTION(DZE_fnc_buildValidationPlotLimit);	// Enforces the per-player plot limit.
+	FUNCTION(DZE_fnc_buildValidationRestrictedZone);	// Rejects building inside restricted zones.
+	FUNCTION(DZE_fnc_buildValidationRoad);		// Rejects final preview overlap with roads.
+	FUNCTION(DZE_fnc_buildValidationSafeZone);	// Rejects configured classes near safe zones.
+	FUNCTION(DZE_fnc_buildValidationState);		// Validates the player's general build state.
+	FUNCTION(DZE_fnc_buildValidationTools);		// Validates the required tools and items.
+	FUNCTION(DZE_fnc_buildValidationTrader);		// Rejects building near traders.
+	FUNCTION(DZE_fnc_buildValidationWater);		// Rejects building over sea water when disabled.
+
+	path('build\snapBuilding');
+
+	FUNCTION(DZE_fnc_snapBuilding);			// Displays the current snap-building helper panel.
+	FUNCTION(DZE_fnc_snapActionCleanup);		// Creates, refreshes or removes the snapping action menus.
+	FUNCTION(DZE_fnc_snapBuildAction);		// Handles snapping action-menu input.
+	FUNCTION(DZE_fnc_snapCleanupOnBuildEnd);		// Removes snapping actions after the build preview ends.
+	FUNCTION(DZE_fnc_snapDistanceCheck);		// Searches the closest compatible snap-point pair after events or movement.
+	FUNCTION(DZE_fnc_snapDistanceSearchRequest);	// Marks the snap distance search dirty after an external event.
+	FUNCTION(DZE_fnc_snapDistanceCheckStart);		// Starts the single snap distance-check worker.
+	FUNCTION(DZE_fnc_snapDistanceCheckStop);		// Stops the active snap distance-check worker.
+	FUNCTION(DZE_fnc_snapMoveHelper);		// Moves the helper to the selected held-object snap point.
+	FUNCTION(DZE_fnc_snapObject);			// Aligns the helper with a compatible nearby snap point.
+	FUNCTION(DZE_fnc_snapPointDefinition);		// Builds explicit snap metadata for a generated model-space point.
+	FUNCTION(DZE_fnc_snapPointMetadata);		// Validates explicit snap-point type and normal metadata.
+	FUNCTION(DZE_fnc_snapPointsCompatible);		// Validates a universal snap-point connection pair.
+	FUNCTION(DZE_fnc_snapRelativeOrientation);	// Selects the nearest valid target-relative orthogonal orientation.
+	FUNCTION(DZE_fnc_snapPointsCleanup);		// Deletes all local snapping helpers.
+	FUNCTION(DZE_fnc_snapPointsForObject);		// Returns configured or generated snap points for a build object.
+	FUNCTION(DZE_fnc_snapPointsInit);		// Creates snap-point helpers on the held object.
+	FUNCTION(DZE_fnc_snapPointsNearbyInit);		// Creates snap-point helpers on nearby objects.
+	FUNCTION(DZE_fnc_snapRefresh);			// Refreshes nearby snap points after object movement.
+	FUNCTION(DZE_fnc_snapSelect);			// Selects the next or previous snapping state.
+	FUNCTION(DZE_fnc_snapStateTransition);		// Applies one complete snap-state transition.
+	FUNCTION(DZE_fnc_snapSurfacePoint);		// Refines a generated point against collision geometry.
+	FUNCTION(DZE_fnc_snapText);			// Displays information over the selected snap point.
+
+	path('build\vectorBuilding');
+
+	FUNCTION(DZE_fnc_vectorActionCleanup);		// Creates, refreshes or removes the vector-rotation action menu.
+	FUNCTION(DZE_fnc_vectorBuildAction);		// Handles vector-building action-menu input.
+	FUNCTION(DZE_fnc_vectorChangeDegree);		// Selects the adjacent vector-building rotation increment.
+	FUNCTION(DZE_fnc_vectorDegreeActionCleanup);	// Creates, refreshes or removes the vector-degree action menu.
+	FUNCTION(DZE_fnc_vectorReset);			// Resets the build helper orientation.
+	FUNCTION(DZE_fnc_vectorRotate2D);		// Rotates the build helper around the parent-relative or world Z axis.
+	FUNCTION(DZE_fnc_vectorRotate3D);		// Applies a relative rotation around one local axis.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	path('geometry');
 
 	FUNCTION(DZE_fnc_inAngleSector);		// Returns true if a position lies within an angle sector.
+	FUNCTION(DZE_fnc_overlapsBox2D);		// Returns whether two projected bounding boxes overlap using SAT.
+	FUNCTION(DZE_fnc_projectBox2D);		// Projects an object's bounding box into world XY space for SAT.
+	FUNCTION(DZE_fnc_terrainIntersectAtASL);	// Returns the terrain or sea-level intersection between two ASL positions.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	path('gui');
 
+	FUNCTION(DZE_fnc_checkStealth);			// Calculate player's noise and visibility.
 	FUNCTION(DZE_fnc_highlightText);		// Displays fixed or relative text over the specified object.
 	FUNCTION(DZE_fnc_lootText);			// Displays floating text above a lootpile.
 	FUNCTION(DZE_fnc_rollingMessages);		// Display a rolling message at the lower center of screen.
+	FUNCTION(DZE_fnc_updateGUI);			// Handle primary GUI updates.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -819,25 +883,39 @@ if (!isDedicated) then {
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
+	path('player');
+
+	FUNCTION(DZE_fnc_nearPlayerMan);			//	Checks if a player is near an object, this checks only the Man as model not a vehicle
+///	FUNCTION(DZE_fnc_playerCheckStealth);		// Calculate player's noise and visibility.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('numbers');
+
+	FUNCTION(DZE_fnc_randomRange);			// Returns a random integer between the supplied min/max range.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
 	path('objects');
 
 	FUNCTION(DZE_fnc_createBackpack);		// Creates a backpack of the given type and aligns it with either the terrain or a flat surface.
 	FUNCTION(DZE_fnc_revealObject);			// Reveals an object to all nearby players.
+	FUNCTION(DZE_fnc_revealServerObject);	// Reveals an object sent by server to a specific player.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	path('positions');
 
 	FUNCTION(DZE_fnc_AGLToASL);			// [A3] Converts position from PositionAGL to PositionASL.
-	FUNCTION(DZE_fnc_modelCenterWorld);		// Returns the object's model center in PositionASL.
 	FUNCTION(DZE_fnc_safeZonePosCheck);		// Returns true if a contextual action is prohibited within a detected safe zone, or false if allowed.
-	FUNCTION(DZE_fnc_setPosWorld);			// [A3] Sets position of an object based on the model's center position.
+	FUNCTION(DZE_fnc_vehicleCenterWorld);		// Returns the vehicle's model center in PositionASL.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	path('strings');
 
 	FUNCTION(DZE_fnc_getAnimation);			// Returns the specified sub-string of the unit's animation state.
+	FUNCTION(DZE_fnc_isBentOver);			// Returns true if unit is bent over.
 	FUNCTION(DZE_fnc_isStanding);			// Returns true if unit is standing.
 	FUNCTION(DZE_fnc_isWeaponLowered);		// Returns true if unit's weapon is lowered.
 	FUNCTION(DZE_fnc_isWeaponRaised);		// Returns true if unit's weapon is raised.
@@ -847,6 +925,14 @@ if (!isDedicated) then {
 	path('vectors');
 
 	FUNCTION(DZE_fnc_getRotationMatrix);		// Returns the object's world orientation as an [x,y,z] rotation matrix.
+	FUNCTION(DZE_fnc_vectorDirAndUpRelative);	// Converts world vectorDirAndUp into a parent-relative orientation.
+	FUNCTION(DZE_fnc_rotateObject2D);		// Rotates an object around its world Z axis specified by angles in degrees.
+	FUNCTION(DZE_fnc_rotateObject3D);		// Rotates an object around its local axes specified by pitch, roll, and yaw angles in degrees.
+	FUNCTION(DZE_fnc_rotateVector2D);		// Rotates the vector around the origin by the given angle.
+	FUNCTION(DZE_fnc_matrixFromEuler);		// Convert Euler rotation vector to vectorDirAndUp matrix using the quaternion method.
+	FUNCTION(DZE_fnc_matrixMultiply);		// [A3] Returns resulting matrix from the multiplication of two matrices.
+	FUNCTION(DZE_fnc_matrixMultiply3D);		// Returns resulting matrix from the multiplication of a 3D vector and a matrix.
+	FUNCTION(DZE_fnc_matrixToEuler);		// Convert 3x3 rotation matrix to Euler rotation vector.
 	FUNCTION(DZE_fnc_matrixTranspose);		// [A3] Returns transposed version of the given matrix.
 	FUNCTION(DZE_fnc_matrixTranspose3x3);		// [A3] Returns transposed version of the given 3x3 matrix.
 	FUNCTION(DZE_fnc_vectorCrossProduct);		// [A3] Returns the cross product of two 3D vectors.
@@ -855,7 +941,9 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_vectorMagnitude);		// [A3] Returns the magnitude of a 3D vector.
 	FUNCTION(DZE_fnc_vectorNormalized);		// [A3] Returns normalized vector (unit vector, vectorMagnitude == 1) of given 3D vector.
 
-///	path('vectors\v2');
+	path('vectors\v2');
+
+	FUNCTION(DZE_fnc_v2DotProduct);			// Returns the dot product of two 2D vectors.
 
 	path('vectors\v3');
 
@@ -870,8 +958,22 @@ if (!isDedicated) then {
 
 	FUNCTION(DZE_fnc_zombieGenerate);		// Spawns a zombie at the given location.
 
-	///////////////////////////////////////////////////////////////////////////////////////////
 };
+
+path('positions');
+
+FUNCTION(DZE_fnc_getNearestLocation);	//	Returns the nearest Town, City etc. and if no found Wilderness
+FUNCTION(DZE_fnc_modelCenterWorld);	// Returns the object's model center in PositionASL.
+FUNCTION(DZE_fnc_setPosWorld);		// [A3] Sets position of an object based on the model's center position.
+
+path('player');
+
+FUNCTION(DZE_fnc_getNamePlayer);
+
+path('verification');
+
+FUNCTION(DZE_fnc_checkValidClassname);
+
 
 //Both
 BIS_fnc_selectRandom = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BIS_fnc\fn_selectRandom.sqf";
@@ -969,52 +1071,6 @@ player_sumMedical = {
 	_medical
 };
 
-dayz_inflame = {
-    private "_object";
-    _object = _this select 0;
-
-    if (_this select 1) then { // light the fire
-        if (["matches",0.12] call fn_dynamicTool) then { _object inflame true; };
-    } else { // put out the fire
-		_object inflame false;
-    };
-};
-
-dayz_inflame_other = {
-    private ["_fireplace","_flame","_pos"];
-
-    _fireplace = _this select 0;
-    if (_this select 1) then { // true = light the fire
-        _flame = nearestObjects [_fireplace, ["flamable_DZ"], 1];
-        _flame = if (count _flame > 0) then { _flame select 0 } else { objNull };
-        if (isNull _flame) then {
-            //_flame = if (local _fireplace) then { "flamable_DZ" createVehicleLocal getMarkerpos "respawn_west" } else {  createVehicle [ "flamable_DZ", getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"] };
-			_flame = createVehicle ["flamable_DZ", [0,0,0], [], 0, "CAN_COLLIDE"]; // fireplace can be local (towngenerator, poi...) but flames will be networked
-			_pos = getPosASL _fireplace;
-			if (surfaceIsWater _pos) then {
-				// modelToWorld changes with wave height
-				_flame setPosASL [_pos select 0,_pos select 1,(_pos select 2)+0.2];
-			} else {
-				_pos = _fireplace modelToWorld (_fireplace selectionPosition "ohniste"); // ATL
-				_flame setPosATL _pos;
-			};
-        };
-
-        if (["matches",0.12] call fn_dynamicTool) then { _flame inflame true; };
-    } else { // put out the fire
-        _flame = nearestObjects [_fireplace, ["flamable_DZ"], 1];
-        if (count _flame > 0) then { (_flame select 0) inflame false; };
-    };
-};
-
-isInflamed = {
-    private "_flame";
-
-    _flame = nearestObjects [_this, ["flamable_DZ"], 1];
-    _flame = if (count _flame > 0) then { _flame select 0 } else { objNull };
-    !(isNull _flame) && {(inflamed _flame)}
-};
-
 dayz_engineSwitch = {
 	private["_vehicle","_state"];
 	_vehicle = _this select 0;
@@ -1027,7 +1083,7 @@ dayz_engineSwitch = {
 		publicVariableServer "PVDZ_send";
 	};
 };
-
+/**
 DZE_SafeZonePosCheck = {
 	private ["_customRadius","_position","_skipPos"];
 	_position = _this select 0;
@@ -1041,7 +1097,7 @@ DZE_SafeZonePosCheck = {
 	};
 	_skipPos;
 };
-
+**/
 fnc_lockCode = {
 	private ["_color","_code","_cText"];
 
