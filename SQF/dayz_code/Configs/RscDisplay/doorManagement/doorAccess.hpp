@@ -57,7 +57,7 @@ class DoorAccess
 			y = 0.50 * safezoneH + safezoneY;
 			style = 2;
 			w = 0.20;
-			onButtonClick = "call player_enterCode";
+			onButtonClick = "call DZE_fnc_doorEnterCode";
 		};
 
 		class ZupaButton_2: ZSC_RscButtonMenu
@@ -77,7 +77,7 @@ class DoorAccess
 			x = 0.40 * safezoneW + safezoneX;
 			y = 0.60 * safezoneH + safezoneY;
 			w = 0.20;
-			onButtonClick = "[] call player_manageDoor";
+			onButtonClick = "[] call DZE_fnc_doorManagement";
 		};
 	};
 };

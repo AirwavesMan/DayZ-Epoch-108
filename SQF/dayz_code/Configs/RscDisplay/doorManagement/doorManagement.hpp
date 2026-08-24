@@ -48,7 +48,7 @@ class DoorManagement
 			x = 0.33 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "[lbData [7101,lbCurSel 7101]] call DoorAddFriend;";
+			onButtonClick = "lbData [7101,lbCurSel 7101] call DZE_fnc_doorAddFriend;";
 		};
 
 		class RscShortcutButton_7105: ZSC_RscButtonMenu
@@ -58,7 +58,7 @@ class DoorManagement
 			x = 0.47 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "[(lbCurSel 7102)] call DoorRemoveFriend;";
+			onButtonClick = "(lbCurSel 7102) call DZE_fnc_doorRemoveFriend;";
 		};
 
 		class RscShortcutButton_7106: ZSC_RscButtonMenu

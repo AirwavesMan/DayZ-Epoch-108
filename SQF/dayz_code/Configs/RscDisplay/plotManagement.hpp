@@ -1,7 +1,7 @@
 class PlotManagement
 {
 	idd = 711194;
-	onLoad = "if (DZE_plotManagementMustBeClose) then {(_this select 0) displayCtrl 7015 ctrlSetText localize 'STR_EPOCH_HUMANS_NEARBY';};";
+	onLoad = "if (DZE_baseManagementMustBeClose) then {(_this select 0) displayCtrl 7015 ctrlSetText localize 'STR_EPOCH_HUMANS_NEARBY';};";
 	class Controls {
 		class RscText_7000: ZSC_RscText
 		{
@@ -16,7 +16,7 @@ class PlotManagement
 		class RscText_7007: ZSC_RscText
 		{
 			idc = 7007;
-			text = $STR_EPOCH_PLOTMANAGEMENT_TITLE;
+			text = $STR_BASE_MANAGEMENT_TITLE;
 			x = 0.30 * safezoneW + safezoneX;
 			y = 0.15 * safezoneH + safezoneY;
 			w = 0.30 * safezoneW;
@@ -28,17 +28,17 @@ class PlotManagement
 		class RscShortcutButton_7009: ZSC_RscButtonMenu
 		{
 			idc = -1;
-			text = $STR_EPOCH_DOME;
+			text = $STR_BASE_MANAGEMENT_BOUNDARY_DOME;
 			x = 0.31 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "[] spawn PlotPreview;";
+			onButtonClick = "[DZE_currentBase] spawn DZE_fnc_baseToggleMarkers;";
 		};
 
 		class RscShortcutButton_7010: ZSC_RscButtonMenu
 		{
 			idc = -1;
-			text = $STR_EPOCH_ACTIONS_MAINTAIN;
+			text = $STR_BASE_MAINTENANCE_ACTION;
 			x = 0.41 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -48,7 +48,7 @@ class PlotManagement
 		class RscShortcutButton_7011: ZSC_RscButtonMenu
 		{
 			idc = -1;
-			text = $STR_EPOCH_ACTIONS_MAINTAIN_FORCE;
+			text = $STR_BASE_MAINTENANCE_FORCE_ACTION;
 			x = 0.51 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -104,7 +104,7 @@ class PlotManagement
 		class RscText_7003: ZSC_RscText
 		{
 			idc = -1;
-			text = $STR_EPOCH_PLOT_FRIENDS;
+			text = $STR_BASE_MANAGEMENT_FRIENDS;
 			x = 0.45 * safezoneW + safezoneX;
 			y = 0.38 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
@@ -146,7 +146,7 @@ class PlotManagement
 			x = 0.33 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "[lbData [7001,lbCurSel 7001]] call PlotAddFriend;";
+			onButtonClick = "lbData [7001,lbCurSel 7001] call DZE_fnc_baseAddFriend;";
 		};
 
 		class RscShortcutButton_7005: ZSC_RscButtonMenu
@@ -156,7 +156,7 @@ class PlotManagement
 			x = 0.47 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "[(lbCurSel 7002)] call PlotRemoveFriend;";
+			onButtonClick = "(lbCurSel 7002) call DZE_fnc_baseRemoveFriend;";
 		};
 
 		class RscShortcutButton_7006: ZSC_RscButtonMenu
