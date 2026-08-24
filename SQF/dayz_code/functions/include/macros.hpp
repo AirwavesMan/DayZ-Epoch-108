@@ -29,6 +29,18 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
+//					admin
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// functions
+
+// extensions
+#define isAdmin                                 dayz_playerUID in DZE_baseManagementAdmins
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
 //					animations
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45,6 +57,7 @@
 
 // functions
 #define append(a1,a2)                           [a1,a2] call DZE_fnc_append
+#define apply(a,c)                              [a,c] call DZE_fnc_apply
 #define subSelect(a,s,e)                        [a,s,e] call DZE_fnc_subSelect
 
 // extensions
@@ -180,6 +193,7 @@
 #define inAngleSector(src,dir,wid,tar)          [src,dir,wid,tar] call DZE_fnc_inAngleSector
 
 // extensions
+#define boundingBoxDiagonal(obj)                boundingBox obj call DZE_fnc_vectorDistance
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -291,6 +305,7 @@
 
 // extensions
 #define createVehicleOrigin(cls)                cls createVehicle ORIGIN
+#define orientToWorld(obj)                      obj setVectorDirAndUp [VECTOR_DIR, VECTOR_UP]
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -318,7 +333,8 @@
 
 // extensions
 #define getPosAGL(obj)                          obj modelToWorld ORIGIN
-#define getPosWorld(obj)                        [obj] call DZE_fnc_modelCenterWorld
+///#define getPosWorld(obj)                        [obj] call DZE_fnc_modelCenterWorld
+#define getPosWorld(obj)                        AGLToASL(getPosAGL(obj))
 #define getTerrainDiff(v1,v2)                   getTerrainHeightASL v1 - getTerrainHeightASL v2
 #define isTerrain(pos)                          !surfaceIsWater pos
 #define isWater(pos)                            surfaceIsWater pos
@@ -332,6 +348,19 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
+//					security
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// functions
+
+// extensions
+///#define kickPlayer                              endMission 'LOSER'
+#define kickPlayer                              endMission 'END1'
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
 //					strings
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -339,6 +368,17 @@
 // functions
 #define getAnimation(idx,unit)                  [idx,unit] call DZE_fnc_getAnimation
 #define isStanding(unit)                        unit call DZE_fnc_isStanding
+
+// extensions
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//					system
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// functions
 
 // extensions
 
@@ -395,19 +435,31 @@
 
 // functions
 #define getRotationMatrix(obj)                  obj call DZE_fnc_getRotationMatrix
+#define rotateObject2D(obj,a)                   [obj,a] call DZE_fnc_rotateObject2D
+#define rotateObject3D(params)                  params call DZE_fnc_rotateObject3D
+#define rotateVector2D(v,a)                     [v,a] call DZE_fnc_rotateVector2D
 #define vectorCrossProduct(v1,v2)               [v1,v2] call DZE_fnc_vectorCrossProduct
 #define vectorDistance(v1,v2)                   [v1,v2] call DZE_fnc_vectorDistance
 #define vectorDotProduct(v1,v2)                 [v1,v2] call DZE_fnc_vectorDotProduct
 #define vectorMagnitude(v)                      v call DZE_fnc_vectorMagnitude
 #define vectorNormalized(v)                     v call DZE_fnc_vectorNormalized
+///#define matrixFromEuler(p,r,y)                  [p,r,y] call DZE_fnc_matrixFromEuler
+#define matrixFromEuler(params)                 params call DZE_fnc_matrixFromEuler
+#define matrixToEuler(m)                        m call DZE_fnc_matrixToEuler
+#define matrixMultiply(m1,m2)                   [m1,m2] call DZE_fnc_matrixMultiply
+#define matrixMultiply3D(v,m)                   [v,m] call DZE_fnc_matrixMultiply3D
 #define matrixTranspose(m)                      m call DZE_fnc_matrixTranspose
 #define matrixTranspose3x3(m)                   m call DZE_fnc_matrixTranspose3x3
 
+
 // extensions
 #define getDirToVectorDir(dir)                  [sin dir, cos dir, 0]
+#define getDirToVectorDir2D(dir)                [sin dir, cos dir]
 #define getVectorDirAndUp(obj)                  [vectorDir obj, vectorUp obj]
+#define vectorDirAndUpRelative(obj,parent)      [obj,parent] call DZE_fnc_vectorDirAndUpRelative
 
 // v2
+#define v2DotProduct(v1,v2)                     [v1,v2] call DZE_fnc_v2DotProduct
 
 // extensions
 
@@ -500,7 +552,7 @@
 // functions
 #define playActionCrouch                        call DZR_fnc_playActionCrouch
 #define playActionGear                          call DZR_fnc_playActionGear
-#define playActionPutDown                       call DZR_fnc_playActionPutDown
+#define playActionPutDown                       call DZE_fnc_playActionPutDown
 #define removeAllActions                        {p_vehicle removeAction (DZR_actions select _x); DZR_actions set [_x, ACTION_REMOVED]} count DZR_actionsIdx
 #define removeAllActionsNT                      {p_vehicle removeAction (DZR_actions select _x); DZR_actions set [_x, ACTION_REMOVED]} count DZR_actionsNTIdx
 
@@ -523,7 +575,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // functions
-#define apply(a,c)                              [a,c] call DZR_fnc_apply
 #define arrayShuffle(a)                         a call DZR_fnc_arrayShuffle
 ///#define deleteAt(a,i)                           [a,i] call DZR_fnc_deleteAt
 #define deleteAt(params)                        params call DZR_fnc_deleteAt
@@ -858,7 +909,6 @@
 #define isMapObject(obj)                        toArray netId obj select 0 == CHAR_ONE
 #define isStorage(cls)                          getMaxMagazines(cls) > 0
 #define isUpright(obj)                          vectorUp obj select 2 > cos 5 // max 5° slant for climbable
-#define orientToWorld(obj)                      obj setVectorDirAndUp [VECTOR_DIR, VECTOR_UP]
 #define unhide(a)                               hideObjects(a,false)
 
 
@@ -899,8 +949,6 @@
 ///#define getNOIDASL(pnt,obj)                     AGLToASL(getNOIDAGL(pnt,obj))
 #define getPosAGL(obj)                          obj modelToWorld ORIGIN
 #define getTerrainDiff(v1,v2)                   getTerrainHeightASL v1 - getTerrainHeightASL v2
-#define isTerrain(pos)                          !surfaceIsWater pos
-#define isWater(pos)                            surfaceIsWater pos
 #define modelToScreen(obj,pos)                  worldToScreen (obj modelToWorld pos)
 #define posAGL(obj,pos)                         obj modelToWorld pos
 #define posRel(obj,pos)                         obj worldToModel pos
@@ -991,15 +1039,7 @@
 #define isEqualVector(v1,v2,t)                  [v1,v2,t] call DZR_fnc_isEqualVector
 #define isPerpendicular(v1,v2)                  [v1,v2] call DZR_fnc_isPerpendicular
 #define lerpVector(v1,v2,a)                     [v1,v2,a] call DZR_fnc_lerpVector
-#define matrixFromEuler(p,r,y)                  [p,r,y] call DZR_fnc_matrixFromEuler
-#define matrixFromEuler2(p,r,y)                 [p,r,y] call DZR_fnc_matrixFromEuler2
 #define matrixInitialize(c,r)                   [c,r] call DZR_fnc_matrixInitialize
-#define matrixMultiply(m1,m2)                   [m1,m2] call DZR_fnc_matrixMultiply
-#define matrixMultiply2(v,m)                    [v,m] call DZR_fnc_matrixMultiply2
-#define matrixToEuler(m)                        m call DZR_fnc_matrixToEuler
-#define rotateObject2D(obj,a)                   [obj,a] call DZR_fnc_rotateObject2D
-#define rotateObject3D(params)                  params call DZR_fnc_rotateObject3D
-#define rotateVector2D(v,a)                     [v,a] call DZR_fnc_rotateVector2D
 #define rotateVector3D(v,a,x)                   [v,a,x] call DZR_fnc_rotateVector3D
 ///#define setVDU(obj,pos,dir,up,asl)              [obj,pos,dir,up,asl] call DZR_fnc_setVectorDirAndUp
 #define setVDU(params)                          params call DZR_fnc_setVectorDirAndUp
@@ -1008,7 +1048,7 @@
 #define vectorCentroid(m)                       m call DZR_fnc_vectorCentroid
 #define vectorCos(v1,v2)                        [v1,v2] call DZR_fnc_vectorCos
 #define vectorDiff(v1,v2)                       [v1,v2] call DZR_fnc_vectorDiff
-#define vectorDirAndUpRelative(obj1,obj2)       [obj1,obj2] call DZR_fnc_vectorDirAndUpRelative
+#define vectorDirAndUpRelative(obj1,obj2)       [obj1,obj2] call DZE_fnc_vectorDirAndUpRelative
 #define vectorDistance2D(v1,v2)                 [v1,v2] call DZR_fnc_vectorDistance2D
 #define vectorInverse(v)                        v call DZR_fnc_vectorInverse
 #define vectorMidpoint(v1,v2)                   [v1,v2] call DZR_fnc_vectorMidpoint
