@@ -1,4 +1,4 @@
-private ["_activatingPlayer","_isOK","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey","_object","_result","_outcome","_oid","_object_para","_clientKey","_exitReason","_playerUID"];
+private ["_player","_isOK","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey","_object","_result","_outcome","_oid","_object_para","_clientKey","_exitReason","_playerUID"];
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
 if (count _this < 6) exitWith {diag_log "Server_PublishVehicle2 error: Wrong parameter format";};
@@ -7,12 +7,14 @@ _worldspace = 	_this select 0;
 _class = 		_this select 1;
 _donotusekey =	_this select 2;
 _keySelected =  _this select 3;
-_activatingPlayer =  _this select 4;
+_player =  _this select 4;
 _clientKey = _this select 5;
-_playerUID = getPlayerUID _activatingPlayer;
+_playerUID = getPlayerUID _player;
 
-_exitReason = [_this,"PublishVehicle2",(_worldspace select 1),_clientKey,_playerUID,_activatingPlayer] call server_verifySender;
-if (_exitReason != "") exitWith {diag_log _exitReason};
+
+//	ToDo: Handle Buy vehicle differently
+//_exitReason = [_this,"PublishVehicle2",(_worldspace select 1),_clientKey,_playerUID,_player] call server_verifySender;
+
 
 if(_donotusekey) then {
 	_isOK = true;
@@ -101,5 +103,5 @@ if (_outcome != "PASS") then {
 	PVDZE_veh_Init = _object;
 	publicVariable "PVDZE_veh_Init";
 
-	diag_log format["PUBLISH: %1(%2) bought %3 with UID %4 @%5",(_activatingPlayer call fa_plr2str),_playerUID,_class,_uid,(_location call fa_coor2str)];
+	diag_log format["PUBLISH: %1(%2) bought %3 with UID %4 @%5",_player call DZE_fnc_getNamePlayer,_playerUID,_class,_uid,_location call server_positionToLocation];
 };

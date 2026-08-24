@@ -34,7 +34,7 @@ if (_characterID != "0") then {
 };
 
 diag_log format ["Player %1(%3) died as %5 at %2 CharID: %4",
-	_newObject call fa_plr2str, _pos call fa_coor2str,
+	_newObject call DZE_fnc_getNamePlayer, _pos call server_positionToLocation,
 	_playerID, _characterID,
 	typeOf _newObject
 ];

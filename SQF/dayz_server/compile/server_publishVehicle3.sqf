@@ -1,4 +1,4 @@
-private ["_coins","_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected"
+private ["_coins","_player","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected"
 ,"_characterID","_result","_outcome","_oid","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks"
 ,"_clientKey","_exitReason","_playerUID","_isAir","_fuel","_selection","_dam","_hitpoints","_newHitpoints","_damage"
 ,"_hit","_inv"];
@@ -14,22 +14,21 @@ _object = _this select 0;
 _worldspace = _this select 1;
 _class = _this select 2;
 _keySelected = _this select 3;
-_activatingPlayer = _this select 4;
+_player = _this select 4;
 _clientKey = _this select 5;
-_playerUID = getPlayerUID _activatingPlayer;
+_playerUID = getPlayerUID _player;
 _characterID = _keySelected;
 
-_exitReason = [_this,"PublishVehicle3",(_worldspace select 1),_clientKey,_playerUID,_activatingPlayer] call server_verifySender;
-if (_exitReason != "") exitWith {
+if !([_this,"PublishVehicle3",_object,_player,_clientKey] call server_verifySender) exitWith {
 	diag_log _exitReason;
 	dze_waiting = "fail";
-	(owner _activatingPlayer) publicVariableClient "dze_waiting";
+	(owner _player) publicVariableClient "dze_waiting";
 };
 
 if (!(isClass(configFile >> "CfgVehicles" >> _class)) || isNull _object) exitWith {
 	diag_log ("HIVE-PublishVehicle3 Error: Vehicle does not exist: "+ str(_class));
 	dze_waiting = "fail";
-	(owner _activatingPlayer) publicVariableClient "dze_waiting";
+	(owner _player) publicVariableClient "dze_waiting";
 };
 
 _objectID = _object getVariable ["ObjectID","0"];
@@ -86,7 +85,7 @@ if (_outcome != "PASS") then {
 	_key = format["CHILD:310:%1:",_uid];
 	_key call server_hiveWrite;
 	dze_waiting = "fail";
-	(owner _activatingPlayer) publicVariableClient "dze_waiting";
+	(owner _player) publicVariableClient "dze_waiting";
 } else {
 	_oid = _result select 1;
 	#ifdef OBJECT_DEBUG
@@ -138,7 +137,7 @@ if (_outcome != "PASS") then {
 	publicVariable "PVDZE_veh_Init";
 
 	dze_waiting = "success";
-	(owner _activatingPlayer) publicVariableClient "dze_waiting";
+	(owner _player) publicVariableClient "dze_waiting";
 
-	diag_log format["PUBLISH: %1(%2) upgraded %3 with UID %4 @%5",(_activatingPlayer call fa_plr2str),_playerUID,_class,_uid,(_location call fa_coor2str)];
+	diag_log format["PUBLISH: %1(%2) upgraded %3 with UID %4 @%5",_player call DZE_fnc_getNamePlayer,_playerUID,_class,_uid,_location call server_positionToLocation];
 };

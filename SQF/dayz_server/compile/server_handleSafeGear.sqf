@@ -1,12 +1,31 @@
-private ["_isZSC","_exitReason","_clientKey","_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_pos","_status","_statusText","_type","_unlockedClass","_vector","_weapons","_message","_suppliedCode","_damage","_coins","_wealth"];
+#define DEBUG_SERVER_HANDLE_SAFE_GEAR_WORLDSPACE
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	server_handleSafeGear
+//
+//	Description:	Handles storage state changes while preserving the model-center worldspace.
+//	Groups:		Build
+//
+//	Return Value:	Nothing
+//
+//	Called by:	Server
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+#ifdef DEBUG_SERVER_HANDLE_SAFE_GEAR_WORLDSPACE
+	diag_log format ['[Server Debug]: [server_handleSafeGear]: Function called with argumentes: %1',_this];
+#endif
+
+private ["_isZSC","_exitReason","_clientKey","_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_positionASL","_status","_statusText","_type","_unlockedClass","_vector","_weapons","_message","_suppliedCode","_damage","_coins","_wealth"];
 
 _player = _this select 0;
 _obj = _this select 1;
 _status = _this select 2;
 
-_name = ["Dead Player",name _player] select (alive _player);
+_name = _player call DZE_fnc_getNamePlayer;
 _type = typeOf _obj;
-_pos = getPosATL _obj;
+_positionASL = [_obj] call DZE_fnc_modelCenterWorld;
 _dir = direction _obj;
 _vector = [vectorDir _obj, vectorUp _obj];
 _charID = _obj getVariable ["CharacterID","0"];
@@ -45,10 +64,11 @@ if (isNull _obj) exitWith {
 
 if !(_type in DZE_DoorsLocked) then {
 	_clientKey = _this select 4;
-	_exitReason = [_this,_statusText,(getPosATL _obj),_clientKey,_playerUID,_player] call server_verifySender;
+	//_exitReason = [_this,_statusText,_positionASL,_clientKey,_playerUID,_player] call server_verifySender;
 };
 
-if (_exitReason != "") exitWith {diag_log _exitReason};
+//	ToDo: Add own function for doors
+//if (_exitReason != "") exitWith {diag_log _exitReason};
 
 call {
 	_isZSC = false;
@@ -68,7 +88,7 @@ call {
 		//_holder setDir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
 		_holder setVariable ["memDir",_dir,true];
 		_holder setVectorDirAndUp _vector;
-		_holder setPosATL _pos;
+		[_holder,_positionASL] call DZE_fnc_setPosWorld;
 		_holder setVariable ["CharacterID",_charID,true];
 		_holder setVariable ["ObjectID",_objectID];
 		_holder setVariable ["ObjectUID",_objectUID];
@@ -95,7 +115,7 @@ call {
 		//_holder setDir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
 		_holder setVariable ["memDir",_dir,true];
 		_holder setVectorDirAndUp _vector;
-		_holder setPosATL _pos;
+		[_holder,_positionASL] call DZE_fnc_setPosWorld;
 		_holder setVariable ["CharacterID",_charID,true];
 		_holder setVariable ["ObjectID",_objectID];
 		_holder setVariable ["ObjectUID",_objectUID];
@@ -121,7 +141,7 @@ call {
 		_holder = _packedClass createVehicle [0,0,0];
 		deleteVehicle _obj;
 		_holder setDir _dir;
-		_holder setPosATL _pos;
+		[_holder,_positionASL] call DZE_fnc_setPosWorld;
 		_holder addMagazineCargoGlobal [getText(configFile >> "CfgVehicles" >> _packedClass >> "seedItem"),1];
 		[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
 		if (_isZSC && {_coins > 0}) then {
@@ -142,11 +162,11 @@ call {
 
 if (_status < 4) then {
 	_type = call {
-		if (_type in ["VaultStorageLocked","VaultStorage","VaultStorage2Locked","VaultStorage2","TallSafe","TallSafeLocked"]) exitwith {
+		if (_type in ['DZE_SafeLocked','DZE_Safe','DZE_Safe2Locked','DZE_Safe2','DZE_SafeTall','DZE_SafeTallLocked']) exitwith {
 			if (_ownerID == _playerUID) then {_lockCode = format["%1 - Owner",_lockCode];};
 			"Safe"
 		};
-		if (_type in ["LockboxStorage","LockboxStorageLocked","LockboxStorage2","LockboxStorage2Locked","LockboxStorageWinterLocked","LockboxStorageWinter2Locked","LockboxStorageWinter","LockboxStorageWinter2"]) exitwith {
+		if (_type in ['DZE_LockboxStorage','DZE_LockboxStorageLocked','DZE_LockboxStorage2','DZE_LockboxStorage2Locked','DZE_LockboxStorageWinterLocked','DZE_LockboxStorageWinter2Locked','DZE_LockboxStorageWinter','DZE_LockboxStorageWinter2']) exitwith {
 			if (_ownerID == _playerUID) then {
 				_lockCode = _charID call fnc_lockCode;
 				_lockCode = format["%1 - Owner",_lockCode];
@@ -161,9 +181,9 @@ if (_status < 4) then {
 };
 
 if (_statusText == "FAILED unlocking") then {
-	_message = format["%1 (%2) %3 %4 with code: %5 (actual: %8) @%6 %7, ObjectID: %8, ObjectUID: %9",_name,_playerUID,_statusText,_type,_suppliedCode,mapGridPosition _pos,_pos,_lockCode,_objectID,_objectUID];
+	_message = format["%1 (%2) %3 %4 with code: %5 (actual: %8) @%6 %7, ObjectID: %8, ObjectUID: %9",_name,_playerUID,_statusText,_type,_suppliedCode,mapGridPosition _positionASL,_positionASL,_lockCode,_objectID,_objectUID];
 } else {
-	_message = format["%1 (%2) %3 %4 with code: %5 @%6 %7, ObjectID: %8, ObjectUID: %9",_name,_playerUID,_statusText,_type,_lockCode,mapGridPosition _pos,_pos,_objectID,_objectUID];
+	_message = format["%1 (%2) %3 %4 with code: %5 @%6 %7, ObjectID: %8, ObjectUID: %9",_name,_playerUID,_statusText,_type,_lockCode,mapGridPosition _positionASL,_positionASL,_objectID,_objectUID];
 };
 
 diag_log _message;
