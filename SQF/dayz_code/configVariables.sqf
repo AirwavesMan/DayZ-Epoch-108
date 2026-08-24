@@ -336,15 +336,15 @@ if (!isDedicated) then {
 		[true,		"DZE_WoodSmallWallThird",		"ItemWoodWallThird",			[["PartWoodPlywood",			3],	["PartWoodLumber",	3]]],
 		[true,		"DZE_WoodSmallWallWin",			"ItemWoodWallWindow",			[["ItemWoodWall",			1],	["PartGlass",		1]]],
 		[true,		"DZE_WoodSmallWallDoor",			"ItemWoodWallDoor",			[["ItemWoodWallThird",			3]]],
-		[true,		"Land_DZE_WoodDoor",			"ItemWoodWallWithDoor",			[["ItemWoodWallDoor",			1],	["PartWoodPlywood",	1],	["PartWoodLumber",	1]]],
-		[true,		"Land_DZE_GarageWoodDoor",		"ItemWoodWallGarageDoor",		[["ItemWoodWallLg",			1],	["PartWoodLumber",	2]]],
-		[true,		"Land_DZE_WoodOpenTopGarageDoor",	"ItemWoodOpenTopGarageDoor",		[["ItemWoodWallLg",			1],	["PartWoodLumber",	2]]],
+		[true,		'DZE_Land_WoodDoor',			'ItemWoodWallWithDoor',			[['ItemWoodWallDoor',			1],	['PartWoodPlywood',	1],	['PartWoodLumber',	1]]],
+		[true,		'DZE_Land_GarageWoodDoor',		'ItemWoodWallGarageDoor',		[['ItemWoodWallLg',			1],	['PartWoodLumber',	2]]],
+		[true,		'DZE_Land_WoodOpenTopGarageDoor',	'ItemWoodOpenTopGarageDoor',		[['ItemWoodWallLg',			1],	['PartWoodLumber',	2]]],
 		[true,		"DZE_WoodLargeWall",			"ItemWoodWallLg",			[["ItemWoodWall",			1],	["PartWoodPlywood",	1],	["PartWoodLumber",	1]]],
 		[true,		"DZE_WoodLargeWallWin",			"ItemWoodWallWindowLg",			[["ItemWoodWallLg",			1],	["PartGlass",		1]]],
 		[true,		"DZE_WoodLargeWallDoor",			"ItemWoodWallDoorLg",			[["ItemWoodWall",			1],	["PartWoodPlywood",	1],	["PartWoodLumber",	1]]],
-		[true,		"Land_DZE_LargeWoodDoor",		"ItemWoodWallWithDoorLg",		[["ItemWoodWallDoorLg",			1],	["PartWoodPlywood",	1],	["PartWoodLumber",	1]]],
+		[true,		'DZE_Land_LargeWoodDoor',		'ItemWoodWallWithDoorLg',		[['ItemWoodWallDoorLg',			1],	['PartWoodPlywood',	1],	['PartWoodLumber',	1]]],
 		[true,		"DZE_WoodGateFrame",			"ItemWoodGateFrame",			[["ItemWoodWallThird",			6]]],
-		[true,		"Land_DZE_WoodGate",			"ItemWoodGate",				[["ItemWoodGateFrame",			1],	["PartWoodPlywood",	8],	["PartWoodLumber",	2],	["equip_nails",		1]]],
+		[true,		'DZE_Land_WoodGate',			'ItemWoodGate',				[['ItemWoodGateFrame',			1],	['PartWoodPlywood',	8],	['PartWoodLumber',	2],	['equip_nails',		1]]],
 		[true,		"DZE_WoodFloorStairs",			"ItemWoodFloorStairs",			[["ItemWoodFloor",			1],	["ItemWoodStairs",	1]]],
 		[true,		"DZE_WoodTriangleFloor",			"ItemTriangleWoodFloor",		[["ItemWoodFloorHalf",			1],	["ItemWoodFloorQuarter",1]]],
 		[true,		"DZE_WoodStairsSans",			"ItemWoodStairs",			[["PartWoodLumber",			8],	["equip_nails",		2]]],
@@ -561,7 +561,7 @@ if (!isDedicated) then {
 	DZE_GarageDoor_Opener = false;	// Enables the option to open Garage Doors from the inside of a vehicle.
 	
 	if (DZE_GarageDoor_Opener) then {
-		DZE_GarageDoors = ["DZE_CinderWallDoorLocked","Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked","DZE_WoodenGate_1","DZE_WoodenGate_2","DZE_WoodenGate_3","DZE_WoodenGate_4","Land_DZE_WoodGateLocked","DZE_CinderGateLocked","Land_DZE_WoodOpenTopGarageLocked","DZE_CinderGarageOpenTopLocked"];	//	Array of Garage Doors that can be opened.
+		DZE_GarageDoors = ['DZE_CinderWallDoorLocked','DZE_Land_GarageWoodDoorLocked','DZE_Land_LargeWoodDoorLocked','DZE_WoodenGate_1','DZE_WoodenGate_2','DZE_WoodenGate_3','DZE_WoodenGate_4','DZE_Land_WoodGateLocked','DZE_CinderGateLocked','DZE_Land_WoodOpenTopGarageLocked','DZE_CinderGarageOpenTopLocked'];	//	Array of Garage Doors that can be opened.
 		DZE_GarageDoor_Radius = 30; //	Radius from where the Garage Doors can be opened. Higher values may negatively impact the performance
 	};
 	

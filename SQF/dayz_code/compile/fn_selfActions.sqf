@@ -821,7 +821,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	};
 
 	// inplace upgrade tool
-	if (((_cursorTarget isKindOf 'ModularItems') || (_cursorTarget isKindOf 'Land_DZE_WoodDoor_Base') || (_cursorTarget isKindOf 'CinderWallDoor_DZ_Base') || (_cursorTarget isKindOf 'DZE_Housebase') || (_cursorTarget isKindOf 'DZE_Storage_Base') || (_typeOfCursorTarget in DZE_UpgradableStorage)) && !(_typeOfCursorTarget in DZE_DisableUpgrade)) then {
+	if (((_cursorTarget isKindOf 'ModularItems') || (_cursorTarget isKindOf 'DZE_Land_WoodDoor_Base') || (_cursorTarget isKindOf 'DZE_CinderWallDoor_Base') || (_cursorTarget isKindOf 'DZE_Housebase') || (_cursorTarget isKindOf 'DZE_Storage_Base') || (_typeOfCursorTarget in DZE_UpgradableStorage)) && !(_typeOfCursorTarget in DZE_DisableUpgrade)) then {
 		if ((s_player_lastTarget select 0) != _cursorTarget) then {
 			if (s_player_upgrade_build > 0) then {
 				player removeAction s_player_upgrade_build;

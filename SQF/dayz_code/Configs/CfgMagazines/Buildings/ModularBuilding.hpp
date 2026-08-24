@@ -1406,7 +1406,7 @@ class ItemWoodWallWithDoor: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Land_DZE_WoodDoor";
+			create = "DZE_Land_WoodDoor";
 		};
 		class Crafting
 		{
@@ -1437,7 +1437,7 @@ class ItemWoodWallWithDoorLocked: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Land_DZE_WoodDoorLocked";
+			create = "DZE_Land_WoodDoorLocked";
 		};
 	};
 };
@@ -1459,7 +1459,7 @@ class ItemWoodWallGarageDoor: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Land_DZE_GarageWoodDoor";
+			create = "DZE_Land_GarageWoodDoor";
 		};
 		class Crafting
 		{
@@ -1490,7 +1490,7 @@ class ItemWoodWallGarageDoorLocked: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Land_DZE_GarageWoodDoorLocked";
+			create = "DZE_Land_GarageWoodDoorLocked";
 		};
 	};
 };
@@ -1512,7 +1512,7 @@ class ItemWoodOpenTopGarageDoor: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Land_DZE_WoodOpenTopGarageDoor";
+			create = "DZE_Land_WoodOpenTopGarageDoor";
 		};
 		class Crafting
 		{
@@ -1543,7 +1543,7 @@ class ItemWoodOpenTopGarageDoorLocked: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Land_DZE_WoodOpenTopGarageLocked";
+			create = "DZE_Land_WoodOpenTopGarageLocked";
 		};
 	};
 };
@@ -1675,7 +1675,7 @@ class ItemWoodWallWithDoorLg: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Land_DZE_LargeWoodDoor";
+			create = "DZE_Land_LargeWoodDoor";
 		};
 		class Crafting
 		{
@@ -1706,7 +1706,7 @@ class ItemWoodWallWithDoorLgLocked: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Land_DZE_LargeWoodDoorLocked";
+			create = "DZE_Land_LargeWoodDoorLocked";
 		};
 	};
 };
@@ -1759,7 +1759,7 @@ class ItemWoodGate: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Land_DZE_WoodGate";
+			create = "DZE_Land_WoodGate";
 		};
 		class Crafting
 		{
@@ -1790,7 +1790,7 @@ class ItemWoodGateLocked: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Land_DZE_WoodGateLocked";
+			create = "DZE_Land_WoodGateLocked";
 		};
 	};
 };

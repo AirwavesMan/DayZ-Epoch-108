@@ -359,11 +359,11 @@ class SnapBuilding {
 	class DZE_WoodSmallWallDoor_Preview:	DZE_WoodSmall {};	// doorway
 	class DZE_WoodSmallWallWin:		DZE_WoodSmall {};	// window
 	class DZE_WoodSmallWallWin_Preview:	DZE_WoodSmall {};	// window
-	class Land_DZE_WoodDoor:		DZE_WoodSmall {};	// door
-	class Land_DZE_WoodDoorLocked:		DZE_WoodSmall {};	// door
+	class DZE_Land_WoodDoor:		DZE_WoodSmall {};	// door
+	class DZE_Land_WoodDoorLocked:		DZE_WoodSmall {};	// door
 	class DZE_WoodDoor_Preview:		DZE_WoodSmall {};	// door
 
-	class Land_DZE_WoodOpenTopGarageDoor {	// garage door
+	class DZE_Land_WoodOpenTopGarageDoor {	// garage door
 		points[] = {
 			{ -0.023, 0.016, 0.019, $STR_SNAPPING_POINT_PIVOT, DZE_SNAP_META_BOTTOM},
 			{ -2.308, 0.016, 1.519, $STR_SNAPPING_POINT_LEFT, DZE_SNAP_META_LEFT},
@@ -371,8 +371,8 @@ class SnapBuilding {
 			{ -0.023, 0.016, 3.019, $STR_SNAPPING_POINT_TOP, DZE_SNAP_META_TOP}
 		};
 	};
-	class Land_DZE_WoodOpenTopGarageLocked:	Land_DZE_WoodOpenTopGarageDoor {};
-	class DZE_Wood_GarageOpenTop_Preview:	Land_DZE_WoodOpenTopGarageDoor {};
+	class DZE_Land_WoodOpenTopGarageLocked:	DZE_Land_WoodOpenTopGarageDoor {};
+	class DZE_Wood_GarageOpenTop_Preview:	DZE_Land_WoodOpenTopGarageDoor {};
 
 	////////	Large Wooden Walls	////////
 
@@ -397,7 +397,7 @@ class SnapBuilding {
 	};
 	class DZE_WoodLargeWallDoor_Preview: DZE_WoodLargeWallDoor {};
 
-	class Land_DZE_LargeWoodDoor {		// door
+	class DZE_Land_LargeWoodDoor {		// door
 		points[] = {
 			{ -0.041, 0.018, 0.03, $STR_SNAPPING_POINT_PIVOT, DZE_SNAP_META_BOTTOM},
 			{ -2.481, 0.018, 1.53, $STR_SNAPPING_POINT_LEFT, DZE_SNAP_META_LEFT},
@@ -405,8 +405,8 @@ class SnapBuilding {
 			{ -0.041, 0.018, 3.03, $STR_SNAPPING_POINT_TOP, DZE_SNAP_META_TOP}
 		};
 	};
-	class Land_DZE_LargeWoodDoorLocked: Land_DZE_LargeWoodDoor {};
-	class DZE_LargeWoodDoor_Preview: Land_DZE_LargeWoodDoor {};
+	class DZE_Land_LargeWoodDoorLocked: DZE_Land_LargeWoodDoor {};
+	class DZE_LargeWoodDoor_Preview: DZE_Land_LargeWoodDoor {};
 
 	class DZE_WoodLargeWallWin {		// window
 		points[] = {
@@ -418,7 +418,7 @@ class SnapBuilding {
 	};
 	class DZE_WoodLargeWallWin_Preview: DZE_WoodLargeWallWin {};
 
-	class Land_DZE_GarageWoodDoor {		// garage
+	class DZE_Land_GarageWoodDoor {		// garage
 		points[] = {
 			{ -0.023, 0.022, 0.018, $STR_SNAPPING_POINT_PIVOT, DZE_SNAP_META_BOTTOM},
 			{ -2.463, 0.022, 1.518, $STR_SNAPPING_POINT_LEFT, DZE_SNAP_META_LEFT},
@@ -426,8 +426,8 @@ class SnapBuilding {
 			{ -0.023, 0.022, 3.018, $STR_SNAPPING_POINT_TOP, DZE_SNAP_META_TOP}
 		};
 	};
-	class Land_DZE_GarageWoodDoorLocked: Land_DZE_GarageWoodDoor {};
-	class DZE_GarageWoodDoor_Preview: Land_DZE_GarageWoodDoor {};
+	class DZE_Land_GarageWoodDoorLocked: DZE_Land_GarageWoodDoor {};
+	class DZE_GarageWoodDoor_Preview: DZE_Land_GarageWoodDoor {};
 
 	class DZE_WoodSmallWallThird { // 4.88m
 		points[] = {
@@ -457,8 +457,8 @@ class SnapBuilding {
 			{  0.022, 0.02, 6.025, $STR_SNAPPING_POINT_TOP, DZE_SNAP_META_TOP}
 		};
 	};
-	class Land_DZE_WoodGate:	DZE_WoodGateFrame {};
-	class Land_DZE_WoodGateLocked:	DZE_WoodGateFrame {};
+	class DZE_Land_WoodGate:	DZE_WoodGateFrame {};
+	class DZE_Land_WoodGateLocked:	DZE_WoodGateFrame {};
 	class DZE_WoodGate_Preview:	DZE_WoodGateFrame {};
 
 	class DZE_WoodPillar {

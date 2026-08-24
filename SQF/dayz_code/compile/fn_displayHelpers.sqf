@@ -92,8 +92,8 @@ if (_p > 0) then {
 		///////////////////////////////////////////////////////////////////////////////////
 		//
 		//	"DoorL"		for	DZE_MetalGate,
-		//				Land_DZE_WoodOpenTopGarageDoor,
-		//				Land_DZE_WoodOpenTopGarageLocked,
+		//				DZE_Land_WoodOpenTopGarageDoor,
+		//				DZE_Land_WoodOpenTopGarageLocked,
 		//				DZE_CinderGarageOpenTop,
 		//				DZE_CinderGarageOpenTopLocked
 		//	"dvere1"	for	DZE_Wooden_shed, DZE_Wooden_shed2
@@ -105,7 +105,7 @@ if (_p > 0) then {
 
 		local _resize	= false;
 		local _door	= "Open_door";
-		local _doorL	= ["DZE_MetalGate","Land_DZE_WoodOpenTopGarageDoor","Land_DZE_WoodOpenTopGarageLocked","DZE_CinderGarageOpenTop","DZE_CinderGarageOpenTopLocked"];
+		local _doorL	= ['DZE_MetalGate','DZE_Land_WoodOpenTopGarageDoor','DZE_Land_WoodOpenTopGarageLocked','DZE_CinderGarageOpenTop','DZE_CinderGarageOpenTopLocked'];
 		local _open	= ['DZE_StorageShed','DZE_StorageShed2'];
 		local _dvere1	= ['DZE_OutHouse'];
 		local _custom1	= ['DZE_Wooden_shed','DZE_Wooden_shed2'];

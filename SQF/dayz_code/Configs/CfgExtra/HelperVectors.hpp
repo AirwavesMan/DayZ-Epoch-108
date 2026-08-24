@@ -317,10 +317,10 @@ class HelperVectors: Helpers {
 			{ -0.039, 0.016, 1.527 }	// Center (added)
 		};
 	};
-	class Land_DZE_WoodDoor: DZE_WoodSmallWall {};
-	class Land_DZE_WoodDoorLocked: DZE_WoodSmallWall {};
+	class DZE_Land_WoodDoor: DZE_WoodSmallWall {};
+	class DZE_Land_WoodDoorLocked: DZE_WoodSmallWall {};
 
-	class Land_DZE_WoodOpenTopGarageDoor: vector {
+	class DZE_Land_WoodOpenTopGarageDoor: vector {
 		points[] = {
 			{ -0.023, 0.016, 0.019 },	// Pivot
 			{ -2.308, 0.016, 1.519 },	// Left
@@ -328,7 +328,7 @@ class HelperVectors: Helpers {
 			{ -0.023, 0.016, 3.019 }	// Top
 		};
 	};
-	class Land_DZE_WoodOpenTopGarageLocked: Land_DZE_WoodOpenTopGarageDoor {};
+	class DZE_Land_WoodOpenTopGarageLocked: DZE_Land_WoodOpenTopGarageDoor {};
 
 	class Land_wood_wreck_frame: vector {
 		points[] = {
@@ -349,7 +349,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Land_DZE_LargeWoodDoor: vector {		// door
+	class DZE_Land_LargeWoodDoor: vector {		// door
 		points[] = {
 			{ -0.041, 0.018, 0.03 },	// Pivot
 			{ -2.481, 0.018, 1.53 },	// Left
@@ -358,9 +358,9 @@ class HelperVectors: Helpers {
 			{ -0.041, 0.018, 1.53 }		// Center (added)
 		};
 	};
-	class Land_DZE_LargeWoodDoorLocked: Land_DZE_LargeWoodDoor {};
+	class DZE_Land_LargeWoodDoorLocked: DZE_Land_LargeWoodDoor {};
 
-	class Land_DZE_GarageWoodDoor: vector {		// garage door
+	class DZE_Land_GarageWoodDoor: vector {		// garage door
 		points[] = {
 			{ -0.023, 0.022, 0.018 },	// Pivot
 			{ -2.463, 0.022, 1.518 },	// Left
@@ -369,7 +369,7 @@ class HelperVectors: Helpers {
 			{ -0.023, 0.022, 1.518 }	// Center (added)
 		};
 	};
-	class Land_DZE_GarageWoodDoorLocked: Land_DZE_GarageWoodDoor {};
+	class DZE_Land_GarageWoodDoorLocked: DZE_Land_GarageWoodDoor {};
 
 	class DZE_WoodSmallWallThird: vector {
 		points[] = {
@@ -399,7 +399,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Land_DZE_WoodGate: vector {
+	class DZE_Land_WoodGate: vector {
 		points[] = {
 			{  0.022, 0.02, 0.025 },	// Bottom
 			{ -2.418, 0.02, 1.525 },	// Lower Left
@@ -410,7 +410,7 @@ class HelperVectors: Helpers {
 			{  0.022, 0.02, 3.025 }		// Center (added)
 		};
 	};
-	class Land_DZE_WoodGateLocked: Land_DZE_WoodGate {};
+	class DZE_Land_WoodGateLocked: DZE_Land_WoodGate {};
 
 	class DZE_WoodPillar: vector {
 		points[] = {

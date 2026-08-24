@@ -2,9 +2,9 @@
 
 Dayz_plants = ["Dayz_Plant1","Dayz_Plant2","Dayz_Plant3"];
 DZE_LockedGates = ["DZE_WoodenGate_1","DZE_WoodenGate_2","DZE_WoodenGate_3","DZE_WoodenGate_4"];
-DZE_DoorsLocked = ["DZE_Metal_DrawbridgeLocked","Land_DZE_WoodDoorLocked","Land_DZE_LargeWoodDoorLocked","Land_DZE_GarageWoodDoorLocked","Land_DZE_WoodGateLocked","Land_DZE_WoodOpenTopGarageLocked","DZE_CinderWallDoorLocked","DZE_CinderWallDoorSmallLocked","DZE_CinderGateLocked","DZE_CinderGarageOpenTopLocked","DZE_CinderDoorHatchLocked","DZE_DoorLocked","DZE_CinderWallWindowLocked","DZE_Concrete_Bunker_Locked"];
+DZE_DoorsLocked = ['DZE_Metal_DrawbridgeLocked','DZE_Land_WoodDoorLocked','DZE_Land_LargeWoodDoorLocked','DZE_Land_GarageWoodDoorLocked','DZE_Land_WoodGateLocked','DZE_Land_WoodOpenTopGarageLocked','DZE_CinderWallDoorLocked','DZE_CinderWallDoorSmallLocked','DZE_CinderGateLocked','DZE_CinderGarageOpenTopLocked','DZE_CinderDoorHatchLocked','DZE_DoorLocked','DZE_CinderWallWindowLocked','DZE_Concrete_Bunker_Locked'];
 DZE_DoorsLocked = DZE_DoorsLocked + DZE_LockedGates;
-DZE_modularDoors = ["Land_DZE_WoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_GarageWoodDoor","DZE_CinderWallDoor","DZE_CinderWallDoorSmall","DZE_WoodenGate_foundation","Land_DZE_WoodGate","Land_DZE_WoodOpenTopGarageDoor","DZE_CinderGate","DZE_CinderGarageOpenTop","DZE_CinderDoorHatch","DZE_Door","DZE_Concrete_Bunker","DZE_Metal_Drawbridge","DZE_CinderWallWindow"];
+DZE_modularDoors = ['DZE_Land_WoodDoor','DZE_Land_LargeWoodDoor','DZE_Land_GarageWoodDoor','DZE_CinderWallDoor','DZE_CinderWallDoorSmall','DZE_WoodenGate_foundation','DZE_Land_WoodGate','DZE_Land_WoodOpenTopGarageDoor','DZE_CinderGate','DZE_CinderGarageOpenTop','DZE_CinderDoorHatch','DZE_Door','DZE_Concrete_Bunker','DZE_Metal_Drawbridge','DZE_CinderWallWindow'];
 DZE_modularDoors = DZE_modularDoors + DZE_LockedGates;
 DZE_LockedStorage = ['DZE_SafeLocked','DZE_Safe2Locked','DZE_LockboxStorageLocked','DZE_LockboxStorage2Locked','DZE_LockboxStorageWinterLocked','DZE_LockboxStorageWinter2Locked','DZE_SafeTallLocked'];
 DZE_UnLockedStorage = ['DZE_Safe','DZE_Safe2','DZE_LockboxStorage','DZE_LockboxStorage2','DZE_LockboxStorageWinter','DZE_LockboxStorageWinter2','DZE_SafeTall'];
@@ -332,7 +332,7 @@ if (!isDedicated) then {
 	DZE_NoRefundTransparency = 0.5;	// Red Basebuilding Helper Transparency. min = 0.1, max = 1
 	DZE_removeTransparency = 0.5;	// Green Basebuilding Helper Transparency. min = 0.1, max = 1
 	DZE_deconstructTransparency	= 0.5;	// Blue Basebuilding Helper Transparency. min = 0.1, max = 1
-	DZE_largeObjects = ["DZE_Watertower","DZE_DeerStand","DZE_MetalContainer2D","DZE_MetalContainer1G","DZE_MetalContainer1B","DZE_MetalContainer1A","DZE_DragonTeeth","DZE_DragonTeethBig","DZE_MetalFloor4x","Land_metal_floor_2x2_wreck","DZE_WoodFloor4x","Land_wood_floor_2x2_wreck","DZE_Scaffolding","DZE_CinderGateFrame","DZE_CinderGate","DZE_CinderGateLocked","DZE_WoodGateFrame","Land_DZE_WoodGate","Land_DZE_WoodGateLocked","DZE_WoodRamp","DZE_Metal_Drawbridge","DZE_Metal_DrawbridgeLocked","DZE_Land_WarfareBarrier10x","DZE_Land_WarfareBarrier10xTall","DZE_SandNestLarge"];	 // adjust _allowedDistance in fn_selfActions.sqf for large modular/crafted objects
+	DZE_largeObjects = ['DZE_Watertower','DZE_DeerStand','DZE_MetalContainer2D','DZE_MetalContainer1G','DZE_MetalContainer1B','DZE_MetalContainer1A','DZE_DragonTeeth','DZE_DragonTeethBig','DZE_MetalFloor4x','Land_metal_floor_2x2_wreck','DZE_WoodFloor4x','Land_wood_floor_2x2_wreck','DZE_Scaffolding','DZE_CinderGateFrame','DZE_CinderGate','DZE_CinderGateLocked','DZE_WoodGateFrame','DZE_Land_WoodGate','DZE_Land_WoodGateLocked','DZE_WoodRamp','DZE_Metal_Drawbridge','DZE_Metal_DrawbridgeLocked','DZE_Land_WarfareBarrier10x','DZE_Land_WarfareBarrier10xTall','DZE_SandNestLarge'];	 // adjust _allowedDistance in fn_selfActions.sqf for large modular/crafted objects
 	
 	DZE_NoRefundTexture	= [0, format["#(argb,8,8,3)color(1.00,0.00,0.00,%1,ca)", (DZE_NoRefundTransparency max 0.1)]	];	// red
 	DZE_removeTexture = [0, format["#(argb,8,8,3)color(0.15,1.00,0.40,%1,ca)", (DZE_removeTransparency max 0.1)]	];	// green
