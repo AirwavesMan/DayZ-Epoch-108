@@ -1,16 +1,57 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
+#define DEBUG_SERVER_OBJ_POS_WORLDSPACE
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	server_obj_pos
+//
+//	Description:	Persists vehicle positions in the legacy format and build object positions in
+//			the model-center worldspace format.
+//	Groups:		Build
+//
+//	Syntax:		[object, objectID, class] call server_obj_pos
+//
+//	Return Value:	Nothing
+//
+//	Called by:	Server
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
 server_obj_pos = {
+	#ifdef DEBUG_SERVER_OBJ_POS_WORLDSPACE
+		diag_log format ['[Server Debug]: [server_obj_pos]: Function called with argumentes: %1',_this];
+	#endif
+
 	local _object = _this select 0;
 	local _objectID = _this select 1;
 	local _class = _this select 2;
 
-	local _position = getPosATL _object;
-	//_worldspace = [round (direction _object),_position];
-	local _worldspace = [getDir _object, _position] call AN_fnc_formatWorldspace; // Precise Base Building 1.0.5
-	local _fuel = [0, fuel _object] select (_class isKindOf "AllVehicles");
+	local _isVehicle = (_class isKindOf 'AllVehicles') && {!(_class isKindOf 'StaticWeapon') && {!(_class in DZE_StaticWeapons)}};
+	local _worldspace = call {
+		if (_isVehicle) exitWith {
+			local _positionATL = getPosATL _object;
+			[getDir _object,_positionATL] call AN_fnc_formatWorldspace
+		};
 
-	local _key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
+		local _positionASL = [_object] call DZE_fnc_modelCenterWorld;
+		local _vector = [vectorDir _object,vectorUp _object];
+		local _metadata = _object getVariable ['worldspaceMetadata',[]];
+		local _ownerPUID = _object getVariable ['ownerPUID',_object getVariable ['OwnerPUID','0']];
+		local _objectWorldspace = [];
+
+		_metadata set [0,_ownerPUID];
+		_object setVariable ['worldspaceMetadata',_metadata];
+		_objectWorldspace = [_positionASL,_vector,_metadata];
+
+		_objectWorldspace call server_formatWorldspace
+	};
+	if (_worldspace == '') exitWith {
+		diag_log format ['[Server Warning]: [server_obj_pos]: Unable to persist invalid worldspace for %1 (%2)',_class,_objectID];
+	};
+	local _fuel = [0,fuel _object] select (_class isKindOf 'AllVehicles');
+
+	local _key = format['CHILD:305:%1:%2:%3:',_objectID,_worldspace,_fuel];
 	_key call server_hiveWrite;
 
 	#ifdef OBJECT_DEBUG
@@ -25,11 +66,11 @@ server_obj_inv = {
 	local _class = _this select 3;
 
 	local _inventory = call {
-		if (_class == "Plastic_Pole_EP1_DZ") exitwith {
-			_object getVariable ["plotfriends", []] //We're replacing the inventory with UIDs for this item
+		if (_class == DZE_Territory_Marker) exitwith {
+			_object getVariable ["baseFriends", []] //We're replacing the inventory with UIDs for this item
 		};
 		if (DZE_doorManagement && {_class in DZE_DoorsLocked}) exitwith {
-			_object getVariable ["doorfriends", []] //We're replacing the inventory with UIDs for this item
+			_object getVariable ["doorFriends", []] //We're replacing the inventory with UIDs for this item
 		};
 		if (_class isKindOf "TrapItems") exitwith {
 			[["armed",_object getVariable ["armed",false]]]
@@ -140,7 +181,7 @@ server_obj_killed = {
 		if ((dayz_serverClientKeys select _index) select 1 != _clientKey) exitwith {
 			format["Server_UpdateObject error: CLIENT AUTH KEY INCORRECT OR UNRECOGNIZED. PV ARRAY: %1",_this]
 		};
-		if (alive _object and {!(_class isKindOf "TentStorage_base" or _class isKindOf "IC_Tent")}) exitwith {
+		if (alive _object and {!(_class isKindOf 'DZE_Tent_Base' or _class isKindOf 'IC_Tent')}) exitwith {
 			format["Server_UpdateObject error: object kill request on living object. PV ARRAY: %1",_this]
 		};
 		"";

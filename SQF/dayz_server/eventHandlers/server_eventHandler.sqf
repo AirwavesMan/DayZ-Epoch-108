@@ -1,7 +1,6 @@
 "PVDZ_plr_Death"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
 "PVDZ_plr_Save"			addPublicVariableEventHandler {_id = (_this select 1) call server_playerSync;};
 "PVDZ_plr_SwitchMove"	addPublicVariableEventHandler {((_this select 1) select 0) switchMove ((_this select 1) select 1);}; //Needed to execute switchMove on server machine. rSwitchMove only executes on other clients
-"PVDZ_obj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishObj}; //Used by built items (Epoch and Vanilla)
 "PVDZ_veh_Save" 		addPublicVariableEventHandler {(_this select 1) call server_updateObject};
 "PVDZ_plr_Login1"		addPublicVariableEventHandler {_id = (_this select 1) call server_playerLogin};
 "PVDZ_plr_Login2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
@@ -11,15 +10,23 @@
 "PVDZ_send" addPublicVariableEventHandler {(_this select 1) call server_sendToClient};
 //"PVDZ_dayzCarBomb" addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\actions\detonate_bomb.sqf";};
 
-// EPOCH ADDITIONS
+//	Building 
+"PVDZE_build_Object"	addPublicVariableEventHandler {(_this select 1) call server_buildObject}; //Used by built items (Epoch and Vanilla)
+"PVDZE_upgrade_Object" 	addPublicVariableEventHandler {(_this select 1) spawn server_upgradeObject}; //Used to downgrade and upgrade Epoch buildables
+"PVDZE_changeCode" 		addPublicVariableEventHandler {(_this select 1) call server_changeCode};
+
+//	Base 
+"PVDZE_changeFriends" 	addPublicVariableEventHandler {(_this select 1) call server_changeFriends};
+
+//	Fire
+'PVDZE_addFireFuel' addPublicVariableEventHandler {(_this select 1) call server_addFireFuel};
+
 "PVDZE_maintainArea" 	addPublicVariableEventHandler {(_this select 1) spawn server_maintainArea};
-"PVDZE_obj_Swap" 		addPublicVariableEventHandler {(_this select 1) spawn server_swapObject}; //Used to downgrade and upgrade Epoch buildables
 "PVDZE_veh_Publish2"	addPublicVariableEventHandler {(_this select 1) call server_publishVeh2}; //Used to purchase vehicles at traders
 "PVDZE_veh_Upgrade"		addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh3}; //Used for car upgrades
 "PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};	//Logs trading
 "PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
 "PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) call server_handleSafeGear};
-"SK_changeCode" 		addPublicVariableEventHandler {(_this select 1) call server_changeCode};
 
 if (dayz_groupSystem) then {
 	"PVDZ_Server_UpdateGroup" addPublicVariableEventHandler {(_this select 1) spawn server_updateGroup};
@@ -90,7 +97,7 @@ if (dayz_groupSystem) then {
 	local _tree = (_this select 1) select 0;
 	local _player = (_this select 1) select 1;
 	local _dis = _player distance _tree;
-	local _name = if (alive _player) then {name _player} else {"DeadPlayer"};
+	local _name = _player call DZE_fnc_getNamePlayer;
 	local _uid = getPlayerUID _player;
 	local _treeModel = _tree call fn_getModelName;
 

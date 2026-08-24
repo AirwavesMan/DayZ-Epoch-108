@@ -1,3 +1,5 @@
+///#define DEBUG_SERVER_MONITOR_WORLDSPACE
+
 private ["_legacyStreamingMethod","_hiveLoaded","_timeStart","_i","_key","_result","_shutdown","_res","_myArray","_val","_status","_fileName","_lastFN",
 		"_VehicleQueue","_vQty","_idKey","_type","_ownerID","_worldspace","_inventory","_damage","_storageMoney","_vector","_vecExists","_ownerPUID",
 		"_wsCount","_ws2TN","_ws3TN","_dir","_posATL","_wsDone","_object","_doorLocked","_isPlot","_isTrapItem","_isSafeObject",
@@ -5,6 +7,13 @@ private ["_legacyStreamingMethod","_hiveLoaded","_timeStart","_i","_key","_resul
 		"_isAir","_selection","_dam","_hitpoints","_fuel","_pos"];
 
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+
+local _isWorldspaceASL = false;
+local _metadata = [];
+
+#ifdef DEBUG_SERVER_MONITOR_WORLDSPACE
+	diag_log '[Server Debug]: [server_monitor]: DZE_fnc_setPosWorld support enabled for build objects';
+#endif
 
 waitUntil {!isNil "BIS_MPF_InitDone" && initialized};
 if (!isNil "sm_done") exitWith {}; // prevent server_monitor be called twice (bug during login of the first player)
@@ -108,14 +117,29 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	} else {
 		_dir = 90;
 		_pos = [0,0,0];
+		_posATL = [];
 		_wsDone = false;
 		_wsCount = count _worldspace;
+		_isWorldspaceASL = _wsCount == 3 && {typeName (_worldspace select 0) == 'ARRAY' && {count (_worldspace select 0) == 3 && {typeName (_worldspace select 1) == 'ARRAY' && {count (_worldspace select 1) == 2 && {typeName ((_worldspace select 1) select 0) == 'ARRAY' && {count ((_worldspace select 1) select 0) == 3 && {typeName ((_worldspace select 1) select 1) == 'ARRAY' && {count ((_worldspace select 1) select 1) == 3 && {typeName (_worldspace select 2) == 'ARRAY'}}}}}}}}};
 
 		//Vector building
 		_vector = [[0,0,0],[0,0,0]];
 		_vecExists = false;
 		_ownerPUID = "0";
 
+		if (_isWorldspaceASL) then {
+			_pos = _worldspace select 0;
+			_vector = _worldspace select 1;
+			_metadata = _worldspace select 2;
+			_vecExists = true;
+			_wsDone = true;
+
+			if (count _metadata > 0 && {typeName (_metadata select 0) == 'STRING'}) then {
+				_ownerPUID = _metadata select 0;
+			};
+		};
+
+		if (!_isWorldspaceASL) then {
 		call {
 			if (_wsCount == 4) exitwith {
 				_dir = _worldspace select 0;
@@ -173,6 +197,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 				_worldspace set [count _worldspace, "0"];
 			};
 		};
+		};
 
 		if (!_wsDone) then {
 			if ((count _posATL) >= 2) then {
@@ -192,15 +217,21 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 			_object setDir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
 		};
 		_object enableSimulation false;
-		_object setPosATL _pos;
+		if (_isWorldspaceASL) then {
+			[_object,_pos] call DZE_fnc_setPosWorld;
+			_object setVariable ['worldspaceMetadata',_metadata];
+		} else {
+			_object setPosATL _pos;
+		};
 
 		_doorLocked = _type in DZE_DoorsLocked;
-		_isPlot = _type == "Plastic_Pole_EP1_DZ";
+		_isPlot = _type == DZE_Territory_Marker;
 
 		// prevent immediate hive write when vehicle parts are set up
 		_object setVariable ["lastUpdate",diag_ticktime];
 		_object setVariable ["ObjectID", _idKey];
 		_object setVariable ["OwnerPUID", _ownerPUID, true];
+		_object setVariable ['ownerPUID',_ownerPUID,true];
 		if (Z_SingleCurrency && {_type in DZE_MoneyStorageClasses}) then {
 			_object setVariable ["cashMoney", _storageMoney, true];
 		};
@@ -208,8 +239,6 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		dayz_serverIDMonitor set [count dayz_serverIDMonitor,_idKey];
 
 		if (!_wsDone) then {[_object,"position",true] call server_updateObject;};
-		if (_type == "Base_Fire_DZ") then {_object spawn base_fireMonitor;};
-
 		_isTrapItem = _object isKindOf "TrapItems";
 		_isSafeObject = _type in DayZ_SafeObjects;
 
@@ -237,10 +266,10 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 				};
 			} else {
 				if (_isPlot) then {
-					_object setVariable ["plotfriends", _inventory, true];
+					_object setVariable ["baseFriends", _inventory, true];
 				};
 				if (DZE_doorManagement && _doorLocked) then {
-					_object setVariable ["doorfriends", _inventory, true];
+					_object setVariable ["doorFriends", _inventory, true];
 				};
 			};
 		};
@@ -267,30 +296,30 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		if (_type isKindOf "StaticWeapon" || {_type in DZE_StaticWeapons}) then {
 			[_object,DZE_clearStaticAmmo,false] call fn_vehicleAddons;
 			
-			if (DZE_StaticWeaponPlotCheck) then {
+			if (DZE_StaticWeaponBaseCheck) then {
 				_object addEventHandler ["GetIn", {
 					local _weapon = _this select 0;
 					local _player = _this select 2;
-					local _nearPlots = _weapon nearEntities ["Plastic_Pole_EP1_DZ", (DZE_PlotPole select 0)];
+					local _nearPlots = _weapon nearObjects [DZE_Territory_Marker,DZE_baseRadius select 0];
 					if (count _nearPlots > 0) then {
 						local _nearestPlot = _nearPlots select 0;
-						local _plotFriends = _nearestPlot getVariable "plotfriends"; // owner is index 0.
+						local _baseFriends = _nearestPlot getVariable "baseFriends"; // owner is index 0.
 						local _playerUID = getPlayerUID _player;
 						local _isPlotFriend = false;
 						{
 							if((_x select 0) == _playerUID) exitWith {_isPlotFriend = true;};
-						} count _plotFriends;
+						} count _baseFriends;
 						
 						if (!_isPlotFriend) then {
 							// "eject" action doesn't work on the static weapons for some reason.
 							moveOut _player;
 							
 							/* uncomment to log the offender to the server rpt.
-							local _plotOwner = _plotFriends select 0;
+							local _plotOwner = _baseFriends select 0;
 							local _plotOwnerUID = _plotOwner select 0;
 							local _plotOwnerName = _plotOwner select 1;
 							_plotOwnerName = [_plotOwnerName, (toString _plotOwnerName)] select (typeName _plotOwnerName == "ARRAY");
-							diag_log format ["Player [%1, %2] ejected from %3 on plot belonging to [%4, %5]",(name _player), _playerUID, (typeOf _weapon), _plotOwnerUID, _plotOwnerName];
+							diag_log format ["Player [%1, %2] ejected from %3 on plot belonging to [%4, %5]",_player call DZE_fnc_getNamePlayer, _playerUID, (typeOf _weapon), _plotOwnerUID, _plotOwnerName];
 							*/
 						};
 					};
@@ -301,8 +330,8 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		_setGlobal = [false,true] select ((_type in DZE_LockedStorage) || (_type in DZE_DoorsLocked));
 		_object setVariable ["CharacterID", _ownerID, _setGlobal];
 		if (_isSafeObject && !_isTrapItem) then {
-			_object setVariable["memDir",_dir,true];
-			if (DZE_GodModeBase && {!(_type in DZE_GodModeBaseExclude)}) then {
+
+			if (DZE_baseGodMode && {!(_type in DZE_baseGodModeExclude)}) then {
 				_object addEventHandler ["HandleDamage",{0}];
 			} else {
 				_object addMPEventHandler ["MPKilled",{if !(isServer) exitWith {};_this call vehicle_handleServerKilled;}];
@@ -323,6 +352,10 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 			} count _inventory;
 		};
 		dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object]; //Monitor the object
+		// Register persisted fuel-using fireplaces for the server fire monitor.
+		if (getNumber (configFile >> 'CfgVehicles' >> _type >> 'DZE_fireUseFuel') == 1 && {!(_object in DZE_fireObjects)}) then {
+			DZE_fireObjects set [count DZE_fireObjects,_object];
+		};
 	};
 } foreach _myArray;
 
