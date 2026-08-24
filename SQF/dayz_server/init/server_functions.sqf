@@ -1,5 +1,3 @@
-#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
-
 waitUntil {!isNil "bis_fnc_init"};
 
 BIS_MPF_remoteExecutionServer = {
@@ -12,12 +10,45 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
 
 BIS_Effects_Burn = {};
+
 dayz_disconnectPlayers = [];
 dayz_serverKey = [59]; //makes sure client is kicked by publicvariableval.txt if they try to send it
 for "_i" from 1 to 12 do {
 	dayz_serverKey set [_i, ceil(random 128)];
 };
 dayz_serverKey = toString dayz_serverKey;
+
+//	New function paths
+
+//	Verification
+server_verifySender = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\verification\server_verifySender.sqf";
+server_verifyObject = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\verification\server_verifyObject.sqf';
+server_validateObjectWorldspace = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\verification\server_validateObjectWorldspace.sqf';
+
+//	Build 
+server_buildObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_buildObject.sqf";
+server_changeCode = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_changeCode.sqf";
+server_upgradeObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_upgradeObject.sqf";
+server_setDamageObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_setDamageObject.sqf";
+
+//	Base
+server_changeFriends = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\base\server_changeFriends.sqf";
+
+//	Fire
+server_addFireFuel = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\fire\server_addFireFuel.sqf';
+
+//	Delete 
+server_deleteObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\delete\server_deleteObj.sqf"; 	//Removes the object from the DB
+server_deleteObjDirect = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\delete\server_deleteObjDirect.sqf"; 	//Removes the object from the DB, NO AUTH, ONLY CALL FROM SERVER, NO PV ACCESS
+server_deleteOldObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\delete\server_deleteOldObj.sqf";
+
+//	Postion 
+server_positionToLocation = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\position\server_positionToLocation.sqf";
+server_formatWorldspace = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\position\server_formatWorldspace.sqf';
+
+//	Vehicle 
+server_createVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\vehicle\server_createVehicle.sqf";
+
 server_playerLogin = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerLogin.sqf";
 server_playerSetup = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSetup.sqf";
 server_onPlayerDisconnect = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_onPlayerDisconnect.sqf";
@@ -25,19 +56,13 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\updateObje
 server_updateObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateObject.sqf";
 server_setHitpoints = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_setHitpoints.sqf";
 server_playerDied = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDied.sqf";
-server_publishObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishObject.sqf";	//Creates the object in DB
-server_deleteObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_deleteObj.sqf"; 	//Removes the object from the DB
-server_deleteObjDirect = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_deleteObjDirect.sqf"; 	//Removes the object from the DB, NO AUTH, ONLY CALL FROM SERVER, NO PV ACCESS
+
 server_playerSync = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
 zombie_findOwner = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
 //server_Wildgenerate = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_Wildgenerate.sqf";
-base_fireMonitor = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\fire_monitor.sqf";
 spawnComposition = compile preprocessFileLineNumbers "ca\modules\dyno\data\scripts\objectMapper.sqf"; //"\z\addons\dayz_code\compile\object_mapper.sqf";
 server_sendToClient = compile preprocessFileLineNumbers "\z\addons\dayz_server\eventHandlers\server_sendToClient.sqf";
-server_verifySender = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_verifySender.sqf";
 
-// EPOCH ADDITIONS
-server_swapObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_swapObject.sqf"; //Used to downgrade and upgrade Epoch buildables
 server_publishVeh = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishVehicle.sqf"; //Used to spawn random vehicles by server
 server_publishVeh2 = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishVehicle2.sqf"; //Used to purchase vehicles at traders
 if (DZE_VehicleKey_Changer) then {
@@ -52,7 +77,6 @@ server_checkIfTowed = compile preprocessFileLineNumbers "\z\addons\dayz_server\c
 server_handleSafeGear = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleSafeGear.sqf";
 server_spawnTraders = compile preprocessFile "\z\addons\dayz_server\compile\server_spawnTraders.sqf";
 server_updateGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\server_updateGroup.sqf";
-server_changeCode = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_changeCode.sqf";
 
 spawn_ammosupply = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_ammosupply.sqf";
 spawn_mineveins = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_mineveins.sqf";
@@ -72,27 +96,6 @@ vehicle_handleServerKilled = {
 	_unit removeAllEventHandlers "HandleDamage";
 	_unit removeAllEventHandlers "GetIn";
 	_unit removeAllEventHandlers "GetOut";
-};
-
-check_publishobject = {
-	local _object = _this select 0;
-	local _playername = _this select 1;
-	local _allowed = false;	
-
-	#ifdef OBJECT_DEBUG
-		diag_log format["DEBUG: Checking if Object: %1 is allowed, published by %2",_object,_playername];
-	#endif
-
-	if ((typeOf _object) in DayZ_SafeObjects) then {		
-		_allowed = true;
-	};
-
-	#ifdef OBJECT_DEBUG
-		local _saveObject = "DayZ_SafeObjects";
-		diag_log format["DEBUG: Object: %1 published by %2 is allowed by %3",_object,_playername,_saveObject];
-	#endif
-
-	_allowed
 };
 
 server_hiveWrite = {
@@ -176,35 +179,6 @@ server_hiveReadWriteLarge = {
 	local _data = "HiveExt" callExtension _key;
 	local _resultArray = call compile _data;
 	_resultArray
-};
-
-// coor2str: convert position to a GPS coordinates
-fa_coor2str = {
-	local _pos = +(_this);
-	if (count _pos < 1) then {
-		_pos = [0,0];
-	} else {
-		if (count _pos < 2) then { _pos = [_pos select 0,0]; };
-	};
-	local _nearestCity = nearestLocations [_pos, ["NameCityCapital","NameCity","NameVillage","NameLocal"],1000];
-	local _town = "Wilderness";
-	if (count _nearestCity > 0) then {_town = text (_nearestCity select 0)};
-	local _res = format["%1 [%2]", _town, mapGridPosition _pos];
-
-	_res
-};
-
-// print player player PID and name. If name unknown then print UID.
-fa_plr2str = {
-	local _y = _this;
-	local _res = "nobody";	
-	if (!isNil "_y") then {
-		local _name = _y getVariable ["bodyName", nil];
-		if ((isNil "_name" OR {(_name == "")}) AND ({alive _y})) then { _name = name _y; };
-		if (isNil "_name" OR {(_name == "")}) then { _name = "UID#"+(getPlayerUID _y); };
-		_res = format["PID#%1(%2)", owner _y, _name ];
-	};
-	_res
 };
 
 array_reduceSize = {
