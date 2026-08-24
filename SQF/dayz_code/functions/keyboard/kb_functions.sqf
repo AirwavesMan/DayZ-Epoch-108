@@ -7,22 +7,24 @@
 #define CTRL                    _this select 3
 #define ALT                     _this select 4
 
-#define NATURAL                 !(ALT) && !(CTRL) && !(SHIFT)
-#define ALT_ONLY                 (ALT) && !(CTRL) && !(SHIFT)
-#define CTRL_ONLY               !(ALT) &&  (CTRL) && !(SHIFT)
-#define SHIFT_ONLY              !(ALT) && !(CTRL) &&  (SHIFT)
+#define NATURAL                 !(SHIFT) && !(CTRL) && !(ALT)
+#define SHIFT_ONLY               (SHIFT) && !(CTRL) && !(ALT)
+#define CTRL_ONLY               !(SHIFT) &&  (CTRL) && !(ALT)
+#define ALT_ONLY                !(SHIFT) && !(CTRL) &&  (ALT)
 
 kb_escape = {
 
 	// params: [displayOrControl, key, shift, ctrl, alt] https://community.bistudio.com/wiki/User_Interface_Event_Handlers#onKeyDown
 
-	DZE_cancelBuilding	= true;
-	local _handled		= false;
+	local _handled = false;
 
 	call dayz_EjectPlayer;
 
-	if (r_player_dead || DZE_buildKeysActive) then {
+	if (r_player_dead || {BUILD_STAGE >= BUILD_HOTKEYS_ACTIVE}) then {	// hotkeys active or building now
+
 		_handled = true;
+
+		BUILD_STAGE = BUILD_CANCELLED;
 	};
 	_handled
 };
@@ -96,7 +98,8 @@ kb_handed = {
 
 	// params: [displayOrControl, key, shift, ctrl, alt] https://community.bistudio.com/wiki/User_Interface_Event_Handlers#onKeyDown
 
-	if !(DZE_buildKeysActive) then {
+///	if !(BUILD_HOTKEYS_ACTIVE) then {
+	if (BUILD_STAGE	== BUILD_INACTIVE) then {
 
 		[] spawn {
 
@@ -120,7 +123,9 @@ kb_layout = {
 
 	// params: [displayOrControl, key, shift, ctrl, alt] https://community.bistudio.com/wiki/User_Interface_Event_Handlers#onKeyDown
 
-	if !(DZE_buildKeysActive) then {
+///	if !(BUILD_HOTKEYS_ACTIVE) then {
+	if (BUILD_STAGE	== BUILD_INACTIVE) then {
+
 		DZE_KEYBOARD = (DZE_KEYBOARD + 1) % 2;	// English and German keyboard layout for hotkeys
 		{
 			if (DZE_KEYBOARD == _x select 0) exitWith {DZE_LANGUAGE = _x select 1};
@@ -161,6 +166,8 @@ kb_autoRun = {
 
 	// params: [displayOrControl, key, shift, ctrl, alt] https://community.bistudio.com/wiki/User_Interface_Event_Handlers#onKeyDown
 
+/// **** TODO **** add auto-swim
+
 	if (!dayz_autoRun) then {
 
 		dayz_autoRun		= true;
@@ -200,9 +207,11 @@ kb_minus = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
-		KEY_MINUS = true;
+
+		[BUILD_DEGREE, -1] call DZE_fnc_queueBuildInput;
 	};
 	_handled
 };
@@ -217,9 +226,11 @@ kb_equals = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
-		KEY_EQUALS = true;
+
+		[BUILD_DEGREE, 1] call DZE_fnc_queueBuildInput;
 	};
 	_handled
 };
@@ -234,9 +245,11 @@ kb_backspace = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
-		KEY_BACK = true;
+
+		[BUILD_RESET, 0] call DZE_fnc_queueBuildInput;
 	};
 	_handled
 };
@@ -251,12 +264,12 @@ kb_tab = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
-		call {
-			if (NATURAL)	exitWith {KEY_TAB	= true};
-			if (SHIFT_ONLY)	exitWith {KEY_TAB_SHIFT	= true};
-		};
+
+		if (NATURAL)	exitWith {[BUILD_SNAP,  1] call DZE_fnc_queueBuildInput};
+		if (SHIFT_ONLY)	exitWith {[BUILD_SNAP, -1] call DZE_fnc_queueBuildInput};
 	};
 	_handled
 };
@@ -269,14 +282,13 @@ kb_PgUp = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
 
-		if (ALT_ONLY)	exitWith {DZE_MOVE_IDX = 6; DZE_MOVE_Z = true};
-		if (NATURAL)	exitWith {DZE_MOVE_IDX = 5; DZE_MOVE_Z = true};
-		if (CTRL_ONLY)	exitWith {DZE_MOVE_IDX = 4; DZE_MOVE_Z = true};
-
-		DZE_MOVE_IDX = 0;
+		if (ALT_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_UP, BUILD_MAX_MOVE]] call DZE_fnc_queueBuildInput};
+		if (NATURAL)	exitWith {[BUILD_MOVE, [BUILD_MOVE_UP, BUILD_MED_MOVE]] call DZE_fnc_queueBuildInput};
+		if (CTRL_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_UP, BUILD_MIN_MOVE]] call DZE_fnc_queueBuildInput};
 	};
 	_handled
 };
@@ -289,14 +301,13 @@ kb_PgDn = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
 
-		if (ALT_ONLY)	exitWith {DZE_MOVE_IDX = 1; DZE_MOVE_Z = true};
-		if (NATURAL)	exitWith {DZE_MOVE_IDX = 2; DZE_MOVE_Z = true};
-		if (CTRL_ONLY)	exitWith {DZE_MOVE_IDX = 3; DZE_MOVE_Z = true};
-
-		DZE_MOVE_IDX = 0;
+		if (ALT_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_DOWN, BUILD_MAX_MOVE]] call DZE_fnc_queueBuildInput};
+		if (NATURAL)	exitWith {[BUILD_MOVE, [BUILD_MOVE_DOWN, BUILD_MED_MOVE]] call DZE_fnc_queueBuildInput};
+		if (CTRL_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_DOWN, BUILD_MIN_MOVE]] call DZE_fnc_queueBuildInput};
 	};
 	_handled
 };
@@ -310,14 +321,15 @@ kb_key_q = {
 	local _handled	= false;
 	dayz_dodge	= true;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
 
-		if (ALT_ONLY)	exitWith {DZE_ROTATION_IDX = 1; DZE_ROTATE = true};
-		if (NATURAL)	exitWith {DZE_ROTATION_IDX = 2; DZE_ROTATE = true};
-		if (CTRL_ONLY)	exitWith {DZE_ROTATION_IDX = 3; DZE_ROTATE = true};
+		local _index = [BUILD_ROTATE2D, BUILD_ROTATE3D] select BUILD_AXIS_LOCAL;
 
-		DZE_ROTATION_IDX = 0;
+		if (ALT_ONLY)	exitWith {[_index, [Z_AXIS, -BUILD_MAX_DEGREE]] call DZE_fnc_queueBuildInput};
+		if (NATURAL)	exitWith {[_index, [Z_AXIS, -BUILD_CUR_DEGREE]] call DZE_fnc_queueBuildInput};
+		if (CTRL_ONLY)	exitWith {[_index, [Z_AXIS, -BUILD_MIN_DEGREE]] call DZE_fnc_queueBuildInput};
 	};
 	_handled
 };
@@ -331,14 +343,15 @@ kb_key_e = {
 	local _handled	= false;
 	dayz_dodge	= true;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
 
-		if (ALT_ONLY)	exitWith {DZE_ROTATION_IDX = 6; DZE_ROTATE = true};
-		if (NATURAL)	exitWith {DZE_ROTATION_IDX = 5; DZE_ROTATE = true};
-		if (CTRL_ONLY)	exitWith {DZE_ROTATION_IDX = 4; DZE_ROTATE = true};
+		local _index = [BUILD_ROTATE2D, BUILD_ROTATE3D] select BUILD_AXIS_LOCAL;
 
-		DZE_ROTATION_IDX = 0;
+		if (ALT_ONLY)	exitWith {[_index, [Z_AXIS, BUILD_MAX_DEGREE]] call DZE_fnc_queueBuildInput};
+		if (NATURAL)	exitWith {[_index, [Z_AXIS, BUILD_CUR_DEGREE]] call DZE_fnc_queueBuildInput};
+		if (CTRL_ONLY)	exitWith {[_index, [Z_AXIS, BUILD_MIN_DEGREE]] call DZE_fnc_queueBuildInput};
 	};
 	_handled
 };
@@ -351,9 +364,11 @@ kb_key_t = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
-		if (NATURAL) then {KEY_T = true};
+
+		[BUILD_TERRAIN_ALIGN, 0] call DZE_fnc_queueBuildInput;
 	};
 	_handled
 };
@@ -367,11 +382,16 @@ kb_key_p = {
 	local _handled = false;
 
 	if (SHIFT) then {
+
 		_handled = true;
+
 	} else {
-		if (DZE_buildKeysActive) then {
+
+		if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 			_handled = true;
-			if (NATURAL) then {KEY_P = true};
+
+			[BUILD_PLOT_BOUNDARY, 0] call DZE_fnc_queueBuildInput;
 		};
 	};
 	_handled
@@ -387,22 +407,22 @@ kb_key_f = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
-		if (NATURAL) then {KEY_F = true};
-///	} else {
-///		[] spawn {uiSleep 0.01; local _state = weaponState p_vehicle; systemChat format ['%1', _state]; DZR_PREV_WPN = _state select 0; DZR_PREV_MUZZ = _state select 1; DZR_PREV_MODE = _state select 2};	/// debug
+
+		[BUILD_HOLD_RELEASE, 0] call DZE_fnc_queueBuildInput;
 	};
-	_handled
 /**
 	/// **** TODO **** once the toggle/select weapon logic has been done, replace with this:
-	if (DZE_buildKeysActive) then {
-		if (NATURAL) then {KEY_F = true};
+	if (BUILD_HOTKEYS_ACTIVE) then {
+		...
 	} else {
 		call DZE_fnc_toggleWeapons;
 	};
 	true
 **/
+	_handled
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -413,9 +433,11 @@ kb_key_h = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
-		if (NATURAL) then {KEY_H = true};
+
+		BUILD_HIDE_PANEL = !BUILD_HIDE_PANEL;
 	};
 	_handled
 };
@@ -428,10 +450,14 @@ kb_key_l = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
-		if (NATURAL) then {KEY_L = true};
+
+		BUILD_AXIS_LOCAL = !BUILD_AXIS_LOCAL;
+
 	} else {
+
 		_handled = call DZE_fnc_enableFlashlight;
 	};
 	_handled
@@ -454,7 +480,16 @@ kb_key_m = {
 
 	// params: [displayOrControl, key, shift, ctrl, alt] https://community.bistudio.com/wiki/User_Interface_Event_Handlers#onKeyDown
 
-	false
+	local _handled = false;
+
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
+		_handled = true;
+
+		BUILD_ROTATION_MODE = !BUILD_ROTATION_MODE;
+	};
+
+	_handled
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -465,9 +500,11 @@ kb_space = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
-		KEY_SPACE = true;
+
+		[BUILD_BUILD, 0] call DZE_fnc_queueBuildInput;
 	};
 	_handled
 };
@@ -625,13 +662,35 @@ kb_journal = {
 
 /// **** TODO **** toggle journal dialog with same key
 
-/// **** TODO **** move this to its own function
+///	if (!dayz_isSwimming && !dialog) then {
+///		[player, 4, true, getPosATL vehicle player] call player_alertZombies;
+///		createDialog 'horde_journal_front_cover';
+///	};
 
-	if (!dayz_isSwimming && !dialog) then {
-		[player, 4, true, getPosATL vehicle player] call player_alertZombies;
-		createDialog 'horde_journal_front_cover';
+	local _handled = false;
+
+	if (!dayz_isSwimming) then {
+
+		if (!dialog) then {
+
+			_handled = true;
+
+			[player, 4, true, getPosATL vehicle player] call player_alertZombies;
+			createDialog 'horde_journal_front_cover';
+			DZE_JOURNAL_OPEN = true;
+
+		} else {
+
+			if (DZE_JOURNAL_OPEN) then {
+
+				_handled = true;
+
+				closeDialog 1;
+				DZE_JOURNAL_OPEN = false;
+			};
+		};
 	};
-	true
+	_handled
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -797,14 +856,22 @@ kb_up = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
 
-		if (ALT_ONLY)	exitWith {DZE_ROTATION_IDX = 1; DZE_MOVE_Y = true};
-		if (NATURAL)	exitWith {DZE_ROTATION_IDX = 2; DZE_MOVE_Y = true};
-		if (CTRL_ONLY)	exitWith {DZE_ROTATION_IDX = 3; DZE_MOVE_Y = true};
+		if (BUILD_ROTATION_MODE) then {
 
-		DZE_ROTATION_IDX = 0;
+			if (ALT_ONLY)	exitWith {[BUILD_ROTATE3D, [X_AXIS, BUILD_MAX_DEGREE]] call DZE_fnc_queueBuildInput};
+			if (NATURAL)	exitWith {[BUILD_ROTATE3D, [X_AXIS, BUILD_CUR_DEGREE]] call DZE_fnc_queueBuildInput};
+			if (CTRL_ONLY)	exitWith {[BUILD_ROTATE3D, [X_AXIS, BUILD_MIN_DEGREE]] call DZE_fnc_queueBuildInput};
+
+		} else {
+
+			if (ALT_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_FWD, BUILD_MAX_MOVE]] call DZE_fnc_queueBuildInput};
+			if (NATURAL)	exitWith {[BUILD_MOVE, [BUILD_MOVE_FWD, BUILD_MED_MOVE]] call DZE_fnc_queueBuildInput};
+			if (CTRL_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_FWD, BUILD_MIN_MOVE]] call DZE_fnc_queueBuildInput};
+		};
 	};
 	_handled
 };
@@ -819,14 +886,22 @@ kb_down = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
 
-		if (ALT_ONLY)	exitWith {DZE_ROTATION_IDX = 6; DZE_MOVE_Y = true};
-		if (NATURAL)	exitWith {DZE_ROTATION_IDX = 5; DZE_MOVE_Y = true};
-		if (CTRL_ONLY)	exitWith {DZE_ROTATION_IDX = 4; DZE_MOVE_Y = true};
+		if (BUILD_ROTATION_MODE) then {
 
-		DZE_ROTATION_IDX = 0;
+			if (ALT_ONLY)	exitWith {[BUILD_ROTATE3D, [X_AXIS, -BUILD_MAX_DEGREE]] call DZE_fnc_queueBuildInput};
+			if (NATURAL)	exitWith {[BUILD_ROTATE3D, [X_AXIS, -BUILD_CUR_DEGREE]] call DZE_fnc_queueBuildInput};
+			if (CTRL_ONLY)	exitWith {[BUILD_ROTATE3D, [X_AXIS, -BUILD_MIN_DEGREE]] call DZE_fnc_queueBuildInput};
+
+		} else {
+
+			if (ALT_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_BACK, BUILD_MAX_MOVE]] call DZE_fnc_queueBuildInput};
+			if (NATURAL)	exitWith {[BUILD_MOVE, [BUILD_MOVE_BACK, BUILD_MED_MOVE]] call DZE_fnc_queueBuildInput};
+			if (CTRL_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_BACK, BUILD_MIN_MOVE]] call DZE_fnc_queueBuildInput};
+		};
 	};
 	_handled
 };
@@ -841,14 +916,22 @@ kb_left = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
 
-		if (ALT_ONLY)	exitWith {DZE_ROTATION_IDX = 1; DZE_MOVE_X = true};
-		if (NATURAL)	exitWith {DZE_ROTATION_IDX = 2; DZE_MOVE_X = true};
-		if (CTRL_ONLY)	exitWith {DZE_ROTATION_IDX = 3; DZE_MOVE_X = true};
+		if (BUILD_ROTATION_MODE) then {
 
-		DZE_ROTATION_IDX = 0;
+			if (ALT_ONLY)	exitWith {[BUILD_ROTATE3D, [Y_AXIS, BUILD_MAX_DEGREE]] call DZE_fnc_queueBuildInput};
+			if (NATURAL)	exitWith {[BUILD_ROTATE3D, [Y_AXIS, BUILD_CUR_DEGREE]] call DZE_fnc_queueBuildInput};
+			if (CTRL_ONLY)	exitWith {[BUILD_ROTATE3D, [Y_AXIS, BUILD_MIN_DEGREE]] call DZE_fnc_queueBuildInput};
+
+		} else {
+
+			if (ALT_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_LEFT, BUILD_MAX_MOVE]] call DZE_fnc_queueBuildInput};
+			if (NATURAL)	exitWith {[BUILD_MOVE, [BUILD_MOVE_LEFT, BUILD_MED_MOVE]] call DZE_fnc_queueBuildInput};
+			if (CTRL_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_LEFT, BUILD_MIN_MOVE]] call DZE_fnc_queueBuildInput};
+		};
 	};
 	_handled
 };
@@ -863,14 +946,22 @@ kb_right = {
 
 	local _handled = false;
 
-	if (DZE_buildKeysActive) then {
+	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
+
 		_handled = true;
 
-		if (ALT_ONLY)	exitWith {DZE_ROTATION_IDX = 6; DZE_MOVE_X = true};
-		if (NATURAL)	exitWith {DZE_ROTATION_IDX = 5; DZE_MOVE_X = true};
-		if (CTRL_ONLY)	exitWith {DZE_ROTATION_IDX = 4; DZE_MOVE_X = true};
+		if (BUILD_ROTATION_MODE) then {
 
-		DZE_ROTATION_IDX = 0;
+			if (ALT_ONLY)	exitWith {[BUILD_ROTATE3D, [Y_AXIS, -BUILD_MAX_DEGREE]] call DZE_fnc_queueBuildInput};
+			if (NATURAL)	exitWith {[BUILD_ROTATE3D, [Y_AXIS, -BUILD_CUR_DEGREE]] call DZE_fnc_queueBuildInput};
+			if (CTRL_ONLY)	exitWith {[BUILD_ROTATE3D, [Y_AXIS, -BUILD_MIN_DEGREE]] call DZE_fnc_queueBuildInput};
+
+		} else {
+
+			if (ALT_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_RIGHT, BUILD_MAX_MOVE]] call DZE_fnc_queueBuildInput};
+			if (NATURAL)	exitWith {[BUILD_MOVE, [BUILD_MOVE_RIGHT, BUILD_MED_MOVE]] call DZE_fnc_queueBuildInput};
+			if (CTRL_ONLY)	exitWith {[BUILD_MOVE, [BUILD_MOVE_RIGHT, BUILD_MIN_MOVE]] call DZE_fnc_queueBuildInput};
+		};
 	};
 	_handled
 };

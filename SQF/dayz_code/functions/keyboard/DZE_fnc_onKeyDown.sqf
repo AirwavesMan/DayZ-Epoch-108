@@ -59,6 +59,7 @@ if (isNil 'keyboard_keys') then {
 		[actionKeys 'ToggleWeapons',		{_this call kb_key_f}],
 		[[DIK_H],				{_this call kb_key_h}],
 		[[DIK_L],				{_this call kb_key_l}],
+		[[DIK_M],				{_this call kb_key_m}],
 		[actionKeys 'ShowMap',			{_this call kb_key_m}],
 		[[DIK_SPACE],				{_this call kb_space}],
 		[actionKeys 'ForceCommandingMode',	{_this call kb_space}],
