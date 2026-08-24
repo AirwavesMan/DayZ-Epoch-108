@@ -95,8 +95,8 @@ local _limit = 3;
 if (DZE_StaticConstructionCount > 0) then {
 	_limit = DZE_StaticConstructionCount;
 } else {
-	if (isNumber (configFile >> "CfgVehicles" >> _objType >> "DZE_buildingSteps")) then {
-		_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "DZE_buildingSteps");
+	if (isNumber (configFile >> 'CfgVehicles' >> _objType >> 'DZE_buildingSteps')) then {
+		_limit = 0 max getNumber(configFile >> 'CfgVehicles' >> _objType >> 'DZE_buildingSteps');
 	};
 };
 
@@ -161,8 +161,8 @@ local _nameVehicle = getText(configFile >> "CfgVehicles" >> _objType >> "display
 
 local _brokenTool	= false;
 local _counter		= 0;
-local _isOk		= true;
-local _proceed		= false;
+local _isOk		= _limit > 0;
+local _proceed		= _limit == 0;
 
 [player, 50, true, (getPosATL player)] spawn player_alertZombies;	// Alert zombies once
 

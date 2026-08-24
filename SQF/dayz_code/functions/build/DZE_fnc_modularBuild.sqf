@@ -423,7 +423,7 @@ handleExit;
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-local _limit	= if (DZE_StaticConstructionCount > 0) then {DZE_StaticConstructionCount} else {clamp(getNumber (configFile >> 'CfgVehicles' >> _className >> 'DZE_buildingSteps'), 1, 3)};
+local _limit	= if (DZE_StaticConstructionCount > 0) then {DZE_StaticConstructionCount} else {0 max getNumber (configFile >> 'CfgVehicles' >> _className >> 'DZE_buildingSteps')};
 local _counter	= 0;
 _reason		= localize 'STR_BUILD_CANCELLED';	// Canceled building.
 _format		= false;

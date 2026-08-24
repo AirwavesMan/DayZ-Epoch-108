@@ -37,7 +37,7 @@ class DZE_Building_Base: House {
 	DZE_preventUnderground = 1;   	//	No underground building
 	DZE_saveToDatabase = 1;        	//	Allowed server saving the building to the database
 	DZE_allowRotation = 1; 			//	Allow rotation of the object
-	DZE_buildingSteps = 1;			//	How many animation steps the buildings needs to be build
+	DZE_buildingSteps = 1;			//	Number of construction and deconstruction animation steps; 0 skips the animation
 
 	class DestructionEffects {
 		class Sound {
@@ -93,5 +93,3 @@ class DZE_Building_Base: House {
 #include "Furnitures.hpp"
 #include "StaticWeapons.hpp"		//Todo
 #include "Billboards.hpp"		//Buildables?
-
-

@@ -45,7 +45,7 @@ if (count _points > 0) exitWith {
 };
 
 local _eligible = _allowFallback ||
-	{getNumber (_config >> 'DZE_buildingSteps') > 0} ||
+	{isNumber (_config >> 'DZE_buildingSteps')} ||
 	{_object isKindOf 'BuiltItems'} ||
 	{_object isKindOf 'ModularItems'} ||
 	{_object isKindOf 'DZE_Base_Object'};
