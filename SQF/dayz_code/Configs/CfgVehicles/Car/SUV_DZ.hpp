@@ -3,7 +3,7 @@ class SUV_DZ: SUV_Base_EP1 {
 	scope = 2;
 	side = 1;
 	faction = "USMC";	
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
@@ -83,7 +83,7 @@ class SUV_DZ: SUV_Base_EP1 {
 
 class SUV_TK_CIV_EP1_DZE: SUV_Base_EP1 {
 	displayName = "$STR_VEH_NAME_SUV_BLACK";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	scope = 2;
 	side = 1;
 	faction = "USMC";	
@@ -242,7 +242,7 @@ class SUV_TK_CIV_EP1_DZE4: SUV_TK_CIV_EP1_DZE3 {
 
 class SUV_Camo: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_CAMO";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\camo10.paa"};
 
 	class Upgrades {
@@ -322,7 +322,7 @@ class SUV_Camo_DZE4: SUV_Camo_DZE3 {
 
 class SUV_Blue: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_BLUE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_blue_co.paa"};
 
 	class Upgrades {
@@ -402,7 +402,7 @@ class SUV_Blue_DZE4: SUV_Blue_DZE3 {
 
 class SUV_Green: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_GREEN";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_green_co.paa"};
 
 	class Upgrades {
@@ -482,7 +482,7 @@ class SUV_Green_DZE4: SUV_Green_DZE3 {
 
 class SUV_Yellow: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_YELLOW";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_yellow_co.paa"};
 
 	class Upgrades {
@@ -562,7 +562,7 @@ class SUV_Yellow_DZE4: SUV_Yellow_DZE3 {
 
 class SUV_Red: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_RED";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_red_co.paa"};
 
 	class Upgrades {
@@ -642,7 +642,7 @@ class SUV_Red_DZE4: SUV_Red_DZE3 {
 
 class SUV_White: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_WHITE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_white_co.paa"};
 
 	class Upgrades {
@@ -722,7 +722,7 @@ class SUV_White_DZE4: SUV_White_DZE3 {
 
 class SUV_Pink: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_PINK";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_pink_co.paa"};
 
 	class Upgrades {
@@ -802,7 +802,7 @@ class SUV_Pink_DZE4: SUV_Pink_DZE3 {
 
 class SUV_Charcoal: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_GREY";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_charcoal_co.paa"};
 
 	class Upgrades {
@@ -882,7 +882,7 @@ class SUV_Charcoal_DZE4: SUV_Charcoal_DZE3 {
 
 class SUV_Orange: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_ORANGE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_orange_co.paa"};
 
 	class Upgrades {
@@ -962,7 +962,7 @@ class SUV_Orange_DZE4: SUV_Orange_DZE3 {
 
 class SUV_Silver: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_SILVER";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_silver_co.paa"};
 
 	class Upgrades {
@@ -1042,7 +1042,7 @@ class SUV_Silver_DZE4: SUV_Silver_DZE3 {
 
 class SUV_Winter_Camo: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_WINTER";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\suv\camo_winter.paa"};
 
 	class Upgrades {
@@ -1122,7 +1122,7 @@ class SUV_Winter_Camo_DZE4: SUV_Winter_Camo_DZE3 {
 
 class SUV_Blue_White: SUV_TK_CIV_EP1_DZE {
 	displayName = "$STR_VEH_NAME_SUV_BLUE_WHITE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\suv\suv_body_bluewhite.paa"};
 
 	class Upgrades {

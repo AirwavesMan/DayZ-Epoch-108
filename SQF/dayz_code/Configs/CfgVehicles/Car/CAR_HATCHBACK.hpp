@@ -3,7 +3,7 @@ class car_hatchback_DZE: car_hatchback {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_HATCHBACK_YELLOW";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	maxspeed = 125;
 	armor = 20;
 	damageResistance = 0.01821;

@@ -4,7 +4,7 @@ class AAV_DZ : AAV {
 	side = 1;
 	faction = "USMC";
 	displayName = $STR_VEH_NAME_AAV;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;	
@@ -82,7 +82,7 @@ class AAV_DZE : AAV_DZ {
 	};	
 	class Upgrades {
 		ItemTankORP[] = {"AAV_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
-	};	
+	};
 };
 
 class AAV_DZE1: AAV_DZE {

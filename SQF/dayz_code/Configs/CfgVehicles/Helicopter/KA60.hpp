@@ -6,7 +6,7 @@ class Ka60_GL_PMC: Ka60_GL_BASE_PMC {
 
 class Ka60_GL_PMC_DZ: Ka60_GL_PMC {	
 	displayName = "$STR_VEH_NAME_KA60";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = "";

@@ -17,7 +17,7 @@ class UH1Y_DZ: UH1_Base {
 	side = 1;
 	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_UH1Y";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};

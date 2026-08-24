@@ -22,7 +22,7 @@ class Old_bike_TK_CIV_EP1_DZE: Old_bike_TK_CIV_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayName = $STR_VEH_NAME_BIKE_OLD;
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -35,7 +35,7 @@ class MMT_Civ_DZE: MMT_Civ {
 	side = 1;
 	faction = "USMC";
 	displayName = $STR_VEH_NAME_BIKE_MOUNTAINBIKE;
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

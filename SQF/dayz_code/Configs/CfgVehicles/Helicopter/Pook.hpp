@@ -4,7 +4,7 @@ class pook_H13_base_DZE: pook_H13_base
 	scope = 0;
 	side = 1;
 	faction = "USMC";	
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	enablemanualfire = 0;
 	typicalCargo[] = {};

@@ -3,7 +3,7 @@ class UAZ_CDF_DZE: UAZ_CDF {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_CDF";
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -100,7 +100,7 @@ class UAZ_INS_DZE: UAZ_INS {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_INS";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -197,7 +197,7 @@ class UAZ_RU_DZE: UAZ_RU {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_RU";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -294,7 +294,7 @@ class UAZ_Unarmed_TK_EP1_DZE: UAZ_Unarmed_TK_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_TK";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -391,7 +391,7 @@ class UAZ_Unarmed_UN_EP1_DZE: UAZ_Unarmed_UN_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_UN";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -488,7 +488,7 @@ class UAZ_Unarmed_TK_CIV_EP1_DZE: UAZ_Unarmed_TK_CIV_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_CIVIL";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -585,7 +585,7 @@ class UAZ_Rust_DZE: UAZ_Unarmed_TK_CIV_EP1 {
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_RUSTY";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\uaz\uaz_main_wrecked_co.paa"};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -682,7 +682,7 @@ class UAZ_WINTER_DZE: UAZ_Unarmed_TK_EP1 {
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_WINTER";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\uaz\uaz_winter.paa"};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

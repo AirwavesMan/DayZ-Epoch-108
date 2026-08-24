@@ -4,7 +4,7 @@ class AH6J_EP1_DZ: AH6J_EP1
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_AH6J";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	weapons[] = {"TwinM134","CMFlareLauncher"};
@@ -70,7 +70,7 @@ class AH6J_EP1_DZE3: AH6J_EP1_DZE2
 class AH6X_EP1;
 class AH6X_DZ: AH6X_EP1 {
 	displayname = "$STR_VEH_NAME_AH6X";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	model = "dayz_vehicles\helicopters\greybird\greybird.p3d";
 	side = 1;
 	faction = "USMC";

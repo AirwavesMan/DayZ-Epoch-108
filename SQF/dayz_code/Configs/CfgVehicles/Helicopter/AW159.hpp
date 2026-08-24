@@ -4,7 +4,7 @@ class AW159_Lynx_BAF: Helicopter {
 };
 class AW159_Lynx_BAF_DZ: AW159_Lynx_BAF {
 	displayname = "$STR_VEH_NAME_AW159";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	weapons[] = {"CMFlareLauncher"};
 	magazines[] = {"120Rnd_CMFlareMagazine"};
 	enablemanualfire = 0;

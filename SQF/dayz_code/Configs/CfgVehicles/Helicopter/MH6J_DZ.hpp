@@ -7,7 +7,7 @@ class MH6J_DZ: MH6J_EP1
 	enablemanualfire = 0;
 	typicalCargo[] = {};
 	displayname = $STR_VEH_NAME_MH6J;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	radartype = 0;
 	class TransportMagazines{};
 	class TransportWeapons{};

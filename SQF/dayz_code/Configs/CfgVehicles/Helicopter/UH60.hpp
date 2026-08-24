@@ -1,7 +1,7 @@
 class MH60S;
 class MH60S_DZ : MH60S {
 	displayName = "$STR_VEH_NAME_MH60";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = "";
@@ -135,7 +135,7 @@ class MH60S_DZE3: MH60S_DZE2
 class UH60M_EP1;
 class UH60M_EP1_DZ: UH60M_EP1 {
 	displayName = "$STR_VEH_NAME_UH60";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = "";
@@ -267,7 +267,7 @@ class UH60M_EP1_DZE3: UH60M_EP1_DZE2
 class UH60M_MEV_EP1;
 class UH60M_MEV_EP1_DZ : UH60M_MEV_EP1 {
 	displayname = "$STR_VEH_NAME_HH60";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = ""; 

@@ -1,6 +1,6 @@
 class CH_47F_EP1;
 class CH_47F_EP1_DZ : CH_47F_EP1 { 
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC"; 
 	displayName = "$STR_VEH_NAME_CH47_GREEN";

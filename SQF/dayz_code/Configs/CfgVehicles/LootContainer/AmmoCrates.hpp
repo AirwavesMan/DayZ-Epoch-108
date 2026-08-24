@@ -4,7 +4,7 @@ class DZ_AmmoBoxRU : ReammoBox
 	
 	model = "ca\weapons\ammoboxes\proxy_ruweaponboxlow.p3d";
 	displayName = $STR_DAYZ_OBJ_3;
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 };
 
 class DZ_ExplosiveBoxRU : ReammoBox
@@ -13,7 +13,7 @@ class DZ_ExplosiveBoxRU : ReammoBox
 	
 	model = "ca\weapons\ammoboxes\proxy_ruexplosives.p3d";
 	displayName = $STR_DAYZ_OBJ_3;
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 };
 
 class DZ_AmmoBoxUS : ReammoBox
@@ -22,7 +22,7 @@ class DZ_AmmoBoxUS : ReammoBox
 	
 	model = "ca\weapons\ammoboxes\proxy_usbasicammoboxsmall.p3d";
 	displayName = $STR_DAYZ_OBJ_3;
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 };
 
 class DZ_ExplosivesBoxUS : ReammoBox
@@ -31,7 +31,7 @@ class DZ_ExplosivesBoxUS : ReammoBox
 	
 	model = "ca\weapons\ammoboxes\proxy_usbasicexplosives.p3d";
 	displayName = $STR_DAYZ_OBJ_3;
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 };
 
 class DZ_CardboardBox : ReammoBox
@@ -40,7 +40,7 @@ class DZ_CardboardBox : ReammoBox
 	
 	model = "dayz_equip\models\cardboard_box.p3d";
 	displayName = $STR_DAYZ_OBJ_4;
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 };
 
 class DZ_MedBox : ReammoBox
@@ -49,7 +49,7 @@ class DZ_MedBox : ReammoBox
 	
 	model = "z\addons\dayz_communityassets\models\medical_freezbox.p3d";
 	displayName = $STR_DAYZ_OBJ_2;
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 };
 
 class DZ_AmmoBoxSmallUS : ReammoBox
@@ -61,7 +61,7 @@ class DZ_AmmoBoxSmallUS : ReammoBox
 	transportMaxMagazines = 10000;
 	transportMaxWeapons = 10000;
 	transportMaxBackpacks = 100;
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 };
 
 class DZ_AmmoBoxFlatUS : DZ_AmmoBoxSmallUS
@@ -136,5 +136,5 @@ class DZ_ItemStorage : ItemStorage
 	transportMaxMagazines = 1000;
 	transportMaxWeapons = 1000;
 	transportMaxBackpacks = 20;
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 };	

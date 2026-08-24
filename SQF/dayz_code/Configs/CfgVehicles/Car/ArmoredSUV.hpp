@@ -4,7 +4,7 @@ class ArmoredSUV_DZE_Base_PMC: Car
 	side = 1;
 	faction = "USMC";	
 	brakeDistance = 19;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	htMin = 60;
 	htMax = 1800;
 	afMax = 200;

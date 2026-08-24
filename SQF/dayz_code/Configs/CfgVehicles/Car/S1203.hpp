@@ -3,7 +3,7 @@ class S1203_TK_CIV_EP1_DZE: S1203_TK_CIV_EP1 {
 	side = 1;
 	faction = "USMC";	
 	displayName = "$STR_VEH_NAME_SKODA_BUS";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -101,7 +101,7 @@ class S1203_ambulance_EP1_DZE: S1203_ambulance_EP1 {
 	side = 1;
 	faction = "USMC";	
 	displayName = "$STR_VEH_NAME_SKODA_AMBULANCE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

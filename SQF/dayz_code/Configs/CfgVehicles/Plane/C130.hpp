@@ -3,7 +3,7 @@ class C130J_US_EP1_DZ: C130J_US_EP1 {
 	side = 1;
 	faction = "USMC";	
 	displayname = $STR_VEH_NAME_C130;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;	

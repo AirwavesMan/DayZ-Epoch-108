@@ -3,7 +3,7 @@ class Fishing_Boat_DZE: Fishing_Boat {
 	side = 1;
 	faction = "USMC";
 	displayname = $STR_VEH_NAME_FISHING_BOAT;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	armor = 10;
 	crew = "";
 	transportMaxWeapons = 40;

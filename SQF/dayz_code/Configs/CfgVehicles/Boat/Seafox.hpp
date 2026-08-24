@@ -3,7 +3,7 @@ class SeaFox_DZE: SeaFox {
 	side = 1;
 	faction = "USMC";
 	displayname = $STR_DN_SEAFOX;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	transportMaxWeapons = 200;
 	transportMaxMagazines = 2000;	

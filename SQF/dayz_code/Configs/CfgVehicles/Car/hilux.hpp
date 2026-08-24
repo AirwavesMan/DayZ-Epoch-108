@@ -3,7 +3,7 @@ class hilux1_civil_1_open_DZE: hilux1_civil_1_open {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_PICKUP_TAN";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
@@ -111,7 +111,7 @@ class hilux1_civil_2_covered_DZE: hilux1_civil_2_covered {
 	side = 1;
 	faction = "USMC";	
 	displayName = "$STR_VEH_NAME_PICKUP_COVERED_RED";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
@@ -219,7 +219,7 @@ class hilux1_civil_3_open_DZE: hilux1_civil_3_open {
 	side = 1;
 	faction = "USMC";	
 	displayName = "$STR_VEH_NAME_PICKUP_WHITE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};

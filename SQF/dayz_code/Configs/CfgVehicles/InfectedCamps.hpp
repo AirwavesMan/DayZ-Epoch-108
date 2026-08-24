@@ -2,7 +2,7 @@ class IC_Fireplace1: House {
 	scope = 2;
 	displayname = $str_misc_campfire;
 	model = "\Ca\misc3\Campfire";
-	vehicleClass = "DayZ Epoch Buildings";
+	vehicleClass = "DayZ Epoch 1071 Infected Camp Objects";
 };
 
 class IC_Tent: House {
@@ -14,7 +14,7 @@ class IC_Tent: House {
 	model = "\CA\Misc3\A_tent";
 	scope = 2;
 	
-	vehicleClass = "DayZ Epoch Buildings";
+	vehicleClass = "DayZ Epoch 1071 Infected Camp Objects";
 	pack = "WeaponHolder_ItemTent";
 	transportMaxMagazines = 50;
 	transportMaxWeapons = 10;
@@ -26,7 +26,7 @@ class IC_DomeTent : IC_Tent {
 	icon = "\Ca\buildings\Icons\i_Astan_CA.paa";
 	model = "\ca\buildings\Tents\astan";
 	pack = "WeaponHolder_ItemDomeTent";
-	vehicleClass = "DayZ Epoch Buildings";
+	vehicleClass = "DayZ Epoch 1071 Infected Camp Objects";
 	
 	transportMaxMagazines = 35;
 	transportMaxWeapons = 15;

@@ -3,7 +3,7 @@ class Camel_Base_DZE: Plane
 	scope = 0;
 	side = 1;
 	faction = "USMC";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	displayName = "Camel";
 	crew = "";
 	typicalCargo[] = {};

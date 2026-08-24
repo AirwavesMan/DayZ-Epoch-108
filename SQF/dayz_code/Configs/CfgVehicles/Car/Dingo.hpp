@@ -53,7 +53,7 @@ class Dingo_DZE_Base_ACR: Car
 	castDriverShadow = 0;
 	radarType = 0;
 	unitInfoType = "UnitInfoShip";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	threat[] = {1,0.1,0.4};	
 	crewVulnerable = 1;
 	class Turrets: Turrets

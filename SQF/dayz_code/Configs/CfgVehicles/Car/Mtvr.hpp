@@ -3,7 +3,7 @@ class MTVR_DZE: MTVR {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_MTVR_WOODLAND";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -58,7 +58,7 @@ class MTVR_DES_EP1_DZE : MTVR_DES_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_MTVR_DESERT";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -114,7 +114,7 @@ class MtvrRefuel_DES_EP1_DZ: MtvrRefuel_DES_EP1 {
 	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_MTVR_DESERT_REFUEL";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	typicalCargo[] = {};
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;
@@ -170,7 +170,7 @@ class MtvrRefuel_DZ: MtvrRefuel {
 	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_REFUEL";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	typicalCargo[] = {};
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;
@@ -226,7 +226,7 @@ class MtvrRepair_DZE: MtvrRepair {
 	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_MTVR_AMMO";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	typicalCargo[] = {};
 	transportMaxWeapons = 25;
 	transportMaxMagazines = 300;
@@ -285,7 +285,7 @@ class MtvrReammo_DZE: MtvrReammo {
 	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_MTVR_WEAPONS";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	typicalCargo[] = {};
 	transportMaxWeapons = 75;
 	transportMaxMagazines = 100;
@@ -344,7 +344,7 @@ class MTVR_Open_DZE: MTVR {
 	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_OPEN";
 	model = "\z\addons\dayz_epoch_v\vehicles\mtvr\dze_mtvr";
 	picture = "\Ca\wheeled2\data\UI\Picture_MTVR_repair_CA.paa";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

@@ -1,13 +1,16 @@
 class ItemHatchet : ItemCore
 {
-	scope = 2;	
+	scope = 2;
 	model = "\dayz_equip\models\hatchet.p3d";
 	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
 	displayName = $STR_EQUIP_NAME_HATCHET;
 	descriptionShort = $STR_EQUIP_DESC_HATCHET;
-	
+	brokenItem = "ItemHatchetBroken";
+	swappedItem = "MeleeHatchet";
+
+
 	class ItemActions
-	{		
+	{
 		class ToBack
 		{
 			text = $STR_ACTIONS_2BACK;
@@ -15,7 +18,7 @@ class ItemHatchet : ItemCore
 			use[] = {"ItemHatchet"};
 			output[] = {"MeleeHatchet"};
 		};
-		
+
 		class Toolbelt
 		{
 			text = $STR_ACTIONS_RFROMTB;
@@ -28,12 +31,12 @@ class ItemHatchet : ItemCore
 
 class ItemHatchetBroken : ItemCore
 {
-	scope = 2;	
+	scope = 2;
 	picture = "\dayz_epoch_c\icons\tools\ItemHatchetBroken.paa";
 	model = "\dayz_equip\models\hatchet.p3d";
 	displayName = $STR_name_ItemHatchetBroken;
-	descriptionShort = $STR_desc_ItemHatchetBroken;	
-	
+	descriptionShort = $STR_desc_ItemHatchetBroken;
+
 	class ItemActions
 	{
 		class Repair
@@ -46,24 +49,24 @@ class ItemHatchetBroken : ItemCore
 			outputweapons[] = {"ItemHatchet"};
 			input[] = {{"equip_duct_tape",1},{"equip_lever",1}};
 			inputweapons[] = {"ItemHatchetBroken"};
-		};		
+		};
 	};
 };
 
 class ItemHatchetBlunt : ItemCore
 {
-	scope = 2;	
+	scope = 2;
 	picture = "\dayz_epoch_c\icons\tools\ItemHatchetBroken.paa";
 	model = "\dayz_equip\models\hatchet.p3d";
 	displayName = $STR_EQUIP_NAME_HATCHET_DULL;
-	descriptionShort = $STR_EQUIP_DESC_HATCHET_DULL;	
-	
+	descriptionShort = $STR_EQUIP_DESC_HATCHET_DULL;
+
 	class ItemActions
 	{
 		class SharpenHatchet
 		{
 			text = $STR_ACTIONS_SHARPEN_HATCHET;
 			script = "; ['ItemHatchetBlunt','ItemHatchet'] spawn player_sharpen;";
-		};		
+		};
 	};
 };

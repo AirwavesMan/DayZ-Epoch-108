@@ -1,21 +1,31 @@
-class TrapItems : NonStrategic {
-	offset[] = {0,2,0};
+// All -> Static -> Building -> NonStrategic
+// Traps
+class DZE_Trap_Base: NonStrategic {
+	vehicleClass = "DayZ Epoch 1071 Traps";
+	scope = 0;
+	DZE_offset[] = {0,2,0};
+
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 1;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	DZE_allowRotation = 0;	
 };
 
-class BearTrap_DZ : TrapItems {
+class DZE_BearTrap: DZE_Trap_Base {
 	scope = 2;
 	destrType = "DestructNo";
 	displayName = $STR_EQUIP_NAME_BEARTRAP;
 	descriptionShort = $STR_EQUIP_DESC_BEARTRAP;
 	model = "\dayz_equip\models\bear_trap.p3d";
-	script = "beartrap"; // compiled script variable name (used by server side loop)
-	initState = 0; // initial armed state (>0 is not currently working)
+	script = "beartrap";
+	// compiled script variable name (used by server side loop)
+	initState = 0;
+	// initial armed state (>0 is not currently working)
 	singleUse = 0;
-	nounderground = 0;
-	requireplot = 0;
-	constructioncount = 1;
-	vehicleClass = "DayZ Epoch Buildables";
-	
+	DZE_preventUnderground = 0;
+	DZE_bypassBase = 0;
+	DZE_buildingSteps = 1;
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn beartrap;";
 	};
@@ -63,60 +73,17 @@ class BearTrap_DZ : TrapItems {
 		};
 	};
 };
-class Bomb
-{
+
+class Bomb {
 	condition = "bomb";
-	class Circle
-	{
+	vehicleClass = "DayZ Epoch 1071 Traps";
+	class Circle {
 		type = "line";
-		points[] = {
-		{ "WeaponAim",
-		{ 0,-0.1125 },1 },
-		{ "WeaponAim",
-		{ 0.05,-0.097875 },1 },
-		{ "WeaponAim",
-		{ 0.087,-0.05625 },1 },
-		{ "WeaponAim",
-		{ 0.1,0 },1 },
-		{ "WeaponAim",
-		{ 0.087,0.05625 },1 },
-		{ "WeaponAim",
-		{ 0.05,0.097875 },1 },
-		{ "WeaponAim",
-		{ 0,0.1125 },1 },
-		{ "WeaponAim",
-		{ -0.05,0.097875 },1 },
-		{ "WeaponAim",
-		{ -0.087,0.05625 },1 },
-		{ "WeaponAim",
-		{ -0.1,0 },1 },
-		{ "WeaponAim",
-		{ -0.087,-0.05625 },1 },
-		{ "WeaponAim",
-		{ -0.05,-0.097875 },1 },
-		{ "WeaponAim",
-		{ 0,-0.1125 },1 },
-		{                },
-		{ "Velocity",0.001,"WeaponAim",
-		{ 0.0,0.0 },1 },
-		{ "Velocity",
-		{ 0.0,0.0 },1 },
-		{                },
-		{ "Target",
-		{ 0,-0.07875 },1 },
-		{ "Target",
-		{ 0.07,0 },1 },
-		{ "Target",
-		{ 0,0.07875 },1 },
-		{ "Target",
-		{ -0.07,0 },1 },
-		{ "Target",
-		{ 0,-0.07875 },1 }};
+		points[] = { { "WeaponAim", { 0,-0.1125 },1 }, { "WeaponAim", { 0.05,-0.097875 },1 }, { "WeaponAim", { 0.087,-0.05625 },1 }, { "WeaponAim", { 0.1,0 },1 }, { "WeaponAim", { 0.087,0.05625 },1 }, { "WeaponAim", { 0.05,0.097875 },1 }, { "WeaponAim", { 0,0.1125 },1 }, { "WeaponAim", { -0.05,0.097875 },1 }, { "WeaponAim", { -0.087,0.05625 },1 }, { "WeaponAim", { -0.1,0 },1 }, { "WeaponAim", { -0.087,-0.05625 },1 }, { "WeaponAim", { -0.05,-0.097875 },1 }, { "WeaponAim", { 0,-0.1125 },1 }, { }, { "Velocity",0.001,"WeaponAim", { 0.0,0.0 },1 }, { "Velocity", { 0.0,0.0 },1 }, { }, { "Target", { 0,-0.07875 },1 }, { "Target", { 0.07,0 },1 }, { "Target", { 0,0.07875 },1 }, { "Target", { -0.07,0 },1 }, { "Target", { 0,-0.07875 },1 }};
 	};
-	vehicleClass = "";
 };
 
-class TrapBearTrapFlare : TrapItems {
+class DZE_TrapBearTrapFlare: DZE_Trap_Base {
 	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
@@ -125,15 +92,15 @@ class TrapBearTrapFlare : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_BEAR_TRAP_FLARE;
-	vehicleClass = "DayZ Epoch Buildables";
-	nounderground = 0;
-	requireplot = 0;
-	constructioncount = 1;
-
-	script = "beartrapflare"; // compiled script variable name (used by server side loop)
-	initState = 0; // initial armed state (>0 is not currently working)
-	singleUse = 1; // gets replaced by BearTrap_DZ due to animation issues
-
+	DZE_preventUnderground = 0;
+	DZE_bypassBase = 0;
+	DZE_buildingSteps = 1;
+	script = "beartrapflare";
+	// compiled script variable name (used by server side loop)
+	initState = 0;
+	// initial armed state (>0 is not currently working)
+	singleUse = 1;
+	// gets replaced by DZE_BearTrap due to animation issues
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn beartrapflare;";
 	};
@@ -168,7 +135,7 @@ class TrapBearTrapFlare : TrapItems {
 	};
 };
 
-class TrapBearTrapSmoke : TrapItems {
+class DZE_TrapBearTrapSmoke: DZE_Trap_Base {
 	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
@@ -177,15 +144,15 @@ class TrapBearTrapSmoke : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_BEAR_TRAP_SMOKE;
-	vehicleClass = "DayZ Epoch Buildables";
-	nounderground = 0;
-	requireplot = 0;
-	constructioncount = 1;
-
-	script = "beartrapsmoke"; // compiled script variable name (used by server side loop)
-	initState = 0; // initial armed state (>0 is not currently working)
-	singleUse = 1; // gets replaced by BearTrap_DZ due to animation issues
-
+	DZE_preventUnderground = 0;
+	DZE_bypassBase = 0;
+	DZE_buildingSteps = 1;
+	script = "beartrapsmoke";
+	// compiled script variable name (used by server side loop)
+	initState = 0;
+	// initial armed state (>0 is not currently working)
+	singleUse = 1;
+	// gets replaced by DZE_BearTrap due to animation issues
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn beartrapsmoke;";
 	};
@@ -220,7 +187,7 @@ class TrapBearTrapSmoke : TrapItems {
 	};
 };
 
-class Trap_Cans : TrapItems {
+class DZE_Trap_Cans: DZE_Trap_Base {
 	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
@@ -229,15 +196,14 @@ class Trap_Cans : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_CANS;
-	vehicleClass = "DayZ Epoch Buildables";
-	nounderground = 0;
-
-	script = "tripcans"; // compiled script variable name (used by server side loop)
-	initState = 0; // initial armed state (>0 is not currently working)
+	DZE_preventUnderground = 0;
+	script = "tripcans";
+	// compiled script variable name (used by server side loop)
+	initState = 0;
+	// initial armed state (>0 is not currently working)
 	singleUse = 0;
-	requireplot = 0;
-	constructioncount = 1;
-
+	DZE_bypassBase = 0;
+	DZE_buildingSteps = 1;
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripcans;";
 	};
@@ -272,7 +238,7 @@ class Trap_Cans : TrapItems {
 	};
 };
 
-class TrapTripwireFlare : TrapItems {
+class DZE_TrapTripwireFlare: DZE_Trap_Base {
 	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
@@ -281,15 +247,14 @@ class TrapTripwireFlare : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_FLARE;
-	vehicleClass = "DayZ Epoch Buildables";
-	nounderground = 0;
-
-	script = "tripflare"; // compiled script variable name (used by server side loop)
-	initState = 0; // initial armed state (>0 is not currently working)
+	DZE_preventUnderground = 0;
+	script = "tripflare";
+	// compiled script variable name (used by server side loop)
+	initState = 0;
+	// initial armed state (>0 is not currently working)
 	singleUse = 0;
-	requireplot = 0;
-	constructioncount = 1;
-
+	DZE_bypassBase = 0;
+	DZE_buildingSteps = 1;
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripflare;";
 	};
@@ -324,7 +289,7 @@ class TrapTripwireFlare : TrapItems {
 	};
 };
 
-class TrapTripwireGrenade : TrapItems {
+class DZE_TrapTripwireGrenade: DZE_Trap_Base {
 	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
@@ -333,15 +298,15 @@ class TrapTripwireGrenade : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_GRENADE;
-	vehicleClass = "DayZ Epoch Buildables";
-	nounderground = 0;
-
-	script = "tripgrenade"; // compiled script variable name (used by server side loop)
-	initState = 0; // initial armed state (>0 is not currently working)
-	singleUse = 0; //Trap can now be rearmed with another grenade
-	requireplot = 0;
-	constructioncount = 1;
-
+	DZE_preventUnderground = 0;
+	script = "tripgrenade";
+	// compiled script variable name (used by server side loop)
+	initState = 0;
+	// initial armed state (>0 is not currently working)
+	singleUse = 0;
+	//Trap can now be rearmed with another grenade
+	DZE_bypassBase = 0;
+	DZE_buildingSteps = 1;
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripgrenade;";
 	};
@@ -376,7 +341,7 @@ class TrapTripwireGrenade : TrapItems {
 	};
 };
 
-class TrapTripwireSmoke : TrapItems {
+class DZE_TrapTripwireSmoke: DZE_Trap_Base {
 	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
@@ -385,23 +350,21 @@ class TrapTripwireSmoke : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_SMOKE;
-	vehicleClass = "DayZ Epoch Buildables";
-	nounderground = 0;
-
-	script = "tripsmoke"; // compiled script variable name (used by server side loop)
-	initState = 0; // initial armed state (>0 is not currently working)
-	singleUse = 0; //Trap can now be rearmed with another smoke
-	requireplot = 0;
-	constructioncount = 1;
-
+	DZE_preventUnderground = 0;
+	script = "tripsmoke";
+	// compiled script variable name (used by server side loop)
+	initState = 0;
+	// initial armed state (>0 is not currently working)
+	singleUse = 0;
+	//Trap can now be rearmed with another smoke
+	DZE_bypassBase = 0;
+	DZE_buildingSteps = 1;
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripsmoke;";
 	};
 
-	class UserActions
-	{
-		class ArmTrap 
-		{
+	class UserActions {
+		class ArmTrap {
 			position = "TripA";
 			displayName = $STR_BEARTRAP_ARM;
 			radius = 1.5;

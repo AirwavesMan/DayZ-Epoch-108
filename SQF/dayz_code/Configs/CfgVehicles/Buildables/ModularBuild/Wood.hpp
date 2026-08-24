@@ -1,21 +1,21 @@
-class WoodRamp_DZ: ModularItems {
+class DZE_WoodRamp: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,4,0};
+	DZE_offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch\models\Wood_Ramp.p3d";
 	armor = 2000;
 	displayName = $STR_EPOCH_WOODRAMP;
-	GhostPreview = "WoodRamp_Preview_DZ";
+	//GhostPreview = "DZE_WoodRamp_Preview";
 };
 
-class WoodFloor_DZ: ModularItems {
+class DZE_WoodFloor: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,4,0};
+	DZE_offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch\models\Wood_Floor.p3d";
 	armor = 2000;
 	displayName = $STR_EPOCH_FLOORCEILING;
 	maintainBuilding[] = {{"PartWoodLumber",4}};
-	GhostPreview = "WoodFloor_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	//GhostPreview = "DZE_WoodFloor_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d";
@@ -27,15 +27,15 @@ class WoodFloor_DZ: ModularItems {
 	};
 };
 
-class WoodFloorStairs_DZ: ModularItems {
+class DZE_WoodFloorStairs: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,4,0};
+	DZE_offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
 	armor = 1000;
 	displayName = $STR_EPOCH_WOODFLOORSTAIRS;
 	maintainBuilding[] = {{"PartWoodLumber",4}};
-	GhostPreview = "Wood_Floor_Stairs_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	//GhostPreview = "DZE_Wood_Floor_Stairs_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d";
@@ -44,19 +44,19 @@ class WoodFloorStairs_DZ: ModularItems {
 			interval = 1;
 			lifeTime = 1;
 		};
-	};	
+	};
 };
 
-class WoodFloorHalf_DZ: ModularItems {
+class DZE_WoodFloorHalf: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,4,0};
+	DZE_offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch\models\half_floor.p3d";
 	armor = 1000;
 	displayName = $STR_EPOCH_FLOORCEILINGHALF;
 	maintainBuilding[] = {{"PartWoodLumber",2}};
-	constructioncount = 2;
-	GhostPreview = "WoodFloorHalf_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	DZE_buildingSteps = 2;
+	//GhostPreview = "DZE_WoodFloorHalf_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_half.p3d";
@@ -68,16 +68,16 @@ class WoodFloorHalf_DZ: ModularItems {
 	};
 };
 
-class WoodFloorQuarter_DZ: ModularItems {
+class DZE_WoodFloorQuarter: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,2.5,0};
+	DZE_offset[] = {0,2.5,0};
 	model = "\z\addons\dayz_epoch\models\quarter_floor.p3d";
 	armor = 500;
 	displayName = $STR_EPOCH_FLOORCEILINGQUARTER;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	constructioncount = 1;
-	GhostPreview = "WoodFloorQuarter_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	DZE_buildingSteps = 1;
+	//GhostPreview = "DZE_WoodFloorQuarter_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_quarter.p3d";
@@ -89,15 +89,15 @@ class WoodFloorQuarter_DZ: ModularItems {
 	};
 };
 
-class WoodFloor4x_DZ: ModularItems {
+class DZE_WoodFloor4x: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,6,0};
+	DZE_offset[] = {0,6,0};
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_2x2.p3d";
 	armor = 4000;
 	displayName = $STR_EPOCH_FLOORCEILING4x;
 	maintainBuilding[] = {{"PartWoodLumber",4}};
-	GhostPreview = "WoodFloor4x_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	//GhostPreview = "DZE_WoodFloor4x_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_2x2_wreck.p3d";
@@ -106,29 +106,29 @@ class WoodFloor4x_DZ: ModularItems {
 			interval = 1;
 			lifeTime = 1;
 		};
-	};	
+	};
 };
 
-class WoodTriangleFloor_DZ: ModularItems {
+class DZE_WoodTriangleFloor: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,4,0};
+	DZE_offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_tri_floor.p3d";
 	armor = 1000;
 	displayName = $STR_EPOCH_TRIANGLE_WOODFLOOR;
 	maintainBuilding[] = {{"PartWoodLumber",2}};
-	GhostPreview = "WoodTriangleFloor_Preview_DZ";	
+	//GhostPreview = "DZE_WoodTriangleFloor_Preview";
 };
 
-class WoodLargeWall_DZ: ModularItems {
+class DZE_WoodLargeWall: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
 	model = "\z\addons\dayz_epoch\models\large_wall.p3d";
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWOODWALL;
-	upgradeBuilding[] = {"WoodLargeWallWin_DZ",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
+	upgradeBuilding[] = {"DZE_WoodLargeWallWin",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-	GhostPreview = "WoodLargeWall_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	//GhostPreview = "DZE_WoodLargeWall_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
@@ -140,16 +140,16 @@ class WoodLargeWall_DZ: ModularItems {
 	};
 };
 
-class WoodLargeWallDoor_DZ: ModularItems {
+class DZE_WoodLargeWallDoor: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
 	model = "\z\addons\dayz_epoch\models\large_wall_door.p3d";
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWALLWITHDOORWAY;
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
-	GhostPreview = "WoodLargeWallDoor_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	upgradeBuilding[] = {"DZE_Land_LargeWoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+	//GhostPreview = "DZE_WoodLargeWallDoor_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
@@ -161,15 +161,15 @@ class WoodLargeWallDoor_DZ: ModularItems {
 	};
 };
 
-class WoodLargeWallWin_DZ: ModularItems {
+class DZE_WoodLargeWallWin: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
 	model = "\z\addons\dayz_epoch\models\large_wall_win.p3d";
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWALLWITHWINDOW;
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-	GhostPreview = "WoodLargeWallWin_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	//GhostPreview = "DZE_WoodLargeWallWin_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
@@ -181,16 +181,16 @@ class WoodLargeWallWin_DZ: ModularItems {
 	};
 };
 
-class WoodSmallWall_DZ: ModularItems {
+class DZE_WoodSmallWall: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
 	model = "\z\addons\dayz_epoch\models\small_wall.p3d";
 	armor = 2000;
 	displayName = $STR_EPOCH_WOODWALL;
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"WoodSmallWallWin_DZ",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
-	GhostPreview = "WoodSmallWall_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	upgradeBuilding[] = {"DZE_WoodSmallWallWin",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
+	//GhostPreview = "DZE_WoodSmallWall_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
@@ -202,16 +202,16 @@ class WoodSmallWall_DZ: ModularItems {
 	};
 };
 
-class WoodSmallWallThird_DZ: ModularItems {
+class DZE_WoodSmallWallThird: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
 	model = "\z\addons\dayz_epoch\models\third_wall.p3d";
 	armor = 600;
 	displayName = $STR_EPOCH_WOODWALLTHIRDPART;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	constructioncount = 1;
-	GhostPreview = "WoodSmallWallThird_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	DZE_buildingSteps = 1;
+	//GhostPreview = "DZE_WoodSmallWallThird_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
@@ -223,15 +223,15 @@ class WoodSmallWallThird_DZ: ModularItems {
 	};
 };
 
-class WoodSmallWallWin_DZ: ModularItems {
+class DZE_WoodSmallWallWin: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
 	model = "\z\addons\dayz_epoch\models\small_wall_win.p3d";
 	armor = 2000;
 	displayName = $STR_EPOCH_WALLWITHWINDOW;
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-	GhostPreview = "WoodSmallWallWin_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	//GhostPreview = "DZE_WoodSmallWallWin_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
@@ -243,16 +243,16 @@ class WoodSmallWallWin_DZ: ModularItems {
 	};
 };
 
-class WoodSmallWallDoor_DZ: ModularItems {
+class DZE_WoodSmallWallDoor: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
 	model = "\z\addons\dayz_epoch\models\small_wall_door.p3d";
 	armor = 2000;
 	displayName = $STR_EPOCH_WALLWITHDOORWAY;
-	upgradeBuilding[] = {"Land_DZE_WoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+	upgradeBuilding[] = {"DZE_Land_WoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-	GhostPreview = "WoodSmallWallDoor_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	//GhostPreview = "DZE_WoodSmallWallDoor_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
@@ -264,15 +264,16 @@ class WoodSmallWallDoor_DZ: ModularItems {
 	};
 };
 
-class WoodTriangleWall_DZ: ModularItems {
+class DZE_WoodTriangleWall: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,3.5,0};
+	DZE_offset[] = {0,3.5,0};
 	model = "\z\addons\dayz_epoch_v\base_building\wood\apex_tri\apex_tri.p3d";
 	armor = 1500;
 	displayName = $STR_EPOCH_TRIANGLE_WOODWALL;
-	GhostPreview = "Wood_Triangle_Wall_Preview_DZ";
+	//GhostPreview = "DZE_Wood_Triangle_Wall_Preview";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	class DestructionEffects : DestructionEffects {
+
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
@@ -281,19 +282,18 @@ class WoodTriangleWall_DZ: ModularItems {
 			interval = 1;
 			lifeTime = 1;
 		};
-	};	
+	};
 };
 
-class WoodGateFrame_DZ: ModularItems {
+class DZE_WoodGateFrame: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,3,0};
 	model = "\z\addons\dayz_epoch_v\base_building\wood\high_wood_garage\high_wood_garage_frame.p3d";
 	armor = 2800;
 	displayName = $STR_EPOCH_WOODGATEFRAME;
 	maintainBuilding[] = {{"PartWoodLumber",4}};
-	upgradeBuilding[] = {"Land_DZE_WoodGate",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
-	GhostPreview = "WoodGate_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
+	upgradeBuilding[] = {"DZE_Land_WoodGate",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
+	//GhostPreview = "DZE_WoodGate_Preview";
+	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
@@ -305,65 +305,66 @@ class WoodGateFrame_DZ: ModularItems {
 	};
 };
 
-class WoodStairs_DZ: ModularItems {
+class DZE_WoodStairs: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
 	model = "\z\addons\dayz_epoch\models\wood_stairs.p3d";
 	armor = 600;
 	displayName = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"WoodStairsRails_DZ",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodLumber",2}}};
-	GhostPreview = "WoodStairs_Preview_DZ";
+	upgradeBuilding[] = {"DZE_WoodStairsRails",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodLumber",2}}};
+	//GhostPreview = "DZE_WoodStairs_Preview";
 };
 
-class WoodStairsRails_DZ: ModularItems {
+class DZE_WoodStairsRails: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
 	model = "\z\addons\dayz_epoch\models\wood_stairs_rail.p3d";
 	armor = 700;
 	displayName = $STR_EPOCH_WOODSTAIRSRAILS;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	GhostPreview = "WoodStairs_Preview_DZ";
+	//GhostPreview = "DZE_WoodStairs_Preview";
 };
 
-class WoodStairsSans_DZ: ModularItems {
+class DZE_WoodStairsSans: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
 	model = "\z\addons\dayz_epoch\models\wood_stairs_sans.p3d";
 	armor = 500;
 	displayName = $STR_EPOCH_WOODSTAIRS;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"WoodStairs_DZ",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodLumber",2}}};
-	GhostPreview = "WoodStairsSans_Preview_DZ";
+	upgradeBuilding[] = {"DZE_WoodStairs",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodLumber",2}}};
+	//GhostPreview = "DZE_WoodStairsSans_Preview";
 };
 
-class WoodLadder_DZ: ModularItems {
+class DZE_WoodLadder: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	DZE_offset[] = {0,1.5,0};
+	DZE_allowRotation = 0;
 	model = "\z\addons\dayz_epoch\models\wood_ladder.p3d";
 	armor = 300;
 	displayName = $STR_EPOCH_WOODLADDER;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	GhostPreview = "WoodLadder_Preview_DZ";
+	//GhostPreview = "DZE_WoodLadder_Preview";
 	ladders[] = {{"start1","end1"}};
 };
 
-class WoodHandrail_DZ: ModularItems {
+class DZE_WoodHandrail: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,2,0};
+	DZE_offset[] = {0,2,0};
 	model = "\z\addons\dayz_epoch_v\base_building\wood\railing\railing.p3d";
 	armor = 300;
 	displayName = $STR_EPOCH_WOODRAIL;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	GhostPreview = "Wood_Handrail_Preview_DZ";
+	//GhostPreview = "DZE_Wood_Handrail_Preview";
 };
 
-class WoodPillar_DZ: ModularItems {
+class DZE_WoodPillar: DZE_Modular_Base {
 	scope = 2;
-	offset[] = {0,2,0};
+	DZE_offset[] = {0,2,0};
 	model = "\z\addons\dayz_epoch_v\base_building\wood\pillar\corner_pillar.p3d";
 	armor = 700;
 	displayName = $STR_EPOCH_WOODPILLAR;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	GhostPreview = "Wood_Pillar_Preview_DZ";
+	//GhostPreview = "DZE_Wood_Pillar_Preview";
 };

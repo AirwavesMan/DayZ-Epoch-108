@@ -7,7 +7,7 @@ class BTR60_TK_EP1_DZ: BTR60_TK_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BTR60_WOOD";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;

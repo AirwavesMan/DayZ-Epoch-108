@@ -3,7 +3,7 @@ class VolhaLimo_TK_CIV_EP1_DZE: VolhaLimo_TK_CIV_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_GAZ_BLACK";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	fuelCapacity = 100;
 	class HitPoints;
 	class HitLFWheel;
@@ -97,7 +97,7 @@ class Volha_1_TK_CIV_EP1_DZE: Volha_1_TK_CIV_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_GAZ_BLUE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	fuelCapacity = 100;
 	class HitPoints;
 	class HitLFWheel;
@@ -191,7 +191,7 @@ class Volha_2_TK_CIV_EP1_DZE: Volha_2_TK_CIV_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_GAZ_GREY";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	fuelCapacity = 100;
 	class HitPoints;
 	class HitLFWheel;

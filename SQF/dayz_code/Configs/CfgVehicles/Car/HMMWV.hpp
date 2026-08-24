@@ -1,7 +1,7 @@
 class HMMWV_DZE_Base: Car
 {
 	scope = 0;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	accuracy = 0.3;
 	side = 1;
 	faction = "USMC";

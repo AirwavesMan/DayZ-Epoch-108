@@ -7,7 +7,7 @@ class Offroad_SPG9_Gue_DZ: Offroad_SPG9_Gue {
 	class TransportMagazines {};
 	class TransportWeapons {};
 	displayName = "$STR_VEH_NAME_PICKUP_GUE_SPG9";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	class Turrets;
 	class MainTurret;
 	class HitPoints;
@@ -123,7 +123,7 @@ class Offroad_SPG9_TK_GUE_EP1_DZ: Offroad_SPG9_TK_GUE_EP1 {
 	class TransportMagazines {};
 	class TransportWeapons {};
 	displayName = "$STR_VEH_NAME_PICKUP_TK_GUE_SPG9";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	class Turrets;
 	class MainTurret;
 	class HitPoints;

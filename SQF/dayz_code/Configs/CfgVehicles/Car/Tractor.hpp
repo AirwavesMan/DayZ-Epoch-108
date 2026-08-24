@@ -2,7 +2,7 @@ class Tractor;
 class Tractor_DZE: Tractor {
 	side = 1;
 	faction = "USMC";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	displayname = $STR_VEH_NAME_TRACTOR;	
 	crew = "";
 	typicalCargo[] = {};
@@ -40,7 +40,7 @@ class tractorOld;
 class TractorOld_DZE: tractorOld {
 	side = 1;
 	faction = "USMC";	
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	displayname = $STR_VEH_NAME_TRACTOR_OLD;	
 	crew = "";
 	typicalCargo[] = {};

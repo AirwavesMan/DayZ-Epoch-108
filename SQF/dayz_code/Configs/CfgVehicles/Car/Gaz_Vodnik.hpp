@@ -3,7 +3,7 @@ class GAZ_Vodnik_HMG_DZ : GAZ_Vodnik_HMG {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_VODNIK_BPPU";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
@@ -140,7 +140,7 @@ class GAZ_Vodnik_DZ : GAZ_Vodnik {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_VODNIK_PKT";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};	
@@ -292,7 +292,7 @@ class GAZ_Vodnik_MedEvac_DZE : GAZ_Vodnik_MedEvac {
 	faction = "USMC";	
 	crewVulnerable = 1;
 	displayname = "$STR_VEH_NAME_VODNIK_MEDEVAC";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

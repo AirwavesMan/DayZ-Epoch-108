@@ -3,7 +3,7 @@ class LandRover_CZ_EP1_DZE: LandRover_CZ_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -570,7 +570,7 @@ class LandRover_Special_CZ_EP1_DZ: LandRover_Special_CZ_EP1
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	class Turrets;
 	class MainTurret;
 	class AGS30_Turret;
@@ -731,7 +731,7 @@ class LandRover_MG_TK_EP1_DZ: LandRover_MG_TK_EP1
 	class TransportMagazines {};
 	class TransportWeapons {};	
 	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_M2";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	class Turrets;
 	class MainTurret;
 	transportMaxWeapons = 15;
@@ -831,7 +831,7 @@ class LandRover_SPG9_TK_EP1_DZ: LandRover_SPG9_TK_EP1
 	class TransportMagazines {};
 	class TransportWeapons {};	
 	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPG9";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	class Turrets;
 	class MainTurret;
 	transportMaxWeapons = 15;

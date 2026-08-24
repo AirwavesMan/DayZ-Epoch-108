@@ -4,7 +4,7 @@ class ATV_CZ_EP1_DZE: ATV_CZ_EP1 {
 	faction = "USMC";
 	crew = "";
 	displayname = $STR_VEH_NAME_ATV_BEIGE;
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	scope = 2;
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -18,7 +18,7 @@ class BAF_ATV_W_DZE: BAF_ATV_W {
 	faction = "USMC";
 	crew = "";
 	displayname = $STR_VEH_NAME_ATV_GREEN;
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	scope = 2;
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -32,7 +32,7 @@ class ATV_CIV_CP_DZE: ATV_CIV_CP {
 	faction = "USMC";
 	crew = "";
 	displayname = $STR_VEH_NAME_ATV_WHITE;
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	scope = 2;
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -46,7 +46,7 @@ class ATV_CIV_Grey_CP_DZE: ATV_CIV_Grey_CP {
 	faction = "USMC";
 	crew = "";
 	displayname = $STR_VEH_NAME_ATV_GREY;
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	scope = 2;
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -60,7 +60,7 @@ class ATV_CIV_Red_CP_DZE: ATV_CIV_Red_CP {
 	faction = "USMC";
 	crew = "";
 	displayname = $STR_VEH_NAME_ATV_RED;
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	scope = 2;
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -87,7 +87,7 @@ class ATV_CIV_Blue_CP_DZE: ATV_CIV_Blue_CP {
 	faction = "USMC";
 	crew = "";
 	displayname = $STR_VEH_NAME_ATV_BLUE;
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	scope = 2;
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -114,7 +114,7 @@ class ATV_CIV_Purple_CP_DZE: ATV_CIV_Purple_CP {
 	faction = "USMC";
 	crew = "";
 	displayname = $STR_VEH_NAME_ATV_PURPLE;
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	scope = 2;
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -128,7 +128,7 @@ class ATV_CIV_Black_CP_DZE: ATV_CIV_Black_CP {
 	faction = "USMC";
 	crew = "";
 	displayname = $STR_VEH_NAME_ATV_BLACK;
-	vehicleClass = "DayZ Epoch Vehicles";	
+	vehicleClass = "DayZ Epoch 1071 Vehicles";	
 	scope = 2;
 	typicalCargo[] = {};
 	class TransportMagazines {};

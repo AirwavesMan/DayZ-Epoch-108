@@ -2,7 +2,7 @@ class MiningItems: NonStrategic {
 	destrType = "DestructBuilding";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	vehicleClass = "DayZ Epoch Vein/Supply Crate";
+	vehicleClass = "DayZ Epoch 1071 Event Objects";
 	
 	class DestructionEffects {
 		class Sound {
@@ -92,19 +92,19 @@ class Land_iron_vein_wreck: ruins {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_IRON;
-	vehicleClass = "DayZ Epoch Vein/Supply Crate";
+	vehicleClass = "DayZ Epoch 1071 Event Objects";
 };
 
 class Land_silver_vein_wreck: ruins	{
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_SILVER;
-	vehicleClass = "DayZ Epoch Vein/Supply Crate";
+	vehicleClass = "DayZ Epoch 1071 Event Objects";
 };
 
 class Land_gold_vein_wreck: ruins {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_GOLD;
-	vehicleClass = "DayZ Epoch Vein/Supply Crate";
+	vehicleClass = "DayZ Epoch 1071 Event Objects";
 };

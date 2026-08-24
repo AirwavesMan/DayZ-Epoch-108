@@ -14,7 +14,7 @@ class Submarine_DZE_base: Submarine {
 	picture	= "\ca\water\data\ico\pbx_CA.paa";
 	Icon = "\Ca\water\Data\map_ico\icomap_rubber_CA.paa";
 	mapSize = 6;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	maxSpeed = 60;
 	brakeDistance = 20;
 	armor = 40;

@@ -3,7 +3,7 @@ class BMP2_HQ_CDF_DZ: BMP2_HQ_CDF {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_CDF";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -81,7 +81,7 @@ class BMP2_HQ_INS_DZ: BMP2_HQ_INS {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_INS";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -159,7 +159,7 @@ class BMP2_HQ_TK_EP1_DZ: BMP2_HQ_TK_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_TK";	
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -238,7 +238,7 @@ class BMP2_Ambul_INS_DZE: BMP2_Ambul_INS {
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_AMBULANCE_INS";
 	displayNameShort = "$STR_VEH_NAME_BMP2_AMBULANCE_INS";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -308,7 +308,7 @@ class BMP2_Ambul_CDF_DZE: BMP2_Ambul_CDF {
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_AMBULANCE_CDF";
 	displayNameShort = "$STR_VEH_NAME_BMP2_AMBULANCE_CDF";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;

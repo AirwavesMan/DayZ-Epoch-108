@@ -8,7 +8,7 @@ class BRDM2_HQ_TK_GUE_EP1_DZ: BRDM2_HQ_TK_GUE_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_BRDM2_HQ";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -302,7 +302,7 @@ class BRDM2_TK_EP1_DZ: BRDM2_TK_EP1 {
 	side = 1;
 	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_BRDM2_TK";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

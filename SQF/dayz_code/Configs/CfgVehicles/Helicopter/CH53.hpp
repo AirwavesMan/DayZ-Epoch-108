@@ -3,7 +3,7 @@ class CH53_DZE : USEC_ch53_E {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_CH53";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	destrType = "DestructWreck";
 	weapons[] = {"CMFlareLauncher"};
 	magazines[] = {"120Rnd_CMFlareMagazine"};

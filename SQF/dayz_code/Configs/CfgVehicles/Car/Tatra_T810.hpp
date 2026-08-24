@@ -6,7 +6,7 @@ class T810_DZE_Base_ACR: Truck
 	mapSize = 8;
 	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_T810_CA.paa";
 	Icon = "\Ca\Wheeled_ACR\Data\UI\Icon_T810_CA.paa";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	class Library
 	{
 		libTextDesc = "$STR_ACR_LIB_T810";

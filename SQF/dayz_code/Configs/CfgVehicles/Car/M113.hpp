@@ -3,7 +3,7 @@ class M113Ambul_UN_EP1_DZ : M113Ambul_UN_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayName = $STR_VEH_NAME_M113_AMBULANCE_UN;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -112,7 +112,7 @@ class M113_UN_EP1_DZ : M113_UN_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayName = $STR_VEH_NAME_M113_UN;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

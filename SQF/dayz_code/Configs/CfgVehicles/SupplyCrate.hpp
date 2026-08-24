@@ -20,5 +20,5 @@ class Land_ammo_supply_wreck: ruins	{
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\ammo_supply_wreck.p3d";
 	displayName = $STR_EPOCH_BULK_NAME;
-	vehicleClass = "DayZ Epoch Vein/Supply Crate";
+	vehicleClass = "DayZ Epoch 1071 Event Objects";
 };

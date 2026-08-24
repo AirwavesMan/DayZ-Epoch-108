@@ -3,7 +3,7 @@ class KamazOpen_DZE : KamazOpen {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_KAMAZ";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -58,7 +58,7 @@ class Kamaz_DZE: Kamaz {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_KAMAZ_COVERT";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -112,7 +112,7 @@ class KamazRefuel_DZ: KamazRefuel {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	transportMaxWeapons = 10;
@@ -168,7 +168,7 @@ class KamazRepair_DZE : KamazRepair {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_KAMAZ_AMMO";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	transportMaxWeapons = 25;
@@ -227,7 +227,7 @@ class KamazReammo_DZE : KamazReammo {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	transportMaxWeapons = 75;

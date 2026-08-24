@@ -4,7 +4,7 @@ class RHIB_DZ : RHIB
 	side = 1;
 	faction = "USMC";
 	displayName = $STR_VEH_NAME_RHIB_M2;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	enablemanualfire = 0;
 	enableGPS = 0;

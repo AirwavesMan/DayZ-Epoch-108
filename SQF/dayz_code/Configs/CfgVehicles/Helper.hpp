@@ -1,10 +1,20 @@
+class BeltBuckle_DZE: NonStrategic {
+	scope = 2;
+	model = "\z\addons\dayz_epoch\models\skull.p3d";
+	displayName = "Belt Buckle";
+	accuracy = 1000;
+	vehicleClass = "DayZ Epoch 1071 Helper";
+	hiddenSelections[] = {"camo1"};
+	hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(1,0.5,0.5,0.5,ca)"};
+};
+
 class Helper_1_DZE : NonStrategic {
 	scope = 2;
 	model = "\ca\misc\empty";
 	icon = "\Ca\misc\data\icons\i_H_CA.paa";
 	displayName = "Invisible Helper 1";
 	animated = 0;
-	vehicleClass = "DayZ Epoch Helper";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 	accuracy = 0.2;
 	typicalCargo[] = {};
 	transportAmmo = 0;
@@ -21,7 +31,7 @@ class Helper_2_DZE : NonStrategic {
 	icon = "\Ca\misc\data\icons\i_H_CA.paa";
 	displayName = "Invisible Helper 2";
 	animated = 0;
-	vehicleClass = "DayZ Epoch Helper";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 	accuracy = 0.2;
 	typicalCargo[] = {};
 	transportAmmo = 0;
@@ -38,7 +48,7 @@ class Helper_3_DZE : NonStrategic {
 	icon = "\Ca\misc\data\icons\i_H_CA.paa";
 	displayName = "Invisible Helper 3";
 	animated = 0;
-	vehicleClass = "DayZ Epoch Helper";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 	accuracy = 0.2;
 	typicalCargo[] = {};
 	transportAmmo = 0;
@@ -55,7 +65,7 @@ class Helper_4_DZE : NonStrategic {
 	icon = "\Ca\misc\data\icons\i_H_CA.paa";
 	displayName = "Invisible Helper 4";
 	animated = 0;
-	vehicleClass = "DayZ Epoch Helper";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 	accuracy = 0.2;
 	typicalCargo[] = {};
 	transportAmmo = 0;
@@ -72,7 +82,7 @@ class Helper_5_DZE : NonStrategic {
 	icon = "\Ca\misc\data\icons\i_H_CA.paa";
 	displayName = "Invisible Helper 5";
 	animated = 0;
-	vehicleClass = "DayZ Epoch Helper";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 	accuracy = 0.2;
 	typicalCargo[] = {};
 	transportAmmo = 0;
@@ -89,7 +99,7 @@ class Helper_6_DZE : NonStrategic {
 	icon = "\Ca\misc\data\icons\i_H_CA.paa";
 	displayName = "Invisible Helper 6";
 	animated = 0;
-	vehicleClass = "DayZ Epoch Helper";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 	accuracy = 0.2;
 	typicalCargo[] = {};
 	transportAmmo = 0;
@@ -106,7 +116,7 @@ class Helper_7_DZE : NonStrategic {
 	icon = "\Ca\misc\data\icons\i_H_CA.paa";
 	displayName = "Invisible Helper 7";
 	animated = 0;
-	vehicleClass = "DayZ Epoch Helper";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 	accuracy = 0.2;
 	typicalCargo[] = {};
 	transportAmmo = 0;
@@ -123,7 +133,7 @@ class Helper_8_DZE : NonStrategic {
 	icon = "\Ca\misc\data\icons\i_H_CA.paa";
 	displayName = "Invisible Helper 8";
 	animated = 0;
-	vehicleClass = "DayZ Epoch Helper";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 	accuracy = 0.2;
 	typicalCargo[] = {};
 	transportAmmo = 0;
@@ -140,7 +150,7 @@ class Helper_9_DZE : NonStrategic {
 	icon = "\Ca\misc\data\icons\i_H_CA.paa";
 	displayName = "Invisible Helper 9";
 	animated = 0;
-	vehicleClass = "DayZ Epoch Helper";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 	accuracy = 0.2;
 	typicalCargo[] = {};
 	transportAmmo = 0;
@@ -157,7 +167,7 @@ class Helper_10_DZE : NonStrategic {
 	icon = "\Ca\misc\data\icons\i_H_CA.paa";
 	displayName = "Invisible Helper 10";
 	animated = 0;
-	vehicleClass = "DayZ Epoch Helper";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 	accuracy = 0.2;
 	typicalCargo[] = {};
 	transportAmmo = 0;

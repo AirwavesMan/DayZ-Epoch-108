@@ -1,5 +1,5 @@
 class WeaponHolderBase: ReammoBox {
-	vehicleClass = "DayZ Epoch Weaponholder";
+	vehicleClass = "DayZ Epoch 1071 Weaponholder";
 };
 
 class WoodenArrowF : WeaponHolderBase {
@@ -521,22 +521,22 @@ class WeaponHolder_ItemJerrycanSide : WeaponHolder_ItemJerrycan {
 	model = "\dayz_equip\proxy\jerrycan_side.p3d";
 };
 
-class WeaponHolder_ItemVault: WeaponHolder {
+class WeaponHolder_ItemSafe: WeaponHolder {
 	scope = 1;
 	displayName = $STR_EPOCH_SAFE;
-	seedItem = "ItemVault";
+	seedItem = "ItemSafe";
 };
 
-class WeaponHolder_ItemVault2: WeaponHolder {
+class WeaponHolder_ItemSafe2: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_SAFE+";
-	seedItem = "ItemVault2";
+	seedItem = "ItemSafe2";
 };
 
-class WeaponHolder_TallSafe: WeaponHolder {
+class WeaponHolder_ItemSafeTall: WeaponHolder {
 	scope = 1;
 	displayName = $STR_EPOCH_SAFE;
-	seedItem = "ItemTallSafe";
+	seedItem = "ItemSafeTall";
 };
 
 class WeaponHolder_ItemLockbox: WeaponHolder {
@@ -563,22 +563,22 @@ class WeaponHolder_ItemLockboxWinter2: WeaponHolder {
 	seedItem = "ItemLockboxWinter2";
 };
 
-class WeaponHolder_ItemVaultBroken: WeaponHolder {
+class WeaponHolder_ItemSafeBroken: WeaponHolder {
 	scope = 1;
 	displayName = $STR_EPOCH_SAFE_BROKEN;
-	seedItem = "ItemVaultBroken";
+	seedItem = "ItemSafeBroken";
 };
 
-class WeaponHolder_ItemVaultBroken2: WeaponHolder {
+class WeaponHolder_ItemSafe2Broken: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_SAFE_BROKEN+";
-	seedItem = "ItemVaultBroken2";
+	seedItem = "ItemSafe2Broken";
 };
 
-class WeaponHolder_ItemTallSafeBroken: WeaponHolder {
+class WeaponHolder_ItemSafeTallBroken: WeaponHolder {
 	scope = 1;
 	displayName = $STR_EPOCH_SAFE_BROKEN;
-	seedItem = "ItemTallSafeBroken";
+	seedItem = "ItemSafeTallBroken";
 };
 
 class WeaponHolder_ItemLockboxBroken: WeaponHolder {

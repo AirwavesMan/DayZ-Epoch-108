@@ -17,7 +17,7 @@ class UH1H_base: Helicopter
 class UH1H_DZ: UH1H_base
 {
 	displayname = "$STR_VEH_NAME_UH1H_GREEN";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	scope = 2;
 	side = 1;
 	faction = "USMC";	

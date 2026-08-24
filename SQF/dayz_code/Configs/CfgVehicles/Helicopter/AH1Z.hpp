@@ -2,7 +2,7 @@ class AH1Z;
 class AH1Z_DZ: AH1Z {
 	side = 1;
 	faction = "USMC";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = ""; 
 	typicalCargo[] = {};
 	class TransportMagazines {};

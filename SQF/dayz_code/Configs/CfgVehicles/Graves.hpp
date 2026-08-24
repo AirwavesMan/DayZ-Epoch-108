@@ -1,7 +1,7 @@
 class GraveDZE: Land_A_tent 
 {
 	scope = 2;
-	vehicleClass = "DayZ Epoch Misc";
+	vehicleClass = "DayZ Epoch 1071 Base";
 	displayName = $STR_EPOCH_BONES_GRAVE;
 	destrType = "DestructNo";
 	model = "\z\addons\dayz_epoch\models\skeleton.p3d";
@@ -13,7 +13,7 @@ class GraveDZE: Land_A_tent
 class Mass_grave;
 class Mass_grave_DZ: Mass_grave
 {
-	vehicleClass = "DayZ Epoch Misc";
+	vehicleClass = "DayZ Epoch 1071 Base";
 };
 
 class Mass_grave_DZE: Mass_grave_DZ
@@ -30,7 +30,7 @@ class Body1 : Wreck_Base
 	mapSize = 2;
 	displayName = $STR_EPOCH_DEAD_SOLDIER;
 	model = "\dayz\objects\dead_soldier_0";
-	vehicleClass = "DayZ Epoch Misc";
+	vehicleClass = "DayZ Epoch 1071 Base";
 };
 
 class Body1_DZE : Body1
@@ -46,7 +46,7 @@ class Body2 : Wreck_Base
 	mapSize = 2;
 	displayName = $STR_EPOCH_DEAD_SOLDIER;
 	model = "\dayz\objects\dead_soldier_1";
-	vehicleClass = "DayZ Epoch Misc";
+	vehicleClass = "DayZ Epoch 1071 Base";
 };
 
 

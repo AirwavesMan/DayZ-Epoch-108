@@ -9,7 +9,7 @@ class DebugBox_DZ: NonStrategic
 	mapSize = 2;
 	armor = 2000;
 	displayName = "Debug Box";
-	vehicleClass = "DayZ Epoch Buildings";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 };
 class DebugBoxPlayer_DZ: NonStrategic
 {
@@ -22,5 +22,5 @@ class DebugBoxPlayer_DZ: NonStrategic
 	mapSize = 2;
 	armor = 2000;
 	displayName = "Player Debug Box";
-	vehicleClass = "DayZ Epoch Buildings";
+	vehicleClass = "DayZ Epoch 1071 Helper";
 };

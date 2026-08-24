@@ -3,7 +3,7 @@ class Pickup_PK_GUE_DZ: Pickup_PK_GUE {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_PICKUP_GUE_PKT";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	crew = "";
 	typicalCargo[] = {};
@@ -114,7 +114,7 @@ class Pickup_PK_TK_GUE_EP1_DZ: Pickup_PK_TK_GUE_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_PICKUP_TK_PKT";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	crew = "";
 	typicalCargo[] = {};
@@ -225,7 +225,7 @@ class Pickup_PK_INS_DZ: Pickup_PK_INS {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_PICKUP_INS_PKT";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	crew = "";
 	typicalCargo[] = {};

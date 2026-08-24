@@ -3,7 +3,7 @@ class Smallboat_1_DZE: Smallboat_1{
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_DN_SMALLBOATA";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

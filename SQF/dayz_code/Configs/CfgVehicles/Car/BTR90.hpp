@@ -3,7 +3,7 @@ class BTR90_DZ: BTR90 {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BTR90";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -80,7 +80,7 @@ class BTR90_HQ_DZ: BTR90_HQ {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BTR90_HQ";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;

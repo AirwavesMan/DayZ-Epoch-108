@@ -16,7 +16,7 @@ class V3S_Base : Truck
 class V3S_Civ;
 class V3S_Civ_DZE : V3S_Civ {
 	displayname = "$STR_VEH_NAME_V3S_CAMO_OPEN";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	picture = "\CA\wheeled_e\data\UI\Picture_V3S_open_CA.paa";
 	crew = "";
 	side = 1;
@@ -74,7 +74,7 @@ class V3S_Open_TK_CIV_EP1_DZE: V3S_Open_TK_CIV_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_V3S_CIVIL_OPEN";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -129,7 +129,7 @@ class V3S_Open_TK_EP1_DZE: V3S_Open_TK_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_V3S_CAMO_OPEN";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -184,7 +184,7 @@ class V3S_TK_EP1_DZE: V3S_TK_EP1 {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_V3S_WHITE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -237,7 +237,7 @@ class V3S_TK_EP1_DZE4: V3S_TK_EP1_DZE3 {
 class V3S_Refuel_TK_GUE_EP1;
 class V3S_Refuel_TK_GUE_EP1_DZ: V3S_Refuel_TK_GUE_EP1 {
 	displayname = "$STR_VEH_NAME_V3S_FUEL";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = "";
@@ -297,7 +297,7 @@ class V3S_RA_TK_GUE_EP1_DZE: V3S_Reammo_TK_GUE_EP1 {
 	crew = "";
 	typicalCargo[] = {};
 	displayname = "$STR_VEH_NAME_V3S_ARMORED";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	class TransportMagazines {};
 	class TransportWeapons {};
 	transportAmmo = 0;
@@ -349,7 +349,7 @@ class V3S_RA_TK_GUE_EP1_DZE4: V3S_RA_TK_GUE_EP1_DZE3 {
 };
 
 class V3S_Camper_DZE : V3S_RA_TK_GUE_EP1_DZE {
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	model = "\z\addons\dayz_epoch_v\vehicles\V3S\dze_v3s_noback";
 	picture = "\CA\wheeled_e\data\UI\Picture_V3S_open_CA.paa";
 	displayname = "$STR_VEH_NAME_V3S_CAMPER";

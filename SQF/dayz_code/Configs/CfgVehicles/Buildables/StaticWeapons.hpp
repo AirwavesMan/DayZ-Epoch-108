@@ -1,314 +1,384 @@
 class USMC_WarfareBMGNest_M240;
-class M240Nest_DZ: USMC_WarfareBMGNest_M240				// M240 Nest
-{
+// M240 Nest
+class DZE_M240Nest : USMC_WarfareBMGNest_M240 {
 	destrType = "DestructBuilding";
 	armor = 450;
 	scope = 2;
-	offset[] = {0,4,-0.1};
-	nounderground = 0;
+	DZE_offset[] = {0,4,-0.1};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
 	displayName = $STR_EPOCH_M240NEST;
 	transportMaxMagazines = 25;
 	transportMaxWeapons = 4;
 	transportMaxBackpacks = 1;
-	constructioncount = 10;
-	vehicleClass = "DayZ Epoch Static Weapons";
-	GhostPreview = "M240Nest_DZ";
+	DZE_buildingSteps = 10;
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
+	GhostPreview = "DZE_M240Nest";
 	removeoutput[] = {{"m240_nest_kit",1}};
 };
-
 class M2StaticMG;
-class M2_MG_Static_DZ: M2StaticMG {					// M2 Machine Gun
+class DZE_M2_MG_Static : M2StaticMG {
+	// M2 Machine Gun
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "M2_MG_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_M2_MG_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"M2_MG_Static_kit",1}};
 };
-
 class M2HD_mini_TriPod;
-class M2_TriPod_MG_Static_DZ: M2HD_mini_TriPod {			// M2 Minitripod
+class DZE_M2_TriPod_MG_Static : M2HD_mini_TriPod {
+	// M2 Minitripod
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "M2_TriPod_MG_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_M2_TriPod_MG_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"M2_TriPod_MG_Static_kit",1}};
 };
-
 class DSHKM_Ins;
-class DSHKM_MG_Static_DZ: DSHKM_Ins {					// DShKM
+class DZE_DSHKM_MG_Static : DSHKM_Ins {
+	// DShKM
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "DSHKM_MG_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_DSHKM_MG_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"DSHKM_MG_Static_kit",1}};
 };
-
 class DSHkM_Mini_TriPod;
-class DSHKM_TriPod_MG_Static_DZ: DSHkM_Mini_TriPod {			// DSHkM Minitripod
+class DZE_DSHKM_TriPod_MG_Static : DSHkM_Mini_TriPod {
+	// DSHkM Minitripod
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0.2};
-	nounderground = 0;
-	GhostPreview = "DSHKM_TriPod_MG_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0.2};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_DSHKM_TriPod_MG_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"DSHKM_TriPod_MG_Static_kit",1}};
 };
-
 class KORD;
-class KORD_Tripod_MG_Static_DZ: KORD {					// KORD Minitripod
+class DZE_KORD_Tripod_MG_Static : KORD {
+	// KORD Minitripod
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0.5};
-	nounderground = 0;
-	GhostPreview = "KORD_Tripod_MG_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0.5};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_KORD_Tripod_MG_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"KORD_TriPod_MG_Static_kit",1}};
 };
-
 class KORD_high;
-class KORD_MG_Static_DZ: KORD_high {					// KORD
+class DZE_KORD_MG_Static : KORD_high {
+	// KORD
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "KORD_MG_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_KORD_MG_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"KORD_MG_Static_kit",1}};
 };
-
 class BAF_L2A1_ACOG_base;
-class BAF_L2A1_Tripod_D: BAF_L2A1_ACOG_base {
+class BAF_L2A1_Tripod_D : BAF_L2A1_ACOG_base {
 	class assembleInfo;
 };
-
-class L2A1_MG_Static_DZ: BAF_L2A1_Tripod_D {				// L111A1 Tripod
+class DZE_L2A1_MG_Static : BAF_L2A1_Tripod_D {
+	// L111A1 Tripod
 	side = 1;
 	faction = "USMC";
-	class assembleInfo: assembleInfo {
+	class assembleInfo : assembleInfo {
 		dissasembleTo[] = {};
 	};
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "L2A1_MG_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_L2A1_MG_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"L2A1_MG_Static_kit",1}};
 };
-
-class BAF_L2A1_Minitripod_D: BAF_L2A1_ACOG_base {
+class BAF_L2A1_Minitripod_D : BAF_L2A1_ACOG_base {
 	class assembleInfo;
 };
-
-class L2A1_Tripod_MG_Static_DZ: BAF_L2A1_Minitripod_D {			// L111A1 Minitripod
+class DZE_L2A1_Tripod_MG_Static : BAF_L2A1_Minitripod_D {
+	// L111A1 Minitripod
 	side = 1;
 	faction = "USMC";
-	class assembleInfo: assembleInfo {
+	class assembleInfo : assembleInfo {
 		dissasembleTo[] = {};
 	};
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "L2A1_Tripod_MG_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_L2A1_Tripod_MG_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"L2A1_Tripod_MG_Static_kit",1}};
 };
-
 class GMG_TriPod;
-class BAF_GMG_Tripod_D: GMG_TriPod {
+class BAF_GMG_Tripod_D : GMG_TriPod {
 	class assembleInfo;
 };
-
-class GMG_Tripod_GrenadeLauncher_Static_DZ: BAF_GMG_Tripod_D {			// GMG Minitripod
+class DZE_GMG_Tripod_MG_Static : BAF_GMG_Tripod_D {
+	// GMG Minitripod
 	side = 1;
 	faction = "USMC";
-	class assembleInfo: assembleInfo {
+	class assembleInfo : assembleInfo {
 		dissasembleTo[] = {};
 	};
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "GMG_Tripod_GrenadeLauncher_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_GMG_Tripod_MG_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"GMG_Tripod_GrenadeLauncher_Static_kit",1}};
 };
-
 class AGS_Ins;
-class AGS30_GrenadeLauncher_Static_DZ: AGS_Ins {			// AGS-30
+class DZE_AGS30_GrenadeLauncher_Static : AGS_Ins {
+	// AGS-30
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0.2};
-	nounderground = 0;
-	GhostPreview = "AGS30_GrenadeLauncher_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0.2};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_AGS30_GrenadeLauncher_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"AGS30_GrenadeLauncher_Static_kit",1}};
 };
-
 class MK19_TriPod;
-class MK19_TriPod_GrenadeLauncher_Static_DZ: MK19_TriPod {		// MK19 Minitripod
+class DZE_MK19_TriPod_GrenadeLauncher_Static : MK19_TriPod {
+	// MK19 Minitripod
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "MK19_TriPod_GrenadeLauncher_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_MK19_TriPod_GrenadeLauncher_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"MK19_TriPod_GrenadeLauncher_Static_kit",1}};
 };
-
-class BAF_GPMG_Minitripod_D: BAF_L2A1_ACOG_base {
+class BAF_GPMG_Minitripod_D : BAF_L2A1_ACOG_base {
 	class assembleInfo;
 };
-
-class GPMG_TriPod_MG_Static_DZ: BAF_GPMG_Minitripod_D {	// GPMG Minitripod
+class DZE_GPMG_TriPod_GrenadeLauncher_Static : BAF_GPMG_Minitripod_D {
+	// GPMG Minitripod
 	side = 1;
 	faction = "USMC";
-	class assembleInfo: assembleInfo {
+	class assembleInfo : assembleInfo {
 		dissasembleTo[] = {};
 	};
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "GPMG_TriPod_MG_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_GPMG_TriPod_GrenadeLauncher_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"GPMG_TriPod_MG_Static_kit",1}};
 };
-
 class M119;
-class M119_Artillery_Static_DZ: M119 {					// M119
+class DZE_M119_Artillery_Static : M119 {
+	// M119
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,5,0};
-	nounderground = 0;
-	GhostPreview = "M119_Artillery_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,5,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_M119_Artillery_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"M119_Artillery_Static_kit",1}};
 };
-
 class D30_Ins;
-class D30_Artillery_Static_DZ: D30_Ins {				// D-30
+class DZE_D30_Artillery_Static : D30_Ins {
+	// D-30
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,5,0};
-	nounderground = 0;
-	GhostPreview = "D30_Artillery_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,5,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_D30_Artillery_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"D30_Artillery_Static_kit",1}};
 };
-
 class SearchLight_INS;
-class SearchLight_Static_DZ: SearchLight_INS {				// Searchlight
+class DZE_SearchLight_Static : SearchLight_INS {
+	// Searchlight
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "SearchLight_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_SearchLight_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"SearchLight_Static_kit",1}};
 };
-
 class M252;
-class M252_Mortar_Static_DZ: M252 {					// M252 81mm Mortar
+class DZE_M252_Mortar_Static : M252 {
+	// M252 81mm Mortar
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "M252_Mortar_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_M252_Mortar_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"M252_Mortar_Static_kit",1}};
 };
-
 class 2b14_82mm;
-class 2b14_82mm_Mortar_Static_DZ: 2b14_82mm {				// Podnos 2B14
+class DZE_2b14_82mm_Mortar_Static : 2b14_82mm {
+	// Podnos 2B14
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "2b14_82mm_Mortar_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_2b14_82mm_Mortar_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"2b14_82mm_Mortar_Static_kit",1}};
 };
-
 class Metis;
-class Metis_Launcher_Static_DZ: Metis {					// Metis AT-13
+class DZE_Metis_Launcher_Static : Metis {
+	// Metis AT-13
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "Metis_Launcher_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_Metis_Launcher_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"Metis_Launcher_Static_kit",1}};
 };
-
 class SPG9_Gue;
-class SPG9_Launcher_Static_DZ: SPG9_Gue {				// SPG-9
+class DZE_SPG9_Launcher_Static : SPG9_Gue {
+	// SPG-9
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,-0.02};
-	nounderground = 0;
-	GhostPreview = "SPG9_Launcher_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,-0.02};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_SPG9_Launcher_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"SPG9_Launcher_Static_kit",1}};
 };
-
 class Stinger_Pod;
-class Stinger_Tripod_Launcher_Static_DZ: Stinger_Pod {			// AA Pod
+class DZE_Stinger_Tripod_Launcher_Static : Stinger_Pod {
+	// AA Pod
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0.17};
-	nounderground = 0;
-	GhostPreview = "Stinger_Tripod_Launcher_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0.17};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_Stinger_Tripod_Launcher_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"Stinger_Tripod_Launcher_Static_kit",1}};
 };
-
 class TOW_TriPod;
-class TOW_Tripod_Launcher_Static_DZ: TOW_TriPod {			// TOW Tripod
+class DZE_TOW_Tripod_Launcher_Static : TOW_TriPod {
+	// TOW Tripod
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "TOW_Tripod_Launcher_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_TOW_Tripod_Launcher_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"TOW_Tripod_Launcher_Static_kit",1}};
 };
-
 class Stinger_Pod_base;
-class Rbs70_ACR: Stinger_Pod_base {
+class Rbs70_ACR : Stinger_Pod_base {
 	class AssembleInfo;
 };
-
-class Rbs70_Launcher_Static_DZ: Rbs70_ACR {				// RBS-70
+class DZE_Rbs70_Launcher_Static : Rbs70_ACR {
+	// RBS-70
 	side = 1;
 	faction = "USMC";
 	class AssembleInfo : AssembleInfo {
 		dissasembleTo[] = {};
 	};
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "Rbs70_Launcher_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_Rbs70_Launcher_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"Rbs70_Launcher_Static_kit",1}};
 };
-
 class Igla_AA_pod_East;
-class Igla_AntiAir_Launcher_Static_DZ: Igla_AA_pod_East {		// AA IGLA Pod
+class DZE_Igla_AntiAir_Launcher_Static : Igla_AA_pod_East {
+	// AA IGLA Pod
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "Igla_AntiAir_Launcher_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_Igla_AntiAir_Launcher_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"Igla_AntiAir_Launcher_Static_kit",1}};
 };
-
 class ZU23_Ins;
-class ZU23_AntiAir_Static_DZ: ZU23_Ins {				// ZU-23
+class DZE_ZU23_AntiAir_Static : ZU23_Ins {
+	// ZU-23
 	side = 1;
 	faction = "USMC";
-	offset[] = {0,3,0};
-	nounderground = 0;
-	GhostPreview = "ZU23_AntiAir_Static_DZ";
-	vehicleClass = "DayZ Epoch Static Weapons";
+	DZE_offset[] = {0,3,0};
+	DZE_allowBuilding = 1;
+	DZE_bypassBase = 0;
+	DZE_preventUnderground = 0;
+	DZE_saveToDatabase = 1;
+	GhostPreview = "DZE_ZU23_AntiAir_Static";
+	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	removeoutput[] = {{"ZU23_AntiAir_Static_kit",1}};
 };

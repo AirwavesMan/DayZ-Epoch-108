@@ -6,7 +6,7 @@ class FoodBox0 : CardboardBox {
 	scope = 2;
 	displayName = $STR_DAYZ_OBJ_1;
 	model = "\dayz_equip\models\cardboard_box.p3d";
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 	
 	class transportmagazines {
 		class _xx_FoodCanBakedBeans {
@@ -39,7 +39,7 @@ class MedBox0 : CardboardBox {
 	scope = 2;
 	displayName = $STR_DAYZ_OBJ_2;
 	model = "z\addons\dayz_communityassets\models\medical_freezbox.p3d";
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 	
 	class transportmagazines {
 		class _xx_ItemBandage {
@@ -68,7 +68,7 @@ class MedBox1 : CardboardBox {
 	scope = 2;
 	displayName = $STR_DAYZ_OBJ_2;
 	model = "z\addons\dayz_communityassets\models\medical_freezbox.p3d";
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 	
 	class transportmagazines {
 		class _xx_ItemBandage {
@@ -107,7 +107,7 @@ class MedBox2 : CardboardBox {
 	scope = 2;
 	displayName = $STR_DAYZ_OBJ_2;
 	model = "z\addons\dayz_communityassets\models\medical_freezbox.p3d";
-	vehicleClass = "DayZ Epoch Crates";
+	vehicleClass = "DayZ Epoch 1071 Crates";
 	
 	class transportmagazines {
 		class _xx_ItemBandage {

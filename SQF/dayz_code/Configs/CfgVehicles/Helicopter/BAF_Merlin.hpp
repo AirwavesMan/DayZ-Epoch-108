@@ -3,7 +3,7 @@ class BAF_Merlin_DZE : BAF_Merlin_HC3_D {
 	side = 1;
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_AW101";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	magazines[] = {"120Rnd_CMFlareMagazine"};
 	crew = ""; 
 	typicalCargo[] = {};

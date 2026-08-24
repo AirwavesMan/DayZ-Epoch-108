@@ -10,7 +10,7 @@ class Octavia_ACR_DZE: Car {
 	{
 		libTextDesc = "$STR_ACR_LIB_OCTAVIA";
 	};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	DriverAction = "Golf_Driver";
 	cargoAction[] = {"Golf_Cargo01","Golf_Cargo02","Golf_Cargo02"};
 	cargoIsCoDriver[] = {0};

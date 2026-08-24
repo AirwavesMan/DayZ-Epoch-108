@@ -3,7 +3,7 @@ class PBX_DZE: PBX {
 	side = 1;
 	faction = "USMC";	
 	displayname = $STR_VEH_NAME_PBX;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -20,7 +20,7 @@ class Zodiac_DZE: Zodiac {
 	side = 1;
 	faction = "USMC";	
 	displayname = $STR_VEH_NAME_CRRC;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

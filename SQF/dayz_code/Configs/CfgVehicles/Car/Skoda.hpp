@@ -4,7 +4,7 @@ class Skoda_DZE: Skoda {
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_SKODA_WHITE";
 	displayNameShort = "$STR_VEH_NAME_SKODA_WHITE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -110,7 +110,7 @@ class SkodaBlue_DZE: SkodaBlue {
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_SKODA_BLUE";
 	displayNameShort = "$STR_VEH_NAME_SKODA_BLUE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -216,7 +216,7 @@ class SkodaRed_DZE: SkodaRed {
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_SKODA_RED";
 	displayNameShort = "$STR_VEH_NAME_SKODA_RED";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -321,7 +321,7 @@ class SkodaGreen_DZE: SkodaGreen {
 	faction = "USMC";
 	displayName = "$STR_VEH_NAME_SKODA_GREEN";
 	displayNameShort = "$STR_VEH_NAME_SKODA_GREEN";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

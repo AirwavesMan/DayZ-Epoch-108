@@ -2,7 +2,7 @@ class GNT_C185C;
 class GNT_C185C_DZ: GNT_C185C
 {
 	displayname = $STR_VEH_NAME_CESSNA_WHITE;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = "";
@@ -29,7 +29,7 @@ class GNT_C185R;
 class GNT_C185R_DZ: GNT_C185R
 {
 	displayname = $STR_VEH_NAME_CESSNA_YELLOW;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = "";
@@ -56,7 +56,7 @@ class GNT_C185;
 class GNT_C185_DZ: GNT_C185
 {
 	displayname = $STR_VEH_NAME_CESSNA_ORANGE;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = "";
@@ -83,7 +83,7 @@ class GNT_C185U;
 class GNT_C185U_DZ: GNT_C185U
 {
 	displayname = $STR_VEH_NAME_CESSNA_CAMO;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = "";
@@ -110,7 +110,7 @@ class GNT_C185T;
 class GNT_C185T_DZ: GNT_C185T
 {
 	displayname = $STR_VEH_NAME_CESSNA_ROCKETS;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = "";
@@ -156,7 +156,7 @@ class GNT_C185F;
 class GNT_C185F_DZ: GNT_C185F
 {
 	displayname = $STR_VEH_NAME_CESSNA_AMPHIBIAN;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	side = 1;
 	faction = "USMC";
 	crew = "";

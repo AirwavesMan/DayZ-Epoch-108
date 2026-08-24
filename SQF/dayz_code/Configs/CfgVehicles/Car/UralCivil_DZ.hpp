@@ -7,7 +7,7 @@ class Ural_INS_DZE: Ural_INS {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 
 	class Upgrades {
@@ -62,7 +62,7 @@ class Ural_RUST_DZE: Ural_INS {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 
 	class Upgrades {
@@ -117,7 +117,7 @@ class Ural_CDF_DZE: Ural_CDF {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 
 	class Upgrades {
@@ -172,7 +172,7 @@ class UralOpen_CDF_DZE: UralOpen_CDF {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 
 	class Upgrades {
@@ -227,7 +227,7 @@ class Ural_TK_CIV_EP1_DZE: Ural_TK_CIV_EP1 {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 
 	class Upgrades {
@@ -282,7 +282,7 @@ class Ural_UN_EP1_DZE: Ural_UN_EP1 {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 
 	class Upgrades {
@@ -337,7 +337,7 @@ class UralCivil_DZE : UralCivil {
 	typicalCargo[] = {};
 	class TransportMagazines{};
 	class TransportWeapons{};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 
 	class Upgrades {
@@ -393,7 +393,7 @@ class UralCivil2_DZE : UralCivil2 {
 	typicalCargo[] = {};
 	class TransportMagazines{};
 	class TransportWeapons{};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 
 	class Upgrades {
@@ -448,7 +448,7 @@ class UralSupply_TK_EP1_DZE : UralSupply_TK_EP1 {
 	typicalCargo[] = {};
 	class TransportMagazines{};
 	class TransportWeapons{};
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 
 	class Upgrades {
@@ -508,7 +508,7 @@ class UralRefuel_TK_EP1_DZ: UralRefuel_TK_EP1 {
 	class TransportWeapons{};
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
 	fuelCapacity = 10000;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 	
 	class Upgrades {
@@ -564,7 +564,7 @@ class UralRefuel_CDF_DZE: UralRefuel_CDF {
 	class TransportWeapons{};
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
 	fuelCapacity = 10000;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 	
 	class Upgrades {
@@ -619,7 +619,7 @@ class UralReammo_CDF_DZE: UralReammo_CDF {
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportAmmo = 0;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 	
 	class Upgrades {
@@ -678,7 +678,7 @@ class UralRepair_CDF_DZE: UralRepair_CDF {
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportRepair = 0;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 	
 	class Upgrades {
@@ -738,7 +738,7 @@ class UralRefuel_INS_DZE: UralRefuel_INS {
 	class TransportWeapons{};
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
 	fuelCapacity = 10000;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 	
 	class Upgrades {
@@ -793,7 +793,7 @@ class UralReammo_INS_DZE: UralReammo_INS {
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportAmmo = 0;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 	
 	class Upgrades {
@@ -852,7 +852,7 @@ class UralRepair_INS_DZE: UralRepair_INS {
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportRepair = 0;
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	supplyRadius = 2.6;
 	
 	class Upgrades {

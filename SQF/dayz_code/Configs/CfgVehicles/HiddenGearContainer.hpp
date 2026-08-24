@@ -6,7 +6,7 @@ class TreeStump01_DZE: Strategic {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 10;
-	vehicleClass = "DayZ Epoch Hidden Gear Container";
+	vehicleClass = "DayZ Epoch 1071 Hidden Gear Container";
 };
 
 class TreeStump02_DZE: Strategic {
@@ -17,7 +17,7 @@ class TreeStump02_DZE: Strategic {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 10;
-	vehicleClass = "DayZ Epoch Hidden Gear Container";
+	vehicleClass = "DayZ Epoch 1071 Hidden Gear Container";
 };
 
 class TreeStump03_DZE: Strategic {
@@ -29,7 +29,7 @@ class TreeStump03_DZE: Strategic {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 10;
-	vehicleClass = "DayZ Epoch Hidden Gear Container";
+	vehicleClass = "DayZ Epoch 1071 Hidden Gear Container";
 };
 
 class Fallen_Tree_DZE: Strategic {
@@ -40,7 +40,7 @@ class Fallen_Tree_DZE: Strategic {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 10;
-	vehicleClass = "DayZ Epoch Hidden Gear Container";
+	vehicleClass = "DayZ Epoch 1071 Hidden Gear Container";
 };
 
 class Excavated_Dirt_DZE: Strategic {
@@ -52,7 +52,7 @@ class Excavated_Dirt_DZE: Strategic {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 10;
-	vehicleClass = "DayZ Epoch Hidden Gear Container";
+	vehicleClass = "DayZ Epoch 1071 Hidden Gear Container";
 };
 
 class Dirt_Heap_DZE: Strategic {
@@ -64,7 +64,7 @@ class Dirt_Heap_DZE: Strategic {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 10;
-	vehicleClass = "DayZ Epoch Hidden Gear Container";
+	vehicleClass = "DayZ Epoch 1071 Hidden Gear Container";
 };	
 
 class Stash_Small_DZE: Strategic {
@@ -76,7 +76,7 @@ class Stash_Small_DZE: Strategic {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 10;
-	vehicleClass = "DayZ Epoch Hidden Gear Container";
+	vehicleClass = "DayZ Epoch 1071 Hidden Gear Container";
 };
 	
 class Stash_Medium_DZE: Strategic {
@@ -88,5 +88,5 @@ class Stash_Medium_DZE: Strategic {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 10;
-	vehicleClass = "DayZ Epoch Hidden Gear Container";
+	vehicleClass = "DayZ Epoch 1071 Hidden Gear Container";
 };

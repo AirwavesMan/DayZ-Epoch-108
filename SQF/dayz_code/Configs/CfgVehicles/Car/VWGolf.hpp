@@ -3,7 +3,7 @@ class VWGolf_DZE: VWGolf {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_VWGOLF_RED";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

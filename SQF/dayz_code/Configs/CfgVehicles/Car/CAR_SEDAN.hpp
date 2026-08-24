@@ -3,7 +3,7 @@ class car_sedan_DZE : car_sedan {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_SEDAN_WHITE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	maxspeed = 125;
 	armor = 20;
 	damageResistance = 0.01821;
@@ -110,7 +110,7 @@ class GLT_M300_ST_DZE : GLT_M300_ST {
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_SEDAN_TAXI";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

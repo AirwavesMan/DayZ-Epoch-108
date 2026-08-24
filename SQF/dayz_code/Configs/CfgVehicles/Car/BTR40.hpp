@@ -3,7 +3,7 @@ class BTR40_MG_TK_GUE_EP1_DZ : BTR40_MG_base_EP1 {
 	scope = 2;
 	side = 1;
 	faction = "USMC";	
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	displayname = "$STR_VEH_NAME_BTR40_DSHKM_GREEN";
 	crew = "";
 	typicalCargo[] = {};
@@ -203,7 +203,7 @@ class BTR40_TK_GUE_EP1_DZE: BTR40_base_EP1
 	scope = 2;
 	side = 1;
 	faction = "USMC";	
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	displayname = "$STR_VEH_NAME_BTR40_GREEN";
 	crew = "";
 	typicalCargo[] = {};

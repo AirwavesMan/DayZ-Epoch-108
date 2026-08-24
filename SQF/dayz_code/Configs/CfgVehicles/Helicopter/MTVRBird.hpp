@@ -6,7 +6,7 @@ class MTVR_Bird_base: Helicopter
 	model = "\z\addons\dayz_epoch_v\vehicles\mtvrcopter\scropter";
 	picture = "\dayz_epoch_c\icons\vehicles\mtvr_bird.paa";
 	icon = "\ca\air_e\data\UI\Icon_ah6j_CA.paa";	
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	mapSize = 8;
 	maxSpeed = 135;
 	nameSound = "chopper";

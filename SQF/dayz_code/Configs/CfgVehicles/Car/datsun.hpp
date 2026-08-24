@@ -3,7 +3,7 @@ class datsun1_civil_1_open_DZE: datsun1_civil_1_open {
 	side = 1;
 	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_PICKUP_BLUE";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
@@ -217,7 +217,7 @@ class datsun1_civil_2_covered_DZE: datsun1_civil_2_covered {
 	side = 1;
 	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_PICKUP_COVERED_TAN";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
@@ -426,7 +426,7 @@ class datsun1_civil_3_open_DZE: datsun1_civil_3_open {
 	side = 1;
 	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_PICKUP_GREY";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};

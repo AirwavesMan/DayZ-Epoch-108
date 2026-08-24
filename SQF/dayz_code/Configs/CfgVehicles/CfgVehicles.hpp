@@ -229,7 +229,7 @@ class CfgVehicles
 	
 	class epoch_car: Car
 	{
-		vehicleClass = "DayZ Epoch Vehicles";
+		vehicleClass = "DayZ Epoch 1071 Vehicles";
 		side = 1;
 		faction = "USMC";
 		selectionBackLights = "brzdove svetlo";
@@ -741,7 +741,6 @@ class CfgVehicles
 	#include "Buildings\land_ibr_hangar.hpp" //Works only if Lingor is loaded
 	#include "Buildings\Land_Shed_M01.hpp" // Animated door and interior, made by Helion4
 	
-	#include "Land_Fire.hpp"	
 	#include "WaterSources.hpp"	
 	#include "Blood_Trail_DZ.hpp"
 	#include "DebugBox.hpp"
@@ -752,38 +751,7 @@ class CfgVehicles
 	#include "Rubbish.hpp"	
 	
 	//Buildables
-	class DZ_storage_base : Land_A_tent {
-		scope = 0;
-		armor = 5;
-		displayname = $STR_VEH_NAME_STASH;
-		icon = "";
-		mapsize = 3;
-		transportMaxMagazines = 0;
-		transportMaxWeapons = 0;
-		transportMaxBackpacks = 0;	
-		constructioncount = 1;
-		requireplot = 0;
-		nounderground = 0;
-		offset[] = {0,3,0};
-	};
-	
-	#include "Buildables\Stashes.hpp"
-	#include "Buildables\Tents.hpp"
-	#include "Buildables\Storage.hpp"
-	#include "Buildables\LockableStorage.hpp"
-	#include "Buildables\Traps.hpp"	
-	#include "Buildables\Generator.hpp"	
-	#include "Buildables\Doors.hpp"
-	#include "Buildables\Bridges.hpp"
-	#include "Buildables\ModularBuild.hpp"		
-	#include "Buildables\FencesWood.hpp"
-	#include "Buildables\FencesMetal.hpp"
-	#include "Buildables\FencesGates.hpp"
-	#include "Buildables\CamoNets.hpp"
-	#include "Buildables\Sandbags.hpp"
-	#include "Buildables\Billboards.hpp"
-	#include "Buildables\Misc.hpp"
-	#include "Buildables\StaticWeapons.hpp"
+	#include "Buildables\Buildables.hpp"
 	
 	//Loot Container
 	#include "LootContainer\AmmoCrates.hpp"
@@ -801,7 +769,7 @@ class CfgVehicles
 	class Land_CncBlock_AntiHack: NonStrategic
 	{
 		scope = 2;
-		vehicleClass = "DayZ Epoch Buildings";
+		vehicleClass = "DayZ Epoch 1071 Helper";
 		model = "z\addons\dayz_communityassets\models\CncBlock_D.p3d";
 		Icon = "\Ca\misc3\Data\Icons\icon_cnc_con_barrier_CA.paa";
 		mapSize = 4;

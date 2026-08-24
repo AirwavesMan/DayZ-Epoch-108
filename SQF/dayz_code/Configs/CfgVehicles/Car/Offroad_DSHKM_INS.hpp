@@ -7,7 +7,7 @@ class Offroad_DSHKM_Gue_DZ: Offroad_DSHKM_Gue {
 	class TransportMagazines {};
 	class TransportWeapons {};
 	displayName = "$STR_VEH_NAME_PICKUP_DSHKM";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	class Turrets;
 	class MainTurret;
 	class HitPoints;

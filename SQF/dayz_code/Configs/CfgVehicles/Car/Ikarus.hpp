@@ -2,7 +2,7 @@ class Ikarus;
 class Ikarus_DZE: Ikarus {
 	side = 1;
 	faction = "USMC";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	displayname = $STR_VEH_NAME_IKARUS_BLUE;
 	crew = "";
 	typicalCargo[] = {};
@@ -15,7 +15,7 @@ class Ikarus_TK_CIV_EP1;
 class Ikarus_TK_CIV_EP1_DZE: Ikarus_TK_CIV_EP1 {
 	side = 1;
 	faction = "USMC";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	displayname = $STR_VEH_NAME_IKARUS_RED;
 	crew = "";
 	typicalCargo[] = {};

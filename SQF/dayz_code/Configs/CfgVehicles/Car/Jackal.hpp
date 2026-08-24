@@ -4,7 +4,7 @@ class BAF_Jackal2_L2A1_D_DZ : BAF_Jackal2_L2A1_D
 	side = 1;
 	faction = "USMC";
 	displayname = "$STR_VEH_NAME_JACKAL_L2A1_DESERT";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -310,7 +310,7 @@ class BAF_Jackal2_GMG_D_DZ : BAF_Jackal2_GMG_D
 	side = 1;
 	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_JACKAL_MK19_DESERT";
-	vehicleClass = "DayZ Epoch Vehicles";
+	vehicleClass = "DayZ Epoch 1071 Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
