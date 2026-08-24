@@ -1,0 +1,1 @@
+{isPlayer _x} count ((_this select 0) nearEntities ['CAManBase', _this select 1]) > 1;
