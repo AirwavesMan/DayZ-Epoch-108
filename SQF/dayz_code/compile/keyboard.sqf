@@ -63,7 +63,7 @@ if (isNil "keyboard_keys") then {
 		if (_shiftState) then {
 			_handled = true;
 		} else {
-			if (!isNil "DZE_buildItem") then {	// show/hide plot pole boundary while base building
+			if (!isNil "DZE_buildItem") then {	// show/hide base boundary while base building
 				DZE_P = true;
 				_handled = true;
 			};

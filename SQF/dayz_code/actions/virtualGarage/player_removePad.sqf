@@ -2,17 +2,17 @@
 
 closeDialog 0;
 
-local _plotCheck = [player, false] call FNC_find_plots;
-local _hasAccess = [player,_plotCheck select 2] call FNC_check_access;
+local _baseCheck = [player, false] call DZE_fnc_findBases;
+local _hasAccess = [player,_baseCheck select 2] call DZE_fnc_checkAccess;
 
-if ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3) or (_hasAccess select 4)) then {
+if ((_hasAccess select 2) or (_hasAccess select 3)) then {
 	
 	{
 		PVDZ_obj_Destroy = [netID player,netID _x,dayz_authKey];
 		publicVariableServer "PVDZ_obj_Destroy";
 
 		systemChat format[localize "STR_CL_VG_HELIPAD_REMOVED",typeOf _x];
-	} count (nearestObjects [_plotCheck select 2,vg_heliPads,Z_VehicleDistance]);
+	} count (nearestObjects [_baseCheck select 2,vg_heliPads,Z_VehicleDistance]);
 } else {
-	systemChat localize "STR_EPOCH_PLAYER_134";
+	systemChat localize "STR_BASE_BUILD_ACCESS_DENIED";
 };

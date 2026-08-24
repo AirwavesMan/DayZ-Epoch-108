@@ -29,7 +29,7 @@ call {
 			_state = 4;
 		};
 	};
-	if (_typeof in ["CinderGarageOpenTopLocked_DZ","Land_DZE_WoodOpenTopGarageLocked"]) exitwith {
+	if (_typeof in ["DZE_CinderGarageOpenTopLocked","Land_DZE_WoodOpenTopGarageLocked"]) exitwith {
 		if (_door animationPhase "doorl" == 0) then {
 			systemChat localize "STR_CL_GDO_DOOR_OPEN";
 			_door animate ["doorR",1];
@@ -41,7 +41,7 @@ call {
 			_state = 4;
 		};
 	};	
-	if (_typeof in ["CinderGateLocked_DZ","Land_DZE_WoodGateLocked"]) exitwith {
+	if (_typeof in ["DZE_CinderGateLocked","Land_DZE_WoodGateLocked"]) exitwith {
 		if (_door animationPhase "Open_door" == 0) then {
 			systemChat localize "STR_CL_GDO_DOOR_OPEN";
 			_door animate ["Open_door",1];

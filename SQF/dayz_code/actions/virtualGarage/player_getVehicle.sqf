@@ -1,7 +1,7 @@
 // Developed by [GZA] David for German Zombie Apocalypse Servers (https://zombieapo.eu/)
 // Rewritten by salival (https://github.com/oiad)
 
-private ["_backPack","_charID","_dir","_heliPad","_inventory","_isNearPlot","_keyID","_keyName","_location","_plotCheck","_sign","_vehicle"];
+private ["_backPack","_baseCheck","_charID","_dir","_heliPad","_inventory","_isNearBase","_keyID","_keyName","_location","_sign","_vehicle"];
 
 closeDialog 0;
 _vehicle = (call compile format["%1",lbData[2802,(lbCurSel 2802)]]);
@@ -11,10 +11,10 @@ if (vg_removeKey && {_vehicle select 3 != 0} && {({getNumber (configFile >> "Cfg
 _dir = round(random 360);
 _backPack = [];
 
-_plotCheck = [player,false] call FNC_find_plots;
-_isNearPlot = (_plotCheck select 1) > 0;
+_baseCheck = [player,false] call DZE_fnc_findBases;
+_isNearBase = (_baseCheck select 1) > 0;
 
-_heliPad = nearestObjects [if (_isNearPlot) then {_plotCheck select 2} else {player},vg_heliPads,if (_isNearPlot) then {DZE_maintainRange} else {Z_VehicleDistance}];
+_heliPad = nearestObjects [if (_isNearBase) then {_baseCheck select 2} else {player},vg_heliPads,if (_isNearBase) then {DZE_maintainRange} else {Z_VehicleDistance}];
 if (count _heliPad < 1) exitWith {localize "STR_CL_VG_NEED_HELIPAD" call dayz_rollingMessages;};
 
 _location = [(_heliPad select 0)] call FNC_GetPos;

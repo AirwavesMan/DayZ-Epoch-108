@@ -25,7 +25,7 @@ dayz_actionInProgress = true;
 
 
 local _objects = nearestObjects [
-     (player nearEntities ["Plastic_Pole_EP1_DZ", 15]) select 0
+     (player nearObjects [DZE_Territory_Marker,15]) select 0
     ,DZE_maintainClasses, DZE_maintainRange
 ];
 
@@ -88,12 +88,12 @@ local _maintain = {
             if (Z_SingleCurrency) then {
                 player setVariable [["cashMoney", "globalMoney"] select Z_persistentMoney, _wealth - _amount, true];
                 _message = format [
-                     localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS"
+                     localize "STR_BASE_MAINTENANCE_SUCCESS"
                     ,_count, [_amount] call BIS_fnc_numberText,_itemText
                 ]
             } else {
                 _message = format [
-                     localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS"
+                     localize "STR_BASE_MAINTENANCE_SUCCESS"
                     ,_count, _itemText, ""
                 ]
             };
@@ -108,12 +108,12 @@ local _maintain = {
 
     if (Z_SingleCurrency) then {
         _message = format [
-             localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED"
+             localize "STR_BASE_MAINTENANCE_FAILED"
             ,_count, [_amount] call BIS_fnc_numberText, _itemText
         ]
     } else {
         _message = format [
-             localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED"
+             localize "STR_BASE_MAINTENANCE_FAILED"
             ,_count, _itemText, ""
         ]
     };
@@ -159,19 +159,19 @@ if (_this == "preview") exitWith {
     local _requirements = [];
 
     if (_countFiltered == 0) then {
-        (_plotDialog displayCtrl 7012) ctrlSetText (localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_NONE")
+        (_plotDialog displayCtrl 7012) ctrlSetText (localize "STR_BASE_MAINTENANCE_NOT_REQUIRED")
     } else {
         local _message1 = "";
         _requirements = _countFiltered call _req;
 
         if (Z_SingleCurrency) then {
             _message1 = format [
-                 localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE"
+                 localize "STR_BASE_MAINTENANCE_PRICE"
                 ,_countFiltered, [_requirements select 0] call BIS_fnc_numberText, _requirements select 1
             ]
         } else {
             _message1 = format [
-                 localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE"
+                 localize "STR_BASE_MAINTENANCE_PRICE"
                 ,_countFiltered, _requirements select 1, ""
             ]
         };
@@ -185,12 +185,12 @@ if (_this == "preview") exitWith {
 
         if (Z_SingleCurrency) then {
             _message2 = format [
-                 localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE"
+                 localize "STR_BASE_MAINTENANCE_FORCE_PRICE"
                 ,count _objects, [_requirements select 0] call BIS_fnc_numberText, _requirements select 1
             ]
         } else {
             _message2 = format [
-                 localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE"
+                 localize "STR_BASE_MAINTENANCE_FORCE_PRICE"
                 ,count _objects, _requirements select 1, ""
             ]
         };
@@ -206,7 +206,7 @@ if (_this == "maintain") exitWith {
     if (_countFiltered != 0) then {
         _objects_filtered call _maintain
     } else {
-        systemChat localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_NONE"
+        systemChat localize "STR_BASE_MAINTENANCE_NOT_REQUIRED"
     };
 
     dayz_actionInProgress = false

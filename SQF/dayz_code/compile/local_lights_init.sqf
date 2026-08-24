@@ -17,7 +17,7 @@ if(!isDedicated)then{
 	_trgRng = 280;//Distance from Gen
 	_rngPlyr = 480;//Distance from Player
 	_lmpCol = [0.698, 0.556, 0.419];//Light colour
-	_genClass = "Generator_DZ";
+	_genClass = 'DZE_Generator';
 	_slpTime = 6;
 	_doLight = true;
 	_nrGen = [];

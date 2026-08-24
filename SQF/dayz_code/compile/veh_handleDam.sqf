@@ -18,7 +18,7 @@ local _unit = _this select 0;
 local _selection = _this select 1;
 local _total = _this select 2;
 
-if (DZE_GodModeVehiclesPlot && {locked _unit && {count (crew _unit) == 0} && {count (_unit nearEntities ["Plastic_Pole_EP1_DZ", DZE_PlotPole select 0]) > 0}}) exitWith {0};
+if (DZE_baseGodModeVehicles && {locked _unit && {count (crew _unit) == 0} && {count (_unit nearObjects [DZE_Territory_Marker,DZE_baseRadius select 0]) > 0}}) exitWith {0};
 
 local _totalDmg = if (_selection != "") then {false} else {true};
 local _force = [false,true] select (count _this > 6); // Needed to force update salvage

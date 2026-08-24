@@ -83,7 +83,7 @@ if (_p > 0) then {
 
 	if (_count > 0) then {	// found helper vector
 
-		if (_typeOf in ["Concrete_Bunker_DZ","Concrete_Bunker_Locked_DZ","Door_DZ"]) exitWith{};	// exclude from helper removal
+		if (_typeOf in ["DZE_Concrete_Bunker","DZE_Concrete_Bunker_Locked","DZE_Door"]) exitWith{};	// exclude from helper removal
 
 		///////////////////////////////////////////////////////////////////////////////////
 		//
@@ -91,25 +91,25 @@ if (_p > 0) then {
 		//
 		///////////////////////////////////////////////////////////////////////////////////
 		//
-		//	"DoorL"		for	MetalGate_DZ,
+		//	"DoorL"		for	DZE_MetalGate,
 		//				Land_DZE_WoodOpenTopGarageDoor,
 		//				Land_DZE_WoodOpenTopGarageLocked,
-		//				CinderGarageOpenTop_DZ,
-		//				CinderGarageOpenTopLocked_DZ
-		//	"dvere1"	for	Wooden_shed_DZ, Wooden_shed2_DZ
-		//	"open"		for	StorageShed_DZ, StorageShed2_DZ (Land_Shed_M01)
-		//	"Open_inner"	for	Metal_Drawbridge_DZ, Metal_DrawbridgeLocked_DZ
+		//				DZE_CinderGarageOpenTop,
+		//				DZE_CinderGarageOpenTopLocked
+		//	"dvere1"	for	DZE_Wooden_shed, DZE_Wooden_shed2
+		//	"open"		for	DZE_StorageShed, DZE_StorageShed2 (Land_Shed_M01)
+		//	"Open_inner"	for	DZE_Metal_Drawbridge, DZE_Metal_DrawbridgeLocked
 		//	"Open_door"	for	default
 		//
 		///////////////////////////////////////////////////////////////////////////////////
 
 		local _resize	= false;
 		local _door	= "Open_door";
-		local _doorL	= ["MetalGate_DZ","Land_DZE_WoodOpenTopGarageDoor","Land_DZE_WoodOpenTopGarageLocked","CinderGarageOpenTop_DZ","CinderGarageOpenTopLocked_DZ"];
-		local _open	= ["StorageShed_DZ","StorageShed2_DZ"];
-		local _dvere1	= ["OutHouse_DZ"];
-		local _custom1	= ["Wooden_shed_DZ","Wooden_shed2_DZ"];
-		local _custom2	= ["Metal_Drawbridge_DZ","Metal_DrawbridgeLocked_DZ"];
+		local _doorL	= ["DZE_MetalGate","Land_DZE_WoodOpenTopGarageDoor","Land_DZE_WoodOpenTopGarageLocked","DZE_CinderGarageOpenTop","DZE_CinderGarageOpenTopLocked"];
+		local _open	= ['DZE_StorageShed','DZE_StorageShed2'];
+		local _dvere1	= ['DZE_OutHouse'];
+		local _custom1	= ['DZE_Wooden_shed','DZE_Wooden_shed2'];
+		local _custom2	= ["DZE_Metal_Drawbridge","DZE_Metal_DrawbridgeLocked"];
 
 		call {
 			if (_typeOf in _doorL)	exitWith {_door = "doorl"};

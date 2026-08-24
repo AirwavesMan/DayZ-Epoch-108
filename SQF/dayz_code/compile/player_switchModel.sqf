@@ -207,5 +207,5 @@ player setVariable ["BIS_noCoreConversations",true];
 //	publicVariable _playerObjName;
 
 call dayz_meleeMagazineCheck;
-//{player reveal _x} count (nearestObjects [_position,["AllVehicles","WeaponHolder","Land_A_tent","BuiltItems","ModularItems","DZE_Base_Object"],75]);
-{player reveal _x} count (nearestObjects [player,["AllVehicles","WeaponHolder","Land_A_tent","BuiltItems","ModularItems","DZE_Base_Object"],75]);
+//{player reveal _x} count (nearestObjects [_position,['AllVehicles','WeaponHolder','Land_A_tent','DZE_Storage_Base','BuiltItems','ModularItems','DZE_Base_Object'],75]);
+{player reveal _x} count (nearestObjects [player,['AllVehicles','WeaponHolder','Land_A_tent','DZE_Storage_Base','BuiltItems','ModularItems','DZE_Base_Object'],75]);

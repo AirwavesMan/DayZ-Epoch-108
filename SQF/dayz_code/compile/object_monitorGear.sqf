@@ -50,7 +50,7 @@ if (vehicle player != player) then {
 _type = typeOf _object;
 _isVehicle = _type isKindOf "AllVehicles";
 _isMan = _type isKindOf "Man";
-_isStorage = _type isKindOf "Land_A_tent";
+_isStorage = (_type isKindOf 'DZE_Storage_Base') || {_type isKindOf 'Land_A_tent'};
 _isNewStorage = _type in DZE_isNewStorage;
 
 _timeout = time + 2;

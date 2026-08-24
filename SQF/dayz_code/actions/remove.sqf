@@ -78,8 +78,8 @@ local _isRemovable	= _objType in DZE_isRemovable;
 local _isWreckBuilding	= _objType in DZE_isWreckBuilding;
 local _isMine		= _objType in ["Land_iron_vein_wreck","Land_silver_vein_wreck","Land_gold_vein_wreck"];
 local _isAmmoSupplyWreck= _objType == "Land_ammo_supply_wreck";
-local _isPlotPole	= _objType == "Plastic_Pole_EP1_DZ";
-local _isFireBarrel	= _objType == "FireBarrel_DZ";
+local _isPlotPole	= _objType == DZE_Territory_Marker;
+local _isFireBarrel	= _objType == "DZE_FireBarrel";
 local _isStorageItem	= _objType in DZE_refundStorageItemContents;	// non-lockable storage (sheds, crates etc.)
 
 local _playerNear = {isPlayer _x} count (_obj nearEntities ["CAManBase", 12]) > 1;
@@ -95,23 +95,22 @@ local _limit = 3;
 if (DZE_StaticConstructionCount > 0) then {
 	_limit = DZE_StaticConstructionCount;
 } else {
-	if (isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
-		_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
+	if (isNumber (configFile >> "CfgVehicles" >> _objType >> "DZE_buildingSteps")) then {
+		_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "DZE_buildingSteps");
 	};
 };
 
-local _plotCheck	= [player, false] call FNC_find_plots;
-local _isNearPlot	= _plotCheck select 1;
-local _nearestPole	= _plotCheck select 2;
+local _baseCheck	= [player, false] call DZE_fnc_findBases;
+local _isNearBase	= _baseCheck select 1;
+local _nearestBase	= _baseCheck select 2;
 
-if (_isNearPlot > 0) then {
+if (_isNearBase > 0) then {
 
-	// Since there are plot poles nearby we need to check ownership && friend status
-	local _accessCheck	= [player, _nearestPole] call FNC_check_access;
-	local _isowner		= _accessCheck select 0;
-	local _isfriendly	= ((_accessCheck select 1) or (_accessCheck select 3));
+	// Since there are bases nearby, base access must come from the base friend list.
+	local _accessCheck	= [player, _nearestBase] call DZE_fnc_checkAccess;
+	local _hasBaseAccess	= _accessCheck select 2;
 
-	if (!_isowner && !_isfriendly) then {
+	if (!_hasBaseAccess) then {
 		_limit = round(_limit * 2);
 	};
 };
@@ -378,7 +377,7 @@ if (_proceed && _success) then {
 		call {
 			///////////////////////////////////////////////////////////////////////////
 			//
-			//		check if plot pole helpers remain
+			//		check if base helpers remain
 			//
 			///////////////////////////////////////////////////////////////////////////
 			if (_isPlotPole) exitWith {
@@ -394,7 +393,7 @@ if (_proceed && _success) then {
 			//
 			///////////////////////////////////////////////////////////////////////////
 			if (_isFireBarrel) exitWith {
-				local _flame = nearestObjects [_obj, ["flamable_DZ"], 1];	// check for inflamed objects
+				local _flame = nearestObjects [_obj, ["DZE_flamable"], 1];	// check for inflamed objects
 				if (count _flame > 0) then {					// if any
 					_flame = (_flame select 0);				// get nearest (typeName changes from "ARRAY" to "OBJECT")
 					_flame inflame false;					// extinguish flame

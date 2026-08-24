@@ -24,11 +24,11 @@ _nameText = 	getText(_configVeh >> "displayName");
 
 	if (_x in DayZ_fuelCansEmpty) then {
 		_canNameEmpty = _x;
-		_canSizeEmpty = getNumber(_configCanEmpty >> "fuelQuantity");
+		_canSizeEmpty = getNumber(_configCanEmpty >> 'DZE_fuelQuantity');
 		_canTypeEmpty = getText(_configCanEmpty >> "displayName");
 
 		_canName = getText(_configCanEmpty >> "fullCan");
-		_canSize =	getNumber(configFile >> "cfgMagazines" >> _canName >> "fuelQuantity");
+		_canSize =	getNumber(configFile >> 'cfgMagazines' >> _canName >> 'DZE_fuelQuantity');
 
 		if (_canSizeEmpty == 0) then {
 			_curFuel = ((fuel _vehicle) * _capacity);

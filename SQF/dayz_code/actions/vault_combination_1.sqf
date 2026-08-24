@@ -10,7 +10,7 @@ if (dayz_lastCodeFail > diag_tickTime) exitWith {
 };
 
 if (!isNull dayz_selectedVault) then {
-	if ((typeOf dayz_selectedVault) in ["VaultStorageLocked","VaultStorage","VaultStorage2Locked","VaultStorage2","TallSafe","TallSafeLocked"]) then {
+	if ((typeOf dayz_selectedVault) in ['DZE_SafeLocked','DZE_Safe','DZE_Safe2Locked','DZE_Safe2','DZE_SafeTall','DZE_SafeTallLocked']) then {
 		createDialog "SafeKeyPad";
 	} else {
 		createDialog "KeypadUI";

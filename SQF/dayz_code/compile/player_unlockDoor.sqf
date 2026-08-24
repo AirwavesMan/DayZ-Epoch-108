@@ -26,14 +26,13 @@ if (!isNull dayz_selectedDoor) then {
 		_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 
 		if (DZE_doorManagement) then {
-			_hasAccess = [player, _obj] call FNC_check_access;
+			_hasAccess = [player, _obj] call DZE_fnc_checkAccess;
 			if (
 				(_hasAccess select 0) or // door owner
-				(_hasAccess select 2) or // plot owner
-				(_hasAccess select 3) or // plot friend
-				(_hasAccess select 4) or // plot admin
-				(_hasAccess select 5) or // door friend
-				(_hasAccess select 6)    // door admin
+				(_hasAccess select 2) or // base friend
+				(_hasAccess select 3) or // base admin
+				(_hasAccess select 4) or // door friend
+				(_hasAccess select 5)    // door admin
 			) then {
 				DZE_Lock_Door = dayz_selectedDoor getVariable['CharacterID','0'];
 			};

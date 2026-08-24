@@ -8,7 +8,7 @@ _array = _this select 3;
 _cantype = _array select 0;
 _vehicle = _array select 1;
 _type = typeOf _vehicle;
-_canSize = getNumber(configFile >> "cfgMagazines" >> _cantype >> "fuelQuantity");
+_canSize = getNumber(configFile >> 'cfgMagazines' >> _cantype >> 'DZE_fuelQuantity');
 _emptycan = getText(configFile >> "cfgMagazines" >> _cantype >> "containerEmpty");
 _configVeh = configFile >> "cfgVehicles" >> _type;
 _capacity = getNumber(_configVeh >> "fuelCapacity");
@@ -32,7 +32,7 @@ if (_finished) then {
 	player addMagazine _emptycan;
 	// Added Nutrition-Factor for work
 	["Working",0,[0,1,3,0]] call dayz_NutritionSystem;
-	if ((_type == "Generator_DZ") && {!(_vehicle getVariable ["GeneratorFilled", false])}) then {
+	if ((_type == 'DZE_Generator') && {!(_vehicle getVariable ['GeneratorFilled', false])}) then {
 			_vehicle setVariable ["GeneratorFilled", true, true];
 	};
 	if (local _vehicle) then {

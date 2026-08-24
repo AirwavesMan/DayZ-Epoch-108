@@ -33,14 +33,14 @@ _atl = _this select 2;
 _local = _this select 3;
 
 _fires = [
-	"Base_Fire_DZ",
-	"flamable_DZ",
-	"Land_Camp_Fire_DZ",
+	"DZE_Base_Fire",
+	"DZE_flamable",
+	"DZE_Land_Camp_Fire",
 	"Land_Campfire",
 	"Land_Campfire_burning",
 	"Land_Fire",
 	"Land_Fire_burning",
-	"Land_Fire_DZ",
+	"DZE_Land_Fire",
 	"Land_Fire_barrel",
 	"Land_Fire_barrel_burning",
 	"Misc_TyreHeap"

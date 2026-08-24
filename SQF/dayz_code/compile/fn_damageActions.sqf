@@ -242,7 +242,7 @@ if (isPlayer cursorTarget && _hasPatient) then {
 			_action = _unit addAction [localize "str_actions_medical_give_antibiotics", "\z\addons\dayz_code\medical\antibiotics.sqf",[_unit], 0, true, true];
 			r_player_actions set [count r_player_actions, _action];
 		};
-		_isFriendly = [player, _unit] call FNC_check_access;
+		_isFriendly = [player, _unit] call DZE_fnc_checkAccess;
 		if !(_isFriendly select 1) then {
 			r_action = true;
 			_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true];

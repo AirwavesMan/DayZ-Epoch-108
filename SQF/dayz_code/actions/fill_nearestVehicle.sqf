@@ -14,7 +14,7 @@ local _fuelSourceFound = true;
 if (_isFuelTruck) then {
 	_fuelSourceCapacity = getNumber (configFile >> "cfgVehicles" >> _typeFuelSource >> "fuelCapacity");
 } else {	
-	if (_typeFuelSource == "FuelPump_DZ") then {
+	if (_typeFuelSource == "DZE_FuelPump") then {
 		local _findNearestFuel = [];
 
 		{

@@ -1,7 +1,7 @@
 // Developed by [GZA] David for German Zombie Apocalypse Servers (https://zombieapo.eu/)
 // Rewritten by salival (https://github.com/oiad)
 
-private ["_amount","_backPackCount","_backPackGear","_cargoAmount","_charID","_control","_counter","_display","_enoughMoney","_hasKey","_isLimitArray","_itemText","_items","_keyName","_limit","_magazineCount","_matchedCount","_moneyInfo","_name","_overLimit","_storedVehicles","_success","_typeName","_typeOf","_vehicle","_wealth","_weaponsCount","_woGear","_playerNear","_ownerPUID","_plotCheck"];
+private ["_amount","_backPackCount","_backPackGear","_baseCheck","_cargoAmount","_charID","_control","_counter","_display","_enoughMoney","_hasKey","_isLimitArray","_itemText","_items","_keyName","_limit","_magazineCount","_matchedCount","_moneyInfo","_name","_overLimit","_storedVehicles","_success","_typeName","_typeOf","_vehicle","_wealth","_weaponsCount","_woGear","_playerNear","_ownerPUID"];
 
 disableSerialization;
 
@@ -135,9 +135,9 @@ if (_enoughMoney) then {
 		[_vehicle,true] call local_lockUnlock;
 		DZE_myVehicle = objNull;
 
-		PVDZE_storeVehicle = if (vg_tiedToPole) then {
-			_plotCheck = [player,false] call FNC_find_plots;
-			_ownerPUID = if (_plotCheck select 1 > 0) then {(_plotCheck select 2) getVariable ["ownerPUID","0"]} else {dayz_playerUID};
+		PVDZE_storeVehicle = if (vg_tiedToBase) then {
+			_baseCheck = [player,false] call DZE_fnc_findBases;
+			_ownerPUID = if (_baseCheck select 1 > 0) then {(_baseCheck select 2) getVariable ["ownerPUID","0"]} else {dayz_playerUID};
 			[_vehicle,player,_woGear,_ownerPUID]
 		} else {
 			[_vehicle,player,_woGear]

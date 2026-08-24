@@ -308,7 +308,7 @@ if (!isNull _humanityTarget && {isPlayer _humanityTarget} && {alive _humanityTar
 			// <br /><t %2 align='center' size='0.7'>Humanity: %3</t>
 
 			_color = "color='#339933'";
-			_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
+			_string = format["<t %2 align='center' size='%3'>%1</t>",_humanityTarget call DZE_fnc_getNamePlayer,_color,_size];
 		
 		} else {
 
@@ -324,7 +324,7 @@ if (!isNull _humanityTarget && {isPlayer _humanityTarget} && {alive _humanityTar
 				};
 			};
 			if((_humanityTarget getVariable ["DZE_display_name", false]) || (DZE_ForceNameTagsInTrader && isInTraderCity)) then {
-				_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
+				_string = format["<t %2 align='center' size='%3'>%1</t>",_humanityTarget call DZE_fnc_getNamePlayer,_color,_size];
 			};
 		};
 	};

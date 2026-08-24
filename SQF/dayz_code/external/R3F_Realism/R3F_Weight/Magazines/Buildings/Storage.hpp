@@ -42,7 +42,7 @@ class ItemWoodCrateKit2
 {
 	weight = 40;
 };
-class ItemVault 
+class ItemSafe
 {
 	weight = 50; 
 };
@@ -54,11 +54,11 @@ class StashSmall_kit
 { 
 	weight = 2; 
 };
-class ItemVault2
+class ItemSafe2
 {
 	weight = 50;
 };
-class ItemTallSafe
+class ItemSafeTall
 {
 	weight = 100;
 };
@@ -74,15 +74,15 @@ class ItemLockboxWinter2
 {
 	weight = 15;
 };
-class ItemVaultBroken
+class ItemSafeBroken
 {
 	weight = 50;
 };
-class ItemVault2Broken
+class ItemSafe2Broken
 {
 	weight = 50;
 };
-class ItemTallSafeBroken
+class ItemSafeTallBroken
 {
 	weight = 100;
 };

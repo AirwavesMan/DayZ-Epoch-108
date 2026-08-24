@@ -72,7 +72,7 @@ PVDZ_obj_Fire = [_obj,_fireIntensity,time,false,true];
 publicVariable "PVDZ_obj_Fire";
 
 _obj inflame true;
-//_obj spawn player_fireMonitor;
+// The server scheduler only monitors supported fireplace classes.
 
 localize "str_success_tent_destroyed" call dayz_rollingMessages;
 dayz_actionInProgress = false;

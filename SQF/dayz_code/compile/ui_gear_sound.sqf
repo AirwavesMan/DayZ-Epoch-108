@@ -9,9 +9,9 @@ if( (!isNull cursorTarget) && (player distance cursorTarget < 5) && (vehicle pla
         case (_cTarget isKindOf "Bag_Base_EP1"):{"open_backpack"}; //backpacks on ground
         case ( (_cTarget isKindOf "CAManBase") && (alive _cTarget) && !(isNull unitBackpack _cTarget) ):{"open_backpack"}; //Person with backpack
         default {"open_inventory"}; //unknown, play cloth sounds
-        //case (_cTarget isKindOf "Land_A_tent"):{"open_inventory"}; //Tents
-        //case (_cTarget isKindOf "StashSmall"):{"open_stash_sm"};  //dirt pile stash
-        //case (_cTarget isKindOf "StashMedium"):{"open_stash_md"}; //stash with wooden door
+        //case (_cTarget isKindOf 'DZE_Tent_Base'):{'open_inventory'}; //Tents
+        //case (_cTarget isKindOf 'DZE_StashSmall'):{'open_stash_sm'};  //dirt pile stash
+        //case (_cTarget isKindOf 'DZE_StashMedium'):{'open_stash_md'}; //stash with wooden door
         //case (_cTarget isKindOf "AllVehicles"):{"open_vehicle"};  //"trunks"
         //case (typeof _cTarget == "WeaponHolder"):{"open_lootpile"}; //stuff on open ground
         
