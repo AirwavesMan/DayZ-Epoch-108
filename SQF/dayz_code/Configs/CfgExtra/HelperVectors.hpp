@@ -37,7 +37,7 @@ class HelperVectors: Helpers {
 			{   5.27,     0, 0.141 }	// Right
 		};
 	};
-	class Land_metal_floor_2x2_wreck: DZE_MetalFloor4x {};
+	class DZE_Land_Metal_Floor_2x2_Wreck: DZE_MetalFloor4x {};
 
 	class DZE_MetalFloor: vector {
 		points[] = {
@@ -51,7 +51,7 @@ class HelperVectors: Helpers {
 	class DZE_ElevatorStart: DZE_MetalFloor {};
 	class DZE_ElevatorStop_Transparent: DZE_MetalFloor {};
 
-	class Land_wreck_metal_floor: vector {
+	class DZE_Land_Wreck_Metal_Floor: vector {
 		points[] = {
 			{      0, -2.638, 0.141 },	// Back
 			{      0,  2.632, 0.141 },	// Front
@@ -202,7 +202,7 @@ class HelperVectors: Helpers {
 	};
 	class DZE_CinderWallHalf_Gap: DZE_CinderWallHalf {};
 
-	class Land_wreck_cinder: vector {
+	class DZE_Land_Wreck_Cinder: vector {
 		points[] = {
 			{ -1.64, 0, 0.25 },	// Left (replacement)
 			{  1.64, 0, 0.25 }	// Right (replacement)
@@ -248,7 +248,7 @@ class HelperVectors: Helpers {
 			{  4.888,     0, 0.139 }	// Right
 		};
 	};
-	class Land_wood_floor_2x2_wreck: DZE_WoodFloor4x {};
+	class DZE_Land_Wood_Floor_2x2_Wreck: DZE_WoodFloor4x {};
 
 	class DZE_WoodFloor: vector {
 		points[] = {
@@ -260,7 +260,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Land_wood_wreck_floor: vector {
+	class DZE_Land_Wood_Wreck_Floor: vector {
 		points[] = {
 			{ -0.029, -2.338, 0.139 },	// Back
 			{ -0.029,  2.312, 0.139 },	// Front
@@ -277,7 +277,7 @@ class HelperVectors: Helpers {
 			{  1.306,  0.005, 0.116 }	// Right
 		};
 	};
-	class Land_wood_wreck_half: DZE_WoodFloorHalf {};
+	class DZE_Land_Wood_Wreck_Half: DZE_WoodFloorHalf {};
 
 	class DZE_WoodFloorQuarter: vector {
 		points[] = {
@@ -287,7 +287,7 @@ class HelperVectors: Helpers {
 			{  1.272,  -0.042, 0.114 }	// Right
 		};
 	};
-	class Land_wood_wreck_quarter: DZE_WoodFloorQuarter {};
+	class DZE_Land_Wood_Wreck_Quarter: DZE_WoodFloorQuarter {};
 
 	class DZE_WoodFloorStairs: vector {
 		points[] = {
@@ -330,7 +330,7 @@ class HelperVectors: Helpers {
 	};
 	class DZE_Land_WoodOpenTopGarageLocked: DZE_Land_WoodOpenTopGarageDoor {};
 
-	class Land_wood_wreck_frame: vector {
+	class DZE_Land_Wood_Wreck_Frame: vector {
 		points[] = {
 			{ -0.023, 0.016, 0.019 },	// Pivot (bottom)
 			{ -2.308, 0.016, 1.519 },	// Left
@@ -380,7 +380,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Land_wood_wreck_third: vector {
+	class DZE_Land_Wood_Wreck_Third: vector {
 		points[] = {
 			{ -0.023, -0.018,  0.002 },	// Pivot
 			{ -2.463, -0.018, 0.5845 },	// Left (lowered)
