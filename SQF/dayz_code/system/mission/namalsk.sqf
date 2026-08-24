@@ -60,7 +60,7 @@
 	["Land_Wheel_cart_EP1",[6214.66,9161.71,0.000415802],221.032],
 	["Misc_cargo_cont_tiny",[6226.98,9138.65,0],261],
 	["Land_bags_stack_EP1",[6211.61,9160.91,0.00114059],104.083],
-	["VaultStorageLocked",[6213.04,9159.19,0],248],
+	['DZE_SafeLocked',[6213.04,9159.19,0],248],
 	["Info_Board_EP1",[6223.58,9143.43,1.52588e-005],181.827],
 	["AmmoCrates_NoInteractive_Small",[6214.93,9148.11,0.000118256],182],
 	["AmmoCrates_NoInteractive_Large",[6215.03,9145.71,-5.34058e-005],353.999],

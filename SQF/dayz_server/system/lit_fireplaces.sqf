@@ -35,7 +35,7 @@ if (dayz_POIs) then {
 	_position = _x;
 	{if (_position distance _x < 150) exitWith {_blocked = true;};} forEach dayz_townGeneratorBlackList;
 	if (!_blocked && (random 1 < 0.33)) then {
-		_flame = "flamable_DZ" createVehicle [0,0,0]; //200x faster https://community.bistudio.com/wiki/Code_Optimisation#createVehicle.28Local.29
+		_flame = "DZE_flamable" createVehicle [0,0,0]; //200x faster https://community.bistudio.com/wiki/Code_Optimisation#createVehicle.28Local.29
 		_flame setPosATL _x;
 		_flame inflame true;
 		_flame setVariable ["permaLoot",true]; // = won't be removed by the cleaner, cf. sched_lootpiles.sqf
