@@ -18,6 +18,7 @@ class DZE_MetalFence_1_foundation: DZE_Fence_Base {
 };
 
 class DZE_MetalFence_1_frame: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence1_stage1.p3d";
 	displayName = $STR_BLD_name_MetalFence_1_frame;	
 	upgradeBuilding[] = {"DZE_MetalFence_halfpanel",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
@@ -25,6 +26,7 @@ class DZE_MetalFence_1_frame: DZE_Fence_Base {
 };
 
 class DZE_MetalFence_halfpanel: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence1_stage2.p3d";
 	displayName = $STR_BLD_name_MetalFence_halfpanel;	
 	upgradeBuilding[] = {"DZE_MetalFence_thirdpanel",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
@@ -32,6 +34,7 @@ class DZE_MetalFence_halfpanel: DZE_Fence_Base {
 };
 
 class DZE_MetalFence_thirdpanel: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence1_stage3.p3d";
 	displayName = $STR_BLD_name_MetalFence_thirdpanel;	
 	upgradeBuilding[] = {"DZE_MetalFence_1",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
@@ -39,6 +42,7 @@ class DZE_MetalFence_thirdpanel: DZE_Fence_Base {
 };
 
 class DZE_MetalFence_1: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence1.p3d";
 	displayName = $STR_BLD_name_MetalFence_1;	
 	upgradeBuilding[] = {"DZE_MetalFence_2",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
@@ -46,6 +50,7 @@ class DZE_MetalFence_1: DZE_Fence_Base {
 };
 
 class DZE_MetalFence_2: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence2.p3d";
 	displayName = $STR_BLD_name_MetalFence_2;	
 	upgradeBuilding[] = {"DZE_MetalFence_3",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
@@ -53,6 +58,7 @@ class DZE_MetalFence_2: DZE_Fence_Base {
 };
 
 class DZE_MetalFence_3: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence3.p3d";
 	displayName = $STR_BLD_name_MetalFence_3;	
 	upgradeBuilding[] = {"DZE_MetalFence_4",{"ItemToolbox","ItemSledge"},{{"ItemScrews",1},{"ItemRSJ",4}}};
@@ -60,6 +66,7 @@ class DZE_MetalFence_3: DZE_Fence_Base {
 };
 
 class DZE_MetalFence_4: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence4.p3d";
 	displayName = $STR_BLD_name_MetalFence_4;	
 	upgradeBuilding[] = {"DZE_MetalFence_5",{"ItemToolbox","ItemSledge"},{{"ItemScrews",1},{"ItemRSJ",2}}};
@@ -67,6 +74,7 @@ class DZE_MetalFence_4: DZE_Fence_Base {
 };
 
 class DZE_MetalFence_5: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence5.p3d";
 	displayName = $STR_BLD_name_MetalFence_5;	
 	upgradeBuilding[] = {"DZE_MetalFence_6",{"ItemToolbox","ItemSledge"},{{"ItemScrews",1},{"ItemPole",4},{"equip_metal_sheet",4}}};
@@ -74,6 +82,7 @@ class DZE_MetalFence_5: DZE_Fence_Base {
 };
 
 class DZE_MetalFence_6: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence6.p3d";
 	displayName = $STR_BLD_name_MetalFence_6;	
 	upgradeBuilding[] = {"DZE_MetalFence_7",{"ItemToolbox","ItemSledge"},{{"ItemScrews",1},{"ItemPole",6},{"PartGeneric",2}}};
@@ -81,6 +90,7 @@ class DZE_MetalFence_6: DZE_Fence_Base {
 };
 
 class DZE_MetalFence_7: DZE_Fence_Base {
+	scope = 2;
 	armor = 5500;
 	model = "z\addons\dayz_buildings\models\metal_fence7.p3d";
 	displayName = $STR_BLD_name_MetalFence_7;		

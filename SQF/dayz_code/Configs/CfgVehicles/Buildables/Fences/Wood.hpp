@@ -19,6 +19,7 @@ class DZE_WoodenFence_1_foundation: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_1_frame: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\fence1_frame.p3d";
 	displayName = $STR_BLD_name_WoodenFence_1_frame;
 	armor = 1200;	
@@ -26,6 +27,7 @@ class DZE_WoodenFence_1_frame: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_quaterpanel: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\fence1_stage1.p3d";
 	displayName = $STR_BLD_name_WoodenFence_quaterpanel;
 	armor = 1400;	
@@ -33,6 +35,7 @@ class DZE_WoodenFence_quaterpanel: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_halfpanel: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\fence1_stage2.p3d";
 	displayName = $STR_BLD_name_WoodenFence_halfpanel;
 	armor = 1600;	
@@ -40,6 +43,7 @@ class DZE_WoodenFence_halfpanel: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_thirdpanel: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\fence1_stage3.p3d";
 	displayName = $STR_BLD_name_WoodenFence_thirdpanel;
 	armor = 1800;	
@@ -47,6 +51,7 @@ class DZE_WoodenFence_thirdpanel: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_1: DZE_Fence_Base {
+	scope = 2;
 	model = "z\addons\dayz_buildings\models\fence1.p3d";
 	displayName = $STR_BLD_name_WoodenFence_1;
 	armor = 2000;	
@@ -54,6 +59,7 @@ class DZE_WoodenFence_1: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_2: DZE_Fence_Base {
+	scope = 2;
 	armor = 2200;
 	model = "z\addons\dayz_buildings\models\fence2.p3d";
 	displayName = $STR_BLD_name_WoodenFence_2;	
@@ -61,6 +67,7 @@ class DZE_WoodenFence_2: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_3: DZE_Fence_Base {
+	scope = 2;
 	armor = 2400;
 	model = "z\addons\dayz_buildings\models\fence3.p3d";
 	displayName = $STR_BLD_name_WoodenFence_3;	
@@ -68,6 +75,7 @@ class DZE_WoodenFence_3: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_4: DZE_Fence_Base {
+	scope = 2;
 	armor = 2600;
 	model = "z\addons\dayz_buildings\models\fence4.p3d";
 	displayName = $STR_BLD_name_WoodenFence_4;	
@@ -75,6 +83,7 @@ class DZE_WoodenFence_4: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_5: DZE_Fence_Base {
+	scope = 2;
 	armor = 2800;
 	model = "z\addons\dayz_buildings\models\fence5.p3d";
 	displayName = $STR_BLD_name_WoodenFence_5;	
@@ -82,6 +91,7 @@ class DZE_WoodenFence_5: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_6: DZE_Fence_Base {
+	scope = 2;
 	armor = 3000;
 	model = "z\addons\dayz_buildings\models\fence6.p3d";
 	displayName = $STR_BLD_name_WoodenFence_6;	
@@ -89,6 +99,7 @@ class DZE_WoodenFence_6: DZE_Fence_Base {
 };
 
 class DZE_WoodenFence_7: DZE_Fence_Base {
+	scope = 2;
 	armor = 3000;
 	model = "z\addons\dayz_buildings\models\fence7.p3d";
 	displayName = $STR_BLD_name_WoodenFence_7;	

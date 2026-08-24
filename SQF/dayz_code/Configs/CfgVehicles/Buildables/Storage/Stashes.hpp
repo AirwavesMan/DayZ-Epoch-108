@@ -16,6 +16,7 @@ class DZE_Stash_Base: DZE_Storage_Base {
 };
 
 class DZE_StashSmall: DZE_Stash_Base {
+	scope = 2;
 	armor = 5;
 	displayname = $STR_VEH_NAME_STASH;
 	upgradeBuilding[] = {"DZE_StashSmall1",{"ItemShovel"},{{"PartWoodPile",1}}};
