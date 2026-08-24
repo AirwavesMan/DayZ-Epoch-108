@@ -13,9 +13,9 @@ class desert_large_net_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "DesertLargeCamoNet_DZ";
+			create = "DZE_DesertLargeCamoNet";
 		};
 	};
 };
@@ -34,9 +34,9 @@ class forest_large_net_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "ForestLargeCamoNet_DZ";
+			create = "DZE_ForestLargeCamoNet";
 		};
 	};
 };
@@ -55,9 +55,9 @@ class desert_net_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "DesertCamoNet_DZ";
+			create = "DZE_DesertCamoNet";
 		};
 		class Crafting
 		{
@@ -85,9 +85,9 @@ class forest_net_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "ForestCamoNet_DZ";
+			create = "DZE_ForestCamoNet";
 		};
 		class Crafting
 		{
@@ -116,9 +116,9 @@ class winter_net_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "WinterCamoNet_DZ";
+			create = "DZE_WinterCamoNet";
 		};
 		class Crafting
 		{
@@ -146,9 +146,9 @@ class winter_large_net_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "WinterLargeCamoNet_DZ";
+			create = "DZE_WinterLargeCamoNet";
 		};
 	};
 };

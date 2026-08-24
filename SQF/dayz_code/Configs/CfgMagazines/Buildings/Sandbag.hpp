@@ -13,10 +13,10 @@ class ItemSandbag: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTION_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool"};
 			consume[] = {"ItemSandbag"};
-			create = "Sandbag1_DZ";
+			create = "DZE_Sandbag";
 			//bypass RoadCheck
 			byPass = "byPassRoadCheck";
 		};
@@ -74,9 +74,9 @@ class BagFenceRound_DZ_kit: CA_Magazine
 		class Build 
 		{
 			text = $STR_EPOCH_PLAYER_299;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool"};
-			create = "BagFenceRound_DZ";
+			create = "DZE_BagFenceRound";
 		};
 		class Crafting
 		{
@@ -105,9 +105,9 @@ class ItemSandbagLarge: CA_Magazine
 		class Build 
 		{
 			text = $STR_EPOCH_PLAYER_273_3;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool"};
-			create = "Land_HBarrier1_DZ";
+			create = "DZE_Land_HBarrier1";
 		};
 		class Crafting
 		{
@@ -145,9 +145,9 @@ class ItemSandbagExLarge: CA_Magazine
 		class Build 
 		{
 			text = $STR_EPOCH_PLAYER_273_4;		// "Build 3x H-Barrier"
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool"};
-			create = "Land_HBarrier3_DZ";
+			create = "DZE_Land_HBarrier3";
 		};
 		class Crafting
 		{
@@ -176,9 +176,9 @@ class ItemSandbagExLarge5x: CA_Magazine
 		class Build 
 		{
 			text = $STR_EPOCH_PLAYER_273_5;			// "Build 5x H-Barrier"
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool"};
-			create = "Land_HBarrier5_DZ";
+			create = "DZE_Land_HBarrier5";
 		};
 		class Crafting
 		{
@@ -207,9 +207,9 @@ class ItemSandbagExLarge5xCurved: CA_Magazine
 		class Build 
 		{
 			text = $STR_EPOCH_PLAYER_HBARRIER5CURVED_2;	// "Build 5x H-Barrier (Curved)"
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool"};
-			create = "Land_HBarrier5Curved_DZ";
+			create = "DZE_Land_HBarrier5Curved";
 		};
 		class Crafting
 		{
@@ -238,9 +238,9 @@ class sandbag_nest_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "SandNest_DZ";
+			create = "DZE_SandNest";
 		};
 		class Crafting
 		{
@@ -269,9 +269,9 @@ class sandbag_nest_large_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_PLAYER_LARGENEST_2;		// "Build Large Sandbag Nest"
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "SandNestLarge_DZ";
+			create = "DZE_SandNestLarge";
 		};
 	};
 };
@@ -291,9 +291,9 @@ class ItemSandbagHeavy_kit: CA_Magazine
 		class build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "HeavyBagFence_DZ";
+			create = "DZE_HeavyBagFence";
 		};
 		class Crafting
 		{
@@ -331,9 +331,9 @@ class ItemSandBagHeavyCorner_kit: CA_Magazine
 		class build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "HeavyBagFenceCorner_DZ";
+			create = "DZE_HeavyBagFenceCorner";
 		};
 		class Crafting
 		{
@@ -362,9 +362,9 @@ class ItemSandbagHeavyRound_kit: CA_Magazine
 		class build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "HeavyBagFenceRound_DZ";
+			create = "DZE_HeavyBagFenceRound";
 		};
 	};
 };
@@ -384,9 +384,9 @@ class ItemWarfareBarrier5x_kit: CA_Magazine
 		class Build 
 		{
 			text = $STR_EPOCH_PLAYER_WBARRIER5_2;		// "Build 5x Warfare Barrier"
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool"};
-			create = "Land_WarfareBarrier5x_DZ";
+			create = "DZE_Land_WarfareBarrier5x";
 		};
 		class Crafting
 		{
@@ -415,9 +415,9 @@ class ItemWarfareBarrier10x_kit: CA_Magazine
 		class Build 
 		{
 			text = $STR_EPOCH_PLAYER_WBARRIER10_2;		// "Build 10x Warfare Barrier"
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool"};
-			create = "Land_WarfareBarrier10x_DZ";
+			create = "DZE_Land_WarfareBarrier10x";
 		};
 		class Crafting
 		{
@@ -446,9 +446,9 @@ class ItemWarfareBarrier10xTall_kit: CA_Magazine
 		class Build 
 		{
 			text = $STR_EPOCH_PLAYER_WBARRIER10TALL_2;	// "Build 10x Warfare Barrier (Tall)"
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool"};
-			create = "Land_WarfareBarrier10xTall_DZ";
+			create = "DZE_Land_WarfareBarrier10xTall";
 		};
 	};
 };

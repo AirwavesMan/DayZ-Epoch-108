@@ -13,9 +13,9 @@ class M2_MG_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "M2_MG_Static_DZ";
+			create = "DZE_M2_MG_Static";
 		};
 	};
 };
@@ -35,9 +35,9 @@ class M2_TriPod_MG_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "M2_TriPod_MG_Static_DZ";
+			create = "DZE_M2_TriPod_MG_Static";
 		};
 	};
 };
@@ -57,9 +57,9 @@ class DSHKM_MG_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "DSHKM_MG_Static_DZ";
+			create = "DZE_DSHKM_MG_Static";
 		};
 	};
 };
@@ -79,9 +79,9 @@ class DSHKM_TriPod_MG_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "DSHKM_TriPod_MG_Static_DZ";
+			create = "DZE_DSHKM_TriPod_MG_Static";
 		};
 	};
 };
@@ -101,9 +101,9 @@ class KORD_TriPod_MG_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "KORD_Tripod_MG_Static_DZ";
+			create = "DZE_KORD_Tripod_MG_Static";
 		};
 	};
 };
@@ -123,9 +123,9 @@ class KORD_MG_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "KORD_MG_Static_DZ";
+			create = "DZE_KORD_MG_Static";
 		};
 	};
 };
@@ -145,9 +145,9 @@ class L2A1_MG_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "L2A1_MG_Static_DZ";
+			create = "DZE_L2A1_MG_Static";
 		};
 	};
 };
@@ -167,9 +167,9 @@ class L2A1_Tripod_MG_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "L2A1_Tripod_MG_Static_DZ";
+			create = "DZE_L2A1_Tripod_MG_Static";
 		};
 	};
 };
@@ -189,9 +189,9 @@ class GMG_Tripod_GrenadeLauncher_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "GMG_Tripod_GrenadeLauncher_Static_kit";
+			create = "DZE_GMG_Tripod_MG_Static";
 		};
 	};
 };
@@ -211,9 +211,9 @@ class AGS30_GrenadeLauncher_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "AGS30_GrenadeLauncher_Static_DZ";
+			create = "DZE_AGS30_GrenadeLauncher_Static";
 		};
 	};
 };
@@ -233,9 +233,9 @@ class MK19_TriPod_GrenadeLauncher_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "MK19_TriPod_GrenadeLauncher_Static_DZ";
+			create = "DZE_MK19_TriPod_GrenadeLauncher_Static";
 		};
 	};
 };
@@ -255,9 +255,9 @@ class GPMG_TriPod_MG_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "GPMG_TriPod_MG_Static_kit";
+			create = "DZE_GPMG_TriPod_GrenadeLauncher_Static";
 		};
 	};
 };
@@ -277,9 +277,9 @@ class M119_Artillery_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "M119_Artillery_Static_DZ";
+			create = "DZE_M119_Artillery_Static";
 		};
 	};
 };
@@ -299,9 +299,9 @@ class D30_Artillery_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "D30_Artillery_Static_DZ";
+			create = "DZE_D30_Artillery_Static";
 		};
 	};
 };
@@ -321,9 +321,9 @@ class SearchLight_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "SearchLight_Static_DZ";
+			create = "DZE_SearchLight_Static";
 		};
 	};
 };
@@ -343,9 +343,9 @@ class M252_Mortar_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "M252_Mortar_Static_DZ";
+			create = "DZE_M252_Mortar_Static";
 		};
 	};
 };
@@ -365,9 +365,9 @@ class 2b14_82mm_Mortar_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "2b14_82mm_Mortar_Static_DZ";
+			create = "DZE_2b14_82mm_Mortar_Static";
 		};
 	};
 };
@@ -387,9 +387,9 @@ class Metis_Launcher_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Metis_Launcher_Static_DZ";
+			create = "DZE_Metis_Launcher_Static";
 		};
 	};
 };
@@ -409,9 +409,9 @@ class SPG9_Launcher_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "SPG9_Launcher_Static_DZ";
+			create = "DZE_SPG9_Launcher_Static";
 		};
 	};
 };
@@ -431,9 +431,9 @@ class Stinger_Tripod_Launcher_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Stinger_Tripod_Launcher_Static_DZ";
+			create = "DZE_Stinger_Tripod_Launcher_Static";
 		};
 	};
 };
@@ -453,9 +453,9 @@ class TOW_Tripod_Launcher_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "TOW_Tripod_Launcher_Static_DZ";
+			create = "DZE_TOW_Tripod_Launcher_Static";
 		};
 	};
 };
@@ -475,9 +475,9 @@ class Rbs70_Launcher_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Rbs70_Launcher_Static_DZ";
+			create = "DZE_Rbs70_Launcher_Static";
 		};
 	};
 };
@@ -497,9 +497,9 @@ class Igla_AntiAir_Launcher_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Igla_AntiAir_Launcher_Static_DZ";
+			create = "DZE_Igla_AntiAir_Launcher_Static";
 		};
 	};
 };
@@ -519,9 +519,9 @@ class ZU23_AntiAir_Static_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "ZU23_AntiAir_Static_DZ";
+			create = "DZE_ZU23_AntiAir_Static";
 		};
 	};
 };

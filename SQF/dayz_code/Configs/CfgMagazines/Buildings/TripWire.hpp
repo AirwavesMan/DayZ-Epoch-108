@@ -13,10 +13,10 @@ class ItemTrapTripwireCans : CA_Magazine
 		class Build
 		{
 			text = $STR_ACTION_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
 			consume[] = {"ItemTrapTripwireCans"};
-			create = "Trap_Cans";
+			create = "DZE_Trap_Cans";
 		};
 	};
 };
@@ -33,7 +33,7 @@ class ItemTrapTripwireFlare : ItemTrapTripwireCans
 		class Build : Build
 		{
 			consume[] = {"ItemTrapTripwireFlare"};
-			create = "TrapTripwireFlare";
+			create = "DZE_TrapTripwireFlare";
 		};
 	};
 };
@@ -50,7 +50,7 @@ class ItemTrapTripwireGrenade : ItemTrapTripwireCans
 		class Build : Build
 		{
 			consume[] = {"ItemTrapTripwireGrenade"};
-			create = "TrapTripwireGrenade";
+			create = "DZE_TrapTripwireGrenade";
 		};
 	};
 };
@@ -67,7 +67,7 @@ class ItemTrapTripwireSmoke : ItemTrapTripwireCans
 		class Build : Build
 		{
 			consume[] = {"ItemTrapTripwireSmoke"};
-			create = "TrapTripwireSmoke";
+			create = "DZE_TrapTripwireSmoke";
 		};
 	};
 };

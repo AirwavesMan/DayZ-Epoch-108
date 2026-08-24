@@ -13,9 +13,9 @@ class ItemFireBarrel_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "FireBarrel_DZ";
+			create = "DZE_FireBarrel";
 		};
 	};
 };
@@ -35,9 +35,9 @@ class workbench_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "WorkBench_DZ";
+			create = "DZE_WorkBench";
 		};
 	};
 };
@@ -58,9 +58,9 @@ class ItemWorkBench_DZE : CA_Magazine
 		class Build 
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "WorkBench_DZE";
+			create = "DZE_WorkBench";
 		};
 	};
 };
@@ -81,9 +81,9 @@ class ItemWorkBench: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "WorkBench";
+			create = "DZE_WorkBench";
 		};
 	};
 };
@@ -103,9 +103,9 @@ class wood_ramp_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "WoodRamp_DZ";
+			create = "DZE_WoodRamp";
 		};
 	};
 };
@@ -125,9 +125,9 @@ class plot_pole_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "Plastic_Pole_EP1_DZ";
+			create = "DZE_Plastic_Pole_EP1";
 		};
 	};
 };
@@ -147,9 +147,9 @@ class metal_panel_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "MetalPanel_DZ";
+			create = "DZE_MetalPanel";
 		};
 	};
 };
@@ -169,9 +169,9 @@ class ItemCorrugated: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_PLAYER_214;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "Fence_corrugated_DZ";
+			create = "DZE_Fence_corrugated";
 		};
 		class Crafting
 		{
@@ -218,10 +218,10 @@ class ItemWire: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTION_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
 			consume[] = {"ItemWire"};
-			create = "Fort_RazorWire"; // vanilla uses Wire_cat1
+			create = "DZE_Fort_RazorWire"; // vanilla uses Wire_cat1
 			byPass = "byPassRoadCheck";
 		};
 		class Crafting
@@ -260,10 +260,10 @@ class fortified_wire_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTION_BUILD_FORT_WIRE;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
 			consume[] = {"fortified_wire_kit"};
-			create = "FortifiedWire_DZ";
+			create = "DZE_FortifiedWire";
 			byPass = "byPassRoadCheck";
 		};
 	};
@@ -284,10 +284,10 @@ class ItemTankTrap: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTION_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
 			consume[] = {"ItemTankTrap"};
-			create = "Hedgehog_DZ";
+			create = "DZE_Hedgehog";
 			byPass = "byPassRoadCheck";
 		};
 		class Crafting
@@ -326,10 +326,10 @@ class barbed_gate_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_BARBED_GATE;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
 			consume[] = {"barbed_gate_kit"};
-			create = "BarbedGate_DZ";
+			create = "DZE_BarbedGate";
 		};
 	};
 };
@@ -349,10 +349,10 @@ class ItemGenerator: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTION_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
 			consume[] = {"ItemGenerator"};
-			create = "Generator_DZ";
+			create = "DZE_Generator";
 		};
 	};
 };
@@ -372,9 +372,9 @@ class fuel_pump_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "FuelPump_DZ";
+			create = "DZE_FuelPump";
 		};
 	};
 };
@@ -394,9 +394,9 @@ class light_pole_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "LightPole_DZ";
+			create = "DZE_LightPole";
 		};
 	};
 };
@@ -416,9 +416,9 @@ class deer_stand_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "DeerStand_DZ";
+			create = "DZE_DeerStand";
 		};
 	};
 };
@@ -438,9 +438,9 @@ class m240_nest_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "M240Nest_DZ";
+			create = "DZE_M240Nest";
 		};
 	};
 };
@@ -460,9 +460,9 @@ class rusty_gate_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "MetalGate_DZ";
+			create = "DZE_MetalGate";
 		};
 	};
 };
@@ -482,9 +482,9 @@ class stick_fence_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "StickFence_DZ";
+			create = "DZE_StickFence";
 		};
 	};
 };
@@ -504,9 +504,9 @@ class sun_shade_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "CanvasHut_DZ";
+			create = "DZE_CanvasHut";
 		};
 	};
 };
@@ -526,9 +526,9 @@ class park_bench_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "ParkBench_DZ";
+			create = "DZE_ParkBench";
 		};
 	};
 };
@@ -548,9 +548,9 @@ class ItemScaffoldingKit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemEtool","ItemToolbox"};
-			create = "Scaffolding_DZ";
+			create = "DZE_Scaffolding";
 		};
 	};
 };
@@ -570,9 +570,9 @@ class notebook_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {};
-			create = "Notebook_DZ";
+			create = "DZE_Notebook";
 		};
 	};
 };
@@ -592,9 +592,9 @@ class water_pump_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Water_Pump_DZ";
+			create = "DZE_Water_Pump";
 		};
 	};
 };
@@ -614,9 +614,9 @@ class greenhouse_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Greenhouse_DZ";
+			create = "DZE_Greenhouse";
 		};
 	};
 };
@@ -636,9 +636,9 @@ class bed_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Bed_DZ";
+			create = "DZE_Bed";
 		};
 	};
 };
@@ -658,9 +658,9 @@ class table_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Table_DZ";
+			create = "DZE_Table";
 		};
 	};
 };
@@ -680,9 +680,9 @@ class office_chair_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Office_Chair_DZ";
+			create = "DZE_Office_Chair";
 		};
 	};
 };
@@ -702,9 +702,9 @@ class garage_green_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Garage_Green_DZ";
+			create = "DZE_Garage_Green";
 		};
 	};
 };
@@ -724,9 +724,9 @@ class garage_white_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Garage_White_DZ";
+			create = "DZE_Garage_White";
 		};
 	};
 };
@@ -746,9 +746,9 @@ class garage_brown_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Garage_Brown_DZ";
+			create = "DZE_Garage_Brown";
 		};
 	};
 };
@@ -768,9 +768,9 @@ class garage_grey_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Garage_Grey_DZ";
+			create = "DZE_Garage_Grey";
 		};
 	};
 };
@@ -790,9 +790,9 @@ class helipad_civil_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Helipad_Civil_DZ";
+			create = "DZE_Helipad_Civil";
 		};
 	};
 };
@@ -812,9 +812,9 @@ class helipad_rescue_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Helipad_Rescue_DZ";
+			create = "DZE_Helipad_Rescue";
 		};
 	};
 };
@@ -834,9 +834,9 @@ class helipad_army_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Helipad_Army_DZ";
+			create = "DZE_Helipad_Army";
 		};
 	};
 };
@@ -856,9 +856,9 @@ class helipad_cross_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Helipad_Cross_DZ";
+			create = "DZE_Helipad_Cross";
 		};
 	};
 };
@@ -878,9 +878,9 @@ class helipad_parkborder_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Helipad_ParkBorder_DZ";
+			create = "DZE_Helipad_ParkBorder";
 		};
 	};
 };
@@ -900,9 +900,9 @@ class cctv_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "CCTV_DZ";
+			create = "DZE_CCTV";
 		};
 	};
 };
@@ -922,9 +922,9 @@ class concrete_barrier_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_CNC_BARRIER;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "ConcreteBarrier_DZ";
+			create = "DZE_ConcreteBarrier";
 		};
 		class Crafting
 		{
@@ -971,9 +971,9 @@ class concrete_barrier_striped_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_CNC_BARRIER_STRIPED;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "ConcreteBarrierStriped_DZ";
+			create = "DZE_ConcreteBarrierStriped";
 		};
 		class Crafting
 		{
@@ -1002,9 +1002,9 @@ class concrete_wall_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_CONCRETE_WALL;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "ConcreteWall_DZ";
+			create = "DZE_ConcreteWall";
 		};
 		class Crafting
 		{
@@ -1033,9 +1033,9 @@ class concrete_pipe_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_CONCRETE_PIPE;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "ConcretePipe_DZ";
+			create = "DZE_ConcretePipe";
 		};
 	};
 };
@@ -1055,9 +1055,9 @@ class dragonteeth_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_DRAGONTEETH;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "DragonTeeth_DZ";
+			create = "DZE_DragonTeeth";
 		};
 		class Crafting
 		{
@@ -1086,9 +1086,9 @@ class dragonteeth_big_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_DRAGONTEETH_BIG;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "DragonTeethBig_DZ";
+			create = "DZE_DragonTeethBig";
 		};
 	};
 };
@@ -1108,9 +1108,9 @@ class simple_footbridge_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_SIMPLE_FOOTBRIDGE;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {};
-			create = "SimpleFootbridge_DZ";
+			create = "DZE_SimpleFootbridge";
 		};
 	};
 };
@@ -1130,9 +1130,9 @@ class wooden_footbridge_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_WOODEN_FOOTBRIDGE;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "WoodenFootbridge_DZ";
+			create = "DZE_WoodenFootbridge";
 		};
 	};
 };
@@ -1152,9 +1152,9 @@ class windbreak_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_WINDBREAK;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Windbreak_DZ";
+			create = "DZE_Windbreak";
 		};
 	};
 };
@@ -1174,9 +1174,9 @@ class metal_container_1a_kit: CA_Magazine	// red
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1A;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "MetalContainer1A_DZ";
+			create = "DZE_MetalContainer1A";
 		};
 		class Crafting
 		{
@@ -1223,9 +1223,9 @@ class metal_container_1b_kit: CA_Magazine	// green
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1B;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "MetalContainer1B_DZ";
+			create = "DZE_MetalContainer1B";
 		};
 		class Crafting
 		{
@@ -1263,9 +1263,9 @@ class metal_container_1g_kit: CA_Magazine	// white
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1G;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "MetalContainer1G_DZ";
+			create = "DZE_MetalContainer1G";
 		};
 		class Crafting
 		{
@@ -1303,9 +1303,9 @@ class metal_container_2d_kit: CA_Magazine	// 2x red
 		class Build
 		{
 			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_2D;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "MetalContainer2D_DZ";
+			create = "DZE_MetalContainer2D";
 		};
 	};
 };
@@ -1323,9 +1323,9 @@ class compost_barrel_empty_kit: CA_Magazine
 	class ItemActions {
 		class Build	{
 			text = $STR_EPOCH_BUILD_COMPOST_BARREL;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {};
-			create = "Compost_Barrel_Empty_DZE";
+			create = "DZE_Compost_Barrel_Empty";
 		};
 	};
 };
@@ -1343,9 +1343,9 @@ class compost_barrel_full_kit: CA_Magazine
 	class ItemActions {
 		class Build	{
 			text = $STR_EPOCH_BUILD_COMPOST_BARREL;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemShovel"};
-			create = "Compost_Barrel_Full_DZE";
+			create = "DZE_Compost_Barrel_Full";
 		};
 	};
 };
@@ -1365,9 +1365,9 @@ class boggle_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Boggle_DZE";
+			create = "DZE_Boggle";
 		};
 	};
 };
@@ -1387,9 +1387,9 @@ class satellite_dish_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Satellite_Dish_DZE";
+			create = "DZE_Satellite_Dish";
 		};
 	};
 };
@@ -1409,9 +1409,9 @@ class fueltank_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Fueltank_DZE";
+			create = "DZE_Fueltank";
 		};
 	};
 };
@@ -1431,9 +1431,9 @@ class watertank_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Watertank_DZE";
+			create = "DZE_Watertank";
 		};
 	};
 };
@@ -1453,9 +1453,9 @@ class watertower_kit: CA_Magazine
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
-			create = "Watertower_DZE";
+			create = "DZE_Watertower";
 		};
 	};
 };

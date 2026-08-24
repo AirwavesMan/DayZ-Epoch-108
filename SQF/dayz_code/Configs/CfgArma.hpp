@@ -545,31 +545,31 @@ class CfgSurvival {
 		};
 	};
 	class Plants {
-		class Plant_Pumpkin_DZE {
+		class DZE_Plant_Pumpkin {
 			qty = 4;
 		};
-		class Plant_Sunflower_DZE {
+		class DZE_Plant_Sunflower {
 			qty = 3;
 		};
-		class Plant_Potato_DZE {
+		class DZE_Plant_Potato {
 			qty = 7;
 		};
-		class Plant_Carrot_DZE {
+		class DZE_Plant_Carrot {
 			qty = 7;
 		};
-		class Plant_Hemp_DZE {
+		class DZE_Plant_Hemp {
 			qty = 2;
 		};
-		class Plant_Tea_DZE {
+		class DZE_Plant_Tea {
 			qty = 3;
 		};
-		class Plant_Tobacco_DZE {
+		class DZE_Plant_Tobacco {
 			qty = 2;
 		};
-		class Plant_Garlic_DZE {
+		class DZE_Plant_Garlic {
 			qty = 7;
 		};	
-		class Plant_Comfrey_DZE {
+		class DZE_Plant_Comfrey {
 			qty = 3;
 		};		
 	};

@@ -1,5 +1,4 @@
-class ItemLog: CA_Magazine
-{
+class ItemLog: CA_Magazine {
 	scope = 2;
 	count = 1;
 	type = 256;
@@ -8,14 +7,16 @@ class ItemLog: CA_Magazine
 	model = "z\addons\dayz_buildings\models\logs.p3d";
 	descriptionShort = $STR_BLD_desc_ItemLog;//"Rough Wooden Log"
 	
+	DZE_burnTimer = 1200;
+	
 	class ItemActions
 	{
 		class Build 
 		{
 			text = $STR_ACTIONS_MAKEFIRE;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemMatchbox"};
-			create = "Land_Fire_DZ";
+			create = "DZE_Camp_Fire_Medium";
 		};
 		class Crafting
 		{
@@ -65,8 +66,7 @@ class ItemLog: CA_Magazine
 	};
 };
 
-class ItemPlank: CA_Magazine
-{
+class ItemPlank: CA_Magazine {
 	scope = 2;
 	count = 1;
 	type = 256;
@@ -74,6 +74,8 @@ class ItemPlank: CA_Magazine
 	picture = "\z\addons\dayz_buildings\equip\item_plank.paa";
 	model = "z\addons\dayz_buildings\models\planks.p3d";
 	descriptionShort = $STR_BLD_desc_ItemPlank;//"Saw Planks"
+	
+	DZE_burnTimer = 500;
 
 	class ItemActions
 	{
@@ -161,8 +163,7 @@ class ItemPlank: CA_Magazine
 	};
 };
 
-class PartWoodPile: CA_Magazine
-{
+class PartWoodPile: CA_Magazine {	
 	scope = 2;
 	count = 1;
 	type = 256;
@@ -171,14 +172,16 @@ class PartWoodPile: CA_Magazine
 	displayName = $STR_EQUIP_NAME_WOOD_PILE;
 	descriptionShort = $STR_EQUIP_DESC_WOOD_PILE;
 	
+	DZE_burnTimer = 300;
+	
 	class ItemActions
 	{
 		class Build
 		{
 			text = $STR_ACTIONS_MAKEFIRE;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemMatchbox"};
-			create = "Land_Fire_DZ";	
+			create = "DZE_Camp_Fire_Small";
 		};
 		class Crafting
 		{
@@ -219,56 +222,7 @@ class PartWoodPile: CA_Magazine
 	};
 };
 
-class PartPlankPack: CA_Magazine
-{
-	scope = 2;
-	count = 1;
-	type = 256;
-	displayName = $STR_EPOCH_LUMBERPACK;
-	model = "\z\addons\dayz_epoch\models\plank_pack.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_lumber_pack_CA.paa";
-	descriptionShort = $STR_EPOCH_LUMBERPACK_DESC;
-
-	class ItemActions
-	{
-		class Crafting
-		{
-			text = $STR_EPOCH_PLAYER_251;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"PartWoodLumber",3}};
-			input[] = {{"PartPlankPack",1}};
-		};
-	};
-};
-
-class PartPlywoodPack: CA_Magazine
-{
-	scope = 2;
-	count = 1;
-	type = 256;
-	displayName = $STR_EPOCH_PLYWOODPACK;
-	model = "\z\addons\dayz_epoch\models\plywood_pack.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_plywood_pack_CA.paa";
-	descriptionShort = $STR_EPOCH_PLYWOODPACK_DESC;
-
-	class ItemActions
-	{
-		class Crafting
-		{
-			text = $STR_EPOCH_PLAYER_251;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"PartWoodPlywood",3}};
-			input[] = {{"PartPlywoodPack",1}};
-		};
-	};
-};
-
-class PartWoodLumber: CA_Magazine
-{
+class PartWoodLumber: CA_Magazine {
 	scope = 2;
 	count = 1;
 	type = 256;
@@ -276,6 +230,8 @@ class PartWoodLumber: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\planks.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wood_planks_CA.paa";
 	descriptionShort = $STR_EPOCH_LUMBER_DESC;
+	
+	DZE_burnTimer = 400;
 	
 	class ItemActions
 	{
@@ -363,8 +319,7 @@ class PartWoodLumber: CA_Magazine
 	};
 };
 
-class PartWoodPlywood: CA_Magazine
-{
+class PartWoodPlywood: CA_Magazine {
 	scope = 2;
 	count = 1;
 	type = 256;
@@ -372,6 +327,8 @@ class PartWoodPlywood: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\plywood.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_plywood_CA.paa";
 	descriptionShort = $STR_EPOCH_PLYWOOD_DESC;
+	
+	DZE_burnTimer = 300;
 	
 	class ItemActions
 	{
@@ -432,9 +389,53 @@ class PartWoodPlywood: CA_Magazine
 	};
 };
 
+class PartPlankPack: CA_Magazine {
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_LUMBERPACK;
+	model = "\z\addons\dayz_epoch\models\plank_pack.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_lumber_pack_CA.paa";
+	descriptionShort = $STR_EPOCH_LUMBERPACK_DESC;
 
-class equip_wood_pallet: CA_Magazine 
-{
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_251;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"PartWoodLumber",3}};
+			input[] = {{"PartPlankPack",1}};
+		};
+	};
+};
+
+class PartPlywoodPack: CA_Magazine {
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_PLYWOODPACK;
+	model = "\z\addons\dayz_epoch\models\plywood_pack.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_plywood_pack_CA.paa";
+	descriptionShort = $STR_EPOCH_PLYWOODPACK_DESC;
+
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_251;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"PartWoodPlywood",3}};
+			input[] = {{"PartPlywoodPack",1}};
+		};
+	};
+};
+
+class equip_wood_pallet: CA_Magazine {
 	scope = 2;
 	count = 1;
 	type = 256;
@@ -457,8 +458,7 @@ class equip_wood_pallet: CA_Magazine
 	};
 };
 
-class equip_crate: CA_Magazine 
-{
+class equip_crate: CA_Magazine {
 	scope = 2;
 	count = 1;
 	type = 256;

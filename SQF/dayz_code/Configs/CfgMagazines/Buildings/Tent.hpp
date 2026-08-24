@@ -13,9 +13,9 @@ class ItemTent : CA_Magazine
 		class Build
 		{
 			text = $STR_PITCH_TENT;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {};
-			create = "TentStorage";
+			create = "DZE_TentStorage";
 		};
 		class Crafting
 		{
@@ -44,9 +44,9 @@ class ItemTentWinter : CA_Magazine
 		class Build
 		{
 			text = $STR_PITCH_TENT;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {};
-			create = "TentStorageWinter";
+			create = "DZE_TentStorageWinter";
 		};
 		class Crafting
 		{
@@ -75,9 +75,9 @@ class ItemDomeTent : CA_Magazine
 		class Build
 		{
 			text = $STR_PITCH_DOME_TENT;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {};
-			create = "DomeTentStorage";
+			create = "DZE_DomeTentStorage";
 		};
 		class Crafting1
 		{
@@ -106,9 +106,9 @@ class ItemWinterDomeTent : CA_Magazine
 		class Build
 		{
 			text = $STR_PITCH_TENT;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {};
-			create = "WinterDomeTentStorage";
+			create = "DZE_WinterDomeTentStorage";
 		};
 		class Crafting
 		{
@@ -137,9 +137,9 @@ class ItemDesertTent : CA_Magazine
 		class Build
 		{
 			text = $STR_PITCH_DESERT_TENT;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {};
-			create = "DesertTentStorage";
+			create = "DZE_DesertTentStorage";
 		};
 		class Crafting
 		{

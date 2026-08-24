@@ -13,10 +13,10 @@ class TrapBear : CA_Magazine
 		class Build
 		{
 			text = $STR_ACTION_BUILD;
-			script = "spawn player_build;";
+			script = "spawn DZE_fnc_modularBuild;";
 			require[] = {"ItemToolbox"};
 			consume[] = {"TrapBear"};
-			create = "BearTrap_DZ";
+			create = "DZE_BearTrap";
 		};
 		class Crafting
 		{
@@ -51,7 +51,7 @@ class ItemTrapBearTrapFlare : TrapBear
 		class Build : Build
 		{
 			consume[] = {"ItemTrapBearTrapFlare"};
-			create = "TrapBearTrapFlare";
+			create = "DZE_TrapBearTrapFlare";
 		};
 	};
 };
@@ -68,7 +68,7 @@ class ItemTrapBearTrapSmoke : TrapBear
 		class Build : Build
 		{
 			consume[] = {"ItemTrapBearTrapSmoke"};
-			create = "TrapBearTrapSmoke";
+			create = "DZE_TrapBearTrapSmoke";
 		};
 	};
 };

@@ -7,7 +7,7 @@ class ItemJerrycanEmpty : CA_Magazine
 	picture = "\dayz_equip\textures\equip_jerrycan_e_ca.paa";
 	displayName = $STR_ITEM_NAME_JERRYCAN_EMPTY;
 	descriptionShort = $STR_ITEM_DESC_JERRYCAN_EMPTY;	
-	fuelQuantity = 0;
+	DZE_fuelQuantity = 0;
 	fullcan = "ItemJerrycan";
 };
 
@@ -16,11 +16,12 @@ class ItemJerrycan : ItemJerrycanEmpty
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 	displayName = $STR_ITEM_NAME_JERRYCAN;
 	descriptionShort = $STR_ITEM_DESC_JERRYCAN;	
-	fuelQuantity = 20;
+	DZE_fuelQuantity = 20;
 	containerEmpty = "ItemJerrycanEmpty";
 	
 	//used for tent burning
 	fireIntensity = 6;
+	DZE_burnTimer = 400;
 	
 	class ItemActions 
 	{
@@ -73,7 +74,7 @@ class ItemFuelcanEmpty : ItemJerrycanEmpty
 	picture = "\dayz_epoch_c\icons\equipment\ItemFuelcanEmpty.paa";
 	displayName = $STR_ITEM_NAME_FUELCAN_EMPTY;
 	descriptionShort = $STR_ITEM_DESC_FUELCAN_EMPTY;	
-	fuelQuantity = 0;
+	DZE_fuelQuantity = 0;
 	fullcan = "ItemFuelcan";
 };
 
@@ -82,11 +83,12 @@ class ItemFuelcan : ItemFuelcanEmpty
 	picture = "\z\addons\dayz_communityassets\pictures\equip_fuelcan_CA.paa";
 	displayName = $STR_ITEM_NAME_FUELCAN;
 	descriptionShort = $STR_ITEM_DESC_FUELCAN;	
-	fuelQuantity = 5;
+	DZE_fuelQuantity = 5;
 	containerEmpty = "ItemFuelcanEmpty";
 	
 	//used for tent burning
 	fireIntensity = 4;
+	DZE_burnTimer = 100;
 	
 	class ItemActions 
 	{
@@ -134,7 +136,7 @@ class ItemFuelBarrel: CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	fuelQuantity = 210;
+	DZE_fuelQuantity = 210;
 	type = 256;
 	displayName = $STR_EPOCH_FUELBARREL;
 	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
@@ -142,6 +144,8 @@ class ItemFuelBarrel: CA_Magazine
 	descriptionShort = $STR_EPOCH_FUELBARREL_DESC;
 	fireIntensity = 6; //used for tent burning
 	containerEmpty = "ItemFuelBarrelEmpty";
+	
+	DZE_burnTimer = 1800;
 	
 	class ItemActions 
 	{
@@ -199,7 +203,7 @@ class ItemFuelBarrelEmpty: ItemFuelBarrel
 {
 	scope = 2;
 	count = 1;
-	fuelQuantity = 0;
+	DZE_fuelQuantity = 0;
 	type = 256;
 	displayName = $STR_EPOCH_EMPTYFUELBARREL;
 	picture = "\z\addons\dayz_epoch\pictures\equip_oildrum_e_CA.paa";

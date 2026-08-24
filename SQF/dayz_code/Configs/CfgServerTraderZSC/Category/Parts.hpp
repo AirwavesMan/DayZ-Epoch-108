@@ -75,8 +75,8 @@ class Category_35 {
 	class ItemLockbox2 {type = "trade_items";buy[] = {-100,"worth"};sell[] = {6000,"worth"};};
 	class ItemLockboxWinter {type = "trade_items";buy[] = {-100,"worth"};sell[] = {4000,"worth"};};
 	class ItemLockboxWinter2 {type = "trade_items";buy[] = {-100,"worth"};sell[] = {6000,"worth"};};
-	class ItemVault {type = "trade_items";buy[] = {10000,"worth"};sell[] = {10000,"worth"};};
-	class ItemVault2 {type = "trade_items";buy[] = {-10000,"worth"};sell[] = {15000,"worth"};};
+	class ItemSafe {type = "trade_items";buy[] = {10000,"worth"};sell[] = {10000,"worth"};};
+	class ItemSafe2 {type = "trade_items";buy[] = {-10000,"worth"};sell[] = {15000,"worth"};};
 	class ItemMixOil {type = "trade_items";buy[] = {8,"worth"};sell[] = {4,"worth"};};
 };
 
