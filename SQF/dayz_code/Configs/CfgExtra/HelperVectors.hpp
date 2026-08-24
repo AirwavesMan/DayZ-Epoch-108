@@ -28,7 +28,7 @@ class HelperVectors: Helpers {
 	//
 	///////////////////////////////////////////////////////////////////////////////////////////
 
-	class MetalFloor4x_DZ: vector {
+	class DZE_MetalFloor4x: vector {
 		points[] = {
 			{      0,     0, 0.141 },	// Pivot
 			{      0, -5.27, 0.141 },	// Back
@@ -37,9 +37,9 @@ class HelperVectors: Helpers {
 			{   5.27,     0, 0.141 }	// Right
 		};
 	};
-	class Land_metal_floor_2x2_wreck: MetalFloor4x_DZ {};
+	class Land_metal_floor_2x2_wreck: DZE_MetalFloor4x {};
 
-	class MetalFloor_DZ: vector {
+	class DZE_MetalFloor: vector {
 		points[] = {
 			{      0, -0.003, 0.141 },	// Pivot
 			{      0, -2.638, 0.141 },	// Back
@@ -48,8 +48,8 @@ class HelperVectors: Helpers {
 			{  2.635, -0.003, 0.141 }	// Right
 		};
 	};
-	class ElevatorStart_DZ: MetalFloor_DZ {};
-	class ElevatorStop_Transparent_DZ: MetalFloor_DZ {};
+	class DZE_ElevatorStart: DZE_MetalFloor {};
+	class DZE_ElevatorStop_Transparent: DZE_MetalFloor {};
 
 	class Land_wreck_metal_floor: vector {
 		points[] = {
@@ -60,7 +60,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class MetalFloor_Half_DZ: vector {
+	class DZE_MetalFloor_Half: vector {
 		points[] = {
 			{  -0.006, -2.623, 0.132 },	// Back
 			{  -0.006,  2.647, 0.132 },	// Front
@@ -69,7 +69,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class MetalFloor_Quarter_DZ: vector {
+	class DZE_MetalFloor_Quarter: vector {
 		points[] = {
 			{  -0.006, -1.2055, 0.132 },	// Back
 			{  -0.006,  1.4295, 0.132 },	// Front
@@ -78,7 +78,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class MetalPillar_DZ: vector {
+	class DZE_MetalPillar: vector {
 		points[] = {
 			{0, 0, 0.004 },	// Pivot
 			{0, 0, 1.510 },	// Center
@@ -86,7 +86,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class MetalContainer1A_DZ {
+	class DZE_MetalContainer1A {
 		points[] = {
 			{    0,     0, -1.26788 },	// Pivot
 			{    0, -3.05,        0 },	// Back
@@ -96,10 +96,10 @@ class HelperVectors: Helpers {
 			{    0,     0,  1.26788 }	// Top
 		};
 	};
-	class MetalContainer1B_DZ: MetalContainer1A_DZ {};
-	class MetalContainer1G_DZ: MetalContainer1A_DZ {};
+	class DZE_MetalContainer1B: DZE_MetalContainer1A {};
+	class DZE_MetalContainer1G: DZE_MetalContainer1A {};
 
-	class MetalContainer2D_DZ {
+	class DZE_MetalContainer2D {
 		points[] = {
 			{    0,     0, -2.54288 },	// Pivot
 			{    0, -3.05,        0 },	// Back
@@ -110,7 +110,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Metal_Drawbridge_DZ: vector {
+	class DZE_Metal_Drawbridge: vector {
 		points[] = {
 			{ 0.0245,  0.008,     0 },	// Bottom
 			{  -2.40,  0.008, 3.025 },	// Left (adjusted)
@@ -119,9 +119,9 @@ class HelperVectors: Helpers {
 			{ 0.0245, -0.242, 3.025 }	// Center (added)
 		};
 	};
-	class Metal_DrawbridgeLocked_DZ: Metal_Drawbridge_DZ {};
+	class DZE_Metal_DrawbridgeLocked: DZE_Metal_Drawbridge {};
 
-	class Door_DZ: vector {
+	class DZE_Door: vector {
 		points[] = {
 			{   0.01, 0, -0.008 },	// Pivot
 			{ -0.995, 0,  1.327 },	// Left
@@ -129,7 +129,7 @@ class HelperVectors: Helpers {
 			{   0.01, 0,  2.662 }	// Top
 		};
 	};
-	class DoorFrame_DZ: Door_DZ {};
+	class DZE_DoorFrame: DZE_Door {};
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 	//
@@ -137,7 +137,7 @@ class HelperVectors: Helpers {
 	//
 	///////////////////////////////////////////////////////////////////////////////////////////
 
-	class GlassFloor_DZ: vector {
+	class DZE_GlassFloor: vector {
 		points[] = {
 			{      0, -0.002, 0.141 },	// Pivot
 			{      0, -2.627, 0.141 },	// Back
@@ -146,9 +146,9 @@ class HelperVectors: Helpers {
 			{  2.625, -0.002, 0.141 }	// Right
 		};
 	};
-	class ElevatorStop_Glass_DZ: GlassFloor_DZ {};
+	class DZE_ElevatorStop_Glass: DZE_GlassFloor {};
 	
-	class GlassFloor_Half_DZ: vector {
+	class DZE_GlassFloor_Half: vector {
 		points[] = {
 			{  -0.032, -2.628, 0.141 },	// Back
 			{  -0.032,  2.622, 0.141 },	// Front
@@ -157,7 +157,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class GlassFloor_Quarter_DZ: vector {
+	class DZE_GlassFloor_Quarter: vector {
 		points[] = {
 			{   0.005, -1.3295, 0.141 },	// Back
 			{   0.005,  1.2955, 0.141 },	// Front
@@ -172,7 +172,7 @@ class HelperVectors: Helpers {
 	//
 	///////////////////////////////////////////////////////////////////////////////////////////
 
-	class CinderWall_DZ: vector {
+	class DZE_CinderWall: vector {
 		points[] = {
 			{      0, 0,   0 },	// Bottom
 			{ -2.625, 0, 1.7 },	// Left
@@ -181,18 +181,18 @@ class HelperVectors: Helpers {
 			{      0, 0, 1.7 }	// Center (added)
 		};
 	};
-	class CinderWallDoorSmall_DZ:		CinderWall_DZ {};	// door
-	class CinderWallDoorSmallLocked_DZ:	CinderWall_DZ {};	// door
-	class CinderWallWindow_DZ:		CinderWall_DZ {};	// window
-	class CinderWallWindowLocked_DZ:	CinderWall_DZ {};	// window
-	class CinderDoorHatch_DZ:		CinderWall_DZ {};	// door hatch
-	class CinderDoorHatchLocked_DZ:		CinderWall_DZ {};	// door hatch
-	class CinderWallDoor_DZ:		CinderWall_DZ {};	// garage door
-	class CinderWallDoorLocked_DZ:		CinderWall_DZ {};	// garage door
-	class CinderGarageOpenTop_DZ:		CinderWall_DZ {};	// open top garage doors
-	class CinderGarageOpenTopLocked_DZ:	CinderWall_DZ {};	// open top garage doors
+	class DZE_CinderWallDoorSmall:		DZE_CinderWall {};	// door
+	class DZE_CinderWallDoorSmallLocked:	DZE_CinderWall {};	// door
+	class DZE_CinderWallWindow:		DZE_CinderWall {};	// window
+	class DZE_CinderWallWindowLocked:	DZE_CinderWall {};	// window
+	class DZE_CinderDoorHatch:		DZE_CinderWall {};	// door hatch
+	class DZE_CinderDoorHatchLocked:		DZE_CinderWall {};	// door hatch
+	class DZE_CinderWallDoor:		DZE_CinderWall {};	// garage door
+	class DZE_CinderWallDoorLocked:		DZE_CinderWall {};	// garage door
+	class DZE_CinderGarageOpenTop:		DZE_CinderWall {};	// open top garage doors
+	class DZE_CinderGarageOpenTopLocked:	DZE_CinderWall {};	// open top garage doors
 
-	class CinderWallHalf_DZ: vector {
+	class DZE_CinderWallHalf: vector {
 		points[] = {
 			{      0, 0,    0 },	// Bottom
 			{ -2.625, 0, 0.75 },	// Left (replacement)
@@ -200,7 +200,7 @@ class HelperVectors: Helpers {
 			{      0, 0,  1.5 }	// Top
 		};
 	};
-	class CinderWallHalf_Gap_DZ: CinderWallHalf_DZ {};
+	class DZE_CinderWallHalf_Gap: DZE_CinderWallHalf {};
 
 	class Land_wreck_cinder: vector {
 		points[] = {
@@ -209,7 +209,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class CinderGateFrame_DZ: vector {
+	class DZE_CinderGateFrame: vector {
 		points[] = {
 			{      0, 0,   0 },	// Bottom
 			{ -2.625, 0, 1.7 },	// Lower Left
@@ -220,7 +220,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class CinderGate_DZ: vector {
+	class DZE_CinderGate: vector {
 		points[] = {
 			{      0, 0,   0 },	// Bottom
 			{ -2.625, 0, 1.7 },	// Lower Left
@@ -231,7 +231,7 @@ class HelperVectors: Helpers {
 			{      0, 0, 3.4 }	// Center	(added)
 		};
 	};
-	class CinderGateLocked_DZ: CinderGate_DZ {};
+	class DZE_CinderGateLocked: DZE_CinderGate {};
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 	//
@@ -239,7 +239,7 @@ class HelperVectors: Helpers {
 	//
 	///////////////////////////////////////////////////////////////////////////////////////////
 
-	class WoodFloor4x_DZ: vector {
+	class DZE_WoodFloor4x: vector {
 		points[] = {
 			{ -0.012,     0, 0.139 },	// Pivot
 			{ -0.012, -4.65, 0.139 },	// Back
@@ -248,9 +248,9 @@ class HelperVectors: Helpers {
 			{  4.888,     0, 0.139 }	// Right
 		};
 	};
-	class Land_wood_floor_2x2_wreck: WoodFloor4x_DZ {};
+	class Land_wood_floor_2x2_wreck: DZE_WoodFloor4x {};
 
-	class WoodFloor_DZ: vector {
+	class DZE_WoodFloor: vector {
 		points[] = {
 			{ -0.029, -0.013, 0.139 },	// Pivot
 			{ -0.029, -2.338, 0.139 },	// Back
@@ -269,7 +269,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class WoodFloorHalf_DZ: vector {
+	class DZE_WoodFloorHalf: vector {
 		points[] = {
 			{  0.081, -2.320, 0.116 },	// Back
 			{  0.081,  2.330, 0.116 },	// Front
@@ -277,9 +277,9 @@ class HelperVectors: Helpers {
 			{  1.306,  0.005, 0.116 }	// Right
 		};
 	};
-	class Land_wood_wreck_half: WoodFloorHalf_DZ {};
+	class Land_wood_wreck_half: DZE_WoodFloorHalf {};
 
-	class WoodFloorQuarter_DZ: vector {
+	class DZE_WoodFloorQuarter: vector {
 		points[] = {
 			{  0.047, -1.2045, 0.114 },	// Back
 			{  0.047,  1.1205, 0.114 },	// Front
@@ -287,9 +287,9 @@ class HelperVectors: Helpers {
 			{  1.272,  -0.042, 0.114 }	// Right
 		};
 	};
-	class Land_wood_wreck_quarter: WoodFloorQuarter_DZ {};
+	class Land_wood_wreck_quarter: DZE_WoodFloorQuarter {};
 
-	class WoodFloorStairs_DZ: vector {
+	class DZE_WoodFloorStairs: vector {
 		points[] = {
 			{    -2.3,     1.4,   0.3 },	// Bottom step (added)
 			{ -0.0275, -2.3375, 3.125 },	// Back
@@ -299,7 +299,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class WoodTriangleFloor_DZ: vector {
+	class DZE_WoodTriangleFloor: vector {
 		points[] = {
 			{      0,  -1.3, 0.1 },	// Back
 			{      0, 1.288, 0.1 },	// Front
@@ -308,7 +308,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class WoodSmallWall_DZ: vector { // Small wood walls
+	class DZE_WoodSmallWall: vector { // Small wood walls
 		points[] = {
 			{ -0.039, 0.016, 0.027 },	// Pivot (bottom)
 			{ -2.324, 0.016, 1.527 },	// Left
@@ -317,8 +317,8 @@ class HelperVectors: Helpers {
 			{ -0.039, 0.016, 1.527 }	// Center (added)
 		};
 	};
-	class Land_DZE_WoodDoor: WoodSmallWall_DZ {};
-	class Land_DZE_WoodDoorLocked: WoodSmallWall_DZ {};
+	class Land_DZE_WoodDoor: DZE_WoodSmallWall {};
+	class Land_DZE_WoodDoorLocked: DZE_WoodSmallWall {};
 
 	class Land_DZE_WoodOpenTopGarageDoor: vector {
 		points[] = {
@@ -339,7 +339,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class WoodLargeWall_DZ: vector { // Large wood walls
+	class DZE_WoodLargeWall: vector { // Large wood walls
 		points[] = {
 			{ -0.024, 0.018, 0.038 },	// Pivot
 			{ -2.464, 0.018, 1.538 },	// Left
@@ -371,7 +371,7 @@ class HelperVectors: Helpers {
 	};
 	class Land_DZE_GarageWoodDoorLocked: Land_DZE_GarageWoodDoor {};
 
-	class WoodSmallWallThird_DZ: vector {
+	class DZE_WoodSmallWallThird: vector {
 		points[] = {
 			{ -0.023, -0.018,  0.002 },	// Pivot
 			{ -2.463, -0.018, 0.5845 },	// Left (lowered)
@@ -388,7 +388,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class WoodGateFrame_DZ: vector {
+	class DZE_WoodGateFrame: vector {
 		points[] = {
 			{  0.022, 0.02, 0.025 },	// Bottom
 			{ -2.418, 0.02, 1.525 },	// Lower Left
@@ -412,7 +412,7 @@ class HelperVectors: Helpers {
 	};
 	class Land_DZE_WoodGateLocked: Land_DZE_WoodGate {};
 
-	class WoodPillar_DZ: vector {
+	class DZE_WoodPillar: vector {
 		points[] = {
 			{    0, 0, 0.016 },	// Pivot
 			{    0, 0, 1.516 },	// Front
@@ -420,7 +420,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class WoodStairs_DZ: vector {
+	class DZE_WoodStairs: vector {
 		points[] = {
 			{ -0.02, 0.012, -0.02 },	// Pivot (Bottom Step)
 			{ -0.02, 3.662,  2.98 },	// Front (Top Step)
@@ -428,10 +428,10 @@ class HelperVectors: Helpers {
 			{  0.77, 1.812,  1.48 }		// Right
 		};
 	};
-	class WoodStairsSans_DZ: WoodStairs_DZ {};
-	class WoodStairsRails_DZ: WoodStairs_DZ {};
+	class DZE_WoodStairsSans: DZE_WoodStairs {};
+	class DZE_WoodStairsRails: DZE_WoodStairs {};
 
-	class WoodRamp_DZ: vector {
+	class DZE_WoodRamp: vector {
 		points[] = {
 			{  0.065,    0, -0.18 },	// Pivot
 			{ -1.585, 3.15,  0.95 },	// Left
@@ -440,7 +440,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class WoodLadder_DZ: vector {
+	class DZE_WoodLadder: vector {
 		points[] = {
 			{    0, 0,     0 },	// Pivot
 			{ -0.4, 0, 1.725 },	// Left
@@ -450,7 +450,7 @@ class HelperVectors: Helpers {
 		size = 2;
 	};
 
-	class WoodHandrail_DZ: vector {
+	class DZE_WoodHandrail: vector {
 		points[] = {
 			{  0.016, 0.001, 0.002 },	// Pivot
 			{ -1.164, 0.001, 0.491 },	// Left
@@ -466,7 +466,7 @@ class HelperVectors: Helpers {
 	//
 	///////////////////////////////////////////////////////////////////////////////////////////
 
-	class Concrete_Bunker_DZ: vector {
+	class DZE_Concrete_Bunker: vector {
 		points[] = {
 			{ -0.04,    2.1,  2.8 },	// Front (added)
 			{ -0.04,   -2.1,  2.8 },	// Back (adjusted)
@@ -475,9 +475,9 @@ class HelperVectors: Helpers {
 			{ -0.04, -0.007, 3.41 }		// Top
 		};
 	};
-	class Concrete_Bunker_Locked_DZ: Concrete_Bunker_DZ {};
+	class DZE_Concrete_Bunker_Locked: DZE_Concrete_Bunker {};
 
-	class Land_HBarrier1_DZ: vector {
+	class DZE_Land_HBarrier1: vector {
 		points[] = {
 			{  0.01, -0.41, 0.075 },	// Back
 			{  0.01,  0.39, 0.075 },	// Front
@@ -487,7 +487,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Land_HBarrier3_DZ: vector {
+	class DZE_Land_HBarrier3: vector {
 		points[] = {
 			{     0, -0.45,   0 },	// Back
 			{     0,   0.4,   0 },	// Front
@@ -497,7 +497,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Land_HBarrier5_DZ: vector {
+	class DZE_Land_HBarrier5: vector {
 		points[] = {
 			{    0, -0.4, 0.04 },	// Back
 			{    0,  0.6, 0.04 },	// Front
@@ -507,7 +507,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Land_HBarrier5Curved_DZ: vector {
+	class DZE_Land_HBarrier5Curved: vector {
 		points[] = {
 			{  0.07,  -0.77,     0 },	// Back
 			{ -0.05,   0.26,     0 },	// Front
@@ -517,25 +517,25 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Sandbag1_DZ: vector {
+	class DZE_Sandbag: vector {
 		points[] = {
 			{ 0, 0, -0.1 }		// Pivot (Center)
 		};
 	};
 
-	class BagFenceRound_DZ: vector {
+	class DZE_BagFenceRound: vector {
 		points[] = {
 			{ 0, -0.30, -0.1 }	// Pivot (Center)
 		};
 	};
 
-	class HeavyBagFence_DZ: vector {
+	class DZE_HeavyBagFence: vector {
 		points[] = {
 			{ 0, 0, 0.1 }		// Center
 		};
 	};
 
-	class HeavyBagFenceCorner_DZ: vector {
+	class DZE_HeavyBagFenceCorner: vector {
 		points[] = {
 			{ -1.3,  1.5, 0.1 },	// Front Left
 			{  1.5, -1.2, 0.1 },	// Back Right
@@ -543,7 +543,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class HeavyBagFenceRound_DZ: vector {
+	class DZE_HeavyBagFenceRound: vector {
 		points[] = {
 			{ -2.8,  -1.2, 0.18 },	// Left
 			{  2.8,  -1.2, 0.18 },	// Right
@@ -551,7 +551,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class SandNest_DZ: vector {
+	class DZE_SandNest: vector {
 		points[] = {
 			{ -1.75,  0.8, -0.44 },	// Left
 			{  1.75,  0.8, -0.44 },	// Right
@@ -559,7 +559,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class SandNestLarge_DZ: vector {
+	class DZE_SandNestLarge: vector {
 		points[] = {
 			{    0,    0,    -1 },	// Pivot
 			{ -4.5,    0, -0.44 },	// Left
@@ -569,7 +569,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Land_WarfareBarrier5x_DZ: vector {
+	class DZE_Land_WarfareBarrier5x: vector {
 		points[] = {
 			{      0, -0.28, 0.1375 },	// Back
 			{      0,  0.28, 0.1375 },	// Front
@@ -579,7 +579,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Land_WarfareBarrier10x_DZ: vector {
+	class DZE_Land_WarfareBarrier10x: vector {
 		points[] = {
 			{    0, -0.28, 0.1547 },	// Back
 			{    0,  0.28, 0.1547 },	// Front
@@ -589,7 +589,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Land_WarfareBarrier10xTall_DZ: vector {
+	class DZE_Land_WarfareBarrier10xTall: vector {
 		points[] = {
 			{    0, -0.91, -0.3874 },	// Back
 			{    0,  0.91, -0.3874 },	// Front
@@ -599,14 +599,14 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class ConcreteBarrier_DZ {
+	class DZE_ConcreteBarrier {
 		points[] = {
 			{ 0, 0, 0 }		// Center
 		};
 	};
-	class ConcreteBarrierStriped_DZ: ConcreteBarrier_DZ {};
+	class DZE_ConcreteBarrierStriped: DZE_ConcreteBarrier {};
 
-	class ConcretePipe_DZ {
+	class DZE_ConcretePipe {
 		points[] = {
 			{ -1.125,     0,      0 },	// Left
 			{  1.125,     0,      0 },	// Right
@@ -615,14 +615,14 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class DragonTeeth_DZ {
+	class DZE_DragonTeeth {
 		points[] = {
 			{  0, 0, 0 },		// Pivot
 			{ -4, 0, 0 },		// Left
 			{  4, 0, 0 }		// Right
 		};
 	};
-	class DragonTeethBig_DZ: DragonTeeth_DZ {};
+	class DZE_DragonTeethBig: DZE_DragonTeeth {};
 
 	class Fort_RazorWire: vector {
 		points[] = {
@@ -632,7 +632,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class FortifiedWire_DZ: vector {
+	class DZE_FortifiedWire: vector {
 		points[] = {
 			{    0,     0,    0 },		// Pivot
 			{ -2.4,     0, -0.3 },		// Left
@@ -640,14 +640,14 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class BarbedGate_DZ {
+	class DZE_BarbedGate {
 		points[] = {
-			{ -1.8, 0.04, 0.2, $STR_EPOCH_ACTION_SNAP_LEFT},
-			{  1.8, 0.04, 0.2, $STR_EPOCH_ACTION_SNAP_RIGHT}
+			{ -1.8, 0.04, 0.2, $STR_VECTOR_BUILDING_HELPER_LEFT},
+			{  1.8, 0.04, 0.2, $STR_VECTOR_BUILDING_HELPER_RIGHT}
 		};
 	};
 
-	class StickFence_DZ: vector {
+	class DZE_StickFence: vector {
 		points[] = {
 			{     0, 0, 0.6 },	// Top
 			{ -2.95, 0,   0 },	// Left
@@ -656,14 +656,14 @@ class HelperVectors: Helpers {
 		size = 2;
 	};
 
-	class MetalGate_DZ: vector {
+	class DZE_MetalGate: vector {
 		points[] = {
 			{ -4, 0, 0.3 },		// Left
 			{  0, 0, 0.3 }		// Right
 		};
 	};
 
-	class MetalPanel_DZ: vector {
+	class DZE_MetalPanel: vector {
 		points[] = {
 			{    0, 0, -0.8 },	// Pivot
 			{ -1.5, 0,  0.5 },	// Left
@@ -672,7 +672,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class Fence_corrugated_DZ: vector {
+	class DZE_Fence_corrugated: vector {
 		points[] = {
 			{     0, 0,  1.3 },	// Top
 			{     0, 0, -0.4 },	// Bottom
@@ -681,7 +681,7 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class WoodenFence_1_foundation_DZ: vector {	
+	class DZE_WoodenFence_1_foundation: vector {
 		points[] = {
 			{      0, 0, 0.5 },	// Pivot
 			{ -2.535, 0, 0.5 },	// Left
@@ -689,19 +689,19 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class WoodenFence_1_frame_DZ: vector {
+	class DZE_WoodenFence_1_frame: vector {
 		points[] = {
 			{      0, 0, 0.95 },	// Top
 			{ -2.535, 0, 0.95 },	// Left
 			{  2.535, 0, 0.95 }	// Right
 		};
 	};
-	class WoodenFence_quaterpanel_DZ: WoodenFence_1_frame_DZ {};
-	class WoodenFence_halfpanel_DZ: WoodenFence_1_frame_DZ {};
-	class WoodenFence_thirdpanel_DZ: WoodenFence_1_frame_DZ {};
-	class WoodenFence_1_DZ: WoodenFence_1_frame_DZ {};
+	class DZE_WoodenFence_quaterpanel: DZE_WoodenFence_1_frame {};
+	class DZE_WoodenFence_halfpanel: DZE_WoodenFence_1_frame {};
+	class DZE_WoodenFence_thirdpanel: DZE_WoodenFence_1_frame {};
+	class DZE_WoodenFence_1: DZE_WoodenFence_1_frame {};
 
-	class WoodenFence_2_DZ: vector {
+	class DZE_WoodenFence_2: vector {
 		points[] = {
 			{      0, 0,  0.5 },	// Pivot
 			{ -2.535, 0,  1.6 },	// Left
@@ -709,9 +709,9 @@ class HelperVectors: Helpers {
 			{      0, 0, 2.68 }	// Top
 		};
 	};
-	class WoodenFence_3_DZ: WoodenFence_2_DZ {};
+	class DZE_WoodenFence_3: DZE_WoodenFence_2 {};
 
-	class WoodenFence_4_DZ: vector {
+	class DZE_WoodenFence_4: vector {
 		points[] = {
 			{      0, 0,  0.5 },	// Pivot
 			{ -2.535, 0,    2 },	// Left
@@ -719,40 +719,40 @@ class HelperVectors: Helpers {
 			{      0, 0, 3.58 }	// Top
 		};
 	};
-	class WoodenFence_5_DZ: WoodenFence_4_DZ {};
-	class WoodenFence_6_DZ: WoodenFence_4_DZ {};
-	class WoodenFence_7_DZ: WoodenFence_4_DZ {};
-	class WoodenFence_7_Preview_DZ: WoodenFence_4_DZ {};
+	class DZE_WoodenFence_5: DZE_WoodenFence_4 {};
+	class DZE_WoodenFence_6: DZE_WoodenFence_4 {};
+	class DZE_WoodenFence_7: DZE_WoodenFence_4 {};
+	class DZE_WoodenFence_7_Preview: DZE_WoodenFence_4 {};
 
-	class MetalFence_1_foundation_DZ: WoodenFence_1_foundation_DZ {};
+	class DZE_MetalFence_1_foundation: DZE_WoodenFence_1_foundation {};
 
-	class MetalFence_1_frame_DZ: vector {
+	class DZE_MetalFence_1_frame: vector {
 		points[] = {
 			{      0, 0, 1.4 },	// Top
 			{ -2.535, 0, 1.4 },	// Left
 			{  2.535, 0, 1.4 }	// Right
 		};
 	};
-	class MetalFence_halfpanel_DZ: MetalFence_1_frame_DZ {};
-	class MetalFence_thirdpanel_DZ: MetalFence_1_frame_DZ {};	
-	class MetalFence_1_DZ: MetalFence_1_frame_DZ {};
+	class DZE_MetalFence_halfpanel: DZE_MetalFence_1_frame {};
+	class DZE_MetalFence_thirdpanel: DZE_MetalFence_1_frame {};
+	class DZE_MetalFence_1: DZE_MetalFence_1_frame {};
 
-	class MetalFence_2_DZ: WoodenFence_2_DZ {};
-	class MetalFence_3_DZ: WoodenFence_2_DZ {};
-	class MetalFence_4_DZ: WoodenFence_4_DZ {};
-	class MetalFence_5_DZ: WoodenFence_4_DZ {};
-	class MetalFence_6_DZ: WoodenFence_4_DZ {};
-	class MetalFence_7_DZ: WoodenFence_4_DZ {};
-	class MetalFence_7_Preview_DZ: WoodenFence_4_DZ {};
+	class DZE_MetalFence_2: DZE_WoodenFence_2 {};
+	class DZE_MetalFence_3: DZE_WoodenFence_2 {};
+	class DZE_MetalFence_4: DZE_WoodenFence_4 {};
+	class DZE_MetalFence_5: DZE_WoodenFence_4 {};
+	class DZE_MetalFence_6: DZE_WoodenFence_4 {};
+	class DZE_MetalFence_7: DZE_WoodenFence_4 {};
+	class DZE_MetalFence_7_Preview: DZE_WoodenFence_4 {};
 
-	class WoodenGate_foundation_DZ: vector {
+	class DZE_WoodenGate_foundation: vector {
 		points[] = {
 			{ -2.535, 0, 0.95 },	// Left
 			{  2.535, 0, 0.95 }	// Right
 		};
 	};
 
-	class WoodenGate_1_DZ: vector {
+	class DZE_WoodenGate_1: vector {
 		points[] = {
 			{      0, 0,    0 },	// Pivot
 			{ -2.535, 0, 0.95 },	// Left
@@ -761,10 +761,10 @@ class HelperVectors: Helpers {
 		};
 	};
 
-	class WoodenGate_2_DZ: WoodenFence_2_DZ {};
-	class WoodenGate_3_DZ: WoodenFence_2_DZ {};	
+	class DZE_WoodenGate_2: DZE_WoodenFence_2 {};
+	class DZE_WoodenGate_3: DZE_WoodenFence_2 {};
 
-	class WoodenGate_4_DZ: vector {
+	class DZE_WoodenGate_4: vector {
 		points[] = {
 			{      0, 0,    0 },	// Pivot
 			{ -2.535, 0,  1.9 },	// Left
@@ -779,15 +779,15 @@ class HelperVectors: Helpers {
 	//
 	///////////////////////////////////////////////////////////////////////////////////////////
 
-	class GunRack_DZ: vector {
+	class DZE_GunRack: vector {
 		points[] = {
 			{ -0.0575, -0.0995, -0.140 }	// Center
 		};
 		size = 2;
 	};
-	class GunRack2_DZ: GunRack_DZ {};
+	class DZE_GunRack2: DZE_GunRack {};
 
-	class WoodCrate_DZ: vector {
+	class DZE_WoodCrate: vector {
 		points[] = {
 			{     0,     0, -0.47 },	// Bottom
 			{     0, -0.47,     0 },	// Back
@@ -798,23 +798,23 @@ class HelperVectors: Helpers {
 		};
 		size = 2;
 	};
-	class WoodCrate2_DZ: WoodCrate_DZ {};
+	class DZE_WoodCrate2: DZE_WoodCrate {};
 
-	class StorageCrate_DZ: vector {
+	class DZE_StorageCrate: vector {
 		points[] = {
 			{ 0, 0, 0.08 }	// Top
 		};
 		size = 2;
 	};
 
-	class CamoStorageCrate_DZ: vector {
+	class DZE_CamoStorageCrate: vector {
 		points[] = {
 			{ 0, 0, 0.45 }	// Top
 		};
 		size = 2;
 	};
 
-	class OutHouse_DZ: vector {
+	class DZE_OutHouse: vector {
 		points[] = {
 			{ -0.59,  0.0675, 0 },	// Left
 			{  0.59,  0.0675, 0 },	// Right
@@ -824,7 +824,7 @@ class HelperVectors: Helpers {
 		size = 2;
 	};
 
-	class StorageShed_DZ: vector {
+	class DZE_StorageShed: vector {
 		points[] = {
 			{     -2, -0.075, 1.5 },	// Left
 			{   1.57, -0.075, 1.5 },	// Right
@@ -833,9 +833,9 @@ class HelperVectors: Helpers {
 			{ -0.215,  -1.35, 1.5 }		// Back
 		};
 	};
-	class StorageShed2_DZ: StorageShed_DZ {};
+	class DZE_StorageShed2: DZE_StorageShed {};
 
-	class Wooden_shed_DZ: vector {
+	class DZE_Wooden_shed: vector {
 		points[] = {
 			{  0.7, -1.64,    0 },	// Back
 			{  0.7,  1.64,    0 },	// Front
@@ -844,9 +844,9 @@ class HelperVectors: Helpers {
 			{ -1.7,     0,    0 }	// Left (cull on open door)
 		};
 	};
-	class Wooden_shed2_DZ: Wooden_shed_DZ {};
+	class DZE_Wooden_shed2: DZE_Wooden_shed {};
 
-	class WoodShack_DZ: vector{
+	class DZE_WoodShack: vector{
 		points[] = {
 			{     0,  2.4,   0 },	// Front
 			{ -1.18, 0.65,   0 },	// Left
@@ -854,89 +854,89 @@ class HelperVectors: Helpers {
 			{     0, -1.1, 1.1 }	// Top
 		};
 	};
-	class WoodShack2_DZ: WoodShack_DZ {};
+	class DZE_WoodShack2: DZE_WoodShack {};
 
-	class StashSmall: vector {
+	class DZE_StashSmall: vector {
 		points[] = {
 			{ 0, 0, 0.3 }	// Top
 		};
 		size = 2;
 	};
-	class StashSmall1: StashSmall {};
-	class StashSmall2: StashSmall {};
-	class StashSmall3: StashSmall {};
-	class StashSmall4: StashSmall {};
+	class DZE_StashSmall1: DZE_StashSmall {};
+	class DZE_StashSmall2: DZE_StashSmall {};
+	class DZE_StashSmall3: DZE_StashSmall {};
+	class DZE_StashSmall4: DZE_StashSmall {};
 
-	class StashMedium: vector {
+	class DZE_StashMedium: vector {
 		points[] = {
 			{ 0, 0, 0.8 }	// Top
 		};
 		size = 2;
 	};
-	class StashMedium1: StashMedium {};
-	class StashMedium2: StashMedium {};
-	class StashMedium3: StashMedium {};
-	class StashMedium4: StashMedium {};
+	class DZE_StashMedium1: DZE_StashMedium {};
+	class DZE_StashMedium2: DZE_StashMedium {};
+	class DZE_StashMedium3: DZE_StashMedium {};
+	class DZE_StashMedium4: DZE_StashMedium {};
 
-	class TentStorage: vector {
+	class DZE_TentStorage: vector {
 		points[] = {
 			{ 0, 0, 0.55 }	// Top
 		};
 		size = 2;
 	};
-	class TentStorage0: TentStorage {};
-	class TentStorage1: TentStorage {};
-	class TentStorage2: TentStorage {};
-	class TentStorage3: TentStorage {};
-	class TentStorage4: TentStorage {};
-	class TentStorageWinter: TentStorage {};
-	class TentStorageWinter0: TentStorage {};
-	class TentStorageWinter1: TentStorage {};
-	class TentStorageWinter2: TentStorage {};
-	class TentStorageWinter3: TentStorage {};
-	class TentStorageWinter4: TentStorage {};
-	class IC_Tent: TentStorage {};
+	class DZE_TentStorage0: DZE_TentStorage {};
+	class DZE_TentStorage1: DZE_TentStorage {};
+	class DZE_TentStorage2: DZE_TentStorage {};
+	class DZE_TentStorage3: DZE_TentStorage {};
+	class DZE_TentStorage4: DZE_TentStorage {};
+	class DZE_TentStorageWinter: DZE_TentStorage {};
+	class DZE_TentStorageWinter0: DZE_TentStorage {};
+	class DZE_TentStorageWinter1: DZE_TentStorage {};
+	class DZE_TentStorageWinter2: DZE_TentStorage {};
+	class DZE_TentStorageWinter3: DZE_TentStorage {};
+	class DZE_TentStorageWinter4: DZE_TentStorage {};
+	class IC_Tent: DZE_TentStorage {};
 
-	class DomeTentStorage: vector {
+	class DZE_DomeTentStorage: vector {
 		points[] = {
 			{ 0.25, 0, 0.7 }	// Top
 		};
 		size = 2;
 	};
-	class DomeTentStorage0: DomeTentStorage {};
-	class DomeTentStorage1: DomeTentStorage {};
-	class DomeTentStorage2: DomeTentStorage {};
-	class DomeTentStorage3: DomeTentStorage {};
-	class DomeTentStorage4: DomeTentStorage {};
-	class DesertTentStorage: DomeTentStorage {};
-	class DesertTentStorage0: DomeTentStorage {};
-	class DesertTentStorage1: DomeTentStorage {};
-	class DesertTentStorage2: DomeTentStorage {};
-	class DesertTentStorage3: DomeTentStorage {};
-	class DesertTentStorage4: DomeTentStorage {};
-	class WinterDomeTentStorage: DomeTentStorage {};
-	class WinterDomeTentStorage0: DomeTentStorage {};
-	class WinterDomeTentStorage1: DomeTentStorage {};
-	class WinterDomeTentStorage2: DomeTentStorage {};
-	class WinterDomeTentStorage3: DomeTentStorage {};
-	class WinterDomeTentStorage4: DomeTentStorage {};
-	class IC_DomeTent: DomeTentStorage {};
+	class DZE_DomeTentStorage0: DZE_DomeTentStorage {};
+	class DZE_DomeTentStorage1: DZE_DomeTentStorage {};
+	class DZE_DomeTentStorage2: DZE_DomeTentStorage {};
+	class DZE_DomeTentStorage3: DZE_DomeTentStorage {};
+	class DZE_DomeTentStorage4: DZE_DomeTentStorage {};
+	class DZE_DesertTentStorage: DZE_DomeTentStorage {};
+	class DZE_DesertTentStorage0: DZE_DomeTentStorage {};
+	class DZE_DesertTentStorage1: DZE_DomeTentStorage {};
+	class DZE_DesertTentStorage2: DZE_DomeTentStorage {};
+	class DZE_DesertTentStorage3: DZE_DomeTentStorage {};
+	class DZE_DesertTentStorage4: DZE_DomeTentStorage {};
+	class DZE_WinterDomeTentStorage: DZE_DomeTentStorage {};
+	class DZE_WinterDomeTentStorage0: DZE_DomeTentStorage {};
+	class DZE_WinterDomeTentStorage1: DZE_DomeTentStorage {};
+	class DZE_WinterDomeTentStorage2: DZE_DomeTentStorage {};
+	class DZE_WinterDomeTentStorage3: DZE_DomeTentStorage {};
+	class DZE_WinterDomeTentStorage4: DZE_DomeTentStorage {};
+	class IC_DomeTent: DZE_DomeTentStorage {};
 
-	class LockboxStorage: vector {
+	class DZE_LockboxStorage: vector {
 		points[] = {
 			{ 0, 0, 0.25 }	// Top
 		};
 		size = 2;
 	};
-	class LockboxStorageLocked: LockboxStorage {};
-	class LockboxStorage2: LockboxStorage {};
-	class LockboxStorage2Locked: LockboxStorage {};
-	class LockboxStorageWinter: LockboxStorage {};
-	class LockboxStorageWinterLocked: LockboxStorage {};
-	class LockboxStorageWinter2: LockboxStorage {};
-	class LockboxStorageWinter2Locked: LockboxStorage {};
+	class DZE_LockboxStorageLocked: DZE_LockboxStorage {};
+	class DZE_LockboxStorage2: DZE_LockboxStorage {};
+	class DZE_LockboxStorage2Locked: DZE_LockboxStorage {};
+	class DZE_LockboxStorageWinter: DZE_LockboxStorage {};
+	class DZE_LockboxStorageWinterLocked: DZE_LockboxStorage {};
+	class DZE_LockboxStorageWinter2: DZE_LockboxStorage {};
+	class DZE_LockboxStorageWinter2Locked: DZE_LockboxStorage {};
 
-	class VaultStorage: vector {
+	class DZE_Safe: vector {
 		points[] = {
 			{      0,      0,     0 },	// Pivot
 			{      0,  0.284, 0.615 },	// Front
@@ -947,13 +947,13 @@ class HelperVectors: Helpers {
 		};
 		size = 2;
 	};
-	class VaultStorageLocked: VaultStorage {};
-	class VaultStorage2: VaultStorage {};
-	class VaultStorage2Locked: VaultStorage {};
-	class VaultStorageBroken: VaultStorage {};
-	class VaultStorageBroken2: VaultStorage {};
+	class DZE_SafeLocked: DZE_Safe {};
+	class DZE_Safe2: DZE_Safe {};
+	class DZE_Safe2Locked: DZE_Safe {};
+	class DZE_SafeBroken: DZE_Safe {};
+	class DZE_Safe2Broken: DZE_Safe {};
 
-	class TallSafe: vector {
+	class DZE_SafeTall: vector {
 		points[] = {
 			{     0,     0, 0 },	// Pivot
 			{     0,  0.35, 1 },	// Front
@@ -964,6 +964,6 @@ class HelperVectors: Helpers {
 		};
 		size = 2;
 	};
-	class TallSafeLocked: TallSafe {};
-	class TallSafeBroken: TallSafe {};
+	class DZE_SafeTallLocked: DZE_SafeTall {};
+	class DZE_SafeTallBroken: DZE_SafeTall {};
 };
