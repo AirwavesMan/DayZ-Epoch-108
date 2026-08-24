@@ -37,7 +37,7 @@ if (_finished) then {
 		20 call player_humanityChange;
 
 		_msg = ["str_actions_medical_gave_bandage","str_actions_medical_gave_sepsisbandage"] select (_item == "ItemSepsisBandage");
-		format[localize _msg,(name _unit)] call dayz_rollingMessages;
+		format[localize _msg,_unit call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
 	};
 } else {
 	player addMagazine _item;

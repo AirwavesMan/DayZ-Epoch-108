@@ -1,5 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project name="DayZ">
+	<Package name="FIREPLACE">
+		<Key ID="STR_BUIDLINGS_FIREPLACE_FIREBARREL">
+			<English>Fire Barrel</English>
+			<German>Feuerfass</German>
+		</Key>
+		<Key ID="STR_BUIDLINGS_FIREPLACE_FIREBARREL_BURNING">
+			<English>Fire Barrel burning</English>
+			<German>Feuerfass brennend</German>
+		</Key>	
+		<Key ID="STR_BUIDLINGS_FIREPLACE_CAMPFIRE_SMALL">
+			<English>Campfire (small)</English>
+			<German>Lagerfeuer (klein)</German>
+		</Key>
+		<Key ID="STR_BUIDLINGS_FIREPLACE_CAMPFIRE_SMALL_BURNING">
+			<English>Campfire burning (small)</English>
+			<German>Lagerfeuer brennend (klein)</German>
+		</Key>		
+		<Key ID="STR_BUIDLINGS_FIREPLACE_CAMPFIRE_LARGE">
+			<English>Campfire (large)</English>
+			<German>Lagerfeuer (groß)</German>
+		</Key>
+		<Key ID="STR_BUIDLINGS_FIREPLACE_CAMPFIRE_LARGE_BURNING">
+			<English>Campfire burning (large)</English>
+			<German>Lagerfeuer brennend (groß)</German>
+		</Key>
+		<Key ID="STR_BUIDLINGS_FIREPLACE_TYREHEAP">
+			<English>Tyre Heap</English>
+			<German>Reifenhaufen</German>
+		</Key>	
+		<Key ID="STR_BUIDLINGS_FIREPLACE_TYREHEAP_BURNING">
+			<English>Tyre Heap burning</English>
+			<German>Reifenhaufen brennend</German>
+		</Key>
+		<Key ID="STR_BUIDLINGS_FIREPLACE_STOVE">
+			<English>Stove</English>
+			<German>Herd</German>
+		</Key>
+		<Key ID="STR_FIREPLACE_ADD_FUEL">
+			<English>Add %1 as fuel</English>
+			<German>%1 als Brennstoff hinzufügen</German>
+		</Key>
+		<Key ID="STR_FIREPLACE_FUEL_ADDED">
+			<English>Added %1 as fuel. Remaining burn time: %2 minutes.</English>
+			<German>%1 wurde als Brennstoff hinzugefügt. Verbleibende Brenndauer: %2 Minuten.</German>
+		</Key>
+		<Key ID="STR_FIREPLACE_FUEL_MAXIMUM_REACHED">
+			<English>Maximum burn time reached. Remaining burn time: %1 minutes.</English>
+			<German>Maximale Brenndauer erreicht. Verbleibende Brenndauer: %1 Minuten.</German>
+		</Key>
+		<Key ID="STR_FIREPLACE_FUEL_REQUEST_FAILED">
+			<English>The server could not add the fire fuel. The magazine was returned.</English>
+			<German>Der Server konnte den Brennstoff nicht hinzufügen. Das Magazin wurde zurückgegeben.</German>
+		</Key>
+		<Key ID="STR_FIREPLACE_FUEL_MISSING">
+			<English>The selected fuel is no longer in your inventory.</English>
+			<German>Der ausgewählte Brennstoff ist nicht mehr in deinem Inventar.</German>
+		</Key>
+	</Package>
+
 	<Package name="actions">
 		<Key ID="STR_ACTIONS_2TB">
 			<English>Add to Toolbelt</English>
@@ -6608,14 +6667,6 @@
 			<Spanish>Creaste una fogata</Spanish>
 			<French>Vous avez créé un feu de camp.</French>
 			<Czech>Vytvořili jste ohniště.</Czech>
-		</Key>
-		<Key ID="str_build_01">
-			<English>You have constructed a %1</English>
-			<German>%1 wurde erfolgreich aufgebaut.</German>
-			<Russian>Вы построили %1.</Russian>
-			<Spanish>Construiste un %1</Spanish>
-			<French>Vous avez construit un(e) %1</French>
-			<Czech>Postavili jste %1</Czech>
 		</Key>
 		<Key ID="str_build_failed_01">
 			<English>You have failed to build %1 due to %2 being in the way.</English>
@@ -23071,13 +23122,6 @@
 			<French>Détruire %1</French>
 			<Czech>Zničit %1</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_UPGRADE">
-			<English>Upgrade %1</English>
-			<Russian>Улучшить %1</Russian>
-			<French>Améliorer la %1</French>
-			<Czech>Vylepšit %1</Czech>
-			<German>%1 erweitern</German>
-		</Key>
 		<Key ID="STR_EPOCH_NO_CHEATS">
 			<English>Do not enter cheats. Wait five seconds to continue.</English>
 			<Russian>Не вводите читы. Подождите 5 секунд чтобы продолжить.</Russian>
@@ -23470,46 +23514,6 @@
 			<French>Le verrouillage du véhicule est déjà en cours.</French>
 			<Czech>Zamykání vozidla již probíhá.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_40">
-			<English>Building already in progress.</English>
-			<German>Bau bereits im Gange.</German>
-			<Russian>Уже строится.</Russian>
-			<Dutch>Je bent al aan het bouwen.</Dutch>
-			<French>La construction est déjà en cours.</French>
-			<Czech>Stavba již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_41">
-			<English>You cannot build. There are too many objects within %1m.</English>
-			<German>Bau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
-			<Russian>Отменено. В радиусе %1 м слишком много объектов.</Russian>
-			<Dutch>Kan niet bouwen, teveel objecten binnen %1.</Dutch>
-			<French>Impossible de construire, il y a trop d'objets à moins de %1m.</French>
-			<Czech>Nelze postavit, v okruhu %1m je přiliš mnoho předmětů.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_42">
-			<English>You cannot build while in a vehicle.</English>
-			<German>Du kannst nichts bauen, während du dich in einem Fahrzeug befindest.</German>
-			<Russian>Нельзя строить находясь в транспорте.</Russian>
-			<Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
-			<French>Impossible de construire à bord d'un véhicule.</French>
-			<Czech>Nelze stavět, pokud jste ve vozidle.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_43">
-			<English>You cannot build while in combat.</English>
-			<German>Während eines Kampfes kannst du nichts bauen.</German>
-			<Russian>Нельзя строить во время боя.</Russian>
-			<Dutch>Bouwen is niet mogelijk tijdens een conflictsituatie.</Dutch>
-			<French>Impossible de construire en combat.</French>
-			<Czech>Nelze stavět v boji.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_44">
-			<English>You cannot build a plot pole within %1m of an existing plot.</English>
-			<German>Eine Grundstücksmarkierung kann nicht innerhalb %1m von einem bestehenden Grundstück erbaut werden.</German>
-			<Russian>Нельзя построить ещё один столб в радиусе %1 м от существующего столба.</Russian>
-			<Dutch>Kan bouw-paal niet bouwen op minder als %1m afstand van een bestaand bouwterrein.</Dutch>
-			<French>Impossible de construire un panneau de propriété privée à moins de %1m d'un autre panneau du genre.</French>
-			<Czech>Nelze postavit hraniční značku ve vzdálenosti %1 metrů od jiné značky.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_45">
 			<English>PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.</English>
 			<German>BildAuf zum Erhöhen oder BildAb zum Absenken (halte ALT zum schnelleren Erhöhen oder STRG zum Absenken), Q oder E zum Drehen. Drücke Leertaste um das Objekt zu plazieren.</German>
@@ -23518,38 +23522,6 @@
 			<French>PgUp pour élever ou PgDn pour abaisser (Maintenez ALT pour élever plus rapidement ou CTRL plus lentement), A ou E pour une rotation à 180. Espace pour construire.</French>
 			<Czech>PgUp pro zvednutí nebo PgDn pro klesání (Přidrž ALT pro rychlejší zvedání, nebo CTRL pro rychlejší klesání), Q nebo E pro otočení o 180. Mezerník pro stavbu.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_46">
-			<English>Canceled building.</English>
-			<German>Bau abgebrochen.</German>
-			<Russian>Строительство отменено.</Russian>
-			<Dutch>Het bouwen is gestopt</Dutch>
-			<French>Construction annulée</French>
-			<Czech>Stavba zrušena.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_47">
-			<English>Canceled construction of %1.&lt;br/&gt;%2</English>
-			<German>Bau von %1 abgebrochen.&lt;br/&gt;%2</German>
-			<Russian>Отменено строительство %1.&lt;br/&gt;%2</Russian>
-			<Dutch>Gestopt met het bouwen van %1.&lt;br/&gt;%2</Dutch>
-			<French>La construction de %1 est annulée.&lt;br/&gt;%2</French>
-			<Czech>Stavba %1 byla zrušena.&lt;br/&gt;%2</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_48">
-			<English>Downgrade is already in progress.</English>
-			<German>Downgrade bereits im Gange.</German>
-			<Russian>Уже понижается.</Russian>
-			<Dutch>Je bent al bezig met downgraden.</Dutch>
-			<French>La dégradation est déjà en cours.</French>
-			<Czech>Downgrade již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_49">
-			<English>Unable to downgrade, you do not know the combination.</English>
-			<German>Downgraden nicht möglich, da du nicht die Kombination kennst.</German>
-			<Russian>Не удаётся понизить, вы не знаете комбинации.</Russian>
-			<Dutch>Kan niet downgraden, je weet de combinatie niet.</Dutch>
-			<French>La dégradation est impossible, vous ne connaissez pas la combinaison!</French>
-			<Czech>Downgrade je nemožný, neznáte kombinanci.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_50">
 			<English>Not setup yet.</English>
 			<German>Ausbau noch nicht möglich.</German>
@@ -23557,14 +23529,6 @@
 			<Dutch>Nog niet ingesteld.</Dutch>
 			<French>Pas encore installé.</French>
 			<Czech>Dosud nebylo nastaveno.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_51">
-			<English>No downgrades are available</English>
-			<German>Kein Downgrade vorhanden</German>
-			<Russian>Нет доступных понижений.</Russian>
-			<Dutch>Geen downgrades beschikbaar</Dutch>
-			<French>Pas de dégradation possible.</French>
-			<Czech>Downgrade není k dispozici</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_52">
 			<English>Upgrade is already in progress.</English>
@@ -23700,14 +23664,6 @@
 			<Dutch>Gestopt met erts ontginnen.</Dutch>
 			<French>Extraction du minerai annulée.</French>
 			<Czech>Zrušena těžba rudy.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_82">
-			<English>No upgrades are available</English>
-			<German>Keine Upgrades vorhanden</German>
-			<Russian>Нет доступных улучшений.</Russian>
-			<Dutch>Geen upgrades beschikbaar</Dutch>
-			<French>Aucune amélioration disponible</French>
-			<Czech>Nejsou dostupné žádné upgrady</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_84">
 			<English>You cannot change clothes when another player is nearby.</English>
@@ -23908,32 +23864,6 @@
 			<German>%1 wurde zu %2 Prozent betankt. Es sind noch ca. %3 Liter Treibstoff in der Treibstoffquelle übrig.</German>
 			<Russian>%1: Заправлено до %2 процентов. В топливном баке осталось около %3 л топлива.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_133">
-			<English>You can only own %1 plot pole(s)</English>
-			<German>Du kannst nur %1 Grundstück(e) besitzen.</German>
-			<Russian>Вам может принадлежать только %1 участок(а,ов) земли.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_134">
-			<English>You do not have access to build on this plot.</English>
-			<German>Du darfst auf diesem Grundstück nichts bauen, da du kein eingetragener Eigentümer bist.</German>
-			<Russian>Вы не можете здесь строить т.к. не являетесь владельцем этого столба.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_135">
-			<English>This item needs a %1 within %2 meters</English>
-			<German>Dieses Gebäude benötitgt ein(e) %1 innerhalb von %2 Metern.</German>
-			<Russian>Требуется %1 в радиусе %2 м.</Russian>
-			<Dutch>Dit gebouw heeft een %1 binnen %2 meter nodig.</Dutch>
-			<French>Ce bâtiment nécessite un %1 à moins de %2 mètres</French>
-			<Czech>Tato budova potřebuje %1 v rámci %2.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_136">
-			<English>You are not allowed to build here a %1 is nearby.</English>
-			<German>Du kannst hier nicht bauen. Ein %1 ist in der Nähe.</German>
-			<Russian>Вам запрещено строить здесь, %1 рядом.</Russian>
-			<Dutch>Bouwen niet mogelijk %1 in de buurt.</Dutch>
-			<French>Impossible de construire, %1 est trop proche.</French>
-			<Czech>Nemůžete postavit %1 poblíž.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_137">
 			<English>Missing tool %1</English>
 			<German>Fehlendes Werkzeug: %1</German>
@@ -23951,22 +23881,6 @@
 			<French>Placement de %1, déplacez vous pour annuler.</French>
 			<Czech>Umístění %1, přesuňte se pro zrušení.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_139">
-			<English>Constructing %1 stage %2 of %3, move to cancel.</English>
-			<German>Konstruieren von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>Строительство: %1, стадия %2 / %3. Двигайтесь для отмены.</Russian>
-			<Dutch>Bezig met de bouw van %1 (stap %2 van %3), beweeg om te annuleren</Dutch>
-			<French>Construction de %1 (étape %2 sur %3), déplacez vous pour annuler.</French>
-			<Czech>Stavím %1 fáze %2 z %3, pohněte se pro zrušení.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_140">
-			<English>You have setup your %2. The combination is %1</English>
-			<German>Du hast erfolgreich ein(e) %2 aufgebaut. Die Kombination lautet: %1</German>
-			<Russian>Вы установили: %2. Комбинация %1.</Russian>
-			<Dutch>Je hebt je %2 geplaatst. De combinatie is %1</Dutch>
-			<French>Vous avez installé votre %2. La combinaison est %1</French>
-			<Czech>Nastavil jste Vaši %2. Kombinace je %1</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_141">
 			<English>Unable to downgrade, %1 nearby.</English>
 			<German>Downgraden von %1 ist nicht möglich.</German>
@@ -23974,14 +23888,6 @@
 			<French>Impossible de dégrader, %1 est trop proche.</French>
 			<Czech>Downgrade %1 nelze poblíž udělat.</Czech>
 			<Russian>Понизить уровень %1 не представляется возможным.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_142">
-			<English>You have downgraded %1.</English>
-			<German>Du hast %1 gedowngradet.</German>
-			<Russian>Понижено: %1.</Russian>
-			<Dutch>Je hebt %1 gedowngrade.</Dutch>
-			<French>Vous avez dégradé %1.</French>
-			<Czech>Downgradnuli jste %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_143">
 			<English>%1x %2 could not be added to your inventory. (not enough room?)</English>
@@ -24048,20 +23954,6 @@
 			<Czech>Upgrade %1 nelze poblíž udělat.</Czech>
 			<Russian>Улучшить %1 не представляется возможным.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_158">
-			<English>You have upgraded %2. The combination is: %1</English>
-			<German>Du hast %2 geupgradet. Die Kombination lautet: %1</German>
-			<Russian>Вы улучшили: %2. Комбинация %1.</Russian>
-			<Dutch>Je hebt een %2 geupgrade. De combinatie is %1</Dutch>
-			<Czech>Upgradnuli jste %2. Kombinace je %1</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_159">
-			<English>You have upgraded %1.</English>
-			<German>Du hast %1 geupgradet.</German>
-			<Russian>Вы улучшили: %1.</Russian>
-			<Dutch>Je hebt %1 geupgrade.</Dutch>
-			<Czech>Upgranuli jste %1.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_162">
 			<English>Starting de-construction of %1.</English>
 			<German>Starte Abbau von %1.</German>
@@ -24089,21 +23981,6 @@
 			<Russian>Разобрано.</Russian>
 			<Dutch>%1 aan het slopen.</Dutch>
 			<Czech>Rozebírání %1.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_166">
-			<English>You can't build a %1 within %2 meters of a safe zone.</English>
-			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einer Safe Zone.</German>
-			<Russian>Нельзя построить %1 в %2 м от безопасной зоны.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_167">
-			<English>You can't build a %1 within %2 meters of a %3.</English>
-			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einem Objekt (%3).</German>
-			<Russian>Нельзя построить %1 в %2 м от %3.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_168">
-			<English>Building is restricted above %1 meter(s).</English>
-			<German>Das Bauen ist auf eine Höhe von %1 Metern begrenzt.</German>
-			<Russian>Высота строительства ограничена %1 м.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_173">
 			<English>Dog consumed %1, and is now tamed.</English>
@@ -26203,11 +26080,6 @@
 			<French>Aperçu de la zone maintenue</French>
 			<Czech>Náhled údržby oblasti</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_MANAGEPLOT">
-			<English>Manage Plot</English>
-			<German>Verwalte Grundstücksmarkierung</German>
-			<Russian>Управление строительным столбом</Russian>
-		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_UNLOCK">
 			<English>Unlock %1</English>
 			<German>%1 aufschließen</German>
@@ -26299,28 +26171,6 @@
 			<Dutch>Heeft Stroom Nodig</Dutch>
 			<French>Énergie Nécessaire</French>
 			<Czech>Potřebuje Energii</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_REMLOCK">
-			<English>Remove Lock from %1</English>
-			<German>Schloss entfernen von %1</German>
-			<Russian>Снять замок с %1</Russian>
-			<Dutch>Verwijder slot van %1</Dutch>
-			<French>Retirer la serrure de %1</French>
-			<Czech>Odebrat Zámek z %1</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN">
-			<English>Maintain</English>
-			<German>Sanieren</German>
-			<Russian>Обслужить</Russian>
-			<Spanish>Mantener</Spanish>
-			<Dutch>Onderhoud</Dutch>
-			<French>Maintenir</French>
-			<Czech>Opravit</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN_FORCE">
-			<English>Force Maintain</English>
-			<German>Alles Sanieren</German>
-			<Russian>Принудительно обслужить</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR1">
 			<English>Stop Generator</English>
@@ -29552,58 +29402,7 @@
 			<Russian>Не продаётся</Russian>
 		</Key>
 
-		<!-- PLOT MANAGEMENT BELOW -->
-
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_NONE">
-			<English>Objects to maintain: 0, No maintenance required.</English>
-			<German>Objekte zum Sanieren: 0, Keine Sanierung notwendig.</German>
-			<Russian>Объектов для обслуживания: 0, обслуживание не требуется.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE">
-			<English>Price to maintain %1 objects: %2 %3</English>
-			<German>Preis zum Sanieren von %1 Objekt(en): %2 %3</German>
-			<Russian>Объектов для обслуживания: %1, стоимость %2 %3.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS">
-			<English>Success! %1 objects maintained for %2 %3</English>
-			<German>Du hast %1 Objekt(e) erfolgreich saniert für %2 %3</German>
-			<Russian>Успешно! Обслужено объектов: %1 за %2 %3</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE">
-			<English>Price to force maintain %1 objects: %2 %3</English>
-			<German>Sanieren erzwingen: Preis für %1 Objekt(e): %2 %3</German>
-			<Russian>Принудительное обслуживание объектов: %1 шт. за %2 %3.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED">
-			<English>Failed to maintain %1 objects. You need %2 %3</English>
-			<German>Sanieren von %1 Objekt(en) fehlgeschlagen. Du brauchst %2 %3</German>
-			<Russian>Неудача! Вам нужно %2 %3.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST">
-			<English>That user is already on the list.</English>
-			<Russian>Уже в списке доступа.</Russian>
-			<German>Dein Freund ist bereits auf der Liste.</German>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_FRIENDLIMIT">
-			<English>Only %1 friends are allowed.</English>
-			<Russian>Можно добавить друзей: %1</Russian>
-			<German>Nur %1 Freunde erlaubt.</German>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_CANT_REMOVE">
-			<English>You can't remove the plot owner.</English>
-			<German>Du kannst den Grundstückseigentümer nicht entfernen.</German>
-			<Russian>Нельзя удалить владельца.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY">
-			<English>Show plot boundary</English>
-			<German>Zeige Grundstücksgrenze</German>
-			<Russian>Границы участка</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_TITLE">
-			<English>Plot Management</English>
-			<German>Grundstücksmarkierung</German>
-			<Russian>Управление строительным столбом</Russian>
-		</Key>
+		<!-- Base management strings are defined in the Base package. -->
 		<Key ID="STR_EPOCH_TRADER">
 			<English>Trader</English>
 			<German>Händler</German>
@@ -32415,14 +32214,6 @@
 			<German>Nicht verfügbar</German>
 			<Russian>Недоступно</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_DOME">
-			<English>Dome</English>
-			<German>Kuppel</German>
-			<Russian>Участок</Russian>
-			<Spanish>Cúpula</Spanish>
-			<French>Dôme</French>
-			<Czech>Kupole</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_FIRE">
 			<English>Fire (Lit)</English>
 			<French>Feu (allumé)</French>
@@ -32443,16 +32234,6 @@
 			<English>Humans Nearby</English>
 			<German>Spieler in der Nähe</German>
 			<Russian>Люди поблизости</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLOT_FRIENDS">
-			<English>Plot Friends</English>
-			<German>Plot-Freunde</German>
-			<Russian>Имеющие доступ</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_BUILD_FAIL_ROAD">
-			<English>You cannot build on a road.</English>
-			<German>Du kannst nicht auf einer Straße bauen.</German>
-			<Russian>Нельзя строить на дороге.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_FAIL_MOVED">
 			<English>You've moved too far away from where you started building (within %1 meters).</English>
@@ -33795,67 +33576,6 @@
 			<German>Ein kaputter Schraubenschlüssel, welcher repariert werden muss.</German>
 			<Russian>Сломанный гаечный ключ, который необходимо отремонтировать.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_POINT_AUTO">
-			<English>Auto</English>
-			<Russian>Автоматически</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_DISABLED">
-			<English>Disabled</English>
-			<German>Deaktiviert</German>
-			<Russian>Отключено</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_SNAPPING">
-			<English>Snapping</English>
-			<Russian>Привязка</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_DISTANCE">
-			<English>Distance from plot</English>
-			<German>Distanz zur Grundstückmarkierung</German>
-			<Russian>Расстояние от столба</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_RADIUS">
-			<English>Radius</English>
-			<Russian>Радиус</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_PITCH">
-			<English>Pitch</English>
-			<German>Vorneigen </German>
-			<Russian>Наклон</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_BANK">
-			<English>Bank</English>
-			<German>Zurückneigen</German>
-			<Russian>Крен</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_ROTATE">
-			<English>Rotate</English>
-			<German>Rotieren</German>
-			<Russian>Вращение</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_DEGREES">
-			<English>Degrees</English>
-			<German>Grad</German>
-			<Russian>Градусы</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_TAB">
-			<English>Tab</English>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_SHIFT">
-			<English>Shift</English>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_ALT">
-			<English>Alt</English>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_ARROWS">
-			<English>Arrow Keys</English>
-			<German>Pfeiltasten</German>
-			<Russian>Стрелки</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_NUMPAD_ARROWS">
-			<English>Numpad Arrow Keys</English>
-			<German>Nummernpad-Pfeiltasten</German>
-			<Russian>Стрелки на цифровой клавиатуре</Russian>
-		</Key>
 		<Key ID="STR_EPOCH_ENGLISH">
 			<English>English</English>
 			<German>Englisch</German>
@@ -33867,38 +33587,6 @@
 		<Key ID="STR_EPOCH_KEYBOARD_LAYOUT">
 			<English>Keyboard Layout: %1</English>
 			<German>Tastaturbelegung: %1</German>
-		</Key>
-		<Key ID="STR_GER_EPOCH_TUT_KEY_PGUP">
-			<English>Bild Auf</English>
-			<German>Bild Auf</German>
-		</Key>
-		<Key ID="STR_GER_EPOCH_TUT_KEY_PGDN">
-			<English>Bild Ab</English>
-			<German>Bild Ab</German>
-		</Key>
-		<Key ID="STR_GER_EPOCH_TUT_KEY_CTRL">
-			<English>Strg</English>
-			<German>Strg</German>
-		</Key>
-		<Key ID="STR_GER_EPOCH_TUT_ADJ_DEGREES_KEYS">
-			<English>ß´</English>
-			<German>ß´</German>
-		</Key>
-		<Key ID="STR_ENG_EPOCH_TUT_KEY_PGUP">
-			<English>PgUp</English>
-			<German>PgUp</German>
-		</Key>
-		<Key ID="STR_ENG_EPOCH_TUT_KEY_PGDN">
-			<English>PgDn</English>
-			<German>PgDn</German>
-		</Key>
-		<Key ID="STR_ENG_EPOCH_TUT_KEY_CTRL">
-			<English>Ctrl</English>
-			<German>Ctrl</German>
-		</Key>
-		<Key ID="STR_ENG_EPOCH_TUT_ADJ_DEGREES_KEYS">
-			<English>-=</English>
-			<German>-=</German>
 		</Key>
 		<Key ID="STR_EPOCH_KEYBOARD_HANDEDNESS">
 			<English>Keyboard is now configured: %1</English>
@@ -33915,48 +33603,6 @@
 			<German>Rechtshändig</German>
 			<Russian>правшей</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_ESC">
-			<English>Esc</English>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_BACKSPACE">
-			<English>Backspace</English>
-			<German>Rücktaste</German>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_SPACEBAR">
-			<English>Space Bar</English>
-			<German>Leertaste</German>
-			<Russian>Пробел</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_SNAP_NEXT_PREV">
-			<English>Next Snap / Prev Snap</English>
-			<German>Snap Nächstes / Vorheriges Objekt</German>
-			<Russian>Точка привязки: Следующая/Предыдущая</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_HEIGHT1">
-			<English>Adjust height by 1cm</English>
-			<German>Passt die Höhe des Objektes um 1cm an.</German>
-			<Russian>Настройка высоты (1 см)</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_HEIGHT10">
-			<English>Adjust height by 10cm</English>
-			<German>Passt die Höhe des Objektes um 10cm an.</German>
-			<Russian>Настройка высоты (10 см)</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_HEIGHT100">
-			<English>Adjust height by 1m</English>
-			<German>Passt die Höhe des Objektes um 1m an.</German>
-			<Russian>Настройка высоты (100 см)</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_ADJ_DEGREES">
-			<English>Adjust Degrees</English>
-			<German>Grad anpassen</German>
-			<Russian>Настройка углов</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_LOCAL">
-			<English>Local Axis</English>
-			<German>Lokale Längsachse</German>
-			<Russian>Локальный режим</Russian>
-		</Key>
 		<Key ID="STR_EPOCH_TUT_LOCAL_ON">
 			<English>ON</English>
 			<German>AN</German>
@@ -33966,220 +33612,6 @@
 			<English>OFF</English>
 			<German>AUS</German>
 			<Russian>ВЫКЛ</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_TERRAIN">
-			<English>Terrain Align</English>
-			<German>Bodenausrichtung</German>
-			<Russian>Выровнять по поверхности</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_BOUNDARY">
-			<English>Plot Boundary</English>
-			<German>Grundstücksgrenze</German>
-			<Russian>Границы столба</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_RELEASE_HOLD">
-			<English>Release / Hold</English>
-			<German>Objekt feststellen / aufnehmen</German>
-			<Russian>Отпустить / Удерживать</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_HIDE_PANEL">
-			<English>Hide Panel</English>
-			<German>Snap-Info ausschalten</German>
-			<Russian>Скрыть подсказки</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_CANCEL">
-			<English>Cancel</English>
-			<German>Abbrechen</German>
-			<Russian>Отменить</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_RESET">
-			<English>Reset</English>
-			<German>Zurücksetzen</German>
-			<Russian>Сбросить</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_BUILD">
-			<English>Build</English>
-			<German>Bauen</German>
-			<Russian>Построить</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_BUILD_UI_SNAP">
-			<English>Snap</English>
-			<Russian>Привязка</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_ON">
-			<English>ON</English>
-			<German>AN</German>
-			<Russian>ВКЛ</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_OFF">
-			<English>OFF</English>
-			<German>AUS</German>
-			<Russian>ВЫКЛ</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_POINT_MANUAL">
-			<English>Manual</English>
-			<German>Manuell</German>
-			<Russian>В ручную</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_POINT">
-			<English>Snap Points:</English>
-			<German>Snap-Punkte:</German>
-			<Russian>Точки привязки:</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_SELECT">
-			<English>Select:</English>
-			<German>Auswahl:</German>
-			<Russian>Выбрать:</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT">
-			<English>Right</English>
-			<German>Rechts</German>
-			<Russian>Правая</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT">
-			<English>Left</English>
-			<German>Links</German>
-			<Russian>Левая</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_PIVOT">
-			<English>Pivot</English>
-			<German>Mittelpunkt</German>
-			<Russian>Центр</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_BACK">
-			<English>Back</English>
-			<German>Hinten</German>
-			<Russian>Задняя</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT">
-			<English>Front</English>
-			<German>Vorne</German>
-			<Russian>Передняя</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_BOTTOM">
-			<English>Bottom</English>
-			<German>Boden</German>
-			<Russian>Нижняя</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_TOP">
-			<English>Top</English>
-			<German>Spitze</German>
-			<Russian>Верхняя</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_CENTER">
-			<English>Back Center</English>
-			<German>Hinten Mitte</German>
-			<Russian>Задняя в центре</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_LEFT">
-			<English>Back Left</English>
-			<German>Hinten Links</German>
-			<Russian>Задняя левая</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_RIGHT">
-			<English>Back Right</English>
-			<German>Hinten Rechts</German>
-			<Russian>Задняя правая</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_TOP">
-			<English>Back Top</English>
-			<German>Hinten Oben</German>
-			<Russian>Задняя верхняя</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_TOP">
-			<English>Front Top</English>
-			<German>Vorne Oben</German>
-			<Russian>Передняя верхняя</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_CENTER">
-			<English>Front Center</English>
-			<German>Vorne Mitte</German>
-			<Russian>Передняя в центре</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_LEFT">
-			<English>Front Left</English>
-			<German>Vorne Links</German>
-			<Russian>Передняя левая</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_RIGHT">
-			<English>Front Right</English>
-			<German>Vorne Rechts</German>
-			<Russian>Передняя правая</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_CENTER">
-			<English>Left Center</English>
-			<German>Linke Mitte</German>
-			<Russian>Левая в центре</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_BACK">
-			<English>Left Back</English>
-			<German>Links Hinten</German>
-			<Russian>Левая задняя</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_FRONT">
-			<English>Left Front</English>
-			<German>Links Vorne</German>
-			<Russian>Левая передняя</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_CENTER">
-			<English>Right Center</English>
-			<German>Rechte Mitte</German>
-			<Russian>Правая в центре</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_BACK">
-			<English>Right Back</English>
-			<German>Rechts Hinten</German>
-			<Russian>Правая задняя</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_FRONT">
-			<English>Right Front</English>
-			<German>Rechts Vorne</German>
-			<Russian>Правая передняя</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_ACTION_VECTORS">
-			<English>Vectors:</English>
-			<German>Vektoren:</German>
-			<Russian>Векторы:</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_VECTORS_PITCH_FORWARD">
-			<English>Pitch Forward</English>
-			<German>Nach vorne neigen</German>
-			<Russian>Наклонить вперёд</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_VECTORS_PITCH_BACK">
-			<English>Pitch Back</English>
-			<German>Nach hinten neigen</German>
-			<Russian>Наклонить назад</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_VECTORS_BANK_LEFT">
-			<English>Bank Left</English>
-			<German>Nach links neigen</German>
-			<Russian>Наклонить влево</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_VECTORS_BANK_RIGHT">
-			<English>Bank Right</English>
-			<German>Nach rechts neigen</German>
-			<Russian>Наклонить вправо</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_VECTORS_RESET">
-			<English>Reset</English>
-			<German>Zurücksetzen</German>
-			<Russian>Сбросить</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_VECTORS_CLOSE">
-			<English>CLOSE</English>
-			<German>Schließen</German>
-			<Russian>Закрыть</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_VECTORS_OPEN">
-			<English>OPEN</English>
-			<German>Öffnen</German>
-			<Russian>Открыть</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_VECTORS_DEGREES">
-			<English>DEGREES:</English>
-			<German>Grad:</German>
-			<Russian>Углы:</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LOOT_TEXT">
 			<English>Display Loot Text: %1</English>
@@ -35224,16 +34656,6 @@
 			<English>Server Settings</English>
 			<German>Servereinstellungen</German>
 			<Russian>Настройки сервера</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_JOURNAL_BASE">
-			<English>Indestructible Bases</English>
-			<German>Unzerstörbare Basen</German>
-			<Russian>Неразрушаемые базы</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_JOURNAL_PLOT">
-			<English>Plot Poles</English>
-			<German>Grundstücksmarkierungen</German>
-			<Russian>Строительные столбы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_BUILDINGLIMIT">
 			<English>Build Limit</English>
@@ -36490,61 +35912,6 @@
 			<German>%1 dekonstruieren</German>
 			<Dutch>Deconstrueren %1</Dutch>
 		</Key>
-		<Key ID="STR_EPOCH_BUILD_MOVE_TOO_FAR">
-			<English>You moved too far!</English>
-			<German>Du hast dich zu weit weg bewegt!</German>
-			<Russian>Вы ушли слишком далеко!</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_BUILD_OBJ_MOVE_TOO_FAR">
-			<English>Object moved too far!</English>
-			<German>Objekt zu weit weg!</German>
-			<Russian>Объект перемещён слишком далеко!</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_BUILD_MOVE_TOO_FAST">
-			<English>You moved too fast!</English>
-			<German>Du hast dich zu schnell bewegt!</German>
-			<Russian>Вы ушли слишком быстро!</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_COLLISION_01">
-			<English>You let go of the %1.</English>
-			<German>Du hast dich zu schnell bewegt!</German>
-			<Russian>Вы отпустили %1.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_01">
-			<English>%1 cannot be placed %2.</English>
-			<German>%1 kann nicht %2 platziert werden.</German>
-			<Russian>Нельзя разместить %1 %2.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_02">
-			<English>below ground</English>
-			<German>unter der Erde</German>
-			<Russian>ниже уровня земли</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_03">
-			<English>below sea level</English>
-			<German>unter Wasser</German>
-			<Russian>ниже уровня воды</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_BUILD_FAIL_WATER">
-			<English>You are not allowed to build over sea water.</English>
-			<German>Du kannst nicht auf dem Wasser bauen!</German>
-			<Russian>Строительство над водой запрещено!</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_BEWARE_RISING_TIDE">
-			<English>&lt;br/&gt;** Beware! This location may be flooded during high tide. **</English>
-			<German>&lt;br/&gt;** Vorsicht! Diese Position kann bei Flut unter Wasser stehen. **</German>
-			<Russian>&lt;br/&gt;** Внимание! Это место может быть затоплено во время прилива. **</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_RES_ZONE">
-			<English>You cannot build within %1m of %2.&lt;br/&gt;Current distance: %3 meters.</English>
-			<German>Du kannst nicht innerhalb von %1m zu %2.&lt;br/&gt;Derzeitige Distanz: %3 Meter.</German>
-			<Russian>Нельзя строить вблизи %1 м от %2.&lt;br/&gt;Текущая дистанция: %3 м.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_RES_BUILDING">
-			<English>You cannot build within %1m of a %2.</English>
-			<German>Du kannst nicht innerhalb von %1m zu %2 bauen.</German>
-			<Russian>Нельзя строить вблизи %1 м от %2.</Russian>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBF">
 			<English>Craft Heavy Bag Fence</English>
 			<German>Schweren Sandsackzaun herstellen</German>
@@ -37560,6 +36927,969 @@
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
+		</Key>
+	</Package>
+	<Package name="Base">
+		<!-- Build validation -->
+		<Key ID="STR_BASE_BUILD_TOO_CLOSE_TO_EXISTING_BASE">
+			<English>You cannot build a base within %1m of an existing base.</English>
+			<German>Du kannst keine Basis innerhalb von %1m einer bestehenden Basis bauen.</German>
+			<Russian>Нельзя построить базу в радиусе %1 м от существующей базы.</Russian>
+			<Dutch>Kan geen basis bouwen binnen %1m van een bestaande basis.</Dutch>
+			<French>Impossible de construire une base à moins de %1m d'une base existante.</French>
+			<Czech>Nelze postavit základnu ve vzdálenosti %1 metrů od jiné základny.</Czech>
+		</Key>
+		<Key ID="STR_BASE_BUILD_LIMIT_REACHED">
+			<English>You can only own %1 base(s)</English>
+			<German>Du kannst nur %1 Basis/Basen besitzen.</German>
+			<Russian>Вы можете владеть только %1 базой/базами.</Russian>
+		</Key>
+		<Key ID="STR_BASE_BUILD_ACCESS_DENIED">
+			<English>You do not have access to build in this base.</English>
+			<German>Du darfst in dieser Basis nichts bauen, da du kein eingetragener Eigentümer bist.</German>
+			<Russian>Вы не можете строить на этой базе, так как не являетесь её владельцем.</Russian>
+		</Key>
+		<Key ID="STR_BASE_BUILD_BASE_REQUIRED">
+			<English>This item needs a base within %1 meters</English>
+			<German>Dieses Gebäude benötigt eine Basis innerhalb von %1 Metern.</German>
+			<Russian>Требуется база в радиусе %1 м.</Russian>
+			<Dutch>Dit gebouw heeft een basis binnen %1 meter nodig.</Dutch>
+			<French>Ce bâtiment nécessite une base à moins de %1 mètres</French>
+			<Czech>Tato budova potřebuje základnu v dosahu %1 metrů.</Czech>
+		</Key>
+		<Key ID="STR_BASE_BUILD_TOO_MANY_BASES">
+			<English>This item has too many bases within %1 meters</English>
+		</Key>
+
+		<!-- Management -->
+		<Key ID="STR_BASE_MANAGEMENT_ACTION">
+			<English>Manage Base</English>
+			<German>Basis verwalten</German>
+			<Russian>Управление базой</Russian>
+		</Key>
+		<Key ID="STR_BASE_MANAGEMENT_BOUNDARY_DOME">
+			<English>Dome</English>
+			<German>Kuppel</German>
+			<Russian>База</Russian>
+			<Spanish>Cúpula</Spanish>
+			<French>Dôme</French>
+			<Czech>Kupole</Czech>
+		</Key>
+		<Key ID="STR_BASE_MANAGEMENT_FRIEND_ALREADY_ADDED">
+			<English>That user is already on the list.</English>
+			<Russian>Уже в списке доступа.</Russian>
+			<German>Dein Freund ist bereits auf der Liste.</German>
+		</Key>
+		<Key ID="STR_BASE_MANAGEMENT_FRIEND_LIMIT_REACHED">
+			<English>Only %1 friends are allowed.</English>
+			<Russian>Можно добавить друзей: %1</Russian>
+			<German>Nur %1 Freunde erlaubt.</German>
+		</Key>
+		<Key ID="STR_BASE_MANAGEMENT_OWNER_REMOVE_DENIED">
+			<English>You can't remove the base owner.</English>
+			<German>Du kannst den Besitzer der Basis nicht entfernen.</German>
+			<Russian>Нельзя удалить владельца базы.</Russian>
+		</Key>
+		<Key ID="STR_BASE_MANAGEMENT_ACCESS_DENIED">
+			<English>You do not have the rights to manage this base.</English>
+			<German>Du darfst diese Basis nicht verwalten.</German>
+			<Russian>У вас нет прав на управление этой базой.</Russian>
+		</Key>
+		<Key ID="STR_BASE_MANAGEMENT_SHOW_BOUNDARY">
+			<English>Show base boundary</English>
+			<German>Basisgrenze anzeigen</German>
+			<Russian>Показать границы базы</Russian>
+		</Key>
+		<Key ID="STR_BASE_MANAGEMENT_TITLE">
+			<English>Base Management</English>
+			<German>Basis verwalten</German>
+			<Russian>Управление базой</Russian>
+		</Key>
+		<Key ID="STR_BASE_MANAGEMENT_FRIENDS">
+			<English>Base Friends</English>
+			<German>Basisfreunde</German>
+			<Russian>Друзья базы</Russian>
+		</Key>
+
+		<!-- Maintenance -->
+		<Key ID="STR_BASE_MAINTENANCE_ACTION">
+			<English>Maintain</English>
+			<German>Sanieren</German>
+			<Russian>Обслужить</Russian>
+			<Spanish>Mantener</Spanish>
+			<Dutch>Onderhoud</Dutch>
+			<French>Maintenir</French>
+			<Czech>Opravit</Czech>
+		</Key>
+		<Key ID="STR_BASE_MAINTENANCE_FORCE_ACTION">
+			<English>Force Maintain</English>
+			<German>Alles Sanieren</German>
+			<Russian>Принудительно обслужить</Russian>
+		</Key>
+		<Key ID="STR_BASE_MAINTENANCE_NOT_REQUIRED">
+			<English>Objects to maintain: 0, No maintenance required.</English>
+			<German>Objekte zum Sanieren: 0, Keine Sanierung notwendig.</German>
+			<Russian>Объектов для обслуживания: 0, обслуживание не требуется.</Russian>
+		</Key>
+		<Key ID="STR_BASE_MAINTENANCE_PRICE">
+			<English>Price to maintain %1 objects: %2 %3</English>
+			<German>Preis zum Sanieren von %1 Objekt(en): %2 %3</German>
+			<Russian>Объектов для обслуживания: %1, стоимость %2 %3.</Russian>
+		</Key>
+		<Key ID="STR_BASE_MAINTENANCE_SUCCESS">
+			<English>Success! %1 objects maintained for %2 %3</English>
+			<German>Du hast %1 Objekt(e) erfolgreich saniert für %2 %3</German>
+			<Russian>Успешно! Обслужено объектов: %1 за %2 %3</Russian>
+		</Key>
+		<Key ID="STR_BASE_MAINTENANCE_FORCE_PRICE">
+			<English>Price to force maintain %1 objects: %2 %3</English>
+			<German>Sanieren erzwingen: Preis für %1 Objekt(e): %2 %3</German>
+			<Russian>Принудительное обслуживание объектов: %1 шт. за %2 %3.</Russian>
+		</Key>
+		<Key ID="STR_BASE_MAINTENANCE_FAILED">
+			<English>Failed to maintain %1 objects. You need %2 %3</English>
+			<German>Sanieren von %1 Objekt(en) fehlgeschlagen. Du brauchst %2 %3</German>
+			<Russian>Неудача! Вам нужно %2 %3.</Russian>
+		</Key>
+
+		<!-- Journal -->
+		<Key ID="STR_BASE_JOURNAL_GOD_MODE">
+			<English>Indestructible Bases</English>
+			<German>Unzerstörbare Basen</German>
+			<Russian>Неразрушаемые базы</Russian>
+		</Key>
+		<Key ID="STR_BASE_JOURNAL_BASE_LIMIT">
+			<English>Bases</English>
+			<German>Basen</German>
+			<Russian>Базы</Russian>
+		</Key>
+	</Package>
+	<Package name="Snapping">
+		<!-- State and modes -->
+		<Key ID="STR_SNAPPING_STATE_OFF">
+			<English>OFF</English>
+			<German>AUS</German>
+			<Russian>ВЫКЛ</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_STATE_ON">
+			<English>ON</English>
+			<German>AN</German>
+			<Russian>ВКЛ</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINTS_LABEL">
+			<English>Snap Points:</English>
+			<German>Snap-Punkte:</German>
+			<Russian>Точки привязки:</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_MODE_AUTOMATIC">
+			<English>Auto</English>
+			<Russian>Автоматически</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_MODE_MANUAL">
+			<English>Manual</English>
+			<German>Manuell</German>
+			<Russian>В ручную</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_SELECTION_LABEL">
+			<English>Select:</English>
+			<German>Auswahl:</German>
+			<Russian>Выбрать:</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_UI_SNAP_LABEL">
+			<English>Snap</English>
+			<Russian>Привязка</Russian>
+		</Key>
+
+		<!-- Snap point labels -->
+		<Key ID="STR_SNAPPING_POINT_BACK">
+			<English>Back</English>
+			<German>Hinten</German>
+			<Russian>Задняя</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_BACK_CENTER">
+			<English>Back Center</English>
+			<German>Hinten Mitte</German>
+			<Russian>Задняя в центре</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_BACK_LEFT">
+			<English>Back Left</English>
+			<German>Hinten Links</German>
+			<Russian>Задняя левая</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_BACK_RIGHT">
+			<English>Back Right</English>
+			<German>Hinten Rechts</German>
+			<Russian>Задняя правая</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_BACK_TOP">
+			<English>Back Top</English>
+			<German>Hinten Oben</German>
+			<Russian>Задняя верхняя</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_BOTTOM">
+			<English>Bottom</English>
+			<German>Boden</German>
+			<Russian>Нижняя</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_FRONT">
+			<English>Front</English>
+			<German>Vorne</German>
+			<Russian>Передняя</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_FRONT_CENTER">
+			<English>Front Center</English>
+			<German>Vorne Mitte</German>
+			<Russian>Передняя в центре</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_FRONT_LEFT">
+			<English>Front Left</English>
+			<German>Vorne Links</German>
+			<Russian>Передняя левая</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_FRONT_RIGHT">
+			<English>Front Right</English>
+			<German>Vorne Rechts</German>
+			<Russian>Передняя правая</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_FRONT_TOP">
+			<English>Front Top</English>
+			<German>Vorne Oben</German>
+			<Russian>Передняя верхняя</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_LEFT">
+			<English>Left</English>
+			<German>Links</German>
+			<Russian>Левая</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_LEFT_BACK">
+			<English>Left Back</English>
+			<German>Links Hinten</German>
+			<Russian>Левая задняя</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_LEFT_CENTER">
+			<English>Left Center</English>
+			<German>Linke Mitte</German>
+			<Russian>Левая в центре</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_LEFT_FRONT">
+			<English>Left Front</English>
+			<German>Links Vorne</German>
+			<Russian>Левая передняя</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_PIVOT">
+			<English>Pivot</English>
+			<German>Mittelpunkt</German>
+			<Russian>Центр</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_RIGHT">
+			<English>Right</English>
+			<German>Rechts</German>
+			<Russian>Правая</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_RIGHT_BACK">
+			<English>Right Back</English>
+			<German>Rechts Hinten</German>
+			<Russian>Правая задняя</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_RIGHT_CENTER">
+			<English>Right Center</English>
+			<German>Rechte Mitte</German>
+			<Russian>Правая в центре</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_RIGHT_FRONT">
+			<English>Right Front</English>
+			<German>Rechts Vorne</German>
+			<Russian>Правая передняя</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_POINT_TOP">
+			<English>Top</English>
+			<German>Spitze</German>
+			<Russian>Верхняя</Russian>
+		</Key>
+
+		<!-- Status labels -->
+		<Key ID="STR_SNAPPING_STATE_DISABLED">
+			<English>Disabled</English>
+			<German>Deaktiviert</German>
+			<Russian>Отключено</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_STATUS_DISTANCE_FROM_BASE">
+			<English>Distance from base</English>
+			<German>Distanz zur Basis</German>
+			<Russian>Расстояние от базы</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_STATUS_RADIUS">
+			<English>Radius</English>
+			<Russian>Радиус</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_STATUS_MODE">
+			<English>Snapping</English>
+			<Russian>Привязка</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_STATUS_DEGREES">
+			<English>Degrees</English>
+			<German>Grad</German>
+			<Russian>Градусы</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_STATUS_PITCH">
+			<English>Pitch</English>
+			<German>Vorneigen </German>
+			<Russian>Наклон</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_STATUS_BANK">
+			<English>Bank</English>
+			<German>Zurückneigen</German>
+			<Russian>Крен</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_STATUS_ROTATION">
+			<English>Rotate</English>
+			<German>Rotieren</German>
+			<Russian>Вращение</Russian>
+		</Key>
+
+		<!-- Help panel -->
+		<Key ID="STR_SNAPPING_HELP_ADJUST_DEGREES">
+			<English>Adjust Degrees</English>
+			<German>Grad anpassen</German>
+			<Russian>Настройка углов</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_BASE_BOUNDARY">
+			<English>Base Boundary</English>
+			<German>Basisgrenze</German>
+			<Russian>Границы базы</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_BUILD">
+			<English>Build</English>
+			<German>Bauen</German>
+			<Russian>Построить</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_CANCEL">
+			<English>Cancel</English>
+			<German>Abbrechen</German>
+			<Russian>Отменить</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_ADJUST_HEIGHT_1CM">
+			<English>Adjust height by 1cm</English>
+			<German>Passt die Höhe des Objektes um 1cm an.</German>
+			<Russian>Настройка высоты (1 см)</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_ADJUST_HEIGHT_10CM">
+			<English>Adjust height by 10cm</English>
+			<German>Passt die Höhe des Objektes um 10cm an.</German>
+			<Russian>Настройка высоты (10 см)</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_ADJUST_HEIGHT_1M">
+			<English>Adjust height by 1m</English>
+			<German>Passt die Höhe des Objektes um 1m an.</German>
+			<Russian>Настройка высоты (100 см)</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_HIDE_PANEL">
+			<English>Hide Panel</English>
+			<German>Snap-Info ausschalten</German>
+			<Russian>Скрыть подсказки</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_LOCAL_AXIS">
+			<English>Local Axis</English>
+			<German>Lokale Längsachse</German>
+			<Russian>Локальный режим</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_RELEASE_HOLD">
+			<English>Release / Hold</English>
+			<German>Objekt feststellen / aufnehmen</German>
+			<Russian>Отпустить / Удерживать</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_RESET">
+			<English>Reset</English>
+			<German>Zurücksetzen</German>
+			<Russian>Сбросить</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_NEXT_PREVIOUS_POINT">
+			<English>Next Snap / Prev Snap</English>
+			<German>Snap Nächstes / Vorheriges Objekt</German>
+			<Russian>Точка привязки: Следующая/Предыдущая</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_HELP_TERRAIN_ALIGNMENT">
+			<English>Terrain Align</English>
+			<German>Bodenausrichtung</German>
+			<Russian>Выровнять по поверхности</Russian>
+		</Key>
+
+		<!-- Key labels -->
+		<Key ID="STR_SNAPPING_KEY_ALT">
+			<English>Alt</English>
+		</Key>
+		<Key ID="STR_SNAPPING_KEY_ARROW_KEYS">
+			<English>Arrow Keys</English>
+			<German>Pfeiltasten</German>
+			<Russian>Стрелки</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_KEY_BACKSPACE">
+			<English>Backspace</English>
+			<German>Rücktaste</German>
+		</Key>
+		<Key ID="STR_SNAPPING_KEY_ESCAPE">
+			<English>Esc</English>
+		</Key>
+		<Key ID="STR_SNAPPING_KEY_NUMPAD_ARROW_KEYS">
+			<English>Numpad Arrow Keys</English>
+			<German>Nummernpad-Pfeiltasten</German>
+			<Russian>Стрелки на цифровой клавиатуре</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_KEY_SHIFT">
+			<English>Shift</English>
+		</Key>
+		<Key ID="STR_SNAPPING_KEY_SPACE_BAR">
+			<English>Space Bar</English>
+			<German>Leertaste</German>
+			<Russian>Пробел</Russian>
+		</Key>
+		<Key ID="STR_SNAPPING_KEY_TAB">
+			<English>Tab</English>
+		</Key>
+
+		<!-- Keyboard layouts -->
+		<Key ID="STR_SNAPPING_KEYBOARD_ENGLISH_ADJUST_DEGREES_KEYS">
+			<English>-=</English>
+			<German>-=</German>
+		</Key>
+		<Key ID="STR_SNAPPING_KEYBOARD_ENGLISH_CTRL">
+			<English>Ctrl</English>
+			<German>Ctrl</German>
+		</Key>
+		<Key ID="STR_SNAPPING_KEYBOARD_ENGLISH_PAGE_DOWN">
+			<English>PgDn</English>
+			<German>PgDn</German>
+		</Key>
+		<Key ID="STR_SNAPPING_KEYBOARD_ENGLISH_PAGE_UP">
+			<English>PgUp</English>
+			<German>PgUp</German>
+		</Key>
+		<Key ID="STR_SNAPPING_KEYBOARD_GERMAN_ADJUST_DEGREES_KEYS">
+			<English>ß´</English>
+			<German>ß´</German>
+		</Key>
+		<Key ID="STR_SNAPPING_KEYBOARD_GERMAN_CTRL">
+			<English>Strg</English>
+			<German>Strg</German>
+		</Key>
+		<Key ID="STR_SNAPPING_KEYBOARD_GERMAN_PAGE_DOWN">
+			<English>Bild Ab</English>
+			<German>Bild Ab</German>
+		</Key>
+		<Key ID="STR_SNAPPING_KEYBOARD_GERMAN_PAGE_UP">
+			<English>Bild Auf</English>
+			<German>Bild Auf</German>
+		</Key>
+	</Package>
+	<Package name="VectorBuilding">
+		<!-- Menu -->
+		<Key ID="STR_VECTOR_BUILDING_MENU_TITLE">
+			<English>Vectors:</English>
+			<German>Vektoren:</German>
+			<Russian>Векторы:</Russian>
+		</Key>
+		<Key ID="STR_VECTOR_BUILDING_MENU_OPEN">
+			<English>OPEN</English>
+			<German>Öffnen</German>
+			<Russian>Открыть</Russian>
+		</Key>
+		<Key ID="STR_VECTOR_BUILDING_MENU_CLOSE">
+			<English>CLOSE</English>
+			<German>Schließen</German>
+			<Russian>Закрыть</Russian>
+		</Key>
+
+		<!-- Rotation actions -->
+		<Key ID="STR_VECTOR_BUILDING_ROTATION_PITCH_FORWARD">
+			<English>Pitch Forward</English>
+			<German>Nach vorne neigen</German>
+			<Russian>Наклонить вперёд</Russian>
+		</Key>
+		<Key ID="STR_VECTOR_BUILDING_ROTATION_PITCH_BACK">
+			<English>Pitch Back</English>
+			<German>Nach hinten neigen</German>
+			<Russian>Наклонить назад</Russian>
+		</Key>
+		<Key ID="STR_VECTOR_BUILDING_ROTATION_BANK_LEFT">
+			<English>Bank Left</English>
+			<German>Nach links neigen</German>
+			<Russian>Наклонить влево</Russian>
+		</Key>
+		<Key ID="STR_VECTOR_BUILDING_ROTATION_BANK_RIGHT">
+			<English>Bank Right</English>
+			<German>Nach rechts neigen</German>
+			<Russian>Наклонить вправо</Russian>
+		</Key>
+		<Key ID="STR_VECTOR_BUILDING_ROTATION_YAW_LEFT">
+			<English>Yaw Left</English>
+			<German>Nach links drehen</German>
+			<Russian>Повернуть влево</Russian>
+		</Key>
+		<Key ID="STR_VECTOR_BUILDING_ROTATION_YAW_RIGHT">
+			<English>Yaw Right</English>
+			<German>Nach rechts drehen</German>
+			<Russian>Повернуть вправо</Russian>
+		</Key>
+		<Key ID="STR_VECTOR_BUILDING_ROTATION_RESET">
+			<English>Reset</English>
+			<German>Zurücksetzen</German>
+			<Russian>Сбросить</Russian>
+		</Key>
+
+		<!-- Degree selection -->
+		<Key ID="STR_VECTOR_BUILDING_DEGREE_LABEL">
+			<English>DEGREES:</English>
+			<German>Grad:</German>
+			<Russian>Углы:</Russian>
+		</Key>
+		<Key ID="STR_VECTOR_BUILDING_DEGREE_SELECTION_LABEL">
+			<English>Select:</English>
+			<German>Auswahl:</German>
+			<Russian>Выбрать:</Russian>
+		</Key>
+
+		<!-- Helper directions -->
+		<Key ID="STR_VECTOR_BUILDING_HELPER_LEFT">
+			<English>Left</English>
+			<German>Links</German>
+			<Russian>Левая</Russian>
+		</Key>
+		<Key ID="STR_VECTOR_BUILDING_HELPER_RIGHT">
+			<English>Right</English>
+			<German>Rechts</German>
+			<Russian>Правая</Russian>
+		</Key>
+	</Package>
+	<Package name="Build">
+		<!-- Lifecycle -->
+		<Key ID="STR_BUILD_ALREADY_IN_PROGRESS">
+			<English>Building already in progress.</English>
+			<German>Bau bereits im Gange.</German>
+			<Russian>Уже строится.</Russian>
+			<Dutch>Je bent al aan het bouwen.</Dutch>
+			<French>La construction est déjà en cours.</French>
+			<Czech>Stavba již probíhá.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_CANCELLED">
+			<English>Canceled building.</English>
+			<German>Bau abgebrochen.</German>
+			<Russian>Строительство отменено.</Russian>
+			<Dutch>Het bouwen is gestopt</Dutch>
+			<French>Construction annulée</French>
+			<Czech>Stavba zrušena.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_CANCELLED_WITH_REASON">
+			<English>Canceled construction of %1.&lt;br/&gt;%2</English>
+			<German>Bau von %1 abgebrochen.&lt;br/&gt;%2</German>
+			<Russian>Отменено строительство %1.&lt;br/&gt;%2</Russian>
+			<Dutch>Gestopt met het bouwen van %1.&lt;br/&gt;%2</Dutch>
+			<French>La construction de %1 est annulée.&lt;br/&gt;%2</French>
+			<Czech>Stavba %1 byla zrušena.&lt;br/&gt;%2</Czech>
+		</Key>
+		<Key ID="STR_BUILD_PROGRESS">
+			<English>Constructing %1 stage %2 of %3, move to cancel.</English>
+			<German>Konstruieren von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
+			<Russian>Строительство: %1, стадия %2 / %3. Двигайтесь для отмены.</Russian>
+			<Dutch>Bezig met de bouw van %1 (stap %2 van %3), beweeg om te annuleren</Dutch>
+			<French>Construction de %1 (étape %2 sur %3), déplacez vous pour annuler.</French>
+			<Czech>Stavím %1 fáze %2 z %3, pohněte se pro zrušení.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_COMPLETED">
+			<English>You have constructed a %1</English>
+			<German>%1 wurde erfolgreich aufgebaut.</German>
+			<Russian>Вы построили %1.</Russian>
+			<Spanish>Construiste un %1</Spanish>
+			<French>Vous avez construit un(e) %1</French>
+			<Czech>Postavili jste %1</Czech>
+		</Key>
+		<Key ID="STR_BUILD_COMPLETED_WITH_COMBINATION">
+			<English>You have setup your %2. The combination is %1</English>
+			<German>Du hast erfolgreich ein(e) %2 aufgebaut. Die Kombination lautet: %1</German>
+			<Russian>Вы установили: %2. Комбинация %1.</Russian>
+			<Dutch>Je hebt je %2 geplaatst. De combinatie is %1</Dutch>
+			<French>Vous avez installé votre %2. La combinaison est %1</French>
+			<Czech>Nastavil jste Vaši %2. Kombinace je %1</Czech>
+		</Key>
+		<Key ID="STR_BUILD_FAILED">
+			<English>Construction failed. The building item was returned.</English>
+			<German>Der Bau ist fehlgeschlagen. Das Baumaterial wurde zurückgegeben.</German>
+			<Russian>Строительство не удалось. Предмет для строительства был возвращён.</Russian>
+			<Dutch>De bouw is mislukt. Het bouwitem is teruggegeven.</Dutch>
+			<French>La construction a échoué. L'objet de construction a été rendu.</French>
+			<Czech>Stavba se nezdařila. Stavební předmět byl vrácen.</Czech>
+		</Key>
+
+		<!-- Player state validation -->
+		<Key ID="STR_BUILD_VALIDATION_PLAYER_IN_WATER">
+			<English>You cannot do this while you are in the water.</English>
+			<German>Das kannst du nicht, während du im Wasser schwimmst.</German>
+			<Russian>Это действие невозможно пока вы в воде.</Russian>
+			<Spanish>No puedes hacer esto mientras estás en el agua.</Spanish>
+			<French>Vous ne pouvez pas faire cela lorsque vous êtes dans l&apos;eau.</French>
+			<Czech>Tuto akci nelze provést, pokud jste ve vodě.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_PLAYER_ON_LADDER">
+			<English>You cannot do this while you are on a ladder.</English>
+			<German>Das kannst du nicht, während du dich an einer Leiter festhältst.</German>
+			<Russian>Вы не можете этого делать, пока поднимаетесь по лестнице.</Russian>
+			<Spanish>No puedes hacer esto mientras estás en una escalera</Spanish>
+			<French>Vous ne pouvez pas faire cela en étant sur une échelle.</French>
+			<Czech>Akci nelze provést, jelikož jste na žebříku.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_PLAYER_IN_COMBAT">
+			<English>You cannot build while in combat.</English>
+			<German>Während eines Kampfes kannst du nichts bauen.</German>
+			<Russian>Нельзя строить во время боя.</Russian>
+			<Dutch>Bouwen is niet mogelijk tijdens een conflictsituatie.</Dutch>
+			<French>Impossible de construire en combat.</French>
+			<Czech>Nelze stavět v boji.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_PLAYER_IN_VEHICLE">
+			<English>You cannot build while in a vehicle.</English>
+			<German>Du kannst nichts bauen, während du dich in einem Fahrzeug befindest.</German>
+			<Russian>Нельзя строить находясь в транспорте.</Russian>
+			<Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
+			<French>Impossible de construire à bord d'un véhicule.</French>
+			<Czech>Nelze stavět, pokud jste ve vozidle.</Czech>
+		</Key>
+
+		<!-- Placement validation -->
+		<Key ID="STR_BUILD_VALIDATION_COLLISION_RELEASED">
+			<English>You let go of the %1.</English>
+			<German>Du hast dich zu schnell bewegt!</German>
+			<Russian>Вы отпустили %1.</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_ROAD">
+			<English>You cannot build on a road.</English>
+			<German>Du kannst nicht auf einer Straße bauen.</German>
+			<Russian>Нельзя строить на дороге.</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_SEA_WATER">
+			<English>You are not allowed to build over sea water.</English>
+			<German>Du kannst nicht auf dem Wasser bauen!</German>
+			<Russian>Строительство над водой запрещено!</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_OUTSIDE_MAP">
+			<English>You cannot build outside the map extents.</English>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_PLAYER_MOVED_TOO_FAST">
+			<English>You moved too fast!</English>
+			<German>Du hast dich zu schnell bewegt!</German>
+			<Russian>Вы ушли слишком быстро!</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_PLAYER_MOVED_TOO_FAR">
+			<English>You moved too far!</English>
+			<German>Du hast dich zu weit weg bewegt!</German>
+			<Russian>Вы ушли слишком далеко!</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_OBJECT_MOVED_TOO_FAR">
+			<English>Object moved too far!</English>
+			<German>Objekt zu weit weg!</German>
+			<Russian>Объект перемещён слишком далеко!</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_SAFE_ZONE_DISTANCE">
+			<English>You can't build a %1 within %2 meters of a safe zone.</English>
+			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einer Safe Zone.</German>
+			<Russian>Нельзя построить %1 в %2 м от безопасной зоны.</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_OBJECT_DISTANCE">
+			<English>You can't build a %1 within %2 meters of a %3.</English>
+			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einem Objekt (%3).</German>
+			<Russian>Нельзя построить %1 в %2 м от %3.</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_OBJECT_LIMIT">
+			<English>You cannot build. There are too many objects within %1m.</English>
+			<German>Bau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
+			<Russian>Отменено. В радиусе %1 м слишком много объектов.</Russian>
+			<Dutch>Kan niet bouwen, teveel objecten binnen %1.</Dutch>
+			<French>Impossible de construire, il y a trop d'objets à moins de %1m.</French>
+			<Czech>Nelze postavit, v okruhu %1m je přiliš mnoho předmětů.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_HEIGHT_LIMIT">
+			<English>Building is restricted above %1 meter(s).</English>
+			<German>Das Bauen ist auf eine Höhe von %1 Metern begrenzt.</German>
+			<Russian>Высота строительства ограничена %1 м.</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_RESTRICTED_BUILDING_DISTANCE">
+			<English>You cannot build within %1m of a %2.</English>
+			<German>Du kannst nicht innerhalb von %1m zu %2 bauen.</German>
+			<Russian>Нельзя строить вблизи %1 м от %2.</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_RESTRICTED_ZONE_DISTANCE">
+			<English>You cannot build within %1m of %2.&lt;br/&gt;Current distance: %3 meters.</English>
+			<German>Du kannst nicht innerhalb von %1m zu %2.&lt;br/&gt;Derzeitige Distanz: %3 Meter.</German>
+			<Russian>Нельзя строить вблизи %1 м от %2.&lt;br/&gt;Текущая дистанция: %3 м.</Russian>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_TRADER_NEARBY">
+			<English>You are not allowed to build here. A trader is nearby.</English>
+			<German>Du kannst hier nicht bauen. Ein Händler ist in der Nähe.</German>
+			<Russian>Вам запрещено строить здесь, торговец рядом.</Russian>
+			<Dutch>Bouwen niet mogelijk, handelaar in de buurt.</Dutch>
+			<French>Impossible de construire, un commerçant est trop proche.</French>
+			<Czech>Nemůžete stavět, obchodník je poblíž.</Czech>
+		</Key>
+
+		<!-- Environment and underground placement -->
+		<Key ID="STR_BUILD_ENVIRONMENT_HIGH_TIDE_WARNING">
+			<English>&lt;br/&gt;** Beware! This location may be flooded during high tide. **</English>
+			<German>&lt;br/&gt;** Vorsicht! Diese Position kann bei Flut unter Wasser stehen. **</German>
+			<Russian>&lt;br/&gt;** Внимание! Это место может быть затоплено во время прилива. **</Russian>
+		</Key>
+		<Key ID="STR_BUILD_PLACEMENT_UNDERGROUND_DENIED">
+			<English>%1 cannot be placed %2.</English>
+			<German>%1 kann nicht %2 platziert werden.</German>
+			<Russian>Нельзя разместить %1 %2.</Russian>
+		</Key>
+		<Key ID="STR_BUILD_PLACEMENT_BELOW_GROUND">
+			<English>below ground</English>
+			<German>unter der Erde</German>
+			<Russian>ниже уровня земли</Russian>
+		</Key>
+		<Key ID="STR_BUILD_PLACEMENT_BELOW_SEA_LEVEL">
+			<English>below sea level</English>
+			<German>unter Wasser</German>
+			<Russian>ниже уровня воды</Russian>
+		</Key>
+
+		<!-- Upgrade -->
+		<Key ID="STR_BUILD_UPGRADE_ACTION">
+			<English>Upgrade %1</English>
+			<Russian>Улучшить %1</Russian>
+			<French>Améliorer la %1</French>
+			<Czech>Vylepšit %1</Czech>
+			<German>%1 erweitern</German>
+		</Key>
+		<Key ID="STR_BUILD_UPGRADE_ALREADY_IN_PROGRESS">
+			<English>Upgrade is already in progress.</English>
+			<German>Upgrade bereits im Gange.</German>
+			<Russian>Уже улучшается.</Russian>
+			<Dutch>Je bent al aan het upgraden.</Dutch>
+			<French>L'amélioration est déjà en cours.</French>
+			<Czech>Upgrade již probíhá.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_UPGRADE_OBJECT_NOT_FOUND">
+			<English>You must be looking at the item to interact with it.</English>
+			<Russian>Вы должны смотреть на предмет, чтобы взаимодействовать с ним.</Russian>
+			<French>Vous devez également regarder l'élément avec lui.</French>
+			<Czech>Musíte se dívat na tento produkt příliš komunikovat s ním.</Czech>
+			<German>Du musst auf den Gegenstand schauen, mit dem du interagieren möchtest!</German>
+		</Key>
+		<Key ID="STR_BUILD_UPGRADE_DISABLED">
+			<English>Not setup yet.</English>
+			<German>Ausbau noch nicht möglich.</German>
+			<Russian>Ещё не установлено.</Russian>
+			<Dutch>Nog niet ingesteld.</Dutch>
+			<French>Pas encore installé.</French>
+			<Czech>Dosud nebylo nastaveno.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_UPGRADE_NOT_OWNER">
+			<English>You are not the owner.</English>
+			<Russian>Вы не являетесь владельцем.</Russian>
+			<German>Du bist nicht der Besitzer.</German>
+		</Key>
+		<Key ID="STR_BUILD_UPGRADE_COMPLETED_WITH_COMBINATION">
+			<English>You have upgraded %2. The combination is: %1</English>
+			<German>Du hast %2 geupgradet. Die Kombination lautet: %1</German>
+			<Russian>Вы улучшили: %2. Комбинация %1.</Russian>
+			<Dutch>Je hebt een %2 geupgrade. De combinatie is %1</Dutch>
+			<Czech>Upgradnuli jste %2. Kombinace je %1</Czech>
+		</Key>
+		<Key ID="STR_BUILD_UPGRADE_COMPLETED">
+			<English>You have upgraded %1.</English>
+			<German>Du hast %1 geupgradet.</German>
+			<Russian>Вы улучшили: %1.</Russian>
+			<Dutch>Je hebt %1 geupgrade.</Dutch>
+			<Czech>Upgranuli jste %1.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_UPGRADE_ITEM_REMOVAL_FAILED">
+			<English>Missing Parts after first check Item: %1 / %2</English>
+			<German>Fehlende Teile nach der ersten Überprüfung: %1 / %2</German>
+			<Russian>Отсутствует необходимый предмет: %1 / %2</Russian>
+			<Dutch>Missende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
+			<French>Éléments manquants après la première vérification: %1 / %2</French>
+			<Czech>Chybějící části po první kontrole itemu: %1 / %2</Czech>
+		</Key>
+		<Key ID="STR_BUILD_UPGRADE_MISSING_ITEMS">
+			<English>Missing %1 more of %2</English>
+			<German>Dir fehlt/fehlen %1 %2</German>
+			<Russian>Не хватает %2 (%1 шт.)</Russian>
+			<Dutch>Je hebt nog %1 extra %2 nodig.</Dutch>
+			<French>Il manque %1 %2</French>
+			<Czech>Chybí %1x %2</Czech>
+		</Key>
+		<Key ID="STR_BUILD_UPGRADE_NEEDED_ITEMS_LABEL">
+			<English>Needed items:</English>
+			<German>Benötigte Gegenstände:</German>
+			<Russian>Необходимые предметы:</Russian>
+		</Key>
+		<Key ID="STR_BUILD_UPGRADE_NOT_AVAILABLE">
+			<English>No upgrades are available</English>
+			<German>Keine Upgrades vorhanden</German>
+			<Russian>Нет доступных улучшений.</Russian>
+			<Dutch>Geen upgrades beschikbaar</Dutch>
+			<French>Aucune amélioration disponible</French>
+			<Czech>Nejsou dostupné žádné upgrady</Czech>
+		</Key>
+
+		<!-- Downgrade -->
+		<Key ID="STR_BUILD_DOWNGRADE_REMOVE_LOCK_ACTION">
+			<English>Remove Lock from %1</English>
+			<German>Schloss entfernen von %1</German>
+			<Russian>Снять замок с %1</Russian>
+			<Dutch>Verwijder slot van %1</Dutch>
+			<French>Retirer la serrure de %1</French>
+			<Czech>Odebrat Zámek z %1</Czech>
+		</Key>
+		<Key ID="STR_BUILD_DOWNGRADE_ALREADY_IN_PROGRESS">
+			<English>Downgrade is already in progress.</English>
+			<German>Downgrade bereits im Gange.</German>
+			<Russian>Уже понижается.</Russian>
+			<Dutch>Je bent al bezig met downgraden.</Dutch>
+			<French>La dégradation est déjà en cours.</French>
+			<Czech>Downgrade již probíhá.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_DOWNGRADE_OBJECT_NOT_FOUND">
+			<English>You must be looking at the item to interact with it.</English>
+			<Russian>Вы должны смотреть на предмет, чтобы взаимодействовать с ним.</Russian>
+			<French>Vous devez également regarder l'élément avec lui.</French>
+			<Czech>Musíte se dívat na tento produkt příliš komunikovat s ním.</Czech>
+			<German>Du musst auf den Gegenstand schauen, mit dem du interagieren möchtest!</German>
+		</Key>
+		<Key ID="STR_BUILD_DOWNGRADE_PLAYER_NEARBY">
+			<English>Another player is nearby. Only one player can be near to perform this action.</English>
+			<German>Ein anderer Spieler ist in der Nähe. Nur ein Spieler darf sich in der Nähe befinden, um diese Aktion durchzuführen.</German>
+			<Russian>Другой игрок рядом. Только один игрок может делать это.</Russian>
+			<Spanish>Otro jugador que está cerca, sólo un jugador puede estar cerca para realizar esta acción.</Spanish>
+			<French>Un autre joueur est à proximité, un seul joueur peut se trouver à proximité pour effectuer cette action.</French>
+			<Czech>Další hráče je v blízkosti. Pouze jeden hráč smí být v blízkosti, aby šla provést tato akce.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_DOWNGRADE_COMBINATION_UNKNOWN">
+			<English>Unable to downgrade, you do not know the combination.</English>
+			<German>Downgraden nicht möglich, da du nicht die Kombination kennst.</German>
+			<Russian>Не удаётся понизить, вы не знаете комбинации.</Russian>
+			<Dutch>Kan niet downgraden, je weet de combinatie niet.</Dutch>
+			<French>La dégradation est impossible, vous ne connaissez pas la combinaison!</French>
+			<Czech>Downgrade je nemožný, neznáte kombinanci.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_DOWNGRADE_COMPLETED">
+			<English>You have downgraded %1.</English>
+			<German>Du hast %1 gedowngradet.</German>
+			<Russian>Понижено: %1.</Russian>
+			<Dutch>Je hebt %1 gedowngrade.</Dutch>
+			<French>Vous avez dégradé %1.</French>
+			<Czech>Downgradnuli jste %1.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_DOWNGRADE_FAILED">
+			<English>Downgrade failed. The returned items were removed again.</English>
+			<German>Das Downgrade ist fehlgeschlagen. Die zurückgegebenen Gegenstände wurden wieder entfernt.</German>
+			<Russian>Понижение не удалось. Возвращённые предметы были снова удалены.</Russian>
+			<Dutch>De downgrade is mislukt. De teruggegeven items zijn weer verwijderd.</Dutch>
+			<French>La dégradation a échoué. Les objets rendus ont été retirés.</French>
+			<Czech>Downgrade se nezdařil. Vrácené předměty byly znovu odebrány.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_DOWNGRADE_REFUND_FAILED">
+			<English>%1x %2 could not be added to your inventory. (not enough room?)</English>
+			<German>%1x %2 konnte dem Inventar nicht hinzugefügt werden. (Inventar voll?)</German>
+			<Russian>%2 (в количестве: %1) не может быть добавлен в ваш инвентарь. (Недостаточно места?)</Russian>
+			<Dutch>%1x %2 kon niet worden toegevoegd aan je inventaris (vol?)</Dutch>
+			<French>%1x %2 ne peuvent être ajoutés à votre inventaire. (pas assez de place ?)</French>
+			<Czech>%1x %2 nemohl být přidán do inventáře. (nedostatek místa?)</Czech>
+		</Key>
+		<Key ID="STR_BUILD_DOWNGRADE_NOT_AVAILABLE">
+			<English>No downgrades are available</English>
+			<German>Kein Downgrade vorhanden</German>
+			<Russian>Нет доступных понижений.</Russian>
+			<Dutch>Geen downgrades beschikbaar</Dutch>
+			<French>Pas de dégradation possible.</French>
+			<Czech>Downgrade není k dispozici</Czech>
+		</Key>
+
+		<!-- Change code -->
+		<Key ID="STR_BUILD_CHANGE_CODE_ACTION">
+			<English>Change %1 code</English>
+			<German>%1 Code ändern</German>
+			<French>Changer le code de %1</French>
+			<Russian>Изменить код</Russian>
+			<Spanish>Cambiar el código de %1</Spanish>
+		</Key>
+		<Key ID="STR_BUILD_CHANGE_CODE_ALREADY_IN_PROGRESS">
+			<English>Wait for the previous action to complete to perform another!</English>
+			<German>Warte bis die vorherige Aktion abgeschlossen ist, bevor du eine neue beginnst.</German>
+			<Russian>Дождитесь завершения предыдущего действия, перед тем, как начинать новое!</Russian>
+			<Spanish>¡Espera a terminar la acción previa para realizar otra!</Spanish>
+			<French>Attendez la fin de l'action en cours avant d'en commencer une autre!</French>
+			<Czech>Než začnete dělat něco jiného, musíte dokončit aktuální akci.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_CHANGE_CODE_OBJECT_NOT_FOUND">
+			<English>You must be looking at the item to interact with it.</English>
+			<Russian>Вы должны смотреть на предмет, чтобы взаимодействовать с ним.</Russian>
+			<French>Vous devez également regarder l'élément avec lui.</French>
+			<Czech>Musíte se dívat na tento produkt příliš komunikovat s ním.</Czech>
+			<German>Du musst auf den Gegenstand schauen, mit dem du interagieren möchtest!</German>
+		</Key>
+		<Key ID="STR_BUILD_CHANGE_CODE_REBUILD_REQUIRED">
+			<English>To change the code you'll need to rebuild the object.</English>
+			<German>Um den Code zu ändern, muss du das Objekt neu aufbauen.</German>
+		</Key>
+		<Key ID="STR_BUILD_CHANGE_CODE_INVALID">
+			<English>You entered an invalid code.</English>
+			<German>Du hast einen ungültigen Code eingegeben.</German>
+			<French>Vous avez entré un code invalide.</French>
+			<Russian>Вы ввели неправильный код!</Russian>
+			<Spanish>Has ingresado un código inválido.</Spanish>
+		</Key>
+		<Key ID="STR_BUILD_CHANGE_CODE_NOT_ALLOWED">
+			<English>%1 code is not allowed.</English>
+			<German>%1 Code ist nicht erlaubt.</German>
+		</Key>
+		<Key ID="STR_BUILD_CHANGE_CODE_CHANGED">
+			<English>The code has been changed to: %1</English>
+			<German>Der Code wurde auf %1 geändert.</German>
+			<French>L code a été changer pour: %1</French>
+			<Russian>Код был изменен на: %1</Russian>
+			<Spanish>El código ha sido cambiado a: %1</Spanish>
+		</Key>
+		<Key ID="STR_BUILD_CHANGE_CODE_FAILED">
+			<English>Code change failed. The previous code remains active.</English>
+			<German>Die Codeänderung ist fehlgeschlagen. Der bisherige Code bleibt aktiv.</German>
+			<Russian>Не удалось изменить код. Предыдущий код остаётся активным.</Russian>
+			<Spanish>No se pudo cambiar el código. El código anterior sigue activo.</Spanish>
+			<French>La modification du code a échoué. Le code précédent reste actif.</French>
+			<Czech>Změna kódu se nezdařila. Původní kód zůstává aktivní.</Czech>
+			<Dutch>De codewijziging is mislukt. De vorige code blijft actief.</Dutch>
+		</Key>
+
+		<!-- Code generation -->
+		<Key ID="STR_BUILD_GENERATE_CODE_NOT_ALLOWED">
+			<English>%1 code is not allowed.</English>
+			<German>%1 Code ist nicht erlaubt.</German>
+		</Key>
+		<Key ID="STR_BUILD_GENERATE_CODE_COLOR_RED">
+			<English>Red</English>
+			<German>Rot</German>
+			<Russian>Красный</Russian>
+			<Spanish>Rojo</Spanish>
+			<French>Rouge</French>
+			<Czech>Červená</Czech>
+			<Dutch>Rood</Dutch>
+		</Key>
+		<Key ID="STR_BUILD_GENERATE_CODE_COLOR_GREEN">
+			<English>Green</English>
+			<German>Grün</German>
+			<Russian>Зелёный</Russian>
+			<Spanish>Verde</Spanish>
+			<French>Vert</French>
+			<Czech>Zelená</Czech>
+			<Dutch>Groen</Dutch>
+		</Key>
+		<Key ID="STR_BUILD_GENERATE_CODE_COLOR_BLUE">
+			<English>Blue</English>
+			<German>Blau</German>
+			<Russian>Синий</Russian>
+			<Spanish>Azul</Spanish>
+			<French>Bleu</French>
+			<Czech>Modrá</Czech>
+			<Dutch>Blauw</Dutch>
 		</Key>
 	</Package>
 </Project>
@@ -39040,30 +39370,6 @@
 			<French>Protection désactiver!</French>
 			<Russian>Защита отключена!</Russian>
 			<Spanish>Protección deshabilitada!</Spanish>
-		</Key>
-	</Package>
-
-	<Package name="changeCode">
-		<Key ID="STR_CL_CC_CODE_INVALID">
-			<English>You entered an invalid code.</English>
-			<German>Du hast einen ungültigen Code eingegeben.</German>
-			<French>Vous avez entré un code invalide.</French>
-			<Russian>Вы ввели неправильный код!</Russian>
-			<Spanish>Has ingresado un código inválido.</Spanish>
-		</Key>
-		<Key ID="STR_CL_CC_CODE_CHANGED">
-			<English>The code has been changed to: %1</English>
-			<German>Der Code wurde auf %1 geändert.</German>
-			<French>L code a été changer pour: %1</French>
-			<Russian>Код был изменен на: %1</Russian>
-			<Spanish>El código ha sido cambiado a: %1</Spanish>
-		</Key>
-		<Key ID="STR_CL_CC_CODE_CHANGE">
-			<English>Change %1 code</English>
-			<German>%1 Code ändern</German>
-			<French>Changer le code de %1</French>
-			<Russian>Изменить код</Russian>
-			<Spanish>Cambiar el código de %1</Spanish>
 		</Key>
 	</Package>
 
@@ -41087,11 +41393,6 @@
 			<English>You already have an %1!</English>
 			<Russian>У вас уже есть %1!</Russian>
 			<German>Du hast bereits eine(n) %1!</German>
-		</Key>
-		<Key ID="STR_CL_EC_NOT_OWNER">
-			<English>You are not the owner.</English>
-			<Russian>Вы не являетесь владельцем.</Russian>
-			<German>Du bist nicht der Besitzer.</German>
 		</Key>
 		<Key ID="STR_CL_EC_MINIMUM_DISTANCE">
 			<English>You must be at least %1 meters away to call your %2.</English>

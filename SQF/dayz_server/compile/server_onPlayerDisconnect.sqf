@@ -88,7 +88,7 @@ if (_characterID != "?") then {
 		{[_x,"gear"] call server_updateObject} count (nearestObjects [[_playerObj] call FNC_GetPos,DayZ_GearedObjects,10]);
 	};
 	
-	[_playerUID,_characterID,3,_playerName,(_playerPos call fa_coor2str)] call dayz_recordLogin;
+	[_playerUID,_characterID,3,_playerName,_playerPos call server_positionToLocation] call dayz_recordLogin;
 };
 
 missionNamespace setVariable [_playerUID,nil];

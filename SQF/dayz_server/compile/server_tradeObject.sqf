@@ -8,7 +8,7 @@ local _price = _this select 6;
 
 local _message = "";
 local _playerUID = getPlayerUID _player;
-local _name = if (alive _player) then {name _player} else {"Dead Player"};
+local _name = _player call DZE_fnc_getNamePlayer;
 local _quantity = 1;
 local _container = "gear";
 

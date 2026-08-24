@@ -43,6 +43,6 @@ if !(isNil "_medsUsed") then {
 		// Give humanity
 		20 call player_humanityChange;
 
-		format [localize "str_actions_medical_painkillers_give",(name _unit)] call dayz_rollingMessages;
+		format [localize "str_actions_medical_painkillers_give",_unit call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
 	};
 };

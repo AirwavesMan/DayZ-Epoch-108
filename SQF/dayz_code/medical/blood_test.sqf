@@ -107,7 +107,7 @@ _watered = r_A_watered or r_B_watered or r_D_watered or r_control_watered;
 	//display untested images
 	if (!_opened) then {
 		if (alive _unit) then {
-			_name ctrlSetText (name _unit);
+			_name ctrlSetText (_unit call DZE_fnc_getNamePlayer);
 		};
 		_antiA ctrlSetText _antiAUntested;
 		_antiB ctrlSetText _antiBUntested;

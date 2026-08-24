@@ -43,7 +43,7 @@ if !(isNil "_medsUsed") then {
 		//Give humnaity for good deeds
 		20 call player_humanityChange;
 
-		_msg = format[localize "str_actions_medical_gave_antibiotics", (name _unit)];
+		_msg = format[localize "str_actions_medical_gave_antibiotics",_unit call DZE_fnc_getNamePlayer];
 	};
 };
 

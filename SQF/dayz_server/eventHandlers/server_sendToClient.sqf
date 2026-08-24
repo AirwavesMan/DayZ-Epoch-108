@@ -15,10 +15,11 @@ if (_variable in ["Unconscious","DragPlayer","DropPlayer","Legs","RemoveObject",
 	_activatingPlayer =  _verifyArray select 2;
 	_playerUID = getPlayerUID _activatingPlayer;
 	_exitReason = [_verifyArray,_variable,_objPos,_clientKey,_playerUID,_activatingPlayer] call server_verifySender;
-	//diag_log text format ["server_sendToClient: Player [%1:%2] used function %3 on/at %4.",(name _activatingPlayer),_playerUID,_variable,_objPos];
+	//diag_log text format ["server_sendToClient: Player [%1:%2] used function %3 on/at %4.",_activatingPlayer call DZE_fnc_getNamePlayer,_playerUID,_variable,_objPos];
 };
 
-if (_exitReason != "") exitWith {diag_log _exitReason};
+//	ToDo: Handle this better
+//if (_exitReason != "") exitWith {diag_log _exitReason};
 
 //diag_log format ["%1, %2, %3, %4", _unit, _variable, _arraytosend, _owner];
 

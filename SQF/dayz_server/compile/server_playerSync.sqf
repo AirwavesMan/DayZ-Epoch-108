@@ -9,7 +9,7 @@ local _charPos = getPosATL _character;
 local _isInVehicle = vehicle _character != _character;
 local _timeSince = 0;
 local _humanity = 0;
-local _name = if (alive _character) then {name _character} else {"Dead Player"};
+local _name = _character call DZE_fnc_getNamePlayer;
 local _inDebug = (respawn_west_original distance _charPos) < 1500;
 
 local _exitReason = call {

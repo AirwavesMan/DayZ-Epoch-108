@@ -4,7 +4,7 @@ private ["_playerID","_endMission","_0","_1","_timeleft","_doLoop","_key","_prim
 
 _playerID = _this select 0;
 _playerObj = _this select 1;
-_playerName = name _playerObj;
+_playerName = _playerObj call DZE_fnc_getNamePlayer;
 if (_playerName == '__SERVER__' || _playerID == '' || local player) exitWith {};
 
 // Cancel any login until server_monitor terminates.
@@ -190,7 +190,7 @@ if (count dayz_activeInvites > 0) then {
 };
 
 //Record Player Login/LogOut
-[_playerID,_charID,2,(_playerObj call fa_plr2str),((getPosATL _playerObj) call fa_coor2str)] call dayz_recordLogin;
+[_playerID,_charID,2,_playerObj call DZE_fnc_getNamePlayer,(getPosATL _playerObj) call server_positionToLocation] call dayz_recordLogin;
 
 PVCDZ_plr_PlayerAccepted = [_playerName,diag_ticktime];
 (owner _playerObj) publicVariableClient "PVCDZ_plr_PlayerAccepted";

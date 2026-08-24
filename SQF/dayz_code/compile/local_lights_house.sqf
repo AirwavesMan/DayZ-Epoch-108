@@ -67,7 +67,7 @@ if(!isNil "_objHouse")then{
 	
 	_maxHouses = ((_validHouses/100)*_lightPcnt);
 
-	//axeDiagLog = format["HL:START(%5): Max Houses: %1 | Previous Houses: %2 | LIT HOUSES:%3 | Not Lit:%4",_maxHouses, _houseNum,count _litHouses,count _notLitHouses, name player];
+	//axeDiagLog = format["HL:START(%5): Max Houses: %1 | Previous Houses: %2 | LIT HOUSES:%3 | Not Lit:%4",_maxHouses, _houseNum,count _litHouses,count _notLitHouses,player call DZE_fnc_getNamePlayer];
 	//publicVariable "axeDiagLog";
 				
 	if(count _litHouses < _maxHouses)then{
@@ -79,7 +79,7 @@ if(!isNil "_objHouse")then{
 				
 				if(_lightPcnt > floor (random 100))then{//Randomness required || first nearest houses to player get lit in a block - Needs to be based on range !
 				
-				//axeDiagLog = format["HL:Lighting New House: %3 Num:%1 Type: %4 for %2 | Dist:%5",_currLighting, name player,_x,typeOf _x,player distance _x];
+				//axeDiagLog = format["HL:Lighting New House: %3 Num:%1 Type: %4 for %2 | Dist:%5",_currLighting,player call DZE_fnc_getNamePlayer,_x,typeOf _x,player distance _x];
 				//publicVariable "axeDiagLog";
 				
 				//_x enableSimulation false;//Attempt to stop Arma from broadcasting animationphase. DOESN'T WORK - House lights_1 animationphase is still broadcast regardless  - Using that as the basis for lights ! Removed as it may stop destruction of building.. (For Now)
@@ -117,7 +117,7 @@ if(!isNil "_objHouse")then{
 		}count _notLitHouses;
 	
 	}else{
-	//axeDiagLog = format["House Limit Reached(%3): Max:%1 | Count:%2",_maxHouses,count _litHouses,name player];
+	//axeDiagLog = format["House Limit Reached(%3): Max:%1 | Count:%2",_maxHouses,count _litHouses,player call DZE_fnc_getNamePlayer];
 	//publicVariable "axeDiagLog";
 	};
 	
@@ -139,7 +139,7 @@ if(!isNil "_objHouse")then{
 				//publicVariable "axeDiagLog";
 				}else{//If outside create radius delete light that IS in house
 				
-				//axeDiagLog = format["HL:Deleteing old light %1 for %2 ",_objLightPoint,name player];
+				//axeDiagLog = format["HL:Deleteing old light %1 for %2 ",_objLightPoint,player call DZE_fnc_getNamePlayer];
 				//publicVariable "axeDiagLog";
 				deleteVehicle _objLightPoint;//Clean up lightpoints as player leaves area.
 				
@@ -149,7 +149,7 @@ if(!isNil "_objHouse")then{
 				if(_plyr distance _x < _lpRange)then{//If within create radius recreate lightpoint (after logging)
 				_brtns = [_plyr,_x] call axe_lightBrightness;
 				[_lmpCol,_brtns,_lmpCol,_pos,_dir,[0,0,-2.6]] call axe_newLightPoint;
-				//axeDiagLog = format["HL:Recreating light %1 for %2 ",_x,name player];
+				//axeDiagLog = format["HL:Recreating light %1 for %2 ",_x,player call DZE_fnc_getNamePlayer];
 				//publicVariable "axeDiagLog";
 				};
 			};

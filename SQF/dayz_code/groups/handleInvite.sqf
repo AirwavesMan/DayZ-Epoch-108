@@ -17,7 +17,7 @@ if (typeName _add == "SCALAR") exitWith {
 				terminate dayz_groupTags;
 				8 cutText ["","PLAIN"];
 			} else {
-				systemChat format[localize "STR_EPOCH_PLAYER_KICKED",name (_uid call dayz_getPlayer)];
+				systemChat format[localize "STR_EPOCH_PLAYER_KICKED",(_uid call dayz_getPlayer) call DZE_fnc_getNamePlayer];
 			};
 		};
 		if (_add == 3) exitWith {

@@ -3,7 +3,7 @@ private ["_event","_groupUIDs","_kickedUID","_name","_newGroup","_player","_play
 _event = _this select 0;
 _player = _this select 1;
 _kickedUID = ["0",_this select 2] select (count _this > 2);
-_name = ["unknown",name _player] select (alive _player);
+_name = _player call DZE_fnc_getNamePlayer;
 _playerUID = getPlayerUID _player;
 
 if (_event < 3) then {

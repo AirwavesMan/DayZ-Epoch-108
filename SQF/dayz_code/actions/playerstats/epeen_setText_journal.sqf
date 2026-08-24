@@ -8,8 +8,8 @@ _hours = floor (_totalMins / 60);
 _mins =  (_totalMins - (_hours * 60));
 dayz_Survived = [_days,_hours,_mins,_totalMins];
 _survived = format["%1 %2, %3 %4, %5 %6",(dayz_Survived select 0),localize "STR_EPOCH_JOURNAL_DAYS",(dayz_Survived select 1),localize "STR_EPOCH_JOURNAL_HOURS",(dayz_Survived select 2),localize "STR_EPOCH_JOURNAL_MINUTES"];
-_base = ["STR_EP1_dogfighters_params09","STR_EP1_dogfighters_params08"] select (DZE_GodModeBase);
-_plots = [localize "str_ep1_mpt_param1_5",DZE_limitPlots] select (DZE_limitPlots > 0);
+_base = ["STR_EP1_dogfighters_params09","STR_EP1_dogfighters_params08"] select (DZE_baseGodMode);
+_plots = [localize "str_ep1_mpt_param1_5",DZE_baseLimit] select (DZE_baseLimit > 0);
 _currency = [localize "STR_EPOCH_GOLD",CurrencyName] select (Z_SingleCurrency);
 _pve = ["str_temp_param_disabled","str_temp_param_enabled"] select (DZE_PVE_Mode);
 
@@ -31,7 +31,7 @@ _pve = ["str_temp_param_disabled","str_temp_param_enabled"] select (DZE_PVE_Mode
 	<t size='1.3' font='Zeppelin33' color = '#000000' align='left'>%23 %24: </t><t size='1.3' font='Zeppelin33' align='right' color='#FF0033'>%25</t><br/>
 	",
 	localize "STR_EPOCH_JOURNAL_Name", // 1
-	(name player), // 2
+	(player call DZE_fnc_getNamePlayer), // 2
 	localize "STR_EPOCH_JOURNAL_HEALTH", // 3
 	(round(r_player_blood)), // 4
 	localize "str_actions_stats_hm", // 5
@@ -39,9 +39,9 @@ _pve = ["str_temp_param_disabled","str_temp_param_enabled"] select (DZE_PVE_Mode
 	localize "STR_EPOCH_JOURNAL_SURVIVED", // 7
 	_survived, // 8
 	localize "STR_EPOCH_JOURNAL_SERVER_SETTINGS", // 9
-	localize "STR_EPOCH_JOURNAL_BASE", // 10
+	localize "STR_BASE_JOURNAL_GOD_MODE", // 10
 	localize _base, // 11
-	localize "STR_EPOCH_JOURNAL_PLOT", // 12
+	localize "STR_BASE_JOURNAL_BASE_LIMIT", // 12
 	_plots, // 13
 	localize "STR_EPOCH_JOURNAL_BUILDINGLIMIT", // 14
 	DZE_BuildingLimit, // 15

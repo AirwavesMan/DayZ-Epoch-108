@@ -12,7 +12,7 @@ if (isPlayer cursorTarget) then {
 	_isBusy = ZSC_GiveMoneyTarget getVariable["isBusy",false];
 	if (_isBusy) exitWith {
 		player setVariable ["isBusy",false,true];
-		format[localize "STR_CL_ZSC_ALREADY_TRADING",name ZSC_GiveMoneyTarget] call dayz_rollingMessages;
+		format[localize "STR_CL_ZSC_ALREADY_TRADING",ZSC_GiveMoneyTarget call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
 	};
 	if (!_isBusy) then {
 		player setVariable["isBusy",true,true];	

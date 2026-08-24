@@ -1969,7 +1969,7 @@ class FSM
                         itemno = 106;
                         init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Finish'];};" \n
                          "" \n
-                         "dayz_playerName = if (alive player) then {name player} else {'unknown'};" \n
+                         "dayz_playerName = player call DZE_fnc_getNamePlayer;" \n
                          "PVDZ_plr_LoginRecord = [_playerUID,_charID,0,toArray dayz_playerName];" \n
                          "" \n
                          "" \n

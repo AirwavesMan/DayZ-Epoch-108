@@ -89,7 +89,7 @@ if (_option == 1) then {
 	{
 		if !(_x in _group) then {
 			_x action ["eject",rv_selected];
-			systemChat format[localize "STR_CL_RV_EJECT_PLAYER",name _x];
+			systemChat format[localize "STR_CL_RV_EJECT_PLAYER",_x call DZE_fnc_getNamePlayer];
 		};
 	} forEach (crew rv_selected);
 };

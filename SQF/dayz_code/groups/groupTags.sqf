@@ -13,7 +13,7 @@ local _refresh = {
 		if (_distance > 1 && {_distance < 2500} && {vehicle _x != vehicle player}) then {
 			_pos set [2, (_pos select 2) + 1.5];
 			local _screen = worldToScreen _pos;	// AGL
-			local _text = composeText [image "\ca\ui\data\igui_side_unknown_ca.paa"," ",if (dayz_groupNameTags) then {name _x} else {""}];
+			local _text = composeText [image "\ca\ui\data\igui_side_unknown_ca.paa"," ",if (dayz_groupNameTags) then {_x call DZE_fnc_getNamePlayer} else {""}];
 
 			if (count _screen > 0) then {
 				local _scale = [1 min ((1 - (_distance - 3) / 15) max .3),.3] select (_distance < 200);

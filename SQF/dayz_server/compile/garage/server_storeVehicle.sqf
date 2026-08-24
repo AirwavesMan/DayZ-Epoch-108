@@ -8,7 +8,7 @@ _playerUID = if (count _this > 3) then {_this select 3} else {getPlayerUID _play
 
 _class = typeOf _vehicle;
 _displayName = [(getText(configFile >> "cfgVehicles" >> _class >> "displayName")),1] call fnc_sanitizeInput;
-_name = if (alive _player) then {[(name _player),1] call fnc_sanitizeInput;} else {"unknown player";};
+_name = _player call DZE_fnc_getNamePlayer;
 
 _charID = _vehicle getVariable ["CharacterID","0"];
 _objectID = _vehicle getVariable ["ObjectID","0"];

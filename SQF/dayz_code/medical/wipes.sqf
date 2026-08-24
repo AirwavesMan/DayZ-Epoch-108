@@ -35,7 +35,7 @@ if (_finished) then {
 		// Give humanity
 		20 call player_humanityChange;
 		
-		format[localize "str_actions_medical_gave_wipes",(name _unit)] call dayz_rollingMessages;
+		format[localize "str_actions_medical_gave_wipes",_unit call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
 	};
 } else {
 	player addMagazine "ItemAntibacterialWipe";

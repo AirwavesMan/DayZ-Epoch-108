@@ -33,7 +33,7 @@ if (_finished) then {
 		PVDZ_send = [_unit,"Morphine",[_unit,player,_item]];
 		publicVariableServer "PVDZ_send";
 
-		format [localize "str_actions_medical_general_give",_displayName,(name _unit)] call dayz_rollingMessages;
+		format [localize "str_actions_medical_general_give",_displayName,_unit call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
 	};
 } else {
 	player addMagazine _item;

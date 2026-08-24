@@ -74,7 +74,7 @@ if (!isNull _source) then {
 
 	if (alive _source) then {
 		if (isPlayer _source) then {
-			_sourceName = name _source;
+			_sourceName = _source call DZE_fnc_getNamePlayer;
 			_sourceID = getPlayerUID _source;
 		} else {
 			_sourceName = "AI";

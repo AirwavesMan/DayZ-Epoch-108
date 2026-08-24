@@ -55,7 +55,7 @@ local _isClose = false;
 local _finished = false;
 local _isOk = true;
 
-//diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)", name player, name _unit];
+//diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)",player call DZE_fnc_getNamePlayer,_unit call DZE_fnc_getNamePlayer];
 
 local _count = [player,_bagUsed,1] call BIS_fnc_invRemove;
 if (_count != 1) exitwith {dayz_actionInProgress = false;localize "str_actions_medical_transfusion_interrupted" call dayz_rollingMessages;};

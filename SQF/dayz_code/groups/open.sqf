@@ -25,7 +25,7 @@ while {!isNull findDisplay 80000} do {
 	lbClear _myGroup;
     {
 		if (alive _x && {isPlayer _x}) then {
-			_index = _myGroup lbAdd (name _x);
+			_index = _myGroup lbAdd (_x call DZE_fnc_getNamePlayer);
 			_myGroup lbSetData [_index,getPlayerUID _x];
 			_myGroup lbSetPicture [_index, if (_x == _leader) then {"\ca\ui\data\icon_unit_teamleader_ca.paa"} else {"\ca\ui\data\map_bush_ca.paa"}];
 		};
@@ -59,7 +59,7 @@ while {!isNull findDisplay 80000} do {
 		{_x ctrlShow true} count [_inviteText,_joinButton,_rejectButton];
 		_inviter = _inviterUID call dayz_getPlayer;
 		if (!isNull _inviter) then {
-			_inviteText ctrlSetStructuredText parseText (format ["%1<br/>%2",localize "STR_EPOCH_INVITE_FROM",name _inviter]);
+			_inviteText ctrlSetStructuredText parseText (format ["%1<br/>%2",localize "STR_EPOCH_INVITE_FROM",_inviter call DZE_fnc_getNamePlayer]);
 		};
     } else {
 		{_x ctrlShow false} count [_inviteText,_joinButton,_rejectButton];
@@ -72,7 +72,7 @@ while {!isNull findDisplay 80000} do {
 		lbClear _playerList;
 		{
 			if (isPlayer _x && {_x != player}) then {
-				_index = _playerList lbAdd (name _x);
+				_index = _playerList lbAdd (_x call DZE_fnc_getNamePlayer);
 				_playerList lbSetData [_index, getPlayerUID _x];
 				_playerList lbSetPicture [_index, if (count (units group _x) > 1) then {"\ca\ui\data\ui_task_failed_ca.paa"} else {"\ca\ui\data\ui_task_done_ca.paa"}];
 			};

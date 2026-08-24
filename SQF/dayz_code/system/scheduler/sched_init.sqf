@@ -1,4 +1,6 @@
 // (c) facoptere@gmail.com, licensed to DayZMod for the community
+DZE_schedDebug = 1;
+
 
 _base="z\addons\dayz_code\system\scheduler\";
 call compile preprocessFileLineNumbers (_base+"sched_oneachframe.sqf");

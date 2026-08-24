@@ -18,7 +18,7 @@ BankDialogUpdateAmounts = {
 
 GivePlayerDialogAmounts = {
 	ctrlSetText [14001,format ["%1 %2",[player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0]] call BIS_fnc_numberText,CurrencyName]];
-	ctrlSetText [14003,format ["%1",name ZSC_GiveMoneyTarget]];
+	ctrlSetText [14003,format ["%1",ZSC_GiveMoneyTarget call DZE_fnc_getNamePlayer]];
 };
 
 BankDialogWithdrawAmount = {
@@ -92,14 +92,14 @@ GivePlayerAmount = {
 
 	if (!(isPlayer ZSC_GiveMoneyTarget)) exitWith {format[localize "STR_CL_ZSC_GIVE_PLAYER",CurrencyName] call dayz_rollingMessages;};
 
-	if (_isBusy) exitWith {format[localize "STR_CL_ZSC_ALREADY_TRADING",name ZSC_GiveMoneyTarget] call dayz_rollingMessages;};
+	if (_isBusy) exitWith {format[localize "STR_CL_ZSC_ALREADY_TRADING",ZSC_GiveMoneyTarget call DZE_fnc_getNamePlayer] call dayz_rollingMessages;};
 
 	player setVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),_wealth - _amount,true];
 	ZSC_GiveMoneyTarget setVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),_twealth + _amount,true];
 
 	call player_forceSave;
 
-	format[localize "STR_CL_ZSC_GIVE_OK",name ZSC_GiveMoneyTarget,[_amount] call BIS_fnc_numberText,CurrencyName] call dayz_rollingMessages;
+	format[localize "STR_CL_ZSC_GIVE_OK",ZSC_GiveMoneyTarget call DZE_fnc_getNamePlayer,[_amount] call BIS_fnc_numberText,CurrencyName] call dayz_rollingMessages;
 };
 
 if (Z_globalBanking) then {

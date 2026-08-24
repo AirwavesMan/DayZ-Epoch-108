@@ -7,5 +7,5 @@ r_player_infected = false;
 _unit setVariable["USEC_infected",false,true];
 
 if (_medic != player) then {
-	format [localize "str_actions_medical_antibiotics_received",(name _medic)] call dayz_rollingMessages;
+	format [localize "str_actions_medical_antibiotics_received",_medic call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
 };

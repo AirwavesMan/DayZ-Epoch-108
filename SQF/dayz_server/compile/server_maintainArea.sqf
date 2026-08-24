@@ -28,7 +28,7 @@ if ((_this select 1) == 1) exitWith {
 
     diag_log format [
          "MAINTAIN AREA BY %1 - %2 Objects at %3, Grid: %4."
-        ,if (alive _player) then {name _player} else {"Dead Player"}
+        ,_player call DZE_fnc_getNamePlayer
         ,count (_this select 2), _position, mapGridPosition _position
     ]
 };

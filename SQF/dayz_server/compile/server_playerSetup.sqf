@@ -247,7 +247,7 @@ if (count _inventory > 2) then {
 };
 
 //Record Player Login/LogOut
-[_playerID,_characterID,1,(_playerObj call fa_plr2str),((_worldspace select 1) call fa_coor2str)] call dayz_recordLogin;
+[_playerID,_characterID,1,_playerObj call DZE_fnc_getNamePlayer,(_worldspace select 1) call server_positionToLocation] call dayz_recordLogin;
 
 PVDZ_plr_Login1 = null;
 PVDZ_plr_Login2 = null;

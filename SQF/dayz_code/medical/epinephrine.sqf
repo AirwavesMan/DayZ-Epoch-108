@@ -18,7 +18,7 @@ if (!_isDead && {_finished}) then {
 	PVDZ_send = [_unit,"Epinephrine",[_unit,player]];
 	publicVariableServer "PVDZ_send";
 
-	format [localize "str_actions_medical_general_give", (localize "STR_EQUIP_NAME_14"), (name _unit)] call dayz_rollingMessages;
+	format [localize "str_actions_medical_general_give",(localize "STR_EQUIP_NAME_14"),_unit call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
 } else {
 	player addMagazine "ItemEpinephrine";
 };

@@ -19,7 +19,7 @@ _top_value = _hum select 4;
 _bot_value = _hum select 5;
 _top_suit = _hum select 6;
 _bot_suit = _hum select 7;
-_pl_name = format ["<t size = '1.1' font = 'Zeppelin33' color = '#000000' shadow = 'false' align = 'center' underline = 'false'>%1</t", name player];
+_pl_name = format ["<t size = '1.1' font = 'Zeppelin33' color = '#000000' shadow = 'false' align = 'center' underline = 'false'>%1</t",player call DZE_fnc_getNamePlayer];
 
 ctrlShow [1906, false];
 ((uiNamespace getVariable "horde_myDisplay") displayCtrl 1801) ctrlSetStructuredText parseText format ["%1", _top_value];

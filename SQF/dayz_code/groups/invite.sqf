@@ -20,7 +20,7 @@ if (_hasInvite) exitWith {
 	systemChat localize "STR_EPOCH_INVITE_PENDING";
 };
 
-_invite = [getPlayerUID player,_uid,toArray(name player)];
+_invite = [getPlayerUID player,_uid,toArray (player call DZE_fnc_getNamePlayer)];
 
 //Update locally with change
 dayz_activeInvites set [count dayz_activeInvites,_invite];
@@ -29,4 +29,4 @@ dayz_activeInvites set [count dayz_activeInvites,_invite];
 PVDZ_groupInvite = [true,_invite];
 publicVariableServer "PVDZ_groupInvite";
 
-systemChat format[localize "STR_EPOCH_INVITE_TO",name _recipient];
+systemChat format[localize "STR_EPOCH_INVITE_TO",_recipient call DZE_fnc_getNamePlayer];

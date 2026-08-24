@@ -22,7 +22,7 @@ while {true} do {
 			_oldGroup = group player;
 			[player] joinSilent _lastGroup;
 			if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
-			format[localize "STR_EPOCH_REJOINED_GROUP",name leader _lastGroup] call dayz_rollingMessages;
+			format[localize "STR_EPOCH_REJOINED_GROUP",(leader _lastGroup) call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
 			PVDZ_Server_UpdateGroup = [1,player];
 			publicVariableServer "PVDZ_Server_UpdateGroup";
 			_lastGroup = grpNull;
@@ -43,7 +43,7 @@ while {true} do {
 					deleteMarkerLocal format["groupMember%1",_index];
 					_marker = createMarkerLocal [format["groupMember%1",_index],_pos];
 					_marker setMarkerTypeLocal "DestroyedVehicle";
-					_marker setMarkerTextLocal format ["%1",if (_vehicle == _x) then {name _x} else {_vehicle call dayz_getCrew}];
+					_marker setMarkerTextLocal format ["%1",if (_vehicle == _x) then {_x call DZE_fnc_getNamePlayer} else {_vehicle call dayz_getCrew}];
 					_marker setMarkerColorLocal "ColorGreen";
 				} else {
 					deleteMarkerLocal format["groupMember%1",_index];
@@ -60,9 +60,9 @@ while {true} do {
 
 			if (_markBody) then {
 				_bodyCount = 0;
-				_name = name player;
+				_name = player call DZE_fnc_getNamePlayer;
 				{
-					if (_x getVariable["bodyName",""] == _name) then {
+					if ((_x call DZE_fnc_getNamePlayer) == _name) then {
 						_pos = visiblePosition _x;
 						if (_pos select 2 >= 0) then { //Body is not hidden
 							_bodyCount = _bodyCount + 1;

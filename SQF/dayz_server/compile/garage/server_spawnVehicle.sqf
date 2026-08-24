@@ -103,6 +103,6 @@ if (_outcome != "PASS") then {
 
 	if (!isNull _player) then {_clientID publicVariableClient "PVDZE_spawnVehicleResult";};
 	
-	_message = format["%1 (%2) retrieved %3 @%4 %5",if (alive _player) then {name _player} else {"DeadPlayer"},getPlayerUID _player,_class,mapGridPosition _player,getPosATL _player];
+	_message = format["%1 (%2) retrieved %3 @%4 %5",_player call DZE_fnc_getNamePlayer,getPlayerUID _player,_class,mapGridPosition _player,getPosATL _player];
 	diag_log _message;
 };
