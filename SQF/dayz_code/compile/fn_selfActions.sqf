@@ -392,7 +392,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 			{
 				_fireFuelMagazine = _x;
 				_fireFuelName = getText (configFile >> 'CfgMagazines' >> _fireFuelMagazine >> 'displayName');
-				_fireFuelAction = player addAction [format [localize 'STR_FIREPLACE_ADD_FUEL',_fireFuelName],'\z\addons\dayz_code\functions\actions\fire\DZE_action_addFireFuel.sqf',[_cursorTarget,_fireFuelMagazine],3,true,true];
+				_fireFuelAction = player addAction [format [localize 'STR_FIREPLACE_ADD_FUEL',_fireFuelName],'\z\addons\dayz_code\functions\actions\fire\DZE_fnc_addFireFuel.sqf',[_cursorTarget,_fireFuelMagazine],3,true,true];
 				s_player_fireFuelActions set [count s_player_fireFuelActions,_fireFuelAction];
 			} forEach _fireFuelMagazines;
 

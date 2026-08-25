@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//	DZE_action_addFireFuel
+//	DZE_fnc_addFireFuel
 //
 //	Description:	Consumes one magazine and requests its configured burn time for a fireplace.
 //	Groups:		Actions, Fire
@@ -18,10 +18,10 @@
 
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
-//#define DEBUG_DZE_ACTION_ADD_FIRE_FUEL
+//#define DEBUG_DZE_FNC_ADD_FIRE_FUEL
 
-#ifdef DEBUG_DZE_ACTION_ADD_FIRE_FUEL
-	diag_log format ['[Client Debug]: [DZE_action_addFireFuel]: Function called with argumentes: %1',_this];
+#ifdef DEBUG_DZE_FNC_ADD_FIRE_FUEL
+	diag_log format ['[Client Debug]: [DZE_fnc_addFireFuel]: Function called with argumentes: %1',_this];
 #endif
 
 if (dayz_actionInProgress) exitWith {localize 'str_player_actionslimit' call DZE_fnc_rollingMessages};
@@ -166,8 +166,8 @@ DZE_fireFuelTarget = objNull;
 DZE_fireFuelMagazines = [];
 PVDZE_fireFuelResult = [];
 
-#ifdef DEBUG_DZE_ACTION_ADD_FIRE_FUEL
-	diag_log format ['[Client Debug]: [DZE_action_addFireFuel]: Server response for %1 using %2: %3',_fireplace,_magazine,[_remainingBurnTime,_maximumReached]];
+#ifdef DEBUG_DZE_FNC_ADD_FIRE_FUEL
+	diag_log format ['[Client Debug]: [DZE_fnc_addFireFuel]: Server response for %1 using %2: %3',_fireplace,_magazine,[_remainingBurnTime,_maximumReached]];
 #endif
 
 dayz_actionInProgress = false;
