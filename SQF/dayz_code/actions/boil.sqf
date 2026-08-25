@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 player removeAction s_player_boil;
@@ -24,7 +24,7 @@ if (!_hasTinItem) exitWith {
 	local _tin1text	= getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
 	local _tin2text	= getText (configFile >> "CfgMagazines" >> "ItemSodaEmpty" >> "displayName");
 	local _tintext	= format ["%1 / %2", _tin1text, _tin2text];
-	format [localize "str_player_31", _tintext, localize "str_player_31_fill"] call dayz_rollingMessages;
+	format [localize "str_player_31", _tintext, localize "str_player_31_fill"] call DZE_fnc_rollingMessages;
 	a_player_boil		= false;
 	dayz_actionInProgress	= false;
 };
@@ -60,7 +60,7 @@ if (_qty > 0) then {
 			} else {
 				player addMagazine "ItemWaterBottleDmg";
 			};
-			localize "str_waterbottle_broke" call dayz_rollingMessages;
+			localize "str_waterbottle_broke" call DZE_fnc_rollingMessages;
 		} else {
 			if (_bottle in _plasticBottles) then {
 				if (_bottle in ["ItemPlasticWaterBottleInfected","ItemPlasticWaterBottleSafe"]) then {
@@ -78,13 +78,13 @@ if (_qty > 0) then {
 		};
 	} count _bottles;
 
-	format [localize "str_player_boiledwater", _qty] call dayz_rollingMessages;
+	format [localize "str_player_boiledwater", _qty] call DZE_fnc_rollingMessages;
 } else {
-	format [localize "str_player_31", _bottleText, localize "str_player_31_fill"] call dayz_rollingMessages;
+	format [localize "str_player_31", _bottleText, localize "str_player_31_fill"] call DZE_fnc_rollingMessages;
 };
 
 if (!_finished) then {
-	localize "STR_EPOCH_ACTION_CANCELED" call dayz_rollingMessages;
+	localize "STR_EPOCH_ACTION_CANCELED" call DZE_fnc_rollingMessages;
 } else {
 	if (_wasStanding) then {
 		player playActionNow "PlayerStand";	// once the action has completed, return player to a standing pose if they were standing before the action

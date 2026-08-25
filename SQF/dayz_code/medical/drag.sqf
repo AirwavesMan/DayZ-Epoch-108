@@ -58,7 +58,7 @@ while {r_drag_sqf} do {
 
 	if (vehicle player != player) then {
 		player action ["eject", vehicle player];
-		localize "str_actions_medical_dragbody_veh" call dayz_rollingMessages;
+		localize "str_actions_medical_dragbody_veh" call DZE_fnc_rollingMessages;
 		[0,0,0,[_medic,_dragee]] execVM "\z\addons\dayz_code\medical\drop_body.sqf";
 	};
 	uiSleep 0.1;

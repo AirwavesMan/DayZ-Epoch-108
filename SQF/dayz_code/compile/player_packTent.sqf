@@ -9,7 +9,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 if (dayz_actionInProgress) exitWith {
-	localize "str_player_actionslimit" call dayz_rollingMessages;		// Wait for the previous action to complete to perform another!
+	localize "str_player_actionslimit" call DZE_fnc_rollingMessages;		// Wait for the previous action to complete to perform another!
 };
 dayz_actionInProgress = true;
 
@@ -20,7 +20,7 @@ local _ownerID = _obj getVariable["ownerPUID","0"];
 local _playerNear = {isPlayer _x} count (_obj nearEntities ["CAManBase", 12]) > 1;
 if (_playerNear) exitWith {
 	dayz_actionInProgress = false;
-	localize "str_pickup_limit_5" call dayz_rollingMessages;		// Another player is nearby. Only one player can be near to perform this action.
+	localize "str_pickup_limit_5" call DZE_fnc_rollingMessages;		// Another player is nearby. Only one player can be near to perform this action.
 };
 
 local _packobj = getText (configFile >> "CfgVehicles" >> _objType >> "pack");	// classname
@@ -35,11 +35,11 @@ if ((_ownerID == dayz_playerUID) || {_objType in ["IC_DomeTent","IC_Tent"]}) the
 	local _alreadyPacking = _obj getVariable["packing", 0];
 
 	if (_alreadyPacking == 1) exitWith {
-		localize "str_player_beingpacked" call dayz_rollingMessages;		// That tent is already being packed.
+		localize "str_player_beingpacked" call DZE_fnc_rollingMessages;		// That tent is already being packed.
 	};
 
 	local _text = getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
-	format[localize "str_epoch_player_121", _text] call dayz_rollingMessages;	// Packing %1, move from this position to cancel within 5 seconds.
+	format[localize "str_epoch_player_121", _text] call DZE_fnc_rollingMessages;	// Packing %1, move from this position to cancel within 5 seconds.
 
 	_obj setVariable["packing", 1, true];
 
@@ -82,9 +82,9 @@ if ((_ownerID == dayz_playerUID) || {_objType in ["IC_DomeTent","IC_Tent"]}) the
 
 	[_weapons, _magazines, _backpacks, _holder] call fn_addCargo;	// pile everything onto the ground
 
-	localize "str_success_tent_pack" call dayz_rollingMessages;	// Your tent has been packed
+	localize "str_success_tent_pack" call DZE_fnc_rollingMessages;	// Your tent has been packed
 } else {
-	localize "str_fail_tent_pack" call dayz_rollingMessages;	// You cannot pack this tent, it is not yours
+	localize "str_fail_tent_pack" call DZE_fnc_rollingMessages;	// You cannot pack this tent, it is not yours
 };
 
 dayz_actionInProgress = false;

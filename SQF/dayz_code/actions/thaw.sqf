@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 player removeAction s_player_boil;
@@ -42,7 +42,7 @@ if (_qtyFood > 0) then {
 		};
 		player addMagazine _thawedFood;
 	} forEach _foodArr;
-	format [localize (["STR_SUCCESS_THAWED_FOOD1","STR_SUCCESS_THAWED_FOOD2"] select (_qtyFood > 1)), _qtyFood] call dayz_rollingMessages;
+	format [localize (["STR_SUCCESS_THAWED_FOOD1","STR_SUCCESS_THAWED_FOOD2"] select (_qtyFood > 1)), _qtyFood] call DZE_fnc_rollingMessages;
 };
 
 // Thaw Frozen Drink
@@ -60,10 +60,10 @@ if (_qtyDrink > 0 && _finished) then {
 		};
 		player addMagazine _thawedDrink;
 	} forEach _drinkArr;
-	format [localize (["STR_SUCCESS_THAWED_DRINK1","STR_SUCCESS_THAWED_DRINK2"] select (_qtyDrink > 1)), _qtyDrink] call dayz_rollingMessages;
+	format [localize (["STR_SUCCESS_THAWED_DRINK1","STR_SUCCESS_THAWED_DRINK2"] select (_qtyDrink > 1)), _qtyDrink] call DZE_fnc_rollingMessages;
 };
 if (!_finished) then {
-	localize "STR_EPOCH_ACTION_CANCELED" call dayz_rollingMessages;
+	localize "STR_EPOCH_ACTION_CANCELED" call DZE_fnc_rollingMessages;
 } else {
 	if (_wasStanding) then {
 		player playActionNow "PlayerStand";	// once the action has completed, return player to a standing pose if they were standing before the action

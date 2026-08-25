@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_array","_vehicle","_part","_hitpoint","_type","_isOK","_brokenPart","_finished","_hasToolbox","_nameType","_namePart","_damage","_BreakableParts","_selection","_wpn","_hits","_ismelee"];
@@ -20,7 +20,7 @@ s_player_repairActions = [];
 s_player_repair_crtl = 1;
 
 if (_hasToolbox) then {
-	if ([_vehicle] call DZE_SafeZonePosCheck) exitWith {(localize "str_salvage_safezone") call dayz_rollingMessages;};
+	if ([_vehicle] call DZE_SafeZonePosCheck) exitWith {(localize "str_salvage_safezone") call DZE_fnc_rollingMessages;};
 
 	[player,(getPosATL player),50,"repair"] spawn fnc_alertZombies;
 
@@ -57,20 +57,20 @@ if (_hasToolbox) then {
 				_vehicle call fnc_veh_ResetEH;
 				_vehicle setvelocity [0,0,1];
 				if(_brokenPart) then {
-					format[localize "str_salvage_destroyed",_namePart,_nameType] call dayz_rollingMessages;
+					format[localize "str_salvage_destroyed",_namePart,_nameType] call DZE_fnc_rollingMessages;
 				} else {
-					format[localize "str_salvage_removed",_namePart,_nameType] call dayz_rollingMessages;
+					format[localize "str_salvage_removed",_namePart,_nameType] call DZE_fnc_rollingMessages;
 				};
 			} else {
-				localize "str_player_24" call dayz_rollingMessages;
+				localize "str_player_24" call DZE_fnc_rollingMessages;
 			};
 		};
 		true call dz_fn_meleeMagazines;
 	} else {
-		localize "str_salvage_canceled" call dayz_rollingMessages;
+		localize "str_salvage_canceled" call DZE_fnc_rollingMessages;
 	};
 } else {
-	format[localize "str_salvage_toolbox",_namePart] call dayz_rollingMessages;
+	format[localize "str_salvage_toolbox",_namePart] call DZE_fnc_rollingMessages;
 };
 
 dayz_myCursorTarget = objNull;

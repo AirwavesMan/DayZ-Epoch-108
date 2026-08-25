@@ -27,7 +27,7 @@ if (_type == "radio") exitWith {
 if (_type == "IWAC") exitWith {
 	if (player hasWeapon "ItemRadio") then {
 		if (player getVariable["radiostate",true]) then {
-			_message call dayz_rollingMessages;
+			_message call DZE_fnc_rollingMessages;
 			playSound "IWAC_Message_Sound";
 		};
 	};
@@ -37,7 +37,7 @@ if (_type == "private") exitWith {if(getPlayerUID player == (_message select 0))
 if (_type == "systemChat") exitWith {systemChat _message;};
 if (_type == "titleCut") exitWith {titleCut [_message,"PLAIN DOWN",3];};
 if (_type == "titleText") exitWith {titleText [_message, "PLAIN DOWN"]; titleFadeOut 10;};
-if (_type == "rollingMessages") exitWith {_message call dayz_rollingMessages;};
+if (_type == "rollingMessages") exitWith {_message call DZE_fnc_rollingMessages;};
 if (_type == "dynamic_text") exitWith {
 	[
 		format["<t size='%3' color='%4' align='center'>%1</t><br /><t size='%5' color='%6' align='center'>%2</t>",_message select 0,_message select 1,_vars select 0,_vars select 1,_vars select 2,_vars select 3],

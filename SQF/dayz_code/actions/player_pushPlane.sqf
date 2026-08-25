@@ -2,13 +2,13 @@ private ["_dir","_nearPlayers","_object","_speed","_vel"];
 _object = _this;
 
 if (!local _object) exitWith {
-	localize "str_actions_pilot_seat" call dayz_rollingMessages;
+	localize "str_actions_pilot_seat" call DZE_fnc_rollingMessages;
 };
 
 _nearPlayers = {(isPlayer _x && _x != player)} count (player nearEntities ["CAManBase",8]);
 
 if ((_object isKindOf "C130J_US_EP1" or _object isKindOf "MV22") && _nearPlayers < 1) exitWith {
-	localize "STR_EPOCH_NEED_HELP" call dayz_rollingMessages;
+	localize "STR_EPOCH_NEED_HELP" call DZE_fnc_rollingMessages;
 };
 
 _vel = velocity _object;

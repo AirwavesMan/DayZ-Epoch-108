@@ -15,36 +15,42 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
+//#define DEBUG_DZE_FNC_ROLLING_MESSAGES
+
+#ifdef DEBUG_DZE_FNC_ROLLING_MESSAGES
+	diag_log format ['[Client Debug]: [DZE_fnc_rollingMessages]: Function called with argumentes: %1',_this];
+#endif
+
 disableSerialization;
 
-local _showText = {
+local _message = _this;
 
-	15 cutRsc ['RSC_DZ_Messages','plain'];
-	local _textLine = (uiNamespace getVariable 'DZ_Messages') displayCtrl 3;
-	_textLine ctrlSetStructuredText (parseText _this);
-	_textLine ctrlCommit 0;
-};
+if (typeName _message == 'ARRAY') then {
+	// Array input is displayed directly without changing the rolling message history.
+	_message = _message select 0;
+} else {
+	// Reuse one timestamp for all history checks in this call.
+	local _now = diag_tickTime;
 
-if (typeName _this == 'ARRAY') exitWith {p0 call _showText};	// Special or multi-line message
+	if (_now - Message_1_time < 5) then {
+		Message_3 = '';
 
-if (diag_ticktime - Message_1_time < 5) then {
+		if (_now - Message_2_time < 5) then {
+			Message_3 = Message_2;
+		};
 
-	if (time - Message_2_time < 5) then {
-
-		Message_3	= Message_2;
-		Message_3_time	= Message_2_time;
+		Message_2 = Message_1;
+		Message_2_time = Message_1_time;
 	} else {
-		Message_3	= '';
+		Message_2 = '';
+		Message_3 = '';
 	};
 
-	Message_2	= Message_1;
-	Message_2_time	= Message_1_time;
-} else {
-	Message_2 = '';
-	Message_3 = '';
+	Message_1 = _message;
+	Message_1_time = _now;
+	_message = Message_1 + '<br></br>' + Message_2 + '<br></br>' + Message_3;
 };
 
-Message_1	= _this;
-Message_1_time	= diag_ticktime;
-
-format ['%1<br></br>%2<br></br>%3', Message_1, Message_2, Message_3] call _showText;
+15 cutRsc ['RSC_DZ_Messages','plain'];
+local _textLine = (uiNamespace getVariable 'DZ_Messages') displayCtrl 3;
+_textLine ctrlSetStructuredText parseText _message;

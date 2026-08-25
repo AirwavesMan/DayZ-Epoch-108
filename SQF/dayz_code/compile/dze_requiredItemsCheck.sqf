@@ -62,11 +62,11 @@ _missingText = "";
 } forEach _missing;
 
 _hasbuilditem = _item in magazines player;
-if (_item != "" && {!_hasbuilditem} && {_text != ""}) exitWith {dayz_actionInProgress = false; format[localize "str_player_31",_text,"build"] call dayz_rollingMessages; false;};
+if (_item != "" && {!_hasbuilditem} && {_text != ""}) exitWith {dayz_actionInProgress = false; format[localize "str_player_31",_text,"build"] call DZE_fnc_rollingMessages; false;};
 if (!_hasrequireditem) exitWith {
 	dayz_actionInProgress = false;
 	systemChat format[localize "str_epoch_player_137",_missingText];
-	format[localize "str_epoch_player_137",_missingText] call dayz_rollingMessages;
+	format[localize "str_epoch_player_137",_missingText] call DZE_fnc_rollingMessages;
 	false;
 };
 

@@ -30,13 +30,13 @@ if (!isArray(_cfg >> "Nutrition")) exitWith
 //player is on a ladder
 if ((getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1) exitWith
 {
-	(localize "str_player_21") call dayz_rollingMessages;
+	(localize "str_player_21") call DZE_fnc_rollingMessages;
 };
 
 //player doesn't have the consumable item
 if (!(_this in magazines player)) exitWith
 {
-	(localize "str_player_33") call dayz_rollingMessages;
+	(localize "str_player_33") call DZE_fnc_rollingMessages;
 };
 
 //close gear

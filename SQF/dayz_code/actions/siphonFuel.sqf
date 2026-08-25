@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_vehicle","_curFuel","_newFuel","_finished","_location1","_location2","_abort",
@@ -9,10 +9,10 @@ _vehicle = _this select 3;
 player removeAction s_player_siphonfuel;
 _hasHose = "equip_hose" in magazines player;
 
-if (!_hasHose) exitWith {dayz_actionInProgress = false; localize "str_siphon_hose" call dayz_rollingMessages; };
+if (!_hasHose) exitWith {dayz_actionInProgress = false; localize "str_siphon_hose" call DZE_fnc_rollingMessages; };
 
 _PlayerNear = {isPlayer _x} count (_vehicle nearEntities ["CAManBase", 12]) > 1;
-if (_PlayerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
+if (_PlayerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call DZE_fnc_rollingMessages;};
 
 _abort = false;
 _configVeh = 	configFile >> "cfgVehicles" >> typeOf _vehicle;
@@ -42,7 +42,7 @@ _nameText = 	getText(_configVeh >> "displayName");
 			};
 
 			if (_newFuel > 0) then {
-				format[localize "str_siphon_preparing",_canTypeEmpty] call dayz_rollingMessages;
+				format[localize "str_siphon_preparing",_canTypeEmpty] call DZE_fnc_rollingMessages;
 				_finished = false;
 				[player,(getPosATL player),20,"refuel"] spawn fnc_alertZombies;
 
@@ -83,7 +83,7 @@ _nameText = 	getText(_configVeh >> "displayName");
 
 							["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
-							format[localize "str_siphon_drained",_nameText,_canSize] call dayz_rollingMessages;
+							format[localize "str_siphon_drained",_nameText,_canSize] call DZE_fnc_rollingMessages;
 
 							call fnc_usec_medic_removeActions;
 							r_action = false;
@@ -93,15 +93,15 @@ _nameText = 	getText(_configVeh >> "displayName");
 							_abort = true;
 						};
 					} else {
-						format[localize "str_siphon_notenough",_nameText] call dayz_rollingMessages;
+						format[localize "str_siphon_notenough",_nameText] call DZE_fnc_rollingMessages;
 						_abort = true;
 					};
 				} else {
-					localize "str_siphon_canceled" call dayz_rollingMessages;
+					localize "str_siphon_canceled" call DZE_fnc_rollingMessages;
 					_abort = true;
 				};
 			} else {
-				format[localize "str_siphon_notenough",_nameText] call dayz_rollingMessages;
+				format[localize "str_siphon_notenough",_nameText] call DZE_fnc_rollingMessages;
 				_abort = true;
 			};
 		};

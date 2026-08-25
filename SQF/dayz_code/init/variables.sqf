@@ -84,7 +84,6 @@ if (!isDedicated) then {
 	Message_3 = "";
 	Message_1_time = 0;
 	Message_2_time = 0;
-	Message_3_time = 0;
 
 	// Kill Feed
 	death_1 = "";

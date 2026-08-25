@@ -7,7 +7,7 @@ disableSerialization;
 call gear_ui_init;
 
 //note - one slot ammo can be used!
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call DZE_fnc_rollingMessages; };
 dayz_actionInProgress = true;
 
 _item = _this;
@@ -28,7 +28,7 @@ _item_ammo = gearSlotAmmoCount (uiNamespace getVariable 'uiControl');
 if (currentWeapon player != "") then {
 	_mags = [] + getArray (configFile >> "cfgWeapons" >> (currentWeapon player) >> "magazines");
 };
-if !(_create in _mags) exitWith {localize "str_must_have_weapon" call dayz_rollingMessages;};
+if !(_create in _mags) exitWith {localize "str_must_have_weapon" call DZE_fnc_rollingMessages;};
 
 */
 //player playActionNow "PutDown";
@@ -99,7 +99,7 @@ if (_consume_magsize > _create_magsize) then {
 
 if ((_qtynew_create_mags + _qtynew_consume_mags) > (_qty_create_mags + _qty_consume_mags + _qty_free_slots)) exitWith {
 	dayz_actionInProgress = false;
-    localize "str_player_24" call dayz_rollingMessages;
+    localize "str_player_24" call DZE_fnc_rollingMessages;
 };
 _qtynew_consume_mags_full = floor(_qtynew_consume_ammo/_consume_magsize);
 _qtynew_create_mags_full = floor(_qtynew_create_ammo/_create_magsize);

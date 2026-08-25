@@ -46,7 +46,7 @@ switch (toLower DZE_DeathMsgChat) do {
 };
 
 if (DZE_DeathMsgRolling) then {
-	_message call dayz_rollingMessages;
+	_message call DZE_fnc_rollingMessages;
 };
 
 diag_log format["DeathMessage: %1",_message];

@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_body","_playerNear","_name","_hisMoney","_myMoney","_isZombie","_notAllowed"];
@@ -8,7 +8,7 @@ _body = _this select 3;
 if (isNull _body) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
 
 _playerNear = {isPlayer _x} count (_body nearEntities ["CAManBase", 10]) > 1;
-if (_playerNear) exitWith {dayz_actionInProgress = false;localize "str_pickup_limit_5" call dayz_rollingMessages;};
+if (_playerNear) exitWith {dayz_actionInProgress = false;localize "str_pickup_limit_5" call DZE_fnc_rollingMessages;};
 
 _isZombie = _body isKindOf "zZombie_Base";
 _notAllowed = false;
@@ -17,7 +17,7 @@ if (DZE_PVE_Mode && !_isZombie) then {
 	_notAllowed = [player,_body] call DZE_PVE_Group_Check;
 };
 
-if (_notAllowed) exitWith {dayz_actionInProgress = false;localize "STR_EPOCH_PVE_ACTIVE_CANNOT_CHECK_WALLET" call dayz_rollingMessages;};
+if (_notAllowed) exitWith {dayz_actionInProgress = false;localize "STR_EPOCH_PVE_ACTIVE_CANNOT_CHECK_WALLET" call DZE_fnc_rollingMessages;};
 
 _hisMoney = _body getVariable ["cashMoney",0];
 
@@ -35,7 +35,7 @@ if (_isZombie) then {
 };
 
 if (isNil "_hisMoney") then {_hisMoney = 0;};
-if (!(typeName _hisMoney == "SCALAR") || {_hisMoney < 1}) exitWith {dayz_actionInProgress = false; format[localize "STR_CL_ZSC_NO_COINS",_name,CurrencyName] call dayz_rollingMessages};
+if (!(typeName _hisMoney == "SCALAR") || {_hisMoney < 1}) exitWith {dayz_actionInProgress = false; format[localize "STR_CL_ZSC_NO_COINS",_name,CurrencyName] call DZE_fnc_rollingMessages};
 
 _myMoney = player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 _myMoney = _myMoney + _hisMoney;

@@ -183,7 +183,7 @@ class DZE_Land_WoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_EPOCH_DOORS_UNLOCK;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 };
@@ -273,7 +273,7 @@ class DZE_Land_LargeWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_EPOCH_DOORS_UNLOCK;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 };
@@ -363,7 +363,7 @@ class DZE_Land_GarageWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_EPOCH_DOORS_UNLOCK;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 };
@@ -479,7 +479,7 @@ class DZE_Land_WoodGateLocked: DZE_Land_WoodDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 	
@@ -605,7 +605,7 @@ class DZE_Land_WoodOpenTopGarageLocked: DZE_Land_WoodDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_EPOCH_DOORS_UNLOCK;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 	
@@ -674,7 +674,7 @@ class DZE_CinderWallDoorLocked: DZE_CinderWallDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_EPOCH_DOORS_UNLOCK;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 };
@@ -763,7 +763,7 @@ class DZE_CinderWallDoorSmallLocked: DZE_CinderWallDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_EPOCH_DOORS_UNLOCK;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 };
@@ -900,7 +900,7 @@ class DZE_CinderGateLocked: DZE_CinderWallDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 };
@@ -1002,7 +1002,7 @@ class DZE_CinderGarageOpenTopLocked: DZE_CinderWallDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_EPOCH_DOORS_UNLOCK;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 };
@@ -1104,7 +1104,7 @@ class DZE_CinderDoorHatchLocked: DZE_CinderWallDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_EPOCH_DOORS_UNLOCK;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 };
@@ -1225,7 +1225,7 @@ class DZE_DoorLocked: DZE_CinderWallDoorLocked_Base {
 		class Unlock_Door_Dialog: Open_Door {
 			displayName = $STR_EPOCH_DOORS_UNLOCK;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
 

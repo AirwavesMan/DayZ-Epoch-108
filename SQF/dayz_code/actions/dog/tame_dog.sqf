@@ -46,8 +46,8 @@ if (_hasMeat) then {
 		
 		_dog setVariable ["ownerPUID", dayz_playerUID, true];
 
-		format[localize "str_epoch_player_173",_textRemoved] call dayz_rollingMessages;
+		format[localize "str_epoch_player_173",_textRemoved] call DZE_fnc_rollingMessages;
 	} else {
-		format[localize "str_epoch_player_174",_textRemoved] call dayz_rollingMessages;
+		format[localize "str_epoch_player_174",_textRemoved] call DZE_fnc_rollingMessages;
 	};
 };

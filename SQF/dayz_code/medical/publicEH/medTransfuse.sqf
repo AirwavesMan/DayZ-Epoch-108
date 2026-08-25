@@ -17,7 +17,7 @@ r_interrupt = false;
 //Infection chance
 _TransfusionInfection = ((random 20) < 0.3);
 
-localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
+localize "str_actions_medical_transfusion_start" call DZE_fnc_rollingMessages;
 
 //Start the loop to mimic the transfusion to cut back on issues flooding the server
 while {r_doLoop} do {
@@ -71,4 +71,4 @@ if (_TransfusionInfection) then {
 	player setVariable["USEC_infected",true,true];
 };
 
-localize _msg call dayz_rollingMessages;
+localize _msg call DZE_fnc_rollingMessages;

@@ -2,7 +2,7 @@
 	DayZ Epoch Vehicle Upgrades
 	Made for DayZ Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_52" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_52" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_text","_requirementsTools","_upgradeName","_displayname","_vehicle","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_removed","_tobe_removed_total","_textMissing","_num_removed","_removed_total","_location","_dir","_objectCharacterID","_classname","_newclassname","_upgrade","_vehicle","_finished","_temp_removed_array_mag","_temp_removed_array_wep","_notNearestPlayer","_requirementsWeapon","_requirementsMagazine"];
@@ -12,14 +12,14 @@ _vehicle = cursorTarget;
 
 if (isNull _vehicle || !(_vehicle isKindOf "AllVehicles") || !(alive _vehicle)) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
 
-if (vehicle player != player) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_18" call dayz_rollingMessages;};
+if (vehicle player != player) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_18" call DZE_fnc_rollingMessages;};
 
 _classname = typeOf _vehicle;
 _displayname = getText (configFile >> "CfgVehicles" >> _classname >> "displayname");
 
-if (_classname in DZE_DisableVehicleUpgrade) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_VEHUP_NOT_ALLOWED",_displayname] call dayz_rollingMessages;};
+if (_classname in DZE_DisableVehicleUpgrade) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_VEHUP_NOT_ALLOWED",_displayname] call DZE_fnc_rollingMessages;};
 
-if ((player distance _vehicle) > 10) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_VEHUP_DISTANCE_TOO_FAR",_displayname] call dayz_rollingMessages;};
+if ((player distance _vehicle) > 10) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_VEHUP_DISTANCE_TOO_FAR",_displayname] call DZE_fnc_rollingMessages;};
 
 if (count (crew _vehicle) == 0) then {
 	_notNearestPlayer = _vehicle call dze_isnearest_player;
@@ -62,7 +62,7 @@ if (count (crew _vehicle) == 0) then {
 					_finished = ["Medic",1] call fn_loopAction;
 					if (!_finished) exitWith {};
 
-					if (count (crew _vehicle) > 0) exitWith {format [localize "STR_CL_LOG_FAIL_PLAYER",_displayname] call dayz_rollingMessages;};
+					if (count (crew _vehicle) > 0) exitWith {format [localize "STR_CL_LOG_FAIL_PLAYER",_displayname] call DZE_fnc_rollingMessages;};
 					["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 
 					_temp_removed_array_mag = [];
@@ -115,7 +115,7 @@ if (count (crew _vehicle) == 0) then {
 						_objectCharacterID 	= _vehicle getVariable ["CharacterID","0"];
 
 						if (_objectCharacterID == "-1") then {
-							localize "str_epoch_player_50" call dayz_rollingMessages;
+							localize "str_epoch_player_50" call DZE_fnc_rollingMessages;
 						} else {
 							// Get position
 							_location	= getposATL _vehicle;
@@ -123,7 +123,7 @@ if (count (crew _vehicle) == 0) then {
 							// Get direction
 							_dir = getDir _vehicle;
 							
-							localize "STR_EPOCH_VEHUP_IN_PROGRESS" call dayz_rollingMessages;
+							localize "STR_EPOCH_VEHUP_IN_PROGRESS" call DZE_fnc_rollingMessages;
 							[_newclassname,objNull] call fn_waitForObject;
 							dze_waiting = nil;
 							PVDZE_veh_Upgrade = [_vehicle,[_dir,_location],_newclassname,_objectCharacterID,player,dayz_authKey];
@@ -134,21 +134,21 @@ if (count (crew _vehicle) == 0) then {
 
 							if (dze_waiting == "fail") then {
 							    {player addMagazine _x;} count _temp_removed_array_mag;
-	    							{player addWeapon _x;} count _temp_removed_array_wep;
-	    							format[localize "str_crafting_failed",_newclassname] call dayz_rollingMessages;
+								{player addWeapon _x;} count _temp_removed_array_wep;
+								format[localize "str_crafting_failed",_newclassname] call DZE_fnc_rollingMessages;
 							} else {
-	    							localize "STR_EPOCH_VEHUP_SUCCESS" call dayz_rollingMessages;
+								localize "STR_EPOCH_VEHUP_SUCCESS" call DZE_fnc_rollingMessages;
 								["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 							};
 						};
 					} else {
 						{player addMagazine _x;} count _temp_removed_array_mag;
 						{player addWeapon _x;} count _temp_removed_array_wep;
-						format[localize "str_epoch_player_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
+						format[localize "str_epoch_player_145",_removed_total,_tobe_removed_total] call DZE_fnc_rollingMessages;
 					};
 				} else {
 					_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-					format[localize "STR_EPOCH_ACTIONS_6",_missingQty, _textMissing] call dayz_rollingMessages;
+					format[localize "STR_EPOCH_ACTIONS_6",_missingQty, _textMissing] call DZE_fnc_rollingMessages;
 
 					systemchat localize "STR_CRAFTING_NEEDED_ITEMS";
 
@@ -168,13 +168,13 @@ if (count (crew _vehicle) == 0) then {
 				};
 			};
 		} else {
-			format [localize "STR_EPOCH_VEHUP_NO_UPGRADE_FOR_VEHICLE",_upgradeName,_displayname] call dayz_rollingMessages;
+			format [localize "STR_EPOCH_VEHUP_NO_UPGRADE_FOR_VEHICLE",_upgradeName,_displayname] call DZE_fnc_rollingMessages;
 		};
 	} else {
-		localize "str_epoch_player_245" call dayz_rollingMessages;
+		localize "str_epoch_player_245" call DZE_fnc_rollingMessages;
 	};
 } else {
-	format [localize "STR_CL_LOG_FAIL_PLAYER",_displayname] call dayz_rollingMessages;
+	format [localize "STR_CL_LOG_FAIL_PLAYER",_displayname] call DZE_fnc_rollingMessages;
 };
 
 dayz_actionInProgress = false;

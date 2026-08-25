@@ -281,7 +281,7 @@ while {1 == 1} do {
 	//Two primary guns pickup exploit fix
 	if ((DZE_TwoPrimaries < 2) && (primaryWeapon player != "") && (!(primaryWeapon player in MeleeWeapons)) && (dayz_onBack != "") && (!(dayz_onBack in MeleeWeapons)) && (isNull (findDisplay 106)) &&
 	(animationState player != "amovpknlmstpslowwrfldnon_amovpknlmstpsraswrfldnon" OR animationState player != "amovpercmstpslowwrfldnon_amovpercmstpsraswrfldnon" OR animationState player != "amovpercmstpslowwrfldnon_amovpercmstpsraswrfldnon")) then {
-		localize "str_player_ammo_2primary" call dayz_rollingMessages;
+		localize "str_player_ammo_2primary" call DZE_fnc_rollingMessages;
 		player playActionNow "stop";
 		player action ["dropWeapon", player, primaryWeapon player];
 		//sleep 3;

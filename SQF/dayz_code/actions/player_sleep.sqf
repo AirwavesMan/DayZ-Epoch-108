@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_playArray","_lastRest","_blood","_timesincedrink","_bloodinc","_Moves","_sleepArray","_animState","_started","_finished","_timer","_i","_r","_cureAttempt","_isAsleep","_cureChance","_infectedStatus","_randomamount","_isOwner","_tent"];
@@ -54,7 +54,7 @@ while {r_doLoop} do {
 					} else {
 						_infectedStatus = if (r_player_infected) then { "Infected" } else { "Cured" };
 						_cureAttempt = _cureAttempt + 0.01;
-						format[localize "str_sleepInfection",r_player_blood,_infectedStatus] call dayz_rollingMessages;
+						format[localize "str_sleepInfection",r_player_blood,_infectedStatus] call DZE_fnc_rollingMessages;
 					};
 				};
 			};
@@ -78,7 +78,7 @@ while {r_doLoop} do {
 					
 					_timer = diag_tickTime;
 					_infectedStatus = if (r_player_infected) then { "Yes" } else { "Cured" };
-					format[localize "str_sleepStats",_blood,r_player_blood] call dayz_rollingMessages;
+					format[localize "str_sleepStats",_blood,r_player_blood] call DZE_fnc_rollingMessages;
 				};	
 			};
 			

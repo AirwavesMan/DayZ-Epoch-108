@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_msg","_finished","_unit","_item"];
@@ -27,7 +27,7 @@ if (_finished) then {
 		//Self Healing
 		[player, player, if (_item == "ItemSepsisBandage") then {true} else {false}] call player_medBandage;
 		_msg = ["str_actions_medical_bandage_self","str_actions_medical_sepsisbandage_self"] select (_item == "ItemSepsisBandage");
-		localize _msg call dayz_rollingMessages;
+		localize _msg call DZE_fnc_rollingMessages;
 	} else {
 		// Heal another player
 		PVDZ_send = [_unit,"Bandage",[_unit, player, if (_item == "ItemSepsisBandage") then {true} else {false}]];
@@ -37,7 +37,7 @@ if (_finished) then {
 		20 call player_humanityChange;
 
 		_msg = ["str_actions_medical_gave_bandage","str_actions_medical_gave_sepsisbandage"] select (_item == "ItemSepsisBandage");
-		format[localize _msg,_unit call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
+		format[localize _msg,_unit call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;
 	};
 } else {
 	player addMagazine _item;

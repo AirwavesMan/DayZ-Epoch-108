@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 if (player isKindOf "PZombie_VB") exitWith {};
 private ["_array","_type","_classname","_holder","_playerID","_text","_broken","_claimedBy","_config","_isOk","_PlayerNear","_wpn","_ismelee","_hasBag"];
 
@@ -7,7 +7,7 @@ _type = _array select 0;
 _classname = _array select 1;
 _holder = _array select 2;
 
-if (player distance _holder > 3) exitwith {localize "str_pickup_limit_1" call dayz_rollingMessages};
+if (player distance _holder > 3) exitwith {localize "str_pickup_limit_1" call DZE_fnc_rollingMessages};
 
 _playerID = getPlayerUID player;
 player removeAction s_player_holderPickup;
@@ -15,9 +15,9 @@ _text = getText (configFile >> _type >> _classname >> "displayName");
 
 if (!canPickup) exitwith {
 	if (pickupInit) then {
-		localize "str_pickup_limit_2" call dayz_rollingMessages;
+		localize "str_pickup_limit_2" call DZE_fnc_rollingMessages;
 	} else {
-		localize "str_pickup_limit_3" call dayz_rollingMessages;
+		localize "str_pickup_limit_3" call DZE_fnc_rollingMessages;
 	};
 };
 
@@ -30,16 +30,16 @@ canPickup = false;
 player playActionNow "PutDown";
 
 _broken = ((_classname == "1Rnd_Arrow_Wood") && {[0.15] call fn_chance}); // Adding random chance of arrow is re-usable on pickup
-if (_broken) exitWith { deleteVehicle _holder; localize "str_broken_arrow" call dayz_rollingMessages; };
+if (_broken) exitWith { deleteVehicle _holder; localize "str_broken_arrow" call DZE_fnc_rollingMessages; };
 
 _claimedBy = _holder getVariable["claimed","0"];
 
-if (_claimedBy != _playerID) exitWith { format[localize "str_player_beinglooted",_text] call dayz_rollingMessages; };
+if (_claimedBy != _playerID) exitWith { format[localize "str_player_beinglooted",_text] call DZE_fnc_rollingMessages; };
 
 /**
 if (_classname isKindOf "Bag_Base_EP1") exitWith {
 	_PlayerNear = {isPlayer _x} count (_holder nearEntities ["CAManBase", 12]) > 1;
-	if (_PlayerNear) exitWith {localize "str_pickup_limit_4" call dayz_rollingMessages;};
+	if (_PlayerNear) exitWith {localize "str_pickup_limit_4" call DZE_fnc_rollingMessages;};
 
 	_hasBag = unitBackpack player;
 
@@ -82,7 +82,7 @@ if (_isOk) then {
 } else {
 	if (!_isOk) exitWith {
 		_holder setVariable["claimed",0,true];
-		localize "str_player_24" call dayz_rollingMessages;
+		localize "str_player_24" call DZE_fnc_rollingMessages;
 	};
 };
 uiSleep 3;

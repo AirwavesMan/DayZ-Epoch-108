@@ -26,5 +26,5 @@ if !(surfaceIsWater _pos) then {
 
 	} count _unconscious_crew;
 } else {
-	localize "str_actions_unload_fail" call dayz_rollingMessages;
+	localize "str_actions_unload_fail" call DZE_fnc_rollingMessages;
 };

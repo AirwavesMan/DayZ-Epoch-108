@@ -18,6 +18,6 @@ if ((_vcl emptyPositions "cargo") > 0) then {
 	PVDZ_send = [_wounded,"LoadWounded",[_wounded,_medic,_vcl],[_wounded,dayz_authKey,_medic]];
 	publicVariableServer "PVDZ_send";
 } else {
-	localize "str_dragnospace" call dayz_rollingMessages; // "No space left in vehicle"
+	localize "str_dragnospace" call DZE_fnc_rollingMessages; // "No space left in vehicle"
 };
 

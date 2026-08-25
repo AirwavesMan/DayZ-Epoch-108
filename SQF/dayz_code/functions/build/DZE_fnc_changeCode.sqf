@@ -27,7 +27,7 @@
 	diag_log format ['[Client Debug]: [DZE_fnc_changeCode]: Function called with argumentes: %1',_this];
 #endif
 
-if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_CHANGE_CODE_ALREADY_IN_PROGRESS' call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_CHANGE_CODE_ALREADY_IN_PROGRESS' call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 local _object = if (typeName _this == 'ARRAY' && {count _this > 3}) then {_this select 3} else {objNull};

@@ -1,7 +1,7 @@
 /*
 	Bury/Butcher body script by salival (https://github.com/oiad)
 */
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_action","_backPackMag","_backPackWpn","_crate","_corpse","_cross","_gain","_isBury","_grave","_name","_playerNear","_backPack","_position","_sound"];
@@ -10,7 +10,7 @@ _corpse = (_this select 3) select 0;
 if (isNull _corpse) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
 
 _playerNear = {isPlayer _x} count (_corpse nearEntities ["CAManBase", 10]) > 1;
-if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
+if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call DZE_fnc_rollingMessages;};
 
 _action = (_this select 3) select 1;
 
@@ -22,10 +22,10 @@ s_player_butcher_human = -1;
 _position = getPosATL _corpse;
 _isBury = _action == "bury";
 
-if (!DZE_BuryOnRoad && {isOnRoad _position}) exitWith {dayz_actionInProgress = false; format[localize "STR_CL_BA_ROAD",if (_isBury) then {localize "STR_CL_BA_BURY1"} else {localize "STR_CL_BA_BUTCHER1"}] call dayz_rollingMessages;};
+if (!DZE_BuryOnRoad && {isOnRoad _position}) exitWith {dayz_actionInProgress = false; format[localize "STR_CL_BA_ROAD",if (_isBury) then {localize "STR_CL_BA_BURY1"} else {localize "STR_CL_BA_BUTCHER1"}] call DZE_fnc_rollingMessages;};
 
 _finished = ["Medic",1] call fn_loopAction;
-if (!_finished) exitWith {dayz_actionInProgress = false;localize "str_epoch_player_26" call dayz_rollingMessages;};
+if (!_finished) exitWith {dayz_actionInProgress = false;localize "str_epoch_player_26" call DZE_fnc_rollingMessages;};
 
 _corpse setVariable["isBuried",true,true];
 
@@ -70,9 +70,9 @@ deleteVehicle _corpse;
 
 if (_isBury) then {
 	if (_name != "unknown") then {
-		format[localize "STR_CL_BA_RIP",_name] call dayz_rollingMessages;
+		format[localize "STR_CL_BA_RIP",_name] call DZE_fnc_rollingMessages;
 	} else {
-		localize "STR_CL_BA_RIP_UNKNOWN" call dayz_rollingMessages;
+		localize "STR_CL_BA_RIP_UNKNOWN" call DZE_fnc_rollingMessages;
 	};
 } else {
 	["knives",0.2] call fn_dynamicTool;

@@ -32,7 +32,7 @@ switch (_this select 0) do {
 			if ([_chance] call fn_chance) then {
 				player removeWeapon _x;
 				player addWeapon _remaining;
-				localize _message call dayz_rollingMessages;
+				localize _message call DZE_fnc_rollingMessages;
 			};
 		} else {
 			player removeWeapon _x;
@@ -40,7 +40,7 @@ switch (_this select 0) do {
 				//Drop dull knife or empty matchbox if player already has one. Prevents duplicate tool.
 				player removeWeapon _remaining;
 				[_remaining,2,1] call fn_dropItem;
-				format[localize "str_actions_noroom",_remaining] call dayz_rollingMessages;
+				format[localize "str_actions_noroom",_remaining] call DZE_fnc_rollingMessages;
 			};
 			player addWeapon _remaining;
 		};

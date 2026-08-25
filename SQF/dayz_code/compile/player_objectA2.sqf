@@ -19,7 +19,7 @@ if ((dayz_lastClothesChange + 3 > diag_tickTime) || {(player distance respawn_we
 
 if (_status == "enter") then {
 	if (_showText) then {
-		localize "STR_OBJECTA2_ENTER" call dayz_rollingMessages;
+		localize "STR_OBJECTA2_ENTER" call DZE_fnc_rollingMessages;
 	};
 	
 	enableEnvironment false;
@@ -45,7 +45,7 @@ if (_status == "enter") then {
 	
 } else {
 	if (_showText) then {
-		localize "STR_OBJECTA2_LEAVE" call dayz_rollingMessages;
+		localize "STR_OBJECTA2_LEAVE" call DZE_fnc_rollingMessages;
 	};
 
 	// remove light sources

@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_32" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_32" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_time","_vehicle","_removed","_vehType","_finished"];
@@ -33,9 +33,9 @@ if (_removed == 1) then {
 			//Wait for lock status to update over network (can take up to a few seconds)
 			waitUntil {uiSleep 0.1;(!locked _vehicle or (diag_tickTime - _time > 4))};
 		};
-		format [localize "STR_EPOCH_PLAYER_33_OK",_vehType] call dayz_rollingMessages;
+		format [localize "STR_EPOCH_PLAYER_33_OK",_vehType] call DZE_fnc_rollingMessages;
 	} else {
-		format [localize "STR_EPOCH_PLAYER_33",_vehType] call dayz_rollingMessages;
+		format [localize "STR_EPOCH_PLAYER_33",_vehType] call DZE_fnc_rollingMessages;
 	};
 };
 

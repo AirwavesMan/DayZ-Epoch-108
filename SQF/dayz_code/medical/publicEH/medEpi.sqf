@@ -12,5 +12,5 @@ r_player_unconscious = false;
 r_player_cardiac = false;
 
 if (_medic != player) then {
-	format [localize "str_actions_medical_general_received",_medic call DZE_fnc_getNamePlayer,localize "STR_EQUIP_NAME_14"] call dayz_rollingMessages;
+	format [localize "str_actions_medical_general_received",_medic call DZE_fnc_getNamePlayer,localize "STR_EQUIP_NAME_14"] call DZE_fnc_rollingMessages;
 };

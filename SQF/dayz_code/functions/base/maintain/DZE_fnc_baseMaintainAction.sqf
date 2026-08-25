@@ -95,4 +95,4 @@ if (Z_SingleCurrency) then {
 };
 
 call player_forceSave;
-_message call dayz_rollingMessages;
+_message call DZE_fnc_rollingMessages;

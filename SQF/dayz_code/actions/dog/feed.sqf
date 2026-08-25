@@ -1,10 +1,10 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_array","_handle","_type","_onLadder","_removed","_itemIn","_countIn","_bottles"];
 
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {dayz_actionInProgress = false;localize "str_player_21" call dayz_rollingMessages;};
+if (_onLadder) exitWith {dayz_actionInProgress = false;localize "str_player_21" call DZE_fnc_rollingMessages;};
 
 _array = 	_this select 3;
 _handle = 	_array select 0;

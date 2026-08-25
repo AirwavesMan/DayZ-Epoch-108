@@ -47,4 +47,4 @@ if !(isNil "_medsUsed") then {
 	};
 };
 
-_msg call dayz_rollingMessages;
+_msg call DZE_fnc_rollingMessages;

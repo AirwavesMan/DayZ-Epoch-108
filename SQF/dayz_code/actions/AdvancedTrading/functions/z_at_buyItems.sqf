@@ -127,7 +127,7 @@ if (_enoughMoney) then {
 			_keySelected = format["%1%2",DZE_itemKeys call BIS_fnc_selectRandom,_keyNumber];
 			_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
 		};
-		if (!_isKeyOK) exitWith {localize "str_epoch_player_107" call dayz_rollingMessages; "";};
+		if (!_isKeyOK) exitWith {localize "str_epoch_player_107" call DZE_fnc_rollingMessages; "";};
 		_activatingPlayer = player;
 		_dir = round(random 360);
 		_helipad = nearestObjects [player, ["HeliHCivil","HeliHempty"], 100];
@@ -145,7 +145,7 @@ if (_enoughMoney) then {
 		
 		if (surfaceIsWater _location && {count (_sign nearEntities ["Ship",8]) > 0}) then {
 			deleteVehicle _sign;
-			localize "STR_EPOCH_TRADE_OBSTRUCTED" call dayz_rollingMessages;
+			localize "STR_EPOCH_TRADE_OBSTRUCTED" call DZE_fnc_rollingMessages;
 		} else {
 			[_part_out,_sign] call fn_waitForObject;
 		};

@@ -5,12 +5,12 @@ _config = configFile >> "cfgWeapons" >> _item;
 call gear_ui_init;
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages;};
+if (_onLadder) exitWith {localize "str_player_21" call DZE_fnc_rollingMessages;};
 
 _hastoolweapon = _item in weapons player;
 _text = getText (_config >> "displayName");
-if (!_hastoolweapon) exitWith {format[localize "str_player_30",_text] call dayz_rollingMessages;};
-if (dayZ_OnBack != "") exitWith {closeDialog 0; format[localize "str_player_toback_fail",_text] call dayz_rollingMessages;};
+if (!_hastoolweapon) exitWith {format[localize "str_player_30",_text] call DZE_fnc_rollingMessages;};
+if (dayZ_OnBack != "") exitWith {closeDialog 0; format[localize "str_player_toback_fail",_text] call DZE_fnc_rollingMessages;};
 
 call gear_ui_init;
 

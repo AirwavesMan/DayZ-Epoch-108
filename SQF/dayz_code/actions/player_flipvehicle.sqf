@@ -4,7 +4,7 @@ _object = _this select 3;
 _nearPlayers = {(isPlayer _x && _x != player)} count (player nearEntities ["CAManBase",8]);
 
 if (!(_object isKindOf "ATV_Base_EP1") && _nearPlayers < 1) exitWith {
-	localize "STR_EPOCH_NEED_HELP" call dayz_rollingMessages;
+	localize "STR_EPOCH_NEED_HELP" call DZE_fnc_rollingMessages;
 };
 
 //Kneel Down

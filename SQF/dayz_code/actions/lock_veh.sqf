@@ -1,7 +1,7 @@
 private ["_time","_vehicle"];
 _vehicle = _this select 3;
 
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_37" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_37" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 {player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];

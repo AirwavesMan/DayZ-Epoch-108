@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 local _unit = (_this select 3) select 0;
@@ -24,7 +24,7 @@ if (_finished) then {
 		//Self Healing
 		[player,player,_item] call player_medMorphine;
 
-		format [localize "str_actions_medical_general_self",_displayName] call dayz_rollingMessages;
+		format [localize "str_actions_medical_general_self",_displayName] call DZE_fnc_rollingMessages;
 	} else {
 		//Give humanity reward to player giving the morphine to another player.
 		local _humanityGain = [25,50] select (_item == "ItemMorphine");
@@ -33,7 +33,7 @@ if (_finished) then {
 		PVDZ_send = [_unit,"Morphine",[_unit,player,_item]];
 		publicVariableServer "PVDZ_send";
 
-		format [localize "str_actions_medical_general_give",_displayName,_unit call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
+		format [localize "str_actions_medical_general_give",_displayName,_unit call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;
 	};
 } else {
 	player addMagazine _item;

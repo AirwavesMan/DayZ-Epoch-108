@@ -19,7 +19,7 @@ _magazines = getArray (configFile >> "cfgWeapons" >> _weapon >> "magazines");
 if (_ammo != "") then {
 	_vehicle addMagazineTurret [_ammo,_turret];
 	player removeMagazine _ammo;
-	format[localize "str_player_ammo_successful",_ammoType] call dayz_rollingMessages;
+	format[localize "str_player_ammo_successful",_ammoType] call DZE_fnc_rollingMessages;
 } else {
-	format[localize "str_player_ammo_fail",_text] call dayz_rollingMessages;
+	format[localize "str_player_ammo_fail",_text] call DZE_fnc_rollingMessages;
 };

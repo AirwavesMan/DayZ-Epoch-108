@@ -48,7 +48,7 @@ while {(!isNull _display) && !r_player_dead} do {
 		case (_playerCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
-			[localize "str_abort_playerclose",1] call dayz_rollingMessages;
+			localize "str_abort_playerclose" call DZE_fnc_rollingMessages;
 			if (TimeOutDisplayed) then {
 				_display closeDisplay 2;
 				closeDialog 2;
@@ -57,7 +57,7 @@ while {(!isNull _display) && !r_player_dead} do {
 		case (_zedCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
-			[localize "str_abort_zedsclose",1] call dayz_rollingMessages;
+			localize "str_abort_zedsclose" call DZE_fnc_rollingMessages;
 			if (TimeOutDisplayed) then {
 				_display closeDisplay 2;
 				closeDialog 2;
@@ -65,12 +65,12 @@ while {(!isNull _display) && !r_player_dead} do {
 		};
 		case (DZE_EVRStormRunning) : {
 			_btnAbort ctrlEnable false;
-			[localize "STR_EPOCH_PLAYER_12_1",1] call dayz_rollingMessages;
+			localize "STR_EPOCH_PLAYER_12_1" call DZE_fnc_rollingMessages;
 		};		
 		case (_inCombat) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in %2)", _btnAbortText,[DZE_CombatTimer,ceil (_timeout - diag_tickTime)] select ((player getVariable["combatNoTimeout", 0] == 0))];
-			[localize "str_abort_playerincombat",1] call dayz_rollingMessages;
+			localize "str_abort_playerincombat" call DZE_fnc_rollingMessages;
 			if (TimeOutDisplayed) then {
 				_display closeDisplay 2;
 				closeDialog 2;
@@ -78,7 +78,7 @@ while {(!isNull _display) && !r_player_dead} do {
 		};
 		case (isInTraderCity) : {
 			_btnAbort ctrlEnable false;
-			[localize "str_epoch_player_12",1] call dayz_rollingMessages;
+			localize "str_epoch_player_12" call DZE_fnc_rollingMessages;
 		};
 		case (((diag_tickTime - _testTime) < 10) && !TimeOutDisplayed) : {
 			_btnAbort ctrlEnable false;

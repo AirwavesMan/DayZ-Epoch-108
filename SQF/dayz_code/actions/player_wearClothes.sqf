@@ -1,21 +1,21 @@
 private ["_item","_onLadder","_hasclothesitem","_config","_text","_myModel","_itemNew","_model","_morphHandle","_playerNear","_targeted","_pos"];
 
-if (dayz_lastClothesChange + 5 > diag_tickTime) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_lastClothesChange + 5 > diag_tickTime) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_lastClothesChange = diag_tickTime;
 
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 
-if (vehicle player != player) exitWith {localize "str_player_fail_wear1" call dayz_rollingMessages;};
-//if (!isNull (unitBackpack player)) exitWith {localize "STR_EPOCH_ACTIONS_9" call dayz_rollingMessages;};
-if ("CSGAS" in (magazines player)) exitWith {localize "STR_EPOCH_ACTIONS_10" call dayz_rollingMessages;};
+if (vehicle player != player) exitWith {localize "str_player_fail_wear1" call DZE_fnc_rollingMessages;};
+//if (!isNull (unitBackpack player)) exitWith {localize "STR_EPOCH_ACTIONS_9" call DZE_fnc_rollingMessages;};
+if ("CSGAS" in (magazines player)) exitWith {localize "STR_EPOCH_ACTIONS_10" call DZE_fnc_rollingMessages;};
 
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if (_playerNear) exitWith {localize "STR_EPOCH_PLAYER_84" call dayz_rollingMessages;};
+if (_playerNear) exitWith {localize "STR_EPOCH_PLAYER_84" call DZE_fnc_rollingMessages;};
 
-if (_this in DZE_RestrictSkins) exitWith {format[localize "str_epoch_player_315",_this] call dayz_rollingMessages;};
+if (_this in DZE_RestrictSkins) exitWith {format[localize "str_epoch_player_315",_this] call DZE_fnc_rollingMessages;};
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages;};
+if (_onLadder) exitWith {localize "str_player_21" call DZE_fnc_rollingMessages;};
 
 // Make sure the player isn't trying to reset AI targeting.
 _targeted = false;
@@ -27,7 +27,7 @@ _targeted = false;
         };
     };
 } count allUnits;
-if (_targeted) exitWith {localize "str_player_fail_wear4" call dayz_rollingMessages;};
+if (_targeted) exitWith {localize "str_player_fail_wear4" call DZE_fnc_rollingMessages;};
 
 dayz_actionInProgress = true;
 
@@ -43,7 +43,7 @@ _hasclothesitem = _item in magazines player;
 _config = configFile >> "CfgMagazines";
 _text = getText (_config >> _item >> "displayName");
 
-if (!_hasclothesitem) exitWith {format[localize "str_player_31",_text,localize "str_player_31_wear"] call dayz_rollingMessages; dayz_actionInProgress = false;};
+if (!_hasclothesitem) exitWith {format[localize "str_player_31",_text,localize "str_player_31_wear"] call DZE_fnc_rollingMessages; dayz_actionInProgress = false;};
 
 _myModel = (typeOf player);
 _itemNew = "Skin_" + _myModel;
@@ -66,10 +66,10 @@ if ( (isClass(_config >> _itemNew)) ) then {
 					_morphHandle = [dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
 				};
 			} else {
-				localize "str_player_fail_wear3" call dayz_rollingMessages;
+				localize "str_player_fail_wear3" call DZE_fnc_rollingMessages;
 			};
 		} else {
-			localize "str_epoch_player_86" call dayz_rollingMessages;
+			localize "str_epoch_player_86" call DZE_fnc_rollingMessages;
 		};
 	};
 };

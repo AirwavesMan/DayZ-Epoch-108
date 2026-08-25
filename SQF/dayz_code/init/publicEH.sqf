@@ -37,7 +37,7 @@ if (!isDedicated) then {
 	"PVDZ_drg_RaUW"   			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\load\unload_wounded.sqf"};
 	"PVDZ_obj_Fire"				addPublicVariableEventHandler {(_this select 1) spawn BIS_Effects_Burn};
 	"PVCDZ_plr_Humanity"		addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
-	"PVDZE_plr_FriendRQ"		addPublicVariableEventHandler {if (player == ((_this select 1) select 0)) then {localize "str_epoch_player_2" call dayz_rollingMessages;};};
+	"PVDZE_plr_FriendRQ"		addPublicVariableEventHandler {if (player == ((_this select 1) select 0)) then {localize "str_epoch_player_2" call DZE_fnc_rollingMessages;};};
 
 	//Medical
 	"PVCDZ_hlt_Morphine"		addPublicVariableEventHandler {(_this select 1) call player_medMorphine};

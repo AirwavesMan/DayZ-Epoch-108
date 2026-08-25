@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_theBomb","_vehicle","_curFuel","_newFuel","_timeLeft","_hasToolbox","_hasCarBomb","_dis","_sfx","_alreadyBombed","_hasCrowbar","_finished"];
@@ -11,16 +11,16 @@ _alreadyBombed = _vehicle getVariable["hasBomb",false];
 
 if(!_hasToolbox or !_hasCrowbar) exitWith {
 	dayz_actionInProgress = false;
-	localize "str_bombToolMissing" call dayz_rollingMessages;
+	localize "str_bombToolMissing" call DZE_fnc_rollingMessages;
 };
 if(!_hasCarBomb) exitWith {
 	dayz_actionInProgress = false;
-	localize "str_bombMissing" call dayz_rollingMessages;
+	localize "str_bombMissing" call DZE_fnc_rollingMessages;
 };
 
 /*
 if(_vehicle getVariable["hasBomb",false]) exitWith {
-	localize "str_bombAlready" call dayz_rollingMessages;
+	localize "str_bombAlready" call DZE_fnc_rollingMessages;
 };
 */
 
@@ -38,5 +38,5 @@ if(!_alreadyBombed) then {
 	PVDZ_dayzCarBomb = [_vehicle,getPlayerUID player];
 	publicVariableServer "PVDZ_dayzCarBomb";
 };
-localize "str_bombAttached" call dayz_rollingMessages;
+localize "str_bombAttached" call DZE_fnc_rollingMessages;
 dayz_actionInProgress = false;

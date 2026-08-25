@@ -17,7 +17,7 @@ _matchedCount = 0;
 _storedVehicles = [];
 
 {if (_typeOf isKindOf _x) exitWith {_overLimit = true;}} count vg_blackListed;
-if (_overLimit) exitWith {localize "STR_CL_VG_BLACKLISTED" call dayz_rollingMessages;};
+if (_overLimit) exitWith {localize "STR_CL_VG_BLACKLISTED" call DZE_fnc_rollingMessages;};
 
 {
 	if (typeName _x == "ARRAY") then {
@@ -55,7 +55,7 @@ vg_vehicleList = nil;
 
 _woGear = _this select 0;
 closeDialog 0;
-if (!vg_storeWithGear && !_woGear) exitWith {localize "STR_CL_VG_NOSTOREWITHGEAR" call dayz_rollingMessages;};
+if (!vg_storeWithGear && !_woGear) exitWith {localize "STR_CL_VG_NOSTOREWITHGEAR" call DZE_fnc_rollingMessages;};
 
 _charID	= _vehicle getVariable ["CharacterID","0"];
 _weaponsCount = ((getWeaponCargo _vehicle) select 1) call fnc_gearCount;
@@ -63,8 +63,8 @@ _magazineCount = ((getMagazineCargo _vehicle) select 1) call fnc_gearCount;
 _backPackCount = ((getBackpackCargo _vehicle) select 1) call fnc_gearCount;
 _cargoAmount = (_weaponsCount + _magazineCount + _backPackCount);
 
-if (_charID == "-1") exitWith {localize "STR_CL_VG_STORE_MISSION" call dayz_rollingMessages;};
-if (isNull DZE_myVehicle || !local DZE_myVehicle) exitWith {localize "STR_EPOCH_PLAYER_245" call dayz_rollingMessages;};
+if (_charID == "-1") exitWith {localize "STR_CL_VG_STORE_MISSION" call DZE_fnc_rollingMessages;};
+if (isNull DZE_myVehicle || !local DZE_myVehicle) exitWith {localize "STR_EPOCH_PLAYER_245" call DZE_fnc_rollingMessages;};
 
 _hasKey = false;
 
@@ -91,7 +91,7 @@ if (_charID != "0") then {
 	};	
 };
 
-if (vg_requireKey && {!_hasKey}) exitWith {localize "STR_CL_VG_REQUIRE_KEY" call dayz_rollingMessages;};
+if (vg_requireKey && {!_hasKey}) exitWith {localize "STR_CL_VG_REQUIRE_KEY" call DZE_fnc_rollingMessages;};
 
 _name = getText(configFile >> "cfgVehicles" >> _typeOf >> "displayName");
 
@@ -105,10 +105,10 @@ if (!isNil "sk_dualCurrency") then {_amount = if (z_singleCurrency) then {_amoun
 
 /*
 _playerNear = {isPlayer _x && (_x != player)} count (([_vehicle] call FNC_GetPos) nearEntities ["CAManBase", 15]) > 0;
-if (_playerNear) exitWith {localize "STR_CL_VG_PLAYERNEARVEHICLE" call dayz_rollingMessages;};
+if (_playerNear) exitWith {localize "STR_CL_VG_PLAYERNEARVEHICLE" call DZE_fnc_rollingMessages;};
 */
 
-if (count (crew _vehicle) > 0) exitWith {localize "STR_CL_VG_PLAYERINVEHICLE" call dayz_rollingMessages;};
+if (count (crew _vehicle) > 0) exitWith {localize "STR_CL_VG_PLAYERINVEHICLE" call DZE_fnc_rollingMessages;};
 
 _enoughMoney = false;
 _moneyInfo = [false,[],[],[],0];
@@ -149,7 +149,7 @@ if (_enoughMoney) then {
 		PVDZE_storeVehicle = nil;
 		PVDZE_storeVehicleResult = nil;
 
-		format[localize "STR_CL_VG_VEHICLE_STORED",_name] call dayz_rollingMessages;
+		format[localize "STR_CL_VG_VEHICLE_STORED",_name] call DZE_fnc_rollingMessages;
 		if (vg_removeKey && {_charID != "0"}) then {
 			if (_keyName in (items player)) then {
 				[player,_keyName,1] call BIS_fnc_invRemove;

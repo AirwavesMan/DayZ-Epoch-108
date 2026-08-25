@@ -559,40 +559,6 @@ if (!isDedicated) then {
 		};
     };
 
-/// **** TODO **** merge this with DZE_fnc_rollingMessages
-	dayz_rollingMessages = {
-		private "_showText";
-		disableSerialization;
-		_showText = {
-			private "_textLine";
-			15 cutRsc ["RSC_DZ_Messages","plain"];
-			_textLine = (uiNamespace getVariable "DZ_Messages") displayCtrl 3;
-			_textLine ctrlSetStructuredText (parseText _this);
-			_textLine ctrlCommit 0;
-		};
-		if (typeName _this == "ARRAY") exitWith {(_this select 0) call _showText}; //Special or multi-line message
-		if ((diag_ticktime - Message_1_time) < 5) then {
-			if ((time - Message_2_time) < 5) then {
-				Message_3 = Message_2;
-				Message_3_time = Message_2_time;
-			} else {
-				Message_3 = "";
-			};
-
-			Message_2 = Message_1;
-			Message_2_time = Message_1_time;
-		} else {
-			Message_2 = "";
-			Message_3 = "";
-		};
-
-		Message_1 = _this;
-		Message_1_time = diag_ticktime;
-		//Cut and title text "PLAIN DOWN" fit a max of 3 lines on screen at once. They are still covered by gear and other dialogs even with \n\n.
-		//cutText [format ["%1\n%2\n%3", Message_1, Message_2, Message_3], "PLAIN DOWN"];
-		(format ["%1<br></br>%2<br></br>%3", Message_1, Message_2, Message_3]) call _showText;
-	};
-
 	dayz_killFeed = {
 		private ["_distance","_offset","_icon","_playerName","_sourceName"];
 		_playerName = _this select 1;

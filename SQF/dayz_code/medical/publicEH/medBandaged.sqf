@@ -24,5 +24,5 @@ call fnc_usec_resetWoundPoints;
 
 if (_medic != player) then {
 	_msg = if (_isSepsis) then {"str_actions_medical_sepsisbandage_received"} else {"str_actions_medical_bandage_received"};
-	format [localize _msg,_medic call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
+	format [localize _msg,_medic call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;
 };

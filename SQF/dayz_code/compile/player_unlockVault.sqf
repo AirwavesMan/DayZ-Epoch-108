@@ -3,7 +3,7 @@
 	Usage: _obj spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_code","_unlockedClass","_obj","_ownerID","_text","_objType","_ComboMatch"];
@@ -50,7 +50,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 
 	waitUntil {!isNil "dze_waiting"}; // wait for response from server to verify safe was logged before proceeding
 
-	format[localize "STR_BLD_UNLOCKED",_text] call dayz_rollingMessages;
+	format[localize "STR_BLD_UNLOCKED",_text] call DZE_fnc_rollingMessages;
 } else {
 	PVDZE_handleSafeGear = [player,_obj,3,dayz_combination,dayz_authKey];
 	publicVariableServer "PVDZE_handleSafeGear";
@@ -64,7 +64,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 		dayz_lastCodeFail = (diag_tickTime + dayz_UnlockTime);
 	};
 
-	format [localize "str_epoch_player_19",round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;
+	format [localize "str_epoch_player_19",round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;
 };
 
 s_player_unlockvault = -1;

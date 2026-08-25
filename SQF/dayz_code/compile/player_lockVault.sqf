@@ -3,7 +3,7 @@
 	Usage: _obj spawn player_lockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_code","_lockedClass","_obj","_ownerID","_text","_ComboMatch","_objType"];
@@ -23,7 +23,7 @@ _ownerID = _obj getVariable["CharacterID","0"];
 _ComboMatch = (_ownerID == dayz_combination);
 _ownerID = _obj getVariable["ownerPUID","0"];
 
-if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith {dayz_actionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_115",_text] call dayz_rollingMessages;};
+if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith {dayz_actionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_115",_text] call DZE_fnc_rollingMessages;};
 
 if (!isNull _obj) then {
 	(findDisplay 106) closeDisplay 0; // Close gear
@@ -44,7 +44,7 @@ if (!isNull _obj) then {
 
 	waitUntil {!isNil "dze_waiting"}; // wait for response from server to verify safe was logged and saved before proceeding
 
-	format[localize "str_epoch_player_117",_text] call dayz_rollingMessages;
+	format[localize "str_epoch_player_117",_text] call DZE_fnc_rollingMessages;
 };
 
 s_player_lockvault = -1;

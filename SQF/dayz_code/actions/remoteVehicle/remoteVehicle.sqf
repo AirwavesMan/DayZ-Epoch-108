@@ -2,7 +2,7 @@
 	Remote vehicle script by salival (https://github.com/oiad)
 */
 
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_characterID","_checkDistance","_display","_distance","_fuel","_group","_vehicleFound","_keyID","_keyName","_option","_time","_vehicle","_vehicleType","_index","_control","_keyDisplay","_exit"];
@@ -80,7 +80,7 @@ _vehicleType = typeOf rv_selected;
 _displayName = getText(configFile >> "CfgVehicles" >> _vehicleType >> "displayName");
 
 if (!alive rv_selected) exitWith {systemChat localize "STR_CL_RV_DESTROYED"; call _exit;};
-if (_checkDistance && {(player distance rv_selected) >= _distance}) exitWith {format[localize "STR_CL_RV_RANGE_FAIL",_displayName] call dayz_rollingMessages; call _exit;};
+if (_checkDistance && {(player distance rv_selected) >= _distance}) exitWith {format[localize "STR_CL_RV_RANGE_FAIL",_displayName] call DZE_fnc_rollingMessages; call _exit;};
 
 if (_option == 1) then {
 	_group = units group player;

@@ -2,7 +2,7 @@ private ["_time","_vehicle","_key"];
 _vehicle = (_this select 3) select 0; 
 _key = (_this select 3) select 1;
 
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_37" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_37" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 {player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
@@ -22,7 +22,7 @@ if (player distance _vehicle < 10) then {
 		waitUntil {uiSleep 0.1;(!locked _vehicle or (diag_tickTime - _time > 4))};
 	};
 
-	format [localize "STR_EPOCH_PLAYER_331",_key] call dayz_rollingMessages;
+	format [localize "STR_EPOCH_PLAYER_331",_key] call DZE_fnc_rollingMessages;
 };
 
 //Let fn_selfActions run now

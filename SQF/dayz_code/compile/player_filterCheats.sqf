@@ -35,9 +35,9 @@ if (_blockCheat or _blockVoice) then {
 		_testTime = diag_tickTime;
 		CheatsDisabled = _testTime;
 		switch true do {
-			case _channelChange: {[localize "STR_EPOCH_NO_CHANNEL_SWITCH",1] call dayz_rollingMessages;};
-			case _blockVoice: {[format[localize "STR_EPOCH_NO_VOICE",_channel],1] call dayz_rollingMessages;};
-			default {[localize "STR_EPOCH_NO_CHEATS",1] call dayz_rollingMessages;};
+			case _channelChange: {localize "STR_EPOCH_NO_CHANNEL_SWITCH" call DZE_fnc_rollingMessages;};
+			case _blockVoice: {format[localize "STR_EPOCH_NO_VOICE",_channel] call DZE_fnc_rollingMessages;};
+			default {localize "STR_EPOCH_NO_CHEATS" call DZE_fnc_rollingMessages;};
 		};		
 		uiSleep 5;
 		if (!r_player_unconsciousInputDisabled && CheatsDisabled == _testTime) then {

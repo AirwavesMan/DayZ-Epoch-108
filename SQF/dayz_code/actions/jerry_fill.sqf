@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 player removeAction s_player_fillfuel;
@@ -24,7 +24,7 @@ local _qty	= _qty5 + _qty20 + _qty210;
 local _fuelNeeded = (_qty5 * 5) + (_qty20 * 20) + (_qty210 * 210);
 
 // Inform if there is not enough to fill all containers in inventory, then proceed to fill available containers
-if (_fuelAmount < _fuelNeeded) then {format [localize "str_fill_notenough", _fuelAmount, _fuelNeeded] call dayz_rollingMessages;};
+if (_fuelAmount < _fuelNeeded) then {format [localize "str_fill_notenough", _fuelAmount, _fuelNeeded] call DZE_fnc_rollingMessages;};
 
 // If there is not enough to fill any of their cans then exit
 if (_fuelAmount < 5 or (_fuelAmount < 20 && _qty5 == 0) or (_fuelAmount < 210 && (_qty5 == 0 && _qty20 == 0))) exitWith {dayz_actionInProgress = false;};
@@ -90,13 +90,13 @@ if (_qty > 0) then {
 		};
 	};
 
-	format [localize "str_fill_success", _qty, _fuelAmount] call dayz_rollingMessages;
+	format [localize "str_fill_success", _qty, _fuelAmount] call DZE_fnc_rollingMessages;
 } else {
-	localize "str_player_10" call dayz_rollingMessages;
+	localize "str_player_10" call DZE_fnc_rollingMessages;
 };
 
 if (!_finished) then {
-	localize "STR_EPOCH_ACTION_CANCELED" call dayz_rollingMessages;
+	localize "STR_EPOCH_ACTION_CANCELED" call DZE_fnc_rollingMessages;
 } else {
 	if (_wasStanding) then {
 		player playActionNow "PlayerStand";	// once the action has completed, return player to a standing pose if they were standing before the action

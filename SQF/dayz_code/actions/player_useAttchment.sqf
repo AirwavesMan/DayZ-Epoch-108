@@ -18,8 +18,8 @@ _text = getText (_config >> "displayName");
 _hasitem = _item in magazines player;
 
 //fail saves
-if (!_hasitem) exitWith { localize "str_missingAttachment" call dayz_rollingMessages;};
-if (_onLadder) exitWith { localize "str_player_21" call dayz_rollingMessages; };
+if (!_hasitem) exitWith { localize "str_missingAttachment" call DZE_fnc_rollingMessages;};
+if (_onLadder) exitWith { localize "str_player_21" call DZE_fnc_rollingMessages; };
 
 if (_removeWeapon in (weapons player)) then { 
 		player removeMagazine _item;
@@ -33,5 +33,5 @@ if (_removeWeapon in (weapons player)) then {
 } else {
 	closedialog 0;
 	uiSleep 0.2;
-	format[ localize "str_missingweapon", _text, _removeWeapon] call dayz_rollingMessages;
+	format[ localize "str_missingweapon", _text, _removeWeapon] call DZE_fnc_rollingMessages;
 };	

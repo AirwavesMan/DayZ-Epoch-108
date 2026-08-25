@@ -42,7 +42,7 @@ if (_unit == player) then {
 		PVDZ_sec_atp = format["WARNING: Play3r UID#%1 exited %2 close to built fence as %3",(getPlayerUID _unit), (typeOf _vehicle), _position];
 		publicVariableServer "PVDZ_sec_atp";
 
-		localize "str_actions_exitBlocked" call dayz_rollingMessages;
+		localize "str_actions_exitBlocked" call DZE_fnc_rollingMessages;
 
 	};*/
 	

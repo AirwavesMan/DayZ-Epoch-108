@@ -8,9 +8,9 @@ player removeAction s_player_heli_lift;
 s_player_heli_lift = -1;
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages;};
+if (_onLadder) exitWith {localize "str_player_21" call DZE_fnc_rollingMessages;};
 
-if (vehicle player != player) exitWith {localize "STR_EPOCH_PLAYER_318" call dayz_rollingMessages;};
+if (vehicle player != player) exitWith {localize "STR_EPOCH_PLAYER_318" call DZE_fnc_rollingMessages;};
 
 _liftUseTime = 6;
 _dis=10;
@@ -88,17 +88,17 @@ if(_finished) then {
 	if(_moved) then {
 		player switchMove "";
 		player playActionNow "stop";
-		localize "STR_EPOCH_PLAYER_319" call dayz_rollingMessages; //display text at bottom center of screen on interrupt
+		localize "STR_EPOCH_PLAYER_319" call DZE_fnc_rollingMessages; //display text at bottom center of screen on interrupt
 	} else {
 		if((typeName _attached == "OBJECT") || (typeName _hasAttached == "OBJECT")) then {
 			player switchMove "";
 			player playActionNow "stop";
-			localize "STR_EPOCH_PLAYER_320" call dayz_rollingMessages;
+			localize "STR_EPOCH_PLAYER_320" call DZE_fnc_rollingMessages;
 		} else {
 			r_interrupt = false;
 			player switchMove "";
 			player playActionNow "stop";
-			localize "STR_EPOCH_PLAYER_321" call dayz_rollingMessages;
+			localize "STR_EPOCH_PLAYER_321" call DZE_fnc_rollingMessages;
 		};
 	};
 };

@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 call gear_ui_init;
@@ -10,9 +10,9 @@ local _hasEmptyBloodBag = _emptyBloodBag in magazines player;
 local _bloodLevel = _player getVariable ["USEC_BloodQty", 0];
 local _bloodAmount = 4000;
 
-if (vehicle _player != _player) exitWith {dayz_actionInProgress = false;localize "STR_EPOCH_PLAYER_318" call dayz_rollingMessages;};
-if !(_hasEmptyBloodBag) exitWith {dayz_actionInProgress = false;localize "str_actions_medical_bagEmpty" call dayz_rollingMessages;};
-if (_bloodLevel <= (_bloodAmount + 200)) exitWith {dayz_actionInProgress = false;localize "str_actions_medical_bagMissingBlood" call dayz_rollingMessages;};
+if (vehicle _player != _player) exitWith {dayz_actionInProgress = false;localize "STR_EPOCH_PLAYER_318" call DZE_fnc_rollingMessages;};
+if !(_hasEmptyBloodBag) exitWith {dayz_actionInProgress = false;localize "str_actions_medical_bagEmpty" call DZE_fnc_rollingMessages;};
+if (_bloodLevel <= (_bloodAmount + 200)) exitWith {dayz_actionInProgress = false;localize "str_actions_medical_bagMissingBlood" call DZE_fnc_rollingMessages;};
 
 local _count = [_player,_emptyBloodBag,1] call BIS_fnc_invRemove;
 
@@ -24,12 +24,12 @@ if (_count == 1) then {
 	local _blood = 0;
 	local _bloodAfter = 0;
 
-	localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
+	localize "str_actions_medical_transfusion_start" call DZE_fnc_rollingMessages;
 
 	while {_i <= _steps} do {
 		_finished = ["Medic",1] call fn_loopAction;
 
-		if !(_finished) exitwith {localize "str_actions_medical_bagInterrupted" call dayz_rollingMessages;};
+		if !(_finished) exitwith {localize "str_actions_medical_bagInterrupted" call DZE_fnc_rollingMessages;};
 
 		r_player_blood = r_player_blood - round(_bloodAmount/_steps);	
 		_player setVariable["USEC_BloodQty", r_player_blood, true];			
@@ -38,7 +38,7 @@ if (_count == 1) then {
 		_bloodAfter = (_blood - _bloodAmount);		
 
 		if ((_blood <= _bloodAfter) || (_i == _steps)) exitwith {
-			localize "str_actions_medical_bagDone" call dayz_rollingMessages;
+			localize "str_actions_medical_bagDone" call DZE_fnc_rollingMessages;
 			_complete = true;
 		};
 
@@ -58,7 +58,7 @@ if (_count == 1) then {
 		_player addMagazine _bloodbag;
 	};
 } else {
-	localize "str_actions_medical_bagEmpty" call dayz_rollingMessages;
+	localize "str_actions_medical_bagEmpty" call DZE_fnc_rollingMessages;
 };
 
 dayz_actionInProgress = false;

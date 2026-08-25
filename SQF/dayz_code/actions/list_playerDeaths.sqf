@@ -9,6 +9,6 @@ if((count PVDZE_plr_DeathBResult) > 0) then {
 	// load death message board ui
 	call EpochDeathBoardLoad;
 } else {
-	localize "str_epoch_player_36" call dayz_rollingMessages;
+	localize "str_epoch_player_36" call DZE_fnc_rollingMessages;
 	PVDZE_plr_DeathBResult = nil;
 };

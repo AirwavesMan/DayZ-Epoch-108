@@ -31,7 +31,7 @@ BankDialogWithdrawAmount = {
 	_displayName = getText (configFile >> "CfgVehicles" >> _vehicleType >> "displayName");
 
 	if (!isNull ZSC_CurrentStorage) then {
-		if ((_amount < 1) or {_amount > _bank}) exitWith {format[localize "STR_CL_ZSC_WITHDRAW_FAIL",CurrencyName,_displayName] call dayz_rollingMessages;};
+		if ((_amount < 1) or {_amount > _bank}) exitWith {format[localize "STR_CL_ZSC_WITHDRAW_FAIL",CurrencyName,_displayName] call DZE_fnc_rollingMessages;};
 
 		player setVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),(_wealth + _amount),true];
 		ZSC_CurrentStorage setVariable["cashMoney",(_bank - _amount),true];
@@ -40,9 +40,9 @@ BankDialogWithdrawAmount = {
 		PVDZ_veh_Save = [ZSC_CurrentStorage,"coins"];
 		publicVariableServer "PVDZ_veh_Save";
 
-		format[localize "STR_CL_ZSC_WITHDRAW_OK",[_amount] call BIS_fnc_numberText,CurrencyName,_displayName] call dayz_rollingMessages;
+		format[localize "STR_CL_ZSC_WITHDRAW_OK",[_amount] call BIS_fnc_numberText,CurrencyName,_displayName] call DZE_fnc_rollingMessages;
 	} else {
-		localize "STR_CL_ZSC_UNABLE" call dayz_rollingMessages;
+		localize "STR_CL_ZSC_UNABLE" call DZE_fnc_rollingMessages;
 	};
 };
 
@@ -64,14 +64,14 @@ BankDialogDepositAmount = {
 	_bank = ZSC_CurrentStorage getVariable ["cashMoney",0];
 	_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 
-	if ((_amount < 1) or {_amount > _wealth}) exitWith {format[localize "STR_CL_ZSC_DEPOSIT_FAIL",CurrencyName] call dayz_rollingMessages;};
+	if ((_amount < 1) or {_amount > _wealth}) exitWith {format[localize "STR_CL_ZSC_DEPOSIT_FAIL",CurrencyName] call DZE_fnc_rollingMessages;};
 
 	if ((_bank + _amount) > _maxCap) then {
-		format[localize "STR_CL_ZSC_STORE_FAIL",[_maxCap] call BIS_fnc_numberText,CurrencyName,_displayName] call dayz_rollingMessages;
+		format[localize "STR_CL_ZSC_STORE_FAIL",[_maxCap] call BIS_fnc_numberText,CurrencyName,_displayName] call DZE_fnc_rollingMessages;
 	} else {
 		player setVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),(_wealth - _amount),true];
 		ZSC_CurrentStorage setVariable["cashMoney",(_bank + _amount),true];
-		format[localize "STR_CL_ZSC_DEPOSIT_OK",[_amount] call BIS_fnc_numberText,CurrencyName,_displayName] call dayz_rollingMessages;
+		format[localize "STR_CL_ZSC_DEPOSIT_OK",[_amount] call BIS_fnc_numberText,CurrencyName,_displayName] call DZE_fnc_rollingMessages;
 	};
 
 	call player_forceSave;
@@ -88,18 +88,18 @@ GivePlayerAmount = {
 	_isBusy = ZSC_GiveMoneyTarget getVariable ["isBusy",false];
 	_vehicleType = typeOf ZSC_GiveMoneyTarget; 
 
-	if ((_amount < 1) or {_amount > _wealth}) exitWith {format[localize "STR_CL_ZSC_GIVE_FAIL",CurrencyName] call dayz_rollingMessages;};
+	if ((_amount < 1) or {_amount > _wealth}) exitWith {format[localize "STR_CL_ZSC_GIVE_FAIL",CurrencyName] call DZE_fnc_rollingMessages;};
 
-	if (!(isPlayer ZSC_GiveMoneyTarget)) exitWith {format[localize "STR_CL_ZSC_GIVE_PLAYER",CurrencyName] call dayz_rollingMessages;};
+	if (!(isPlayer ZSC_GiveMoneyTarget)) exitWith {format[localize "STR_CL_ZSC_GIVE_PLAYER",CurrencyName] call DZE_fnc_rollingMessages;};
 
-	if (_isBusy) exitWith {format[localize "STR_CL_ZSC_ALREADY_TRADING",ZSC_GiveMoneyTarget call DZE_fnc_getNamePlayer] call dayz_rollingMessages;};
+	if (_isBusy) exitWith {format[localize "STR_CL_ZSC_ALREADY_TRADING",ZSC_GiveMoneyTarget call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;};
 
 	player setVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),_wealth - _amount,true];
 	ZSC_GiveMoneyTarget setVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),_twealth + _amount,true];
 
 	call player_forceSave;
 
-	format[localize "STR_CL_ZSC_GIVE_OK",ZSC_GiveMoneyTarget call DZE_fnc_getNamePlayer,[_amount] call BIS_fnc_numberText,CurrencyName] call dayz_rollingMessages;
+	format[localize "STR_CL_ZSC_GIVE_OK",ZSC_GiveMoneyTarget call DZE_fnc_getNamePlayer,[_amount] call BIS_fnc_numberText,CurrencyName] call DZE_fnc_rollingMessages;
 };
 
 if (Z_globalBanking) then {
@@ -115,13 +115,13 @@ if (Z_globalBanking) then {
 		_bank = player getVariable ["bankMoney",0];
 		_wealth = player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 
-		if ((_amount < 1) or {_amount > _bank}) exitWith {format[localize "STR_CL_ZSC_WITHDRAW_FAIL",CurrencyName,toLower (localize "STR_CL_ZSC_GLOBAL_BANK")] call dayz_rollingMessages;};
+		if ((_amount < 1) or {_amount > _bank}) exitWith {format[localize "STR_CL_ZSC_WITHDRAW_FAIL",CurrencyName,toLower (localize "STR_CL_ZSC_GLOBAL_BANK")] call DZE_fnc_rollingMessages;};
 
 		player setVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),(_wealth + _amount),true];
 		player setVariable ["bankMoney",(_bank - _amount),true];
 		call player_forceSave;
 
-		format[localize "STR_CL_ZSC_GLOBAL_WITHDRAW",[_amount] call BIS_fnc_numberText,CurrencyName] call dayz_rollingMessages;
+		format[localize "STR_CL_ZSC_GLOBAL_WITHDRAW",[_amount] call BIS_fnc_numberText,CurrencyName] call DZE_fnc_rollingMessages;
 	};
 
 	ATMDialogDepositAmount = {
@@ -131,14 +131,14 @@ if (Z_globalBanking) then {
 		_bank = player getVariable ["bankMoney",0];
 		_wealth = player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 
-		if ((_amount < 1) or {_amount > _wealth}) exitWith {format[localize "STR_CL_ZSC_DEPOSIT_FAIL",CurrencyName] call dayz_rollingMessages;};
+		if ((_amount < 1) or {_amount > _wealth}) exitWith {format[localize "STR_CL_ZSC_DEPOSIT_FAIL",CurrencyName] call DZE_fnc_rollingMessages;};
 
 		if (ZSC_limitOnBank && {(_bank + _amount) > ZSC_maxBankMoney}) then {
-			format[localize "STR_CL_ZSC_GLOBAL_DEPOSIT_FAIL", [ZSC_maxBankMoney] call BIS_fnc_numberText,CurrencyName] call dayz_rollingMessages;
+			format[localize "STR_CL_ZSC_GLOBAL_DEPOSIT_FAIL", [ZSC_maxBankMoney] call BIS_fnc_numberText,CurrencyName] call DZE_fnc_rollingMessages;
 		} else {
 			player setVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),(_wealth - _amount),true];
 			player setVariable ["bankMoney",(_bank + _amount),true];
-			format[localize "STR_CL_ZSC_GLOBAL_DEPOSIT_OK",[_amount] call BIS_fnc_numberText,CurrencyName] call dayz_rollingMessages;
+			format[localize "STR_CL_ZSC_GLOBAL_DEPOSIT_OK",[_amount] call BIS_fnc_numberText,CurrencyName] call DZE_fnc_rollingMessages;
 			call player_forceSave;
 		};
 	};

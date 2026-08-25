@@ -26,7 +26,7 @@
 //		* If the spawn point is too close to a building, backpacks will spawn at the player's location.
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 local _p		= _this select 3;	// get addAction parameter
@@ -45,7 +45,7 @@ if (isNull _obj) exitWith {
 };
 if (_obj getVariable ["GeneratorRunning", false]) exitWith {
 	dayz_actionInProgress = false;
-	localize "str_epoch_player_89" call dayz_rollingMessages;	// Cannot remove a running generator.
+	localize "str_epoch_player_89" call DZE_fnc_rollingMessages;	// Cannot remove a running generator.
 };
 
 local _objType	= typeOf _obj;			// object's classname
@@ -53,7 +53,7 @@ local _bbObject	= boundingBox _obj select 1;	// positive x,y dimensions
 
 if (_objType in DZE_DoorsLocked && !(_objType in DZE_LockedGates)) exitWith {
 	dayz_actionInProgress = false;
-	localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;	// You must remove the lock to delete this item!
+	localize "STR_EPOCH_ACTIONS_20" call DZE_fnc_rollingMessages;	// You must remove the lock to delete this item!
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -86,7 +86,7 @@ local _playerNear = {isPlayer _x} count (_obj nearEntities ["CAManBase", 12]) > 
 
 if (_playerNear && (_isMine or _isAmmoSupplyWreck)) exitWith {
 	dayz_actionInProgress = false;
-	localize "str_pickup_limit_5" call dayz_rollingMessages;	// Another player is nearby. Only one player can be near to perform this action.
+	localize "str_pickup_limit_5" call DZE_fnc_rollingMessages;	// Another player is nearby. Only one player can be near to perform this action.
 };
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -143,7 +143,7 @@ if (_isModular) then {
 		_helperTexture	= DZE_deconstructTexture;			// blue helpers
 	};
 	if (!_modularRefund) then {						// if no refunds are to be given
-		localize "STR_EPOCH_ACTIONS_21" call dayz_rollingMessages;	// notify player - Deconstructing modular buildables will not refund any components.
+		localize "STR_EPOCH_ACTIONS_21" call DZE_fnc_rollingMessages;	// notify player - Deconstructing modular buildables will not refund any components.
 		_helperTexture = DZE_NoRefundTexture;				// red helpers
 	};
 };
@@ -157,7 +157,7 @@ if (_isModular) then {
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 local _nameVehicle = getText(configFile >> "CfgVehicles" >> _objType >> "displayName");
-//format[localize "str_epoch_player_162", _nameVehicle] call dayz_rollingMessages;	// Starting de-construction of %1.
+//format[localize "str_epoch_player_162", _nameVehicle] call DZE_fnc_rollingMessages;	// Starting de-construction of %1.
 
 local _brokenTool	= false;
 local _counter		= 0;
@@ -175,7 +175,7 @@ while {_isOk} do {
 		_proceed = false;
 	};
 
-	format[localize "str_epoch_player_163", _nameVehicle, (_counter + 1), _limit] call dayz_rollingMessages;	// De-constructing %1, stage %2 of %3 walk away at anytime to cancel.
+	format[localize "str_epoch_player_163", _nameVehicle, (_counter + 1), _limit] call DZE_fnc_rollingMessages;	// De-constructing %1, stage %2 of %3 walk away at anytime to cancel.
 
 	[player, (getPosATL player), 25, "repair"] spawn fnc_alertZombies;
 
@@ -235,7 +235,7 @@ if (_brokenTool) then {
 	};
 
 	if (_success) then {
-		format[localize "str_epoch_player_164", getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"), _nameVehicle] call dayz_rollingMessages;	// %1 broke, cannot remove %2.
+		format[localize "str_epoch_player_164", getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"), _nameVehicle] call DZE_fnc_rollingMessages;	// %1 broke, cannot remove %2.
 	};
 };
 
@@ -421,7 +421,7 @@ if (_proceed && _success) then {
 			publicVariableServer "PVDZ_send";
 		};
 
-		//format[localize "str_epoch_player_165", _nameVehicle] call dayz_rollingMessages;	// De-constructing %1.
+		//format[localize "str_epoch_player_165", _nameVehicle] call DZE_fnc_rollingMessages;	// De-constructing %1.
 		["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 
 		///////////////////////////////////////////////////////////////////////////////////
@@ -540,10 +540,10 @@ if (_proceed && _success) then {
 				player action ["Gear", _item];
 			};
 		} else {
-			[localize "str_epoch_player_90", 1] call dayz_rollingMessages;	// No parts were found.
+			localize "str_epoch_player_90" call DZE_fnc_rollingMessages;	// No parts were found.
 		};
 	} else {
-		localize "str_epoch_player_91" call dayz_rollingMessages;		// Failed, object no longer exists.
+		localize "str_epoch_player_91" call DZE_fnc_rollingMessages;		// Failed, object no longer exists.
 	};
 	if (_wasStanding) then {
 		uiSleep _sleep;

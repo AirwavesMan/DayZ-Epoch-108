@@ -24,7 +24,7 @@
 	diag_log format['[Client Debug]: [DZE_fnc_downgradeObject]: Function called with argumentes: %1',_this];
 #endif
 
-if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_DOWNGRADE_ALREADY_IN_PROGRESS' call dayz_rollingMessages;};	// Downgrade is already in progress.
+if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_DOWNGRADE_ALREADY_IN_PROGRESS' call DZE_fnc_rollingMessages;};	// Downgrade is already in progress.
 dayz_actionInProgress = true;
 
 local _object = _this select 3;
@@ -37,14 +37,14 @@ if (isNull _object) exitWith {dayz_actionInProgress = false; systemChat localize
 
 if ([_object,12] call DZE_fnc_nearPlayerMan) exitWith {					// Another player is nearby. Only one player can be near to perform this action.
 	dayz_actionInProgress = false;
-	localize 'STR_BUILD_DOWNGRADE_PLAYER_NEARBY' call dayz_rollingMessages;
+	localize 'STR_BUILD_DOWNGRADE_PLAYER_NEARBY' call DZE_fnc_rollingMessages;
 };
 
 local _codeObject = _object getVariable ['CharacterID','0'];
 
 if (DZE_Lock_Door != _codeObject) exitWith {		// Unable to downgrade, you do not know the combination.
 	dayz_actionInProgress = false;
-	localize 'STR_BUILD_DOWNGRADE_COMBINATION_UNKNOWN' call dayz_rollingMessages;
+	localize 'STR_BUILD_DOWNGRADE_COMBINATION_UNKNOWN' call DZE_fnc_rollingMessages;
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -114,21 +114,21 @@ if (count _downgrade > 0) then {
 
 			} count _addedItems;
 
-			localize 'STR_BUILD_DOWNGRADE_FAILED' call dayz_rollingMessages;
+			localize 'STR_BUILD_DOWNGRADE_FAILED' call DZE_fnc_rollingMessages;
 		} else {
-			format[localize 'STR_BUILD_DOWNGRADE_COMPLETED',_text] call dayz_rollingMessages;	// You have downgraded %1.
+			format[localize 'STR_BUILD_DOWNGRADE_COMPLETED',_text] call DZE_fnc_rollingMessages;	// You have downgraded %1.
 		};
 	} else {
 		_text = getText(configFile >> 'CfgMagazines' >> _itemOut >> 'displayName');
 
-		format[localize 'STR_BUILD_DOWNGRADE_REFUND_FAILED',_i,_text] call dayz_rollingMessages;	// %1 of %2 could not be added to your inventory. (not enough room?) // poorly worded
+		format[localize 'STR_BUILD_DOWNGRADE_REFUND_FAILED',_i,_text] call DZE_fnc_rollingMessages;	// %1 of %2 could not be added to your inventory. (not enough room?) // poorly worded
 		{
 			[player,_x select 0,_x select 1] call BIS_fnc_invRemove;
 
 		} count _addedItems;
 	};	
 } else {
-	localize 'STR_BUILD_DOWNGRADE_NOT_AVAILABLE' call dayz_rollingMessages;				// No downgrades are available
+	localize 'STR_BUILD_DOWNGRADE_NOT_AVAILABLE' call DZE_fnc_rollingMessages;				// No downgrades are available
 };
 
 dayz_actionInProgress = false;

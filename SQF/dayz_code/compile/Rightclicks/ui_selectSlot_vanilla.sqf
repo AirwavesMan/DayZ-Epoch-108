@@ -8,7 +8,7 @@ if (carryClick) then {carryClick = false;};
 if (_button == 1) then {
 	if (animationState player in ["ainjppnemstpsnonwnondnon_rolltofront","amovppnemstpsnonwnondnon_healed"]) exitWith {
 		//Prevent bypassing unconscious wake up animation with bandage or other right click actions
-		localize "str_player_actionslimit" call dayz_rollingMessages;
+		localize "str_player_actionslimit" call DZE_fnc_rollingMessages;
 	};
 
 	local _group = _parent displayCtrl 6902;

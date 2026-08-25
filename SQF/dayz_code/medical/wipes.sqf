@@ -2,7 +2,7 @@ private ["_finished","_unit"];
 
 _unit = (_this select 3) select 0;
 
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 player removeMagazine "ItemAntibacterialWipe";
@@ -26,7 +26,7 @@ if (_finished) then {
 		_unit setVariable ["USEC_Sepsis", false, true];
 		_unit setVariable ["sepsisStarted", nil];
 		
-		localize "str_actions_medical_wipe_self" call dayz_rollingMessages;
+		localize "str_actions_medical_wipe_self" call DZE_fnc_rollingMessages;
 	} else {
 		// Heal another player
 		PVDZ_send = [_unit,"AntiBacterialWipe",[_unit,player]];
@@ -35,7 +35,7 @@ if (_finished) then {
 		// Give humanity
 		20 call player_humanityChange;
 		
-		format[localize "str_actions_medical_gave_wipes",_unit call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
+		format[localize "str_actions_medical_gave_wipes",_unit call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;
 	};
 } else {
 	player addMagazine "ItemAntibacterialWipe";

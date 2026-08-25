@@ -17,7 +17,7 @@ private ["_attachment","_weapon","_config","_newWeapon","_weaponInUse","_muzzle"
 if (Player_IsOnLadder()) exitWith
 {
 	closeDialog 0;
-	(localize "str_player_21") call dayz_rollingMessages;
+	(localize "str_player_21") call DZE_fnc_rollingMessages;
 };
 
 //name of attachment item
@@ -26,7 +26,7 @@ _attachment = _this select 0;
 if (!(_attachment in magazines player)) exitWith
 {
 	closeDialog 0;
-	localize "str_missingAttachment" call dayz_rollingMessages;
+	localize "str_missingAttachment" call DZE_fnc_rollingMessages;
 };
 
 //Get player's primary weapon or sidearm
@@ -44,7 +44,7 @@ if (_weapon == "") exitWith
 		if ((_this select 1) == 1)
 		then {"str_AttachmentmissingWeapon"}
 		else {"str_AttachmentmissingWeapon2"}
-	) call dayz_rollingMessages;
+	) call DZE_fnc_rollingMessages;
 };
 
 //retrieve Attachments class config
@@ -60,7 +60,7 @@ if (!isClass(_config) || {!isText(_config >> _attachment)}) exitWith
 		if ((_this select 1) == 1)
 		then {"str_AttachmentWeaponConfig"}
 		else {"str_AttachmentWeaponConfig2"}
-	) call dayz_rollingMessages;
+	) call DZE_fnc_rollingMessages;
 };
 
 _newWeapon = getText (_config >> _attachment);

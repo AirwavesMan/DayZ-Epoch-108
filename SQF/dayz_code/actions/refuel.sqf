@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_array","_cantype",
@@ -42,11 +42,11 @@ if (_finished) then {
 		publicVariableServer "PVDZ_send";
 	};
 
-	format[localize "str_player_05",_nameType,_canSize] call dayz_rollingMessages;
+	format[localize "str_player_05",_nameType,_canSize] call DZE_fnc_rollingMessages;
 	uiSleep 1;
 	call fnc_usec_medic_removeActions;
 } else {
-	localize "str_epoch_player_26" call dayz_rollingMessages;
+	localize "str_epoch_player_26" call DZE_fnc_rollingMessages;
 };
 
 dayz_actionInProgress = false;

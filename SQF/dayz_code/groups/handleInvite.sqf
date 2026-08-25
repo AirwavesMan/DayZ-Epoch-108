@@ -13,7 +13,7 @@ if (typeName _add == "SCALAR") exitWith {
 		};
 		if (_add == 2) exitWith {
 			if (_uid == getPlayerUID player) then {
-				localize "STR_EPOCH_GROUP_KICKED" call dayz_rollingMessages;
+				localize "STR_EPOCH_GROUP_KICKED" call DZE_fnc_rollingMessages;
 				terminate dayz_groupTags;
 				8 cutText ["","PLAIN"];
 			} else {
@@ -28,7 +28,7 @@ if (typeName _add == "SCALAR") exitWith {
 			};
 		};
 		if (_add == 4) exitWith {
-			localize "STR_EPOCH_GROUP_DISBANDED" call dayz_rollingMessages;
+			localize "STR_EPOCH_GROUP_DISBANDED" call DZE_fnc_rollingMessages;
 			terminate dayz_groupTags;
 			8 cutText ["","PLAIN"];
 		};
@@ -45,7 +45,7 @@ if (_add) then {
 
 		_name = toString(_uid select 2);
 
-		 format[localize "STR_EPOCH_INVITE_NEW",_name] call dayz_rollingMessages;
+		 format[localize "STR_EPOCH_INVITE_NEW",_name] call DZE_fnc_rollingMessages;
 	};
 } else {
 	// Remove all invites to this player

@@ -484,13 +484,13 @@ publicVariableServer 'PVDZE_build_Object';
 _object = call DZE_fnc_revealServerObject;
 
 if !(isNull _object) then {
-	[format [localize 'STR_BUILD_COMPLETED', _text], 1] call DZE_fnc_rollingMessages;
+	format [localize 'STR_BUILD_COMPLETED', _text] call DZE_fnc_rollingMessages;
 
 	if (_combinationDisplay != '') then {
 		if (_className in DZE_LockedGates) then {GateMethod = _characterID};
 
 		_format = format [localize 'STR_BUILD_COMPLETED_WITH_COMBINATION', _combinationDisplay, _text];
-		[_format, 1] call DZE_fnc_rollingMessages;	// display new combination
+		_format call DZE_fnc_rollingMessages;	// display new combination
 		systemChat _format;				// You have setup your %2. The combination is %1
 	};
 

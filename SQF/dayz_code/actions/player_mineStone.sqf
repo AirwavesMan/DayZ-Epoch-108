@@ -6,7 +6,7 @@
 //	Date:		January 2022
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 call gear_ui_init;
@@ -92,21 +92,21 @@ if (_found) then {
 
 		if ((_counter >= _countOut) || _breaking) exitWith {
 			if (_breaking) then {
-				localize "str_PickAxeHandleBreaks" call dayz_rollingMessages;
+				localize "str_PickAxeHandleBreaks" call DZE_fnc_rollingMessages;
 			} else {
-				localize "str_mining_finished" call dayz_rollingMessages;
+				localize "str_mining_finished" call DZE_fnc_rollingMessages;
 			};
 			_isOk	 = false;
 			_proceed = true;
 		};
-		format[localize "str_mining_progress", _counter, (_countOut - _counter)] call dayz_rollingMessages;
+		format[localize "str_mining_progress", _counter, (_countOut - _counter)] call DZE_fnc_rollingMessages;
 	};
 
 	if (!_proceed) then {
-		localize "str_mining_canceled" call dayz_rollingMessages;
+		localize "str_mining_canceled" call DZE_fnc_rollingMessages;
 	};
 } else {
-	localize "str_mining_no_rocks" call dayz_rollingMessages;
+	localize "str_mining_no_rocks" call DZE_fnc_rollingMessages;
 };
 
 dayz_actionInProgress = false;

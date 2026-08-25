@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 player removeAction s_player_boil;
@@ -33,12 +33,12 @@ scopeName "main";
 			};
 			player addMagazine _meatcooked;
 		};
-		format [localize "str_success_cooked", _qty, _text] call dayz_rollingMessages;
+		format [localize "str_success_cooked", _qty, _text] call DZE_fnc_rollingMessages;
 	};
 } forEach Dayz_meatraw;
 
 if (!_finished) then {
-	localize "STR_EPOCH_ACTION_CANCELED" call dayz_rollingMessages;
+	localize "STR_EPOCH_ACTION_CANCELED" call DZE_fnc_rollingMessages;
 } else {
 	if (_wasStanding) then {
 		player playActionNow "PlayerStand";	// once the action has completed, return player to a standing pose if they were standing before the action

@@ -39,7 +39,7 @@ if (_combine) then {
 				_combineOk = [player,_part,1] call BIS_fnc_invRemove;
 			};
 		};
-		if (_combineOk == 0) exitWith { localize "STR_EPOCH_PLAYER_307_FAIL" call dayz_rollingMessages; };
+		if (_combineOk == 0) exitWith { localize "STR_EPOCH_PLAYER_307_FAIL" call DZE_fnc_rollingMessages; };
 	} forEach (magazines player); // Needs to be forEach otherwise count throws a hissy fit with BIS_fnc_invRemove returning a 0
 };
 

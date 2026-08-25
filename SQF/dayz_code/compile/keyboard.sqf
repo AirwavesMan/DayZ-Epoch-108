@@ -153,7 +153,7 @@ if (isNil "keyboard_keys") then {
 	};
 	local _openGroups = {
 		if (dayz_requireRadio && {!("ItemRadio" in items player)}) then {
-			localize "STR_EPOCH_NEED_RADIO" call dayz_rollingMessages;
+			localize "STR_EPOCH_NEED_RADIO" call DZE_fnc_rollingMessages;
 		} else {
 			if (isNull findDisplay 80000) then {
 				if (!isNil "dayz_groupInit") then {[] spawn dayz_openGroupDialog;};
@@ -169,7 +169,7 @@ if (isNil "keyboard_keys") then {
 	};
 	local _statusUI = {
 		DZE_UI = (DZE_UI + 1) % 6;
-		if (DZE_UI < 2) then {[format[localize "STR_UI_STATUS_ICONS" + " %1",localize (["STR_DISABLED","STR_ENABLED"] select DZE_UI)],1] call dayz_rollingMessages;};
+		if (DZE_UI < 2) then {format[localize "STR_UI_STATUS_ICONS" + " %1",localize (["STR_DISABLED","STR_ENABLED"] select DZE_UI)] call DZE_fnc_rollingMessages;};
 		profileNamespace setVariable ["statusUI",DZE_UI];
 		saveProfileNamespace;
 		call ui_changeDisplay;
@@ -179,7 +179,7 @@ if (isNil "keyboard_keys") then {
 		if (isNil "DZE_buildItem") then {	// only allow switching outside of base building
 			DZE_LEFT_HANDED = !DZE_LEFT_HANDED;
 			local _handed = ["STR_EPOCH_RIGHT_HANDED","STR_EPOCH_LEFT_HANDED"] select DZE_LEFT_HANDED;
-			[format [localize "STR_EPOCH_KEYBOARD_HANDEDNESS", localize _handed], 1] call dayz_rollingMessages;
+			format [localize "STR_EPOCH_KEYBOARD_HANDEDNESS", localize _handed] call DZE_fnc_rollingMessages;
 			profileNamespace setVariable ["leftHanded", DZE_LEFT_HANDED];
 			saveProfileNamespace;
 		};
@@ -191,7 +191,7 @@ if (isNil "keyboard_keys") then {
 			{
 				if (DZE_KEYBOARD == _x select 0) exitWith {DZE_LANGUAGE = _x select 1};
 			} count DZE_HOTKEYS;
-			[format [localize "STR_EPOCH_KEYBOARD_LAYOUT", localize DZE_LANGUAGE], 1] call dayz_rollingMessages;
+			format [localize "STR_EPOCH_KEYBOARD_LAYOUT", localize DZE_LANGUAGE] call DZE_fnc_rollingMessages;
 			profileNamespace setVariable ["keyboardLayout", DZE_KEYBOARD];
 			saveProfileNamespace;
 		};

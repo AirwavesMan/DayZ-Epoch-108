@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 local _isFuelTruck = [false,true] select ((_this select 3 select 0) == 2);
@@ -37,7 +37,7 @@ if (_isFuelTruck) then {
 	};
 };
 
-if !(_fuelSourceFound) exitwith {dayz_actionInProgress = false;localize "str_epoch_player_131_1" call dayz_rollingMessages;};
+if !(_fuelSourceFound) exitwith {dayz_actionInProgress = false;localize "str_epoch_player_131_1" call DZE_fnc_rollingMessages;};
 
 local _findNearestVehicle = [];
 
@@ -69,11 +69,11 @@ if (count _findNearestVehicle > 0) then {
 	if (_availableFuel < 0) then {_availableFuel = (fuel _fuelSource) * _fuelSourceCapacity;};
 
 	if (_availableFuel < _canSize) exitwith {
-		format[localize "STR_EPOCH_PLAYER_131_2",_availableFuel,_canSize] call dayz_rollingMessages;
+		format[localize "STR_EPOCH_PLAYER_131_2",_availableFuel,_canSize] call DZE_fnc_rollingMessages;
 	};
 
 	while {1==1} do {
-		format[localize "str_epoch_player_131",_nameText] call dayz_rollingMessages;
+		format[localize "str_epoch_player_131",_nameText] call DZE_fnc_rollingMessages;
 		[player,(getPosATL player),20,"refuel"] spawn fnc_alertZombies;
 
 		local _finished = ["Medic",1] call fn_loopAction;
@@ -112,9 +112,9 @@ if (count _findNearestVehicle > 0) then {
 			};
 
 			if (_isFuelTruck) then {
-				format[localize "str_epoch_player_132",_nameText,round(_newFuel*100)] call dayz_rollingMessages;
+				format[localize "str_epoch_player_132",_nameText,round(_newFuel*100)] call DZE_fnc_rollingMessages;
 			} else {				
-				format[localize "STR_EPOCH_PLAYER_132_1",_nameText,round(_newFuel*100),_newFuelSrc] call dayz_rollingMessages;
+				format[localize "STR_EPOCH_PLAYER_132_1",_nameText,round(_newFuel*100),_newFuelSrc] call DZE_fnc_rollingMessages;
 			};
 		};
 
@@ -124,7 +124,7 @@ if (count _findNearestVehicle > 0) then {
 		uiSleep 1;
 	};
 } else {
-	localize "str_epoch_player_27" call dayz_rollingMessages;
+	localize "str_epoch_player_27" call DZE_fnc_rollingMessages;
 };
 
 dayz_actionInProgress = false;

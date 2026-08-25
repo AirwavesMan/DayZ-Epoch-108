@@ -4,7 +4,7 @@
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 	Modified for Zupa's DoorManagement.
 */
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_21" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_msg","_display","_displayCombo","_displayEye","_doorMethod","_hasAccess","_notNearestPlayer","_obj","_objectCharacterID","_code"];
@@ -21,7 +21,7 @@ if (!isNull dayz_selectedDoor) then {
 
 	if (_notNearestPlayer) then {
 		_display closeDisplay 2;
-		localize "STR_EPOCH_ACTIONS_16" call dayz_rollingMessages;
+		localize "STR_EPOCH_ACTIONS_16" call DZE_fnc_rollingMessages;
 	} else {
 		_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 
@@ -64,7 +64,7 @@ if (!isNull dayz_selectedDoor) then {
 			};
 
 			if (_doorMethod == "Eye") then {
-				localize "STR_EPOCH_DOORACCESS_SUCCESS" call dayz_rollingMessages;
+				localize "STR_EPOCH_DOORACCESS_SUCCESS" call DZE_fnc_rollingMessages;
 			};
 			dayz_UnlockTime = 5;
 			dayz_lastCodeFail = 0;
@@ -76,7 +76,7 @@ if (!isNull dayz_selectedDoor) then {
 			[player,(getPosATL player),20,"combo_locked"] spawn fnc_alertZombies;
 
 			if (_doorMethod == "Eye") then {
-				localize "STR_EPOCH_DOORACCESS_FAILURE" call dayz_rollingMessages;
+				localize "STR_EPOCH_DOORACCESS_FAILURE" call DZE_fnc_rollingMessages;
 				_display closeDisplay 2;
 			} else {
 				if (DZE_doorManagementHarderPenalty) then {
@@ -87,7 +87,7 @@ if (!isNull dayz_selectedDoor) then {
 					_msg = localize "str_epoch_player_19_1";
 				};
 
-				_msg call dayz_rollingMessages;
+				_msg call DZE_fnc_rollingMessages;
 				_display closeDisplay 2;
 			};
 		};

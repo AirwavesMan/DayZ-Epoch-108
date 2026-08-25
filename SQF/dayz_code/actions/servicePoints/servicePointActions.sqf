@@ -2,7 +2,7 @@
 // Rewritten for single currency, gems, briefcase support and 1.0.7 epoch compatibility by salival - https://github.com/oiad/
 // Requires DayZ Epoch 1.0.7 for gem support.
 
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 [] spawn gearDialog_close;
 
@@ -39,7 +39,7 @@ if (typeName _amount == "STRING") then {
 	if (_amount == (localize "strwffree")) then {_amount = 0};
 };
 
-if (_disabled) exitWith {dayz_actionInProgress = false;[_reason,1] call dayz_rollingMessages};
+if (_disabled) exitWith {dayz_actionInProgress = false;_reason call DZE_fnc_rollingMessages};
 
 _enoughMoney = false;
 _moneyInfo = [false, [], [], [], 0];
@@ -69,14 +69,14 @@ if (_enoughMoney) then {
 		_vehicle engineOn false;
 		
 		if (_action == "refuel") then {
-			[format[localize "STR_CL_SP_REFUELING",_name],1] call dayz_rollingMessages;
+			format[localize "STR_CL_SP_REFUELING",_name] call DZE_fnc_rollingMessages;
 
 			while {vehicle player == _vehicle} do {
-				if ([0,0,0] distance (velocity _vehicle) > 1) exitWith {[format[localize "STR_CL_SP_REFUELING_STOPPED",_name],1] call dayz_rollingMessages};
+				if ([0,0,0] distance (velocity _vehicle) > 1) exitWith {format[localize "STR_CL_SP_REFUELING_STOPPED",_name] call DZE_fnc_rollingMessages};
 				_fuel = (fuel _vehicle) + ((_this select 3) select 3);
 				if (_fuel > 0.99) exitWith {
 					_vehicle setFuel 1;
-					[format[localize "STR_CL_SP_REFUEL_OK",_name],1] call dayz_rollingMessages;
+					format[localize "STR_CL_SP_REFUEL_OK",_name] call DZE_fnc_rollingMessages;
 				};
 				_vehicle setFuel _fuel;
 				uiSleep ((_this select 3) select 2);
@@ -90,7 +90,7 @@ if (_enoughMoney) then {
 			{
 				if ((vehicle player != _vehicle) || {[0,0,0] distance (velocity _vehicle) > 1}) exitWith {
 					_allRepaired = false;
-					[format[localize "STR_CL_SP_REPAIRING_STOPPED",_name],1] call dayz_rollingMessages;
+					format[localize "STR_CL_SP_REPAIRING_STOPPED",_name] call DZE_fnc_rollingMessages;
 				};
 				_hits = [_vehicle,_x] call object_getHit;
 				_damage = _hits select 0;
@@ -100,7 +100,7 @@ if (_enoughMoney) then {
 						if (_forEachIndex > 2) then {_cmpt set [count _cmpt,_x]};
 					} forEach toArray (_x);
 					_cmpt = toString _cmpt;
-					[format[localize "STR_CL_SP_REPAIRING",_cmpt],1] call dayz_rollingMessages;
+					format[localize "STR_CL_SP_REPAIRING",_cmpt] call DZE_fnc_rollingMessages;
 					_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _x >> "name");
 					_strH = "hit_" + (_selection);
 					_vehicle setHit[_selection,0];
@@ -114,7 +114,7 @@ if (_enoughMoney) then {
 			if (_allRepaired) then {
 				_vehicle setDamage 0;
 				_vehicle setVelocity [0,0,1];
-				[format[localize "STR_CL_SP_REPAIR_OK",_name],1] call dayz_rollingMessages;
+				format[localize "STR_CL_SP_REPAIR_OK",_name] call DZE_fnc_rollingMessages;
 			};
 		};
 
@@ -132,7 +132,7 @@ if (_enoughMoney) then {
 				for "_i" from 1 to _magazineCount do {_vehicle addMagazineTurret [_ammo,_turret];};
 			};
 
-			[format[localize "STR_CL_SP_REARMED",_weaponName,_name],1] call dayz_rollingMessages;
+			format[localize "STR_CL_SP_REARMED",_weaponName,_name] call DZE_fnc_rollingMessages;
 		};		
 	} else {
 		systemChat localize "STR_EPOCH_TRADE_DEBUG";

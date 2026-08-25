@@ -18,7 +18,7 @@ private ["_attachment","_weapon","_newWeapon","_weaponInUse","_newWeaponConfig",
 if (Player_IsOnLadder()) exitWith
 {
 	closeDialog 0;
-	(localize "str_player_21") call dayz_rollingMessages;
+	(localize "str_player_21") call DZE_fnc_rollingMessages;
 };
 
 _attachment = _this select 0;
@@ -31,7 +31,7 @@ false call dz_fn_meleeMagazines;
 if ((([player] call BIS_fnc_invSlotsEmpty) select 4) < 1) exitWith
 {
 	closeDialog 0;
-	(localize "str_player_24") call dayz_rollingMessages;
+	(localize "str_player_24") call DZE_fnc_rollingMessages;
 	true call dz_fn_meleeMagazines;
 };
 true call dz_fn_meleeMagazines;
@@ -40,7 +40,7 @@ true call dz_fn_meleeMagazines;
 if (!(player hasWeapon _weapon)) exitWith
 {
 	closeDialog 0;
-	(localize "str_AttachmentMissingWeapon3") call dayz_rollingMessages;
+	(localize "str_AttachmentMissingWeapon3") call DZE_fnc_rollingMessages;
 };
 
 //Check that newWeapon + attachment actually results in current weapon
@@ -48,7 +48,7 @@ _newWeaponConfig = configFile >> "CfgWeapons" >> _newWeapon >> "Attachments";
 if (!isClass(_newWeaponConfig) || {getText(_newWeaponConfig >> _attachment) != _weapon}) exitWith
 {
 	closeDialog 0;
-	localize "str_Attachmentcantremove" call dayz_rollingMessages;
+	localize "str_Attachmentcantremove" call DZE_fnc_rollingMessages;
 };
 
 _weaponInUse = (currentWeapon player == _weapon);

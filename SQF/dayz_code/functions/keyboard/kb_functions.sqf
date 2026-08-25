@@ -60,7 +60,7 @@ kb_statusUI = {
 		if (DZE_UI == _idx)	exitWith {_message = localize 'STR_ENABLED'};
 		if (DZE_UI == 0)	exitWith {_message = localize 'STR_DISABLED'};
 	};
-	if (_message != '') then {[format ['%1 %2', localize 'STR_UI_STATUS_ICONS', _message], 1] call DZE_fnc_rollingMessages};
+	if (_message != '') then {format ['%1 %2', localize 'STR_UI_STATUS_ICONS', _message] call DZE_fnc_rollingMessages};
 
 	profileNamespace setVariable ['statusUI', DZE_UI];
 	saveProfileNamespace;
@@ -109,7 +109,7 @@ kb_handed = {
 			[controlNull,1,false,false,false] call DZE_fnc_onKeyDown;
 
 			local _handed = ['STR_EPOCH_RIGHT_HANDED','STR_EPOCH_LEFT_HANDED'] select DZE_LEFT_HANDED;
-			[format [localize 'STR_EPOCH_KEYBOARD_HANDEDNESS', localize _handed], 1] call DZE_fnc_rollingMessages;
+			format [localize 'STR_EPOCH_KEYBOARD_HANDEDNESS', localize _handed] call DZE_fnc_rollingMessages;
 			profileNamespace setVariable ['leftHanded', DZE_LEFT_HANDED];
 			saveProfileNamespace;
 		};
@@ -131,7 +131,7 @@ kb_layout = {
 			if (DZE_KEYBOARD == _x select 0) exitWith {DZE_LANGUAGE = _x select 1};
 		} count DZE_HOTKEYS;
 
-		[format [localize 'STR_EPOCH_KEYBOARD_LAYOUT', localize DZE_LANGUAGE], 1] call DZE_fnc_rollingMessages;
+		format [localize 'STR_EPOCH_KEYBOARD_LAYOUT', localize DZE_LANGUAGE] call DZE_fnc_rollingMessages;
 		profileNamespace setVariable ['keyboardLayout', DZE_KEYBOARD];
 		saveProfileNamespace;
 	};
@@ -144,7 +144,7 @@ kb_lootText = {
 
 	DZE_LOOT_TEXT = !DZE_LOOT_TEXT;
 	local _text = ['STR_EPOCH_TUT_LOCAL_OFF','STR_EPOCH_TUT_LOCAL_ON'] select DZE_LOOT_TEXT;
-	[format [localize 'STR_EPOCH_LOOT_TEXT', localize _text], 1] call DZE_fnc_rollingMessages;
+	format [localize 'STR_EPOCH_LOOT_TEXT', localize _text] call DZE_fnc_rollingMessages;
 	profileNamespace setVariable ['lootText', DZE_LOOT_TEXT];
 	saveProfileNamespace;
 	true
@@ -721,7 +721,7 @@ kb_talk = {
 
 		if (isSideChannelActive) then {
 
-			[format [localize 'STR_EPOCH_NO_VOICE', localize 'str_channel_side'], 1] call DZE_fnc_rollingMessages;
+			format [localize 'STR_EPOCH_NO_VOICE', localize 'str_channel_side'] call DZE_fnc_rollingMessages;
 
 			if (isMicActive) then {KB_CLOSE_VOICE_CHAT};
 
@@ -750,7 +750,7 @@ kb_switchChannel = {
 
 	if (isMicActive) then {		// when mic is active, current channel is always displayed
 
-		[localize 'STR_EPOCH_NO_CHANNEL_SWITCH', 1] call DZE_fnc_rollingMessages;
+		localize 'STR_EPOCH_NO_CHANNEL_SWITCH' call DZE_fnc_rollingMessages;
 
 		_handled = true;
 	} else {
@@ -795,7 +795,7 @@ kb_blockCheat = {
 
 	if ((_dik == DIK_NUMPADMINUS && _shift) || {_dik == DIK_LSHIFT && (diag_tickTime - dayz_minusDownTime < 1)}) then {
 
-		[localize 'STR_EPOCH_CHEAT_KEYS_DISABLED', 1] call DZE_fnc_rollingMessages;
+		localize 'STR_EPOCH_CHEAT_KEYS_DISABLED' call DZE_fnc_rollingMessages;
 
 		disableUserInput true; disableUserInput true;
 
@@ -835,7 +835,7 @@ kb_chat = {
 
 					KB_CLOSE_CHAT;
 
-					[localize 'STR_EPOCH_NO_CHANNEL_SWITCH_CHAT', 1] call DZE_fnc_rollingMessages;
+					localize 'STR_EPOCH_NO_CHANNEL_SWITCH_CHAT' call DZE_fnc_rollingMessages;
 				};
 			};
 

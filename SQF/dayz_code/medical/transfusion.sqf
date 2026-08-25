@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 local _unit = (_this select 3) select 0;
@@ -58,14 +58,14 @@ local _isOk = true;
 //diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)",player call DZE_fnc_getNamePlayer,_unit call DZE_fnc_getNamePlayer];
 
 local _count = [player,_bagUsed,1] call BIS_fnc_invRemove;
-if (_count != 1) exitwith {dayz_actionInProgress = false;localize "str_actions_medical_transfusion_interrupted" call dayz_rollingMessages;};
+if (_count != 1) exitwith {dayz_actionInProgress = false;localize "str_actions_medical_transfusion_interrupted" call DZE_fnc_rollingMessages;};
 
 if (!_badBag) then {
 	PVDZ_send = [_unit,"Transfuse",[_unit,player,_bloodAmount]];
 	publicVariableServer "PVDZ_send";
 };
 
-localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
+localize "str_actions_medical_transfusion_start" call DZE_fnc_rollingMessages;
 
 while {1==1} do {
 	_finished = ["Medic",1] call fn_loopAction;
@@ -106,5 +106,5 @@ while {1==1} do {
 	};
 };
 
-localize _msg call dayz_rollingMessages;
+localize _msg call DZE_fnc_rollingMessages;
 dayz_actionInProgress = false;

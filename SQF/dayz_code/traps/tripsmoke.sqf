@@ -26,7 +26,7 @@ _arm = {
 	
 	if (_exit) exitWith {
 		//Trap was already triggered, require smoke to rearm
-		format[localize "str_player_03",localize "str_dn_smoke"] call dayz_rollingMessages;
+		format[localize "str_player_03",localize "str_dn_smoke"] call DZE_fnc_rollingMessages;
 	};
 	
 	//if (isServer) then {

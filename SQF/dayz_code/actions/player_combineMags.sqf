@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call DZE_fnc_rollingMessages; };
 dayz_actionInProgress = true;
 
 disableSerialization;
@@ -18,7 +18,7 @@ local _name	= getText(_config >> "displayName");
 local _magCount	= {_x == _create} count magazines player;
 
 if (_magCount == 1) exitWith {
-	[format [localize "str_cannotCombine", _name], 1] call dayz_rollingMessages;
+	format [localize "str_cannotCombine", _name] call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;
 };
 
@@ -74,12 +74,12 @@ if (_create == "Quiver") then {
 
 call {
 	if (_qtynew_create_ammo_rest == 0) exitWith {
-		format[localize "str_combineDoneFull", _magCount, _name, _qtynew_create_mags_full, _magFull] call dayz_rollingMessages;
+		format[localize "str_combineDoneFull", _magCount, _name, _qtynew_create_mags_full, _magFull] call DZE_fnc_rollingMessages;
 	};
 	if (_qtynew_create_mags_full == 0) exitWith {
-		[format[localize "str_combineDonePartialOne", _magCount, _name, _qtynew_create_ammo_rest, _magAmmunition], 1] call dayz_rollingMessages;
+		format[localize "str_combineDonePartialOne", _magCount, _name, _qtynew_create_ammo_rest, _magAmmunition] call DZE_fnc_rollingMessages;
 	};
-	[format[localize "str_combineDonePartial", _magCount, _name, _qtynew_create_mags_full, _qtynew_create_ammo_rest, _magAmmunition, _magFullSingular, _magFull], 1] call dayz_rollingMessages;
+	format[localize "str_combineDonePartial", _magCount, _name, _qtynew_create_mags_full, _qtynew_create_ammo_rest, _magAmmunition, _magFullSingular, _magFull] call DZE_fnc_rollingMessages;
 };
 
 reload player;

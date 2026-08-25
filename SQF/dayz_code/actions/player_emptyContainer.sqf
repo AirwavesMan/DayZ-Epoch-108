@@ -8,7 +8,7 @@
 		Foxy
 */
 
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_56" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_56" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 closeDialog 0;
 
@@ -33,12 +33,12 @@ if (!isText(_cfg >> "containerEmpty")) exitWith
 //player is on a ladder
 if ((getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1) exitWith
 {
-	(localize "str_player_21") call dayz_rollingMessages;
+	(localize "str_player_21") call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;
 };
 
 //player doesn't have the consumable item
-if (!(_this in magazines player)) exitWith { dayz_actionInProgress = false;localize "str_misplaced_container" call dayz_rollingMessages; };
+if (!(_this in magazines player)) exitWith { dayz_actionInProgress = false;localize "str_misplaced_container" call DZE_fnc_rollingMessages; };
 
 //Remove container
 player removeMagazine _this;

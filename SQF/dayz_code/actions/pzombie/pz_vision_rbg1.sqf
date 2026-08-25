@@ -22,7 +22,7 @@ _index = 0;
 
 // set rgb + m 
 player setVariable [_NVx, _NV];
-format["%1 %2",_NVx,_NV] call dayz_rollingMessages;
+format["%1 %2",_NVx,_NV] call DZE_fnc_rollingMessages;
 
 _NV = player getvariable ["NV",["OFF", 0.1]];
 _NVOn = (_NV select 0);

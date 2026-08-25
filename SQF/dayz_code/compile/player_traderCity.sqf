@@ -12,7 +12,7 @@ if ((dayz_lastClothesChange + 3 > diag_tickTime) or (player distance respawn_wes
 switch _enterORleave do {
 	case "enter": {
 		if (_showText) then {
-			format[localize "STR_EPOCH_TRADER_ENTER", _traderName] call dayz_rollingMessages;
+			format[localize "STR_EPOCH_TRADER_ENTER", _traderName] call DZE_fnc_rollingMessages;
 		};
 		canbuild = false;
 		inTraderCity = _traderName;
@@ -21,7 +21,7 @@ switch _enterORleave do {
 
 	case "leave": {
 		if (_showText) then {
-			format[localize "STR_EPOCH_TRADER_LEAVE", _traderName] call dayz_rollingMessages;
+			format[localize "STR_EPOCH_TRADER_LEAVE", _traderName] call DZE_fnc_rollingMessages;
 		};
 
 		canbuild = true;

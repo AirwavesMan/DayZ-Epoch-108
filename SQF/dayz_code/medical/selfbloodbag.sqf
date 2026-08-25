@@ -1,5 +1,5 @@
 // Check to see if enough time has passed since the last self-transfusion.
-if (time - dayz_lastSelfTransfusion <= DZE_selfTransfuse_Values select 2) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
+if (time - dayz_lastSelfTransfusion <= DZE_selfTransfuse_Values select 2) exitWith {localize "str_actions_medical_18" call DZE_fnc_rollingMessages;};
 
 private ["_msg","_unit","_bagUsed","_duration","_rhVal","_badBag","_bloodType","_bloodBagWholeNeeded","_wholeBag","_transfusionInfection","_finished","_bloodAmount"];
 
@@ -28,7 +28,7 @@ if (!dayz_classicBloodBagSystem) then {
 
 _bloodAmount = [4000,(DZE_selfTransfuse_Values select 0)] select (!_wholeBag);
 
-localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
+localize "str_actions_medical_transfusion_start" call DZE_fnc_rollingMessages;
 _unit removeMagazine _bagUsed;
 
 // Players can self blood bag in a vehicle so we use this simple method.
@@ -58,4 +58,4 @@ if (!_finished) then {
 	};
 };
 
-localize _msg call dayz_rollingMessages;
+localize _msg call DZE_fnc_rollingMessages;

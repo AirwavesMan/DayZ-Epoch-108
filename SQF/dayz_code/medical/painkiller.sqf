@@ -34,7 +34,7 @@ if !(isNil "_medsUsed") then {
 	if (_unit == player) then {
 		//Self Healing
 		[player,player] call player_medPainkiller;
-		localize "str_actions_medical_painkillers_self" call dayz_rollingMessages;
+		localize "str_actions_medical_painkillers_self" call DZE_fnc_rollingMessages;
 	} else {
 		// Heal another player
 		PVDZ_send = [_unit,"Painkiller",[_unit,player]];
@@ -43,6 +43,6 @@ if !(isNil "_medsUsed") then {
 		// Give humanity
 		20 call player_humanityChange;
 
-		format [localize "str_actions_medical_painkillers_give",_unit call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
+		format [localize "str_actions_medical_painkillers_give",_unit call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;
 	};
 };

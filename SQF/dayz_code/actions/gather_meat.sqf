@@ -1,10 +1,10 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 local _body = _this;
 if (isNull _body) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
 if (_body getVariable["meatHarvested",false]) exitWith {dayz_actionInProgress = false;}; // Exit the script if the meat has already been harvested.
-if ({isPlayer _x} count (_body nearEntities ["CAManBase", 12]) > 1) exitWith {dayz_actionInProgress = false;localize "str_pickup_limit_5" call dayz_rollingMessages;}; // Exit the script if another player is near to prevent duping.
+if ({isPlayer _x} count (_body nearEntities ["CAManBase", 12]) > 1) exitWith {dayz_actionInProgress = false;localize "str_pickup_limit_5" call DZE_fnc_rollingMessages;}; // Exit the script if another player is near to prevent duping.
 
 local _type		= typeOf _body;
 local _isZombie		= _type isKindOf "zZombie_base";
@@ -23,9 +23,9 @@ local _wasStanding	= ["perc", animationState player] call fnc_inString;
 // Exit the script if the player doesn't have a knife
 if ((count _knives) < 1) exitWith {
 	if (_isZombie || _isMutant) then {
-		format[localize "str_missing_to_do_this",localize "STR_EQUIP_NAME_KNIFE"] call dayz_rollingMessages;
+		format[localize "str_missing_to_do_this",localize "STR_EQUIP_NAME_KNIFE"] call DZE_fnc_rollingMessages;
 	} else {
-		localize "str_cannotgut" call dayz_rollingMessages;
+		localize "str_cannotgut" call DZE_fnc_rollingMessages;
 	};
 	dayz_actionInProgress = false;
 };
@@ -74,6 +74,6 @@ call {
 
 closeDialog 0;
 uiSleep 0.02;
-_string call dayz_rollingMessages;
+_string call DZE_fnc_rollingMessages;
 
 dayz_actionInProgress = false;

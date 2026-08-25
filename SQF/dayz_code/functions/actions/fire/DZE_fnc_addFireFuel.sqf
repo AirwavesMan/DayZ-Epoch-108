@@ -143,9 +143,9 @@ if (_responseReceived) then {
 	};
 
 	if (_maximumReached) then {
-		[format [localize 'STR_FIREPLACE_FUEL_MAXIMUM_REACHED',_remainingBurnMinutes],1] call DZE_fnc_rollingMessages;
+		format [localize 'STR_FIREPLACE_FUEL_MAXIMUM_REACHED',_remainingBurnMinutes] call DZE_fnc_rollingMessages;
 	} else {
-		[format [localize 'STR_FIREPLACE_FUEL_ADDED',getText (_magazineConfig >> 'displayName'),_remainingBurnMinutes],1] call DZE_fnc_rollingMessages;
+		format [localize 'STR_FIREPLACE_FUEL_ADDED',getText (_magazineConfig >> 'displayName'),_remainingBurnMinutes] call DZE_fnc_rollingMessages;
 	};
 } else {
 	// Restore the magazine when the server does not answer.

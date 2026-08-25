@@ -13,7 +13,7 @@ if (typeName _this == "ARRAY") then {
 call gear_ui_init;
 closeDialog 0;
 
-if Player_IsOnLadder() exitWith { (localize "str_player_21") call dayz_rollingMessages; };
+if Player_IsOnLadder() exitWith { (localize "str_player_21") call DZE_fnc_rollingMessages; };
 
 _posASL = getPosASL player;
 _posATL = ASLtoATL _posASL;
@@ -30,7 +30,7 @@ _canFill = call {
 
 if !(_canFill select 0) exitWith {
 	_message = if (_drinking) then {"str_player_32"} else {"str_player_20"};
-	localize _message call dayz_rollingMessages;
+	localize _message call DZE_fnc_rollingMessages;
 };
 
 //Check if guaranteed infected (only for ponds)
@@ -63,7 +63,7 @@ if (_drinking) then {
 		r_player_infected = true;
 	};
 
-	localize "str_drinkwithhands" call dayz_rollingMessages;
+	localize "str_drinkwithhands" call DZE_fnc_rollingMessages;
 } else {
 	{
 		if (isText (configFile >> "CfgMagazines" >> _x >> _water)) then
@@ -78,8 +78,8 @@ if (_drinking) then {
 
 	if (_filled > 0) then {
 		[player,(getPosATL player),5,"fillwater"] spawn fnc_alertZombies;
-		format [localize "str_player_01", _filled] call dayz_rollingMessages;
+		format [localize "str_player_01", _filled] call DZE_fnc_rollingMessages;
 	} else {
-		localize "str_player_02" call dayz_rollingMessages;
+		localize "str_player_02" call DZE_fnc_rollingMessages;
 	};
 };

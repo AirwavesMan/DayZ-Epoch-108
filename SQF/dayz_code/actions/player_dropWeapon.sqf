@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call DZE_fnc_rollingMessages; };
 dayz_actionInProgress = true;
 
 private ["_item","_config","_onLadder","_consume","_bag","_droppedType"];
@@ -10,12 +10,12 @@ _droppedType = getText (_config >> "droppeditem");
 
 //Make sure the player still has the tool this script was spawned with
 if ((dayz_onBack != _item && carryClick) or (!(player hasWeapon _item) && !carryClick)) exitWith {
-	format[localize "str_player_30",getText (_config >> "displayName")] call dayz_rollingMessages;
+	format[localize "str_player_30",getText (_config >> "displayName")] call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;
 };
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {dayz_actionInProgress = false; localize "str_player_21" call dayz_rollingMessages; };
+if (_onLadder) exitWith {dayz_actionInProgress = false; localize "str_player_21" call DZE_fnc_rollingMessages; };
 
 call gear_ui_init;
 

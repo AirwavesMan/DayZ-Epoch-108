@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_id","_hits","_array","_vehicle","_part","_hitpoint","_type","_nameType","_namePart","_damage","_selection","_finished"];
@@ -44,11 +44,11 @@ if ("ItemToolbox" in items player && {_part in magazines player}) then {
 		_vehicle setvelocity [0,0,1];
 
 		//Success!
-		format[localize "str_player_04",_namePart,_nameType] call dayz_rollingMessages;
+		format[localize "str_player_04",_namePart,_nameType] call DZE_fnc_rollingMessages;
 	} else {
 		player addMagazine _part;
 	};
 } else {
-	format[localize "str_player_03",_namePart] call dayz_rollingMessages;
+	format[localize "str_player_03",_namePart] call DZE_fnc_rollingMessages;
 };
 dayz_actionInProgress = false;

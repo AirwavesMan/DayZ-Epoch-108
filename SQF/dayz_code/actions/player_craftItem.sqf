@@ -20,7 +20,7 @@ class ItemActions
 	};
 };
 */
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_plasticWaterBottles","_boiledWaterBottles","_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_finished","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx","_configParent","_pPos","_text"];
@@ -60,7 +60,7 @@ if ("workshop" in _needNear) then {
 	};
 };
 if (_abort) exitWith {
-	format[localize "str_epoch_player_149",_reason,_distance] call dayz_rollingMessages;
+	format[localize "str_epoch_player_149",_reason,_distance] call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;
 };
 
@@ -121,7 +121,7 @@ if (_canDo) then {
 
 			// If all parts proceed
 			if (_proceed) then {
-				localize "str_epoch_player_62" call dayz_rollingMessages;
+				localize "str_epoch_player_62" call DZE_fnc_rollingMessages;
 
 				[player,(getPosATL player),50,_sfx] spawn fnc_alertZombies;
 
@@ -244,7 +244,7 @@ if (_canDo) then {
 								};
 								_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 								// Add crafted item
-								format[localize "str_epoch_player_150",_textCreate,_countOut] call dayz_rollingMessages;
+								format[localize "str_epoch_player_150",_textCreate,_countOut] call DZE_fnc_rollingMessages;
 								// sleep here
 								uiSleep 1;
 							} foreach _selectedRecipeOutput;
@@ -254,10 +254,10 @@ if (_canDo) then {
 					} else {
 						// Refund parts since we failed
 						{player addMagazine _x; } count _temp_removed_array;
-						format[localize "STR_EPOCH_PLAYER_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
+						format[localize "STR_EPOCH_PLAYER_145",_removed_total,_tobe_removed_total] call DZE_fnc_rollingMessages;
 					};
 				} else {
-					localize "str_epoch_player_64" call dayz_rollingMessages;
+					localize "str_epoch_player_64" call DZE_fnc_rollingMessages;
 					_craft_doLoop = false;
 				};
 			} else {
@@ -270,7 +270,7 @@ if (_canDo) then {
 						_textMissing = getText(configFile >> "CfgVehicles" >> _missing >> "displayName");
 					};
 				};
-				format[localize "str_epoch_player_152",_missingQty, _textMissing,_tradeComplete] call dayz_rollingMessages;
+				format[localize "str_epoch_player_152",_missingQty, _textMissing,_tradeComplete] call DZE_fnc_rollingMessages;
 				systemchat localize "STR_CRAFTING_NEEDED_ITEMS";
 
 				if (count _selectedRecipeInput > 0) then {
@@ -294,6 +294,6 @@ if (_canDo) then {
 		};
 	};
 } else {
-	localize "str_epoch_player_64" call dayz_rollingMessages;
+	localize "str_epoch_player_64" call DZE_fnc_rollingMessages;
 };
 dayz_actionInProgress = false;

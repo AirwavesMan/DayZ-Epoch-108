@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call DZE_fnc_rollingMessages; };
 
 #include "\z\addons\dayz_code\actions\AdvancedTrading\functions\defines.hpp"
 
@@ -7,7 +7,7 @@ disableSerialization;
 Z_traderData = (_this select 3); // gets the trader data ( e.g menu_Functionary1 )
 
 if (isNil "Z_traderData" or {count Z_traderData == 0}) exitWith {
-	localize "STR_EPOCH_TRADE_ERROR" call dayz_rollingMessages;
+	localize "STR_EPOCH_TRADE_ERROR" call DZE_fnc_rollingMessages;
 };
 
 Z_Selling = true; // Always start menu in buy mode (flipped in z_at_changeBuySell.sqf on startup)

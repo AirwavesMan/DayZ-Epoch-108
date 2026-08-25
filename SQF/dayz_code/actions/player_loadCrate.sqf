@@ -1,18 +1,18 @@
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_75" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_75" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_dir","_classname","_b0x1337","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool","_finished"];
 
 _hasTool = "ItemCrowbar" in items player;
 if(!_hasTool) exitWith {
-	localize "str_epoch_player_76" call dayz_rollingMessages;
+	localize "str_epoch_player_76" call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;
 };
 
 _item = _this;
 _hasCrate = _item in magazines player;
 if (!_hasCrate) exitWith {
-	localize "str_epoch_player_77" call dayz_rollingMessages;
+	localize "str_epoch_player_77" call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;
 };
 
@@ -68,6 +68,6 @@ if (surfaceIsWater _location) then {
 DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on crate
 player action ["Gear", _b0x1337];
 
-localize "str_epoch_player_78" call dayz_rollingMessages;
+localize "str_epoch_player_78" call DZE_fnc_rollingMessages;
 
 dayz_actionInProgress = false;

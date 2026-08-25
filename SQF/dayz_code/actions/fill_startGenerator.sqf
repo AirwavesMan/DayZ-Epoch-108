@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_vehicle","_finished","_soundSource","_fuelCan","_emptyCan"];
@@ -9,7 +9,7 @@ s_player_fillgen = 1;
 // Use target from addaction
 _vehicle = _this select 3;
 
-localize "str_epoch_player_25" call dayz_rollingMessages;
+localize "str_epoch_player_25" call DZE_fnc_rollingMessages;
 
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
 
@@ -43,7 +43,7 @@ if (_finished) then {
 
 			_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
-			localize "str_epoch_player_28" call dayz_rollingMessages;
+			localize "str_epoch_player_28" call DZE_fnc_rollingMessages;
 			["Working",0,[0,1,3,0]] call dayz_NutritionSystem;
 		};
 	} else {
@@ -56,10 +56,10 @@ if (_finished) then {
 
 		_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
-		localize "str_epoch_player_28" call dayz_rollingMessages;
+		localize "str_epoch_player_28" call DZE_fnc_rollingMessages;
 	};
 } else {
-	localize "str_epoch_player_26" call dayz_rollingMessages;
+	localize "str_epoch_player_26" call DZE_fnc_rollingMessages;
 };
 
 dayz_actionInProgress = false;

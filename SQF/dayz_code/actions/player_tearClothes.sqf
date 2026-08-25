@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call DZE_fnc_rollingMessages; };
 dayz_actionInProgress = true;
 
 private ["_skin","_rnd","_rounded","_itemtocreate","_i","_config","_result","_finished"];
@@ -20,23 +20,23 @@ if (!_finished) exitWith {
 };
 
 if !(_skin in magazines player) exitWith {
-	localize "str_tear_clothes_0" call dayz_rollingMessages;
+	localize "str_tear_clothes_0" call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;
 };
 player removeMagazine _skin;
 
 switch (_rounded) do {
 	case 0: {
-		localize "str_tear_clothes_0" call dayz_rollingMessages;
+		localize "str_tear_clothes_0" call DZE_fnc_rollingMessages;
 	};
 	case 1: {
-		localize "str_tear_clothes_1" call dayz_rollingMessages;
+		localize "str_tear_clothes_1" call DZE_fnc_rollingMessages;
 	};
 	case 2: {
-		localize "str_tear_clothes_2" call dayz_rollingMessages;
+		localize "str_tear_clothes_2" call DZE_fnc_rollingMessages;
 	};
 	case 3: {
-		localize "str_tear_clothes_3" call dayz_rollingMessages;
+		localize "str_tear_clothes_3" call DZE_fnc_rollingMessages;
 	};
 };
 

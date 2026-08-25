@@ -5,7 +5,7 @@
 	3. Removing tool from toolbelt and converting it to primary
 */
 
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_item","_config","_onLadder","_text","_create","_config2","_primaryFull","_removed","_toolsFull"];
@@ -20,17 +20,17 @@ _primaryFull = getNumber (_config2 >> "type") == 1 && (primaryWeapon player != "
 _removed = false;
 
 if (player hasWeapon _create or _toolsFull or _primaryFull) exitWith {
-	localize "str_player_24" call dayz_rollingMessages;
+	localize "str_player_24" call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;
 };
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages; dayz_actionInProgress = false;};
+if (_onLadder) exitWith {localize "str_player_21" call DZE_fnc_rollingMessages; dayz_actionInProgress = false;};
 
 //Make sure the player still has the tool this script was spawned with
 _text = getText (_config >> "displayName");
 if ((dayz_onBack != _item && carryClick) or (!(player hasWeapon _item) && !carryClick)) exitWith {
-	format[localize "str_player_30",_text] call dayz_rollingMessages;
+	format[localize "str_player_30",_text] call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;
 };
 
@@ -48,7 +48,7 @@ if (_removed or {([player,_config] call BIS_fnc_invRemove) == 1}) then {
 	player addWeapon _create;
 } else {
 	closeDialog 0;
-	format[localize "str_player_30",_text] call dayz_rollingMessages;
+	format[localize "str_player_30",_text] call DZE_fnc_rollingMessages;
 };
 
 dayz_actionInProgress = false;

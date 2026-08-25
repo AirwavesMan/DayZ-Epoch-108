@@ -7,5 +7,5 @@ local _displayName = getText(configFile >> "CfgMagazines" >> _item >> "displayNa
 [_unit,"hands",0,false,false] call unit_setFractures;
 
 if (_medic != player) then {
-	format [localize "str_actions_medical_general_received",_medic call DZE_fnc_getNamePlayer,_displayName] call dayz_rollingMessages;
+	format [localize "str_actions_medical_general_received",_medic call DZE_fnc_getNamePlayer,_displayName] call DZE_fnc_rollingMessages;
 };

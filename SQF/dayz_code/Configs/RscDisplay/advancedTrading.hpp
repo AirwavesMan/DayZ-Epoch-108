@@ -348,7 +348,7 @@ class AdvancedTrading
 			x = 0.63 * safezoneW + safezoneX;
 			y = 0.77 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
-			onButtonClick = "[[],0,false,0,[],[],true] call Z_returnChange; ((ctrlParent (_this select 0)) closeDisplay 2); localize ""STR_EPOCH_PLAYER_307"" call dayz_rollingMessages;";
+			onButtonClick = "[[],0,false,0,[],[],true] call Z_returnChange; ((ctrlParent (_this select 0)) closeDisplay 2); localize ""STR_EPOCH_PLAYER_307"" call DZE_fnc_rollingMessages;";
 			text = $STR_EPOCH_PLAYER_306;
 		};
 		class ZSC_RscButtonMenu_AT29: ZSC_RscButtonMenu

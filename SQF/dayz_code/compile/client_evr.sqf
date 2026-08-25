@@ -459,7 +459,7 @@ fnc_evr = {
 				} count DZE_EVRDamageItems;
 
 				if (count _items > 0) then {
-					format[localize "STR_EVR_DAMAGED_ITEMS",_items] call dayz_rollingMessages;
+					format[localize "STR_EVR_DAMAGED_ITEMS",_items] call DZE_fnc_rollingMessages;
 				};
 			};
 

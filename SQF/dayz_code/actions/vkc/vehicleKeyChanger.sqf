@@ -14,7 +14,7 @@
 	Please see dayz_code\configVariables.sqf for the value of gems (DZE_GemWorthArray) and their relevant worth if they are enabled.
 */
 
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 disableSerialization;
@@ -46,16 +46,16 @@ _exit = {
 if (isNull vkc_cursorTarget) exitWith {call _exit; systemChat localize "str_cursorTargetNotFound";};
 
 _playerNear = {isPlayer _x} count (vkc_cursorTarget nearEntities ["CAManBase", 10]) > 1;
-if (_playerNear) exitWith {call _exit; localize "str_pickup_limit_5" call dayz_rollingMessages;};
+if (_playerNear) exitWith {call _exit; localize "str_pickup_limit_5" call DZE_fnc_rollingMessages;};
 
-if !(vkc_cursorTarget isKindOf "Air" || {vkc_cursorTarget isKindOf "LandVehicle"} || {vkc_cursorTarget isKindOf "Ship"}) exitWith {call _exit; localize "STR_CL_VKC_FAIL_CURSOR" call dayz_rollingMessages;};
+if !(vkc_cursorTarget isKindOf "Air" || {vkc_cursorTarget isKindOf "LandVehicle"} || {vkc_cursorTarget isKindOf "Ship"}) exitWith {call _exit; localize "STR_CL_VKC_FAIL_CURSOR" call DZE_fnc_rollingMessages;};
 
-if (isNull DZE_myVehicle || {!(alive DZE_myVehicle)} || {!(local DZE_myVehicle)}) exitWith {call _exit; localize "str_epoch_player_245" call dayz_rollingMessages;};
+if (isNull DZE_myVehicle || {!(alive DZE_myVehicle)} || {!(local DZE_myVehicle)}) exitWith {call _exit; localize "str_epoch_player_245" call DZE_fnc_rollingMessages;};
 
 _typeOf = typeOf vkc_cursorTarget;
 _name = getText(configFile >> "cfgVehicles" >> _typeOf >> "displayName");
 
-if (_characterID == "-1") exitWith {call _exit; format[localize "STR_CL_VKC_FAIL_SUPPORT",_name] call dayz_rollingMessages;};
+if (_characterID == "-1") exitWith {call _exit; format[localize "STR_CL_VKC_FAIL_SUPPORT",_name] call DZE_fnc_rollingMessages;};
 
 vkc_keyList = call epoch_tempKeys;
 
@@ -100,7 +100,7 @@ waitUntil {!dialog};
 
 if (!vkc_isOk) exitWith {call _exit;};
 
-if (isNull DZE_myVehicle || {!(alive DZE_myVehicle)} || {!(local DZE_myVehicle)}) exitWith {call _exit; localize "str_epoch_player_245" call dayz_rollingMessages;};
+if (isNull DZE_myVehicle || {!(alive DZE_myVehicle)} || {!(local DZE_myVehicle)}) exitWith {call _exit; localize "str_epoch_player_245" call DZE_fnc_rollingMessages;};
 
 _enoughMoney = false;
 _moneyInfo = [false,[],[],[],0];
@@ -135,7 +135,7 @@ if (_enoughMoney) then {
 		PVDZE_veh_Upgrade = [vkc_cursorTarget,[getDir vkc_cursorTarget,_position],_typeOf,vkc_charID,player,dayz_authKey,if (vkc_action == "change") then {"changed the key for"} else {"claimed"}];
 		publicVariableServer "PVDZE_veh_Upgrade";
 
-		localize "STR_CL_VKC_WAIT" call dayz_rollingMessages;
+		localize "STR_CL_VKC_WAIT" call DZE_fnc_rollingMessages;
 
 		waitUntil {!isNil "dze_waiting"};
 
@@ -149,7 +149,7 @@ if (_enoughMoney) then {
 			};
 		} else {
 			{player reveal _x;} count (player nearEntities [["LandVehicle"],10]);
-			[format[_message select 0,_name,vkc_keyName],1] call dayz_rollingMessages;
+			format[_message select 0,_name,vkc_keyName] call DZE_fnc_rollingMessages;
 		};
 	} else {
 		systemChat localize "STR_EPOCH_TRADE_DEBUG";

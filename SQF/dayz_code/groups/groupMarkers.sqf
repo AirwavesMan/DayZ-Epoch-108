@@ -12,7 +12,7 @@ while {true} do {
 		if (!isNull findDisplay 80000) then {findDisplay 80000 closeDisplay 2;};
 		terminate dayz_groupTags;
 		8 cutText ["","PLAIN"];
-		localize "STR_EPOCH_LOST_RADIO_CONTACT" call dayz_rollingMessages;
+		localize "STR_EPOCH_LOST_RADIO_CONTACT" call DZE_fnc_rollingMessages;
 	} else {
 		if (_inGroup && {scriptDone dayz_groupTags}) then {
 			dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
@@ -22,7 +22,7 @@ while {true} do {
 			_oldGroup = group player;
 			[player] joinSilent _lastGroup;
 			if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
-			format[localize "STR_EPOCH_REJOINED_GROUP",(leader _lastGroup) call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
+			format[localize "STR_EPOCH_REJOINED_GROUP",(leader _lastGroup) call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;
 			PVDZ_Server_UpdateGroup = [1,player];
 			publicVariableServer "PVDZ_Server_UpdateGroup";
 			_lastGroup = grpNull;

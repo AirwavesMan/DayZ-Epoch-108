@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 disableSerialization;
@@ -12,7 +12,7 @@ if (isPlayer cursorTarget) then {
 	_isBusy = ZSC_GiveMoneyTarget getVariable["isBusy",false];
 	if (_isBusy) exitWith {
 		player setVariable ["isBusy",false,true];
-		format[localize "STR_CL_ZSC_ALREADY_TRADING",ZSC_GiveMoneyTarget call DZE_fnc_getNamePlayer] call dayz_rollingMessages;
+		format[localize "STR_CL_ZSC_ALREADY_TRADING",ZSC_GiveMoneyTarget call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;
 	};
 	if (!_isBusy) then {
 		player setVariable["isBusy",true,true];	
@@ -22,7 +22,7 @@ if (isPlayer cursorTarget) then {
 		call GivePlayerDialogAmounts;
 	};
 } else {
-	localize "STR_CL_ZSC_NOT_PLAYER" call dayz_rollingMessages;
+	localize "STR_CL_ZSC_NOT_PLAYER" call DZE_fnc_rollingMessages;
 };
 
 waitUntil {!dialog};

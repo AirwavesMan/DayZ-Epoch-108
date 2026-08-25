@@ -31,11 +31,11 @@ if (_groundFog != 0 && !_blizzard) then { // Prevent ground fog when a blizzard 
 	if (_groundFogAllow || (!_groundFogAllow && {_currentOvercast <= .70})) then { // Checks for allowing ground fog if it's raining or snowing.
 		if (_groundFog in [1,3]) then {
 			if ((date select 3) in [20,21,22,23,24,0,1,2,3,4]) then { // ground fog at evening, night, and morning hours.
-				if (DEBUG_MESSAGE) then {"Ground fog is starting" call dayz_rollingMessages;};
+				if (DEBUG_MESSAGE) then {"Ground fog is starting" call DZE_fnc_rollingMessages;};
 				[_groundFog,_groundFogDist] spawn fnc_groundFog;
 			};
 		} else { // options 2,4 default
-			if (DEBUG_MESSAGE) then {"Ground fog is starting" call dayz_rollingMessages;};
+			if (DEBUG_MESSAGE) then {"Ground fog is starting" call DZE_fnc_rollingMessages;};
 			[_groundFog,_groundFogDist] spawn fnc_groundFog;
 		};
 	};
@@ -44,11 +44,11 @@ if (_groundFog != 0 && !_blizzard) then { // Prevent ground fog when a blizzard 
 // Breath fog
 if (DZE_Weather in [3,4] && {_breathFog in [1,2]}) then {
 	if (_breathFog == 1) then {
-		if (DEBUG_MESSAGE) then {"Breath fog is starting" call dayz_rollingMessages;};
+		if (DEBUG_MESSAGE) then {"Breath fog is starting" call DZE_fnc_rollingMessages;};
 		[] spawn fnc_breathFog;
 	} else {
 		if (_currentSnow > 0) then {
-			if (DEBUG_MESSAGE) then {"Breath fog is starting" call dayz_rollingMessages;};
+			if (DEBUG_MESSAGE) then {"Breath fog is starting" call DZE_fnc_rollingMessages;};
 			[] spawn fnc_breathFog;
 		};
 	};
@@ -59,17 +59,17 @@ if (_currentOvercast > .70) then {
 	if (DZE_Weather in [3,4]) then {
 		if (_currentSnow > 0) then {
 			if (_blizzard) then {
-				if (DEBUG_MESSAGE) then {"A blizzard is starting" call dayz_rollingMessages;};
+				if (DEBUG_MESSAGE) then {"A blizzard is starting" call DZE_fnc_rollingMessages;};
 				_currentFog spawn fnc_blizzard;
 			} else {
-				if (DEBUG_MESSAGE) then {"It's starting to snow" call dayz_rollingMessages;};
+				if (DEBUG_MESSAGE) then {"It's starting to snow" call DZE_fnc_rollingMessages;};
 				_currentSnow spawn fnc_snowfall;
 			};
 		};
 	} else {
 		if (_currentRain > 0) then {
 			_currentRain spawn {
-				if (DEBUG_MESSAGE) then {"The rain is starting" call dayz_rollingMessages;};
+				if (DEBUG_MESSAGE) then {"The rain is starting" call DZE_fnc_rollingMessages;};
 				if !(isNil "DZE_WeatherDebugTime") then {diag_log format ["Rain started at %1",(diag_tickTime - DZE_WeatherDebugTime)];};
 				while {!DZE_WeatherEndThread} do {
 					uiSleep 3;
@@ -85,7 +85,7 @@ if (_currentOvercast > .70) then {
 if (_currentRain == 0 || {_currentOvercast <= .70} || {DZE_Weather in [3,4]}) then {
 	// This might look a little funky, but it's necessary to get the rain to stop in Arma 2.
 	[] spawn {
-		if (DEBUG_MESSAGE) then {"Setting the rain to zero" call dayz_rollingMessages;};
+		if (DEBUG_MESSAGE) then {"Setting the rain to zero" call DZE_fnc_rollingMessages;};
 		if !(isNil "DZE_WeatherDebugTime") then {diag_log format ["Rain set to zero at %1",(diag_tickTime - DZE_WeatherDebugTime)];};
 		3 setRain 0;
 		uiSleep 3;
@@ -95,6 +95,6 @@ if (_currentRain == 0 || {_currentOvercast <= .70} || {DZE_Weather in [3,4]}) th
 	};
 };
 
-if (DEBUG_MESSAGE) then {"The Weather Has Changed" call dayz_rollingMessages;};
+if (DEBUG_MESSAGE) then {"The Weather Has Changed" call DZE_fnc_rollingMessages;};
 
 if (DEBUG_MESSAGE) then {diag_log format ["Weather Forecast: Overcast: %1, Fog: %2, Rain: %3, WindX: %4, WindY: %5, Snow: %6, Blizzard: %7, Change Type: %8.",_currentOvercast,_currentFog,_currentRain,_currentWindX,_currentWindY,_currentSnow,_blizzard,_changeType];};

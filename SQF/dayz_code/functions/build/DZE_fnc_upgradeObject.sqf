@@ -27,7 +27,7 @@
 	diag_log format['[Client Debug]: [DZE_fnc_upgradeObject]: Function called with argumentes: %1',_this];
 #endif
 
-if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_UPGRADE_ALREADY_IN_PROGRESS' call dayz_rollingMessages;};	// Upgrade is already in progress.
+if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_UPGRADE_ALREADY_IN_PROGRESS' call DZE_fnc_rollingMessages;};	// Upgrade is already in progress.
 dayz_actionInProgress = true;
 
 local _object = _this select 3;
@@ -42,14 +42,14 @@ local _classname = typeOf _object;
 
 if (_classname in DZE_DisableUpgrade) exitWith {
 	dayz_actionInProgress = false;
-	localize 'STR_BUILD_UPGRADE_DISABLED' call dayz_rollingMessages;					// Not setup yet.
+	localize 'STR_BUILD_UPGRADE_DISABLED' call DZE_fnc_rollingMessages;					// Not setup yet.
 };
 
 local _hasAccess = [player,_object] call DZE_fnc_checkAccess;
 
 if (!(_hasAccess select 0) && {_classname in DZE_LockedStorage}) exitWith {
 	dayz_actionInProgress = false;
-	localize 'STR_BUILD_UPGRADE_NOT_OWNER' call dayz_rollingMessages;					// You are not the owner.
+	localize 'STR_BUILD_UPGRADE_NOT_OWNER' call DZE_fnc_rollingMessages;					// You are not the owner.
 };
 
 local _text = getText (configFile >> 'CfgVehicles' >> _classname >> 'displayName');
@@ -187,10 +187,10 @@ if (count _upgrade > 0) then {
 				} else {
 					if (_combinationDisplay != '') then {
 						local _message = format[localize 'STR_BUILD_UPGRADE_COMPLETED_WITH_COMBINATION',_combinationDisplay,_text];
-						_message call dayz_rollingMessages;
+						_message call DZE_fnc_rollingMessages;
 						systemChat _message;								// You have upgraded %2. The combination is: %1
 					} else {
-						format[localize 'STR_BUILD_UPGRADE_COMPLETED',_text] call dayz_rollingMessages;	// You have upgraded %1.
+						format[localize 'STR_BUILD_UPGRADE_COMPLETED',_text] call DZE_fnc_rollingMessages;	// You have upgraded %1.
 					};
 				};
 			} else {
@@ -199,11 +199,11 @@ if (count _upgrade > 0) then {
 				if (count _temp_BP_removed_array > 0) then {
 					{(unitBackpack player) addMagazineCargoGlobal _x} count _temp_BP_removed_array;
 				};
-				format[localize 'STR_BUILD_UPGRADE_ITEM_REMOVAL_FAILED',_removed_total,_tobe_removed_total] call dayz_rollingMessages;	// Missing Parts after first check Item: %1 / %2
+				format[localize 'STR_BUILD_UPGRADE_ITEM_REMOVAL_FAILED',_removed_total,_tobe_removed_total] call DZE_fnc_rollingMessages;	// Missing Parts after first check Item: %1 / %2
 			};
 		} else {
 			local _textMissing = getText (configFile >> 'CfgMagazines' >> _missing >> 'displayName');
-			format[localize 'STR_BUILD_UPGRADE_MISSING_ITEMS',_missingQty,_textMissing] call dayz_rollingMessages;			// Missing %1 more of %2
+			format[localize 'STR_BUILD_UPGRADE_MISSING_ITEMS',_missingQty,_textMissing] call DZE_fnc_rollingMessages;			// Missing %1 more of %2
 
 			systemChat localize 'STR_BUILD_UPGRADE_NEEDED_ITEMS_LABEL';							// Needed items:
 
@@ -217,7 +217,7 @@ if (count _upgrade > 0) then {
 		};
 	};
 } else {
-	localize 'STR_BUILD_UPGRADE_NOT_AVAILABLE' call dayz_rollingMessages;	// No upgrades are available
+	localize 'STR_BUILD_UPGRADE_NOT_AVAILABLE' call DZE_fnc_rollingMessages;	// No upgrades are available
 };
 
 dayz_actionInProgress = false;

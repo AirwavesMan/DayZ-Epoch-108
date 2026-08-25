@@ -95,7 +95,7 @@ if (_unit == player) then {
 				private "_unit";
 
 				_unit = _this;
-				localize "str_player_tranquilized" call dayz_rollingMessages;
+				localize "str_player_tranquilized" call DZE_fnc_rollingMessages;
 				[_unit,0.01] call fnc_usec_damageUnconscious;
 				_unit setVariable ["NORRN_unconscious", true, true];
 			};
@@ -109,7 +109,7 @@ if (_unit == player) then {
 					private "_unit";
 
 					_unit = _this;
-					localize "str_actions_medical_knocked_out" call dayz_rollingMessages;
+					localize "str_actions_medical_knocked_out" call DZE_fnc_rollingMessages;
 					[_unit,0.01] call fnc_usec_damageUnconscious;
 					_unit setVariable ["NORRN_unconscious", true, true];
 				};

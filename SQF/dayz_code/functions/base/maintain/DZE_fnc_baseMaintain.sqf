@@ -22,7 +22,7 @@
 #endif
 
 if (dayz_actionInProgress) exitWith {
-	localize 'STR_EPOCH_ACTIONS_2' call dayz_rollingMessages;
+	localize 'STR_EPOCH_ACTIONS_2' call DZE_fnc_rollingMessages;
 };
 
 dayz_actionInProgress = true;

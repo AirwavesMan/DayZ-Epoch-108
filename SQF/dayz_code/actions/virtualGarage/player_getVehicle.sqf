@@ -6,7 +6,7 @@ private ["_backPack","_baseCheck","_charID","_dir","_heliPad","_inventory","_isN
 closeDialog 0;
 _vehicle = (call compile format["%1",lbData[2802,(lbCurSel 2802)]]);
 
-if (vg_removeKey && {_vehicle select 3 != 0} && {({getNumber (configFile >> "CfgWeapons" >> _x >> "type") == 131072} count (weapons player)) == 12}) exitWith {localize "str_epoch_player_107" call dayz_rollingMessages;};
+if (vg_removeKey && {_vehicle select 3 != 0} && {({getNumber (configFile >> "CfgWeapons" >> _x >> "type") == 131072} count (weapons player)) == 12}) exitWith {localize "str_epoch_player_107" call DZE_fnc_rollingMessages;};
 
 _dir = round(random 360);
 _backPack = [];
@@ -15,7 +15,7 @@ _baseCheck = [player,false] call DZE_fnc_findBases;
 _isNearBase = (_baseCheck select 1) > 0;
 
 _heliPad = nearestObjects [if (_isNearBase) then {_baseCheck select 2} else {player},vg_heliPads,if (_isNearBase) then {DZE_maintainRange} else {Z_VehicleDistance}];
-if (count _heliPad < 1) exitWith {localize "STR_CL_VG_NEED_HELIPAD" call dayz_rollingMessages;};
+if (count _heliPad < 1) exitWith {localize "STR_CL_VG_NEED_HELIPAD" call DZE_fnc_rollingMessages;};
 
 _location = [(_heliPad select 0)] call FNC_GetPos;
 _sign = "Sign_arrow_down_large_EP1" createVehicleLocal [0,0,0];
@@ -23,7 +23,7 @@ _sign setPos _location;
 
 if (surfaceIsWater _location && {count (_location nearEntities ["Ship",8]) > 0}) then {
 	deleteVehicle _sign;
-	localize "STR_EPOCH_TRADE_OBSTRUCTED" call dayz_rollingMessages;
+	localize "STR_EPOCH_TRADE_OBSTRUCTED" call DZE_fnc_rollingMessages;
 } else {
 	[_vehicle select 1,_sign] call fn_waitForObject;
 };
@@ -48,11 +48,11 @@ if (PVDZE_spawnVehicleResult != "0") then {
 		dayz_myBackpack = unitBackpack player;
 		if (!isNull dayz_myBackpack) then {_backPack = (getWeaponCargo dayz_myBackpack) select 0;};
 		if (_keyID in (_inventory+_backPack)) then {
-			if (_keyID in _inventory) then {format[localize "STR_CL_VG_IN_INVENTORY",_keyName] call dayz_rollingMessages;};
-			if (_keyID in _backPack) then {format[localize "STR_CL_VG_IN_BACKPACK",_keyName] call dayz_rollingMessages;};
+			if (_keyID in _inventory) then {format[localize "STR_CL_VG_IN_INVENTORY",_keyName] call DZE_fnc_rollingMessages;};
+			if (_keyID in _backPack) then {format[localize "STR_CL_VG_IN_BACKPACK",_keyName] call DZE_fnc_rollingMessages;};
 		} else {
 			player addWeapon _keyID;
-			format[localize "STR_CL_VG_ADDED_INVENTORY",_keyName] call dayz_rollingMessages;
+			format[localize "STR_CL_VG_ADDED_INVENTORY",_keyName] call DZE_fnc_rollingMessages;
 		};
 	};
 };
@@ -61,4 +61,4 @@ PVDZE_spawnVehicle = nil;
 PVDZE_spawnVehicleResult = nil;
 vg_vehicleList = nil;
 
-localize "STR_CL_VG_VEHICLE_SPAWNED" call dayz_rollingMessages;
+localize "STR_CL_VG_VEHICLE_SPAWNED" call DZE_fnc_rollingMessages;

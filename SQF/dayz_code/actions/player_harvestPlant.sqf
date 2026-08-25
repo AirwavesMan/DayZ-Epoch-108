@@ -4,7 +4,7 @@
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
 
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_72" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_72" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 closeDialog 0;
 
@@ -32,7 +32,7 @@ if !(isNull _plant) then {
 
 	if (_finished) then {
 		local _playerNear = {isPlayer _x} count (_plant nearEntities ["CAManBase", 12]) > 1;
-		if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
+		if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call DZE_fnc_rollingMessages;};
 
 		false call dz_fn_meleeMagazines; //Remove melee magazines (BIS_fnc_invAdd fix)
 		["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
@@ -71,18 +71,18 @@ if !(isNull _plant) then {
 				};				
 			};
 			if (_groundDrop) then {
-				format[localize "str_success_gathered",_text,(_i-_j),_j,_text] call dayz_rollingMessages;
+				format[localize "str_success_gathered",_text,(_i-_j),_j,_text] call DZE_fnc_rollingMessages;
 			} else {	
-				format[localize "str_epoch_player_154",_i,_text] call dayz_rollingMessages;
+				format[localize "str_epoch_player_154",_i,_text] call DZE_fnc_rollingMessages;
 			};	
 		} else {
-			format[localize "str_epoch_player_143",_i,_text] call dayz_rollingMessages;
+			format[localize "str_epoch_player_143",_i,_text] call DZE_fnc_rollingMessages;
 		};
 	} else {
-		localize "str_epoch_player_73" call dayz_rollingMessages;
+		localize "str_epoch_player_73" call DZE_fnc_rollingMessages;
 	};
 } else {
-	localize "str_epoch_player_74" call dayz_rollingMessages;
+	localize "str_epoch_player_74" call DZE_fnc_rollingMessages;
 };
 
 dayz_actionInProgress = false;

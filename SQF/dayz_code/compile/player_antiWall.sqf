@@ -42,31 +42,31 @@ if(_activated) then {
 		publicVariableServer "PVDZ_sec_atp";
 
 		if (DZE_AntiWallCounter == DZE_AntiWallLimit) exitWith {
-			localize "str_epoch_player_9" call dayz_rollingMessages;
+			localize "str_epoch_player_9" call DZE_fnc_rollingMessages;
 			[player,"crushed"] call player_death;
 		};
 		if ((_vehicle emptyPositions "driver") > 0) exitWith {
-			localize "STR_EPOCH_ACTIONS_15" call dayz_rollingMessages;
+			localize "STR_EPOCH_ACTIONS_15" call DZE_fnc_rollingMessages;
 			player moveInDriver _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "gunner") > 0) exitWith {
-			localize "STR_EPOCH_ACTIONS_15" call dayz_rollingMessages;
+			localize "STR_EPOCH_ACTIONS_15" call DZE_fnc_rollingMessages;
 			player moveInGunner _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "commander") > 0) exitWith {
-			localize "STR_EPOCH_ACTIONS_15" call dayz_rollingMessages;
+			localize "STR_EPOCH_ACTIONS_15" call DZE_fnc_rollingMessages;
 			player moveInCommander _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "cargo") > 0) exitWith {
-			localize "STR_EPOCH_ACTIONS_15" call dayz_rollingMessages;
+			localize "STR_EPOCH_ACTIONS_15" call DZE_fnc_rollingMessages;
 			player moveInCargo _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		// kill player if none of the above are matched
-		localize "str_epoch_player_9" call dayz_rollingMessages;
+		localize "str_epoch_player_9" call DZE_fnc_rollingMessages;
 		[player,"crushed"] call player_death;
 	};
 

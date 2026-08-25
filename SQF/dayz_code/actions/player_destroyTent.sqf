@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call DZE_fnc_rollingMessages; };
 dayz_actionInProgress = true;
 
 private ["_emptycan","_obj","_fuelArray","_matchArray","_randomJerryCan","_fireIntensity","_finished"];
@@ -47,7 +47,7 @@ _emptycan = getText (configFile >> "CfgMagazines" >> _randomJerryCan >> "contain
 _fireIntensity = getNumber (configFile >> "CfgMagazines" >> _randomJerryCan >> "fireIntensity");
 
 if !(_randomJerryCan in magazines player) exitWith {
-	localize "str_setFireFuel" call dayz_rollingMessages;
+	localize "str_setFireFuel" call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;
 };
 
@@ -74,5 +74,5 @@ publicVariable "PVDZ_obj_Fire";
 _obj inflame true;
 // The server scheduler only monitors supported fireplace classes.
 
-localize "str_success_tent_destroyed" call dayz_rollingMessages;
+localize "str_success_tent_destroyed" call DZE_fnc_rollingMessages;
 dayz_actionInProgress = false;

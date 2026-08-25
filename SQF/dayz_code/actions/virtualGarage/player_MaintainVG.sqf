@@ -28,7 +28,7 @@ if (_enoughMoney || vg_maintainCost < 1) then {
 	if (Z_SingleCurrency) then {
 		player setVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),(_wealth - vg_maintainCost),true];
 	};
-	localize "STR_CL_VG_MAINTAINSUCCESS" call dayz_rollingMessages;
+	localize "STR_CL_VG_MAINTAINSUCCESS" call DZE_fnc_rollingMessages;
 	PVDZE_maintainGarage = if (vg_tiedToBase) then {
 		local _baseCheck = [player,false] call DZE_fnc_findBases;
 		_ownerPUID = if (_baseCheck select 1 > 0) then {(_baseCheck select 2) getVariable ["ownerPUID","0"]} else {dayz_playerUID};
@@ -38,5 +38,5 @@ if (_enoughMoney || vg_maintainCost < 1) then {
 	};
 	publicVariableServer "PVDZE_maintainGarage";
 } else {
-	localize "STR_CL_VG_MAINTAINFAIL" call dayz_rollingMessages;
+	localize "STR_CL_VG_MAINTAINFAIL" call DZE_fnc_rollingMessages;
 };
