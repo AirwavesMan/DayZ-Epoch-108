@@ -2,8 +2,8 @@
 //
 //	DZE_fnc_buildValidationObjectLimit
 //
-//	Description:	Rejects building when too many maintained objects exist in DZE_maintainRange.
-//			Safes, lockboxes, vanilla buildables, tents and stashes count toward the limit.
+//	Description:	Rejects building when too many buildable objects exist in DZE_maintainRange.
+//			Every object with DZE_allowBuilding set to 1 counts toward the limit.
 //	Groups:		Build, Validation
 //
 //	Syntax:		validationContext call DZE_fnc_buildValidationObjectLimit
@@ -29,7 +29,7 @@ local _stage = _this select BUILD_VALIDATION_STAGE;
 local _object = _this select BUILD_VALIDATION_OBJECT;
 local _subject = [player,_object] select (_stage == BUILD_VALIDATION_STAGE_FINAL);
 
-if (count nearestObjects [_subject,DZE_maintainClasses,DZE_maintainRange] >= DZE_BuildingLimit) exitWith {
+if (count ([_subject,DZE_maintainRange] call DZE_fnc_findBuildableObjects) >= DZE_BuildingLimit) exitWith {
 	format [localize 'STR_BUILD_VALIDATION_OBJECT_LIMIT',floor DZE_maintainRange]
 };
 

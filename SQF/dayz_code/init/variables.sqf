@@ -74,6 +74,7 @@ if (isServer) then {
 /**************Variables Compiled on Clients Only**************/
 
 if (!isDedicated) then {
+	DZE_maintainRange = (DZE_baseRadius select 0) + 0.1;	// Default: maintain building objects within base radius + 0.1 meters.
 ///	DZE_schedDebug		= 0;	// Debug some scheduler lines // no longer needed
 	DZE_playerFSMDebug	= 0;	// Debug whole player.fsm
 
@@ -309,7 +310,6 @@ if (!isDedicated) then {
 	DZE_LockboxesUnlocked = ['DZE_LockboxStorage','DZE_LockboxStorage2','DZE_LockboxStorageWinter','DZE_LockboxStorageWinter2'];
 	DZE_REPLACE_WEAPONS = [["Crossbow","DMR","M14_EP1","SVD","SVD_CAMO","M4SPR","VSS_vintorez"],["Crossbow_DZ","DMR_DZ","M14_CCO_DZ","SVD_PSO1_DZ","SVD_PSO1_Gh_DZ","M4SPR_DZE","VSS_vintorez_DZE"]];
 	DZE_replaceMagazines = [["vil_20Rnd_762x51_G3"],["vil_20Rnd_762x51_G3"]];
-	DZE_maintainClasses = DayZ_SafeObjects + DZE_UnLockedStorage;
 	DZE_fueltruckarray = ["UralRefuel_TK_EP1_DZ","UralRefuel_TK_EP1_DZE1","UralRefuel_TK_EP1_DZE2","UralRefuel_TK_EP1_DZE3","UralRefuel_TK_EP1_DZE4","MtvrRefuel_DES_EP1_DZ","MtvrRefuel_DES_EP1_DZE1","MtvrRefuel_DES_EP1_DZE2","MtvrRefuel_DES_EP1_DZE3","MtvrRefuel_DES_EP1_DZE4","V3S_Refuel_TK_GUE_EP1_DZ","V3S_Refuel_TK_GUE_EP1_DZE1","V3S_Refuel_TK_GUE_EP1_DZE2","V3S_Refuel_TK_GUE_EP1_DZE3","V3S_Refuel_TK_GUE_EP1_DZE4","MtvrRefuel_DZ","MtvrRefuel_DZE1","MtvrRefuel_DZE2","MtvrRefuel_DZE3","MtvrRefuel_DZE4","KamazRefuel_DZ","KamazRefuel_DZE1","KamazRefuel_DZE2","KamazRefuel_DZE3","KamazRefuel_DZE4","T810A_ACR_REFUEL_DES_DZE","T810A_ACR_REFUEL_DES_DZE1","T810A_ACR_REFUEL_DES_DZE2","T810A_ACR_REFUEL_DES_DZE3","T810A_ACR_REFUEL_DES_DZE4","T810A_ACR_REFUEL_DZE","T810A_ACR_REFUEL_DZE1","T810A_ACR_REFUEL_DZE2","T810A_ACR_REFUEL_DZE3","T810A_ACR_REFUEL_DZE4","UralRefuel_INS_DZE","UralRefuel_INS_DZE1","UralRefuel_INS_DZE2","UralRefuel_INS_DZE3","UralRefuel_INS_DZE4","UralRefuel_CDF_DZE","UralRefuel_CDF_DZE1","UralRefuel_CDF_DZE2","UralRefuel_CDF_DZE3","UralRefuel_CDF_DZE4"];
 	DZE_HeliAllowToTow = ["hilux1_civil_1_open","HMMWV_Base","Lada_base","Offroad_DSHKM_base","Pickup_PK_base","SkodaBase","tractor","VWGolf","Volha_TK_CIV_Base_EP1","S1203_TK_CIV_EP1","SUV_Base_EP1","ArmoredSUV_Base_PMC","UAZ_Base","LandRover_Base","Ship"];
 	DZE_isDestroyableStorage = DZE_isNewStorage + DZE_Stashes;
@@ -320,7 +320,6 @@ if (!isDedicated) then {
 	dayz_treeTypes = ["","MAP_t_picea1s","MAP_t_picea2s","MAP_t_picea3f","MAP_t_pinusN2s","MAP_t_pinusS2f","MAP_t_populus3s","MAP_t_betula2s","MAP_t_fagus2s","MAP_t_fagus2W","MAP_t_malus1s"];
 	DayZ_DropDrageeObjects = DayZ_SafeObjects;
 	Dayz_fishingItems = ["MeleeFishingPole"];
-	DZE_maintainRange = (DZE_baseRadius select 0) + 0.1;	// Default: maintain building objects within base radius + 0.1 meters.
 	DZE_refundStorageItemContents = DZE_isNewStorage; // array of non-lockable storage objects that will refund their contents when the object is removed
 	DZE_rocks = ["r_stone_01_ep1.p3d","r_tk_stone_01_ep1.p3d","r_tk_stone_02_ep1.p3d","r_tk_boulder_01_ep1.p3d","r_tk_boulder_02_ep1.p3d","r2_boulder1.p3d","r2_boulder2.p3d","r_boulder_03_ep1.p3d","r2_rock1.p3d","r2_rock2.p3d","r2_rocktower.p3d","r2_rockwall.p3d","r2_stone.p3d","skala3_3.p3d","skala3_2.p3d"];
 	DZE_WaterSources = ["Land_pumpa","Land_Barrel_water","Land_Misc_Well_C_EP1","Land_Misc_Well_L_EP1","land_smd_water_pump","DZE_Watertank","DZE_Watertower","Land_water_tank","MAP_water_tank"];

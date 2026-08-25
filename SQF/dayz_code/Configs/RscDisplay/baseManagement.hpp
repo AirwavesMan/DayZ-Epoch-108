@@ -1,4 +1,4 @@
-class PlotManagement
+class BaseManagement
 {
 	idd = 711194;
 	onLoad = "if (DZE_baseManagementMustBeClose) then {(_this select 0) displayCtrl 7015 ctrlSetText localize 'STR_EPOCH_HUMANS_NEARBY';};";
@@ -39,20 +39,10 @@ class PlotManagement
 		{
 			idc = -1;
 			text = $STR_BASE_MAINTENANCE_ACTION;
-			x = 0.41 * safezoneW + safezoneX;
+			x = 0.45 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "'maintain' spawn MaintainPlot;";
-		};
-
-		class RscShortcutButton_7011: ZSC_RscButtonMenu
-		{
-			idc = -1;
-			text = $STR_BASE_MAINTENANCE_FORCE_ACTION;
-			x = 0.51 * safezoneW + safezoneX;
-			y = 0.22 * safezoneH + safezoneY;
-			w = 0.08 * safezoneW;
-			onButtonClick = "'force' spawn MaintainPlot;";
+			onButtonClick = "'maintain' spawn DZE_fnc_baseMaintain;";
 		};
 
 		class RscText_7012: ZSC_RscText

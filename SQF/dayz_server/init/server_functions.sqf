@@ -33,6 +33,7 @@ server_setDamageObject = compile preprocessFileLineNumbers "\z\addons\dayz_serve
 
 //	Base
 server_changeFriends = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\base\server_changeFriends.sqf";
+server_maintainArea = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\base\server_maintainArea.sqf';
 
 //	Fire
 server_addFireFuel = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\fire\server_addFireFuel.sqf';
@@ -72,7 +73,6 @@ if (DZE_VehicleKey_Changer) then {
 };
 server_tradeObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_tradeObject.sqf";
 server_deaths = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDeaths.sqf";
-server_maintainArea = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_maintainArea.sqf";
 server_checkIfTowed = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_checkIfTowed.sqf";
 server_handleSafeGear = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleSafeGear.sqf";
 server_spawnTraders = compile preprocessFile "\z\addons\dayz_server\compile\server_spawnTraders.sqf";

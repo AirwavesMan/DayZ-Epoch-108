@@ -175,7 +175,6 @@ if (!isDedicated) then {
 	DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 allow player to hold two primary weapons, one on back and one in their hands.
 	dayz_quickSwitch = false; //Turns on forced animation for weapon switch. (hotkeys 1,2,3) False = enable animations, True = disable animations
 	DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
-	DZE_DamageBeforeMaint = 0.09; // Min damage built items must have before they can be maintained
 	DZE_NameTags = 0; // Name displays when looking at player up close  0 = Off, 1= On, 2 = Player choice
 	DZE_ForceNameTagsInTrader = false; // Force name display when looking at player up close in traders. Overrides player choice.
 	DZE_HumanityTargetDistance = 25; // Distance to show name tags (red for bandit, blue for hero, green for friend)
@@ -242,7 +241,7 @@ if (!isDedicated) then {
 	// Base Management
 	DZE_baseMaxFriends = 10; //Max friends allowed on a base. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.
 	DZE_baseManagementMustBeClose = false; //Players must be within 10m of the base to be added as a base friend.
-	DZE_maintainCurrencyRate = 100; //The currency rate of what maintaining an item will be, for instance: at 100, 10 items will have a worth of 1000 (1 10oz gold or 1k coins) see actions/maintain_area.sqf for more examples.
+	DZE_maintainCurrencyRate = 100; //The currency rate of what maintaining an item will be, for instance: at 100, 10 items will have a worth of 1000 (1 10oz gold or 1k coins) see DZE_fnc_baseMaintainRequirements.sqf for more examples.
 	DZE_baseLimit = 0; // Limit the amount of bases per person, Use 0 to disable. UIDS in the DZE_baseManagementAdmins array are exempt.
 	DZE_baseOzone = 20;	// distance (in meters) outside the base radius where the player may stand while building, provided the object remains within the base radius.
 	DZE_AxialHelper	 = true; // when building within a base radius, display a perpendicular line of helpers from the highest point to lowest point of the base boundary.

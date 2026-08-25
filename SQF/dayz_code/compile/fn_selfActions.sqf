@@ -869,7 +869,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	};
 
 	// inplace maintenance tool
-	if ((damage _cursorTarget >= DZE_DamageBeforeMaint) && {_cursorTarget isKindOf "ModularItems" || {_cursorTarget isKindOf "DZE_Housebase"} || {_typeOfCursorTarget == "DZE_LightPole"}}) then {
+	if (_cursorTarget isKindOf 'ModularItems' || {_cursorTarget isKindOf 'DZE_Housebase'} || {_typeOfCursorTarget == 'DZE_LightPole'}) then {
 		if ((s_player_lastTarget select 2) != _cursorTarget) then {
 			if (s_player_maint_build > 0) then {
 				player removeAction s_player_maint_build;

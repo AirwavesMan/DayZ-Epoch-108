@@ -1,3 +1,5 @@
+DZE_fnc_findBuildableObjects = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\base\DZE_fnc_findBuildableObjects.sqf';
+
 if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\init\server_functions.sqf";
 };
@@ -169,7 +171,6 @@ if (!isDedicated) then {
 	player_unlockVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockVault.sqf";
 	player_upgradeVehicle =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
 	fn_displayHelpers	= compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_displayHelpers.sqf";
-	MaintainPlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\maintain_area.sqf";
 	fnc_usec_damageHandler = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
 	fnc_radioState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\radioState.sqf"; // Toggle radio on and off
 	fnc_localizeMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_localizeMessage.sqf";
@@ -734,6 +735,14 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_baseNearbyHumans);	// Refreshes players eligible to become base friends.
 	FUNCTION(DZE_fnc_baseObjects);		// Displays the active base's object count.
 	FUNCTION(DZE_fnc_baseRemoveFriend);	// Removes the selected base friend.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('base\maintain');
+	FUNCTION(DZE_fnc_baseMaintainRequirements);	// Calculates the maintenance price for a number of objects.
+	FUNCTION(DZE_fnc_baseMaintainPreview);		// Displays the maintenance price for the active base.
+	FUNCTION(DZE_fnc_baseMaintainAction);		// Pays for maintenance and requests the server update.
+	FUNCTION(DZE_fnc_baseMaintain);			// Previews and requests maintenance for the active base.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 

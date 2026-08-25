@@ -2,7 +2,7 @@
 //
 //	DZE_fnc_baseObjects
 //
-//	Description:	Displays the number of maintainable objects in the active base.
+//	Description:	Displays the number of buildable objects in the active base.
 //	Groups:		Base, Base Management
 //
 //	Syntax:		call DZE_fnc_baseObjects
@@ -28,8 +28,8 @@ if (isNull _display) exitWith {};
 
 local _range = DZE_baseRadius select 0;
 
-// Also count safes, lockboxes, vanilla buildables, tents and stashes against DZE_BuildingLimit
-local _count = count (nearestObjects [DZE_currentBase,DZE_maintainClasses,_range]);
+// Count every nearby object whose vehicle config allows building against DZE_BuildingLimit.
+local _count = count ([DZE_currentBase,_range] call DZE_fnc_findBuildableObjects);
 local _color = '#ffffff';
 local _usage = _count / DZE_BuildingLimit * 100;
 

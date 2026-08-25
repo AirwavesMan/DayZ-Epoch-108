@@ -56,9 +56,9 @@ if (!_canManage) exitWith {
 	localize 'STR_BASE_MANAGEMENT_ACCESS_DENIED' call DZE_fnc_rollingMessages;
 };
 
-if (createDialog 'PlotManagement') then {
+if (createDialog 'BaseManagement') then {
 	call DZE_fnc_baseNearbyHumans;
 	call DZE_fnc_baseGetFriends;
-	'preview' call MaintainPlot;
+	'preview' call DZE_fnc_baseMaintain;
 	call DZE_fnc_baseObjects;
 };
