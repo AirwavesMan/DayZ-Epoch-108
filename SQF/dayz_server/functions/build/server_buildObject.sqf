@@ -68,18 +68,23 @@ if ([_typeObject,'server_buildObject'] call server_verifyObject) then {
 	local _saveToDB = getNumber (configFile >> 'CfgVehicles' >> _typeObject >> 'DZE_saveToDatabase') == 1;
 	local _friendsArray = [];
 	local _damageDisabled = DZE_baseGodMode && {!(_typeObject in DZE_baseGodModeExclude)};
-	local _fireUsesFuel = getNumber (configFile >> 'CfgVehicles' >> _typeObject >> 'DZE_fireUseFuel') == 1;
+	local _fireConfig = configFile >> 'CfgVehicles' >> _typeObject;
+	local _fireUsesFuel = getNumber (_fireConfig >> 'DZE_fireUseFuel') == 1;
 
 	//	Create the object
 	local _object = [_typeObject,_positionASL,0,_vector,true,_damageDisabled,false,true] call server_createVehicle;
 
 	_object setVariable ['worldspaceMetadata',_metadata];	
 
-	// Use the consumed construction magazine as the initial fuel for fuel-using fireplaces.
+	// Initialize the stored burn time from the finished fireplace config.
 	if (_fireUsesFuel) then {
-		local _initialBurnTime = (getNumber (_buildItemConfig >> 'DZE_burnTimer') max 0) min DZE_fireMaximumBurnTime;
+		local _initialBurnTime = (getNumber (_fireConfig >> 'DZE_initialBurnTimer') max 0) min DZE_fireMaximumBurnTime;
 		_object setVariable ['DZE_fireBurnTime',_initialBurnTime];
 		_object setVariable ['DZE_fireBurnEnd',-1];
+
+		#ifdef DEBUG_BUILD_OBJECT
+			diag_log format ['[Server Debug]: [Build Object]: Initialized %1 with %2 seconds of burn time',_typeObject,_initialBurnTime];
+		#endif
 	};
 
 	//	ToDo: Handle owner via friends so we do not have that many public owner IDs

@@ -210,6 +210,8 @@ class ItemFuelBarrelEmpty: ItemFuelBarrel
 	descriptionShort = $STR_EPOCH_EMPTYFUELBARREL_DESC;
 	fullcan = "ItemFuelBarrel";
 	
+	DZE_burnTimer = 0;
+	
 	class ItemActions
 	{
 		class Crafting

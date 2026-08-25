@@ -73,6 +73,7 @@ class DZE_FireBarrel: DZE_Fireplace_Base {
 	DZE_offset[] = {0,1.5,0};
 	removeoutput[] = {{"ItemFireBarrel_kit",1}};
 	DZE_fireUseFuel = 1;
+	DZE_initialBurnTimer = 700;
 };
 
 class DZE_Camp_Fire_Small: DZE_Fireplace_Base {
@@ -108,6 +109,7 @@ class DZE_Camp_Fire_Small: DZE_Fireplace_Base {
 	DZE_saveToDatabase = 0;
 	DZE_spawnFireOnBuild = 1;
 	DZE_fireUseFuel = 1;
+	DZE_initialBurnTimer = 300;
 };
 
 class DZE_Camp_Fire_Medium: DZE_Camp_Fire_Small {
@@ -121,6 +123,7 @@ class DZE_Camp_Fire_Medium: DZE_Camp_Fire_Small {
 	DZE_saveToDatabase = 0;
 	DZE_spawnFireOnBuild = 1;
 	DZE_fireUseFuel = 1;
+	DZE_initialBurnTimer = 1200;
 };
 
 //	Can not be placed by players

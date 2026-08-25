@@ -73,11 +73,14 @@ sched_burningFire = {
 					#endif
 				};
 			} else {
-				// Preserve unused burn time while the fire is extinguished.
+				// Discard all remaining fuel when a previously burning fireplace is extinguished.
 				if (_burnEnd >= 0) then {
-					_burnTime = ((_burnEnd - diag_tickTime) max 0) min DZE_fireMaximumBurnTime;
-					_fireplace setVariable ['DZE_fireBurnTime',_burnTime];
+					_fireplace setVariable ['DZE_fireBurnTime',0];
 					_fireplace setVariable ['DZE_fireBurnEnd',-1];
+
+					#ifdef DEBUG_SCHED_BURNING_FIRE
+						diag_log format ['[Server Debug]: [sched_burningFire]: Cleared remaining burn time after fireplace was extinguished: %1',_fireplace];
+					#endif
 				};
 			};
 		};
