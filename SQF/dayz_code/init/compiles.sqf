@@ -170,7 +170,6 @@ if (!isDedicated) then {
 	player_unlockDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
 	player_unlockVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockVault.sqf";
 	player_upgradeVehicle =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
-	fn_displayHelpers	= compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_displayHelpers.sqf";
 	fnc_usec_damageHandler = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
 	fnc_radioState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\radioState.sqf"; // Toggle radio on and off
 	fnc_localizeMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_localizeMessage.sqf";
@@ -727,6 +726,7 @@ if (!isDedicated) then {
 
 	path('build');
 
+	FUNCTION(DZE_fnc_displayHelpers);		// Creates or removes local helper spheres for buildable objects.
 	FUNCTION(DZE_fnc_generateCode);			// Collects or generates a valid code for a lockable build object.
 	FUNCTION(DZE_fnc_modularBuild);			// Construct a modular base-building object and save it to the database.
 	FUNCTION(DZE_fnc_overlapsRoad);			// Returns whether an object's bounding box overlaps a nearby road segment.

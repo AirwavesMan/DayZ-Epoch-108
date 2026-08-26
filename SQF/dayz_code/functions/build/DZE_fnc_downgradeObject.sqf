@@ -57,13 +57,13 @@ if (count _downgrade > 0) then {
 	local _newTypeObject = _downgrade select 0;
 	local _refund = _downgrade select 1;
 
-	[_object] call fn_displayHelpers; // Create helpers.
+	[_object] call DZE_fnc_displayHelpers; // Create helpers.
 
 	[player,getPosATL player,40,'repair'] call fnc_alertZombies;
 
 	local _finished = ['Medic',1] call fn_loopAction;
 
-	[] call fn_displayHelpers; // Delete helpers.
+	[] call DZE_fnc_displayHelpers; // Delete helpers.
 
 	if (!_finished) exitWith {};
 

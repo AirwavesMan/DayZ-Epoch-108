@@ -45,13 +45,13 @@ s_player_packvault = 1;
 
 format[localize "str_epoch_player_121", _text] call DZE_fnc_rollingMessages;		// Packing %1, move from this position to cancel within 5 seconds.
 
-[_obj, DZE_NoRefundTexture] call fn_displayHelpers;			// create helpers (red)
+[_obj,DZE_NoRefundTexture] call DZE_fnc_displayHelpers;			// Create helpers (red).
 
 [player,(getPosATL player),20,"tentpack"] spawn fnc_alertZombies;	// make noise
 
 local _finished = ["Medic",1] call fn_loopAction;			// animation
 
-[] call fn_displayHelpers;						// delete helpers
+[] call DZE_fnc_displayHelpers;						// Delete helpers.
 
 if (isNull _obj || !_finished) exitWith {
 	s_player_packvault = -1;

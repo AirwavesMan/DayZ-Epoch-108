@@ -46,13 +46,13 @@ if ((_ownerID == dayz_playerUID) || {_objType in ["IC_DomeTent","IC_Tent"]}) the
 	local _dir = direction _obj;
 	local _pos = getPosATL _obj;
 
-	[_obj, DZE_NoRefundTexture] call fn_displayHelpers;			// create helpers (red)
+	[_obj,DZE_NoRefundTexture] call DZE_fnc_displayHelpers;			// Create helpers (red).
 
 	[player,(getPosATL player), 20, "tentpack"] spawn fnc_alertZombies;	// make noise
 
 	local _finished = ["Medic",1] call fn_loopAction;			// animation
 	
-	[] call fn_displayHelpers;						// delete helpers
+	[] call DZE_fnc_displayHelpers;						// Delete helpers.
 
 	if (isNull _obj) exitWith {};
 

@@ -11,7 +11,7 @@
 //	Pivot or Bottom entry should always be listed first in the array.
 //
 //	Any object with an animating door should have its helper listed last in the array.
-//	fn_displayHelpers.sqf will check this to prevent the helper from floating in mid air.
+//	DZE_fnc_displayHelpers will check this to prevent the helper from floating in mid air.
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 

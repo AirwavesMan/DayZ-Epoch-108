@@ -325,6 +325,7 @@ if (!isDedicated) then {
 
 	// Helper Colors Require Reformatting
 	DZE_maxSnapObjectDiag = 18;    // Internal diagonal distance of the largest buildable & snappable object in the game, currently the DZE_Land_WarfareBarrier10xTall. DO NOT MODIFY THIS!
+	DZE_displayHelperObjects = []; // Local helper objects currently displayed by DZE_fnc_displayHelpers.
 	DZE_helperSize = [[3,"Sign_sphere100cm_EP1"],[2,"Sign_sphere25cm_EP1"],[1,"Sign_sphere10cm_EP1"]];	// array of helper sizes and corresponding class. Keep in reverse order for optimized lookup
 	DZE_helperSizeDefault = 3; // default to large sphere
 	DZE_NoRefundTransparency = 0.5;	// Red Basebuilding Helper Transparency. min = 0.1, max = 1

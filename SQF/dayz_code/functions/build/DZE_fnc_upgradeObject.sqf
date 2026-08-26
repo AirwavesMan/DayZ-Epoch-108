@@ -94,13 +94,13 @@ if (count _upgrade > 0) then {
 		} forEach _requirements;
 
 		if (_proceed) then {
-			[_object] call fn_displayHelpers;						// Create helpers.
+			[_object] call DZE_fnc_displayHelpers;					// Create helpers.
 
 			[player,getPosATL player,25,'repair'] spawn fnc_alertZombies;		// Make noise.
 
 			local _finished = ['Medic',1] call fn_loopAction;				// Play animation.
 
-			[] call fn_displayHelpers;							// Delete helpers.
+			[] call DZE_fnc_displayHelpers;						// Delete helpers.
 
 			if (!_finished) exitWith {};
 
