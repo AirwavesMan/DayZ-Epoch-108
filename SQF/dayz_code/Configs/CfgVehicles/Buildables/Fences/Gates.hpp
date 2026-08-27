@@ -40,7 +40,6 @@ class DZE_MetalGate: DZE_Building_Base {
 	destrType = "DestructTree";
 	DZE_offset[] = {2,3,0};
 	displayName = $STR_EPOCH_RUSTYGATE;
-	removeoutput[] = {{"rusty_gate_kit",1}};
 	actionBegin1 = "OpenDoors";
 	actionEnd1 = "OpenDoors";
 
@@ -70,6 +69,10 @@ class DZE_MetalGate: DZE_Building_Base {
 			statement = "this animate [""DoorL"", 0]";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "rusty_gate_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_WoodenGate_foundation: DZE_Modular_Base {
@@ -80,6 +83,10 @@ class DZE_WoodenGate_foundation: DZE_Modular_Base {
 	mapSize = 8;
 	DZE_offset[] = {0,4,0};
 	upgradeBuilding[] = {"DZE_WoodenGate_1",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "woodfence_gate_foundation_kit";
+		DZE_refundArray[] = {{{"ItemLog",6}}};
+	};
 };
 
 class DZE_WoodenGate_1: DZE_Building_Base {
@@ -139,7 +146,10 @@ class DZE_WoodenGate_1: DZE_Building_Base {
 	};
 
 	lockable = 3;
-	removeoutput[] = {{"ItemComboLock",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "woodfence_gate_1_kit";
+		DZE_refundArray[] = {{{"woodfence_gate_foundation_kit",1},{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
+	};
 };
 
 class DZE_WoodenGate_2: DZE_WoodenGate_1 {
@@ -199,7 +209,10 @@ class DZE_WoodenGate_2: DZE_WoodenGate_1 {
 	};
 	
 	lockable = 3;
-	removeoutput[] = {{"ItemComboLock",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "woodfence_gate_2_kit";
+		DZE_refundArray[] = {{{"woodfence_gate_1_kit",1},{"ItemPlank",10},{"equip_nails",1}}};
+	};
 };
 
 class DZE_WoodenGate_3: DZE_WoodenGate_2 {
@@ -259,7 +272,10 @@ class DZE_WoodenGate_3: DZE_WoodenGate_2 {
 	};
 	
 	lockable = 3;
-	removeoutput[] = {{"ItemComboLock",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "woodfence_gate_3_kit";
+		DZE_refundArray[] = {{{"woodfence_gate_2_kit",1},{"ItemPlank",10},{"equip_nails",1}}};
+	};
 };
 
 class DZE_WoodenGate_4: DZE_WoodenGate_3 {
@@ -318,5 +334,8 @@ class DZE_WoodenGate_4: DZE_WoodenGate_3 {
 	};
 	
 	lockable = 3;
-	removeoutput[] = {{"ItemComboLock",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "woodfence_gate_4_kit";
+		DZE_refundArray[] = {{{"woodfence_gate_3_kit",1},{"ItemPlank",10},{"equip_nails",1}}};
+	};
 };

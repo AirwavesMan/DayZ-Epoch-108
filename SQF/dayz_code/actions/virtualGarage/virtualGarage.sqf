@@ -1,16 +1,21 @@
 // Developed by [GZA] David for German Zombie Apocalypse Servers (https://zombieapo.eu/)
 // Rewritten by salival (https://github.com/oiad)
+//#define DEBUG_VIRTUAL_GARAGE
+
+#ifdef DEBUG_VIRTUAL_GARAGE
+	diag_log format ['[Client Debug]: [virtualGarage]: Function called with arguments: %1',_this];
+#endif
 
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_baseCheck","_class","_control","_displayName","_heliPad","_isNearBase","_itemText","_localVehicles","_storedVehicles","_vgDisplCtl"];
+private ["_baseCheck","_class","_control","_displayName","_isNearBase","_itemText","_localVehicles","_storedVehicles","_vgDisplCtl"];
 disableSerialization;
 
 vg_hasRun = false;
 createDialog "virtualGarage";
 
-{ctrlShow [_x,false]} count [2803,2830,2850,2851,2852,2853];
+{ctrlShow [_x,false]} count [2803,2830,2850,2851,2852];
 
 _baseCheck = [player,false] call DZE_fnc_findBases;
 _isNearBase = (_baseCheck select 1) > 0;
@@ -29,9 +34,6 @@ PVDZE_queryVehicle = nil;
 PVDZE_queryVehicleResult = nil;
 
 _localVehicles = player nearEntities [["Air","LandVehicle","Ship"],Z_VehicleDistance];
-_heliPad = nearestObjects [if (_isNearBase) then {_baseCheck select 2} else {player},vg_heliPads,if (_isNearBase) then {DZE_maintainRange} else {Z_VehicleDistance}];
-
-if (count _heliPad > 0 && {_isNearBase}) then {ctrlShow[2853,true];};
 
 _control = ((findDisplay 2800) displayCtrl 2802);
 lbClear _control;

@@ -12,8 +12,11 @@ class DZE_FuelPump: DZE_SupplyObject_Base {
 	armor = 400;
 	displayName = $STR_EPOCH_FUELPUMP;
 	DZE_buildingSteps = 2;
-	removeoutput[] = {{"fuel_pump_kit",1}};
 	DZE_bypassBase = 0;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "fuel_pump_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_LightPole: DZE_SupplyObject_Base {
@@ -25,8 +28,6 @@ class DZE_LightPole: DZE_SupplyObject_Base {
 	scope = 2;
 	DZE_offset[] = {0,2.5,0};
 	displayName = $STR_EPOCH_LIGHTPOLE;
-	maintainBuilding[] = {{"ItemLightBulb",1}};
-	removeoutput[] = {{"light_pole_kit",1}};
 	mapSize = 2;
 	class HitPoints {
 		class hide_bright {
@@ -41,6 +42,10 @@ class DZE_LightPole: DZE_SupplyObject_Base {
 
 	class EventHandlers {
 		init = "if (isnil ('ASC_EU_Lights')) then {ASC_EU_Lights=_this;} else {ASC_EU_Lights=ASC_EU_Lights+_this;};['1','ASC_EU_BulbO',(_this select 0)] execvm '\ASC\ASC_EU_Lights\ASC_LightHandler.sqf';";
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "light_pole_kit";
+		DZE_refundArray[] = {};
 	};
 };
 
@@ -67,8 +72,11 @@ class DZE_Water_Pump: DZE_SupplyObject_Base {
 	displayName = $STR_EPOCH_WATERPUMP;
 	DZE_buildingSteps = 1;
 	DZE_offset[] = {0,2,0};
-	removeoutput[] = {{"water_pump_kit",1}};
 	//GhostPreview = "DZE_Water_Pump_Preview";
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "water_pump_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Fueltank: DZE_SupplyObject_Base {
@@ -79,10 +87,12 @@ class DZE_Fueltank: DZE_SupplyObject_Base {
 	mapSize = 2;
 	armor = 1200;
 	displayName = $STR_EQUIP_NAME_FUELTANK_BIG;
-	maintainBuilding[] = {{"PartGeneric",1}};
 	DZE_buildingSteps = 3;
-	removeoutput[] = {{"fueltank_kit",1}};
 	//GhostPreview = "DZE_Fueltank_Preview";
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "fueltank_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Watertank: DZE_SupplyObject_Base {
@@ -93,10 +103,12 @@ class DZE_Watertank: DZE_SupplyObject_Base {
 	mapSize = 2;
 	armor = 1200;
 	displayName = $STR_EQUIP_NAME_WATERTANK;
-	maintainBuilding[] = {{"PartGeneric",1}};
 	DZE_buildingSteps = 3;
-	removeoutput[] = {{"watertank_kit",1}};
 	//GhostPreview = "DZE_Watertank_Preview";
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "watertank_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Watertower: DZE_SupplyObject_Base {
@@ -108,8 +120,10 @@ class DZE_Watertower: DZE_SupplyObject_Base {
 	armor = 1200;
 	ladders[] = {{"start", "end"}};
 	displayName = $STR_EQUIP_NAME_WATERTOWER;
-	maintainBuilding[] = {{"PartGeneric",2}};
 	DZE_buildingSteps = 3;
-	removeoutput[] = {{"watertower_kit",1}};
 	//GhostPreview = "DZE_Watertower_Preview";
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "watertower_kit";
+		DZE_refundArray[] = {};
+	};
 };

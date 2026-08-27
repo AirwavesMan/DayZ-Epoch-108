@@ -294,6 +294,10 @@ class DZE_ElevatorStop_Transparent: DZE_Ghost_Previews {
 	DZE_bypassBase = 0;
 	DZE_preventUnderground = 0;
 	DZE_saveToDatabase = 1;
+	class RemoveObject {
+		DZE_refundKit = "elevatorstop_transparent_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Water_Pump_Preview: DZE_Ghost_Previews {

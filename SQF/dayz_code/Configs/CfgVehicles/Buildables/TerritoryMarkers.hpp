@@ -8,6 +8,10 @@ class DZE_TerritoryMarker_Base: DZE_Building_Base {
 	DZE_isTerritoryMarker = 1;
 	DZE_bypassBase = 0;
 	DZE_preventUnderground = 1;	
+
+	class RemoveObject: RemoveObject {
+		DZE_neededTools[] = {"ItemToolbox","ItemCrowbar","ItemShovel"};
+	};	
 };
 
 
@@ -20,5 +24,8 @@ class DZE_Plastic_Pole_EP1: DZE_TerritoryMarker_Base {
 	displayName = "$STR_EPOCH_PLAYER_246";
 	
 	DZE_offset[] = {0,1.5,0};
-	removeoutput[] = {{"plot_pole_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "plot_pole_kit";
+		DZE_refundArray[] = {};
+	};
 };

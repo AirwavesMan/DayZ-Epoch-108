@@ -93,6 +93,7 @@ class Land_iron_vein_wreck: ruins {
 	model = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_IRON;
 	vehicleClass = "DayZ Epoch 1071 Event Objects";
+	DZE_buildingSteps = 3;
 };
 
 class Land_silver_vein_wreck: ruins	{
@@ -100,6 +101,7 @@ class Land_silver_vein_wreck: ruins	{
 	model = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_SILVER;
 	vehicleClass = "DayZ Epoch 1071 Event Objects";
+	DZE_buildingSteps = 3;
 };
 
 class Land_gold_vein_wreck: ruins {
@@ -107,4 +109,5 @@ class Land_gold_vein_wreck: ruins {
 	model = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_GOLD;
 	vehicleClass = "DayZ Epoch 1071 Event Objects";
+	DZE_buildingSteps = 3;
 };

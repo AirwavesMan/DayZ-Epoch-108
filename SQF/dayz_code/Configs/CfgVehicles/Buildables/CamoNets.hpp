@@ -7,14 +7,20 @@ class DZE_DesertCamoNet: DZE_CamoNet_Base {
 	scope = 2;
 	model = "\ca\Misc_E\CamoNet_EAST_ep1";
 	displayName = $STR_EPOCH_DESERTCAMONET;
-	removeoutput[] = {{"desert_net_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "desert_net_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_WinterCamoNet: DZE_CamoNet_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\props\nets\CamoNet_EAST.p3d";
 	displayName = $STR_EPOCH_WINTERCAMONET;
-	removeoutput[] = {{"winter_net_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "winter_net_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_ForestCamoNet: DZE_CamoNet_Base {
@@ -23,7 +29,10 @@ class DZE_ForestCamoNet: DZE_CamoNet_Base {
 	scope = 2;
 	model = "\Ca\misc3\CamoNet_EAST";
 	displayName = $STR_EPOCH_FORESTCAMONET;
-	removeoutput[] = {{"forest_net_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "forest_net_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_WinterLargeCamoNet: DZE_CamoNet_Base {
@@ -32,14 +41,20 @@ class DZE_WinterLargeCamoNet: DZE_CamoNet_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\props\nets\CamoNetB_EAST.p3d";
 	displayName = $STR_EPOCH_LARGEWINTERCAMONET;
-	removeoutput[] = {{"winter_large_net_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "winter_large_net_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_DesertLargeCamoNet: DZE_CamoNet_Base {
 	scope = 2;
 	model = "\ca\Misc_E\CamoNetB_EAST_ep1";
 	displayName = $STR_EPOCH_LARGEDESERTCAMONET;
-	removeoutput[] = {{"desert_large_net_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "desert_large_net_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_ForestLargeCamoNet: DZE_CamoNet_Base {
@@ -48,5 +63,8 @@ class DZE_ForestLargeCamoNet: DZE_CamoNet_Base {
 	scope = 2;
 	model = "\Ca\misc3\CamoNetB_EAST";
 	displayName = $STR_EPOCH_LARGEFORESTCAMONET;
-	removeoutput[] = {{"forest_large_net_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "forest_large_net_kit";
+		DZE_refundArray[] = {};
+	};
 };

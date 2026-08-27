@@ -4,6 +4,11 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
+//#define DEBUG_FN_SELF_ACTIONS
+
+#ifdef DEBUG_FN_SELF_ACTIONS
+	diag_log format ['[Client Debug]: [fn_selfActions]: Function called with arguments: %1',_this];
+#endif
 
 local _vehicle = vehicle player;
 local _inVehicle = (_vehicle != player);
@@ -238,15 +243,13 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	local _hasFuel5 = "ItemFuelcan" in _magazinesPlayer;
 	local _hasEmptyFuelCan = (("ItemJerrycanEmpty" in _magazinesPlayer) || ("ItemFuelcanEmpty" in _magazinesPlayer) || ("ItemFuelBarrelEmpty" in _magazinesPlayer));
 	local _itemsPlayer = items player;
-	local _weaponsPlayer = weapons player;
-	local _hasCrowbar = "ItemCrowbar" in _itemsPlayer || "MeleeCrowbar" in _weaponsPlayer || dayz_onBack == "MeleeCrowbar";
 	local _hasToolbox = "ItemToolbox" in _itemsPlayer;
 	local _hasKeymakerskit = "ItemKeyKit" in _itemsPlayer;
 	local _isAlive = alive _cursorTarget;
 	local _text = getText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "displayName");
 	local _isPlant = _typeOfCursorTarget in Dayz_plants;
-	local _isTent = _typeOfCursorTarget in DZE_Tents;
-	local _istypeTent = _isTent || (_cursorTarget isKindOf "IC_Tent");
+	local _isInfectedTent = _typeOfCursorTarget in ['IC_DomeTent','IC_Tent'];
+	local _istypeTent = _typeOfCursorTarget in DZE_Tents || _cursorTarget isKindOf 'IC_Tent';
 	local _characterID = _cursorTarget getVariable ["CharacterID","0"];
 	local _isOwner = _ownerID == _playerUID;
 	local _hasAccess = [];
@@ -254,8 +257,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	local _isZombie = _cursorTarget isKindOf "zZombie_base";
 	local _isBloodsucker = _cursorTarget isKindOf "z_bloodsucker";
 	local _isDog = (_cursorTarget isKindOf "Pastor" || _cursorTarget isKindOf "Fin");
-	local _isModular = (_cursorTarget isKindOf "ModularItems" || {_typeOfCursorTarget in DZE_modularDoors});
-	local _hasDeconstructAccess = false;
+	local _isModular = _cursorTarget isKindOf 'DZE_Modular_Base' || {_typeOfCursorTarget in DZE_modularDoors};
 	local _player_deleteBuild = false;
 	local _player_lockUnlock_crtl = false;
 	local _isStash = _typeOfCursorTarget in DZE_Stashes;
@@ -447,70 +449,40 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 
 	// Remove Object
 	if (_isAlive) then {
+		local _removeObjectConfig = configFile >> 'CfgVehicles' >> _typeOfCursorTarget >> 'RemoveObject';
 		local _restrict = _typeOfCursorTarget in DZE_restrictRemoval;
+		local _isPublicRemoval = !_restrict && {_typeOfCursorTarget in DZE_isWreck || {_typeOfCursorTarget in DZE_isWreckBuilding || {_typeOfCursorTarget in DZE_isRemovable}}};
+		local _requiresRemovalAccess = _restrict || {_isModular} || {_isStatic} || {_typeOfCursorTarget in DZE_isDestroyableStorage};
+		local _isTentRemoval = _istypeTent && {isClass _removeObjectConfig} && {_isOwner || _isInfectedTent};
+		local _isRemovalCandidate = _isTentRemoval || {_isPublicRemoval} || {_requiresRemovalAccess};
+		local _neededRemovalTools = getArray (_removeObjectConfig >> 'DZE_neededTools');
 
-		// Allow player to remove objects with no ownership or access required
-		if (!_restrict && (_typeOfCursorTarget in DZE_isWreck || {_typeOfCursorTarget in DZE_isWreckBuilding || {_typeOfCursorTarget in DZE_isRemovable}})) then {
-			if (_hasToolbox && _hasCrowbar) then {
-				_player_deleteBuild = true;
-			};
-		};
-		// Allow player to remove objects only if they have proper ownership or access
-		if (_restrict || _isModular || _isStatic || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
-			if (_hasToolbox && _hasCrowbar) then {
+		if (_isRemovalCandidate && {['',_neededRemovalTools,'none',true] call dze_requiredItemsCheck}) then {
+			// Tents, wrecks and explicitly removable objects do not require base access.
+			_player_deleteBuild = _isTentRemoval || {_isPublicRemoval};
+
+			// Restricted, modular, static and storage objects require ownership or base access.
+			if (!_player_deleteBuild && {_requiresRemovalAccess}) then {
 				_hasAccess = [player, _cursorTarget] call DZE_fnc_checkAccess;
-				local _noBaseBuildings = ['DZE_WorkBench','DZE_FuelPump','DZE_Generator'];
-				if ((_hasAccess select 2) || ((_isStash || _typeOfCursorTarget in _noBaseBuildings) && (_hasAccess select 0))) then {
-					_hasDeconstructAccess = true;
-					_player_deleteBuild = true;
-				};
+				_player_deleteBuild = (_hasAccess select 2) || {(_isStash || {_typeOfCursorTarget in ['DZE_WorkBench','DZE_FuelPump','DZE_Generator']}) && {_hasAccess select 0}};
 			};
 		};
-		if (_isVehicle) then {
-			if ((_characterID != "0") && !_isMan) then {
-				_player_lockUnlock_crtl = true;
-			};
+
+		if (_isVehicle && {(_characterID != '0') && {!_isMan}}) then {
+			_player_lockUnlock_crtl = true;
 		};
 	};
+
 	if (_player_deleteBuild) then {
 		if (s_player_deleteBuild < 0) then {
-			s_player_deleteBuild = player addAction [format[localize "STR_EPOCH_REMOVE", _text], "\z\addons\dayz_code\actions\remove.sqf",[_cursorTarget, 2, _isModular], -3, false, true];
+			s_player_deleteBuild = player addAction [format [localize 'STR_BUILD_REMOVE_ACTION',_text],'\z\addons\dayz_code\functions\build\remove\DZE_fnc_removeObject.sqf',_cursorTarget,-3,false,true];
 		};
 	} else {
 		player removeAction s_player_deleteBuild;
 		s_player_deleteBuild = -1;
-
 	};
 
-	// Deconstruct Modular Object
-	if (DZE_refundModular && DZE_allowDeconstruct && _hasDeconstructAccess && _isModular && !((DZE_RefundDamageLimit > 0) && (damage _cursorTarget > DZE_RefundDamageLimit))) then {
-		if !(_typeOfCursorTarget in DZE_modularExclude) then {	// check if class allows refunds
-			if (s_player_deconstruct < 0) then {
-				s_player_deconstruct = player addAction [format[localize "STR_EPOCH_DECONSTRUCT", _text], "\z\addons\dayz_code\actions\remove.sqf",[_cursorTarget, 3, _isModular], -4, false, true];
-			};
-		};
-	} else {
-		player removeAction s_player_deconstruct;
-		s_player_deconstruct = -1;
-	};
-
-	//remove Own objects
-	if (_isOwner) then {
-		if (_istypeTent) then {
-			//Packing my tent
-			if (s_player_packtent < 0) then {
-				s_player_packtent = player addAction [localize "str_actions_self_07", "\z\addons\dayz_code\actions\tent_pack.sqf",_cursorTarget, 0, false, true];
-			};
-		} else {
-			player removeAction s_player_packtent;
-			s_player_packtent = -1;
-		};
-	} else {
-		player removeAction s_player_packtent;
-		s_player_packtent = -1;
-	};
-
-	//other tents
+	// Tent actions
 	if (_istypeTent) then {
 		local _hasIgnitors = {_x in DayZ_Ignitors} count _itemsPlayer > 0;
 		if ((_hasFuel20 || _hasFuel5 || _hasBarrel) && _hasIgnitors) then {
@@ -521,19 +493,13 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 			player removeAction s_player_destroytent;
 			s_player_destroytent = -1;
 		};
-		if (_typeOfCursorTarget in ["IC_DomeTent","IC_Tent"]) then {
-			if (s_player_packtentinfected < 0) then {
-				s_player_packtentinfected = player addAction [localize "str_actions_self_07", "\z\addons\dayz_code\actions\tent_pack.sqf",_cursorTarget, 0, false, true];
-			};
-		} else {
-			player removeAction s_player_packtentinfected;
-			s_player_packtentinfected = -1;
-		};
 		//sleep
 		if (s_player_sleep < 0) then {
 			s_player_sleep = player addAction [localize "str_actions_self_sleep", "\z\addons\dayz_code\actions\player_sleep.sqf",_cursorTarget, 0, false, true];
 		};
 	} else {
+		player removeAction s_player_destroytent;
+		s_player_destroytent = -1;
 		player removeAction s_player_sleep;
 		s_player_sleep = -1;
 	};
@@ -821,7 +787,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	};
 
 	// inplace upgrade tool
-	if (((_cursorTarget isKindOf 'ModularItems') || (_cursorTarget isKindOf 'DZE_Land_WoodDoor_Base') || (_cursorTarget isKindOf 'DZE_CinderWallDoor_Base') || (_cursorTarget isKindOf 'DZE_Housebase') || (_cursorTarget isKindOf 'DZE_Storage_Base') || (_typeOfCursorTarget in DZE_UpgradableStorage)) && !(_typeOfCursorTarget in DZE_DisableUpgrade)) then {
+	if (((_cursorTarget isKindOf 'DZE_Modular_Base') || (_cursorTarget isKindOf 'DZE_Housebase') || (_cursorTarget isKindOf 'DZE_Storage_Base') || (_typeOfCursorTarget in DZE_UpgradableStorage)) && !(_typeOfCursorTarget in DZE_DisableUpgrade)) then {
 		if ((s_player_lastTarget select 0) != _cursorTarget) then {
 			if (s_player_upgrade_build > 0) then {
 				player removeAction s_player_upgrade_build;
@@ -869,7 +835,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	};
 
 	// inplace maintenance tool
-	if (_cursorTarget isKindOf 'ModularItems' || {_cursorTarget isKindOf 'DZE_Housebase'} || {_typeOfCursorTarget == 'DZE_LightPole'}) then {
+	if (_cursorTarget isKindOf 'DZE_Modular_Base' || {_cursorTarget isKindOf 'DZE_Housebase'} || {_typeOfCursorTarget == 'DZE_LightPole'}) then {
 		if ((s_player_lastTarget select 2) != _cursorTarget) then {
 			if (s_player_maint_build > 0) then {
 				player removeAction s_player_maint_build;
@@ -1152,8 +1118,6 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	s_player_sleep = -1;
 	player removeAction s_player_deleteBuild;
 	s_player_deleteBuild = -1;
-	player removeAction s_player_deconstruct;
-	s_player_deconstruct = -1;
 	player removeAction s_player_cook;
 	s_player_cook = -1;
 	player removeAction s_player_boil;
@@ -1164,10 +1128,6 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	s_player_fireFuelActions = [];
 	DZE_fireFuelTarget = objNull;
 	DZE_fireFuelMagazines = [];
-	player removeAction s_player_packtent;
-	s_player_packtent = -1;
-	player removeAction s_player_packtentinfected;
-	s_player_packtentinfected = -1;
 	player removeAction s_player_fillfuel;
 	s_player_fillfuel = -1;
 	player removeAction s_player_studybody;

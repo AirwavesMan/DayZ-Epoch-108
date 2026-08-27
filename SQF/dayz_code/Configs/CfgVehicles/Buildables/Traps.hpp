@@ -72,6 +72,10 @@ class DZE_BearTrap: DZE_Trap_Base {
 			statement = "['remove', this] spawn beartrap;";
 		};
 	};
+	class RemoveObject {
+		DZE_refundKit = "TrapBear";
+		DZE_refundArray[] = {};
+	};
 };
 
 class Bomb {
@@ -133,6 +137,10 @@ class DZE_TrapBearTrapFlare: DZE_Trap_Base {
 			statement = "['remove', this] spawn beartrapflare;";
 		};
 	};
+	class RemoveObject {
+		DZE_refundKit = "ItemTrapBearTrapFlare";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_TrapBearTrapSmoke: DZE_Trap_Base {
@@ -185,6 +193,10 @@ class DZE_TrapBearTrapSmoke: DZE_Trap_Base {
 			statement = "['remove', this] spawn beartrapsmoke;";
 		};
 	};
+	class RemoveObject {
+		DZE_refundKit = "ItemTrapBearTrapSmoke";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Trap_Cans: DZE_Trap_Base {
@@ -236,6 +248,10 @@ class DZE_Trap_Cans: DZE_Trap_Base {
 			statement = "['remove', this] spawn tripcans;";
 		};
 	};
+	class RemoveObject {
+		DZE_refundKit = "ItemTrapTripwireCans";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_TrapTripwireFlare: DZE_Trap_Base {
@@ -286,6 +302,10 @@ class DZE_TrapTripwireFlare: DZE_Trap_Base {
 			condition = "!(this getVariable ['armed', false])";
 			statement = "['remove', this] spawn tripflare;";
 		};
+	};
+	class RemoveObject {
+		DZE_refundKit = "ItemTrapTripwireFlare";
+		DZE_refundArray[] = {};
 	};
 };
 
@@ -339,6 +359,10 @@ class DZE_TrapTripwireGrenade: DZE_Trap_Base {
 			statement = "['remove', this] spawn tripgrenade;";
 		};
 	};
+	class RemoveObject {
+		DZE_refundKit = "ItemTrapTripwireGrenade";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_TrapTripwireSmoke: DZE_Trap_Base {
@@ -390,5 +414,9 @@ class DZE_TrapTripwireSmoke: DZE_Trap_Base {
 			condition = "!(this getVariable ['armed', false])";
 			statement = "['remove', this] spawn tripsmoke;";
 		};
+	};
+	class RemoveObject {
+		DZE_refundKit = "ItemTrapTripwireSmoke";
+		DZE_refundArray[] = {};
 	};
 };

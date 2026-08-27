@@ -13,8 +13,7 @@ class DZE_Building_Base: House {
 	mapSize = 11;
 	animated = 1;
 	armor = 100;
-	destrType = "DestructNo";
-	DZE_offset[] = {0,3,0};
+	destrType = "DestructNo";	
 	// damageResistance = 0.004;
 	// reversed = 0;
 	// hasDriver = 0;
@@ -32,13 +31,7 @@ class DZE_Building_Base: House {
 	// transportAmmo = 0;
 	// transportRepair = 0;
 	// transportFuel = 0;
-	DZE_allowBuilding = 1;        	//	Building allowed by server
-	DZE_bypassBase = 0;           	//	Building without Territory Marker
-	DZE_preventUnderground = 1;   	//	No underground building
-	DZE_saveToDatabase = 1;        	//	Allowed server saving the building to the database
-	DZE_allowRotation = 1; 			//	Allow rotation of the object
-	DZE_buildingSteps = 1;			//	Number of construction and deconstruction animation steps; 0 skips the animation
-
+	
 	class DestructionEffects {
 		class Sound {
 			simulation = "sound";
@@ -66,6 +59,20 @@ class DZE_Building_Base: House {
 			interval = 1;
 			lifeTime = 1;
 		};
+	};
+
+	DZE_offset[] = {0,3,0};	
+	DZE_allowBuilding = 1;        	//	Building allowed by server
+	DZE_bypassBase = 0;           	//	Building without Territory Marker
+	DZE_preventUnderground = 1;   	//	No underground building
+	DZE_saveToDatabase = 1;        	//	Allowed server saving the building to the database
+	DZE_allowRotation = 1; 			//	Allow rotation of the object
+	DZE_buildingSteps = 1;			//	Number of construction and deconstruction animation steps; 0 skips the animation	
+	
+	class RemoveObject {
+		DZE_neededTools[] = {"ItemToolbox","ItemCrowbar"};
+		DZE_refundKit = "";
+		DZE_refundArray[] = {};
 	};
 };
 

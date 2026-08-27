@@ -33,8 +33,11 @@ class DZE_Generator: DZE_Generator_Base {
 	mapSize = 2;
 	armor = 400;
 	DZE_buildingSteps = 1;
-	removeoutput[] = {{"ItemGenerator",1}};
 	DZE_bypassBase = 0;
 	class Turrets {
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemGenerator";
+		DZE_refundArray[] = {};
 	};
 };

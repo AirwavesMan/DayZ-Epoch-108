@@ -6,7 +6,6 @@ class DZE_StorageShed: DZE_Storage_Base {
 	transportMaxMagazines = 400;
 	transportMaxWeapons = 40;
 	transportMaxBackpacks = 20;
-	removeoutput[] = {{"storage_shed_kit",1}};
 	DZE_buildingSteps = 6;
 	//GhostPreview = "DZE_StorageShed_Preview";
 
@@ -30,6 +29,10 @@ class DZE_StorageShed: DZE_Storage_Base {
 		};
 	};
 	upgradeBuilding[] = {"DZE_StorageShed2",{"ItemToolbox","ItemCrowbar","ItemSledge"},{{"equip_metal_sheet",4},{"ItemMetalSheet",2},{"ItemScrews",2}}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "storage_shed_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_StorageShed2: DZE_StorageShed {
@@ -39,8 +42,11 @@ class DZE_StorageShed2: DZE_StorageShed {
 	transportMaxMagazines = 600;
 	transportMaxWeapons = 60;
 	transportMaxBackpacks = 30;
-	removeoutput[] = {{"storage_shed_kit2",1}};
 	DZE_buildingSteps = 12;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "storage_shed_kit2";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_WoodShack: DZE_Storage_Base {
@@ -53,9 +59,12 @@ class DZE_WoodShack: DZE_Storage_Base {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 10;
 	transportMaxBackpacks = 5;
-	removeoutput[] = {{"wood_shack_kit",1}};
 	DZE_buildingSteps = 4;
 	upgradeBuilding[] = {"DZE_WoodShack2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",4},{"equip_nails",2}}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "wood_shack_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_WoodShack2: DZE_WoodShack {
@@ -65,8 +74,11 @@ class DZE_WoodShack2: DZE_WoodShack {
 	transportMaxMagazines = 175;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 10;
-	removeoutput[] = {{"wood_shack_kit2",1}};
 	DZE_buildingSteps = 8;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "wood_shack_kit2";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Wooden_shed: DZE_Storage_Base {
@@ -79,9 +91,12 @@ class DZE_Wooden_shed: DZE_Storage_Base {
 	transportMaxMagazines = 200;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 10;
-	removeoutput[] = {{"wooden_shed_kit",1}};
 	DZE_buildingSteps = 5;
 	upgradeBuilding[] = {"DZE_Wooden_shed2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"equip_nails",2}}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "wooden_shed_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Wooden_shed2: DZE_Wooden_shed {
@@ -91,6 +106,9 @@ class DZE_Wooden_shed2: DZE_Wooden_shed {
 	transportMaxMagazines = 300;
 	transportMaxWeapons = 30;
 	transportMaxBackpacks = 15;
-	removeoutput[] = {{"wooden_shed_kit2",1}};
 	DZE_buildingSteps = 10;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "wooden_shed_kit2";
+		DZE_refundArray[] = {};
+	};
 };

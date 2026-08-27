@@ -6,11 +6,13 @@ class DZE_Doghouse: DZE_Building_Base {
 	mapSize = 2;
 	armor = 800;
 	displayName = $STR_EQUIP_NAME_DOG_HOUSE;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
-	removeoutput[] = {{"doghouse_kit",1}};
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 1;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "doghouse_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Wild_Bee_Hive: DZE_Building_Base {
@@ -20,11 +22,13 @@ class DZE_Wild_Bee_Hive: DZE_Building_Base {
 	icon = "\Ca\Structures\Data\Icons\i_timbers_ca.paa"; 
 	mapSize = 2;
 	armor = 800;
-	maintainBuilding[] = {{"ItemLog",1}};
-	removeoutput[] = {{"wild_bee_hive_kit",1}};
 	transportMaxWeapons = 1;
 	transportMaxMagazines = 15;
 	transportMaxBackpacks = 1;	
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "wild_bee_hive_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Rabbit_Hutch: DZE_Building_Base {
@@ -35,11 +39,13 @@ class DZE_Rabbit_Hutch: DZE_Building_Base {
 	mapSize = 2;
 	armor = 800;
 	displayName = $STR_EQUIP_NAME_RABBIT_HUTCH;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
-	removeoutput[] = {{"rabbit_hutch_kit",1}};
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 1;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "rabbit_hutch_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Chicken_Coop: DZE_Building_Base {
@@ -50,11 +56,13 @@ class DZE_Chicken_Coop: DZE_Building_Base {
 	mapSize = 2;
 	armor = 800;
 	displayName = $STR_EQUIP_NAME_CHICKEN_COOP;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
-	removeoutput[] = {{"chicken_coop_kit",1}};
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 1;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "chicken_coop_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Cow_Stable: DZE_Building_Base {
@@ -65,11 +73,13 @@ class DZE_Cow_Stable: DZE_Building_Base {
 	DZE_offset[] = {0,4,0};
 	mapSize = 2;
 	armor = 1000;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
-	removeoutput[] = {{"cow_stable_kit",1}};
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 4;		
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cow_stable_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Goat_Stable: DZE_Building_Base {
@@ -80,11 +90,13 @@ class DZE_Goat_Stable: DZE_Building_Base {
 	DZE_offset[] = {0,4,0};
 	mapSize = 2;
 	armor = 1000;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
-	removeoutput[] = {{"goat_stable_kit",1}};
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 4;		
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "goat_stable_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Sheep_Stable: DZE_Building_Base {
@@ -95,11 +107,13 @@ class DZE_Sheep_Stable: DZE_Building_Base {
 	DZE_offset[] = {0,4,0};
 	mapSize = 2;
 	armor = 1000;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
-	removeoutput[] = {{"sheep_stable_kit",1}};
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 4;		
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "sheep_stable_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Boar_Stable: DZE_Building_Base {
@@ -110,9 +124,11 @@ class DZE_Boar_Stable: DZE_Building_Base {
 	DZE_offset[] = {0,4,0};
 	mapSize = 2;
 	armor = 1000;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
-	removeoutput[] = {{"boar_stable_kit",1}};
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 4;		
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "boar_stable_kit";
+		DZE_refundArray[] = {};
+	};
 };

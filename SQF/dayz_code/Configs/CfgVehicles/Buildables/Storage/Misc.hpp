@@ -7,8 +7,11 @@ class DZE_GunRack: DZE_Storage_Base {
 	transportMaxMagazines = 10;
 	transportMaxBackpacks = 0;
 	DZE_offset[] = {0,2,0};
-	removeoutput[] = {{"ItemGunRackKit",1}};
 	upgradeBuilding[] = {"DZE_GunRack2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",4},{"equip_nails",1}}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemGunRackKit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_GunRack2: DZE_GunRack {
@@ -18,8 +21,11 @@ class DZE_GunRack2: DZE_GunRack {
 	transportMaxWeapons = 40;
 	transportMaxMagazines = 20;
 	transportMaxBackpacks = 0;
-	removeoutput[] = {{"ItemGunRackKit2",1}};
 	DZE_buildingSteps = 2;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemGunRackKit2";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_OutHouse: DZE_Storage_Base {
@@ -31,9 +37,12 @@ class DZE_OutHouse: DZE_Storage_Base {
 	transportMaxMagazines = 4;
 	transportMaxWeapons = 4;
 	transportMaxBackpacks = 4;
-	removeoutput[] = {{"outhouse_kit",1}};	// new
 	DZE_buildingSteps = 2;
 	class transportmagazines {};
+	class RemoveObject: RemoveObject { // new
+		DZE_refundKit = "outhouse_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_WorkBench2: DZE_Building_Base {
@@ -49,11 +58,13 @@ class DZE_WorkBench2: DZE_Building_Base {
     mapSize = 2;
     armor = 400;
     displayName = $STR_EPOCH_WORKBENCH;
-    maintainBuilding[] = {{"PartWoodLumber",1}};
-    removeoutput[] = {{"ItemWorkBench_DZE",1}};
     transportMaxWeapons = 10;
     transportMaxMagazines = 25;
     transportMaxBackpacks = 1;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWorkBench_DZE";
+		DZE_refundArray[] = {};
+	};	
 };
 
 class DZE_Advanced_WorkBench: DZE_Building_Base {
@@ -69,9 +80,11 @@ class DZE_Advanced_WorkBench: DZE_Building_Base {
 	transportmaxbackpacks = 1;	
 	armor = 400;
 	displayName = $STR_EPOCH_WORKBENCH_ADVANCED;
-	maintainBuilding[] = {{"ItemPlank",2}};
 	DZE_buildingSteps = 3;
-	removeoutput[] = {{"PartWoodPlywood",3},{"ItemPlank",3}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "advanced_workBench_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_CookTripod: DZE_Storage_Base {
@@ -87,7 +100,10 @@ class DZE_CookTripod: DZE_Storage_Base {
 	transportmaxbackpacks = 0;
 	armor = 500;
 	model = "\z\addons\dayz_epoch_w\items\cook_tripod.p3d";
-	removeoutput[] = {{"cook_tripod_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cook_tripod_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Stoneoven: DZE_Storage_Base {
@@ -103,7 +119,10 @@ class DZE_Stoneoven: DZE_Storage_Base {
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 0;
 	DZE_buildingSteps = 2;
-	removeoutput[] = {{"stoneoven_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "stoneoven_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Commode: DZE_Storage_Base {
@@ -116,7 +135,10 @@ class DZE_Commode: DZE_Storage_Base {
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
-	removeoutput[] = {{"commode_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "commode_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Wardrobe: DZE_Storage_Base {
@@ -129,7 +151,10 @@ class DZE_Wardrobe: DZE_Storage_Base {
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
-	removeoutput[] = {{"wardrobe_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "wardrobe_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Fridge: DZE_Storage_Base {
@@ -142,7 +167,10 @@ class DZE_Fridge: DZE_Storage_Base {
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
-	removeoutput[] = {{"fridge_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "fridge_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Washing_Machine: DZE_Storage_Base {
@@ -155,7 +183,10 @@ class DZE_Washing_Machine: DZE_Storage_Base {
 	transportMaxMagazines = 15;
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
-	removeoutput[] = {{"washing_machine_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "washing_machine_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Server_Rack: DZE_Storage_Base {
@@ -168,7 +199,10 @@ class DZE_Server_Rack: DZE_Storage_Base {
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 1;
 	DZE_offset[] = {0,2,0};
-	removeoutput[] = {{"server_rack_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "server_rack_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_ATM: DZE_Storage_Base {
@@ -181,7 +215,10 @@ class DZE_ATM: DZE_Storage_Base {
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 4;
 	DZE_offset[] = {0,2,0};
-	removeoutput[] = {{"atm_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "atm_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Armchair: DZE_Storage_Base {
@@ -194,7 +231,10 @@ class DZE_Armchair: DZE_Storage_Base {
 	transportMaxMagazines = 5;
 	transportmaxbackpacks = 1;	
 	DZE_offset[] = {0,2.5,0};
-	removeoutput[] = {{"armchair_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "armchair_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Sofa: DZE_Storage_Base {
@@ -207,7 +247,10 @@ class DZE_Sofa: DZE_Storage_Base {
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2.5,0};
-	removeoutput[] = {{"sofa_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "sofa_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Arcade: DZE_Storage_Base {
@@ -220,7 +263,10 @@ class DZE_Arcade: DZE_Storage_Base {
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 5;	
 	DZE_offset[] = {0,2,0};
-	removeoutput[] = {{"arcade_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "arcade_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Vendmachine1: DZE_Storage_Base {
@@ -233,7 +279,10 @@ class DZE_Vendmachine1: DZE_Storage_Base {
 	transportMaxMagazines = 45;
 	transportmaxbackpacks = 5;
 	DZE_offset[] = {0,2,0};
-	removeoutput[] = {{"vendmachine1_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "vendmachine1_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Vendmachine2: DZE_Storage_Base {
@@ -247,5 +296,8 @@ class DZE_Vendmachine2: DZE_Storage_Base {
 	transportMaxWeapons = 15;	
 	transportMaxMagazines = 45;
 	transportmaxbackpacks = 5;
-	removeoutput[] = {{"vendmachine2_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "vendmachine2_kit";
+		DZE_refundArray[] = {};
+	};
 };

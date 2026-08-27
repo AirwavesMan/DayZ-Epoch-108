@@ -317,16 +317,6 @@ class virtualGarage {
 			h = (1 / 25);
 		};
 
-		class removePad : vg_RscButtonMenu {
-			idc = 2853;
-			text = $STR_CL_VG_REMOVE_PAD;
-			onButtonClick = "call player_removePad;";
-			x = 0.5 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.9 - (1 / 25);
-			w = 0.241;
-			h = (1 / 25);
-		};
-
 		class MaintainGarage : vg_RscButtonMenu {
 			idc = 2854;
 			text = $STR_CL_VG_MAINTAIN_GARAGE;

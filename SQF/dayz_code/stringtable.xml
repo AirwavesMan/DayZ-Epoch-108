@@ -236,14 +236,6 @@
 			<Czech>Upéct jídlo</Czech>
 			<French>Cuire la Nourriture</French>
 		</Key>
-		<Key ID="str_actions_self_07">
-			<English>Pack Tent</English>
-			<German>Zelt abbauen</German>
-			<Russian>Упаковать палатку</Russian>
-			<Spanish>Embalar Carpa</Spanish>
-			<French>Replier la Tente</French>
-			<Czech>Zabalit stan</Czech>
-		</Key>
 		<Key ID="str_actions_self_10">
 			<English>Fill all fuel containers</English>
 			<German>Alle Kraftstoffbehälter füllen</German>
@@ -6604,22 +6596,6 @@
 			<French>Récolte impossible par manque d&apos;espace, 3 emplacements sont nécessaires.</French>
 			<German>Du brauchst drei freie Plätze im Inventar, um das aufzuheben.</German>
 		</Key>
-		<Key ID="str_success_tent_pack">
-			<English>Your tent has been packed</English>
-			<German>Du hast das Zelt erfolgreich abgebaut.</German>
-			<Russian>Ваша палатка свёрнута.</Russian>
-			<Spanish>Su carpa se ha embalado</Spanish>
-			<French>Votre tente a été repliée.</French>
-			<Czech>Stan byl zabalen.</Czech>
-		</Key>
-		<Key ID="str_fail_tent_pack">
-			<English>You cannot pack this tent, it is not yours</English>
-			<German>Du kannst dieses Zelt nicht abbauen, weil es dir nicht gehört.</German>
-			<Russian>Вы не можете свернуть эту палатку, так как она не ваша.</Russian>
-			<Spanish>No puedes embalar esta carpa ya que no es tuya.</Spanish>
-			<French>Vous ne pouvez pas replier cette tente, elle ne vous appartient pas.</French>
-			<Czech>Tento stan nemůžete zabalit, jelikož není váš.</Czech>
-		</Key>
 		<Key ID="str_success_tent_destroyed">
 			<English>You have successfully destroyed a tent.</English>
 			<German>Du hast das Zelt erfolgreich zerstört.</German>
@@ -7206,14 +7182,6 @@
 			<Spanish>%1 ya fue saqueado por alguien más.</Spanish>
 			<French>%1 est déjà en train d&apos;être pillé par quelqu&apos;un d&apos;autre.</French>
 			<Czech>%1 už je vybírán někým jiným.</Czech>
-		</Key>
-		<Key ID="str_player_beingpacked">
-			<English>That tent is already being packed.</English>
-			<German>Dieses Zelt wird bereits abgebaut.</German>
-			<Russian>Эту палатку уже упаковывают.</Russian>
-			<Spanish>Esta carpa ya fue embalada.</Spanish>
-			<French>Cette tente est déjà en train d&apos;être repliée.</French>
-			<Czech>Stan už byl zabalen.</Czech>
 		</Key>
 		<Key ID="str_player_studybody">
 			<English>His name was %1, it appears he died from %2</English>
@@ -23115,13 +23083,6 @@
 		</Key>
 	</Package>
 	<Package name="dayz_epoch">
-		<Key ID="STR_EPOCH_REMOVE">
-			<English>Remove %1</English>
-			<German>%1 abbauen</German>
-			<Russian>Разобрать %1</Russian>
-			<French>Détruire %1</French>
-			<Czech>Zničit %1</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_NO_CHEATS">
 			<English>Do not enter cheats. Wait five seconds to continue.</English>
 			<Russian>Не вводите читы. Подождите 5 секунд чтобы продолжить.</Russian>
@@ -23354,14 +23315,6 @@
 			<Dutch>Je kunt niet bij de intentaris van een afgesloten voertuig.</Dutch>
 			<French>Impossible d'accéder au contenu d'un véhicule verrouillé</French>
 			<Czech>Nelze přistupovat k předmětům v zamčeném voze.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_8">
-			<English>No camo nets were found nearby.</English>
-			<German>Keine Tarnnetze in der Nähe gefunden.</German>
-			<Russian>Камуфляжные сети не найдены.</Russian>
-			<Dutch>Geen camouflagenet in de buurt gevonden.</Dutch>
-			<French>Aucun de filet de camouflage n'a été trouvé aux alentours</French>
-			<Czech>Poblíž nejsou žádné maskovací sítě.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_9">
 			<English>You have been crushed between two objects.</English>
@@ -23681,30 +23634,6 @@
 			<French>Vous ne pouvez pas porter les vêtements du sexe opposé.</French>
 			<Czech>Nemůžete nosit oblečení opačného pohlaví.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_89">
-			<English>Cannot remove a running generator.</English>
-			<German>Ein laufender Generator kann nicht entfernt werden.</German>
-			<Russian>Нельзя убрать работающий генератор.</Russian>
-			<Dutch>Kan niet verwijderen als de generator nog aanstaat.</Dutch>
-			<French>Impossible de démonter un générateur en route.</French>
-			<Czech>Nemůžete odstranit běžící generátor.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_90">
-			<English>No parts were found.</English>
-			<German>Keine Teile gefunden.</German>
-			<Russian>Запчасти не найдены.</Russian>
-			<Dutch>Geen onderdelen gevonden.</Dutch>
-			<French>Aucune pièce trouvée.</French>
-			<Czech>Nebyly nalezeny žádné části.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_91">
-			<English>Failed, object no longer exists.</English>
-			<German>Fehlgeschlagen. Das Objekt existiert nicht mehr.</German>
-			<Russian>Объект не существует.</Russian>
-			<Dutch>Mislukt! Het object bestaat niet meer.</Dutch>
-			<French>Échec, l'objet n'existe plus.</French>
-			<Czech>Chyba. Objekt již neexistuje.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_96">
 			<English>already in progress.</English>
 			<German>bereits im Gange.</German>
@@ -23953,34 +23882,6 @@
 			<Dutch>Kan niet upgraden %1 in de buurt.</Dutch>
 			<Czech>Upgrade %1 nelze poblíž udělat.</Czech>
 			<Russian>Улучшить %1 не представляется возможным.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_162">
-			<English>Starting de-construction of %1.</English>
-			<German>Starte Abbau von %1.</German>
-			<Russian>Начата разборка: %1.</Russian>
-			<Dutch>Bezig met het slopen van %1.</Dutch>
-			<Czech>Začínám rozebírání %1.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_163">
-			<English>De-constructing %1, stage %2 of %3 walk away at anytime to cancel.</English>
-			<German>Abbau von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>Разборка: %1, стадия %2 / %3. Двигайтесь для отмены.</Russian>
-			<Dutch>Sloop van %1 bezig (%2 van %3) loop weg om te annuleren.</Dutch>
-			<Czech>Rozebírání %1, fáze %2 z %3. Kdykoliv se pohněte pro zrušení.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_164">
-			<English>%1 broke, cannot remove %2.</English>
-			<German>%1 wurde zerstört. %2 kann nicht mehr entfernt werden.</German>
-			<Russian>%1 сломан, нельзя разобрать %2.</Russian>
-			<Dutch>%1 is kapot gegaan. kan %2 niet verwijderen.</Dutch>
-			<Czech>%1 se rozbil. Nelze odstranit %2.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_165">
-			<English>De-constructing %1.</English>
-			<German>Abbau von %1.</German>
-			<Russian>Разобрано.</Russian>
-			<Dutch>%1 aan het slopen.</Dutch>
-			<Czech>Rozebírání %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_173">
 			<English>Dog consumed %1, and is now tamed.</English>
@@ -26331,20 +26232,6 @@
 			<Russian>Вы не можете улучшить транспорт, находясь в нём.</Russian>
 			<French>Vous ne pouvez pas effectuer d'améliorations lorsque vous êtes à l'intérieur d'un véhicule.</French>
 			<Czech>Nemůžete upgradovat, pokud jste ve vozidle.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_20">
-			<English>You must remove the lock to delete this item!</English>
-			<German>Du musst das Schloss entfernen, um das Objekt zu löschen!</German>
-			<Russian>Вы должны снять замок, чтобы убрать этот предмет!</Russian>
-			<Dutch>Je moet het slot verwijderen voor je dit item kunt weghalen!</Dutch>
-			<Czech>Musíte odstranit zámek, abyste mohli smazat tento předmět!</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_21">
-			<English>Deconstructing modular buildables will not refund any components.</English>
-			<German>Durch den Abbau werden keine Bauteile zurückerstattet.</German>
-			<Russian>Разборка модульных построек не возвратит потраченные ресурсы.</Russian>
-			<French>Le démontage de la construction ne rendra pas de composants.</French>
-			<Czech>Demontáž budovy nevrátí žádné její komponenty.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_22">
 			<English>%1 building parts in range.</English>
@@ -32381,11 +32268,6 @@
 			<German>Pflanze ernten</German>
 			<Russian>Срезать растение</Russian>
 		</Key>
-		<Key ID="STR_EQUIP_TOOLBOX_ACTION_1">
-			<English>Remove Camo Net</English>
-			<German>Tarnnetz entfernen</German>
-			<Russian>Убрать сеть</Russian>
-		</Key>
 		<Key ID="str_salvage_safezone">
 			<English>You cannot salvage parts in a safe zone</English>
 			<Spanish>No se pueden recuperar piezas en una zona segura</Spanish>
@@ -35903,15 +35785,6 @@
 			<German>Zombifiziertes Huhn</German>
 			<Russian>Зомбированная курица</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_DECONSTRUCT">
-			<English>Deconstruct %1</English>
-			<Russian>Снести %1</Russian>
-			<Spanish>Deconstruir %1</Spanish>
-			<Czech>Dekonstruovat %1</Czech>
-			<French>Déconstruire %1</French>
-			<German>%1 dekonstruieren</German>
-			<Dutch>Deconstrueren %1</Dutch>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBF">
 			<English>Craft Heavy Bag Fence</English>
 			<German>Schweren Sandsackzaun herstellen</German>
@@ -37519,6 +37392,204 @@
 			<Czech>Stavba se nezdařila. Stavební předmět byl vrácen.</Czech>
 		</Key>
 
+		<!-- Removal and deconstruction -->
+		<Key ID="STR_BUILD_REMOVE_ACTION">
+			<English>Remove %1</English>
+			<German>%1 abbauen</German>
+			<Russian>Разобрать %1</Russian>
+			<French>Détruire %1</French>
+			<Czech>Zničit %1</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_CAMONET_ACTION">
+			<English>Remove Camo Net</English>
+			<German>Tarnnetz entfernen</German>
+			<Russian>Убрать сеть</Russian>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_HELIPAD_ACTION">
+			<English>Remove Helipad</English>
+			<German>Helipad entfernen</German>
+			<Russian>Удалить вертолётную площадку</Russian>
+			<Spanish>Quitar helipuerto</Spanish>
+			<Dutch>Helipad verwijderen</Dutch>
+			<French>Enlever l&apos;héliport</French>
+			<Czech>Odstranit heliport</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_TERRITORYMARKER_ACTION">
+			<English>Remove Territory Marker</English>
+			<German>Grundstücksmarkierung entfernen</German>
+			<Russian>Удалить строительный столб</Russian>
+			<Spanish>Quitar marcador de territorio</Spanish>
+			<Dutch>Territoriummarkering verwijderen</Dutch>
+			<French>Enlever la borne de territoire</French>
+			<Czech>Odstranit pozemkovou značku</Czech>
+		</Key>
+		<Key ID="STR_BUILD_DECONSTRUCT_ACTION">
+			<English>Deconstruct %1</English>
+			<German>%1 dekonstruieren</German>
+			<Russian>Снести %1</Russian>
+			<Spanish>Deconstruir %1</Spanish>
+			<Dutch>Deconstrueren %1</Dutch>
+			<French>Déconstruire %1</French>
+			<Czech>Dekonstruovat %1</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_ALREADY_IN_PROGRESS">
+			<English>Wait for the previous action to complete to perform another!</English>
+			<German>Warte bis die vorherige Aktion abgeschlossen ist, bevor du eine neue beginnst.</German>
+			<Russian>Дождитесь завершения предыдущего действия, перед тем, как начинать новое!</Russian>
+			<Spanish>¡Espera a terminar la acción previa para realizar otra!</Spanish>
+			<French>Attendez la fin de l&apos;action en cours avant d&apos;en commencer une autre!</French>
+			<Czech>Než začnete dělat něco jiného, musíte dokončit aktuální akci.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_OBJECT_NOT_FOUND">
+			<English>You must be looking at the item to interact with it.</English>
+			<German>Du musst auf den Gegenstand schauen, mit dem du interagieren möchtest!</German>
+			<Russian>Вы должны смотреть на предмет, чтобы взаимодействовать с ним.</Russian>
+			<French>Vous devez également regarder l'élément avec lui.</French>
+			<Czech>Musíte se dívat na tento produkt příliš komunikovat s ním.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_CAMONET_NOT_FOUND">
+			<English>No camo nets were found nearby.</English>
+			<German>Keine Tarnnetze in der Nähe gefunden.</German>
+			<Russian>Камуфляжные сети не найдены.</Russian>
+			<Dutch>Geen camouflagenet in de buurt gevonden.</Dutch>
+			<French>Aucun de filet de camouflage n'a été trouvé aux alentours</French>
+			<Czech>Poblíž nejsou žádné maskovací sítě.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_HELIPAD_NOT_FOUND">
+			<English>No helipads were found nearby.</English>
+			<German>Keine Helipads in der Nähe gefunden.</German>
+			<Russian>Поблизости не найдено вертолётных площадок.</Russian>
+			<Spanish>No se encontraron helipuertos cerca.</Spanish>
+			<Dutch>Geen helipads in de buurt gevonden.</Dutch>
+			<French>Aucun héliport n&apos;a été trouvé à proximité.</French>
+			<Czech>V okolí nebyly nalezeny žádné heliporty.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_TERRITORYMARKER_NOT_FOUND">
+			<English>No territory markers were found nearby.</English>
+			<German>Keine Grundstücksmarkierungen in der Nähe gefunden.</German>
+			<Russian>Поблизости не найдено строительных столбов.</Russian>
+			<Spanish>No se encontraron marcadores de territorio cerca.</Spanish>
+			<Dutch>Geen territoriummarkeringen in de buurt gevonden.</Dutch>
+			<French>Aucune borne de territoire n&apos;a été trouvée à proximité.</French>
+			<Czech>V okolí nebyly nalezeny žádné pozemkové značky.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_GENERATOR_RUNNING">
+			<English>Cannot remove a running generator.</English>
+			<German>Ein laufender Generator kann nicht entfernt werden.</German>
+			<Russian>Нельзя убрать работающий генератор.</Russian>
+			<Dutch>Kan niet verwijderen als de generator nog aanstaat.</Dutch>
+			<French>Impossible de démonter un générateur en route.</French>
+			<Czech>Nemůžete odstranit běžící generátor.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_LOCKED">
+			<English>You must remove the lock to delete this item!</English>
+			<German>Du musst das Schloss entfernen, um das Objekt zu löschen!</German>
+			<Russian>Вы должны снять замок, чтобы убрать этот предмет!</Russian>
+			<Dutch>Je moet het slot verwijderen voor je dit item kunt weghalen!</Dutch>
+			<Czech>Musíte odstranit zámek, abyste mohli smazat tento předmět!</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_PLAYER_NEARBY">
+			<English>Another player is nearby. Only one player can be near to perform this action.</English>
+			<German>Ein anderer Spieler ist in der Nähe. Nur ein Spieler darf sich in der Nähe befinden, um diese Aktion durchzuführen.</German>
+			<Russian>Другой игрок рядом. Только один игрок может делать это.</Russian>
+			<Spanish>Otro jugador que está cerca, sólo un jugador puede estar cerca para realizar esta acción.</Spanish>
+			<French>Un autre joueur est à proximité, un seul joueur peut se trouver à proximité pour effectuer cette action.</French>
+			<Czech>Další hráče je v blízkosti. Pouze jeden hráč smí být v blízkosti, aby šla provést tato akce.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_NO_REFUND">
+			<English>Deconstructing modular buildables will not refund any components.</English>
+			<German>Durch den Abbau werden keine Bauteile zurückerstattet.</German>
+			<Russian>Разборка модульных построек не возвратит потраченные ресурсы.</Russian>
+			<French>Le démontage de la construction ne rendra pas de composants.</French>
+			<Czech>Demontáž budovy nevrátí žádné její komponenty.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_STARTED">
+			<English>Starting de-construction of %1.</English>
+			<German>Starte Abbau von %1.</German>
+			<Russian>Начата разборка: %1.</Russian>
+			<Dutch>Bezig met het slopen van %1.</Dutch>
+			<Czech>Začínám rozebírání %1.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_PROGRESS">
+			<English>De-constructing %1, stage %2 of %3 walk away at anytime to cancel.</English>
+			<German>Abbau von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
+			<Russian>Разборка: %1, стадия %2 / %3. Двигайтесь для отмены.</Russian>
+			<Dutch>Sloop van %1 bezig (%2 van %3) loop weg om te annuleren.</Dutch>
+			<Czech>Rozebírání %1, fáze %2 z %3. Kdykoliv se pohněte pro zrušení.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_TOOL_BROKEN">
+			<English>%1 broke, cannot remove %2.</English>
+			<German>%1 wurde zerstört. %2 kann nicht mehr entfernt werden.</German>
+			<Russian>%1 сломан, нельзя разобрать %2.</Russian>
+			<Dutch>%1 is kapot gegaan. kan %2 niet verwijderen.</Dutch>
+			<Czech>%1 se rozbil. Nelze odstranit %2.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_COMPLETED">
+			<English>Removed %1.</English>
+			<German>%1 wurde entfernt.</German>
+			<Russian>%1 удалён.</Russian>
+			<Dutch>%1 verwijderd.</Dutch>
+			<Czech>%1 odstraněn.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_NO_PARTS">
+			<English>No parts were found.</English>
+			<German>Keine Teile gefunden.</German>
+			<Russian>Запчасти не найдены.</Russian>
+			<Dutch>Geen onderdelen gevonden.</Dutch>
+			<French>Aucune pièce trouvée.</French>
+			<Czech>Nebyly nalezeny žádné části.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_OBJECT_GONE">
+			<English>Failed, object no longer exists.</English>
+			<German>Fehlgeschlagen. Das Objekt existiert nicht mehr.</German>
+			<Russian>Объект не существует.</Russian>
+			<Dutch>Mislukt! Het object bestaat niet meer.</Dutch>
+			<French>Échec, l'objet n'existe plus.</French>
+			<Czech>Chyba. Objekt již neexistuje.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_REMOVE_FAILED">
+			<English>Removal could not be confirmed. No items were returned.</English>
+			<German>Das Entfernen konnte nicht bestätigt werden. Es wurden keine Gegenstände zurückgegeben.</German>
+			<Russian>Удаление не удалось подтвердить. Предметы не возвращены.</Russian>
+			<Dutch>Verwijdering kon niet worden bevestigd. Er zijn geen voorwerpen teruggegeven.</Dutch>
+			<French>La suppression n'a pas pu être confirmée. Aucun objet n'a été rendu.</French>
+			<Czech>Odstranění se nepodařilo potvrdit. Žádné předměty nebyly vráceny.</Czech>
+		</Key>
+
+		<!-- Tent packing -->
+		<Key ID="STR_BUILD_PACK_TENT_ACTION">
+			<English>Pack Tent</English>
+			<German>Zelt abbauen</German>
+			<Russian>Упаковать палатку</Russian>
+			<Spanish>Embalar Carpa</Spanish>
+			<French>Replier la Tente</French>
+			<Czech>Zabalit stan</Czech>
+		</Key>
+		<Key ID="STR_BUILD_PACK_TENT_PROGRESS">
+			<English>Packing %1, move from this position to cancel within 5 seconds.</English>
+			<German>%1 wird gepackt. Bewege dich in den nächsten 5 Sekunden um den Vorgang abzubrechen.</German>
+			<Russian>Упаковывание: %1. Для отмены сдвиньтесь с этой позиции в течение 5 секунд.</Russian>
+			<Dutch>Bezig met inpakken van %1, beweeg binnen 5 seconden om te annuleren.</Dutch>
+			<French>Emballage de %1, déplacez vous pour annuler dans moins de 5 secondes.</French>
+			<Czech>Balení %1. Pro zrušení se do 5 sekund pohněte.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_PACK_TENT_COMPLETED">
+			<English>Your tent has been packed</English>
+			<German>Du hast das Zelt erfolgreich abgebaut.</German>
+			<Russian>Ваша палатка свёрнута.</Russian>
+			<Spanish>Su carpa se ha embalado</Spanish>
+			<French>Votre tente a été repliée.</French>
+			<Czech>Stan byl zabalen.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_PACK_TENT_NOT_OWNER">
+			<English>You cannot pack this tent, it is not yours</English>
+			<German>Du kannst dieses Zelt nicht abbauen, weil es dir nicht gehört.</German>
+			<Russian>Вы не можете свернуть эту палатку, так как она не ваша.</Russian>
+			<Spanish>No puedes embalar esta carpa ya que no es tuya.</Spanish>
+			<French>Vous ne pouvez pas replier cette tente, elle ne vous appartient pas.</French>
+			<Czech>Tento stan nemůžete zabalit, jelikož není váš.</Czech>
+		</Key>
+
 		<!-- Player state validation -->
 		<Key ID="STR_BUILD_VALIDATION_PLAYER_IN_WATER">
 			<English>You cannot do this while you are in the water.</English>
@@ -38221,19 +38292,6 @@
 			<Russian>Поиск техники...</Russian>
 			<French>Recherche de véhicules...</French>
 			<Spanish>Buscando vehiculos...</Spanish>
-		</Key>
-		<Key ID="STR_CL_VG_REMOVE_PAD">
-			<English>Remove HeliPad</English>
-			<German>Helipad entfernen</German>
-			<Russian>Удалить площадку</Russian>
-			<French>Enlever Heliport</French>
-			<Spanish>Quitar Helipuerto</Spanish>
-		</Key>
-		<Key ID="STR_CL_VG_HELIPAD_REMOVED">
-			<English>Removed HeliPad: %1</English>
-			<German>Helipad entfernt: %1</German>
-			<Russian>Удалена площадка: %1</Russian>
-			<Spanish>Helipuerto removido: %1</Spanish>
 		</Key>
 	</Package>
 

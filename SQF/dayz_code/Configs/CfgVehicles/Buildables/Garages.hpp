@@ -41,26 +41,38 @@ class DZE_Garage_Green: DZE_Garage_Base {
 	scope = 2;
 	model = "\MBG_Buildings_3\m\Misc\MBG_Garage_Single_D.p3d";
 	displayName = $STR_EPOCH_GARAGE_GREEN;
-	removeoutput[] = {{"garage_green_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "garage_green_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Garage_White: DZE_Garage_Base {
 	scope = 2;
 	model = "\MBG_Buildings_3\m\Misc\MBG_Garage_Single_A.p3d";
 	displayName = $STR_EPOCH_GARAGE_WHITE;
-	removeoutput[] = {{"garage_white_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "garage_white_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Garage_Brown: DZE_Garage_Base {
 	scope = 2;
 	model = "\MBG_Buildings_3\m\Misc\MBG_Garage_Single_B.p3d";
 	displayName = $STR_EPOCH_GARAGE_BROWN;
-	removeoutput[] = {{"garage_brown_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "garage_brown_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Garage_Grey: DZE_Garage_Base {
 	scope = 2;
 	model = "\MBG_Buildings_3\m\Misc\MBG_Garage_Single_C.p3d";
 	displayName = $STR_EPOCH_GARAGE_GREY;
-	removeoutput[] = {{"garage_grey_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "garage_grey_kit";
+		DZE_refundArray[] = {};
+	};
 };

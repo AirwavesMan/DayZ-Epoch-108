@@ -29,6 +29,11 @@ class DZE_SafeLocked: DZE_Safe_Locked_Base {
 	lockable = 4;
 	unlockedClass = "DZE_Safe";
 	upgradeBuilding[] = {"DZE_Safe2Locked",{"ItemToolbox","ItemSolder_DZE"},{{"equip_metal_sheet",4},{"ItemScrews",2},{"equip_scrapelectronics",4},{"equip_floppywire",2}}};
+	class RemoveObject: RemoveObject {
+		DZE_neededTools[] = {};
+		DZE_refundKit = "ItemSafe";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Safe2: DZE_Safe {
@@ -47,6 +52,11 @@ class DZE_Safe2Locked: DZE_Safe_Locked_Base {
 	displayName = "$STR_EPOCH_SAFE_LOCKED+";	
 	armor = 1600;
 	unlockedClass = "DZE_Safe2";
+	class RemoveObject: RemoveObject {
+		DZE_neededTools[] = {};
+		DZE_refundKit = "ItemSafe2";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_SafeTall: DZE_Safe_Base {
@@ -95,6 +105,11 @@ class DZE_SafeTallLocked: DZE_Safe_Locked_Base {
 			initPhase = 0;
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_neededTools[] = {};
+		DZE_refundKit = "ItemSafeTall";
+		DZE_refundArray[] = {};
+	};
 };
 
 //	Broken Versions
@@ -102,6 +117,10 @@ class DZE_SafeBroken: DZE_Safe_Base {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE_BROKEN";
 	packedClass = "WeaponHolder_ItemSafeBroken";
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemSafeBroken";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Safe2Broken: DZE_SafeBroken {
@@ -112,6 +131,10 @@ class DZE_Safe2Broken: DZE_SafeBroken {
 	transportMaxWeapons = 50;
 	transportMaxBackpacks = 20;
 	packedClass = "WeaponHolder_ItemSafe2Broken";
+	class RemoveObject: RemoveObject {		
+		DZE_refundKit = "ItemSafe2Broken";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_SafeTallBroken: DZE_Safe_Base {
@@ -136,5 +159,9 @@ class DZE_SafeTallBroken: DZE_Safe_Base {
 			animPeriod = 1;
 			initPhase = 0;
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemSafeTallBroken";
+		DZE_refundArray[] = {};
 	};
 };

@@ -29,7 +29,6 @@ class DZE_Land_WoodDoor_Base: DZE_ModularDoor_Base {
 			lifeTime = 1;
 		};
 	};
-	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 };
 
 class DZE_Land_WoodDoorLocked_Base: DZE_ModularDoor_Base {
@@ -51,7 +50,6 @@ class DZE_Land_WoodDoorLocked_Base: DZE_ModularDoor_Base {
 			lifeTime = 1;
 		};
 	};
-	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	lockable = 3;
 };
 
@@ -63,7 +61,6 @@ class DZE_CinderWallDoor_Base: DZE_ModularDoor_Base {
 	accuracy = 1000;
 	armor = 4000;
 	DZE_offset[] = {0,1.5,0};
-	maintainBuilding[] = {{"MortarBucket",1}};
 
 	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
@@ -85,7 +82,6 @@ class DZE_CinderWallDoorLocked_Base: DZE_ModularDoor_Base {
 	accuracy = 1000;
 	armor = 4000;
 	DZE_offset[] = {0,1.5,0};
-	maintainBuilding[] = {{"MortarBucket",1}};
 	lockable = 3;
 	class DestructionEffects: DestructionEffects {
 		class Ruin1 {
@@ -128,6 +124,10 @@ class DZE_Land_WoodDoor: DZE_Land_WoodDoor_Base {
 			condition = "this animationPhase ""Open_door"" >= 0.5";
 			statement = "this animate [""Open_door"", 0];";
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodWallWithDoor";
+		DZE_refundArray[] = {{{"ItemWoodWallDoor",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	};
 };
 
@@ -186,6 +186,10 @@ class DZE_Land_WoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodWallWithDoorLocked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Land_LargeWoodDoor: DZE_Land_WoodDoor_Base {
@@ -218,6 +222,10 @@ class DZE_Land_LargeWoodDoor: DZE_Land_WoodDoor_Base {
 			condition = "this animationPhase ""Open_door"" >= 0.5";
 			statement = "this animate [""Open_door"", 0]";
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodWallWithDoorLg";
+		DZE_refundArray[] = {{{"ItemWoodWallDoorLg",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	};
 };
 
@@ -276,6 +284,10 @@ class DZE_Land_LargeWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodWallWithDoorLgLocked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Land_GarageWoodDoor: DZE_Land_WoodDoor_Base {
@@ -308,6 +320,10 @@ class DZE_Land_GarageWoodDoor: DZE_Land_WoodDoor_Base {
 			condition = "this animationPhase ""Open_door"" >= 0.5";
 			statement = "this animate [""Open_door"", 0]";
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodWallGarageDoor";
+		DZE_refundArray[] = {{{"ItemWoodWallLg",1},{"PartWoodLumber",2}}};
 	};
 };
 
@@ -366,6 +382,10 @@ class DZE_Land_GarageWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodWallGarageDoorLocked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Land_WoodGate: DZE_Land_WoodDoor_Base {
@@ -417,6 +437,10 @@ class DZE_Land_WoodGate: DZE_Land_WoodDoor_Base {
 			interval = 1;
 			lifeTime = 1;
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodGate";
+		DZE_refundArray[] = {{{"ItemWoodGateFrame",1},{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
 	};
 };
 
@@ -494,6 +518,10 @@ class DZE_Land_WoodGateLocked: DZE_Land_WoodDoorLocked_Base {
 			lifeTime = 1;
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodGateLocked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Land_WoodOpenTopGarageDoor: DZE_Land_WoodDoor_Base {
@@ -544,6 +572,10 @@ class DZE_Land_WoodOpenTopGarageDoor: DZE_Land_WoodDoor_Base {
 			interval = 1;
 			lifeTime = 1;
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodOpenTopGarageDoor";
+		DZE_refundArray[] = {{{"ItemWoodWallLg",1},{"PartWoodLumber",2}}};
 	};
 };
 
@@ -620,6 +652,10 @@ class DZE_Land_WoodOpenTopGarageLocked: DZE_Land_WoodDoorLocked_Base {
 			lifeTime = 1;
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodOpenTopGarageDoorLocked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_CinderWallDoorLocked: DZE_CinderWallDoorLocked_Base {
@@ -677,6 +713,10 @@ class DZE_CinderWallDoorLocked: DZE_CinderWallDoorLocked_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cinder_garage_kit_locked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_CinderWallDoor: DZE_CinderWallDoor_Base {
@@ -708,6 +748,10 @@ class DZE_CinderWallDoor: DZE_CinderWallDoor_Base {
 			condition = "this animationPhase ""Open_door"" >= 0.5";
 			statement = "this animate [""Open_door"", 0]";
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cinder_garage_kit";
+		DZE_refundArray[] = {{{"cinder_garage_frame_kit",1},{"ItemTankTrap",3},{"ItemPole",3}}};
 	};
 };
 
@@ -766,6 +810,10 @@ class DZE_CinderWallDoorSmallLocked: DZE_CinderWallDoorLocked_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cinder_door_kit_locked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_CinderWallDoorSmall: DZE_CinderWallDoor_Base {
@@ -798,6 +846,10 @@ class DZE_CinderWallDoorSmall: DZE_CinderWallDoor_Base {
 			condition = "this animationPhase ""Open_door"" >= 0.5";
 			statement = "this animate [""Open_door"", 0]";
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cinder_door_kit";
+		DZE_refundArray[] = {{{"cinder_door_frame_kit",1},{"ItemTankTrap",1},{"ItemPole",1}}};
 	};
 };
 
@@ -838,6 +890,10 @@ class DZE_CinderGate: DZE_CinderWallDoor_Base {
 			condition = "this animationPhase ""Open_door"" >= 0.5";
 			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cinder_gate_kit";
+		DZE_refundArray[] = {{{"cinder_gate_frame_kit",1},{"equip_metal_sheet",6},{"ItemRSJ",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -903,6 +959,10 @@ class DZE_CinderGateLocked: DZE_CinderWallDoorLocked_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cinder_gate_kit_locked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_CinderGarageOpenTop: DZE_CinderWallDoor_Base {
@@ -941,6 +1001,10 @@ class DZE_CinderGarageOpenTop: DZE_CinderWallDoor_Base {
 			condition = "this animationPhase ""doorl"" >= 0.5";
 			statement = "this animate [""doorl"", 0];this animate [""doorR"", 0];";
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cinder_garage_top_open_kit";
+		DZE_refundArray[] = {{{"cinder_garage_top_open_frame_kit",1},{"ItemTankTrap",3},{"ItemPole",3}}};
 	};
 };
 
@@ -1005,6 +1069,10 @@ class DZE_CinderGarageOpenTopLocked: DZE_CinderWallDoorLocked_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cinder_garage_top_open_kit_locked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_CinderDoorHatch: DZE_CinderWallDoor_Base {
@@ -1043,6 +1111,10 @@ class DZE_CinderDoorHatch: DZE_CinderWallDoor_Base {
 			condition = "this animationPhase ""Open_door"" >= 0.5";
 			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cinder_door_hatch_kit";
+		DZE_refundArray[] = {{{"CinderBlocks",4},{"MortarBucket",1},{"ItemTankTrap",2},{"ItemPole",1}}};
 	};
 };
 
@@ -1107,6 +1179,10 @@ class DZE_CinderDoorHatchLocked: DZE_CinderWallDoorLocked_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "cinder_door_hatch_kit_locked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Door: DZE_CinderWallDoor_Base {
@@ -1169,6 +1245,10 @@ class DZE_Door: DZE_CinderWallDoor_Base {
 			interval = 1;
 			lifeTime = 1;
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "door_kit";
+		DZE_refundArray[] = {{{"door_frame_kit",1},{"ItemTankTrap",1},{"ItemPole",1}}};
 	};
 };
 
@@ -1256,6 +1336,10 @@ class DZE_DoorLocked: DZE_CinderWallDoorLocked_Base {
 			interval = 1;
 			lifeTime = 1;
 		};
+	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "door_locked_kit";
+		DZE_refundArray[] = {};
 	};
 };
 

@@ -13,22 +13,31 @@ class IC_Tent: House {
 	mapsize = 3;
 	model = "\CA\Misc3\A_tent";
 	scope = 2;
+	DZE_buildingSteps = 1;
 	
 	vehicleClass = "DayZ Epoch 1071 Infected Camp Objects";
-	pack = "WeaponHolder_ItemTent";
 	transportMaxMagazines = 50;
 	transportMaxWeapons = 10;
 	transportMaxBackpacks = 5;
+
+	class RemoveObject {
+		DZE_neededTools[] = {};
+		DZE_refundKit = "ItemTent";
+		DZE_refundArray[] = {};
+	};
 };
 
 class IC_DomeTent : IC_Tent {
 	displayname = $STR_VEH_NAME_DOME_TENT;
 	icon = "\Ca\buildings\Icons\i_Astan_CA.paa";
 	model = "\ca\buildings\Tents\astan";
-	pack = "WeaponHolder_ItemDomeTent";
 	vehicleClass = "DayZ Epoch 1071 Infected Camp Objects";
 	
 	transportMaxMagazines = 35;
 	transportMaxWeapons = 15;
 	transportMaxBackpacks = 0;
+
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemDomeTent";
+	};
 };

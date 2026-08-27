@@ -37,6 +37,10 @@ class DZE_Metal_Drawbridge: DZE_CinderWallDoor_Base {
 			statement = "this animate [""Open_inner"", 0];this animate [""Open_outer"", 0];";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "metal_drawbridge_kit";
+		DZE_refundArray[] = {{{"metal_floor_kit",2},{"ItemRSJ",6}}};
+	};
 };
 
 class DZE_Metal_DrawbridgeLocked: DZE_CinderWallDoorLocked_Base {
@@ -102,6 +106,10 @@ class DZE_Metal_DrawbridgeLocked: DZE_CinderWallDoorLocked_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "metal_drawbridge_kit_locked";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_SimpleFootbridge: DZE_Modular_Base {
@@ -112,7 +120,10 @@ class DZE_SimpleFootbridge: DZE_Modular_Base {
 	armor = 200;
 	DZE_preventUnderground = 0;
 	displayName = $STR_EQUIP_NAME_SIMPLE_FOOTBRIDGE;
-	maintainBuilding[] = {{"ItemPlank",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "simple_footbridge_kit";
+		DZE_refundArray[] = {{{"ItemPlank",3}}};
+	};
 };
 
 class DZE_WoodenFootbridge: DZE_Modular_Base {
@@ -123,5 +134,8 @@ class DZE_WoodenFootbridge: DZE_Modular_Base {
 	armor = 200;
 	DZE_preventUnderground = 0;
 	displayName = $STR_EQUIP_NAME_WOODEN_FOOTBRIDGE;
-	maintainBuilding[] = {{"ItemPlank",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "wooden_footbridge_kit";
+		DZE_refundArray[] = {{{"ItemPlank",3},{"PartWoodLumber",2},{"equip_nails",1}}};
+	};
 };

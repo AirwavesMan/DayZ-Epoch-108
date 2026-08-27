@@ -5,13 +5,12 @@
 //	Description:	Validates and persists a new object using the model-center worldspace.
 //	Groups:		Build
 //
-//	Syntax:		[playerNetId, objectType, characterID, worldspace, buildItem, clientKey] call server_buildObject
+//	Syntax:		[playerNetId, objectType, characterID, worldspace, clientKey] call server_buildObject
 //
 //	Parameters:	playerNetId: String - Network ID of the requesting player
 //			objectType: String - Vehicle class to create
 //			characterID: String - Character ID or lock combination
 //			worldspace: Array - Object position, vectors and metadata
-//			buildItem: String - Magazine class consumed to build the object
 //			clientKey: String - Authentication key of the requesting client
 //
 //	Return Value:	Nothing
@@ -26,28 +25,16 @@
 	diag_log format['[Server Debug]: [Build Object]: Function called with argumentes: %1',_this];
 #endif
 
-if (count _this < 6) exitWith {diag_log '[Server Debug]: [Build Object]: server_buildObject error: Wrong parameter format';};
+if (count _this < 5) exitWith {diag_log '[Server Debug]: [Build Object]: server_buildObject error: Wrong parameter format';};
 
 local _player = objectFromNetId(_this select 0);
 local _typeObject = _this select 1;
 local _characterID = _this select 2;
 local _worldspace = _this select 3;
-local _buildItem = _this select 4;
-local _clientKey = _this select 5;
+local _clientKey = _this select 4;
 local _positionASL = _worldspace select 0;
 
 if !([_this,'buildObject',_positionASL,_player,_clientKey] call server_verifySender) exitWith {};
-
-if (typeName _buildItem != 'STRING') exitWith {
-	diag_log format ['[Server Debug]: [Build Object]: Rejected invalid build item parameter: %1',_buildItem];
-};
-
-local _buildItemConfig = configFile >> 'CfgMagazines' >> _buildItem;
-local _buildActionConfig = _buildItemConfig >> 'ItemActions' >> 'Build';
-
-if (!isClass _buildItemConfig || {getText (_buildActionConfig >> 'create') != _typeObject}) exitWith {
-	diag_log format ['[Server Debug]: [Build Object]: Rejected invalid build item %1 for object type %2',_buildItem,_typeObject];
-};
 
 local _playerUID = getPlayerUID _player;
 local _playerName = _player call DZE_fnc_getNamePlayer;	
@@ -87,7 +74,6 @@ if ([_typeObject,'server_buildObject'] call server_verifyObject) then {
 		#endif
 	};
 
-	//	ToDo: Handle owner via friends so we do not have that many public owner IDs
 	call {
 		if (_typeObject == DZE_Territory_Marker) exitwith {
 			_friendsArray = [[_playerUID,_playerName]];

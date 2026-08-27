@@ -40,7 +40,6 @@ if (!isDedicated) then {
 	building_spawnLoot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnLoot.sqf";
 	building_spawnZombies = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnZombies.sqf";
 	player_fired = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre and audial rating
-	player_packTent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packTent.sqf";
 	player_updateGui = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";
 	player_crossbowBolt = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_crossbowBolt.sqf";
 	player_music = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_music.sqf";			//Used to generate ambient music
@@ -163,8 +162,6 @@ if (!isDedicated) then {
 	player_loadCrate = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_loadCrate.sqf";
 	player_lockVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_lockVault.sqf";
 	player_packVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packVault.sqf";
-	player_removeNearby = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_removeNearby.sqf";
-	player_removeObject = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remove.sqf";
 	player_surrender = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_surrender.sqf";
 	player_traderCity = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderCity.sqf";
 	player_unlockDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
@@ -194,7 +191,6 @@ if (!isDedicated) then {
 	
 	if (DZE_Virtual_Garage) then {
 		player_getVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_getVehicle.sqf";
-		player_removePad = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_removePad.sqf";
 		player_storeVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_storeVehicle.sqf";
 		Player_MaintainVG = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_MaintainVG.sqf";
 		vehicleInfo = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\vehicleInfo.sqf";
@@ -728,9 +724,21 @@ if (!isDedicated) then {
 
 	FUNCTION(DZE_fnc_displayHelpers);		// Creates or removes local helper spheres for buildable objects.
 	FUNCTION(DZE_fnc_generateCode);			// Collects or generates a valid code for a lockable build object.
+	FUNCTION(DZE_fnc_getBuildingSteps);		// Returns the number of animation steps required for build or deconstruct.
 	FUNCTION(DZE_fnc_modularBuild);			// Construct a modular base-building object and save it to the database.
 	FUNCTION(DZE_fnc_overlapsRoad);			// Returns whether an object's bounding box overlaps a nearby road segment.
 	FUNCTION(DZE_fnc_queueBuildInput);		// Appends one build input to the active FIFO queue.
+
+	path('build\remove');
+
+	FUNCTION(DZE_fnc_createRemoveObjectOutput);	// Creates configured removal output and safely places backpack objects.
+	FUNCTION(DZE_fnc_getConfiguredRemoveRefund);	// Reads and validates one configured RemoveObject refund.
+	FUNCTION(DZE_fnc_getRemoveObjectRefund);		// Resolves category-specific removal output and preserved storage cargo.
+	FUNCTION(DZE_fnc_removeBrokenTool);		// Removes a tool broken during object removal.
+	FUNCTION(DZE_fnc_removeNearby);			// Finds and removes the nearest object matching the requested classes.
+	FUNCTION(DZE_fnc_removeObject);			// Coordinates removal of an eligible object.
+	FUNCTION(DZE_fnc_requestObjectDeletion);		// Requests and confirms persistent deletion or removes transient wrecks locally.
+	FUNCTION(DZE_fnc_runRemoveObjectProgress);	// Runs object-removal animation stages.
 
 	path('build\modularBuilding');
 

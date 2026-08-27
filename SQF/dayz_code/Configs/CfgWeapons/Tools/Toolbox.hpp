@@ -6,12 +6,18 @@ class ItemToolbox : ItemCore
 	displayName = $STR_EQUIP_NAME_TOOLBOX;
 	descriptionShort = $STR_EQUIP_DESC_TOOLBOX;
 	
-	class ItemActions
-	{
-		class RemoveNet
-		{
-			text= $STR_EQUIP_TOOLBOX_ACTION_1;
-			script=";[DZE_CamoNets,10,'str_epoch_player_8'] call player_removeNearby;";
+	class ItemActions {
+		class RemoveNet {
+			text= $STR_BUILD_REMOVE_CAMONET_ACTION;
+			script=";[DZE_CamoNets,15,'STR_BUILD_REMOVE_CAMONET_NOT_FOUND'] call DZE_fnc_removeNearby;";
+		};
+		class RemoveHelipads {
+			text= $STR_BUILD_REMOVE_HELIPAD_ACTION;
+			script=";[DZE_heliPads,15,'STR_BUILD_REMOVE_HELIPAD_NOT_FOUND'] call DZE_fnc_removeNearby;";
+		};
+		class RemoveTerritoryMarker {
+			text= $STR_BUILD_REMOVE_TERRITORYMARKER_ACTION;
+			script=";[[DZE_Territory_Marker],15,'STR_BUILD_REMOVE_TERRITORYMARKER_NOT_FOUND'] call DZE_fnc_removeNearby;";
 		};
 	};
 };

@@ -8,8 +8,11 @@ class DZE_WoodCrate: DZE_Storage_Base {
 	transportMaxMagazines = 50;
 	transportMaxWeapons = 5;
 	transportMaxBackpacks = 1;
-	removeoutput[] = {{"ItemWoodCrateKit",1}};
 	upgradeBuilding[] = {"DZE_WoodCrate2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",2},{"ItemPlank",2},{"equip_nails",1}}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodCrateKit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_WoodCrate2: DZE_WoodCrate {
@@ -19,8 +22,11 @@ class DZE_WoodCrate2: DZE_WoodCrate {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 10;
 	transportMaxBackpacks = 2;
-	removeoutput[] = {{"ItemWoodCrateKit2",1}};
 	DZE_buildingSteps = 2;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWoodCrateKit2";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_StorageCrate: DZE_Storage_Base {
@@ -34,7 +40,10 @@ class DZE_StorageCrate: DZE_Storage_Base {
 	transportMaxWeapons = 3;	
 	transportMaxMagazines = 60;
 	transportmaxbackpacks = 1;
-	removeoutput[] = {{"storage_crate_kit",1}};	// new
+	class RemoveObject: RemoveObject { // new
+		DZE_refundKit = "storage_crate_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_CamoStorageCrate: DZE_Storage_Base {
@@ -48,5 +57,8 @@ class DZE_CamoStorageCrate: DZE_Storage_Base {
 	transportMaxWeapons = 15;	
 	transportMaxMagazines = 55;
 	transportmaxbackpacks = 6;
-	removeoutput[] = {{"camo_storage_crate_kit",1}};	// new
+	class RemoveObject: RemoveObject { // new
+		DZE_refundKit = "camo_storage_crate_kit";
+		DZE_refundArray[] = {};
+	};
 };

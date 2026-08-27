@@ -1,5 +1,10 @@
 // Developed by [GZA] David for German Zombie Apocalypse Servers (https://zombieapo.eu/)
 // Rewritten by salival (https://github.com/oiad)
+//#define DEBUG_PLAYER_GET_VEHICLE
+
+#ifdef DEBUG_PLAYER_GET_VEHICLE
+	diag_log format ['[Client Debug]: [player_getVehicle]: Function called with arguments: %1',_this];
+#endif
 
 private ["_backPack","_baseCheck","_charID","_dir","_heliPad","_inventory","_isNearBase","_keyID","_keyName","_location","_sign","_vehicle"];
 
@@ -14,7 +19,7 @@ _backPack = [];
 _baseCheck = [player,false] call DZE_fnc_findBases;
 _isNearBase = (_baseCheck select 1) > 0;
 
-_heliPad = nearestObjects [if (_isNearBase) then {_baseCheck select 2} else {player},vg_heliPads,if (_isNearBase) then {DZE_maintainRange} else {Z_VehicleDistance}];
+_heliPad = nearestObjects [if (_isNearBase) then {_baseCheck select 2} else {player},DZE_heliPads,if (_isNearBase) then {DZE_maintainRange} else {Z_VehicleDistance}];
 if (count _heliPad < 1) exitWith {localize "STR_CL_VG_NEED_HELIPAD" call DZE_fnc_rollingMessages;};
 
 _location = [(_heliPad select 0)] call FNC_GetPos;

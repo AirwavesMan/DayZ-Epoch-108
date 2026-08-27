@@ -28,6 +28,11 @@ class DZE_LockboxStorageLocked: DZE_Lockbox_Locked_Base {
 	
 	unlockedClass = "DZE_LockboxStorage";
 	upgradeBuilding[] = {"DZE_LockboxStorage2Locked",{"ItemToolbox","ItemSolder_DZE"},{{"equip_metal_sheet",2},{"ItemScrews",2},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	class RemoveObject: RemoveObject {
+		DZE_neededTools[] = {};
+		DZE_refundKit = "ItemLockbox";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_LockboxStorage2: DZE_LockboxStorage {
@@ -46,6 +51,11 @@ class DZE_LockboxStorage2Locked: DZE_Lockbox_Locked_Base {
 	displayName = "$STR_EPOCH_LOCKBOX_LOCKED+";
 	armor = 1600;
 	unlockedClass = "DZE_LockboxStorage2";
+	class RemoveObject: RemoveObject {
+		DZE_neededTools[] = {};
+		DZE_refundKit = "ItemLockbox2";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_LockboxStorageWinter: DZE_Lockbox_Base {
@@ -62,6 +72,11 @@ class DZE_LockboxStorageWinterLocked: DZE_Lockbox_Locked_Base {
 	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	unlockedClass = "DZE_LockboxStorageWinter";
 	upgradeBuilding[] = {"DZE_LockboxStorageWinter2Locked",{"ItemToolbox","ItemSolder_DZE"},{{"equip_metal_sheet",2},{"ItemScrews",2},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	class RemoveObject: RemoveObject {
+		DZE_neededTools[] = {};
+		DZE_refundKit = "ItemLockboxWinter";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_LockboxStorageWinter2: DZE_LockboxStorageWinter {
@@ -81,12 +96,21 @@ class DZE_LockboxStorageWinter2Locked: DZE_Lockbox_Locked_Base {
 	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	armor = 1600;
 	unlockedClass = "DZE_LockboxStorageWinter2";
+	class RemoveObject: RemoveObject {
+		DZE_neededTools[] = {};
+		DZE_refundKit = "ItemLockboxWinter2";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_LockboxStorageBroken: DZE_Lockbox_Base {
 	scope = 2;
 	displayName = $STR_EPOCH_LOCKBOX_BROKEN;
 	packedClass = "WeaponHolder_ItemLockboxBroken";
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemLockboxBroken";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_LockboxStorage2Broken: DZE_Lockbox_Base {
@@ -97,6 +121,10 @@ class DZE_LockboxStorage2Broken: DZE_Lockbox_Base {
 	transportMaxWeapons = 40;
 	transportMaxBackpacks = 20;
 	packedClass = "WeaponHolder_ItemLockbox2Broken";
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemLockbox2Broken";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_LockboxStorageWinterBroken: DZE_Lockbox_Base {
@@ -104,6 +132,10 @@ class DZE_LockboxStorageWinterBroken: DZE_Lockbox_Base {
 	displayName = $STR_EPOCH_LOCKBOX_BROKEN;
 	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	packedClass = "WeaponHolder_ItemLockboxWinterBroken";
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemLockboxWinterBroken";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_LockboxStorageWinter2Broken: DZE_Lockbox_Base {
@@ -115,4 +147,8 @@ class DZE_LockboxStorageWinter2Broken: DZE_Lockbox_Base {
 	transportMaxWeapons = 40;
 	transportMaxBackpacks = 20;
 	packedClass = "WeaponHolder_ItemLockboxWinter2Broken";
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemLockboxWinter2Broken";
+		DZE_refundArray[] = {};
+	};
 };

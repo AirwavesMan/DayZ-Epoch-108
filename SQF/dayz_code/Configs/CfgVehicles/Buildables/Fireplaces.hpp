@@ -71,9 +71,14 @@ class DZE_FireBarrel: DZE_Fireplace_Base {
 	};		
 	
 	DZE_offset[] = {0,1.5,0};
-	removeoutput[] = {{"ItemFireBarrel_kit",1}};
 	DZE_fireUseFuel = 1;
 	DZE_initialBurnTimer = 700;
+	DZE_isFireProxy = 1;
+	
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemFireBarrel_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Camp_Fire_Small: DZE_Fireplace_Base {
@@ -110,6 +115,10 @@ class DZE_Camp_Fire_Small: DZE_Fireplace_Base {
 	DZE_spawnFireOnBuild = 1;
 	DZE_fireUseFuel = 1;
 	DZE_initialBurnTimer = 300;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "PartWoodPile";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Camp_Fire_Medium: DZE_Camp_Fire_Small {
@@ -124,6 +133,10 @@ class DZE_Camp_Fire_Medium: DZE_Camp_Fire_Small {
 	DZE_spawnFireOnBuild = 1;
 	DZE_fireUseFuel = 1;
 	DZE_initialBurnTimer = 1200;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemLog";
+		DZE_refundArray[] = {};
+	};
 };
 
 //	Can not be placed by players
@@ -131,6 +144,8 @@ class DZE_Camp_Fire_Medium: DZE_Camp_Fire_Small {
 class DZE_flamable: DZE_Fireplace_Base {
 	scope = 2;
 	model = "\z\addons\dayz_communityassets\models\waterHoleProxy";
+
+	class RemoveObject {};
 };
 
 class Land_Fire: DZE_Fireplace_Base {
@@ -161,6 +176,8 @@ class Land_Fire: DZE_Fireplace_Base {
 			statement = "[this,false] call DZE_fnc_inflame";
 		};
 	};
+
+	class RemoveObject {};
 };
 
 //	Fire place permanent burning
@@ -188,6 +205,7 @@ class Land_Fire_barrel_burning: Land_Fire_barrel {
 	displayName = "$STR_BUIDLINGS_FIREPLACE_FIREBARREL_BURNING";
 	
 	class UserActions {};
+	class RemoveObject {};
 	
 	class EventHandlers {
 		init = "(_this select 0) inflame true";
@@ -220,6 +238,8 @@ class DZE_Land_Camp_Fire: DZE_Fireplace_Base {
 			statement = "[this,false] call DZE_fnc_inflame";
 		};
 	};	
+
+	class RemoveObject {};
 	
 };
 
@@ -267,6 +287,8 @@ class Misc_TyreHeap: DZE_Fireplace_Base {
 			statement = "[this,false,true] call DZE_fnc_inflame";
 		};
 	};	
+
+	class RemoveObject {};
 };
 
 class Misc_TyreHeap_burning: Misc_TyreHeap {
@@ -283,4 +305,6 @@ class Stove: DZE_Fireplace_Base {
 	displayName = "$STR_BUIDLINGS_FIREPLACE_STOVE";
 	model = "\z\addons\dayz_buildings\models\stove.p3d";
 	destrType = "DestructNo";
+
+	class RemoveObject {};
 };

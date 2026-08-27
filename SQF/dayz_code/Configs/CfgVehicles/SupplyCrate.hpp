@@ -21,4 +21,5 @@ class Land_ammo_supply_wreck: ruins	{
 	model = "\z\addons\dayz_epoch\models\ammo_supply_wreck.p3d";
 	displayName = $STR_EPOCH_BULK_NAME;
 	vehicleClass = "DayZ Epoch 1071 Event Objects";
+	DZE_buildingSteps = 3;
 };

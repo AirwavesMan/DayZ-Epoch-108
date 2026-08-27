@@ -12,7 +12,10 @@ class DZE_Hedgehog: DZE_DefenseObject_Base {
 	armor = 400;
 	displayName = $STR_BUILT_HEDGEHOG;
 	DZE_buildingSteps = 1;
-	removeoutput[] = {{"ItemTankTrap",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemTankTrap";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_MetalPanel: DZE_DefenseObject_Base {
@@ -25,7 +28,10 @@ class DZE_MetalPanel: DZE_DefenseObject_Base {
 	armor = 4000;
 	displayName = $STR_EPOCH_METALPANEL;
 	DZE_buildingSteps = 6;
-	removeoutput[] = {{"metal_panel_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "metal_panel_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Fort_RazorWire: DZE_DefenseObject_Base {
@@ -37,7 +43,10 @@ class DZE_Fort_RazorWire: DZE_DefenseObject_Base {
 	displayName = $STR_EPOCH_WIRE;
 	destrType = "DestructTent";
 	armor = 500;
-	removeoutput[] = {{"ItemWire",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemWire";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_FortifiedWire: DZE_DefenseObject_Base {
@@ -49,6 +58,10 @@ class DZE_FortifiedWire: DZE_DefenseObject_Base {
 	displayName = $STR_EQUIP_NAME_FORT_WIRE;
 	destrType = "DestructTent";
 	armor = 750;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "fortified_wire_kit";
+		DZE_refundArray[] = {{{"ItemWire",1},{"ItemTankTrap",2}}};
+	};
 };
 
 class DZE_BarbedGate: DZE_DefenseObject_Base {
@@ -58,7 +71,6 @@ class DZE_BarbedGate: DZE_DefenseObject_Base {
 	armor = 3000;
 	displayName = $STR_EQUIP_NAME_BARBED_GATE;
 	destrType = "DestructBuilding";
-	maintainBuilding[] = {{"ItemWire",1}};
 	DZE_buildingSteps = 2;
 	class AnimationSources {
 		class Door01 {
@@ -87,6 +99,10 @@ class DZE_BarbedGate: DZE_DefenseObject_Base {
 			statement = "this animate ['Door01', 1];";
 		};
 	};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "barbed_gate_kit";
+		DZE_refundArray[] = {{{"ItemWire",1},{"ItemTankTrap",2},{"ItemPole",2}}};
+	};
 };
 
 class DZE_ConcreteBarrier: DZE_DefenseObject_Base {
@@ -95,9 +111,12 @@ class DZE_ConcreteBarrier: DZE_DefenseObject_Base {
 	model = "\ca\misc3\CncBlock.p3d";
 	armor = 4000;
 	displayName = $STR_EQUIP_NAME_CNC_BARRIER;
-	maintainBuilding[] = {{"CementBag",1}};
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 1;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "concrete_barrier_kit";
+		DZE_refundArray[] = {{{"CementBag",3},{"ItemStone",2},{"ItemWire",1}}};
+	};
 };
 
 class DZE_ConcreteBarrierStriped: DZE_DefenseObject_Base {
@@ -106,9 +125,12 @@ class DZE_ConcreteBarrierStriped: DZE_DefenseObject_Base {
 	model = "\ca\misc3\CncBlock_stripes.p3d";
 	armor = 4000;
 	displayName = $STR_EQUIP_NAME_CNC_BARRIER_STRIPED;
-	maintainBuilding[] = {{"CementBag",1}};
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 1;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "concrete_barrier_striped_kit";
+		DZE_refundArray[] = {{{"CementBag",3},{"ItemStone",2},{"ItemWire",1}}};
+	};
 };
 
 class DZE_ConcreteWall: DZE_DefenseObject_Base {
@@ -116,9 +138,12 @@ class DZE_ConcreteWall: DZE_DefenseObject_Base {
 	model = "\ca\mp_armory\misc\concrete_wall\concrete_wall.p3d";
 	armor = 10000;
 	displayName = $STR_EQUIP_NAME_CONCRETE_WALL;
-	maintainBuilding[] = {{"CementBag",1}};
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 3;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "concrete_wall_kit";
+		DZE_refundArray[] = {{{"concrete_barrier_kit",5},{"CementBag",2}}};
+	};
 };
 
 class DZE_ConcretePipe: DZE_DefenseObject_Base {
@@ -126,9 +151,12 @@ class DZE_ConcretePipe: DZE_DefenseObject_Base {
 	model = "\ca\structures_e\misc\misc_construction\misc_concpipeline_ep1.p3d";
 	armor = 10000;
 	displayName = $STR_EQUIP_NAME_CONCRETE_PIPE;
-	maintainBuilding[] = {{"CementBag",1}};
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 3;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "concrete_pipe_kit";
+		DZE_refundArray[] = {{{"concrete_barrier_kit",6},{"CementBag",2}}};
+	};
 };
 
 class DZE_DragonTeeth: DZE_DefenseObject_Base {
@@ -137,9 +165,12 @@ class DZE_DragonTeeth: DZE_DefenseObject_Base {
 	model = "\ca\misc3\dragonTeeth\dragonTeeth.p3d";
 	armor = 10000;
 	displayName = $STR_EQUIP_NAME_DRAGONTEETH;
-	maintainBuilding[] = {{"CementBag",1}};
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 3;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "dragonteeth_kit";
+		DZE_refundArray[] = {{{"concrete_wall_kit",1},{"ItemStone",6},{"CementBag",4}}};
+	};
 };
 
 class DZE_DragonTeethBig: DZE_DefenseObject_Base {
@@ -148,9 +179,12 @@ class DZE_DragonTeethBig: DZE_DefenseObject_Base {
 	model = "\ca\misc3\dragonTeeth\dragonTeethBig.p3d";
 	armor = 10000;
 	displayName = $STR_EQUIP_NAME_DRAGONTEETH_BIG;
-	maintainBuilding[] = {{"CementBag",1}};
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 3;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "dragonteeth_big_kit";
+		DZE_refundArray[] = {{{"dragonteeth_kit",1},{"ItemStone",6},{"CementBag",4}}};
+	};
 };
 
 class DZE_Windbreak: DZE_DefenseObject_Base {
@@ -159,5 +193,8 @@ class DZE_Windbreak: DZE_DefenseObject_Base {
 	model = "ca\structures\Misc\Misc_WindBreak\Misc_WindBreak.p3d";
 	armor = 1000;
 	displayName = $STR_EQUIP_NAME_WINDBREAK;
-	maintainBuilding[] = {{"ItemPlank",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "windbreak_kit";
+		DZE_refundArray[] = {{{"equip_wood_pallet",2},{"PartWoodLumber",2},{"equip_nails",1}}};
+	};
 };

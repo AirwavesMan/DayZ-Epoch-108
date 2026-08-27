@@ -13,6 +13,10 @@ class DZE_Stash_Base: DZE_Storage_Base {
 	upgradeBuilding[] = {};	
     DZE_bypassBase = 1;
 	DZE_allowRotation = 0;	
+
+	class RemoveObject: RemoveObject {
+		DZE_neededTools[] = {"ItemToolbox","ItemCrowbar","ItemShovel"};
+	};	
 };
 
 class DZE_StashSmall: DZE_Stash_Base {
@@ -20,6 +24,10 @@ class DZE_StashSmall: DZE_Stash_Base {
 	armor = 5;
 	displayname = $STR_VEH_NAME_STASH;
 	upgradeBuilding[] = {"DZE_StashSmall1",{"ItemShovel"},{{"PartWoodPile",1}}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "StashSmall_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_StashSmall1: DZE_StashSmall {

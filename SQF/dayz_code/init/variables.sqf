@@ -149,8 +149,6 @@ if (!isDedicated) then {
 		s_player_cook = -1;
 		s_player_boil = -1;
 		s_player_thaw = -1;
-		s_player_packtent = -1;
-		s_player_packtentinfected = -1;
 		s_player_fillfuel = -1;
 		s_player_grabflare = -1;
 		s_player_removeflare = -1;
@@ -228,7 +226,6 @@ if (!isDedicated) then {
 		s_player_copyToKey = -1;
 		s_player_claimVehicle = -1;	
 		s_garage_dialog = -1;
-		s_player_deconstruct = -1;
 		s_player_takeBackpack = -1;
 	};
 	call dayz_resetSelfActions;

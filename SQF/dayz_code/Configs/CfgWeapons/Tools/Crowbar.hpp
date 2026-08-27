@@ -6,32 +6,25 @@ class ItemCrowbar : ItemCore
 	displayName = $STR_EQUIP_NAME_CROWBAR;
 	descriptionShort = $STR_EQUIP_DESC_CROWBAR;
 	
-	class ItemActions
-	{
-		class Toolbelt
-		{
+	class ItemActions {
+		class Toolbelt {
 			text = $STR_ACTIONS_RFROMTB;
 			script = "spawn player_addToolbelt;";
-			use[] =
-			{
+			use[] = {
 				"ItemCrowbar"
 			};
-			output[] =
-			{
+			output[] = {
 				"MeleeCrowbar"
 			};
 		};
 		
-		class ToBack
-		{
+		class ToBack {
 			text = $STR_ACTIONS_2BACK;
 			script = "spawn player_addtoBack;";
-			use[] =
-			{
+			use[] = {
 				"ItemCrowbar"
 			};
-			output[] =
-			{
+			output[] = {
 				"MeleeCrowbar"
 			};
 		};

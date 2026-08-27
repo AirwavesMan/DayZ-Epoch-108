@@ -2,16 +2,18 @@
 //
 //	DZE_fnc_displayHelpers
 //
-//	Description:	Creates local colored helper spheres around a selected buildable or removes
-//			the currently displayed helper set.
+//	Description:	Creates local colored helper spheres from configured or generated points around
+//			a selected buildable, or removes the currently displayed helper set.
 //	Groups:		Build
 //
 //	Syntax:		[object] call DZE_fnc_displayHelpers
 //			[object, texture] call DZE_fnc_displayHelpers
+//			[object, texture, fallback] call DZE_fnc_displayHelpers
 //			[] call DZE_fnc_displayHelpers
 //
-//	Parameters:	object: Object - Object whose configured helper or snapping points are displayed
+//	Parameters:	object: Object - Object whose configured or generated helper points are displayed
 //			texture: Array - Optional setObjectTexture argument; defaults to DZE_removeTexture
+//			fallback: Boolean - Optional center helper when no configured or generated points exist
 //
 //	Return Value:	Nothing
 //
@@ -28,6 +30,7 @@
 
 local _object = param(0,objNull);
 local _helperTexture = param(1,DZE_removeTexture);
+local _showFallback = param(2,false);
 
 // Only one helper set may be active. Cleanup also runs when helper display is disabled.
 {
@@ -72,9 +75,20 @@ local _usesHelperVectors = count _points > 0;
 // Objects without dedicated helper vectors reuse their snapping points.
 if (!_usesHelperVectors) then {_points = getArray (configFile >> 'SnapBuilding' >> _objectType >> 'points')};
 
+// Camo nets have no curated points, so derive removal helpers from their collision geometry.
+if (count _points == 0 && {_objectType in DZE_CamoNets}) then {_points = [_object,true] call DZE_fnc_snapPointsForObject};
+
+if (count _points == 0 && {_showFallback}) then {
+	_points = [[0,0,0]];
+
+	#ifdef DEBUG_DZE_FNC_DISPLAY_HELPERS
+		diag_log format ['[Client Debug]: [DZE_fnc_displayHelpers]: Using fallback center helper | Object type: %1',_objectType];
+	#endif
+};
+
 if (count _points == 0) exitWith {
 	#ifdef DEBUG_DZE_FNC_DISPLAY_HELPERS
-		diag_log format ['[Client Debug]: [DZE_fnc_displayHelpers]: Warning: No helper or snapping points configured for object type: %1',_objectType];
+		diag_log format ['[Client Debug]: [DZE_fnc_displayHelpers]: Warning: No helper points available for object type: %1',_objectType];
 	#endif
 };
 
@@ -118,6 +132,7 @@ if (_usesHelperVectors && {!(_objectType in ['DZE_Concrete_Bunker','DZE_Concrete
 };
 
 local _helperObject = objNull;
+local _helperPosition = [];
 local _validPoint = false;
 
 {
@@ -126,12 +141,12 @@ local _validPoint = false;
 	if (_validPoint) then {_validPoint = typeName (_x select 0) == 'SCALAR' && {typeName (_x select 1) == 'SCALAR'} && {typeName (_x select 2) == 'SCALAR'}};
 
 	if (_validPoint) then {
-		_x resize 3;
+		_helperPosition = [_x select 0,_x select 1,_x select 2];
 		_helperObject = _helperClass createVehicleLocal [0,0,0];
 
 		if (!isNull _helperObject) then {
 			_helperObject setObjectTexture _helperTexture;
-			_helperObject attachTo [_object,_x];
+			_helperObject attachTo [_object,_helperPosition];
 			DZE_displayHelperObjects set [count DZE_displayHelperObjects,_helperObject];
 		};
 	} else {

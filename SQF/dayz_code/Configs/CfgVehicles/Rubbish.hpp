@@ -21,6 +21,7 @@ class Rubbish2 : Strategic
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
 	vehicleClass = "DayZ Epoch 1071 Rubbish";
+	DZE_buildingSteps = 3;
 };
 
 class Rubbish2_DZE : Rubbish2
@@ -154,6 +155,7 @@ class Land_Misc_Garb_Heap_EP1 : Strategic
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
 	vehicleClass = "DayZ Epoch 1071 Rubbish";	
+	DZE_buildingSteps = 3;
 };
 class Rubbish12_DZE : Land_Misc_Garb_Heap_EP1
 {

@@ -4,8 +4,11 @@ class DZE_CanvasHut: DZE_Building_Base {
 	scope = 2;
 	DZE_offset[] = {0,2.5,0};
 	displayName = $STR_EPOCH_CANVASSUNSHADE;
-	removeoutput[] = {{"sun_shade_kit",1}};
 	mapSize = 2;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "sun_shade_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_DeerStand: DZE_Building_Base {
@@ -15,10 +18,13 @@ class DZE_DeerStand: DZE_Building_Base {
 	scope = 2;
 	DZE_offset[] = {0,5,0};
 	displayName = $STR_EPOCH_DEERSTAND;
-	removeoutput[] = {{"deer_stand_kit",1}};
 	icon = "\Ca\Structures\Misc\Misc_DeerStand\data\icon\icon_deerstand_ca.paa";
 	mapSize = 2;
 	DZE_preventUnderground = 0;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "deer_stand_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Scaffolding: DZE_Building_Base {
@@ -32,7 +38,10 @@ class DZE_Scaffolding: DZE_Building_Base {
 	animated = 0;
 	accuracy = 0.3;
 	DZE_offset[] = {0,10.5,0};
-	removeoutput[] = {{"ItemScaffoldingKit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "ItemScaffoldingKit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Greenhouse: DZE_Building_Base {
@@ -43,7 +52,10 @@ class DZE_Greenhouse: DZE_Building_Base {
 	displayName = $STR_EPOCH_GREENHOUSE;
 	DZE_buildingSteps = 1;
 	DZE_offset[] = {0,5,0};
-	removeoutput[] = {{"greenhouse_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "greenhouse_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Boggle: DZE_Building_Base {
@@ -55,9 +67,11 @@ class DZE_Boggle: DZE_Building_Base {
 	mapSize = 2;
 	armor = 800;
 	displayName = $STR_EQUIP_NAME_BOGGLE;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
 	DZE_buildingSteps = 1;
-	removeoutput[] = {{"boggle_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "boggle_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_Postbox: DZE_Building_Base {
@@ -68,11 +82,13 @@ class DZE_Postbox: DZE_Building_Base {
 	mapSize = 2;
 	armor = 800;
 	displayName = $STR_EQUIP_NAME_POSTBOX;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
-	removeoutput[] = {{"postbox_kit",1}};
 	transportMaxWeapons = 1;
 	transportMaxMagazines = 5;
 	transportMaxBackpacks = 1;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "postbox_kit";
+		DZE_refundArray[] = {};
+	};
 };
 
 class DZE_WorkBench: DZE_Building_Base {
@@ -85,10 +101,13 @@ class DZE_WorkBench: DZE_Building_Base {
 	mapSize = 2;
 	armor = 400;
 	displayName = $STR_EPOCH_WORKBENCH;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
 	DZE_buildingSteps = 1;
 	DZE_bypassBase = 0;
 	DZE_preventUnderground = 0;
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "workbench_kit";
+		DZE_refundArray[] = {{{"PartWoodPlywood",1},{"PartWoodLumber",2}}};
+	};
 };
 
 class DZE_Satellite_Dish: DZE_Building_Base {
@@ -98,7 +117,9 @@ class DZE_Satellite_Dish: DZE_Building_Base {
 	mapSize = 2;
 	armor = 800;
 	displayName = $STR_EQUIP_NAME_SATELLITE_DISH;
-	maintainBuilding[] = {{"PartGeneric",1}};
 	DZE_buildingSteps = 1;
-	removeoutput[] = {{"satellite_dish_kit",1}};
+	class RemoveObject: RemoveObject {
+		DZE_refundKit = "satellite_dish_kit";
+		DZE_refundArray[] = {};
+	};
 };

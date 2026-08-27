@@ -49,6 +49,7 @@ DZE_VehicleKey_Changer = false; // Enable Vehicle Key Changer. Create or change 
 
 // Virtual Garage
 DZE_Virtual_Garage = false; // Enable the Virtual Garage to store vehicles.
+DZE_heliPads = ['DZE_Helipad_Civil','DZE_Helipad_Rescue','DZE_Helipad_Army','DZE_Helipad_Cross','DZE_Helipad_ParkBorder']; // Array of heli pad classnames used by building removal and the virtual garage.
 
 DZE_isRemovable = [DZE_Territory_Marker]; //Items that can be removed with a crowbar with no ownership or access required. To forbid base take overs remove the base marker from this list and add it to DZE_restrictRemoval. It is not necessary to add wrecks or items that inherit from 'BuiltItems' to this list.
 
@@ -160,7 +161,7 @@ if (isServer) then {
 
 // Client
 if (!isDedicated) then {
-	dayz_antihack = 1; // DayZ Antihack / 1 = enabled // 0 = disabled
+	dayz_antihack = 0; // DayZ Antihack / 1 = enabled // 0 = disabled
 	dayZ_serverName = ""; //Shown to all players in the bottom left of the screen (country code + server number)
 	dayz_enableRules = true; //Enables a nice little news/rules feed on player login (make sure to keep the lists quick).
 	dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
@@ -261,149 +262,11 @@ if (!isDedicated) then {
 
 	// Remove/Deconstruct modular object variables
 	DZE_refundModular = true; // enable/disable refunding of modular objects
-	DZE_allowDeconstruct = true; // enable/disable the Deconstruct player action menu. If DZE_refundModular = false, this setting has no effect.
+	DZE_refundMode = 'kit'; // RemoveObject refund mode: 'kit' returns DZE_refundKit, 'DZE_refundArray' returns one randomly selected material set.
+	DZE_allowDeconstruct = true; // enable/disable the Deconstruct player action menu in DZE_refundArray mode. If DZE_refundModular = false, this setting has no effect.
 	DZE_displayHelpers = true;	// enable/disable display of modular object helpers
 	DZE_displayOnlyIfNearby	= false; // if identical object types are nearby, display green helpers. If no identical types are nearby, then do not display. false = always display green helpers. (This setting does not apply to Red and Blue helpers). If DZE_displayHelpers is disabled, then this setting will be ignored.
 	DZE_RefundDamageLimit = 0.25; // amount of damage an object can withstand before no refunded parts will be given. 0 = disable (will always refund)
-
-	//	Refund single kits, or modular object recipes as per the build configs
-	//	[[Enable, Modular Object, Refund Kit, [[Refund Class 1, Qty], [Refund Class 2, Qty], [Refund Class 3, Qty], [Refund Class 4, Qty]]]]
-	//
-	//	Enable:			bool		If DZE_refundModular = true, then set the Enable column to customize individual modular object refunds to on or off. Default = true.
-	//	Modular Object:		class		CfgVehicles class of the built object. The string must be in quotes.
-	//	Refund Kit:		class		CfgMagazines class of the refunded object when using the "Remove" action. Will refund a singular kit only.
-	//	Refund Class n:		class		When using the "Deconstruct" action, refund multiple parts as per the config recipe.  Repeat for each material type, up to 4 types maximum.
-	//	Qty:			integer		Quantity of each material type, as per the recipe. Or alternatively a range of values using an array, e.g [1,3] will refund a random integer between 1 and 3.
-
-	DZE_modularConfig = [
-
-	//	Enable		Modular Object				Refund Kit				Refund Class 1				Qty	Refund Class 2		Qty	Refund Class 3		Qty	Refund Class 4		Qty
-	//	======		==============				===============================		===========================================	===========================	===========================	===========================
-		//		// Glass //
-		[true,		"DZE_GlassFloor",			"glass_floor_kit",			[["glass_floor_half_kit",		2]]],
-		[true,		"DZE_GlassFloor_Half",			"glass_floor_half_kit",			[["glass_floor_quarter_kit",		2]]],
-		[true,		"DZE_GlassFloor_Quarter",		"glass_floor_quarter_kit",		[["ItemPole",				8],	["PartGlass",		4]]],
-
-		//		// Metal //
-		[true,		"DZE_MetalFloor",			"metal_floor_kit",			[["metal_floor_half_kit",		2]]],
-		[true,		"DZE_MetalFloor_Half",			"metal_floor_half_kit",			[["metal_floor_quarter_kit",		2]]],
-		[true,		"DZE_MetalFloor_Quarter",		"metal_floor_quarter_kit",		[["ItemPole",				4],	["equip_metal_sheet",	4]]],
-		[true,		"DZE_MetalFloor4x",			"metal_floor4x_kit",			[["metal_floor_kit",			4]]],
-		[true,		"DZE_Metal_Drawbridge",			"metal_drawbridge_kit",			[["metal_floor_kit",			2],	["ItemRSJ",		6]]],
-		[true,		"DZE_MetalPillar",			"metal_pillar_kit",			[["ItemPole",				1],	["equip_metal_sheet",	2]]],
-		[true,		"DZE_DoorFrame",				"door_frame_kit",			[["ItemPole",				4],	["ItemTankTrap",	4],	["PartGeneric",		2]]],
-		[true,		"DZE_Door",				"door_kit",				[["door_frame_kit",			1],	["ItemTankTrap",	1],	["ItemPole",		1]]],
-		[true,		"DZE_MetalFence_1_foundation",		"metalfence_foundation_kit",		[["ItemStone",				8],	["MortarBucket",	1],	["ItemRSJ",		1]]],
-		[true,		"DZE_MetalFence_1_frame",		"metalfence_frame_kit",			[["ItemPlank",				4],	["ItemRSJ",		1]]],
-		[true,		"DZE_MetalFence_halfpanel",		"metalfence_halfpanel_kit",		[["ItemMetalSheet",			3],	["ItemScrews",		1]]],
-		[true,		"DZE_MetalFence_thirdpanel",		"metalfence_thirdpanel_kit",		[["ItemMetalSheet",			3],	["ItemScrews",		1]]],
-		[true,		"DZE_MetalFence_1",			"metalfence_1_kit",			[["ItemMetalSheet",			3],	["ItemScrews",		1]]],
-		[true,		"DZE_MetalFence_2",			"metalfence_2_kit",			[["ItemMetalSheet",			4],	["ItemScrews",		1],	["ItemRSJ",		2]]],
-		[true,		"DZE_MetalFence_3",			"metalfence_3_kit",			[["ItemMetalSheet",			4],	["ItemScrews",		1],	["ItemRSJ",		2]]],
-		[true,		"DZE_MetalFence_4",			"metalfence_4_kit",			[["ItemScrews",				1],	["ItemRSJ",		4]]],
-		[true,		"DZE_MetalFence_5",			"metalfence_5_kit",			[["ItemScrews",				1],	["ItemRSJ",		2]]],
-		[true,		"DZE_MetalFence_6",			"metalfence_6_kit",			[["ItemScrews",				1],	["ItemPole",		4],	["equip_metal_sheet",	4]]],
-		[true,		"DZE_MetalFence_7",			"metalfence_7_kit",			[["ItemScrews",				1],	["ItemPole",		6],	["PartGeneric",		2]]],
-		[true,		"DZE_MetalContainer1A",			"metal_container_1a_kit",		[["metal_floor_quarter_kit",		2],	["metal_floor_half_kit",4],	["ItemTankTrap",	2]]],
-		[true,		"DZE_MetalContainer1B",			"metal_container_1b_kit",		[["metal_floor_quarter_kit",		2],	["metal_floor_half_kit",4],	["ItemTankTrap",	2]]],
-		[true,		"DZE_MetalContainer1G",			"metal_container_1g_kit",		[["metal_floor_quarter_kit",		2],	["metal_floor_half_kit",4],	["ItemTankTrap",	2]]],
-		[true,		"DZE_MetalContainer2D",			"metal_container_2d_kit",		[["metal_container_1a_kit",		2]]],
-
-		//		// Cinder //
-		[true,		"DZE_CinderWallHalf",			"half_cinder_wall_kit",			[["CinderBlocks",			3],	["MortarBucket",	1]]],
-		[true,		"DZE_CinderWallHalf_Gap",		"half_cinder_wall_gap_kit",		[["CinderBlocks",			3],	["MortarBucket",	1]]],
-		[true,		"DZE_CinderWall",			"full_cinder_wall_kit",			[["CinderBlocks",			7],	["MortarBucket",	2]]],
-		[true,		"DZE_CinderWallWindow",			"cinderwall_window_kit",		[["CinderBlocks",			5],	["MortarBucket",	1], 	["ItemTankTrap",	1],	["ItemPole",		1]]],
-		[true,		"DZE_CinderWallSmallDoorway",		"cinder_door_frame_kit",		[["CinderBlocks",			4],	["MortarBucket",	1],	["ItemTankTrap",	1]]],
-		[true,		"DZE_CinderWallDoorSmall",		"cinder_door_kit",			[["cinder_door_frame_kit",		1],	["ItemTankTrap",	1],	["ItemPole",		1]]],
-		[true,		"DZE_CinderDoorHatch",			"cinder_door_hatch_kit",		[["CinderBlocks",			4],	["MortarBucket",	1],	["ItemTankTrap",	2],	["ItemPole",		1]]],
-		[true,		"DZE_CinderWallDoorway",			"cinder_garage_frame_kit",		[["CinderBlocks",			3],	["MortarBucket",	1],	["ItemTankTrap",	1]]],
-		[true,		"DZE_CinderWallDoor",			"cinder_garage_kit",			[["cinder_garage_frame_kit",		1],	["ItemTankTrap",	3],	["ItemPole",		3]]],
-		[true,		"DZE_CinderGarageOpenTopFrame",		"cinder_garage_top_open_frame_kit",	[["CinderBlocks",			4],	["MortarBucket",	1]]],
-		[true,		"DZE_CinderGarageOpenTop",		"cinder_garage_top_open_kit",		[["cinder_garage_top_open_frame_kit",	1],	["ItemTankTrap",	3],	["ItemPole",		3]]],
-		[true,		"DZE_CinderGateFrame",			"cinder_gate_frame_kit",		[["CinderBlocks",			8],	["MortarBucket",	4]]],
-		[true,		"DZE_CinderGate",			"cinder_gate_kit",			[["cinder_gate_frame_kit",		1],	["equip_metal_sheet",	6],	["ItemRSJ",		2],	["ItemScrews",		2]]],
-		[true,		"DZE_Concrete_Bunker",			"cinder_bunker_kit",			[["full_cinder_wall_kit",		3],	["ItemConcreteBlock",	5],	["equip_metal_sheet",	3],	["ItemScrews",		1]]],
-
-		//		// Wood //
-		[true,		"DZE_WoodFloor",				"ItemWoodFloor",			[["ItemWoodFloorHalf",			2]]],
-		[true,		"DZE_WoodFloor4x",			"ItemWoodFloor4x",			[["ItemWoodFloor",			4]]],
-		[true,		"DZE_WoodFloorHalf",			"ItemWoodFloorHalf",			[["ItemWoodFloorQuarter",		2]]],
-		[true,		"DZE_WoodFloorQuarter",			"ItemWoodFloorQuarter",			[["PartWoodPlywood",			3],	["PartWoodLumber",	3]]],
-		[true,		"DZE_WoodSmallWall",			"ItemWoodWall",				[["ItemWoodWallThird",			3]]],
-		[true,		"DZE_WoodTriangleWall",			"ItemTriangleWoodWall",			[["ItemWoodFloorHalf",			1],	["ItemWoodFloorQuarter",1]]],
-		[true,		"DZE_WoodSmallWallThird",		"ItemWoodWallThird",			[["PartWoodPlywood",			3],	["PartWoodLumber",	3]]],
-		[true,		"DZE_WoodSmallWallWin",			"ItemWoodWallWindow",			[["ItemWoodWall",			1],	["PartGlass",		1]]],
-		[true,		"DZE_WoodSmallWallDoor",			"ItemWoodWallDoor",			[["ItemWoodWallThird",			3]]],
-		[true,		'DZE_Land_WoodDoor',			'ItemWoodWallWithDoor',			[['ItemWoodWallDoor',			1],	['PartWoodPlywood',	1],	['PartWoodLumber',	1]]],
-		[true,		'DZE_Land_GarageWoodDoor',		'ItemWoodWallGarageDoor',		[['ItemWoodWallLg',			1],	['PartWoodLumber',	2]]],
-		[true,		'DZE_Land_WoodOpenTopGarageDoor',	'ItemWoodOpenTopGarageDoor',		[['ItemWoodWallLg',			1],	['PartWoodLumber',	2]]],
-		[true,		"DZE_WoodLargeWall",			"ItemWoodWallLg",			[["ItemWoodWall",			1],	["PartWoodPlywood",	1],	["PartWoodLumber",	1]]],
-		[true,		"DZE_WoodLargeWallWin",			"ItemWoodWallWindowLg",			[["ItemWoodWallLg",			1],	["PartGlass",		1]]],
-		[true,		"DZE_WoodLargeWallDoor",			"ItemWoodWallDoorLg",			[["ItemWoodWall",			1],	["PartWoodPlywood",	1],	["PartWoodLumber",	1]]],
-		[true,		'DZE_Land_LargeWoodDoor',		'ItemWoodWallWithDoorLg',		[['ItemWoodWallDoorLg',			1],	['PartWoodPlywood',	1],	['PartWoodLumber',	1]]],
-		[true,		"DZE_WoodGateFrame",			"ItemWoodGateFrame",			[["ItemWoodWallThird",			6]]],
-		[true,		'DZE_Land_WoodGate',			'ItemWoodGate',				[['ItemWoodGateFrame',			1],	['PartWoodPlywood',	8],	['PartWoodLumber',	2],	['equip_nails',		1]]],
-		[true,		"DZE_WoodFloorStairs",			"ItemWoodFloorStairs",			[["ItemWoodFloor",			1],	["ItemWoodStairs",	1]]],
-		[true,		"DZE_WoodTriangleFloor",			"ItemTriangleWoodFloor",		[["ItemWoodFloorHalf",			1],	["ItemWoodFloorQuarter",1]]],
-		[true,		"DZE_WoodStairsSans",			"ItemWoodStairs",			[["PartWoodLumber",			8],	["equip_nails",		2]]],
-		[true,		"DZE_WoodStairs",			"ItemWoodStairsSupport",		[["ItemWoodStairs",			1],	["PartWoodLumber",	2]]],
-		[true,		"DZE_WoodStairsRails",			"ItemWoodStairsRails",			[["ItemWoodStairsSupport",		1],	["PartWoodLumber",	2]]],
-		[true,		"DZE_WoodLadder",			"ItemWoodLadder",			[["PartWoodLumber",			8],	["equip_nails",		2]]],
-		[true,		"DZE_WoodHandrail",			"ItemWoodHandRail",			[["PartWoodLumber",			3],	["equip_nails",		1]]],
-		[true,		"DZE_WoodPillar",			"ItemWoodPillar",			[["PartWoodLumber",			4],	["equip_nails",		1]]],
-		[true,		"DZE_WoodRamp",				"wood_ramp_kit",			[["ItemDocumentRamp",			1],	["PartWoodLumber",	8]]],
-		[true, 		"DZE_WoodenFence_1_foundation",		"woodfence_foundation_kit",		[["ItemStone",				8],	["MortarBucket",	1],	["ItemPlank",		1]]],
-		[true,		"DZE_WoodenFence_1_frame",		"woodfence_frame_kit",			[["woodfence_foundation_kit",		1],	["ItemPlank",		4],	["equip_nails",		1]]],
-		[true,		"DZE_WoodenFence_quaterpanel",		"woodfence_quaterpanel_kit",		[["woodfence_frame_kit",		1],	["ItemPlank",		4],	["equip_nails",		1]]],
-		[true,		"DZE_WoodenFence_halfpanel",		"woodfence_halfpanel_kit",		[["woodfence_quaterpanel_kit",		1],	["ItemPlank",		4],	["equip_nails",		1]]],
-		[true,		"DZE_WoodenFence_thirdpanel",		"woodfence_thirdpanel_kit",		[["woodfence_halfpanel_kit",		1],	["ItemPlank",		4],	["equip_nails",		1]]],
-		[true, 		"DZE_WoodenFence_1",			"woodfence_1_kit",			[["woodfence_thirdpanel_kit",		1],	["ItemPlank",		4],	["equip_nails",		1]]],
-		[true,		"DZE_WoodenFence_2",			"woodfence_2_kit",			[["woodfence_1_kit",			1],	["ItemPlank",		8],	["equip_nails",		2]]],
-		[true,		"DZE_WoodenFence_3",			"woodfence_3_kit",			[["woodfence_2_kit",			1],	["ItemPlank",		8],	["equip_nails",		2]]],
-		[true,		"DZE_WoodenFence_4",			"woodfence_4_kit",			[["woodfence_3_kit",			1],	["ItemPlank",		8],	["equip_nails",		2]]],
-		[true,		"DZE_WoodenFence_5",			"woodfence_5_kit",			[["woodfence_4_kit",			1],	["ItemLog",		5],	["equip_nails",		2]]],
-		[true,		"DZE_WoodenFence_6",			"woodfence_6_kit",			[["woodfence_5_kit",			1],	["PartWoodPlywood",	4],	["ItemPlank",		2],	["equip_nails",		2]]],
-		[true,		"DZE_WoodenFence_7",			"woodfence_7_kit",			[["woodfence_6_kit",			1],	["ItemWoodLadder",	1],	["equip_nails",		1]]],
-		[true,		"DZE_WoodenGate_foundation",		"woodfence_gate_foundation_kit",	[["ItemLog",				6]]],
-		[true,		"DZE_WoodenGate_1",			"woodfence_gate_1_kit",			[["woodfence_gate_foundation_kit",	1],	["ItemPlank",		8],	["equip_nails",		1],	["ItemComboLock",	1]]],
-		[true,		"DZE_WoodenGate_2",			"woodfence_gate_2_kit",			[["woodfence_gate_1_kit",		1],	["ItemPlank",		10],	["equip_nails",		1]]],
-		[true,		"DZE_WoodenGate_3",			"woodfence_gate_3_kit",			[["woodfence_gate_2_kit",		1],	["ItemPlank",		10],	["equip_nails",		1]]],
-		[true,		"DZE_WoodenGate_4",			"woodfence_gate_4_kit",			[["woodfence_gate_3_kit",		1],	["ItemPlank",		10],	["equip_nails",		1]]],
-		[true,		'DZE_WorkBench',				'workbench_kit',			[['PartWoodPlywood',			1],	['PartWoodLumber',	2]]],
-		[true,		"DZE_SimpleFootbridge",			"simple_footbridge_kit",		[["ItemPlank",				3]]],
-		[true,		"DZE_WoodenFootbridge",			"wooden_footbridge_kit",		[["ItemPlank",				3],	["PartWoodLumber",	2],	["equip_nails",		1]]],
-		[true,		"DZE_Windbreak",				"windbreak_kit",			[["equip_wood_pallet",			2],	["PartWoodLumber",	2],	["equip_nails",		1]]],
-
-		//		// Fortifications //
-		[true,		"DZE_Land_HBarrier1",			"ItemSandbagLarge",			[["ItemSandbag",			3],	["ItemWire",		1],	["ItemTankTrap",	1]]],
-		[true,		"DZE_Land_HBarrier3",			"ItemSandbagExLarge",			[["ItemSandbagLarge",			3]]],
-		[true,		"DZE_Land_HBarrier5",			"ItemSandbagExLarge5x",			[["ItemSandbagExLarge",			1],	["ItemSandbagLarge",	2]]],
-		[true,		"DZE_Land_HBarrier5Curved",		"ItemSandbagExLarge5xCurved",		[["ItemSandbagExLarge",			1],	["ItemSandbagLarge",	2]]],
-		[true,		"DZE_HeavyBagFence",			"ItemSandbagHeavy_kit",			[["ItemSandbag",			2],	["PartWoodPile",	1]]],
-		[true,		"DZE_HeavyBagFenceCorner",		"ItemSandBagHeavyCorner_kit",		[["ItemSandbagHeavy_kit",		2]]],
-		[true,		"DZE_HeavyBagFenceRound",		"ItemSandbagHeavyRound_kit",		[["ItemSandbagHeavy_kit",		3]]],
-		[true,		"DZE_SandNest",				"sandbag_nest_kit",			[["ItemSandbag",			4],	["PartWoodPlywood",	2],	["PartWoodLumber",	4]]],
-		[true,		"DZE_SandNestLarge",			"sandbag_nest_large_kit",		[["ItemSandBagHeavyCorner_kit",		4],	["sandbag_nest_kit",	4]]],
-		[true,		"DZE_Land_WarfareBarrier5x",		"ItemWarfareBarrier5x_kit",		[["ItemSandbagLarge",			5]]],
-		[true,		"DZE_Land_WarfareBarrier10x",		"ItemWarfareBarrier10x_kit",		[["ItemWarfareBarrier5x_kit",		2]]],
-		[true,		"DZE_Land_WarfareBarrier10xTall",	"ItemWarfareBarrier10xTall_kit",	[["ItemWarfareBarrier10x_kit",		3]]],
-		[true,		"DZE_FortifiedWire",			"fortified_wire_kit",			[["ItemWire",				1],	["ItemTankTrap",	2]]],
-		[true,		"DZE_BarbedGate",			"barbed_gate_kit",			[["ItemWire",				1],	["ItemTankTrap",	2],	["ItemPole",		2]]],
-		[true,		"DZE_ConcreteBarrier",			"concrete_barrier_kit",			[["CementBag",				3],	["ItemStone",		2],	["ItemWire",		1]]],
-		[true,		"DZE_ConcreteBarrierStriped",		"concrete_barrier_striped_kit",		[["CementBag",				3],	["ItemStone",		2],	["ItemWire",		1]]],
-		[true,		"DZE_ConcreteWall",			"concrete_wall_kit",			[["concrete_barrier_kit",		5],	["CementBag",		2]]],
-		[true,		"DZE_ConcretePipe",			"concrete_pipe_kit",			[["concrete_barrier_kit",		6],	["CementBag",		2]]],
-		[true,		"DZE_DragonTeeth",			"dragonteeth_kit",			[["concrete_wall_kit",			1],	["ItemStone",		6],	["CementBag",		4]]],
-		[true,		"DZE_DragonTeethBig",			"dragonteeth_big_kit",			[["dragonteeth_kit",			1],	["ItemStone",		6],	["CementBag",		4]]]
-	];
-	
-	DZE_modularExclude = [];
-	{
-		if !(_x select 0) then {
-			DZE_modularExclude = DZE_modularExclude + [_x select 1];
-		};
-	} count DZE_modularConfig;
 
 	// Door Management
 	DZE_doorManagementMaxFriends = 10; //Max friends allowed on a door. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.
@@ -503,7 +366,6 @@ if (!isDedicated) then {
 	if (DZE_Virtual_Garage) then {
 		vg_list = [DZE_Territory_Marker]; // List of objects/traders that are allowed to interact with virtual garage. i.e: [DZE_Territory_Marker,'Worker2'];
 		vg_blackListed = []; // Array of vehicle config classes as well as vehicle classnames that are blacklisted from being stored, i.e ["All","Land","Air","Ship","StaticWeapon","AH1Z","MTVR"]
-		vg_heliPads = ["DZE_Helipad_Civil","DZE_Helipad_Rescue","DZE_Helipad_Army","DZE_Helipad_Cross","DZE_Helipad_ParkBorder"]; // Array of heli pad classnames
 		vg_store_keyless_vehicles = false;	// Allow storing of keyless vehicle (map or mission spawned)
 		vg_removeKey = true; // Remove the key from the players inventory after storing vehicle?
 		vg_requireKey = true; // Require the player to have the key when storing a locked vehicle.

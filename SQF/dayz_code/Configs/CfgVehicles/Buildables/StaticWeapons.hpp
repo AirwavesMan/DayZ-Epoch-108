@@ -16,7 +16,10 @@ class DZE_M240Nest : USMC_WarfareBMGNest_M240 {
 	DZE_buildingSteps = 10;
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	GhostPreview = "DZE_M240Nest";
-	removeoutput[] = {{"m240_nest_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "m240_nest_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class M2StaticMG;
 class DZE_M2_MG_Static : M2StaticMG {
@@ -30,7 +33,10 @@ class DZE_M2_MG_Static : M2StaticMG {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_M2_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"M2_MG_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "M2_MG_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class M2HD_mini_TriPod;
 class DZE_M2_TriPod_MG_Static : M2HD_mini_TriPod {
@@ -44,7 +50,10 @@ class DZE_M2_TriPod_MG_Static : M2HD_mini_TriPod {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_M2_TriPod_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"M2_TriPod_MG_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "M2_TriPod_MG_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class DSHKM_Ins;
 class DZE_DSHKM_MG_Static : DSHKM_Ins {
@@ -58,7 +67,10 @@ class DZE_DSHKM_MG_Static : DSHKM_Ins {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_DSHKM_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"DSHKM_MG_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "DSHKM_MG_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class DSHkM_Mini_TriPod;
 class DZE_DSHKM_TriPod_MG_Static : DSHkM_Mini_TriPod {
@@ -72,7 +84,10 @@ class DZE_DSHKM_TriPod_MG_Static : DSHkM_Mini_TriPod {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_DSHKM_TriPod_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"DSHKM_TriPod_MG_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "DSHKM_TriPod_MG_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class KORD;
 class DZE_KORD_Tripod_MG_Static : KORD {
@@ -86,7 +101,10 @@ class DZE_KORD_Tripod_MG_Static : KORD {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_KORD_Tripod_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"KORD_TriPod_MG_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "KORD_TriPod_MG_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class KORD_high;
 class DZE_KORD_MG_Static : KORD_high {
@@ -100,7 +118,10 @@ class DZE_KORD_MG_Static : KORD_high {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_KORD_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"KORD_MG_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "KORD_MG_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class BAF_L2A1_ACOG_base;
 class BAF_L2A1_Tripod_D : BAF_L2A1_ACOG_base {
@@ -120,7 +141,10 @@ class DZE_L2A1_MG_Static : BAF_L2A1_Tripod_D {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_L2A1_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"L2A1_MG_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "L2A1_MG_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class BAF_L2A1_Minitripod_D : BAF_L2A1_ACOG_base {
 	class assembleInfo;
@@ -139,7 +163,10 @@ class DZE_L2A1_Tripod_MG_Static : BAF_L2A1_Minitripod_D {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_L2A1_Tripod_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"L2A1_Tripod_MG_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "L2A1_Tripod_MG_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class GMG_TriPod;
 class BAF_GMG_Tripod_D : GMG_TriPod {
@@ -159,7 +186,10 @@ class DZE_GMG_Tripod_MG_Static : BAF_GMG_Tripod_D {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_GMG_Tripod_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"GMG_Tripod_GrenadeLauncher_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "GMG_Tripod_GrenadeLauncher_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class AGS_Ins;
 class DZE_AGS30_GrenadeLauncher_Static : AGS_Ins {
@@ -173,7 +203,10 @@ class DZE_AGS30_GrenadeLauncher_Static : AGS_Ins {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_AGS30_GrenadeLauncher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"AGS30_GrenadeLauncher_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "AGS30_GrenadeLauncher_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class MK19_TriPod;
 class DZE_MK19_TriPod_GrenadeLauncher_Static : MK19_TriPod {
@@ -187,7 +220,10 @@ class DZE_MK19_TriPod_GrenadeLauncher_Static : MK19_TriPod {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_MK19_TriPod_GrenadeLauncher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"MK19_TriPod_GrenadeLauncher_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "MK19_TriPod_GrenadeLauncher_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class BAF_GPMG_Minitripod_D : BAF_L2A1_ACOG_base {
 	class assembleInfo;
@@ -206,7 +242,10 @@ class DZE_GPMG_TriPod_GrenadeLauncher_Static : BAF_GPMG_Minitripod_D {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_GPMG_TriPod_GrenadeLauncher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"GPMG_TriPod_MG_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "GPMG_TriPod_MG_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class M119;
 class DZE_M119_Artillery_Static : M119 {
@@ -220,7 +259,10 @@ class DZE_M119_Artillery_Static : M119 {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_M119_Artillery_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"M119_Artillery_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "M119_Artillery_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class D30_Ins;
 class DZE_D30_Artillery_Static : D30_Ins {
@@ -234,7 +276,10 @@ class DZE_D30_Artillery_Static : D30_Ins {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_D30_Artillery_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"D30_Artillery_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "D30_Artillery_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class SearchLight_INS;
 class DZE_SearchLight_Static : SearchLight_INS {
@@ -248,7 +293,10 @@ class DZE_SearchLight_Static : SearchLight_INS {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_SearchLight_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"SearchLight_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "SearchLight_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class M252;
 class DZE_M252_Mortar_Static : M252 {
@@ -262,7 +310,10 @@ class DZE_M252_Mortar_Static : M252 {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_M252_Mortar_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"M252_Mortar_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "M252_Mortar_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class 2b14_82mm;
 class DZE_2b14_82mm_Mortar_Static : 2b14_82mm {
@@ -276,7 +327,10 @@ class DZE_2b14_82mm_Mortar_Static : 2b14_82mm {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_2b14_82mm_Mortar_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"2b14_82mm_Mortar_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "2b14_82mm_Mortar_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class Metis;
 class DZE_Metis_Launcher_Static : Metis {
@@ -290,7 +344,10 @@ class DZE_Metis_Launcher_Static : Metis {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_Metis_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"Metis_Launcher_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "Metis_Launcher_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class SPG9_Gue;
 class DZE_SPG9_Launcher_Static : SPG9_Gue {
@@ -304,7 +361,10 @@ class DZE_SPG9_Launcher_Static : SPG9_Gue {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_SPG9_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"SPG9_Launcher_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "SPG9_Launcher_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class Stinger_Pod;
 class DZE_Stinger_Tripod_Launcher_Static : Stinger_Pod {
@@ -318,7 +378,10 @@ class DZE_Stinger_Tripod_Launcher_Static : Stinger_Pod {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_Stinger_Tripod_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"Stinger_Tripod_Launcher_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "Stinger_Tripod_Launcher_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class TOW_TriPod;
 class DZE_TOW_Tripod_Launcher_Static : TOW_TriPod {
@@ -332,7 +395,10 @@ class DZE_TOW_Tripod_Launcher_Static : TOW_TriPod {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_TOW_Tripod_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"TOW_Tripod_Launcher_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "TOW_Tripod_Launcher_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class Stinger_Pod_base;
 class Rbs70_ACR : Stinger_Pod_base {
@@ -352,7 +418,10 @@ class DZE_Rbs70_Launcher_Static : Rbs70_ACR {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_Rbs70_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"Rbs70_Launcher_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "Rbs70_Launcher_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class Igla_AA_pod_East;
 class DZE_Igla_AntiAir_Launcher_Static : Igla_AA_pod_East {
@@ -366,7 +435,10 @@ class DZE_Igla_AntiAir_Launcher_Static : Igla_AA_pod_East {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_Igla_AntiAir_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"Igla_AntiAir_Launcher_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "Igla_AntiAir_Launcher_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
 class ZU23_Ins;
 class DZE_ZU23_AntiAir_Static : ZU23_Ins {
@@ -380,5 +452,8 @@ class DZE_ZU23_AntiAir_Static : ZU23_Ins {
 	DZE_saveToDatabase = 1;
 	GhostPreview = "DZE_ZU23_AntiAir_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
-	removeoutput[] = {{"ZU23_AntiAir_Static_kit",1}};
+	class RemoveObject {
+		DZE_refundKit = "ZU23_AntiAir_Static_kit";
+		DZE_refundArray[] = {};
+	};
 };
