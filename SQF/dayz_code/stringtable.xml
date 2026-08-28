@@ -37718,6 +37718,14 @@
 			<French>La limite de %1 portes verrouillées est atteinte dans cette base.</French>
 			<Czech>V této základně byl dosažen limit %1 zamčených dveří.</Czech>
 		</Key>
+		<Key ID="STR_BUILD_VALIDATION_LOCKED_STORAGE_LIMIT">
+			<English>The limit of %1 locked containers has been reached in this base.</English>
+			<German>Das Limit von %1 verschlossenen Behältern wurde in dieser Basis erreicht.</German>
+			<Russian>На этой базе достигнут лимит в %1 запертых контейнеров.</Russian>
+			<Dutch>De limiet van %1 vergrendelde opslagobjecten is in deze basis bereikt.</Dutch>
+			<French>La limite de %1 conteneurs verrouillés est atteinte dans cette base.</French>
+			<Czech>V této základně byl dosažen limit %1 zamčených kontejnerů.</Czech>
+		</Key>
 		<Key ID="STR_BUILD_VALIDATION_HEIGHT_LIMIT">
 			<English>Building is restricted above %1 meter(s).</English>
 			<German>Das Bauen ist auf eine Höhe von %1 Metern begrenzt.</German>

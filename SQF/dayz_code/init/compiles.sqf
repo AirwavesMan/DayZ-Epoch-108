@@ -766,6 +766,7 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_buildValidationCancelled);	// Rejects a build cancelled by the player.
 	FUNCTION(DZE_fnc_buildValidationClassLimit);	// Enforces the configured per-class limit inside a base.
 	FUNCTION(DZE_fnc_buildValidationLockedDoorLimit); // Enforces the configured locked-door limit inside a base.
+	FUNCTION(DZE_fnc_buildValidationLockedStorageLimit); // Enforces the configured locked-storage limit inside a base.
 	FUNCTION(DZE_fnc_buildValidationExistingPlot);	// Rejects a new plot overlapping an existing plot.
 	FUNCTION(DZE_fnc_buildValidationHeight);		// Enforces the configured build-height limit.
 	FUNCTION(DZE_fnc_buildValidationMap);		// Enforces the configured map extents.

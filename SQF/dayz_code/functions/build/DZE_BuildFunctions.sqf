@@ -96,6 +96,7 @@ if (_isAdmin) then {
 	addArray(_buildStage1,DZE_fnc_buildValidationWater);
 	addArray(_buildStage1,DZE_fnc_buildValidationClassLimit);
 	addArray(_buildStage1,DZE_fnc_buildValidationLockedDoorLimit);
+	addArray(_buildStage1,DZE_fnc_buildValidationLockedStorageLimit);
 	addArray(_buildStage1,DZE_fnc_buildValidationObjectLimit);
 	addArray(_buildStage1,DZE_fnc_buildValidationRestrictedZone);
 	addArray(_buildStage1,DZE_fnc_buildValidationBlacklisted);
@@ -113,6 +114,7 @@ if (_isAdmin) then {
 	addArray(_buildStage3,DZE_fnc_buildValidationWater);
 	addArray(_buildStage3,DZE_fnc_buildValidationClassLimit);
 	addArray(_buildStage3,DZE_fnc_buildValidationLockedDoorLimit);
+	addArray(_buildStage3,DZE_fnc_buildValidationLockedStorageLimit);
 	addArray(_buildStage3,DZE_fnc_buildValidationObjectLimit);
 	addArray(_buildStage3,DZE_fnc_buildValidationRestrictedZone);
 	addArray(_buildStage3,DZE_fnc_buildValidationBlacklisted);
