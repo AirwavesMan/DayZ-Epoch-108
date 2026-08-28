@@ -89,7 +89,7 @@ if (count _upgrade > 0) then {
 
 	local _neededTools = _upgrade select 1;
 
-	if (['',_neededTools,'none'] call dze_requiredItemsCheck) then {
+	if (['',_neededTools,'none'] call DZE_fnc_requiredItemsCheck) then {
 		local _lockable = getNumber (configFile >> 'CfgVehicles' >> _newclassname >> 'lockable');
 		local _requirements = _upgrade select 2;
 		local _missingQty = 0;

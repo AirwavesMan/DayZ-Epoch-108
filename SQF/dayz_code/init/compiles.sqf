@@ -1,4 +1,3 @@
-DZE_fnc_findBuildableObjects = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\base\DZE_fnc_findBuildableObjects.sqf';
 
 if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\init\server_functions.sqf";
@@ -139,7 +138,6 @@ if (!isDedicated) then {
 	dze_deathMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_deathMessage.sqf";
 	dze_filterCheats = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_filterCheats.sqf";
 	dze_isnearest_player = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_isNearestPlayer.sqf";
-	dze_requiredItemsCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_requiredItemsCheck.sqf";
 	dze_surrender_off = {player setVariable ["DZE_Surrendered",false,true]; DZE_Surrender = false;};
 	epoch_generateKey = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\epoch_generateKey.sqf";
 	epoch_tempKeys = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\epoch_tempKeys.sqf";
@@ -730,6 +728,7 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_modularBuild);			// Construct a modular base-building object and save it to the database.
 	FUNCTION(DZE_fnc_overlapsRoad);			// Returns whether an object's bounding box overlaps a nearby road segment.
 	FUNCTION(DZE_fnc_queueBuildInput);		// Appends one build input to the active FIFO queue.
+	FUNCTION(DZE_fnc_requiredItemsCheck);		// Checks a required inventory item and tool classes.
 
 	path('build\remove');
 
@@ -1138,6 +1137,9 @@ fnc_sanitizeInput = {
 	
 	_input
 };
+
+DZE_fnc_findBuildableObjects = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\base\DZE_fnc_findBuildableObjects.sqf';
+
 
 //	Enable this if your server got nuked on Chernarus or Chernarus Winter.
 /*

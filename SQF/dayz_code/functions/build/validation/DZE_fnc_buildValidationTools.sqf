@@ -28,6 +28,6 @@ local _buildItem = _this select BUILD_VALIDATION_ITEM;
 local _requiredItems = _this select BUILD_VALIDATION_REQUIRED_ITEMS;
 local _className = _this select BUILD_VALIDATION_CLASS_NAME;
 
-BUILD_STAGE = [BUILD_CANCELLED,BUILD_STAGE] select ([_buildItem,_requiredItems,_className] call dze_requiredItemsCheck);
+BUILD_STAGE = [BUILD_CANCELLED,BUILD_STAGE] select ([_buildItem,_requiredItems,_className] call DZE_fnc_requiredItemsCheck);
 
 ''

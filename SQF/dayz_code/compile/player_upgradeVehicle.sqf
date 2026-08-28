@@ -34,7 +34,7 @@ if (count (crew _vehicle) == 0) then {
 			_newclassname = _upgrade select 0;
 			_requirementsTools = _upgrade select 1;
 
-			if (["",_requirementsTools,"none"] call dze_requiredItemsCheck) then {
+			if (['',_requirementsTools,'none'] call DZE_fnc_requiredItemsCheck) then {
 				_requirementsWeapon = _upgrade select 2;
 				_requirementsMagazine = _upgrade select 3;
 

@@ -457,7 +457,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 		local _isRemovalCandidate = _isTentRemoval || {_isPublicRemoval} || {_requiresRemovalAccess};
 		local _neededRemovalTools = getArray (_removeObjectConfig >> 'DZE_neededTools');
 
-		if (_isRemovalCandidate && {['',_neededRemovalTools,'none',true] call dze_requiredItemsCheck}) then {
+		if (_isRemovalCandidate && {['',_neededRemovalTools,'none',true] call DZE_fnc_requiredItemsCheck}) then {
 			// Tents, wrecks and explicitly removable objects do not require base access.
 			_player_deleteBuild = _isTentRemoval || {_isPublicRemoval};
 

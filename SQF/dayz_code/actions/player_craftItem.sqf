@@ -87,7 +87,7 @@ if (_canDo) then {
 
 	while {_craft_doLoop} do {
 		_temp_removed_array = [];
-		if ([_item,_selectedRecipeTools,"none"] call dze_requiredItemsCheck) then {			
+		if ([_item,_selectedRecipeTools,'none'] call DZE_fnc_requiredItemsCheck) then {
 			// Dry run to see if all parts are available.
 			_proceed = true;
 			if (count _selectedRecipeInput > 0) then {
@@ -289,7 +289,7 @@ if (_canDo) then {
 				_craft_doLoop = false;
 			};
 		} else {
-			//Missing text shown in dze_requiredItemsCheck
+			// Missing text shown in DZE_fnc_requiredItemsCheck.
 			_craft_doLoop = false;
 		};
 	};

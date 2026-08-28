@@ -73,7 +73,7 @@ call {
 	};
 
 	local _neededTools = getArray (_vehicleConfig >> 'RemoveObject' >> 'DZE_neededTools');
-	if !(['',_neededTools,'none'] call dze_requiredItemsCheck) exitWith {};
+	if !(['',_neededTools,'none'] call DZE_fnc_requiredItemsCheck) exitWith {};
 
 	// Prevent player actions appearing during animation cycle.
 	player removeAction s_player_deleteBuild;
