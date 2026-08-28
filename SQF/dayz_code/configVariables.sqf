@@ -205,7 +205,7 @@ if (!isDedicated) then {
 	DZE_BuildOnRoads = false; // Allow building on roads
 	DZE_BuildingLimit = 150; // Maximum allowed objects per base
 	DZE_LockedDoorLimit = 0; // Maximum locked doors per base. Use 0 to disable.
-	DZE_LockedStorageLimit = 0; // Maximum locked storage containers per base. Use 0 to disable.
+	DZE_LockedStorageLimit = 0; // Maximum lockable storage containers per base. Currently unlocked containers are counted. Use 0 to disable.
 	DZE_OpenGearLimit = 0; // Maximum buildable objects with open gear per base. Use 0 to disable.
 	DZE_RestrictedBuildingZones	= []; // [["Balota Airfield", [5158.72, 2518.75, 0], 600]];	// [["description", [position], distance], ["description", [position], distance], ... ];
 	DZE_BlacklistedBuildings = [];	// [["Fire Station", "Land_a_stationhouse", 250]];	// [["description", "className", distance], ["description", "className", distance], ... ];

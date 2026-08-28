@@ -46,7 +46,7 @@ if (isNull _nearestPole) then {
 
 if (isNull _nearestPole) exitWith {[true,_limit,0,objNull]};
 
-local _objects = _nearestPole nearObjects [_classNames,_baseRadius];
+local _objects = nearestObjects [_nearestPole,_classNames,_baseRadius];
 local _count = {_x != _ignoredObject && {typeOf _x in _classNames}} count _objects;
 local _allowed = _count < _limit;
 
