@@ -75,6 +75,18 @@ if (count _upgrade > 0) then {
 		dayz_actionInProgress = false;
 	};
 
+	local _lockedDoorLimitResult = [_newclassname,_object,_object,DZE_DoorsLocked,DZE_LockedDoorLimit] call DZE_fnc_checkBuildGroupLimit;
+
+	if (count _lockedDoorLimitResult < 4) exitWith {
+		dayz_actionInProgress = false;
+		localize 'STR_BUILD_CANCELLED' call DZE_fnc_rollingMessages;
+	};
+
+	if !(_lockedDoorLimitResult select 0) exitWith {
+		format [localize 'STR_BUILD_VALIDATION_LOCKED_DOOR_LIMIT',_lockedDoorLimitResult select 1] call DZE_fnc_rollingMessages;
+		dayz_actionInProgress = false;
+	};
+
 	local _neededTools = _upgrade select 1;
 
 	if (['',_neededTools,'none'] call dze_requiredItemsCheck) then {

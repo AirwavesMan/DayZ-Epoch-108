@@ -204,6 +204,7 @@ if (!isDedicated) then {
 	DZE_HeightLimitColor = true; // display base boundary helpers in red if they are above DZE_BuildHeightLimit
 	DZE_BuildOnRoads = false; // Allow building on roads
 	DZE_BuildingLimit = 150; // Maximum allowed objects per base
+	DZE_LockedDoorLimit = 0; // Maximum locked doors per base. Use 0 to disable.
 	DZE_RestrictedBuildingZones	= []; // [["Balota Airfield", [5158.72, 2518.75, 0], 600]];	// [["description", [position], distance], ["description", [position], distance], ... ];
 	DZE_BlacklistedBuildings = [];	// [["Fire Station", "Land_a_stationhouse", 250]];	// [["description", "className", distance], ["description", "className", distance], ... ];
 	DZE_buildOnWater = true; // Allow building in or over sea water. Note: Sea level will change between low tide and high tide and may cause base flooding. This does not affect inland ponds, dams or lakes.
