@@ -724,6 +724,7 @@ if (!isDedicated) then {
 
 	FUNCTION(DZE_fnc_checkBuildClassLimit);		// Checks a configured exact-class count inside a base.
 	FUNCTION(DZE_fnc_checkBuildGroupLimit);		// Checks a configured object-group count inside a base.
+	FUNCTION(DZE_fnc_checkBuildOpenGearLimit);	// Checks the configured open-gear object count inside a base.
 	FUNCTION(DZE_fnc_displayHelpers);		// Creates or removes local helper spheres for buildable objects.
 	FUNCTION(DZE_fnc_generateCode);			// Collects or generates a valid code for a lockable build object.
 	FUNCTION(DZE_fnc_getBuildingSteps);		// Returns the number of animation steps required for build or deconstruct.
@@ -767,6 +768,7 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_buildValidationClassLimit);	// Enforces the configured per-class limit inside a base.
 	FUNCTION(DZE_fnc_buildValidationLockedDoorLimit); // Enforces the configured locked-door limit inside a base.
 	FUNCTION(DZE_fnc_buildValidationLockedStorageLimit); // Enforces the configured locked-storage limit inside a base.
+	FUNCTION(DZE_fnc_buildValidationOpenGearLimit);	// Enforces the configured open-gear object limit inside a base.
 	FUNCTION(DZE_fnc_buildValidationExistingPlot);	// Rejects a new plot overlapping an existing plot.
 	FUNCTION(DZE_fnc_buildValidationHeight);		// Enforces the configured build-height limit.
 	FUNCTION(DZE_fnc_buildValidationMap);		// Enforces the configured map extents.
