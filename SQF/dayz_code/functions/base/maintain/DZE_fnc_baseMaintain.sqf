@@ -47,6 +47,23 @@ if (isNull _base || {typeOf _base != DZE_Territory_Marker}) exitWith {
 local _objects = [_base,_radius] call DZE_fnc_findBuildableObjects;
 local _objectCount = count _objects;
 
+if (!DZE_maintainOverLimit && {_objectCount > DZE_BuildingLimit}) exitWith {
+	#ifdef DEBUG_DZE_FNC_BASE_MAINTAIN
+		diag_log format ['[Client Debug]: [DZE_fnc_baseMaintain]: Warning: Maintenance blocked by building limit | Objects: %1 | Limit: %2',_objectCount,DZE_BuildingLimit];
+	#endif
+
+	systemChat format [localize 'STR_BASE_MAINTENANCE_BUILDING_LIMIT',_objectCount,DZE_BuildingLimit];;
+
+	disableSerialization;
+	local _baseDialog = findDisplay 711194;
+	if (!isNull _baseDialog) then {
+		(_baseDialog displayCtrl 7012) ctrlSetText (localize 'STR_BASE_MAINTENANCE_BUILDING_LIMIT_SHORT');
+		(_baseDialog displayCtrl 7013) ctrlSetText '';
+	};
+
+	dayz_actionInProgress = false;
+};
+
 if (_mode == 'preview') exitWith {
 	_objectCount call DZE_fnc_baseMaintainPreview;
 	dayz_actionInProgress = false;

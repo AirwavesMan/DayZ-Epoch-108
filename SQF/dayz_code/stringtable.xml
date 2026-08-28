@@ -36924,6 +36924,24 @@
 			<German>Sanieren von %1 Objekt(en) fehlgeschlagen. Du brauchst %2 %3</German>
 			<Russian>Неудача! Вам нужно %2 %3.</Russian>
 		</Key>
+		<Key ID="STR_BASE_MAINTENANCE_BUILDING_LIMIT">
+			<English>Maintenance is not allowed because this base contains %1 objects and exceeds the limit of %2.</English>
+			<German>Sanieren ist nicht erlaubt, da diese Basis %1 Objekte enthält und das Limit von %2 überschreitet.</German>
+			<Russian>Обслуживание невозможно: на базе %1 объектов, что превышает лимит %2.</Russian>
+			<Spanish>El mantenimiento no está permitido porque esta base contiene %1 objetos y supera el límite de %2.</Spanish>
+			<Dutch>Onderhoud is niet toegestaan omdat deze basis %1 objecten bevat en de limiet van %2 overschrijdt.</Dutch>
+			<French>La maintenance n'est pas autorisée car cette base contient %1 objets et dépasse la limite de %2.</French>
+			<Czech>Údržba není povolena, protože tato základna obsahuje %1 objektů a překračuje limit %2.</Czech>
+		</Key>
+		<Key ID="STR_BASE_MAINTENANCE_BUILDING_LIMIT_SHORT">
+			<English>Maintenance is not possible.</English>
+			<German>Sanieren ist nicht möglich.</German>
+			<Russian>Обслуживание невозможно.</Russian>
+			<Spanish>El mantenimiento no es posible.</Spanish>
+			<Dutch>Onderhoud is niet mogelijk.</Dutch>
+			<French>La maintenance est impossible.</French>
+			<Czech>Údržba není možná.</Czech>
+		</Key>
 
 		<!-- Journal -->
 		<Key ID="STR_BASE_JOURNAL_GOD_MODE">

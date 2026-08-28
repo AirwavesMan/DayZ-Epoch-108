@@ -242,6 +242,7 @@ if (!isDedicated) then {
 	// Base Management
 	DZE_baseMaxFriends = 10; //Max friends allowed on a base. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.
 	DZE_baseManagementMustBeClose = false; //Players must be within 10m of the base to be added as a base friend.
+	DZE_maintainOverLimit = true; // Allow maintaining bases whose object count exceeds DZE_BuildingLimit.
 	DZE_maintainCurrencyRate = 100; //The currency rate of what maintaining an item will be, for instance: at 100, 10 items will have a worth of 1000 (1 10oz gold or 1k coins) see DZE_fnc_baseMaintainRequirements.sqf for more examples.
 	DZE_baseLimit = 0; // Limit the amount of bases per person, Use 0 to disable. UIDS in the DZE_baseManagementAdmins array are exempt.
 	DZE_baseOzone = 20;	// distance (in meters) outside the base radius where the player may stand while building, provided the object remains within the base radius.
