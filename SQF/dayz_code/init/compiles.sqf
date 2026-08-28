@@ -722,6 +722,7 @@ if (!isDedicated) then {
 
 	path('build');
 
+	FUNCTION(DZE_fnc_checkBuildClassLimit);		// Checks a configured exact-class count inside a base.
 	FUNCTION(DZE_fnc_displayHelpers);		// Creates or removes local helper spheres for buildable objects.
 	FUNCTION(DZE_fnc_generateCode);			// Collects or generates a valid code for a lockable build object.
 	FUNCTION(DZE_fnc_getBuildingSteps);		// Returns the number of animation steps required for build or deconstruct.
@@ -762,6 +763,7 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_buildValidate);			// Executes one table of build-validation functions.
 	FUNCTION(DZE_fnc_buildValidationBlacklisted);	// Rejects building near blacklisted building classes.
 	FUNCTION(DZE_fnc_buildValidationCancelled);	// Rejects a build cancelled by the player.
+	FUNCTION(DZE_fnc_buildValidationClassLimit);	// Enforces the configured per-class limit inside a base.
 	FUNCTION(DZE_fnc_buildValidationExistingPlot);	// Rejects a new plot overlapping an existing plot.
 	FUNCTION(DZE_fnc_buildValidationHeight);		// Enforces the configured build-height limit.
 	FUNCTION(DZE_fnc_buildValidationMap);		// Enforces the configured map extents.

@@ -24,7 +24,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_UPGRADE_OBJECT
-	diag_log format['[Client Debug]: [DZE_fnc_upgradeObject]: Function called with argumentes: %1',_this];
+	diag_log format['[Client Debug]: [DZE_fnc_upgradeObject]: Function called with arguments: %1',_this];
 #endif
 
 if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_UPGRADE_ALREADY_IN_PROGRESS' call DZE_fnc_rollingMessages;};	// Upgrade is already in progress.
@@ -56,10 +56,28 @@ local _text = getText (configFile >> 'CfgVehicles' >> _classname >> 'displayName
 local _upgrade = getArray (configFile >> 'CfgVehicles' >> _classname >> 'upgradeBuilding');
 
 if (count _upgrade > 0) then {
+	local _newclassname = _upgrade select 0;
+	local _classLimitResult = [_newclassname,_object,_object] call DZE_fnc_checkBuildClassLimit;
+
+	if (count _classLimitResult < 4) exitWith {
+		dayz_actionInProgress = false;
+		localize 'STR_BUILD_CANCELLED' call DZE_fnc_rollingMessages;
+	};
+
+	if !(_classLimitResult select 0) exitWith {
+		local _newText = getText (configFile >> 'CfgVehicles' >> _newclassname >> 'displayName');
+		local _message = if ((_classLimitResult select 1) < 0) then {
+			format [localize 'STR_BUILD_VALIDATION_CLASS_DISABLED',_newText]
+		} else {
+			format [localize 'STR_BUILD_VALIDATION_CLASS_LIMIT',_newText,_classLimitResult select 1]
+		};
+		_message call DZE_fnc_rollingMessages;
+		dayz_actionInProgress = false;
+	};
+
 	local _neededTools = _upgrade select 1;
 
 	if (['',_neededTools,'none'] call dze_requiredItemsCheck) then {
-		local _newclassname = _upgrade select 0;
 		local _lockable = getNumber (configFile >> 'CfgVehicles' >> _newclassname >> 'lockable');
 		local _requirements = _upgrade select 2;
 		local _missingQty = 0;

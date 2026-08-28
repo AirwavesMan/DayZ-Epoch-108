@@ -21,7 +21,7 @@
 //#define DEBUG_DZE_FNC_DOWNGRADE_OBJECT
 
 #ifdef DEBUG_DZE_FNC_DOWNGRADE_OBJECT
-	diag_log format['[Client Debug]: [DZE_fnc_downgradeObject]: Function called with argumentes: %1',_this];
+	diag_log format['[Client Debug]: [DZE_fnc_downgradeObject]: Function called with arguments: %1',_this];
 #endif
 
 if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_DOWNGRADE_ALREADY_IN_PROGRESS' call DZE_fnc_rollingMessages;};	// Downgrade is already in progress.
@@ -55,6 +55,24 @@ local _downgrade = getArray (configFile >> 'CfgVehicles' >> _typeObject >> 'down
 
 if (count _downgrade > 0) then {
 	local _newTypeObject = _downgrade select 0;
+	local _classLimitResult = [_newTypeObject,_object,_object] call DZE_fnc_checkBuildClassLimit;
+
+	if (count _classLimitResult < 4) exitWith {
+		dayz_actionInProgress = false;
+		localize 'STR_BUILD_CANCELLED' call DZE_fnc_rollingMessages;
+	};
+
+	if !(_classLimitResult select 0) exitWith {
+		local _newText = getText (configFile >> 'CfgVehicles' >> _newTypeObject >> 'displayName');
+		local _message = if ((_classLimitResult select 1) < 0) then {
+			format [localize 'STR_BUILD_VALIDATION_CLASS_DISABLED',_newText]
+		} else {
+			format [localize 'STR_BUILD_VALIDATION_CLASS_LIMIT',_newText,_classLimitResult select 1]
+		};
+		_message call DZE_fnc_rollingMessages;
+		dayz_actionInProgress = false;
+	};
+
 	local _refund = _downgrade select 1;
 
 	[_object] call DZE_fnc_displayHelpers; // Create helpers.

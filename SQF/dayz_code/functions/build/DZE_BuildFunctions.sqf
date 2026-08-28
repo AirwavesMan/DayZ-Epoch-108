@@ -19,7 +19,7 @@
 
 
 #ifdef DEBUG_DZE_BUILD_FUNCTIONS
-	diag_log format ['[Client Debug]: [DZE_BuildFunctions]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_BuildFunctions]: Function called with arguments: %1',_this];
 #endif
 
 local _buildValidationContext = [
@@ -71,7 +71,10 @@ local _buildStage1 = [DZE_fnc_buildValidationState];
 local _buildStage2 = [DZE_fnc_buildValidationState];
 local _buildStage3 = [DZE_fnc_buildValidationState];
 
-if (!_isAdmin) then {
+if (_isAdmin) then {
+	addArray(_buildStage1,DZE_fnc_buildValidationClassLimit);
+	addArray(_buildStage3,DZE_fnc_buildValidationClassLimit);
+} else {
 	if (_isPole) then {
 		addArray(_buildStage1,DZE_fnc_buildValidationPlotLimit);
 		addArray(_buildStage1,DZE_fnc_buildValidationExistingPlot);
@@ -91,6 +94,7 @@ if (!_isAdmin) then {
 	addArray(_buildStage1,DZE_fnc_buildValidationTools);
 	addArray(_buildStage1,DZE_fnc_buildValidationHeight);
 	addArray(_buildStage1,DZE_fnc_buildValidationWater);
+	addArray(_buildStage1,DZE_fnc_buildValidationClassLimit);
 	addArray(_buildStage1,DZE_fnc_buildValidationObjectLimit);
 	addArray(_buildStage1,DZE_fnc_buildValidationRestrictedZone);
 	addArray(_buildStage1,DZE_fnc_buildValidationBlacklisted);
@@ -106,6 +110,7 @@ if (!_isAdmin) then {
 	addArray(_buildStage3,DZE_fnc_buildValidationTrader);
 	addArray(_buildStage3,DZE_fnc_buildValidationHeight);
 	addArray(_buildStage3,DZE_fnc_buildValidationWater);
+	addArray(_buildStage3,DZE_fnc_buildValidationClassLimit);
 	addArray(_buildStage3,DZE_fnc_buildValidationObjectLimit);
 	addArray(_buildStage3,DZE_fnc_buildValidationRestrictedZone);
 	addArray(_buildStage3,DZE_fnc_buildValidationBlacklisted);

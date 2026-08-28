@@ -37676,6 +37676,22 @@
 			<French>Impossible de construire, il y a trop d'objets à moins de %1m.</French>
 			<Czech>Nelze postavit, v okruhu %1m je přiliš mnoho předmětů.</Czech>
 		</Key>
+		<Key ID="STR_BUILD_VALIDATION_CLASS_LIMIT">
+			<English>The limit of %2 for %1 has been reached in this base.</English>
+			<German>Das Limit von %2 für %1 wurde in dieser Basis erreicht.</German>
+			<Russian>На этой базе достигнут лимит %2 для %1.</Russian>
+			<Dutch>De limiet van %2 voor %1 is in deze basis bereikt.</Dutch>
+			<French>La limite de %2 pour %1 est atteinte dans cette base.</French>
+			<Czech>V této základně byl dosažen limit %2 pro %1.</Czech>
+		</Key>
+		<Key ID="STR_BUILD_VALIDATION_CLASS_DISABLED">
+			<English>%1 cannot be built on this server.</English>
+			<German>%1 kann auf diesem Server nicht gebaut werden.</German>
+			<Russian>%1 нельзя построить на этом сервере.</Russian>
+			<Dutch>%1 kan niet op deze server worden gebouwd.</Dutch>
+			<French>%1 ne peut pas être construit sur ce serveur.</French>
+			<Czech>%1 nelze na tomto serveru postavit.</Czech>
+		</Key>
 		<Key ID="STR_BUILD_VALIDATION_HEIGHT_LIMIT">
 			<English>Building is restricted above %1 meter(s).</English>
 			<German>Das Bauen ist auf eine Höhe von %1 Metern begrenzt.</German>

@@ -68,6 +68,7 @@ class DZE_Building_Base: House {
 	DZE_saveToDatabase = 1;        	//	Allowed server saving the building to the database
 	DZE_allowRotation = 1; 			//	Allow rotation of the object
 	DZE_buildingSteps = 1;			//	Number of construction and deconstruction animation steps; 0 skips the animation	
+	DZE_perBaseLimit = 0;			//	-1 prevents building; 0 disables the limit; >0 limits this exact class per base
 	
 	class RemoveObject {
 		DZE_neededTools[] = {"ItemToolbox","ItemCrowbar"};
