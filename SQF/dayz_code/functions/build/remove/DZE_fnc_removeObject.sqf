@@ -172,6 +172,13 @@ call {
 		_objectBounds = boundingBox _object select 1;
 	};
 
+	local _fireProxy = objNull;
+	if (_isFireProxy) then {
+		// Capture proxies while the fireplace still provides the correct PositionAGL search origin.
+		local _fireProxies = nearestObjects [_object,['DZE_flamable'],1];
+		if (count _fireProxies > 0) then {_fireProxy = _fireProxies select 0};
+	};
+
 	if !([_object,_isWreck,_isWreckBuilding,_objectPositionASL] call DZE_fnc_requestObjectDeletion) exitWith {
 		localize 'STR_BUILD_REMOVE_FAILED' call DZE_fnc_rollingMessages;
 
@@ -189,14 +196,15 @@ call {
 	};
 
 	if (_isFireProxy) then {
-		// Extinguish and delete a burning fire proxy left by the removed object.
-		local _flames = nearestObjects [ASLToAGL(_objectPositionASL),['DZE_flamable'],1];
-
-		if (count _flames > 0) then {
-			local _flame = _flames select 0;
-			_flame inflame false;
-			deleteVehicle _flame;
+		// Extinguish and delete the proxy captured before the parent fireplace was removed.
+		if (!isNull _fireProxy) then {
+			_fireProxy inflame false;
+			deleteVehicle _fireProxy;
 		};
+
+		#ifdef DEBUG_DZE_FNC_REMOVE_OBJECT
+			diag_log format ['[Client Debug]: [DZE_fnc_removeObject]: Fire proxy removed: %1',isNull _fireProxy];
+		#endif
 	};
 
 	['Working',0,[3,2,4,0]] call dayz_NutritionSystem;
