@@ -6,12 +6,12 @@
 //			and waits for client-visible confirmation.
 //	Groups:		Build
 //
-//	Syntax:		[object,isWreck,isWreckBuilding,objectPosition] call DZE_fnc_requestObjectDeletion
+//	Syntax:		[object,isWreck,isWreckBuilding,objectPositionASL] call DZE_fnc_requestObjectDeletion
 //
 //	Parameters:	object: Object - Object to delete
 //			isWreck: Boolean - Whether the object is transient debris
 //			isWreckBuilding: Boolean - Whether wreck removal is broadcast by position
-//			objectPosition: Array - Position captured before deletion
+//			objectPositionASL: Array - PositionASL captured before deletion
 //
 //	Return Value:	Boolean - Whether deletion became visible on the client
 //
@@ -29,7 +29,7 @@
 local _object = param(0,objNull);
 local _isWreck = param(1,false);
 local _isWreckBuilding = param(2,false);
-local _objectPosition = param(3,[]);
+local _objectPositionASL = param(3,[]);
 
 if (isNull _object) exitWith {false};
 
@@ -48,7 +48,9 @@ if (!_isWreck && {!_isWreckBuilding}) then {
 };
 
 if (_isWreckBuilding) then {
-	PVDZ_send = [player,'RemoveObject',_objectPosition,[_objectPosition,dayz_authKey,player]];
+	// The nearestObjects receiver requires AGL; preserve the authoritative ASL position for sender verification.
+	local _objectPositionAGL = ASLToAGL(_objectPositionASL);
+	PVDZ_send = [player,'RemoveObject',_objectPositionAGL,[_objectPositionASL,dayz_authKey,player]];
 	publicVariableServer 'PVDZ_send';
 };
 

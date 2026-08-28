@@ -556,6 +556,10 @@ if (!isDedicated) then {
 	DZE_AGLTOASL_HELPER = AGL_HELPER_CLASS createVehicleLocal ORIGIN;
 	DZE_AGLTOASL_HELPER setVectorDirAndUp [VECTOR_DIR,VECTOR_UP];
 
+	// general ASLToAGL helper
+	DZE_ASLTOAGL_HELPER = AGL_HELPER_CLASS createVehicleLocal ORIGIN;
+	DZE_ASLTOAGL_HELPER setVectorDirAndUp [VECTOR_DIR,VECTOR_UP];
+
 ///	DZE_buildKeysActive	= false;
 	BUILD_KEY_QUEUE		= [];
 	BUILD_STAGE		= BUILD_INACTIVE;

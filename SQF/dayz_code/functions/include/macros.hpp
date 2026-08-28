@@ -933,7 +933,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // functions
-#define ASLToAGL(pos)                           pos call DZR_fnc_ASLToAGL
+#define ASLToAGL(pos)                           pos call DZE_fnc_ASLToAGL
 ///#define getPosAGL(obj)                          obj call DZR_fnc_getPosAGL
 ///#define getPosWorld(obj)                        obj call DZR_fnc_getPosWorld
 #define getQuadrant(p)                          p call DZR_fnc_getQuadrant

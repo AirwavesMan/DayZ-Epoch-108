@@ -890,6 +890,7 @@ if (!isDedicated) then {
 	path('positions');
 
 	FUNCTION(DZE_fnc_AGLToASL);			// [A3] Converts position from PositionAGL to PositionASL.
+	FUNCTION(DZE_fnc_ASLToAGL);			// [A3] Converts position from PositionASL to PositionAGL.
 	FUNCTION(DZE_fnc_safeZonePosCheck);		// Returns true if a contextual action is prohibited within a detected safe zone, or false if allowed.
 	FUNCTION(DZE_fnc_vehicleCenterWorld);		// Returns the vehicle's model center in PositionASL.
 

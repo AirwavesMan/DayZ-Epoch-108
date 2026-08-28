@@ -161,7 +161,7 @@ call {
 		localize 'STR_BUILD_REMOVE_OBJECT_GONE' call DZE_fnc_rollingMessages;	// Failed, object no longer exists.
 	};
 
-	local _objectPosition = getPosATL _object;
+	local _objectPositionASL = getPosASL _object;
 	local _objectDirection = getDir _object;
 	local _refundResult = [_object,_isModular,_modularRefund,_configuredRefund,_isStorageItem] call DZE_fnc_getRemoveObjectRefund;
 	local _removeOutput = _refundResult select 0;
@@ -172,7 +172,7 @@ call {
 		_objectBounds = boundingBox _object select 1;
 	};
 
-	if !([_object,_isWreck,_isWreckBuilding,_objectPosition] call DZE_fnc_requestObjectDeletion) exitWith {
+	if !([_object,_isWreck,_isWreckBuilding,_objectPositionASL] call DZE_fnc_requestObjectDeletion) exitWith {
 		localize 'STR_BUILD_REMOVE_FAILED' call DZE_fnc_rollingMessages;
 
 		#ifdef DEBUG_DZE_FNC_REMOVE_OBJECT
@@ -190,7 +190,7 @@ call {
 
 	if (_isFireProxy) then {
 		// Extinguish and delete a burning fire proxy left by the removed object.
-		local _flames = nearestObjects [_objectPosition,['DZE_flamable'],1];
+		local _flames = nearestObjects [ASLToAGL(_objectPositionASL),['DZE_flamable'],1];
 
 		if (count _flames > 0) then {
 			local _flame = _flames select 0;
@@ -202,7 +202,7 @@ call {
 	['Working',0,[3,2,4,0]] call dayz_NutritionSystem;
 	//format [localize 'STR_BUILD_REMOVE_COMPLETED',_displayName] call DZE_fnc_rollingMessages;	// De-constructing %1.
 
-	_standingDelay = [_removeOutput,_objectPosition,_objectDirection,_isStorageItem,_objectBounds] call DZE_fnc_createRemoveObjectOutput;
+	_standingDelay = [_removeOutput,_objectPositionASL,_objectDirection,_isStorageItem,_objectBounds] call DZE_fnc_createRemoveObjectOutput;
 };
 
 if (_helpersDisplayed) then {
