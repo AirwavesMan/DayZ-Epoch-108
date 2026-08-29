@@ -21,7 +21,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_INFLAME
-	diag_log format ['[Client Debug]: [DZE_fnc_inflame]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_inflame]: Function called with arguments: %1',_this];
 #endif
 
 local _fireplace = p0;
@@ -42,7 +42,7 @@ if (_useProxy) then {
 };
 
 if (_inflame) then { // Light the fire.
-	if (['matches',0.1] call fn_dynamicTool) then {_target inflame true};
+	if (['matches',0.1] call DZE_fnc_updateToolState) then {_target inflame true};
 } else { // Put out the fire.
 	if (!isNull _target) then {_target inflame false};
 };

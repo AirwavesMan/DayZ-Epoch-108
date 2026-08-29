@@ -20,7 +20,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_TOOL_BREAK
-	diag_log format ['[Client Debug]: [DZE_fnc_toolBreak]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_toolBreak]: Function called with arguments: %1',_this];
 #endif
 
 local _requiredTools = _this;
@@ -29,7 +29,7 @@ if (count _requiredTools == 0) exitWith {true};
 
 // Knives and matchboxes use their existing staged wear instead of DZE_brokenItem.
 if ('DZE_Tool_Knife' in _requiredTools) then {
-	['knives',0.2] call fn_dynamicTool;
+	['knives',0.2] call DZE_fnc_updateToolState;
 
 	#ifdef DEBUG_DZE_FNC_TOOL_BREAK
 		diag_log '[Client Debug]: [DZE_fnc_toolBreak]: Processed staged knife wear.';
@@ -37,7 +37,7 @@ if ('DZE_Tool_Knife' in _requiredTools) then {
 };
 
 if ('DZE_Tool_Matchbox' in _requiredTools) then {
-	['matches',0.1] call fn_dynamicTool;
+	['matches',0.1] call DZE_fnc_updateToolState;
 
 	#ifdef DEBUG_DZE_FNC_TOOL_BREAK
 		diag_log '[Client Debug]: [DZE_fnc_toolBreak]: Processed staged matchbox use.';

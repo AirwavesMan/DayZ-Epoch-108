@@ -34,5 +34,5 @@ VanillaConstruction[] =
 	{Loot_MAGAZINE,		1,		equip_lever}, // Repair broken handles if DZE_toolBreaking is enabled
 	{Loot_MAGAZINE,		1,		ItemPlank}, // Used for upgrade storage buildings, craft a sling
 	{Loot_MAGAZINE,		1,		equip_nails}, // Combine with baseball bat, upgrade storage buildings
-	{Loot_MAGAZINE,		1,		equip_brick} // Used to sharpen tools if dayz_knifeDulling enabled
+	{Loot_MAGAZINE,		1,		equip_brick} // Used to sharpen tools if DZE_knifeDulling enabled
 };

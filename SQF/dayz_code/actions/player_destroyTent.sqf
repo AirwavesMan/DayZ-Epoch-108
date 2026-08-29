@@ -1,3 +1,23 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	player_destroyTent
+//
+//	Description:	Consumes fuel and a matchbox use before destroying and igniting a tent.
+//	Groups:		Actions, Tools
+//
+//	Syntax:		Executed by addAction with the tent as its argument
+//
+//	Parameters:	addAction arguments
+//
+//	Return Value:	Nothing
+//
+//	Called by:	Client
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//#define DEBUG_PLAYER_DESTROY_TENT
+
+#include "\z\addons\dayz_code\functions\include\defines.hpp"
+
 if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call DZE_fnc_rollingMessages; };
 dayz_actionInProgress = true;
 
@@ -5,6 +25,9 @@ private ["_emptycan","_obj","_fuelArray","_matchArray","_randomJerryCan","_fireI
 
 //Tent Object
 _obj = _this select 3;
+#ifdef DEBUG_PLAYER_DESTROY_TENT
+	diag_log format ['[Client Debug]: [player_destroyTent]: Function called with arguments: %1',_this];
+#endif
 
 //Active Arrays.
 _fuelArray = [];
@@ -54,7 +77,7 @@ if !(_randomJerryCan in magazines player) exitWith {
 player removeMagazine _randomJerryCan;
 player addMagazine _emptycan;
 
-["matches",0.3] call fn_dynamicTool;
+['matches',0.3] call DZE_fnc_updateToolState;
 
 // Added Nutrition-Factor for work
 ["Working",0,[20,40,15,0]] call dayz_NutritionSystem;

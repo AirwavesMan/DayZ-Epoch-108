@@ -22,7 +22,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_ACTION_INFLAME
-	diag_log format ['[Client Debug]: [DZE_fnc_actionInflame]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_actionInflame]: Function called with arguments: %1',_this];
 #endif
 
 local _target		= p0;
@@ -33,7 +33,7 @@ local _createdProxy	= objNull;
 local _proxyPosAGL	= [];
 
 // Validate and consume a match before creating an optional networked flame proxy.
-if (_inflame && {!(['matches', 0.1] call fn_dynamicTool)}) exitWith {ACTION_CANCELLED};
+if (_inflame && {!(['matches',0.1] call DZE_fnc_updateToolState)}) exitWith {ACTION_CANCELLED};
 
 if (_inflame && {_proxyClass != ''}) then {
 

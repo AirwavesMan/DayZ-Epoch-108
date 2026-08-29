@@ -22,7 +22,6 @@ if (!isDedicated) then {
 	object_pickup = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickup.sqf";
 
 	fn_dropItem = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dropItem.sqf";
-	fn_dynamicTool = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dynamicTool.sqf";
 	fn_exitSwim = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_exitSwim.sqf";
 	fn_loopAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_loopAction.sqf";
 	fn_nearWaterHole = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_nearWaterHole.sqf";
@@ -675,6 +674,12 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_apply);			// [A3] Applies the given code to each element of the given array (without modifying the original array).
 	FUNCTION(DZE_fnc_selectDistinct);		// Returns a random selection of distinct entries from an array.
 	FUNCTION(DZE_fnc_subSelect);			// Returns a sub-selection from an array or string.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('inventory');
+
+	FUNCTION(DZE_fnc_updateToolState);		// Processes one use of a configured multi-state tool.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 

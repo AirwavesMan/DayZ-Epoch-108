@@ -1,3 +1,23 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	buryActions
+//
+//	Description:	Buries or butchers the selected player corpse.
+//	Groups:		Actions, Tools
+//
+//	Syntax:		Executed by addAction with [corpse,action] as its arguments
+//
+//	Parameters:	addAction arguments
+//
+//	Return Value:	Nothing
+//
+//	Called by:	Client
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//#define DEBUG_BURY_ACTIONS
+
+#include "\z\addons\dayz_code\functions\include\defines.hpp"
+
 /*
 	Bury/Butcher body script by salival (https://github.com/oiad)
 */
@@ -7,6 +27,10 @@ dayz_actionInProgress = true;
 private ["_action","_backPackMag","_backPackWpn","_crate","_corpse","_cross","_gain","_isBury","_grave","_name","_playerNear","_backPack","_position","_sound"];
 
 _corpse = (_this select 3) select 0;
+#ifdef DEBUG_BURY_ACTIONS
+	diag_log format ['[Client Debug]: [buryActions]: Function called with arguments: %1',_this];
+#endif
+
 if (isNull _corpse) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
 
 _playerNear = {isPlayer _x} count (_corpse nearEntities ["CAManBase", 10]) > 1;
@@ -75,7 +99,7 @@ if (_isBury) then {
 		localize "STR_CL_BA_RIP_UNKNOWN" call DZE_fnc_rollingMessages;
 	};
 } else {
-	["knives",0.2] call fn_dynamicTool;
+	['knives',0.2] call DZE_fnc_updateToolState;
 };
 
 _gain = if (_isBury) then {DZE_Bury_Body_Value} else {DZE_Butcher_Body_Value};

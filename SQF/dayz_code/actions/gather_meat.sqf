@@ -23,7 +23,7 @@ dayz_actionInProgress = true;
 
 local _body = _this;
 #ifdef DEBUG_GATHER_MEAT
-	diag_log format ['[Client Debug]: [gather_meat]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [gather_meat]: Function called with arguments: %1',_this];
 #endif
 
 if (isNull _body) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
@@ -77,7 +77,7 @@ if (local _body) then {
 	publicVariable "PVCDZ_obj_GutBody";
 };
 
-["knives",0.2] call fn_dynamicTool;
+['knives',0.2] call DZE_fnc_updateToolState;
 
 if (_wasStanding) then {player playActionNow "PlayerStand";};	// once the action has completed, return player to a standing pose if they were standing before the action
 
