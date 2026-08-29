@@ -641,7 +641,7 @@ if (!isDedicated) then {
 	path('tools');
 
 	FUNCTION(DZE_fnc_addToolbelt);		// Moves a configured weapon between the player's weapon slots and toolbelt.
-	FUNCTION(player_addtoBack);			// Moves a supported toolbelt item into its melee weapon form.
+	FUNCTION(DZE_fnc_addToBack);			// Moves a configured toolbelt item to the player's back as a melee weapon.
 	FUNCTION(DZE_fnc_addDuplicateTool);		// Adds a tool without overwriting an existing toolbelt item.
 	FUNCTION(DZE_fnc_combineMatches);		// Combines partial matchboxes into boxes with up to five matches.
 	FUNCTION(DZE_fnc_sharpenTool);			// Sharpens a configured blunt tool.

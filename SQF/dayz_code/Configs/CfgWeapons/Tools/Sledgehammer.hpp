@@ -13,7 +13,7 @@ class ItemSledge: ItemCore // Epoch class
 		class ToBack
 		{
 			text = $STR_ACTIONS_2BACK;
-			script = "spawn player_addtoBack;";
+			script = "spawn DZE_fnc_addToBack;";
 			use[] = {"ItemSledge"};
 			output[] = {"MeleeSledge"};
 		};
