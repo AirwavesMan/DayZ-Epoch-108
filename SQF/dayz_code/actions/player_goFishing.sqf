@@ -119,7 +119,7 @@ while {_isOk} do {
                     format[localize "str_fishing_noroom",_text] call DZE_fnc_rollingMessages;
                 };
                 //adding melee mags back if needed
-                call dayz_meleeMagazineCheck;
+                call DZE_fnc_ensureMeleeMagazine;
             };
             
             //"Working",0,[cal,thirst,hunger]

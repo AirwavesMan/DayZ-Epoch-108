@@ -511,39 +511,6 @@ if (!isDedicated) then {
 		};
 	};
 
-	dayz_meleeMagazineCheck = {
-        private["_wpnType","_ismelee"];
-        _wpnType = primaryWeapon player;
-        _ismelee = (getNumber (configFile >> "CfgWeapons" >> _wpnType >> "melee") == 1);
-        if (_ismelee) then {
-            private ["_meleeNum","_magType"];
-            _magType = ([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
-            _meleeNum = ({_x == _magType} count magazines player);
-            if (_meleeNum < 1) then {
-                player addMagazine _magType;
-            };
-        };
-
-        // combine matchboxes
-        private ["_matches","_fullBox","_remain"];
-        _matches = 0;
-        {
-            if (configName inheritsFrom (configfile >> "cfgWeapons" >> _x) == "DZE_Tool_Matchbox") then { // iskindOf does not work here?!
-                 _matches = _matches + getNumber (configFile >> 'CfgWeapons' >> _x >> 'DZE_matches');
-                 player removeWeapon _x;
-            };
-        } count (items player);
-        // limit to 1 fullbox and 1 used matchbox
-        _fullBox = floor (_matches / 5);
-        _remain = _matches % 5;
-        if (_fullBox > 0) then { player addWeapon "DZE_Tool_Matchbox5"; };
-  		if (_fullBox > 1) then {
-			player addWeapon "DZE_Tool_Matchbox4";
-		} else {
-	        if (_remain > 0) then {player addWeapon ('DZE_Tool_Matchbox' + str _remain)};
-		};
-    };
-
 	dayz_killFeed = {
 		private ["_distance","_offset","_icon","_playerName","_sourceName"];
 		_playerName = _this select 1;
@@ -673,6 +640,7 @@ if (!isDedicated) then {
 
 	path('inventory');
 
+	FUNCTION(DZE_fnc_ensureMeleeMagazine);	// Adds the missing magazine for the player's active melee weapon.
 	FUNCTION(DZE_fnc_getFreeBackpackSlots);	// Returns the number of free magazine-sized backpack slots.
 
 	///////////////////////////////////////////////////////////////////////////////////////////

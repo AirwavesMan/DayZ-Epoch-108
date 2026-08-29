@@ -1,7 +1,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_array","_vehicle","_part","_hitpoint","_type","_isOK","_brokenPart","_finished","_hasToolbox","_nameType","_namePart","_damage","_BreakableParts","_selection","_wpn","_hits","_ismelee"];
+private ["_array","_vehicle","_part","_hitpoint","_type","_isOK","_brokenPart","_finished","_hasToolbox","_nameType","_namePart","_damage","_BreakableParts","_selection","_hits"];
 
 _array = 	_this select 3;
 _vehicle = _array select 0;
@@ -76,10 +76,3 @@ if (_hasToolbox) then {
 dayz_myCursorTarget = objNull;
 s_player_repair_crtl = -1;
 dayz_actionInProgress = false;
-
-//adding melee mags back if needed
-_wpn = primaryWeapon player;
-_ismelee = (getNumber (configFile >> "CfgWeapons" >> _wpn >> "melee") == 1);
-if (_ismelee) then {
-	call dayz_meleeMagazineCheck;
-};

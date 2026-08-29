@@ -1,4 +1,4 @@
-private ["_isOK", "_startcombattimer", "_myPos", "_wpnType", "_ismelee","_radsound", "_bloodloss","_NutritionLoss", "_Nutrition","_outsideMap","_lastUpdate","_tempPos","_lowBlood","_refObj", "_size", "_vel", "_speed","_isPZombie", "_radTimer", "_timer", "_timer150", "_hunger","_thirst","_result","_randomSpot","_distance","_mylastPos","_lastTemp","_rnd","_messTimer","_saveTime"];
+private ["_isOK", "_startcombattimer", "_myPos","_radsound", "_bloodloss","_NutritionLoss", "_Nutrition","_outsideMap","_lastUpdate","_tempPos","_lowBlood","_refObj", "_size", "_vel", "_speed","_isPZombie", "_radTimer", "_timer", "_timer150", "_hunger","_thirst","_result","_randomSpot","_distance","_mylastPos","_lastTemp","_rnd","_messTimer","_saveTime"];
 disableSerialization;
 
 _messTimer = 0;
@@ -271,11 +271,7 @@ while {1 == 1} do {
 	//Melee Weapons ammo fix
 	if(isNil "login_ammochecked") then {
 		login_ammochecked = true;
-		 _wpnType = primaryWeapon player;
-		_ismelee = (getNumber (configFile >> "CfgWeapons" >> _wpnType >> "melee") == 1);
-		if (_ismelee) then {
-			call dayz_meleeMagazineCheck;
-		};
+		call DZE_fnc_ensureMeleeMagazine;
 	};
 
 	//Two primary guns pickup exploit fix

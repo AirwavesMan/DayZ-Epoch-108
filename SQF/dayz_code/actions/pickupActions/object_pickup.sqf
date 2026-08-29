@@ -1,6 +1,6 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 if (player isKindOf "PZombie_VB") exitWith {};
-private ["_array","_type","_classname","_holder","_playerID","_text","_broken","_claimedBy","_config","_isOk","_PlayerNear","_wpn","_ismelee","_hasBag"];
+private ["_array","_type","_classname","_holder","_playerID","_text","_broken","_claimedBy","_config","_isOk","_PlayerNear","_hasBag"];
 
 _array = _this select 3;
 _type = _array select 0;
@@ -86,8 +86,3 @@ if (_isOk) then {
 	};
 };
 uiSleep 3;
-
-_wpn = primaryWeapon player;
-_ismelee = (getNumber (configFile >> "CfgWeapons" >> _wpn >> "melee") == 1);
-
-if (_ismelee) then {call dayz_meleeMagazineCheck;};

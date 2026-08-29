@@ -1107,7 +1107,6 @@
 ///#define isAmmo(mag)                             mag call DZR_fnc_isAmmo
 #define isHandgunAmmo(mag)                      mag call DZR_fnc_isHandgunAmmo
 #define isPrimaryAmmo(mag)                      mag call DZR_fnc_isPrimaryAmmo
-#define meleeMagazineCheck                      call DZR_fnc_meleeMagazineCheck
 
 // extensions
 #define ammoCount                               weaponState player select WS_AMMOCOUNT

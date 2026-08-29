@@ -206,6 +206,6 @@ player setVariable ["BIS_noCoreConversations",true];
 //	call compile format["%1 = player;",_playerObjName];
 //	publicVariable _playerObjName;
 
-call dayz_meleeMagazineCheck;
+call DZE_fnc_ensureMeleeMagazine;
 //{player reveal _x} count (nearestObjects [_position,['AllVehicles','WeaponHolder','Land_A_tent','DZE_Storage_Base','BuiltItems','ModularItems','DZE_Base_Object'],75]);
 {player reveal _x} count (nearestObjects [player,['AllVehicles','WeaponHolder','Land_A_tent','DZE_Storage_Base','BuiltItems','ModularItems','DZE_Base_Object'],75]);

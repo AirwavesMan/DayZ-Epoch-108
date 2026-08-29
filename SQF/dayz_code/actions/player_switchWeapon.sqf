@@ -155,9 +155,7 @@ dz_fn_switchWeapon_swap = {
 
 	if (_this) then {
 		player selectWeapon primaryWeapon player;
-		if (IS_MELEE(primaryWeapon player)) then {
-			call dayz_meleeMagazineCheck;
-		};
+		call DZE_fnc_ensureMeleeMagazine;
 	};
 };
 
