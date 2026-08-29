@@ -1,7 +1,31 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	gather_meat
+//
+//	Description:	Harvests meat from the selected body with an available knife.
+//	Groups:		Actions, Tools
+//
+//	Syntax:		body spawn player_butcher
+//
+//	Parameters:	body: Object - Body to harvest
+//
+//	Return Value:	Nothing
+//
+//	Called by:	Client
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//#define DEBUG_GATHER_MEAT
+
+#include "\z\addons\dayz_code\functions\include\defines.hpp"
+
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
 local _body = _this;
+#ifdef DEBUG_GATHER_MEAT
+	diag_log format ['[Client Debug]: [gather_meat]: Function called with argumentes: %1',_this];
+#endif
+
 if (isNull _body) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
 if (_body getVariable["meatHarvested",false]) exitWith {dayz_actionInProgress = false;}; // Exit the script if the meat has already been harvested.
 if ({isPlayer _x} count (_body nearEntities ["CAManBase", 12]) > 1) exitWith {dayz_actionInProgress = false;localize "str_pickup_limit_5" call DZE_fnc_rollingMessages;}; // Exit the script if another player is near to prevent duping.
@@ -23,7 +47,7 @@ local _wasStanding	= ["perc", animationState player] call fnc_inString;
 // Exit the script if the player doesn't have a knife
 if ((count _knives) < 1) exitWith {
 	if (_isZombie || _isMutant) then {
-		format[localize "str_missing_to_do_this",localize "STR_EQUIP_NAME_KNIFE"] call DZE_fnc_rollingMessages;
+		format[localize 'str_missing_to_do_this',localize 'STR_TOOL_DISPLAY_NAME_KNIFE'] call DZE_fnc_rollingMessages;
 	} else {
 		localize "str_cannotgut" call DZE_fnc_rollingMessages;
 	};

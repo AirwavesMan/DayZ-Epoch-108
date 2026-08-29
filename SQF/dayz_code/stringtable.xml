@@ -59,6 +59,231 @@
 		</Key>
 	</Package>
 
+	<Package name="Tools">
+		<Key ID="STR_TOOL_DISPLAY_NAME_KNIFE">
+			<English>Hunting Knife</English>
+			<German>Jagdmesser</German>
+			<Russian>Охотничий нож</Russian>
+			<Spanish>Cuchillo de Caza</Spanish>
+			<French>Couteau de chasseur</French>
+			<Czech>Lovecký nůž</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_KNIFE">
+			<English>A knife used during hunting for preparing the game to be used as food by cutting up the meat.</English>
+			<German>Ein Jadgmesser, welches zum Ausnehmen von erlegtem Wild verwendet werden kann.</German>
+			<Russian>Нож можно использовать для разделки туш животных.</Russian>
+			<Spanish>Un cuchillo usado para preparar la carne de caza para ser guardada.</Spanish>
+			<French>Un couteau servant à dépecer le gibier.</French>
+			<Czech>Nůž, který se používá pro kuchání zvířat.</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_KNIFE_5">
+			<English>Your knife appears to be too blunt. (Maybe 5 uses left).</English>
+			<Russian>Похоже, нож тупится. Осталось 5 использований.</Russian>
+			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak pětkrát.</Czech>
+			<German>Dein Jagdmesser scheint stumpf zu werden. (Vielleicht noch 5 Anwendungen möglich)</German>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_KNIFE_4">
+			<English>Your knife appears to be too blunt. (Maybe 4 uses Left).</English>
+			<Russian>Похоже, нож тупится. Осталось 4 использования.</Russian>
+			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak čtyřikrát.</Czech>
+			<German>Dein Jagdmesser scheint stumpf zu werden. (Vielleicht noch 4 Anwendungen möglich)</German>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_KNIFE_3">
+			<English>Your knife appears to be too blunt. (Maybe 3 uses Left).</English>
+			<Russian>Похоже, нож тупится. Осталось 3 использования.</Russian>
+			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak třikrát.</Czech>
+			<German>Dein Jagdmesser scheint stumpf zu werden. (Vielleicht noch 3 Anwendungen möglich)</German>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_KNIFE_2">
+			<English>Your knife appears to be too blunt. (Maybe 2 uses Left).</English>
+			<Russian>Похоже, нож тупится. Осталось пара использований.</Russian>
+			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak dvakrát.</Czech>
+			<German>Dein Jagdmesser ist fast stumpf. (Vielleicht noch 2 Anwendungen möglich)</German>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_KNIFE_1">
+			<English>Your Knife appears to be too blunt. (Maybe 1 uses Left).</English>
+			<Russian>Похоже, нож тупится. Можно воспользоваться ещё разок.</Russian>
+			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak jednou.</Czech>
+			<German>Dein Jagdmesser ist so gut wie stumpf. (Vielleicht noch 1 Anwendung möglich)</German>
+		</Key>
+		<Key ID="STR_TOOL_DISPLAY_NAME_KNIFE_BLUNT">
+			<English>Hunting Knife (dull)</English>
+			<German>Jagdmesser (stumpf)</German>
+			<Russian>Охотничий нож (тупой)</Russian>
+			<Spanish>Cuchillo Desafilado</Spanish>
+			<French>Couteau émoussé</French>
+			<Czech>Tupý nůž</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_KNIFE_BLUNT">
+			<English>Your Knife appears to be too dull.</English>
+			<German>Dein Jagdmesser ist durch häufigen Gebrauch stumpf geworden.</German>
+			<Russian>Ваш нож слишком туп, чтобы его использовать.</Russian>
+			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
+			<French>Votre couteau semble trop émoussé</French>
+			<Czech>Vypadá to, že tento nůž je příliš tupý.</Czech>
+		</Key>
+		<Key ID="STR_ACTION_TOOL_KNIFE_HARVEST">
+			<English>Harvest Plant</English>
+			<German>Pflanze ernten</German>
+			<Russian>Срезать растение</Russian>
+		</Key>
+		<Key ID="STR_ACTION_TOOL_KNIFE_SHARPEN">
+			<English>Sharpen Knife</English>
+			<Russian>Заточить нож</Russian>
+			<German>Messer schleifen</German>
+		</Key>
+		<Key ID="STR_INFO_TOOL_KNIFE_BLUNT">
+			<English>While gutting you realise the knife is getting dull.</English>
+			<Russian>При разделке ваш нож затупился.</Russian>
+			<Spanish>Si bien destripar te das cuenta de que el cuchillo está convirtiendo en roma.</Spanish>
+			<French>Lors du dépecage vous réalisez que le couteau devient émoussé.</French>
+			<Czech>Během kuchání si všimnete, že se nůž ztupil.</Czech>
+			<German>Beim Ausnehmen bemerkst du, wie stumpf die Messerklinge mittlerweile ist.</German>
+		</Key>
+		<Key ID="STR_TOOL_DISPLAY_NAME_MATCHBOX">
+			<English>Box of Matches</English>
+			<German>Streichhölzer</German>
+			<Russian>Коробок спичек</Russian>
+			<Spanish>Caja de Fósforos</Spanish>
+			<French>Boîte d&apos;allumettes</French>
+			<Czech>Krabička zápalek</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DISPLAY_NAME_MATCHBOX_5">
+			<English>Box of Matches (5 left)</English>
+			<German>Streichhölzer (5 übrig)</German>
+			<Russian>Коробок спичек (5 шт.)</Russian>
+			<Spanish>Caja de Fósforos (5 restante)</Spanish>
+			<French>Boîte d&apos;allumettes (5 reste)</French>
+			<Czech>Krabička zápalek (5 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DISPLAY_NAME_MATCHBOX_4">
+			<English>Box of Matches (4 left)</English>
+			<German>Streichhölzer (4 übrig)</German>
+			<Russian>Коробок спичек (4 шт.)</Russian>
+			<Spanish>Caja de Fósforos (4 restante)</Spanish>
+			<French>Boîte d&apos;allumettes (4 reste)</French>
+			<Czech>Krabička zápalek (4 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DISPLAY_NAME_MATCHBOX_3">
+			<English>Box of Matches (3 left)</English>
+			<German>Streichhölzer (3 übrig)</German>
+			<Russian>Коробок спичек (3 шт.)</Russian>
+			<Spanish>Caja de Fósforos (3 restante)</Spanish>
+			<French>Boîte d&apos;allumettes (3 reste)</French>
+			<Czech>Krabička zápalek (3 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DISPLAY_NAME_MATCHBOX_2">
+			<English>Box of Matches (2 left)</English>
+			<German>Streichhölzer (2 übrig)</German>
+			<Russian>Коробок спичек (2 шт.)</Russian>
+			<Spanish>Caja de Fósforos (2 restante)</Spanish>
+			<French>Boîte d&apos;allumettes (2 reste)</French>
+			<Czech>Krabička zápalek (2 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DISPLAY_NAME_MATCHBOX_1">
+			<English>Box of Matches (1 left)</English>
+			<German>Streichhölzer (1 übrig)</German>
+			<Russian>Коробок спичек (1 шт.)</Russian>
+			<Spanish>Caja de Fósforos (1 restante)</Spanish>
+			<French>Boîte d&apos;allumettes (1 reste)</French>
+			<Czech>Krabička zápalek (1 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DISPLAY_NAME_MATCHBOX_EMPTY">
+			<English>Box of Matches (empty)</English>
+			<German>Schachtel Streichhölzer (leer)</German>
+			<Russian>Коробок спичек (пустой)</Russian>
+			<Czech>Prázdná krabička zápalek</Czech>
+			<Spanish>Caja vacía de Resultados</Spanish>
+			<French>Boîte d&apos;allumettes vide</French>
+		</Key>
+		<Key ID="STR_TOOL_DISPLAY_NAME_MATCHBOX_WET">
+			<English>Box of Matches (wet)</English>
+			<German>Streichholzschachtel (nass)</German>
+			<Russian>Коробок спичек (мокрый)</Russian>
+			<Spanish>Caja de Fósforos Mojada</Spanish>
+			<French>Boîte d&apos;Allumettes mouillées</French>
+			<Czech>Krabička mokrých zápalek</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_MATCHBOX">
+			<English>Box of safety matches for starting a fire under controlled conditions.</English>
+			<German>Eine Schachtel Streichhölzer. Von Kindern fernhalten.</German>
+			<Russian>Коробок спичек используется для разведения огня.</Russian>
+			<Spanish>Una caja de fósforos de seguridad para iniciar fuego bajo condiciones controladas.</Spanish>
+			<French>Boîte d&apos;allumettes suédoises permettant d&apos;allumer un feu.</French>
+			<Czech>Balíček bezpečnostních zápalek pro zapálení ohně. Udržujte z dosahu dětí.</Czech>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_MATCHBOX_5">
+			<English>Box of safety matches for starting a fire under controlled conditions. 5 Matches left.</English>
+			<Russian>Коробок с пятью спичками.</Russian>
+			<Spanish>5 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
+			<French>5 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
+			<Czech>Zbývá 5 zápalek. Udržujte z dosahu dětí.</Czech>
+			<German>Eine Schachtel Streichhölzer mit 5 übrigen Streichhölzern.</German>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_MATCHBOX_4">
+			<English>Box of safety matches for starting a fire under controlled conditions. 4 Matches left.</English>
+			<Russian>Коробок с четырьмя спичками.</Russian>
+			<Spanish>4 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
+			<French>4 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
+			<Czech>Zbývají 4 zápalky. Udržujte z dosahu dětí.</Czech>
+			<German>Eine Schachtel Streichhölzer mit 4 übrigen Streichhölzern.</German>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_MATCHBOX_3">
+			<English>Box of safety matches for starting a fire under controlled conditions. 3 Matches left.</English>
+			<Russian>Коробок с тремя спичками.</Russian>
+			<Spanish>3 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
+			<French>3 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
+			<Czech>Zbývají 3 zápalky. Udržujte z dosahu dětí.</Czech>
+			<German>Eine Schachtel Streichhölzer mit 3 übrigen Streichhölzern.</German>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_MATCHBOX_2">
+			<English>Box of safety matches for starting a fire under controlled conditions. 2 Matches left.</English>
+			<Russian>Коробок с парой спичек.</Russian>
+			<Spanish>2 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
+			<French>2 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
+			<Czech>Zbývají 2 zápalky. Udržujte z dosahu dětí.</Czech>
+			<German>Eine Schachtel Streichhölzer mit 2 übrigen Streichhölzern.</German>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_MATCHBOX_1">
+			<English>Box of safety matches for starting a fire under controlled conditions. 1 Match left.</English>
+			<Russian>Одна спичка в коробке.</Russian>
+			<Spanish>1 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
+			<French>1 allumette restante. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
+			<Czech>Zbývá 1 zápalka. Udržujte z dosahu dětí.</Czech>
+			<German>Eine Schachtel Streichhölzer mit 1 übrigen Streichholz.</German>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_MATCHBOX_EMPTY">
+			<English>Empty Box of safety matches.</English>
+			<German>Eine Schachtel Streichhölzer. Sie ist bereits leer.</German>
+			<Russian>Абсолютно пустой коробок спичек. Выбрасывайте!</Russian>
+			<Czech>Smutná krabička bez zápalek. Bude vám zima.</Czech>
+			<Spanish>Caja vacía de Resultados</Spanish>
+			<French>Boîte d&apos;allumettes vide</French>
+		</Key>
+		<Key ID="STR_TOOL_DESC_SHORT_MATCHBOX_WET">
+			<English>Box of wet matches.</English>
+			<German>Eine Schachtel Sicherheitszündhölzer. Die Schachtel ist nass geworden und unbrauchbar.</German>
+			<Russian>Коробок промокших спичек не пригодных для использования.</Russian>
+			<Spanish>Caja de fósforos mojada.</Spanish>
+			<French>Boîte d&apos;Allumettes mouillées.</French>
+			<Czech>Krabička plná mokrých zápalek.</Czech>
+		</Key>
+		<Key ID="STR_INFO_TOOL_MATCHBOX_LIMITED">
+			<English>While creating the fire you realise you only have 5 matches left.</English>
+			<Russian>После розжига огня осталось всего 5 спичек.</Russian>
+			<Spanish>Si bien la creación del fuego te das cuenta de que sólo tiene 5 partidos por jugarse.</Spanish>
+			<French>Lors de la création du feu, vous réalisez que vous avez seulement 5 allumettes.</French>
+			<Czech>Při vytváření oheň si uvědomíte, že máte jen 5 zápasech života.</Czech>
+			<German>Während du das Feuer anfachst, bemerkst du, dass du nur noch fünf Streichhölzer übrig hast.</German>
+		</Key>
+		<Key ID="STR_ACTION_TOOL_MATCHBOX_COMBINE">
+			<English>Combine</English>
+			<Russian>Объединить</Russian>
+			<Czech>Kombinovat</Czech>
+			<German>Kombinieren</German>
+		</Key>
+	</Package>
+
 	<Package name="actions">
 		<Key ID="STR_ACTIONS_2TB">
 			<English>Add to Toolbelt</English>
@@ -1087,11 +1312,6 @@
 			<English>Sharpen Hatchet</English>
 			<German>Beil schleifen</German>
 			<Russian>Заточить топор</Russian>
-		</Key>
-		<Key ID="STR_ACTIONS_SHARPEN_KNIFE">
-			<English>Sharpen Knife</English>
-			<Russian>Заточить нож</Russian>
-			<German>Messer schleifen</German>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_PICKAXE">
 			<English>Fix Pickaxe</English>
@@ -3090,22 +3310,6 @@
 			<German>Ein kaputter Werkzeugkasten, welcher repariert werden muss.</German>
 			<Russian>Сломанный набор инструментов, который необходимо починить.</Russian>
 		</Key>
-		<Key ID="str_info_limitedbox">
-			<English>While creating the fire you realise you only have 5 matches left.</English>
-			<Russian>После розжига огня осталось всего 5 спичек.</Russian>
-			<Spanish>Si bien la creación del fuego te das cuenta de que sólo tiene 5 partidos por jugarse.</Spanish>
-			<French>Lors de la création du feu, vous réalisez que vous avez seulement 5 allumettes.</French>
-			<Czech>Při vytváření oheň si uvědomíte, že máte jen 5 zápasech života.</Czech>
-			<German>Während du das Feuer anfachst, bemerkst du, dass du nur noch fünf Streichhölzer übrig hast.</German>
-		</Key>
-		<Key ID="str_info_bluntknife">
-			<English>While gutting you realise the knife is getting dull.</English>
-			<Russian>При разделке ваш нож затупился.</Russian>
-			<Spanish>Si bien destripar te das cuenta de que el cuchillo está convirtiendo en roma.</Spanish>
-			<French>Lors du dépecage vous réalisez que le couteau devient émoussé.</French>
-			<Czech>Během kuchání si všimnete, že se nůž ztupil.</Czech>
-			<German>Beim Ausnehmen bemerkst du, wie stumpf die Messerklinge mittlerweile ist.</German>
-		</Key>
 		<Key ID="str_info_missingtransfusionkit">
 			<English>I seem to be missing a transfusion kit.</English>
 			<German>Dazu fehlt dir das nötige Transfusionskit.</German>
@@ -3113,14 +3317,6 @@
 			<Spanish>Me parece que falta un kit de transfusión.</Spanish>
 			<French>Il me semble qu&apos;il manque un kit de transfusion.</French>
 			<Czech>Zdá se, že chybí transfúzní souprava.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_MATCHES">
-			<English>Box of Matches</English>
-			<German>Streichhölzer</German>
-			<Russian>Коробок спичек</Russian>
-			<Spanish>Caja de Fósforos</Spanish>
-			<French>Boîte d&apos;allumettes</French>
-			<Czech>Krabička zápalek</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_3">
 			<English>Box of Matches</English>
@@ -3130,54 +3326,6 @@
 			<French>Boîte d&apos;allumettes</French>
 			<Czech>Krabička zápalek</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_MATCHES_5">
-			<English>Box of Matches (5 left)</English>
-			<German>Streichhölzer (5 übrig)</German>
-			<Russian>Коробок спичек (5 шт.)</Russian>
-			<Spanish>Caja de Fósforos (5 restante)</Spanish>
-			<French>Boîte d&apos;allumettes (5 reste)</French>
-			<Czech>Krabička zápalek (5 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_MATCHES_4">
-			<English>Box of Matches (4 left)</English>
-			<German>Streichhölzer (4 übrig)</German>
-			<Russian>Коробок спичек (4 шт.)</Russian>
-			<Spanish>Caja de Fósforos (4 restante)</Spanish>
-			<French>Boîte d&apos;allumettes (4 reste)</French>
-			<Czech>Krabička zápalek (4 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_MATCHES_3">
-			<English>Box of Matches (3 left)</English>
-			<German>Streichhölzer (3 übrig)</German>
-			<Russian>Коробок спичек (3 шт.)</Russian>
-			<Spanish>Caja de Fósforos (3 restante)</Spanish>
-			<French>Boîte d&apos;allumettes (3 reste)</French>
-			<Czech>Krabička zápalek (3 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_MATCHES_2">
-			<English>Box of Matches (2 left)</English>
-			<German>Streichhölzer (2 übrig)</German>
-			<Russian>Коробок спичек (2 шт.)</Russian>
-			<Spanish>Caja de Fósforos (2 restante)</Spanish>
-			<French>Boîte d&apos;allumettes (2 reste)</French>
-			<Czech>Krabička zápalek (2 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_MATCHES_1">
-			<English>Box of Matches (1 left)</English>
-			<German>Streichhölzer (1 übrig)</German>
-			<Russian>Коробок спичек (1 шт.)</Russian>
-			<Spanish>Caja de Fósforos (1 restante)</Spanish>
-			<French>Boîte d&apos;allumettes (1 reste)</French>
-			<Czech>Krabička zápalek (1 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_MATCHES">
-			<English>Box of safety matches for starting a fire under controlled conditions.</English>
-			<German>Eine Schachtel Streichhölzer. Von Kindern fernhalten.</German>
-			<Russian>Коробок спичек используется для разведения огня.</Russian>
-			<Spanish>Una caja de fósforos de seguridad para iniciar fuego bajo condiciones controladas.</Spanish>
-			<French>Boîte d&apos;allumettes suédoises permettant d&apos;allumer un feu.</French>
-			<Czech>Balíček bezpečnostních zápalek pro zapálení ohně. Udržujte z dosahu dětí.</Czech>
-		</Key>
 		<Key ID="STR_EQUIP_DESC_3">
 			<English>Box of safety matches for starting a fire under controlled conditions.</English>
 			<German>Eine Schachtel Streichhölzer. Von Kindern fernhalten.</German>
@@ -3185,94 +3333,6 @@
 			<Spanish>Una caja de fósforos de seguridad para iniciar fuego bajo condiciones controladas.</Spanish>
 			<French>Boîte d&apos;allumettes suédoises permettant d&apos;allumer un feu.</French>
 			<Czech>Balíček bezpečnostních zápalek pro zapálení ohně. Udržujte z dosahu dětí.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_MATCHES_5">
-			<English>Box of safety matches for starting a fire under controlled conditions. 5 Matches left.</English>
-			<Russian>Коробок с пятью спичками.</Russian>
-			<Spanish>5 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
-			<French>5 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
-			<Czech>Zbývá 5 zápalek. Udržujte z dosahu dětí.</Czech>
-			<German>Eine Schachtel Streichhölzer mit 5 übrigen Streichhölzern.</German>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_MATCHES_4">
-			<English>Box of safety matches for starting a fire under controlled conditions. 4 Matches left.</English>
-			<Russian>Коробок с четырьмя спичками.</Russian>
-			<Spanish>4 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
-			<French>4 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
-			<Czech>Zbývají 4 zápalky. Udržujte z dosahu dětí.</Czech>
-			<German>Eine Schachtel Streichhölzer mit 4 übrigen Streichhölzern.</German>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_MATCHES_3">
-			<English>Box of safety matches for starting a fire under controlled conditions. 3 Matches left.</English>
-			<Russian>Коробок с тремя спичками.</Russian>
-			<Spanish>3 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
-			<French>3 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
-			<Czech>Zbývají 3 zápalky. Udržujte z dosahu dětí.</Czech>
-			<German>Eine Schachtel Streichhölzer mit 3 übrigen Streichhölzern.</German>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_MATCHES_2">
-			<English>Box of safety matches for starting a fire under controlled conditions. 2 Matches left.</English>
-			<Russian>Коробок с парой спичек.</Russian>
-			<Spanish>2 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
-			<French>2 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
-			<Czech>Zbývají 2 zápalky. Udržujte z dosahu dětí.</Czech>
-			<German>Eine Schachtel Streichhölzer mit 2 übrigen Streichhölzern.</German>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_MATCHES_1">
-			<English>Box of safety matches for starting a fire under controlled conditions. 1 Match left.</English>
-			<Russian>Одна спичка в коробке.</Russian>
-			<Spanish>1 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
-			<French>1 allumette restante. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
-			<Czech>Zbývá 1 zápalka. Udržujte z dosahu dětí.</Czech>
-			<German>Eine Schachtel Streichhölzer mit 1 übrigen Streichholz.</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_MATCHES_EMPTY">
-			<English>Box of Matches (empty)</English>
-			<German>Schachtel Streichhölzer (leer)</German>
-			<Russian>Коробок спичек (пустой)</Russian>
-			<Czech>Prázdná krabička zápalek</Czech>
-			<Spanish>Caja vacía de Resultados</Spanish>
-			<French>Boîte d&apos;allumettes vide</French>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_MATCHES_EMPTY">
-			<English>Empty Box of safety matches.</English>
-			<German>Eine Schachtel Streichhölzer. Sie ist bereits leer.</German>
-			<Russian>Абсолютно пустой коробок спичек. Выбрасывайте!</Russian>
-			<Czech>Smutná krabička bez zápalek. Bude vám zima.</Czech>
-			<Spanish>Caja vacía de Resultados</Spanish>
-			<French>Boîte d&apos;allumettes vide</French>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_MATCHES_WET">
-			<English>Box of Matches (wet)</English>
-			<German>Streichholzschachtel (nass)</German>
-			<Russian>Коробок спичек (мокрый)</Russian>
-			<Spanish>Caja de Fósforos Mojada</Spanish>
-			<French>Boîte d&apos;Allumettes mouillées</French>
-			<Czech>Krabička mokrých zápalek</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_MATCHES_WET">
-			<English>Box of wet matches.</English>
-			<German>Eine Schachtel Sicherheitszündhölzer. Die Schachtel ist nass geworden und unbrauchbar.</German>
-			<Russian>Коробок промокших спичек не пригодных для использования.</Russian>
-			<Spanish>Caja de fósforos mojada.</Spanish>
-			<French>Boîte d&apos;Allumettes mouillées.</French>
-			<Czech>Krabička plná mokrých zápalek.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_KNIFE">
-			<English>Hunting Knife</English>
-			<German>Jagdmesser</German>
-			<Russian>Охотничий нож</Russian>
-			<Spanish>Cuchillo de Caza</Spanish>
-			<French>Couteau de chasseur</French>
-			<Czech>Lovecký nůž</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_KNIFE">
-			<English>A knife used during hunting for preparing the game to be used as food by cutting up the meat.</English>
-			<German>Ein Jadgmesser, welches zum Ausnehmen von erlegtem Wild verwendet werden kann.</German>
-			<Russian>Нож можно использовать для разделки туш животных.</Russian>
-			<Spanish>Un cuchillo usado para preparar la carne de caza para ser guardada.</Spanish>
-			<French>Un couteau servant à dépecer le gibier.</French>
-			<Czech>Nůž, který se používá pro kuchání zvířat.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_4">
 			<English>Hunting Knife</English>
@@ -3289,52 +3349,6 @@
 			<Spanish>Un cuchillo usado para preparar la carne de caza para ser guardada.</Spanish>
 			<French>Un couteau servant à dépecer le gibier.</French>
 			<Czech>Nůž, který se používá pro kuchání zvířat.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_KNIFE_5">
-			<English>Your knife appears to be too blunt. (Maybe 5 uses left).</English>
-			<Russian>Похоже, нож тупится. Осталось 5 использований.</Russian>
-			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak pětkrát.</Czech>
-			<German>Dein Jagdmesser scheint stumpf zu werden. (Vielleicht noch 5 Anwendungen möglich)</German>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_KNIFE_4">
-			<English>Your knife appears to be too blunt. (Maybe 4 uses Left).</English>
-			<Russian>Похоже, нож тупится. Осталось 4 использования.</Russian>
-			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak čtyřikrát.</Czech>
-			<German>Dein Jagdmesser scheint stumpf zu werden. (Vielleicht noch 4 Anwendungen möglich)</German>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_KNIFE_3">
-			<English>Your knife appears to be too blunt. (Maybe 3 uses Left).</English>
-			<Russian>Похоже, нож тупится. Осталось 3 использования.</Russian>
-			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak třikrát.</Czech>
-			<German>Dein Jagdmesser scheint stumpf zu werden. (Vielleicht noch 3 Anwendungen möglich)</German>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_KNIFE_2">
-			<English>Your knife appears to be too blunt. (Maybe 2 uses Left).</English>
-			<Russian>Похоже, нож тупится. Осталось пара использований.</Russian>
-			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak dvakrát.</Czech>
-			<German>Dein Jagdmesser ist fast stumpf. (Vielleicht noch 2 Anwendungen möglich)</German>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_KNIFE_1">
-			<English>Your Knife appears to be too blunt. (Maybe 1 uses Left).</English>
-			<Russian>Похоже, нож тупится. Можно воспользоваться ещё разок.</Russian>
-			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak jednou.</Czech>
-			<German>Dein Jagdmesser ist so gut wie stumpf. (Vielleicht noch 1 Anwendung möglich)</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_KNIFE_DULL">
-			<English>Hunting Knife (dull)</English>
-			<German>Jagdmesser (stumpf)</German>
-			<Russian>Охотничий нож (тупой)</Russian>
-			<Spanish>Cuchillo Desafilado</Spanish>
-			<French>Couteau émoussé</French>
-			<Czech>Tupý nůž</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_KNIFE_DULL">
-			<English>Your Knife appears to be too dull.</English>
-			<German>Dein Jagdmesser ist durch häufigen Gebrauch stumpf geworden.</German>
-			<Russian>Ваш нож слишком туп, чтобы его использовать.</Russian>
-			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
-			<French>Votre couteau semble trop émoussé</French>
-			<Czech>Vypadá to, že tento nůž je příliš tupý.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_FLASHLIGHT">
 			<English>Flashlight</English>
@@ -32262,11 +32276,6 @@
 			<English>Metal Floor ruins</English>
 			<Russian>Руины металлического пола</Russian>
 			<German>Metallbodentrümmer</German>
-		</Key>
-		<Key ID="STR_EQUIP_KNIFE_ACTION">
-			<English>Harvest Plant</English>
-			<German>Pflanze ernten</German>
-			<Russian>Срезать растение</Russian>
 		</Key>
 		<Key ID="str_salvage_safezone">
 			<English>You cannot salvage parts in a safe zone</English>

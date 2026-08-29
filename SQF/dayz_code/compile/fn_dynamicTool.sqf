@@ -37,13 +37,13 @@ switch (_toolType) do {
 		_dynamic = dayz_matchboxCount;
 		_newItem = 'DZE_qtyRemaining';
 		_needed = DZE_Matchboxes;
-		_message = 'str_info_limitedbox';
+		_message = 'STR_INFO_TOOL_MATCHBOX_LIMITED';
 	};
 	case 'knives': {
 		_dynamic = dayz_knifeDulling;
 		_newItem = 'sharpnessRemaining';
 		_needed = DZE_Knives;
-		_message = 'str_info_bluntknife';
+		_message = 'STR_INFO_TOOL_KNIFE_BLUNT';
 	};
 };
 
