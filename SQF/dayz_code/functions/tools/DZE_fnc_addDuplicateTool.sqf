@@ -30,9 +30,9 @@ local _displayName = getText (configFile >> 'CfgWeapons' >> _tool >> 'displayNam
 
 if !(_tool in items player) exitWith {
 	// Remove melee magazines (BIS_fnc_invAdd fix).
-	false call dz_fn_meleeMagazines;
+	call DZE_fnc_removeMeleeMagazines;
 	local _added = [player,_tool] call BIS_fnc_invAdd;
-	true call dz_fn_meleeMagazines;
+	call DZE_fnc_ensureMeleeMagazine;
 
 	if (!_added) then {
 		systemChat localize 'str_epoch_player_107';

@@ -4,8 +4,8 @@ class RscDisplayGear
 	enableDisplay = 1;
 	movingEnable = 0;
 	
-	onLoad = "_this call fn_gearMenuChecks; false call dz_fn_meleeMagazines; dayz_gearThread = cursorTarget spawn object_monitorGear; call gear_ui_init; call ui_gear_sound; if (isNil 'IGUI_GEAR_activeFilter') then {IGUI_GEAR_activeFilter = 0}; [_this, 'onLoad'] spawn fn_handleGear;";
-	onUnload = "true call dz_fn_meleeMagazines; terminate dayz_gearThread; call player_selectWeapon; call player_forceSave;";
+	onLoad = "_this call fn_gearMenuChecks; call DZE_fnc_removeMeleeMagazines; dayz_gearThread = cursorTarget spawn object_monitorGear; call gear_ui_init; call ui_gear_sound; if (isNil 'IGUI_GEAR_activeFilter') then {IGUI_GEAR_activeFilter = 0}; [_this, 'onLoad'] spawn fn_handleGear;";
+	onUnload = "call DZE_fnc_ensureMeleeMagazine; terminate dayz_gearThread; call player_selectWeapon; call player_forceSave;";
 	onMouseMoving = "[] call gear_ui_hide;";
 	onMouseHolding = "[] call gear_ui_hide;";
 	
@@ -314,7 +314,7 @@ class RscDisplayGear
 					x = -2;
 					style = 2048;
 					onSetFocus = "[_this,'onFocus'] spawn fn_handleGear;";
-					onButtonClick = "false call dz_fn_meleeMagazines; [_this,'onLBListSelChanged'] spawn fn_handleGear;";
+					onButtonClick = "call DZE_fnc_removeMeleeMagazines; [_this,'onLBListSelChanged'] spawn fn_handleGear;";
 					text = "&lt;";
 				};
 				
@@ -349,7 +349,7 @@ class RscDisplayGear
 					idc = 147;
 					x = -2;
 					onSetFocus = "[_this,""onFocus""] spawn fn_handleGear;";
-					onButtonClick = "false call dz_fn_meleeMagazines; [_this,""onLBListSelChanged""] spawn fn_handleGear;";
+					onButtonClick = "call DZE_fnc_removeMeleeMagazines; [_this,""onLBListSelChanged""] spawn fn_handleGear;";
 					text = ">";
 				};
 			};

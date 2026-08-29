@@ -27,14 +27,14 @@ _newWeapon = _this select 2;
 
 //check that player has enough room in inventory
 //Remove melee magazines (BIS_fnc_invAdd and BIS_fnc_invSlotsEmpty fix)
-false call dz_fn_meleeMagazines;
+call DZE_fnc_removeMeleeMagazines;
 if ((([player] call BIS_fnc_invSlotsEmpty) select 4) < 1) exitWith
 {
 	closeDialog 0;
 	(localize "str_player_24") call DZE_fnc_rollingMessages;
-	true call dz_fn_meleeMagazines;
+	call DZE_fnc_ensureMeleeMagazine;
 };
-true call dz_fn_meleeMagazines;
+call DZE_fnc_ensureMeleeMagazine;
 
 //check that player has the weapon
 if (!(player hasWeapon _weapon)) exitWith

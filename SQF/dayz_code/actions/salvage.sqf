@@ -29,7 +29,7 @@ if (_hasToolbox) then {
 	if (_finished) then {
 		["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 		//Remove melee magazines (BIS_fnc_invAdd fix)
-		false call dz_fn_meleeMagazines;
+		call DZE_fnc_removeMeleeMagazines;
 		_hits = [_vehicle,_hitpoint] call object_getHit;
 		_damage = _hits select 0;
 		if (_damage < 1 && {_damage > 0}) then { //Tempfix for issue where certain hitpoints on some vehicles do not get damaged and allow infinite removal
@@ -65,7 +65,7 @@ if (_hasToolbox) then {
 				localize "str_player_24" call DZE_fnc_rollingMessages;
 			};
 		};
-		true call dz_fn_meleeMagazines;
+		call DZE_fnc_ensureMeleeMagazine;
 	} else {
 		localize "str_salvage_canceled" call DZE_fnc_rollingMessages;
 	};

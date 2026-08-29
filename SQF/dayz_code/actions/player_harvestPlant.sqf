@@ -34,7 +34,7 @@ if !(isNull _plant) then {
 		local _playerNear = {isPlayer _x} count (_plant nearEntities ["CAManBase", 12]) > 1;
 		if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call DZE_fnc_rollingMessages;};
 
-		false call dz_fn_meleeMagazines; //Remove melee magazines (BIS_fnc_invAdd fix)
+		call DZE_fnc_removeMeleeMagazines; //Remove melee magazines (BIS_fnc_invAdd fix)
 		["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 		local _invResult = false;
 		local _groundDrop = false;
@@ -52,7 +52,7 @@ if !(isNull _plant) then {
 			};
 			_i = _i + 1;
 		};
-		true call dz_fn_meleeMagazines;
+		call DZE_fnc_ensureMeleeMagazine;
 
 		local _text = getText (configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 

@@ -41,7 +41,7 @@ switch (_rounded) do {
 };
 
 //Remove melee magazines (BIS_fnc_invAdd fix)
-false call dz_fn_meleeMagazines;
+call DZE_fnc_removeMeleeMagazines;
 _i = 0;
 while {_i < _rounded} do {
 	_i = _i + 1;
@@ -57,6 +57,6 @@ while {_i < _rounded} do {
 		[_itemtocreate,1,1] call fn_dropItem;
 	};
 };
-true call dz_fn_meleeMagazines;
+call DZE_fnc_ensureMeleeMagazine;
 
 dayz_actionInProgress = false;

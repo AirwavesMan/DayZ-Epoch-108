@@ -21,7 +21,7 @@ _keySelected = format["ItemKey%1%2",_keyColor,_keyNumber];
 _isKeyOK = isClass(configFile >> "CfgWeapons" >> _keySelected);
 
 //Remove melee magazines (BIS_fnc_invAdd fix)
-false call dz_fn_meleeMagazines;
+call DZE_fnc_removeMeleeMagazines;
 _isOk = [player,_keySelected] call BIS_fnc_invAdd;
-true call dz_fn_meleeMagazines;
+call DZE_fnc_ensureMeleeMagazine;
 [(_isOk && _isKeyOK),_keySelected]

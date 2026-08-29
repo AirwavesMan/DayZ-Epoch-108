@@ -5,7 +5,7 @@ _selection = _this select 0;
 _returnArray = [0,0,0];
 
 if (_selection == 2) then { //gear
-	//_actualMags = {!(_x in MeleeMagazines)} count (magazines player);
+	//_actualMags = {!(_x in DZE_MeleeMagazines)} count (magazines player);
 	//_allowedMags = 20 - _actualMags; //8 pistol + 12 regular = 20
 	// Don't show pistol mag slots as item slots in gear. Player is informed of pistol mag slots count in systemChat.
 	_actualMags = {(getNumber (configFile >> "CfgMagazines" >> _x >> "type") == 256)} count (magazines player); // 256 = WeaponSlotItem (normal magazine)
