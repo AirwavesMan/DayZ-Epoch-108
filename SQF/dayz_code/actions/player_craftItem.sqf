@@ -228,12 +228,12 @@ if (_canDo) then {
 
 							{
 								if (_x in weapons player) then {
-									_x call player_addDuplicateTool;
+									_x call DZE_fnc_addDuplicateTool;
 								} else {
 									if (getNumber(configFile >> "CfgWeapons" >> _x >> "type") == 256) then {
 										player addWeapon _x;
 									} else {
-										_x call player_addDuplicateTool;
+										_x call DZE_fnc_addDuplicateTool;
 									};
 								};
 							} count _outputWeapons;

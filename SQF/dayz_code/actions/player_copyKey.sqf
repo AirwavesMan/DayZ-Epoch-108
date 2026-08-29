@@ -35,7 +35,7 @@ if (_finished) then {
 
 	if(_num_removed == 1) then {
 		_create = _item;
-		_create call player_addDuplicateTool;
+		_create call DZE_fnc_addDuplicateTool;
 	} else {
 		localize "str_epoch_player_61" call DZE_fnc_rollingMessages;
 	};

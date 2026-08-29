@@ -68,7 +68,7 @@ player removeMagazine _waterUsed;
 player removeWeapon _item;
 
 // The shared tool helper safely handles an existing sharpened tool.
-_output call player_addDuplicateTool;
+_output call DZE_fnc_addDuplicateTool;
 player addMagazine (getText (configFile >> 'CfgMagazines' >> _waterUsed >> 'containerEmpty'));
 
 //Remove Later

@@ -40,7 +40,7 @@ local _remainingMatches = _totalMatches % 5;
 local _i = 0;
 for '_i' from 1 to _fullBoxes do {
 	if ('DZE_Tool_Matchbox5' in weapons player) then {
-		'DZE_Tool_Matchbox5' call player_addDuplicateTool;
+		'DZE_Tool_Matchbox5' call DZE_fnc_addDuplicateTool;
 	} else {
 		player addWeapon 'DZE_Tool_Matchbox5';
 	};

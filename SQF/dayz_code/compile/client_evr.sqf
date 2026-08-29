@@ -452,7 +452,7 @@ fnc_evr = {
 					if (player hasWeapon _tool) then {
 						if (random 1 <= DZE_EVRDamageItemsChance) then {
 							player removeWeapon _tool;
-							(_x select 1) call player_addDuplicateTool;
+							(_x select 1) call DZE_fnc_addDuplicateTool;
 							_items set [count _items, (getText(configFile >> "CfgWeapons" >> _tool >> "displayName"))];
 						};
 					};

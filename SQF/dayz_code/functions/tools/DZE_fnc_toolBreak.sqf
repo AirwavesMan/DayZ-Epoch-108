@@ -113,7 +113,7 @@ if (!_removed) exitWith {
 	true
 };
 
-_brokenClass call player_addDuplicateTool;
+_brokenClass call DZE_fnc_addDuplicateTool;
 
 local _displayName = getText (configFile >> 'CfgWeapons' >> _toolClass >> 'displayName');
 if (_displayName == '') then {_displayName = _toolClass};
