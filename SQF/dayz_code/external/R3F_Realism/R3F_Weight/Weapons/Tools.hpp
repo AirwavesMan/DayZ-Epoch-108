@@ -174,35 +174,35 @@ class ItemSledge
 {
 	weight = 9.1;
 };
-class ItemMatchbox  
+class DZE_Tool_Matchbox
 {
 	weight = 0.007;
 };
-class Item5Matchbox  
+class DZE_Tool_Matchbox5
 {
 	weight = 0.006;
 };
-class Item4Matchbox  
+class DZE_Tool_Matchbox4
 {
 	weight = 0.005;
 };
-class Item3Matchbox  
+class DZE_Tool_Matchbox3
 {
 	weight = 0.004;
 };
-class Item2Matchbox  
+class DZE_Tool_Matchbox2
 {
 	weight = 0.003;
 };
-class Item1Matchbox  
+class DZE_Tool_Matchbox1
 {
 	weight = 0.002;
 };
-class ItemMatchboxEmpty  
+class DZE_Tool_MatchboxEmpty
 {
 	weight = 0.001;
 };
-class ItemMatchboxWet  
+class DZE_Tool_MatchboxWet
 {
 	weight = 0.009;
 };

@@ -484,7 +484,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 
 	// Tent actions
 	if (_istypeTent) then {
-		local _hasIgnitors = {_x in DayZ_Ignitors} count _itemsPlayer > 0;
+		local _hasIgnitors = {_x in DZE_Matchboxes} count _itemsPlayer > 0;
 		if ((_hasFuel20 || _hasFuel5 || _hasBarrel) && _hasIgnitors) then {
 			if (s_player_destroytent < 0) then {
 				s_player_destroytent = player addAction [localize "str_actions_self_destroytent", "\z\addons\dayz_code\actions\player_destroyTent.sqf",_cursorTarget, 0, false, true];

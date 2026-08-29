@@ -498,7 +498,7 @@ if !(isNull _object) then {
 		//	Ignite fire only if the config entry allows it
 		if (getNumber (_cfgV >> 'DZE_spawnFireOnBuild') == 1) then {
 			[_object,true,'',[]] call DZE_fnc_actionInflame;
-			_require = _require - ['ItemMatchbox'];	// DZE_fnc_actionInflame already processes the matchbox state.
+			_require = _require - ['DZE_Tool_Matchbox'];	// DZE_fnc_actionInflame already processes the matchbox state.
 		};
 	};
 

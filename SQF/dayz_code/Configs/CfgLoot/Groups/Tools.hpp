@@ -8,7 +8,7 @@ ToolsSurvival[] =
 	{Loot_TOOL,		1,		ItemMap},
 	{Loot_TOOL,		1,		ItemWatch},
 	{Loot_TOOL,		1,		ItemCompass},
-	{Loot_TOOL,		1,		ItemMatchbox},
+	{Loot_TOOL,		1,		DZE_Tool_Matchbox},
 	{Loot_TOOL,		1,		ItemFlashlight},
 	{Loot_TOOL,		1,		Binocular}
 };

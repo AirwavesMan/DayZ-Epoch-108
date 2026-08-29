@@ -70,8 +70,8 @@ local _missingItemText = '';
 				if (_requiredItem == 'ItemKnife') exitWith {
 					{if ((_x in _items) || {_x in _weapons}) exitWith {_hasTool = true};} count Dayz_Gutting;
 				};
-				if (_requiredItem == 'ItemMatchbox') exitWith {
-					{if ((_x in _items) || {_x in _weapons}) exitWith {_hasTool = true};} count DayZ_Ignitors;
+				if (_requiredItem == 'DZE_Tool_Matchbox') exitWith {
+					{if ((_x in _items) || {_x in _weapons}) exitWith {_hasTool = true};} count DZE_Matchboxes;
 				};
 				if (_requiredItem == 'ChainSaw') exitWith {
 					{if (_x in _weapons) exitWith {_hasTool = true};} count _chainsaws;

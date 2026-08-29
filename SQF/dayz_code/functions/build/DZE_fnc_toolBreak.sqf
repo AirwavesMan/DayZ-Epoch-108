@@ -36,7 +36,7 @@ if ('ItemKnife' in _requiredTools) then {
 	#endif
 };
 
-if ('ItemMatchbox' in _requiredTools) then {
+if ('DZE_Tool_Matchbox' in _requiredTools) then {
 	['matches',0.1] call fn_dynamicTool;
 
 	#ifdef DEBUG_DZE_FNC_TOOL_BREAK

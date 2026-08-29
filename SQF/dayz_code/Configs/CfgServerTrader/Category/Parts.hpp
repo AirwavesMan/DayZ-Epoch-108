@@ -13,7 +13,7 @@ class Category_34 {
 	class MeleeFlashlight {type = "trade_weapons";buy[] = {-2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class ItemFlashlightRed {type = "trade_weapons";buy[] = {1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};
 	class MeleeFlashlightRed {type = "trade_weapons";buy[] = {-1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};
-	class ItemMatchbox {type = "trade_weapons";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
+	class DZE_Tool_Matchbox {type = "trade_weapons";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class ItemEtool {type = "trade_weapons";buy[] = {9,"ItemSilverBar10oz"};sell[] = {6,"ItemSilverBar10oz"};};
 	class ItemShovel {type = "trade_weapons";buy[] = {9,"ItemSilverBar10oz"};sell[] = {6,"ItemSilverBar10oz"};};
 	class ItemHatchet {type = "trade_weapons";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};

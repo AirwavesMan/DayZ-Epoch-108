@@ -535,19 +535,19 @@ if (!isDedicated) then {
         private ["_matches","_fullBox","_remain"];
         _matches = 0;
         {
-            if (configName inheritsFrom (configfile >> "cfgWeapons" >> _x) == "ItemMatchbox") then { // iskindOf does not work here?!
-                 _matches = _matches + getNumber(configfile >> "cfgWeapons" >> _x >> "matches");
+            if (configName inheritsFrom (configfile >> "cfgWeapons" >> _x) == "DZE_Tool_Matchbox") then { // iskindOf does not work here?!
+                 _matches = _matches + getNumber (configFile >> 'CfgWeapons' >> _x >> 'DZE_matches');
                  player removeWeapon _x;
             };
         } count (items player);
         // limit to 1 fullbox and 1 used matchbox
         _fullBox = floor (_matches / 5);
         _remain = _matches % 5;
-        if (_fullBox > 0) then { player addWeapon "Item5Matchbox"; };
+        if (_fullBox > 0) then { player addWeapon "DZE_Tool_Matchbox5"; };
   		if (_fullBox > 1) then {
-			player addWeapon "Item4Matchbox";
+			player addWeapon "DZE_Tool_Matchbox4";
 		} else {
-	        if (_remain > 0) then { player addWeapon ("Item"+str(_remain)+"Matchbox"); };
+	        if (_remain > 0) then {player addWeapon ('DZE_Tool_Matchbox' + str _remain)};
 		};
     };
 

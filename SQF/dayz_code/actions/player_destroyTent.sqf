@@ -15,7 +15,7 @@ _matchArray = [];
 	if (_x IN items player) then {
 		_matchArray set [count _matchArray, _x];
 	};
-} count DayZ_Ignitors;
+} count DZE_Matchboxes;
 
 //Count how many fuelcans the player has incase they have more then one.
 {

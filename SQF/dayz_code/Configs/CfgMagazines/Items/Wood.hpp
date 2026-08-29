@@ -15,7 +15,7 @@ class ItemLog: CA_Magazine {
 		{
 			text = $STR_ACTIONS_MAKEFIRE;
 			script = "spawn DZE_fnc_modularBuild;";
-			require[] = {"ItemMatchbox"};
+			require[] = {"DZE_Tool_Matchbox"};
 			create = "DZE_Camp_Fire_Medium";
 		};
 		class Crafting
@@ -180,7 +180,7 @@ class PartWoodPile: CA_Magazine {
 		{
 			text = $STR_ACTIONS_MAKEFIRE;
 			script = "spawn DZE_fnc_modularBuild;";
-			require[] = {"ItemMatchbox"};
+			require[] = {"DZE_Tool_Matchbox"};
 			create = "DZE_Camp_Fire_Small";
 		};
 		class Crafting

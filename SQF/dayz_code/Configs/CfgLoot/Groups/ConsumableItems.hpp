@@ -1,10 +1,10 @@
 Matchbox[] =
 {
-	{Loot_WEAPON,		1,		ItemMatchbox},
-	{Loot_WEAPON,		1,		Item5Matchbox},
-	{Loot_WEAPON,		1,		Item4Matchbox},
-	{Loot_WEAPON,		1,		Item3Matchbox},
-	{Loot_WEAPON,		1,		Item2Matchbox},
-	{Loot_WEAPON,		1,		Item1Matchbox},
-	{Loot_WEAPON,		1,		ItemMatchboxEmpty}
+	{Loot_WEAPON,		1,		DZE_Tool_Matchbox},
+	{Loot_WEAPON,		1,		DZE_Tool_Matchbox5},
+	{Loot_WEAPON,		1,		DZE_Tool_Matchbox4},
+	{Loot_WEAPON,		1,		DZE_Tool_Matchbox3},
+	{Loot_WEAPON,		1,		DZE_Tool_Matchbox2},
+	{Loot_WEAPON,		1,		DZE_Tool_Matchbox1},
+	{Loot_WEAPON,		1,		DZE_Tool_MatchboxEmpty}
 };

@@ -62,5 +62,5 @@ InfectedCamp[] =
 	{Loot_GROUP,		10,		AmmoCivilian},
 	{Loot_GROUP,		10,		Parts},
 	{Loot_GROUP,		30,		Consumable},
-	{Loot_WEAPON,		3,		ItemMatchbox}
+	{Loot_WEAPON,		3,		DZE_Tool_Matchbox}
 };

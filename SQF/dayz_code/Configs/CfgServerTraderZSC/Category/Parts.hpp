@@ -13,7 +13,7 @@ class Category_34 {
 	class MeleeFlashlight {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {1,"worth"};};
 	class ItemFlashlightRed {type = "trade_weapons";buy[] = {10,"worth"};sell[] = {5,"worth"};};
 	class MeleeFlashlightRed {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {5,"worth"};};
-	class ItemMatchbox {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
+	class DZE_Tool_Matchbox {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
 	class ItemEtool {type = "trade_weapons";buy[] = {90,"worth"};sell[] = {60,"worth"};};
 	class ItemShovel {type = "trade_weapons";buy[] = {90,"worth"};sell[] = {60,"worth"};};
 	class ItemHatchet {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};

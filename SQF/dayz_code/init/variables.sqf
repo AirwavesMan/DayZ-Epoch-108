@@ -287,7 +287,7 @@ if (!isDedicated) then {
 	MeleeMagazines = ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing"];
 	MeleeAmmo = ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo","Bat_Swing_Ammo","BatBarbed_Swing_Ammo","BatNailed_Swing_Ammo","Fishing_Swing_Ammo","Sledge_Swing_Ammo","Chainsaw_Swing_Ammo"];
 	Dayz_Gutting = ["ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"];
-	DayZ_Ignitors = ["ItemMatchbox","Item5Matchbox","Item4Matchbox","Item3Matchbox","Item2Matchbox","Item1Matchbox"];
+	DZE_Matchboxes = ["DZE_Tool_Matchbox","DZE_Tool_Matchbox5","DZE_Tool_Matchbox4","DZE_Tool_Matchbox3","DZE_Tool_Matchbox2","DZE_Tool_Matchbox1"];
 	dayz_disallowedVault = ['DZE_Tent_Base','BuiltItems','ModularItems','DZE_Base_Object','DZE_Generator'];
 	dayz_fuelpumparray = ["DZE_FuelPump","Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","FuelStation","Land_ibr_FuelStation_Feed","Land_fuelstation_army","Land_smd_fuelstation_army","Land_fuelstation","land_fuelstation_w","Land_benzina_schnell"];
 	DayZ_fuelCans = ["ItemJerrycan","ItemFuelcan","ItemFuelBarrel"];

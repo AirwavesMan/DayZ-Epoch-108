@@ -42,7 +42,7 @@ if (!_isLit) then {
 
 	{
 		if (_x in _playerItems) exitWith {_hasIgnitor = true};
-	} count DayZ_Ignitors;
+	} count DZE_Matchboxes;
 };
 
 // Return true when the player can light an unlit fire or put out a lit fire.
