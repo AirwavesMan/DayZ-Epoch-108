@@ -315,7 +315,7 @@ class equip_tent_poles: CA_Magazine
 			text = $STR_EPOCH_PLAYER_190;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"ItemTent",1}};
 			input[] = {{"ItemCanvas",2},{"equip_tent_poles",2}};
 		};
@@ -324,7 +324,7 @@ class equip_tent_poles: CA_Magazine
 			text = $STR_EPOCH_PLAYER_191;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"ItemDesertTent",1}};
 			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};
@@ -333,7 +333,7 @@ class equip_tent_poles: CA_Magazine
 			text = $STR_EPOCH_PLAYER_192;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"ItemDomeTent",1}};
 			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};
@@ -342,7 +342,7 @@ class equip_tent_poles: CA_Magazine
 			text = $STR_EPOCH_PLAYER_192_1;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"ItemTentWinter",1}};
 			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};
@@ -351,7 +351,7 @@ class equip_tent_poles: CA_Magazine
 			text = $STR_EPOCH_PLAYER_192_2;
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"ItemWinterDomeTent",1}};
 			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};		

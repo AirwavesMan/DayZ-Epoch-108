@@ -29,7 +29,7 @@ class SkinBase : CA_Magazine
 			text = $STR_EPOCH_PLAYER_269b;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"ItemCanvas",1}};
 			input[] = {{"SkinBase",2}};
 		};
@@ -38,7 +38,7 @@ class SkinBase : CA_Magazine
 			text = $STR_EPOCH_PLAYER_269;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"ItemBandage",2}};
 			input[] = {{"SkinBase",1},{"ItemTrashToiletpaper",1}};
 		};

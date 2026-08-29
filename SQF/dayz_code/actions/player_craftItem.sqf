@@ -37,7 +37,7 @@ class ItemActions
 		text = "Craft Tent";
 		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;"; // [Class of itemaction,CfgMagazines || CfgWeapons, item]
 		neednearby[] = {"workshop","fire"};
-		requiretools[] = {"ItemToolbox","ItemKnife"}; // (cfgweapons only)
+		requiretools[] = {"ItemToolbox","DZE_Tool_Knife"}; // (cfgweapons only)
 		output[] = {{"ItemTent",1}}; // (CfgMagazines, qty)
 		input[] = {{"ItemCanvas",2},{"ItemPole",2}}; // (CfgMagazines, qty)
 		inputstrict = true; // (CfgMagazines input without inheritsFrom) Optional

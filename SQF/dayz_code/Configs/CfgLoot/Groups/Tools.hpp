@@ -4,7 +4,7 @@
 // This list contains small tools that can spawn anywhere
 ToolsSurvival[] =
 {
-	{Loot_TOOL,		1,		ItemKnife},
+	{Loot_TOOL,		1,		DZE_Tool_Knife},
 	{Loot_TOOL,		1,		ItemMap},
 	{Loot_TOOL,		1,		ItemWatch},
 	{Loot_TOOL,		1,		ItemCompass},
@@ -29,7 +29,7 @@ ToolsBuilding[] =
 // Small tools that can spawn anywhere
 ToolsMilitary[] =
 {
-	{Loot_TOOL,		1,		ItemKnife},
+	{Loot_TOOL,		1,		DZE_Tool_Knife},
 	{Loot_TOOL,		1,		ItemGPS},
 	{Loot_TOOL,		1,		ItemCompass},
 	{Loot_TOOL,		1,		ItemFlashlightRed},

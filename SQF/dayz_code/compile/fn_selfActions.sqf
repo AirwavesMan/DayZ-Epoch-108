@@ -916,7 +916,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 		};
 
 		if (DZE_Butcher_Body) then {
-			if (({_x in ["ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1"]} count _itemsPlayer > 0) && !(_cursorTarget getVariable ["bodyButchered",false])) then {
+			if (({_x in ["DZE_Tool_Knife","DZE_Tool_Knife5","DZE_Tool_Knife4","DZE_Tool_Knife3","DZE_Tool_Knife2","DZE_Tool_Knife1"]} count _itemsPlayer > 0) && !(_cursorTarget getVariable ["bodyButchered",false])) then {
 				if (s_player_butcher_human < 0) then {
 					s_player_butcher_human = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_BA_BUTCHER"],"\z\addons\dayz_code\actions\buryActions.sqf",[_cursorTarget,"butcher"],0,false,true];
 				};

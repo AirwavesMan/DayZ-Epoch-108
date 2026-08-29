@@ -18,7 +18,7 @@ local _wasStanding	= ["perc", animationState player] call fnc_inString;
 	if (_x in items player) then {
 		_knives set [count _knives, _x];
 	};
-} count Dayz_Gutting;
+} count DZE_Knives;
 
 // Exit the script if the player doesn't have a knife
 if ((count _knives) < 1) exitWith {
@@ -44,7 +44,7 @@ local _text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 
 _body setVariable ["meatHarvested",true,true];
 local _qty = if (_isListed) then {getNumber (configFile >> "CfgSurvival" >> "Meat" >> _type >> "yield")} else {2};
-if ((_knives select 0) == "ItemKnifeBlunt") then {_qty = round(_qty / 2);};
+if ((_knives select 0) == "DZE_Tool_KnifeBlunt") then {_qty = round(_qty / 2);};
 
 if (local _body) then {
 	[_body, _qty] spawn local_gutObject; //leave as spawn (sleeping in loops will work but can freeze the script)

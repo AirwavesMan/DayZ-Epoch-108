@@ -94,31 +94,31 @@ class ItemFlashlightRed
 {
 	weight = 0.25;
 };
-class ItemKnife 
+class DZE_Tool_Knife
 {
 	weight = 0.135;
 };
-class ItemKnife5 
+class DZE_Tool_Knife5
 {
 	weight = 0.135;
 };
-class ItemKnife4 
+class DZE_Tool_Knife4
 {
 	weight = 0.135;
 };
-class ItemKnife3 
+class DZE_Tool_Knife3
 {
 	weight = 0.135;
 };
-class ItemKnife2
+class DZE_Tool_Knife2
 {
 	weight = 0.135;
 };
-class ItemKnife1
+class DZE_Tool_Knife1
 {
 	weight = 0.135;
 };
-class ItemKnifeBlunt
+class DZE_Tool_KnifeBlunt
 {
 	weight = 0.135;
 };

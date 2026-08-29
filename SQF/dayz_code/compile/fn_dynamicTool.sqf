@@ -42,7 +42,7 @@ switch (_toolType) do {
 	case 'knives': {
 		_dynamic = dayz_knifeDulling;
 		_newItem = 'sharpnessRemaining';
-		_needed = Dayz_Gutting;
+		_needed = DZE_Knives;
 		_message = 'str_info_bluntknife';
 	};
 };
@@ -61,13 +61,13 @@ local _remaining = '';
 	_hasTool = _x in _toolBelt;
 	if (_hasTool && {!_dynamic}) exitWith {};
 
-	_oneLeft = _x in ['DZE_Tool_Matchbox1','ItemKnife1'];
+	_oneLeft = _x in ['DZE_Tool_Matchbox1','DZE_Tool_Knife1'];
 	_remaining = getText (configFile >> 'CfgWeapons' >> _x >> _newItem);
 
 	// Use lowest quantity matches first to prevent duplicate tool being added
 	// Use knife with least remaining uses first, except dull knife
 	if (_hasTool && {!(_remaining in _toolBelt) || {_oneLeft}}) exitWith {
-		if (_x in ['ItemKnife','DZE_Tool_Matchbox']) then {
+		if (_x in ['DZE_Tool_Knife','DZE_Tool_Matchbox']) then {
 			if ([_chance] call fn_chance) then {
 				player removeWeapon _x;
 				player addWeapon _remaining;

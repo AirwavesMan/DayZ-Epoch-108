@@ -34,7 +34,7 @@ InfectedCamp[] =
 	{Loot_WEAPON,		1,		ItemWatch},
 	{Loot_WEAPON,		1,		ItemCompass},
 	{Loot_WEAPON,		1,		ItemFlashlight},
-	{Loot_WEAPON,		1,		ItemKnife},
+	{Loot_WEAPON,		1,		DZE_Tool_Knife},
 	{Loot_WEAPON,		1,		Binocular},
 	{Loot_WEAPON,		1,		ItemCrowbar},
 	

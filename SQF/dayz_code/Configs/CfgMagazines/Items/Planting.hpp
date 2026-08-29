@@ -59,7 +59,7 @@ class ItemKiloHemp : CA_Magazine
 			text = $STR_EPOCH_PLAYER_269b;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"ItemCanvas",1}};
 			input[] = {{"ItemKiloHemp",1}};
 		};
@@ -68,7 +68,7 @@ class ItemKiloHemp : CA_Magazine
 			text = $STR_EPOCH_PLAYER_269a;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
-			requiretools[] = {"ItemKnife"};
+			requiretools[] = {"DZE_Tool_Knife"};
 			output[] = {{"ItemHempSeed",5}};
 			input[] = {{"ItemKiloHemp",1}};
 		};

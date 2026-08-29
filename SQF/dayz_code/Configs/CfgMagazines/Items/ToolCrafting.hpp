@@ -76,7 +76,7 @@ class equip_Crossbow_Kit : CA_Magazine
 			text = $STR_CRAFTING_CROSSBOW;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {};
 			outputweapons[] = {"Crossbow_DZ"};
 			input[] = {{"equip_Crossbow_Kit",1},{"equip_crossbow_stock",1}};
@@ -101,7 +101,7 @@ class equip_crossbow_stock : CA_Magazine
 			text = $STR_CRAFTING_CROSSBOW;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {};
 			outputweapons[] = {"Crossbow_DZ"};
 			input[] = {{"equip_Crossbow_Kit",1},{"equip_crossbow_stock",1}};

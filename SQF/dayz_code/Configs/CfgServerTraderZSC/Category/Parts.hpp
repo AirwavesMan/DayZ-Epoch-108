@@ -18,7 +18,7 @@ class Category_34 {
 	class ItemShovel {type = "trade_weapons";buy[] = {90,"worth"};sell[] = {60,"worth"};};
 	class ItemHatchet {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
 	class MeleeHatchet {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {1,"worth"};};
-	class ItemKnife {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
+	class DZE_Tool_Knife {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
 	class ItemToolbox {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
 	class Handsaw_DZE {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
 	class Hammer_DZE {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};

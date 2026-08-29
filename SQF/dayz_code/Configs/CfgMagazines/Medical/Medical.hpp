@@ -159,7 +159,7 @@ class equip_gauze : CA_Magazine
 			text = $STR_EPOCH_PLAYER_269;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemKnife"};
+			requiretools[] = {"DZE_Tool_Knife"};
 			output[] = {{"ItemBandage",2}};
 			outputweapons[] = {};
 			input[] = {{"equip_gauze",2},{"equip_rag",1},{"equip_string",1}};

@@ -64,7 +64,7 @@ class desert_net_kit: CA_Magazine
 			text = $STR_EPOCH_PLAYER_229;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"desert_large_net_kit",1}};
 			input[] = {{"desert_net_kit",3}};
 		};
@@ -94,7 +94,7 @@ class forest_net_kit: CA_Magazine
 			text = $STR_EPOCH_PLAYER_229;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"forest_large_net_kit",1}};
 			input[] = {{"forest_net_kit",3}};
 		};
@@ -125,7 +125,7 @@ class winter_net_kit: CA_Magazine
 			text = $STR_EPOCH_PLAYER_229;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","DZE_Tool_Knife"};
 			output[] = {{"winter_large_net_kit",1}};
 			input[] = {{"winter_net_kit",3}};
 		};		

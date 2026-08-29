@@ -28,7 +28,7 @@ local _requiredTools = _this;
 if (count _requiredTools == 0) exitWith {true};
 
 // Knives and matchboxes use their existing staged wear instead of DZE_brokenItem.
-if ('ItemKnife' in _requiredTools) then {
+if ('DZE_Tool_Knife' in _requiredTools) then {
 	['knives',0.2] call fn_dynamicTool;
 
 	#ifdef DEBUG_DZE_FNC_TOOL_BREAK
