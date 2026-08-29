@@ -21,7 +21,7 @@ class ItemSledge: ItemCore // Epoch class
 		class Toolbelt
 		{
 			text = $STR_ACTIONS_RFROMTB;
-			script = "spawn player_addToolbelt;";
+			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"ItemSledge"};
 			output[] = {"MeleeSledge"};
 		};

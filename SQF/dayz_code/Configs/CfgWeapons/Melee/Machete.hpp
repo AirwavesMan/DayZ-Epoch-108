@@ -13,7 +13,7 @@ class MeleeMachete: MeleeWeapon
 		class Toolbelt
 		{
 			text = $STR_ACTIONS_2TB;
-			script = "spawn player_addToolbelt;";
+			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"MeleeMachete"};
 			output[] = {"ItemMachete"};
 		};

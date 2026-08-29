@@ -11,7 +11,7 @@ class ItemFlashlight : ItemCore
 		class Toolbelt
 		{
 			text = $STR_ACTIONS_RFROMTB;
-			script = "spawn player_addToolbelt;";
+			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"ItemFlashlight"};
 			output[] = {"MeleeFlashlight"};
 		};
@@ -54,7 +54,7 @@ class MeleeFlashlight : Pistol
 		class Toolbelt
 		{
 			text = $STR_ACTIONS_2TB;
-			script = "spawn player_addToolbelt;";
+			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"MeleeFlashlight"};
 			output[] = {"ItemFlashlight"};
 		};
@@ -73,7 +73,7 @@ class ItemFlashlightRed : ItemFlashlight
 		class Toolbelt
 		{
 			text = $STR_ACTIONS_RFROMTB;
-			script = "spawn player_addToolbelt;";
+			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"ItemFlashlightRed"};
 			output[] = {"MeleeFlashlightRed"};
 		};
@@ -112,7 +112,7 @@ class MeleeFlashlightRed : MeleeFlashlight
 		class Toolbelt
 		{
 			text = $STR_ACTIONS_2TB;
-			script = "spawn player_addToolbelt;";
+			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"MeleeFlashlightRed"};
 			output[] = {"ItemFlashlightRed"};
 		};

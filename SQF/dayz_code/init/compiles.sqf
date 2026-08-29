@@ -503,14 +503,6 @@ if (!isDedicated) then {
 		};
 	};
 
-	dz_fn_meleeMagazines = {
-		if (_this) then {
-			{ player addMagazine _x } foreach MeleeMagazines;
-		} else {
-			{ player removeMagazines _x } foreach MeleeMagazines;
-		};
-	};
-
 	dayz_killFeed = {
 		private ["_distance","_offset","_icon","_playerName","_sourceName"];
 		_playerName = _this select 1;
@@ -642,12 +634,13 @@ if (!isDedicated) then {
 
 	FUNCTION(DZE_fnc_ensureMeleeMagazine);	// Adds the missing magazine for the player's active melee weapon.
 	FUNCTION(DZE_fnc_getFreeBackpackSlots);	// Returns the number of free magazine-sized backpack slots.
+	FUNCTION(DZE_fnc_removeMeleeMagazines);	// Removes hidden melee magazines before inventory operations.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	path('tools');
 
-	FUNCTION(player_addToolbelt);			// Moves a configured weapon between the player's weapon slots and toolbelt.
+	FUNCTION(DZE_fnc_addToolbelt);		// Moves a configured weapon between the player's weapon slots and toolbelt.
 	FUNCTION(player_addtoBack);			// Moves a supported toolbelt item into its melee weapon form.
 	FUNCTION(DZE_fnc_addDuplicateTool);		// Adds a tool without overwriting an existing toolbelt item.
 	FUNCTION(DZE_fnc_combineMatches);		// Combines partial matchboxes into boxes with up to five matches.

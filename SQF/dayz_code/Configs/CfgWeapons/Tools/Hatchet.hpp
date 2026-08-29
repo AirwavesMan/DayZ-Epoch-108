@@ -22,7 +22,7 @@ class ItemHatchet : ItemCore
 		class Toolbelt
 		{
 			text = $STR_ACTIONS_RFROMTB;
-			script = "spawn player_addToolbelt;";
+			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"ItemHatchet"};
 			output[] = {"MeleeHatchet"};
 		};

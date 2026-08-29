@@ -11,7 +11,7 @@ class ItemMachete : ItemCore
 		class Toolbelt
 		{
 			text = $STR_ACTIONS_RFROMTB;
-			script = "spawn player_addToolbelt;";
+			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"ItemMachete"};
 			output[] = {"MeleeMachete"};
 		};
