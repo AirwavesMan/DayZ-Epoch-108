@@ -3,7 +3,7 @@
 //	DZE_fnc_updateToolState
 //
 //	Description:	Processes one use of a configured multi-state knife or matchbox.
-//	Groups:		Inventory, Tools
+//	Groups:		Tools
 //
 //	Syntax:		[toolType,initialStateChance] call DZE_fnc_updateToolState
 //

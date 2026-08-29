@@ -15,7 +15,7 @@ if (dayZ_OnBack != "") exitWith {closeDialog 0; format[localize "str_player_toba
 call gear_ui_init;
 
 if (_item in ["ItemHatchet","ItemCrowbar","ItemMachete","ItemFishingPole","ItemSledge"]) then {
-	//free primary slot for new melee (remember item to add after)
+	// Free the primary slot for new melee (remember item to add after)
 	call {
 		if (_item == "ItemHatchet") exitwith {player removeWeapon "ItemHatchet"; dayz_onBack = "MeleeHatchet";player setVariable ["dayz_onBack",dayz_onBack,true];};
 		if (_item == "ItemCrowbar") exitwith {player removeWeapon "ItemCrowbar"; dayz_onBack = "MeleeCrowbar";player setVariable ["dayz_onBack",dayz_onBack,true];};

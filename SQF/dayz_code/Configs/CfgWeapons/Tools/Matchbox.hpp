@@ -31,7 +31,7 @@ class DZE_Tool_Matchbox: DZE_Tool_Matchbox_Base {
 	class ItemActions {
 		class Combine {
 			text = "$STR_ACTION_TOOL_MATCHBOX_COMBINE";
-			script = "spawn player_combineMatches;";
+			script = "spawn DZE_fnc_combineMatches;";
 		};
 	};
 };

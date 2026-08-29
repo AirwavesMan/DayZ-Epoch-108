@@ -1,5 +1,5 @@
 /*
-	This script handles three different cases:
+	This script handles three different tool cases:
 	1. Adding dayz_onBack to toolbelt
 	2. Adding primary to toolbelt
 	3. Removing tool from toolbelt and converting it to primary

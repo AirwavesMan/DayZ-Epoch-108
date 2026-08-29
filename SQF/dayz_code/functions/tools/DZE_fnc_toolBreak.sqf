@@ -4,7 +4,7 @@
 //
 //	Description:	Updates staged knife and matchbox wear, then selects one breakable tool used by
 //			a completed action and replaces it with its configured broken item.
-//	Groups:		Build, Inventory
+//	Groups:		Tools
 //
 //	Syntax:		toolArray call DZE_fnc_toolBreak
 //

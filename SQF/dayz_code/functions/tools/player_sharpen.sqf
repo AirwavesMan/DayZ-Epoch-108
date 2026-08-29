@@ -3,7 +3,7 @@ dayz_actionInProgress = true;
 
 private ["_item","_use","_repair","_waterUsed","_displayName","_finished"];
 
-//['DZE_Tool_KnifeBlunt','DZE_Tool_Knife']
+// Parameters: ['DZE_Tool_KnifeBlunt','DZE_Tool_Knife']
 _item = _this select 0; //Item to be sharpened
 _repair = _this select 1; //Item to be given back.
 

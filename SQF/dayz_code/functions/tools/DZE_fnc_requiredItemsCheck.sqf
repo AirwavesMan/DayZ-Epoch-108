@@ -4,7 +4,7 @@
 //
 //	Description:	Checks a required inventory item and tool classes, including supported tool
 //			alternatives.
-//	Groups:		Inventory, Validation
+//	Groups:		Tools
 //
 //	Syntax:		[item,requiredItems,className,silent] call DZE_fnc_requiredItemsCheck
 //

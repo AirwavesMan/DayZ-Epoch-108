@@ -75,8 +75,6 @@ if (!isDedicated) then {
 
 	//actions
 	userActionConditions = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\userActionConditions.sqf";
-	player_addToolbelt = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_addToolbelt.sqf";
-	player_addtoBack = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_addtoBack.sqf";
 	player_reloadMag = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_reloadMags.sqf";
 	player_consume = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_consume.sqf";
 	player_emptyContainer = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_emptyContainer.sqf";
@@ -91,13 +89,11 @@ if (!isDedicated) then {
 	player_combineMag = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMags.sqf";
 	player_combineAntibiotics = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineAntibiotics.sqf";
 	player_combinePainkiller = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combinePainkiller.sqf";
-	player_combineMatches = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMatches.sqf";
 	player_createquiver = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_createQuiver.sqf";
 	player_fillquiver = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_fillQuiver.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_switchWeapon.sqf";
 	player_gather = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_gather.sqf";
 	player_tearClothes = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_tearClothes.sqf";
-	player_sharpen = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sharpen.sqf";
 	player_butcher = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\gather_meat.sqf";
 	player_pushPlane = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_pushPlane.sqf";
 
@@ -147,7 +143,6 @@ if (!isDedicated) then {
 	fn_pauseMenuChecks = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_pauseMenuChecks.sqf";
 	fn_waitForObject = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_waitForObject.sqf";
 	player_onPause = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_onPause.sqf";
-	player_addDuplicateTool = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_addDuplicateTool.sqf";
 	player_antiWall = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_antiWall.sqf";
 	player_changeCombo = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_changeCombo.sqf";
 	player_checkItems =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_checkItems.sqf";
@@ -677,9 +672,16 @@ if (!isDedicated) then {
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
-	path('inventory');
+	path('tools');
 
+	FUNCTION(player_addToolbelt);			// Moves a configured weapon between the player's weapon slots and toolbelt.
+	FUNCTION(player_addtoBack);			// Moves a supported toolbelt item into its melee weapon form.
+	FUNCTION(player_addDuplicateTool);		// Adds a tool without overwriting an existing toolbelt item.
+	FUNCTION(DZE_fnc_combineMatches);		// Combines partial matchboxes into boxes with up to five matches.
+	FUNCTION(player_sharpen);			// Sharpens a configured blunt tool.
+	FUNCTION(DZE_fnc_requiredItemsCheck);		// Checks a required inventory item and tool classes.
 	FUNCTION(DZE_fnc_updateToolState);		// Processes one use of a configured multi-state tool.
+	FUNCTION(DZE_fnc_toolBreak);			// Replaces one tool used by a completed action with its configured broken item.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -733,8 +735,6 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_modularBuild);			// Construct a modular base-building object and save it to the database.
 	FUNCTION(DZE_fnc_overlapsRoad);			// Returns whether an object's bounding box overlaps a nearby road segment.
 	FUNCTION(DZE_fnc_queueBuildInput);		// Appends one build input to the active FIFO queue.
-	FUNCTION(DZE_fnc_requiredItemsCheck);		// Checks a required inventory item and tool classes.
-	FUNCTION(DZE_fnc_toolBreak);			// Replaces one tool used by a completed action with its configured broken item.
 
 	path('build\remove');
 

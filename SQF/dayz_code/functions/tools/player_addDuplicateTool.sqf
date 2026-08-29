@@ -1,5 +1,6 @@
 /*
 Description:
+Groups: Tools
 Checks whether the player already has the tool on their toolbelt and then adds it. Useful for batch crafting tools.
 1. If they don't then it adds it to their toolbelt. If the toolbelt is full it is dropped on the floor.
 2. If they do then it adds it to their backpack. If their backpack is full it spills out on the floor.
