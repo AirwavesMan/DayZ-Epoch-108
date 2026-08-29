@@ -1,3 +1,27 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	player_upgradeVehicle
+//
+//	Description:	Consumes configured parts and requests a persistent vehicle upgrade.
+//	Groups:		Vehicles
+//
+//	Syntax:		upgradeClass spawn player_upgradeVehicle
+//
+//	Parameters:	upgradeClass: String - CfgMagazines upgrade option
+//
+//	Return Value:	Nothing
+//
+//	Called by:	Client
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//#define DEBUG_PLAYER_UPGRADE_VEHICLE
+
+#include "\z\addons\dayz_code\functions\include\defines.hpp"
+
+#ifdef DEBUG_PLAYER_UPGRADE_VEHICLE
+	diag_log format ['[Client Debug]: [player_upgradeVehicle]: Function called with argumentes: %1',_this];
+#endif
+
 /*
 	DayZ Epoch Vehicle Upgrades
 	Made for DayZ Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
@@ -139,6 +163,7 @@ if (count (crew _vehicle) == 0) then {
 							} else {
 								localize "STR_EPOCH_VEHUP_SUCCESS" call DZE_fnc_rollingMessages;
 								["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
+								_requirementsTools call DZE_fnc_toolBreak;
 							};
 						};
 					} else {

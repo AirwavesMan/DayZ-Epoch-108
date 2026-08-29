@@ -37542,6 +37542,13 @@
 			<Dutch>%1 is kapot gegaan. kan %2 niet verwijderen.</Dutch>
 			<Czech>%1 se rozbil. Nelze odstranit %2.</Czech>
 		</Key>
+		<Key ID="STR_TOOL_BREAK_BROKEN">
+			<English>%1 broke.</English>
+			<German>%1 ist kaputtgegangen.</German>
+			<Russian>%1 сломан.</Russian>
+			<Dutch>%1 is kapot gegaan.</Dutch>
+			<Czech>%1 se rozbil.</Czech>
+		</Key>
 		<Key ID="STR_BUILD_REMOVE_COMPLETED">
 			<English>Removed %1.</English>
 			<German>%1 wurde entfernt.</German>

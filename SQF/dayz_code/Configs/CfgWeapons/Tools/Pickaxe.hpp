@@ -5,6 +5,7 @@ class ItemPickaxe : ItemCore
 	picture = "\z\addons\dayz_communityweapons\models\pickaxe\pickaxe.paa";
 	displayName = $STR_EQUIP_NAME_PICKAXE;
 	descriptionShort = $STR_EQUIP_DESC_PICKAXE;
+	DZE_brokenItem = "ItemPickaxeBroken";
 	
 	class ItemActions
 	{

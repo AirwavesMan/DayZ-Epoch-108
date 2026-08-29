@@ -729,13 +729,13 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_overlapsRoad);			// Returns whether an object's bounding box overlaps a nearby road segment.
 	FUNCTION(DZE_fnc_queueBuildInput);		// Appends one build input to the active FIFO queue.
 	FUNCTION(DZE_fnc_requiredItemsCheck);		// Checks a required inventory item and tool classes.
+	FUNCTION(DZE_fnc_toolBreak);			// Replaces one tool used by a completed action with its configured broken item.
 
 	path('build\remove');
 
 	FUNCTION(DZE_fnc_createRemoveObjectOutput);	// Creates configured removal output and safely places backpack objects.
 	FUNCTION(DZE_fnc_getConfiguredRemoveRefund);	// Reads and validates one configured RemoveObject refund.
 	FUNCTION(DZE_fnc_getRemoveObjectRefund);		// Resolves category-specific removal output and preserved storage cargo.
-	FUNCTION(DZE_fnc_removeBrokenTool);		// Removes a tool broken during object removal.
 	FUNCTION(DZE_fnc_removeNearby);			// Finds and removes the nearest object matching the requested classes.
 	FUNCTION(DZE_fnc_removeObject);			// Coordinates removal of an eligible object.
 	FUNCTION(DZE_fnc_requestObjectDeletion);		// Requests and confirms persistent deletion or removes transient wrecks locally.

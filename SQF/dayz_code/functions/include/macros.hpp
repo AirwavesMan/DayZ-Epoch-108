@@ -797,7 +797,7 @@
 #define ihave_FISHING_POLE                      p_currentWeapon == 'MeleeFishingPole'
 #define ihave_PICKAXE                           'ItemPickaxe' in p_items
 #define ihave_WOODPILE                          'PartWoodPile' in p_magazines
-#define itemToMelee(cls)                        getText (configFile >> 'CfgWeapons' >> cls >> 'swappedItem')
+#define itemToMelee(cls)                        getText (configFile >> 'CfgWeapons' >> cls >> 'DZE_swappedItem')
 #define meleeToItem(cls)                        itemToMelee(cls)
 
 

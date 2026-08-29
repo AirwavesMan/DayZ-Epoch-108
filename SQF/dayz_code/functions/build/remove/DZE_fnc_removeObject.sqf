@@ -23,7 +23,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_REMOVE_OBJECT
-	diag_log format ['[Client Debug]: [DZE_fnc_removeObject]: Function called with arguments: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_removeObject]: Function called with argumentes: %1',_this];
 #endif
 
 if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_REMOVE_ALREADY_IN_PROGRESS' call DZE_fnc_rollingMessages};
@@ -86,7 +86,6 @@ call {
 
 	local _wasStanding = ['perc',animationState player] call fnc_inString;
 	local _isWreck = _objectType in DZE_isWreck;
-	local _isRemovable = _objectType in DZE_isRemovable;
 	local _isWreckBuilding = _objectType in DZE_isWreckBuilding;
 	local _isMine = _objectType in ['Land_iron_vein_wreck','Land_silver_vein_wreck','Land_gold_vein_wreck'];
 	local _isAmmoSupplyWreck = _objectType == 'Land_ammo_supply_wreck';
@@ -141,19 +140,12 @@ call {
 
 	local _displayName = getText (_vehicleConfig >> 'displayName');
 	//format [localize 'STR_BUILD_REMOVE_STARTED',_displayName] call DZE_fnc_rollingMessages;	// Starting de-construction of %1.
-	local _progressResult = [_object,_displayName,_steps,_isTent,_isRemovable,_isOwner] call DZE_fnc_runRemoveObjectProgress;
-	local _completed = _progressResult select 0;
-	local _brokenTool = _progressResult select 1;
+	local _completed = [_object,_displayName,_steps,_isTent] call DZE_fnc_runRemoveObjectProgress;
 
 	[] call DZE_fnc_displayHelpers;
 	_helpersDisplayed = false;
 
-	local _toolRemoved = true;
-	if (_brokenTool) then {
-		_toolRemoved = [_isWreck,_displayName] call DZE_fnc_removeBrokenTool;
-	};
-
-	if (!_completed || {!_toolRemoved}) exitWith {};
+	if (!_completed) exitWith {};
 
 	_restoreStanding = _wasStanding;
 
@@ -211,6 +203,7 @@ call {
 	//format [localize 'STR_BUILD_REMOVE_COMPLETED',_displayName] call DZE_fnc_rollingMessages;	// De-constructing %1.
 
 	_standingDelay = [_removeOutput,_objectPositionASL,_objectDirection,_isStorageItem,_objectBounds] call DZE_fnc_createRemoveObjectOutput;
+	_neededTools call DZE_fnc_toolBreak;
 };
 
 if (_helpersDisplayed) then {

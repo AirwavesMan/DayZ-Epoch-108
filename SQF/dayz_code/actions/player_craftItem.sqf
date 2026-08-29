@@ -1,3 +1,29 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	player_craftItem
+//
+//	Description:	Crafts configured magazine and weapon recipes.
+//	Groups:		Actions, Inventory
+//
+//	Syntax:		[actionClass,configClass,itemClass] spawn player_craftItem
+//
+//	Parameters:	actionClass: String - Cfg ItemActions recipe class
+//			configClass: String - CfgMagazines or CfgWeapons
+//			itemClass: String - Item containing the recipe
+//
+//	Return Value:	Nothing
+//
+//	Called by:	Client
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//#define DEBUG_PLAYER_CRAFT_ITEM
+
+#include "\z\addons\dayz_code\functions\include\defines.hpp"
+
+#ifdef DEBUG_PLAYER_CRAFT_ITEM
+	diag_log format ['[Client Debug]: [player_craftItem]: Function called with argumentes: %1',_this];
+#endif
+
 /*
 	DayZ Epoch Crafting 0.3
 	Made for DayZ Epoch && Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
@@ -250,6 +276,7 @@ if (_canDo) then {
 							} foreach _selectedRecipeOutput;
 
 							_tradeComplete = _tradeComplete + 1;
+							if !(_selectedRecipeTools call DZE_fnc_toolBreak) then {_craft_doLoop = false};
 						};
 					} else {
 						// Refund parts since we failed

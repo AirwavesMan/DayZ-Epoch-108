@@ -5,6 +5,8 @@ class ItemSledge: ItemCore // Epoch class
 	picture = "\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa";
 	displayName = $STR_EQUIP_NAME_SledgeHammer;
 	descriptionShort = $STR_EQUIP_SLEDGE_DESC;
+	DZE_brokenItem = "ItemSledgeBroken";
+	DZE_swappedItem = "MeleeSledge";
 	
 	class ItemActions
 	{
@@ -59,6 +61,7 @@ class ItemSledgeHammer : ItemCore
 	picture = "\z\addons\dayz_communityweapons\models\sledge_hammer\sledgehammer.paa";
 	displayName = $STR_EQUIP_NAME_SledgeHammer;
 	descriptionShort = $STR_EQUIP_DESC_SledgeHammer;
+	DZE_brokenItem = "ItemSledgeHammerBroken";
 };
 
 class ItemSledgeHammerBroken : ItemCore

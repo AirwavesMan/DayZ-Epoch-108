@@ -443,7 +443,7 @@ BUILD_STAGE = [BUILD_CANCELLED, BUILD_NOW_BUILDING] select ([player, _buildItem]
 
 handleExit;
 
-///breakTool(_require);
+// Tool breakage is evaluated only after the server confirms object creation.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -498,8 +498,11 @@ if !(isNull _object) then {
 		//	Ignite fire only if the config entry allows it
 		if (getNumber (_cfgV >> 'DZE_spawnFireOnBuild') == 1) then {
 			[_object,true,'',[]] call DZE_fnc_actionInflame;
+			_require = _require - ['ItemMatchbox'];	// DZE_fnc_actionInflame already processes the matchbox state.
 		};
 	};
+
+	_require call DZE_fnc_toolBreak;
 } else {
 	player addMagazine _buildItem;
 	localize 'STR_BUILD_FAILED' call DZE_fnc_rollingMessages;

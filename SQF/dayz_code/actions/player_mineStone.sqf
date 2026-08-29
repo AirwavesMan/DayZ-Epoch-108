@@ -1,11 +1,27 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//	Mine Stone
+//	player_mineStone
+//
+//	Description:	Harvests stones from a nearby rock with a pickaxe.
+//	Groups:		Actions
+//
+//	Syntax:		call player_mineStone
+//
+//	Return Value:	Nothing
+//
+//	Called by:	Client
 //
 //	Updated by:	Victor the Cleaner
 //	Date:		January 2022
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+//#define DEBUG_PLAYER_MINE_STONE
+
+#include "\z\addons\dayz_code\functions\include\defines.hpp"
+
+#ifdef DEBUG_PLAYER_MINE_STONE
+	diag_log format ['[Client Debug]: [player_mineStone]: Function called with argumentes: %1',_this];
+#endif
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
@@ -53,14 +69,14 @@ if (_found) then {
 	local _isOk	= true;
 	local _proceed	= false;
 
-	// check chance before loop, for a maximum amount of 5 loops allowing 5 possible chances
-	local _mineChance = dayz_HarvestingChance call fn_chance;
+	local _finished = false;
+	local _weapons = [];
 
 	while {_isOk} do {
 		[player,(getPosATL player),50,"minestone"] spawn fnc_alertZombies;
 
-		local _finished = ["Medic",1] call fn_loopAction;
-		local _weapons = weapons player;
+		_finished = ["Medic",1] call fn_loopAction;
+		_weapons = weapons player;
 
 		// Make sure player did not drop pickaxe
 		if (!_finished || !("ItemPickaxe" in _weapons)) exitWith {
@@ -68,21 +84,8 @@ if (_found) then {
 			_proceed = false;
 		};
 
-		local _breaking = false;
-
 		if (_finished) then {
 			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
-
-			if (dayz_toolBreaking && _mineChance) then {
-				_breaking = true;
-
-				if ("ItemPickaxe" in _weapons) then {
-					player removeWeapon "ItemPickaxe";
-				};
-				if !("ItemPickaxeBroken" in _weapons) then {
-					player addWeapon "ItemPickaxeBroken";
-				};
-			};
 
 			// Drop item to ground
 			["ItemStone",1,1] call fn_dropItem;	// item, magazine, amount
@@ -90,19 +93,17 @@ if (_found) then {
 			_counter = _counter + 1;
 		};
 
-		if ((_counter >= _countOut) || _breaking) exitWith {
-			if (_breaking) then {
-				localize "str_PickAxeHandleBreaks" call DZE_fnc_rollingMessages;
-			} else {
-				localize "str_mining_finished" call DZE_fnc_rollingMessages;
-			};
+		if (_counter >= _countOut) exitWith {
+			localize "str_mining_finished" call DZE_fnc_rollingMessages;
 			_isOk	 = false;
 			_proceed = true;
 		};
 		format[localize "str_mining_progress", _counter, (_countOut - _counter)] call DZE_fnc_rollingMessages;
 	};
 
-	if (!_proceed) then {
+	if (_proceed) then {
+		['ItemPickaxe'] call DZE_fnc_toolBreak;
+	} else {
 		localize "str_mining_canceled" call DZE_fnc_rollingMessages;
 	};
 } else {

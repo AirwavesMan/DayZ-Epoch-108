@@ -24,7 +24,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_UPGRADE_OBJECT
-	diag_log format['[Client Debug]: [DZE_fnc_upgradeObject]: Function called with arguments: %1',_this];
+	diag_log format['[Client Debug]: [DZE_fnc_upgradeObject]: Function called with argumentes: %1',_this];
 #endif
 
 if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_UPGRADE_ALREADY_IN_PROGRESS' call DZE_fnc_rollingMessages;};	// Upgrade is already in progress.
@@ -222,6 +222,7 @@ if (count _upgrade > 0) then {
 					} else {
 						format[localize 'STR_BUILD_UPGRADE_COMPLETED',_text] call DZE_fnc_rollingMessages;	// You have upgraded %1.
 					};
+					_neededTools call DZE_fnc_toolBreak;
 				};
 			} else {
 				{player addMagazine _x;} count _temp_removed_array;

@@ -5,8 +5,8 @@ class ItemHatchet : ItemCore
 	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
 	displayName = $STR_EQUIP_NAME_HATCHET;
 	descriptionShort = $STR_EQUIP_DESC_HATCHET;
-	brokenItem = "ItemHatchetBroken";
-	swappedItem = "MeleeHatchet";
+	DZE_brokenItem = "ItemHatchetBroken";
+	DZE_swappedItem = "MeleeHatchet";
 
 
 	class ItemActions

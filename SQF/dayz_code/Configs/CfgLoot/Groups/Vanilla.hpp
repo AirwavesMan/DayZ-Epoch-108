@@ -31,7 +31,7 @@ VanillaConstruction[] =
 	{Loot_MAGAZINE,		9,		equip_metal_sheet}, //Used for upgrade storage buildings
 	{Loot_MAGAZINE,		4,		ItemScrews}, //Used for upgrade storage buildings, vehicle upgrade
 	{Loot_MAGAZINE,		1,		equip_hose}, // Need this to siphon gas with fuel container - very useful
-	{Loot_MAGAZINE,		1,		equip_lever}, // Repair broken handles if dayz_toolBreaking enabled
+	{Loot_MAGAZINE,		1,		equip_lever}, // Repair broken handles if DZE_toolBreaking is enabled
 	{Loot_MAGAZINE,		1,		ItemPlank}, // Used for upgrade storage buildings, craft a sling
 	{Loot_MAGAZINE,		1,		equip_nails}, // Combine with baseball bat, upgrade storage buildings
 	{Loot_MAGAZINE,		1,		equip_brick} // Used to sharpen tools if dayz_knifeDulling enabled

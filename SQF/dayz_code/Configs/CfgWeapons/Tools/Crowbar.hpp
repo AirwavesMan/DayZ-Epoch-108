@@ -5,6 +5,8 @@ class ItemCrowbar : ItemCore
 	picture = "\z\addons\dayz_communityassets\pictures\equip_crowbar_CA.paa";
 	displayName = $STR_EQUIP_NAME_CROWBAR;
 	descriptionShort = $STR_EQUIP_DESC_CROWBAR;
+	DZE_brokenItem = "ItemCrowbarBent";
+	DZE_swappedItem = "MeleeCrowbar";
 	
 	class ItemActions {
 		class Toolbelt {
