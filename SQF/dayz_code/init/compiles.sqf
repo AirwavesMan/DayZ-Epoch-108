@@ -162,7 +162,6 @@ if (!isDedicated) then {
 	fnc_radioState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\radioState.sqf"; // Toggle radio on and off
 	fnc_localizeMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_localizeMessage.sqf";
 	fnc_remoteMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_remoteMessage.sqf";
-	fnc_freeBackpackSlots = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_freeBackpackSlots.sqf";	
 	fnc_apsiState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\apsiState.sqf"; // Toggle APSI on and off
 	fnc_brakeFix = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_brakeFix.sqf"; // fix for motorcycle & bicycle brakes
 	if (DZE_EVR) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_evr.sqf";};
@@ -669,6 +668,12 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_apply);			// [A3] Applies the given code to each element of the given array (without modifying the original array).
 	FUNCTION(DZE_fnc_selectDistinct);		// Returns a random selection of distinct entries from an array.
 	FUNCTION(DZE_fnc_subSelect);			// Returns a sub-selection from an array or string.
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	path('inventory');
+
+	FUNCTION(DZE_fnc_getFreeBackpackSlots);	// Returns the number of free magazine-sized backpack slots.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 

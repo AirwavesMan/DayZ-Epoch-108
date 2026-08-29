@@ -43,7 +43,7 @@ if !(_tool in items player) exitWith {
 
 local _bag = unitBackpack player;
 // This check is approximate because Arma 2 cannot report exact free backpack space.
-if (!isNull _bag && {(call fnc_freeBackpackSlots) > 0}) exitWith {
+if ((_bag call DZE_fnc_getFreeBackpackSlots) > 0) exitWith {
 	_bag addWeaponCargoGlobal [_tool,1];
 	systemChat format [localize 'str_epoch_player_313',_displayName];
 };

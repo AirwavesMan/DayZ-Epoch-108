@@ -770,7 +770,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // functions
-#define freeBackpackSlots                       call DZR_fnc_freeBackpackSlots
 #define getMaxBackpacks(cls)                    cls call DZR_fnc_getMaxBackpacks
 #define getMaxMagazines(cls)                    cls call DZR_fnc_getMaxMagazines
 #define getMaxWeapons(cls)                      cls call DZR_fnc_getMaxWeapons
