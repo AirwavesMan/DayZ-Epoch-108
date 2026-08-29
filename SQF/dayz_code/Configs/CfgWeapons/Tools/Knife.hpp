@@ -58,7 +58,7 @@ class DZE_Tool_KnifeBlunt : DZE_Tool_Knife_Base {
 	class ItemActions {
 		class FixKnife {
 			text = "$STR_ACTION_TOOL_KNIFE_SHARPEN";
-			script = "; ['DZE_Tool_KnifeBlunt','DZE_Tool_Knife'] spawn player_sharpen;";
+			script = "; ['DZE_Tool_KnifeBlunt','DZE_Tool_Knife'] spawn DZE_fnc_sharpenTool;";
 		};
 		class Use {
 			text= "$STR_ACTION_TOOL_KNIFE_HARVEST";

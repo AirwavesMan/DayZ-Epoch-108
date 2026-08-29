@@ -66,7 +66,7 @@ class ItemHatchetBlunt : ItemCore
 		class SharpenHatchet
 		{
 			text = $STR_ACTIONS_SHARPEN_HATCHET;
-			script = "; ['ItemHatchetBlunt','ItemHatchet'] spawn player_sharpen;";
+			script = "; ['ItemHatchetBlunt','ItemHatchet'] spawn DZE_fnc_sharpenTool;";
 		};
 	};
 };

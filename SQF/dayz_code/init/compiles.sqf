@@ -678,7 +678,7 @@ if (!isDedicated) then {
 	FUNCTION(player_addtoBack);			// Moves a supported toolbelt item into its melee weapon form.
 	FUNCTION(player_addDuplicateTool);		// Adds a tool without overwriting an existing toolbelt item.
 	FUNCTION(DZE_fnc_combineMatches);		// Combines partial matchboxes into boxes with up to five matches.
-	FUNCTION(player_sharpen);			// Sharpens a configured blunt tool.
+	FUNCTION(DZE_fnc_sharpenTool);			// Sharpens a configured blunt tool.
 	FUNCTION(DZE_fnc_requiredItemsCheck);		// Checks a required inventory item and tool classes.
 	FUNCTION(DZE_fnc_updateToolState);		// Processes one use of a configured multi-state tool.
 	FUNCTION(DZE_fnc_toolBreak);			// Replaces one tool used by a completed action with its configured broken item.
