@@ -1,4 +1,4 @@
-class MiningItems: NonStrategic {
+class DZE_Ore_Veins_Base: NonStrategic {
 	destrType = "DestructBuilding";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
@@ -32,82 +32,49 @@ class MiningItems: NonStrategic {
 			lifeTime = 1;
 		};
 	};
+	DZE_buildingSteps = 3;
 };
 
-class Gold_Vein_DZE: MiningItems {
+class DZE_Ore_Vein_Gold: DZE_Ore_Veins_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\gold_vein.p3d";
 	armor = 70;
 	displayName = $STR_ORE_VEIN_WRECK_GOLD;
-	
-	class DestructionEffects : DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Ore_Vein_Ruin_Gold";
 };
 
-class Silver_Vein_DZE: MiningItems {
+class DZE_Ore_Vein_Silver: DZE_Ore_Veins_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\silver_vein.p3d";
 	armor = 60;
 	displayName = $STR_ORE_VEIN_WRECK_SILVER;
-
-	class DestructionEffects : DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Ore_Vein_Ruin_Silver";
 };
 
-class Iron_Vein_DZE: MiningItems {
+class DZE_Ore_Vein_Iron: DZE_Ore_Veins_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\iron_vein.p3d";
 	armor = 50;
 	displayName = $STR_ORE_VEIN_WRECK_IRON;
-
-	class DestructionEffects : DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Ore_Vein_Ruin_Iron";
 };
 
-class Land_iron_vein_wreck: ruins {
+//	Ore Vein ruins
+
+class DZE_Ore_Vein_Ruin_Iron: DZE_Ore_Veins_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
-	displayName = $STR_ORE_VEIN_WRECK_IRON;
-	vehicleClass = "DayZ Epoch 1071 Event Objects";
-	DZE_buildingSteps = 3;
+	displayName = $STR_ORE_VEIN_WRECK_IRON;	
 };
 
-class Land_silver_vein_wreck: ruins	{
+class DZE_Ore_Vein_Ruin_Silver: DZE_Ore_Veins_Base	{
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_SILVER;
-	vehicleClass = "DayZ Epoch 1071 Event Objects";
-	DZE_buildingSteps = 3;
 };
 
-class Land_gold_vein_wreck: ruins {
+class DZE_Ore_Vein_Ruin_Gold: DZE_Ore_Veins_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_GOLD;
-	vehicleClass = "DayZ Epoch 1071 Event Objects";
-	DZE_buildingSteps = 3;
 };
