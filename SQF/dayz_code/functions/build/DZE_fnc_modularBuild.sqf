@@ -478,8 +478,8 @@ if (_lockable > 1) then {		// item has code lock
 
 //	Send the object to the server and save it in the database
 DZE_Wait_For_Object = nil;
-PVDZE_build_Object = [netId player, _className, _characterID, [_objectPosASL, _vector, []], dayz_authKey];
-publicVariableServer 'PVDZE_build_Object';
+PVDZE_buildObject = [netId player, _className, _characterID, [_objectPosASL, _vector, []], dayz_authKey];
+publicVariableServer 'PVDZE_buildObject';
 
 _object = call DZE_fnc_revealServerObject;
 

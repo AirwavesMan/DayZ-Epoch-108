@@ -202,8 +202,8 @@ if (count _upgrade > 0) then {
 				};
 
 				DZE_Wait_For_Object = nil;
-				PVDZE_upgrade_Object = [netID player,netID _object,_codeObject,_newclassname,dayz_authKey];
-				publicVariableServer 'PVDZE_upgrade_Object';
+				PVDZE_upgradeObject = [netID player,netID _object,_codeObject,_newclassname,dayz_authKey];
+				publicVariableServer 'PVDZE_upgradeObject';
 
 				_object = call DZE_fnc_revealServerObject;
 

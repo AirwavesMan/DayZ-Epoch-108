@@ -120,8 +120,8 @@ if (count _downgrade > 0) then {
 		if (_codeObject != '0' && {_typeObject in DZE_DoorsLocked}) then {_codeObject = '0';};	//	ToDo: Handle this via configs
 
 		DZE_Wait_For_Object = nil;
-		PVDZE_upgrade_Object = [netID player,netID _object,_codeObject,_newTypeObject,dayz_authKey];
-		publicVariableServer 'PVDZE_upgrade_Object';
+		PVDZE_upgradeObject = [netID player,netID _object,_codeObject,_newTypeObject,dayz_authKey];
+		publicVariableServer 'PVDZE_upgradeObject';
 
 		_object = call DZE_fnc_revealServerObject;
 
