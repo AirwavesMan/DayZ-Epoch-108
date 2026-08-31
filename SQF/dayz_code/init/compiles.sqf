@@ -634,6 +634,7 @@ if (!isDedicated) then {
 
 	FUNCTION(DZE_fnc_ensureMeleeMagazine);	// Adds the missing magazine for the player's active melee weapon.
 	FUNCTION(DZE_fnc_getFreeBackpackSlots);	// Returns the number of free magazine-sized backpack slots.
+	FUNCTION(DZE_fnc_hasStorageGearSlots);	// Checks whether a CfgVehicles class has magazine, weapon or backpack storage.
 	FUNCTION(DZE_fnc_removeMeleeMagazines);	// Removes hidden melee magazines before inventory operations.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
@@ -704,13 +705,13 @@ if (!isDedicated) then {
 
 	path('build\remove');
 
-	FUNCTION(DZE_fnc_createRemoveObjectOutput);	// Creates configured removal output and safely places backpack objects.
-	FUNCTION(DZE_fnc_getConfiguredRemoveRefund);	// Reads and validates one configured RemoveObject refund.
-	FUNCTION(DZE_fnc_getRemoveObjectRefund);		// Resolves category-specific removal output and preserved storage cargo.
+	FUNCTION(DZE_fnc_createRemoveOutput);		// Creates configured removal output and safely places backpack objects.
+	FUNCTION(DZE_fnc_getRemoveRefund);		// Reads and validates one configured RemoveObject refund.
+	FUNCTION(DZE_fnc_removeRefund);		// Resolves category-specific removal output and preserved storage cargo.
 	FUNCTION(DZE_fnc_removeNearby);			// Finds and removes the nearest object matching the requested classes.
 	FUNCTION(DZE_fnc_removeObject);			// Coordinates removal of an eligible object.
-	FUNCTION(DZE_fnc_requestObjectDeletion);		// Requests and confirms persistent deletion or removes transient wrecks locally.
-	FUNCTION(DZE_fnc_runRemoveObjectProgress);	// Runs object-removal animation stages.
+	FUNCTION(DZE_fnc_objectDeletion);		// Requests server deletion and waits for client-visible confirmation.
+	FUNCTION(DZE_fnc_removeAnimation);			// Runs object-removal animation stages.
 
 	path('build\modularBuilding');
 

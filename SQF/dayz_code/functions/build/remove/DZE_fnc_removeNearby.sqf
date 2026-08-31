@@ -34,19 +34,11 @@ if (count _nearbyObjects == 0) exitWith {
 	localize _errorMessage call DZE_fnc_rollingMessages;
 
 	#ifdef DEBUG_DZE_FNC_REMOVE_NEARBY
-		diag_log format ['[Client Debug]: [DZE_fnc_removeNearby]: Warning: No matching object found within %1 meters.',_range];
+		diag_log format ['[Client Debug]: [DZE_fnc_removeNearby]: No matching object found within %1 meters.',_range];
 	#endif
 };
 
 local _targetObject = _nearbyObjects select 0;
-
-if (isNull _targetObject) exitWith {
-	localize _errorMessage call DZE_fnc_rollingMessages;
-
-	#ifdef DEBUG_DZE_FNC_REMOVE_NEARBY
-		diag_log format ['[Client Debug]: [DZE_fnc_removeNearby]: Error: Nearest matching object is null. Classes: %1 | Range: %2',_objectTypes,_range];
-	#endif
-};
 
 #ifdef DEBUG_DZE_FNC_REMOVE_NEARBY
 	diag_log format ['[Client Debug]: [DZE_fnc_removeNearby]: Starting removal for object: %1',_targetObject];

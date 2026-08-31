@@ -128,8 +128,9 @@ if (isServer) then {
 	DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with
 	DynamicVehicleFuelLow = 0; // Min fuel random vehicles can spawn with
 	DynamicVehicleFuelHigh = 100; // Max fuel random vehicles can spawn with
-	MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE filled with vehicle ammo to spawn around the map
-	MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
+	MaxAmmoBoxes = 3; // Max number of random DZE_Supply_Crate filled with vehicle ammo to spawn around the map
+	DZE_maxOreVeins = 50; // Max number of random mine veins to spawn around the map
+	DZE_maxOreVeinsInRange = 750;  // Max range of ore veins to spawn from each other
 	DZE_TRADER_SPAWNMODE = false; // Vehicles purchased at traders will be parachuted in
 	MaxDynamicDebris = 100; // Max number of random road blocks to spawn around the map
 	MaxVehicleLimit = 50; // Max number of random vehicles to spawn around the map
@@ -265,9 +266,7 @@ if (!isDedicated) then {
 	DZE_uiSnapText = true;	// enable on-screen helper text near the closest snapping point when building. Default: true
 
 	// Remove/Deconstruct modular object variables
-	DZE_refundModular = true; // enable/disable refunding of modular objects
-	DZE_refundMode = 'kit'; // RemoveObject refund mode: 'kit' returns DZE_refundKit, 'DZE_refundArray' returns one randomly selected material set.
-	DZE_allowDeconstruct = true; // enable/disable the Deconstruct player action menu in DZE_refundArray mode. If DZE_refundModular = false, this setting has no effect.
+	DZE_refundMode = 'kit'; // RemoveObject refund mode: 'kit' returns DZE_refundKit, 'array' returns one randomly selected material set.
 	DZE_displayHelpers = true;	// enable/disable display of modular object helpers
 	DZE_displayOnlyIfNearby	= false; // if identical object types are nearby, display green helpers. If no identical types are nearby, then do not display. false = always display green helpers. (This setting does not apply to Red and Blue helpers). If DZE_displayHelpers is disabled, then this setting will be ignored.
 	DZE_RefundDamageLimit = 0.25; // amount of damage an object can withstand before no refunded parts will be given. 0 = disable (will always refund)

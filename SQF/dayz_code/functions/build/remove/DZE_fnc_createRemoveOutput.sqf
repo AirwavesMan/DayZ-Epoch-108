@@ -1,12 +1,12 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//	DZE_fnc_createRemoveObjectOutput
+//	DZE_fnc_createRemoveOutput
 //
-//	Description:	Creates the resolved removal output in a holder and places backpack objects around
-//			the output without repeatedly scanning nearby buildings.
+//	Description:	Creates the resolved removal output and places backpack objects without repeatedly
+//			scanning nearby buildings.
 //	Groups:		Build
 //
-//	Syntax:		[removeOutput,objectPositionASL,objectDirection,isStorage,objectBounds] call DZE_fnc_createRemoveObjectOutput
+//	Syntax:		[removeOutput,objectPositionASL,objectDirection,isStorage,objectBounds] call DZE_fnc_createRemoveOutput
 //
 //	Parameters:	removeOutput: Array - Output entries in [className,count,cargoType] format
 //			objectPositionASL: Array - PositionASL captured before deletion
@@ -19,12 +19,12 @@
 //	Called by:	Client
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//#define DEBUG_DZE_FNC_CREATE_REMOVE_OBJECT_OUTPUT
+//#define DEBUG_DZE_FNC_CREATE_REMOVE_OUTPUT
 
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
-#ifdef DEBUG_DZE_FNC_CREATE_REMOVE_OBJECT_OUTPUT
-	diag_log format ['[Client Debug]: [DZE_fnc_createRemoveObjectOutput]: Function called with arguments: %1',_this];
+#ifdef DEBUG_DZE_FNC_CREATE_REMOVE_OUTPUT
+	diag_log format ['[Client Debug]: [DZE_fnc_createRemoveOutput]: Function called with arguments: %1',_this];
 #endif
 
 local _removeOutput = param(0,[]);
@@ -33,19 +33,13 @@ local _objectDirection = param(2,0);
 local _isStorage = param(3,false);
 local _objectBounds = param(4,[]);
 
-if (count _removeOutput == 0) exitWith {
-	localize 'STR_BUILD_REMOVE_NO_PARTS' call DZE_fnc_rollingMessages;
-	0
-};
-
 local _resolvedOutput = [];
 local _backpackClasses = [];
 local _backpackTotal = 0;
-local _totalCount = 0;
+local _hasHolderOutput = false;
 local _itemClass = '';
 local _itemCount = 0;
 local _minimum = 0;
-local _maximum = 0;
 local _range = 0;
 local _cargoType = 3;
 {
@@ -55,14 +49,12 @@ local _cargoType = 3;
 
 	if (typeName _itemCount == 'ARRAY') then {
 		_minimum = _itemCount select 0;
-		_maximum = _itemCount select 1;
-		_range = abs (_maximum - _minimum) + 1;
+		_range = abs ((_itemCount select 1) - _minimum) + 1;
 		_itemCount = floor (random _range) + _minimum;
 	};
 
 	if (_itemCount > 0) then {
 		_resolvedOutput set [count _resolvedOutput,[_itemClass,_itemCount,_cargoType]];
-		_totalCount = _totalCount + _itemCount;
 
 		if (_cargoType == 5) then {
 			_backpackTotal = _backpackTotal + _itemCount;
@@ -70,18 +62,24 @@ local _cargoType = 3;
 			if !(_itemClass in _backpackClasses) then {
 				_backpackClasses set [count _backpackClasses,_itemClass];
 			};
+		} else {
+			_hasHolderOutput = true;
 		};
 	};
 } forEach _removeOutput;
 
-if (_totalCount == 0) exitWith {0};
+if (count _resolvedOutput == 0) exitWith {
+	localize 'STR_BUILD_REMOVE_NO_PARTS' call DZE_fnc_rollingMessages;
+	0
+};
 
-['WeaponHolder',objNull] call fn_waitForObject;
+if (_hasHolderOutput) then {
+	['WeaponHolder',objNull] call fn_waitForObject;
+};
 {
 	[_x,objNull] call fn_waitForObject;
 } forEach _backpackClasses;
 
-local _holder = 'WeaponHolder' createVehicle [0,0,0];
 local _playerPositionASL = getPosASL player;
 local _outputPositionASL = [_objectPositionASL select 0,_objectPositionASL select 1,_playerPositionASL select 2];
 local _outputDirection = _objectDirection;
@@ -93,10 +91,14 @@ if (([_playerPositionASL,_objectPositionASL] call BIS_fnc_distance2D) > 1.5) the
 	_outputPositionASL set [2,_playerPositionASL select 2];
 };
 
-_holder setDir _outputDirection;
+local _holder = objNull;
+if (_hasHolderOutput) then {
+	_holder = 'WeaponHolder' createVehicle [0,0,0];
+	_holder setDir _outputDirection;
+};
 
 local _nearbyBuildingBounds = [];
-if (_isStorage || {_backpackTotal > 0}) then {
+if (_isStorage || _backpackTotal > 0) then {
 	// Reuse one building scan for the holder and every backpack position.
 	{
 		_nearbyBuildingBounds set [count _nearbyBuildingBounds,[_x,boundingBox _x select 1]];
@@ -106,33 +108,20 @@ if (_isStorage || {_backpackTotal > 0}) then {
 local _isInsideBuilding = {
 	local _positionAGL = ASLToAGL(_this);
 	local _inside = false;
-	local _buildingData = [];
 	local _building = objNull;
 	local _relativePosition = [];
 	local _maximumBounds = [];
-	local _positionX = 0;
-	local _positionY = 0;
-	local _positionZ = 0;
-	local _maximumX = 0;
-	local _maximumY = 0;
-	local _maximumZ = 0;
 	{
-		_buildingData = _x;
-		_building = _buildingData select 0;
+		_building = _x select 0;
+		_relativePosition = _building worldToModel _positionAGL;
+		_maximumBounds = _x select 1;
 
-		if (_building != _holder) then {
-			_relativePosition = _building worldToModel _positionAGL;
-			_maximumBounds = _buildingData select 1;
-			_positionX = abs (_relativePosition select 0);
-			_positionY = abs (_relativePosition select 1);
-			_positionZ = abs (_relativePosition select 2);
-			_maximumX = _maximumBounds select 0;
-			_maximumY = _maximumBounds select 1;
-			_maximumZ = _maximumBounds select 2;
-
-			if (_positionX < _maximumX && {_positionY < _maximumY} && {_positionZ < _maximumZ}) then {
-				_inside = true;
-			};
+		if (
+			abs (_relativePosition select 0) < (_maximumBounds select 0) &&
+			abs (_relativePosition select 1) < (_maximumBounds select 1) &&
+			abs (_relativePosition select 2) < (_maximumBounds select 2)
+		) then {
+			_inside = true;
 		};
 
 		if (_inside) exitWith {};
@@ -141,11 +130,8 @@ local _isInsideBuilding = {
 	_inside
 };
 
-local _backpackDistance = 0.3;
-if (count _objectBounds >= 2) then {
-	local _minimumBounds = ((_objectBounds select 0) min (_objectBounds select 1)) * 0.5;
-	_backpackDistance = (_minimumBounds max 0.3) min 0.75;
-};
+local _minimumBounds = ((_objectBounds select 0) min (_objectBounds select 1)) * 0.5;
+local _backpackDistance = (_minimumBounds max 0.3) min 0.75;
 
 if (_isStorage && {_outputPositionASL call _isInsideBuilding}) then {
 	// Prevent storage output from spawning inside an unenterable building.
@@ -184,12 +170,14 @@ local _backpackPositionASL = [];
 	};
 } forEach _resolvedOutput;
 
-_holder setPosASL _outputPositionASL;
-DZE_GearCheckBypass = true;
-player action ['Gear',_holder];	// The gear dialog always opens on a non-empty holder.
+if (_hasHolderOutput) then {
+	_holder setPosASL _outputPositionASL;
+	DZE_GearCheckBypass = true;
+	player action ['Gear',_holder];
+};
 
-#ifdef DEBUG_DZE_FNC_CREATE_REMOVE_OBJECT_OUTPUT
-	diag_log format ['[Client Debug]: [DZE_fnc_createRemoveObjectOutput]: Entries: %1 | Total items: %2 | Backpacks: %3 | Position ASL: %4',count _resolvedOutput,_totalCount,_backpackTotal,_outputPositionASL];
+#ifdef DEBUG_DZE_FNC_CREATE_REMOVE_OUTPUT
+	diag_log format ['[Client Debug]: [DZE_fnc_createRemoveOutput]: Entries: %1 | Holder: %2 | Backpacks: %3 | Position ASL: %4',count _resolvedOutput,_hasHolderOutput,_backpackTotal,_outputPositionASL];
 #endif
 
-1
+[0,1] select _hasHolderOutput

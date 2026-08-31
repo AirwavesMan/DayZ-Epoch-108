@@ -11,12 +11,13 @@
 //"PVDZ_dayzCarBomb" addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\actions\detonate_bomb.sqf";};
 
 //	Building 
-"PVDZE_build_Object"	addPublicVariableEventHandler {(_this select 1) call server_buildObject}; //Used by built items (Epoch and Vanilla)
-"PVDZE_upgrade_Object" 	addPublicVariableEventHandler {(_this select 1) spawn server_upgradeObject}; //Used to downgrade and upgrade Epoch buildables
+"PVDZE_buildObject"		addPublicVariableEventHandler {(_this select 1) call server_buildObject}; //Used by built items (Epoch and Vanilla)
+"PVDZE_upgradeObject" 	addPublicVariableEventHandler {(_this select 1) spawn server_upgradeObject}; //Used to downgrade and upgrade Epoch buildables
 "PVDZE_changeCode" 		addPublicVariableEventHandler {(_this select 1) call server_changeCode};
 
 //	Base 
 "PVDZE_changeFriends" 	addPublicVariableEventHandler {(_this select 1) call server_changeFriends};
+"PVDZE_removeObject"	addPublicVariableEventHandler {(_this select 1) call server_removeObject};
 
 //	Fire
 'PVDZE_addFireFuel' addPublicVariableEventHandler {(_this select 1) call server_addFireFuel};

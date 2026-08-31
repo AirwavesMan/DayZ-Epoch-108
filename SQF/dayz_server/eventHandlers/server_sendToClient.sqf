@@ -148,17 +148,7 @@ call {
 		PVDZ_drg_RaUW = _arraytosend;
 		_owner publicVariableClient "PVDZ_drg_RaUW";
 	};
-	
-	if (_variable == "RemoveObject") exitWith {
-		PVDZE_obj_Remove = _arraytosend;
-		{
-			_pOwner = owner _x;
-			if (isPlayer _x && {_pOwner != _owner}) then {
-				_pOwner publicVariableClient "PVDZE_obj_Remove";
-			};
-		} forEach playableUnits;
-	};
-	
+		
 	//default 
 	diag_log format ["%1, %2, %3, %4", _unit, _variable, _arraytosend, _owner];
 };

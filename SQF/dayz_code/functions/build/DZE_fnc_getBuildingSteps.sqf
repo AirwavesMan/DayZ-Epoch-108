@@ -44,7 +44,7 @@ if (typeName _this == 'ARRAY') then {
 	};
 };
 
-if (!_hasExplicitFallback && {_className in DZE_isWreck}) then {
+if (!_hasExplicitFallback && {_className in DZE_Map_Debris}) then {
 	_fallbackSteps = 3;
 };
 

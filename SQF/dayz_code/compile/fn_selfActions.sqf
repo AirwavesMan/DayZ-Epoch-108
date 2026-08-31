@@ -259,7 +259,6 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	local _isDog = (_cursorTarget isKindOf "Pastor" || _cursorTarget isKindOf "Fin");
 	local _isModular = _cursorTarget isKindOf 'DZE_Modular_Base' || {_typeOfCursorTarget in DZE_modularDoors};
 	local _player_deleteBuild = false;
-	local _player_lockUnlock_crtl = false;
 	local _isStash = _typeOfCursorTarget in DZE_Stashes;
 	local _isLockedDoor = _typeOfCursorTarget in DZE_DoorsLocked;
 	local _isStatic = _typeOfCursorTarget in DZE_StaticWeapons;
@@ -448,28 +447,21 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	};
 
 	// Remove Object
-	if (_isAlive) then {
-		local _removeObjectConfig = configFile >> 'CfgVehicles' >> _typeOfCursorTarget >> 'RemoveObject';
-		local _restrict = _typeOfCursorTarget in DZE_restrictRemoval;
-		local _isPublicRemoval = !_restrict && {_typeOfCursorTarget in DZE_isWreck || {_typeOfCursorTarget in DZE_isWreckBuilding || {_typeOfCursorTarget in DZE_isRemovable}}};
-		local _requiresRemovalAccess = _restrict || {_isModular} || {_isStatic} || {_typeOfCursorTarget in DZE_isDestroyableStorage};
-		local _isTentRemoval = _istypeTent && {isClass _removeObjectConfig} && {_isOwner || _isInfectedTent};
-		local _isRemovalCandidate = _isTentRemoval || {_isPublicRemoval} || {_requiresRemovalAccess};
-		local _neededRemovalTools = getArray (_removeObjectConfig >> 'DZE_neededTools');
+	local _removeObjectConfig = configFile >> 'CfgVehicles' >> _typeOfCursorTarget >> 'RemoveObject';
+	local _restrict = _typeOfCursorTarget in DZE_restrictRemoval;
+	local _isPublicRemoval = !_restrict && {_typeOfCursorTarget in DZE_Removable_Debris || {_typeOfCursorTarget in DZE_isRemovable}};
+	local _requiresRemovalAccess = _restrict || _isModular || _isStatic || {_typeOfCursorTarget in DZE_isDestroyableStorage};
+	local _isTentRemoval = _istypeTent && isClass _removeObjectConfig && (_isOwner || _isInfectedTent);
+	local _isRemovalCandidate = _isTentRemoval || _isPublicRemoval || _requiresRemovalAccess;
 
-		if (_isRemovalCandidate && {['',_neededRemovalTools,'none',true] call DZE_fnc_requiredItemsCheck}) then {
-			// Tents, wrecks and explicitly removable objects do not require base access.
-			_player_deleteBuild = _isTentRemoval || {_isPublicRemoval};
+	if (_isRemovalCandidate && {['',getArray (_removeObjectConfig >> 'DZE_neededTools'),'none',true] call DZE_fnc_requiredItemsCheck}) then {
+		// Tents, wrecks and explicitly removable objects do not require base access.
+		_player_deleteBuild = _isTentRemoval || _isPublicRemoval;
 
-			// Restricted, modular, static and storage objects require ownership or base access.
-			if (!_player_deleteBuild && {_requiresRemovalAccess}) then {
-				_hasAccess = [player, _cursorTarget] call DZE_fnc_checkAccess;
-				_player_deleteBuild = (_hasAccess select 2) || {(_isStash || {_typeOfCursorTarget in ['DZE_WorkBench','DZE_FuelPump','DZE_Generator']}) && {_hasAccess select 0}};
-			};
-		};
-
-		if (_isVehicle && {(_characterID != '0') && {!_isMan}}) then {
-			_player_lockUnlock_crtl = true;
+		// Restricted, modular, static and storage objects require ownership or base access.
+		if (!_player_deleteBuild && _requiresRemovalAccess) then {
+			_hasAccess = [player, _cursorTarget] call DZE_fnc_checkAccess;
+			_player_deleteBuild = _hasAccess select 2 || ((_isStash || _typeOfCursorTarget in ['DZE_WorkBench','DZE_FuelPump','DZE_Generator']) && _hasAccess select 0);
 		};
 	};
 
@@ -624,6 +616,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	};
 
 	// Allow Owner to lock and unlock vehicle
+	local _player_lockUnlock_crtl = _isAlive && _isVehicle && _characterID != '0' && !_isMan;
 	if (_player_lockUnlock_crtl) then {
 		local _totalKeys = call epoch_tempKeys;
 		local _temp_keys = _totalKeys select 0;

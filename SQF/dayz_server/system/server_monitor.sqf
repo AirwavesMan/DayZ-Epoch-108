@@ -520,16 +520,15 @@ if (_hiveLoaded) then {
 		} else {
 			// Epoch global dynamic debris
 			diag_log ("HIVE: Spawning # of Debris: " + str(MaxDynamicDebris));
-			for "_x" from 1 to MaxDynamicDebris do {call spawn_roadblocks;};
+			for "_x" from 1 to MaxDynamicDebris do {call server_spawnRoadBlocks;};
 		};
 
 		diag_log ("HIVE: Spawning # of Ammo Boxes: " + str(MaxAmmoBoxes));
-		for "_x" from 1 to MaxAmmoBoxes do {call spawn_ammosupply;};
+		for "_x" from 1 to MaxAmmoBoxes do {call server_spawnAmmoSupply;};
 
-		diag_log ("HIVE: Spawning # of Veins: " + str(MaxMineVeins));
-		for "_x" from 1 to MaxMineVeins do {call spawn_mineveins;};
+		call server_spawnOreVeins;
 
-		diag_log format["HIVE: BENCHMARK - Server finished spawning %1 DynamicVehicles, %2 Debris, %3 SupplyCrates and %4 MineVeins in %5 seconds (scheduled)",_vehLimit,MaxDynamicDebris,MaxAmmoBoxes,MaxMineVeins,diag_tickTime - _startTime];
+		diag_log format["HIVE: BENCHMARK - Server finished spawning %1 DynamicVehicles, %2 Debris in %3 seconds (scheduled)",_vehLimit,MaxDynamicDebris,diag_tickTime - _startTime];
 
 		//Update gear last after all dynamic vehicles are created to save random loot to database (low priority)
 		{[_x,"gear"] call server_updateObject} count _vehiclesToUpdate;

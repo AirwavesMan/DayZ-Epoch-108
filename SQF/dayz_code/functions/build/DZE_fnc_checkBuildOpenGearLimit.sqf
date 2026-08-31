@@ -32,7 +32,7 @@ if (count _this > 3) then {_nearestPole = _this select 3};
 
 local _config = configFile >> 'CfgVehicles' >> _className;
 local _isBuildable = getNumber (_config >> 'DZE_allowBuilding') == 1;
-local _hasOpenGear = getNumber (_config >> 'transportMaxMagazines') > 0 || {getNumber (_config >> 'transportMaxWeapons') > 0} || {getNumber (_config >> 'transportMaxBackpacks') > 0};
+local _hasOpenGear = _className call DZE_fnc_hasStorageGearSlots;
 
 if (!_isBuildable || {!_hasOpenGear} || {_className in DZE_UnLockedStorage}) exitWith {[true,DZE_OpenGearLimit,0,objNull]};
 if (DZE_OpenGearLimit <= 0 || {dayz_playerUID in DZE_baseManagementAdmins}) exitWith {[true,DZE_OpenGearLimit,0,objNull]};
@@ -48,11 +48,7 @@ if (isNull _nearestPole) exitWith {[true,DZE_OpenGearLimit,0,objNull]};
 
 local _objects = [_nearestPole,_baseRadius] call DZE_fnc_findBuildableObjects;
 local _count = {
-	_x != _ignoredObject && {!((typeOf _x) in DZE_UnLockedStorage)} && {
-		getNumber (configFile >> 'CfgVehicles' >> (typeOf _x) >> 'transportMaxMagazines') > 0 ||
-		{getNumber (configFile >> 'CfgVehicles' >> (typeOf _x) >> 'transportMaxWeapons') > 0} ||
-		{getNumber (configFile >> 'CfgVehicles' >> (typeOf _x) >> 'transportMaxBackpacks') > 0}
-	}
+	_x != _ignoredObject && {!((typeOf _x) in DZE_UnLockedStorage)} && {(typeOf _x) call DZE_fnc_hasStorageGearSlots}
 } count _objects;
 local _allowed = _count < DZE_OpenGearLimit;
 

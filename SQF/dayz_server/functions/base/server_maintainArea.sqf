@@ -37,8 +37,8 @@ local _base = objectFromNetId(_this select 1);
 local _radius = _this select 2;
 local _clientKey = _this select 3;
 
-if (isNull _player || {isNull _base}) exitWith {
-	diag_log format ['[Server Debug]: [server_maintainArea]: Warning: Player or territory marker is null: %1',_this];
+if (isNull _base) exitWith {
+	diag_log format ['[Server Debug]: [server_maintainArea]: Warning: Territory marker is null: %1',_this];
 };
 
 local _positionASL = [_base] call DZE_fnc_modelCenterWorld;
