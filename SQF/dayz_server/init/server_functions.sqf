@@ -34,6 +34,7 @@ server_setDamageObject = compile preprocessFileLineNumbers "\z\addons\dayz_serve
 //	Base
 server_changeFriends = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\base\server_changeFriends.sqf";
 server_maintainArea = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\base\server_maintainArea.sqf';
+server_removeObject = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\base\server_removeObject.sqf';
 
 //	Fire
 server_addFireFuel = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\fire\server_addFireFuel.sqf';
@@ -49,6 +50,12 @@ server_formatWorldspace = compile preprocessFileLineNumbers '\z\addons\dayz_serv
 
 //	Vehicle 
 server_createVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\vehicle\server_createVehicle.sqf";
+
+//	Map 
+server_spawnAmmoSupply = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\map\server_spawnAmmoSupply.sqf";
+server_spawnOreVeins = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\map\server_spawnOreVeins.sqf";
+server_spawnRoadBlocks = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\map\server_spawnRoadBlocks.sqf";
+server_spawnVehicles = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\map\server_spawnVehicles.sqf";
 
 server_playerLogin = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerLogin.sqf";
 server_playerSetup = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSetup.sqf";
@@ -78,10 +85,7 @@ server_handleSafeGear = compile preprocessFileLineNumbers "\z\addons\dayz_server
 server_spawnTraders = compile preprocessFile "\z\addons\dayz_server\compile\server_spawnTraders.sqf";
 server_updateGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\server_updateGroup.sqf";
 
-spawn_ammosupply = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_ammosupply.sqf";
-spawn_mineveins = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_mineveins.sqf";
-spawn_roadblocks = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_roadblocks.sqf";
-spawn_vehicles = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_vehicles.sqf";
+
 
 if (DZE_Virtual_Garage) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\garage\init.sqf";
