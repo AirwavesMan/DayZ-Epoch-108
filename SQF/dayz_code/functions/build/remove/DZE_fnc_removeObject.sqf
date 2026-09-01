@@ -70,7 +70,7 @@ call {
 	local _isBase = _objectType == DZE_Territory_Marker;
 	local _isFireProxy = getNumber (_vehicleConfig >> 'DZE_isFireProxy') == 1;
 	local _isStorageItem = _objectType call DZE_fnc_hasStorageGearSlots;
-	local _isModular = _object isKindOf 'DZE_Modular_Base' || {_objectType in DZE_modularDoors};
+	local _isModular = _object isKindOf 'DZE_Modular_Base';
 
 	if (_isLootDebris && {[_object,12] call DZE_fnc_nearPlayerMan}) exitWith {
 		localize 'STR_BUILD_REMOVE_PLAYER_NEARBY' call DZE_fnc_rollingMessages;	// Only one player can be near to perform this action.
