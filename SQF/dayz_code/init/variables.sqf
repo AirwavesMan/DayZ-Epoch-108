@@ -49,6 +49,7 @@ call {
 /**************Variables Compiled on the Server Only**************/
 
 if (isServer) then {
+	DZE_globalRoadList = [];
 	dayz_serverPUIDArray = [];
 	dayz_serverClientKeys = [];
 	dayz_traps = [];

@@ -37,21 +37,6 @@ local _damageHandler = {
 
 	_damage
 };
-local _killedHandler = {
-	if (!isServer) exitWith {};
-
-	local _object = _this select 0;
-	local _positionASL = [_object] call DZE_fnc_modelCenterWorld;
-	local _vector = [vectorDir _object,vectorUp _object];
-	local _objectType = typeOf _object;
-	local _ruinType = getText (configFile >> 'CfgVehicles' >> _objectType >> 'DZE_destroyedRuin');
-
-	[_ruinType,_positionASL,0,_vector,true,true,false,false] call server_createVehicle;
-
-	#ifdef DEBUG_SERVER_SPAWN_ORE_VEINS
-		diag_log format ['[Server Debug]: [server_spawnOreVeins]: Replaced destroyed vein with ruin: %1 | Position ASL: %2',_ruinType,_positionASL];
-	#endif
-};
 
 local _position = [];
 local _candidatePositions = [];
@@ -89,7 +74,7 @@ for '_index' from 1 to _maxOreVeins do {
 				_position set [2,0];
 				_vein setPosATL _position;
 				_vein addEventHandler ['HandleDamage',_damageHandler];
-				_vein addMPEventHandler ['MPKilled',_killedHandler];
+				_vein addMPEventHandler ['MPKilled',{if (isServer) then {_this call server_eh_mpKilled_object;};}];
 
 				#ifdef DEBUG_SERVER_SPAWN_ORE_VEINS
 					diag_log format ['[Server Debug]: [server_spawnOreVeins]: Spawned: %1 | Position: %2 | Grid: %3',_type,getPosATL _vein,mapGridPosition _vein];
@@ -110,5 +95,3 @@ for '_index' from 1 to _maxOreVeins do {
 };
 
 diag_log format ['[Server Debug]: [server_spawnOreVeins]: Spawned %1/%2 ore veins.',_counter,_maxOreVeins];
-
-_counter
