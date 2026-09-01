@@ -6,16 +6,7 @@ class DZE_CinderWallHalf: DZE_Modular_Base {
 	displayName = $STR_EPOCH_CINDERBLOCKWALL_HALF;
 	upgradeBuilding[] = {"DZE_CinderWall",{"ItemToolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
 	//GhostPreview = "DZE_CinderWallHalf_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "half_cinder_wall_kit";
 		DZE_refundArray[] = {{{"CinderBlocks",3},{"MortarBucket",1}}};
@@ -30,16 +21,7 @@ class DZE_CinderWallHalf_Gap: DZE_Modular_Base {
 	displayName = $STR_EPOCH_CINDERBLOCKWALL_HALF_GAP;
 	upgradeBuilding[] = {"DZE_CinderWall",{"ItemToolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
 	//GhostPreview = "DZE_CinderWallHalf_Gap_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "half_cinder_wall_gap_kit";
 		DZE_refundArray[] = {{{"CinderBlocks",3},{"MortarBucket",1}}};
@@ -53,16 +35,7 @@ class DZE_CinderWall: DZE_Modular_Base {
 	armor = 3400;
 	displayName = $STR_EPOCH_CINDERBLOCKWALL;
 	//GhostPreview = "DZE_CinderWall_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "full_cinder_wall_kit";
 		DZE_refundArray[] = {{{"CinderBlocks",7},{"MortarBucket",2}}};
@@ -109,16 +82,7 @@ class DZE_CinderWallWindow: DZE_ModularDoor_Base {
 		};
 	};
 
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinderwall_window_kit";
 		DZE_refundArray[] = {{{"CinderBlocks",5},{"MortarBucket",1},{"ItemTankTrap",1},{"ItemPole",1}}};
@@ -202,16 +166,7 @@ class DZE_CinderWallDoorway: DZE_Modular_Base {
 	displayName = $STR_EPOCH_BLOCKGARAGEDOORWAY;
 	upgradeBuilding[] = {"DZE_CinderWallDoor",{"ItemToolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
 	//GhostPreview = "DZE_CinderWallDoorway_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_garage_frame_kit";
 		DZE_refundArray[] = {{{"CinderBlocks",3},{"MortarBucket",1},{"ItemTankTrap",1}}};
@@ -226,16 +181,7 @@ class DZE_CinderWallSmallDoorway: DZE_Modular_Base {
 	displayName = $STR_EPOCH_BLOCKDOORWAY;
 	upgradeBuilding[] = {"DZE_CinderWallDoorSmall",{"ItemToolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
 	//GhostPreview = "DZE_CinderWallSmallDoorway_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_door_frame_kit";
 		DZE_refundArray[] = {{{"CinderBlocks",4},{"MortarBucket",1},{"ItemTankTrap",1}}};
@@ -249,16 +195,7 @@ class DZE_CinderGateFrame: DZE_Modular_Base {
 	displayName = $STR_EPOCH_CINDERGATEFRAME;
 	upgradeBuilding[] = {"DZE_CinderGate",{"ItemToolbox"},{{"equip_metal_sheet",6},{"ItemRSJ",2},{"ItemScrews",2}}};
 	//GhostPreview = "DZE_CinderGate_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_gate_frame_kit";
 		DZE_refundArray[] = {{{"CinderBlocks",8},{"MortarBucket",4}}};
@@ -273,16 +210,7 @@ class DZE_CinderGarageOpenTopFrame: DZE_Modular_Base {
 	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEFRAME;
 	upgradeBuilding[] = {"DZE_CinderGarageOpenTop",{"ItemToolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
 	//GhostPreview = "DZE_CinderGarageOpenTop_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_garage_top_open_frame_kit";
 		DZE_refundArray[] = {{{"CinderBlocks",4},{"MortarBucket",1}}};

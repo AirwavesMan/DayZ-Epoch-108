@@ -5,16 +5,7 @@ class DZE_MetalFloor: DZE_Modular_Base {
 	armor = 3000;
 	displayName = $STR_EPOCH_METALFLOOR;
 	//GhostPreview = "DZE_MetalFloor_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_metal_floor.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Metal_Floor";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metal_floor_kit";
 		DZE_refundArray[] = {{{"metal_floor_half_kit",2}}};
@@ -56,16 +47,7 @@ class DZE_MetalFloor4x: DZE_Modular_Base {
 	armor = 6000;
 	displayName = $STR_EPOCH_METALFLOOR4x;
 	//GhostPreview = "DZE_MetalFloor4x_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch_v\base_building\floors\metal_floor_2x2_wreck.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Metal_Floor_2x2_Wreck";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metal_floor4x_kit";
 		DZE_refundArray[] = {{{"metal_floor_kit",4}}};

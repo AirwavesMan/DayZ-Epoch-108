@@ -17,18 +17,7 @@ class DZE_Land_WoodDoor_Base: DZE_ModularDoor_Base {
 	/* "Lifepoints", if you like to call it that way.*/
 	DZE_offset[] = {0,1.5,0};
 
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
-			/* path to the object*/
-			/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 };
 
 class DZE_Land_WoodDoorLocked_Base: DZE_ModularDoor_Base {
@@ -40,16 +29,7 @@ class DZE_Land_WoodDoorLocked_Base: DZE_ModularDoor_Base {
 	armor = 2500;
 	DZE_offset[] = {0,1.5,0};
 
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	lockable = 3;
 };
 
@@ -62,16 +42,7 @@ class DZE_CinderWallDoor_Base: DZE_ModularDoor_Base {
 	armor = 4000;
 	DZE_offset[] = {0,1.5,0};
 
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 };
 
 class DZE_CinderWallDoorLocked_Base: DZE_ModularDoor_Base {
@@ -83,16 +54,7 @@ class DZE_CinderWallDoorLocked_Base: DZE_ModularDoor_Base {
 	armor = 4000;
 	DZE_offset[] = {0,1.5,0};
 	lockable = 3;
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 };
 
 class DZE_Land_WoodDoor: DZE_Land_WoodDoor_Base {
@@ -428,16 +390,7 @@ class DZE_Land_WoodGate: DZE_Land_WoodDoor_Base {
 	};
 	
 
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodGate";
 		DZE_refundArray[] = {{{"ItemWoodGateFrame",1},{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
@@ -508,16 +461,7 @@ class DZE_Land_WoodGateLocked: DZE_Land_WoodDoorLocked_Base {
 	};
 	
 
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodGateLocked";
 		DZE_refundArray[] = {};
@@ -563,16 +507,7 @@ class DZE_Land_WoodOpenTopGarageDoor: DZE_Land_WoodDoor_Base {
 	};
 	
 
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodOpenTopGarageDoor";
 		DZE_refundArray[] = {{{"ItemWoodWallLg",1},{"PartWoodLumber",2}}};
@@ -642,16 +577,7 @@ class DZE_Land_WoodOpenTopGarageLocked: DZE_Land_WoodDoorLocked_Base {
 	};
 	
 
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodOpenTopGarageDoorLocked";
 		DZE_refundArray[] = {};
@@ -1218,34 +1144,7 @@ class DZE_Door: DZE_CinderWallDoor_Base {
 		};
 	};
 
-	class DestructionEffects {
-		class Sound {
-			simulation = "sound";
-			type = "DestrHouse";
-			position = "destructionEffect1";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 0.05;
-		};
-
-		class DestroyPhase1 {
-			simulation = "destroy";
-			type = "DelayedDestruction";
-			lifeTime = 2.5;
-			position = "";
-			intensity = 1;
-			interval = 1;
-		};
-
-		class DamageAround1 {
-			simulation = "damageAround";
-			type = "DamageAroundHouse";
-			position = "";
-			intensity = 0.1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "door_kit";
 		DZE_refundArray[] = {{{"door_frame_kit",1},{"ItemTankTrap",1},{"ItemPole",1}}};
@@ -1309,34 +1208,7 @@ class DZE_DoorLocked: DZE_CinderWallDoorLocked_Base {
 		};
 	};
 
-	class DestructionEffects {
-		class Sound {
-			simulation = "sound";
-			type = "DestrHouse";
-			position = "destructionEffect1";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 0.05;
-		};
-
-		class DestroyPhase1 {
-			simulation = "destroy";
-			type = "DelayedDestruction";
-			lifeTime = 2.5;
-			position = "";
-			intensity = 1;
-			interval = 1;
-		};
-
-		class DamageAround1 {
-			simulation = "damageAround";
-			type = "DamageAroundHouse";
-			position = "";
-			intensity = 0.1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "door_locked_kit";
 		DZE_refundArray[] = {};

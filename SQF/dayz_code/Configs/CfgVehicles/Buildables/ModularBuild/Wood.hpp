@@ -18,16 +18,7 @@ class DZE_WoodFloor: DZE_Modular_Base {
 	armor = 2000;
 	displayName = $STR_EPOCH_FLOORCEILING;
 	//GhostPreview = "DZE_WoodFloor_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Floor";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodFloor";
 		DZE_refundArray[] = {{{"ItemWoodFloorHalf",2}}};
@@ -41,16 +32,7 @@ class DZE_WoodFloorStairs: DZE_Modular_Base {
 	armor = 1000;
 	displayName = $STR_EPOCH_WOODFLOORSTAIRS;
 	//GhostPreview = "DZE_Wood_Floor_Stairs_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Floor";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodFloorStairs";
 		DZE_refundArray[] = {{{"ItemWoodFloor",1},{"ItemWoodStairs",1}}};
@@ -65,16 +47,7 @@ class DZE_WoodFloorHalf: DZE_Modular_Base {
 	displayName = $STR_EPOCH_FLOORCEILINGHALF;
 	DZE_buildingSteps = 2;
 	//GhostPreview = "DZE_WoodFloorHalf_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_half.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Half";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodFloorHalf";
 		DZE_refundArray[] = {{{"ItemWoodFloorQuarter",2}}};
@@ -89,16 +62,7 @@ class DZE_WoodFloorQuarter: DZE_Modular_Base {
 	displayName = $STR_EPOCH_FLOORCEILINGQUARTER;
 	DZE_buildingSteps = 1;
 	//GhostPreview = "DZE_WoodFloorQuarter_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_quarter.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Quarter";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodFloorQuarter";
 		DZE_refundArray[] = {{{"PartWoodPlywood",3},{"PartWoodLumber",3}}};
@@ -112,16 +76,7 @@ class DZE_WoodFloor4x: DZE_Modular_Base {
 	armor = 4000;
 	displayName = $STR_EPOCH_FLOORCEILING4x;
 	//GhostPreview = "DZE_WoodFloor4x_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_2x2_wreck.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Floor_2x2_Wreck";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodFloor4x";
 		DZE_refundArray[] = {{{"ItemWoodFloor",4}}};
@@ -149,16 +104,7 @@ class DZE_WoodLargeWall: DZE_Modular_Base {
 	displayName = $STR_EPOCH_LARGEWOODWALL;
 	upgradeBuilding[] = {"DZE_WoodLargeWallWin",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
 	//GhostPreview = "DZE_WoodLargeWall_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallLg";
 		DZE_refundArray[] = {{{"ItemWoodWall",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
@@ -173,16 +119,7 @@ class DZE_WoodLargeWallDoor: DZE_Modular_Base {
 	displayName = $STR_EPOCH_LARGEWALLWITHDOORWAY;
 	upgradeBuilding[] = {"DZE_Land_LargeWoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	//GhostPreview = "DZE_WoodLargeWallDoor_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallDoorLg";
 		DZE_refundArray[] = {{{"ItemWoodWall",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
@@ -196,16 +133,7 @@ class DZE_WoodLargeWallWin: DZE_Modular_Base {
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWALLWITHWINDOW;
 	//GhostPreview = "DZE_WoodLargeWallWin_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallWindowLg";
 		DZE_refundArray[] = {{{"ItemWoodWallLg",1},{"PartGlass",1}}};
@@ -220,16 +148,7 @@ class DZE_WoodSmallWall: DZE_Modular_Base {
 	displayName = $STR_EPOCH_WOODWALL;
 	upgradeBuilding[] = {"DZE_WoodSmallWallWin",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
 	//GhostPreview = "DZE_WoodSmallWall_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWall";
 		DZE_refundArray[] = {{{"ItemWoodWallThird",3}}};
@@ -244,16 +163,7 @@ class DZE_WoodSmallWallThird: DZE_Modular_Base {
 	displayName = $STR_EPOCH_WOODWALLTHIRDPART;
 	DZE_buildingSteps = 1;
 	//GhostPreview = "DZE_WoodSmallWallThird_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallThird";
 		DZE_refundArray[] = {{{"PartWoodPlywood",3},{"PartWoodLumber",3}}};
@@ -267,16 +177,7 @@ class DZE_WoodSmallWallWin: DZE_Modular_Base {
 	armor = 2000;
 	displayName = $STR_EPOCH_WALLWITHWINDOW;
 	//GhostPreview = "DZE_WoodSmallWallWin_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallWindow";
 		DZE_refundArray[] = {{{"ItemWoodWall",1},{"PartGlass",1}}};
@@ -291,16 +192,7 @@ class DZE_WoodSmallWallDoor: DZE_Modular_Base {
 	displayName = $STR_EPOCH_WALLWITHDOORWAY;
 	upgradeBuilding[] = {"DZE_Land_WoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	//GhostPreview = "DZE_WoodSmallWallDoor_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallDoor";
 		DZE_refundArray[] = {{{"ItemWoodWallThird",3}}};
@@ -315,16 +207,7 @@ class DZE_WoodTriangleWall: DZE_Modular_Base {
 	displayName = $STR_EPOCH_TRIANGLE_WOODWALL;
 	//GhostPreview = "DZE_Wood_Triangle_Wall_Preview";
 
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemTriangleWoodWall";
 		DZE_refundArray[] = {{{"ItemWoodFloorHalf",1},{"ItemWoodFloorQuarter",1}}};
@@ -338,16 +221,7 @@ class DZE_WoodGateFrame: DZE_Modular_Base {
 	displayName = $STR_EPOCH_WOODGATEFRAME;
 	upgradeBuilding[] = {"DZE_Land_WoodGate",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
 	//GhostPreview = "DZE_WoodGate_Preview";
-	class DestructionEffects: DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodGateFrame";
 		DZE_refundArray[] = {{{"ItemWoodWallThird",6}}};

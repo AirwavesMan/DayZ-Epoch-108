@@ -1,7 +1,7 @@
 // Technical destruction models for modular buildables.
 // Keep each class name aligned with its wreck P3D model.
 // Modular destruction wrecks
-class DZE_ModularWreck_Base: DZE_Building_Base {
+class DZE_ModularWreck_Base: DZE_Modular_Base {
 	vehicleClass = "DayZ Epoch 1071 Modular Wrecks";
 	DZE_buildingSteps = 3;
 	
