@@ -334,7 +334,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 			if (DZE_baseGodMode && {!(_type in DZE_baseGodModeExclude)}) then {
 				_object addEventHandler ["HandleDamage",{0}];
 			} else {
-				_object addMPEventHandler ["MPKilled",{if !(isServer) exitWith {};_this call vehicle_handleServerKilled;}];
+				_object addMPEventHandler ['MPKilled',{if (isServer) then {_this call server_eh_mpKilled_object;};}];
 			};
 		} else {
 			_object enableSimulation true;
@@ -503,7 +503,10 @@ if (_hiveLoaded) then {
 				_buildingList set [count _buildingList,_x];
 			};
 		} count (getMarkerPos "center" nearObjects ["building",((getMarkerSize "center") select 1)]);
+
 		_roadList = getMarkerPos "center" nearRoads ((getMarkerSize "center") select 1);
+		DZE_globalRoadList = _roadList;
+
 		//diag_log format ["_serverVehicleCounter: %1",_serverVehicleCounter];
 		_vehLimit = MaxVehicleLimit - (count _serverVehicleCounter);
 		if (_vehLimit > 0) then {
@@ -523,9 +526,7 @@ if (_hiveLoaded) then {
 			for "_x" from 1 to MaxDynamicDebris do {call server_spawnRoadBlocks;};
 		};
 
-		diag_log ("HIVE: Spawning # of Ammo Boxes: " + str(MaxAmmoBoxes));
-		for "_x" from 1 to MaxAmmoBoxes do {call server_spawnAmmoSupply;};
-
+		call server_spawnAmmoSupply;
 		call server_spawnOreVeins;
 
 		diag_log format["HIVE: BENCHMARK - Server finished spawning %1 DynamicVehicles, %2 Debris in %3 seconds (scheduled)",_vehLimit,MaxDynamicDebris,diag_tickTime - _startTime];

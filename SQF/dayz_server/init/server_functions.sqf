@@ -51,6 +51,9 @@ server_formatWorldspace = compile preprocessFileLineNumbers '\z\addons\dayz_serv
 //	Vehicle 
 server_createVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\vehicle\server_createVehicle.sqf";
 
+//	Event Handler
+server_eh_mpKilled_object = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\eventHandler\server_eh_mpKilled_object.sqf';
+
 //	Map 
 server_spawnAmmoSupply = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\map\server_spawnAmmoSupply.sqf";
 server_spawnOreVeins = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\map\server_spawnOreVeins.sqf";
@@ -89,17 +92,6 @@ server_updateGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\grou
 
 if (DZE_Virtual_Garage) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\garage\init.sqf";
-};
-
-vehicle_handleServerKilled = {
-	local _unit = _this select 0;
-
-	[_unit,"killed",false,false,"SERVER",dayz_serverKey] call server_updateObject;
-	_unit removeAllMPEventHandlers "MPKilled";
-	_unit removeAllEventHandlers "Killed";
-	_unit removeAllEventHandlers "HandleDamage";
-	_unit removeAllEventHandlers "GetIn";
-	_unit removeAllEventHandlers "GetOut";
 };
 
 server_hiveWrite = {

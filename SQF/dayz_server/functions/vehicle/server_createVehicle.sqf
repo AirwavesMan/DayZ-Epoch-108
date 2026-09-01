@@ -79,7 +79,7 @@ if (_object isKindOf 'AllVehicles') then {
 				diag_log '[Server Debug]: [Create Vehicle]: Disable damage on object';
 			#endif	
 		} else {
-			_object addMPEventHandler ['MPKilled',{if (isServer) then {_this call vehicle_handleServerKilled;};}];
+			_object addMPEventHandler ['MPKilled',{if (isServer) then {_this call server_eh_mpKilled_object;};}];
 		};
 	};
 
