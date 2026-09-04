@@ -22,7 +22,7 @@
 //#define DEBUG_SERVER_CHANGE_CODE
 
 #ifdef DEBUG_SERVER_CHANGE_CODE
-	diag_log format['[Server Debug]: [server_changeCode]: Function called with argumentes: %1',_this];
+	diag_log format['[Server Debug]: [server_changeCode]: Function called with arguments: %1',_this];
 #endif
 
 if (typeName _this != 'ARRAY' || {count _this != 4}) exitWith {
@@ -61,12 +61,8 @@ if (_oldCodeObject == _codeObject) exitWith {
 	diag_log format['[Server Debug]: [server_changeCode]: Warning: Rejected unchanged code for %1 (%2): %3',_playerName,_playerUID,_oldTypeObject];
 };
 
-local _typeObject = _oldTypeObject;
-
 // Changing code of an unlocked storage object creates after upgrade a new locked object
-if (_isStorage) then {
-	_typeObject = getText (configFile >> 'CfgVehicles' >> _oldTypeObject >> 'lockedClass');
-};
+local _typeObject = if (_isStorage) then {getText (configFile >> 'CfgVehicles' >> _oldTypeObject >> 'lockedClass')} else {_oldTypeObject};
 
 if (_typeObject == '' || {!([_typeObject,'server_changeCode'] call server_verifyObject)}) exitWith {
 	diag_log format['[Server Debug]: [server_changeCode]: Warning: Rejected replacement class for %1: %2',_oldTypeObject,_typeObject];

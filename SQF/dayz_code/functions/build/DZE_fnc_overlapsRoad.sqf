@@ -20,7 +20,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_OVERLAPS_ROAD
-	diag_log format ['[Client Debug]: [DZE_fnc_overlapsRoad]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_overlapsRoad]: Function called with arguments: %1',_this];
 #endif
 
 local _obj	= p0;
@@ -32,14 +32,6 @@ local _dir	= p2;
 local _wid	= p3;
 local _len	= p4;
 **/
-
-if (isNull _obj || {_radius < 0}) exitWith {
-	#ifdef DEBUG_DZE_FNC_OVERLAPS_ROAD
-		diag_log format ['[Client Debug]: [DZE_fnc_overlapsRoad]: Warning: Invalid parameters | Object: %1 | Radius: %2',_obj,_radius];
-	#endif
-
-	false
-};
 
 local _roads = _obj nearRoads _radius;
 
@@ -57,20 +49,17 @@ if (count _roads == 0) exitWith {
 
 // Project the buildable once and reuse its geometry for every road candidate.
 local _boxA		= _obj call DZE_fnc_projectBox2D;
-local _boxB		= [];
 local _overlap		= false;
-local _roadOverlap	= false;
 
 // Project each nearby road and compare both boxes using SAT.
 {
-	_boxB = _x call DZE_fnc_projectBox2D;
-	_roadOverlap = [_boxA,_boxB] call DZE_fnc_overlapsBox2D;
+	_overlap = [_boxA,(_x call DZE_fnc_projectBox2D)] call DZE_fnc_overlapsBox2D;
 
 	#ifdef DEBUG_DZE_FNC_OVERLAPS_ROAD
-		diag_log format ['[Client Debug]: [DZE_fnc_overlapsRoad]: Road test | Road: %1 | Position: %2 | Overlap: %3',_x,getPosASL _x,_roadOverlap];
+		diag_log format ['[Client Debug]: [DZE_fnc_overlapsRoad]: Road test | Road: %1 | Position: %2 | Overlap: %3',_x,getPosASL _x,_overlap];
 	#endif
 
-	if (_roadOverlap) exitWith {_overlap = true};
+	if (_overlap) exitWith {};
 } forEach _roads;
 
 #ifdef DEBUG_DZE_FNC_OVERLAPS_ROAD

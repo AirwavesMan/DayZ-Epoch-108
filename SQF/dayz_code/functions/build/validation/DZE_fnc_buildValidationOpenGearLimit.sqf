@@ -24,11 +24,9 @@
 #endif
 
 local _className = _this select BUILD_VALIDATION_CLASS_NAME;
-local _stage = _this select BUILD_VALIDATION_STAGE;
 local _object = _this select BUILD_VALIDATION_OBJECT;
-local _subject = [player,_object] select (_stage == BUILD_VALIDATION_STAGE_FINAL);
-local _nearestPole = _this select BUILD_VALIDATION_NEAREST_POLE;
-local _result = [_className,_subject,_object,_nearestPole] call DZE_fnc_checkBuildOpenGearLimit;
+local _subject = [player,_object] select ((_this select BUILD_VALIDATION_STAGE) == BUILD_VALIDATION_STAGE_FINAL);
+local _result = [_className,_subject,_object,_this select BUILD_VALIDATION_NEAREST_POLE] call DZE_fnc_checkBuildOpenGearLimit;
 
 #ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_OPEN_GEAR_LIMIT
 	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationOpenGearLimit]: Class: %1 | Result: %2',_className,_result];

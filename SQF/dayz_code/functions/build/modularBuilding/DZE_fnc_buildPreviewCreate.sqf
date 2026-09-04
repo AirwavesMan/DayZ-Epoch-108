@@ -24,18 +24,11 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_BUILD_PREVIEW_CREATE
-	diag_log format['[Client Debug]: [DZE_fnc_buildPreviewCreate]: Function called with argumentes: %1',_this];
+	diag_log format['[Client Debug]: [DZE_fnc_buildPreviewCreate]: Function called with arguments: %1',_this];
 #endif
 
-if (typeName _this != 'ARRAY' || {count _this < 5}) exitWith {
-	#ifdef DEBUG_DZE_FNC_BUILD_PREVIEW_CREATE
-		diag_log format ['[Client Debug]: [DZE_fnc_buildPreviewCreate]: Error: Invalid parameters: %1',_this];
-	#endif
-	[]
-};
-
 local _className = p0;
-local _offset = +(p1);
+local _offset = p1;
 local _useModelCenter = p2;
 local _preventUnderground = p3;
 local _displayName = p4;
@@ -56,8 +49,7 @@ if (count _offset == 0) then {
 };
 
 local _objectPositionASL = getPosASL _object;
-local _centerPositionASL = [_object] call DZE_fnc_modelCenterWorld;
-local _baseOffset = (getZ(_objectPositionASL)) - (getZ(_centerPositionASL));
+local _baseOffset = (getZ(_objectPositionASL)) - (([_object] call DZE_fnc_modelCenterWorld) select 2);
 
 // Every preview component stays local. Only the final object is created by the server.
 local _objectHelper = BUILD_HELPER createVehicleLocal ORIGIN;
@@ -66,7 +58,6 @@ local _centerHelper = BUILD_HELPER createVehicleLocal ORIGIN;
 local _heightHelper = _baseHelper;
 local _helpers = [_baseHelper,_centerHelper,_objectHelper];
 local _minHeight = getZ(_offset);
-local _positionRelative = +_offset;
 
 _baseHelper attachTo [_object,[0,0,_baseOffset]];		// LandContact offset is more reliable than boundingCenter.
 _centerHelper attachTo [_object,ORIGIN];
@@ -77,21 +68,19 @@ if (_preventUnderground) then {
 	addArray(_helpers,_heightHelper);
 };
 
-local _hitSounds = [[0,1,3,5],4] call fn_shuffleArray;
-local _hitIndex = 0;
 local _screamPrefix = 'z_scream_';
 local _screamSounds = [[0,1,2,3],4] call fn_shuffleArray;
-local _screamIndex = 0;
-local _screamCount = 4;
-local _isWoman = getText (configFile >> 'cfgVehicles' >> typeOf player >> 'TextSingular') == 'Woman';
 
-if (_isWoman) then {
+if (getText (configFile >> 'cfgVehicles' >> typeOf player >> 'TextSingular') == 'Woman') then {
 	_screamPrefix = _screamPrefix + 'w_';
 	_screamSounds = [[1,3,4],3] call fn_shuffleArray;
-	_screamCount = 3;
 };
 
-local _context = [
+#ifdef DEBUG_DZE_FNC_BUILD_PREVIEW_CREATE
+	diag_log format ['[Client Debug]: [DZE_fnc_buildPreviewCreate]: Preview created | Object: %1 | Offset: %2 | Base offset: %3 | Helpers: %4',_object,_offset,_baseOffset,count _helpers];
+#endif
+
+[
 	_object,
 	_objectHelper,
 	_baseHelper,
@@ -102,7 +91,7 @@ local _context = [
 	_baseOffset,
 	_minHeight,
 	_offset,
-	_positionRelative,
+	[],
 	[],
 	[],
 	_objectPositionASL,
@@ -115,22 +104,15 @@ local _context = [
 	_displayName,
 	false,
 	false,
-	_hitSounds,
-	_hitIndex,
+	[[0,1,3,5],4] call fn_shuffleArray,
+	0,
 	_screamPrefix,
 	_screamSounds,
-	_screamIndex,
-	_screamCount,
+	0,
 	false,
 	_className,
 	-1,
 	_helpers,
 	[],
 	false
-];
-
-#ifdef DEBUG_DZE_FNC_BUILD_PREVIEW_CREATE
-	diag_log format ['[Client Debug]: [DZE_fnc_buildPreviewCreate]: Preview created | Object: %1 | Offset: %2 | Base offset: %3 | Helpers: %4',_object,_offset,_baseOffset,count _helpers];
-#endif
-
-_context
+]

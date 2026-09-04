@@ -22,10 +22,10 @@
 //#define DEBUG_BUILD_OBJECT
 
 #ifdef DEBUG_BUILD_OBJECT
-	diag_log format['[Server Debug]: [Build Object]: Function called with argumentes: %1',_this];
+	diag_log format['[Server Debug]: [Build Object]: Function called with arguments: %1',_this];
 #endif
 
-if (count _this < 5) exitWith {diag_log '[Server Debug]: [Build Object]: server_buildObject error: Wrong parameter format';};
+if (count _this < 5) exitWith {diag_log '[Server Debug]: [Build Object]: Error: Wrong parameter format';};
 
 local _player = objectFromNetId(_this select 0);
 local _typeObject = _this select 1;
@@ -51,7 +51,6 @@ if ([_typeObject,'server_buildObject'] call server_verifyObject) then {
 	_worldspace set [2,_metadata];	
 
 	local _publicOwnerID = getNumber (configFile >> 'CfgVehicles' >> _typeObject >> 'DZE_bypassBase') == 1;
-	local _publicCharID = false;
 	local _saveToDB = getNumber (configFile >> 'CfgVehicles' >> _typeObject >> 'DZE_saveToDatabase') == 1;
 	local _friendsArray = [];
 	local _damageDisabled = DZE_baseGodMode && {!(_typeObject in DZE_baseGodModeExclude)};

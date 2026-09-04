@@ -22,7 +22,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_RELATIVE_ORIENTATION
-	diag_log format ['[Client Debug]: [DZE_fnc_snapRelativeOrientation]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapRelativeOrientation]: Function called with arguments: %1',_this];
 #endif
 
 local _objectHelper = p0;
@@ -35,8 +35,6 @@ if !([_heldSnapPoint,_nearbySnapPoint] call DZE_fnc_snapPointsCompatible) exitWi
 
 local _heldData = _heldSnapPoint getVariable ['snappoint',[]];
 local _nearbyData = _nearbySnapPoint getVariable ['snappoint',[]];
-
-if (count _heldData < 4 || {count _nearbyData < 4}) exitWith {_result};
 
 local _heldType = SNAP_POINT_TYPE_INVALID;
 local _nearbyType = SNAP_POINT_TYPE_INVALID;

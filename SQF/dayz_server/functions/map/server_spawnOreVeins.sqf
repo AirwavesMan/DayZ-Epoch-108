@@ -66,7 +66,7 @@ for '_index' from 1 to _maxOreVeins do {
 			#endif
 
 			//	Validate the selected final position.
-			if (!(isOnRoad _position) && {!surfaceIsWater _position} &&	{surfaceType _position != '#TAVsnichsurface'} && {count (nearestObjects [_position,['DZE_Ore_Veins_Base'],_spawnRange]) == 0}) then {
+			if (!(isOnRoad _position) && {!surfaceIsWater _position} &&	{count (nearestObjects [_position,['DZE_Ore_Veins_Base'],_spawnRange]) == 0}) then {
 				_type = _oreClasses call BIS_fnc_selectRandom;
 				_vein = _type createVehicle [0,0,0];
 				_vein enableSimulation false;

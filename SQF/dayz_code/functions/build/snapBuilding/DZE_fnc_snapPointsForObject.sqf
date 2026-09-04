@@ -24,16 +24,15 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_POINTS_FOR_OBJECT
-	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsForObject]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsForObject]: Function called with arguments: %1',_this];
 #endif
 
 local _object = p0;
-local _allowFallback = if (count _this > 1) then {p1} else {false};
+local _allowFallback = p1;
 
 if (isNull _object) exitWith {[]};
 
 local _type = typeOf _object;
-local _config = configFile >> 'CfgVehicles' >> _type;
 local _points = getArray (configFile >> 'SnapBuilding' >> _type >> 'points');
 
 if (count _points > 0) exitWith {
@@ -45,7 +44,7 @@ if (count _points > 0) exitWith {
 };
 
 local _eligible = _allowFallback ||
-	{isNumber (_config >> 'DZE_buildingSteps')} ||
+	{isNumber (configFile >> 'CfgVehicles' >> _type >> 'DZE_buildingSteps')} ||
 	{_object isKindOf 'BuiltItems'} ||
 	{_object isKindOf 'ModularItems'} ||
 	{_object isKindOf 'DZE_Base_Object'};
@@ -57,13 +56,10 @@ if (_cacheIndex >= 0) exitWith {+(DZE_snapGeneratedPoints select _cacheIndex)};
 
 // Arma 2 supports the unary boundingBox syntax; the box only supplies collision-ray limits.
 local _bounds = boundingBox _object;
-local _boundsValid = count _bounds >= 2 && {count (_bounds select 0) == 3} && {count (_bounds select 1) == 3};
-
-if (_boundsValid) then {
-	_boundsValid = vectorDistance(_bounds select 0,_bounds select 1) > SNAP_POINT_NORMAL_EPSILON;
-};
-
-if (!_boundsValid) exitWith {[]};
+if (count _bounds < 2 ||
+	{count (_bounds select 0) != 3} ||
+	{count (_bounds select 1) != 3} ||
+	{vectorDistance(_bounds select 0,_bounds select 1) <= SNAP_POINT_NORMAL_EPSILON}) exitWith {[]};
 
 local _minimum = _bounds select 0;
 local _maximum = _bounds select 1;
@@ -116,11 +112,9 @@ if (count _points == 0) then {
 	_source = 'CollisionGeometry';
 };
 
-if (count _points > 0) then {
-	_cacheIndex = count DZE_snapGeneratedPointTypes;
-	DZE_snapGeneratedPointTypes set [_cacheIndex,_type];
-	DZE_snapGeneratedPoints set [_cacheIndex,+_points];
-};
+_cacheIndex = count DZE_snapGeneratedPointTypes;
+DZE_snapGeneratedPointTypes set [_cacheIndex,_type];
+DZE_snapGeneratedPoints set [_cacheIndex,+_points];
 
 #ifdef DEBUG_DZE_FNC_SNAP_POINTS_FOR_OBJECT
 	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsForObject]: Fallback points generated | Type: %1 | Source: %2 | Bounds: %3 | Points: %4',_type,_source,_bounds,count _points];

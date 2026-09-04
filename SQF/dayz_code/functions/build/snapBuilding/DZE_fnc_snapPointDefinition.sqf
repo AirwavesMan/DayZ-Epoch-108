@@ -23,16 +23,15 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_POINT_DEFINITION
-	diag_log format ['[Client Debug]: [DZE_fnc_snapPointDefinition]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapPointDefinition]: Function called with arguments: %1',_this];
 #endif
 
 local _position = p0;
 local _bounds = p1;
-local _normalProvided = count _this > 2;
-local _normal = if (_normalProvided) then {p2} else {[]};
+local _normal = if (count _this > 2) then {p2} else {[]};
 
-if (typeName _position != 'ARRAY' || {count _position != 3}) exitWith {[]};
-if (typeName _bounds != 'ARRAY' || {count _bounds < 2}) exitWith {[]};
+if (count _position != 3) exitWith {[]};
+if (count _bounds < 2) exitWith {[]};
 
 local _minimum = _bounds select 0;
 local _maximum = _bounds select 1;
@@ -41,14 +40,13 @@ if (count _minimum != 3 || {count _maximum != 3}) exitWith {[]};
 
 local _pointType = SNAP_POINT_TYPE_PIVOT;
 local _name = localize 'STR_SNAPPING_POINT_PIVOT';
-local _normalValid = typeName _normal == 'ARRAY' && {count _normal == 3};
 
-if (_normalProvided && {_normalValid}) then {
+if (typeName _normal == 'ARRAY' && {count _normal == 3}) then {
 	if (vectorMagnitude(_normal) > SNAP_POINT_NORMAL_EPSILON) then {
 		_normal = vectorNormalized(_normal);
 		_pointType = SNAP_POINT_TYPE_EDGE;
 	} else {
-		_normal = +ORIGIN;
+		_normal = ORIGIN;
 	};
 } else {
 	local _center = [
@@ -73,16 +71,13 @@ if (_normalProvided && {_normalValid}) then {
 
 	if ((_normalizedOffset select _axis) >= 0.5) then {
 		_pointType = SNAP_POINT_TYPE_EDGE;
-		_normal = +([VECTOR_LEFT,VECTOR_RIGHT] select ((_position select _axis) >= (_center select _axis)));
-
-		if (_axis == Y_AXIS) then {
-			_normal = +([VECTOR_BACK,VECTOR_FRONT] select ((_position select _axis) >= (_center select _axis)));
-		};
-		if (_axis == Z_AXIS) then {
-			_normal = +([VECTOR_DOWN,VECTOR_UP] select ((_position select _axis) >= (_center select _axis)));
-		};
+		_normal = ([
+			[VECTOR_LEFT,VECTOR_RIGHT],
+			[VECTOR_BACK,VECTOR_FRONT],
+			[VECTOR_DOWN,VECTOR_UP]
+		] select _axis) select ((_position select _axis) >= (_center select _axis));
 	} else {
-		_normal = +ORIGIN;
+		_normal = ORIGIN;
 	};
 };
 
@@ -91,9 +86,11 @@ if (_pointType == SNAP_POINT_TYPE_EDGE) then {
 	if (abs(_normal select Y_AXIS) > abs(_normal select _axis)) then {_axis = Y_AXIS};
 	if (abs(_normal select Z_AXIS) > abs(_normal select _axis)) then {_axis = Z_AXIS};
 
-	if (_axis == X_AXIS) then {_name = localize (['STR_SNAPPING_POINT_LEFT','STR_SNAPPING_POINT_RIGHT'] select ((_normal select X_AXIS) >= 0))};
-	if (_axis == Y_AXIS) then {_name = localize (['STR_SNAPPING_POINT_BACK','STR_SNAPPING_POINT_FRONT'] select ((_normal select Y_AXIS) >= 0))};
-	if (_axis == Z_AXIS) then {_name = localize (['STR_SNAPPING_POINT_BOTTOM','STR_SNAPPING_POINT_TOP'] select ((_normal select Z_AXIS) >= 0))};
+	_name = localize (([
+		['STR_SNAPPING_POINT_LEFT','STR_SNAPPING_POINT_RIGHT'],
+		['STR_SNAPPING_POINT_BACK','STR_SNAPPING_POINT_FRONT'],
+		['STR_SNAPPING_POINT_BOTTOM','STR_SNAPPING_POINT_TOP']
+	] select _axis) select ((_normal select _axis) >= 0));
 };
 
 #ifdef DEBUG_DZE_FNC_SNAP_POINT_DEFINITION

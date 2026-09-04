@@ -23,13 +23,13 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_MOVE_HELPER
-	diag_log format ['[Client Debug]: [DZE_fnc_snapMoveHelper]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapMoveHelper]: Function called with arguments: %1',_this];
 #endif
 
 local _object = p0;
 local _objectHelper = p1;
-local _expectedSession = if (count _this > 2) then {p2} else {DZE_snapStateSession};
-local _expectedRevision = if (count _this > 3) then {p3} else {DZE_snapStateRevision};
+local _expectedSession = p2;
+local _expectedRevision = p3;
 
 // Moving the shared helper must not interleave with a newer state transition.
 if (_expectedSession != DZE_snapStateSession || {_expectedRevision != DZE_snapStateRevision}) exitWith {};

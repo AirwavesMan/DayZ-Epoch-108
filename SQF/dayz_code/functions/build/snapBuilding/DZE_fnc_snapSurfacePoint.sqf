@@ -27,24 +27,17 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_SURFACE_POINT
-	diag_log format ['[Client Debug]: [DZE_fnc_snapSurfacePoint]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapSurfacePoint]: Function called with arguments: %1',_this];
 #endif
 
 local _object = p0;
 local _localStart = p1;
 local _localEnd = p2;
 local _fallbackPosition = p3;
-local _surfacePosition = +_fallbackPosition;
-
-if (isNull _object ||
-	{typeName _localStart != 'ARRAY'} || {count _localStart != 3} ||
-	{typeName _localEnd != 'ARRAY'} || {count _localEnd != 3} ||
-	{typeName _fallbackPosition != 'ARRAY'} || {count _fallbackPosition != 3}) exitWith {_surfacePosition};
+local _surfacePosition = _fallbackPosition;
 
 local _startASL = (_object modelToWorld _localStart) call DZE_fnc_AGLToASL;
 local _endASL = (_object modelToWorld _localEnd) call DZE_fnc_AGLToASL;
-
-if (vectorDistance(_startASL,_endASL) <= SNAP_POINT_NORMAL_EPSILON) exitWith {_surfacePosition};
 
 local _hits = lineIntersectsWith [_startASL,_endASL,objNull,objNull,false];
 if !(_object in _hits) exitWith {_surfacePosition};

@@ -9,7 +9,7 @@
 //
 //	Parameters:	buildContext: Array - Shared modular-build preview state
 //
-//	Return Value:	Array - Unchanged modular-build context
+//	Return Value:	Nothing
 //
 //	Called by:	Client
 //
@@ -19,13 +19,10 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_BUILD_PREVIEW_DETACH
-	diag_log format ['[Client Debug]: [DZE_fnc_buildPreviewDetach]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_buildPreviewDetach]: Function called with arguments: %1',_this];
 #endif
 
-if (typeName _this != 'ARRAY' || {count _this < BUILD_CONTEXT_SIZE}) exitWith {_this};
-
-local _context = _this;
-local _objectHelper = _context select BUILD_CONTEXT_OBJECT_HELPER;
+local _objectHelper = _this select BUILD_CONTEXT_OBJECT_HELPER;
 
 detach _objectHelper;
 helperAttached = false;
@@ -33,5 +30,3 @@ helperAttached = false;
 #ifdef DEBUG_DZE_FNC_BUILD_PREVIEW_DETACH
 	diag_log format ['[Client Debug]: [DZE_fnc_buildPreviewDetach]: Helper detached: %1',_objectHelper];
 #endif
-
-_context

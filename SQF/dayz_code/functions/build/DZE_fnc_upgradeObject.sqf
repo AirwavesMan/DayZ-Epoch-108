@@ -24,7 +24,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_UPGRADE_OBJECT
-	diag_log format['[Client Debug]: [DZE_fnc_upgradeObject]: Function called with argumentes: %1',_this];
+	diag_log format['[Client Debug]: [DZE_fnc_upgradeObject]: Function called with arguments: %1',_this];
 #endif
 
 if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_UPGRADE_ALREADY_IN_PROGRESS' call DZE_fnc_rollingMessages;};	// Upgrade is already in progress.
@@ -59,11 +59,6 @@ if (count _upgrade > 0) then {
 	local _newclassname = _upgrade select 0;
 	local _classLimitResult = [_newclassname,_object,_object] call DZE_fnc_checkBuildClassLimit;
 
-	if (count _classLimitResult < 4) exitWith {
-		dayz_actionInProgress = false;
-		localize 'STR_BUILD_CANCELLED' call DZE_fnc_rollingMessages;
-	};
-
 	if !(_classLimitResult select 0) exitWith {
 		local _newText = getText (configFile >> 'CfgVehicles' >> _newclassname >> 'displayName');
 		local _message = if ((_classLimitResult select 1) < 0) then {
@@ -76,11 +71,6 @@ if (count _upgrade > 0) then {
 	};
 
 	local _lockedDoorLimitResult = [_newclassname,_object,_object,DZE_DoorsLocked,DZE_LockedDoorLimit] call DZE_fnc_checkBuildGroupLimit;
-
-	if (count _lockedDoorLimitResult < 4) exitWith {
-		dayz_actionInProgress = false;
-		localize 'STR_BUILD_CANCELLED' call DZE_fnc_rollingMessages;
-	};
 
 	if !(_lockedDoorLimitResult select 0) exitWith {
 		format [localize 'STR_BUILD_VALIDATION_LOCKED_DOOR_LIMIT',_lockedDoorLimitResult select 1] call DZE_fnc_rollingMessages;
@@ -196,9 +186,8 @@ if (count _upgrade > 0) then {
 
 				if (_lockable == BUILD_COMBO_LOCK && {!(_newclassname in ['DZE_WoodenGate_2','DZE_WoodenGate_3','DZE_WoodenGate_4'])}) then {
 					local _codeResult = _lockable call DZE_fnc_generateCode;
-					local _combination = _codeResult select 0;
 					_combinationDisplay = _codeResult select 1;
-					_codeObject = _combination;
+					_codeObject = _codeResult select 0;
 				};
 
 				DZE_Wait_For_Object = nil;
@@ -210,10 +199,7 @@ if (count _upgrade > 0) then {
 				//	Object creation failed, refund items
 				if (isNull _object) then {
 					{player addMagazine _x;} count _temp_removed_array;
-
-					if (count _temp_BP_removed_array > 0) then {
-						{(unitBackpack player) addMagazineCargoGlobal _x} count _temp_BP_removed_array;
-					};
+					{(unitBackpack player) addMagazineCargoGlobal _x} count _temp_BP_removed_array;
 				} else {
 					if (_combinationDisplay != '') then {
 						local _message = format[localize 'STR_BUILD_UPGRADE_COMPLETED_WITH_COMBINATION',_combinationDisplay,_text];
@@ -226,10 +212,7 @@ if (count _upgrade > 0) then {
 				};
 			} else {
 				{player addMagazine _x;} count _temp_removed_array;
-
-				if (count _temp_BP_removed_array > 0) then {
-					{(unitBackpack player) addMagazineCargoGlobal _x} count _temp_BP_removed_array;
-				};
+				{(unitBackpack player) addMagazineCargoGlobal _x} count _temp_BP_removed_array;
 				format[localize 'STR_BUILD_UPGRADE_ITEM_REMOVAL_FAILED',_removed_total,_tobe_removed_total] call DZE_fnc_rollingMessages;	// Missing Parts after first check Item: %1 / %2
 			};
 		} else {

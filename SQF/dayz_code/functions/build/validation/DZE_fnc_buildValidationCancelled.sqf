@@ -19,7 +19,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_CANCELLED
-	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationCancelled]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationCancelled]: Function called with arguments: %1',_this];
 #endif
 
 if (BUILD_STAGE == BUILD_CANCELLED) exitWith {localize 'STR_BUILD_CANCELLED'};

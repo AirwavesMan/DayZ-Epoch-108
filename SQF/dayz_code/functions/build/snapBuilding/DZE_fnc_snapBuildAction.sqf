@@ -27,7 +27,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_BUILD_ACTION
-	diag_log format ['[Client Debug]: [DZE_fnc_snapBuildAction]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapBuildAction]: Function called with arguments: %1',_this];
 #endif
 
 local _parameters = p3;
@@ -35,9 +35,9 @@ local _event = _parameters select 0;
 local _object = _parameters select 1;
 local _className = _parameters select 2;
 local _objectHelper = _parameters select 3;
-local _selectedPoint = if (count _parameters > 4) then {_parameters select 4} else {-1};
-local _session = if (count _parameters > 5) then {_parameters select 5} else {-1};
-local _revision = if (count _parameters > 6) then {_parameters select 6} else {-1};
+local _selectedPoint = _parameters select 4;
+local _session = _parameters select 5;
+local _revision = _parameters select 6;
 local _command = '';
 
 call {

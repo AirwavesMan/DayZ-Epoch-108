@@ -27,15 +27,14 @@
 local _className = _this select 0;
 local _subject = _this select 1;
 local _ignoredObject = _this select 2;
-local _nearestPole = objNull;
-if (count _this > 3) then {_nearestPole = _this select 3};
+local _nearestPole = if (count _this > 3) then {_this select 3} else {objNull};
 
 local _config = configFile >> 'CfgVehicles' >> _className;
 local _isBuildable = getNumber (_config >> 'DZE_allowBuilding') == 1;
 local _hasOpenGear = _className call DZE_fnc_hasStorageGearSlots;
 
 if (!_isBuildable || {!_hasOpenGear} || {_className in DZE_UnLockedStorage}) exitWith {[true,DZE_OpenGearLimit,0,objNull]};
-if (DZE_OpenGearLimit <= 0 || {dayz_playerUID in DZE_baseManagementAdmins}) exitWith {[true,DZE_OpenGearLimit,0,objNull]};
+if (DZE_OpenGearLimit <= 0) exitWith {[true,DZE_OpenGearLimit,0,objNull]};
 
 local _baseRadius = DZE_baseRadius select 0;
 
@@ -46,10 +45,9 @@ if (isNull _nearestPole) then {
 
 if (isNull _nearestPole) exitWith {[true,DZE_OpenGearLimit,0,objNull]};
 
-local _objects = [_nearestPole,_baseRadius] call DZE_fnc_findBuildableObjects;
 local _count = {
 	_x != _ignoredObject && {!((typeOf _x) in DZE_UnLockedStorage)} && {(typeOf _x) call DZE_fnc_hasStorageGearSlots}
-} count _objects;
+} count ([_nearestPole,_baseRadius] call DZE_fnc_findBuildableObjects);
 local _allowed = _count < DZE_OpenGearLimit;
 
 #ifdef DEBUG_DZE_FNC_CHECK_BUILD_OPEN_GEAR_LIMIT

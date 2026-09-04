@@ -21,7 +21,7 @@
 //#define DEBUG_SERVER_SET_DAMAGE_OBJECT
 
 #ifdef DEBUG_SERVER_SET_DAMAGE_OBJECT
-	diag_log format['[Server Debug]: [server_setDamageObject]: Function called with argumentes: %1',_this];
+	diag_log format['[Server Debug]: [server_setDamageObject]: Function called with arguments: %1',_this];
 #endif
 
 local _object = _this select 0;
@@ -31,12 +31,8 @@ local _damageOld = _this select 3;
 
 local _armorOld = getNumber (configFile >> 'CfgVehicles' >> _oldObjectType >> 'armor');
 local _armorNew = getNumber (configFile >> 'CfgVehicles' >> _newObjectType >> 'armor');
-local _damageNew = _damageOld;
-
 // Check for divide by zero.
-if (_armorNew > 0) then {
-	_damageNew = (_damageOld * _armorOld) / _armorNew;
-};
+local _damageNew = if (_armorNew > 0) then {(_damageOld * _armorOld) / _armorNew} else {_damageOld};
 
 _object setDamage _damageNew;
 

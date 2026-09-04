@@ -21,13 +21,12 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_POINTS_CLEANUP
-	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsCleanup]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsCleanup]: Function called with arguments: %1',_this];
 #endif
 
-local _sessionArgumentValid = typeName _this == 'ARRAY' && {count _this > 0} && {typeName (p0) == 'SCALAR'};
-local _expectedSession = if (_sessionArgumentValid) then {p0} else {DZE_snapStateSession};
-local _advanceSession = if (_sessionArgumentValid && {count _this > 1} && {typeName (p1) == 'BOOL'}) then {p1} else {false};
-local _expectedRevision = if (_sessionArgumentValid && {count _this > 2} && {typeName (p2) == 'SCALAR'}) then {p2} else {DZE_snapStateRevision};
+local _expectedSession = p0;
+local _advanceSession = p1;
+local _expectedRevision = p2;
 local _heldSnapGizmos = [];
 local _nearbySnapGizmos = [];
 local _resultSession = -1;
@@ -40,13 +39,13 @@ isNil {
 		DZE_snapPointsReady = false;
 
 		if (DZE_snapPointsSession == _expectedSession) then {
-			_heldSnapGizmos = +snapGizmos;
+			_heldSnapGizmos = snapGizmos;
 			snapGizmos = [];
 			DZE_snapPointsSession = -1;
 		};
 
 		if (DZE_snapNearbyPointsSession == _expectedSession) then {
-			_nearbySnapGizmos = +snapGizmosNearby;
+			_nearbySnapGizmos = snapGizmosNearby;
 			snapGizmosNearby = [];
 			DZE_snapNearbyPointsSession = -1;
 		};

@@ -29,12 +29,12 @@ local _buildValidationContext = [
 	_text,
 	_buildItem,
 	_require,
-	_playerASL,
+	getPosASL player,
 	objNull,
 	ORIGIN,
 	[],
 	MOVE_STOP,
-	_nearestPole,
+	objNull,
 	[],		/// check if this changes (item)
 	-1,
 	BUILD_VALIDATION_STAGE_PREBUILD

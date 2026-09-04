@@ -24,12 +24,10 @@
 #endif
 
 local _className = _this select BUILD_VALIDATION_CLASS_NAME;
-local _stage = _this select BUILD_VALIDATION_STAGE;
 local _object = _this select BUILD_VALIDATION_OBJECT;
-local _subject = [player,_object] select (_stage == BUILD_VALIDATION_STAGE_FINAL);
-local _nearestPole = _this select BUILD_VALIDATION_NEAREST_POLE;
+local _subject = [player,_object] select ((_this select BUILD_VALIDATION_STAGE) == BUILD_VALIDATION_STAGE_FINAL);
 local _storageClasses = DZE_LockedStorage + DZE_UnLockedStorage;
-local _result = [_className,_subject,_object,_storageClasses,DZE_LockedStorageLimit,_nearestPole] call DZE_fnc_checkBuildGroupLimit;
+local _result = [_className,_subject,_object,_storageClasses,DZE_LockedStorageLimit,_this select BUILD_VALIDATION_NEAREST_POLE] call DZE_fnc_checkBuildGroupLimit;
 
 #ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_LOCKED_STORAGE_LIMIT
 	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationLockedStorageLimit]: Class: %1 | Result: %2',_className,_result];

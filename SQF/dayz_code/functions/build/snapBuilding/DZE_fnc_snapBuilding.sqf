@@ -25,7 +25,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_BUILDING
-	diag_log format ['[Client Debug]: [DZE_fnc_snapBuilding]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapBuilding]: Function called with arguments: %1',_this];
 #endif
 
 /**
@@ -54,7 +54,6 @@ local _format		= '<t align=''left'' size=''0.4'' font=''Zeppelin33''>';
 local _COL		= '<t shadow=''2'' color=';
 local _WHT		= _COL + '''#E0E0E0''>';		// white	'#FFFFFF'
 local _GRN		= _COL + '''#20E020''>';		// green
-local _RED		= _COL + '''#FF0000''>';		// red
 local _ORA		= _COL + '''#FF8800''>';		// orange
 local _GRY		= _COL + '''#808080''>';		// greyed out
 local _TRN		= _format + '<t shadow=''0'' color=''#00000000''>';	// transparent
@@ -93,23 +92,23 @@ local _BRW		= '] ' + _WHT;
 local _hpsp		= _hyphen + _PgUp + _slash + _PgDn + _BRW;
 local _handedness	= ['STR_SNAPPING_KEY_ARROW_KEYS','STR_SNAPPING_KEY_NUMPAD_ARROW_KEYS'] select DZE_LEFT_HANDED;
 
-local _HK = _OBR + _tab + _DBR + localize 'STR_SNAPPING_KEY_SHIFT' + _hyphen + _tab + _BRW	+ localize 'STR_SNAPPING_HELP_NEXT_PREVIOUS_POINT'	+ _NL;
-_HK = _HK + _OBR + _PgUp + _DBR + _PgDn + _BRW							+ localize 'STR_SNAPPING_HELP_ADJUST_HEIGHT_10CM'		+ _NL;
-_HK = _HK + _OBR + _ctrl + _hpsp								+ localize 'STR_SNAPPING_HELP_ADJUST_HEIGHT_1CM'		+ _NL;
-_HK = _HK + _OBR + localize 'STR_SNAPPING_KEY_ALT'  + _hpsp					+ localize 'STR_SNAPPING_HELP_ADJUST_HEIGHT_1M'		+ _NL;
-_HK = _HK + _OBR + localize _handedness + _BRW							+ _strPitch + ' / ' + _strBank			+ _NL;
-_HK = _HK + _ORA + '[Q] [E] '									+ _WHT + _strRotate				+ _NL;
-_HK = _HK + _OBR + _decrease + _DBR + _increase + _BRW						+ localize 'STR_SNAPPING_HELP_ADJUST_DEGREES'		+ _NL;
-_HK = _HK + _spacing;
-_HK = _HK + _ORA + '[L] '									+ _WHT + localize 'STR_SNAPPING_HELP_LOCAL_AXIS' + ' [%1'+ _NL;
-_HK = _HK + _ORA + '[T] '									+ _TER + localize 'STR_SNAPPING_HELP_TERRAIN_ALIGNMENT'	+ _NL;
-_HK = _HK + _ORA + '[P] '									+ _WHT + localize 'STR_SNAPPING_HELP_BASE_BOUNDARY'	+ _NL;
-_HK = _HK + _ORA + '[F] '									+ _WHT + localize 'STR_SNAPPING_HELP_RELEASE_HOLD'	+ _NL;
-_HK = _HK + _ORA + '[H] '									+ _WHT + localize 'STR_SNAPPING_HELP_HIDE_PANEL'	+ _NL;
-_HK = _HK + _spacing;
-local _H2 = _OBR + localize 'STR_SNAPPING_KEY_ESCAPE' + _BRW					+ localize 'STR_SNAPPING_HELP_CANCEL'		+ _NL;
-_H2 = _H2 + _OBR + localize 'STR_SNAPPING_KEY_BACKSPACE' + _BRW				+ localize 'STR_SNAPPING_HELP_RESET'		+ _NL;
-_H2 = _H2 + _OBR + localize 'STR_SNAPPING_KEY_SPACE_BAR' + _BRW					+ localize 'STR_SNAPPING_HELP_BUILD'		+ _END;
+local _HK = _OBR + _tab + _DBR + localize 'STR_SNAPPING_KEY_SHIFT' + _hyphen + _tab + _BRW	+ localize 'STR_SNAPPING_HELP_NEXT_PREVIOUS_POINT'	+ _NL +
+	_OBR + _PgUp + _DBR + _PgDn + _BRW							+ localize 'STR_SNAPPING_HELP_ADJUST_HEIGHT_10CM'		+ _NL +
+	_OBR + _ctrl + _hpsp									+ localize 'STR_SNAPPING_HELP_ADJUST_HEIGHT_1CM'		+ _NL +
+	_OBR + localize 'STR_SNAPPING_KEY_ALT'  + _hpsp						+ localize 'STR_SNAPPING_HELP_ADJUST_HEIGHT_1M'		+ _NL +
+	_OBR + localize _handedness + _BRW								+ _strPitch + ' / ' + _strBank			+ _NL +
+	_ORA + '[Q] [E] '										+ _WHT + _strRotate				+ _NL +
+	_OBR + _decrease + _DBR + _increase + _BRW							+ localize 'STR_SNAPPING_HELP_ADJUST_DEGREES'		+ _NL +
+	_spacing +
+	_ORA + '[L] '										+ _WHT + localize 'STR_SNAPPING_HELP_LOCAL_AXIS' + ' [%1' + _NL +
+	_ORA + '[T] '										+ _TER + localize 'STR_SNAPPING_HELP_TERRAIN_ALIGNMENT'	+ _NL +
+	_ORA + '[P] '										+ _WHT + localize 'STR_SNAPPING_HELP_BASE_BOUNDARY'	+ _NL +
+	_ORA + '[F] '										+ _WHT + localize 'STR_SNAPPING_HELP_RELEASE_HOLD'	+ _NL +
+	_ORA + '[H] '										+ _WHT + localize 'STR_SNAPPING_HELP_HIDE_PANEL'	+ _NL +
+	_spacing;
+local _H2 = _OBR + localize 'STR_SNAPPING_KEY_ESCAPE' + _BRW					+ localize 'STR_SNAPPING_HELP_CANCEL'		+ _NL +
+	_OBR + localize 'STR_SNAPPING_KEY_BACKSPACE' + _BRW					+ localize 'STR_SNAPPING_HELP_RESET'		+ _NL +
+	_OBR + localize 'STR_SNAPPING_KEY_SPACE_BAR' + _BRW						+ localize 'STR_SNAPPING_HELP_BUILD'		+ _END;
 
 local _distance = 0;
 if (_distFromPlot != '0') then {
@@ -121,30 +120,20 @@ if (_distFromPlot != '0') then {
 
 local _snapState	= localize 'STR_SNAPPING_STATE_DISABLED';
 local _SNP		= _GRY;						// initial text color
-local _snapText		= '';
 local _snapRange	= '';
-local _snapMinIdx	= 0;
 local _snapMaxIdx	= (count _snapList) - 3;			// 0-based index max
 local _pitch		= 0;
 local _bank		= 0;
 local _rotate		= 0;
-local _rotation		= +ORIGIN;
+local _rotation		= ORIGIN;
 local _pitchValue	= 0;
 local _bankValue	= 0;
 local _rotateValue	= 0;
 local _localModeOn	= _GRN	+ (localize 'STR_SNAPPING_STATE_ON')	+ _WBR;
 local _localModeOff	= _ORA	+ (localize 'STR_SNAPPING_STATE_OFF')	+ _WBR;
-local _localText	= '';
-local _ON		= false;
-local _SELECT		= false;
-local _MANUAL		= false;
 local _txt		= '';
 local _screenX		= 0.67 * safezoneW + safezoneX;
 local _screenY		= 0.46 * safezoneH + safezoneY;
-local _duration		= 0.1;
-local _fadeIn		= 0;
-local _delta		= 0;
-local _rscLayer		= 17;
 
 local _tutDistance	= _ORA + localize 'STR_SNAPPING_STATUS_DISTANCE_FROM_BASE' + _colon + '%1' + _pipe + localize 'STR_SNAPPING_STATUS_RADIUS' + _colon + '%2' + _NL;
 local _tutSnapping	= _ORA + localize 'STR_SNAPPING_STATUS_MODE' + _colon + '[%1' + _WHT + ']%2' + _NL;
@@ -174,39 +163,34 @@ while {BUILD_STAGE == BUILD_HOTKEYS_ACTIVE} do {
 		//
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		if (_snappingEnabled && !skipUpdates) then {
-
-			_ON	= snapActionState	== localize 'STR_SNAPPING_STATE_ON';
-			_SELECT	= snapActionStateSelect	== localize 'STR_SNAPPING_MODE_MANUAL';
-			_MANUAL	= _ON && _SELECT;
-
-			// Snap state and indices are synchronized by DZE_fnc_snapStateTransition: OFF 0/-2, ON/Auto 1/-1, Selected point+2/point.
-
-			_snapState = _snapList select DZE_SnapTabIdx;
-
-			call {
-				if (_MANUAL)			exitWith {_SNP = _GRN; _snapState = snapActionStateSelect};	// Manual (Action Menu only)
-				if (DZE_SnapTabIdx == 0)	exitWith {_SNP = _ORA};						// OFF
-				if (DZE_SnapTabIdx >= 1)	exitWith {_SNP = _GRN};						// Auto / Selected
-			};
-
-			_snapRange = '';
-
-			if ((DZE_SnapSelIdx >= _snapMinIdx) && (DZE_SnapSelIdx <= _snapMaxIdx)) then {
-				_snapRange = ' [ ' + _GRN + '%1' + _WHT + ' / %2 ]';
-				_snapRange = format[_snapRange, DZE_SnapSelIdx + 1, _snapMaxIdx + 1];
-			};
-		};
-
-		_snapText = _SNP + _snapState;
-
-		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		//
-		//						Vectoring
-		//
-		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 		if (!skipUpdates) then {
+			if (_snappingEnabled) then {
+
+				// Snap state and indices are synchronized by DZE_fnc_snapStateTransition: OFF 0/-2, ON/Auto 1/-1, Selected point+2/point.
+
+				_snapState = _snapList select DZE_SnapTabIdx;
+
+				if (snapActionState == localize 'STR_SNAPPING_STATE_ON' &&
+					{snapActionStateSelect == localize 'STR_SNAPPING_MODE_MANUAL'}) then {
+					_SNP = _GRN;
+					_snapState = snapActionStateSelect;	// Manual (Action Menu only)
+				} else {
+					_SNP = [_ORA, _GRN] select (DZE_SnapTabIdx >= 1);	// OFF / Auto / Selected
+				};
+
+				_snapRange = if (DZE_SnapSelIdx >= 0) then {
+					format [' [ ' + _GRN + '%1' + _WHT + ' / %2 ]', DZE_SnapSelIdx + 1, _snapMaxIdx + 1]
+				} else {
+					''
+				};
+			};
+
+			/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			//
+			//						Vectoring
+			//
+			/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 			// Read the complete world orientation so composed local rotations and local yaw remain visible.
 			_rotation = matrixToEuler(getRotationMatrix(_object));
 			_pitchValue = _rotation select X_AXIS;
@@ -231,33 +215,24 @@ while {BUILD_STAGE == BUILD_HOTKEYS_ACTIVE} do {
 		//						Local Mode
 		//
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/**
-		if (BUILD_AXIS_LOCAL) then {
-			_localText = _localModeOn;
-		} else {
-			_localText = _localModeOff;
-		};
-**/
-		_localText = [_localModeOff, _localModeOn] select BUILD_AXIS_LOCAL;
-
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//
 		//						Dynamic Text
 		//
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		_txt = _header + _format;
+		_txt = _header + _format +
+			format[_tutDistance,	_distance, _radius] +
+			format[_tutSnapping,	_SNP + _snapState, _snapRange] +
+			_spacing +
+			format[_tutVectoring,	_pitch, _bank, _rotate] +
+			format[_tutDegrees,	BUILD_CUR_DEGREE] +
+			_spacing +
+			// hotkeys
+			format[_HK, [_localModeOff, _localModeOn] select BUILD_AXIS_LOCAL] +
+			_H2;
 
-		_txt = _txt + format[_tutDistance,	_distance, _radius];
-		_txt = _txt + format[_tutSnapping,	_snapText, _snapRange];
-		_txt = _txt + _spacing;
-		_txt = _txt + format[_tutVectoring,	_pitch, _bank, _rotate];
-		_txt = _txt + format[_tutDegrees,	BUILD_CUR_DEGREE];
-		_txt = _txt + _spacing;
-		_txt = _txt + format[_HK, _localText];	// hotkeys
-		_txt = _txt + _H2;
-
-		[_txt, _screenX, _screenY, _duration, _fadeIn, _delta, _rscLayer] spawn BIS_fnc_dynamicText;
+		[_txt, _screenX, _screenY, 0.1, 0, 0, 17] spawn BIS_fnc_dynamicText;
 
 	};
 

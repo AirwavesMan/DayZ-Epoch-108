@@ -74,14 +74,13 @@
 #define BUILD_CONTEXT_SCREAM_PREFIX            25
 #define BUILD_CONTEXT_SCREAM_SOUNDS            26
 #define BUILD_CONTEXT_SCREAM_INDEX             27
-#define BUILD_CONTEXT_SCREAM_COUNT             28
-#define BUILD_CONTEXT_SNAPPING_ENABLED         29
-#define BUILD_CONTEXT_CLASS_NAME               30
-#define BUILD_CONTEXT_SNAP_SESSION             31
-#define BUILD_CONTEXT_HELPERS                  32
-#define BUILD_CONTEXT_HEIGHT_POSITION_ASL      33
-#define BUILD_CONTEXT_UNDERGROUND_CANCELLED    34
-#define BUILD_CONTEXT_SIZE                     35
+#define BUILD_CONTEXT_SNAPPING_ENABLED         28
+#define BUILD_CONTEXT_CLASS_NAME               29
+#define BUILD_CONTEXT_SNAP_SESSION             30
+#define BUILD_CONTEXT_HELPERS                  31
+#define BUILD_CONTEXT_HEIGHT_POSITION_ASL      32
+#define BUILD_CONTEXT_UNDERGROUND_CANCELLED    33
+#define BUILD_CONTEXT_SIZE                     34
 
 // build-validation stages
 #define BUILD_VALIDATION_STAGE_PREBUILD         0

@@ -26,37 +26,15 @@
 	diag_log format ['[Client Debug]: [DZE_fnc_getBuildingSteps]: Function called with arguments: %1',_this];
 #endif
 
-local _className = '';
-local _fallbackSteps = 0;
-local _hasExplicitFallback = false;
-
-if (typeName _this == 'ARRAY') then {
-	if (count _this > 0 && {typeName (_this select 0) == 'STRING'}) then {
-		_className = _this select 0;
-	};
-	if (count _this > 1 && {typeName (_this select 1) == 'SCALAR'}) then {
-		_fallbackSteps = 0 max (ceil (_this select 1));
-		_hasExplicitFallback = true;
-	};
-} else {
-	if (typeName _this == 'STRING') then {
-		_className = _this;
-	};
-};
-
-if (!_hasExplicitFallback && {_className in DZE_Map_Debris}) then {
-	_fallbackSteps = 3;
-};
+local _isArray = typeName _this == 'ARRAY';
+local _className = if (_isArray) then {_this select 0} else {_this};
+local _fallbackSteps = if (_isArray && {count _this > 1}) then {0 max (ceil (_this select 1))} else {[0,3] select (_className in DZE_Map_Debris)};
 
 local _config = configFile >> 'CfgVehicles' >> _className >> 'DZE_buildingSteps';
-local _limit = _fallbackSteps;
-
-if (DZE_StaticConstructionCount > 0) then {
-	_limit = DZE_StaticConstructionCount;
+local _limit = if (DZE_StaticConstructionCount > 0) then {
+	DZE_StaticConstructionCount
 } else {
-	if (isNumber _config) then {
-		_limit = getNumber _config;
-	};
+	if (isNumber _config) then {getNumber _config} else {_fallbackSteps}
 };
 
 _limit = 0 max (ceil _limit);

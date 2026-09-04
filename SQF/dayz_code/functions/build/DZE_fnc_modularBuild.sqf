@@ -20,12 +20,11 @@
 
 #define validate(arr,stage)     [_buildValidationContext,arr,stage] call DZE_fnc_buildValidate
 #define handleExit              if (BUILD_STAGE == BUILD_CANCELLED) exitWith {[_buildValidationContext,_reason,_format,_isStanding] call DZE_fnc_buildExit}
-#define isStopped               (_moveState == MOVE_STOP)
-#define isMoving                (helperAttached && {(speed player != 0 || {!isStopped})})
+#define isMoving                (helperAttached && {(speed player != 0 || {_moveState != MOVE_STOP})})
 #define NO_CODE                 {}
 
 #ifdef DEBUG_DZE_FNC_MODULAR_BUILD
-	diag_log format['[Client Debug]: [DZE_fnc_modularBuild]: Function called with argumentes: %1',_this];
+	diag_log format['[Client Debug]: [DZE_fnc_modularBuild]: Function called with arguments: %1',_this];
 #endif
 
 local _buildItem = _this;	// CfgMagazines class, e.g. "full_cinder_wall_kit"
@@ -35,17 +34,6 @@ dayz_actionInProgress = true;
 
 call gear_ui_init;
 closeDialog 1;
-
-/**
-magClass	= build
-objectClass	= move
-if (isClass (configFile >> 'CfgMagazines' >> _this)) then {BUILD} else {MOVE};
-
-BUILD	= standard
-
-MOVE	= custom (no pre-build checks, get pos/vdu, flip, attach helpers, re-flip, do not attach to player during setup)
-
-**/
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -62,8 +50,6 @@ local _isAdmin		= dayz_playerUID in DZE_baseManagementAdmins;
 local _isPole		= _className == DZE_Territory_Marker;
 local _requiresPlot	= getNumber (_cfgV >> 'DZE_bypassBase') == 0;
 local _distance		= DZE_baseRadius select _isPole;
-local _playerASL	= getPosASL player;
-local _nearestPole	= objNull;
 local _reason		= '';
 local _format		= true;
 local _isStanding	= false;
@@ -74,7 +60,7 @@ _reason = validate(_buildStage1,BUILD_VALIDATION_STAGE_PREBUILD);
 
 handleExit;
 
-_nearestPole = _buildValidationContext select BUILD_VALIDATION_NEAREST_POLE;
+local _nearestPole = _buildValidationContext select BUILD_VALIDATION_NEAREST_POLE;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -92,9 +78,6 @@ local _centerHelperPrevPosASL = [];
 
 BUILD_ROTATION_MODE	= true;
 
-local _buildContext = [];
-local _modelNewASL = ORIGIN;
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //					Transform 2D Rotation
@@ -102,15 +85,6 @@ local _modelNewASL = ORIGIN;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 local _dirY	= 0;
-BUILD_dir2D	= 0;
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//					Transform 3D Rotation
-//
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-BUILD_dir3D	= ORIGIN;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -118,18 +92,16 @@ BUILD_dir3D	= ORIGIN;
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-_className		= getText	(_cfgM >> 'ItemActions' >> 'Build' >> 'create');	// e.g. "DZE_CinderWall"
 _text			= getText	(_cfgV >> 'displayName');				// e.g. "Cinder Wall Full"
 local _offset		= getArray	(_cfgV >> 'DZE_offset');
 local _lockable		= getNumber	(_cfgV >> 'lockable');
 local _useModelCenter	= getNumber	(_cfgV >> 'useModelCenter' ) == 1;
 local _preventUnderground = getNumber (_cfgV >> 'DZE_preventUnderground') == 1;
-local _allowRotation	= getNumber (_cfgV >> 'DZE_allowRotation') == 1;
 
 _buildValidationContext set [BUILD_VALIDATION_CLASS_NAME,_className];
 _buildValidationContext set [BUILD_VALIDATION_DISPLAY_NAME,_text];
 
-_buildContext = [_className,_offset,_useModelCenter,_preventUnderground,_text] call DZE_fnc_buildPreviewCreate;
+local _buildContext = [_className,_offset,_useModelCenter,_preventUnderground,_text] call DZE_fnc_buildPreviewCreate;
 
 if (count _buildContext < BUILD_CONTEXT_SIZE) exitWith {
 	#ifdef DEBUG_DZE_FNC_MODULAR_BUILD
@@ -142,29 +114,19 @@ if (count _buildContext < BUILD_CONTEXT_SIZE) exitWith {
 local _object = _buildContext select BUILD_CONTEXT_OBJECT;
 local _objectHelper = _buildContext select BUILD_CONTEXT_OBJECT_HELPER;
 local _centerHelper = _buildContext select BUILD_CONTEXT_CENTER_HELPER;
-local _pArray = _buildContext select BUILD_CONTEXT_HELPERS;
 
 _buildValidationContext set [BUILD_VALIDATION_OBJECT,_object];
 
 _buildContext call DZE_fnc_buildPreviewSetup;
 
-_offset = _buildContext select BUILD_CONTEXT_OFFSET;
-_centerHelperPrevPosASL = _buildContext select BUILD_CONTEXT_CENTER_PREVIOUS_ASL;
-_dirY = _buildContext select BUILD_CONTEXT_DIRECTION_Y;
-
 #ifdef DEBUG_DZE_FNC_MODULAR_BUILD
-	diag_log text format ['[Client Debug]: [DZE_fnc_modularBuild]: Offset: %1',_offset];
-	systemChat format ['offset: %1',_offset];
+	diag_log text format ['[Client Debug]: [DZE_fnc_modularBuild]: Offset: %1',_buildContext select BUILD_CONTEXT_OFFSET];
+	systemChat format ['offset: %1',_buildContext select BUILD_CONTEXT_OFFSET];
 	systemChat format ['_baseOffset: %1',_buildContext select BUILD_CONTEXT_BASE_OFFSET];
 #endif
 
-local _vector = _buildContext select BUILD_CONTEXT_VECTOR;
-local _objectPosASL = _buildContext select BUILD_CONTEXT_OBJECT_POSITION_ASL;
-local _heightPosASL	= [];
-
 if (DZE_AxialHelper && _requiresPlot) then {
-	_pArray = [_nearestPole,_distance,_pArray] call DZE_fnc_buildAxialHelper;
-	_buildContext set [BUILD_CONTEXT_HELPERS,_pArray];
+	[_nearestPole,_distance,(_buildContext select BUILD_CONTEXT_HELPERS)] call DZE_fnc_buildAxialHelper;
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -179,26 +141,22 @@ local _snappingEnabled	= false;
 
 local _snapList		= [];		// helper panel array of valid snapping points
 local _snapTabMax	= 0;		// hotkey index
-local _snapSelMax	= 0;		// snapping point index
 local _snapSession	= -1;		// active snap-state session
 local _refreshDist	= 0;		// init snap auto-refresh distance
-local _snapObjectDiag	= 0;		// full bounding-box diagonal of the held object
-local _snapCenterReach	= 0;		// maximum center distance for points still inside snap range
-local _snapCacheRadius	= 0;		// center reach plus movement padding retained until the next refresh
 local _snapRefreshInterval = 0.25;	// avoid checking the refresh radius every preview frame
 local _nextSnapRefreshAt = diag_tickTime;
-local _snapPointPosition = ORIGIN;
-local _snapPointRadius = 0;
 
 local _points = [_object,true] call DZE_fnc_snapPointsForObject; // configured or generated snapping points
 
 skipUpdates		= false;	// skip over multiple snapActionState updates from single keypress
-distanceFromPlot	= 0;		// realtime updates on snap building panel
 DZE_snapRadius		= 0;
 DZE_snapCandidatePadding = 0;
 DZE_snapHeldPointRadius = 0;
 
 if (count _points > 0) then {
+	local _snapPointPosition = ORIGIN;
+	local _snapPointRadius = 0;
+
 	{
 		_snapPointPosition = [_x select 0,_x select 1,_x select 2];
 		_snapPointRadius = vectorMagnitude(_snapPointPosition);
@@ -210,15 +168,13 @@ if (count _points > 0) then {
 	{addArray(_snapList, _x select 3)} forEach _points;
 
 	_snapTabMax		= count _snapList - 1;
-	_snapSelMax		= count _points - 1;
 	_snappingEnabled	= true;
 
 	// Calculate the padded cache radius before Init performs the first nearby-object search.
-	_snapObjectDiag	= boundingBoxDiagonal(_object);
-	_snapCenterReach = ((_snapObjectDiag + DZE_maxSnapObjectDiag) * 0.5) + DZE_snapDistance;
+	local _snapObjectDiag = boundingBoxDiagonal(_object);
+	local _snapCenterReach = ((_snapObjectDiag + DZE_maxSnapObjectDiag) * 0.5) + DZE_snapDistance;
 	_refreshDist	= _snapCenterReach * 0.5;						// distance object moves before the snap auto-refresh triggers
-	_snapCacheRadius = ceil(_snapCenterReach + _refreshDist);					// include objects entering snap reach before the next refresh
-	DZE_snapRadius	= _snapCacheRadius;
+	DZE_snapRadius	= ceil(_snapCenterReach + _refreshDist);					// include objects entering snap reach before the next refresh
 	DZE_snapCandidatePadding = _refreshDist;
 
 	['Init',_object,_className,_objectHelper,-1] call DZE_fnc_snapStateTransition;	// initialize state, hotkey indices and root action
@@ -229,7 +185,7 @@ if (count _points > 0) then {
 	#endif
 };
 
-if (_allowRotation && {!_isStaticWeapon}) then {
+if (getNumber (_cfgV >> 'DZE_allowRotation') == 1 && {!_isStaticWeapon}) then {
 	_vectoringEnabled = true;
 	['','','',['Init', 'Init', BUILD_VECTOR_ACTION_TYPE_BOTH]] spawn DZE_fnc_vectorBuildAction;
 };
@@ -255,30 +211,30 @@ local _keyArray =
 		if (!isMoving) then {
 			_dirY = [_objectHelper, p1, helperAttached, player] call DZE_fnc_vectorRotate2D;
 			_buildContext set [BUILD_CONTEXT_DIRECTION_Y,_dirY];
-			if (helperAttached) then {_buildContext call DZE_fnc_buildCollisionCheck};
+			_buildContext call DZE_fnc_buildCollisionCheck;
 		};
 	},
 	{				// Q/E / ARROW KEYS
-		if (_vectoringEnabled && {!isMoving}) then {
+		if (!isMoving) then {
 			[_objectHelper, p0, p1, helperAttached, player] call DZE_fnc_vectorRotate3D;
 			_dirY = getDir _objectHelper;
 			_buildContext set [BUILD_CONTEXT_DIRECTION_Y,_dirY];
-			if (helperAttached) then {_buildContext call DZE_fnc_buildCollisionCheck};
+			_buildContext call DZE_fnc_buildCollisionCheck;
 			vectorActionState = localize 'STR_VECTOR_BUILDING_MENU_CLOSE';
 			[1,1] call DZE_fnc_vectorActionCleanup;
 		};
 	},
-	{[_this, _vectoringEnabled] call DZE_fnc_vectorChangeDegree},	// MINUS/EQUALS
-	{[_this,_snappingEnabled,_object,_className,_objectHelper,_snapTabMax,_snapSelMax] call DZE_fnc_snapSelect},	// TAB/SHIFT-TAB
+	{[_this] call DZE_fnc_vectorChangeDegree},	// MINUS/EQUALS
+	{[_this,_object,_className,_objectHelper,_snapTabMax] call DZE_fnc_snapSelect},	// TAB/SHIFT-TAB
 	{_buildContext call DZE_fnc_buildTerrainAlign},	// T
 	{if (_requiresPlot) then {[_nearestPole] call DZE_fnc_baseToggleMarkers}},	// P
 	{				// F
-		if (!r_drag_sqf && {!r_player_unconscious}) then {
-			if (helperAttached) then {
-				_buildContext call DZE_fnc_buildPreviewDetach;
-			} else {
-				_buildContext call DZE_fnc_buildPreviewAttach;
-			};
+		if (r_drag_sqf || {r_player_unconscious}) exitWith {};
+
+		if (helperAttached) then {
+			_buildContext call DZE_fnc_buildPreviewDetach;
+		} else {
+			_buildContext call DZE_fnc_buildPreviewAttach;
 		};
 	},
 	{_buildContext call DZE_fnc_buildPreviewReset},	// BACKSPACE
@@ -287,7 +243,7 @@ local _keyArray =
 		_objectHelper call DZE_fnc_vectorReset;
 		_dirY = getDir _objectHelper;
 		_buildContext set [BUILD_CONTEXT_DIRECTION_Y,_dirY];
-		if (helperAttached) then {_buildContext call DZE_fnc_buildCollisionCheck};
+		_buildContext call DZE_fnc_buildCollisionCheck;
 	}
 ];
 
@@ -296,12 +252,14 @@ if (!_snappingEnabled)	then {_keyArray set [5, NO_CODE]};
 if (_isPole)		then {_keyArray set [7, NO_CODE]};
 
 local _index	= BUILD_NOKEY;
-local _keyInput	= [BUILD_NOKEY];
+local _keyInput	= [];
 local _keyQueueHead = 0;
 local _undergroundValidationKeys = [BUILD_MOVE,BUILD_ROTATE2D,BUILD_ROTATE3D,BUILD_TERRAIN_ALIGN,BUILD_VECTOR_RESET];
 BUILD_KEY_QUEUE = [];
 BUILD_STAGE	= BUILD_HOTKEYS_ACTIVE;
 [_distFromPlot,_distance,_snappingEnabled,_vectoringEnabled,_isStaticWeapon,_snapList,_object] spawn DZE_fnc_snapBuilding;
+
+local _modelNewASL = ORIGIN;
 
 while {BUILD_STAGE == BUILD_HOTKEYS_ACTIVE && {!isNull _object && {!isNull _objectHelper}}} do {
 	_dirY		 = getDir _objectHelper;		// actual world yaw is the single orientation source
@@ -316,21 +274,15 @@ while {BUILD_STAGE == BUILD_HOTKEYS_ACTIVE && {!isNull _object && {!isNull _obje
 
 	// Dequeue atomically so input arriving during a yielding handler remains queued for the next pass.
 
-	_keyInput = [BUILD_NOKEY];
-
 	if (_keyQueueHead < count BUILD_KEY_QUEUE) then {
-		_keyInput = +(BUILD_KEY_QUEUE select _keyQueueHead);
+		_keyInput = BUILD_KEY_QUEUE select _keyQueueHead;
+		_index = _keyInput select 0;
 		_keyQueueHead = _keyQueueHead + 1;
 
-		if (_keyQueueHead >= count BUILD_KEY_QUEUE) then {
+		if (_keyQueueHead == count BUILD_KEY_QUEUE) then {
 			BUILD_KEY_QUEUE = [];
 			_keyQueueHead = 0;
 		};
-	};
-
-	_index = _keyInput select 0;
-
-	if (_index != BUILD_NOKEY) then {
 
 		_keyInput select 1 call (_keyArray select _index);		// process the captured key
 
@@ -340,17 +292,12 @@ while {BUILD_STAGE == BUILD_HOTKEYS_ACTIVE && {!isNull _object && {!isNull _obje
 	};
 
 	if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE) then {
-		_modelNewASL = _buildContext select BUILD_CONTEXT_MODEL_POSITION_ASL;
-		_centerHelperPrevPosASL = _buildContext select BUILD_CONTEXT_CENTER_PREVIOUS_ASL;
-		_vector = _buildContext select BUILD_CONTEXT_VECTOR;
-		_objectPosASL = _buildContext select BUILD_CONTEXT_OBJECT_POSITION_ASL;
-		_heightPosASL = _buildContext select BUILD_CONTEXT_HEIGHT_POSITION_ASL;
-
 		///////////////////////////////////////////////////////////////////////////////////////////
 
 		if (_snappingEnabled && {diag_tickTime >= _nextSnapRefreshAt}) then {
+			_centerHelperPrevPosASL = _buildContext select BUILD_CONTEXT_CENTER_PREVIOUS_ASL;
 			_nextSnapRefreshAt = diag_tickTime + _snapRefreshInterval;
-			_centerHelperPrevPosASL = [_snappingEnabled,_OFF,_centerHelper,_centerHelperPrevPosASL,_refreshDist,_object,_snapSession,DZE_snapStateRevision] call DZE_fnc_snapRefresh;	// auto-refresh snap radius
+			_centerHelperPrevPosASL = [_OFF,_centerHelper,_centerHelperPrevPosASL,_refreshDist,_object,_snapSession,DZE_snapStateRevision] call DZE_fnc_snapRefresh;	// auto-refresh snap radius
 			_buildContext set [BUILD_CONTEXT_CENTER_PREVIOUS_ASL,_centerHelperPrevPosASL];
 		};
 
@@ -365,6 +312,10 @@ while {BUILD_STAGE == BUILD_HOTKEYS_ACTIVE && {!isNull _object && {!isNull _obje
 
 // Confirmation changes the build stage before the active-preview refresh can copy the final
 // transform. Read it directly from the context so publishing uses the selected position and vector.
+local _vector = [];
+local _objectPosASL = [];
+local _heightPosASL = [];
+
 if (BUILD_STAGE == BUILD_NOW_BUILDING) then {
 	_modelNewASL = _buildContext select BUILD_CONTEXT_MODEL_POSITION_ASL;
 	_vector = _buildContext select BUILD_CONTEXT_VECTOR;
@@ -391,8 +342,6 @@ if (BUILD_STAGE == BUILD_HOTKEYS_ACTIVE && {isNull _object || {isNull _objectHel
 };
 
 BUILD_KEY_QUEUE = [];
-
-_format = true;
 
 if (BUILD_STAGE == BUILD_CANCELLED && {_buildContext select BUILD_CONTEXT_UNDERGROUND_CANCELLED}) then {
 	local _undergroundPositionASL = _buildContext select BUILD_CONTEXT_MODEL_POSITION_ASL;
@@ -462,10 +411,8 @@ call player_forceSave;
 if (_lockable > 1) then {		// item has code lock
 
 	local _codeResult		= _lockable call DZE_fnc_generateCode;
-	local _combination		= _codeResult select 0;
+	_characterID			= _codeResult select 0;	// set combination as a character ID
 	_combinationDisplay		= _codeResult select 1;
-
-	_characterID	= _combination;	// set combination as a character ID
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -494,12 +441,10 @@ if !(isNull _object) then {
 		systemChat _format;				// You have setup your %2. The combination is %1
 	};
 
-	if (getNumber (_cfgV >> 'DZE_isFireplace') == 1) then {
+	if (getNumber (_cfgV >> 'DZE_isFireplace') == 1 && {getNumber (_cfgV >> 'DZE_spawnFireOnBuild') == 1}) then {
 		//	Ignite fire only if the config entry allows it
-		if (getNumber (_cfgV >> 'DZE_spawnFireOnBuild') == 1) then {
-			[_object,true,'',[]] call DZE_fnc_actionInflame;
-			_require = _require - ['DZE_Tool_Matchbox'];	// DZE_fnc_actionInflame already processes the matchbox state.
-		};
+		[_object,true,'',[]] call DZE_fnc_actionInflame;
+		_require = _require - ['DZE_Tool_Matchbox'];	// DZE_fnc_actionInflame already processes the matchbox state.
 	};
 
 	_require call DZE_fnc_toolBreak;

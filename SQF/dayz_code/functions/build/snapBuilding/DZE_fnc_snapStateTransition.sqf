@@ -25,49 +25,38 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_STATE_TRANSITION
-	diag_log format ['[Client Debug]: [DZE_fnc_snapStateTransition]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapStateTransition]: Function called with arguments: %1',_this];
 #endif
 
 local _command = p0;
 local _object = p1;
 local _className = p2;
 local _objectHelper = p3;
-local _selectedPoint = if (count _this > 4) then {p4} else {-1};
+local _selectedPoint = p4;
 local _expectedSession = if (count _this > 5) then {p5} else {-1};
 local _expectedRevision = if (count _this > 6) then {p6} else {-1};
 
-local _recognized = _command in ['Init','SetOff','Reset','SetAuto','SetManual','Shutdown'];
-if (!_recognized) exitWith {};
-
-local _off = localize 'STR_SNAPPING_STATE_OFF';
-local _snappingWasOff = false;
-local _transitionSession = -1;
-local _transitionRevision = -1;
-local _resultSession = _transitionSession;
-local _transitionAcquired = false;
+if !(_command in ['Init','SetOff','Reset','SetAuto','SetManual','Shutdown']) exitWith {};
 
 // Acquire one revision for the entire state transition and reject delayed input from older UI state.
-if ((_command == 'Init' || {_expectedSession < 0 || {_expectedSession == DZE_snapStateSession}}) &&
-	{_command == 'Init' || {_expectedRevision < 0 || {_expectedRevision == DZE_snapStateRevision}}}) then {
-	_transitionSession = DZE_snapStateSession;
-	_resultSession = _transitionSession;
-	DZE_snapStateRevision = DZE_snapStateRevision + 1;
-	_transitionRevision = DZE_snapStateRevision;
-	_snappingWasOff = isNil 'snapActionState';
-	if (!_snappingWasOff) then {_snappingWasOff = snapActionState == _off};
-	_transitionAcquired = true;
-};
+if !((_command == 'Init' || {_expectedSession < 0 || {_expectedSession == DZE_snapStateSession}}) &&
+	{_command == 'Init' || {_expectedRevision < 0 || {_expectedRevision == DZE_snapStateRevision}}}) exitWith {};
 
-if (!_transitionAcquired) exitWith {};
+local _transitionSession = DZE_snapStateSession;
+local _resultSession = _transitionSession;
+DZE_snapStateRevision = DZE_snapStateRevision + 1;
+local _transitionRevision = DZE_snapStateRevision;
+local _off = localize 'STR_SNAPPING_STATE_OFF';
+local _snappingWasOff = isNil 'snapActionState' || {snapActionState == _off};
 
 local _points = [_object,true] call DZE_fnc_snapPointsForObject;
 local _on = localize 'STR_SNAPPING_STATE_ON';
 local _manual = localize 'STR_SNAPPING_MODE_MANUAL';
-local _nextState = '';
+local _nextState = _off;
 local _nextSelectState = 'Auto';
 local _nextTabIndex = 0;		// tab hotkey array index
 local _nextPointIndex = -2;	// array of object snapping points
-local _showRoot = 0;
+local _showRoot = 1;
 local _showMode = 0;
 local _showPoints = 0;
 local _stopDistanceCheck = false;
@@ -83,8 +72,6 @@ local _pointsReady = false;
 
 call {
 	if (_command == 'Init') exitWith {
-		_nextState = _off;
-		_showRoot = 1;
 		_stopDistanceCheck = true;
 		_cleanupPoints = true;
 		_spawnCleanup = true;
@@ -92,16 +79,12 @@ call {
 	};
 
 	if (_command == 'SetOff') exitWith {
-		_nextState = _off;
-		_showRoot = 1;
 		_stopDistanceCheck = true;
 		_cleanupPoints = true;
 		_resetHelper = true;
 	};
 
 	if (_command == 'Reset') exitWith {
-		_nextState = _off;
-		_showRoot = 1;
 		_stopDistanceCheck = true;
 		_cleanupPoints = true;
 	};
@@ -110,7 +93,6 @@ call {
 		_nextState = _on;
 		_nextTabIndex = 1;
 		_nextPointIndex = -1;
-		_showRoot = 1;
 		_showMode = 1;
 		// Auto mode uses the visual base or center instead of a manually selected snap-point pivot.
 		_resetHelper = !_snappingWasOff && {snapActionStateSelect == _manual} && {DZE_SnapSelIdx >= 0};
@@ -123,7 +105,6 @@ call {
 		_nextSelectState = _manual;
 		_nextTabIndex = 1;
 		_nextPointIndex = -1;
-		_showRoot = 1;
 		_showMode = 1;
 		_showPoints = 1;
 		_initializePoints = _snappingWasOff || {count snapGizmos == 0} || {!DZE_snapPointsReady};
@@ -138,7 +119,7 @@ call {
 	};
 
 	if (_command == 'Shutdown') exitWith {
-		_nextState = _off;
+		_showRoot = 0;
 		_stopDistanceCheck = true;
 		_cleanupPoints = true;
 		_advanceSession = true;

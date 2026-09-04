@@ -13,7 +13,7 @@
 //	Called by:	Client
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-#define DEBUG_DZE_FNC_OVERLAPSBOX2D
+//#define DEBUG_DZE_FNC_OVERLAPSBOX2D
 
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 

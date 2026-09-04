@@ -26,7 +26,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_OBJECT
-	diag_log format ['[Client Debug]: [DZE_fnc_snapObject]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapObject]: Function called with arguments: %1',_this];
 #endif
 
 local _object = p0;
@@ -34,8 +34,8 @@ local _objectHelper = p1;
 local _heldSnapPoint = p2;
 local _nearbySnapPoint = p3;
 local _generation = p4;
-local _searchRevision = if (count _this > 5) then {p5} else {DZE_snapDistanceSearchRevision};
-local _stateRevision = if (count _this > 6) then {p6} else {DZE_snapStateRevision};
+local _searchRevision = p5;
+local _stateRevision = p6;
 local _connection = [];
 local _vectorDirAndUp = [];
 local _targetObject = objNull;
@@ -43,9 +43,7 @@ local _heldPositionASL = [];
 local _targetPositionASL = [];
 local _relativeMatrix = [];
 local _normalDot = 1;
-local _off = localize 'STR_SNAPPING_STATE_OFF';
 local _requestCurrent = false;
-local _applied = false;
 
 // Validate and apply without allowing refresh, state or input scripts to interleave.
 isNil {
@@ -61,7 +59,6 @@ isNil {
 		{DZE_snapDistanceCheckRevision == _stateRevision} &&
 		{DZE_snapStateRevision == _stateRevision} &&
 		{DZE_snapDistanceSearchRevision == _searchRevision} &&
-		{snapActionState != _off} &&
 		{BUILD_STAGE == BUILD_HOTKEYS_ACTIVE} &&
 		{_heldSnapPoint in snapGizmos} &&
 		{_nearbySnapPoint in snapGizmosNearby} &&
@@ -71,14 +68,12 @@ isNil {
 	if (_requestCurrent) then {
 		_heldPositionASL = getPosASL _heldSnapPoint;
 		_targetPositionASL = getPosASL _nearbySnapPoint;
-		_requestCurrent = count _heldPositionASL == 3 &&
-			{count _targetPositionASL == 3} &&
-			{vectorDistance(_heldPositionASL,_targetPositionASL) < DZE_snapDistance};
+		_requestCurrent = vectorDistance(_heldPositionASL,_targetPositionASL) < DZE_snapDistance;
 	};
 
 	if (_requestCurrent) then {
 		_connection = [_objectHelper,_heldSnapPoint,_nearbySnapPoint] call DZE_fnc_snapRelativeOrientation;
-		_requestCurrent = count _connection >= 5 && {_connection select 0};
+		_requestCurrent = _connection select 0;
 	};
 
 	if (_requestCurrent) then {
@@ -86,29 +81,17 @@ isNil {
 		_relativeMatrix = _connection select 2;
 		_normalDot = _connection select 3;
 		_targetObject = _connection select 4;
-		_requestCurrent = !isNull _targetObject &&
-			{count _vectorDirAndUp == 2} &&
-			{count (_vectorDirAndUp select 0) == 3} &&
-			{count (_vectorDirAndUp select 1) == 3} &&
-			{count _relativeMatrix == 3};
-	};
 
-	if (_requestCurrent) then {
 		// Rebase and align the complete snap operation only after every guard remains current.
 		detach _object;
 		_objectHelper setPosASL _heldPositionASL;
 		_object attachTo [_objectHelper];
 		_objectHelper setVectorDirAndUp _vectorDirAndUp;
 		_objectHelper setPosASL _targetPositionASL;
-
-		// The applied vectors become the new orientation baseline for all subsequent build inputs.
-		BUILD_dir2D = 0;
-		BUILD_dir3D = +ORIGIN;
-		_applied = true;
 	};
 };
 
-if (!_applied) exitWith {
+if (!_requestCurrent) exitWith {
 	#ifdef DEBUG_DZE_FNC_SNAP_OBJECT
 		diag_log format ['[Client Debug]: [DZE_fnc_snapObject]: Snap alignment rejected | Generation/Revision/Search: %1/%2/%3 | Held/Nearby/Target: %4/%5/%6',_generation,_stateRevision,_searchRevision,_heldSnapPoint,_nearbySnapPoint,_targetObject];
 	#endif
@@ -128,7 +111,6 @@ waitUntil {
 	{DZE_snapDistanceCheckRevision != _stateRevision} ||
 	{DZE_snapStateRevision != _stateRevision} ||
 	{DZE_snapDistanceSearchRevision != _searchRevision} ||
-	{snapActionState == _off} ||
 	{BUILD_STAGE != BUILD_HOTKEYS_ACTIVE}
 };
 

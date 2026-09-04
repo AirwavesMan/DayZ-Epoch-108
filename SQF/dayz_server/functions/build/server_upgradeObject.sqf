@@ -22,7 +22,7 @@
 //#define DEBUG_SERVER_UPGRADE_OBJECT
 
 #ifdef DEBUG_SERVER_UPGRADE_OBJECT
-	diag_log format['[Server Debug]: [server_upgradeObject]: Function called with argumentes: %1',_this];
+	diag_log format['[Server Debug]: [server_upgradeObject]: Function called with arguments: %1',_this];
 #endif
 
 if (count _this < 5) exitWith {
@@ -38,7 +38,6 @@ local _typeObject = _this select 3;
 local _clientKey = _this select 4;
 
 local _positionASL = [_oldObject] call DZE_fnc_modelCenterWorld;
-local _dir = getDir _oldObject;
 local _vector = [vectorDir _oldObject,vectorUp _oldObject];
 local _metadata = _oldObject getVariable ['worldspaceMetadata',[]];
 if (typeName _metadata != 'ARRAY') then {
@@ -89,6 +88,9 @@ if ([_typeObject,_functionName] call server_verifyObject) then {
 			_backpacks = getBackpackCargo _oldObject;
 			_inventory = [_weapons,_magazines,_backpacks];
 		};
+		if (DZE_doorManagement && {_codeObject != '0'} && {_oldTypeObject in DZE_LockedGates} && {_typeObject in DZE_LockedGates}) exitWith {
+			_inventory = _oldObject getVariable ['doorFriends',[]];
+		};
 	};	
 
 	if (Z_SingleCurrency && {_typeObject in DZE_MoneyStorageClasses}) then {
@@ -114,14 +116,16 @@ if ([_typeObject,_functionName] call server_verifyObject) then {
 	_newObject setVariable ['ObjectUID',_objectUID];
 	_newObject setVariable ['CharacterID',_codeObject,_codeObject != '0'];
 
-	//	ToDo: Handle gates with multiple upgrade steps	
-
 	//	Set door friends to the new object
 	if (DZE_doorManagement && {_typeObject in DZE_DoorsLocked}) then {
 		//	The door has a lock, so we can add the door owner as first door friend
 		if (_codeObject != '0') then {
-			_inventory = [[_playerUID,_playerName]];
+			if (count _inventory == 0) then {_inventory = [[_playerUID,_playerName]]};
 			_newObject setVariable ['doorFriends',_inventory,true];
+
+			#ifdef DEBUG_SERVER_UPGRADE_OBJECT
+				diag_log format ['[Server Debug]: [server_upgradeObject]: Applied %1 door friend entries to replacement %2 from %3',count _inventory,_typeObject,_oldTypeObject];
+			#endif
 		};
 	};	
 
@@ -130,10 +134,8 @@ if ([_typeObject,_functionName] call server_verifyObject) then {
 		if (!isNull _newObject) then {deleteVehicle _newObject};
 	};
 
-	if !(_damageDisabled) then {
-		if (_damageOldObject > 0) then {
-			_damageOldObject = [_newObject,_oldTypeObject,_typeObject,_damageOldObject] call server_setDamageObject;
-		};
+	if (!_damageDisabled && {_damageOldObject > 0}) then {
+		_damageOldObject = [_newObject,_oldTypeObject,_typeObject,_damageOldObject] call server_setDamageObject;
 	};
 
 	//	Write the new object to the database
@@ -152,14 +154,10 @@ if ([_typeObject,_functionName] call server_verifyObject) then {
 		_newObject setVariable ['BackpackCargo',_backpacks,false];
 	};
 
-	if (Z_SingleCurrency) then {
-		if (_coins > 0) then {
-			if (_typeObject in DZE_MoneyStorageClasses) then {
-				_newObject setVariable ['cashMoney',_coins,true];
-				_key = format ['CHILD:309:%1:',_objectUID] + str _inventory + ':' + str _coins + ':';
-				_key call server_hiveWrite;
-			};
-		};
+	if (Z_SingleCurrency && {_coins > 0}) then {
+		_newObject setVariable ['cashMoney',_coins,true];
+		_key = format ['CHILD:309:%1:',_objectUID] + str _inventory + ':' + str _coins + ':';
+		_key call server_hiveWrite;
 	};
 
 	DZE_Wait_For_Object = netID _newObject;

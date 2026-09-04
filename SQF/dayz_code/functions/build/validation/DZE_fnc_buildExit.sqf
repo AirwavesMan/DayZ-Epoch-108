@@ -22,21 +22,15 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_BUILD_EXIT
-	diag_log format ['[Client Debug]: [DZE_fnc_buildExit]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_buildExit]: Function called with arguments: %1',_this];
 #endif
-
-if (typeName _this != 'ARRAY' || {count _this < 4}) exitWith {};
 
 local _context = p0;
 local _reason = p1;
 local _formatReason = p2;
 local _wasStanding = p3;
 
-if (typeName _context != 'ARRAY' || {count _context < BUILD_VALIDATION_SIZE}) exitWith {};
-
 local _object = _context select BUILD_VALIDATION_OBJECT;
-local _displayName = _context select BUILD_VALIDATION_DISPLAY_NAME;
-local _message = _reason;
 
 if (isNull _object) then {
 	// Stage 1 has no preview object to clean up.
@@ -44,7 +38,8 @@ if (isNull _object) then {
 } else {
 	// Stages 2 and 3 own a local preview object.
 	deleteVehicle _object;
-	_message = [_reason,format [localize 'STR_BUILD_CANCELLED_WITH_REASON',_displayName,_reason]] select _formatReason;
+	local _displayName = _context select BUILD_VALIDATION_DISPLAY_NAME;
+	local _message = [_reason,format [localize 'STR_BUILD_CANCELLED_WITH_REASON',_displayName,_reason]] select _formatReason;
 	_message call DZE_fnc_rollingMessages;
 
 	if (_wasStanding) then {[] spawn {player playAction 'PlayerStand'}};

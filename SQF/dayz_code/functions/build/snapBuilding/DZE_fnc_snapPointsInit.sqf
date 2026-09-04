@@ -22,13 +22,13 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_POINTS_INIT
-	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsInit]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsInit]: Function called with arguments: %1',_this];
 #endif
 
 local _object = p0;
 local _points = p1;
-local _expectedSession = if (count _this > 2) then {p2} else {DZE_snapStateSession};
-local _expectedRevision = if (count _this > 3) then {p3} else {DZE_snapStateRevision};
+local _expectedSession = p2;
+local _expectedRevision = p3;
 
 if (_expectedSession != DZE_snapStateSession || {_expectedRevision != DZE_snapStateRevision}) exitWith {[]};
 
@@ -60,7 +60,7 @@ local _snapPosition = ORIGIN;
 // Publish only if this session still owns the build state; the swap itself must not be interrupted.
 isNil {
 	if (_expectedSession == DZE_snapStateSession && {_expectedRevision == DZE_snapStateRevision}) then {
-		_oldSnapGizmos = if (DZE_snapPointsSession == _expectedSession) then {+snapGizmos} else {[]};
+		_oldSnapGizmos = if (DZE_snapPointsSession == _expectedSession) then {snapGizmos} else {[]};
 		snapGizmos = _newSnapGizmos;
 		DZE_snapPointsSession = _expectedSession;
 		_published = true;

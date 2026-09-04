@@ -20,16 +20,14 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_STATE
-	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationState]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationState]: Function called with arguments: %1',_this];
 #endif
 
 /// || r_player_dead
-call {
-	if (dayz_isSwimming) exitWith {localize 'STR_BUILD_VALIDATION_PLAYER_IN_WATER'};
-	if (getNumber (configFile >> 'CfgMovesMaleSdr' >> 'States' >> animationState player >> 'onLadder') == 1) exitWith {localize 'STR_BUILD_VALIDATION_PLAYER_ON_LADDER'};
-	if (player getVariable ['inCombat',false]) exitWith {localize 'STR_BUILD_VALIDATION_PLAYER_IN_COMBAT'};
-	if (vehicle player != player) exitWith {localize 'STR_BUILD_VALIDATION_PLAYER_IN_VEHICLE'};
-	if (r_player_unconscious || {r_drag_sqf}) exitWith {localize 'STR_BUILD_CANCELLED'};
+if (dayz_isSwimming) exitWith {localize 'STR_BUILD_VALIDATION_PLAYER_IN_WATER'};
+if (getNumber (configFile >> 'CfgMovesMaleSdr' >> 'States' >> animationState player >> 'onLadder') == 1) exitWith {localize 'STR_BUILD_VALIDATION_PLAYER_ON_LADDER'};
+if (player getVariable ['inCombat',false]) exitWith {localize 'STR_BUILD_VALIDATION_PLAYER_IN_COMBAT'};
+if (vehicle player != player) exitWith {localize 'STR_BUILD_VALIDATION_PLAYER_IN_VEHICLE'};
+if (r_player_unconscious || {r_drag_sqf}) exitWith {localize 'STR_BUILD_CANCELLED'};
 
-	''
-}
+''

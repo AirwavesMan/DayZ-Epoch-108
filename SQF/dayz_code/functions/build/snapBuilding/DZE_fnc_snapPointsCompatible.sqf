@@ -21,16 +21,14 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_POINTS_COMPATIBLE
-	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsCompatible]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsCompatible]: Function called with arguments: %1',_this];
 #endif
 
 local _heldSnapPoint = p0;
 local _nearbySnapPoint = p1;
 local _heldData = _heldSnapPoint getVariable ['snappoint',[]];
 local _nearbyData = _nearbySnapPoint getVariable ['snappoint',[]];
-local _compatible = !isNull _heldSnapPoint &&
-	{!isNull _nearbySnapPoint} &&
-	{count _heldData >= 4} &&
+local _compatible = count _heldData >= 4 &&
 	{count _nearbyData >= 4};
 
 #ifdef DEBUG_DZE_FNC_SNAP_POINTS_COMPATIBLE

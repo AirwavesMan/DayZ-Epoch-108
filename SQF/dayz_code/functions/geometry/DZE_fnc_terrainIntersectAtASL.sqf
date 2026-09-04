@@ -15,9 +15,6 @@
 //
 //	Called by:	Client
 //
-//	Note:		Near-vertical vectors work best over any distance.  For near-horizontal
-//			vectors, much shorter distances may be required. **** TODO ****
-//
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //#define DEBUG_DZE_FNC_TERRAIN_INTERSECT_AT_ASL
 
@@ -26,11 +23,6 @@
 #ifdef DEBUG_DZE_FNC_TERRAIN_INTERSECT_AT_ASL
 	diag_log format['[Client Debug]: [DZE_fnc_terrainIntersectAtASL]: Function called with argumentes: %1',_this];
 #endif
-
-/// **** TODO **** allow for near-horizontal vectors that break up large distances to avoid skipping over peak terrain.
-/// try terrainIntersectASL/getTerrainHeightASL with bi-directional scanning.
-/// surfaceNormal
-/// for base building manipulation, it shouldn't be a problem.
 
 local _v1	= +(p0);
 local _v2	= +(p1);
@@ -144,6 +136,27 @@ local _fnc_coastal = {
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// terrainIntersectASL detects intermediate peaks even when both endpoints are above the terrain.
+// Bisect the first intersecting prefix to preserve the intersection nearest to the start position.
+if ((_v1 select 2) >= 0 && {(_v2 select 2) >= 0 && {terrainIntersectASL [_v1,_v2]}}) exitWith {
+	_len = ([_v1,_v2] call DZE_fnc_vectorDistance) * 1000;
+	_max = 1;
+	if (_len > 1) then {_max = floor ((ln _len) / (ln 2)) + 1};
+
+	while {_cnt < _max} do {
+		call _fnc_getMidpoint;
+		if (terrainIntersectASL [p0,_mp]) then {_v2 = +_mp} else {_v1 = +_mp};
+	};
+
+	_mp = [_v2 select 0,_v2 select 1,getTerrainHeightASL _v2];
+
+	#ifdef DEBUG_DZE_FNC_TERRAIN_INTERSECT_AT_ASL
+		diag_log format ['[Client Debug]: [DZE_fnc_terrainIntersectAtASL]: First terrain intersection: %1 | Iterations: %2',_mp,_cnt];
+	#endif
+
+	_mp
+};
 
 if (!_include || {(isTerrain(_v1) && {isTerrain(_v2)})}) exitWith {call _fnc_terrain};	// terrain only
 

@@ -25,7 +25,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_DISPLAY_HELPERS
-	diag_log format ['[Client Debug]: [DZE_fnc_displayHelpers]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_displayHelpers]: Function called with arguments: %1',_this];
 #endif
 
 local _object = param(0,objNull);

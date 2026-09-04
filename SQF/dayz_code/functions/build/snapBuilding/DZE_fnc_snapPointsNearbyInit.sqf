@@ -23,13 +23,13 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_POINTS_NEARBY_INIT
-	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsNearbyInit]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapPointsNearbyInit]: Function called with arguments: %1',_this];
 #endif
 
 local _object = p0;
-local _expectedSession = if (count _this > 1) then {p1} else {DZE_snapStateSession};
-local _refreshGeneration = if (count _this > 2) then {p2} else {-1};
-local _expectedRevision = if (count _this > 3) then {p3} else {DZE_snapStateRevision};
+local _expectedSession = p1;
+local _refreshGeneration = p2;
+local _expectedRevision = p3;
 
 if (_expectedSession != DZE_snapStateSession ||
 	{_expectedRevision != DZE_snapStateRevision} ||
@@ -125,7 +125,7 @@ isNil {
 		{_expectedRevision == DZE_snapStateRevision} &&
 		{DZE_snapPointsSession == _expectedSession} &&
 		{_refreshGeneration < 0 || {_refreshGeneration == DZE_snapRefreshGeneration}}) then {
-		_oldSnapGizmosNearby = if (DZE_snapNearbyPointsSession == _expectedSession) then {+snapGizmosNearby} else {[]};
+		_oldSnapGizmosNearby = if (DZE_snapNearbyPointsSession == _expectedSession) then {snapGizmosNearby} else {[]};
 		snapGizmosNearby = _newSnapGizmosNearby;
 		DZE_snapNearbyPointsSession = _expectedSession;
 		_published = true;

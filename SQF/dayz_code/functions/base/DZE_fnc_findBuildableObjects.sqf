@@ -19,7 +19,7 @@
 //#define DEBUG_DZE_FNC_FIND_BUILDABLE_OBJECTS
 
 #ifdef DEBUG_DZE_FNC_FIND_BUILDABLE_OBJECTS
-	diag_log format ['[%1 Debug]: [DZE_fnc_findBuildableObjects]: Function called with argumentes: %2',['Client','Server'] select isServer,_this];
+	diag_log format ['[%1 Debug]: [DZE_fnc_findBuildableObjects]: Function called with arguments: %2',['Client','Server'] select isServer,_this];
 #endif
 
 if (typeName _this != 'ARRAY' || {count _this < 2}) exitWith {

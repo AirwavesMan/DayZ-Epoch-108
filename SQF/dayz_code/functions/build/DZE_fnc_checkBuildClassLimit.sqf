@@ -27,8 +27,7 @@
 local _className = _this select 0;
 local _subject = _this select 1;
 local _ignoredObject = _this select 2;
-local _nearestPole = objNull;
-if (count _this > 3) then {_nearestPole = _this select 3};
+local _nearestPole = if (count _this > 3) then {_this select 3} else {objNull};
 
 local _limit = floor (getNumber (configFile >> 'CfgVehicles' >> _className >> 'DZE_perBaseLimit'));
 
@@ -44,8 +43,7 @@ if (isNull _nearestPole) then {
 
 if (isNull _nearestPole) exitWith {[true,_limit,0,objNull]};
 
-local _objects = _nearestPole nearObjects [_className,_baseRadius];
-local _count = {typeOf _x == _className && {_x != _ignoredObject}} count _objects;
+local _count = {typeOf _x == _className && {_x != _ignoredObject}} count (_nearestPole nearObjects [_className,_baseRadius]);
 local _allowed = _count < _limit;
 
 #ifdef DEBUG_DZE_FNC_CHECK_BUILD_CLASS_LIMIT

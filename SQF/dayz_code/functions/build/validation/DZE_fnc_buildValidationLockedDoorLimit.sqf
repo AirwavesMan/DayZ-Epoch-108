@@ -24,11 +24,9 @@
 #endif
 
 local _className = _this select BUILD_VALIDATION_CLASS_NAME;
-local _stage = _this select BUILD_VALIDATION_STAGE;
 local _object = _this select BUILD_VALIDATION_OBJECT;
-local _subject = [player,_object] select (_stage == BUILD_VALIDATION_STAGE_FINAL);
-local _nearestPole = _this select BUILD_VALIDATION_NEAREST_POLE;
-local _result = [_className,_subject,_object,DZE_DoorsLocked,DZE_LockedDoorLimit,_nearestPole] call DZE_fnc_checkBuildGroupLimit;
+local _subject = [player,_object] select ((_this select BUILD_VALIDATION_STAGE) == BUILD_VALIDATION_STAGE_FINAL);
+local _result = [_className,_subject,_object,DZE_DoorsLocked,DZE_LockedDoorLimit,_this select BUILD_VALIDATION_NEAREST_POLE] call DZE_fnc_checkBuildGroupLimit;
 
 #ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_LOCKED_DOOR_LIMIT
 	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationLockedDoorLimit]: Class: %1 | Result: %2',_className,_result];

@@ -24,48 +24,32 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_VECTOR_ROTATE_3D
-	diag_log format ['[Client Debug]: [DZE_fnc_vectorRotate3D]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_vectorRotate3D]: Function called with arguments: %1',_this];
 #endif
 
 local _object = p0;
 local _axis = p1;
 local _delta = p2;
-local _attached = param(3, false);
-local _parent = param(4, objNull);
-
-BUILD_dir3D set [_axis, ((BUILD_dir3D select _axis) + _delta) % 360];
+local _attached = p3;
+local _parent = p4;
 
 local _rotation = ORIGIN;
 _rotation set [_axis, _delta];
 
-local _vectorDirAndUp = if (_attached && {!isNull _parent}) then {
-	local _parentMatrix = getRotationMatrix(_parent);
-	local _vectorDir = vectorDir _object;
-	local _vectorUp = vectorUp _object;
-
+local _vectorDirAndUp = if (_attached) then {
 	// setVectorDirAndUp expects parent-relative vectors while the object is attached.
-	_vectorDir = [
-		vectorDotProduct(_vectorDir, _parentMatrix select 0),
-		vectorDotProduct(_vectorDir, _parentMatrix select 1),
-		vectorDotProduct(_vectorDir, _parentMatrix select 2)
-	];
-	_vectorDir = vectorNormalized(_vectorDir);
-	_vectorUp = [
-		vectorDotProduct(_vectorUp, _parentMatrix select 0),
-		vectorDotProduct(_vectorUp, _parentMatrix select 1),
-		vectorDotProduct(_vectorUp, _parentMatrix select 2)
-	];
-	_vectorUp = vectorNormalized(_vectorUp);
-
-	local _vectorRight = vectorCrossProduct(_vectorDir, _vectorUp);
-	local _rotationMatrix = [_vectorRight, _vectorDir, _vectorUp];
-	[_object, _rotation, _rotationMatrix] call DZE_fnc_rotateObject3D
+	local _relativeVectorDirAndUp = vectorDirAndUpRelative(_object,_parent);
+	[_object,_rotation,[
+		vectorCrossProduct(_relativeVectorDirAndUp select 0,_relativeVectorDirAndUp select 1),
+		_relativeVectorDirAndUp select 0,
+		_relativeVectorDirAndUp select 1
+	]] call DZE_fnc_rotateObject3D
 } else {
 	[_object, _rotation] call DZE_fnc_rotateObject3D
 };
 
 #ifdef DEBUG_DZE_FNC_VECTOR_ROTATE_3D
-	diag_log format ['[Client Debug]: [DZE_fnc_vectorRotate3D]: Rotation applied | Axis: %1 | Delta: %2 | Rotation: %3 | Attached: %4 | VectorDirAndUp: %5',_axis,_delta,BUILD_dir3D,_attached,_vectorDirAndUp];
+	diag_log format ['[Client Debug]: [DZE_fnc_vectorRotate3D]: Rotation applied | Axis: %1 | Delta: %2 | Attached: %3 | VectorDirAndUp: %4',_axis,_delta,_attached,_vectorDirAndUp];
 #endif
 
 _vectorDirAndUp

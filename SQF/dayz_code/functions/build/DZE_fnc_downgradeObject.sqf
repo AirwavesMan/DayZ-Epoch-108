@@ -57,11 +57,6 @@ if (count _downgrade > 0) then {
 	local _newTypeObject = _downgrade select 0;
 	local _classLimitResult = [_newTypeObject,_object,_object] call DZE_fnc_checkBuildClassLimit;
 
-	if (count _classLimitResult < 4) exitWith {
-		dayz_actionInProgress = false;
-		localize 'STR_BUILD_CANCELLED' call DZE_fnc_rollingMessages;
-	};
-
 	if !(_classLimitResult select 0) exitWith {
 		local _newText = getText (configFile >> 'CfgVehicles' >> _newTypeObject >> 'displayName');
 		local _message = if ((_classLimitResult select 1) < 0) then {

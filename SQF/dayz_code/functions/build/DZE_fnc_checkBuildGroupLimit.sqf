@@ -31,8 +31,7 @@ local _subject = _this select 1;
 local _ignoredObject = _this select 2;
 local _classNames = _this select 3;
 local _limit = _this select 4;
-local _nearestPole = objNull;
-if (count _this > 5) then {_nearestPole = _this select 5};
+local _nearestPole = if (count _this > 5) then {_this select 5} else {objNull};
 
 if !(_className in _classNames) exitWith {[true,_limit,0,objNull]};
 if (_limit <= 0 || {dayz_playerUID in DZE_baseManagementAdmins}) exitWith {[true,_limit,0,objNull]};
@@ -46,8 +45,7 @@ if (isNull _nearestPole) then {
 
 if (isNull _nearestPole) exitWith {[true,_limit,0,objNull]};
 
-local _objects = nearestObjects [_nearestPole,_classNames,_baseRadius];
-local _count = {_x != _ignoredObject && {typeOf _x in _classNames}} count _objects;
+local _count = {_x != _ignoredObject && {typeOf _x in _classNames}} count (nearestObjects [_nearestPole,_classNames,_baseRadius]);
 local _allowed = _count < _limit;
 
 #ifdef DEBUG_DZE_FNC_CHECK_BUILD_GROUP_LIMIT

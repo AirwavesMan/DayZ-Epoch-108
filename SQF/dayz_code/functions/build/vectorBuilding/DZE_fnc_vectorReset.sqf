@@ -19,15 +19,12 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_VECTOR_RESET
-	diag_log format ['[Client Debug]: [DZE_fnc_vectorReset]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_vectorReset]: Function called with arguments: %1',_this];
 #endif
 
 local _object = _this;
 
 orientToWorld(_object);
-
-BUILD_dir3D = ORIGIN;
-BUILD_dir2D = 0;
 
 local _vectorDirAndUp = getVectorDirAndUp(_object);
 

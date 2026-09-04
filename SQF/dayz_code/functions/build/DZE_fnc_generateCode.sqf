@@ -19,7 +19,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_GENERATE_CODE
-	diag_log format ['[Client Debug]: [DZE_fnc_generateCode]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_generateCode]: Function called with arguments: %1',_this];
 #endif
 
 local _lockable = _this;
@@ -125,19 +125,10 @@ call { // Generate random combinations depending on item type.
 		if (_codeNotAllowed) then {_notAllowedCode = _combination};
 
 		if (_invalidCode) then {
-			local _safeDigit1 = 0;
-			local _safeDigit2 = 0;
-			local _safeDigit3 = 0;
-			local _safeDigit4 = 0;
-
 			_combination = '';
 
 			while {_combination == '' || {_combination in DZE_badCodes}} do {
-				_safeDigit1 = floor random 10;
-				_safeDigit2 = floor random 10;
-				_safeDigit3 = floor random 10;
-				_safeDigit4 = floor random 10;
-				_combination = format ['%1%2%3%4',_safeDigit1,_safeDigit2,_safeDigit3,_safeDigit4];
+				_combination = format ['%1%2%3%4',floor random 10,floor random 10,floor random 10,floor random 10];
 			};
 
 			dayz_combination = _combination;

@@ -19,17 +19,14 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_PLOT_DISTANCE
-	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationPlotDistance]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationPlotDistance]: Function called with arguments: %1',_this];
 #endif
-
-if (typeName _this != 'ARRAY' || {count _this < BUILD_VALIDATION_SIZE}) exitWith {localize 'STR_BASE_BUILD_ACCESS_DENIED'};
 
 local _distance = _this select BUILD_VALIDATION_DISTANCE;
 local _ozone = _this select BUILD_VALIDATION_OZONE;
-local _object = _this select BUILD_VALIDATION_OBJECT;
 local _nearestPoleASL = _this select BUILD_VALIDATION_NEAREST_POLE_ASL;
 local _playerPositionASL = getPosASL player;
-local _objectPositionASL = getPosASL _object;
+local _objectPositionASL = getPosASL (_this select BUILD_VALIDATION_OBJECT);
 local _playerDistance = vectorDistance(_nearestPoleASL,_playerPositionASL);
 
 BUILD_DISTANCE_FROM_PLOT = vectorDistance(_nearestPoleASL,_objectPositionASL);

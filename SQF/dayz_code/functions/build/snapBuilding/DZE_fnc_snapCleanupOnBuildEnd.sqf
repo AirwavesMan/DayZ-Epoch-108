@@ -22,7 +22,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_SNAP_CLEANUP_ON_BUILD_END
-	diag_log format ['[Client Debug]: [DZE_fnc_snapCleanupOnBuildEnd]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_snapCleanupOnBuildEnd]: Function called with arguments: %1',_this];
 #endif
 
 local _object = p0;
@@ -34,8 +34,6 @@ waitUntil {
 	uiSleep 0.01;
 	_session != DZE_snapStateSession || {BUILD_STAGE != BUILD_INACTIVE}
 };
-
-if (_session != DZE_snapStateSession) exitWith {};
 
 while {_session == DZE_snapStateSession && {BUILD_STAGE == BUILD_HOTKEYS_ACTIVE}} do {uiSleep 0.2};
 

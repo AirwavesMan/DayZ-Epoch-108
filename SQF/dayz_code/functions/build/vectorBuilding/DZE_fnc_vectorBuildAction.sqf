@@ -25,7 +25,7 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_VECTOR_BUILD_ACTION
-	diag_log format ['[Client Debug]: [DZE_fnc_vectorBuildAction]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_vectorBuildAction]: Function called with arguments: %1',_this];
 #endif
 
 local _parameters = p3;
@@ -35,18 +35,11 @@ if (BUILD_STAGE != BUILD_HOTKEYS_ACTIVE) exitWith {};
 
 local _actionType = _parameters select 2;
 
-if (_actionType == BUILD_VECTOR_ACTION_TYPE_BOTH) then {
-
+if (_actionType in [BUILD_VECTOR_ACTION_TYPE_BOTH,BUILD_VECTOR_ACTION_TYPE_ROTATION]) then {
 	vectorActionState = _parameters select 0;
+};
+if (_actionType in [BUILD_VECTOR_ACTION_TYPE_BOTH,BUILD_VECTOR_ACTION_TYPE_DEGREE]) then {
 	degreeActionState = _parameters select 1;
-
-} else {
-
-	if (_actionType == BUILD_VECTOR_ACTION_TYPE_ROTATION) then {
-		vectorActionState = _parameters select 0;
-	} else {
-		degreeActionState = _parameters select 1;
-	};
 };
 
 ///if ((_actionType == BUILD_VECTOR_ACTION_TYPE_ROTATION) || (_actionType == BUILD_VECTOR_ACTION_TYPE_BOTH)) then {
@@ -122,8 +115,6 @@ if (_actionType in [BUILD_VECTOR_ACTION_TYPE_BOTH,BUILD_VECTOR_ACTION_TYPE_ROTAT
 
 ///if ((_actionType == BUILD_VECTOR_ACTION_TYPE_DEGREE) || (_actionType == BUILD_VECTOR_ACTION_TYPE_BOTH)) then {
 if (_actionType in [BUILD_VECTOR_ACTION_TYPE_BOTH,BUILD_VECTOR_ACTION_TYPE_DEGREE]) then {
-	local _selectedDegree = if (count _parameters > 3) then {_parameters select 3} else {0};
-
 	call {
 		if (degreeActionState == 'Init') exitWith {
 
@@ -149,7 +140,7 @@ if (_actionType in [BUILD_VECTOR_ACTION_TYPE_BOTH,BUILD_VECTOR_ACTION_TYPE_DEGRE
 		};
 		if (degreeActionState == 'SELECT') exitWith {
 			degreeActionState = localize 'STR_VECTOR_BUILDING_MENU_CLOSE';
-			BUILD_CUR_DEGREE = _selectedDegree;
+			BUILD_CUR_DEGREE = _parameters select 3;
 			[1,1] call DZE_fnc_vectorDegreeActionCleanup;
 		};
 	};

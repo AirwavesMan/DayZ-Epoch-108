@@ -21,17 +21,13 @@
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
 #ifdef DEBUG_DZE_FNC_BUILD_VALIDATE
-	diag_log format ['[Client Debug]: [DZE_fnc_buildValidate]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_buildValidate]: Function called with arguments: %1',_this];
 #endif
-
-if (typeName _this != 'ARRAY' || {count _this < 3}) exitWith {localize 'STR_BUILD_CANCELLED'};
 
 local _context = p0;
 local _checks = p1;
 local _stage = p2;
 local _result = '';
-
-if (typeName _context != 'ARRAY' || {count _context < BUILD_VALIDATION_SIZE}) exitWith {localize 'STR_BUILD_CANCELLED'};
 
 _context set [BUILD_VALIDATION_STAGE,_stage];
 

@@ -24,7 +24,7 @@
 //#define DEBUG_DZE_FNC_CHANGE_CODE
 
 #ifdef DEBUG_DZE_FNC_CHANGE_CODE
-	diag_log format ['[Client Debug]: [DZE_fnc_changeCode]: Function called with argumentes: %1',_this];
+	diag_log format ['[Client Debug]: [DZE_fnc_changeCode]: Function called with arguments: %1',_this];
 #endif
 
 if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_CHANGE_CODE_ALREADY_IN_PROGRESS' call DZE_fnc_rollingMessages;};
