@@ -7,7 +7,7 @@ class DZE_StorageBarrel_Base: DZE_Storage_Base {
 	mapSize = 2;
 	armor = 400;
 	DZE_buildingSteps = 2;
-	upgradeBuilding[] = {};
+	DZE_upgradeBuilding[] = {};
 };
 
 class DZE_StorageBarrelRed1: DZE_StorageBarrel_Base {
@@ -17,7 +17,7 @@ class DZE_StorageBarrelRed1: DZE_StorageBarrel_Base {
 	transportMaxWeapons = 7;
 	transportMaxMagazines = 70;
 	transportMaxBackpacks = 2;
-	upgradeBuilding[] = {"DZE_StorageBarrelRed2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_StorageBarrelRed2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemStorageBarrel1_kit";
 		DZE_refundArray[] = {};
@@ -44,7 +44,7 @@ class DZE_StorageBarrelEpoch1: DZE_StorageBarrel_Base {
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
-	upgradeBuilding[] = {"DZE_StorageBarrelEpoch2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_StorageBarrelEpoch2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemStorageBarrel2_kit";
 		DZE_refundArray[] = {};
@@ -71,7 +71,7 @@ class DZE_StorageBarrelYellow1: DZE_StorageBarrel_Base {
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
-	upgradeBuilding[] = {"DZE_StorageBarrelYellow2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_StorageBarrelYellow2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemStorageBarrel3_kit";
 		DZE_refundArray[] = {};
@@ -98,7 +98,7 @@ class DZE_StorageBarrelBlack1: DZE_StorageBarrel_Base {
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
-	upgradeBuilding[] = {"DZE_StorageBarrelBlack2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_StorageBarrelBlack2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemStorageBarrel4_kit";
 		DZE_refundArray[] = {};
@@ -125,7 +125,7 @@ class DZE_StorageBarrelGreenDark1: DZE_StorageBarrel_Base {
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
-	upgradeBuilding[] = {"DZE_StorageBarrelGreenDark2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_StorageBarrelGreenDark2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemStorageBarrel5_kit";
 		DZE_refundArray[] = {};
@@ -152,7 +152,7 @@ class DZE_StorageBarrelMilk1: DZE_StorageBarrel_Base {
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
-	upgradeBuilding[] = {"DZE_StorageBarrelMilk2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_StorageBarrelMilk2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemStorageBarrel6_kit";
 		DZE_refundArray[] = {};
@@ -179,7 +179,7 @@ class DZE_StorageBarrelGreen1: DZE_StorageBarrel_Base {
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
-	upgradeBuilding[] = {"DZE_StorageBarrelGreen2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_StorageBarrelGreen2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemStorageBarrel7_kit";
 		DZE_refundArray[] = {};
@@ -206,7 +206,7 @@ class DZE_StorageBarrelGreenRusty1: DZE_StorageBarrel_Base {
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
-	upgradeBuilding[] = {"DZE_StorageBarrelGreenRusty2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_StorageBarrelGreenRusty2",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemStorageBarrel8_kit";
 		DZE_refundArray[] = {};

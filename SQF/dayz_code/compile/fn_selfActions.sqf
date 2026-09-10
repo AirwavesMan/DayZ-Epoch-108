@@ -787,7 +787,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 				s_player_upgrade_build = -1;
 			};
 		};
-		local _upgrade = getArray (configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "upgradeBuilding");
+		local _upgrade = getArray (configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "DZE_upgradeBuilding");
 		if ((s_player_upgrade_build < 0) && {(count _upgrade) > 0}) then {
 			_hasAccess = [player, _cursorTarget] call DZE_fnc_checkAccess;
 			if ((_hasAccess select 2) || ((_hasAccess select 0) && (_typeOfCursorTarget isKindOf 'DZE_Storage_Base' || _isLockedStorage))) then {

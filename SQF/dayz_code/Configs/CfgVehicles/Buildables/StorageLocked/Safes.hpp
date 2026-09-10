@@ -13,7 +13,7 @@ class DZE_Safe_Locked_Base: DZE_Safe_Base {
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;	
 	
-	lockable = 4;
+	DZE_lockable = 4;
 	
 	DZE_sfx = "safeopen";
 };
@@ -35,9 +35,8 @@ class DZE_Safe: DZE_Safe_Base {
 class DZE_SafeLocked: DZE_Safe_Locked_Base {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE_LOCKED";
-	lockable = 4;
 	DZE_unlockedClass = "DZE_Safe";
-	upgradeBuilding[] = {"DZE_Safe2Locked",{"ItemToolbox","ItemSolder_DZE"},{{"equip_metal_sheet",4},{"ItemScrews",2},{"equip_scrapelectronics",4},{"equip_floppywire",2}}};
+	DZE_upgradeBuilding[] = {"DZE_Safe2Locked",{"ItemToolbox","ItemSolder_DZE"},{{"equip_metal_sheet",4},{"ItemScrews",2},{"equip_scrapelectronics",4},{"equip_floppywire",2}}};
 };
 
 class DZE_Safe2: DZE_Safe {

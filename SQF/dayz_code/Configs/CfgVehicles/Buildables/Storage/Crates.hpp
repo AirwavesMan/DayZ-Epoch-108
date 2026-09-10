@@ -8,7 +8,7 @@ class DZE_WoodCrate: DZE_Storage_Base {
 	transportMaxMagazines = 50;
 	transportMaxWeapons = 5;
 	transportMaxBackpacks = 1;
-	upgradeBuilding[] = {"DZE_WoodCrate2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",2},{"ItemPlank",2},{"equip_nails",1}}};
+	DZE_upgradeBuilding[] = {"DZE_WoodCrate2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",2},{"ItemPlank",2},{"equip_nails",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodCrateKit";
 		DZE_refundArray[] = {};
@@ -16,7 +16,7 @@ class DZE_WoodCrate: DZE_Storage_Base {
 };
 
 class DZE_WoodCrate2: DZE_WoodCrate {
-	upgradeBuilding[] = {};
+	DZE_upgradeBuilding[] = {};
 	armor = 400;
 	displayName = $STR_EPOCH_WOODCRATE2;
 	transportMaxMagazines = 100;

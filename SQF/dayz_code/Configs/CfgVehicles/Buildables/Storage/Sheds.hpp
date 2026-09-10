@@ -28,7 +28,7 @@ class DZE_StorageShed: DZE_Storage_Base {
 			statement = "this animate ['open', 1];";
 		};
 	};
-	upgradeBuilding[] = {"DZE_StorageShed2",{"ItemToolbox","ItemCrowbar","ItemSledge"},{{"equip_metal_sheet",4},{"ItemMetalSheet",2},{"ItemScrews",2}}};
+	DZE_upgradeBuilding[] = {"DZE_StorageShed2",{"ItemToolbox","ItemCrowbar","ItemSledge"},{{"equip_metal_sheet",4},{"ItemMetalSheet",2},{"ItemScrews",2}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "storage_shed_kit";
 		DZE_refundArray[] = {};
@@ -36,7 +36,7 @@ class DZE_StorageShed: DZE_Storage_Base {
 };
 
 class DZE_StorageShed2: DZE_StorageShed {
-	upgradeBuilding[] = {};
+	DZE_upgradeBuilding[] = {};
 	armor = 3200;
 	displayName = $STR_EPOCH_STORAGESHED2;
 	transportMaxMagazines = 600;
@@ -60,7 +60,7 @@ class DZE_WoodShack: DZE_Storage_Base {
 	transportMaxWeapons = 10;
 	transportMaxBackpacks = 5;
 	DZE_buildingSteps = 4;
-	upgradeBuilding[] = {"DZE_WoodShack2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",4},{"equip_nails",2}}};
+	DZE_upgradeBuilding[] = {"DZE_WoodShack2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",4},{"equip_nails",2}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "wood_shack_kit";
 		DZE_refundArray[] = {};
@@ -68,7 +68,7 @@ class DZE_WoodShack: DZE_Storage_Base {
 };
 
 class DZE_WoodShack2: DZE_WoodShack {
-	upgradeBuilding[] = {};
+	DZE_upgradeBuilding[] = {};
 	armor = 1600;
 	displayName = $STR_EPOCH_WOODSHACK2;
 	transportMaxMagazines = 175;
@@ -92,7 +92,7 @@ class DZE_Wooden_shed: DZE_Storage_Base {
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 10;
 	DZE_buildingSteps = 5;
-	upgradeBuilding[] = {"DZE_Wooden_shed2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"equip_nails",2}}};
+	DZE_upgradeBuilding[] = {"DZE_Wooden_shed2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"equip_nails",2}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "wooden_shed_kit";
 		DZE_refundArray[] = {};
@@ -100,7 +100,7 @@ class DZE_Wooden_shed: DZE_Storage_Base {
 };
 
 class DZE_Wooden_shed2: DZE_Wooden_shed {
-	upgradeBuilding[] = {};
+	DZE_upgradeBuilding[] = {};
 	armor = 2000;
 	displayName = $STR_EPOCH_NICEWOODSHED2;
 	transportMaxMagazines = 300;

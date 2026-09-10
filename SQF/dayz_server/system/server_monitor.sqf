@@ -275,7 +275,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		};
 
 		// Fix for leading zero issues on safe codes after restart
-		_lockable = getNumber (configFile >> "CfgVehicles" >> _type >> "lockable");
+		_lockable = getNumber (configFile >> 'CfgVehicles' >> _type >> 'DZE_lockable');
 		_codeCount = count (toArray _ownerID);
 		call {
 			if (_lockable == 4) exitwith {

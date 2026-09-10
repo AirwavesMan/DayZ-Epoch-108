@@ -30,7 +30,7 @@ class DZE_Land_WoodDoorLocked_Base: DZE_ModularDoor_Base {
 	DZE_offset[] = {0,1.5,0};
 
 	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
-	lockable = 3;
+	DZE_lockable = 3;
 };
 
 class DZE_CinderWallDoor_Base: DZE_ModularDoor_Base {
@@ -53,7 +53,7 @@ class DZE_CinderWallDoorLocked_Base: DZE_ModularDoor_Base {
 	accuracy = 1000;
 	armor = 4000;
 	DZE_offset[] = {0,1.5,0};
-	lockable = 3;
+	DZE_lockable = 3;
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 };
 
@@ -61,7 +61,7 @@ class DZE_Land_WoodDoor: DZE_Land_WoodDoor_Base {
 	scope = 2;
 	displayName = $STR_EPOCH_WALLWITHDOOR;
 	//GhostPreview = "DZE_WoodDoor_Preview";
-	upgradeBuilding[] = {"DZE_Land_WoodDoorLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Land_WoodDoorLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_door {
@@ -159,7 +159,7 @@ class DZE_Land_LargeWoodDoor: DZE_Land_WoodDoor_Base {
 	model = "\z\addons\dayz_epoch\models\large_wall_door_anim.p3d";
 	displayName = $STR_EPOCH_LARGEWALLWITHDOOR;
 	//GhostPreview = "DZE_LargeWoodDoor_Preview";
-	upgradeBuilding[] = {"DZE_Land_LargeWoodDoorLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Land_LargeWoodDoorLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_door {
@@ -257,7 +257,7 @@ class DZE_Land_GarageWoodDoor: DZE_Land_WoodDoor_Base {
 	model = "\z\addons\dayz_epoch\models\Garage_door_anim.p3d";
 	displayName = $STR_EPOCH_WOODGARAGEDOOR;
 	//GhostPreview = "DZE_GarageWoodDoor_Preview";
-	upgradeBuilding[] = {"DZE_Land_GarageWoodDoorLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Land_GarageWoodDoorLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_door {
@@ -356,7 +356,7 @@ class DZE_Land_WoodGate: DZE_Land_WoodDoor_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\wood\high_wood_garage\high_wood_garage.p3d";
 	displayName = $STR_EPOCH_WOODGATE;
 	//GhostPreview = "DZE_WoodGate_Preview";
-	upgradeBuilding[] = {"DZE_Land_WoodGateLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Land_WoodGateLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_door {
@@ -473,7 +473,7 @@ class DZE_Land_WoodOpenTopGarageDoor: DZE_Land_WoodDoor_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\wood\garage_notop\wood_garage_notop.p3d";
 	displayName = $STR_EPOCH_WOODOPENTOPGARAGEDOOR;
 	//GhostPreview = "DZE_Wood_GarageOpenTop_Preview";
-	upgradeBuilding[] = {"DZE_Land_WoodOpenTopGarageLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Land_WoodOpenTopGarageLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class doorl {
@@ -649,7 +649,7 @@ class DZE_CinderWallDoor: DZE_CinderWallDoor_Base {
 	scope = 2;
 	displayName = $STR_EPOCH_BLOCKGARAGEDOOR;
 	//GhostPreview = "DZE_CinderWallDoorway_Preview";
-	upgradeBuilding[] = {"DZE_CinderWallDoorLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderWallDoorLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_door {
@@ -747,7 +747,7 @@ class DZE_CinderWallDoorSmall: DZE_CinderWallDoor_Base {
 	model = "\z\addons\dayz_epoch\models\Steel_door.p3d";
 	displayName = $STR_EPOCH_BLOCKDOOR;
 	//GhostPreview = "DZE_CinderWallSmallDoorway_Preview";
-	upgradeBuilding[] = {"DZE_CinderWallDoorSmallLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderWallDoorSmallLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_door {
@@ -785,7 +785,7 @@ class DZE_CinderGate: DZE_CinderWallDoor_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_high_garage\high_steel_garage_door.p3d";
 	displayName = $STR_EPOCH_CINDERGATE;
 	//GhostPreview = "DZE_CinderGate_Preview";
-	upgradeBuilding[] = {"DZE_CinderGateLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderGateLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_door {
@@ -896,7 +896,7 @@ class DZE_CinderGarageOpenTop: DZE_CinderWallDoor_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\CinderGaragenotop\cindergarage_notop.p3d";
 	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEDOOR;
 	//GhostPreview = "DZE_CinderGarageOpenTop_Preview";
-	upgradeBuilding[] = {"DZE_CinderGarageOpenTopLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderGarageOpenTopLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class doorl {
@@ -1006,7 +1006,7 @@ class DZE_CinderDoorHatch: DZE_CinderWallDoor_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinderdoor_hatch.p3d";
 	displayName = $STR_EPOCH_BLOCKDOOR_HATCH;
 	//GhostPreview = "DZE_CinderDoorHatch_Preview";
-	upgradeBuilding[] = {"DZE_CinderDoorHatchLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderDoorHatchLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_door {
@@ -1117,7 +1117,7 @@ class DZE_Door: DZE_CinderWallDoor_Base {
 	model = "\z\addons\dayz_epoch\models\Steel_door_single.p3d";
 	displayName = $STR_EPOCH_DOOR;
 	//GhostPreview = "DZE_DoorFrame_Preview";
-	upgradeBuilding[] = {"DZE_DoorLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_DoorLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_door {

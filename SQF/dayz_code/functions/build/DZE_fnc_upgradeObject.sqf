@@ -53,7 +53,7 @@ if (!(_hasAccess select 0) && {_classname in DZE_LockedStorage}) exitWith {
 };
 
 local _text = getText (configFile >> 'CfgVehicles' >> _classname >> 'displayName');
-local _upgrade = getArray (configFile >> 'CfgVehicles' >> _classname >> 'upgradeBuilding');
+local _upgrade = getArray (configFile >> 'CfgVehicles' >> _classname >> 'DZE_upgradeBuilding');
 
 if (count _upgrade > 0) then {
 	local _newclassname = _upgrade select 0;
@@ -80,7 +80,7 @@ if (count _upgrade > 0) then {
 	local _neededTools = _upgrade select 1;
 
 	if (['',_neededTools,'none'] call DZE_fnc_requiredItemsCheck) then {
-		local _lockable = getNumber (configFile >> 'CfgVehicles' >> _newclassname >> 'lockable');
+		local _lockable = getNumber (configFile >> 'CfgVehicles' >> _newclassname >> 'DZE_lockable');
 		local _requirements = _upgrade select 2;
 		local _missingQty = 0;
 		local _missing = '';

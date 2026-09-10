@@ -102,7 +102,7 @@ class DZE_WoodLargeWall: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\large_wall.p3d";
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWOODWALL;
-	upgradeBuilding[] = {"DZE_WoodLargeWallWin",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
+	DZE_upgradeBuilding[] = {"DZE_WoodLargeWallWin",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
 	//GhostPreview = "DZE_WoodLargeWall_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	class RemoveObject: RemoveObject {
@@ -117,7 +117,7 @@ class DZE_WoodLargeWallDoor: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\large_wall_door.p3d";
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWALLWITHDOORWAY;
-	upgradeBuilding[] = {"DZE_Land_LargeWoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Land_LargeWoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	//GhostPreview = "DZE_WoodLargeWallDoor_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	class RemoveObject: RemoveObject {
@@ -146,7 +146,7 @@ class DZE_WoodSmallWall: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\small_wall.p3d";
 	armor = 2000;
 	displayName = $STR_EPOCH_WOODWALL;
-	upgradeBuilding[] = {"DZE_WoodSmallWallWin",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
+	DZE_upgradeBuilding[] = {"DZE_WoodSmallWallWin",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
 	//GhostPreview = "DZE_WoodSmallWall_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	class RemoveObject: RemoveObject {
@@ -190,7 +190,7 @@ class DZE_WoodSmallWallDoor: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\small_wall_door.p3d";
 	armor = 2000;
 	displayName = $STR_EPOCH_WALLWITHDOORWAY;
-	upgradeBuilding[] = {"DZE_Land_WoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Land_WoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	//GhostPreview = "DZE_WoodSmallWallDoor_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	class RemoveObject: RemoveObject {
@@ -219,7 +219,7 @@ class DZE_WoodGateFrame: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\wood\high_wood_garage\high_wood_garage_frame.p3d";
 	armor = 2800;
 	displayName = $STR_EPOCH_WOODGATEFRAME;
-	upgradeBuilding[] = {"DZE_Land_WoodGate",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Land_WoodGate",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
 	//GhostPreview = "DZE_WoodGate_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
@@ -234,7 +234,7 @@ class DZE_WoodStairs: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\wood_stairs.p3d";
 	armor = 600;
 	displayName = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS;
-	upgradeBuilding[] = {"DZE_WoodStairsRails",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodLumber",2}}};
+	DZE_upgradeBuilding[] = {"DZE_WoodStairsRails",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodLumber",2}}};
 	//GhostPreview = "DZE_WoodStairs_Preview";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodStairsSupport";
@@ -261,7 +261,7 @@ class DZE_WoodStairsSans: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\wood_stairs_sans.p3d";
 	armor = 500;
 	displayName = $STR_EPOCH_WOODSTAIRS;
-	upgradeBuilding[] = {"DZE_WoodStairs",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodLumber",2}}};
+	DZE_upgradeBuilding[] = {"DZE_WoodStairs",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodLumber",2}}};
 	//GhostPreview = "DZE_WoodStairsSans_Preview";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodStairs";

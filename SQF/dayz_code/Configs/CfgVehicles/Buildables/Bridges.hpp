@@ -5,7 +5,7 @@ class DZE_Metal_Drawbridge: DZE_CinderWallDoor_Base {
 	//GhostPreview = "DZE_Drawbridge_Preview";
 	DZE_offset[] = {0,2.5,0};
 	DZE_allowRotation = 0;
-	upgradeBuilding[] = {"DZE_Metal_DrawbridgeLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Metal_DrawbridgeLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_inner {

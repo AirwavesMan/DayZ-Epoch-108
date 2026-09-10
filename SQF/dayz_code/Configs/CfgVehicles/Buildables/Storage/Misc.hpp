@@ -7,7 +7,7 @@ class DZE_GunRack: DZE_Storage_Base {
 	transportMaxMagazines = 10;
 	transportMaxBackpacks = 0;
 	DZE_offset[] = {0,2,0};
-	upgradeBuilding[] = {"DZE_GunRack2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",4},{"equip_nails",1}}};
+	DZE_upgradeBuilding[] = {"DZE_GunRack2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",4},{"equip_nails",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemGunRackKit";
 		DZE_refundArray[] = {};
@@ -15,7 +15,7 @@ class DZE_GunRack: DZE_Storage_Base {
 };
 
 class DZE_GunRack2: DZE_GunRack {
-	upgradeBuilding[] = {};
+	DZE_upgradeBuilding[] = {};
 	armor = 400;
 	displayName = $STR_EPOCH_GUNRACK2;
 	transportMaxWeapons = 40;

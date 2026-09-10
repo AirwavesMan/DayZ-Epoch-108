@@ -94,7 +94,7 @@ local _dirY	= 0;
 
 _text			= getText	(_cfgV >> 'displayName');				// e.g. "Cinder Wall Full"
 local _offset		= getArray	(_cfgV >> 'DZE_offset');
-local _lockable		= getNumber	(_cfgV >> 'lockable');
+local _lockable		= getNumber	(_cfgV >> 'DZE_lockable');
 local _useModelCenter	= getNumber	(_cfgV >> 'useModelCenter' ) == 1;
 local _preventUnderground = getNumber (_cfgV >> 'DZE_preventUnderground') == 1;
 

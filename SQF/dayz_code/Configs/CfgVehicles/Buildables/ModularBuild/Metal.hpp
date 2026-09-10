@@ -61,7 +61,7 @@ class DZE_DoorFrame: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\Steel_door_frame_single.p3d";
 	displayName = $STR_EPOCH_DOORWAY;
 	//GhostPreview = "DZE_DoorFrame_Preview";
-	upgradeBuilding[] = {"DZE_Door",{"ItemToolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Door",{"ItemToolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "door_frame_kit";
 		DZE_refundArray[] = {{{"ItemPole",4},{"ItemTankTrap",4},{"PartGeneric",2}}};

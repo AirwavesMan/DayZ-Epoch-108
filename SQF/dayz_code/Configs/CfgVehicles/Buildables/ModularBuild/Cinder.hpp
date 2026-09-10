@@ -4,7 +4,7 @@ class DZE_CinderWallHalf: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\cinder_wall_half.p3d";
 	armor = 2200;
 	displayName = $STR_EPOCH_CINDERBLOCKWALL_HALF;
-	upgradeBuilding[] = {"DZE_CinderWall",{"ItemToolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderWall",{"ItemToolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
 	//GhostPreview = "DZE_CinderWallHalf_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
@@ -19,7 +19,7 @@ class DZE_CinderWallHalf_Gap: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\cinder_wall_half2.p3d";
 	armor = 2200;
 	displayName = $STR_EPOCH_CINDERBLOCKWALL_HALF_GAP;
-	upgradeBuilding[] = {"DZE_CinderWall",{"ItemToolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderWall",{"ItemToolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
 	//GhostPreview = "DZE_CinderWallHalf_Gap_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
@@ -49,7 +49,7 @@ class DZE_CinderWallWindow: DZE_ModularDoor_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_wall_win\h4_cinder_wall_win.p3d";
 	displayName = $STR_EPOCH_CINDERBLOCKWALLWINDOW;
 	//GhostPreview = "DZE_CinderWallWindow_Preview";
-	upgradeBuilding[] = {"DZE_CinderWallWindowLocked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderWallWindowLocked",{},{{"ItemComboLock",1}}};
 
 	class AnimationSources {
 		class Open_door {
@@ -164,7 +164,7 @@ class DZE_CinderWallDoorway: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\steel_garage_frame.p3d";
 	armor = 3400;
 	displayName = $STR_EPOCH_BLOCKGARAGEDOORWAY;
-	upgradeBuilding[] = {"DZE_CinderWallDoor",{"ItemToolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderWallDoor",{"ItemToolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
 	//GhostPreview = "DZE_CinderWallDoorway_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
@@ -179,7 +179,7 @@ class DZE_CinderWallSmallDoorway: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch\models\Steel_door_frame.p3d";
 	armor = 3400;
 	displayName = $STR_EPOCH_BLOCKDOORWAY;
-	upgradeBuilding[] = {"DZE_CinderWallDoorSmall",{"ItemToolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderWallDoorSmall",{"ItemToolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
 	//GhostPreview = "DZE_CinderWallSmallDoorway_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
@@ -193,7 +193,7 @@ class DZE_CinderGateFrame: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_high_garage\high_steel_garage_frame.p3d";
 	armor = 4000;
 	displayName = $STR_EPOCH_CINDERGATEFRAME;
-	upgradeBuilding[] = {"DZE_CinderGate",{"ItemToolbox"},{{"equip_metal_sheet",6},{"ItemRSJ",2},{"ItemScrews",2}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderGate",{"ItemToolbox"},{{"equip_metal_sheet",6},{"ItemRSJ",2},{"ItemScrews",2}}};
 	//GhostPreview = "DZE_CinderGate_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
@@ -208,7 +208,7 @@ class DZE_CinderGarageOpenTopFrame: DZE_Modular_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\CinderGaragenotop\cindergarage_notop_frame.p3d";
 	armor = 3000;
 	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEFRAME;
-	upgradeBuilding[] = {"DZE_CinderGarageOpenTop",{"ItemToolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderGarageOpenTop",{"ItemToolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
 	//GhostPreview = "DZE_CinderGarageOpenTop_Preview";
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
@@ -222,7 +222,7 @@ class DZE_Concrete_Bunker: DZE_CinderWallDoor_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\bunker\bunker_01.p3d";
 	DZE_offset[] = {0,4,0};
 	displayName = $STR_EPOCH_CINDERBUNKER;
-	upgradeBuilding[] = {"DZE_Concrete_Bunker_Locked",{},{{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Concrete_Bunker_Locked",{},{{"ItemComboLock",1}}};
 	//GhostPreview = "DZE_Concrete_Bunker_Preview";
 	class AnimationSources {
 		class raise_all {

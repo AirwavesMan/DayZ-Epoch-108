@@ -12,7 +12,7 @@ class DZE_Lockbox_Locked_Base: DZE_Lockbox_Base {
 	transportMaxMagazines = 0;
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;	
-	lockable = 2;
+	DZE_lockable = 2;
 	
 	DZE_sfx = "lockboxopen";
 };
@@ -35,7 +35,7 @@ class DZE_LockboxStorageLocked: DZE_Lockbox_Locked_Base {
 	scope = 2;
 	displayName = $STR_EPOCH_LOCKBOX_LOCKED;	
 	DZE_unlockedClass = "DZE_LockboxStorage";
-	upgradeBuilding[] = {"DZE_LockboxStorage2Locked",{"ItemToolbox","ItemSolder_DZE"},{{"equip_metal_sheet",2},{"ItemScrews",2},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	DZE_upgradeBuilding[] = {"DZE_LockboxStorage2Locked",{"ItemToolbox","ItemSolder_DZE"},{{"equip_metal_sheet",2},{"ItemScrews",2},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 };
 
 class DZE_LockboxStorage2: DZE_LockboxStorage {
@@ -79,7 +79,7 @@ class DZE_LockboxStorageWinterLocked: DZE_Lockbox_Locked_Base {
 	displayName = $STR_EPOCH_LOCKBOX_LOCKED;
 	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	DZE_unlockedClass = "DZE_LockboxStorageWinter";	
-	upgradeBuilding[] = {"DZE_LockboxStorageWinter2Locked",{"ItemToolbox","ItemSolder_DZE"},{{"equip_metal_sheet",2},{"ItemScrews",2},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	DZE_upgradeBuilding[] = {"DZE_LockboxStorageWinter2Locked",{"ItemToolbox","ItemSolder_DZE"},{{"equip_metal_sheet",2},{"ItemScrews",2},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 };
 
 class DZE_LockboxStorageWinter2: DZE_LockboxStorageWinter {
