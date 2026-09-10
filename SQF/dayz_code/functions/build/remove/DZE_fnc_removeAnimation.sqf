@@ -5,12 +5,12 @@
 //	Description:	Runs removal animations and determines whether all stages completed.
 //	Groups:		Build
 //
-//	Syntax:		[object,displayName,steps,isTent] call DZE_fnc_removeAnimation
+//	Syntax:		[object,displayName,steps,packSound] call DZE_fnc_removeAnimation
 //
 //	Parameters:	object: Object - Object being removed
 //			displayName: String - Localized object name used in progress messages
 //			steps: Number - Number of animation stages
-//			isTent: Boolean - Whether the removed object uses the tent-packing sound
+//			packSound: Boolean - Whether removal uses the packing sound
 //
 //	Return Value:	Boolean - Whether all removal stages completed
 //
@@ -28,13 +28,13 @@
 local _object = param(0,objNull);
 local _displayName = param(1,'');
 local _steps = param(2,0);
-local _isTent = param(3,false);
+local _packSound = param(3,false);
 
 if (isNull _object) exitWith {false};
 
 local _completed = true;
 local _stage = 0;
-local _sound = ['tentpack','repair'] select !_isTent;
+local _sound = ['repair','tentpack'] select _packSound;
 
 for '_stage' from 1 to _steps do {
 	// A removed or no longer synchronized object cancels the action.

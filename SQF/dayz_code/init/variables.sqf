@@ -166,7 +166,6 @@ if (!isDedicated) then {
 		s_player_fishing_veh = -1;
 		s_player_gather = -1;
 		s_player_destroytent = -1;
-		s_player_packvault = -1;
 		s_player_lockvault = -1;
 		s_player_unlockvault = -1;
 		s_player_attack = -1;
@@ -254,7 +253,7 @@ if (!isDedicated) then {
 	dayz_authKey = "";
 	DZE_LastPingResp = diag_tickTime;
 	dayz_humanitytarget = "";
-	dayz_selectedVault = objNull;
+	DZE_selectedStorage = objNull;
 	dayz_selectedDoor = objNull;
 	DZE_Lock_Door = "";
 	DZE_GearCheckBypass = false;
@@ -307,7 +306,7 @@ if (!isDedicated) then {
 	DZE_replaceMagazines = [["vil_20Rnd_762x51_G3"],["vil_20Rnd_762x51_G3"]];
 	DZE_fueltruckarray = ["UralRefuel_TK_EP1_DZ","UralRefuel_TK_EP1_DZE1","UralRefuel_TK_EP1_DZE2","UralRefuel_TK_EP1_DZE3","UralRefuel_TK_EP1_DZE4","MtvrRefuel_DES_EP1_DZ","MtvrRefuel_DES_EP1_DZE1","MtvrRefuel_DES_EP1_DZE2","MtvrRefuel_DES_EP1_DZE3","MtvrRefuel_DES_EP1_DZE4","V3S_Refuel_TK_GUE_EP1_DZ","V3S_Refuel_TK_GUE_EP1_DZE1","V3S_Refuel_TK_GUE_EP1_DZE2","V3S_Refuel_TK_GUE_EP1_DZE3","V3S_Refuel_TK_GUE_EP1_DZE4","MtvrRefuel_DZ","MtvrRefuel_DZE1","MtvrRefuel_DZE2","MtvrRefuel_DZE3","MtvrRefuel_DZE4","KamazRefuel_DZ","KamazRefuel_DZE1","KamazRefuel_DZE2","KamazRefuel_DZE3","KamazRefuel_DZE4","T810A_ACR_REFUEL_DES_DZE","T810A_ACR_REFUEL_DES_DZE1","T810A_ACR_REFUEL_DES_DZE2","T810A_ACR_REFUEL_DES_DZE3","T810A_ACR_REFUEL_DES_DZE4","T810A_ACR_REFUEL_DZE","T810A_ACR_REFUEL_DZE1","T810A_ACR_REFUEL_DZE2","T810A_ACR_REFUEL_DZE3","T810A_ACR_REFUEL_DZE4","UralRefuel_INS_DZE","UralRefuel_INS_DZE1","UralRefuel_INS_DZE2","UralRefuel_INS_DZE3","UralRefuel_INS_DZE4","UralRefuel_CDF_DZE","UralRefuel_CDF_DZE1","UralRefuel_CDF_DZE2","UralRefuel_CDF_DZE3","UralRefuel_CDF_DZE4"];
 	DZE_HeliAllowToTow = ["hilux1_civil_1_open","HMMWV_Base","Lada_base","Offroad_DSHKM_base","Pickup_PK_base","SkodaBase","tractor","VWGolf","Volha_TK_CIV_Base_EP1","S1203_TK_CIV_EP1","SUV_Base_EP1","ArmoredSUV_Base_PMC","UAZ_Base","LandRover_Base","Ship"];
-	DZE_isDestroyableStorage = DZE_isNewStorage + DZE_Stashes;
+	DZE_isDestroyableStorage = DZE_isNewStorage + DZE_Stashes + DZE_UnLockedStorage;
 	DZE_tradeVehicle = ["trade_any_vehicle","trade_any_vehicle_free","trade_any_vehicle_old","trade_any_bicycle","trade_any_bicycle_old","trade_any_boat","trade_any_boat_old"];
 	DZE_tradeVehicleKeyless = ["trade_any_bicycle","trade_any_bicycle_old","trade_any_vehicle_free"];
 	DZE_tradeObject = DZE_tradeVehicle + ["trade_backpacks"];

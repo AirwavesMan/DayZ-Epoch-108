@@ -1019,7 +1019,7 @@ class FSM
                          "};" \n
                          "" \n
                          "player setVelocity [0,0,0.5];" \n
-                         "{player reveal _x} count _torev4l;" \n
+                         "{player reveal [_x,4]} count _torev4l;" \n
                          "dayz_myPosition = _setPos;" \n
                          "player setVariable ['BIS_noCoreConversations', true];" \n
                          "dayz_clientPreload = true;"/*%FSM</STATEINIT""">*/;

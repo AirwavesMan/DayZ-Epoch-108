@@ -144,19 +144,18 @@ if (!isDedicated) then {
 	fn_waitForObject = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_waitForObject.sqf";
 	player_onPause = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_onPause.sqf";
 	player_antiWall = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_antiWall.sqf";
-	player_changeCombo = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_changeCombo.sqf";
 	player_checkItems =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_checkItems.sqf";
 	player_copyKey = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_copyKey.sqf";
 	player_deathBoard =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\list_playerDeathsAlt.sqf";
 	player_harvest = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_harvest.sqf";
 	player_harvestPlant = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_harvestPlant.sqf";
 	player_loadCrate = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_loadCrate.sqf";
-	player_lockVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_lockVault.sqf";
-	player_packVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packVault.sqf";
+	DZE_fnc_lockStorage = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_lockStorage.sqf';
+	DZE_fnc_storageEnterCode = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_storageEnterCode.sqf';
 	player_surrender = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_surrender.sqf";
 	player_traderCity = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderCity.sqf";
 	player_unlockDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
-	player_unlockVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockVault.sqf";
+	DZE_fnc_unlockStorage = compile preprocessFileLineNumbers "\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_unlockStorage.sqf";
 	player_upgradeVehicle =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
 	fnc_usec_damageHandler = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
 	fnc_radioState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\radioState.sqf"; // Toggle radio on and off
@@ -807,9 +806,13 @@ if (!isDedicated) then {
 	path('gui');
 
 	FUNCTION(DZE_fnc_checkStealth);			// Calculate player's noise and visibility.
+	FUNCTION(DZE_fnc_comboLockAction);		// Cancels or submits the active combination lock dialog.
+	FUNCTION(DZE_fnc_comboLockInput);		// Changes one digit of the active combination lock.
 	FUNCTION(DZE_fnc_highlightText);		// Displays fixed or relative text over the specified object.
+	FUNCTION(DZE_fnc_keypadInput);			// Appends a value entered through a storage keypad.
 	FUNCTION(DZE_fnc_lootText);			// Displays floating text above a lootpile.
 	FUNCTION(DZE_fnc_rollingMessages);		// Display a rolling message at the lower center of screen.
+	FUNCTION(DZE_fnc_storageKeypadAction);		// Cancels or submits the active storage keypad dialog.
 	FUNCTION(DZE_fnc_updateGUI);			// Handle primary GUI updates.
 
 	///////////////////////////////////////////////////////////////////////////////////////////

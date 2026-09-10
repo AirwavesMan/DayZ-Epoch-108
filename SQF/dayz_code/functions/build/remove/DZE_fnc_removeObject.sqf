@@ -44,12 +44,13 @@ call {
 	local _objectType = typeOf _object;
 	local _vehicleConfig = configFile >> 'CfgVehicles' >> _objectType;
 	local _isTent = _objectType in DZE_Tents || {_object isKindOf 'IC_Tent'};
+	local _isUnlockedStorage = _objectType in DZE_UnLockedStorage;
 
 	if (_object getVariable ['GeneratorRunning',false]) exitWith {
 		localize 'STR_BUILD_REMOVE_GENERATOR_RUNNING' call DZE_fnc_rollingMessages;	// Cannot remove a running generator.
 	};
 
-	if (_objectType in DZE_DoorsLocked && !(_objectType in DZE_LockedGates)) exitWith {
+	if ((_objectType in DZE_DoorsLocked && !(_objectType in DZE_LockedGates)) || {_objectType in DZE_LockedStorage}) exitWith {
 		localize 'STR_BUILD_REMOVE_LOCKED' call DZE_fnc_rollingMessages;	// You must remove the lock to delete this item!
 	};
 
@@ -72,7 +73,7 @@ call {
 	local _isStorageItem = _objectType call DZE_fnc_hasStorageGearSlots;
 	local _isModular = _object isKindOf 'DZE_Modular_Base';
 
-	if (_isLootDebris && {[_object,12] call DZE_fnc_nearPlayerMan}) exitWith {
+	if ((_isLootDebris && {[_object,12] call DZE_fnc_nearPlayerMan}) || {_isUnlockedStorage && {[_object,10] call DZE_fnc_nearPlayerMan}}) exitWith {
 		localize 'STR_BUILD_REMOVE_PLAYER_NEARBY' call DZE_fnc_rollingMessages;	// Only one player can be near to perform this action.
 	};
 
@@ -113,7 +114,8 @@ call {
 	[_object,_helperTexture,true] call DZE_fnc_displayHelpers;	// Include a center fallback when no helper points exist.
 
 	local _displayName = getText (_vehicleConfig >> 'displayName');
-	local _completed = [_object,_displayName,_steps,_isTent] call DZE_fnc_removeAnimation;
+	local _packSound = _isTent || _isUnlockedStorage;
+	local _completed = [_object,_displayName,_steps,_packSound] call DZE_fnc_removeAnimation;
 
 	[] call DZE_fnc_displayHelpers;
 
@@ -125,10 +127,15 @@ call {
 		localize 'STR_BUILD_REMOVE_OBJECT_GONE' call DZE_fnc_rollingMessages;	// Failed, object no longer exists.
 	};
 
+	if (_isUnlockedStorage && {[_object,10] call DZE_fnc_nearPlayerMan}) exitWith {
+		localize 'STR_BUILD_REMOVE_PLAYER_NEARBY' call DZE_fnc_rollingMessages;
+	};
+
 	local _objectPositionASL = getPosASL _object;
 	local _objectDirection = getDir _object;
 	local _removeOutput = [_object,_configuredRefund,_isStorageItem] call DZE_fnc_removeRefund;
 	local _objectBounds = boundingBox _object select 1;
+	local _storedCoins = if (Z_SingleCurrency && {_objectType in DZE_MoneyStorageClasses}) then {_object getVariable ['cashMoney',0]} else {0};
 
 	local _fireProxy = objNull;
 	if (_isFireProxy) then {
@@ -163,6 +170,10 @@ call {
 	};
 
 	['Working',0,[3,2,4,0]] call dayz_NutritionSystem;
+
+	if (_storedCoins > 0) then {
+		format [localize 'STR_BUILD_REMOVE_STORAGE_CURRENCY',_displayName,[_storedCoins] call BIS_fnc_numberText,CurrencyName] call DZE_fnc_rollingMessages;
+	};
 
 	_standingDelay = [_removeOutput,_objectPositionASL,_objectDirection,_isStorageItem,_objectBounds] call DZE_fnc_createRemoveOutput;
 	_neededTools call DZE_fnc_toolBreak;

@@ -263,6 +263,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	local _isLockedDoor = _typeOfCursorTarget in DZE_DoorsLocked;
 	local _isStatic = _typeOfCursorTarget in DZE_StaticWeapons;
 	local _isLockedStorage = _typeOfCursorTarget in DZE_LockedStorage;
+	local _isUnlockedStorage = _typeOfCursorTarget in DZE_UnLockedStorage;
 
 	// Highlight Lootpile
 	if (_typeOfCursorTarget isKindof 'WeaponHolder' && {DZE_LOOT_TEXT && {!DZE_key_highlightText}}) then {_cursorTarget call DZE_fnc_lootText};
@@ -458,10 +459,14 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 		// Tents, wrecks and explicitly removable objects do not require base access.
 		_player_deleteBuild = _isTentRemoval || _isPublicRemoval;
 
-		// Restricted, modular, static and storage objects require ownership or base access.
+		// Lockable storage requires its combination or owner; other restricted objects use base access.
 		if (!_player_deleteBuild && _requiresRemovalAccess) then {
-			_hasAccess = [player, _cursorTarget] call DZE_fnc_checkAccess;
-			_player_deleteBuild = _hasAccess select 2 || ((_isStash || _typeOfCursorTarget in ['DZE_WorkBench','DZE_FuelPump','DZE_Generator']) && _hasAccess select 0);
+			if (_isUnlockedStorage) then {
+				_player_deleteBuild = _characterID == dayz_combination || _isOwner;
+			} else {
+				_hasAccess = [player, _cursorTarget] call DZE_fnc_checkAccess;
+				_player_deleteBuild = _hasAccess select 2 || ((_isStash || _typeOfCursorTarget in ['DZE_WorkBench','DZE_FuelPump','DZE_Generator']) && _hasAccess select 0);
+			};
 		};
 	};
 
@@ -700,16 +705,16 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 			local _combi = [];
 			if (_isLockedStorage) then {
 				if ((_characterID == dayz_combination) || _isOwner) then {
-					_combi = player addAction [format[localize "STR_EPOCH_ACTIONS_OPEN",_text], "\z\addons\dayz_code\actions\vault_unlock.sqf",_cursorTarget, 0, false, true];
+					_combi = player addAction [format[localize "STR_EPOCH_ACTIONS_OPEN",_text], '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_unlockStorage.sqf',_cursorTarget, 0, false, true];
 					s_player_combi set [count s_player_combi,_combi];
 				} else {
-					_combi = player addAction [format[localize "STR_EPOCH_ACTIONS_UNLOCK",_text], "\z\addons\dayz_code\actions\vault_combination_1.sqf",_cursorTarget, 0, false, true];
+					_combi = player addAction [format [localize 'STR_EPOCH_ACTIONS_UNLOCK',_text],'\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_storageEnterCode.sqf',_cursorTarget,0,false,true];
 					s_player_combi set [count s_player_combi,_combi];
 				};
 				s_player_unlockvault = 1;
 			} else {
 				if ((_characterID != dayz_combination) && !_isOwner) then {
-					_combi = player addAction [localize "STR_EPOCH_ACTIONS_RECOMBO", "\z\addons\dayz_code\actions\vault_combination_1.sqf",_cursorTarget, 0, false, true];
+					_combi = player addAction [localize 'STR_EPOCH_ACTIONS_RECOMBO','\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_storageEnterCode.sqf',_cursorTarget,0,false,true];
 					s_player_combi set [count s_player_combi,_combi];
 					s_player_unlockvault = 1;
 				};
@@ -720,20 +725,15 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 		s_player_unlockvault = -1;
 	};
 
-	//Allow owner to pack vault
-	if (_isClose && !keypadCancel && {(_typeOfCursorTarget in DZE_UnLockedStorage) && {_characterID != "0"}  && {(_characterID == dayz_combination || _isOwner)}}) then {
+	// Unlocked storage actions
+	if (_isClose && !keypadCancel && {_isUnlockedStorage && {_characterID != '0'} && {_characterID == dayz_combination || _isOwner}}) then {
 		if (s_player_lockvault < 0) then {
-			s_player_lockvault = player addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\vault_lock.sqf",_cursorTarget, 0, false, true];
-		};
-		if (s_player_packvault < 0) then {
-			s_player_packvault = player addAction [format["<t color='#ff0000'>%1</t>",format[localize "STR_EPOCH_ACTIONS_PACK",_text]], "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true];
+			s_player_lockvault = player addAction [format[localize 'STR_EPOCH_ACTIONS_LOCK',_text], '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_lockStorage.sqf',_cursorTarget, 0, false, true];
 		};
 		if (s_player_changeVaultCode < 0 && (_characterID == dayz_combination || _isOwner)) then {
 			s_player_changeVaultCode = player addAction [format[localize "STR_BUILD_CHANGE_CODE_ACTION",_text], "\z\addons\dayz_code\functions\build\DZE_fnc_changeCode.sqf",_cursorTarget, 0, false, true];
 		};
 	} else {
-		player removeAction s_player_packvault;
-		s_player_packvault = -1;
 		player removeAction s_player_lockvault;
 		s_player_lockvault = -1;
 		player removeAction s_player_changeVaultCode;
@@ -1168,8 +1168,6 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	s_player_followdog = -1;
 	player removeAction s_player_unlockvault;
 	s_player_unlockvault = -1;
-	player removeAction s_player_packvault;
-	s_player_packvault = -1;
 	player removeAction s_player_lockvault;
 	s_player_lockvault = -1;
 	player removeAction s_player_information;

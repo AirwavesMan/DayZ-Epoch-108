@@ -37565,6 +37565,14 @@
 			<Dutch>%1 verwijderd.</Dutch>
 			<Czech>%1 odstraněn.</Czech>
 		</Key>
+		<Key ID="STR_BUILD_REMOVE_STORAGE_CURRENCY">
+			<English>The %1 contained %2 %3. The %3 was transferred to you.</English>
+			<German>In %1 befanden sich %2 %3. Die %3 wurden dir übertragen.</German>
+			<Russian>В %1 находилось %2 %3. Средства были переданы вам.</Russian>
+			<Dutch>De %1 bevatte %2 %3. De %3 is aan je overgedragen.</Dutch>
+			<French>Le conteneur %1 contenait %2 %3. Les %3 vous ont été transférés.</French>
+			<Czech>V objektu %1 bylo %2 %3. Měna %3 vám byla převedena.</Czech>
+		</Key>
 		<Key ID="STR_BUILD_REMOVE_NO_PARTS">
 			<English>No parts were found.</English>
 			<German>Keine Teile gefunden.</German>

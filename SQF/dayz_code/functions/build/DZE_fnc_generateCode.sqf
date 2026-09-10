@@ -38,7 +38,7 @@ local _codeNotAllowed = false;
 local _notAllowedCode = '';
 
 dayz_combination = '';
-dayz_selectedVault = objNull;
+DZE_selectedStorage = objNull;
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 

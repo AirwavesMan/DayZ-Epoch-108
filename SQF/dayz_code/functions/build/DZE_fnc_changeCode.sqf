@@ -87,7 +87,7 @@ if (_dialog == '') exitWith {
 if (_isStorage) then {
 	_backupCode = dayz_combination;
 	dayz_combination = '';
-	dayz_selectedVault = objNull;
+	DZE_selectedStorage = objNull;
 } else {
 	DZE_topCombo = 0;
 	DZE_midCombo = 0;

@@ -36,10 +36,14 @@ if !([_this,'server_removeObject',_positionASL,_player,_clientKey] call server_v
 
 local _playerUID = getPlayerUID _player;
 local _playerName = _player call DZE_fnc_getNamePlayer;
+local _type = typeOf _object;
+
+if (_type in DZE_LockedStorage) exitWith {
+	diag_log format ['[Server Debug]: [server_removeObject]: Warning: Rejected removal of locked storage by %1 (%2): %3',_playerName,_playerUID,_type];
+};
 
 local _objectID = _object getVariable ['ObjectID','0'];
 local _objectUID = _object getVariable ['ObjectUID','0'];
-local _type = typeOf _object;
 local _databaseID = _objectUID;
 local _queryType = 310;
 local _identifier = 'UID';
@@ -50,15 +54,24 @@ if (parseNumber _objectID > 0) then {
 	_identifier = 'ID';
 };
 
+local _storedCoins = if (Z_SingleCurrency && {_type in DZE_MoneyStorageClasses}) then {_object getVariable ['cashMoney',0]} else {0};
+
 deleteVehicle _object;
 
 // Remove persistent objects from the database; transient objects have no database identifier.
 if (_databaseID != '0') then {
 	local _key = format ['CHILD:%1:%2:',_queryType,_databaseID];
 	_key call server_hiveWrite;
-	diag_log format ['DELETE: Player %1 (%2) deleted %3 with %4: %5',_playerName,_playerUID,_type,_identifier,_databaseID];
+	
+	diag_log format ['[Server Debug]: [server_removeObject]: Player %1 (%2) deleted %3 with %4: %5',_playerName,_playerUID,_type,_identifier,_databaseID];
+};
+
+if (_storedCoins > 0) then {
+	local _moneyVariable = ['cashMoney','globalMoney'] select Z_persistentMoney;
+	local _wealth = _player getVariable [_moneyVariable,0];
+	_player setVariable [_moneyVariable,_wealth + _storedCoins,true];
 };
 
 #ifdef DEBUG_SERVER_REMOVE_OBJECT
-	diag_log format ['[Server Debug]: [server_removeObject]: Deleted: %1 | Class: %2 | Database %3: %4',isNull _object,_type,_identifier,_databaseID];
+	diag_log format ['[Server Debug]: [server_removeObject]: Deleted: %1 | Class: %2 | Database %3: %4 | Returned coins: %5',isNull _object,_type,_identifier,_databaseID,_storedCoins];
 #endif

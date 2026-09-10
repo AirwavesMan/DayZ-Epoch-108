@@ -28,6 +28,7 @@ server_validateObjectWorldspace = compile preprocessFileLineNumbers '\z\addons\d
 //	Build 
 server_buildObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_buildObject.sqf";
 server_changeCode = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_changeCode.sqf";
+server_lockUnlockStorage = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\build\server_lockUnlockStorage.sqf';
 server_upgradeObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_upgradeObject.sqf";
 server_setDamageObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_setDamageObject.sqf";
 

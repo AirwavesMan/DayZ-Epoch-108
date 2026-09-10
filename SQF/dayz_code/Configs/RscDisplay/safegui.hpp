@@ -96,17 +96,52 @@
 /// Base Classes
 ///////////////////////////////////////////////////////////////////////////
 
-class SafeKeyPad
-{
-	idd = -1;
-	movingenable = 0;
+class DZE_KeypadDialog {
+	movingEnable = 0;
 	onLoad = "keypadCancel = true;";
-	onUnload = "if (keypadCancel) then {dayz_combination = ''; [] spawn keyPadReset;};";
+};
 
-	class Controls
-	{
-		class SafeKeyPadPic: RscPicture
-		{
+class DZE_StorageKeypadDialog: DZE_KeypadDialog {
+	idd = -1;
+	onUnload = "if (keypadCancel) then {dayz_combination = ''; [] spawn keyPadReset;};";
+};
+
+class DZE_SafeKeypadButton: RscButton {
+	idc = -1;
+	font = "Zeppelin33";
+	sizeEx = 0.05;
+	colorText[] = {0,0.6,1,1};
+	colorBackground[] = {0,0,0,0};
+	colorBackgroundActive[] = {0,0,0,0};
+};
+
+class DZE_ComboLockButton: RscButton {
+	idc = -1;
+	text = "";
+	style = ST_CENTER + ST_SHADOW;
+	colorText[] = {1,1,1,0};
+	colorDisabled[] = {1,1,1,0};
+	colorBackground[] = {1,1,1,0};
+	colorBackgroundDisabled[] = {1,1,1,0};
+	colorBackgroundActive[] = {1,1,1,0};
+	colorShadow[] = {1,1,1,0};
+	colorFocused[] = {1,1,1,0};
+	soundClick[] = {"",0.6,1};
+};
+
+class DZE_LockboxKeypadButton: DZE_ComboLockButton {
+	colorBackgroundActive[] = {1,1,1,0.1};
+	colorFocused[] = {1,1,1,0.1};
+};
+
+///////////////////////////////////////////////////////////////////////////
+/// Dialogs
+///////////////////////////////////////////////////////////////////////////
+
+class SafeKeyPad: DZE_StorageKeypadDialog {
+
+	class Controls {
+		class SafeKeyPadPic: RscPicture {
 			idc = -1;
 			text = "\z\addons\dayz_epoch\pictures\SafeKeyPad.paa";
 			x = 0.361701 * safezoneW + safezoneX;
@@ -114,212 +149,118 @@ class SafeKeyPad
 			w = 0.281637 * safezoneW;
 			h = 0.470087 * safezoneH;
 		};
-		class b1: RscButton
-		{
-			idc = -1;
+		class b1: DZE_SafeKeypadButton {
 			x = 0.444897 * safezoneW + safezoneX;
 			y = 0.39423 * safezoneH + safezoneY;
 			w = 0.0283751 * safezoneW;
 			h = 0.0490667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.05;
-			text="1";
-			colorText[] = {0,0.6,1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			action = "dayz_combination = dayz_combination + str(1);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			text = "1";
+			onButtonClick = "[1,false] call DZE_fnc_keypadInput";
 		};
-		class b4: RscButton
-		{
-			idc = -1;
+		class b4: DZE_SafeKeypadButton {
 			x = 0.444897 * safezoneW + safezoneX;
 			y = 0.441239 * safezoneH + safezoneY;
 			w = 0.0283751 * safezoneW;
 			h = 0.0490667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.05;
-			text="4";
-			colorText[] = {0,0.6,1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			action = "dayz_combination = dayz_combination + str(4);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			text = "4";
+			onButtonClick = "[4,false] call DZE_fnc_keypadInput";
 		};
-		class b7: RscButton
-		{
-			idc = -1;
+		class b7: DZE_SafeKeypadButton {
 			x = 0.444897 * safezoneW + safezoneX;
 			y = 0.488248 * safezoneH + safezoneY;
 			w = 0.0283751 * safezoneW;
 			h = 0.0490667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.05;
-			text="7";
-			colorText[] = {0,0.6,1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			action = "dayz_combination = dayz_combination + str(7);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			text = "7";
+			onButtonClick = "[7,false] call DZE_fnc_keypadInput";
 		};
-		class b2: RscButton
-		{
-			idc = -1;
+		class b2: DZE_SafeKeypadButton {
 			x = 0.487755 * safezoneW + safezoneX;
 			y = 0.39423 * safezoneH + safezoneY;
 			w = 0.0283751 * safezoneW;
 			h = 0.0490667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.05;
-			text="2";
-			colorText[] = {0,0.6,1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			action = "dayz_combination = dayz_combination + str(2);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			text = "2";
+			onButtonClick = "[2,false] call DZE_fnc_keypadInput";
 		};
-		class b8: RscButton
-		{
-			idc = -1;
+		class b8: DZE_SafeKeypadButton {
 			x = 0.487755 * safezoneW + safezoneX;
 			y = 0.488248 * safezoneH + safezoneY;
 			w = 0.0283751 * safezoneW;
 			h = 0.0490667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.05;
-			text="8";
-			colorText[] = {0,0.6,1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			action = "dayz_combination = dayz_combination + str(8);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			text = "8";
+			onButtonClick = "[8,false] call DZE_fnc_keypadInput";
 		};
-		class b5: RscButton
-		{
-			idc = -1;
+		class b5: DZE_SafeKeypadButton {
 			x = 0.487755 * safezoneW + safezoneX;
 			y = 0.441239 * safezoneH + safezoneY;
 			w = 0.0283751 * safezoneW;
 			h = 0.0490667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.05;
-			text="5";
-			colorText[] = {0,0.6,1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			action = "dayz_combination = dayz_combination + str(5);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			text = "5";
+			onButtonClick = "[5,false] call DZE_fnc_keypadInput";
 		};
-		class b3: RscButton
-		{
-			idc = -1;
+		class b3: DZE_SafeKeypadButton {
 			x = 0.530613 * safezoneW + safezoneX;
 			y = 0.39423 * safezoneH + safezoneY;
 			w = 0.0283751 * safezoneW;
 			h = 0.0490667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.05;
-			text="3";
-			colorText[] = {0,0.6,1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			action = "dayz_combination = dayz_combination + str(3);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			text = "3";
+			onButtonClick = "[3,false] call DZE_fnc_keypadInput";
 		};
-		class b6: RscButton
-		{
-			idc = -1;
+		class b6: DZE_SafeKeypadButton {
 			x = 0.530613 * safezoneW + safezoneX;
 			y = 0.441239 * safezoneH + safezoneY;
 			w = 0.0283751 * safezoneW;
 			h = 0.0490667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.05;
-			text="6";
-			colorText[] = {0,0.6,1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			action = "dayz_combination = dayz_combination + str(6);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			text = "6";
+			onButtonClick = "[6,false] call DZE_fnc_keypadInput";
 		};
-		class b9: RscButton
-		{
-			idc = -1;
+		class b9: DZE_SafeKeypadButton {
 			x = 0.530613 * safezoneW + safezoneX;
 			y = 0.488248 * safezoneH + safezoneY;
 			w = 0.0283751 * safezoneW;
 			h = 0.0490667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.05;
-			text="9";
-			colorText[] = {0,0.6,1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			action = "dayz_combination = dayz_combination + str(9);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			text = "9";
+			onButtonClick = "[9,false] call DZE_fnc_keypadInput";
 		};
-		class b0: RscButton
-		{
-			idc = -1;
+		class b0: DZE_SafeKeypadButton {
 			x = 0.487755 * safezoneW + safezoneX;
 			y = 0.535257 * safezoneH + safezoneY;
 			w = 0.0283751 * safezoneW;
 			h = 0.0490667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.05;			
-			text="0";
-			colorText[] = {0,0.6,1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			action = "dayz_combination = dayz_combination + str(0);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			text = "0";
+			onButtonClick = "[0,false] call DZE_fnc_keypadInput";
 		};
 		
-		class bcancel: RscButton
-		{
-			idc = -1;
+		class bcancel: DZE_SafeKeypadButton {
 			x = 0.444897 * safezoneW + safezoneX;
 			y = 0.545257 * safezoneH + safezoneY;
 			w = 0.0263751 * safezoneW;
 			h = 0.0440667 * safezoneH;
-			font = "Zeppelin33";
-			sizeEx=0.1;
-			text="*";
+			sizeEx = 0.1;
+			text = "*";
 			colorText[] = {1,0.1,0.1,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak; keypadCancel = true; ((ctrlParent (_this select 0)) closeDisplay 2);";
+			onButtonClick = "[_this select 0,false] call DZE_fnc_storageKeypadAction";
 		};
-		class benter: RscButton
-		{
-			idc = -1;
+		class benter: DZE_SafeKeypadButton {
 			x = 0.530613 * safezoneW + safezoneX;
 			y = 0.535257 * safezoneH + safezoneY;
 			w = 0.0263751 * safezoneW;
 			h = 0.0440667 * safezoneH;
 			font = "Zeppelin33Italic";
-			sizeEx=0.1;
-			text="#";
+			sizeEx = 0.1;
+			text = "#";
 			colorText[] = {0,1,0,1};
-			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0,0,0,0};
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak; keypadCancel = false; ((ctrlParent (_this select 0)) closeDisplay 2); if(!isNull dayz_selectedVault) then {dayz_selectedVault spawn player_unlockVault;};";
+			onButtonClick = "[_this select 0,true] call DZE_fnc_storageKeypadAction";
 		};
 	};
 };
 
 // SafeKeyPadTest
-class ComboLockUI
-{
+class ComboLockUI: DZE_KeypadDialog {
 	idd = 41144;
-	movingenable = 0;
-	onLoad = "keypadCancel = true;";
 	onUnload = "if (keypadCancel) then {DZE_Lock_Door = ''; [] spawn keyPadReset;};";
 
-	class Controls
-	{
-		class ComboLockUIPic: RscPicture
-		{
+	class Controls {
+		class ComboLockUIPic: RscPicture {
 			idc = -1;
 			text = "\z\addons\dayz_epoch\ui\combo_gui.paa";
 			x = 0;
@@ -327,8 +268,7 @@ class ComboLockUI
 			w = 1;
 			h = 1;
 		};
-		class top_combo: RscPicture
-		{
+		class top_combo: RscPicture {
 			idc = 17734;
 			text = "\z\addons\dayz_epoch\ui\top_0.paa";
 			x = 0.418883;
@@ -336,8 +276,7 @@ class ComboLockUI
 			w = 0.388564;
 			h = 0.161072;
 		};
-		class middle_combo: RscPicture
-		{
+		class middle_combo: RscPicture {
 			idc = 17735;
 			text = "\z\addons\dayz_epoch\ui\mid_0.paa";
 			x = 0.420213;
@@ -345,8 +284,7 @@ class ComboLockUI
 			w = 0.387234;
 			h = 0.161072;
 		};
-		class bottom_combo: RscPicture
-		{
+		class bottom_combo: RscPicture {
 			idc = 17736;
 			text = "\z\addons\dayz_epoch\ui\bot_0.paa";
 			x = 0.420212;
@@ -354,8 +292,7 @@ class ComboLockUI
 			w = 0.387234;
 			h = 0.180772;
 		};
-		class unlock_combo: RscPicture
-		{
+		class unlock_combo: RscPicture {
 			idc = 17737;
 			text = "\z\addons\dayz_epoch\ui\unlock_a.paa";
 			x = 0.219415;
@@ -363,8 +300,7 @@ class ComboLockUI
 			w = 0.199734;
 			h = 0.208353;
 		};
-		class exit_combo: RscPicture
-		{
+		class exit_combo: RscPicture {
 			idc = 17738;
 			text = "\z\addons\dayz_epoch\ui\exit_a.paa";
 			x = 0.863032;
@@ -373,107 +309,69 @@ class ComboLockUI
 			h = 0.0724192;
 		};
 
-		class main_combo: RscButton
-		{
-			idc = -1;
-			text = "";
-			style = "0x02 + 0x100";
-			colorText[] = {1,1,1,0};
-			colorDisabled[] = {1,1,1,0};
-			colorBackground[] = {1,1,1,0};
-			colorBackgroundDisabled[] = {1,1,1,0};
-			colorBackgroundActive[] = {1,1,1,0};
-			colorShadow[] = {1,1,1,0};
-			colorFocused[] = {1,1,1,0};
-			soundClick[] = {"",0.6,1};
-		};
-
-		class top_left: main_combo
-		{
-			idc = -1;
+		class top_left: DZE_ComboLockButton {
 			x = 0.43484;
 			y = 0.243893;
 			w = 0.1625;
 			h = 0.135461;
-			onButtonClick = "[17734,1,""top""] call player_changeCombo";
+			onButtonClick = "[17734,true,'top'] call DZE_fnc_comboLockInput";
 		};
-		class top_right: main_combo
-		{
-			idc = -1;
+		class top_right: DZE_ComboLockButton {
 			x = 0.660904;
 			y = 0.241923;
 			w = 0.147872;
 			h = 0.135461;
-			onButtonClick = "[17734,0,""top""] call player_changeCombo";
+			onButtonClick = "[17734,false,'top'] call DZE_fnc_comboLockInput";
 		};
-		class mid_left: main_combo
-		{
-			idc = -1;
+		class mid_left: DZE_ComboLockButton {
 			x = 0.43484;
 			y = 0.433018;
 			w = 0.1625;
 			h = 0.135461;
-			onButtonClick = "[17735,1,""mid""] call player_changeCombo";
+			onButtonClick = "[17735,true,'mid'] call DZE_fnc_comboLockInput";
 		};
-		class mid_right: main_combo
-		{
-			idc = -1;
+		class mid_right: DZE_ComboLockButton {
 			x = 0.659574;
 			y = 0.427108;
 			w = 0.153191;
 			h = 0.135461;
-			onButtonClick = "[17735,0,""mid""] call player_changeCombo";
+			onButtonClick = "[17735,false,'mid'] call DZE_fnc_comboLockInput";
 		};
-		class bottom_left: main_combo
-		{
-			idc = -1;
+		class bottom_left: DZE_ComboLockButton {
 			x = 0.4375;
 			y = 0.637904;
 			w = 0.1625;
 			h = 0.135461;
-			onButtonClick = "[17736,1,""bot""] call player_changeCombo";
+			onButtonClick = "[17736,true,'bot'] call DZE_fnc_comboLockInput";
 		};
-		class bottom_right: main_combo
-		{
-			idc = -1;
+		class bottom_right: DZE_ComboLockButton {
 			x = 0.658245;
 			y = 0.633964;
 			w = 0.155851;
 			h = 0.133491;
-			onButtonClick = "[17736,0,""bot""] call player_changeCombo";
+			onButtonClick = "[17736,false,'bot'] call DZE_fnc_comboLockInput";
 		};
-		class exit_combo_btn: main_combo
-		{
-			idc = -1;
+		class exit_combo_btn: DZE_ComboLockButton {
 			x = 0.827128;
 			y = 0.0153665;
 			w = 0.158511;
 			h = 0.153191;
-			onButtonClick = "keypadCancel = true; ((ctrlParent (_this select 0)) closeDisplay 2);";
+			onButtonClick = "[_this select 0,false] call DZE_fnc_comboLockAction";
 		};
-		class unlock_combo_btn: main_combo
-		{
-			idc = -1;
+		class unlock_combo_btn: DZE_ComboLockButton {
 			x = 0.218085;
 			y = 0.762017;
 			w = 0.201064;
 			h = 0.233964;
-			onButtonClick = "keypadCancel = false; if (!isNull dayz_selectedDoor) then {call player_unlockDoor;} else {((ctrlParent (_this select 0)) closeDisplay 2);};";
+			onButtonClick = "[_this select 0,true] call DZE_fnc_comboLockAction";
 		};
 	};
 };
 
 
-class KeypadUI
-{
-	idd = -1;
-	movingenable = 0;
-	onLoad = "keypadCancel = true;";
-	onUnload = "if (keypadCancel) then {dayz_combination = ''; [] spawn keyPadReset;};";
-	class Controls
-	{
-		class KeypadUIPic: RscPicture
-		{
+class KeypadUI: DZE_StorageKeypadDialog {
+	class Controls {
+		class KeypadUIPic: RscPicture {
 			idc = -1;
 			text = "\z\addons\dayz_epoch\ui\lockbox_gui.paa";
 			x = 0.0492023;
@@ -481,177 +379,118 @@ class KeypadUI
 			w = 0.902925;
 			h = 0.98818;
 		};
-		class main_button: RscButton
-		{
-			idc = -1;
-			text = "";
-			style = "0x02 + 0x100";
-			colorText[] = {1,1,1,0};
-			colorDisabled[] = {1,1,1,0};
-			colorBackground[] = {1,1,1,0};
-			colorBackgroundDisabled[] = {1,1,1,0};
-			colorBackgroundActive[] = {1,1,1,0.1};
-			colorShadow[] = {1,1,1,0};
-			colorFocused[] = {1,1,1,0.1};
-			soundClick[] = {"",0.6,1};
-		};
-		class red_button: main_button
-		{
-			idc = -1;
+		class red_button: DZE_LockboxKeypadButton {
 			x = 0.171543;
 			y = 0.115839;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(100);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[100,true] call DZE_fnc_keypadInput";
 		};
-		class green_button: main_button
-		{
-			idc = -1;
+		class green_button: DZE_LockboxKeypadButton {
 			x = 0.343085;
 			y = 0.115839;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(101);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[101,true] call DZE_fnc_keypadInput";
 		};
-		class blue_button: main_button
-		{
-			idc = -1;
+		class blue_button: DZE_LockboxKeypadButton {
 			x = 0.514628;
 			y = 0.115839;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(102);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[102,true] call DZE_fnc_keypadInput";
 		};
-		class keypad_1: main_button
-		{
-			idc = -1;
+		class keypad_1: DZE_LockboxKeypadButton {
 			x = 0.174202;
 			y = 0.308905;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(1);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak"; 
+			onButtonClick = "[1,true] call DZE_fnc_keypadInput";
 		};
-		class keypad_2: main_button
-		{
-			idc = -1;
+		class keypad_2: DZE_LockboxKeypadButton {
 			x = 0.344415;
 			y = 0.310875;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(2);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[2,true] call DZE_fnc_keypadInput";
 		};
-		class keypad_3: main_button
-		{
-			idc = -1;
+		class keypad_3: DZE_LockboxKeypadButton {
 			x = 0.515957;
 			y = 0.312845;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(3);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[3,true] call DZE_fnc_keypadInput";
 		};
-		class keypad_4: main_button
-		{
-			idc = -1;
+		class keypad_4: DZE_LockboxKeypadButton {
 			x = 0.178192;
 			y = 0.50788;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(4);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[4,true] call DZE_fnc_keypadInput";
 		};
-		class keypad_5: main_button
-		{
-			idc = -1;
+		class keypad_5: DZE_LockboxKeypadButton {
 			x = 0.344415;
 			y = 0.50788;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(5);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[5,true] call DZE_fnc_keypadInput";
 		};
-		class keypad_6: main_button
-		{
-			idc = -1;
+		class keypad_6: DZE_LockboxKeypadButton {
 			x = 0.517287;
 			y = 0.50985;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(6);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[6,true] call DZE_fnc_keypadInput";
 		};
-		class keypad_7: main_button
-		{
-			idc = -1;
+		class keypad_7: DZE_LockboxKeypadButton {
 			x = 0.179521;
 			y = 0.700946;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(7);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[7,true] call DZE_fnc_keypadInput";
 		};
-		class keypad_8: main_button
-		{
-			idc = -1;
+		class keypad_8: DZE_LockboxKeypadButton {
 			x = 0.344415;
 			y = 0.700946;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(8);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[8,true] call DZE_fnc_keypadInput";
 		};
-		class keypad_9: main_button
-		{
-			idc = -1;
+		class keypad_9: DZE_LockboxKeypadButton {
 			x = 0.518617;
 			y = 0.704886;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(9);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[9,true] call DZE_fnc_keypadInput";
 		};
-		class keypad_0: main_button
-		{
-			idc = -1;
+		class keypad_0: DZE_LockboxKeypadButton {
 			x = 0.692819;
 			y = 0.704886;
 			w = 0.126596;
 			h = 0.153191;
-			action = "dayz_combination = dayz_combination + str(0);";
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
+			onButtonClick = "[0,true] call DZE_fnc_keypadInput";
 		};
 		
-		class kpbcancel: main_button
-		{
-			idc = -1;
+		class kpbcancel: DZE_LockboxKeypadButton {
 			x = 0.68617;
 			y = 0.312845;
 			w = 0.126596;
 			h = 0.153191;
-			onButtonClick = "keypadCancel = true; [player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 2);";
+			onButtonClick = "[_this select 0,false] call DZE_fnc_storageKeypadAction";
 		};
-		class kpbcancel2: main_button
-		{
-			idc = -1;
+		class kpbcancel2: DZE_LockboxKeypadButton {
 			x = 0.69016;
 			y = 0.50985;
 			w = 0.126596;
 			h = 0.153191;
-			onButtonClick = "keypadCancel = true; [player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 2);";
+			onButtonClick = "[_this select 0,false] call DZE_fnc_storageKeypadAction";
 		};
-		class kpbenter: main_button
-		{
-			idc = -1;
+		class kpbenter: DZE_LockboxKeypadButton {
 			x = 0.6875;
 			y = 0.121749;
 			w = 0.126596;
 			h = 0.153191;
-			onButtonClick = "keypadCancel = false; [player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 2); if(!isNull dayz_selectedVault) then {dayz_selectedVault spawn player_unlockVault;};";
+			onButtonClick = "[_this select 0,true] call DZE_fnc_storageKeypadAction";
 		};
 	};
 };
