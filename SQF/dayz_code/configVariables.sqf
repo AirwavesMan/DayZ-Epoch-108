@@ -208,6 +208,7 @@ if (!isDedicated) then {
 	DZE_LockedDoorLimit = 0; // Maximum locked doors per base. Use 0 to disable.
 	DZE_LockedStorageLimit = 0; // Maximum lockable storage containers per base. Currently unlocked containers are counted. Use 0 to disable.
 	DZE_OpenGearLimit = 0; // Maximum buildable objects with open gear per base. Use 0 to disable.
+	DZE_StaticWeaponLimit = 0; // Maximum static weapons per base. Classes listed in DZE_StaticWeapons are counted. Use 0 to disable.
 	DZE_RestrictedBuildingZones	= []; // [["Balota Airfield", [5158.72, 2518.75, 0], 600]];	// [["description", [position], distance], ["description", [position], distance], ... ];
 	DZE_BlacklistedBuildings = [];	// [["Fire Station", "Land_a_stationhouse", 250]];	// [["description", "className", distance], ["description", "className", distance], ... ];
 	DZE_buildOnWater = true; // Allow building in or over sea water. Note: Sea level will change between low tide and high tide and may cause base flooding. This does not affect inland ponds, dams or lakes.

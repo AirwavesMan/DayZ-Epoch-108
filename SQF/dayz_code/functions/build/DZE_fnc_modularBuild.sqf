@@ -48,7 +48,7 @@ local _text		= getText  (_cfgM >> 'displayName');
 local _cfgV		= configFile >> 'CfgVehicles' >> _className;
 local _isAdmin		= dayz_playerUID in DZE_baseManagementAdmins;
 local _isPole		= _className == DZE_Territory_Marker;
-local _requiresPlot	= getNumber (_cfgV >> 'DZE_bypassBase') == 0;
+local _requiresBase	= getNumber (_cfgV >> 'DZE_bypassBase') == 0;
 local _distance		= DZE_baseRadius select _isPole;
 local _reason		= '';
 local _format		= true;
@@ -125,7 +125,7 @@ _buildContext call DZE_fnc_buildPreviewSetup;
 	systemChat format ['_baseOffset: %1',_buildContext select BUILD_CONTEXT_BASE_OFFSET];
 #endif
 
-if (DZE_AxialHelper && _requiresPlot) then {
+if (DZE_AxialHelper && _requiresBase) then {
 	[_nearestPole,_distance,(_buildContext select BUILD_CONTEXT_HELPERS)] call DZE_fnc_buildAxialHelper;
 };
 
@@ -195,7 +195,7 @@ _buildContext set [BUILD_CONTEXT_VECTORING_ENABLED,_vectoringEnabled];
 _buildContext set [BUILD_CONTEXT_SNAPPING_ENABLED,_snappingEnabled];
 _buildContext set [BUILD_CONTEXT_SNAP_SESSION,_snapSession];
 
-local _distFromPlot = ['-','0'] select !isNull _nearestPole;
+local _distFromBase = ['-','0'] select !isNull _nearestPole;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -227,7 +227,7 @@ local _keyArray =
 	{[_this] call DZE_fnc_vectorChangeDegree},	// MINUS/EQUALS
 	{[_this,_object,_className,_objectHelper,_snapTabMax] call DZE_fnc_snapSelect},	// TAB/SHIFT-TAB
 	{_buildContext call DZE_fnc_buildTerrainAlign},	// T
-	{if (_requiresPlot) then {[_nearestPole] call DZE_fnc_baseToggleMarkers}},	// P
+	{if (_requiresBase) then {[_nearestPole] call DZE_fnc_baseToggleMarkers}},	// P
 	{				// F
 		if (r_drag_sqf || {r_player_unconscious}) exitWith {};
 
@@ -257,7 +257,7 @@ local _keyQueueHead = 0;
 local _undergroundValidationKeys = [BUILD_MOVE,BUILD_ROTATE2D,BUILD_ROTATE3D,BUILD_TERRAIN_ALIGN,BUILD_VECTOR_RESET];
 BUILD_KEY_QUEUE = [];
 BUILD_STAGE	= BUILD_HOTKEYS_ACTIVE;
-[_distFromPlot,_distance,_snappingEnabled,_vectoringEnabled,_isStaticWeapon,_snapList,_object] spawn DZE_fnc_snapBuilding;
+[_distFromBase,_distance,_snappingEnabled,_vectoringEnabled,_isStaticWeapon,_snapList,_object] spawn DZE_fnc_snapBuilding;
 
 local _modelNewASL = ORIGIN;
 

@@ -5,10 +5,10 @@
 //	Description:	Displays the current snap-building helper panel during object placement.
 //	Groups:		Build, Snap Building
 //
-//	Syntax:		[distFromPlot, radius, snappingEnabled, vectoringEnabled, isStaticWeapon, snapList, object] spawn DZE_fnc_snapBuilding
+//	Syntax:		[distFromBase, radius, snappingEnabled, vectoringEnabled, isStaticWeapon, snapList, object] spawn DZE_fnc_snapBuilding
 //
-//	Parameters:	distFromPlot: String - Plot-distance availability state
-//			radius: Number - Plot radius
+//	Parameters:	distFromBase: String - Base-distance availability state
+//			radius: Number - Base radius
 //			snappingEnabled: Boolean - Whether snapping is available
 //			vectoringEnabled: Boolean - Whether vector rotation is available
 //			isStaticWeapon: Boolean - Whether the object is a static weapon
@@ -36,7 +36,7 @@
 	[M] Arrow Keys [Pitch / Bank] [Move X/Y]
 **/
 
-local _distFromPlot	= p0;
+local _distFromBase	= p0;
 local _radius		= p1;
 local _snappingEnabled	= p2;
 local _vectoringEnabled	= p3;
@@ -111,7 +111,7 @@ local _H2 = _OBR + localize 'STR_SNAPPING_KEY_ESCAPE' + _BRW					+ localize 'STR
 	_OBR + localize 'STR_SNAPPING_KEY_SPACE_BAR' + _BRW						+ localize 'STR_SNAPPING_HELP_BUILD'		+ _END;
 
 local _distance = 0;
-if (_distFromPlot != '0') then {
+if (_distFromBase != '0') then {
 	_distance	= _na;
 	_radius		= _na;
 } else {
@@ -146,11 +146,11 @@ while {BUILD_STAGE == BUILD_HOTKEYS_ACTIVE} do {
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//
-		//					Distance From Plot
+		//					Distance From Base
 		//
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		if (_distFromPlot == '0') then {
+		if (_distFromBase == '0') then {
 
 			_distance = [DZE_buildDistanceFromBase, 1] call BIS_fnc_cutDecimals;
 

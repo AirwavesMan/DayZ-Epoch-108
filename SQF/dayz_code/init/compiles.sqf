@@ -757,6 +757,7 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_buildValidationRoad);		// Rejects final preview overlap with roads.
 	FUNCTION(DZE_fnc_buildValidationSafeZone);	// Rejects configured classes near safe zones.
 	FUNCTION(DZE_fnc_buildValidationState);		// Validates the player's general build state.
+	FUNCTION(DZE_fnc_buildValidationStaticWeaponLimit); // Enforces the configured static-weapon limit inside a base.
 	FUNCTION(DZE_fnc_buildValidationTools);		// Validates the required tools and items.
 	FUNCTION(DZE_fnc_buildValidationTrader);		// Rejects building near traders.
 	FUNCTION(DZE_fnc_buildValidationWater);		// Rejects building over sea water when disabled.

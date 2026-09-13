@@ -49,9 +49,9 @@ local _buildValidationContext = [
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 /**
-local _fnc_buildNeedsPlot = {
+local _fnc_buildNeedsBase = {
 
-	// [_nearestPole, _requiresPlot, _distance]
+	// [_nearestPole, _requiresBase, _distance]
 	if (isNull (p0) && {p1}) exitWith {
 
 		format [localize 'STR_BASE_BUILD_BASE_REQUIRED',p2]
@@ -80,7 +80,7 @@ if (_isAdmin) then {
 		addArray(_buildStage1,DZE_fnc_buildValidationExistingBase);
 		addArray(_buildStage2,DZE_fnc_buildValidationExistingBase);
 	} else {
-		if (_requiresPlot) then { // _inRadius
+		if (_requiresBase) then { // _inRadius
 			addArray(_buildStage1,DZE_fnc_buildValidationNearestBase);	// Sets the nearest base in the validation context.
 			addArray(_buildStage1,DZE_fnc_buildValidationBaseAccess);
 			addArray(_buildStage2,DZE_fnc_buildValidationBaseDistance);
@@ -98,6 +98,7 @@ if (_isAdmin) then {
 	addArray(_buildStage1,DZE_fnc_buildValidationLockedDoorLimit);
 	addArray(_buildStage1,DZE_fnc_buildValidationLockedStorageLimit);
 	addArray(_buildStage1,DZE_fnc_buildValidationOpenGearLimit);
+	addArray(_buildStage1,DZE_fnc_buildValidationStaticWeaponLimit);
 	addArray(_buildStage1,DZE_fnc_buildValidationObjectLimit);
 	addArray(_buildStage1,DZE_fnc_buildValidationRestrictedZone);
 	addArray(_buildStage1,DZE_fnc_buildValidationBlacklisted);
@@ -117,6 +118,7 @@ if (_isAdmin) then {
 	addArray(_buildStage3,DZE_fnc_buildValidationLockedDoorLimit);
 	addArray(_buildStage3,DZE_fnc_buildValidationLockedStorageLimit);
 	addArray(_buildStage3,DZE_fnc_buildValidationOpenGearLimit);
+	addArray(_buildStage3,DZE_fnc_buildValidationStaticWeaponLimit);
 	addArray(_buildStage3,DZE_fnc_buildValidationObjectLimit);
 	addArray(_buildStage3,DZE_fnc_buildValidationRestrictedZone);
 	addArray(_buildStage3,DZE_fnc_buildValidationBlacklisted);
