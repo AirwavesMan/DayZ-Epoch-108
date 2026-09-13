@@ -155,7 +155,7 @@ if (isServer) then {
 	};
 	
 	// Static Weapon Base Access
-	DZE_StaticWeaponBaseCheck = false; // Limits the use of static weapons within the base radius to entries in the base friend list.
+	DZE_baseStaticWeaponCheck = true; // Limits the use of static weapons within the base radius to entries in the base friend list.
 
 	DZE_fireMaximumBurnTime = 60*60; // Maximum remaining burn time for fireplaces: Default: 60mins
 };

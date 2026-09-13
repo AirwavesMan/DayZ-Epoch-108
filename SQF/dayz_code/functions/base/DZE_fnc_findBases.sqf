@@ -13,14 +13,14 @@
 //
 //	Return Value:	Array - [searchDistance, baseCount, nearestBase]
 //
-//	Called by:	Client
+//	Called by:	Client and Server
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 //#define DEBUG_DZE_FNC_FIND_BASES
 
 #ifdef DEBUG_DZE_FNC_FIND_BASES
-	diag_log format ['[Client Debug]: [DZE_fnc_findBases]: Function called with argumentes: %1',_this];
+	diag_log format ['[%1 Debug]: [DZE_fnc_findBases]: Function called with arguments: %2',['Client','Server'] select isServer,_this];
 #endif
 
 local _object = _this select 0;
@@ -33,7 +33,7 @@ if (_checkMinimumDistance) then {
 
 if (isNull _object) exitWith {
 	#ifdef DEBUG_DZE_FNC_FIND_BASES
-		diag_log format ['[Client Debug]: [DZE_fnc_findBases]: Warning: Invalid object: %1',_object];
+		diag_log format ['[%1 Debug]: [DZE_fnc_findBases]: Warning: Invalid object: %2',['Client','Server'] select isServer,_object];
 	#endif
 	[_searchDistance,0,objNull]
 };
@@ -49,7 +49,7 @@ if (_baseCount > 0) then {
 local _result = [_searchDistance,_baseCount,_nearestBase];
 
 #ifdef DEBUG_DZE_FNC_FIND_BASES
-	diag_log format ['[Client Debug]: [DZE_fnc_findBases]: Search result: %1',_result];
+	diag_log format ['[%1 Debug]: [DZE_fnc_findBases]: Search result: %2',['Client','Server'] select isServer,_result];
 #endif
 
 _result

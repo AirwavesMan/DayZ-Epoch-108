@@ -104,6 +104,10 @@ if ([_typeObject,'server_buildObject'] call server_verifyObject) then {
 		_key call server_hiveWrite;
 	};
 
+	if (DZE_baseStaticWeaponCheck && {_typeObject isKindOf 'StaticWeapon' || {_typeObject in DZE_StaticWeapons}}) then {
+		_object addEventHandler ['GetIn',{_this call server_eh_getIn_staticWeapon;}];
+	};
+
 	#ifdef DEBUG_BUILD_OBJECT
 		diag_log format['[Server Debug]: [Build Object]: Player %1 (%2) created %3 with Object UID: %4, CharacterID: %5, @%6',_playerName,_playerUID,_typeObject,_objectUID,_characterID,(_worldspace select 0) call server_positionToLocation];
 	#endif

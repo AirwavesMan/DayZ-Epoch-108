@@ -142,8 +142,8 @@ if (vehicle _character != _character) then {
 
 if (count _this > 4) then { //calling from player_onDisconnect
 	if (_this select 4) then { //combat logged
-		_medical set [1, true]; //set unconcious to true
-		_medical set [10, 150]; //combat timeout
+		//_medical set [1, true]; //set unconcious to true
+		//_medical set [10, 150]; //combat timeout
 		//_character setVariable ["NORRN_unconscious",true,true]; // Set status to unconscious
 		//_character setVariable ["unconsciousTime",150,true]; // Set knock out timer to 2 minutes 30 seconds
 		//_character setVariable ["USEC_injured",true]; // Set status to bleeding

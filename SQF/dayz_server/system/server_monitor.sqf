@@ -2,7 +2,7 @@
 
 private ["_legacyStreamingMethod","_hiveLoaded","_timeStart","_i","_key","_result","_shutdown","_res","_myArray","_val","_status","_fileName","_lastFN",
 		"_VehicleQueue","_vQty","_idKey","_type","_ownerID","_worldspace","_inventory","_damage","_storageMoney","_vector","_vecExists","_ownerPUID",
-		"_wsCount","_ws2TN","_ws3TN","_dir","_posATL","_wsDone","_object","_doorLocked","_isPlot","_isTrapItem","_isSafeObject",
+		"_wsCount","_ws2TN","_ws3TN","_dir","_posATL","_wsDone","_object","_doorLocked","_isBase","_isTrapItem","_isSafeObject",
 		"_weaponcargo","_magcargo","_backpackcargo","_weaponqty","_magqty","_backpackqty","_lockable","_codeCount","_codeCount","_isTrapItem","_xTypeName","_x1",
 		"_isAir","_selection","_dam","_hitpoints","_fuel","_pos"];
 
@@ -225,7 +225,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		};
 
 		_doorLocked = _type in DZE_DoorsLocked;
-		_isPlot = _type == DZE_Territory_Marker;
+		_isBase = _type == DZE_Territory_Marker;
 
 		// prevent immediate hive write when vehicle parts are set up
 		_object setVariable ["lastUpdate",diag_ticktime];
@@ -247,7 +247,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 			clearWeaponCargoGlobal _object;
 			clearMagazineCargoGlobal _object;
 			clearBackpackCargoGlobal _object;
-			if( (count _inventory > 0) && !_isPlot && !_doorLocked) then {
+			if( (count _inventory > 0) && !_isBase && !_doorLocked) then {
 				if (_type in DZE_LockedStorage) then {
 					// Do not send big arrays over network! Only server needs these
 					_object setVariable ["WeaponCargo",(_inventory select 0),false];
@@ -265,7 +265,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 					{_object addBackpackCargoGlobal [_x, _backpackqty select _foreachindex];} foreach _backpackcargo;
 				};
 			} else {
-				if (_isPlot) then {
+				if (_isBase) then {
 					_object setVariable ["baseFriends", _inventory, true];
 				};
 				if (DZE_doorManagement && _doorLocked) then {
@@ -296,34 +296,8 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		if (_type isKindOf "StaticWeapon" || {_type in DZE_StaticWeapons}) then {
 			[_object,DZE_clearStaticAmmo,false] call fn_vehicleAddons;
 			
-			if (DZE_StaticWeaponBaseCheck) then {
-				_object addEventHandler ["GetIn", {
-					local _weapon = _this select 0;
-					local _player = _this select 2;
-					local _nearPlots = _weapon nearObjects [DZE_Territory_Marker,DZE_baseRadius select 0];
-					if (count _nearPlots > 0) then {
-						local _nearestPlot = _nearPlots select 0;
-						local _baseFriends = _nearestPlot getVariable "baseFriends"; // owner is index 0.
-						local _playerUID = getPlayerUID _player;
-						local _isPlotFriend = false;
-						{
-							if((_x select 0) == _playerUID) exitWith {_isPlotFriend = true;};
-						} count _baseFriends;
-						
-						if (!_isPlotFriend) then {
-							// "eject" action doesn't work on the static weapons for some reason.
-							moveOut _player;
-							
-							/* uncomment to log the offender to the server rpt.
-							local _plotOwner = _baseFriends select 0;
-							local _plotOwnerUID = _plotOwner select 0;
-							local _plotOwnerName = _plotOwner select 1;
-							_plotOwnerName = [_plotOwnerName, (toString _plotOwnerName)] select (typeName _plotOwnerName == "ARRAY");
-							diag_log format ["Player [%1, %2] ejected from %3 on plot belonging to [%4, %5]",_player call DZE_fnc_getNamePlayer, _playerUID, (typeOf _weapon), _plotOwnerUID, _plotOwnerName];
-							*/
-						};
-					};
-				}];
+			if (DZE_baseStaticWeaponCheck) then {
+				_object addEventHandler ['GetIn',{_this call server_eh_getIn_staticWeapon;}];
 			};
 		};
 		
