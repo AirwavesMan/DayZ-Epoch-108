@@ -1,12 +1,12 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//	DZE_fnc_buildValidationNearestPlot
+//	DZE_fnc_buildValidationNearestBase
 //
 //	Description:	Finds exactly one base near the player or the final preview object and stores
 //			it in the validation context.
 //	Groups:		Build, Validation
 //
-//	Syntax:		validationContext call DZE_fnc_buildValidationNearestPlot
+//	Syntax:		validationContext call DZE_fnc_buildValidationNearestBase
 //
 //	Parameters:	validationContext: Array - Shared build-validation state
 //
@@ -15,12 +15,12 @@
 //	Called by:	Client
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//#define DEBUG_DZE_FNC_BUILD_VALIDATION_NEAREST_PLOT
+//#define DEBUG_DZE_FNC_BUILD_VALIDATION_NEAREST_BASE
 
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
-#ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_NEAREST_PLOT
-	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationNearestPlot]: Function called with arguments: %1',_this];
+#ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_NEAREST_BASE
+	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationNearestBase]: Function called with arguments: %1',_this];
 #endif
 
 local _distance = _this select BUILD_VALIDATION_DISTANCE;

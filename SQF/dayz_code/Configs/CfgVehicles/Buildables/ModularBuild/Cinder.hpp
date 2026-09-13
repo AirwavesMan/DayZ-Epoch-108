@@ -48,6 +48,10 @@ class DZE_CinderWallWindow: DZE_ModularDoor_Base {
 	armor = 3400;
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_wall_win\h4_cinder_wall_win.p3d";
 	displayName = $STR_EPOCH_CINDERBLOCKWALLWINDOW;
+	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_WINDOW";
+	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_WINDOW";
+	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCK_WINDOW";
+	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCK_WINDOW";
 	//GhostPreview = "DZE_CinderWallWindow_Preview";
 	DZE_upgradeBuilding[] = {"DZE_CinderWallWindowLocked",{},{{"ItemComboLock",1}}};
 
@@ -65,22 +69,6 @@ class DZE_CinderWallWindow: DZE_ModularDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_BLD_ACTIONS_OPEN_WINDOW;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""Open_door"" < 0.5";
-			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_CLOSE_WINDOW;
-			condition = "this animationPhase ""Open_door"" >= 0.5";
-			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
-		};
-	};
 
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
@@ -95,6 +83,10 @@ class DZE_CinderWallWindowLocked: DZE_CinderWallDoorLocked_Base {
 	armor = 3400;
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_wall_win\h4_cinder_wall_win_locked.p3d";
 	displayName = $STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED;
+	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_WINDOW";
+	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_WINDOW";
+	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCK_WINDOW";
+	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCK_WINDOW";
 	//GhostPreview = "DZE_CinderWallWindow_Preview";
 	downgradeBuilding[] = {"DZE_CinderWallWindow",{{"ItemComboLock",1}}};
 
@@ -118,40 +110,6 @@ class DZE_CinderWallWindowLocked: DZE_CinderWallDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_BLD_ACTIONS_OPEN_WINDOW;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_CLOSE_WINDOW;
-			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_LOCK_WINDOW;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_UNLOCK_WINDOW;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
-			statement = "this animate [""Open_latch"", 1]";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_BLD_ACTIONS_UNLOCK_WINDOW;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinderwall_window_locked_kit";
 		DZE_refundArray[] = {};
@@ -222,6 +180,10 @@ class DZE_Concrete_Bunker: DZE_CinderWallDoor_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\bunker\bunker_01.p3d";
 	DZE_offset[] = {0,4,0};
 	displayName = $STR_EPOCH_CINDERBUNKER;
+	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_BUNKER";
+	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_BUNKER";
+	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCK_BUNKER";
+	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCK_BUNKER";
 	DZE_upgradeBuilding[] = {"DZE_Concrete_Bunker_Locked",{},{{"ItemComboLock",1}}};
 	//GhostPreview = "DZE_Concrete_Bunker_Preview";
 	class AnimationSources {
@@ -238,22 +200,6 @@ class DZE_Concrete_Bunker: DZE_CinderWallDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_BLD_ACTIONS_OPEN_BUNKER;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""raise_all"" < 0.5)";
-			statement = "this animate [""raise_all"", 1];this animate [""rollers"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_CLOSE_BUNKER;
-			condition = "(this animationPhase ""raise_all"" >= 0.5)";
-			statement = "this animate [""raise_all"", 0];this animate [""rollers"", 0];";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_bunker_kit";
 		DZE_refundArray[] = {{{"full_cinder_wall_kit",3},{"ItemConcreteBlock",5},{"equip_metal_sheet",3},{"ItemScrews",1}}};
@@ -265,6 +211,10 @@ class DZE_Concrete_Bunker_Locked: DZE_CinderWallDoorLocked_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\bunker\bunker_01_locked.p3d";
 	DZE_offset[] = {0,4,0};
 	displayName = $STR_EPOCH_CINDERBUNKERLOCKED;
+	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_BUNKER";
+	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_BUNKER";
+	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCK_BUNKER";
+	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCK_BUNKER";
 	//GhostPreview = "DZE_Concrete_Bunker_Preview";
 	downgradeBuilding[] = {"DZE_Concrete_Bunker",{{"ItemComboLock",1}}};
 
@@ -288,40 +238,6 @@ class DZE_Concrete_Bunker_Locked: DZE_CinderWallDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_BLD_ACTIONS_OPEN_BUNKER;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""raise_all"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""raise_all"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_CLOSE_BUNKER;
-			condition = "(this animationPhase ""raise_all"" == 1) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""raise_all"", 0];";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_LOCK_BUNKER;
-			condition = "(this animationPhase ""raise_all"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_UNLOCK_BUNKER;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""raise_all"" == 0) and (this animationPhase ""Open_latch"" == 0)";
-			statement = "this animate [""Open_latch"", 1]";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_BLD_ACTIONS_UNLOCK_BUNKER;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_bunker_kit_locked";
 		DZE_refundArray[] = {};

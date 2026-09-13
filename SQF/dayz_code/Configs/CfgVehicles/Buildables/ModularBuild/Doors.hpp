@@ -1,5 +1,9 @@
 class DZE_ModularDoor_Base: DZE_Modular_Base {
 	vehicleClass = "DayZ Epoch 1071 Modular Door";
+	DZE_doorOpenText = "$STR_DN_OUT_O_DOOR";
+	DZE_doorCloseText = "$STR_DN_OUT_C_DOOR";
+	DZE_doorLockText = "$STR_EPOCH_DOORS_LOCK";
+	DZE_doorUnlockText = "$STR_EPOCH_DOORS_UNLOCK";
 };
 
 class DZE_Land_WoodDoor_Base: DZE_ModularDoor_Base {
@@ -71,22 +75,6 @@ class DZE_Land_WoodDoor: DZE_Land_WoodDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""Open_door"" < 0.5";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "this animationPhase ""Open_door"" >= 0.5";
-			statement = "this animate [""Open_door"", 0];";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallWithDoor";
 		DZE_refundArray[] = {{{"ItemWoodWallDoor",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
@@ -114,40 +102,6 @@ class DZE_Land_WoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
-			statement = "this animate [""Open_door"", 0]";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_LOCK;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_hinge"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
-			statement = "this animate [""Open_hinge"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallWithDoorLocked";
 		DZE_refundArray[] = {};
@@ -169,22 +123,6 @@ class DZE_Land_LargeWoodDoor: DZE_Land_WoodDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""Open_door"" < 0.5";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "this animationPhase ""Open_door"" >= 0.5";
-			statement = "this animate [""Open_door"", 0]";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallWithDoorLg";
 		DZE_refundArray[] = {{{"ItemWoodWallDoorLg",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
@@ -212,40 +150,6 @@ class DZE_Land_LargeWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
-			statement = "this animate [""Open_door"", 0]";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_LOCK;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_hinge"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
-			statement = "this animate [""Open_hinge"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallWithDoorLgLocked";
 		DZE_refundArray[] = {};
@@ -267,22 +171,6 @@ class DZE_Land_GarageWoodDoor: DZE_Land_WoodDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""Open_door"" < 0.5";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "this animationPhase ""Open_door"" >= 0.5";
-			statement = "this animate [""Open_door"", 0]";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallGarageDoor";
 		DZE_refundArray[] = {{{"ItemWoodWallLg",1},{"PartWoodLumber",2}}};
@@ -310,40 +198,6 @@ class DZE_Land_GarageWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
-			statement = "this animate [""Open_door"", 0]";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_LOCK;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_hinge"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
-			statement = "this animate [""Open_hinge"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodWallGarageDoorLocked";
 		DZE_refundArray[] = {};
@@ -355,6 +209,10 @@ class DZE_Land_WoodGate: DZE_Land_WoodDoor_Base {
 	armor = 3200;
 	model = "\z\addons\dayz_epoch_v\base_building\wood\high_wood_garage\high_wood_garage.p3d";
 	displayName = $STR_EPOCH_WOODGATE;
+	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_GATE";
+	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_GATE";
+	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCKGATE";
+	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCKGATE";
 	//GhostPreview = "DZE_WoodGate_Preview";
 	DZE_upgradeBuilding[] = {"DZE_Land_WoodGateLocked",{},{{"ItemComboLock",1}}};
 
@@ -372,22 +230,6 @@ class DZE_Land_WoodGate: DZE_Land_WoodDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""Open_door"" < 0.5";
-			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_CLOSE_GATE;
-			condition = "this animationPhase ""Open_door"" >= 0.5";
-			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
-		};
-	};
 	
 
 	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
@@ -402,6 +244,10 @@ class DZE_Land_WoodGateLocked: DZE_Land_WoodDoorLocked_Base {
 	armor = 3200;
 	model = "\z\addons\dayz_epoch_v\base_building\wood\high_wood_garage\high_wood_garage_locked.p3d";
 	displayName = $STR_EPOCH_WOODGATELOCKED;
+	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_GATE";
+	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_GATE";
+	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCKGATE";
+	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCKGATE";
 	//GhostPreview = "DZE_WoodGate_Preview";
 	downgradeBuilding[] = {"DZE_Land_WoodGate",{{"ItemComboLock",1}}};
 
@@ -425,40 +271,6 @@ class DZE_Land_WoodGateLocked: DZE_Land_WoodDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_CLOSE_GATE;
-			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_LOCKGATE;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
-			statement = "this animate [""Open_latch"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	
 
 	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
@@ -489,22 +301,6 @@ class DZE_Land_WoodOpenTopGarageDoor: DZE_Land_WoodDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""doorl"" < 0.5";
-			statement = "this animate [""doorl"", 1];this animate [""doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "this animationPhase ""doorl"" >= 0.5";
-			statement = "this animate [""doorl"", 0];this animate [""doorR"", 0];";
-		};
-	};
 	
 
 	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
@@ -541,40 +337,6 @@ class DZE_Land_WoodOpenTopGarageLocked: DZE_Land_WoodDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""doorl"", 1];this animate [""doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "(this animationPhase ""doorl"" == 1) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""doorl"", 0];this animate [""doorR"", 0];";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_LOCK;
-			condition = "(this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 0)";
-			statement = "this animate [""Open_latch"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	
 
 	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
@@ -605,40 +367,6 @@ class DZE_CinderWallDoorLocked: DZE_CinderWallDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 0]";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_LOCK;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
-			statement = "this animate [""Open_latch"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_garage_kit_locked";
 		DZE_refundArray[] = {};
@@ -659,22 +387,6 @@ class DZE_CinderWallDoor: DZE_CinderWallDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""Open_door"" < 0.5";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "this animationPhase ""Open_door"" >= 0.5";
-			statement = "this animate [""Open_door"", 0]";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_garage_kit";
 		DZE_refundArray[] = {{{"cinder_garage_frame_kit",1},{"ItemTankTrap",3},{"ItemPole",3}}};
@@ -702,40 +414,6 @@ class DZE_CinderWallDoorSmallLocked: DZE_CinderWallDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 0]";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_LOCK;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
-			statement = "this animate [""Open_latch"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_door_kit_locked";
 		DZE_refundArray[] = {};
@@ -757,22 +435,6 @@ class DZE_CinderWallDoorSmall: DZE_CinderWallDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""Open_door"" < 0.5";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "this animationPhase ""Open_door"" >= 0.5";
-			statement = "this animate [""Open_door"", 0]";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_door_kit";
 		DZE_refundArray[] = {{{"cinder_door_frame_kit",1},{"ItemTankTrap",1},{"ItemPole",1}}};
@@ -784,6 +446,10 @@ class DZE_CinderGate: DZE_CinderWallDoor_Base {
 	armor = 4600;
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_high_garage\high_steel_garage_door.p3d";
 	displayName = $STR_EPOCH_CINDERGATE;
+	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_GATE";
+	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_GATE";
+	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCKGATE";
+	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCKGATE";
 	//GhostPreview = "DZE_CinderGate_Preview";
 	DZE_upgradeBuilding[] = {"DZE_CinderGateLocked",{},{{"ItemComboLock",1}}};
 
@@ -801,22 +467,6 @@ class DZE_CinderGate: DZE_CinderWallDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""Open_door"" < 0.5";
-			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_CLOSE_GATE;
-			condition = "this animationPhase ""Open_door"" >= 0.5";
-			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_gate_kit";
 		DZE_refundArray[] = {{{"cinder_gate_frame_kit",1},{"equip_metal_sheet",6},{"ItemRSJ",2},{"ItemScrews",2}}};
@@ -828,6 +478,10 @@ class DZE_CinderGateLocked: DZE_CinderWallDoorLocked_Base {
 	armor = 4600;
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_high_garage\high_steel_garage_locked.p3d";
 	displayName = $STR_EPOCH_CINDERGATELOCKED;
+	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_GATE";
+	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_GATE";
+	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCKGATE";
+	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCKGATE";
 	//GhostPreview = "DZE_CinderGate_Preview";
 	downgradeBuilding[] = {"DZE_CinderGate",{{"ItemComboLock",1}}};
 
@@ -851,40 +505,6 @@ class DZE_CinderGateLocked: DZE_CinderWallDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_CLOSE_GATE;
-			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_LOCKGATE;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
-			statement = "this animate [""Open_latch"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_gate_kit_locked";
 		DZE_refundArray[] = {};
@@ -912,22 +532,6 @@ class DZE_CinderGarageOpenTop: DZE_CinderWallDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""doorl"" < 0.5";
-			statement = "this animate [""doorl"", 1];this animate [""doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "this animationPhase ""doorl"" >= 0.5";
-			statement = "this animate [""doorl"", 0];this animate [""doorR"", 0];";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_garage_top_open_kit";
 		DZE_refundArray[] = {{{"cinder_garage_top_open_frame_kit",1},{"ItemTankTrap",3},{"ItemPole",3}}};
@@ -961,40 +565,6 @@ class DZE_CinderGarageOpenTopLocked: DZE_CinderWallDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""doorl"", 1];this animate [""doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "(this animationPhase ""doorl"" == 1) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""doorl"", 0];this animate [""doorR"", 0];";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_LOCK;
-			condition = "(this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 0)";
-			statement = "this animate [""Open_latch"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_garage_top_open_kit_locked";
 		DZE_refundArray[] = {};
@@ -1022,22 +592,6 @@ class DZE_CinderDoorHatch: DZE_CinderWallDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""Open_door"" < 0.5";
-			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "this animationPhase ""Open_door"" >= 0.5";
-			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_door_hatch_kit";
 		DZE_refundArray[] = {{{"CinderBlocks",4},{"MortarBucket",1},{"ItemTankTrap",2},{"ItemPole",1}}};
@@ -1071,40 +625,6 @@ class DZE_CinderDoorHatchLocked: DZE_CinderWallDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_LOCK;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
-			statement = "this animate [""Open_latch"", 1]";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "cinder_door_hatch_kit_locked";
 		DZE_refundArray[] = {};
@@ -1127,22 +647,6 @@ class DZE_Door: DZE_CinderWallDoor_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "this animationPhase ""Open_door"" < 0.5";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "this animationPhase ""Open_door"" >= 0.5";
-			statement = "this animate [""Open_door"", 0]";
-		};
-	};
 
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
@@ -1173,40 +677,6 @@ class DZE_DoorLocked: DZE_CinderWallDoorLocked_Base {
 		};
 	};
 
-	class UserActions {
-		class Open_Door {
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "action";
-			radius = 3;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 1]";
-		};
-
-		class Close_Door: Open_Door {
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "this animate [""Open_door"", 0]";
-		};
-
-		class Lock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_LOCK;
-			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
-		};
-
-		class Unlock_Door: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
-			statement = "this animate [""Open_latch"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
-		};
-
-		class Unlock_Door_Dialog: Open_Door {
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
-			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call DZE_fnc_rollingMessages;} else {createdialog 'ComboLockUI';};};";
-		};
-	};
 
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {

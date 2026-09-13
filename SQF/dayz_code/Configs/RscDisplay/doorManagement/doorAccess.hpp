@@ -4,7 +4,7 @@ class DoorAccess
 	movingenable = 0;
 	
 	onLoad = "keypadCancel = true;";
-	onUnload = "if(keypadCancel) then {DZE_Lock_Door = ''; [] spawn keyPadReset;};";
+	onUnload = "if (keypadCancel) then {DZE_Lock_Door = ''; [] spawn DZE_fnc_keypadReset;};";
 	
 	class Controls
 	{
@@ -46,7 +46,7 @@ class DoorAccess
 			y = 0.40 * safezoneH + safezoneY;
 			style = 2;
 			w = 0.20;
-			onButtonClick = "keypadCancel = false; call player_unlockDoor";
+			onButtonClick = "keypadCancel = false; dayz_selectedDoor call DZE_fnc_unlockDoor";
 		};
 
 		class ZupaButton_4 : ZSC_RscButtonMenu

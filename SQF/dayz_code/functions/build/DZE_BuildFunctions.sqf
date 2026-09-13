@@ -44,7 +44,7 @@ local _buildValidationContext = [
 //
 //	This item needs a base within "_distance" meters.
 //
-//	Legacy disabled validation path retained for reference. Nearest-plot validation and plot-access
+//	Legacy disabled validation path retained for reference. Nearest-base validation and base-access
 //	validation currently provide the active behavior.
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -76,17 +76,17 @@ if (_isAdmin) then {
 	addArray(_buildStage3,DZE_fnc_buildValidationClassLimit);
 } else {
 	if (_isPole) then {
-		addArray(_buildStage1,DZE_fnc_buildValidationPlotLimit);
-		addArray(_buildStage1,DZE_fnc_buildValidationExistingPlot);
-		addArray(_buildStage2,DZE_fnc_buildValidationExistingPlot);
+		addArray(_buildStage1,DZE_fnc_buildValidationBaseLimit);
+		addArray(_buildStage1,DZE_fnc_buildValidationExistingBase);
+		addArray(_buildStage2,DZE_fnc_buildValidationExistingBase);
 	} else {
 		if (_requiresPlot) then { // _inRadius
-			addArray(_buildStage1,DZE_fnc_buildValidationNearestPlot);	// Sets the nearest plot in the validation context.
-			addArray(_buildStage1,DZE_fnc_buildValidationPlotAccess);
-			addArray(_buildStage2,DZE_fnc_buildValidationPlotDistance);
-			addArray(_buildStage3,DZE_fnc_buildValidationNearestPlot);
-			addArray(_buildStage3,DZE_fnc_buildValidationPlotAccess);
-			addArray(_buildStage3,DZE_fnc_buildValidationPlotDistance);
+			addArray(_buildStage1,DZE_fnc_buildValidationNearestBase);	// Sets the nearest base in the validation context.
+			addArray(_buildStage1,DZE_fnc_buildValidationBaseAccess);
+			addArray(_buildStage2,DZE_fnc_buildValidationBaseDistance);
+			addArray(_buildStage3,DZE_fnc_buildValidationNearestBase);
+			addArray(_buildStage3,DZE_fnc_buildValidationBaseAccess);
+			addArray(_buildStage3,DZE_fnc_buildValidationBaseDistance);
 		};
 	};
 

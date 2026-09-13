@@ -44,7 +44,7 @@ local _isStaticWeapon	= p4;
 local _snapList		= p5;
 local _object		= p6;
 
-BUILD_DISTANCE_FROM_PLOT = 0;	/// **** TODO **** check this
+DZE_buildDistanceFromBase = 0;	/// **** TODO **** check this
 
 // The panel belongs only to the active object-placement stage.
 if (BUILD_STAGE != BUILD_HOTKEYS_ACTIVE) exitWith {};
@@ -152,7 +152,7 @@ while {BUILD_STAGE == BUILD_HOTKEYS_ACTIVE} do {
 
 		if (_distFromPlot == '0') then {
 
-			_distance = [BUILD_DISTANCE_FROM_PLOT, 1] call BIS_fnc_cutDecimals;
+			_distance = [DZE_buildDistanceFromBase, 1] call BIS_fnc_cutDecimals;
 
 			if (_distance - floor _distance == 0) then {_distance = str _distance + '.0'};
 		};

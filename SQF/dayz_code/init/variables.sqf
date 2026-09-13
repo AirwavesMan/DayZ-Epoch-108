@@ -191,7 +191,6 @@ if (!isDedicated) then {
 		s_player_fuelauto2 = -1;
 		s_player_fillgen = -1;
 		s_player_upgrade_build = -1;
-		s_player_maint_build = -1;
 		s_player_downgrade_build = -1;
 		s_halo_action = -1;
 		s_player_SurrenderedGear = -1;
@@ -207,6 +206,11 @@ if (!isDedicated) then {
 		s_player_toggleDegree = -1;
 		s_player_toggleVector = -1;
 		s_player_manageDoor = -1;
+		DZE_openDoorAction = -1;
+		DZE_closeDoorAction = -1;
+		DZE_lockDoorAction = -1;
+		DZE_unlockDoorAction = -1;
+		DZE_enterDoorCodeAction = -1;
 		s_player_hide_body = -1;
 		s_player_changeDoorCode = -1;
 		s_player_changeVaultCode = -1;
@@ -440,12 +444,11 @@ if (!isDedicated) then {
 	DZE_UI = profileNamespace getVariable ["statusUI",1];
 	dayz_combination = "";
 	keypadCancel = false; //Brute force fix
-	keyPadReset = {uiSleep 2; keypadCancel = false;};
 	canbuild = true;
 	DZE_HeliAllowTowFrom = ["CH_47F_EP1_DZE","CH_47F_EP1_DZE1","CH_47F_EP1_DZE2","CH_47F_EP1_DZE3","CH_47F_EP1_DZ","CH_47F_BAF","CH_47F_EP1","BAF_Merlin_DZE","CH53_DZE","CH53_DZE1","CH53_DZE2","CH53_DZE3"];
 	DZE_itemKeys = ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"];
 	DZE_keyColors = ["Green","Red","Blue","Yellow","Black"];
-	s_player_lastTarget = objNull;
+	s_player_lastTarget = [objNull,objNull];
 	if (toLower DZE_DeathMsgChat in ["global","side"]) then {enableRadio true;}; //Needed for scripted global chat to show, doesn't seem to have any adverse effects
 	dayz_autoRun = false;
 	DZE_AntiWallCounter = 0;

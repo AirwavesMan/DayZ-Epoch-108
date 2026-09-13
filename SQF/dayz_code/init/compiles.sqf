@@ -150,11 +150,16 @@ if (!isDedicated) then {
 	player_harvest = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_harvest.sqf";
 	player_harvestPlant = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_harvestPlant.sqf";
 	player_loadCrate = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_loadCrate.sqf";
+	DZE_fnc_doorAction = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_doorAction.sqf';
+	DZE_fnc_garageDoorOpener = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_garageDoorOpener.sqf';
+	DZE_fnc_getDoorActionStates = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_getDoorActionStates.sqf';
+	DZE_fnc_getDoorAnimations = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_getDoorAnimations.sqf';
+	DZE_fnc_isDoorClosed = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_isDoorClosed.sqf';
 	DZE_fnc_lockStorage = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_lockStorage.sqf';
 	DZE_fnc_storageEnterCode = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_storageEnterCode.sqf';
+	DZE_fnc_unlockDoor = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_unlockDoor.sqf';
 	player_surrender = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_surrender.sqf";
 	player_traderCity = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderCity.sqf";
-	player_unlockDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
 	DZE_fnc_unlockStorage = compile preprocessFileLineNumbers "\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_unlockStorage.sqf";
 	player_upgradeVehicle =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
 	fnc_usec_damageHandler = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
@@ -738,16 +743,16 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_buildValidationLockedDoorLimit); // Enforces the configured locked-door limit inside a base.
 	FUNCTION(DZE_fnc_buildValidationLockedStorageLimit); // Enforces the configured locked-storage limit inside a base.
 	FUNCTION(DZE_fnc_buildValidationOpenGearLimit);	// Enforces the configured open-gear object limit inside a base.
-	FUNCTION(DZE_fnc_buildValidationExistingPlot);	// Rejects a new plot overlapping an existing plot.
+	FUNCTION(DZE_fnc_buildValidationExistingBase);	// Rejects a new base overlapping an existing base.
 	FUNCTION(DZE_fnc_buildValidationHeight);		// Enforces the configured build-height limit.
 	FUNCTION(DZE_fnc_buildValidationMap);		// Enforces the configured map extents.
 	FUNCTION(DZE_fnc_buildValidationMovement);	// Rejects sustained fast movement during preview placement.
-	FUNCTION(DZE_fnc_buildValidationNearestPlot);	// Resolves the single active base.
+	FUNCTION(DZE_fnc_buildValidationNearestBase);	// Resolves the single active base.
 	FUNCTION(DZE_fnc_buildValidationNearObject);	// Rejects building near configured exclusion classes.
 	FUNCTION(DZE_fnc_buildValidationObjectLimit);	// Enforces the maintained-object limit.
-	FUNCTION(DZE_fnc_buildValidationPlotAccess);	// Validates access to the active plot.
-	FUNCTION(DZE_fnc_buildValidationPlotDistance);	// Enforces player and preview distance from the active plot.
-	FUNCTION(DZE_fnc_buildValidationPlotLimit);	// Enforces the per-player plot limit.
+	FUNCTION(DZE_fnc_buildValidationBaseAccess);	// Validates access to the active base.
+	FUNCTION(DZE_fnc_buildValidationBaseDistance);	// Enforces player and preview distance from the active base.
+	FUNCTION(DZE_fnc_buildValidationBaseLimit);	// Enforces the per-player base limit.
 	FUNCTION(DZE_fnc_buildValidationRestrictedZone);	// Rejects building inside restricted zones.
 	FUNCTION(DZE_fnc_buildValidationRoad);		// Rejects final preview overlap with roads.
 	FUNCTION(DZE_fnc_buildValidationSafeZone);	// Rejects configured classes near safe zones.
@@ -810,6 +815,7 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_comboLockInput);		// Changes one digit of the active combination lock.
 	FUNCTION(DZE_fnc_highlightText);		// Displays fixed or relative text over the specified object.
 	FUNCTION(DZE_fnc_keypadInput);			// Appends a value entered through a storage keypad.
+	FUNCTION(DZE_fnc_keypadReset);			// Re-enables keypad actions after a cancelled dialog closes.
 	FUNCTION(DZE_fnc_lootText);			// Displays floating text above a lootpile.
 	FUNCTION(DZE_fnc_rollingMessages);		// Display a rolling message at the lower center of screen.
 	FUNCTION(DZE_fnc_storageKeypadAction);		// Cancels or submits the active storage keypad dialog.

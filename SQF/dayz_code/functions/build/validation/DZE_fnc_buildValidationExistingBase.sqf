@@ -1,12 +1,12 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//	DZE_fnc_buildValidationExistingPlot
+//	DZE_fnc_buildValidationExistingBase
 //
 //	Description:	Prevents a base from being built within the configured base distance of
 //			another base.
 //	Groups:		Build, Validation
 //
-//	Syntax:		validationContext call DZE_fnc_buildValidationExistingPlot
+//	Syntax:		validationContext call DZE_fnc_buildValidationExistingBase
 //
 //	Parameters:	validationContext: Array - Shared build-validation state
 //
@@ -15,12 +15,12 @@
 //	Called by:	Client
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//#define DEBUG_DZE_FNC_BUILD_VALIDATION_EXISTING_PLOT
+//#define DEBUG_DZE_FNC_BUILD_VALIDATION_EXISTING_BASE
 
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
-#ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_EXISTING_PLOT
-	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationExistingPlot]: Function called with arguments: %1',_this];
+#ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_EXISTING_BASE
+	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationExistingBase]: Function called with arguments: %1',_this];
 #endif
 
 local _distance = _this select BUILD_VALIDATION_DISTANCE;

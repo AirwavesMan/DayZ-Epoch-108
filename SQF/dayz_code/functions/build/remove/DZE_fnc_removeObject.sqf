@@ -60,10 +60,8 @@ call {
 	// Prevent player actions appearing during animation cycle.
 	player removeAction s_player_deleteBuild;
 	player removeAction s_player_upgrade_build;
-	player removeAction s_player_maint_build;
 	s_player_deleteBuild = 1;
 	s_player_upgrade_build = 1;
-	s_player_maint_build = 1;
 	_actionsLocked = true;
 
 	local _wasStanding = ['perc',animationState player] call fnc_inString;
@@ -189,5 +187,4 @@ dayz_actionInProgress = false;
 if (_actionsLocked) then {
 	s_player_deleteBuild = -1;
 	s_player_upgrade_build = -1;
-	s_player_maint_build = -1;
 };

@@ -14,6 +14,7 @@
 "PVDZE_buildObject"		addPublicVariableEventHandler {(_this select 1) call server_buildObject}; //Used by built items (Epoch and Vanilla)
 "PVDZE_upgradeObject" 	addPublicVariableEventHandler {(_this select 1) spawn server_upgradeObject}; //Used to downgrade and upgrade Epoch buildables
 "PVDZE_changeCode" 		addPublicVariableEventHandler {(_this select 1) call server_changeCode};
+'PVDZE_lockUnlockDoor'	addPublicVariableEventHandler {(_this select 1) call server_lockUnlockDoor};
 'PVDZE_lockUnlockStorage'	addPublicVariableEventHandler {(_this select 1) call server_lockUnlockStorage};
 
 //	Base 
@@ -28,8 +29,6 @@
 "PVDZE_veh_Upgrade"		addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh3}; //Used for car upgrades
 "PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};	//Logs trading
 "PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
-"PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) call server_handleSafeGear};
-
 if (dayz_groupSystem) then {
 	"PVDZ_Server_UpdateGroup" addPublicVariableEventHandler {(_this select 1) spawn server_updateGroup};
 };

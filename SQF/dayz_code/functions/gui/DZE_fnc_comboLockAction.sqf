@@ -27,7 +27,7 @@ local _submit = _this select 1;
 keypadCancel = !_submit;
 
 if (_submit && {!isNull dayz_selectedDoor}) exitWith {
-	call player_unlockDoor;
+	dayz_selectedDoor call DZE_fnc_unlockDoor;
 	false
 };
 

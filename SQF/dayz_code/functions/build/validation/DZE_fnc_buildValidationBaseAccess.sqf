@@ -1,11 +1,11 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//	DZE_fnc_buildValidationPlotAccess
+//	DZE_fnc_buildValidationBaseAccess
 //
 //	Description:	Checks owner, friendly and base-friend access for the selected base.
 //	Groups:		Build, Validation
 //
-//	Syntax:		validationContext call DZE_fnc_buildValidationPlotAccess
+//	Syntax:		validationContext call DZE_fnc_buildValidationBaseAccess
 //
 //	Parameters:	validationContext: Array - Shared build-validation state
 //
@@ -14,12 +14,12 @@
 //	Called by:	Client
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//#define DEBUG_DZE_FNC_BUILD_VALIDATION_PLOT_ACCESS
+//#define DEBUG_DZE_FNC_BUILD_VALIDATION_BASE_ACCESS
 
 #include "\z\addons\dayz_code\functions\include\defines.hpp"
 
-#ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_PLOT_ACCESS
-	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationPlotAccess]: Function called with arguments: %1',_this];
+#ifdef DEBUG_DZE_FNC_BUILD_VALIDATION_BASE_ACCESS
+	diag_log format ['[Client Debug]: [DZE_fnc_buildValidationBaseAccess]: Function called with arguments: %1',_this];
 #endif
 
 local _nearestPole = _this select BUILD_VALIDATION_NEAREST_POLE;

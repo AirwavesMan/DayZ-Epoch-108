@@ -103,7 +103,7 @@ class DZE_KeypadDialog {
 
 class DZE_StorageKeypadDialog: DZE_KeypadDialog {
 	idd = -1;
-	onUnload = "if (keypadCancel) then {dayz_combination = ''; [] spawn keyPadReset;};";
+	onUnload = "if (keypadCancel) then {dayz_combination = ''; [] spawn DZE_fnc_keypadReset;};";
 };
 
 class DZE_SafeKeypadButton: RscButton {
@@ -257,7 +257,7 @@ class SafeKeyPad: DZE_StorageKeypadDialog {
 // SafeKeyPadTest
 class ComboLockUI: DZE_KeypadDialog {
 	idd = 41144;
-	onUnload = "if (keypadCancel) then {DZE_Lock_Door = ''; [] spawn keyPadReset;};";
+	onUnload = "if (keypadCancel) then {DZE_Lock_Door = ''; [] spawn DZE_fnc_keypadReset;};";
 
 	class Controls {
 		class ComboLockUIPic: RscPicture {

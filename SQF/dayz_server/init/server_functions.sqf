@@ -28,6 +28,7 @@ server_validateObjectWorldspace = compile preprocessFileLineNumbers '\z\addons\d
 //	Build 
 server_buildObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_buildObject.sqf";
 server_changeCode = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_changeCode.sqf";
+server_lockUnlockDoor = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\build\server_lockUnlockDoor.sqf';
 server_lockUnlockStorage = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\build\server_lockUnlockStorage.sqf';
 server_upgradeObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_upgradeObject.sqf";
 server_setDamageObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_setDamageObject.sqf";
@@ -85,7 +86,6 @@ if (DZE_VehicleKey_Changer) then {
 server_tradeObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_tradeObject.sqf";
 server_deaths = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDeaths.sqf";
 server_checkIfTowed = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_checkIfTowed.sqf";
-server_handleSafeGear = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleSafeGear.sqf";
 server_spawnTraders = compile preprocessFile "\z\addons\dayz_server\compile\server_spawnTraders.sqf";
 server_updateGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\server_updateGroup.sqf";
 
