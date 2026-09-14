@@ -62,7 +62,7 @@ if (_oldCodeObject == _codeObject) exitWith {
 };
 
 // Changing code of an unlocked storage object creates after upgrade a new locked object
-local _typeObject = if (_isStorage) then {getText (configFile >> 'CfgVehicles' >> _oldTypeObject >> 'lockedClass')} else {_oldTypeObject};
+local _typeObject = if (_isStorage) then {getText (configFile >> 'CfgVehicles' >> _oldTypeObject >> 'DZE_lockedClass')} else {_oldTypeObject};
 
 if (_typeObject == '' || {!([_typeObject,'server_changeCode'] call server_verifyObject)}) exitWith {
 	diag_log format['[Server Debug]: [server_changeCode]: Warning: Rejected replacement class for %1: %2',_oldTypeObject,_typeObject];
@@ -101,9 +101,9 @@ if (_formattedWorldspace == '') exitWith {
 local _weapons = [];
 local _magazines = [];
 local _backpacks = [];
-local _inventory = [];
 local _databaseInventory = [];
 local _doorFriends = [];
+local _storageFriends = _oldObject getVariable ['storageFriends',[]];
 local _isZSC = false;
 local _coins = 0;
 
@@ -111,8 +111,7 @@ if (_isStorage) then {
 	_weapons = getWeaponCargo _oldObject;
 	_magazines = getMagazineCargo _oldObject;
 	_backpacks = getBackpackCargo _oldObject;
-	_inventory = [_weapons,_magazines,_backpacks];
-	_databaseInventory = _inventory;
+	_databaseInventory = [_storageFriends,[_weapons,_magazines,_backpacks]];
 	_isZSC = Z_SingleCurrency && {_oldTypeObject in DZE_MoneyStorageClasses} && {_typeObject in DZE_MoneyStorageClasses};
 	if (_isZSC) then {_coins = _oldObject getVariable ['cashMoney',0]};
 } else {
@@ -144,6 +143,7 @@ if (!_damageDisabled && {_damageOldObject > 0}) then {
 };
 
 if (_isStorage) then {
+	_newObject setVariable ['storageFriends',_storageFriends,true];
 	_newObject setVariable ['WeaponCargo',_weapons,false];
 	_newObject setVariable ['MagazineCargo',_magazines,false];
 	_newObject setVariable ['BackpackCargo',_backpacks,false];
@@ -158,7 +158,7 @@ local _key = str formatText ['CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:',dayZ_instan
 _key call server_hiveWrite;
 
 if (_isZSC) then {
-	_key = format ['CHILD:309:%1:',_objectUID] + str _inventory + ':' + str _coins + ':';
+	_key = format ['CHILD:309:%1:',_objectUID] + str _databaseInventory + ':' + str _coins + ':';
 	_key call server_hiveWrite;
 };
 

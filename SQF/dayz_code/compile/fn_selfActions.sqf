@@ -765,18 +765,33 @@ if (_canUseTargetActions) then {
 	};
 
 	//Allow owner to unlock vault
+	if (DZE_storageManagement && _isClose && _isOwner && {_isLockedStorage || _isUnlockedStorage}) then {
+		if (DZE_storageManagementAction < 0) then {
+			DZE_storageManagementAction = player addAction [format ['<t color=''#b3e6ff''>%1</t>',localize 'STR_STORAGE_MANAGEMENT_TITLE'],'\z\addons\dayz_code\functions\base\storageManagement\DZE_fnc_storageManagement.sqf',_cursorTarget,5,false];
+		};
+	} else {
+		DZE_REMOVE_ACTION(player,DZE_storageManagementAction);
+	};
+	
+	local _storageFriend = DZE_storageManagement && {{(_x select 0) == _playerUID} count (_cursorTarget getVariable ['storageFriends',[]]) > 0};
 	if (_isClose && !keypadCancel && {(_typeOfCursorTarget in (DZE_LockedStorage + DZE_UnLockedStorage)) && {_characterID != "0"}}) then {
+		// Rebuild the action when synchronized permissions switch between keypad and direct opening.
+		local _storageActionState = if (_isLockedStorage && {_characterID == dayz_combination || _isOwner || _storageFriend}) then {2} else {1};
+		if (s_player_unlockvault > 0 && {s_player_unlockvault != _storageActionState}) then {
+			DZE_REMOVE_ACTIONS(player,s_player_combi);
+			s_player_unlockvault = -1;
+		};
 		if (s_player_unlockvault < 0) then {
 			local _combi = -1;
 			if (_isLockedStorage) then {
-				if ((_characterID == dayz_combination) || _isOwner) then {
+				if (_storageActionState == 2) then {
 					_combi = player addAction [format[localize "STR_EPOCH_ACTIONS_OPEN",_text], '\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_unlockStorage.sqf',_cursorTarget, 0, false, true];
 					s_player_combi set [count s_player_combi,_combi];
 				} else {
 					_combi = player addAction [format [localize 'STR_EPOCH_ACTIONS_UNLOCK',_text],'\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_storageEnterCode.sqf',_cursorTarget,0,false,true];
 					s_player_combi set [count s_player_combi,_combi];
 				};
-				s_player_unlockvault = 1;
+				s_player_unlockvault = _storageActionState;
 			} else {
 				if ((_characterID != dayz_combination) && !_isOwner) then {
 					_combi = player addAction [localize 'STR_EPOCH_ACTIONS_RECOMBO','\z\addons\dayz_code\functions\build\lockUnlock\DZE_fnc_storageEnterCode.sqf',_cursorTarget,0,false,true];
@@ -1127,6 +1142,7 @@ if (_canUseTargetActions) then {
 		//Engineering
 		DZE_REMOVE_ACTION(player,s_player_base_boundary);
 		DZE_REMOVE_ACTION(player,s_player_baseManagement);
+		DZE_REMOVE_ACTION(player,DZE_storageManagementAction);
 		DZE_REMOVE_ACTIONS(dayz_myCursorTarget,s_player_repairActions);
 		s_player_repair_crtl = -1;
 		dayz_myCursorTarget = objNull;

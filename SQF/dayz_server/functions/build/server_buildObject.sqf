@@ -84,8 +84,24 @@ if ([_typeObject,'server_buildObject'] call server_verifyObject) then {
 			_friendsArray = [[_playerUID,_playerName]];
 			_object setVariable ['doorFriends',_friendsArray,true];
 		};
-		//	ToDo: Safe Management
-		//if (_typeObject in DZE_LockedStorage || {_typeObject in DZE_Elevator_Classnames}) exitwith {};
+		//	ToDo: Elevator
+		//if (_typeObject in DZE_Elevator_Classnames) exitwith {};
+
+		if (_typeObject in DZE_LockedStorage || {_typeObject in DZE_UnLockedStorage}) exitWith {
+			local _storageFriends = [[_playerUID,_playerName]];
+			_object setVariable ['storageFriends',_storageFriends,true];
+			_friendsArray = [_storageFriends,[getWeaponCargo _object,getMagazineCargo _object,getBackpackCargo _object]];
+
+			#ifdef DEBUG_BUILD_OBJECT
+				diag_log format ['[Server Debug]: [Build Object]: Initialized storage friends for %1: %2',_typeObject,_storageFriends];
+			#endif
+			
+			if (_typeObject in DZE_LockedStorage) then {
+				_object setVariable ['WeaponCargo',getWeaponCargo _object];
+				_object setVariable ['MagazineCargo',getMagazineCargo _object];
+				_object setVariable ['BackpackCargo',getBackpackCargo _object];
+			};
+		};
 	};
 
 	local _objectUID = [getDir _object,_positionASL] call dayz_objectUID2;

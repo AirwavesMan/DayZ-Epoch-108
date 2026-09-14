@@ -1,8 +1,35 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	player_zombieCheck
+//
+//	Description:	Checks nearby zombies and mutants for attacks and target acquisition.
+//	Groups:		Zombies
+//
+//	Syntax:		call player_zombieCheck
+//
+//	Parameters:	None
+//
+//	Return Value:	Boolean - True when at least one nearby zombie is attacking the player
+//
+//	Called by:	Client
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//#define DEBUG_PLAYER_ZOMBIE_CHECK
+
 // Check for near zombies and mutants and attack player
 
 local _vehicle = vehicle player;
 local _inVehicle = _vehicle != player;
 local _refObj = driver _vehicle;
+
+if (isNull _refObj) then {
+	_refObj = player;
+
+	#ifdef DEBUG_PLAYER_ZOMBIE_CHECK
+		diag_log format ['[Client Debug]: [player_zombieCheck]: Vehicle %1 has no driver; using player %2 as reference object',_vehicle,_refObj];
+	#endif
+};
+
 local _attacked = false; // at least one Z attacked the player
 local _isAir = _vehicle isKindOf "Air";
 local _speedMin = DZE_ZombieSpeed select 0;

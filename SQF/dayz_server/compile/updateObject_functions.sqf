@@ -60,12 +60,34 @@ server_obj_pos = {
 };
 
 server_obj_inv = {
+	///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//	server_obj_inv
+	//	Description:	Persists inventory, including safe players before storage cargo.
+	//	Groups:		Build
+	//	Syntax:		[object,objectID,objectUID,class] call server_obj_inv
+	//	Return Value:	Nothing
+	//	Called by:	Server
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////
+	//#define DEBUG_SERVER_OBJ_INV
+
+	#ifdef DEBUG_SERVER_OBJ_INV
+		diag_log format ['[Server Debug]: [server_obj_inv]: Function called with arguments: %1',_this];
+	#endif
+	
 	local _object = _this select 0;
 	local _objectID = _this select 1;
 	local _objectUID = _this select 2;
 	local _class = _this select 3;
 
 	local _inventory = call {
+		if (_class in DZE_LockedStorage) exitWith {
+			[_object getVariable ['storageFriends',[]],[_object getVariable ['WeaponCargo',[[],[]]],_object getVariable ['MagazineCargo',[[],[]]],_object getVariable ['BackpackCargo',[[],[]]]]]
+		};
+		if (_class in DZE_UnLockedStorage) exitWith {
+			[_object getVariable ['storageFriends',[]],[getWeaponCargo _object,getMagazineCargo _object,getBackpackCargo _object]]
+		};
 		if (_class == DZE_Territory_Marker) exitwith {
 			_object getVariable ["baseFriends", []] //We're replacing the inventory with UIDs for this item
 		};

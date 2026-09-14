@@ -658,10 +658,15 @@ if (!isDedicated) then {
 
 	path('base');
 
-	FUNCTION(DZE_fnc_findBases);			// Finds base markers within the configured base or minimum distance.
 	FUNCTION(DZE_fnc_checkAccess);			// Checks object ownership, friendship, base access and door access.
 
 	///////////////////////////////////////////////////////////////////////////////////////////
+
+	// Storage management uses its own dialog and control definitions.
+	path('base\storageManagement');
+	FUNCTION(DZE_fnc_storageManagement);
+	FUNCTION(DZE_fnc_storageGetFriends);
+	FUNCTION(DZE_fnc_storageChangeFriend);
 
 	path('base\baseManagement');
 	FUNCTION(DZE_fnc_baseToggleMarkers);		// Displays the active base boundary.
@@ -930,6 +935,10 @@ if (!isDedicated) then {
 	FUNCTION(DZE_fnc_zombieGenerate);		// Spawns a zombie at the given location.
 
 };
+
+path('base');
+
+FUNCTION(DZE_fnc_findBases);			// Finds base markers within the configured base or minimum distance.
 
 path('positions');
 

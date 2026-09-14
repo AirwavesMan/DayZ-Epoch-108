@@ -2,7 +2,7 @@
 //
 //	DZE_fnc_unlockStorage
 //
-//	Description:	Unlocks a safe or lockbox using its combination or owner access.
+//	Description:	Unlocks storage using its combination, ownership or storage-list opening access.
 //	Groups:		Build
 //
 //	Syntax:		object spawn DZE_fnc_unlockStorage
@@ -38,11 +38,12 @@ if (isNull _object || !alive _object || {!(_objectType in DZE_LockedStorage)}) e
 local _code = _object getVariable ['CharacterID','0'];
 local _comboMatch = _code == dayz_combination;
 local _ownerID = _object getVariable ['ownerPUID','0'];
+local _storageFriend = DZE_storageManagement && {{(_x select 0) == dayz_playerUID} count (_object getVariable ['storageFriends',[]]) > 0};
 
 if (isNil 'dayz_UnlockTime') then {dayz_UnlockTime = 5;};
 if (DZE_lockablesHarderPenalty && (diag_tickTime - dayz_lastCodeFail + dayz_UnlockTime / 2) > 120) then {dayz_UnlockTime = 5;};
 
-if (_comboMatch || _ownerID == dayz_playerUID) then {
+if (_comboMatch || _ownerID == dayz_playerUID || _storageFriend) then {
 	(findDisplay 106) closeDisplay 0;
 	dayz_UnlockTime = 5;
 	dayz_lastCodeFail = 0;
@@ -55,9 +56,11 @@ if (_comboMatch || _ownerID == dayz_playerUID) then {
 	};	
 
 	if (_comboMatch) then {_code = dayz_combination;};
+	// The list-only operation is checked against current membership without checking a code.
+	local _operation = if (_storageFriend && {!_comboMatch} && {_ownerID != dayz_playerUID}) then {3} else {1};
 
 	DZE_Wait_For_Object = nil;
-	PVDZE_lockUnlockStorage = [netID player,netID _object,1,_code,dayz_authKey];
+	PVDZE_lockUnlockStorage = [netID player,netID _object,_operation,_code,dayz_authKey];
 	publicVariableServer 'PVDZE_lockUnlockStorage';
 
 	local _newObject = call DZE_fnc_revealServerObject;

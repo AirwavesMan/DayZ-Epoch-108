@@ -120,6 +120,7 @@ class DefaultEventhandlers {
 #include "Configs\RscDisplay\ZSCdefines.hpp"
 #include "Configs\RscDisplay\advancedTrading.hpp"
 #include "Configs\RscDisplay\baseManagement.hpp"
+#include "Configs\RscDisplay\storageManagement.hpp"
 #include "Configs\RscDisplay\deathboards.hpp"
 #include "Configs\CfgExtra\snappoints.hpp"
 #include "Configs\CfgExtra\HelperVectors.hpp"

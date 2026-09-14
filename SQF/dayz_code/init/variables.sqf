@@ -203,6 +203,8 @@ if (!isDedicated) then {
 		snapActions = -1;
 		s_player_base_boundary = -1;
 		s_player_baseManagement = -1;
+		DZE_storageManagementAction = -1;
+		DZE_currentStorage = objNull;
 		s_player_toggleDegree = -1;
 		s_player_toggleVector = -1;
 		s_player_manageDoor = -1;

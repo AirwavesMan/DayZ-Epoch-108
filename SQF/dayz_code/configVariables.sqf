@@ -56,7 +56,7 @@ DZE_isRemovable = [DZE_Territory_Marker]; //Items that can be removed with a cro
 // Door Management
 DZE_doorManagement = true; // Enable Door Management by @DevZupa.
 
-DZE_safeManagement = true;
+DZE_storageManagement = true;
 
 // Group System
 dayz_groupSystem = false; // Enable group system
@@ -115,6 +115,10 @@ DZE_Elevator_Classnames = [];
 //DefaultBackpack = "GymBag_Camo_DZE1";
 //DefaultBackpackItems = []; // Can include both weapons and magazines i.e. ["PDW_DZ","30Rnd_9x19_UZI"];
 
+// Shared by base and storage management; storage-list changes are validated on the server.
+DZE_baseMaxFriends = 10; //Max friends allowed on a base. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.
+DZE_baseManagementMustBeClose = false; //Players must be within 10m of the base to be added as a base friend.
+
 //Server
 if (isServer) then {
 	EpochEvents = [ //[year,month,day of month, minutes,name of file - .sqf] If minutes is set to -1, the event will run once immediately after server start.
@@ -155,7 +159,7 @@ if (isServer) then {
 	};
 	
 	// Static Weapon Base Access
-	DZE_baseStaticWeaponCheck = true; // Limits the use of static weapons within the base radius to entries in the base friend list.
+	DZE_baseStaticWeaponCheck = false; // Limits the use of static weapons within the base radius to entries in the base friend list.
 
 	DZE_fireMaximumBurnTime = 60*60; // Maximum remaining burn time for fireplaces: Default: 60mins
 };
@@ -245,8 +249,6 @@ if (!isDedicated) then {
 	Z_AllowTakingMoneyFromVehicle = true; // Allow traders to take money from vehicles when buying with default currency.
 
 	// Base Management
-	DZE_baseMaxFriends = 10; //Max friends allowed on a base. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.
-	DZE_baseManagementMustBeClose = false; //Players must be within 10m of the base to be added as a base friend.
 	DZE_maintainOverLimit = true; // Allow maintaining bases whose object count exceeds DZE_BuildingLimit.
 	DZE_maintainCurrencyRate = 100; //The currency rate of what maintaining an item will be, for instance: at 100, 10 items will have a worth of 1000 (1 10oz gold or 1k coins) see DZE_fnc_baseMaintainRequirements.sqf for more examples.
 	DZE_baseLimit = 0; // Limit the amount of bases per person, Use 0 to disable. UIDS in the DZE_baseManagementAdmins array are exempt.

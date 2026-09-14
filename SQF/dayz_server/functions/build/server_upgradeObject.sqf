@@ -59,6 +59,11 @@ if !(_worldspaceValidation select 0) exitWith {
 };
 
 local _ownerPUID = _oldObject getVariable ['ownerPUID',_playerUID];
+if (typeOf _oldObject in DZE_LockedStorage && {_ownerPUID != _playerUID}) exitWith {
+	DZE_Wait_For_Object = '';
+	(owner _player) publicVariableClient 'DZE_Wait_For_Object';
+	diag_log format ['[Server Debug]: [server_upgradeObject]: Warning: Rejected storage upgrade by non-owner %1',_playerUID];
+};
 if (count _metadata == 0) then {
 	_metadata = [_ownerPUID];
 } else {
@@ -74,6 +79,7 @@ if ([_typeObject,_functionName] call server_verifyObject) then {
 	local _backpacks = [];
 	local _inventory = [];
 	local _oldTypeObject = typeOf _oldObject;
+	local _storageFriends = _oldObject getVariable ['storageFriends',[]];
 
 	call {
 		if (_oldTypeObject in DZE_LockedStorage) exitwith {
@@ -93,6 +99,10 @@ if ([_typeObject,_functionName] call server_verifyObject) then {
 		};
 	};	
 
+	if (_typeObject in DZE_LockedStorage || {_typeObject in DZE_UnLockedStorage}) then {
+		_inventory = [_storageFriends,[_weapons,_magazines,_backpacks]];
+	};
+
 	if (Z_SingleCurrency && {_typeObject in DZE_MoneyStorageClasses}) then {
 		_coins = _oldObject getVariable ['cashMoney',0];
 	};	
@@ -108,6 +118,9 @@ if ([_typeObject,_functionName] call server_verifyObject) then {
 	local _newObject = [_typeObject,_positionASL,0,_vector,true,_damageDisabled,false,false] call server_createVehicle;
 
 	_newObject setVariable ['worldspaceMetadata',_metadata];
+	if (_typeObject in DZE_LockedStorage || {_typeObject in DZE_UnLockedStorage}) then {
+		_newObject setVariable ['storageFriends',_storageFriends,true];
+	};
 
 	local _publicOwnerID = getNumber (configFile >> 'CfgVehicles' >> _typeObject >> 'DZE_bypassBase') == 1;
 	_newObject setVariable ['ownerPUID',_ownerPUID,_publicOwnerID];

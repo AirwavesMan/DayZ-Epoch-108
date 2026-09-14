@@ -9,7 +9,7 @@
 //
 //	Parameters:	playerNetId: String - Network ID of the requesting player
 //			storageNetId: String - Network ID of the storage object
-//			operation: Number - 0 failed unlock, 1 unlock, 2 lock
+//			operation: Number - 0 failed unlock, 1 unlock, 2 lock, 3 storage-list unlock
 //			suppliedCode: String - Combination supplied by the client
 //			clientKey: String - Authentication key of the requesting client
 //
@@ -70,7 +70,17 @@ if (_operation == 0) exitWith {
 	diag_log format ['[Server Debug]: [server_lockUnlockStorage]: %1 (%2) FAILED unlocking %3 with code %4 (actual: %5) @%6',_playerName,_playerUID,_objectType,_suppliedCode,_actualCode,_positionASL call server_positionToLocation];
 };
 
-local _isUnlock = _operation == 1;
+if !(_operation in [1,2,3]) exitWith {
+	'' call _sendObject;
+	diag_log format ['[Server Debug]: [server_lockUnlockStorage]: Warning: Invalid operation: %1',_operation];
+};
+
+local _isUnlock = _operation != 2;
+local _storageFriends = _object getVariable ['storageFriends',[]];
+if (_operation == 3 && {!DZE_storageManagement || {{(_x select 0) == _playerUID} count _storageFriends == 0}}) exitWith {
+	'' call _sendObject;
+	diag_log format ['[Server Debug]: [server_lockUnlockStorage]: Warning: Rejected storage-list opening by unlisted player %1',_playerUID];
+};
 local _supportedSource = if (_isUnlock) then {_objectType in DZE_LockedStorage} else {_objectType in DZE_UnLockedStorage};
 
 if !(_supportedSource) exitWith {
@@ -119,6 +129,7 @@ local _coins = if (_isMoneyStorage) then {_object getVariable ['cashMoney',0]} e
 local _newObject = [_newObjectType,_positionASL,_direction,_vector,true,_damageDisabled,false,true] call server_createVehicle;
 
 _newObject setVariable ['worldspaceMetadata',_metadata];
+_newObject setVariable ['storageFriends',_storageFriends,true];
 _newObject setVariable ['CharacterID',_characterID,true];
 _newObject setVariable ['ObjectID',_objectID];
 _newObject setVariable ['ObjectUID',_objectUID];

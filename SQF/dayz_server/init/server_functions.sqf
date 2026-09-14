@@ -34,7 +34,6 @@ server_upgradeObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\
 server_setDamageObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\build\server_setDamageObject.sqf";
 
 //	Base
-DZE_fnc_findBases = compile preprocessFileLineNumbers '\z\addons\dayz_code\functions\base\DZE_fnc_findBases.sqf';
 server_changeFriends = compile preprocessFileLineNumbers "\z\addons\dayz_server\functions\base\server_changeFriends.sqf";
 server_maintainArea = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\base\server_maintainArea.sqf';
 server_removeObject = compile preprocessFileLineNumbers '\z\addons\dayz_server\functions\base\server_removeObject.sqf';

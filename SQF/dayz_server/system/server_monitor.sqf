@@ -243,6 +243,16 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		_isSafeObject = _type in DayZ_SafeObjects;
 
 		//Dont add inventory for traps.
+		if (_type in DZE_LockedStorage || {_type in DZE_UnLockedStorage}) then {
+			// Read the player list before the normal cargo loader consumes the inventory.
+			if (count _inventory == 2) then {
+				_object setVariable ['storageFriends',_inventory select 0,true];
+				_inventory = _inventory select 1;
+			} else {
+				_object setVariable ['storageFriends',[],true];
+			};
+		};
+		
 		if (!_isTrapItem) then {
 			clearWeaponCargoGlobal _object;
 			clearMagazineCargoGlobal _object;

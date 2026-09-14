@@ -38053,6 +38053,20 @@
 			<Dutch>Blauw</Dutch>
 		</Key>
 	</Package>
+	<Package name="StorageManagement">
+		<Key ID="STR_STORAGE_MANAGEMENT_OWNER_REMOVE_DENIED">
+			<English>You can't remove the storage owner.</English>
+			<German>Du kannst den Besitzer des Lagerobjekts nicht entfernen.</German>
+		</Key>
+		<Key ID="STR_STORAGE_MANAGEMENT_TITLE">
+			<English>Storage Management</English>
+			<German>Storage Management</German>
+		</Key>
+		<Key ID="STR_STORAGE_MANAGEMENT_DESCRIPTION">
+			<English>Listed players may only unlock this storage.</English>
+			<German>Eingetragene Spieler dürfen nur öffnen.</German>
+		</Key>
+	</Package>
 </Project>
 
 <!--Community Localization Stringtable -->
