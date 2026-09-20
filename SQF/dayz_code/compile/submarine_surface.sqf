@@ -4,7 +4,7 @@ local _driver = driver _vehicle;
 
 if ((_unit != player) || {!(isNull _driver) && {_driver != _unit}}) exitwith {};
 
-while {_vehicle isKindOf "Submarine_DZE_base"} do {
+while {_vehicle isKindOf 'DZE_Veh_Submarine_Base'} do {
 	local _pos = getposATL _vehicle;
 	if (((_vehicle animationphase "dive") > 0.5) && {(_pos select 2) < 10}) then {
 		_vehicle animate ["dive", 0];

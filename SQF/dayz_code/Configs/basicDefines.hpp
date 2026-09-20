@@ -25,7 +25,8 @@
 #define CanSeeOptics 4
 #define CanSeeEar 8
 #define CanSeeCompass 16
-#define CanSeeRadarC CanSeeRadar+CanSeeCompass
+#define CanSeePeripheral 32
+#define CanSeeRadarC CanSeeRadar + CanSeeCompass + CanSeePeripheral
 #define CanSeeAll 31
 
 #define ReadAndWrite 0 //! any modifications enabled

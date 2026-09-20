@@ -475,7 +475,7 @@ execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";
 if (_hiveLoaded) then {
 	_serverVehicleCounter spawn {
 		private ["_startTime","_cfgLootFile","_vehLimit"];
-		//  spawn_vehicles
+		//  server_spawnVehicles
 		// Get all buildings and roads only once. Very taxing, but only on first startup
 		_serverVehicleCounter = _this;
 		_vehiclesToUpdate = [];
@@ -495,7 +495,7 @@ if (_hiveLoaded) then {
 		_vehLimit = MaxVehicleLimit - (count _serverVehicleCounter);
 		if (_vehLimit > 0) then {
 			diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
-			for "_x" from 1 to _vehLimit do {call spawn_vehicles;};
+			for '_x' from 1 to _vehLimit do {call server_spawnVehicles;};
 		} else {
 			diag_log "HIVE: Vehicle Spawn limit reached!";
 			_vehLimit = 0;

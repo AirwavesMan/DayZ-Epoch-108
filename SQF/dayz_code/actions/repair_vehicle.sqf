@@ -18,7 +18,7 @@ local _string = "";
 local _handle = 0;
 
 local _isV3S = _vehicle isKindOf "V3S_Base";
-local _isTatra = (_vehicle isKindOf "T810_DZE_Base_ACR" || _vehicle isKindOf "T810_Turrets_Base_ACR");
+local _isTatra = (_vehicle isKindOf 'DZE_T810_Base' || _vehicle isKindOf 'T810_Turrets_Base_ACR');
 local _isMTVR = _vehicle isKindOf "MTVR";
 local _wheelSwitchTruck = (_isV3S || _isTatra || _isMTVR);
 

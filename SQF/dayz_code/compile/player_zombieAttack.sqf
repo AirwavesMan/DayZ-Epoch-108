@@ -120,7 +120,7 @@ if (_isVehicle) then {
 		_chance = round(random 12);
 		
 		if ((_chance % 4) == 0) then {
-			_openVehicles = ["ATV_Base_EP1", "Motorcycle", "Bicycle", "CSJ_GyroP", "CSJ_GyroC"];
+			_openVehicles = ['ATV_Base_EP1', 'Motorcycle', 'Bicycle', 'DZE_Veh_AutoGyro', 'DZE_Veh_Mozzie'];
 			{
 				if (_vehicle isKindOf _x) exitWith {
 					player action ["eject", _vehicle];

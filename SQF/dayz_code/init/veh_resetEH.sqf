@@ -11,7 +11,7 @@ if (_this isKindOf "AllVehicles") then {
 	_this addeventhandler ["HandleDamage",{ _this call fnc_veh_handleDam } ];
 	_this addeventhandler ["Killed",{ _this call fnc_veh_handleKilled } ];
 	_this addEventHandler ["GetOut", { _this call vehicle_getOut }];
-	if (_this isKindOf "Submarine_DZE_base") then {
+	if (_this isKindOf 'DZE_Veh_Submarine_Base') then {
 		_this addEventHandler ["GetIn", { _this spawn submarine_surface }];
 	};
 

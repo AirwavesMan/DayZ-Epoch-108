@@ -199,7 +199,7 @@ if (!isDedicated) then {
 	dayz_maxMaxWeaponHolders = 120; // Maximum number of loot piles that can spawn within 200 meters of a player.
 	dayz_temperature_override = false; // Set to true to disable all temperature changes.
 	dayz_nutritionValuesSystem = true; //true, Enables nutrition system, false, disables nutrition system.
-	DZE_DisableVehicleUpgrade = []; // List of vehicles that cannot be upgraded with manuals E.g.: ["ArmoredSUV_PMC_DZE","LandRover_CZ_EP1_DZE"]
+	DZE_DisableVehicleUpgrade = []; // List of vehicles that cannot be upgraded with manuals E.g.: ['DZE_Veh_SUV_Armored_M134','DZE_Veh_LandRover_Desert']
 	DZE_debrisRefundParts = ["PartEngine","PartGeneric","PartFueltank","PartWheel","PartGlass","ItemJerrycan"]; // Dynamic debris wrecks refund
 
 	// Build restrictions

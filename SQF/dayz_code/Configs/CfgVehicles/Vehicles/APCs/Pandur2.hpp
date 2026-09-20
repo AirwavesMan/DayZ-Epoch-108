@@ -1,0 +1,61 @@
+class Pandur2_ACR;
+class DZE_Veh_Pandur2: Pandur2_ACR {
+	scope = 2;
+
+	displayName = "$STR_VEH_NAME_PANDUR2";
+	vehicleClass = "DZE Vehicles APCs";
+
+
+	DZE_MACRO_VEHICLE_SIDE
+	DZE_MACRO_VEHICLE_CLEAR_CARGO
+	DZE_MACRO_VEHICLE_CANSEE_ARMORED
+
+	transportMaxMagazines = 100;
+	transportMaxWeapons = 20;
+	transportMaxBackpacks = 6;
+
+	supplyRadius = 1.8;
+	crewVulnerable = 1;
+
+	class Upgrades {
+		ItemTankORP[] = {"DZE_Veh_Pandur2_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+	};
+};
+
+class DZE_Veh_Pandur2_1: DZE_Veh_Pandur2 {
+	displayName = "$STR_VEH_NAME_PANDUR2+";
+	original = "DZE_Veh_Pandur2";
+	maxSpeed = 120; // base 95
+	terrainCoef = 0.5;
+	turnCoef = 5;  // base 4
+
+	class Upgrades {
+		ItemTankAVE[] = {"DZE_Veh_Pandur2_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+	};
+};
+
+class DZE_Veh_Pandur2_2: DZE_Veh_Pandur2_1 {
+	displayName = "$STR_VEH_NAME_PANDUR2++";
+	armor = 220; // base 150
+	damageResistance = 0.048; // base 0.01199
+
+	class Upgrades {
+		ItemTankLRK[] = {"DZE_Veh_Pandur2_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class DZE_Veh_Pandur2_3: DZE_Veh_Pandur2_2 {
+	displayName = "$STR_VEH_NAME_PANDUR2+++";
+	transportMaxWeapons = 40;
+	transportMaxMagazines = 200;
+	transportMaxBackpacks = 12;
+
+	class Upgrades {
+		ItemTankTNK[] = {"DZE_Veh_Pandur2_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+	};
+};
+
+class DZE_Veh_Pandur2_4: DZE_Veh_Pandur2_3 {
+	displayName = "$STR_VEH_NAME_PANDUR2++++";
+	fuelCapacity = 550; // base 246
+};

@@ -8602,6 +8602,66 @@
 			<Russian>Хамви MK19 (Пустыня)++++</Russian>
 			<German>Humvee MK19 (Wüstentarn)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TERMINAL_DES">
+			<English>HMMWV Terminal (Desert)</English>
+			<German>HMMWV Terminal (Wuestentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TERMINAL_DES+">
+			<English>HMMWV Terminal (Desert)+</English>
+			<German>HMMWV Terminal (Wuestentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TERMINAL_DES++">
+			<English>HMMWV Terminal (Desert)++</English>
+			<German>HMMWV Terminal (Wuestentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TERMINAL_DES+++">
+			<English>HMMWV Terminal (Desert)+++</English>
+			<German>HMMWV Terminal (Wuestentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TERMINAL_DES++++">
+			<English>HMMWV Terminal (Desert)++++</English>
+			<German>HMMWV Terminal (Wuestentarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TOW_WDL">
+			<English>HMMWV TOW (Woodland)</English>
+			<German>HMMWV TOW (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TOW_WDL+">
+			<English>HMMWV TOW (Woodland)+</English>
+			<German>HMMWV TOW (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TOW_WDL++">
+			<English>HMMWV TOW (Woodland)++</English>
+			<German>HMMWV TOW (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TOW_WDL+++">
+			<English>HMMWV TOW (Woodland)+++</English>
+			<German>HMMWV TOW (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TOW_WDL++++">
+			<English>HMMWV TOW (Woodland)++++</English>
+			<German>HMMWV TOW (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TOW_DES">
+			<English>HMMWV TOW (Desert)</English>
+			<German>HMMWV TOW (Wuestentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TOW_DES+">
+			<English>HMMWV TOW (Desert)+</English>
+			<German>HMMWV TOW (Wuestentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TOW_DES++">
+			<English>HMMWV TOW (Desert)++</English>
+			<German>HMMWV TOW (Wuestentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TOW_DES+++">
+			<English>HMMWV TOW (Desert)+++</English>
+			<German>HMMWV TOW (Wuestentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_TOW_DES++++">
+			<English>HMMWV TOW (Desert)++++</English>
+			<German>HMMWV TOW (Wuestentarn)++++</German>
+		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES">
 			<English>HMMWV (Desert)</English>
 			<Russian>Хамви (Пустыня)</Russian>
@@ -8981,6 +9041,74 @@
 			<English>Pick-up covered (tan)++++</English>
 			<Russian>Пикап крытый (Оранжевый)++++</Russian>
 			<German>Pick-up abgedeckt (gelbbraun)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TOWINGTRACTOR">
+			<English>Towing Tractor</English>
+			<German>Flugzeugschlepper</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TOWINGTRACTOR+">
+			<English>Towing Tractor+</English>
+			<German>Flugzeugschlepper+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TOWINGTRACTOR++">
+			<English>Towing Tractor++</English>
+			<German>Flugzeugschlepper++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TOWINGTRACTOR+++">
+			<English>Towing Tractor+++</English>
+			<German>Flugzeugschlepper+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TOWINGTRACTOR++++">
+			<English>Towing Tractor++++</English>
+			<German>Flugzeugschlepper++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR+">
+			<English>Tractor+</English>
+			<German>Traktor+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR++">
+			<English>Tractor++</English>
+			<German>Traktor++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR+++">
+			<English>Tractor+++</English>
+			<German>Traktor+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR++++">
+			<English>Tractor++++</English>
+			<German>Traktor++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR_OLD+">
+			<English>Old Tractor+</English>
+			<German>Alter Traktor+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR_OLD++">
+			<English>Old Tractor++</English>
+			<German>Alter Traktor++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR_OLD+++">
+			<English>Old Tractor+++</English>
+			<German>Alter Traktor+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR_OLD++++">
+			<English>Old Tractor++++</English>
+			<German>Alter Traktor++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR_ARMORED+">
+			<English>Armored Tractor+</English>
+			<German>Gepanzerter Traktor+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR_ARMORED++">
+			<English>Armored Tractor++</English>
+			<German>Gepanzerter Traktor++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR_ARMORED+++">
+			<English>Armored Tractor+++</English>
+			<German>Gepanzerter Traktor+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR_ARMORED++++">
+			<English>Armored Tractor++++</English>
+			<German>Gepanzerter Traktor++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_TRACTOR">
 			<German>Traktor</German>
@@ -9623,6 +9751,166 @@
 			<Russian>Land Rover (СПГ-9)++++</Russian>
 			<German>Militär Offroad (SPG-9)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_M1126_ICV_M2">
+			<English>Stryker ICV (M2)</English>
+			<German>Stryker ICV (M2)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1126_ICV_M2+">
+			<English>Stryker ICV (M2)+</English>
+			<German>Stryker ICV (M2)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1126_ICV_M2++">
+			<English>Stryker ICV (M2)++</English>
+			<German>Stryker ICV (M2)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1126_ICV_M2+++">
+			<English>Stryker ICV (M2)+++</English>
+			<German>Stryker ICV (M2)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1126_ICV_M2++++">
+			<English>Stryker ICV (M2)++++</English>
+			<German>Stryker ICV (M2)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1126_ICV_MK19">
+			<English>Stryker ICV (Mk19)</English>
+			<German>Stryker ICV (Mk19)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1126_ICV_MK19+">
+			<English>Stryker ICV (Mk19)+</English>
+			<German>Stryker ICV (Mk19)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1126_ICV_MK19++">
+			<English>Stryker ICV (Mk19)++</English>
+			<German>Stryker ICV (Mk19)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1126_ICV_MK19+++">
+			<English>Stryker ICV (Mk19)+++</English>
+			<German>Stryker ICV (Mk19)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1126_ICV_MK19++++">
+			<English>Stryker ICV (Mk19)++++</English>
+			<German>Stryker ICV (Mk19)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1128_MGS">
+			<English>Stryker MGS</English>
+			<German>Stryker MGS</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1128_MGS+">
+			<English>Stryker MGS+</English>
+			<German>Stryker MGS+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1128_MGS++">
+			<English>Stryker MGS++</English>
+			<German>Stryker MGS++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1128_MGS+++">
+			<English>Stryker MGS+++</English>
+			<German>Stryker MGS+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1128_MGS++++">
+			<English>Stryker MGS++++</English>
+			<German>Stryker MGS++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1129_MC">
+			<English>Stryker MC</English>
+			<German>Stryker MC</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1129_MC+">
+			<English>Stryker MC+</English>
+			<German>Stryker MC+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1129_MC++">
+			<English>Stryker MC++</English>
+			<German>Stryker MC++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1129_MC+++">
+			<English>Stryker MC+++</English>
+			<German>Stryker MC+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1129_MC++++">
+			<English>Stryker MC++++</English>
+			<German>Stryker MC++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1130_CV">
+			<English>Stryker CV</English>
+			<German>Stryker CV</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1130_CV+">
+			<English>Stryker CV+</English>
+			<German>Stryker CV+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1130_CV++">
+			<English>Stryker CV++</English>
+			<German>Stryker CV++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1130_CV+++">
+			<English>Stryker CV+++</English>
+			<German>Stryker CV+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1130_CV++++">
+			<English>Stryker CV++++</English>
+			<German>Stryker CV++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1133_MEV">
+			<English>Stryker MEV</English>
+			<German>Stryker MEV</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1133_MEV+">
+			<English>Stryker MEV+</English>
+			<German>Stryker MEV+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1133_MEV++">
+			<English>Stryker MEV++</English>
+			<German>Stryker MEV++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1133_MEV+++">
+			<English>Stryker MEV+++</English>
+			<German>Stryker MEV+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1133_MEV++++">
+			<English>Stryker MEV++++</English>
+			<German>Stryker MEV++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1135_ATGMV">
+			<English>Stryker (TOW)</English>
+			<German>Stryker (TOW)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1135_ATGMV+">
+			<English>Stryker (TOW)+</English>
+			<German>Stryker (TOW)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1135_ATGMV++">
+			<English>Stryker (TOW)++</English>
+			<German>Stryker (TOW)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1135_ATGMV+++">
+			<English>Stryker (TOW)+++</English>
+			<German>Stryker (TOW)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1135_ATGMV++++">
+			<English>Stryker (TOW)++++</English>
+			<German>Stryker (TOW)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PANDUR2">
+			<English>Pandur II 8x8</English>
+			<German>Pandur II 8x8</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PANDUR2+">
+			<English>Pandur II+</English>
+			<German>Pandur II+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PANDUR2++">
+			<English>Pandur II++</English>
+			<German>Pandur II++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PANDUR2+++">
+			<English>Pandur II+++</English>
+			<German>Pandur II+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PANDUR2++++">
+			<English>Pandur II++++</English>
+			<German>Pandur II++++</German>
+		</Key>
 		<Key ID="STR_VEH_NAME_LAV25">
 			<English>LAV-25</English>
 		</Key>
@@ -9652,6 +9940,86 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_LAV25_HQ++++">
 			<English>LAV-25 HQ (M240)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_INS">
+			<English>BRDM-2 (INS)</English>
+			<German>BRDM-2 (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_INS+">
+			<English>BRDM-2 (INS)+</English>
+			<German>BRDM-2 (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_INS++">
+			<English>BRDM-2 (INS)++</English>
+			<German>BRDM-2 (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_INS+++">
+			<English>BRDM-2 (INS)+++</English>
+			<German>BRDM-2 (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_INS++++">
+			<English>BRDM-2 (INS)++++</English>
+			<German>BRDM-2 (INS)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_CDF">
+			<English>BRDM-2 ATGM (CDF)</English>
+			<German>BRDM-2 ATGM (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_CDF+">
+			<English>BRDM-2 ATGM (CDF)+</English>
+			<German>BRDM-2 ATGM (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_CDF++">
+			<English>BRDM-2 ATGM (CDF)++</English>
+			<German>BRDM-2 ATGM (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_CDF+++">
+			<English>BRDM-2 ATGM (CDF)+++</English>
+			<German>BRDM-2 ATGM (CDF)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_CDF++++">
+			<English>BRDM-2 ATGM (CDF)++++</English>
+			<German>BRDM-2 ATGM (CDF)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_INS">
+			<English>BRDM-2 ATGM (INS)</English>
+			<German>BRDM-2 ATGM (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_INS+">
+			<English>BRDM-2 ATGM (INS)+</English>
+			<German>BRDM-2 ATGM (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_INS++">
+			<English>BRDM-2 ATGM (INS)++</English>
+			<German>BRDM-2 ATGM (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_INS+++">
+			<English>BRDM-2 ATGM (INS)+++</English>
+			<German>BRDM-2 ATGM (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_INS++++">
+			<English>BRDM-2 ATGM (INS)++++</English>
+			<German>BRDM-2 ATGM (INS)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_TK">
+			<English>BRDM-2 ATGM (TK)</English>
+			<German>BRDM-2 ATGM (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_TK+">
+			<English>BRDM-2 ATGM (TK)+</English>
+			<German>BRDM-2 ATGM (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_TK++">
+			<English>BRDM-2 ATGM (TK)++</English>
+			<German>BRDM-2 ATGM (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_TK+++">
+			<English>BRDM-2 ATGM (TK)+++</English>
+			<German>BRDM-2 ATGM (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_ATGM_TK++++">
+			<English>BRDM-2 ATGM (TK)++++</English>
+			<German>BRDM-2 ATGM (TK)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ">
 			<English>BRDM-2 HQ</English>
@@ -10106,6 +10474,1414 @@
 		<Key ID="STR_VEH_NAME_BMP2_WINTER">
 			<English>BMP-2 (Winter)</English>
 			<Russian>БМП-2 (Зима)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_2S6M_TUNGUSKA">
+			<English>2S6M Tunguska</English>
+			<German>2S6M Tunguska</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_2S6M_TUNGUSKA+">
+			<English>2S6M Tunguska+</English>
+			<German>2S6M Tunguska+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_2S6M_TUNGUSKA++">
+			<English>2S6M Tunguska++</English>
+			<German>2S6M Tunguska++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_2S6M_TUNGUSKA+++">
+			<English>2S6M Tunguska+++</English>
+			<German>2S6M Tunguska+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_2S6M_TUNGUSKA++++">
+			<English>2S6M Tunguska++++</English>
+			<German>2S6M Tunguska++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FV510_DESERT">
+			<English>FV510 Warrior 2 (Desert)</English>
+			<German>FV510 Warrior 2 (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FV510_DESERT+">
+			<English>FV510 Warrior 2 (Desert)+</English>
+			<German>FV510 Warrior 2 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FV510_DESERT++">
+			<English>FV510 Warrior 2 (Desert)++</English>
+			<German>FV510 Warrior 2 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FV510_DESERT+++">
+			<English>FV510 Warrior 2 (Desert)+++</English>
+			<German>FV510 Warrior 2 (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FV510_DESERT++++">
+			<English>FV510 Warrior 2 (Desert)++++</English>
+			<German>FV510 Warrior 2 (Wüstentarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FV510_WOODLAND">
+			<English>FV510 Warrior 2 (Woodland)</English>
+			<German>FV510 Warrior 2 (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FV510_WOODLAND+">
+			<English>FV510 Warrior 2 (Woodland)+</English>
+			<German>FV510 Warrior 2 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FV510_WOODLAND++">
+			<English>FV510 Warrior 2 (Woodland)++</English>
+			<German>FV510 Warrior 2 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FV510_WOODLAND+++">
+			<English>FV510 Warrior 2 (Woodland)+++</English>
+			<German>FV510 Warrior 2 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FV510_WOODLAND++++">
+			<English>FV510 Warrior 2 (Woodland)++++</English>
+			<German>FV510 Warrior 2 (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP3">
+			<English>BMP-3</English>
+			<German>BMP-3</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP3+">
+			<English>BMP-3+</English>
+			<German>BMP-3+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP3++">
+			<English>BMP-3++</English>
+			<German>BMP-3++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP3+++">
+			<English>BMP-3+++</English>
+			<German>BMP-3+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP3++++">
+			<English>BMP-3++++</English>
+			<German>BMP-3++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BVP1_TK">
+			<English>BVP-1 (TK)</English>
+			<German>BVP-1 (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BVP1_TK+">
+			<English>BVP-1 (TK)+</English>
+			<German>BVP-1 (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BVP1_TK++">
+			<English>BVP-1 (TK)++</English>
+			<German>BVP-1 (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BVP1_TK+++">
+			<English>BVP-1 (TK)+++</English>
+			<German>BVP-1 (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BVP1_TK++++">
+			<English>BVP-1 (TK)++++</English>
+			<German>BVP-1 (TK)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BVP1_TK_GUE">
+			<English>BVP-1 (TK GUE)</English>
+			<German>BVP-1 (TK GUE)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BVP1_TK_GUE+">
+			<English>BVP-1 (TK GUE)+</English>
+			<German>BVP-1 (TK GUE)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BVP1_TK_GUE++">
+			<English>BVP-1 (TK GUE)++</English>
+			<German>BVP-1 (TK GUE)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BVP1_TK_GUE+++">
+			<English>BVP-1 (TK GUE)+++</English>
+			<German>BVP-1 (TK GUE)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BVP1_TK_GUE++++">
+			<English>BVP-1 (TK GUE)++++</English>
+			<German>BVP-1 (TK GUE)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A1_WOODLAND">
+			<English>M1A1 (Woodland)</English>
+			<German>M1A1 (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A1_WOODLAND+">
+			<English>M1A1 (Woodland)+</English>
+			<German>M1A1 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A1_WOODLAND++">
+			<English>M1A1 (Woodland)++</English>
+			<German>M1A1 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A1_WOODLAND+++">
+			<English>M1A1 (Woodland)+++</English>
+			<German>M1A1 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A1_WOODLAND++++">
+			<English>M1A1 (Woodland)++++</English>
+			<German>M1A1 (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A1_DESERT">
+			<English>M1A1 (Desert)</English>
+			<German>M1A1 (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A1_DESERT+">
+			<English>M1A1 (Desert)+</English>
+			<German>M1A1 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A1_DESERT++">
+			<English>M1A1 (Desert)++</English>
+			<German>M1A1 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A1_DESERT+++">
+			<English>M1A1 (Desert)+++</English>
+			<German>M1A1 (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A1_DESERT++++">
+			<English>M1A1 (Desert)++++</English>
+			<German>M1A1 (Wüstentarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A2_TUSK_WOODLAND">
+			<English>M1A2 TUSK (Woodland)</English>
+			<German>M1A2 TUSK (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A2_TUSK_WOODLAND+">
+			<English>M1A2 TUSK (Woodland)+</English>
+			<German>M1A2 TUSK (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A2_TUSK_WOODLAND++">
+			<English>M1A2 TUSK (Woodland)++</English>
+			<German>M1A2 TUSK (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A2_TUSK_WOODLAND+++">
+			<English>M1A2 TUSK (Woodland)+++</English>
+			<German>M1A2 TUSK (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A2_TUSK_WOODLAND++++">
+			<English>M1A2 TUSK (Woodland)++++</English>
+			<German>M1A2 TUSK (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A2_TUSK_DESERT">
+			<English>M1A2 TUSK (Desert)</English>
+			<German>M1A2 TUSK (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A2_TUSK_DESERT+">
+			<English>M1A2 TUSK (Desert)+</English>
+			<German>M1A2 TUSK (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A2_TUSK_DESERT++">
+			<English>M1A2 TUSK (Desert)++</English>
+			<German>M1A2 TUSK (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A2_TUSK_DESERT+++">
+			<English>M1A2 TUSK (Desert)+++</English>
+			<German>M1A2 TUSK (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M1A2_TUSK_DESERT++++">
+			<English>M1A2 TUSK (Desert)++++</English>
+			<German>M1A2 TUSK (Wüstentarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M2A2">
+			<English>M2A2 Bradley IFV</English>
+			<German>M2A2 Bradley IFV</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M2A2+">
+			<English>M2A2 Bradley IFV+</English>
+			<German>M2A2 Bradley IFV+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M2A2++">
+			<English>M2A2 Bradley IFV++</English>
+			<German>M2A2 Bradley IFV++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M2A2+++">
+			<English>M2A2 Bradley IFV+++</English>
+			<German>M2A2 Bradley IFV+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M2A2++++">
+			<English>M2A2 Bradley IFV++++</English>
+			<German>M2A2 Bradley IFV++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M2A3">
+			<English>M2A3 ERA Bradley IFV</English>
+			<German>M2A3 ERA Bradley IFV</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M2A3+">
+			<English>M2A3 ERA Bradley IFV+</English>
+			<German>M2A3 ERA Bradley IFV+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M2A3++">
+			<English>M2A3 ERA Bradley IFV++</English>
+			<German>M2A3 ERA Bradley IFV++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M2A3+++">
+			<English>M2A3 ERA Bradley IFV+++</English>
+			<German>M2A3 ERA Bradley IFV+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M2A3++++">
+			<English>M2A3 ERA Bradley IFV++++</English>
+			<German>M2A3 ERA Bradley IFV++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M6">
+			<English>M6 Linebacker</English>
+			<German>M6 Linebacker</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M6+">
+			<English>M6 Linebacker+</English>
+			<German>M6 Linebacker+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M6++">
+			<English>M6 Linebacker++</English>
+			<German>M6 Linebacker++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M6+++">
+			<English>M6 Linebacker+++</English>
+			<German>M6 Linebacker+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M6++++">
+			<English>M6 Linebacker++++</English>
+			<German>M6 Linebacker++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34">
+			<English>T-34</English>
+			<German>T-34</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34+">
+			<English>T-34+</English>
+			<German>T-34+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34++">
+			<English>T-34++</English>
+			<German>T-34++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34+++">
+			<English>T-34+++</English>
+			<German>T-34+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34++++">
+			<English>T-34++++</English>
+			<German>T-34++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34_TK">
+			<English>T-34 (TK)</English>
+			<German>T-34 (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34_TK+">
+			<English>T-34 (TK)+</English>
+			<German>T-34 (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34_TK++">
+			<English>T-34 (TK)++</English>
+			<German>T-34 (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34_TK+++">
+			<English>T-34 (TK)+++</English>
+			<German>T-34 (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34_TK++++">
+			<English>T-34 (TK)++++</English>
+			<German>T-34 (TK)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34_TK_GUE">
+			<English>T-34 (TK GUE)</English>
+			<German>T-34 (TK GUE)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34_TK_GUE+">
+			<English>T-34 (TK GUE)+</English>
+			<German>T-34 (TK GUE)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34_TK_GUE++">
+			<English>T-34 (TK GUE)++</English>
+			<German>T-34 (TK GUE)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34_TK_GUE+++">
+			<English>T-34 (TK GUE)+++</English>
+			<German>T-34 (TK GUE)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T34_TK_GUE++++">
+			<English>T-34 (TK GUE)++++</English>
+			<German>T-34 (TK GUE)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T55_TK">
+			<English>T-55 (TK)</English>
+			<German>T-55 (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T55_TK+">
+			<English>T-55 (TK)+</English>
+			<German>T-55 (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T55_TK++">
+			<English>T-55 (TK)++</English>
+			<German>T-55 (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T55_TK+++">
+			<English>T-55 (TK)+++</English>
+			<German>T-55 (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T55_TK++++">
+			<English>T-55 (TK)++++</English>
+			<German>T-55 (TK)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T55_TK_GUE">
+			<English>T-55 (TK GUE)</English>
+			<German>T-55 (TK GUE)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T55_TK_GUE+">
+			<English>T-55 (TK GUE)+</English>
+			<German>T-55 (TK GUE)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T55_TK_GUE++">
+			<English>T-55 (TK GUE)++</English>
+			<German>T-55 (TK GUE)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T55_TK_GUE+++">
+			<English>T-55 (TK GUE)+++</English>
+			<German>T-55 (TK GUE)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T55_TK_GUE++++">
+			<English>T-55 (TK GUE)++++</English>
+			<German>T-55 (TK GUE)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72M4">
+			<English>T-72M4</English>
+			<German>T-72M4</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72M4+">
+			<English>T-72M4+</English>
+			<German>T-72M4+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72M4++">
+			<English>T-72M4++</English>
+			<German>T-72M4++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72M4+++">
+			<English>T-72M4+++</English>
+			<German>T-72M4+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72M4++++">
+			<English>T-72M4++++</English>
+			<German>T-72M4++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T90">
+			<English>T-90</English>
+			<German>T-90</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T90+">
+			<English>T-90+</English>
+			<German>T-90+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T90++">
+			<English>T-90++</English>
+			<German>T-90++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T90+++">
+			<English>T-90+++</English>
+			<German>T-90+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T90++++">
+			<English>T-90++++</English>
+			<German>T-90++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_CDF">
+			<English>ZSU-23 Shilka (CDF)</English>
+			<German>ZSU-23 Shilka (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_CDF+">
+			<English>ZSU-23 Shilka (CDF)+</English>
+			<German>ZSU-23 Shilka (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_CDF++">
+			<English>ZSU-23 Shilka (CDF)++</English>
+			<German>ZSU-23 Shilka (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_CDF+++">
+			<English>ZSU-23 Shilka (CDF)+++</English>
+			<German>ZSU-23 Shilka (CDF)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_CDF++++">
+			<English>ZSU-23 Shilka (CDF)++++</English>
+			<German>ZSU-23 Shilka (CDF)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_INS">
+			<English>ZSU-23 Shilka (INS)</English>
+			<German>ZSU-23 Shilka (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_INS+">
+			<English>ZSU-23 Shilka (INS)+</English>
+			<German>ZSU-23 Shilka (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_INS++">
+			<English>ZSU-23 Shilka (INS)++</English>
+			<German>ZSU-23 Shilka (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_INS+++">
+			<English>ZSU-23 Shilka (INS)+++</English>
+			<German>ZSU-23 Shilka (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_INS++++">
+			<English>ZSU-23 Shilka (INS)++++</English>
+			<German>ZSU-23 Shilka (INS)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_TK">
+			<English>ZSU-23 Shilka (TK)</English>
+			<German>ZSU-23 Shilka (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_TK+">
+			<English>ZSU-23 Shilka (TK)+</English>
+			<German>ZSU-23 Shilka (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_TK++">
+			<English>ZSU-23 Shilka (TK)++</English>
+			<German>ZSU-23 Shilka (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_TK+++">
+			<English>ZSU-23 Shilka (TK)+++</English>
+			<German>ZSU-23 Shilka (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ZSU_TK++++">
+			<English>ZSU-23 Shilka (TK)++++</English>
+			<German>ZSU-23 Shilka (TK)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_CDF">
+			<English>BM-21 Grad (CDF)</English>
+			<German>BM-21 Grad (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_CDF+">
+			<English>BM-21 Grad (CDF)+</English>
+			<German>BM-21 Grad (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_CDF++">
+			<English>BM-21 Grad (CDF)++</English>
+			<German>BM-21 Grad (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_CDF+++">
+			<English>BM-21 Grad (CDF)+++</English>
+			<German>BM-21 Grad (CDF)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_CDF++++">
+			<English>BM-21 Grad (CDF)++++</English>
+			<German>BM-21 Grad (CDF)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_INS">
+			<English>BM-21 Grad (INS)</English>
+			<German>BM-21 Grad (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_INS+">
+			<English>BM-21 Grad (INS)+</English>
+			<German>BM-21 Grad (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_INS++">
+			<English>BM-21 Grad (INS)++</English>
+			<German>BM-21 Grad (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_INS+++">
+			<English>BM-21 Grad (INS)+++</English>
+			<German>BM-21 Grad (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_INS++++">
+			<English>BM-21 Grad (INS)++++</English>
+			<German>BM-21 Grad (INS)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_RU">
+			<English>BM-21 Grad (RU)</English>
+			<German>BM-21 Grad (RU)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_RU+">
+			<English>BM-21 Grad (RU)+</English>
+			<German>BM-21 Grad (RU)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_RU++">
+			<English>BM-21 Grad (RU)++</English>
+			<German>BM-21 Grad (RU)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_RU+++">
+			<English>BM-21 Grad (RU)+++</English>
+			<German>BM-21 Grad (RU)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_RU++++">
+			<English>BM-21 Grad (RU)++++</English>
+			<German>BM-21 Grad (RU)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_TK">
+			<English>BM-21 Grad (TK)</English>
+			<German>BM-21 Grad (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_TK+">
+			<English>BM-21 Grad (TK)+</English>
+			<German>BM-21 Grad (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_TK++">
+			<English>BM-21 Grad (TK)++</English>
+			<German>BM-21 Grad (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_TK+++">
+			<English>BM-21 Grad (TK)+++</English>
+			<German>BM-21 Grad (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GRAD_TK++++">
+			<English>BM-21 Grad (TK)++++</English>
+			<German>BM-21 Grad (TK)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_RM70">
+			<English>RM-70</English>
+			<German>RM-70</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_RM70+">
+			<English>RM-70+</English>
+			<German>RM-70+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_RM70++">
+			<English>RM-70++</English>
+			<German>RM-70++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_RM70+++">
+			<English>RM-70+++</English>
+			<German>RM-70+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_RM70++++">
+			<English>RM-70++++</English>
+			<German>RM-70++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M270_MLRS_WOODLAND">
+			<English>M270 MLRS (Woodland)</English>
+			<German>M270 MLRS (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M270_MLRS_WOODLAND+">
+			<English>M270 MLRS (Woodland)+</English>
+			<German>M270 MLRS (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M270_MLRS_WOODLAND++">
+			<English>M270 MLRS (Woodland)++</English>
+			<German>M270 MLRS (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M270_MLRS_WOODLAND+++">
+			<English>M270 MLRS (Woodland)+++</English>
+			<German>M270 MLRS (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M270_MLRS_WOODLAND++++">
+			<English>M270 MLRS (Woodland)++++</English>
+			<German>M270 MLRS (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M270_MLRS_DESERT">
+			<English>M270 MLRS (Desert)</English>
+			<German>M270 MLRS (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M270_MLRS_DESERT+">
+			<English>M270 MLRS (Desert)+</English>
+			<German>M270 MLRS (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M270_MLRS_DESERT++">
+			<English>M270 MLRS (Desert)++</English>
+			<German>M270 MLRS (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M270_MLRS_DESERT+++">
+			<English>M270 MLRS (Desert)+++</English>
+			<German>M270 MLRS (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M270_MLRS_DESERT++++">
+			<English>M270 MLRS (Desert)++++</English>
+			<German>M270 MLRS (Wüstentarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH1Z">
+			<English>AH-1Z</English>
+			<German>AH-1Z</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH1Z+">
+			<English>AH-1Z+</English>
+			<German>AH-1Z+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH1Z++">
+			<English>AH-1Z++</English>
+			<German>AH-1Z++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH1Z+++">
+			<English>AH-1Z+++</English>
+			<German>AH-1Z+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH64D_USMC">
+			<English>AH-64D (USMC)</English>
+			<German>AH-64D (USMC)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH64D_USMC+">
+			<English>AH-64D (USMC)+</English>
+			<German>AH-64D (USMC)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH64D_USMC++">
+			<English>AH-64D (USMC)++</English>
+			<German>AH-64D (USMC)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH64D_USMC+++">
+			<English>AH-64D (USMC)+++</English>
+			<German>AH-64D (USMC)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH64D_US">
+			<English>AH-64D (US)</English>
+			<German>AH-64D (US)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH64D_US+">
+			<English>AH-64D (US)+</English>
+			<German>AH-64D (US)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH64D_US++">
+			<English>AH-64D (US)++</English>
+			<German>AH-64D (US)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH64D_US+++">
+			<English>AH-64D (US)+++</English>
+			<German>AH-64D (US)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_APACHE_AH1">
+			<English>Apache AH1</English>
+			<German>Apache AH1</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_APACHE_AH1+">
+			<English>Apache AH1+</English>
+			<German>Apache AH1+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_APACHE_AH1++">
+			<English>Apache AH1++</English>
+			<German>Apache AH1++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_APACHE_AH1+++">
+			<English>Apache AH1+++</English>
+			<German>Apache AH1+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA137_PK">
+			<English>Ka-137 (PK)</English>
+			<German>Ka-137 (PK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA137_PK+">
+			<English>Ka-137 (PK)+</English>
+			<German>Ka-137 (PK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA137_PK++">
+			<English>Ka-137 (PK)++</English>
+			<German>Ka-137 (PK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA137_PK+++">
+			<English>Ka-137 (PK)+++</English>
+			<German>Ka-137 (PK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA137">
+			<English>Ka-137</English>
+			<German>Ka-137</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA137+">
+			<English>Ka-137+</English>
+			<German>Ka-137+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA137++">
+			<English>Ka-137++</English>
+			<German>Ka-137++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA137+++">
+			<English>Ka-137+++</English>
+			<German>Ka-137+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA52">
+			<English>Ka-52</English>
+			<German>Ka-52</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA52+">
+			<English>Ka-52+</English>
+			<German>Ka-52+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA52++">
+			<English>Ka-52++</English>
+			<German>Ka-52++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA52+++">
+			<English>Ka-52+++</English>
+			<German>Ka-52+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA52_BLACK">
+			<English>Ka-52 (Black)</English>
+			<German>Ka-52 (Schwarz)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA52_BLACK+">
+			<English>Ka-52 (Black)+</English>
+			<German>Ka-52 (Schwarz)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA52_BLACK++">
+			<English>Ka-52 (Black)++</English>
+			<German>Ka-52 (Schwarz)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA52_BLACK+++">
+			<English>Ka-52 (Black)+++</English>
+			<German>Ka-52 (Schwarz)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI8MTV3_RU">
+			<English>Mi-8MTV-3 (RU)</English>
+			<German>Mi-8MTV-3 (RU)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI8MTV3_RU+">
+			<English>Mi-8MTV-3 (RU)+</English>
+			<German>Mi-8MTV-3 (RU)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI8MTV3_RU++">
+			<English>Mi-8MTV-3 (RU)++</English>
+			<German>Mi-8MTV-3 (RU)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI8MTV3_RU+++">
+			<English>Mi-8MTV-3 (RU)+++</English>
+			<German>Mi-8MTV-3 (RU)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24D_CDF">
+			<English>Mi-24D (CDF)</English>
+			<German>Mi-24D (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24D_CDF+">
+			<English>Mi-24D (CDF)+</English>
+			<German>Mi-24D (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24D_CDF++">
+			<English>Mi-24D (CDF)++</English>
+			<German>Mi-24D (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24D_CDF+++">
+			<English>Mi-24D (CDF)+++</English>
+			<German>Mi-24D (CDF)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24V_WOODLAND">
+			<English>Mi-24V (Woodland)</English>
+			<German>Mi-24V (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24V_WOODLAND+">
+			<English>Mi-24V (Woodland)+</English>
+			<German>Mi-24V (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24V_WOODLAND++">
+			<English>Mi-24V (Woodland)++</English>
+			<German>Mi-24V (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24V_WOODLAND+++">
+			<English>Mi-24V (Woodland)+++</English>
+			<German>Mi-24V (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24D_TK">
+			<English>Mi-24D (TK)</English>
+			<German>Mi-24D (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24D_TK+">
+			<English>Mi-24D (TK)+</English>
+			<German>Mi-24D (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24D_TK++">
+			<English>Mi-24D (TK)++</English>
+			<German>Mi-24D (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24D_TK+++">
+			<English>Mi-24D (TK)+++</English>
+			<German>Mi-24D (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24P">
+			<English>Mi-24P</English>
+			<German>Mi-24P</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24P+">
+			<English>Mi-24P+</English>
+			<German>Mi-24P+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24P++">
+			<English>Mi-24P++</English>
+			<German>Mi-24P++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24P+++">
+			<English>Mi-24P+++</English>
+			<German>Mi-24P+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24V_RU">
+			<English>Mi-24V (RU)</English>
+			<German>Mi-24V (RU)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24V_RU+">
+			<English>Mi-24V (RU)+</English>
+			<German>Mi-24V (RU)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24V_RU++">
+			<English>Mi-24V (RU)++</English>
+			<German>Mi-24V (RU)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI24V_RU+++">
+			<English>Mi-24V (RU)+++</English>
+			<German>Mi-24V (RU)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_OLIVE">
+			<English>Bell 47 Amphibious (Olive)</English>
+			<German>Bell 47 Amphibisch (Oliv)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_OLIVE+">
+			<English>Bell 47 Amphibious (Olive)+</English>
+			<German>Bell 47 Amphibisch (Oliv)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_OLIVE++">
+			<English>Bell 47 Amphibious (Olive)++</English>
+			<German>Bell 47 Amphibisch (Oliv)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_OLIVE+++">
+			<English>Bell 47 Amphibious (Olive)+++</English>
+			<German>Bell 47 Amphibisch (Oliv)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CDF">
+			<English>Bell 47 Amphibious (CDF)</English>
+			<German>Bell 47 Amphibisch (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CDF+">
+			<English>Bell 47 Amphibious (CDF)+</English>
+			<German>Bell 47 Amphibisch (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CDF++">
+			<English>Bell 47 Amphibious (CDF)++</English>
+			<German>Bell 47 Amphibisch (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CDF+++">
+			<English>Bell 47 Amphibious (CDF)+++</English>
+			<German>Bell 47 Amphibisch (CDF)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_TK">
+			<English>Bell 47 Amphibious (TK)</English>
+			<German>Bell 47 Amphibisch (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_TK+">
+			<English>Bell 47 Amphibious (TK)+</English>
+			<German>Bell 47 Amphibisch (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_TK++">
+			<English>Bell 47 Amphibious (TK)++</English>
+			<German>Bell 47 Amphibisch (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_TK+++">
+			<English>Bell 47 Amphibious (TK)+++</English>
+			<German>Bell 47 Amphibisch (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_INS">
+			<English>Bell 47 Amphibious (INS)</English>
+			<German>Bell 47 Amphibisch (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_INS+">
+			<English>Bell 47 Amphibious (INS)+</English>
+			<German>Bell 47 Amphibisch (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_INS++">
+			<English>Bell 47 Amphibious (INS)++</English>
+			<German>Bell 47 Amphibisch (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_INS+++">
+			<English>Bell 47 Amphibious (INS)+++</English>
+			<German>Bell 47 Amphibisch (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_UN">
+			<English>Bell 47 Amphibious (UN)</English>
+			<German>Bell 47 Amphibisch (UN)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_UN+">
+			<English>Bell 47 Amphibious (UN)+</English>
+			<German>Bell 47 Amphibisch (UN)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_UN++">
+			<English>Bell 47 Amphibious (UN)++</English>
+			<German>Bell 47 Amphibisch (UN)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_UN+++">
+			<English>Bell 47 Amphibious (UN)+++</English>
+			<German>Bell 47 Amphibisch (UN)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_PMC">
+			<English>Bell 47 Amphibious (PMC)</English>
+			<German>Bell 47 Amphibisch (PMC)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_PMC+">
+			<English>Bell 47 Amphibious (PMC)+</English>
+			<German>Bell 47 Amphibisch (PMC)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_PMC++">
+			<English>Bell 47 Amphibious (PMC)++</English>
+			<German>Bell 47 Amphibisch (PMC)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_PMC+++">
+			<English>Bell 47 Amphibious (PMC)+++</English>
+			<German>Bell 47 Amphibisch (PMC)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_GUE">
+			<English>Bell 47 Amphibious (GUE)</English>
+			<German>Bell 47 Amphibisch (GUE)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_GUE+">
+			<English>Bell 47 Amphibious (GUE)+</English>
+			<German>Bell 47 Amphibisch (GUE)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_GUE++">
+			<English>Bell 47 Amphibious (GUE)++</English>
+			<German>Bell 47 Amphibisch (GUE)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_GUE+++">
+			<English>Bell 47 Amphibious (GUE)+++</English>
+			<German>Bell 47 Amphibisch (GUE)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CIV">
+			<English>Bell 47 Amphibious (CIV)</English>
+			<German>Bell 47 Amphibisch (CIV)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CIV+">
+			<English>Bell 47 Amphibious (CIV)+</English>
+			<German>Bell 47 Amphibisch (CIV)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CIV++">
+			<English>Bell 47 Amphibious (CIV)++</English>
+			<German>Bell 47 Amphibisch (CIV)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CIV+++">
+			<English>Bell 47 Amphibious (CIV)+++</English>
+			<German>Bell 47 Amphibisch (CIV)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CIV_RU">
+			<English>Bell 47 Amphibious (CIV RU)</English>
+			<German>Bell 47 Amphibisch (CIV RU)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CIV_RU+">
+			<English>Bell 47 Amphibious (CIV RU)+</English>
+			<German>Bell 47 Amphibisch (CIV RU)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CIV_RU++">
+			<English>Bell 47 Amphibious (CIV RU)++</English>
+			<German>Bell 47 Amphibisch (CIV RU)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_AMPHIB_CIV_RU+++">
+			<English>Bell 47 Amphibious (CIV RU)+++</English>
+			<German>Bell 47 Amphibisch (CIV RU)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_A10_USMC">
+			<English>A-10 (USMC)</English>
+			<German>A-10 (USMC)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_A10_US">
+			<English>A-10 (US)</English>
+			<German>A-10 (US)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AV8B_LGB">
+			<English>AV-8B (LGB)</English>
+			<German>AV-8B (LGB)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AV8B">
+			<English>AV-8B</English>
+			<German>AV-8B</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BQM74_USMC">
+			<English>BQM-74 (USMC)</English>
+			<German>BQM-74 (USMC)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BQM74_US">
+			<English>BQM-74 (US)</English>
+			<German>BQM-74 (US)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_F35B">
+			<English>F-35B</English>
+			<German>F-35B</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L159_ALCA">
+			<English>L-159 ALCA</English>
+			<German>L-159 ALCA</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39ZA_GREEN">
+			<English>L-39ZA (Green)</English>
+			<German>L-39ZA (Grün)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39C">
+			<English>L-39C</English>
+			<German>L-39C</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39ZA_TK">
+			<English>L-39ZA (TK)</English>
+			<German>L-39ZA (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MQ9_USMC">
+			<English>MQ-9 (USMC)</English>
+			<German>MQ-9 (USMC)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MQ9_US">
+			<English>MQ-9 (US)</English>
+			<German>MQ-9 (US)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_CDF">
+			<English>Su-25 (CDF)</English>
+			<German>Su-25 (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_INS">
+			<English>Su-25 (INS)</English>
+			<German>Su-25 (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_TK">
+			<English>Su-25 (TK)</English>
+			<German>Su-25 (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU34">
+			<English>Su-34</English>
+			<German>Su-34</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_RU">
+			<English>Su-25 (RU)</English>
+			<German>Su-25 (RU)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_WOODLAND">
+			<English>BMP-2 (Woodland)</English>
+			<German>BMP-2 (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_WOODLAND+">
+			<English>BMP-2 (Woodland)+</English>
+			<German>BMP-2 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_WOODLAND++">
+			<English>BMP-2 (Woodland)++</English>
+			<German>BMP-2 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_WOODLAND+++">
+			<English>BMP-2 (Woodland)+++</English>
+			<German>BMP-2 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_WOODLAND++++">
+			<English>BMP-2 (Woodland)++++</English>
+			<German>BMP-2 (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_CDF">
+			<English>BMP-2 (CDF)</English>
+			<German>BMP-2 (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_CDF+">
+			<English>BMP-2 (CDF)+</English>
+			<German>BMP-2 (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_CDF++">
+			<English>BMP-2 (CDF)++</English>
+			<German>BMP-2 (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_CDF+++">
+			<English>BMP-2 (CDF)+++</English>
+			<German>BMP-2 (CDF)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_CDF++++">
+			<English>BMP-2 (CDF)++++</English>
+			<German>BMP-2 (CDF)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_DESERT">
+			<English>BMP-2 (Desert)</English>
+			<German>BMP-2 (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_DESERT+">
+			<English>BMP-2 (Desert)+</English>
+			<German>BMP-2 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_DESERT++">
+			<English>BMP-2 (Desert)++</English>
+			<German>BMP-2 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_DESERT+++">
+			<English>BMP-2 (Desert)+++</English>
+			<German>BMP-2 (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_DESERT++++">
+			<English>BMP-2 (Desert)++++</English>
+			<German>BMP-2 (Wüstentarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_GUE">
+			<English>BMP-2 (GUE)</English>
+			<German>BMP-2 (GUE)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_GUE+">
+			<English>BMP-2 (GUE)+</English>
+			<German>BMP-2 (GUE)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_GUE++">
+			<English>BMP-2 (GUE)++</English>
+			<German>BMP-2 (GUE)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_GUE+++">
+			<English>BMP-2 (GUE)+++</English>
+			<German>BMP-2 (GUE)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_GUE++++">
+			<English>BMP-2 (GUE)++++</English>
+			<German>BMP-2 (GUE)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_TK">
+			<English>BMP-2 (TK)</English>
+			<German>BMP-2 (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_TK+">
+			<English>BMP-2 (TK)+</English>
+			<German>BMP-2 (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_TK++">
+			<English>BMP-2 (TK)++</English>
+			<German>BMP-2 (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_TK+++">
+			<English>BMP-2 (TK)+++</English>
+			<German>BMP-2 (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_TK++++">
+			<English>BMP-2 (TK)++++</English>
+			<German>BMP-2 (TK)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_UN">
+			<English>BMP-2 (UN)</English>
+			<German>BMP-2 (UN)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_UN+">
+			<English>BMP-2 (UN)+</English>
+			<German>BMP-2 (UN)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_UN++">
+			<English>BMP-2 (UN)++</English>
+			<German>BMP-2 (UN)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_UN+++">
+			<English>BMP-2 (UN)+++</English>
+			<German>BMP-2 (UN)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_IFV_UN++++">
+			<English>BMP-2 (UN)++++</English>
+			<German>BMP-2 (UN)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_CDF">
+			<English>T-72 (CDF)</English>
+			<German>T-72 (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_CDF+">
+			<English>T-72 (CDF)+</English>
+			<German>T-72 (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_CDF++">
+			<English>T-72 (CDF)++</English>
+			<German>T-72 (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_CDF+++">
+			<English>T-72 (CDF)+++</English>
+			<German>T-72 (CDF)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_CDF++++">
+			<English>T-72 (CDF)++++</English>
+			<German>T-72 (CDF)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_GUE">
+			<English>T-72 (GUE)</English>
+			<German>T-72 (GUE)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_GUE+">
+			<English>T-72 (GUE)+</English>
+			<German>T-72 (GUE)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_GUE++">
+			<English>T-72 (GUE)++</English>
+			<German>T-72 (GUE)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_GUE+++">
+			<English>T-72 (GUE)+++</English>
+			<German>T-72 (GUE)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_GUE++++">
+			<English>T-72 (GUE)++++</English>
+			<German>T-72 (GUE)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_RU">
+			<English>T-72 (RU)</English>
+			<German>T-72 (RU)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_RU+">
+			<English>T-72 (RU)+</English>
+			<German>T-72 (RU)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_RU++">
+			<English>T-72 (RU)++</English>
+			<German>T-72 (RU)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_RU+++">
+			<English>T-72 (RU)+++</English>
+			<German>T-72 (RU)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_RU++++">
+			<English>T-72 (RU)++++</English>
+			<German>T-72 (RU)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_TK">
+			<English>T-72 (TK)</English>
+			<German>T-72 (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_TK+">
+			<English>T-72 (TK)+</English>
+			<German>T-72 (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_TK++">
+			<English>T-72 (TK)++</English>
+			<German>T-72 (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_TK+++">
+			<English>T-72 (TK)+++</English>
+			<German>T-72 (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_TK++++">
+			<English>T-72 (TK)++++</English>
+			<German>T-72 (TK)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_RUST+">
+			<English>BMP-2 (rusty)+</English>
+			<German>BMP-2 (rostig)+</German>
+			<Russian>БМП-2 (ржавый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_RUST++">
+			<English>BMP-2 (rusty)++</English>
+			<German>BMP-2 (rostig)++</German>
+			<Russian>БМП-2 (ржавый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_RUST+++">
+			<English>BMP-2 (rusty)+++</English>
+			<German>BMP-2 (rostig)+++</German>
+			<Russian>БМП-2 (ржавый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_RUST++++">
+			<English>BMP-2 (rusty)++++</English>
+			<German>BMP-2 (rostig)++++</German>
+			<Russian>БМП-2 (ржавый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_WINTER+">
+			<English>BMP-2 (Winter)+</English>
+			<Russian>БМП-2 (Зима)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_WINTER++">
+			<English>BMP-2 (Winter)++</English>
+			<Russian>БМП-2 (Зима)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_WINTER+++">
+			<English>BMP-2 (Winter)+++</English>
+			<Russian>БМП-2 (Зима)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_WINTER++++">
+			<English>BMP-2 (Winter)++++</English>
+			<Russian>БМП-2 (Зима)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_RUST+">
+			<English>T-72 (rusty)+</English>
+			<German>T-72 (rostig)+</German>
+			<Russian>Т-72 (ржавый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_RUST++">
+			<English>T-72 (rusty)++</English>
+			<German>T-72 (rostig)++</German>
+			<Russian>Т-72 (ржавый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_RUST+++">
+			<English>T-72 (rusty)+++</English>
+			<German>T-72 (rostig)+++</German>
+			<Russian>Т-72 (ржавый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_RUST++++">
+			<English>T-72 (rusty)++++</English>
+			<German>T-72 (rostig)++++</German>
+			<Russian>Т-72 (ржавый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_WINTER+">
+			<English>T-72 (Winter)+</English>
+			<Russian>Т-72 (Зима)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_WINTER++">
+			<English>T-72 (Winter)++</English>
+			<Russian>Т-72 (Зима)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_WINTER+++">
+			<English>T-72 (Winter)+++</English>
+			<Russian>Т-72 (Зима)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_WINTER++++">
+			<English>T-72 (Winter)++++</English>
+			<Russian>Т-72 (Зима)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA60_M32">
+			<English>Ka-60 (M32)</English>
+			<German>Ka-60 (M32)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA60_M32+">
+			<English>Ka-60 (M32)+</English>
+			<German>Ka-60 (M32)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA60_M32++">
+			<English>Ka-60 (M32)++</English>
+			<German>Ka-60 (M32)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA60_M32+++">
+			<English>Ka-60 (M32)+++</English>
+			<German>Ka-60 (M32)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA60_ROCKETS">
+			<English>Ka-60 (Rockets)</English>
+			<German>Ka-60 (Raketen)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA60_ROCKETS+">
+			<English>Ka-60 (Rockets)+</English>
+			<German>Ka-60 (Raketen)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA60_ROCKETS++">
+			<English>Ka-60 (Rockets)++</English>
+			<German>Ka-60 (Raketen)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA60_ROCKETS+++">
+			<English>Ka-60 (Rockets)+++</English>
+			<German>Ka-60 (Raketen)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI171SH_ROCKETS">
+			<English>Mi-171Sh (Rockets)</English>
+			<German>Mi-171Sh (Raketen)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI171SH_ROCKETS+">
+			<English>Mi-171Sh (Rockets)+</English>
+			<German>Mi-171Sh (Raketen)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI171SH_ROCKETS++">
+			<English>Mi-171Sh (Rockets)++</English>
+			<German>Mi-171Sh (Raketen)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI171SH_ROCKETS+++">
+			<English>Mi-171Sh (Rockets)+++</English>
+			<German>Mi-171Sh (Raketen)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AW159_CRV7">
+			<English>Wildcat AH11 (CRV7)</English>
+			<German>Wildcat AH11 (CRV7)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AW159_CRV7+">
+			<English>Wildcat AH11 (CRV7)+</English>
+			<German>Wildcat AH11 (CRV7)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AW159_CRV7++">
+			<English>Wildcat AH11 (CRV7)++</English>
+			<German>Wildcat AH11 (CRV7)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AW159_CRV7+++">
+			<English>Wildcat AH11 (CRV7)+++</English>
+			<German>Wildcat AH11 (CRV7)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1Y_FFAR">
+			<English>UH-1Y (FFAR)</English>
+			<German>UH-1Y (FFAR)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1Y_FFAR+">
+			<English>UH-1Y (FFAR)+</English>
+			<German>UH-1Y (FFAR)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1Y_FFAR++">
+			<English>UH-1Y (FFAR)++</English>
+			<German>UH-1Y (FFAR)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1Y_FFAR+++">
+			<English>UH-1Y (FFAR)+++</English>
+			<German>UH-1Y (FFAR)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH6J_FFAR">
+			<English>AH-6J (FFAR)</English>
+			<German>AH-6J (FFAR)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH6J_FFAR+">
+			<English>AH-6J (FFAR)+</English>
+			<German>AH-6J (FFAR)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH6J_FFAR++">
+			<English>AH-6J (FFAR)++</English>
+			<German>AH-6J (FFAR)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH6J_FFAR+++">
+			<English>AH-6J (FFAR)+++</English>
+			<German>AH-6J (FFAR)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_T72_RUST">
 			<English>T-72 (rusty)</English>
@@ -12046,6 +13822,106 @@
 			<English>Ural (TK)++++</English>
 			<Russian>Урал (TK)++++</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_CDF">
+			<English>Ural ZU-23 (CDF)</English>
+			<German>Ural ZU-23 (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_CDF+">
+			<English>Ural ZU-23 (CDF)+</English>
+			<German>Ural ZU-23 (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_CDF++">
+			<English>Ural ZU-23 (CDF)++</English>
+			<German>Ural ZU-23 (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_CDF+++">
+			<English>Ural ZU-23 (CDF)+++</English>
+			<German>Ural ZU-23 (CDF)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_CDF++++">
+			<English>Ural ZU-23 (CDF)++++</English>
+			<German>Ural ZU-23 (CDF)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_INS">
+			<English>Ural ZU-23 (INS)</English>
+			<German>Ural ZU-23 (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_INS+">
+			<English>Ural ZU-23 (INS)+</English>
+			<German>Ural ZU-23 (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_INS++">
+			<English>Ural ZU-23 (INS)++</English>
+			<German>Ural ZU-23 (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_INS+++">
+			<English>Ural ZU-23 (INS)+++</English>
+			<German>Ural ZU-23 (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_INS++++">
+			<English>Ural ZU-23 (INS)++++</English>
+			<German>Ural ZU-23 (INS)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_GUE">
+			<English>Ural ZU-23 (GUE)</English>
+			<German>Ural ZU-23 (GUE)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_GUE+">
+			<English>Ural ZU-23 (GUE)+</English>
+			<German>Ural ZU-23 (GUE)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_GUE++">
+			<English>Ural ZU-23 (GUE)++</English>
+			<German>Ural ZU-23 (GUE)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_GUE+++">
+			<English>Ural ZU-23 (GUE)+++</English>
+			<German>Ural ZU-23 (GUE)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_GUE++++">
+			<English>Ural ZU-23 (GUE)++++</English>
+			<German>Ural ZU-23 (GUE)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_TK">
+			<English>Ural ZU-23 (TK)</English>
+			<German>Ural ZU-23 (TK)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_TK+">
+			<English>Ural ZU-23 (TK)+</English>
+			<German>Ural ZU-23 (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_TK++">
+			<English>Ural ZU-23 (TK)++</English>
+			<German>Ural ZU-23 (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_TK+++">
+			<English>Ural ZU-23 (TK)+++</English>
+			<German>Ural ZU-23 (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_TK++++">
+			<English>Ural ZU-23 (TK)++++</English>
+			<German>Ural ZU-23 (TK)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_TK_GUE">
+			<English>Ural ZU-23 (TK GUE)</English>
+			<German>Ural ZU-23 (TK GUE)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_TK_GUE+">
+			<English>Ural ZU-23 (TK GUE)+</English>
+			<German>Ural ZU-23 (TK GUE)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_TK_GUE++">
+			<English>Ural ZU-23 (TK GUE)++</English>
+			<German>Ural ZU-23 (TK GUE)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_TK_GUE+++">
+			<English>Ural ZU-23 (TK GUE)+++</English>
+			<German>Ural ZU-23 (TK GUE)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_ZU23_TK_GUE++++">
+			<English>Ural ZU-23 (TK GUE)++++</English>
+			<German>Ural ZU-23 (TK GUE)++++</German>
+		</Key>
 		<Key ID="STR_VEH_NAME_URAL_INS">
 			<English>Ural (INS)</English>
 			<Russian>Урал (INS)</Russian>
@@ -13520,25 +15396,25 @@
 			<Russian>MH-6J «Литтл Бёрд»+++</Russian>
 			<German>MH-6J "Little Bird"+++</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_AH6J">
-			<English>AH6J Little Bird</English>
-			<Russian>AH6J «Литтл Бёрд»</Russian>
-			<German>AH6J "Little Bird"</German>
+		<Key ID="STR_VEH_NAME_AH6J_M134">
+			<English>AH-6J (M134)</English>
+			<Russian>AH-6J (M134)</Russian>
+			<German>AH-6J (M134)</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_AH6J+">
-			<English>AH6J Little Bird+</English>
-			<Russian>AH6J «Литтл Бёрд»+</Russian>
-			<German>AH6J "Little Bird"+</German>
+		<Key ID="STR_VEH_NAME_AH6J_M134+">
+			<English>AH-6J (M134)+</English>
+			<Russian>AH-6J (M134)+</Russian>
+			<German>AH-6J (M134)+</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_AH6J++">
-			<English>AH6J Little Bird++</English>
-			<Russian>AH6J «Литтл Бёрд»++</Russian>
-			<German>AH6J "Little Bird"++</German>
+		<Key ID="STR_VEH_NAME_AH6J_M134++">
+			<English>AH-6J (M134)++</English>
+			<Russian>AH-6J (M134)++</Russian>
+			<German>AH-6J (M134)++</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_AH6J+++">
-			<English>AH6J Little Bird+++</English>
-			<Russian>AH6J «Литтл Бёрд»+++</Russian>
-			<German>AH6J "Little Bird"+++</German>
+		<Key ID="STR_VEH_NAME_AH6J_M134+++">
+			<English>AH-6J (M134)+++</English>
+			<Russian>AH-6J (M134)+++</Russian>
+			<German>AH-6J (M134)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_BIRD">
 			<English>MTVR Bird</English>
@@ -14533,36 +16409,36 @@
 			<German>Lagergrube</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH1">
-			<English>Stash +</English>
-			<French>Planque +</French>
-			<Russian>Схрон +</Russian>
-			<Spanish>Escondite +</Spanish>
-			<Czech>Skrýš +</Czech>
-			<German>Lagergrube +</German>
+			<English>Stash+</English>
+			<French>Planque+</French>
+			<Russian>Схрон+</Russian>
+			<Spanish>Escondite+</Spanish>
+			<Czech>Skrýš+</Czech>
+			<German>Lagergrube+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH2">
-			<English>Stash ++</English>
-			<French>Planque ++</French>
-			<Russian>Схрон ++</Russian>
-			<Spanish>Escondite ++</Spanish>
-			<Czech>Skrýš ++</Czech>
-			<German>Lagergrube ++</German>
+			<English>Stash++</English>
+			<French>Planque++</French>
+			<Russian>Схрон++</Russian>
+			<Spanish>Escondite++</Spanish>
+			<Czech>Skrýš++</Czech>
+			<German>Lagergrube++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH3">
-			<English>Stash +++</English>
-			<French>Planque +++</French>
-			<Russian>Схрон +++</Russian>
-			<Spanish>Escondite +++</Spanish>
-			<Czech>Skrýš +++</Czech>
-			<German>Lagergrube +++</German>
+			<English>Stash+++</English>
+			<French>Planque+++</French>
+			<Russian>Схрон+++</Russian>
+			<Spanish>Escondite+++</Spanish>
+			<Czech>Skrýš+++</Czech>
+			<German>Lagergrube+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH4">
-			<English>Stash ++++</English>
-			<French>Planque ++++</French>
-			<Russian>Схрон ++++</Russian>
-			<Spanish>Escondite ++++</Spanish>
-			<Czech>Skrýš ++++</Czech>
-			<German>Lagergrube ++++</German>
+			<English>Stash++++</English>
+			<French>Planque++++</French>
+			<Russian>Схрон++++</Russian>
+			<Spanish>Escondite++++</Spanish>
+			<Czech>Skrýš++++</Czech>
+			<German>Lagergrube++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_MED">
 			<English>Stash Medium</English>
@@ -14573,36 +16449,36 @@
 			<German>Mittlere Lagergrube</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_MED1">
-			<English>Stash Medium +</English>
-			<French>Planque de taille moyenne +</French>
-			<Russian>Средний схрон +</Russian>
-			<Spanish>Escondite Mediano +</Spanish>
-			<Czech>Skrýš (střední) +</Czech>
-			<German>Mittlere Lagergrube +</German>
+			<English>Stash Medium+</English>
+			<French>Planque de taille moyenne+</French>
+			<Russian>Средний схрон+</Russian>
+			<Spanish>Escondite Mediano+</Spanish>
+			<Czech>Skrýš (střední)+</Czech>
+			<German>Mittlere Lagergrube+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_MED2">
-			<English>Stash Medium ++</English>
-			<French>Planque de taille moyenne ++</French>
-			<Russian>Средний схрон ++</Russian>
-			<Spanish>Escondite Mediano ++</Spanish>
-			<Czech>Skrýš (střední) ++</Czech>
-			<German>Mittlere Lagergrube ++</German>
+			<English>Stash Medium++</English>
+			<French>Planque de taille moyenne++</French>
+			<Russian>Средний схрон++</Russian>
+			<Spanish>Escondite Mediano++</Spanish>
+			<Czech>Skrýš (střední)++</Czech>
+			<German>Mittlere Lagergrube++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_MED3">
-			<English>Stash Medium +++</English>
-			<French>Planque de taille moyenne +++</French>
-			<Russian>Средний схрон +++</Russian>
-			<Spanish>Escondite Mediano +++</Spanish>
-			<Czech>Skrýš (střední) +++</Czech>
-			<German>Mittlere Lagergrube +++</German>
+			<English>Stash Medium+++</English>
+			<French>Planque de taille moyenne+++</French>
+			<Russian>Средний схрон+++</Russian>
+			<Spanish>Escondite Mediano+++</Spanish>
+			<Czech>Skrýš (střední)+++</Czech>
+			<German>Mittlere Lagergrube+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_MED4">
-			<English>Stash Medium ++++</English>
-			<French>Planque de taille moyenne ++++</French>
-			<Russian>Средний схрон ++++</Russian>
-			<Spanish>Escondite Mediano ++++</Spanish>
-			<Czech>Skrýš (střední) ++++</Czech>
-			<German>Mittlere Lagergrube ++++</German>
+			<English>Stash Medium++++</English>
+			<French>Planque de taille moyenne++++</French>
+			<Russian>Средний схрон++++</Russian>
+			<Spanish>Escondite Mediano++++</Spanish>
+			<Czech>Skrýš (střední)++++</Czech>
+			<German>Mittlere Lagergrube++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DOME_TENT">
 			<English>Dome Tent</English>
@@ -14613,44 +16489,44 @@
 			<German>Igluzelt</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DOME_TENT1">
-			<English>Dome Tent +</English>
-			<French>Tente Dôme +</French>
-			<Russian>Палатка-полусфера +</Russian>
-			<Spanish>Tienda de Campaña +</Spanish>
-			<Czech>Stan (iglú) +</Czech>
-			<German>Igluzelt +</German>
+			<English>Dome Tent+</English>
+			<French>Tente Dôme+</French>
+			<Russian>Палатка-полусфера+</Russian>
+			<Spanish>Tienda de Campaña+</Spanish>
+			<Czech>Stan (iglú)+</Czech>
+			<German>Igluzelt+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DOME_TENT2">
-			<English>Dome Tent ++</English>
-			<French>Tente Dôme ++</French>
-			<Russian>Палатка-полусфера ++</Russian>
-			<Spanish>Tienda de Campaña ++</Spanish>
-			<Czech>Stan (iglú) ++</Czech>
-			<German>Igluzelt ++</German>
+			<English>Dome Tent++</English>
+			<French>Tente Dôme++</French>
+			<Russian>Палатка-полусфера++</Russian>
+			<Spanish>Tienda de Campaña++</Spanish>
+			<Czech>Stan (iglú)++</Czech>
+			<German>Igluzelt++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DOME_TENT3">
-			<English>Dome Tent +++</English>
-			<French>Tente Dôme +++</French>
-			<Russian>Палатка-полусфера +++</Russian>
-			<Spanish>Tienda de Campaña +++</Spanish>
-			<Czech>Stan (iglú) +++</Czech>
-			<German>Igluzelt +++</German>
+			<English>Dome Tent+++</English>
+			<French>Tente Dôme+++</French>
+			<Russian>Палатка-полусфера+++</Russian>
+			<Spanish>Tienda de Campaña+++</Spanish>
+			<Czech>Stan (iglú)+++</Czech>
+			<German>Igluzelt+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DOME_TENT4">
-			<English>Dome Tent ++++</English>
-			<French>Tente Dôme ++++</French>
-			<Russian>Палатка-полусфера ++++</Russian>
-			<Spanish>Tienda de Campaña ++++</Spanish>
-			<Czech>Stan (iglú) ++++</Czech>
-			<German>Igluzelt ++++</German>
+			<English>Dome Tent++++</English>
+			<French>Tente Dôme++++</French>
+			<Russian>Палатка-полусфера++++</Russian>
+			<Spanish>Tienda de Campaña++++</Spanish>
+			<Czech>Stan (iglú)++++</Czech>
+			<German>Igluzelt++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DOME_TENT5">
-			<English>Dome Tent +++++</English>
-			<French>Tente Dôme +++++</French>
-			<Russian>Палатка-полусфера +++++</Russian>
-			<Spanish>Tienda de Campaña +++++</Spanish>
-			<Czech>Stan (iglú) +++++</Czech>
-			<German>Igluzelt +++++</German>
+			<English>Dome Tent+++++</English>
+			<French>Tente Dôme+++++</French>
+			<Russian>Палатка-полусфера+++++</Russian>
+			<Spanish>Tienda de Campaña+++++</Spanish>
+			<Czech>Stan (iglú)+++++</Czech>
+			<German>Igluzelt+++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT">
 			<English>Winter Dome Tent</English>
@@ -14658,29 +16534,29 @@
 			<Russian>Зимняя палатка-полусфера</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT1">
-			<English>Winter Dome Tent +</English>
-			<German>Winterigluzelt +</German>
-			<Russian>Зимняя палатка-полусфера +</Russian>
+			<English>Winter Dome Tent+</English>
+			<German>Winterigluzelt+</German>
+			<Russian>Зимняя палатка-полусфера+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT2">
-			<English>Winter Dome Tent ++</English>
-			<German>Winterigluzelt ++</German>
-			<Russian>Зимняя палатка-полусфера ++</Russian>
+			<English>Winter Dome Tent++</English>
+			<German>Winterigluzelt++</German>
+			<Russian>Зимняя палатка-полусфера++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT3">
-			<English>Winter Dome Tent +++</English>
-			<German>Winterigluzelt +++</German>
-			<Russian>Зимняя палатка-полусфера +++</Russian>
+			<English>Winter Dome Tent+++</English>
+			<German>Winterigluzelt+++</German>
+			<Russian>Зимняя палатка-полусфера+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT4">
-			<English>Winter Dome Tent ++++</English>
-			<German>Winterigluzelt ++++</German>
-			<Russian>Зимняя палатка-полусфера ++++</Russian>
+			<English>Winter Dome Tent++++</English>
+			<German>Winterigluzelt++++</German>
+			<Russian>Зимняя палатка-полусфера++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT5">
-			<English>Winter Dome Tent +++++</English>
-			<German>Winterigluzelt +++++</German>
-			<Russian>Зимняя палатка-полусфера +++++</Russian>
+			<English>Winter Dome Tent+++++</English>
+			<German>Winterigluzelt+++++</German>
+			<Russian>Зимняя палатка-полусфера+++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENT">
 			<English>Camping Tent</English>
@@ -14691,44 +16567,44 @@
 			<French>Tente de camping</French>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENT1">
-			<English>Camping Tent +</English>
-			<German>Zelt +</German>
-			<Russian>Палатка-домик +</Russian>
-			<Spanish>Carpa +</Spanish>
-			<Czech>Stan +</Czech>
-			<French>Tente de camping +</French>
+			<English>Camping Tent+</English>
+			<German>Zelt+</German>
+			<Russian>Палатка-домик+</Russian>
+			<Spanish>Carpa+</Spanish>
+			<Czech>Stan+</Czech>
+			<French>Tente de camping+</French>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENT2">
-			<English>Camping Tent ++</English>
-			<German>Zelt ++</German>
-			<Russian>Палатка-домик ++</Russian>
-			<Spanish>Carpa ++</Spanish>
-			<Czech>Stan ++</Czech>
-			<French>Tente de camping ++</French>
+			<English>Camping Tent++</English>
+			<German>Zelt++</German>
+			<Russian>Палатка-домик++</Russian>
+			<Spanish>Carpa++</Spanish>
+			<Czech>Stan++</Czech>
+			<French>Tente de camping++</French>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENT3">
-			<English>Camping Tent +++</English>
-			<German>Zelt +++</German>
-			<Russian>Палатка-домик +++</Russian>
-			<Spanish>Carpa +++</Spanish>
-			<Czech>Stan +++</Czech>
-			<French>Tente de camping +++</French>
+			<English>Camping Tent+++</English>
+			<German>Zelt+++</German>
+			<Russian>Палатка-домик+++</Russian>
+			<Spanish>Carpa+++</Spanish>
+			<Czech>Stan+++</Czech>
+			<French>Tente de camping+++</French>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENT4">
-			<English>Camping Tent ++++</English>
-			<German>Zelt ++++</German>
-			<Russian>Палатка-домик ++++</Russian>
-			<Spanish>Carpa ++++</Spanish>
-			<Czech>Stan ++++</Czech>
-			<French>Tente de camping ++++</French>
+			<English>Camping Tent++++</English>
+			<German>Zelt++++</German>
+			<Russian>Палатка-домик++++</Russian>
+			<Spanish>Carpa++++</Spanish>
+			<Czech>Stan++++</Czech>
+			<French>Tente de camping++++</French>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENT5">
-			<English>Camping Tent +++++</English>
-			<German>Zelt +++++</German>
-			<Russian>Палатка-домик +++++</Russian>
-			<Spanish>Carpa +++++</Spanish>
-			<Czech>Stan +++++</Czech>
-			<French>Tente de camping +++++</French>
+			<English>Camping Tent+++++</English>
+			<German>Zelt+++++</German>
+			<Russian>Палатка-домик+++++</Russian>
+			<Spanish>Carpa+++++</Spanish>
+			<Czech>Stan+++++</Czech>
+			<French>Tente de camping+++++</French>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER">
 			<English>Winter Camping Tent</English>
@@ -14736,29 +16612,29 @@
 			<Russian>Зимняя палатка-домик</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER1">
-			<English>Winter Camping Tent +</English>
-			<German>Winterzelt +</German>
-			<Russian>Зимняя палатка-домик +</Russian>
+			<English>Winter Camping Tent+</English>
+			<German>Winterzelt+</German>
+			<Russian>Зимняя палатка-домик+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER2">
-			<English>Winter Camping Tent ++</English>
-			<German>Winterzelt ++</German>
-			<Russian>Зимняя палатка-домик ++</Russian>
+			<English>Winter Camping Tent++</English>
+			<German>Winterzelt++</German>
+			<Russian>Зимняя палатка-домик++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER3">
-			<English>Winter Camping Tent +++</English>
-			<German>Winterzelt +++</German>
-			<Russian>Зимняя палатка-домик +++</Russian>
+			<English>Winter Camping Tent+++</English>
+			<German>Winterzelt+++</German>
+			<Russian>Зимняя палатка-домик+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER4">
-			<English>Winter Camping Tent ++++</English>
-			<German>Winterzelt ++++</German>
-			<Russian>Зимняя палатка-домик ++++</Russian>
+			<English>Winter Camping Tent++++</English>
+			<German>Winterzelt++++</German>
+			<Russian>Зимняя палатка-домик++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER5">
-			<English>Winter Camping Tent +++++</English>
-			<German>Winterzelt +++++</German>
-			<Russian>Зимняя палатка-домик +++++</Russian>
+			<English>Winter Camping Tent+++++</English>
+			<German>Winterzelt+++++</German>
+			<Russian>Зимняя палатка-домик+++++</Russian>
 		</Key>
 		<Key ID="STR_BUILT_WIRE1">
 			<English>Wire (CAT1)</English>
@@ -27087,44 +28963,44 @@
 			<German>Wüstenigluzelt</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT1">
-			<English>Desert Dome Tent +</English>
-			<French>Tente Dôme Désert +</French>
-			<Russian>Пустынная палатка-полусфера +</Russian>
-			<Spanish>Tienda de Campaña Desierto +</Spanish>
-			<Czech>Stan (iglú) Poušť +</Czech>
-			<German>Wüstenigluzelt +</German>
+			<English>Desert Dome Tent+</English>
+			<French>Tente Dôme Désert+</French>
+			<Russian>Пустынная палатка-полусфера+</Russian>
+			<Spanish>Tienda de Campaña Desierto+</Spanish>
+			<Czech>Stan (iglú) Poušť+</Czech>
+			<German>Wüstenigluzelt+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT2">
-			<English>Desert Dome Tent ++</English>
-			<French>Tente Dôme Désert ++</French>
-			<Russian>Пустынная палатка-полусфера ++</Russian>
-			<Spanish>Tienda de Campaña Desierto ++</Spanish>
-			<Czech>Stan (iglú) Poušť ++</Czech>
-			<German>Wüstenigluzelt ++</German>
+			<English>Desert Dome Tent++</English>
+			<French>Tente Dôme Désert++</French>
+			<Russian>Пустынная палатка-полусфера++</Russian>
+			<Spanish>Tienda de Campaña Desierto++</Spanish>
+			<Czech>Stan (iglú) Poušť++</Czech>
+			<German>Wüstenigluzelt++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT3">
-			<English>Desert Dome Tent +++</English>
-			<French>Tente Dôme Désert +++</French>
-			<Russian>Пустынная палатка-полусфера +++</Russian>
-			<Spanish>Tienda de Campaña Desierto +++</Spanish>
-			<Czech>Stan (iglú) Poušť +++</Czech>
-			<German>Wüstenigluzelt +++</German>
+			<English>Desert Dome Tent+++</English>
+			<French>Tente Dôme Désert+++</French>
+			<Russian>Пустынная палатка-полусфера+++</Russian>
+			<Spanish>Tienda de Campaña Desierto+++</Spanish>
+			<Czech>Stan (iglú) Poušť+++</Czech>
+			<German>Wüstenigluzelt+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT4">
-			<English>Desert Dome Tent ++++</English>
-			<French>Tente Dôme Désert ++++</French>
-			<Russian>Пустынная палатка-полусфера ++++</Russian>
-			<Spanish>Tienda de Campaña Desierto ++++</Spanish>
-			<Czech>Stan (iglú) Poušť ++++</Czech>
-			<German>Wüstenigluzelt ++++</German>
+			<English>Desert Dome Tent++++</English>
+			<French>Tente Dôme Désert++++</French>
+			<Russian>Пустынная палатка-полусфера++++</Russian>
+			<Spanish>Tienda de Campaña Desierto++++</Spanish>
+			<Czech>Stan (iglú) Poušť++++</Czech>
+			<German>Wüstenigluzelt++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT5">
-			<English>Desert Dome Tent +++++</English>
-			<French>Tente Dôme Désert +++++</French>
-			<Russian>Пустынная палатка-полусфера +++++</Russian>
-			<Spanish>Tienda de Campaña Desierto +++++</Spanish>
-			<Czech>Stan (iglú) Poušť +++++</Czech>
-			<German>Wüstenigluzelt +++++</German>
+			<English>Desert Dome Tent+++++</English>
+			<French>Tente Dôme Désert+++++</French>
+			<Russian>Пустынная палатка-полусфера+++++</Russian>
+			<Spanish>Tienda de Campaña Desierto+++++</Spanish>
+			<Czech>Stan (iglú) Poušť+++++</Czech>
+			<German>Wüstenigluzelt+++++</German>
 		</Key>
 
 		<Key ID="STR_FOOD_NAME_BIOMEAT">
@@ -38065,6 +39941,1108 @@
 		<Key ID="STR_STORAGE_MANAGEMENT_DESCRIPTION">
 			<English>Listed players may only unlock this storage.</English>
 			<German>Eingetragene Spieler dürfen nur öffnen.</German>
+		</Key>
+	</Package>
+	<Package name="VehicleUpgradeChains">
+		<Key ID="STR_VEH_NAME_ATV_BEIGE+">
+			<English>ATV (Beige)+</English>
+			<German>Quad (Beige)+</German>
+			<Russian>Квадроцикл (Бежевый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BEIGE++">
+			<English>ATV (Beige)++</English>
+			<German>Quad (Beige)++</German>
+			<Russian>Квадроцикл (Бежевый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BEIGE+++">
+			<English>ATV (Beige)+++</English>
+			<German>Quad (Beige)+++</German>
+			<Russian>Квадроцикл (Бежевый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BEIGE++++">
+			<English>ATV (Beige)++++</English>
+			<German>Quad (Beige)++++</German>
+			<Russian>Квадроцикл (Бежевый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_GREEN+">
+			<English>ATV (Green)+</English>
+			<German>Quad (Grün)+</German>
+			<Russian>Квадроцикл (Зелёный)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_GREEN++">
+			<English>ATV (Green)++</English>
+			<German>Quad (Grün)++</German>
+			<Russian>Квадроцикл (Зелёный)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_GREEN+++">
+			<English>ATV (Green)+++</English>
+			<German>Quad (Grün)+++</German>
+			<Russian>Квадроцикл (Зелёный)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_GREEN++++">
+			<English>ATV (Green)++++</English>
+			<German>Quad (Grün)++++</German>
+			<Russian>Квадроцикл (Зелёный)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_WHITE+">
+			<English>ATV (White)+</English>
+			<German>Quad (Weiß)+</German>
+			<Russian>Квадроцикл (Белый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_WHITE++">
+			<English>ATV (White)++</English>
+			<German>Quad (Weiß)++</German>
+			<Russian>Квадроцикл (Белый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_WHITE+++">
+			<English>ATV (White)+++</English>
+			<German>Quad (Weiß)+++</German>
+			<Russian>Квадроцикл (Белый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_WHITE++++">
+			<English>ATV (White)++++</English>
+			<German>Quad (Weiß)++++</German>
+			<Russian>Квадроцикл (Белый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_GREY+">
+			<English>ATV (Grey)+</English>
+			<German>Quad (Grau)+</German>
+			<Russian>Квадроцикл (Серый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_GREY++">
+			<English>ATV (Grey)++</English>
+			<German>Quad (Grau)++</German>
+			<Russian>Квадроцикл (Серый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_GREY+++">
+			<English>ATV (Grey)+++</English>
+			<German>Quad (Grau)+++</German>
+			<Russian>Квадроцикл (Серый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_GREY++++">
+			<English>ATV (Grey)++++</English>
+			<German>Quad (Grau)++++</German>
+			<Russian>Квадроцикл (Серый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_RED+">
+			<English>ATV (Red)+</English>
+			<German>Quad (Rot)+</German>
+			<Russian>Квадроцикл (Красный)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_RED++">
+			<English>ATV (Red)++</English>
+			<German>Quad (Rot)++</German>
+			<Russian>Квадроцикл (Красный)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_RED+++">
+			<English>ATV (Red)+++</English>
+			<German>Quad (Rot)+++</German>
+			<Russian>Квадроцикл (Красный)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_RED++++">
+			<English>ATV (Red)++++</English>
+			<German>Quad (Rot)++++</German>
+			<Russian>Квадроцикл (Красный)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_LIGHTGREEN+">
+			<English>ATV (Light Green)+</English>
+			<German>Quad (Hellgrün)+</German>
+			<Russian>Квадроцикл (Светло-зелёный)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_LIGHTGREEN++">
+			<English>ATV (Light Green)++</English>
+			<German>Quad (Hellgrün)++</German>
+			<Russian>Квадроцикл (Светло-зелёный)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_LIGHTGREEN+++">
+			<English>ATV (Light Green)+++</English>
+			<German>Quad (Hellgrün)+++</German>
+			<Russian>Квадроцикл (Светло-зелёный)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_LIGHTGREEN++++">
+			<English>ATV (Light Green)++++</English>
+			<German>Quad (Hellgrün)++++</German>
+			<Russian>Квадроцикл (Светло-зелёный)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BLUE+">
+			<English>ATV (Blue)+</English>
+			<German>Quad (Blau)+</German>
+			<Russian>Квадроцикл (Синий)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BLUE++">
+			<English>ATV (Blue)++</English>
+			<German>Quad (Blau)++</German>
+			<Russian>Квадроцикл (Синий)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BLUE+++">
+			<English>ATV (Blue)+++</English>
+			<German>Quad (Blau)+++</German>
+			<Russian>Квадроцикл (Синий)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BLUE++++">
+			<English>ATV (Blue)++++</English>
+			<German>Quad (Blau)++++</German>
+			<Russian>Квадроцикл (Синий)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_YELLOW+">
+			<English>ATV (Yellow)+</English>
+			<German>Quad (Gelb)+</German>
+			<Russian>Квадроцикл (Жёлтый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_YELLOW++">
+			<English>ATV (Yellow)++</English>
+			<German>Quad (Gelb)++</German>
+			<Russian>Квадроцикл (Жёлтый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_YELLOW+++">
+			<English>ATV (Yellow)+++</English>
+			<German>Quad (Gelb)+++</German>
+			<Russian>Квадроцикл (Жёлтый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_YELLOW++++">
+			<English>ATV (Yellow)++++</English>
+			<German>Quad (Gelb)++++</German>
+			<Russian>Квадроцикл (Жёлтый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_PURPLE+">
+			<English>ATV (Purple)+</English>
+			<German>Quad (Lila)+</German>
+			<Russian>Квадроцикл (Фиолетовый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_PURPLE++">
+			<English>ATV (Purple)++</English>
+			<German>Quad (Lila)++</German>
+			<Russian>Квадроцикл (Фиолетовый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_PURPLE+++">
+			<English>ATV (Purple)+++</English>
+			<German>Quad (Lila)+++</German>
+			<Russian>Квадроцикл (Фиолетовый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_PURPLE++++">
+			<English>ATV (Purple)++++</English>
+			<German>Quad (Lila)++++</German>
+			<Russian>Квадроцикл (Фиолетовый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BLACK+">
+			<English>ATV (Black)+</English>
+			<German>Quad (Schwarz)+</German>
+			<Russian>Квадроцикл (Чёрный)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BLACK++">
+			<English>ATV (Black)++</English>
+			<German>Quad (Schwarz)++</German>
+			<Russian>Квадроцикл (Чёрный)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BLACK+++">
+			<English>ATV (Black)+++</English>
+			<German>Quad (Schwarz)+++</German>
+			<Russian>Квадроцикл (Чёрный)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BLACK++++">
+			<English>ATV (Black)++++</English>
+			<German>Quad (Schwarz)++++</German>
+			<Russian>Квадроцикл (Чёрный)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BIKE_OLD+">
+			<Chinese>Old Bike+</Chinese>
+			<French>Vieille moto+</French>
+			<Spanish>Bici vieja+</Spanish>
+			<Italian>Vecchia bici+</Italian>
+			<Hungarian>Old Bike+</Hungarian>
+			<Polish>Stary motocykl+</Polish>
+			<Russian>Старый велосипед+</Russian>
+			<German>Altes Fahrrad+</German>
+			<Czech>Staré kolo+</Czech>
+			<English>Old Bike+</English>
+			<Japanese>Old Bike+</Japanese>
+		</Key>
+		<Key ID="STR_VEH_NAME_BIKE_OLD++">
+			<Chinese>Old Bike++</Chinese>
+			<French>Vieille moto++</French>
+			<Spanish>Bici vieja++</Spanish>
+			<Italian>Vecchia bici++</Italian>
+			<Hungarian>Old Bike++</Hungarian>
+			<Polish>Stary motocykl++</Polish>
+			<Russian>Старый велосипед++</Russian>
+			<German>Altes Fahrrad++</German>
+			<Czech>Staré kolo++</Czech>
+			<English>Old Bike++</English>
+			<Japanese>Old Bike++</Japanese>
+		</Key>
+		<Key ID="STR_VEH_NAME_BIKE_MOUNTAINBIKE+">
+			<German>Mountainbike+</German>
+			<English>Mountain Bike+</English>
+			<Italian>Mountain Bike+</Italian>
+			<Spanish>Bici MMT+</Spanish>
+			<French>Mountain Bike+</French>
+			<Czech>Horské kolo+</Czech>
+			<Russian>Горный велосипед+</Russian>
+			<Polish>Rower górski+</Polish>
+			<Hungarian>Mountain Bike+</Hungarian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BIKE_MOUNTAINBIKE++">
+			<German>Mountainbike++</German>
+			<English>Mountain Bike++</English>
+			<Italian>Mountain Bike++</Italian>
+			<Spanish>Bici MMT++</Spanish>
+			<French>Mountain Bike++</French>
+			<Czech>Horské kolo++</Czech>
+			<Russian>Горный велосипед++</Russian>
+			<Polish>Rower górski++</Polish>
+			<Hungarian>Mountain Bike++</Hungarian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_WHITE+">
+			<English>Motorbike (White)+</English>
+			<German>Motorrad (Weiß)+</German>
+			<Russian>Мотоцикл (Белый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_WHITE++">
+			<English>Motorbike (White)++</English>
+			<German>Motorrad (Weiß)++</German>
+			<Russian>Мотоцикл (Белый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_WHITE+++">
+			<English>Motorbike (White)+++</English>
+			<German>Motorrad (Weiß)+++</German>
+			<Russian>Мотоцикл (Белый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_WHITE++++">
+			<English>Motorbike (White)++++</English>
+			<German>Motorrad (Weiß)++++</German>
+			<Russian>Мотоцикл (Белый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_REDWHITE+">
+			<English>Motorbike TT650 (Red/White)+</English>
+			<German>Motorrad TT650 (Rot/Weiß)+</German>
+			<Russian>Мотоцикл TT650 (Красный/Белый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_REDWHITE++">
+			<English>Motorbike TT650 (Red/White)++</English>
+			<German>Motorrad TT650 (Rot/Weiß)++</German>
+			<Russian>Мотоцикл TT650 (Красный/Белый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_REDWHITE+++">
+			<English>Motorbike TT650 (Red/White)+++</English>
+			<German>Motorrad TT650 (Rot/Weiß)+++</German>
+			<Russian>Мотоцикл TT650 (Красный/Белый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_REDWHITE++++">
+			<English>Motorbike TT650 (Red/White)++++</English>
+			<German>Motorrad TT650 (Rot/Weiß)++++</German>
+			<Russian>Мотоцикл TT650 (Красный/Белый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_RUSTY+">
+			<English>Motorbike TT650 (Rusty)+</English>
+			<German>Motorrad TT650 (Rostig)+</German>
+			<Russian>Мотоцикл TT650 (Ржавый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_RUSTY++">
+			<English>Motorbike TT650 (Rusty)++</English>
+			<German>Motorrad TT650 (Rostig)++</German>
+			<Russian>Мотоцикл TT650 (Ржавый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_RUSTY+++">
+			<English>Motorbike TT650 (Rusty)+++</English>
+			<German>Motorrad TT650 (Rostig)+++</German>
+			<Russian>Мотоцикл TT650 (Ржавый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_RUSTY++++">
+			<English>Motorbike TT650 (Rusty)++++</English>
+			<German>Motorrad TT650 (Rostig)++++</German>
+			<Russian>Мотоцикл TT650 (Ржавый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_FIRERED+">
+			<English>Motorbike TT650 (Fire Red)+</English>
+			<German>Motorrad TT650 (Feuerrot)+</German>
+			<Russian>Мотоцикл TT650 (Огненно-красный)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_FIRERED++">
+			<English>Motorbike TT650 (Fire Red)++</English>
+			<German>Motorrad TT650 (Feuerrot)++</German>
+			<Russian>Мотоцикл TT650 (Огненно-красный)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_FIRERED+++">
+			<English>Motorbike TT650 (Fire Red)+++</English>
+			<German>Motorrad TT650 (Feuerrot)+++</German>
+			<Russian>Мотоцикл TT650 (Огненно-красный)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_FIRERED++++">
+			<English>Motorbike TT650 (Fire Red)++++</English>
+			<German>Motorrad TT650 (Feuerrot)++++</German>
+			<Russian>Мотоцикл TT650 (Огненно-красный)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_M1030_GREEN+">
+			<English>Motorbike M1030 (Green)+</English>
+			<German>Motorrad M1030 (Grün)+</German>
+			<Russian>Мотоцикл M1030 (Зелёный)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_M1030_GREEN++">
+			<English>Motorbike M1030 (Green)++</English>
+			<German>Motorrad M1030 (Grün)++</German>
+			<Russian>Мотоцикл M1030 (Зелёный)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_M1030_GREEN+++">
+			<English>Motorbike M1030 (Green)+++</English>
+			<German>Motorrad M1030 (Grün)+++</German>
+			<Russian>Мотоцикл M1030 (Зелёный)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOTORBIKE_M1030_GREEN++++">
+			<English>Motorbike M1030 (Green)++++</English>
+			<German>Motorrad M1030 (Grün)++++</German>
+			<Russian>Мотоцикл M1030 (Зелёный)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_FISHING_BOAT+">
+			<English>Fishing boat+</English>
+			<Russian>Рыбацкая лодка+</Russian>
+			<Spanish>Barco de pesca+</Spanish>
+			<French>Bateau de pêche+</French>
+			<Czech>Rybářská loď+</Czech>
+			<German>Fischerboot+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FISHING_BOAT++">
+			<English>Fishing boat++</English>
+			<Russian>Рыбацкая лодка++</Russian>
+			<Spanish>Barco de pesca++</Spanish>
+			<French>Bateau de pêche++</French>
+			<Czech>Rybářská loď++</Czech>
+			<German>Fischerboot++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_FISHING_BOAT+++">
+			<English>Fishing boat+++</English>
+			<Russian>Рыбацкая лодка+++</Russian>
+			<Spanish>Barco de pesca+++</Spanish>
+			<French>Bateau de pêche+++</French>
+			<Czech>Rybářská loď+++</Czech>
+			<German>Fischerboot+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_YELLOW+">
+			<English>Jet Ski (yellow)+</English>
+			<Russian>Jet Ski (Жёлтый)+</Russian>
+			<German>Jetski (gelb)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_YELLOW++">
+			<English>Jet Ski (yellow)++</English>
+			<Russian>Jet Ski (Жёлтый)++</Russian>
+			<German>Jetski (gelb)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_YELLOW+++">
+			<English>Jet Ski (yellow)+++</English>
+			<Russian>Jet Ski (Жёлтый)+++</Russian>
+			<German>Jetski (gelb)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_GREEN+">
+			<English>Jet Ski (green)+</English>
+			<Russian>Jet Ski (Зелёный)+</Russian>
+			<German>Jetski (grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_GREEN++">
+			<English>Jet Ski (green)++</English>
+			<Russian>Jet Ski (Зелёный)++</Russian>
+			<German>Jetski (grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_GREEN+++">
+			<English>Jet Ski (green)+++</English>
+			<Russian>Jet Ski (Зелёный)+++</Russian>
+			<German>Jetski (grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_BLUE+">
+			<English>Jet Ski (blue)+</English>
+			<Russian>Jet Ski (Синий)+</Russian>
+			<German>Jetski (blau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_BLUE++">
+			<English>Jet Ski (blue)++</English>
+			<Russian>Jet Ski (Синий)++</Russian>
+			<German>Jetski (blau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_BLUE+++">
+			<English>Jet Ski (blue)+++</English>
+			<Russian>Jet Ski (Синий)+++</Russian>
+			<German>Jetski (blau)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_RED+">
+			<English>Jet Ski (red)+</English>
+			<Russian>Jet Ski (Красный)+</Russian>
+			<German>Jetski (rot)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_RED++">
+			<English>Jet Ski (red)++</English>
+			<Russian>Jet Ski (Красный)++</Russian>
+			<German>Jetski (rot)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_RED+++">
+			<English>Jet Ski (red)+++</English>
+			<Russian>Jet Ski (Красный)+++</Russian>
+			<German>Jetski (rot)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PBX+">
+			<English>PBX Rubber Boat+</English>
+			<Russian>Моторная лодка ПВХ+</Russian>
+			<Spanish>Gomón PBX+</Spanish>
+			<French>PBX canot+</French>
+			<Czech>PBX člun+</Czech>
+			<German>PBX Schlauchboot+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PBX++">
+			<English>PBX Rubber Boat++</English>
+			<Russian>Моторная лодка ПВХ++</Russian>
+			<Spanish>Gomón PBX++</Spanish>
+			<French>PBX canot++</French>
+			<Czech>PBX člun++</Czech>
+			<German>PBX Schlauchboot++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PBX+++">
+			<English>PBX Rubber Boat+++</English>
+			<Russian>Моторная лодка ПВХ+++</Russian>
+			<Spanish>Gomón PBX+++</Spanish>
+			<French>PBX canot+++</French>
+			<Czech>PBX člun+++</Czech>
+			<German>PBX Schlauchboot+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CRRC+">
+			<English>CRRC Rubber Boat+</English>
+			<Spanish>Gomón CRRC+</Spanish>
+			<French>CRRC canot+</French>
+			<Czech>CRRC člun+</Czech>
+			<German>CRRC Schlauchboot+</German>
+			<Russian>Десантная резиновая лодка+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CRRC++">
+			<English>CRRC Rubber Boat++</English>
+			<Spanish>Gomón CRRC++</Spanish>
+			<French>CRRC canot++</French>
+			<Czech>CRRC člun++</Czech>
+			<German>CRRC Schlauchboot++</German>
+			<Russian>Десантная резиновая лодка++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CRRC+++">
+			<English>CRRC Rubber Boat+++</English>
+			<Spanish>Gomón CRRC+++</Spanish>
+			<French>CRRC canot+++</French>
+			<Czech>CRRC člun+++</Czech>
+			<German>CRRC Schlauchboot+++</German>
+			<Russian>Десантная резиновая лодка+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_RHIB_M2+">
+			<English>RHIB (M2)+</English>
+			<Russian>НЛЖК (M2)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_RHIB_M2++">
+			<English>RHIB (M2)++</English>
+			<Russian>НЛЖК (M2)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_RHIB_M2+++">
+			<English>RHIB (M2)+++</English>
+			<Russian>НЛЖК (M2)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_RHIB_MK19+">
+			<English>RHIB (MK 19)+</English>
+			<Russian>НЛЖК (MK 19)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_RHIB_MK19++">
+			<English>RHIB (MK 19)++</English>
+			<Russian>НЛЖК (MK 19)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_RHIB_MK19+++">
+			<English>RHIB (MK 19)+++</English>
+			<Russian>НЛЖК (MK 19)+++</Russian>
+		</Key>
+		<Key ID="STR_DN_SEAFOX+">
+			<English>SeaFox+</English>
+			<German>SeaFox+</German>
+		</Key>
+		<Key ID="STR_DN_SEAFOX++">
+			<English>SeaFox++</English>
+			<German>SeaFox++</German>
+		</Key>
+		<Key ID="STR_DN_SEAFOX+++">
+			<English>SeaFox+++</English>
+			<German>SeaFox+++</German>
+		</Key>
+		<Key ID="STR_DN_SMALLBOATA+">
+			<English>Small Boat (1)+</English>
+			<German>Motorboot (1)+</German>
+		</Key>
+		<Key ID="STR_DN_SMALLBOATA++">
+			<English>Small Boat (1)++</English>
+			<German>Motorboot (1)++</German>
+		</Key>
+		<Key ID="STR_DN_SMALLBOATA+++">
+			<English>Small Boat (1)+++</English>
+			<German>Motorboot (1)+++</German>
+		</Key>
+		<Key ID="STR_DN_SMALLBOATB+">
+			<English>Small Boat (2)+</English>
+			<German>Motorboot (2)+</German>
+		</Key>
+		<Key ID="STR_DN_SMALLBOATB++">
+			<English>Small Boat (2)++</English>
+			<German>Motorboot (2)++</German>
+		</Key>
+		<Key ID="STR_DN_SMALLBOATB+++">
+			<English>Small Boat (2)+++</English>
+			<German>Motorboot (2)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUBMARINE+">
+			<English>Submarine+</English>
+			<German>U-Boot+</German>
+			<Russian>Подводная лодка+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUBMARINE++">
+			<English>Submarine++</English>
+			<German>U-Boot++</German>
+			<Russian>Подводная лодка++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUBMARINE+++">
+			<English>Submarine+++</English>
+			<German>U-Boot+++</German>
+			<Russian>Подводная лодка+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_BLUE+">
+			<English>Bus (Blue)+</English>
+			<German>Bus (Blau)+</German>
+			<Russian>Автобус (Синий)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_BLUE++">
+			<English>Bus (Blue)++</English>
+			<German>Bus (Blau)++</German>
+			<Russian>Автобус (Синий)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_BLUE+++">
+			<English>Bus (Blue)+++</English>
+			<German>Bus (Blau)+++</German>
+			<Russian>Автобус (Синий)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_BLUE++++">
+			<English>Bus (Blue)++++</English>
+			<German>Bus (Blau)++++</German>
+			<Russian>Автобус (Синий)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_RED+">
+			<English>Bus (Red)+</English>
+			<German>Bus (Rot)+</German>
+			<Russian>Автобус (Красный)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_RED++">
+			<English>Bus (Red)++</English>
+			<German>Bus (Rot)++</German>
+			<Russian>Автобус (Красный)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_RED+++">
+			<English>Bus (Red)+++</English>
+			<German>Bus (Rot)+++</German>
+			<Russian>Автобус (Красный)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_RED++++">
+			<English>Bus (Red)++++</English>
+			<German>Bus (Rot)++++</German>
+			<Russian>Автобус (Красный)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_WHITE+">
+			<English>Bus (White)+</English>
+			<German>Bus (Weiß)+</German>
+			<Russian>Автобус (Белый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_WHITE++">
+			<English>Bus (White)++</English>
+			<German>Bus (Weiß)++</German>
+			<Russian>Автобус (Белый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_WHITE+++">
+			<English>Bus (White)+++</English>
+			<German>Bus (Weiß)+++</German>
+			<Russian>Автобус (Белый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_WHITE++++">
+			<English>Bus (White)++++</English>
+			<German>Bus (Weiß)++++</German>
+			<Russian>Автобус (Белый)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_ARMORED+">
+			<English>Armored Bus+</English>
+			<German>Gepanzerter Bus+</German>
+			<Russian>Бронированный автобус+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_ARMORED++">
+			<English>Armored Bus++</English>
+			<German>Gepanzerter Bus++</German>
+			<Russian>Бронированный автобус++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_ARMORED+++">
+			<English>Armored Bus+++</English>
+			<German>Gepanzerter Bus+++</German>
+			<Russian>Бронированный автобус+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_ARMORED++++">
+			<English>Armored Bus++++</English>
+			<German>Gepanzerter Bus++++</German>
+			<Russian>Бронированный автобус++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOZZIE+">
+			<English>Mozzie+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOZZIE++">
+			<English>Mozzie++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MOZZIE+++">
+			<English>Mozzie+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_A10_USMC+">
+			<English>A-10 (USMC)+</English>
+			<German>A-10 (USMC)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_A10_USMC++">
+			<English>A-10 (USMC)++</English>
+			<German>A-10 (USMC)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_A10_USMC+++">
+			<English>A-10 (USMC)+++</English>
+			<German>A-10 (USMC)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_A10_US+">
+			<English>A-10 (US)+</English>
+			<German>A-10 (US)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_A10_US++">
+			<English>A-10 (US)++</English>
+			<German>A-10 (US)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_A10_US+++">
+			<English>A-10 (US)+++</English>
+			<German>A-10 (US)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_GREEN+">
+			<English>Antonov AN-2 (green)+</English>
+			<Russian>Антонов АН-2 (Зелёный)+</Russian>
+			<German>Antonow AN-2 (grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_GREEN++">
+			<English>Antonov AN-2 (green)++</English>
+			<Russian>Антонов АН-2 (Зелёный)++</Russian>
+			<German>Antonow AN-2 (grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_GREEN+++">
+			<English>Antonov AN-2 (green)+++</English>
+			<Russian>Антонов АН-2 (Зелёный)+++</Russian>
+			<German>Antonow AN-2 (grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_VICKER+">
+			<English>Antonov AN-2 (VICKERS)+</English>
+			<Russian>Антонов АН-2 (VICKERS)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_VICKER++">
+			<English>Antonov AN-2 (VICKERS)++</English>
+			<Russian>Антонов АН-2 (VICKERS)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_VICKER+++">
+			<English>Antonov AN-2 (VICKERS)+++</English>
+			<Russian>Антонов АН-2 (VICKERS)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_WHITERED+">
+			<English>Antonov AN-2 (white red)+</English>
+			<Russian>Антонов АН-2 (Красно-белый)+</Russian>
+			<German>Antonow AN-2 (weiß rot)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_WHITERED++">
+			<English>Antonov AN-2 (white red)++</English>
+			<Russian>Антонов АН-2 (Красно-белый)++</Russian>
+			<German>Antonow AN-2 (weiß rot)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_WHITERED+++">
+			<English>Antonov AN-2 (white red)+++</English>
+			<Russian>Антонов АН-2 (Красно-белый)+++</Russian>
+			<German>Antonow AN-2 (weiß rot)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_M134+">
+			<English>Antonov AN-2 (M134)+</English>
+			<Russian>Антонов АН-2 (M134)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_M134++">
+			<English>Antonov AN-2 (M134)++</English>
+			<Russian>Антонов АН-2 (M134)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_M134+++">
+			<English>Antonov AN-2 (M134)+++</English>
+			<Russian>Антонов АН-2 (M134)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_WHITEGREEN+">
+			<English>Antonov AN-2 (white green)+</English>
+			<Russian>Антонов АН-2 (Бело-зелёный)+</Russian>
+			<German>Antonow AN-2 (weiß grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_WHITEGREEN++">
+			<English>Antonov AN-2 (white green)++</English>
+			<Russian>Антонов АН-2 (Бело-зелёный)++</Russian>
+			<German>Antonow AN-2 (weiß grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AN2_WHITEGREEN+++">
+			<English>Antonov AN-2 (white green)+++</English>
+			<Russian>Антонов АН-2 (Бело-зелёный)+++</Russian>
+			<German>Antonow AN-2 (weiß grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AV8B_LGB+">
+			<English>AV-8B (LGB)+</English>
+			<German>AV-8B (LGB)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AV8B_LGB++">
+			<English>AV-8B (LGB)++</English>
+			<German>AV-8B (LGB)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AV8B_LGB+++">
+			<English>AV-8B (LGB)+++</English>
+			<German>AV-8B (LGB)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AV8B+">
+			<English>AV-8B+</English>
+			<German>AV-8B+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AV8B++">
+			<English>AV-8B++</English>
+			<German>AV-8B++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AV8B+++">
+			<English>AV-8B+++</English>
+			<German>AV-8B+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_C130+">
+			<English>C-130J Hercules+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_C130++">
+			<English>C-130J Hercules++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_C130+++">
+			<English>C-130J Hercules+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_WEST+">
+			<English>Camel (West)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_WEST++">
+			<English>Camel (West)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_WEST+++">
+			<English>Camel (West)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_EAST+">
+			<English>Camel (East)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_EAST++">
+			<English>Camel (East)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_EAST+++">
+			<English>Camel (East)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_CIVIL+">
+			<English>Camel (Civil)+</English>
+			<German>Camel (Zivil)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_CIVIL++">
+			<English>Camel (Civil)++</English>
+			<German>Camel (Zivil)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_CIVIL+++">
+			<English>Camel (Civil)+++</English>
+			<German>Camel (Zivil)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_WHITE+">
+			<English>Cessna C185C (white)+</English>
+			<Russian>Cessna C185C (Белая)+</Russian>
+			<German>Cessna C185C (weiß)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_WHITE++">
+			<English>Cessna C185C (white)++</English>
+			<Russian>Cessna C185C (Белая)++</Russian>
+			<German>Cessna C185C (weiß)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_WHITE+++">
+			<English>Cessna C185C (white)+++</English>
+			<Russian>Cessna C185C (Белая)+++</Russian>
+			<German>Cessna C185C (weiß)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_YELLOW+">
+			<English>Cessna C185R (yellow)+</English>
+			<Russian>Cessna C185R (Жёлтая)+</Russian>
+			<German>Cessna C185R (gelb)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_YELLOW++">
+			<English>Cessna C185R (yellow)++</English>
+			<Russian>Cessna C185R (Жёлтая)++</Russian>
+			<German>Cessna C185R (gelb)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_YELLOW+++">
+			<English>Cessna C185R (yellow)+++</English>
+			<Russian>Cessna C185R (Жёлтая)+++</Russian>
+			<German>Cessna C185R (gelb)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_ORANGE+">
+			<English>Cessna C185 (orange)+</English>
+			<Russian>Cessna C185 (Оранжевая)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_ORANGE++">
+			<English>Cessna C185 (orange)++</English>
+			<Russian>Cessna C185 (Оранжевая)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_ORANGE+++">
+			<English>Cessna C185 (orange)+++</English>
+			<Russian>Cessna C185 (Оранжевая)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_CAMO+">
+			<English>Cessna C185U (Camo)+</English>
+			<Russian>Cessna C185U (Камуфляж)+</Russian>
+			<German>Cessna C185U (Tarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_CAMO++">
+			<English>Cessna C185U (Camo)++</English>
+			<Russian>Cessna C185U (Камуфляж)++</Russian>
+			<German>Cessna C185U (Tarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_CAMO+++">
+			<English>Cessna C185U (Camo)+++</English>
+			<Russian>Cessna C185U (Камуфляж)+++</Russian>
+			<German>Cessna C185U (Tarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_ROCKETS+">
+			<English>Cessna C185T (Rockets)+</English>
+			<German>Cessna C185T (Raketen)+</German>
+			<Russian>Cessna C185T (Ракеты)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_ROCKETS++">
+			<English>Cessna C185T (Rockets)++</English>
+			<German>Cessna C185T (Raketen)++</German>
+			<Russian>Cessna C185T (Ракеты)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_ROCKETS+++">
+			<English>Cessna C185T (Rockets)+++</English>
+			<German>Cessna C185T (Raketen)+++</German>
+			<Russian>Cessna C185T (Ракеты)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_M60+">
+			<English>Cessna C185T (Twin M60)+</English>
+			<German>Cessna C185T (Zwillings-M60)+</German>
+			<Russian>Cessna C185T (M60)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_M60++">
+			<English>Cessna C185T (Twin M60)++</English>
+			<German>Cessna C185T (Zwillings-M60)++</German>
+			<Russian>Cessna C185T (M60)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_M60+++">
+			<English>Cessna C185T (Twin M60)+++</English>
+			<German>Cessna C185T (Zwillings-M60)+++</German>
+			<Russian>Cessna C185T (M60)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_AMPHIBIAN+">
+			<English>Cessna C185F (Amphibian)+</English>
+			<Russian>Cessna C185F (Амфибия)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_AMPHIBIAN++">
+			<English>Cessna C185F (Amphibian)++</English>
+			<Russian>Cessna C185F (Амфибия)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_AMPHIBIAN+++">
+			<English>Cessna C185F (Amphibian)+++</English>
+			<Russian>Cessna C185F (Амфибия)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BQM74_USMC+">
+			<English>BQM-74 (USMC)+</English>
+			<German>BQM-74 (USMC)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BQM74_USMC++">
+			<English>BQM-74 (USMC)++</English>
+			<German>BQM-74 (USMC)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BQM74_USMC+++">
+			<English>BQM-74 (USMC)+++</English>
+			<German>BQM-74 (USMC)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BQM74_US+">
+			<English>BQM-74 (US)+</English>
+			<German>BQM-74 (US)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BQM74_US++">
+			<English>BQM-74 (US)++</English>
+			<German>BQM-74 (US)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BQM74_US+++">
+			<English>BQM-74 (US)+++</English>
+			<German>BQM-74 (US)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AUTOGYRO+">
+			<English>AutoGyro+</English>
+			<German>AutoGyro+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AUTOGYRO++">
+			<English>AutoGyro++</English>
+			<German>AutoGyro++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AUTOGYRO+++">
+			<English>AutoGyro+++</English>
+			<German>AutoGyro+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AUTOGYRO_ENCLOSED+">
+			<English>AutoGyro enclosed+</English>
+			<German>AutoGyro geschlossen+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AUTOGYRO_ENCLOSED++">
+			<English>AutoGyro enclosed++</English>
+			<German>AutoGyro geschlossen++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AUTOGYRO_ENCLOSED+++">
+			<English>AutoGyro enclosed+++</English>
+			<German>AutoGyro geschlossen+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_F35B+">
+			<English>F-35B+</English>
+			<German>F-35B+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_F35B++">
+			<English>F-35B++</English>
+			<German>F-35B++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_F35B+++">
+			<English>F-35B+++</English>
+			<German>F-35B+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L159_ALCA+">
+			<English>L-159 ALCA+</English>
+			<German>L-159 ALCA+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L159_ALCA++">
+			<English>L-159 ALCA++</English>
+			<German>L-159 ALCA++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L159_ALCA+++">
+			<English>L-159 ALCA+++</English>
+			<German>L-159 ALCA+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39ZA_GREEN+">
+			<English>L-39ZA (Green)+</English>
+			<German>L-39ZA (Grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39ZA_GREEN++">
+			<English>L-39ZA (Green)++</English>
+			<German>L-39ZA (Grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39ZA_GREEN+++">
+			<English>L-39ZA (Green)+++</English>
+			<German>L-39ZA (Grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39C+">
+			<English>L-39C+</English>
+			<German>L-39C+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39C++">
+			<English>L-39C++</English>
+			<German>L-39C++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39C+++">
+			<English>L-39C+++</English>
+			<German>L-39C+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39ZA_TK+">
+			<English>L-39ZA (TK)+</English>
+			<German>L-39ZA (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39ZA_TK++">
+			<English>L-39ZA (TK)++</English>
+			<German>L-39ZA (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_L39ZA_TK+++">
+			<English>L-39ZA (TK)+++</English>
+			<German>L-39ZA (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MQ9_USMC+">
+			<English>MQ-9 (USMC)+</English>
+			<German>MQ-9 (USMC)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MQ9_USMC++">
+			<English>MQ-9 (USMC)++</English>
+			<German>MQ-9 (USMC)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MQ9_USMC+++">
+			<English>MQ-9 (USMC)+++</English>
+			<German>MQ-9 (USMC)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MQ9_US+">
+			<English>MQ-9 (US)+</English>
+			<German>MQ-9 (US)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MQ9_US++">
+			<English>MQ-9 (US)++</English>
+			<German>MQ-9 (US)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MQ9_US+++">
+			<English>MQ-9 (US)+++</English>
+			<German>MQ-9 (US)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MV22+">
+			<English>MV-22+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MV22++">
+			<English>MV-22++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MV22+++">
+			<English>MV-22+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_CDF+">
+			<English>Su-25 (CDF)+</English>
+			<German>Su-25 (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_CDF++">
+			<English>Su-25 (CDF)++</English>
+			<German>Su-25 (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_CDF+++">
+			<English>Su-25 (CDF)+++</English>
+			<German>Su-25 (CDF)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_INS+">
+			<English>Su-25 (INS)+</English>
+			<German>Su-25 (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_INS++">
+			<English>Su-25 (INS)++</English>
+			<German>Su-25 (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_INS+++">
+			<English>Su-25 (INS)+++</English>
+			<German>Su-25 (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_TK+">
+			<English>Su-25 (TK)+</English>
+			<German>Su-25 (TK)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_TK++">
+			<English>Su-25 (TK)++</English>
+			<German>Su-25 (TK)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_TK+++">
+			<English>Su-25 (TK)+++</English>
+			<German>Su-25 (TK)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_RU+">
+			<English>Su-25 (RU)+</English>
+			<German>Su-25 (RU)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_RU++">
+			<English>Su-25 (RU)++</English>
+			<German>Su-25 (RU)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU25_RU+++">
+			<English>Su-25 (RU)+++</English>
+			<German>Su-25 (RU)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU34+">
+			<English>Su-34+</English>
+			<German>Su-34+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU34++">
+			<English>Su-34++</English>
+			<German>Su-34++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SU34+++">
+			<English>Su-34+++</English>
+			<German>Su-34+++</German>
 		</Key>
 	</Package>
 </Project>

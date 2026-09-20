@@ -27,10 +27,10 @@ if (count AllowedVehiclesList == 0) then {
 
 	// Find Vehicle Type to better control spawns
 	_isShip = _vehicle isKindOf "Ship"; // Any type of watercraft.
-	_isMV22 = _vehicle == "MV22_DZ"; // MV-22 is classified as a plane but it can take off vertically, so it is treated as a helicopter.
+	_isMV22 = _vehicle == 'DZE_Veh_MV22'; // MV-22 is classified as a plane but it can take off vertically, so it is treated as a helicopter.
 	_isHeli = _vehicle isKindOf "Helicopter"; // All helicopters.
-	_isC130 = _vehicle == "C130J_US_EP1_DZ"; // C130s are too large to spawn in hangars.
-	_isCessna = _vehicle in ["GNT_C185C_DZ","GNT_C185R_DZ","GNT_C185_DZ","GNT_C185U_DZ"]; // Cessna models are unstable and should not spawn in hangars.
+	_isC130 = _vehicle == 'DZE_Veh_C130J'; // C130s are too large to spawn in hangars.
+	_isCessna = _vehicle in ['DZE_Veh_C185C_White','DZE_Veh_C185R_Yellow','DZE_Veh_C185_Orange','DZE_Veh_C185U_Camo']; // Cessna models are unstable and should not spawn in hangars.
 	_isPlane = (_vehicle isKindOf "Plane" && {!_isCessna} && {!_isMV22} && {!_isC130}); // Cessna, MV-22, and C130 not allowed to spawn in hangars.
 	
 	call {
