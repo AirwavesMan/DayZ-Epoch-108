@@ -47,6 +47,7 @@ class CfgMagazines
 	#include "Items\Wood.hpp"
 	#include "Items\Metal.hpp"
 	#include "Items\Concrete.hpp" //Cinder, Mortar, Stone, Brick
+	#include "Items\Bags.hpp"
 	#include "Items\Textiles.hpp"
 	#include "Items\Electronics.hpp" //Nails, screws, cards, hotwire kit etc.
 	#include "Items\Locks.hpp"	

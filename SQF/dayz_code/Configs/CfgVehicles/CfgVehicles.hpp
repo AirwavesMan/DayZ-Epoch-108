@@ -82,6 +82,7 @@ class CfgVehicles {
 	
 	//Buildables
 	#include "Buildables\Buildables.hpp"
+	#include "BagStashes.hpp"
 	
 	//Loot Container
 	#include "LootContainer\AmmoCrates.hpp"
