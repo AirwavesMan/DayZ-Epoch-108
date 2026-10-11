@@ -351,7 +351,7 @@ class DZE_Veh_SUV_Armored_M134_2: DZE_Veh_SUV_Armored_M134_1 {
 		};
 	};
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Armored_M134_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Armored_M134_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -434,7 +434,7 @@ class DZE_Veh_SUV_Armored_PKT_2: DZE_Veh_SUV_Armored_PKT_1 {
 		};
 	};
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Armored_PKT_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Armored_PKT_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 

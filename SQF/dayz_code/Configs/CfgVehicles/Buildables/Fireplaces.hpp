@@ -76,7 +76,7 @@ class DZE_FireBarrel: DZE_Fireplace_Base {
 	DZE_isFireProxy = 1;
 	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemFireBarrel_kit";
+		DZE_refundKit = "DZE_Item_Kit_FireBarrel";
 		DZE_refundArray[] = {};
 	};
 };

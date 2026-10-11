@@ -19,7 +19,7 @@ class DZE_StorageBarrelRed1: DZE_StorageBarrel_Base {
 	transportMaxBackpacks = 2;
 	DZE_upgradeBuilding[] = {"DZE_StorageBarrelRed2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel1_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel1";
 		DZE_refundArray[] = {};
 	};
 };
@@ -32,7 +32,7 @@ class DZE_StorageBarrelRed2: DZE_StorageBarrel_Base {
 	transportMaxMagazines = 100;
 	transportMaxBackpacks = 4;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel1_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel1";
 		DZE_refundArray[] = {};
 	};
 };
@@ -46,7 +46,7 @@ class DZE_StorageBarrelEpoch1: DZE_StorageBarrel_Base {
 	transportMaxBackpacks = 2;
 	DZE_upgradeBuilding[] = {"DZE_StorageBarrelEpoch2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel2_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel2";
 		DZE_refundArray[] = {};
 	};
 };
@@ -59,7 +59,7 @@ class DZE_StorageBarrelEpoch2: DZE_StorageBarrel_Base {
 	transportMaxMagazines = 120;
 	transportMaxBackpacks = 4;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel2_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel2";
 		DZE_refundArray[] = {};
 	};
 };
@@ -73,7 +73,7 @@ class DZE_StorageBarrelYellow1: DZE_StorageBarrel_Base {
 	transportMaxBackpacks = 2;
 	DZE_upgradeBuilding[] = {"DZE_StorageBarrelYellow2",{"DZE_Tool_Toolbox","DZE_Tool_Hammer"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel3_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel3";
 		DZE_refundArray[] = {};
 	};
 };
@@ -86,7 +86,7 @@ class DZE_StorageBarrelYellow2: DZE_StorageBarrel_Base {
 	transportMaxMagazines = 120;
 	transportMaxBackpacks = 4;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel3_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel3";
 		DZE_refundArray[] = {};
 	};
 };
@@ -100,7 +100,7 @@ class DZE_StorageBarrelBlack1: DZE_StorageBarrel_Base {
 	transportMaxBackpacks = 2;
 	DZE_upgradeBuilding[] = {"DZE_StorageBarrelBlack2",{"DZE_Tool_Toolbox","DZE_Tool_Hammer"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel4_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel4";
 		DZE_refundArray[] = {};
 	};
 };
@@ -113,7 +113,7 @@ class DZE_StorageBarrelBlack2: DZE_StorageBarrel_Base {
 	transportMaxMagazines = 120;
 	transportMaxBackpacks = 4;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel4_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel4";
 		DZE_refundArray[] = {};
 	};
 };
@@ -127,7 +127,7 @@ class DZE_StorageBarrelGreenDark1: DZE_StorageBarrel_Base {
 	transportMaxBackpacks = 2;
 	DZE_upgradeBuilding[] = {"DZE_StorageBarrelGreenDark2",{"DZE_Tool_Toolbox","DZE_Tool_Hammer"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel5_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel5";
 		DZE_refundArray[] = {};
 	};
 };
@@ -140,7 +140,7 @@ class DZE_StorageBarrelGreenDark2: DZE_StorageBarrel_Base {
 	transportMaxMagazines = 120;
 	transportMaxBackpacks = 4;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel5_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel5";
 		DZE_refundArray[] = {};
 	};
 };
@@ -154,7 +154,7 @@ class DZE_StorageBarrelMilk1: DZE_StorageBarrel_Base {
 	transportMaxBackpacks = 2;
 	DZE_upgradeBuilding[] = {"DZE_StorageBarrelMilk2",{"DZE_Tool_Toolbox","DZE_Tool_Hammer"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel6_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel6";
 		DZE_refundArray[] = {};
 	};
 };
@@ -167,7 +167,7 @@ class DZE_StorageBarrelMilk2: DZE_StorageBarrel_Base {
 	transportMaxMagazines = 120;
 	transportMaxBackpacks = 4;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel6_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel6";
 		DZE_refundArray[] = {};
 	};
 };
@@ -181,7 +181,7 @@ class DZE_StorageBarrelGreen1: DZE_StorageBarrel_Base {
 	transportMaxBackpacks = 2;
 	DZE_upgradeBuilding[] = {"DZE_StorageBarrelGreen2",{"DZE_Tool_Toolbox","DZE_Tool_Hammer"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel7_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel7";
 		DZE_refundArray[] = {};
 	};
 };
@@ -194,7 +194,7 @@ class DZE_StorageBarrelGreen2: DZE_StorageBarrel_Base {
 	transportMaxMagazines = 120;
 	transportMaxBackpacks = 4;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel7_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel7";
 		DZE_refundArray[] = {};
 	};
 };
@@ -208,7 +208,7 @@ class DZE_StorageBarrelGreenRusty1: DZE_StorageBarrel_Base {
 	transportMaxBackpacks = 2;
 	DZE_upgradeBuilding[] = {"DZE_StorageBarrelGreenRusty2",{"DZE_Tool_Toolbox","DZE_Tool_Hammer"},{{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel8_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel8";
 		DZE_refundArray[] = {};
 	};
 };
@@ -221,7 +221,7 @@ class DZE_StorageBarrelGreenRusty2: DZE_StorageBarrel_Base {
 	transportMaxMagazines = 120;
 	transportMaxBackpacks = 4;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemStorageBarrel8_kit";
+		DZE_refundKit = "DZE_Item_Kit_StorageBarrel8";
 		DZE_refundArray[] = {};
 	};
 };

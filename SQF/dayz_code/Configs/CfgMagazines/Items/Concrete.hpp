@@ -21,7 +21,7 @@ class ItemStone: CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"woodfence_foundation_kit",1}};
+			output[] = {{"DZE_Item_Kit_Woodfence_Foundation",1}};
 			input[] = {{"ItemStone",8},{"MortarBucket",1},{"ItemPlank",1}};
 		};
 		class Crafting2 {
@@ -29,7 +29,7 @@ class ItemStone: CA_Magazine {
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"metalfence_foundation_kit",1}};
+			output[] = {{"DZE_Item_Kit_Metalfence_Foundation",1}};
 			input[] = {{"ItemStone",8},{"MortarBucket",1},{"ItemRSJ",1}};
 		};				
 		class Crafting3 {
@@ -37,24 +37,24 @@ class ItemStone: CA_Magazine {
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Etool"};
-			output[] = {{"concrete_barrier_kit",1}};
-			input[] = {{"CementBag",3},{"ItemStone",2},{"ItemWire",1}};
+			output[] = {{"DZE_Item_Kit_Concrete_Barrier",1}};
+			input[] = {{"CementBag",3},{"ItemStone",2},{"DZE_Item_Kit_Wire",1}};
 		};				
 		class Crafting4 {
 			text = "$STR_EPOCH_ACTION_CRAFT_DRAGONTEETH";
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
-			output[] = {{"dragonteeth_kit",1}};
-			input[] = {{"concrete_wall_kit",1},{"ItemStone",6},{"CementBag",4}};
+			output[] = {{"DZE_Item_Kit_Dragonteeth",1}};
+			input[] = {{"DZE_Item_Kit_Concrete_Wall",1},{"ItemStone",6},{"CementBag",4}};
 		};	
 		class Crafting5 {
 			text = "$STR_EPOCH_ACTION_CRAFT_DRAGONTEETH_BIG";
 			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
-			output[] = {{"dragonteeth_big_kit",1}};
-			input[] = {{"dragonteeth_kit",1},{"ItemStone",6},{"CementBag",4}};
+			output[] = {{"DZE_Item_Kit_Dragonteeth_Big",1}};
+			input[] = {{"DZE_Item_Kit_Dragonteeth",1},{"ItemStone",6},{"CementBag",4}};
 		};
 	};		
 };
@@ -74,8 +74,8 @@ class ItemConcreteBlock: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"cinder_bunker_kit",1}};
-			input[] = {{"full_cinder_wall_kit",3},{"ItemConcreteBlock",5},{"equip_metal_sheet",3},{"ItemScrews",1}};
+			output[] = {{"DZE_Item_Kit_Cinder_Bunker",1}};
+			input[] = {{"DZE_Item_Kit_Full_Cinder_Wall",3},{"ItemConcreteBlock",5},{"equip_metal_sheet",3},{"ItemScrews",1}};
 		};
 	};	
 };
@@ -95,7 +95,7 @@ class CinderBlocks: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"half_cinder_wall_kit",1}};
+			output[] = {{"DZE_Item_Kit_Half_Cinder_Wall",1}};
 			input[] = {{"CinderBlocks",3},{"MortarBucket",1}};
 		};
 		class Crafting1 {
@@ -103,7 +103,7 @@ class CinderBlocks: CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"full_cinder_wall_kit",1}};
+			output[] = {{"DZE_Item_Kit_Full_Cinder_Wall",1}};
 			input[] = {{"CinderBlocks",7},{"MortarBucket",2}};
 		};	
 		class Crafting2 {
@@ -111,31 +111,31 @@ class CinderBlocks: CA_Magazine {
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"cinderwall_window_kit",1}};
-			input[] = {{"CinderBlocks",5},{"MortarBucket",1},{"ItemTankTrap",1},{"ItemPole",1}};
+			output[] = {{"DZE_Item_Kit_Cinderwall_Window",1}};
+			input[] = {{"CinderBlocks",5},{"MortarBucket",1},{"DZE_Item_Kit_TankTrap",1},{"ItemPole",1}};
 		};			
 		class Crafting3 {
 			text = "$STR_EPOCH_PLAYER_234";
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"cinder_door_frame_kit",1}};
-			input[] = {{"CinderBlocks",4},{"MortarBucket",1},{"ItemTankTrap",1}};
+			output[] = {{"DZE_Item_Kit_Cinder_Door_Frame",1}};
+			input[] = {{"CinderBlocks",4},{"MortarBucket",1},{"DZE_Item_Kit_TankTrap",1}};
 		};		
 		class Crafting4 {
 			text = "$STR_EPOCH_PLAYER_253";
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"cinder_garage_frame_kit",1}};
-			input[] = {{"CinderBlocks",3},{"MortarBucket",1},{"ItemTankTrap",1}};
+			output[] = {{"DZE_Item_Kit_Cinder_Garage_Frame",1}};
+			input[] = {{"CinderBlocks",3},{"MortarBucket",1},{"DZE_Item_Kit_TankTrap",1}};
 		};
 		class Crafting5 {
 			text = "$STR_EPOCH_PLAYER_253_1_1";
 			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"cinder_garage_top_open_frame_kit",1}};
+			output[] = {{"DZE_Item_Kit_Cinder_Garage_Top_Open_Frame",1}};
 			input[] = {{"CinderBlocks",4},{"MortarBucket",1}};
 		};		
 		class Crafting6 {
@@ -143,7 +143,7 @@ class CinderBlocks: CA_Magazine {
 			script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"cinder_gate_frame_kit",1}};
+			output[] = {{"DZE_Item_Kit_Cinder_Gate_Frame",1}};
 			input[] = {{"CinderBlocks",8},{"MortarBucket",4}};
 		};
 	};
@@ -189,40 +189,40 @@ class CementBag: CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Etool"};
-			output[] = {{"concrete_barrier_kit",1}};
-			input[] = {{"CementBag",3},{"ItemStone",2},{"ItemWire",1}};
+			output[] = {{"DZE_Item_Kit_Concrete_Barrier",1}};
+			input[] = {{"CementBag",3},{"ItemStone",2},{"DZE_Item_Kit_Wire",1}};
 		};	
 		class Crafting2 {
 			text = "$STR_EPOCH_ACTION_CRAFT_CONCRETE_WALL";
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
-			output[] = {{"concrete_wall_kit",1}};
-			input[] = {{"concrete_barrier_kit",5},{"CementBag",2}};
+			output[] = {{"DZE_Item_Kit_Concrete_Wall",1}};
+			input[] = {{"DZE_Item_Kit_Concrete_Barrier",5},{"CementBag",2}};
 		};	
 		class Crafting3 {
 			text = "$STR_EPOCH_ACTION_CRAFT_CONCRETE_PIPE";
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
-			output[] = {{"concrete_pipe_kit",1}};
-			input[] = {{"concrete_barrier_kit",6},{"CementBag",2}};
+			output[] = {{"DZE_Item_Kit_Concrete_Pipe",1}};
+			input[] = {{"DZE_Item_Kit_Concrete_Barrier",6},{"CementBag",2}};
 		};	
 		class Crafting4 {
 			text = "$STR_EPOCH_ACTION_CRAFT_DRAGONTEETH";
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
-			output[] = {{"dragonteeth_kit",1}};
-			input[] = {{"concrete_wall_kit",1},{"ItemStone",6},{"CementBag",4}};
+			output[] = {{"DZE_Item_Kit_Dragonteeth",1}};
+			input[] = {{"DZE_Item_Kit_Concrete_Wall",1},{"ItemStone",6},{"CementBag",4}};
 		};	
 		class Crafting5 {
 			text = "$STR_EPOCH_ACTION_CRAFT_DRAGONTEETH_BIG";
 			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
-			output[] = {{"dragonteeth_big_kit",1}};
-			input[] = {{"dragonteeth_kit",1},{"ItemStone",6},{"CementBag",4}};
+			output[] = {{"DZE_Item_Kit_Dragonteeth_Big",1}};
+			input[] = {{"DZE_Item_Kit_Dragonteeth",1},{"ItemStone",6},{"CementBag",4}};
 		};
 	};	
 };

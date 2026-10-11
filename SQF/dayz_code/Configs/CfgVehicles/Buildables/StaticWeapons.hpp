@@ -17,7 +17,7 @@ class DZE_M240Nest : USMC_WarfareBMGNest_M240 {
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	GhostPreview = "DZE_M240Nest";
 	class RemoveObject {
-		DZE_refundKit = "m240_nest_kit";
+		DZE_refundKit = "DZE_Item_Kit_M240_Nest";
 		DZE_refundArray[] = {};
 	};
 };
@@ -34,7 +34,7 @@ class DZE_M2_MG_Static : M2StaticMG {
 	GhostPreview = "DZE_M2_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "M2_MG_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_M2_MG";
 		DZE_refundArray[] = {};
 	};
 };
@@ -51,7 +51,7 @@ class DZE_M2_TriPod_MG_Static : M2HD_mini_TriPod {
 	GhostPreview = "DZE_M2_TriPod_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "M2_TriPod_MG_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_M2_TriPod_MG";
 		DZE_refundArray[] = {};
 	};
 };
@@ -68,7 +68,7 @@ class DZE_DSHKM_MG_Static : DSHKM_Ins {
 	GhostPreview = "DZE_DSHKM_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "DSHKM_MG_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_DSHKM_MG";
 		DZE_refundArray[] = {};
 	};
 };
@@ -85,7 +85,7 @@ class DZE_DSHKM_TriPod_MG_Static : DSHkM_Mini_TriPod {
 	GhostPreview = "DZE_DSHKM_TriPod_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "DSHKM_TriPod_MG_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_DSHKM_TriPod_MG";
 		DZE_refundArray[] = {};
 	};
 };
@@ -102,7 +102,7 @@ class DZE_KORD_Tripod_MG_Static : KORD {
 	GhostPreview = "DZE_KORD_Tripod_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "KORD_TriPod_MG_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_KORD_TriPod_MG";
 		DZE_refundArray[] = {};
 	};
 };
@@ -119,7 +119,7 @@ class DZE_KORD_MG_Static : KORD_high {
 	GhostPreview = "DZE_KORD_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "KORD_MG_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_KORD_MG";
 		DZE_refundArray[] = {};
 	};
 };
@@ -142,7 +142,7 @@ class DZE_L2A1_MG_Static : BAF_L2A1_Tripod_D {
 	GhostPreview = "DZE_L2A1_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "L2A1_MG_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_L2A1_MG";
 		DZE_refundArray[] = {};
 	};
 };
@@ -164,7 +164,7 @@ class DZE_L2A1_Tripod_MG_Static : BAF_L2A1_Minitripod_D {
 	GhostPreview = "DZE_L2A1_Tripod_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "L2A1_Tripod_MG_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_L2A1_Tripod_MG";
 		DZE_refundArray[] = {};
 	};
 };
@@ -187,7 +187,7 @@ class DZE_GMG_Tripod_MG_Static : BAF_GMG_Tripod_D {
 	GhostPreview = "DZE_GMG_Tripod_MG_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "GMG_Tripod_GrenadeLauncher_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_GMG_Tripod_GrenadeLauncher";
 		DZE_refundArray[] = {};
 	};
 };
@@ -204,7 +204,7 @@ class DZE_AGS30_GrenadeLauncher_Static : AGS_Ins {
 	GhostPreview = "DZE_AGS30_GrenadeLauncher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "AGS30_GrenadeLauncher_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_AGS30_GrenadeLauncher";
 		DZE_refundArray[] = {};
 	};
 };
@@ -221,7 +221,7 @@ class DZE_MK19_TriPod_GrenadeLauncher_Static : MK19_TriPod {
 	GhostPreview = "DZE_MK19_TriPod_GrenadeLauncher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "MK19_TriPod_GrenadeLauncher_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_MK19_TriPod_GrenadeLauncher";
 		DZE_refundArray[] = {};
 	};
 };
@@ -243,7 +243,7 @@ class DZE_GPMG_TriPod_GrenadeLauncher_Static : BAF_GPMG_Minitripod_D {
 	GhostPreview = "DZE_GPMG_TriPod_GrenadeLauncher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "GPMG_TriPod_MG_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_GPMG_TriPod_MG";
 		DZE_refundArray[] = {};
 	};
 };
@@ -260,7 +260,7 @@ class DZE_M119_Artillery_Static : M119 {
 	GhostPreview = "DZE_M119_Artillery_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "M119_Artillery_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_M119_Artillery";
 		DZE_refundArray[] = {};
 	};
 };
@@ -277,7 +277,7 @@ class DZE_D30_Artillery_Static : D30_Ins {
 	GhostPreview = "DZE_D30_Artillery_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "D30_Artillery_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_D30_Artillery";
 		DZE_refundArray[] = {};
 	};
 };
@@ -294,7 +294,7 @@ class DZE_SearchLight_Static : SearchLight_INS {
 	GhostPreview = "DZE_SearchLight_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "SearchLight_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_SearchLight";
 		DZE_refundArray[] = {};
 	};
 };
@@ -311,7 +311,7 @@ class DZE_M252_Mortar_Static : M252 {
 	GhostPreview = "DZE_M252_Mortar_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "M252_Mortar_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_M252_Mortar";
 		DZE_refundArray[] = {};
 	};
 };
@@ -328,7 +328,7 @@ class DZE_2b14_82mm_Mortar_Static : 2b14_82mm {
 	GhostPreview = "DZE_2b14_82mm_Mortar_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "2b14_82mm_Mortar_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_2b14_82mm_Mortar";
 		DZE_refundArray[] = {};
 	};
 };
@@ -345,7 +345,7 @@ class DZE_Metis_Launcher_Static : Metis {
 	GhostPreview = "DZE_Metis_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "Metis_Launcher_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_Metis_Launcher";
 		DZE_refundArray[] = {};
 	};
 };
@@ -362,7 +362,7 @@ class DZE_SPG9_Launcher_Static : SPG9_Gue {
 	GhostPreview = "DZE_SPG9_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "SPG9_Launcher_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_SPG9_Launcher";
 		DZE_refundArray[] = {};
 	};
 };
@@ -379,7 +379,7 @@ class DZE_Stinger_Tripod_Launcher_Static : Stinger_Pod {
 	GhostPreview = "DZE_Stinger_Tripod_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "Stinger_Tripod_Launcher_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_Stinger_Tripod_Launcher";
 		DZE_refundArray[] = {};
 	};
 };
@@ -396,7 +396,7 @@ class DZE_TOW_Tripod_Launcher_Static : TOW_TriPod {
 	GhostPreview = "DZE_TOW_Tripod_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "TOW_Tripod_Launcher_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_TOW_Tripod_Launcher";
 		DZE_refundArray[] = {};
 	};
 };
@@ -419,7 +419,7 @@ class DZE_Rbs70_Launcher_Static : Rbs70_ACR {
 	GhostPreview = "DZE_Rbs70_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "Rbs70_Launcher_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_Rbs70_Launcher";
 		DZE_refundArray[] = {};
 	};
 };
@@ -436,7 +436,7 @@ class DZE_Igla_AntiAir_Launcher_Static : Igla_AA_pod_East {
 	GhostPreview = "DZE_Igla_AntiAir_Launcher_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "Igla_AntiAir_Launcher_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_Igla_AntiAir_Launcher";
 		DZE_refundArray[] = {};
 	};
 };
@@ -453,7 +453,7 @@ class DZE_ZU23_AntiAir_Static : ZU23_Ins {
 	GhostPreview = "DZE_ZU23_AntiAir_Static";
 	vehicleClass = "DayZ Epoch 1071 Static Weapons";
 	class RemoveObject {
-		DZE_refundKit = "ZU23_AntiAir_Static_kit";
+		DZE_refundKit = "DZE_Item_Kit_Static_ZU23_AntiAir";
 		DZE_refundArray[] = {};
 	};
 };

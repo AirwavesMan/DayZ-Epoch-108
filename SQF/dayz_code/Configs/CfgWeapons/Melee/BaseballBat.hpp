@@ -29,7 +29,7 @@ class DZE_Melee_BaseBallBat : DZE_Melee_Weapon_Base {
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {};
 			outputweapons[] = {"DZE_Melee_BaseBallBatBarbed"};
-			input[] = {{"equip_nails",1},{"ItemWire",1}};
+			input[] = {{"equip_nails",1},{"DZE_Item_Kit_Wire",1}};
 			inputweapons[] = {"DZE_Melee_BaseBallBat"};
 		};		
 	};	

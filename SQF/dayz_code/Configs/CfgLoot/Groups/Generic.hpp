@@ -17,11 +17,11 @@ Generic[] =
 };
 
 tents[] = {
-	{Loot_MAGAZINE,		3,		ItemDomeTent},
-	{Loot_MAGAZINE,		3,		ItemTent},
-	{Loot_MAGAZINE,		1,		ItemDesertTent},
-	{Loot_MAGAZINE,		1,		ItemTentWinter},
-	{Loot_MAGAZINE,		1,		ItemWinterDomeTent}	
+	{Loot_MAGAZINE,		3,		DZE_Item_Kit_Tent_Dome},
+	{Loot_MAGAZINE,		3,		DZE_Item_Kit_Tent},
+	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Tent_Desert},
+	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Tent_Winter},
+	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Tent_Dome_Winter}
 };
 
 GenericSmall[] =

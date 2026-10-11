@@ -107,7 +107,7 @@ class DZE_Veh_Motorbike_White_2: DZE_Veh_Motorbike_White_1 {
 	armor = 60;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Motorbike_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Motorbike_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -144,7 +144,7 @@ class DZE_Veh_TT650_RedWhite_2: DZE_Veh_TT650_RedWhite_1 {
 	armor = 100;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_TT650_RedWhite_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_TT650_RedWhite_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -181,7 +181,7 @@ class DZE_Veh_TT650_Rusty_2: DZE_Veh_TT650_Rusty_1 {
 	armor = 100;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_TT650_Rusty_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_TT650_Rusty_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -218,7 +218,7 @@ class DZE_Veh_TT650_FireRed_2: DZE_Veh_TT650_FireRed_1 {
 	armor = 100;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_TT650_FireRed_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_TT650_FireRed_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -255,7 +255,7 @@ class DZE_Veh_M1030_Green_2: DZE_Veh_M1030_Green_1 {
 	armor = 100;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_M1030_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_M1030_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 

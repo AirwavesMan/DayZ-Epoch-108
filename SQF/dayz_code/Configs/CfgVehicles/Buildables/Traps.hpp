@@ -73,7 +73,7 @@ class DZE_BearTrap: DZE_Trap_Base {
 		};
 	};
 	class RemoveObject {
-		DZE_refundKit = "TrapBear";
+		DZE_refundKit = "DZE_Item_Kit_Trap_BearTrap";
 		DZE_refundArray[] = {};
 	};
 };
@@ -138,7 +138,7 @@ class DZE_TrapBearTrapFlare: DZE_Trap_Base {
 		};
 	};
 	class RemoveObject {
-		DZE_refundKit = "ItemTrapBearTrapFlare";
+		DZE_refundKit = "DZE_Item_Kit_Trap_BearTrapFlare";
 		DZE_refundArray[] = {};
 	};
 };
@@ -194,7 +194,7 @@ class DZE_TrapBearTrapSmoke: DZE_Trap_Base {
 		};
 	};
 	class RemoveObject {
-		DZE_refundKit = "ItemTrapBearTrapSmoke";
+		DZE_refundKit = "DZE_Item_Kit_Trap_BearTrapSmoke";
 		DZE_refundArray[] = {};
 	};
 };
@@ -249,7 +249,7 @@ class DZE_Trap_Cans: DZE_Trap_Base {
 		};
 	};
 	class RemoveObject {
-		DZE_refundKit = "ItemTrapTripwireCans";
+		DZE_refundKit = "DZE_Item_Kit_Trap_TripwireCans";
 		DZE_refundArray[] = {};
 	};
 };
@@ -304,7 +304,7 @@ class DZE_TrapTripwireFlare: DZE_Trap_Base {
 		};
 	};
 	class RemoveObject {
-		DZE_refundKit = "ItemTrapTripwireFlare";
+		DZE_refundKit = "DZE_Item_Kit_Trap_TripwireFlare";
 		DZE_refundArray[] = {};
 	};
 };
@@ -360,7 +360,7 @@ class DZE_TrapTripwireGrenade: DZE_Trap_Base {
 		};
 	};
 	class RemoveObject {
-		DZE_refundKit = "ItemTrapTripwireGrenade";
+		DZE_refundKit = "DZE_Item_Kit_Trap_TripwireGrenade";
 		DZE_refundArray[] = {};
 	};
 };
@@ -416,7 +416,7 @@ class DZE_TrapTripwireSmoke: DZE_Trap_Base {
 		};
 	};
 	class RemoveObject {
-		DZE_refundKit = "ItemTrapTripwireSmoke";
+		DZE_refundKit = "DZE_Item_Kit_Trap_TripwireSmoke";
 		DZE_refundArray[] = {};
 	};
 };

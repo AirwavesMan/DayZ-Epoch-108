@@ -65,7 +65,7 @@ class DZE_Compost_Barrel_Empty : DZE_Compost_Barrel_Base {
 	scope = 2;
 	displayName = $STR_EPOCH_COMPOST_BARREL_EMTPY;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "compost_barrel_empty_kit";
+		DZE_refundKit = "DZE_Item_Kit_Compost_Barrel_Empty";
 		DZE_refundArray[] = {};
 	};
 };
@@ -75,7 +75,7 @@ class DZE_Compost_Barrel_Full : DZE_Compost_Barrel_Base {
 	displayName = $STR_EPOCH_COMPOST_BARREL_FULL;
 	model = "\CA\Structures\Misc\Armory\Barels\barrel_sand.p3d";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "compost_barrel_full_kit";
+		DZE_refundKit = "DZE_Item_Kit_Compost_Barrel_Full";
 		DZE_refundArray[] = {};
 	};
 };
@@ -94,7 +94,7 @@ class DZE_Plant_Patch_Pumpkin : DZE_Plant_Patch_Base {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_PUMPKIN;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "Plant_Patch_Pumpkin_kit";
+		DZE_refundKit = "DZE_Item_Kit_Plant_Patch_Pumpkin";
 		DZE_refundArray[] = {};
 	};
 };
@@ -103,7 +103,7 @@ class DZE_Plant_Patch_Sunflower : DZE_Plant_Patch_Base {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_SUNFLOWER;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "Plant_Patch_Sunflower_kit";
+		DZE_refundKit = "DZE_Item_Kit_Plant_Patch_Sunflower";
 		DZE_refundArray[] = {};
 	};
 };
@@ -112,7 +112,7 @@ class DZE_Plant_Patch_Carrot : DZE_Plant_Patch_Base {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_CARROT;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "Plant_Patch_Carrot_kit";
+		DZE_refundKit = "DZE_Item_Kit_Plant_Patch_Carrot";
 		DZE_refundArray[] = {};
 	};
 };
@@ -121,7 +121,7 @@ class DZE_Plant_Patch_Potato : DZE_Plant_Patch_Base {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_POTATO;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "Plant_Patch_Potato_kit";
+		DZE_refundKit = "DZE_Item_Kit_Plant_Patch_Potato";
 		DZE_refundArray[] = {};
 	};
 };
@@ -130,7 +130,7 @@ class DZE_Plant_Patch_Hemp : DZE_Plant_Patch_Base {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_HEMP;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "Plant_Patch_Hemp_kit";
+		DZE_refundKit = "DZE_Item_Kit_Plant_Patch_Hemp";
 		DZE_refundArray[] = {};
 	};
 };
@@ -139,7 +139,7 @@ class DZE_Plant_Patch_Tobacco : DZE_Plant_Patch_Base {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_TOBACCO;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "Plant_Patch_Tobacco_kit";
+		DZE_refundKit = "DZE_Item_Kit_Plant_Patch_Tobacco";
 		DZE_refundArray[] = {};
 	};
 };
@@ -148,7 +148,7 @@ class DZE_Plant_Patch_Tea : DZE_Plant_Patch_Base {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_TEA;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "Plant_Patch_Tea_kit";
+		DZE_refundKit = "DZE_Item_Kit_Plant_Patch_Tea";
 		DZE_refundArray[] = {};
 	};
 };
@@ -157,7 +157,7 @@ class DZE_Plant_Patch_Garlic : DZE_Plant_Patch_Base {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_GARLIC;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "Plant_Patch_Garlic_kit";
+		DZE_refundKit = "DZE_Item_Kit_Plant_Patch_Garlic";
 		DZE_refundArray[] = {};
 	};
 };
@@ -166,7 +166,7 @@ class DZE_Plant_Patch_Comfrey : DZE_Plant_Patch_Base {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_COMFREY;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "Plant_Patch_Comfrey_kit";
+		DZE_refundKit = "DZE_Item_Kit_Plant_Patch_Comfrey";
 		DZE_refundArray[] = {};
 	};
 };

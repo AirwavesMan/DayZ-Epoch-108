@@ -118,31 +118,31 @@ class Category_34 {
 
 //Building Supplies
 class Category_35 {
-	class TrapBear {
+	class DZE_Item_Kit_Trap_BearTrap {
 		type = "trade_items";
 		buy[] = {-2,"ItemSilverBar10oz"};sell[] = {6,"ItemSilverBar10oz"};};
 	class equip_tent_poles {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
-	class ItemDesertTent {
+	class DZE_Item_Kit_Tent_Desert {
 		type = "trade_items";
 		buy[] = {6,"ItemSilverBar10oz"};sell[] = {3,"ItemSilverBar10oz"};};
-	class ItemDomeTent {
+	class DZE_Item_Kit_Tent_Dome {
 		type = "trade_items";
 		buy[] = {6,"ItemSilverBar10oz"};sell[] = {3,"ItemSilverBar10oz"};};
-	class ItemTent {
+	class DZE_Item_Kit_Tent {
 		type = "trade_items";
 		buy[] = {8,"ItemSilverBar10oz"};sell[] = {4,"ItemSilverBar10oz"};};
-	class ItemTentWinter {
+	class DZE_Item_Kit_Tent_Winter {
 		type = "trade_items";
 		buy[] = {8,"ItemSilverBar10oz"};sell[] = {4,"ItemSilverBar10oz"};};
-	class ItemWinterDomeTent {
+	class DZE_Item_Kit_Tent_Dome_Winter {
 		type = "trade_items";
 		buy[] = {6,"ItemSilverBar10oz"};sell[] = {3,"ItemSilverBar10oz"};};
 	class ItemLightBulb {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
-	class ItemGenerator {
+	class DZE_Item_Kit_Generator {
 		type = "trade_items";
 		buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class equip_brick {
@@ -181,13 +181,13 @@ class Category_35 {
 	class equip_2inch_metal_pipe {
 		type = "trade_items";
 		buy[] = {8,"ItemSilverBar"};sell[] = {4,"ItemSilverBar"};};
-	class ItemWire {
+	class DZE_Item_Kit_Wire {
 		type = "trade_items";
 		buy[] = {6,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
-	class ItemSandbag {
+	class DZE_Item_Kit_Sandbag {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
-	class ItemTankTrap {
+	class DZE_Item_Kit_TankTrap {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class ItemPole {
@@ -196,31 +196,31 @@ class Category_35 {
 	class ItemMetalSheet {
 		type = "trade_items";
 		buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
-	class ItemCorrugated {
+	class DZE_Item_Kit_Corrugated {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class plot_pole_kit {
+	class DZE_Item_Kit_Plot_Pole {
 		type = "trade_items";
 		buy[] = {6,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar10oz"};};
 	class ItemComboLock {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
-	class ItemLockbox {
+	class DZE_Item_Kit_Lockbox {
 		type = "trade_items";
 		buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};
-	class ItemLockbox2 {
+	class DZE_Item_Kit_Lockbox2 {
 		type = "trade_items";
 		buy[] = {-8,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar10oz"};};
-	class ItemLockboxWinter {
+	class DZE_Item_Kit_LockboxWinter {
 		type = "trade_items";
 		buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};
-	class ItemLockboxWinter2 {
+	class DZE_Item_Kit_LockboxWinter2 {
 		type = "trade_items";
 		buy[] = {-8,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar10oz"};};
-	class ItemSafe {
+	class DZE_Item_Kit_Safe {
 		type = "trade_items";
 		buy[] = {1,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
-	class ItemSafe2 {
+	class DZE_Item_Kit_Safe2 {
 		type = "trade_items";
 		buy[] = {-1,"ItemBriefcase100oz"};sell[] = {15,"ItemGoldBar10oz"};};
 	class ItemMixOil {

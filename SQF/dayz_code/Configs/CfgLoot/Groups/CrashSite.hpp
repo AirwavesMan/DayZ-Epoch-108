@@ -33,7 +33,7 @@ CrashSiteRU[] =
 	
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		2,		forest_large_net_kit},
+	{Loot_MAGAZINE,		2,		DZE_Item_Kit_Net_Forest_Large},
 	{Loot_GROUP,		10,		AttachmentsRU},
 	
 	//Piles
@@ -76,7 +76,7 @@ CrashSiteUS[] =
 	
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		2,		forest_large_net_kit},
+	{Loot_MAGAZINE,		2,		DZE_Item_Kit_Net_Forest_Large},
 	{Loot_GROUP,		10,		AttachmentsUS},
 	
 	//Piles
@@ -118,7 +118,7 @@ CrashSiteEU[] =
 	
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		2,		desert_net_kit},
+	{Loot_MAGAZINE,		2,		DZE_Item_Kit_Net_Desert},
 	{Loot_GROUP,		10,		AttachmentsEU},
 	
 	//Piles
@@ -160,7 +160,7 @@ CrashSiteCZ[] =
 	
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		2,		desert_large_net_kit},
+	{Loot_MAGAZINE,		2,		DZE_Item_Kit_Net_Desert_Large},
 	{Loot_GROUP,		10,		AttachmentsCZ},
 	
 	//Piles

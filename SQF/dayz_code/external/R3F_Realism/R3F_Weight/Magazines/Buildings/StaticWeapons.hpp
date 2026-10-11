@@ -1,100 +1,100 @@
-class m240_nest_kit
+class DZE_Item_Kit_M240_Nest
 {
 	weight = 125;
 };
-class M2_MG_Static_kit
+class DZE_Item_Kit_Static_M2_MG
 {
 	weight = 38;
 };
-class M2_TriPod_MG_Static_kit
+class DZE_Item_Kit_Static_M2_TriPod_MG
 {
 	weight = 40;
 };
-class DSHKM_MG_Static_kit
+class DZE_Item_Kit_Static_DSHKM_MG
 {
 	weight = 33.5;
 };
-class DSHKM_TriPod_MG_Static_kit
+class DZE_Item_Kit_Static_DSHKM_TriPod_MG
 {
 	weight = 35;
 };
-class KORD_TriPod_MG_Static_kit
+class DZE_Item_Kit_Static_KORD_TriPod_MG
 {
 	weight = 25.5;
 };
-class KORD_MG_Static_kit
+class DZE_Item_Kit_Static_KORD_MG
 {
 	weight = 27;
 };
-class L2A1_MG_Static_kit
+class DZE_Item_Kit_Static_L2A1_MG
 {
 	weight = 31;
 };
-class L2A1_Tripod_MG_Static_kit
+class DZE_Item_Kit_Static_L2A1_Tripod_MG
 {
 	weight = 32.5;
 };
-class GMG_Tripod_GrenadeLauncher_Static_kit
+class DZE_Item_Kit_Static_GMG_Tripod_GrenadeLauncher
 {
 	weight = 29;
 };
-class AGS30_GrenadeLauncher_Static_kit
+class DZE_Item_Kit_Static_AGS30_GrenadeLauncher
 {
 	weight = 16;
 };
-class MK19_TriPod_GrenadeLauncher_Static_kit
+class DZE_Item_Kit_Static_MK19_TriPod_GrenadeLauncher
 {
 	weight = 35.3;
 };
-class GPMG_TriPod_MG_Static_kit
+class DZE_Item_Kit_Static_GPMG_TriPod_MG
 {
 	weight = 25.7;
 };
-class M119_Artillery_Static_kit
+class DZE_Item_Kit_Static_M119_Artillery
 {
 	weight = 1936;
 };
-class D30_Artillery_Static_kit
+class DZE_Item_Kit_Static_D30_Artillery
 {
 	weight = 3200;
 };
-class SearchLight_Static_kit
+class DZE_Item_Kit_Static_SearchLight
 {
 	weight = 3;
 };
-class M252_Mortar_Static_kit
+class DZE_Item_Kit_Static_M252_Mortar
 {
 	weight = 41.3;
 };
-class 2b14_82mm_Mortar_Static_kit
+class DZE_Item_Kit_Static_2b14_82mm_Mortar
 {
 	weight = 42;
 };
-class Metis_Launcher_Static_kit
+class DZE_Item_Kit_Static_Metis_Launcher
 {
 	weight = 10;
 };
-class SPG9_Launcher_Static_kit
+class DZE_Item_Kit_Static_SPG9_Launcher
 {
 	weight = 47.5;
 };
-class Stinger_Tripod_Launcher_Static_kit
+class DZE_Item_Kit_Static_Stinger_Tripod_Launcher
 {
 	weight = 10.1;
 };
-class TOW_Tripod_Launcher_Static_kit
+class DZE_Item_Kit_Static_TOW_Tripod_Launcher
 {
 	weight = 93;
 };
-class Rbs70_Launcher_Static_kit
+class DZE_Item_Kit_Static_Rbs70_Launcher
 {
 	weight = 87;
 };
-class Igla_AntiAir_Launcher_Static_kit
+class DZE_Item_Kit_Static_Igla_AntiAir_Launcher
 {
 	weight = 10.6;
 };
-class ZU23_AntiAir_Static_kit
+class DZE_Item_Kit_Static_ZU23_AntiAir
 {
 	weight = 950;
 };

@@ -1,62 +1,62 @@
-class ItemSandbag 
+class DZE_Item_Kit_Sandbag
 {
 	weight = 10;
 };
 
-class BagFenceRound_DZ_kit
+class DZE_Item_Kit_BagFenceRound
 {
 	weight = 20;
 };
 
-class ItemSandbagLarge 
+class DZE_Item_Kit_SandbagLarge
 {
 	weight = 50;
 };
 
-class ItemSandbagExLarge
+class DZE_Item_Kit_SandbagExLarge
 {
 	weight = 150;
 };
 
-class ItemSandbagExLarge5x
+class DZE_Item_Kit_SandbagExLarge5x
 {
 	weight = 200;
 };
 
-class sandbag_nest_kit
+class DZE_Item_Kit_Sandbag_Nest
 {
 	weight = 50;
 };
 
-class ItemSandbagExLarge5xCurved
+class DZE_Item_Kit_SandbagExLarge5xCurved
 {
 	weight = 200;
 };
-class sandbag_nest_large_kit
+class DZE_Item_Kit_Sandbag_Nest_Large
 {
 	weight = 200;
 };
-class ItemSandbagHeavy_kit
+class DZE_Item_Kit_SandbagHeavy
 {
 	weight = 15;
 };
-class ItemSandBagHeavyCorner_kit
+class DZE_Item_Kit_SandBagHeavyCorner
 {
 	weight = 30;
 };
-class ItemSandbagHeavyRound_kit
+class DZE_Item_Kit_SandbagHeavyRound
 {
 	weight = 50;
 };
-class ItemWarfareBarrier5x_kit
+class DZE_Item_Kit_WarfareBarrier5x
 {
 	weight = 200;
 };
-class ItemWarfareBarrier10x_kit
+class DZE_Item_Kit_WarfareBarrier10x
 {
 	weight = 400;
 };
-class ItemWarfareBarrier10xTall_kit
+class DZE_Item_Kit_WarfareBarrier10xTall
 {
 	weight = 800;
 };

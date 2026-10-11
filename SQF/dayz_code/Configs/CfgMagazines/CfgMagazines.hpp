@@ -1,5 +1,4 @@
-class CfgMagazines
-{
+class CfgMagazines {
 	//External references
 	class CA_Magazine;
 	class HandGrenade;
@@ -58,16 +57,5 @@ class CfgMagazines
 	#include "Items\Misc.hpp" //Nails, screws, cards, hotwire kit etc.
 	
 	//Building items - all items that can be build and placed in-game
-	#include "Buildings\BearTrap.hpp"
-	#include "Buildings\TripWire.hpp"
-	#include "Buildings\Camonets.hpp"	
-	#include "Buildings\Sandbag.hpp"
-	#include "Buildings\ModularBuilding.hpp"
-	#include "Buildings\Fences.hpp"
-	#include "Buildings\Storage.hpp"
-	#include "Buildings\Tent.hpp"	
-	#include "Buildings\Misc.hpp"
-	#include "Buildings\StaticWeapons.hpp"
-	#include "Buildings\Plants.hpp"
-	#include "Buildings\Placeholders.hpp"
+	#include "Buildings\Buildings.hpp"
 };

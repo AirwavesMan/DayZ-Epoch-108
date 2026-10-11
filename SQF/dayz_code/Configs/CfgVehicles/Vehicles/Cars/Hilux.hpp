@@ -79,7 +79,7 @@ class DZE_Veh_Hilux_Tan_2: DZE_Veh_Hilux_Tan_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Hilux_Tan_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Hilux_Tan_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
 	};
 };
@@ -186,7 +186,7 @@ class DZE_Veh_Hilux_Covered_Red_2: DZE_Veh_Hilux_Covered_Red_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Hilux_Covered_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Hilux_Covered_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
 	};
 };
@@ -293,7 +293,7 @@ class DZE_Veh_Hilux_White_2: DZE_Veh_Hilux_White_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Hilux_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Hilux_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
 	};
 };

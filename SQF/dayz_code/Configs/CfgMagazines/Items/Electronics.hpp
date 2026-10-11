@@ -143,7 +143,7 @@ class ItemLightBulb: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"light_pole_kit",1}};
+			output[] = {{"DZE_Item_Kit_Light_Pole",1}};
 			input[] = {{"ItemLightBulb",1},{"PartGeneric",1},{"PartWoodLumber",6}};
 		};
 	};

@@ -42,7 +42,7 @@ class DZE_Veh_BRDM2_HQ_2: DZE_Veh_BRDM2_HQ_1 {
 	damageResistance = 0.048; // base 0.02409
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_HQ_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_HQ_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -88,7 +88,7 @@ class DZE_Veh_BRDM2_HQ_Rust_2: DZE_Veh_BRDM2_HQ_Rust_1 {
 	damageResistance = 0.048; // base 0.02409
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_HQ_Rust_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_HQ_Rust_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -134,7 +134,7 @@ class DZE_Veh_BRDM2_HQ_Winter_2: DZE_Veh_BRDM2_HQ_Winter_1 {
 	damageResistance = 0.048; // base 0.02409
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_HQ_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_HQ_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -183,7 +183,7 @@ class DZE_Veh_BRDM2_HQ_CDF_2: DZE_Veh_BRDM2_HQ_CDF_1 {
 	damageResistance = 0.048; // base 0.02409
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_HQ_CDF_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_HQ_CDF_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -247,7 +247,7 @@ class DZE_Veh_BRDM2_2: DZE_Veh_BRDM2_1 {
 	damageResistance = 0.048; // base 0.02409
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -294,7 +294,7 @@ class DZE_Veh_BRDM2_GUE_2: DZE_Veh_BRDM2_GUE_1 {
 	damageResistance = 0.048; // base 0.02409
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_GUE_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_GUE_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -341,7 +341,7 @@ class DZE_Veh_BRDM2_Desert_2: DZE_Veh_BRDM2_Desert_1 {
 	damageResistance = 0.048; // base 0.02409
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -388,7 +388,7 @@ class DZE_Veh_BRDM2_CDF_2: DZE_Veh_BRDM2_CDF_1 {
 	damageResistance = 0.048; // base 0.02409
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_CDF_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_CDF_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -434,7 +434,7 @@ class DZE_Veh_BRDM2_Rust_2: DZE_Veh_BRDM2_Rust_1 {
 	damageResistance = 0.048; // base 0.02409
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_Rust_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_Rust_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -480,7 +480,7 @@ class DZE_Veh_BRDM2_Winter_2: DZE_Veh_BRDM2_Winter_1 {
 	damageResistance = 0.048; // base 0.02409
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -544,7 +544,7 @@ class DZE_Veh_BRDM2_INS_2: DZE_Veh_BRDM2_INS_1 {
 	damageResistance = 0.048; // base 0.032
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_INS_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_INS_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -608,7 +608,7 @@ class DZE_Veh_BRDM2_ATGM_CDF_2: DZE_Veh_BRDM2_ATGM_CDF_1 {
 	damageResistance = 0.048; // base 0.032
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_ATGM_CDF_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_ATGM_CDF_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -672,7 +672,7 @@ class DZE_Veh_BRDM2_ATGM_INS_2: DZE_Veh_BRDM2_ATGM_INS_1 {
 	damageResistance = 0.048; // base 0.032
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_ATGM_INS_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_ATGM_INS_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -736,7 +736,7 @@ class DZE_Veh_BRDM2_ATGM_TK_2: DZE_Veh_BRDM2_ATGM_TK_1 {
 	damageResistance = 0.048; // base 0.032
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BRDM2_ATGM_TK_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_BRDM2_ATGM_TK_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 

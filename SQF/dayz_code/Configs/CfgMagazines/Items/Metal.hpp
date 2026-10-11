@@ -38,15 +38,15 @@ class PartGeneric: CA_Magazine {
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar","DZE_Tool_Sledge"};
 			output[] = {{"equip_metal_sheet",1}};
-			input[] = {{"PartGeneric",2},{"ItemTankTrap",2}};
+			input[] = {{"PartGeneric",2},{"DZE_Item_Kit_TankTrap",2}};
 		};
 		class Crafting4 {
 			text = "$STR_EPOCH_ACTION_METAL_DOORWAY";
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"door_frame_kit",1}};
-			input[] = {{"ItemPole",4},{"ItemTankTrap",4},{"PartGeneric",2}};
+			output[] = {{"DZE_Item_Kit_Door_Frame",1}};
+			input[] = {{"ItemPole",4},{"DZE_Item_Kit_TankTrap",4},{"PartGeneric",2}};
 		};
 	};
 };
@@ -66,7 +66,7 @@ class ItemPole: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"ItemCorrugated",1}};
+			output[] = {{"DZE_Item_Kit_Corrugated",1}};
 			input[] = {{"ItemPole",2},{"ItemMetalSheet",2},{"PartWoodLumber",2}};
 		};
 		class Crafting1 {
@@ -74,31 +74,31 @@ class ItemPole: CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"rusty_gate_kit",1}};
-			input[] = {{"ItemPole",3},{"ItemTankTrap",1}};
+			output[] = {{"DZE_Item_Kit_Rusty_Gate",1}};
+			input[] = {{"ItemPole",3},{"DZE_Item_Kit_TankTrap",1}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_220";
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"metal_panel_kit",1}};
-			input[] = {{"ItemPole",4},{"ItemTankTrap",4}};
+			output[] = {{"DZE_Item_Kit_Metal_Panel",1}};
+			input[] = {{"ItemPole",4},{"DZE_Item_Kit_TankTrap",4}};
 		};
 		class Crafting3 {
 			text = "$STR_EPOCH_ACTION_METAL_DOORWAY";
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"door_frame_kit",1}};
-			input[] = {{"ItemPole",4},{"ItemTankTrap",4},{"PartGeneric",2}};
+			output[] = {{"DZE_Item_Kit_Door_Frame",1}};
+			input[] = {{"ItemPole",4},{"DZE_Item_Kit_TankTrap",4},{"PartGeneric",2}};
 		};
 		class Crafting4 {
 			text = "$STR_EPOCH_ACTION_GLASS_FLOOR_QUARTER";
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"glass_floor_quarter_kit",1}};
+			output[] = {{"DZE_Item_Kit_Glass_Floor_Quarter",1}};
 			input[] = {{"ItemPole",8},{"PartGlass",4}};
 		};
 		class Crafting5 {
@@ -106,7 +106,7 @@ class ItemPole: CA_Magazine {
 			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar","DZE_Tool_Sledge"};
-			output[] = {{"metal_floor_quarter_kit",1}};
+			output[] = {{"DZE_Item_Kit_Metal_Floor_Quarter",1}};
 			input[] = {{"ItemPole",4},{"equip_metal_sheet",4}};
 		};
 		class Crafting6 {
@@ -114,8 +114,8 @@ class ItemPole: CA_Magazine {
 			script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"barbed_gate_kit",1}};
-			input[] = {{"ItemWire",1},{"ItemTankTrap",2},{"ItemPole",2}};
+			output[] = {{"DZE_Item_Kit_Barbed_Gate",1}};
+			input[] = {{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",2},{"ItemPole",2}};
 		};
 	};
 };
@@ -135,7 +135,7 @@ class ItemMetalSheet: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"ItemCorrugated",1}};
+			output[] = {{"DZE_Item_Kit_Corrugated",1}};
 			input[] = {{"ItemPole",2},{"ItemMetalSheet",2},{"PartWoodLumber",2}};
 		};
 	};
@@ -156,7 +156,7 @@ class equip_metal_sheet: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"metal_pillar_kit",2}};
+			output[] = {{"DZE_Item_Kit_Metal_Pillar",2}};
 			input[] = {{"ItemPole",2},{"equip_metal_sheet",4}};
 		};
 		class Crafting1 {
@@ -164,7 +164,7 @@ class equip_metal_sheet: CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar","DZE_Tool_Sledge"};
-			output[] = {{"metal_floor_quarter_kit",1}};
+			output[] = {{"DZE_Item_Kit_Metal_Floor_Quarter",1}};
 			input[] = {{"ItemPole",4},{"equip_metal_sheet",4}};
 		};
 	};
@@ -206,8 +206,8 @@ class ItemRSJ: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar","DZE_Tool_Sledge"};
-			output[] = {{"metal_drawbridge_kit",1}};
-			input[] = {{"ItemRSJ",6},{"metal_floor_kit",2}};
+			output[] = {{"DZE_Item_Kit_Metal_Drawbridge",1}};
+			input[] = {{"ItemRSJ",6},{"DZE_Item_Kit_Metal_Floor",2}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_PLAYER_265"; // Craft Scrap Metal
@@ -235,7 +235,7 @@ class equip_1inch_metal_pipe: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"ItemScaffoldingKit",1}};
+			output[] = {{"DZE_Item_Kit_Scaffolding",1}};
 			input[] = {{"equip_2inch_metal_pipe",4},{"equip_1inch_metal_pipe",2},{"PartWoodLumber",4}};
 		};
 	};
@@ -256,7 +256,7 @@ class equip_2inch_metal_pipe: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"ItemScaffoldingKit",1}};
+			output[] = {{"DZE_Item_Kit_Scaffolding",1}};
 			input[] = {{"equip_2inch_metal_pipe",4},{"equip_1inch_metal_pipe",2},{"PartWoodLumber",4}};
 		};
 	};
@@ -277,7 +277,7 @@ class equip_tent_poles: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"ItemTent",1}};
+			output[] = {{"DZE_Item_Kit_Tent",1}};
 			input[] = {{"ItemCanvas",2},{"equip_tent_poles",2}};
 		};
 		class Crafting1 {
@@ -285,7 +285,7 @@ class equip_tent_poles: CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"ItemDesertTent",1}};
+			output[] = {{"DZE_Item_Kit_Tent_Desert",1}};
 			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};
 		class Crafting2 {
@@ -293,7 +293,7 @@ class equip_tent_poles: CA_Magazine {
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"ItemDomeTent",1}};
+			output[] = {{"DZE_Item_Kit_Tent_Dome",1}};
 			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};
 		class Crafting3 {
@@ -301,7 +301,7 @@ class equip_tent_poles: CA_Magazine {
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"ItemTentWinter",1}};
+			output[] = {{"DZE_Item_Kit_Tent_Winter",1}};
 			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};
 		class Crafting4 {
@@ -309,7 +309,7 @@ class equip_tent_poles: CA_Magazine {
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"ItemWinterDomeTent",1}};
+			output[] = {{"DZE_Item_Kit_Tent_Dome_Winter",1}};
 			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};		
 	};

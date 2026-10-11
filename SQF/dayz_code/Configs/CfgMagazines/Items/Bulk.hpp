@@ -43,7 +43,7 @@ class bulk_empty: bulk {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"bulk_ItemTankTrapHalf",1}};
-			input[] = {{"bulk_empty",1},{"ItemTankTrap",6}};
+			input[] = {{"bulk_empty",1},{"DZE_Item_Kit_TankTrap",6}};
 		};
 		class Crafting4 {
 			text = "$STR_EPOCH_PLAYER_225";
@@ -51,7 +51,7 @@ class bulk_empty: bulk {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"bulk_ItemWireHalf",1}};
-			input[] = {{"bulk_empty",1},{"ItemWire",6}};
+			input[] = {{"bulk_empty",1},{"DZE_Item_Kit_Wire",6}};
 		};
 		class Crafting5 {
 			text = "$STR_EPOCH_PLAYER_226";
@@ -67,7 +67,7 @@ class bulk_empty: bulk {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"bulk_ItemSandbagHalf",1}};
-			input[] = {{"bulk_empty",1},{"ItemSandbag",6}};
+			input[] = {{"bulk_empty",1},{"DZE_Item_Kit_Sandbag",6}};
 		};
 	};
 };
@@ -335,7 +335,7 @@ class bulk_ItemSandbagHalf: bulk {
 		class CreateMags {
 			text = "$STR_EPOCH_ACTIONS_OPEN";
 			script = "spawn player_loadCrate;";
-			output[] = {"ItemSandbag",6,"magazine"};
+			output[] = {"DZE_Item_Kit_Sandbag",6,"magazine"};
 		};
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_332";
@@ -343,7 +343,7 @@ class bulk_ItemSandbagHalf: bulk {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"bulk_ItemSandbag",1}};
-			input[] = {{"bulk_ItemSandbagHalf",1},{"ItemSandbag",6}};
+			input[] = {{"bulk_ItemSandbagHalf",1},{"DZE_Item_Kit_Sandbag",6}};
 		};
 	};
 };
@@ -355,7 +355,7 @@ class bulk_ItemSandbag: bulk {
 		class CreateMags {
 			text = "$STR_EPOCH_ACTIONS_OPEN";
 			script = "spawn player_loadCrate;";
-			output[] = {"ItemSandbag",12,"magazine"};
+			output[] = {"DZE_Item_Kit_Sandbag",12,"magazine"};
 		};
 	};
 };
@@ -367,7 +367,7 @@ class bulk_ItemTankTrapHalf: bulk {
 		class CreateMags {
 			text = "$STR_EPOCH_ACTIONS_OPEN";
 			script = "spawn player_loadCrate;";
-			output[] = {"ItemTankTrap",6,"magazine"};
+			output[] = {"DZE_Item_Kit_TankTrap",6,"magazine"};
 		};
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_224";
@@ -375,7 +375,7 @@ class bulk_ItemTankTrapHalf: bulk {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"bulk_ItemTankTrap",1}};
-			input[] = {{"bulk_ItemTankTrapHalf",1},{"ItemTankTrap",6}};
+			input[] = {{"bulk_ItemTankTrapHalf",1},{"DZE_Item_Kit_TankTrap",6}};
 		};
 	};
 };
@@ -387,7 +387,7 @@ class bulk_ItemTankTrap: bulk {
 		class CreateMags {
 			text = "$STR_EPOCH_ACTIONS_OPEN";
 			script = "spawn player_loadCrate;";
-			output[] = {"ItemTankTrap",12,"magazine"};
+			output[] = {"DZE_Item_Kit_TankTrap",12,"magazine"};
 		};
 	};
 };
@@ -399,7 +399,7 @@ class bulk_ItemWireHalf: bulk {
 		class CreateMags {
 			text = "$STR_EPOCH_ACTIONS_OPEN";
 			script = "spawn player_loadCrate;";
-			output[] = {"ItemWire",6,"magazine"};
+			output[] = {"DZE_Item_Kit_Wire",6,"magazine"};
 		};
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_225";
@@ -407,7 +407,7 @@ class bulk_ItemWireHalf: bulk {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"bulk_ItemWire",1}};
-			input[] = {{"bulk_ItemWireHalf",1},{"ItemWire",6}};
+			input[] = {{"bulk_ItemWireHalf",1},{"DZE_Item_Kit_Wire",6}};
 		};
 	};
 };
@@ -419,7 +419,7 @@ class bulk_ItemWire: bulk {
 		class CreateMags {
 			text = "$STR_EPOCH_ACTIONS_OPEN";
 			script = "spawn player_loadCrate;";
-			output[] = {"ItemWire",12,"magazine"};
+			output[] = {"DZE_Item_Kit_Wire",12,"magazine"};
 		};
 	};
 };

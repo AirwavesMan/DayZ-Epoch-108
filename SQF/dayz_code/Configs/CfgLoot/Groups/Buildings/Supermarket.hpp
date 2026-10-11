@@ -15,7 +15,7 @@ Supermarket[] =
 	//Items
 	{Loot_MAGAZINE,		1,		ItemMixOil},
 	{Loot_MAGAZINE,		1,		PartPlywoodPack},
-	{Loot_MAGAZINE,		1,		forest_net_kit},
+	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Net_Forest},
 	
 	// Piles
 	{Loot_PILE,			5,		Consumable, 1, 3},

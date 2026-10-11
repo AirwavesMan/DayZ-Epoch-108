@@ -40,7 +40,7 @@ class DZE_Veh_Pandur2_2: DZE_Veh_Pandur2_1 {
 	damageResistance = 0.048; // base 0.01199
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_Pandur2_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_Pandur2_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 

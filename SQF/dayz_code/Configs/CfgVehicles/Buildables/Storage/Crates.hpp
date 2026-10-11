@@ -10,7 +10,7 @@ class DZE_WoodCrate: DZE_Storage_Base {
 	transportMaxBackpacks = 1;
 	DZE_upgradeBuilding[] = {"DZE_WoodCrate2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"PartWoodPlywood",2},{"ItemPlank",2},{"equip_nails",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodCrateKit";
+		DZE_refundKit = "DZE_Item_Kit_WoodCrate";
 		DZE_refundArray[] = {};
 	};
 };
@@ -24,7 +24,7 @@ class DZE_WoodCrate2: DZE_WoodCrate {
 	transportMaxBackpacks = 2;
 	DZE_buildingSteps = 2;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodCrateKit2";
+		DZE_refundKit = "DZE_Item_Kit_WoodCrate2";
 		DZE_refundArray[] = {};
 	};
 };
@@ -41,7 +41,7 @@ class DZE_StorageCrate: DZE_Storage_Base {
 	transportMaxMagazines = 60;
 	transportmaxbackpacks = 1;
 	class RemoveObject: RemoveObject { // new
-		DZE_refundKit = "storage_crate_kit";
+		DZE_refundKit = "DZE_Item_Kit_Storage_Crate";
 		DZE_refundArray[] = {};
 	};
 };
@@ -58,7 +58,7 @@ class DZE_CamoStorageCrate: DZE_Storage_Base {
 	transportMaxMagazines = 55;
 	transportmaxbackpacks = 6;
 	class RemoveObject: RemoveObject { // new
-		DZE_refundKit = "camo_storage_crate_kit";
+		DZE_refundKit = "DZE_Item_Kit_Camo_Storage_Crate";
 		DZE_refundArray[] = {};
 	};
 };

@@ -25,7 +25,7 @@ class DZE_StashSmall: DZE_Stash_Base {
 	armor = 5;
 	DZE_upgradeBuilding[] = {"DZE_StashSmall1",{"DZE_Tool_Shovel"},{{"PartWoodPile",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "StashSmall_kit";
+		DZE_refundKit = "DZE_Item_Kit_StashSmall";
 		DZE_refundArray[] = {};
 	};
 };

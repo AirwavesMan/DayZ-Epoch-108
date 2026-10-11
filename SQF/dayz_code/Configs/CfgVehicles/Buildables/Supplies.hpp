@@ -14,7 +14,7 @@ class DZE_FuelPump: DZE_SupplyObject_Base {
 	DZE_buildingSteps = 2;
 	DZE_bypassBase = 0;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "fuel_pump_kit";
+		DZE_refundKit = "DZE_Item_Kit_Fuel_Pump";
 		DZE_refundArray[] = {};
 	};
 };
@@ -44,7 +44,7 @@ class DZE_LightPole: DZE_SupplyObject_Base {
 		init = "if (isnil ('ASC_EU_Lights')) then {ASC_EU_Lights=_this;} else {ASC_EU_Lights=ASC_EU_Lights+_this;};['1','ASC_EU_BulbO',(_this select 0)] execvm '\ASC\ASC_EU_Lights\ASC_LightHandler.sqf';";
 	};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "light_pole_kit";
+		DZE_refundKit = "DZE_Item_Kit_Light_Pole";
 		DZE_refundArray[] = {};
 	};
 };
@@ -74,7 +74,7 @@ class DZE_Water_Pump: DZE_SupplyObject_Base {
 	DZE_offset[] = {0,2,0};
 	//GhostPreview = "DZE_Water_Pump_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "water_pump_kit";
+		DZE_refundKit = "DZE_Item_Kit_Water_Pump";
 		DZE_refundArray[] = {};
 	};
 };
@@ -90,7 +90,7 @@ class DZE_Fueltank: DZE_SupplyObject_Base {
 	DZE_buildingSteps = 3;
 	//GhostPreview = "DZE_Fueltank_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "fueltank_kit";
+		DZE_refundKit = "DZE_Item_Kit_Fueltank";
 		DZE_refundArray[] = {};
 	};
 };
@@ -106,7 +106,7 @@ class DZE_Watertank: DZE_SupplyObject_Base {
 	DZE_buildingSteps = 3;
 	//GhostPreview = "DZE_Watertank_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "watertank_kit";
+		DZE_refundKit = "DZE_Item_Kit_Watertank";
 		DZE_refundArray[] = {};
 	};
 };
@@ -123,7 +123,7 @@ class DZE_Watertower: DZE_SupplyObject_Base {
 	DZE_buildingSteps = 3;
 	//GhostPreview = "DZE_Watertower_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "watertower_kit";
+		DZE_refundKit = "DZE_Item_Kit_Watertower";
 		DZE_refundArray[] = {};
 	};
 };

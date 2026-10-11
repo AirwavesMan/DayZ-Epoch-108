@@ -8,7 +8,7 @@ class DZE_CinderWallHalf: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_CinderWall",{"DZE_Tool_Toolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
 	//GhostPreview = "DZE_CinderWallHalf_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "half_cinder_wall_kit";
+		DZE_refundKit = "DZE_Item_Kit_Half_Cinder_Wall";
 		DZE_refundArray[] = {{{"CinderBlocks",3},{"MortarBucket",1}}};
 	};
 };
@@ -23,7 +23,7 @@ class DZE_CinderWallHalf_Gap: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_CinderWall",{"DZE_Tool_Toolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
 	//GhostPreview = "DZE_CinderWallHalf_Gap_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "half_cinder_wall_gap_kit";
+		DZE_refundKit = "DZE_Item_Kit_Half_Cinder_Wall_Gap";
 		DZE_refundArray[] = {{{"CinderBlocks",3},{"MortarBucket",1}}};
 	};
 };
@@ -37,7 +37,7 @@ class DZE_CinderWall: DZE_Modular_Base {
 	armor = 3400;
 	//GhostPreview = "DZE_CinderWall_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "full_cinder_wall_kit";
+		DZE_refundKit = "DZE_Item_Kit_Full_Cinder_Wall";
 		DZE_refundArray[] = {{{"CinderBlocks",7},{"MortarBucket",2}}};
 	};
 };
@@ -72,8 +72,8 @@ class DZE_CinderWallWindow: DZE_ModularDoor_Base {
 
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinderwall_window_kit";
-		DZE_refundArray[] = {{{"CinderBlocks",5},{"MortarBucket",1},{"ItemTankTrap",1},{"ItemPole",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Cinderwall_Window";
+		DZE_refundArray[] = {{{"CinderBlocks",5},{"MortarBucket",1},{"DZE_Item_Kit_TankTrap",1},{"ItemPole",1}}};
 	};
 };
 
@@ -111,7 +111,7 @@ class DZE_CinderWallWindowLocked: DZE_CinderWallDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinderwall_window_locked_kit";
+		DZE_refundKit = "DZE_Item_Kit_Cinderwall_Window_Locked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -123,11 +123,11 @@ class DZE_CinderWallDoorway: DZE_Modular_Base {
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	DZE_offset[] = {0,2,0};
 	armor = 3400;
-	DZE_upgradeBuilding[] = {"DZE_CinderWallDoor",{"DZE_Tool_Toolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderWallDoor",{"DZE_Tool_Toolbox"},{{"ItemPole",3},{"DZE_Item_Kit_TankTrap",3}}};
 	//GhostPreview = "DZE_CinderWallDoorway_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_garage_frame_kit";
-		DZE_refundArray[] = {{{"CinderBlocks",3},{"MortarBucket",1},{"ItemTankTrap",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Garage_Frame";
+		DZE_refundArray[] = {{{"CinderBlocks",3},{"MortarBucket",1},{"DZE_Item_Kit_TankTrap",1}}};
 	};
 };
 
@@ -138,11 +138,11 @@ class DZE_CinderWallSmallDoorway: DZE_Modular_Base {
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	DZE_offset[] = {0,2,0};
 	armor = 3400;
-	DZE_upgradeBuilding[] = {"DZE_CinderWallDoorSmall",{"DZE_Tool_Toolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderWallDoorSmall",{"DZE_Tool_Toolbox"},{{"ItemPole",1},{"DZE_Item_Kit_TankTrap",1}}};
 	//GhostPreview = "DZE_CinderWallSmallDoorway_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_door_frame_kit";
-		DZE_refundArray[] = {{{"CinderBlocks",4},{"MortarBucket",1},{"ItemTankTrap",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Door_Frame";
+		DZE_refundArray[] = {{{"CinderBlocks",4},{"MortarBucket",1},{"DZE_Item_Kit_TankTrap",1}}};
 	};
 };
 
@@ -155,7 +155,7 @@ class DZE_CinderGateFrame: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_CinderGate",{"DZE_Tool_Toolbox"},{{"equip_metal_sheet",6},{"ItemRSJ",2},{"ItemScrews",2}}};
 	//GhostPreview = "DZE_CinderGate_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_gate_frame_kit";
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Gate_Frame";
 		DZE_refundArray[] = {{{"CinderBlocks",8},{"MortarBucket",4}}};
 	};
 };
@@ -167,10 +167,10 @@ class DZE_CinderGarageOpenTopFrame: DZE_Modular_Base {
 	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	DZE_offset[] = {0,2,0};
 	armor = 3000;
-	DZE_upgradeBuilding[] = {"DZE_CinderGarageOpenTop",{"DZE_Tool_Toolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
+	DZE_upgradeBuilding[] = {"DZE_CinderGarageOpenTop",{"DZE_Tool_Toolbox"},{{"ItemPole",3},{"DZE_Item_Kit_TankTrap",3}}};
 	//GhostPreview = "DZE_CinderGarageOpenTop_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_garage_top_open_frame_kit";
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Garage_Top_Open_Frame";
 		DZE_refundArray[] = {{{"CinderBlocks",4},{"MortarBucket",1}}};
 	};
 };
@@ -201,8 +201,8 @@ class DZE_Concrete_Bunker: DZE_CinderWallDoor_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_bunker_kit";
-		DZE_refundArray[] = {{{"full_cinder_wall_kit",3},{"ItemConcreteBlock",5},{"equip_metal_sheet",3},{"ItemScrews",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Bunker";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Full_Cinder_Wall",3},{"ItemConcreteBlock",5},{"equip_metal_sheet",3},{"ItemScrews",1}}};
 	};
 };
 
@@ -239,7 +239,7 @@ class DZE_Concrete_Bunker_Locked: DZE_CinderWallDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_bunker_kit_locked";
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Bunker_Kit_Locked";
 		DZE_refundArray[] = {};
 	};
 };

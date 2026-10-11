@@ -37,7 +37,7 @@ class ItemPlotDeed: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"plot_pole_kit",1}};
+			output[] = {{"DZE_Item_Kit_Plot_Pole",1}};
 			input[] = {{"ItemPlotDeed",1},{"ItemGoldBar10oz",2}};
 		};
 	};
@@ -125,7 +125,7 @@ class ItemDocumentRamp: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"wood_ramp_kit",1}};
+			output[] = {{"DZE_Item_Kit_Wood_Ramp",1}};
 			input[] = {{"ItemDocumentRamp",1},{"PartWoodLumber",8}};
 		};
 	};

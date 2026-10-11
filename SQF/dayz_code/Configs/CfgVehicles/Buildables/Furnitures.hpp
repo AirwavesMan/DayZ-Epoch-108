@@ -8,7 +8,7 @@ class DZE_ParkBench: DZE_Furniture_Base {
 	DZE_offset[] = {0,1.5,0};
 	displayName = $STR_EPOCH_WOODBENCH;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "park_bench_kit";
+		DZE_refundKit = "DZE_Item_Kit_Park_Bench";
 		DZE_refundArray[] = {};
 	};
 };
@@ -22,7 +22,7 @@ class DZE_Bed: DZE_Furniture_Base {
 	DZE_buildingSteps = 1;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "bed_kit";
+		DZE_refundKit = "DZE_Item_Kit_Bed";
 		DZE_refundArray[] = {};
 	};
 };
@@ -36,7 +36,7 @@ class DZE_Table: DZE_Furniture_Base {
 	DZE_buildingSteps = 1;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "table_kit";
+		DZE_refundKit = "DZE_Item_Kit_Table";
 		DZE_refundArray[] = {};
 	};
 };
@@ -50,7 +50,7 @@ class DZE_Office_Chair: DZE_Furniture_Base {
 	DZE_buildingSteps = 1;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "office_chair_kit";
+		DZE_refundKit = "DZE_Item_Kit_Office_Chair";
 		DZE_refundArray[] = {};
 	};
 };
@@ -64,7 +64,7 @@ class DZE_CCTV: DZE_Furniture_Base {
 	DZE_buildingSteps = 2;
 	DZE_offset[] = {0,4,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cctv_kit";
+		DZE_refundKit = "DZE_Item_Kit_Cctv";
 		DZE_refundArray[] = {};
 	};
 };
@@ -79,7 +79,7 @@ class DZE_Notebook: DZE_Furniture_Base {
 	DZE_offset[] = {0,2,0};
 	DZE_preventUnderground = 0;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "notebook_kit";
+		DZE_refundKit = "DZE_Item_Kit_Notebook";
 		DZE_refundArray[] = {};
 	};
 };

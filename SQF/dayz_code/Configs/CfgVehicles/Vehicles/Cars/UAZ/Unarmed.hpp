@@ -74,7 +74,7 @@ class DZE_Veh_UAZ_CDF_2: DZE_Veh_UAZ_CDF_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_CDF_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_UAZ_CDF_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -170,7 +170,7 @@ class DZE_Veh_UAZ_INS_2: DZE_Veh_UAZ_INS_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_INS_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_UAZ_INS_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -266,7 +266,7 @@ class DZE_Veh_UAZ_RU_2: DZE_Veh_UAZ_RU_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_RU_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_UAZ_RU_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -362,7 +362,7 @@ class DZE_Veh_UAZ_TK_2: DZE_Veh_UAZ_TK_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_TK_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_UAZ_TK_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -458,7 +458,7 @@ class DZE_Veh_UAZ_UN_2: DZE_Veh_UAZ_UN_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_UN_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_UAZ_UN_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -554,7 +554,7 @@ class DZE_Veh_UAZ_Civil_2: DZE_Veh_UAZ_Civil_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_Civil_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_UAZ_Civil_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -650,7 +650,7 @@ class DZE_Veh_UAZ_Rusty_2: DZE_Veh_UAZ_Rusty_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_Rusty_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_UAZ_Rusty_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -746,7 +746,7 @@ class DZE_Veh_UAZ_Winter_2: DZE_Veh_UAZ_Winter_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_UAZ_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 

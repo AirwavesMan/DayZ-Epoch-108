@@ -32,7 +32,7 @@ class DZE_Veh_Kamaz_Open_Woodland_2: DZE_Veh_Kamaz_Open_Woodland_1 {
 	damageResistance = 0.0255; // base 0.00243
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Open_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Open_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -85,7 +85,7 @@ class DZE_Veh_Kamaz_Woodland_2: DZE_Veh_Kamaz_Woodland_1 {
 	armor = 70; //base 32
 	damageResistance = 0.0255; // base 0.00243
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -142,7 +142,7 @@ class DZE_Veh_Kamaz_Fuel_Woodland_2: DZE_Veh_Kamaz_Fuel_Woodland_1 {
 	damageResistance = 0.0255; // base 0.00243
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Fuel_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Fuel_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 class DZE_Veh_Kamaz_Fuel_Woodland_3: DZE_Veh_Kamaz_Fuel_Woodland_2 {
@@ -198,7 +198,7 @@ class DZE_Veh_Kamaz_MaterialTransport_Woodland_2: DZE_Veh_Kamaz_MaterialTranspor
 	damageResistance = 0.0255;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Kamaz_MaterialTransport_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",6},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Kamaz_MaterialTransport_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",6},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -256,7 +256,7 @@ class DZE_Veh_Kamaz_WeaponTransport_Woodland_2: DZE_Veh_Kamaz_WeaponTransport_Wo
 	damageResistance = 0.0255;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Kamaz_WeaponTransport_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",6},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Kamaz_WeaponTransport_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",6},{"ItemScrews",2}}};
 	};
 };
 
@@ -303,7 +303,7 @@ class DZE_Veh_Kamaz_Open_Winter_2: DZE_Veh_Kamaz_Open_Winter_1 {
 	damageResistance = 0.0255; // base 0.00243
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Open_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Open_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -349,7 +349,7 @@ class DZE_Veh_Kamaz_Winter_2: DZE_Veh_Kamaz_Winter_1 {
 	armor = 70; //base 32
 	damageResistance = 0.0255; // base 0.00243
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -396,7 +396,7 @@ class DZE_Veh_Kamaz_Fuel_Winter_2: DZE_Veh_Kamaz_Fuel_Winter_1 {
 	damageResistance = 0.0255; // base 0.00243
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Fuel_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Kamaz_Fuel_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -443,7 +443,7 @@ class DZE_Veh_Kamaz_MaterialTransport_Winter_2: DZE_Veh_Kamaz_MaterialTransport_
 	damageResistance = 0.0255;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Kamaz_MaterialTransport_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",6},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Kamaz_MaterialTransport_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",6},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -490,7 +490,7 @@ class DZE_Veh_Kamaz_WeaponTransport_Winter_2: DZE_Veh_Kamaz_WeaponTransport_Wint
 	damageResistance = 0.0255;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Kamaz_WeaponTransport_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",6},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Kamaz_WeaponTransport_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",6},{"ItemScrews",2}}};
 	};
 };
 

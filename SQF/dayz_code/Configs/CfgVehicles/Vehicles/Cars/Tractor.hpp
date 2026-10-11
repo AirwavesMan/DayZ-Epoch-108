@@ -130,7 +130,7 @@ class DZE_Veh_Tractor_2: DZE_Veh_Tractor_1 {
 	armor = 50;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Tractor_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Tractor_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -170,7 +170,7 @@ class DZE_Veh_OldTractor_2: DZE_Veh_OldTractor_1 {
 	armor = 50;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_OldTractor_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_OldTractor_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -210,7 +210,7 @@ class DZE_Veh_Tractor_Armored_2: DZE_Veh_Tractor_Armored_1 {
 	armor = 240;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Tractor_Armored_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Tractor_Armored_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 

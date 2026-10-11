@@ -295,7 +295,7 @@ class DZE_ElevatorStop_Transparent: DZE_Ghost_Previews {
 	DZE_preventUnderground = 0;
 	DZE_saveToDatabase = 1;
 	class RemoveObject {
-		DZE_refundKit = "elevatorstop_transparent_kit";
+		DZE_refundKit = "DZE_Item_Kit_Elevatorstop_Transparent";
 		DZE_refundArray[] = {};
 	};
 };

@@ -6,7 +6,7 @@ class DZE_CanvasHut: DZE_Building_Base {
 	displayName = $STR_EPOCH_CANVASSUNSHADE;
 	mapSize = 2;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "sun_shade_kit";
+		DZE_refundKit = "DZE_Item_Kit_Sun_Shade";
 		DZE_refundArray[] = {};
 	};
 };
@@ -22,7 +22,7 @@ class DZE_DeerStand: DZE_Building_Base {
 	mapSize = 2;
 	DZE_preventUnderground = 0;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "deer_stand_kit";
+		DZE_refundKit = "DZE_Item_Kit_Deer_Stand";
 		DZE_refundArray[] = {};
 	};
 };
@@ -39,7 +39,7 @@ class DZE_Scaffolding: DZE_Building_Base {
 	accuracy = 0.3;
 	DZE_offset[] = {0,10.5,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemScaffoldingKit";
+		DZE_refundKit = "DZE_Item_Kit_Scaffolding";
 		DZE_refundArray[] = {};
 	};
 };
@@ -53,7 +53,7 @@ class DZE_Greenhouse: DZE_Building_Base {
 	DZE_buildingSteps = 1;
 	DZE_offset[] = {0,5,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "greenhouse_kit";
+		DZE_refundKit = "DZE_Item_Kit_Greenhouse";
 		DZE_refundArray[] = {};
 	};
 };
@@ -69,7 +69,7 @@ class DZE_Boggle: DZE_Building_Base {
 	displayName = $STR_EQUIP_NAME_BOGGLE;
 	DZE_buildingSteps = 1;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "boggle_kit";
+		DZE_refundKit = "DZE_Item_Kit_Boggle";
 		DZE_refundArray[] = {};
 	};
 };
@@ -86,7 +86,7 @@ class DZE_Postbox: DZE_Building_Base {
 	transportMaxMagazines = 5;
 	transportMaxBackpacks = 1;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "postbox_kit";
+		DZE_refundKit = "DZE_Item_Kit_Postbox";
 		DZE_refundArray[] = {};
 	};
 };
@@ -105,7 +105,7 @@ class DZE_WorkBench: DZE_Building_Base {
 	DZE_bypassBase = 0;
 	DZE_preventUnderground = 0;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "workbench_kit";
+		DZE_refundKit = "DZE_Item_Kit_WorkBench_Epoch";
 		DZE_refundArray[] = {{{"PartWoodPlywood",1},{"PartWoodLumber",2}}};
 	};
 };
@@ -119,7 +119,7 @@ class DZE_Satellite_Dish: DZE_Building_Base {
 	displayName = $STR_EQUIP_NAME_SATELLITE_DISH;
 	DZE_buildingSteps = 1;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "satellite_dish_kit";
+		DZE_refundKit = "DZE_Item_Kit_Satellite_Dish";
 		DZE_refundArray[] = {};
 	};
 };

@@ -7,8 +7,8 @@ class DZE_MetalFloor: DZE_Modular_Base {
 	armor = 3000;
 	//GhostPreview = "DZE_MetalFloor_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_floor_kit";
-		DZE_refundArray[] = {{{"metal_floor_half_kit",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Metal_Floor";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Metal_Floor_Half",2}}};
 	};
 };
 
@@ -20,8 +20,8 @@ class DZE_MetalFloor_Half: DZE_Modular_Base {
 	armor = 2000;
 	//GhostPreview = "DZE_MetalFloor_Half_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_floor_half_kit";
-		DZE_refundArray[] = {{{"metal_floor_quarter_kit",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Metal_Floor_Half";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Metal_Floor_Quarter",2}}};
 	};
 };
 
@@ -34,7 +34,7 @@ class DZE_MetalFloor_Quarter: DZE_Modular_Base {
 	armor = 1000;
 	//GhostPreview = "DZE_MetalFloor_Quarter_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_floor_quarter_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metal_Floor_Quarter";
 		DZE_refundArray[] = {{{"ItemPole",4},{"equip_metal_sheet",4}}};
 	};
 };
@@ -49,8 +49,8 @@ class DZE_MetalFloor4x: DZE_Modular_Base {
 	armor = 6000;
 	//GhostPreview = "DZE_MetalFloor4x_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_floor4x_kit";
-		DZE_refundArray[] = {{{"metal_floor_kit",4}}};
+		DZE_refundKit = "DZE_Item_Kit_Metal_Floor4x";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Metal_Floor",4}}};
 	};
 };
 
@@ -61,10 +61,10 @@ class DZE_DoorFrame: DZE_Modular_Base {
 	DZE_offset[] = {0,1.5,0};
 	armor = 1200;
 	//GhostPreview = "DZE_DoorFrame_Preview";
-	DZE_upgradeBuilding[] = {"DZE_Door",{"DZE_Tool_Toolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Door",{"DZE_Tool_Toolbox"},{{"ItemPole",1},{"DZE_Item_Kit_TankTrap",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "door_frame_kit";
-		DZE_refundArray[] = {{{"ItemPole",4},{"ItemTankTrap",4},{"PartGeneric",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Door_Frame";
+		DZE_refundArray[] = {{{"ItemPole",4},{"DZE_Item_Kit_TankTrap",4},{"PartGeneric",2}}};
 	};
 };
 
@@ -76,7 +76,7 @@ class DZE_MetalPillar: DZE_Modular_Base {
 	armor = 3400;
 	//GhostPreview = "DZE_MetalPillar_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_pillar_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metal_Pillar";
 		DZE_refundArray[] = {{{"ItemPole",1},{"equip_metal_sheet",2}}};
 	};
 };
@@ -89,8 +89,8 @@ class DZE_GlassFloor: DZE_Modular_Base {
 	armor = 2000;
 	//GhostPreview = "DZE_GlassFloor_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "glass_floor_kit";
-		DZE_refundArray[] = {{{"glass_floor_half_kit",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Glass_Floor";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Glass_Floor_Half",2}}};
 	};
 };
 
@@ -102,8 +102,8 @@ class DZE_GlassFloor_Half: DZE_Modular_Base {
 	armor = 2000;
 	//GhostPreview = "DZE_GlassFloor_Half_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "glass_floor_half_kit";
-		DZE_refundArray[] = {{{"glass_floor_quarter_kit",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Glass_Floor_Half";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Glass_Floor_Quarter",2}}};
 	};
 };
 
@@ -116,7 +116,7 @@ class DZE_GlassFloor_Quarter: DZE_Modular_Base {
 	armor = 2000;
 	//GhostPreview = "DZE_GlassFloor_Quarter_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "glass_floor_quarter_kit";
+		DZE_refundKit = "DZE_Item_Kit_Glass_Floor_Quarter";
 		DZE_refundArray[] = {{{"ItemPole",8},{"PartGlass",4}}};
 	};
 };
@@ -129,7 +129,7 @@ class DZE_ElevatorStart: DZE_Modular_Base {
 	armor = 3000;
 	//GhostPreview = "DZE_MetalFloor_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "elevatorstart_kit";
+		DZE_refundKit = "DZE_Item_Kit_Elevatorstart";
 		DZE_refundArray[] = {};
 	};
 };
@@ -142,7 +142,7 @@ class DZE_ElevatorStop_Glass: DZE_Modular_Base {
 	armor = 2000;
 	//GhostPreview = "DZE_GlassFloor_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "elevatorstop_glass_kit";
+		DZE_refundKit = "DZE_Item_Kit_Elevatorstop_Glass";
 		DZE_refundArray[] = {};
 	};
 };

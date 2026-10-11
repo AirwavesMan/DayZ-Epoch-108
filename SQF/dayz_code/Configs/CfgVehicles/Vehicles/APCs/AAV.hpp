@@ -38,7 +38,7 @@ class DZE_Veh_AAVP7A1_2: DZE_Veh_AAVP7A1_1 {
 	damageResistance = 0.023; // base 0.01168
 	
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_AAVP7A1_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_AAVP7A1_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 

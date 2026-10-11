@@ -21,7 +21,7 @@ class DZE_TentStorage_Base: DZE_Tent_Base {
 	transportMaxBackpacks = 1;
 	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemTent";
+		DZE_refundKit = "DZE_Item_Kit_Tent";
 	};
 };
 
@@ -81,7 +81,7 @@ class DZE_TentStorageWinter: DZE_TentStorage_Base {
 	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter0",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
 	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemTentWinter";
+		DZE_refundKit = "DZE_Item_Kit_Tent_Winter";
 	};
 };
 
@@ -137,7 +137,7 @@ class DZE_DesertTentStorage: DZE_TentStorage_Base {
 	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage0",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
 	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemDesertTent";
+		DZE_refundKit = "DZE_Item_Kit_Tent_Desert";
 	};
 };
 
@@ -195,7 +195,7 @@ class DZE_DomeTentStorage_base: DZE_Tent_Base {
 	transportMaxBackpacks = 2;	
 	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemDomeTent";
+		DZE_refundKit = "DZE_Item_Kit_Tent_Dome";
 	};	
 };
 
@@ -256,7 +256,7 @@ class DZE_WinterDomeTentStorage: DZE_DomeTentStorage_base {
 	transportMaxMagazines = 75;
 	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage0",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWinterDomeTent";
+		DZE_refundKit = "DZE_Item_Kit_Tent_Dome_Winter";
 	};
 };
 

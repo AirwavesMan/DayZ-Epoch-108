@@ -118,31 +118,31 @@ class Category_34 {
 
 //Building Supplies
 class Category_35 {
-	class TrapBear {
+	class DZE_Item_Kit_Trap_BearTrap {
 		type = "trade_items";
 		buy[] = {-1,"worth"};sell[] = {60,"worth"};};
 	class equip_tent_poles {
 		type = "trade_items";
 		buy[] = {20,"worth"};sell[] = {10,"worth"};};
-	class ItemDesertTent {
+	class DZE_Item_Kit_Tent_Desert {
 		type = "trade_items";
 		buy[] = {60,"worth"};sell[] = {30,"worth"};};
-	class ItemDomeTent {
+	class DZE_Item_Kit_Tent_Dome {
 		type = "trade_items";
 		buy[] = {60,"worth"};sell[] = {30,"worth"};};
-	class ItemTent {
+	class DZE_Item_Kit_Tent {
 		type = "trade_items";
 		buy[] = {80,"worth"};sell[] = {40,"worth"};};
-	class ItemTentWinter {
+	class DZE_Item_Kit_Tent_Winter {
 		type = "trade_items";
 		buy[] = {80,"worth"};sell[] = {40,"worth"};};
-	class ItemWinterDomeTent {
+	class DZE_Item_Kit_Tent_Dome_Winter {
 		type = "trade_items";
 		buy[] = {40,"worth"};sell[] = {20,"worth"};};
 	class ItemLightBulb {
 		type = "trade_items";
 		buy[] = {20,"worth"};sell[] = {10,"worth"};};
-	class ItemGenerator {
+	class DZE_Item_Kit_Generator {
 		type = "trade_items";
 		buy[] = {600,"worth"};sell[] = {300,"worth"};};
 	class equip_brick {
@@ -181,13 +181,13 @@ class Category_35 {
 	class equip_2inch_metal_pipe {
 		type = "trade_items";
 		buy[] = {8,"worth"};sell[] = {4,"worth"};};
-	class ItemWire {
+	class DZE_Item_Kit_Wire {
 		type = "trade_items";
 		buy[] = {6,"worth"};sell[] = {3,"worth"};};
-	class ItemSandbag {
+	class DZE_Item_Kit_Sandbag {
 		type = "trade_items";
 		buy[] = {400,"worth"};sell[] = {200,"worth"};};
-	class ItemTankTrap {
+	class DZE_Item_Kit_TankTrap {
 		type = "trade_items";
 		buy[] = {20,"worth"};sell[] = {10,"worth"};};
 	class ItemPole {
@@ -196,31 +196,31 @@ class Category_35 {
 	class ItemMetalSheet {
 		type = "trade_items";
 		buy[] = {100,"worth"};sell[] = {50,"worth"};};
-	class ItemCorrugated {
+	class DZE_Item_Kit_Corrugated {
 		type = "trade_items";
 		buy[] = {200,"worth"};sell[] = {100,"worth"};};
-	class plot_pole_kit {
+	class DZE_Item_Kit_Plot_Pole {
 		type = "trade_items";
 		buy[] = {6000,"worth"};sell[] = {6000,"worth"};};
 	class ItemComboLock {
 		type = "trade_items";
 		buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
-	class ItemLockbox {
+	class DZE_Item_Kit_Lockbox {
 		type = "trade_items";
 		buy[] = {-100,"worth"};sell[] = {4000,"worth"};};
-	class ItemLockbox2 {
+	class DZE_Item_Kit_Lockbox2 {
 		type = "trade_items";
 		buy[] = {-100,"worth"};sell[] = {6000,"worth"};};
-	class ItemLockboxWinter {
+	class DZE_Item_Kit_LockboxWinter {
 		type = "trade_items";
 		buy[] = {-100,"worth"};sell[] = {4000,"worth"};};
-	class ItemLockboxWinter2 {
+	class DZE_Item_Kit_LockboxWinter2 {
 		type = "trade_items";
 		buy[] = {-100,"worth"};sell[] = {6000,"worth"};};
-	class ItemSafe {
+	class DZE_Item_Kit_Safe {
 		type = "trade_items";
 		buy[] = {10000,"worth"};sell[] = {10000,"worth"};};
-	class ItemSafe2 {
+	class DZE_Item_Kit_Safe2 {
 		type = "trade_items";
 		buy[] = {-10000,"worth"};sell[] = {15000,"worth"};};
 	class ItemMixOil {

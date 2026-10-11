@@ -86,7 +86,7 @@ class PartGlass : CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"glass_floor_quarter_kit",1}};
+			output[] = {{"DZE_Item_Kit_Glass_Floor_Quarter",1}};
 			input[] = {{"ItemPole",8},{"PartGlass",4}};
 		};
 	};	

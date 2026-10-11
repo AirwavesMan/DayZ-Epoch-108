@@ -3,13 +3,13 @@ Construction[] =
 	//Items
 	{Loot_VEHICLE,		3,		WeaponHolder_ItemGenerator},
 	{Loot_MAGAZINE,		1,		ItemComboLock},
-	{Loot_MAGAZINE,		6,		ItemSandbag},
-	{Loot_MAGAZINE,		1,		ItemWire},
-	{Loot_MAGAZINE,		4,		ItemTankTrap},
+	{Loot_MAGAZINE,		6,		DZE_Item_Kit_Sandbag},
+	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Wire},
+	{Loot_MAGAZINE,		4,		DZE_Item_Kit_TankTrap},
 	{Loot_MAGAZINE,		2,		equip_hose},
 	{Loot_MAGAZINE,		2,		MortarBucket},
 	{Loot_MAGAZINE,		6,		CinderBlocks},
-	{Loot_MAGAZINE,		1,		fuel_pump_kit},
+	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Fuel_Pump},
 	
 	//Other
 	{Loot_GROUP,		15,		Parts},

@@ -195,7 +195,7 @@ class DZE_Veh_ATV_Beige_2: DZE_Veh_ATV_Beige_1 {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_ATV_Beige_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_ATV_Beige_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -234,7 +234,7 @@ class DZE_Veh_ATV_Green_2: DZE_Veh_ATV_Green_1 {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_ATV_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_ATV_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -273,7 +273,7 @@ class DZE_Veh_ATV_White_2: DZE_Veh_ATV_White_1 {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_ATV_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_ATV_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -312,7 +312,7 @@ class DZE_Veh_ATV_Grey_2: DZE_Veh_ATV_Grey_1 {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_ATV_Grey_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_ATV_Grey_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -351,7 +351,7 @@ class DZE_Veh_ATV_Red_2: DZE_Veh_ATV_Red_1 {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_ATV_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_ATV_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -390,7 +390,7 @@ class DZE_Veh_ATV_LightGreen_2: DZE_Veh_ATV_LightGreen_1 {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_ATV_LightGreen_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_ATV_LightGreen_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -429,7 +429,7 @@ class DZE_Veh_ATV_Blue_2: DZE_Veh_ATV_Blue_1 {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_ATV_Blue_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_ATV_Blue_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -468,7 +468,7 @@ class DZE_Veh_ATV_Yellow_2: DZE_Veh_ATV_Yellow_1 {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_ATV_Yellow_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_ATV_Yellow_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -507,7 +507,7 @@ class DZE_Veh_ATV_Purple_2: DZE_Veh_ATV_Purple_1 {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_ATV_Purple_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_ATV_Purple_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -546,7 +546,7 @@ class DZE_Veh_ATV_Black_2: DZE_Veh_ATV_Black_1 {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_ATV_Black_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_ATV_Black_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 

@@ -21,7 +21,7 @@ class ItemCanvas: CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"StashSmall_kit",1}};
+			output[] = {{"DZE_Item_Kit_StashSmall",1}};
 			input[] = {{"ItemCanvas",1},{"PartWoodPile",2}};
 		};		
 		class Crafting2 {
@@ -29,7 +29,7 @@ class ItemCanvas: CA_Magazine {
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"sun_shade_kit",1}};
+			output[] = {{"DZE_Item_Kit_Sun_Shade",1}};
 			input[] = {{"ItemCanvas",1},{"PartWoodLumber",4}};
 		};
 	};
@@ -50,7 +50,7 @@ class ItemBurlap: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemSandbag",1}};
+			output[] = {{"DZE_Item_Kit_Sandbag",1}};
 			input[] = {{"ItemBurlap",3}};
 		};
 	};
@@ -102,7 +102,7 @@ class equip_string : CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemTrapTripwireCans",1}};
+			output[] = {{"DZE_Item_Kit_Trap_TripwireCans",1}};
 			input[] = {{"equip_string",1},{"TrashTinCan",1},{"PartWoodPile",1},{"equip_duct_tape",1}};
 		};	
 		class Crafting2 {
@@ -110,7 +110,7 @@ class equip_string : CA_Magazine {
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemTrapTripwireFlare",1}};
+			output[] = {{"DZE_Item_Kit_Trap_TripwireFlare",1}};
 			input[] = {{"equip_string",1},{"HandRoadFlare",1},{"PartWoodPile",1},{"equip_duct_tape",1}};
 		};	
 		class Crafting3 {
@@ -118,7 +118,7 @@ class equip_string : CA_Magazine {
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemTrapTripwireGrenade",1}};
+			output[] = {{"DZE_Item_Kit_Trap_TripwireGrenade",1}};
 			input[] = {{"equip_string",1},{"HandGrenade_West",1},{"PartWoodPile",1},{"equip_duct_tape",1}};
 		};	
 		class Crafting4 {
@@ -126,7 +126,7 @@ class equip_string : CA_Magazine {
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemTrapTripwireSmoke",1}};
+			output[] = {{"DZE_Item_Kit_Trap_TripwireSmoke",1}};
 			input[] = {{"equip_string",1},{"SmokeShell",1},{"PartWoodPile",1},{"equip_duct_tape",1}};
 		};		
 	};	

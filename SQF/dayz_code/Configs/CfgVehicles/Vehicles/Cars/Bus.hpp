@@ -437,7 +437,7 @@ class DZE_Veh_Bus_Blue_2: DZE_Veh_Bus_Blue_1 {
 	damageResistance = 0.00524;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_Blue_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Bus_Blue_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -476,7 +476,7 @@ class DZE_Veh_Bus_Red_2: DZE_Veh_Bus_Red_1 {
 	damageResistance = 0.00524;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_Red_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Bus_Red_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -515,7 +515,7 @@ class DZE_Veh_Bus_White_2: DZE_Veh_Bus_White_1 {
 	damageResistance = 0.00524;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_White_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Bus_White_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -553,7 +553,7 @@ class DZE_Veh_Bus_Armored_2: DZE_Veh_Bus_Armored_1 {
 	armor = 200;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_Armored_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Bus_Armored_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 

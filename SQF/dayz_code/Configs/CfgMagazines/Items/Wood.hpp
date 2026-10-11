@@ -45,7 +45,7 @@ class ItemLog: CA_Magazine {
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Hammer","DZE_Tool_Handsaw"};
-			output[] = {{"deer_stand_kit",1}};
+			output[] = {{"DZE_Item_Kit_Deer_Stand",1}};
 			input[] = {{"ItemLog",8},{"ItemPlank",2},{"equip_nails",2}};
 		};
 		class Crafting4 {
@@ -53,7 +53,7 @@ class ItemLog: CA_Magazine {
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
-			output[] = {{"woodfence_gate_foundation_kit",1}};
+			output[] = {{"DZE_Item_Kit_Woodfence_Gate_Foundation",1}};
 			input[] = {{"ItemLog",6}};
 		};
 	};
@@ -100,7 +100,7 @@ class ItemPlank: CA_Magazine {
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"advanced_workBench_kit",1}};
+			output[] = {{"DZE_Item_Kit_Advanced_WorkBench",1}};
 			input[] = {{"ItemPlank",4},{"PartWoodPlywood",4},{"equip_nails",2}};
 		};
 		class Crafting4 {
@@ -108,7 +108,7 @@ class ItemPlank: CA_Magazine {
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"storage_crate_kit",1}};
+			output[] = {{"DZE_Item_Kit_Storage_Crate",1}};
 			input[] = {{"ItemPlank",6},{"equip_nails",1}};
 		};
 		class Crafting5 {
@@ -116,15 +116,15 @@ class ItemPlank: CA_Magazine {
 			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"camo_storage_crate_kit",1}};
-			input[] = {{"ItemPlank",2},{"PartWoodLumber",6},{"forest_net_kit",1},{"equip_nails",1}};
+			output[] = {{"DZE_Item_Kit_Camo_Storage_Crate",1}};
+			input[] = {{"ItemPlank",2},{"PartWoodLumber",6},{"DZE_Item_Kit_Net_Forest",1},{"equip_nails",1}};
 		};
 		class Crafting6 {
 			text = "$STR_EPOCH_ACTION_CRAFT_SIMPLE_FOOTBRIDGE";
 			script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"simple_footbridge_kit",1}};
+			output[] = {{"DZE_Item_Kit_Simple_Footbridge",1}};
 			input[] = {{"ItemPlank",3}};
 		};
 		class Crafting7 {
@@ -132,7 +132,7 @@ class ItemPlank: CA_Magazine {
 			script = ";['Crafting7','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"wooden_footbridge_kit",1}};
+			output[] = {{"DZE_Item_Kit_Wooden_Footbridge",1}};
 			input[] = {{"ItemPlank",3},{"PartWoodLumber",2},{"equip_nails",1}};
 		};
 		class Crafting8 {
@@ -185,7 +185,7 @@ class PartWoodPile: CA_Magazine {
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"stick_fence_kit",1}};
+			output[] = {{"DZE_Item_Kit_Stick_Fence",1}};
 			input[] = {{"PartWoodPile",6}};
 		};
 		class Crafting3 {
@@ -224,7 +224,7 @@ class PartWoodLumber: CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"ItemWoodHandRail",2}};
+			output[] = {{"DZE_Item_Kit_WoodHandRail",2}};
 			input[] = {{"PartWoodLumber",6},{"equip_nails",1}};
 		};
 		class Crafting2 {
@@ -232,7 +232,7 @@ class PartWoodLumber: CA_Magazine {
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"ItemWoodPillar",2}};
+			output[] = {{"DZE_Item_Kit_WoodPillar",2}};
 			input[] = {{"PartWoodLumber",8},{"equip_nails",1}};
 		};
 		class Crafting3 {
@@ -240,7 +240,7 @@ class PartWoodLumber: CA_Magazine {
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"ItemWoodStairs",1}};
+			output[] = {{"DZE_Item_Kit_WoodStairs",1}};
 			input[] = {{"PartWoodLumber",8},{"equip_nails",2}};
 		};
 		class Crafting4 {
@@ -248,7 +248,7 @@ class PartWoodLumber: CA_Magazine {
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"ItemWoodLadder",1}};
+			output[] = {{"DZE_Item_Kit_WoodLadder",1}};
 			input[] = {{"PartWoodLumber",8},{"equip_nails",2}};
 		};
 		class Crafting5 {
@@ -264,7 +264,7 @@ class PartWoodLumber: CA_Magazine {
 			Script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"ItemGunRackKit",1}};
+			output[] = {{"DZE_Item_Kit_GunRack",1}};
 			input[] = {{"PartWoodPlywood",1},{"PartWoodLumber",4},{"equip_nails",1}};
 		};
 		class Crafting7 {
@@ -280,7 +280,7 @@ class PartWoodLumber: CA_Magazine {
 			Script = ";['Crafting8','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"wooden_footbridge_kit",1}};
+			output[] = {{"DZE_Item_Kit_Wooden_Footbridge",1}};
 			input[] = {{"PartWoodLumber",2},{"ItemPlank",3},{"equip_nails",1}};
 		};
 	};
@@ -303,7 +303,7 @@ class PartWoodPlywood: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"workbench_kit",1}};
+			output[] = {{"DZE_Item_Kit_WorkBench_Epoch",1}};
 			input[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
 		};
 		class Crafting1 {
@@ -311,7 +311,7 @@ class PartWoodPlywood: CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"wood_shack_kit",1}};
+			output[] = {{"DZE_Item_Kit_Wood_Shack",1}};
 			input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",4},{"equip_nails",2}};
 		};
 		class Crafting2 {
@@ -319,7 +319,7 @@ class PartWoodPlywood: CA_Magazine {
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
-			output[] = {{"ItemWoodFloorQuarter",1}};
+			output[] = {{"DZE_Item_Kit_WoodFloorQuarter",1}};
 			input[] = {{"PartWoodPlywood",3},{"PartWoodLumber",3}};
 		};
 		class Crafting3 {
@@ -327,7 +327,7 @@ class PartWoodPlywood: CA_Magazine {
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
-			output[] = {{"ItemWoodWallThird",1}};
+			output[] = {{"DZE_Item_Kit_WoodWallThird",1}};
 			input[] = {{"PartWoodPlywood",3},{"PartWoodLumber",3}};
 		};
 		class Crafting4 {
@@ -343,7 +343,7 @@ class PartWoodPlywood: CA_Magazine {
 			Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"ItemWoodCrateKit",1}};
+			output[] = {{"DZE_Item_Kit_WoodCrate",1}};
 			input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",2},{"equip_nails",1}};
 		};
 	};
@@ -407,7 +407,7 @@ class equip_wood_pallet: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"windbreak_kit",1}};
+			output[] = {{"DZE_Item_Kit_Windbreak",1}};
 			input[] = {{"equip_wood_pallet",2},{"PartWoodLumber",2},{"equip_nails",1}};
 		};
 	};

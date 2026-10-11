@@ -1,237 +1,237 @@
-class ItemFireBarrel_kit
+class DZE_Item_Kit_FireBarrel
 {
 	weight = 45;
 };
 
-class workbench_kit
+class DZE_Item_Kit_WorkBench_Epoch
 {
 	weight = 10;
 };
 
-class wood_ramp_kit
+class DZE_Item_Kit_Wood_Ramp
 {
 	weight = 70;
 };
 
-class plot_pole_kit
+class DZE_Item_Kit_Plot_Pole
 {
 	weight = 0.02;
 };
 
-class metal_panel_kit
+class DZE_Item_Kit_Metal_Panel
 {
 	weight = 50;
 };
 
-class ItemCorrugated
+class DZE_Item_Kit_Corrugated
 {
 	weight = 10;
 };
 
-class ItemWire
+class DZE_Item_Kit_Wire
 {
 	weight = 2.5;
 };
 
-class ItemTankTrap
+class DZE_Item_Kit_TankTrap
 {
 	weight = 7.5;
 };
 
-class ItemGenerator
+class DZE_Item_Kit_Generator
 {
 	weight = 30;
 };
 
-class fuel_pump_kit
+class DZE_Item_Kit_Fuel_Pump
 {
 	weight = 50;
 };
 
-class light_pole_kit
+class DZE_Item_Kit_Light_Pole
 {
 	weight = 5;
 };
 
-class deer_stand_kit
+class DZE_Item_Kit_Deer_Stand
 {
 	weight = 40;
 };
 
-class rusty_gate_kit
+class DZE_Item_Kit_Rusty_Gate
 {
 	weight = 20;
 };
 
-class stick_fence_kit
+class DZE_Item_Kit_Stick_Fence
 {
 	weight = 3;
 };
 
-class sun_shade_kit
+class DZE_Item_Kit_Sun_Shade
 {
 	weight = 5;
 };
 
-class park_bench_kit 
+class DZE_Item_Kit_Park_Bench
 {
 	weight = 10;
 };
 
-class ItemScaffoldingKit
+class DZE_Item_Kit_Scaffolding
 {
 	weight = 150;
 };
 
-class notebook_kit
+class DZE_Item_Kit_Notebook
 {
 	weight = 1;
 };
-class water_pump_kit
+class DZE_Item_Kit_Water_Pump
 {
 	weight = 75;
 };
-class greenhouse_kit
+class DZE_Item_Kit_Greenhouse
 {
 	weight = 150;
 };
-class bed_kit
+class DZE_Item_Kit_Bed
 {
 	weight = 8;
 };
-class table_kit
+class DZE_Item_Kit_Table
 {
 	weight = 2;
 };
-class office_chair_kit
+class DZE_Item_Kit_Office_Chair
 {
 	weight = 0.5;
 };
-class garage_green_kit
+class DZE_Item_Kit_Garage_Green
 {
 	weight = 250;
 };
-class garage_white_kit
+class DZE_Item_Kit_Garage_White
 {
 	weight = 250;
 };
-class garage_brown_kit
+class DZE_Item_Kit_Garage_Brown
 {
 	weight = 250;
 };
-class garage_grey_kit
+class DZE_Item_Kit_Garage_Grey
 {
 	weight = 250;
 };
-class helipad_civil_kit
+class DZE_Item_Kit_Helipad_Civil
 {
 	weight = 1;
 };
-class helipad_rescue_kit
+class DZE_Item_Kit_Helipad_Rescue
 {
 	weight = 1;
 };
-class helipad_army_kit
+class DZE_Item_Kit_Helipad_Army
 {
 	weight = 1;
 };
-class helipad_cross_kit
+class DZE_Item_Kit_Helipad_Cross
 {
 	weight = 1;
 };
-class helipad_parkborder_kit
+class DZE_Item_Kit_Helipad_Parkborder
 {
 	weight = 1;
 };
-class cctv_kit
+class DZE_Item_Kit_Cctv
 {
 	weight = 1;
 };
-class fortified_wire_kit
+class DZE_Item_Kit_Fortified_Wire
 {
 	weight = 10;
 };
-class barbed_gate_kit
+class DZE_Item_Kit_Barbed_Gate
 {
 	weight = 20;
 };
-class concrete_barrier_kit
+class DZE_Item_Kit_Concrete_Barrier
 {
 	weight = 65;
 };
-class concrete_barrier_striped_kit
+class DZE_Item_Kit_Concrete_Barrier_Striped
 {
 	weight = 65;
 };
-class concrete_wall_kit
+class DZE_Item_Kit_Concrete_Wall
 {
 	weight = 120;
 };
-class concrete_pipe_kit
+class DZE_Item_Kit_Concrete_Pipe
 {
 	weight = 150;
 };
-class dragonteeth_kit
+class DZE_Item_Kit_Dragonteeth
 {
 	weight = 100;
 };
-class dragonteeth_big_kit
+class DZE_Item_Kit_Dragonteeth_Big
 {
 	weight = 150;
 };
-class simple_footbridge_kit
+class DZE_Item_Kit_Simple_Footbridge
 {
 	weight = 2;
 };
-class wooden_footbridge_kit
+class DZE_Item_Kit_Wooden_Footbridge
 {
 	weight = 3;
 };
-class windbreak_kit
+class DZE_Item_Kit_Windbreak
 {
 	weight = 7;
 };
-class metal_container_1a_kit
+class DZE_Item_Kit_Metal_Container_1a
 {
 	weight = 100;
 };
-class metal_container_1b_kit
+class DZE_Item_Kit_Metal_Container_1b
 {
 	weight = 100;
 };
-class metal_container_1g_kit
+class DZE_Item_Kit_Metal_Container_1g
 {
 	weight = 100;
 };
-class metal_container_2d_kit
+class DZE_Item_Kit_Metal_Container_2d
 {
 	weight = 200;
 };
-class compost_barrel_empty_kit
+class DZE_Item_Kit_Compost_Barrel_Empty
 {
 	weight = 2;
 };
-class compost_barrel_full_kit
+class DZE_Item_Kit_Compost_Barrel_Full
 {
 	weight = 20;
 };
-class boggle_kit
+class DZE_Item_Kit_Boggle
 {
 	weight = 3;
 };
-class satellite_dish_kit
+class DZE_Item_Kit_Satellite_Dish
 {
 	weight = 3;
 };
-class fueltank_kit
+class DZE_Item_Kit_Fueltank
 {
 	weight = 250;
 };
-class watertank_kit
+class DZE_Item_Kit_Watertank
 {
 	weight = 250;
 };
-class watertower_kit
+class DZE_Item_Kit_Watertower
 {
 	weight = 350;
 };

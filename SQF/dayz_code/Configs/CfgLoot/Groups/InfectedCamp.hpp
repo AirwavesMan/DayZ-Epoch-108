@@ -50,8 +50,8 @@ InfectedCamp[] =
 	//Items
 	{Loot_MAGAZINE,		3,		equip_rope},
 	{Loot_MAGAZINE,		3,		equip_herb_box},
-	{Loot_MAGAZINE,		1,		ItemWire},
-	{Loot_MAGAZINE,		4,		ItemTankTrap},
+	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Wire},
+	{Loot_MAGAZINE,		4,		DZE_Item_Kit_TankTrap},
 	{Loot_MAGAZINE,		6,		PartWoodPile},
 	{Loot_GROUP,		6,		militaryclothes},
 	{Loot_MAGAZINE,		2,		ItemBookBible},

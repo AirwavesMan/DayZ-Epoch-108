@@ -41,7 +41,7 @@ _remove = {
 		[_trap] call remove_trap;
 	} else {
 		[_trap] call remove_trap;
-		[0,0,0,["cfgMagazines","TrapBear",_trap]] spawn object_pickup;
+		[0,0,0,["cfgMagazines",'DZE_Item_Kit_Trap_BearTrap',_trap]] spawn object_pickup;
 	};
 };
 

@@ -10,7 +10,7 @@ class DZE_Doghouse: DZE_Building_Base {
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 1;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "doghouse_kit";
+		DZE_refundKit = "DZE_Item_Kit_Doghouse";
 		DZE_refundArray[] = {};
 	};
 };
@@ -26,7 +26,7 @@ class DZE_Wild_Bee_Hive: DZE_Building_Base {
 	transportMaxMagazines = 15;
 	transportMaxBackpacks = 1;	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "wild_bee_hive_kit";
+		DZE_refundKit = "DZE_Item_Kit_Wild_Bee_Hive";
 		DZE_refundArray[] = {};
 	};
 };
@@ -43,7 +43,7 @@ class DZE_Rabbit_Hutch: DZE_Building_Base {
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 1;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "rabbit_hutch_kit";
+		DZE_refundKit = "DZE_Item_Kit_Rabbit_Hutch";
 		DZE_refundArray[] = {};
 	};
 };
@@ -60,7 +60,7 @@ class DZE_Chicken_Coop: DZE_Building_Base {
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 1;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "chicken_coop_kit";
+		DZE_refundKit = "DZE_Item_Kit_Chicken_Coop";
 		DZE_refundArray[] = {};
 	};
 };
@@ -77,7 +77,7 @@ class DZE_Cow_Stable: DZE_Building_Base {
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 4;		
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cow_stable_kit";
+		DZE_refundKit = "DZE_Item_Kit_Cow_Stable";
 		DZE_refundArray[] = {};
 	};
 };
@@ -94,7 +94,7 @@ class DZE_Goat_Stable: DZE_Building_Base {
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 4;		
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "goat_stable_kit";
+		DZE_refundKit = "DZE_Item_Kit_Goat_Stable";
 		DZE_refundArray[] = {};
 	};
 };
@@ -111,7 +111,7 @@ class DZE_Sheep_Stable: DZE_Building_Base {
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 4;		
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "sheep_stable_kit";
+		DZE_refundKit = "DZE_Item_Kit_Sheep_Stable";
 		DZE_refundArray[] = {};
 	};
 };
@@ -128,7 +128,7 @@ class DZE_Boar_Stable: DZE_Building_Base {
 	transportMaxMagazines = 25;
 	transportMaxBackpacks = 4;		
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "boar_stable_kit";
+		DZE_refundKit = "DZE_Item_Kit_Boar_Stable";
 		DZE_refundArray[] = {};
 	};
 };

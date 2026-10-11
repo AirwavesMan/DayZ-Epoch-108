@@ -37,7 +37,7 @@ class DZE_Generator: DZE_Generator_Base {
 	class Turrets {
 	};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemGenerator";
+		DZE_refundKit = "DZE_Item_Kit_Generator";
 		DZE_refundArray[] = {};
 	};
 };

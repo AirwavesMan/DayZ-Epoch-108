@@ -1,112 +1,112 @@
-class woodfence_foundation_kit 
+class DZE_Item_Kit_Woodfence_Foundation
 { 
 	weight = 2; 
 };
-class woodfence_frame_kit 
+class DZE_Item_Kit_Woodfence_Frame
 { 
 	weight = 4; 
 };
-class woodfence_quaterpanel_kit 
+class DZE_Item_Kit_Woodfence_Quaterpanel
 { 
 	weight = 6; 
 };
-class woodfence_halfpanel_kit 
+class DZE_Item_Kit_Woodfence_Halfpanel
 { 
 	weight = 8; 
 };
-class woodfence_thirdpanel_kit 
+class DZE_Item_Kit_Woodfence_Thirdpanel
 { 
 	weight = 10; 
 };
-class woodfence_1_kit 
+class DZE_Item_Kit_Woodfence_1
 { 
 	weight = 14; 
 };
-class woodfence_2_kit 
+class DZE_Item_Kit_Woodfence_2
 { 
 	weight = 18; 
 };
-class woodfence_3_kit 
+class DZE_Item_Kit_Woodfence_3
 { 
 	weight = 22; 
 };
-class woodfence_4_kit 
+class DZE_Item_Kit_Woodfence_4
 { 
 	weight = 26; 
 };
-class woodfence_5_kit 
+class DZE_Item_Kit_Woodfence_5
 { 
 	weight = 30; 
 };
-class woodfence_6_kit 
+class DZE_Item_Kit_Woodfence_6
 { 
 	weight = 40; 
 };
-class woodfence_7_kit 
+class DZE_Item_Kit_Woodfence_7
 { 
 	weight = 50; 
 };
-class metalfence_foundation_kit 
+class DZE_Item_Kit_Metalfence_Foundation
 { 
 	weight = 5; 
 };
-class metalfence_frame_kit 
+class DZE_Item_Kit_Metalfence_Frame
 { 
 	weight = 10; 
 };
-class metalfence_halfpanel_kit 
+class DZE_Item_Kit_Metalfence_Halfpanel
 { 
 	weight = 15; 
 };
-class metalfence_thirdpanel_kit 
+class DZE_Item_Kit_Metalfence_Thirdpanel
 { 
 	weight = 20; 
 };
-class metalfence_1_kit 
+class DZE_Item_Kit_Metalfence_1
 { 
 	weight = 25; 
 };
-class metalfence_2_kit 
+class DZE_Item_Kit_Metalfence_2
 { 
 	weight = 30; 
 };
-class metalfence_3_kit 
+class DZE_Item_Kit_Metalfence_3
 { 
 	weight = 40; 
 };
-class metalfence_4_kit 
+class DZE_Item_Kit_Metalfence_4
 { 
 	weight = 60; 
 };
-class metalfence_5_kit 
+class DZE_Item_Kit_Metalfence_5
 { 
 	weight = 80; 
 };
-class metalfence_6_kit 
+class DZE_Item_Kit_Metalfence_6
 { 
 	weight = 120; 
 };
-class metalfence_7_kit 
+class DZE_Item_Kit_Metalfence_7
 { 
 	weight = 160; 
 };
-class woodfence_gate_foundation_kit 
+class DZE_Item_Kit_Woodfence_Gate_Foundation
 { 
 	weight = 10; 
 };
-class woodfence_gate_1_kit 
+class DZE_Item_Kit_Woodfence_Gate_1
 { 
 	weight = 20; 
 };
-class woodfence_gate_2_kit 
+class DZE_Item_Kit_Woodfence_Gate_2
 { 
 	weight = 30; 
 };
-class woodfence_gate_3_kit 
+class DZE_Item_Kit_Woodfence_Gate_3
 { 
 	weight = 40; 
 };
-class woodfence_gate_4_kit 
+class DZE_Item_Kit_Woodfence_Gate_4
 { 
 	weight = 60; 
 };	

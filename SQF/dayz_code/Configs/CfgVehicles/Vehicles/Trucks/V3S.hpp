@@ -44,7 +44,7 @@ class DZE_Veh_V3S_Open_Woodland_2: DZE_Veh_V3S_Open_Woodland_1 {
 	damageResistance = 0.0255; // base 0.00231
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_V3S_Open_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_V3S_Open_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -98,7 +98,7 @@ class DZE_Veh_V3S_Open_Civil_2: DZE_Veh_V3S_Open_Civil_1 {
 	damageResistance = 0.0255; // base 0.00231
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_V3S_Open_Civil_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_V3S_Open_Civil_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -152,7 +152,7 @@ class DZE_Veh_V3S_Open_TK_2: DZE_Veh_V3S_Open_TK_1 {
 	damageResistance = 0.0255; // base 0.00231
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_V3S_Open_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_V3S_Open_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -206,7 +206,7 @@ class DZE_Veh_V3S_White_2: DZE_Veh_V3S_White_1 {
 	damageResistance = 0.0255; // base 0.00231
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_V3S_White_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_V3S_White_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -263,7 +263,7 @@ class DZE_Veh_V3S_Fuel_Woodland_2: DZE_Veh_V3S_Fuel_Woodland_1 {
 	damageResistance = 0.0255; // base 0.00231
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_V3S_Fuel_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_V3S_Fuel_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 class DZE_Veh_V3S_Fuel_Woodland_3: DZE_Veh_V3S_Fuel_Woodland_2 {
@@ -318,7 +318,7 @@ class DZE_Veh_V3S_Armored_2: DZE_Veh_V3S_Armored_1 {
 	damageResistance = 0.0855; // base 0.0555
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_V3S_Armored_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_V3S_Armored_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -374,7 +374,7 @@ class DZE_Veh_V3S_Camper_2: DZE_Veh_V3S_Camper_1 {
 	damageResistance = 0.0255; // base 0.00231
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_V3S_Camper_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_V3S_Camper_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
 	};
 };
 

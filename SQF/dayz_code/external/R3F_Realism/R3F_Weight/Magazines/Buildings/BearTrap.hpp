@@ -1,12 +1,12 @@
-class TrapBear 
+class DZE_Item_Kit_Trap_BearTrap
 {
 	weight = 3.47;
 };
-class ItemTrapBearTrapFlare 
+class DZE_Item_Kit_Trap_BearTrapFlare
 {
 	weight = 3.47;
 };
-class ItemTrapBearTrapSmoke 
+class DZE_Item_Kit_Trap_BearTrapSmoke
 {
 	weight = 3.47;
 };

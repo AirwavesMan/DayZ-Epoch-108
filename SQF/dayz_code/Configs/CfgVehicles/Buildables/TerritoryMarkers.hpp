@@ -25,7 +25,7 @@ class DZE_Plastic_Pole_EP1: DZE_TerritoryMarker_Base {
 	
 	DZE_offset[] = {0,1.5,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "plot_pole_kit";
+		DZE_refundKit = "DZE_Item_Kit_Plot_Pole";
 		DZE_refundArray[] = {};
 	};
 };

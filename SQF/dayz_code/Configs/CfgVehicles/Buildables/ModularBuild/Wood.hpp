@@ -6,7 +6,7 @@ class DZE_WoodRamp: DZE_Modular_Base {
 	armor = 2000;
 	//GhostPreview = "DZE_WoodRamp_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "wood_ramp_kit";
+		DZE_refundKit = "DZE_Item_Kit_Wood_Ramp";
 		DZE_refundArray[] = {{{"ItemDocumentRamp",1},{"PartWoodLumber",8}}};
 	};
 };
@@ -20,8 +20,8 @@ class DZE_WoodFloor: DZE_Modular_Base {
 	armor = 2000;
 	//GhostPreview = "DZE_WoodFloor_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodFloor";
-		DZE_refundArray[] = {{{"ItemWoodFloorHalf",2}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodFloor";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodFloorHalf",2}}};
 	};
 };
 
@@ -34,8 +34,8 @@ class DZE_WoodFloorStairs: DZE_Modular_Base {
 	armor = 1000;
 	//GhostPreview = "DZE_Wood_Floor_Stairs_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodFloorStairs";
-		DZE_refundArray[] = {{{"ItemWoodFloor",1},{"ItemWoodStairs",1}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodFloorStairs";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodFloor",1},{"DZE_Item_Kit_WoodStairs",1}}};
 	};
 };
 
@@ -49,8 +49,8 @@ class DZE_WoodFloorHalf: DZE_Modular_Base {
 	DZE_buildingSteps = 2;
 	//GhostPreview = "DZE_WoodFloorHalf_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodFloorHalf";
-		DZE_refundArray[] = {{{"ItemWoodFloorQuarter",2}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodFloorHalf";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodFloorQuarter",2}}};
 	};
 };
 
@@ -64,7 +64,7 @@ class DZE_WoodFloorQuarter: DZE_Modular_Base {
 	DZE_buildingSteps = 1;
 	//GhostPreview = "DZE_WoodFloorQuarter_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodFloorQuarter";
+		DZE_refundKit = "DZE_Item_Kit_WoodFloorQuarter";
 		DZE_refundArray[] = {{{"PartWoodPlywood",3},{"PartWoodLumber",3}}};
 	};
 };
@@ -78,8 +78,8 @@ class DZE_WoodFloor4x: DZE_Modular_Base {
 	armor = 4000;
 	//GhostPreview = "DZE_WoodFloor4x_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodFloor4x";
-		DZE_refundArray[] = {{{"ItemWoodFloor",4}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodFloor4x";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodFloor",4}}};
 	};
 };
 
@@ -91,8 +91,8 @@ class DZE_WoodTriangleFloor: DZE_Modular_Base {
 	armor = 1000;
 	//GhostPreview = "DZE_WoodTriangleFloor_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemTriangleWoodFloor";
-		DZE_refundArray[] = {{{"ItemWoodFloorHalf",1},{"ItemWoodFloorQuarter",1}}};
+		DZE_refundKit = "DZE_Item_Kit_TriangleWoodFloor";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodFloorHalf",1},{"DZE_Item_Kit_WoodFloorQuarter",1}}};
 	};
 };
 
@@ -106,8 +106,8 @@ class DZE_WoodLargeWall: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_WoodLargeWallWin",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw"},{{"PartGlass",1}}};
 	//GhostPreview = "DZE_WoodLargeWall_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallLg";
-		DZE_refundArray[] = {{{"ItemWoodWall",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodWallLg";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWall",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	};
 };
 
@@ -121,8 +121,8 @@ class DZE_WoodLargeWallDoor: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_Land_LargeWoodDoor",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	//GhostPreview = "DZE_WoodLargeWallDoor_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallDoorLg";
-		DZE_refundArray[] = {{{"ItemWoodWall",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodWallDoorLg";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWall",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	};
 };
 
@@ -135,8 +135,8 @@ class DZE_WoodLargeWallWin: DZE_Modular_Base {
 	armor = 2200;
 	//GhostPreview = "DZE_WoodLargeWallWin_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallWindowLg";
-		DZE_refundArray[] = {{{"ItemWoodWallLg",1},{"PartGlass",1}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodWallWindowLg";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWallLg",1},{"PartGlass",1}}};
 	};
 };
 
@@ -150,8 +150,8 @@ class DZE_WoodSmallWall: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_WoodSmallWallWin",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw"},{{"PartGlass",1}}};
 	//GhostPreview = "DZE_WoodSmallWall_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWall";
-		DZE_refundArray[] = {{{"ItemWoodWallThird",3}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodWall";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWallThird",3}}};
 	};
 };
 
@@ -165,7 +165,7 @@ class DZE_WoodSmallWallThird: DZE_Modular_Base {
 	DZE_buildingSteps = 1;
 	//GhostPreview = "DZE_WoodSmallWallThird_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallThird";
+		DZE_refundKit = "DZE_Item_Kit_WoodWallThird";
 		DZE_refundArray[] = {{{"PartWoodPlywood",3},{"PartWoodLumber",3}}};
 	};
 };
@@ -179,8 +179,8 @@ class DZE_WoodSmallWallWin: DZE_Modular_Base {
 	armor = 2000;
 	//GhostPreview = "DZE_WoodSmallWallWin_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallWindow";
-		DZE_refundArray[] = {{{"ItemWoodWall",1},{"PartGlass",1}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodWallWindow";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWall",1},{"PartGlass",1}}};
 	};
 };
 
@@ -194,8 +194,8 @@ class DZE_WoodSmallWallDoor: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_Land_WoodDoor",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	//GhostPreview = "DZE_WoodSmallWallDoor_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallDoor";
-		DZE_refundArray[] = {{{"ItemWoodWallThird",3}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodWallDoor";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWallThird",3}}};
 	};
 };
 
@@ -209,8 +209,8 @@ class DZE_WoodTriangleWall: DZE_Modular_Base {
 	//GhostPreview = "DZE_Wood_Triangle_Wall_Preview";
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemTriangleWoodWall";
-		DZE_refundArray[] = {{{"ItemWoodFloorHalf",1},{"ItemWoodFloorQuarter",1}}};
+		DZE_refundKit = "DZE_Item_Kit_TriangleWoodWall";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodFloorHalf",1},{"DZE_Item_Kit_WoodFloorQuarter",1}}};
 	};
 };
 
@@ -223,8 +223,8 @@ class DZE_WoodGateFrame: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_Land_WoodGate",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
 	//GhostPreview = "DZE_WoodGate_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodGateFrame";
-		DZE_refundArray[] = {{{"ItemWoodWallThird",6}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodGateFrame";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWallThird",6}}};
 	};
 };
 
@@ -237,8 +237,8 @@ class DZE_WoodStairs: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_WoodStairsRails",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw"},{{"PartWoodLumber",2}}};
 	//GhostPreview = "DZE_WoodStairs_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodStairsSupport";
-		DZE_refundArray[] = {{{"ItemWoodStairs",1},{"PartWoodLumber",2}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodStairsSupport";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodStairs",1},{"PartWoodLumber",2}}};
 	};
 };
 
@@ -250,8 +250,8 @@ class DZE_WoodStairsRails: DZE_Modular_Base {
 	armor = 700;
 	//GhostPreview = "DZE_WoodStairs_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodStairsRails";
-		DZE_refundArray[] = {{{"ItemWoodStairsSupport",1},{"PartWoodLumber",2}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodStairsRails";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodStairsSupport",1},{"PartWoodLumber",2}}};
 	};
 };
 
@@ -264,7 +264,7 @@ class DZE_WoodStairsSans: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_WoodStairs",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw"},{{"PartWoodLumber",2}}};
 	//GhostPreview = "DZE_WoodStairsSans_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodStairs";
+		DZE_refundKit = "DZE_Item_Kit_WoodStairs";
 		DZE_refundArray[] = {{{"PartWoodLumber",8},{"equip_nails",2}}};
 	};
 };
@@ -279,7 +279,7 @@ class DZE_WoodLadder: DZE_Modular_Base {
 	//GhostPreview = "DZE_WoodLadder_Preview";
 	ladders[] = {{"start1","end1"}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodLadder";
+		DZE_refundKit = "DZE_Item_Kit_WoodLadder";
 		DZE_refundArray[] = {{{"PartWoodLumber",8},{"equip_nails",2}}};
 	};
 };
@@ -292,7 +292,7 @@ class DZE_WoodHandrail: DZE_Modular_Base {
 	armor = 300;
 	//GhostPreview = "DZE_Wood_Handrail_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodHandRail";
+		DZE_refundKit = "DZE_Item_Kit_WoodHandRail";
 		DZE_refundArray[] = {{{"PartWoodLumber",3},{"equip_nails",1}}};
 	};
 };
@@ -305,7 +305,7 @@ class DZE_WoodPillar: DZE_Modular_Base {
 	armor = 700;
 	//GhostPreview = "DZE_Wood_Pillar_Preview";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodPillar";
+		DZE_refundKit = "DZE_Item_Kit_WoodPillar";
 		DZE_refundArray[] = {{{"PartWoodLumber",4},{"equip_nails",1}}};
 	};
 };

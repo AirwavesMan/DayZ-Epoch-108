@@ -26,8 +26,8 @@ class DZE_Metal_Drawbridge: DZE_CinderWallDoor_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_drawbridge_kit";
-		DZE_refundArray[] = {{{"metal_floor_kit",2},{"ItemRSJ",6}}};
+		DZE_refundKit = "DZE_Item_Kit_Metal_Drawbridge";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Metal_Floor",2},{"ItemRSJ",6}}};
 	};
 };
 
@@ -65,7 +65,7 @@ class DZE_Metal_DrawbridgeLocked: DZE_CinderWallDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_drawbridge_kit_locked";
+		DZE_refundKit = "DZE_Item_Kit_Metal_Drawbridge_Kit_Locked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -79,7 +79,7 @@ class DZE_SimpleFootbridge: DZE_Modular_Base {
 	DZE_preventUnderground = 0;
 	displayName = $STR_EQUIP_NAME_SIMPLE_FOOTBRIDGE;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "simple_footbridge_kit";
+		DZE_refundKit = "DZE_Item_Kit_Simple_Footbridge";
 		DZE_refundArray[] = {{{"ItemPlank",3}}};
 	};
 };
@@ -93,7 +93,7 @@ class DZE_WoodenFootbridge: DZE_Modular_Base {
 	DZE_preventUnderground = 0;
 	displayName = $STR_EQUIP_NAME_WOODEN_FOOTBRIDGE;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "wooden_footbridge_kit";
+		DZE_refundKit = "DZE_Item_Kit_Wooden_Footbridge";
 		DZE_refundArray[] = {{{"ItemPlank",3},{"PartWoodLumber",2},{"equip_nails",1}}};
 	};
 };

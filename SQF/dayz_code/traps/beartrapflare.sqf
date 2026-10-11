@@ -41,7 +41,7 @@ _remove = {
 		[_trap] call remove_trap;
 	} else {
 		[_trap] call remove_trap;
-		[0,0,0,["cfgMagazines","ItemTrapBearTrapFlare",_trap]] spawn object_pickup;
+		[0,0,0,["cfgMagazines",'DZE_Item_Kit_Trap_BearTrapFlare',_trap]] spawn object_pickup;
 	};
 };
 
@@ -82,7 +82,7 @@ _trigger = {
 		deleteVehicle _trap;
 		
 		_lootpile = createVehicle ["WeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
-		_lootpile addMagazineCargoGlobal ["TrapBear", 1];		
+		_lootpile addMagazineCargoGlobal ['DZE_Item_Kit_Trap_BearTrap', 1];
 	};
 };
 

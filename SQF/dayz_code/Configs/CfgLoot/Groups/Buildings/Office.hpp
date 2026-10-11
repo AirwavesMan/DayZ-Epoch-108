@@ -16,7 +16,7 @@ Office[] =
 	
 	//Items
 	{Loot_MAGAZINE,		1,		ItemBriefcaseEmpty},
-	{Loot_MAGAZINE,		1,		ItemLockbox},
+	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Lockbox},
 	{Loot_MAGAZINE,		1,		PartPlywoodPack},
 	{Loot_MAGAZINE,		1,		ItemDocument},
 	

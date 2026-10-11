@@ -96,7 +96,7 @@ class WeaponHolder_ItemCamoNet : WeaponHolderBase {
 	destrType = "DestructNo";
 
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','forest_net_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_Net_Forest'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 
@@ -107,7 +107,7 @@ class WeaponHolder_ItemDomeTent : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemDomeTent'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_Tent_Dome'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 
@@ -118,7 +118,7 @@ class WeaponHolder_ItemDesertTent : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemDesertTent'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_Tent_Desert'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 
@@ -129,7 +129,7 @@ class WeaponHolder_ItemTentWinter : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemTentWinter'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_Tent_Winter'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 
@@ -140,7 +140,7 @@ class WeaponHolder_ItemWinterDomeTent : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemWinterDomeTent'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_Tent_Dome_Winter'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 
@@ -185,7 +185,7 @@ class WeaponHolder_ItemTent : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemTent'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_Tent'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 
@@ -229,7 +229,7 @@ class WeaponHolder_ItemGenerator : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemGenerator'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_Generator'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 
@@ -515,85 +515,85 @@ class WeaponHolder_ItemJerrycanSide : WeaponHolder_ItemJerrycan {
 class WeaponHolder_ItemSafe: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_SAFE";
-	seedItem = "ItemSafe";
+	seedItem = "DZE_Item_Kit_Safe";
 };
 
 class WeaponHolder_ItemSafe2: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_SAFE+";
-	seedItem = "ItemSafe2";
+	seedItem = "DZE_Item_Kit_Safe2";
 };
 
 class WeaponHolder_ItemSafeTall: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_SAFE";
-	seedItem = "ItemSafeTall";
+	seedItem = "DZE_Item_Kit_SafeTall";
 };
 
 class WeaponHolder_ItemLockbox: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_LOCKBOX";
-	seedItem = "ItemLockbox";
+	seedItem = "DZE_Item_Kit_Lockbox";
 };
 
 class WeaponHolder_ItemLockbox2: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_LOCKBOX+";
-	seedItem = "ItemLockbox2";
+	seedItem = "DZE_Item_Kit_Lockbox2";
 };
 
 class WeaponHolder_ItemLockboxWinter: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_LOCKBOX";
-	seedItem = "ItemLockboxWinter";
+	seedItem = "DZE_Item_Kit_LockboxWinter";
 };
 
 class WeaponHolder_ItemLockboxWinter2: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_LOCKBOX+";
-	seedItem = "ItemLockboxWinter2";
+	seedItem = "DZE_Item_Kit_LockboxWinter2";
 };
 
 class WeaponHolder_ItemSafeBroken: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_SAFE_BROKEN";
-	seedItem = "ItemSafeBroken";
+	seedItem = "DZE_Item_Kit_SafeBroken";
 };
 
 class WeaponHolder_ItemSafe2Broken: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_SAFE_BROKEN+";
-	seedItem = "ItemSafe2Broken";
+	seedItem = "DZE_Item_Kit_Safe2Broken";
 };
 
 class WeaponHolder_ItemSafeTallBroken: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_SAFE_BROKEN";
-	seedItem = "ItemSafeTallBroken";
+	seedItem = "DZE_Item_Kit_SafeTallBroken";
 };
 
 class WeaponHolder_ItemLockboxBroken: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN";
-	seedItem = "ItemLockboxBroken";
+	seedItem = "DZE_Item_Kit_LockboxBroken";
 };
 
 class WeaponHolder_ItemLockbox2Broken: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
-	seedItem = "ItemLockbox2Broken";
+	seedItem = "DZE_Item_Kit_Lockbox2Broken";
 };
 
 class WeaponHolder_ItemLockboxWinterBroken: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN";
-	seedItem = "ItemLockboxWinterBroken";
+	seedItem = "DZE_Item_Kit_LockboxWinterBroken";
 };
 
 class WeaponHolder_ItemLockboxWinter2Broken: WeaponHolder {
 	scope = 1;
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
-	seedItem = "ItemLockboxWinter2Broken";
+	seedItem = "DZE_Item_Kit_LockboxWinter2Broken";
 };
 class WeaponHolder_ItemStorageBarrel1_kit: WeaponHolder {
 	scope = 1;
@@ -602,7 +602,7 @@ class WeaponHolder_ItemStorageBarrel1_kit: WeaponHolder {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel1_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_StorageBarrel1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 class WeaponHolder_ItemStorageBarrel2_kit: WeaponHolder {
@@ -612,7 +612,7 @@ class WeaponHolder_ItemStorageBarrel2_kit: WeaponHolder {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel2_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_StorageBarrel2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 class WeaponHolder_ItemStorageBarrel3_kit: WeaponHolder {
@@ -622,7 +622,7 @@ class WeaponHolder_ItemStorageBarrel3_kit: WeaponHolder {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel3_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_StorageBarrel3'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 class WeaponHolder_ItemStorageBarrel4_kit: WeaponHolder {
@@ -632,7 +632,7 @@ class WeaponHolder_ItemStorageBarrel4_kit: WeaponHolder {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel4_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_StorageBarrel4'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 class WeaponHolder_ItemStorageBarrel5_kit: WeaponHolder {
@@ -642,7 +642,7 @@ class WeaponHolder_ItemStorageBarrel5_kit: WeaponHolder {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel5_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_StorageBarrel5'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 class WeaponHolder_ItemStorageBarrel6_kit: WeaponHolder {
@@ -652,7 +652,7 @@ class WeaponHolder_ItemStorageBarrel6_kit: WeaponHolder {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel6_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_StorageBarrel6'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 class WeaponHolder_ItemStorageBarrel7_kit: WeaponHolder {
@@ -662,7 +662,7 @@ class WeaponHolder_ItemStorageBarrel7_kit: WeaponHolder {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel7_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_StorageBarrel7'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 class WeaponHolder_ItemStorageBarrel8_kit: WeaponHolder {
@@ -672,6 +672,6 @@ class WeaponHolder_ItemStorageBarrel8_kit: WeaponHolder {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel8_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','DZE_Item_Kit_StorageBarrel8'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };

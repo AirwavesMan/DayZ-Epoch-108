@@ -10,7 +10,7 @@ Returns:
 Boolean (true if the player has all required items)
     
 How to use:
-_hasItems = [["PartGeneric",4], "PartEngine", ["ItemGenerator"]] call player_checkItems;
+_hasItems = [["PartGeneric",4], "PartEngine", ["DZE_Item_Kit_Generator"]] call player_checkItems;
 */
 private ["_items","_inventory","_hasItems","_itemIn","_countIn","_qty","_missing","_missingQty","_textMissing"];
 _items = _this;

@@ -65,7 +65,7 @@ _remove = {
 		[_trap] call remove_trap;
 		
 		//Refund is determined in object_pickup.sqf
-		[0,0,0,["cfgMagazines","ItemTrapTripwireGrenade",_trap]] spawn object_pickup;
+		[0,0,0,["cfgMagazines",'DZE_Item_Kit_Trap_TripwireGrenade',_trap]] spawn object_pickup;
 	};
 };
 

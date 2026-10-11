@@ -13,7 +13,7 @@ class DZE_Hedgehog: DZE_DefenseObject_Base {
 	displayName = $STR_BUILT_HEDGEHOG;
 	DZE_buildingSteps = 1;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemTankTrap";
+		DZE_refundKit = "DZE_Item_Kit_TankTrap";
 		DZE_refundArray[] = {};
 	};
 };
@@ -29,7 +29,7 @@ class DZE_MetalPanel: DZE_DefenseObject_Base {
 	displayName = $STR_EPOCH_METALPANEL;
 	DZE_buildingSteps = 6;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_panel_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metal_Panel";
 		DZE_refundArray[] = {};
 	};
 };
@@ -44,7 +44,7 @@ class DZE_Fort_RazorWire: DZE_DefenseObject_Base {
 	destrType = "DestructTent";
 	armor = 500;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWire";
+		DZE_refundKit = "DZE_Item_Kit_Wire";
 		DZE_refundArray[] = {};
 	};
 };
@@ -59,8 +59,8 @@ class DZE_FortifiedWire: DZE_DefenseObject_Base {
 	destrType = "DestructTent";
 	armor = 750;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "fortified_wire_kit";
-		DZE_refundArray[] = {{{"ItemWire",1},{"ItemTankTrap",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Fortified_Wire";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",2}}};
 	};
 };
 
@@ -100,8 +100,8 @@ class DZE_BarbedGate: DZE_DefenseObject_Base {
 		};
 	};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "barbed_gate_kit";
-		DZE_refundArray[] = {{{"ItemWire",1},{"ItemTankTrap",2},{"ItemPole",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Barbed_Gate";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",2},{"ItemPole",2}}};
 	};
 };
 
@@ -114,8 +114,8 @@ class DZE_ConcreteBarrier: DZE_DefenseObject_Base {
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 1;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "concrete_barrier_kit";
-		DZE_refundArray[] = {{{"CementBag",3},{"ItemStone",2},{"ItemWire",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Concrete_Barrier";
+		DZE_refundArray[] = {{{"CementBag",3},{"ItemStone",2},{"DZE_Item_Kit_Wire",1}}};
 	};
 };
 
@@ -128,8 +128,8 @@ class DZE_ConcreteBarrierStriped: DZE_DefenseObject_Base {
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 1;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "concrete_barrier_striped_kit";
-		DZE_refundArray[] = {{{"CementBag",3},{"ItemStone",2},{"ItemWire",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Concrete_Barrier_Striped";
+		DZE_refundArray[] = {{{"CementBag",3},{"ItemStone",2},{"DZE_Item_Kit_Wire",1}}};
 	};
 };
 
@@ -141,8 +141,8 @@ class DZE_ConcreteWall: DZE_DefenseObject_Base {
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "concrete_wall_kit";
-		DZE_refundArray[] = {{{"concrete_barrier_kit",5},{"CementBag",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Concrete_Wall";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Concrete_Barrier",5},{"CementBag",2}}};
 	};
 };
 
@@ -154,8 +154,8 @@ class DZE_ConcretePipe: DZE_DefenseObject_Base {
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "concrete_pipe_kit";
-		DZE_refundArray[] = {{{"concrete_barrier_kit",6},{"CementBag",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Concrete_Pipe";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Concrete_Barrier",6},{"CementBag",2}}};
 	};
 };
 
@@ -168,8 +168,8 @@ class DZE_DragonTeeth: DZE_DefenseObject_Base {
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "dragonteeth_kit";
-		DZE_refundArray[] = {{{"concrete_wall_kit",1},{"ItemStone",6},{"CementBag",4}}};
+		DZE_refundKit = "DZE_Item_Kit_Dragonteeth";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Concrete_Wall",1},{"ItemStone",6},{"CementBag",4}}};
 	};
 };
 
@@ -182,8 +182,8 @@ class DZE_DragonTeethBig: DZE_DefenseObject_Base {
 	destrType = "DestructBuilding";
 	DZE_buildingSteps = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "dragonteeth_big_kit";
-		DZE_refundArray[] = {{{"dragonteeth_kit",1},{"ItemStone",6},{"CementBag",4}}};
+		DZE_refundKit = "DZE_Item_Kit_Dragonteeth_Big";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Dragonteeth",1},{"ItemStone",6},{"CementBag",4}}};
 	};
 };
 
@@ -194,7 +194,7 @@ class DZE_Windbreak: DZE_DefenseObject_Base {
 	armor = 1000;
 	displayName = $STR_EQUIP_NAME_WINDBREAK;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "windbreak_kit";
+		DZE_refundKit = "DZE_Item_Kit_Windbreak";
 		DZE_refundArray[] = {{{"equip_wood_pallet",2},{"PartWoodLumber",2},{"equip_nails",1}}};
 	};
 };

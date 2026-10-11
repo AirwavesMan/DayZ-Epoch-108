@@ -41,7 +41,7 @@ class DZE_MetalGate: DZE_Building_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "rusty_gate_kit";
+		DZE_refundKit = "DZE_Item_Kit_Rusty_Gate";
 		DZE_refundArray[] = {};
 	};
 };
@@ -56,7 +56,7 @@ class DZE_WoodenGate_foundation: DZE_Modular_Base {
 	DZE_upgradeBuilding[] = {"DZE_WoodenGate_1",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "woodfence_gate_foundation_kit";
+		DZE_refundKit = "DZE_Item_Kit_Woodfence_Gate_Foundation";
 		DZE_refundArray[] = {{{"ItemLog",6}}};
 	};
 };
@@ -92,8 +92,8 @@ class DZE_WoodenGate_1: DZE_Building_Base {
 
 	DZE_lockable = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "woodfence_gate_1_kit";
-		DZE_refundArray[] = {{{"woodfence_gate_foundation_kit",1},{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Woodfence_Gate_1";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_Foundation",1},{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
 	};
 };
 
@@ -124,8 +124,8 @@ class DZE_WoodenGate_2: DZE_WoodenGate_1 {
 	
 	DZE_lockable = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "woodfence_gate_2_kit";
-		DZE_refundArray[] = {{{"woodfence_gate_1_kit",1},{"ItemPlank",10},{"equip_nails",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Woodfence_Gate_2";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_1",1},{"ItemPlank",10},{"equip_nails",1}}};
 	};
 };
 
@@ -156,8 +156,8 @@ class DZE_WoodenGate_3: DZE_WoodenGate_2 {
 	
 	DZE_lockable = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "woodfence_gate_3_kit";
-		DZE_refundArray[] = {{{"woodfence_gate_2_kit",1},{"ItemPlank",10},{"equip_nails",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Woodfence_Gate_3";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_2",1},{"ItemPlank",10},{"equip_nails",1}}};
 	};
 };
 
@@ -187,7 +187,7 @@ class DZE_WoodenGate_4: DZE_WoodenGate_3 {
 	
 	DZE_lockable = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "woodfence_gate_4_kit";
-		DZE_refundArray[] = {{{"woodfence_gate_3_kit",1},{"ItemPlank",10},{"equip_nails",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Woodfence_Gate_4";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_3",1},{"ItemPlank",10},{"equip_nails",1}}};
 	};
 };

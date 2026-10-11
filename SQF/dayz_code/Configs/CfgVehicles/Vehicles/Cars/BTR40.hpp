@@ -58,7 +58,7 @@ class DZE_Veh_BTR40_DShKM_Green_2: DZE_Veh_BTR40_DShKM_Green_1 {
 		};
 	};
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BTR40_DShKM_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",6},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",1}}};
+		ItemLRK[] = {"DZE_Veh_BTR40_DShKM_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",6},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",1}}};
 	};
 };
 
@@ -123,7 +123,7 @@ class DZE_Veh_BTR40_DShKM_Woodland_2: DZE_Veh_BTR40_DShKM_Woodland_1 {
 		};
 	};
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BTR40_DShKM_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",6},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",1}}};
+		ItemLRK[] = {"DZE_Veh_BTR40_DShKM_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",6},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",1}}};
 	};
 };
 
@@ -204,7 +204,7 @@ class DZE_Veh_BTR40_Green_2: DZE_Veh_BTR40_Green_1 {
 		};
 	};
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BTR40_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",6},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",1}}};
+		ItemLRK[] = {"DZE_Veh_BTR40_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",6},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",1}}};
 	};
 };
 
@@ -268,7 +268,7 @@ class DZE_Veh_BTR40_Woodland_2: DZE_Veh_BTR40_Woodland_1 {
 		};
 	};
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_BTR40_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",6},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",1}}};
+		ItemLRK[] = {"DZE_Veh_BTR40_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",6},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",1}}};
 	};
 };
 

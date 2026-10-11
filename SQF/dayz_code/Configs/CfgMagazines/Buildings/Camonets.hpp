@@ -1,4 +1,4 @@
-class desert_large_net_kit: CA_Magazine {
+class DZE_Item_Kit_Net_Desert_Large: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LARGEDESERTCAMONET";
 	descriptionShort = "$STR_EPOCH_LARGECAMONET_DESC";
@@ -16,7 +16,7 @@ class desert_large_net_kit: CA_Magazine {
 		};
 	};
 };
-class forest_large_net_kit: CA_Magazine {
+class DZE_Item_Kit_Net_Forest_Large: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LARGEFORESTCAMONET";
 	descriptionShort = "$STR_EPOCH_LARGECAMONET_DESC";
@@ -34,7 +34,7 @@ class forest_large_net_kit: CA_Magazine {
 		};
 	};
 };
-class desert_net_kit: CA_Magazine {
+class DZE_Item_Kit_Net_Desert: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_DESERTCAMONET";
 	descriptionShort = "$STR_EPOCH_CAMONET_DESC";
@@ -55,12 +55,12 @@ class desert_net_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"desert_large_net_kit",1}};
-			input[] = {{"desert_net_kit",3}};
+			output[] = {{"DZE_Item_Kit_Net_Desert_Large",1}};
+			input[] = {{"DZE_Item_Kit_Net_Desert",3}};
 		};
 	};
 };
-class forest_net_kit: CA_Magazine {
+class DZE_Item_Kit_Net_Forest: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_FORESTCAMONET";
 	descriptionShort = "$STR_EPOCH_CAMONET_DESC";
@@ -81,13 +81,13 @@ class forest_net_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"forest_large_net_kit",1}};
-			input[] = {{"forest_net_kit",3}};
+			output[] = {{"DZE_Item_Kit_Net_Forest_Large",1}};
+			input[] = {{"DZE_Item_Kit_Net_Forest",3}};
 		};
 	};
 };
 
-class winter_net_kit: CA_Magazine {
+class DZE_Item_Kit_Net_Winter: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WINTERCAMONET";
 	descriptionShort = "$STR_EPOCH_CAMONET_DESC";
@@ -108,12 +108,12 @@ class winter_net_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"winter_large_net_kit",1}};
-			input[] = {{"winter_net_kit",3}};
+			output[] = {{"DZE_Item_Kit_Net_Winter_Large",1}};
+			input[] = {{"DZE_Item_Kit_Net_Winter",3}};
 		};		
 	};
 };
-class winter_large_net_kit: CA_Magazine {
+class DZE_Item_Kit_Net_Winter_Large: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LARGEWINTERCAMONET";
 	descriptionShort = "$STR_EPOCH_LARGECAMONET_DESC";

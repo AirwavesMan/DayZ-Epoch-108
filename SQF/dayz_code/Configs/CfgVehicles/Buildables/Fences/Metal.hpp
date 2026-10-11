@@ -5,7 +5,7 @@ class DZE_Fence_corrugated: DZE_Building_Base {
 	armor = 600;
 	DZE_offset[] = {0,3,-0.1};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemCorrugated";
+		DZE_refundKit = "DZE_Item_Kit_Corrugated";
 		DZE_refundArray[] = {};
 	};
 };
@@ -19,7 +19,7 @@ class DZE_MetalFence_1_foundation: DZE_Fence_Base {
 	DZE_upgradeBuilding[] = {"DZE_MetalFence_1_frame",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemPlank",4},{"ItemRSJ",1}}};
 	armor = 1000;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_foundation_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_Foundation";
 		DZE_refundArray[] = {{{"ItemStone",8},{"MortarBucket",1},{"ItemRSJ",1}}};
 	};
 };
@@ -31,7 +31,7 @@ class DZE_MetalFence_1_frame: DZE_Fence_Base {
 	DZE_upgradeBuilding[] = {"DZE_MetalFence_halfpanel",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
 	armor = 1500;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_frame_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_Frame";
 		DZE_refundArray[] = {{{"ItemPlank",4},{"ItemRSJ",1}}};
 	};
 };
@@ -43,7 +43,7 @@ class DZE_MetalFence_halfpanel: DZE_Fence_Base {
 	DZE_upgradeBuilding[] = {"DZE_MetalFence_thirdpanel",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
 	armor = 2000;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_halfpanel_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_Halfpanel";
 		DZE_refundArray[] = {{{"ItemMetalSheet",3},{"ItemScrews",1}}};
 	};
 };
@@ -55,7 +55,7 @@ class DZE_MetalFence_thirdpanel: DZE_Fence_Base {
 	DZE_upgradeBuilding[] = {"DZE_MetalFence_1",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
 	armor = 2500;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_thirdpanel_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_Thirdpanel";
 		DZE_refundArray[] = {{{"ItemMetalSheet",3},{"ItemScrews",1}}};
 	};
 };
@@ -67,7 +67,7 @@ class DZE_MetalFence_1: DZE_Fence_Base {
 	DZE_upgradeBuilding[] = {"DZE_MetalFence_2",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
 	armor = 3000;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_1_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_1";
 		DZE_refundArray[] = {{{"ItemMetalSheet",3},{"ItemScrews",1}}};
 	};
 };
@@ -79,7 +79,7 @@ class DZE_MetalFence_2: DZE_Fence_Base {
 	DZE_upgradeBuilding[] = {"DZE_MetalFence_3",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
 	armor = 3500;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_2_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_2";
 		DZE_refundArray[] = {{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
 	};
 };
@@ -91,7 +91,7 @@ class DZE_MetalFence_3: DZE_Fence_Base {
 	DZE_upgradeBuilding[] = {"DZE_MetalFence_4",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemScrews",1},{"ItemRSJ",4}}};
 	armor = 4000;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_3_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_3";
 		DZE_refundArray[] = {{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
 	};
 };
@@ -103,7 +103,7 @@ class DZE_MetalFence_4: DZE_Fence_Base {
 	DZE_upgradeBuilding[] = {"DZE_MetalFence_5",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemScrews",1},{"ItemRSJ",2}}};
 	armor = 4500;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_4_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_4";
 		DZE_refundArray[] = {{{"ItemScrews",1},{"ItemRSJ",4}}};
 	};
 };
@@ -115,7 +115,7 @@ class DZE_MetalFence_5: DZE_Fence_Base {
 	DZE_upgradeBuilding[] = {"DZE_MetalFence_6",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemScrews",1},{"ItemPole",4},{"equip_metal_sheet",4}}};
 	armor = 5000;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_5_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_5";
 		DZE_refundArray[] = {{{"ItemScrews",1},{"ItemRSJ",2}}};
 	};
 };
@@ -127,7 +127,7 @@ class DZE_MetalFence_6: DZE_Fence_Base {
 	DZE_upgradeBuilding[] = {"DZE_MetalFence_7",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemScrews",1},{"ItemPole",6},{"PartGeneric",2}}};
 	armor = 5500;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_6_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_6";
 		DZE_refundArray[] = {{{"ItemScrews",1},{"ItemPole",4},{"equip_metal_sheet",4}}};
 	};
 };
@@ -141,7 +141,7 @@ class DZE_MetalFence_7: DZE_Fence_Base {
 	//GhostPreview = "DZE_MetalFence_7_Preview";
 	DZE_upgradeBuilding[] = {};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metalfence_7_kit";
+		DZE_refundKit = "DZE_Item_Kit_Metalfence_7";
 		DZE_refundArray[] = {{{"ItemScrews",1},{"ItemPole",6},{"PartGeneric",2}}};
 	};
 }; 

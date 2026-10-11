@@ -1,20 +1,20 @@
-class ItemTent 
+class DZE_Item_Kit_Tent
 {
 	weight = 4;
 };
-class ItemDomeTent 
+class DZE_Item_Kit_Tent_Dome
 {
 	weight = 5;
 };
-class ItemDesertTent 
+class DZE_Item_Kit_Tent_Desert
 {
 	weight = 5;
 };
-class ItemTentWinter
+class DZE_Item_Kit_Tent_Winter
 {
 	weight = 4;
 };
-class ItemWinterDomeTent
+class DZE_Item_Kit_Tent_Dome_Winter
 {
 	weight = 5;
 };

@@ -10,8 +10,8 @@ class DZE_MetalContainer1A: DZE_MetalContainer_Base {
 	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1A;
 	DZE_buildingSteps = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_container_1a_kit";
-		DZE_refundArray[] = {{{"metal_floor_quarter_kit",2},{"metal_floor_half_kit",4},{"ItemTankTrap",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Metal_Container_1a";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Metal_Floor_Quarter",2},{"DZE_Item_Kit_Metal_Floor_Half",4},{"DZE_Item_Kit_TankTrap",2}}};
 	};
 };
 
@@ -22,8 +22,8 @@ class DZE_MetalContainer1B: DZE_MetalContainer_Base {
 	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1B;
 	DZE_buildingSteps = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_container_1b_kit";
-		DZE_refundArray[] = {{{"metal_floor_quarter_kit",2},{"metal_floor_half_kit",4},{"ItemTankTrap",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Metal_Container_1b";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Metal_Floor_Quarter",2},{"DZE_Item_Kit_Metal_Floor_Half",4},{"DZE_Item_Kit_TankTrap",2}}};
 	};
 };
 
@@ -34,8 +34,8 @@ class DZE_MetalContainer1G: DZE_MetalContainer_Base {
 	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1G;
 	DZE_buildingSteps = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_container_1g_kit";
-		DZE_refundArray[] = {{{"metal_floor_quarter_kit",2},{"metal_floor_half_kit",4},{"ItemTankTrap",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Metal_Container_1g";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Metal_Floor_Quarter",2},{"DZE_Item_Kit_Metal_Floor_Half",4},{"DZE_Item_Kit_TankTrap",2}}};
 	};
 };
 
@@ -46,7 +46,7 @@ class DZE_MetalContainer2D: DZE_MetalContainer_Base {
 	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_2D;
 	DZE_buildingSteps = 5;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "metal_container_2d_kit";
-		DZE_refundArray[] = {{{"metal_container_1a_kit",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Metal_Container_2d";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Metal_Container_1a",2}}};
 	};
 };

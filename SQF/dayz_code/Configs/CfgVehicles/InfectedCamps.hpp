@@ -22,7 +22,7 @@ class IC_Tent: House {
 
 	class RemoveObject {
 		DZE_neededTools[] = {};
-		DZE_refundKit = "ItemTent";
+		DZE_refundKit = "DZE_Item_Kit_Tent";
 		DZE_refundArray[] = {};
 	};
 };
@@ -38,6 +38,6 @@ class IC_DomeTent : IC_Tent {
 	transportMaxBackpacks = 0;
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemDomeTent";
+		DZE_refundKit = "DZE_Item_Kit_Tent_Dome";
 	};
 };

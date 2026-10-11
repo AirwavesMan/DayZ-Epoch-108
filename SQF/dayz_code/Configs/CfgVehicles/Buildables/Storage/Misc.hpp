@@ -9,7 +9,7 @@ class DZE_GunRack: DZE_Storage_Base {
 	DZE_offset[] = {0,2,0};
 	DZE_upgradeBuilding[] = {"DZE_GunRack2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"ItemPlank",4},{"equip_nails",1}}};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemGunRackKit";
+		DZE_refundKit = "DZE_Item_Kit_GunRack";
 		DZE_refundArray[] = {};
 	};
 };
@@ -23,7 +23,7 @@ class DZE_GunRack2: DZE_GunRack {
 	transportMaxBackpacks = 0;
 	DZE_buildingSteps = 2;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemGunRackKit2";
+		DZE_refundKit = "DZE_Item_Kit_GunRack2";
 		DZE_refundArray[] = {};
 	};
 };
@@ -40,7 +40,7 @@ class DZE_OutHouse: DZE_Storage_Base {
 	DZE_buildingSteps = 2;
 	class transportmagazines {};
 	class RemoveObject: RemoveObject { // new
-		DZE_refundKit = "outhouse_kit";
+		DZE_refundKit = "DZE_Item_Kit_Outhouse";
 		DZE_refundArray[] = {};
 	};
 };
@@ -62,7 +62,7 @@ class DZE_WorkBench2: DZE_Building_Base {
     transportMaxMagazines = 25;
     transportMaxBackpacks = 1;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWorkBench_DZE";
+		DZE_refundKit = "DZE_Item_Kit_WorkBench";
 		DZE_refundArray[] = {};
 	};	
 };
@@ -82,7 +82,7 @@ class DZE_Advanced_WorkBench: DZE_Building_Base {
 	armor = 400;
 	DZE_buildingSteps = 3;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "advanced_workBench_kit";
+		DZE_refundKit = "DZE_Item_Kit_Advanced_WorkBench";
 		DZE_refundArray[] = {};
 	};
 };
@@ -101,7 +101,7 @@ class DZE_CookTripod: DZE_Storage_Base {
 	transportmaxbackpacks = 0;
 	armor = 500;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cook_tripod_kit";
+		DZE_refundKit = "DZE_Item_Kit_Cook_Tripod";
 		DZE_refundArray[] = {};
 	};
 };
@@ -120,7 +120,7 @@ class DZE_Stoneoven: DZE_Storage_Base {
 	transportmaxbackpacks = 0;
 	DZE_buildingSteps = 2;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "stoneoven_kit";
+		DZE_refundKit = "DZE_Item_Kit_Stoneoven";
 		DZE_refundArray[] = {};
 	};
 };
@@ -136,7 +136,7 @@ class DZE_Commode: DZE_Storage_Base {
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "commode_kit";
+		DZE_refundKit = "DZE_Item_Kit_Commode";
 		DZE_refundArray[] = {};
 	};
 };
@@ -152,7 +152,7 @@ class DZE_Wardrobe: DZE_Storage_Base {
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "wardrobe_kit";
+		DZE_refundKit = "DZE_Item_Kit_Wardrobe";
 		DZE_refundArray[] = {};
 	};
 };
@@ -168,7 +168,7 @@ class DZE_Fridge: DZE_Storage_Base {
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "fridge_kit";
+		DZE_refundKit = "DZE_Item_Kit_Fridge";
 		DZE_refundArray[] = {};
 	};
 };
@@ -184,7 +184,7 @@ class DZE_Washing_Machine: DZE_Storage_Base {
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "washing_machine_kit";
+		DZE_refundKit = "DZE_Item_Kit_Washing_Machine";
 		DZE_refundArray[] = {};
 	};
 };
@@ -200,7 +200,7 @@ class DZE_Server_Rack: DZE_Storage_Base {
 	transportmaxbackpacks = 1;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "server_rack_kit";
+		DZE_refundKit = "DZE_Item_Kit_Server_Rack";
 		DZE_refundArray[] = {};
 	};
 };
@@ -216,7 +216,7 @@ class DZE_ATM: DZE_Storage_Base {
 	transportmaxbackpacks = 4;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "atm_kit";
+		DZE_refundKit = "DZE_Item_Kit_Atm";
 		DZE_refundArray[] = {};
 	};
 };
@@ -232,7 +232,7 @@ class DZE_Armchair: DZE_Storage_Base {
 	transportmaxbackpacks = 1;	
 	DZE_offset[] = {0,2.5,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "armchair_kit";
+		DZE_refundKit = "DZE_Item_Kit_Armchair";
 		DZE_refundArray[] = {};
 	};
 };
@@ -248,7 +248,7 @@ class DZE_Sofa: DZE_Storage_Base {
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2.5,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "sofa_kit";
+		DZE_refundKit = "DZE_Item_Kit_Sofa";
 		DZE_refundArray[] = {};
 	};
 };
@@ -264,7 +264,7 @@ class DZE_Arcade: DZE_Storage_Base {
 	transportmaxbackpacks = 5;	
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "arcade_kit";
+		DZE_refundKit = "DZE_Item_Kit_Arcade";
 		DZE_refundArray[] = {};
 	};
 };
@@ -280,7 +280,7 @@ class DZE_Vendmachine1: DZE_Storage_Base {
 	transportmaxbackpacks = 5;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "vendmachine1_kit";
+		DZE_refundKit = "DZE_Item_Kit_Vendmachine1";
 		DZE_refundArray[] = {};
 	};
 };
@@ -297,7 +297,7 @@ class DZE_Vendmachine2: DZE_Storage_Base {
 	transportMaxMagazines = 45;
 	transportmaxbackpacks = 5;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "vendmachine2_kit";
+		DZE_refundKit = "DZE_Item_Kit_Vendmachine2";
 		DZE_refundArray[] = {};
 	};
 };

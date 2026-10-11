@@ -27,7 +27,7 @@
 	diag_log format['[Client Debug]: [DZE_fnc_modularBuild]: Function called with arguments: %1',_this];
 #endif
 
-local _buildItem = _this;	// CfgMagazines class, e.g. "full_cinder_wall_kit"
+local _buildItem = _this;	// CfgMagazines class, e.g. "DZE_Item_Kit_Full_Cinder_Wall"
 
 if (dayz_actionInProgress) exitWith {localize 'STR_BUILD_ALREADY_IN_PROGRESS' call DZE_fnc_rollingMessages};	// Building already in progress.
 dayz_actionInProgress = true;

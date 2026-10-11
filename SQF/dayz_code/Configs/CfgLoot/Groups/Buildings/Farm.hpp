@@ -11,8 +11,8 @@ Farm[] =
 	
 	//Items
 	{Loot_MAGAZINE,		1,		equip_tent_poles},
-	{Loot_MAGAZINE,		4,		ItemSandbag},
-	{Loot_MAGAZINE,		1,		TrapBear},
+	{Loot_MAGAZINE,		4,		DZE_Item_Kit_Sandbag},
+	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Trap_BearTrap},
 	{Loot_MAGAZINE,		2,		PartPlankPack},
 	{Loot_MAGAZINE,		1,		ItemLightBulb},
 	

@@ -1,299 +1,299 @@
-class metal_floor_kit
+class DZE_Item_Kit_Metal_Floor
 {
 	weight = 325;
 };
 
-class half_cinder_wall_kit
+class DZE_Item_Kit_Half_Cinder_Wall
 {
 	weight = 325;
 };
 
-class full_cinder_wall_kit
+class DZE_Item_Kit_Full_Cinder_Wall
 {
 	weight = 600;
 };
 
-class cinder_door_kit
+class DZE_Item_Kit_Cinder_Door
 {
 	weight = 325;
 };
 
-class cinder_door_kit_locked
+class DZE_Item_Kit_Cinder_Door_Kit_Locked
 {
 	weight = 340;
 };
 
-class cinder_garage_kit
+class DZE_Item_Kit_Cinder_Garage
 {
 	weight = 325;
 };
 
-class cinder_garage_kit_locked
+class DZE_Item_Kit_Cinder_Garage_Kit_Locked
 {
 	weight = 340;
 };
 
-class ItemWoodFloor
+class DZE_Item_Kit_WoodFloor
 {
 	weight = 25;
 };
 
-class ItemWoodFloorHalf
+class DZE_Item_Kit_WoodFloorHalf
 {
 	weight = 15;
 };
 
-class ItemWoodFloorQuarter
+class DZE_Item_Kit_WoodFloorQuarter
 {
 	weight = 10;
 };
 
-class ItemWoodStairs
+class DZE_Item_Kit_WoodStairs
 {
 	weight = 25;
 };
 
-class ItemWoodStairsSupport
+class DZE_Item_Kit_WoodStairsSupport
 {
 	weight = 30;
 };
 
-class ItemWoodStairsRails
+class DZE_Item_Kit_WoodStairsRails
 {
 	weight = 33;
 };
 
-class ItemWoodLadder
+class DZE_Item_Kit_WoodLadder
 {
 	weight = 25;
 };
 
-class ItemWoodWall
+class DZE_Item_Kit_WoodWall
 {
 	weight = 25;
 };
 
-class ItemWoodWallThird
+class DZE_Item_Kit_WoodWallThird
 {
 	weight = 7;
 };
 
-class ItemWoodWallWindow
+class DZE_Item_Kit_WoodWallWindow
 {
 	weight = 25;
 };
 
-class ItemWoodWallDoor
+class DZE_Item_Kit_WoodWallDoor
 {
 	weight = 25;
 };
 
-class ItemWoodWallWithDoor
+class DZE_Item_Kit_WoodWallWithDoor
 {
 	weight = 25;
 };
 
-class ItemWoodWallWithDoorLocked
+class DZE_Item_Kit_WoodWallWithDoorLocked
 {
 	weight = 30;
 };
 
-class ItemWoodWallGarageDoor
+class DZE_Item_Kit_WoodWallGarageDoor
 {
 	weight = 25;
 };
 
-class ItemWoodWallGarageDoorLocked
+class DZE_Item_Kit_WoodWallGarageDoorLocked
 {
 	weight = 25;
 };
 
-class ItemWoodWallLg
+class DZE_Item_Kit_WoodWallLg
 {
 	weight = 25;
 };
 
-class ItemWoodWallWindowLg
+class DZE_Item_Kit_WoodWallWindowLg
 {
 	weight = 30;
 };
 
-class ItemWoodWallDoorLg
+class DZE_Item_Kit_WoodWallDoorLg
 {
 	weight = 30;
 };
 
-class ItemWoodWallWithDoorLg
+class DZE_Item_Kit_WoodWallWithDoorLg
 {
 	weight = 30;
 };
 
-class ItemWoodWallWithDoorLgLocked
+class DZE_Item_Kit_WoodWallWithDoorLgLocked
 {
 	weight = 35;
 };
 
-class glass_floor_kit
+class DZE_Item_Kit_Glass_Floor
 {
 	weight = 200;
 };
-class glass_floor_half_kit
+class DZE_Item_Kit_Glass_Floor_Half
 {
 	weight = 100;
 };
-class glass_floor_quarter_kit
+class DZE_Item_Kit_Glass_Floor_Quarter
 {
 	weight = 50;
 };
-class metal_floor_half_kit
+class DZE_Item_Kit_Metal_Floor_Half
 {
 	weight = 175;
 };
-class metal_floor_quarter_kit
+class DZE_Item_Kit_Metal_Floor_Quarter
 {
 	weight = 85;
 };
-class metal_floor4x_kit
+class DZE_Item_Kit_Metal_Floor4x
 {
 	weight = 1250;
 };
-class metal_pillar_kit
+class DZE_Item_Kit_Metal_Pillar
 {
 	weight = 250;
 };
-class half_cinder_wall_gap_kit
+class DZE_Item_Kit_Half_Cinder_Wall_Gap
 {
 	weight = 325;
 };
-class cinderwall_window_kit
+class DZE_Item_Kit_Cinderwall_Window
 {
 	weight = 325;
 };
-class cinderwall_window_locked_kit
+class DZE_Item_Kit_Cinderwall_Window_Locked
 {
 	weight = 325;
 };
-class cinder_door_frame_kit
+class DZE_Item_Kit_Cinder_Door_Frame
 {
 	weight = 325;
 };
-class cinder_door_hatch_kit
+class DZE_Item_Kit_Cinder_Door_Hatch
 {
 	weight = 325;
 };
-class cinder_door_hatch_kit_locked
+class DZE_Item_Kit_Cinder_Door_Hatch_Kit_Locked
 {
 	weight = 325;
 };
-class cinder_garage_frame_kit
+class DZE_Item_Kit_Cinder_Garage_Frame
 {
 	weight = 325;
 };
-class cinder_garage_top_open_frame_kit
+class DZE_Item_Kit_Cinder_Garage_Top_Open_Frame
 {
 	weight = 325;
 };
-class cinder_garage_top_open_kit
+class DZE_Item_Kit_Cinder_Garage_Top_Open
 {
 	weight = 325;
 };
-class cinder_garage_top_open_kit_locked
+class DZE_Item_Kit_Cinder_Garage_Top_Open_Kit_Locked
 {
 	weight = 325;
 };
-class cinder_gate_frame_kit
+class DZE_Item_Kit_Cinder_Gate_Frame
 {
 	weight = 325;
 };
-class cinder_gate_kit
+class DZE_Item_Kit_Cinder_Gate
 {
 	weight = 325;
 };
-class cinder_gate_kit_locked
+class DZE_Item_Kit_Cinder_Gate_Kit_Locked
 {
 	weight = 325;
 };
-class cinder_bunker_kit
+class DZE_Item_Kit_Cinder_Bunker
 {
 	weight = 500;
 };
-class cinder_bunker_kit_locked
+class DZE_Item_Kit_Cinder_Bunker_Kit_Locked
 {
 	weight = 500;
 };
-class metal_drawbridge_kit
+class DZE_Item_Kit_Metal_Drawbridge
 {
 	weight = 500;
 };
-class metal_drawbridge_kit_locked
+class DZE_Item_Kit_Metal_Drawbridge_Kit_Locked
 {
 	weight = 500;
 };
-class ItemWoodFloor4x
+class DZE_Item_Kit_WoodFloor4x
 {
 	weight = 100;
 };
-class ItemWoodFloorStairs
+class DZE_Item_Kit_WoodFloorStairs
 {
 	weight = 50;
 };
-class ItemTriangleWoodFloor
+class DZE_Item_Kit_TriangleWoodFloor
 {
 	weight = 25;
 };
-class ItemWoodHandRail
+class DZE_Item_Kit_WoodHandRail
 {
 	weight = 10;
 };
-class ItemWoodPillar
+class DZE_Item_Kit_WoodPillar
 {
 	weight = 15;
 };
-class ItemTriangleWoodWall
+class DZE_Item_Kit_TriangleWoodWall
 {
 	weight = 25;
 };
-class ItemWoodOpenTopGarageDoor
+class DZE_Item_Kit_WoodOpenTopGarageDoor
 {
 	weight = 25;
 };
-class ItemWoodOpenTopGarageDoorLocked
+class DZE_Item_Kit_WoodOpenTopGarageDoorLocked
 {
 	weight = 25;
 };
-class ItemWoodGateFrame
+class DZE_Item_Kit_WoodGateFrame
 {
 	weight = 25;
 };
-class ItemWoodGate
+class DZE_Item_Kit_WoodGate
 {
 	weight = 25;
 };
-class ItemWoodGateLocked
+class DZE_Item_Kit_WoodGateLocked
 {
 	weight = 25;
 };
-class door_frame_kit
+class DZE_Item_Kit_Door_Frame
 {
 	weight = 25;
 };
-class door_kit
+class DZE_Item_Kit_Door
 {
 	weight = 25;
 };
-class door_locked_kit
+class DZE_Item_Kit_Door_Locked
 {
 	weight = 25;
 };
-class elevatorstart_kit
+class DZE_Item_Kit_Elevatorstart
 {
 	weight = 325;
 };
-class elevatorstop_glass_kit
+class DZE_Item_Kit_Elevatorstop_Glass
 {
 	weight = 200;
 };
-class elevatorstop_transparent_kit
+class DZE_Item_Kit_Elevatorstop_Transparent
 {
 	weight = 25;
 };

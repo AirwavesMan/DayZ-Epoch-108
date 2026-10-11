@@ -11,12 +11,12 @@ Castle[] =
 	{Loot_GROUP,		4,		backpacks},
 	
 	//Items
-	{Loot_MAGAZINE,		4,		ItemSandbag},
+	{Loot_MAGAZINE,		4,		DZE_Item_Kit_Sandbag},
 	{Loot_MAGAZINE,		2,		equip_Crossbow_Kit},
 	{Loot_MAGAZINE,		2,		equip_crossbow_stock},
 	{Loot_MAGAZINE,		2,		ItemComboLock},
 	{Loot_MAGAZINE,		1,		equip_tent_poles},
-	{Loot_MAGAZINE,		1,		forest_net_kit},
+	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Net_Forest},
 
 	//Groups
 	{Loot_GROUP,		5,		AmmoCivilian},

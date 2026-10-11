@@ -76,8 +76,8 @@ class DZE_Land_WoodDoor: DZE_Land_WoodDoor_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallWithDoor";
-		DZE_refundArray[] = {{{"ItemWoodWallDoor",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodWallWithDoor";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWallDoor",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	};
 };
 
@@ -103,7 +103,7 @@ class DZE_Land_WoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallWithDoorLocked";
+		DZE_refundKit = "DZE_Item_Kit_WoodWallWithDoorLocked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -124,8 +124,8 @@ class DZE_Land_LargeWoodDoor: DZE_Land_WoodDoor_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallWithDoorLg";
-		DZE_refundArray[] = {{{"ItemWoodWallDoorLg",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodWallWithDoorLg";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWallDoorLg",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	};
 };
 
@@ -151,7 +151,7 @@ class DZE_Land_LargeWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallWithDoorLgLocked";
+		DZE_refundKit = "DZE_Item_Kit_WoodWallWithDoorLgLocked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -172,8 +172,8 @@ class DZE_Land_GarageWoodDoor: DZE_Land_WoodDoor_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallGarageDoor";
-		DZE_refundArray[] = {{{"ItemWoodWallLg",1},{"PartWoodLumber",2}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodWallGarageDoor";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWallLg",1},{"PartWoodLumber",2}}};
 	};
 };
 
@@ -199,7 +199,7 @@ class DZE_Land_GarageWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodWallGarageDoorLocked";
+		DZE_refundKit = "DZE_Item_Kit_WoodWallGarageDoorLocked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -234,8 +234,8 @@ class DZE_Land_WoodGate: DZE_Land_WoodDoor_Base {
 	
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodGate";
-		DZE_refundArray[] = {{{"ItemWoodGateFrame",1},{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodGate";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodGateFrame",1},{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
 	};
 };
 
@@ -275,7 +275,7 @@ class DZE_Land_WoodGateLocked: DZE_Land_WoodDoorLocked_Base {
 	
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodGateLocked";
+		DZE_refundKit = "DZE_Item_Kit_WoodGateLocked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -305,8 +305,8 @@ class DZE_Land_WoodOpenTopGarageDoor: DZE_Land_WoodDoor_Base {
 	
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodOpenTopGarageDoor";
-		DZE_refundArray[] = {{{"ItemWoodWallLg",1},{"PartWoodLumber",2}}};
+		DZE_refundKit = "DZE_Item_Kit_WoodOpenTopGarageDoor";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WoodWallLg",1},{"PartWoodLumber",2}}};
 	};
 };
 
@@ -341,7 +341,7 @@ class DZE_Land_WoodOpenTopGarageLocked: DZE_Land_WoodDoorLocked_Base {
 	
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWoodOpenTopGarageDoorLocked";
+		DZE_refundKit = "DZE_Item_Kit_WoodOpenTopGarageDoorLocked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -368,7 +368,7 @@ class DZE_CinderWallDoorLocked: DZE_CinderWallDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_garage_kit_locked";
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Garage_Kit_Locked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -388,8 +388,8 @@ class DZE_CinderWallDoor: DZE_CinderWallDoor_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_garage_kit";
-		DZE_refundArray[] = {{{"cinder_garage_frame_kit",1},{"ItemTankTrap",3},{"ItemPole",3}}};
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Garage";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Cinder_Garage_Frame",1},{"DZE_Item_Kit_TankTrap",3},{"ItemPole",3}}};
 	};
 };
 
@@ -415,7 +415,7 @@ class DZE_CinderWallDoorSmallLocked: DZE_CinderWallDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_door_kit_locked";
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Door_Kit_Locked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -436,8 +436,8 @@ class DZE_CinderWallDoorSmall: DZE_CinderWallDoor_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_door_kit";
-		DZE_refundArray[] = {{{"cinder_door_frame_kit",1},{"ItemTankTrap",1},{"ItemPole",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Door";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Cinder_Door_Frame",1},{"DZE_Item_Kit_TankTrap",1},{"ItemPole",1}}};
 	};
 };
 
@@ -468,8 +468,8 @@ class DZE_CinderGate: DZE_CinderWallDoor_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_gate_kit";
-		DZE_refundArray[] = {{{"cinder_gate_frame_kit",1},{"equip_metal_sheet",6},{"ItemRSJ",2},{"ItemScrews",2}}};
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Gate";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Cinder_Gate_Frame",1},{"equip_metal_sheet",6},{"ItemRSJ",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -506,7 +506,7 @@ class DZE_CinderGateLocked: DZE_CinderWallDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_gate_kit_locked";
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Gate_Kit_Locked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -533,8 +533,8 @@ class DZE_CinderGarageOpenTop: DZE_CinderWallDoor_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_garage_top_open_kit";
-		DZE_refundArray[] = {{{"cinder_garage_top_open_frame_kit",1},{"ItemTankTrap",3},{"ItemPole",3}}};
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Garage_Top_Open";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Cinder_Garage_Top_Open_Frame",1},{"DZE_Item_Kit_TankTrap",3},{"ItemPole",3}}};
 	};
 };
 
@@ -566,7 +566,7 @@ class DZE_CinderGarageOpenTopLocked: DZE_CinderWallDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_garage_top_open_kit_locked";
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Garage_Top_Open_Kit_Locked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -593,8 +593,8 @@ class DZE_CinderDoorHatch: DZE_CinderWallDoor_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_door_hatch_kit";
-		DZE_refundArray[] = {{{"CinderBlocks",4},{"MortarBucket",1},{"ItemTankTrap",2},{"ItemPole",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Door_Hatch";
+		DZE_refundArray[] = {{{"CinderBlocks",4},{"MortarBucket",1},{"DZE_Item_Kit_TankTrap",2},{"ItemPole",1}}};
 	};
 };
 
@@ -626,7 +626,7 @@ class DZE_CinderDoorHatchLocked: DZE_CinderWallDoorLocked_Base {
 	};
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "cinder_door_hatch_kit_locked";
+		DZE_refundKit = "DZE_Item_Kit_Cinder_Door_Hatch_Kit_Locked";
 		DZE_refundArray[] = {};
 	};
 };
@@ -650,8 +650,8 @@ class DZE_Door: DZE_CinderWallDoor_Base {
 
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "door_kit";
-		DZE_refundArray[] = {{{"door_frame_kit",1},{"ItemTankTrap",1},{"ItemPole",1}}};
+		DZE_refundKit = "DZE_Item_Kit_Door";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Door_Frame",1},{"DZE_Item_Kit_TankTrap",1},{"ItemPole",1}}};
 	};
 };
 
@@ -680,7 +680,7 @@ class DZE_DoorLocked: DZE_CinderWallDoorLocked_Base {
 
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "door_locked_kit";
+		DZE_refundKit = "DZE_Item_Kit_Door_Locked";
 		DZE_refundArray[] = {};
 	};
 };

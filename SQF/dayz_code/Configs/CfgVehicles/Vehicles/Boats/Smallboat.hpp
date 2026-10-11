@@ -35,7 +35,7 @@ class DZE_Veh_Smallboat_1_1: DZE_Veh_Smallboat_1 {
 	damageResistance = 0.01764;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Smallboat_1_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Smallboat_1_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -64,7 +64,7 @@ class DZE_Veh_Smallboat_2_1: DZE_Veh_Smallboat_2 {
 	damageResistance = 0.01764;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Smallboat_2_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Smallboat_2_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 

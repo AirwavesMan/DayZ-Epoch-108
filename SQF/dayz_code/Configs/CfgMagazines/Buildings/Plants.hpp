@@ -1,4 +1,4 @@
-class Plant_Patch_Pumpkin_kit: CA_Magazine {
+class DZE_Item_Kit_Plant_Patch_Pumpkin: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLANT_PATCH_PUMPKIN";
 	descriptionShort = "$STR_EPOCH_PLANT_PATCH_PUMPKIN_DESC";
@@ -17,7 +17,7 @@ class Plant_Patch_Pumpkin_kit: CA_Magazine {
 	};
 };
 
-class Plant_Patch_Sunflower_kit: CA_Magazine {
+class DZE_Item_Kit_Plant_Patch_Sunflower: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLANT_PATCH_SUNFLOWER";
 	descriptionShort = "$STR_EPOCH_PLANT_PATCH_SUNFLOWER_DESC";
@@ -36,7 +36,7 @@ class Plant_Patch_Sunflower_kit: CA_Magazine {
 	};
 };
 
-class Plant_Patch_Carrot_kit: CA_Magazine {
+class DZE_Item_Kit_Plant_Patch_Carrot: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLANT_PATCH_CARROT";
 	descriptionShort = "$STR_EPOCH_PLANT_PATCH_CARROT_DESC";
@@ -55,7 +55,7 @@ class Plant_Patch_Carrot_kit: CA_Magazine {
 	};
 };
 
-class Plant_Patch_Potato_kit: CA_Magazine {
+class DZE_Item_Kit_Plant_Patch_Potato: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLANT_PATCH_POTATO";
 	descriptionShort = "$STR_EPOCH_PLANT_PATCH_POTATO_DESC";
@@ -74,7 +74,7 @@ class Plant_Patch_Potato_kit: CA_Magazine {
 	};
 };
 
-class Plant_Patch_Hemp_kit: CA_Magazine {
+class DZE_Item_Kit_Plant_Patch_Hemp: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLANT_PATCH_HEMP";
 	descriptionShort = "$STR_EPOCH_PLANT_PATCH_HEMP_DESC";
@@ -93,7 +93,7 @@ class Plant_Patch_Hemp_kit: CA_Magazine {
 	};
 };
 
-class Plant_Patch_Tobacco_kit: CA_Magazine {
+class DZE_Item_Kit_Plant_Patch_Tobacco: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLANT_PATCH_TOBACCO";
 	descriptionShort = "$STR_EPOCH_PLANT_PATCH_TOBACCO_DESC";
@@ -112,7 +112,7 @@ class Plant_Patch_Tobacco_kit: CA_Magazine {
 	};
 };
 
-class Plant_Patch_Tea_kit: CA_Magazine {
+class DZE_Item_Kit_Plant_Patch_Tea: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLANT_PATCH_TEA";
 	descriptionShort = "$STR_EPOCH_PLANT_PATCH_TEA_DESC";
@@ -131,7 +131,7 @@ class Plant_Patch_Tea_kit: CA_Magazine {
 	};
 };
 
-class Plant_Patch_Garlic_kit: CA_Magazine {
+class DZE_Item_Kit_Plant_Patch_Garlic: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLANT_PATCH_GARLIC";
 	descriptionShort = "$STR_EPOCH_PLANT_PATCH_GARLIC_DESC";
@@ -150,7 +150,7 @@ class Plant_Patch_Garlic_kit: CA_Magazine {
 	};
 };
 
-class Plant_Patch_Comfrey_kit: CA_Magazine {
+class DZE_Item_Kit_Plant_Patch_Comfrey: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLANT_PATCH_COMFREY";
 	descriptionShort = "$STR_EPOCH_PLANT_PATCH_COMFREY_DESC";

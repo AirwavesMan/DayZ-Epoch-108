@@ -1,4 +1,4 @@
-class advanced_workBench_kit: CA_Magazine {
+class DZE_Item_Kit_Advanced_WorkBench: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WORKBENCH_ADVANCED";
 	descriptionShort = "$STR_EPOCH_WORKBENCH_ADVANCED_DESC";
@@ -17,7 +17,7 @@ class advanced_workBench_kit: CA_Magazine {
 	};
 };
 
-class outhouse_kit: CA_Magazine {
+class DZE_Item_Kit_Outhouse: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_OUTHOUSE";
 	descriptionShort = "$STR_EPOCH_OUTHOUSE_DESC";
@@ -36,7 +36,7 @@ class outhouse_kit: CA_Magazine {
 	};
 };
 
-class wooden_shed_kit: CA_Magazine {
+class DZE_Item_Kit_Wooden_Shed: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_NICEWOODSHED";
 	descriptionShort = "$STR_EPOCH_NICEWOODSHED_DESC";
@@ -55,7 +55,7 @@ class wooden_shed_kit: CA_Magazine {
 	};
 };
 
-class wooden_shed_kit2: CA_Magazine {
+class DZE_Item_Kit_Wooden_Shed_2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_NICEWOODSHED2";
 	descriptionShort = "$STR_EPOCH_NICEWOODSHED_DESC";
@@ -74,7 +74,7 @@ class wooden_shed_kit2: CA_Magazine {
 	};
 };
 
-class wood_shack_kit: CA_Magazine {
+class DZE_Item_Kit_Wood_Shack: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WOODSHACK";
 	descriptionShort = "$STR_EPOCH_WOODSHACK";
@@ -93,7 +93,7 @@ class wood_shack_kit: CA_Magazine {
 	};
 };
 
-class wood_shack_kit2: CA_Magazine {
+class DZE_Item_Kit_Wood_Shack_2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WOODSHACK2";
 	descriptionShort = "$STR_EPOCH_WOODSHACK";
@@ -112,7 +112,7 @@ class wood_shack_kit2: CA_Magazine {
 	};
 };
 
-class storage_shed_kit: CA_Magazine {
+class DZE_Item_Kit_Storage_Shed: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_STORAGESHED";
 	descriptionShort = "$STR_EPOCH_STORAGESHED_DESC";
@@ -131,7 +131,7 @@ class storage_shed_kit: CA_Magazine {
 	};
 };
 
-class storage_shed_kit2: CA_Magazine {
+class DZE_Item_Kit_Storage_Shed_2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_STORAGESHED2";
 	descriptionShort = "$STR_EPOCH_STORAGESHED_DESC";
@@ -150,7 +150,7 @@ class storage_shed_kit2: CA_Magazine {
 	};
 };
 
-class ItemGunRackKit: CA_Magazine {
+class DZE_Item_Kit_GunRack: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_GUNRACK";
 	descriptionShort = "$STR_EPOCH_GUNRACKKIT_DESC";
@@ -169,7 +169,7 @@ class ItemGunRackKit: CA_Magazine {
 	};
 };
 
-class ItemGunRackKit2: CA_Magazine {
+class DZE_Item_Kit_GunRack2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_GUNRACK2";
 	descriptionShort = "$STR_EPOCH_GUNRACKKIT2_DESC";
@@ -189,7 +189,7 @@ class ItemGunRackKit2: CA_Magazine {
 };
 
 
-class ItemWoodCrateKit: CA_Magazine {
+class DZE_Item_Kit_WoodCrate: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WOODCRATE";
 	descriptionShort = "$STR_EPOCH_WOODCRATE_DESC";
@@ -208,7 +208,7 @@ class ItemWoodCrateKit: CA_Magazine {
 	};
 };
 
-class ItemWoodCrateKit2: CA_Magazine {
+class DZE_Item_Kit_WoodCrate2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WOODCRATE2";
 	descriptionShort = "$STR_EPOCH_WOODCRATE_DESC";
@@ -227,7 +227,7 @@ class ItemWoodCrateKit2: CA_Magazine {
 	};
 };
 
-class ItemSafe: CA_Magazine {
+class DZE_Item_Kit_Safe: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE";
 	descriptionShort = "$STR_EPOCH_SAFE_DESC";
@@ -246,7 +246,7 @@ class ItemSafe: CA_Magazine {
 	};
 };
 
-class ItemSafe2: CA_Magazine {
+class DZE_Item_Kit_Safe2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE+";
 	descriptionShort = "$STR_EPOCH_SAFE_DESC";
@@ -265,7 +265,7 @@ class ItemSafe2: CA_Magazine {
 	};
 };
 
-class ItemSafeTall: CA_Magazine {
+class DZE_Item_Kit_SafeTall: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE";
 	descriptionShort = "$STR_EPOCH_SAFE_DESC";
@@ -284,7 +284,7 @@ class ItemSafeTall: CA_Magazine {
 	};
 };
 
-class ItemLockbox: CA_Magazine {
+class DZE_Item_Kit_Lockbox: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LOCKBOX";
 	descriptionShort = "$STR_EPOCH_LOCKBOX_DESC";
@@ -303,7 +303,7 @@ class ItemLockbox: CA_Magazine {
 	};
 };
 
-class ItemLockbox2: CA_Magazine {
+class DZE_Item_Kit_Lockbox2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LOCKBOX+";
 	descriptionShort = "$STR_EPOCH_LOCKBOX_DESC";
@@ -322,7 +322,7 @@ class ItemLockbox2: CA_Magazine {
 	};
 };
 
-class ItemLockboxWinter: CA_Magazine {
+class DZE_Item_Kit_LockboxWinter: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LOCKBOX";
 	descriptionShort = "$STR_EPOCH_LOCKBOX_DESC";
@@ -341,7 +341,7 @@ class ItemLockboxWinter: CA_Magazine {
 	};
 };
 
-class ItemLockboxWinter2: CA_Magazine {
+class DZE_Item_Kit_LockboxWinter2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LOCKBOX+";
 	descriptionShort = "$STR_EPOCH_LOCKBOX_DESC";
@@ -360,7 +360,7 @@ class ItemLockboxWinter2: CA_Magazine {
 	};
 };
 
-class ItemSafeBroken: CA_Magazine {
+class DZE_Item_Kit_SafeBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE_BROKEN";
 	descriptionShort = "$STR_EPOCH_SAFE_DESC";
@@ -379,7 +379,7 @@ class ItemSafeBroken: CA_Magazine {
 	};
 };
 
-class ItemSafe2Broken: CA_Magazine {
+class DZE_Item_Kit_Safe2Broken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE_BROKEN+";
 	descriptionShort = "$STR_EPOCH_SAFE_DESC";
@@ -398,7 +398,7 @@ class ItemSafe2Broken: CA_Magazine {
 	};
 };
 
-class ItemSafeTallBroken: CA_Magazine {
+class DZE_Item_Kit_SafeTallBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE_BROKEN";
 	descriptionShort = "$STR_EPOCH_SAFE_DESC";
@@ -417,7 +417,7 @@ class ItemSafeTallBroken: CA_Magazine {
 	};
 };
 
-class ItemLockboxBroken: CA_Magazine {
+class DZE_Item_Kit_LockboxBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN";
 	descriptionShort = "$STR_EPOCH_LOCKBOX_DESC";
@@ -436,7 +436,7 @@ class ItemLockboxBroken: CA_Magazine {
 	};
 };
 
-class ItemLockbox2Broken: CA_Magazine {
+class DZE_Item_Kit_Lockbox2Broken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
 	descriptionShort = "$STR_EPOCH_LOCKBOX_DESC";
@@ -455,7 +455,7 @@ class ItemLockbox2Broken: CA_Magazine {
 	};
 };
 
-class ItemLockboxWinterBroken: CA_Magazine {
+class DZE_Item_Kit_LockboxWinterBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN";
 	descriptionShort = "$STR_EPOCH_LOCKBOX_DESC";
@@ -474,7 +474,7 @@ class ItemLockboxWinterBroken: CA_Magazine {
 	};
 };
 
-class ItemLockboxWinter2Broken: CA_Magazine {
+class DZE_Item_Kit_LockboxWinter2Broken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
 	descriptionShort = "$STR_EPOCH_LOCKBOX_DESC";
@@ -493,7 +493,7 @@ class ItemLockboxWinter2Broken: CA_Magazine {
 	};
 };
 
-class StashSmall_kit: CA_Magazine {
+class DZE_Item_Kit_StashSmall: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_VEH_NAME_STASH";
 	descriptionShort = "$STR_VEH_NAME_STASH_DESC";
@@ -512,7 +512,7 @@ class StashSmall_kit: CA_Magazine {
 	};
 };
 
-class cook_tripod_kit: CA_Magazine {
+class DZE_Item_Kit_Cook_Tripod: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_COOKINGTRIPOD";
 	descriptionShort = "$STR_ITEM_DESC_COOKINGTRIPOD";
@@ -529,7 +529,7 @@ class cook_tripod_kit: CA_Magazine {
 	};    
 };
 
-class stoneoven_kit: CA_Magazine {
+class DZE_Item_Kit_Stoneoven: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_STONEOVEN";
 	descriptionShort = "$STR_EPOCH_STONEOVEN_DESC";
@@ -546,7 +546,7 @@ class stoneoven_kit: CA_Magazine {
 	};    
 };
 
-class commode_kit: CA_Magazine {
+class DZE_Item_Kit_Commode: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_COMMODE";
 	descriptionShort = "$STR_EPOCH_COMMODE_DESC";
@@ -563,7 +563,7 @@ class commode_kit: CA_Magazine {
 	};    
 };
 
-class wardrobe_kit: CA_Magazine {
+class DZE_Item_Kit_Wardrobe: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WARDROBE";
 	descriptionShort = "$STR_EPOCH_WARDROBE_DESC";
@@ -580,7 +580,7 @@ class wardrobe_kit: CA_Magazine {
 	};    
 };
 
-class fridge_kit: CA_Magazine {
+class DZE_Item_Kit_Fridge: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_FRIDGE";
 	descriptionShort = "$STR_EPOCH_FRIDGE_DESC";
@@ -597,7 +597,7 @@ class fridge_kit: CA_Magazine {
 	};    
 };
 
-class washing_machine_kit: CA_Magazine {
+class DZE_Item_Kit_Washing_Machine: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WASHINGMACHINE";
 	descriptionShort = "$STR_EPOCH_WASHINGMACHINE_DESC";
@@ -614,7 +614,7 @@ class washing_machine_kit: CA_Magazine {
 	};    
 };
 
-class server_rack_kit: CA_Magazine {
+class DZE_Item_Kit_Server_Rack: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SERVERRACK";
 	descriptionShort = "$STR_EPOCH_SERVERRACK_DESC";
@@ -631,7 +631,7 @@ class server_rack_kit: CA_Magazine {
 	};    
 };
 
-class atm_kit: CA_Magazine {
+class DZE_Item_Kit_Atm: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_ATM";
 	descriptionShort = "$STR_EPOCH_ATM_DESC";
@@ -648,7 +648,7 @@ class atm_kit: CA_Magazine {
 	};    
 };
 
-class armchair_kit: CA_Magazine {
+class DZE_Item_Kit_Armchair: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_ARMCHAIR";
 	descriptionShort = "$STR_EPOCH_ARMCHAIR_DESC";
@@ -665,7 +665,7 @@ class armchair_kit: CA_Magazine {
 	};    
 };
 
-class sofa_kit: CA_Magazine {
+class DZE_Item_Kit_Sofa: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SOFA";
 	descriptionShort = "$STR_EPOCH_SOFA_DESC";
@@ -682,7 +682,7 @@ class sofa_kit: CA_Magazine {
 	};    
 };
 
-class arcade_kit: CA_Magazine {
+class DZE_Item_Kit_Arcade: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_ARCADE";
 	descriptionShort = "$STR_EPOCH_ARCADE_DESC";
@@ -699,7 +699,7 @@ class arcade_kit: CA_Magazine {
 	};    
 };
 
-class vendmachine1_kit: CA_Magazine {
+class DZE_Item_Kit_Vendmachine1: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_VENDINGMACHINE1";
 	descriptionShort = "$STR_EPOCH_VENDINGMACHINE1_DESC";
@@ -716,7 +716,7 @@ class vendmachine1_kit: CA_Magazine {
 	};    
 };
 
-class vendmachine2_kit: CA_Magazine {
+class DZE_Item_Kit_Vendmachine2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_VENDINGMACHINE2";
 	descriptionShort = "$STR_EPOCH_VENDINGMACHINE2_DESC";
@@ -733,7 +733,7 @@ class vendmachine2_kit: CA_Magazine {
 	};    
 };
 
-class storage_crate_kit: CA_Magazine {
+class DZE_Item_Kit_Storage_Crate: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_STORAGECRATE";
 	descriptionShort = "$STR_EPOCH_STORAGECRATE_DESC";
@@ -752,7 +752,7 @@ class storage_crate_kit: CA_Magazine {
 	};
 };
 
-class camo_storage_crate_kit: CA_Magazine {
+class DZE_Item_Kit_Camo_Storage_Crate: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_CAMO_STORAGE_CRATE";
 	descriptionShort = "$STR_EPOCH_CAMO_STORAGE_CRATE_DESC";
@@ -771,7 +771,7 @@ class camo_storage_crate_kit: CA_Magazine {
 	};
 };
 
-class ItemStorageBarrel1_kit: CA_Magazine {
+class DZE_Item_Kit_StorageBarrel1: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_STORAGEBARRELREDKIT";
 	descriptionShort = "$STR_EPOCH_STORAGEBARRELREDKIT_DESC";
@@ -788,7 +788,7 @@ class ItemStorageBarrel1_kit: CA_Magazine {
 	};
 };
 
-class ItemStorageBarrel2_kit: ItemStorageBarrel1_kit {
+class DZE_Item_Kit_StorageBarrel2: DZE_Item_Kit_StorageBarrel1 {
 	displayName = "$STR_EPOCH_STORAGEBARRELEPOCHKIT";
 	descriptionShort = "$STR_EPOCH_STORAGEBARRELEPOCHKIT_DESC";
 	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
@@ -801,7 +801,7 @@ class ItemStorageBarrel2_kit: ItemStorageBarrel1_kit {
 	};
 };
 
-class ItemStorageBarrel3_kit: ItemStorageBarrel1_kit {
+class DZE_Item_Kit_StorageBarrel3: DZE_Item_Kit_StorageBarrel1 {
 	displayName = "$STR_EPOCH_STORAGEBARRELYELLOWKIT";
 	descriptionShort = "$STR_EPOCH_STORAGEBARRELYELLOWKIT_DESC";
 	model = "\CA\misc\Barel3.p3d";
@@ -814,7 +814,7 @@ class ItemStorageBarrel3_kit: ItemStorageBarrel1_kit {
 	};
 };
 
-class ItemStorageBarrel4_kit: ItemStorageBarrel1_kit {
+class DZE_Item_Kit_StorageBarrel4: DZE_Item_Kit_StorageBarrel1 {
 	displayName = "$STR_EPOCH_STORAGEBARRELBLACKKIT";
 	descriptionShort = "$STR_EPOCH_STORAGEBARRELBLACKKIT_DESC";
 	model = "\CA\misc\Barel4.p3d";
@@ -827,7 +827,7 @@ class ItemStorageBarrel4_kit: ItemStorageBarrel1_kit {
 	};
 };
 
-class ItemStorageBarrel5_kit: ItemStorageBarrel1_kit {
+class DZE_Item_Kit_StorageBarrel5: DZE_Item_Kit_StorageBarrel1 {
 	displayName = "$STR_EPOCH_STORAGEBARRELGREENDARKKIT";
 	descriptionShort = "$STR_EPOCH_STORAGEBARRELGREENDARKKIT_DESC";
 	model = "\CA\misc\Barel5.p3d";
@@ -840,7 +840,7 @@ class ItemStorageBarrel5_kit: ItemStorageBarrel1_kit {
 	};
 };
 
-class ItemStorageBarrel6_kit: ItemStorageBarrel1_kit {
+class DZE_Item_Kit_StorageBarrel6: DZE_Item_Kit_StorageBarrel1 {
 	displayName = "$STR_EPOCH_STORAGEBARRELMILKKIT";
 	descriptionShort = "$STR_EPOCH_STORAGEBARRELMILKKIT_DESC";
 	model = "\CA\misc\Barel6.p3d";
@@ -853,7 +853,7 @@ class ItemStorageBarrel6_kit: ItemStorageBarrel1_kit {
 	};
 };
 
-class ItemStorageBarrel7_kit: ItemStorageBarrel1_kit {
+class DZE_Item_Kit_StorageBarrel7: DZE_Item_Kit_StorageBarrel1 {
 	displayName = "$STR_EPOCH_STORAGEBARRELGREENKIT";
 	descriptionShort = "$STR_EPOCH_STORAGEBARRELGREENKIT_DESC";
 	model = "\CA\misc\Barel7.p3d";
@@ -866,7 +866,7 @@ class ItemStorageBarrel7_kit: ItemStorageBarrel1_kit {
 	};
 };
 
-class ItemStorageBarrel8_kit: ItemStorageBarrel1_kit {
+class DZE_Item_Kit_StorageBarrel8: DZE_Item_Kit_StorageBarrel1 {
 	displayName = "$STR_EPOCH_STORAGEBARRELGREENRUSTYKIT";
 	descriptionShort = "$STR_EPOCH_STORAGEBARRELGREENRUSTYKIT_DESC";
 	model = "\CA\misc\Barel8.p3d";
@@ -879,7 +879,7 @@ class ItemStorageBarrel8_kit: ItemStorageBarrel1_kit {
 	};
 };
 
-class rabbit_hutch_kit: CA_Magazine {
+class DZE_Item_Kit_Rabbit_Hutch: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_RABBIT_HUTCH";
 	descriptionShort = "$STR_EQUIP_DESC_RABBIT_HUTCH";
@@ -898,7 +898,7 @@ class rabbit_hutch_kit: CA_Magazine {
 	};
 };
 
-class chicken_coop_kit: CA_Magazine {
+class DZE_Item_Kit_Chicken_Coop: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_CHICKEN_COOP";
 	descriptionShort = "$STR_EQUIP_DESC_CHICKEN_COOP";
@@ -917,7 +917,7 @@ class chicken_coop_kit: CA_Magazine {
 	};
 };
 
-class doghouse_kit: CA_Magazine {
+class DZE_Item_Kit_Doghouse: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_DOG_HOUSE";
 	descriptionShort = "$STR_EQUIP_DESC_DOG_HOUSE";
@@ -936,7 +936,7 @@ class doghouse_kit: CA_Magazine {
 	};
 };
 
-class postbox_kit: CA_Magazine {
+class DZE_Item_Kit_Postbox: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_POSTBOX";
 	descriptionShort = "$STR_EQUIP_DESC_POSTBOX";
@@ -955,7 +955,7 @@ class postbox_kit: CA_Magazine {
 	};
 };
 
-class wild_bee_hive_kit: CA_Magazine {
+class DZE_Item_Kit_Wild_Bee_Hive: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WILD_BEE_HIVE";
 	descriptionShort = "$STR_EQUIP_DESC_WILD_BEE_HIVE";
@@ -974,7 +974,7 @@ class wild_bee_hive_kit: CA_Magazine {
 	};
 };
 
-class cow_stable_kit: CA_Magazine {
+class DZE_Item_Kit_Cow_Stable: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_COW_STABLE";
 	descriptionShort = "$STR_EQUIP_DESC_COW_STABLE";
@@ -993,7 +993,7 @@ class cow_stable_kit: CA_Magazine {
 	};
 };
 
-class goat_stable_kit: CA_Magazine {
+class DZE_Item_Kit_Goat_Stable: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_GOAT_STABLE";
 	descriptionShort = "$STR_EQUIP_DESC_GOAT_STABLE";
@@ -1012,7 +1012,7 @@ class goat_stable_kit: CA_Magazine {
 	};
 };
 
-class sheep_stable_kit: CA_Magazine {
+class DZE_Item_Kit_Sheep_Stable: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_SHEEP_STABLE";
 	descriptionShort = "$STR_EQUIP_DESC_SHEEP_STABLE";
@@ -1031,7 +1031,7 @@ class sheep_stable_kit: CA_Magazine {
 	};
 };
 
-class boar_stable_kit: CA_Magazine {
+class DZE_Item_Kit_Boar_Stable: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_BOAR_STABLE";
 	descriptionShort = "$STR_EQUIP_DESC_BOAR_STABLE";

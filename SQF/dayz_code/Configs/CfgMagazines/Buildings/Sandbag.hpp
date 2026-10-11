@@ -1,4 +1,4 @@
-class ItemSandbag: CA_Magazine {
+class DZE_Item_Kit_Sandbag: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_SANDBAGS";
 	descriptionShort = "$STR_EQUIP_DESC_SANDBAGS";
@@ -14,7 +14,7 @@ class ItemSandbag: CA_Magazine {
 			create = "DZE_Sandbag";
 			byPass = "byPassRoadCheck";
 			require[] = {"DZE_Tool_Etool"};
-			consume[] = {"ItemSandbag"};
+			consume[] = {"DZE_Item_Kit_Sandbag"};
 			//bypass RoadCheck
 		};
 		class Crafting {
@@ -22,37 +22,37 @@ class ItemSandbag: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemSandbagLarge",1}};
-			input[] = {{"ItemSandbag",3},{"ItemWire",1},{"ItemTankTrap",1}};
+			output[] = {{"DZE_Item_Kit_SandbagLarge",1}};
+			input[] = {{"DZE_Item_Kit_Sandbag",3},{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",1}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_PLAYER_274";
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"sandbag_nest_kit",1}};
-			input[] = {{"ItemSandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}};
+			output[] = {{"DZE_Item_Kit_Sandbag_Nest",1}};
+			input[] = {{"DZE_Item_Kit_Sandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_298";
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"BagFenceRound_DZ_kit",1}};
-			input[] = {{"ItemSandbag",1}};
+			output[] = {{"DZE_Item_Kit_BagFenceRound",1}};
+			input[] = {{"DZE_Item_Kit_Sandbag",1}};
 		};
 		class Crafting3 {
 			text = "$STR_EPOCH_PLAYER_HBF"; // "Craft Heavy Bag Fence"
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemSandbagHeavy_kit",1}};
-			input[] = {{"ItemSandbag",2},{"PartWoodPile",1}};
+			output[] = {{"DZE_Item_Kit_SandbagHeavy",1}};
+			input[] = {{"DZE_Item_Kit_Sandbag",2},{"PartWoodPile",1}};
 		};
 	};
 };
 
-class BagFenceRound_DZ_kit: CA_Magazine {
+class DZE_Item_Kit_BagFenceRound: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_SANDBAGS_ROUND";
 	descriptionShort = "$STR_EQUIP_DESC_SANDBAGS_ROUND";
@@ -73,13 +73,13 @@ class BagFenceRound_DZ_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemSandbag",1}};
-			input[] = {{"BagFenceRound_DZ_kit",1}};
+			output[] = {{"DZE_Item_Kit_Sandbag",1}};
+			input[] = {{"DZE_Item_Kit_BagFenceRound",1}};
 		};
 	};
 };
 
-class ItemSandbagLarge: CA_Magazine {
+class DZE_Item_Kit_SandbagLarge: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_21_HBARRIER";
 	descriptionShort = "$STR_EQUIP_DESC_21_HBARRIER";
@@ -100,21 +100,21 @@ class ItemSandbagLarge: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemSandbagExLarge",1}};
-			input[] = {{"ItemSandbagLarge",3}};
+			output[] = {{"DZE_Item_Kit_SandbagExLarge",1}};
+			input[] = {{"DZE_Item_Kit_SandbagLarge",3}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_PLAYER_WBARRIER5"; // "Craft 5x Warfare Barrier"
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemWarfareBarrier5x_kit",1}};
-			input[] = {{"ItemSandbagLarge",5}};
+			output[] = {{"DZE_Item_Kit_WarfareBarrier5x",1}};
+			input[] = {{"DZE_Item_Kit_SandbagLarge",5}};
 		};
 	};
 };
 
-class ItemSandbagExLarge: CA_Magazine {
+class DZE_Item_Kit_SandbagExLarge: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_21_3XHBARRIER";
 	descriptionShort = "$STR_EQUIP_DESC_21_HBARRIER";
@@ -135,13 +135,13 @@ class ItemSandbagExLarge: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemSandbagExLarge5x",1}};
-			input[] = {{"ItemSandbagExLarge",1},{"ItemSandbagLarge",2}};
+			output[] = {{"DZE_Item_Kit_SandbagExLarge5x",1}};
+			input[] = {{"DZE_Item_Kit_SandbagExLarge",1},{"DZE_Item_Kit_SandbagLarge",2}};
 		};
 	};
 };
 
-class ItemSandbagExLarge5x: CA_Magazine {
+class DZE_Item_Kit_SandbagExLarge5x: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_21_5XHBARRIER";
 	descriptionShort = "$STR_EQUIP_DESC_21_HBARRIER";
@@ -162,13 +162,13 @@ class ItemSandbagExLarge5x: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemSandbagExLarge5xCurved",1}};
-			input[] = {{"ItemSandbagExLarge5x",1}};
+			output[] = {{"DZE_Item_Kit_SandbagExLarge5xCurved",1}};
+			input[] = {{"DZE_Item_Kit_SandbagExLarge5x",1}};
 		};
 	};
 };
 
-class ItemSandbagExLarge5xCurved: CA_Magazine {
+class DZE_Item_Kit_SandbagExLarge5xCurved: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_HBARRIER5CURVED";
 	descriptionShort = "$STR_EQUIP_DESC_HBARRIER5CURVED";
@@ -189,13 +189,13 @@ class ItemSandbagExLarge5xCurved: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemSandbagExLarge5x",1}};
-			input[] = {{"ItemSandbagExLarge5xCurved",1}};
+			output[] = {{"DZE_Item_Kit_SandbagExLarge5x",1}};
+			input[] = {{"DZE_Item_Kit_SandbagExLarge5xCurved",1}};
 		};
 	};
 };
 
-class sandbag_nest_kit: CA_Magazine {
+class DZE_Item_Kit_Sandbag_Nest: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_21_NEST";
 	descriptionShort = "$STR_EQUIP_DESC_21_NEST";
@@ -216,13 +216,13 @@ class sandbag_nest_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"sandbag_nest_large_kit",1}};
-			input[] = {{"sandbag_nest_kit",4},{"ItemSandBagHeavyCorner_kit",4}};
+			output[] = {{"DZE_Item_Kit_Sandbag_Nest_Large",1}};
+			input[] = {{"DZE_Item_Kit_Sandbag_Nest",4},{"DZE_Item_Kit_SandBagHeavyCorner",4}};
 		};
 	};
 };
 
-class sandbag_nest_large_kit: CA_Magazine {
+class DZE_Item_Kit_Sandbag_Nest_Large: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_LARGENEST";
 	descriptionShort = "$STR_EQUIP_DESC_LARGENEST";
@@ -241,7 +241,7 @@ class sandbag_nest_large_kit: CA_Magazine {
 	};
 };
 
-class ItemSandbagHeavy_kit: CA_Magazine {
+class DZE_Item_Kit_SandbagHeavy: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_HBF"; // "Heavy Bag Fence"
 	descriptionShort = "$STR_EQUIP_DESC_HBF";
@@ -262,21 +262,21 @@ class ItemSandbagHeavy_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemSandBagHeavyCorner_kit",1}};
-			input[] = {{"ItemSandbagHeavy_kit",2}};
+			output[] = {{"DZE_Item_Kit_SandBagHeavyCorner",1}};
+			input[] = {{"DZE_Item_Kit_SandbagHeavy",2}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_PLAYER_HBF_ROUND"; // "Craft Heavy Bag Fence (Round)"
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemSandbagHeavyRound_kit",1}};
-			input[] = {{"ItemSandbagHeavy_kit",3}};
+			output[] = {{"DZE_Item_Kit_SandbagHeavyRound",1}};
+			input[] = {{"DZE_Item_Kit_SandbagHeavy",3}};
 		};
 	};
 };
 
-class ItemSandBagHeavyCorner_kit: CA_Magazine {
+class DZE_Item_Kit_SandBagHeavyCorner: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_HBF_CORNER"; // "Heavy Bag Fence (Corner)"
 	descriptionShort = "$STR_EQUIP_DESC_HBF_CORNER";
@@ -297,13 +297,13 @@ class ItemSandBagHeavyCorner_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"sandbag_nest_large_kit",1}};
-			input[] = {{"sandbag_nest_kit",4},{"ItemSandBagHeavyCorner_kit",4}};
+			output[] = {{"DZE_Item_Kit_Sandbag_Nest_Large",1}};
+			input[] = {{"DZE_Item_Kit_Sandbag_Nest",4},{"DZE_Item_Kit_SandBagHeavyCorner",4}};
 		};
 	};
 };
 
-class ItemSandbagHeavyRound_kit: CA_Magazine {
+class DZE_Item_Kit_SandbagHeavyRound: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_HBF_ROUND"; // "Heavy Bag Fence (Round)"
 	descriptionShort = "$STR_EQUIP_DESC_HBF_ROUND";
@@ -322,7 +322,7 @@ class ItemSandbagHeavyRound_kit: CA_Magazine {
 	};
 };
 
-class ItemWarfareBarrier5x_kit: CA_Magazine {
+class DZE_Item_Kit_WarfareBarrier5x: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WBARRIER5";
 	descriptionShort = "$STR_EQUIP_DESC_WBARRIER5";
@@ -343,13 +343,13 @@ class ItemWarfareBarrier5x_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemWarfareBarrier10x_kit",1}};
-			input[] = {{"ItemWarfareBarrier5x_kit",2}};
+			output[] = {{"DZE_Item_Kit_WarfareBarrier10x",1}};
+			input[] = {{"DZE_Item_Kit_WarfareBarrier5x",2}};
 		};
 	};
 };
 
-class ItemWarfareBarrier10x_kit: CA_Magazine {
+class DZE_Item_Kit_WarfareBarrier10x: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WBARRIER10";
 	descriptionShort = "$STR_EQUIP_DESC_WBARRIER10";
@@ -370,13 +370,13 @@ class ItemWarfareBarrier10x_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
-			output[] = {{"ItemWarfareBarrier10xTall_kit",1}};
-			input[] = {{"ItemWarfareBarrier10x_kit",3}};
+			output[] = {{"DZE_Item_Kit_WarfareBarrier10xTall",1}};
+			input[] = {{"DZE_Item_Kit_WarfareBarrier10x",3}};
 		};
 	};
 };
 
-class ItemWarfareBarrier10xTall_kit: CA_Magazine {
+class DZE_Item_Kit_WarfareBarrier10xTall: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WBARRIER10TALL";
 	descriptionShort = "$STR_EQUIP_DESC_WBARRIER10TALL";

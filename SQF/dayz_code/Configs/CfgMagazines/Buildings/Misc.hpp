@@ -1,4 +1,4 @@
-class ItemFireBarrel_kit: CA_Magazine {
+class DZE_Item_Kit_FireBarrel: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_FIREBARRELKIT";
 	descriptionShort = "$STR_EPOCH_FIREBARRELKIT_DESC";
@@ -17,7 +17,7 @@ class ItemFireBarrel_kit: CA_Magazine {
 	};
 };
 
-class workbench_kit: CA_Magazine {
+class DZE_Item_Kit_WorkBench_Epoch: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WORKBENCH";
 	descriptionShort = "$STR_EPOCH_WORKBENCH_DESC";
@@ -37,27 +37,10 @@ class workbench_kit: CA_Magazine {
 };
 
 // DayZ Mod workbench
-class ItemWorkBench_DZE : CA_Magazine {
-	scope = 2;
-	displayName = "$STR_BLD_name_ItemWorkBench";
-	descriptionShort = "$STR_BLD_desc_ItemWorkBench";
-	model = "z\addons\dayz_buildings\models\workbench_flat.p3d";
-	picture = "\z\addons\dayz_buildings\equip\item_workbench.paa";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Build {
-			text = "$STR_ACTIONS_BUILD";
-			script = "spawn DZE_fnc_modularBuild;";
-			create = "DZE_WorkBench";
-			require[] = {"DZE_Tool_Toolbox"};
-		};
-	};
-};
+
 
 // DayZ Mod workbench
-class ItemWorkBench: CA_Magazine {
+class DZE_Item_Kit_WorkBench: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_BLD_name_ItemWorkBench";
 	descriptionShort = "$STR_BLD_desc_ItemWorkBench";
@@ -76,7 +59,7 @@ class ItemWorkBench: CA_Magazine {
 	};
 };
  
-class wood_ramp_kit: CA_Magazine {
+class DZE_Item_Kit_Wood_Ramp: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WOODRAMP";
 	descriptionShort = "$STR_EPOCH_WOODENRAMP_DESC";
@@ -95,7 +78,7 @@ class wood_ramp_kit: CA_Magazine {
 	};
 };
 
-class plot_pole_kit: CA_Magazine {
+class DZE_Item_Kit_Plot_Pole: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLAYER_246";
 	descriptionShort = "$STR_EPOCH_PLOT_DESC";
@@ -114,7 +97,7 @@ class plot_pole_kit: CA_Magazine {
 	};
 };
 
-class metal_panel_kit: CA_Magazine {
+class DZE_Item_Kit_Metal_Panel: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_METALPANEL";
 	descriptionShort = "$STR_EPOCH_METALPANEL_DESC";
@@ -133,7 +116,7 @@ class metal_panel_kit: CA_Magazine {
 	};
 };
 
-class ItemCorrugated: CA_Magazine {
+class DZE_Item_Kit_Corrugated: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_CORRUGATEDFENCE";
 	descriptionShort = "$STR_EPOCH_CORRUGATEDFENCE_DESC";
@@ -154,29 +137,29 @@ class ItemCorrugated: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
-			output[] = {{"wooden_shed_kit",1}};
-			input[] = {{"ItemCorrugated",2},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+			output[] = {{"DZE_Item_Kit_Wooden_Shed",1}};
+			input[] = {{"DZE_Item_Kit_Corrugated",2},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_PLAYER_217";
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
-			output[] = {{"outhouse_kit",1}};
-			input[] = {{"ItemCorrugated",1},{"PartWoodPlywood",3},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
+			output[] = {{"DZE_Item_Kit_Outhouse",1}};
+			input[] = {{"DZE_Item_Kit_Corrugated",1},{"PartWoodPlywood",3},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_216";
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar","DZE_Tool_Handsaw"};
-			output[] = {{"storage_shed_kit",1}};
-			input[] = {{"ItemCorrugated",4},{"PartWoodPlywood",2},{"PartWoodLumber",2}};
+			output[] = {{"DZE_Item_Kit_Storage_Shed",1}};
+			input[] = {{"DZE_Item_Kit_Corrugated",4},{"PartWoodPlywood",2},{"PartWoodLumber",2}};
 		};
 	};
 };
 
-class ItemWire: CA_Magazine {
+class DZE_Item_Kit_Wire: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WIRE_FENCE";
 	descriptionShort = "$STR_EQUIP_DESC_WIRE_FENCE";
@@ -192,28 +175,28 @@ class ItemWire: CA_Magazine {
 			create = "DZE_Fort_RazorWire"; // vanilla uses Wire_cat1
 			byPass = "byPassRoadCheck";
 			require[] = {"DZE_Tool_Toolbox"};
-			consume[] = {"ItemWire"};
+			consume[] = {"DZE_Item_Kit_Wire"};
 		};
 		class Crafting {
 			text = "$STR_ACTION_CRAFT_FORT_WIRE";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"fortified_wire_kit",1}};
-			input[] = {{"ItemWire",1},{"ItemTankTrap",2}};
+			output[] = {{"DZE_Item_Kit_Fortified_Wire",1}};
+			input[] = {{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",2}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_ACTION_CRAFT_BARBED_GATE";
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"barbed_gate_kit",1}};
-			input[] = {{"ItemWire",1},{"ItemTankTrap",2},{"ItemPole",2}};
+			output[] = {{"DZE_Item_Kit_Barbed_Gate",1}};
+			input[] = {{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",2},{"ItemPole",2}};
 		};
 	};
 };
 
-class fortified_wire_kit: CA_Magazine {
+class DZE_Item_Kit_Fortified_Wire: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_FORT_WIRE";
 	descriptionShort = "$STR_EQUIP_DESC_FORT_WIRE";
@@ -229,12 +212,12 @@ class fortified_wire_kit: CA_Magazine {
 			create = "DZE_FortifiedWire";
 			byPass = "byPassRoadCheck";
 			require[] = {"DZE_Tool_Toolbox"};
-			consume[] = {"fortified_wire_kit"};
+			consume[] = {"DZE_Item_Kit_Fortified_Wire"};
 		};
 	};
 };
 
-class ItemTankTrap: CA_Magazine {
+class DZE_Item_Kit_TankTrap: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_TANK_TRAP";
 	descriptionShort = "$STR_EQUIP_DESC_TANK_TRAP";
@@ -250,28 +233,28 @@ class ItemTankTrap: CA_Magazine {
 			create = "DZE_Hedgehog";
 			byPass = "byPassRoadCheck";
 			require[] = {"DZE_Tool_Toolbox"};
-			consume[] = {"ItemTankTrap"};
+			consume[] = {"DZE_Item_Kit_TankTrap"};
 		};
 		class Crafting {
 			text = "$STR_ACTION_CRAFT_FORT_WIRE";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"fortified_wire_kit",1}};
-			input[] = {{"ItemTankTrap",2},{"ItemWire",1}};
+			output[] = {{"DZE_Item_Kit_Fortified_Wire",1}};
+			input[] = {{"DZE_Item_Kit_TankTrap",2},{"DZE_Item_Kit_Wire",1}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_ACTION_CRAFT_BARBED_GATE";
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"barbed_gate_kit",1}};
-			input[] = {{"ItemWire",1},{"ItemTankTrap",2},{"ItemPole",2}};
+			output[] = {{"DZE_Item_Kit_Barbed_Gate",1}};
+			input[] = {{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",2},{"ItemPole",2}};
 		};
 	};
 };
 
-class barbed_gate_kit: CA_Magazine {
+class DZE_Item_Kit_Barbed_Gate: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_BARBED_GATE";
 	descriptionShort = "$STR_EQUIP_DESC_BARBED_GATE";
@@ -286,12 +269,12 @@ class barbed_gate_kit: CA_Magazine {
 			script = "spawn DZE_fnc_modularBuild;";
 			create = "DZE_BarbedGate";
 			require[] = {"DZE_Tool_Toolbox"};
-			consume[] = {"barbed_gate_kit"};
+			consume[] = {"DZE_Item_Kit_Barbed_Gate"};
 		};
 	};
 };
 
-class ItemGenerator: CA_Magazine {
+class DZE_Item_Kit_Generator: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_31";
 	descriptionShort = "$STR_EQUIP_DESC_31";
@@ -306,12 +289,12 @@ class ItemGenerator: CA_Magazine {
 			script = "spawn DZE_fnc_modularBuild;";
 			create = "DZE_Generator";
 			require[] = {"DZE_Tool_Toolbox"};
-			consume[] = {"ItemGenerator"};
+			consume[] = {"DZE_Item_Kit_Generator"};
 		};
 	};
 };
 
-class fuel_pump_kit: CA_Magazine {
+class DZE_Item_Kit_Fuel_Pump: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_FUELPUMP";
 	descriptionShort = "$STR_EPOCH_FUELPUMP";
@@ -330,7 +313,7 @@ class fuel_pump_kit: CA_Magazine {
 	};
 };
 
-class light_pole_kit: CA_Magazine {
+class DZE_Item_Kit_Light_Pole: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LIGHTPOLE";
 	descriptionShort = "$STR_EPOCH_LIGHTPOLE_DESC";
@@ -349,7 +332,7 @@ class light_pole_kit: CA_Magazine {
 	};
 };
 
-class deer_stand_kit: CA_Magazine {
+class DZE_Item_Kit_Deer_Stand: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_DEERSTAND";
 	descriptionShort = "$STR_EPOCH_DEERSTAND_DESC";
@@ -368,7 +351,7 @@ class deer_stand_kit: CA_Magazine {
 	};
 };
 
-class m240_nest_kit: CA_Magazine {
+class DZE_Item_Kit_M240_Nest: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_M240NEST";
 	descriptionShort = "$STR_EPOCH_M240NEST";
@@ -387,7 +370,7 @@ class m240_nest_kit: CA_Magazine {
 	};
 };
 
-class rusty_gate_kit: CA_Magazine {
+class DZE_Item_Kit_Rusty_Gate: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_RUSTYGATE";
 	descriptionShort = "$STR_EPOCH_RUSTYGATE_DESC";
@@ -406,7 +389,7 @@ class rusty_gate_kit: CA_Magazine {
 	};
 };
 
-class stick_fence_kit: CA_Magazine {
+class DZE_Item_Kit_Stick_Fence: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_STICKFENCE";
 	descriptionShort = "$STR_EPOCH_STICKFENCE_DESC";
@@ -425,7 +408,7 @@ class stick_fence_kit: CA_Magazine {
 	};
 };
 
-class sun_shade_kit: CA_Magazine {
+class DZE_Item_Kit_Sun_Shade: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_CANVASSUNSHADE";
 	descriptionShort = "$STR_EPOCH_CANVASSUNSHADE_DESC";
@@ -444,7 +427,7 @@ class sun_shade_kit: CA_Magazine {
 	};
 };
 
-class park_bench_kit: CA_Magazine {
+class DZE_Item_Kit_Park_Bench: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WOODBENCH";
 	descriptionShort = "$STR_EPOCH_WOODBENCH";
@@ -463,7 +446,7 @@ class park_bench_kit: CA_Magazine {
 	};
 };
 
-class ItemScaffoldingKit: CA_Magazine {
+class DZE_Item_Kit_Scaffolding: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SCAFFOLDING";
 	descriptionShort = "$STR_EPOCH_SCAFFOLDING";
@@ -482,7 +465,7 @@ class ItemScaffoldingKit: CA_Magazine {
 	};
 };
 
-class notebook_kit: CA_Magazine {
+class DZE_Item_Kit_Notebook: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_NOTEBOOK";
 	descriptionShort = "$STR_EPOCH_NOTEBOOK_DESC";
@@ -501,7 +484,7 @@ class notebook_kit: CA_Magazine {
 	};
 };
 
-class water_pump_kit: CA_Magazine {
+class DZE_Item_Kit_Water_Pump: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WATERPUMP";
 	descriptionShort = "$STR_EPOCH_WATERPUMP_DESC";
@@ -520,7 +503,7 @@ class water_pump_kit: CA_Magazine {
 	};
 };
 
-class greenhouse_kit: CA_Magazine {
+class DZE_Item_Kit_Greenhouse: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_GREENHOUSE";
 	descriptionShort = "$STR_EPOCH_GREENHOUSE_DESC";
@@ -539,7 +522,7 @@ class greenhouse_kit: CA_Magazine {
 	};
 };
 
-class bed_kit: CA_Magazine {
+class DZE_Item_Kit_Bed: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BED";
 	descriptionShort = "$STR_EPOCH_BED_DESC";
@@ -558,7 +541,7 @@ class bed_kit: CA_Magazine {
 	};
 };
 
-class table_kit: CA_Magazine {
+class DZE_Item_Kit_Table: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_TABLE";
 	descriptionShort = "$STR_EPOCH_TABLE_DESC";
@@ -577,7 +560,7 @@ class table_kit: CA_Magazine {
 	};
 };
 
-class office_chair_kit: CA_Magazine {
+class DZE_Item_Kit_Office_Chair: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_CHAIR";
 	descriptionShort = "$STR_EPOCH_CHAIR_DESC";
@@ -596,7 +579,7 @@ class office_chair_kit: CA_Magazine {
 	};
 };
 
-class garage_green_kit: CA_Magazine {
+class DZE_Item_Kit_Garage_Green: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_GARAGE_GREEN";
 	descriptionShort = "$STR_EPOCH_GARAGE_GREEN_DESC";
@@ -615,7 +598,7 @@ class garage_green_kit: CA_Magazine {
 	};
 };
 
-class garage_white_kit: CA_Magazine {
+class DZE_Item_Kit_Garage_White: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_GARAGE_WHITE";
 	descriptionShort = "$STR_EPOCH_GARAGE_WHITE_DESC";
@@ -634,7 +617,7 @@ class garage_white_kit: CA_Magazine {
 	};
 };
 
-class garage_brown_kit: CA_Magazine {
+class DZE_Item_Kit_Garage_Brown: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_GARAGE_BROWN";
 	descriptionShort = "$STR_EPOCH_GARAGE_BROWN_DESC";
@@ -653,7 +636,7 @@ class garage_brown_kit: CA_Magazine {
 	};
 };
 
-class garage_grey_kit: CA_Magazine {
+class DZE_Item_Kit_Garage_Grey: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_GARAGE_GREY";
 	descriptionShort = "$STR_EPOCH_GARAGE_GREY_DESC";
@@ -672,7 +655,7 @@ class garage_grey_kit: CA_Magazine {
 	};
 };
 
-class helipad_civil_kit: CA_Magazine {
+class DZE_Item_Kit_Helipad_Civil: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_HELIPAD_CIVIL";
 	descriptionShort = "$STR_EPOCH_HELIPAD_CIVIL_DESC";
@@ -691,7 +674,7 @@ class helipad_civil_kit: CA_Magazine {
 	};
 };
 
-class helipad_rescue_kit: CA_Magazine {
+class DZE_Item_Kit_Helipad_Rescue: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_HELIPAD_RESCUE";
 	descriptionShort = "$STR_EPOCH_HELIPAD_RESCUE_DESC";
@@ -710,7 +693,7 @@ class helipad_rescue_kit: CA_Magazine {
 	};
 };
 
-class helipad_army_kit: CA_Magazine {
+class DZE_Item_Kit_Helipad_Army: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_HELIPAD_ARMY";
 	descriptionShort = "$STR_EPOCH_HELIPAD_ARMY_DESC";
@@ -729,7 +712,7 @@ class helipad_army_kit: CA_Magazine {
 	};
 };
 
-class helipad_cross_kit: CA_Magazine {
+class DZE_Item_Kit_Helipad_Cross: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_HELIPAD_CROSS";
 	descriptionShort = "$STR_EPOCH_HELIPAD_CROSS_DESC";
@@ -748,7 +731,7 @@ class helipad_cross_kit: CA_Magazine {
 	};
 };
 
-class helipad_parkborder_kit: CA_Magazine {
+class DZE_Item_Kit_Helipad_Parkborder: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_HELIPAD_PARKBORDER";
 	descriptionShort = "$STR_EPOCH_HELIPAD_PARKBORDER_DESC";
@@ -767,7 +750,7 @@ class helipad_parkborder_kit: CA_Magazine {
 	};
 };
 
-class cctv_kit: CA_Magazine {
+class DZE_Item_Kit_Cctv: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_CCTV";
 	descriptionShort = "$STR_EPOCH_CCTV_DESC";
@@ -786,7 +769,7 @@ class cctv_kit: CA_Magazine {
 	};
 };
 
-class concrete_barrier_kit: CA_Magazine {
+class DZE_Item_Kit_Concrete_Barrier: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_CNC_BARRIER";
 	descriptionShort = "$STR_EQUIP_DESC_CNC_BARRIER";
@@ -807,29 +790,29 @@ class concrete_barrier_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"concrete_barrier_striped_kit",1}};
-			input[] = {{"concrete_barrier_kit",1}};
+			output[] = {{"DZE_Item_Kit_Concrete_Barrier_Striped",1}};
+			input[] = {{"DZE_Item_Kit_Concrete_Barrier",1}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_ACTION_CRAFT_CONCRETE_WALL";
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
-			output[] = {{"concrete_wall_kit",1}};
-			input[] = {{"concrete_barrier_kit",5},{"CementBag",2}};
+			output[] = {{"DZE_Item_Kit_Concrete_Wall",1}};
+			input[] = {{"DZE_Item_Kit_Concrete_Barrier",5},{"CementBag",2}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_ACTION_CRAFT_CONCRETE_PIPE";
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
-			output[] = {{"concrete_pipe_kit",1}};
-			input[] = {{"concrete_barrier_kit",6},{"CementBag",2}};
+			output[] = {{"DZE_Item_Kit_Concrete_Pipe",1}};
+			input[] = {{"DZE_Item_Kit_Concrete_Barrier",6},{"CementBag",2}};
 		};
 	};
 };
 
-class concrete_barrier_striped_kit: CA_Magazine {
+class DZE_Item_Kit_Concrete_Barrier_Striped: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_CNC_BARRIER_STRIPED";
 	descriptionShort = "$STR_EQUIP_DESC_CNC_BARRIER_STRIPED";
@@ -850,13 +833,13 @@ class concrete_barrier_striped_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"concrete_barrier_kit",1}};
-			input[] = {{"concrete_barrier_striped_kit",1}};
+			output[] = {{"DZE_Item_Kit_Concrete_Barrier",1}};
+			input[] = {{"DZE_Item_Kit_Concrete_Barrier_Striped",1}};
 		};
 	};
 };
 
-class concrete_wall_kit: CA_Magazine {
+class DZE_Item_Kit_Concrete_Wall: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_CONCRETE_WALL";
 	descriptionShort = "$STR_EQUIP_DESC_CONCRETE_WALL";
@@ -877,13 +860,13 @@ class concrete_wall_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
-			output[] = {{"dragonteeth_kit",1}};
-			input[] = {{"concrete_wall_kit",1},{"ItemStone",6},{"CementBag",4}};
+			output[] = {{"DZE_Item_Kit_Dragonteeth",1}};
+			input[] = {{"DZE_Item_Kit_Concrete_Wall",1},{"ItemStone",6},{"CementBag",4}};
 		};
 	};
 };
 
-class concrete_pipe_kit: CA_Magazine {
+class DZE_Item_Kit_Concrete_Pipe: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_CONCRETE_PIPE";
 	descriptionShort = "$STR_EQUIP_DESC_CONCRETE_PIPE";
@@ -902,7 +885,7 @@ class concrete_pipe_kit: CA_Magazine {
 	};
 };
 
-class dragonteeth_kit: CA_Magazine {
+class DZE_Item_Kit_Dragonteeth: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_DRAGONTEETH";
 	descriptionShort = "$STR_EQUIP_DESC_DRAGONTEETH";
@@ -923,13 +906,13 @@ class dragonteeth_kit: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
-			output[] = {{"dragonteeth_big_kit",1}};
-			input[] = {{"dragonteeth_kit",1},{"ItemStone",6},{"CementBag",4}};
+			output[] = {{"DZE_Item_Kit_Dragonteeth_Big",1}};
+			input[] = {{"DZE_Item_Kit_Dragonteeth",1},{"ItemStone",6},{"CementBag",4}};
 		};
 	};
 };
 
-class dragonteeth_big_kit: CA_Magazine {
+class DZE_Item_Kit_Dragonteeth_Big: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_DRAGONTEETH_BIG";
 	descriptionShort = "$STR_EQUIP_DESC_DRAGONTEETH_BIG";
@@ -948,7 +931,7 @@ class dragonteeth_big_kit: CA_Magazine {
 	};
 };
 
-class simple_footbridge_kit: CA_Magazine {
+class DZE_Item_Kit_Simple_Footbridge: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_SIMPLE_FOOTBRIDGE";
 	descriptionShort = "$STR_EQUIP_DESC_SIMPLE_FOOTBRIDGE";
@@ -967,7 +950,7 @@ class simple_footbridge_kit: CA_Magazine {
 	};
 };
 
-class wooden_footbridge_kit: CA_Magazine {
+class DZE_Item_Kit_Wooden_Footbridge: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WOODEN_FOOTBRIDGE";
 	descriptionShort = "$STR_EQUIP_DESC_WOODEN_FOOTBRIDGE";
@@ -986,7 +969,7 @@ class wooden_footbridge_kit: CA_Magazine {
 	};
 };
 
-class windbreak_kit: CA_Magazine {
+class DZE_Item_Kit_Windbreak: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WINDBREAK";
 	descriptionShort = "$STR_EQUIP_DESC_WINDBREAK";
@@ -1006,7 +989,7 @@ class windbreak_kit: CA_Magazine {
 	};
 };
 
-class metal_container_1a_kit: CA_Magazine { // red
+class DZE_Item_Kit_Metal_Container_1a: CA_Magazine { // red
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_METAL_CONTAINER_1A";
 	descriptionShort = "$STR_EQUIP_DESC_METAL_CONTAINER_1A";
@@ -1028,29 +1011,29 @@ class metal_container_1a_kit: CA_Magazine { // red
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"metal_container_1b_kit",1}};
-			input[] = {{"metal_container_1a_kit",1}};
+			output[] = {{"DZE_Item_Kit_Metal_Container_1b",1}};
+			input[] = {{"DZE_Item_Kit_Metal_Container_1a",1}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1G"; // craft white
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"metal_container_1g_kit",1}};
-			input[] = {{"metal_container_1a_kit",1}};
+			output[] = {{"DZE_Item_Kit_Metal_Container_1g",1}};
+			input[] = {{"DZE_Item_Kit_Metal_Container_1a",1}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_2D"; // craft 2x red
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"metal_container_2d_kit",1}};
-			input[] = {{"metal_container_1a_kit",2}};
+			output[] = {{"DZE_Item_Kit_Metal_Container_2d",1}};
+			input[] = {{"DZE_Item_Kit_Metal_Container_1a",2}};
 		};
 	};
 };
 
-class metal_container_1b_kit: CA_Magazine { // green
+class DZE_Item_Kit_Metal_Container_1b: CA_Magazine { // green
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_METAL_CONTAINER_1B";
 	descriptionShort = "$STR_EQUIP_DESC_METAL_CONTAINER_1B";
@@ -1072,21 +1055,21 @@ class metal_container_1b_kit: CA_Magazine { // green
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"metal_container_1a_kit",1}};
-			input[] = {{"metal_container_1b_kit",1}};
+			output[] = {{"DZE_Item_Kit_Metal_Container_1a",1}};
+			input[] = {{"DZE_Item_Kit_Metal_Container_1b",1}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1G"; // craft white
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"metal_container_1g_kit",1}};
-			input[] = {{"metal_container_1b_kit",1}};
+			output[] = {{"DZE_Item_Kit_Metal_Container_1g",1}};
+			input[] = {{"DZE_Item_Kit_Metal_Container_1b",1}};
 		};
 	};
 };
 
-class metal_container_1g_kit: CA_Magazine { // white
+class DZE_Item_Kit_Metal_Container_1g: CA_Magazine { // white
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_METAL_CONTAINER_1G";
 	descriptionShort = "$STR_EQUIP_DESC_METAL_CONTAINER_1G";
@@ -1108,21 +1091,21 @@ class metal_container_1g_kit: CA_Magazine { // white
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"metal_container_1a_kit",1}};
-			input[] = {{"metal_container_1g_kit",1}};
+			output[] = {{"DZE_Item_Kit_Metal_Container_1a",1}};
+			input[] = {{"DZE_Item_Kit_Metal_Container_1g",1}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1B"; // craft green
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"metal_container_1b_kit",1}};
-			input[] = {{"metal_container_1g_kit",1}};
+			output[] = {{"DZE_Item_Kit_Metal_Container_1b",1}};
+			input[] = {{"DZE_Item_Kit_Metal_Container_1g",1}};
 		};
 	};
 };
 
-class metal_container_2d_kit: CA_Magazine { // 2x red
+class DZE_Item_Kit_Metal_Container_2d: CA_Magazine { // 2x red
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_METAL_CONTAINER_2D";
 	descriptionShort = "$STR_EQUIP_DESC_METAL_CONTAINER_2D";
@@ -1142,7 +1125,7 @@ class metal_container_2d_kit: CA_Magazine { // 2x red
 	};
 };
 
-class compost_barrel_empty_kit: CA_Magazine {
+class DZE_Item_Kit_Compost_Barrel_Empty: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_COMPOST_BARREL_EMTPY";
 	descriptionShort = "$STR_EPOCH_COMPOST_BARREL_EMTPY_DESC";
@@ -1152,7 +1135,7 @@ class compost_barrel_empty_kit: CA_Magazine {
 	type = 256;
 
 	class ItemActions {
-		class Build	{
+		class Build {
 			text = "$STR_EPOCH_BUILD_COMPOST_BARREL";
 			script = "spawn DZE_fnc_modularBuild;";
 			create = "DZE_Compost_Barrel_Empty";
@@ -1161,7 +1144,7 @@ class compost_barrel_empty_kit: CA_Magazine {
 	};
 };
 
-class compost_barrel_full_kit: CA_Magazine {
+class DZE_Item_Kit_Compost_Barrel_Full: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_COMPOST_BARREL_FULL";
 	descriptionShort = "$STR_EPOCH_COMPOST_BARREL_FULL_DESC";
@@ -1171,7 +1154,7 @@ class compost_barrel_full_kit: CA_Magazine {
 	type = 256;
 
 	class ItemActions {
-		class Build	{
+		class Build {
 			text = "$STR_EPOCH_BUILD_COMPOST_BARREL";
 			script = "spawn DZE_fnc_modularBuild;";
 			create = "DZE_Compost_Barrel_Full";
@@ -1180,7 +1163,7 @@ class compost_barrel_full_kit: CA_Magazine {
 	};
 };
 
-class boggle_kit: CA_Magazine {
+class DZE_Item_Kit_Boggle: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_BOGGLE";
 	descriptionShort = "$STR_EQUIP_DESC_BOGGLE";
@@ -1199,7 +1182,7 @@ class boggle_kit: CA_Magazine {
 	};
 };
 
-class satellite_dish_kit: CA_Magazine {
+class DZE_Item_Kit_Satellite_Dish: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_SATELLITE_DISH";
 	descriptionShort = "$STR_EQUIP_DESC_SATELLITE_DISH";
@@ -1218,7 +1201,7 @@ class satellite_dish_kit: CA_Magazine {
 	};
 };
 
-class fueltank_kit: CA_Magazine {
+class DZE_Item_Kit_Fueltank: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_FUELTANK_BIG";
 	descriptionShort = "$STR_EQUIP_DESC_FUELTANK_BIG";
@@ -1237,7 +1220,7 @@ class fueltank_kit: CA_Magazine {
 	};
 };
 
-class watertank_kit: CA_Magazine {
+class DZE_Item_Kit_Watertank: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WATERTANK";
 	descriptionShort = "$STR_EQUIP_DESC_WATERTANK";
@@ -1256,7 +1239,7 @@ class watertank_kit: CA_Magazine {
 	};
 };
 
-class watertower_kit: CA_Magazine {
+class DZE_Item_Kit_Watertower: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WATERTOWER";
 	descriptionShort = "$STR_EQUIP_DESC_WATERTOWER";

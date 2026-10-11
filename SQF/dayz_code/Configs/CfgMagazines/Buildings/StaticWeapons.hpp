@@ -1,4 +1,4 @@
-class M2_MG_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_M2_MG: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_M2_MG";
 	descriptionShort = "$STR_DN_M2_MG";
@@ -17,7 +17,7 @@ class M2_MG_Static_kit: CA_Magazine {
 	};
 };
 
-class M2_TriPod_MG_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_M2_TriPod_MG: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_M2HD_MINITRIPOD";
 	descriptionShort = "$STR_DN_M2HD_MINITRIPOD";
@@ -36,7 +36,7 @@ class M2_TriPod_MG_Static_kit: CA_Magazine {
 	};
 };
 
-class DSHKM_MG_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_DSHKM_MG: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_DSHKM";
 	descriptionShort = "$STR_DN_DSHKM";
@@ -55,7 +55,7 @@ class DSHKM_MG_Static_kit: CA_Magazine {
 	};
 };
 
-class DSHKM_TriPod_MG_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_DSHKM_TriPod_MG: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_DSHKM_MINITRIPOD";
 	descriptionShort = "$STR_DN_DSHKM_MINITRIPOD";
@@ -74,7 +74,7 @@ class DSHKM_TriPod_MG_Static_kit: CA_Magazine {
 	};
 };
 
-class KORD_TriPod_MG_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_KORD_TriPod_MG: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_KORD_LOW";
 	descriptionShort = "$STR_DN_KORD_LOW";
@@ -93,7 +93,7 @@ class KORD_TriPod_MG_Static_kit: CA_Magazine {
 	};
 };
 
-class KORD_MG_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_KORD_MG: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_KORD";
 	descriptionShort = "$STR_DN_KORD";
@@ -112,7 +112,7 @@ class KORD_MG_Static_kit: CA_Magazine {
 	};
 };
 
-class L2A1_MG_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_L2A1_MG: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_BAF_BAF_L2A1_TRIPOD_D0";
 	descriptionShort = "$STR_BAF_BAF_L2A1_TRIPOD_D0";
@@ -131,7 +131,7 @@ class L2A1_MG_Static_kit: CA_Magazine {
 	};
 };
 
-class L2A1_Tripod_MG_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_L2A1_Tripod_MG: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_BAF_BAF_L2A1_MINITRIPOD_D0";
 	descriptionShort = "$STR_BAF_BAF_L2A1_MINITRIPOD_D0";
@@ -150,7 +150,7 @@ class L2A1_Tripod_MG_Static_kit: CA_Magazine {
 	};
 };
 
-class GMG_Tripod_GrenadeLauncher_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_GMG_Tripod_GrenadeLauncher: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_BAF_BAF_GMG_TRIPOD_D0";
 	descriptionShort = "$STR_BAF_BAF_GMG_TRIPOD_D0";
@@ -169,7 +169,7 @@ class GMG_Tripod_GrenadeLauncher_Static_kit: CA_Magazine {
 	};
 };
 
-class AGS30_GrenadeLauncher_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_AGS30_GrenadeLauncher: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_AGS30";
 	descriptionShort = "$STR_DN_AGS30";
@@ -188,7 +188,7 @@ class AGS30_GrenadeLauncher_Static_kit: CA_Magazine {
 	};
 };
 
-class MK19_TriPod_GrenadeLauncher_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_MK19_TriPod_GrenadeLauncher: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_MK19_TRIPOD";
 	descriptionShort = "$STR_DN_MK19_TRIPOD";
@@ -207,7 +207,7 @@ class MK19_TriPod_GrenadeLauncher_Static_kit: CA_Magazine {
 	};
 };
 
-class GPMG_TriPod_MG_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_GPMG_TriPod_MG: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_BAF_BAF_GPMG_MINITRIPOD_D0";
 	descriptionShort = "$STR_BAF_BAF_GPMG_MINITRIPOD_D0";
@@ -226,7 +226,7 @@ class GPMG_TriPod_MG_Static_kit: CA_Magazine {
 	};
 };
 
-class M119_Artillery_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_M119_Artillery: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_M119";
 	descriptionShort = "$STR_DN_M119";
@@ -245,7 +245,7 @@ class M119_Artillery_Static_kit: CA_Magazine {
 	};
 };
 
-class D30_Artillery_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_D30_Artillery: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_D30";
 	descriptionShort = "$STR_DN_D30";
@@ -264,7 +264,7 @@ class D30_Artillery_Static_kit: CA_Magazine {
 	};
 };
 
-class SearchLight_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_SearchLight: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_SEARCHLIGHT";
 	descriptionShort = "$STR_DN_SEARCHLIGHT";
@@ -283,7 +283,7 @@ class SearchLight_Static_kit: CA_Magazine {
 	};
 };
 
-class M252_Mortar_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_M252_Mortar: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_M252";
 	descriptionShort = "$STR_DN_M252";
@@ -302,7 +302,7 @@ class M252_Mortar_Static_kit: CA_Magazine {
 	};
 };
 
-class 2b14_82mm_Mortar_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_2b14_82mm_Mortar: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_2B14";
 	descriptionShort = "$STR_DN_2B14";
@@ -321,7 +321,7 @@ class 2b14_82mm_Mortar_Static_kit: CA_Magazine {
 	};
 };
 
-class Metis_Launcher_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_Metis_Launcher: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_AT13";
 	descriptionShort = "$STR_DN_AT13";
@@ -340,7 +340,7 @@ class Metis_Launcher_Static_kit: CA_Magazine {
 	};
 };
 
-class SPG9_Launcher_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_SPG9_Launcher: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_SPG9";
 	descriptionShort = "$STR_DN_SPG9";
@@ -359,7 +359,7 @@ class SPG9_Launcher_Static_kit: CA_Magazine {
 	};
 };
 
-class Stinger_Tripod_Launcher_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_Stinger_Tripod_Launcher: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_STINGER_POD";
 	descriptionShort = "$STR_DN_STINGER_POD";
@@ -378,7 +378,7 @@ class Stinger_Tripod_Launcher_Static_kit: CA_Magazine {
 	};
 };
 
-class TOW_Tripod_Launcher_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_TOW_Tripod_Launcher: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_TOW_TRIPOD";
 	descriptionShort = "$STR_DN_TOW_TRIPOD";
@@ -397,7 +397,7 @@ class TOW_Tripod_Launcher_Static_kit: CA_Magazine {
 	};
 };
 
-class Rbs70_Launcher_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_Rbs70_Launcher: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ACR_DN_RBS70";
 	descriptionShort = "$STR_ACR_DN_RBS70";
@@ -416,7 +416,7 @@ class Rbs70_Launcher_Static_kit: CA_Magazine {
 	};
 };
 
-class Igla_AntiAir_Launcher_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_Igla_AntiAir_Launcher: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_IGLA_AA_POD_EAST";
 	descriptionShort = "$STR_DN_IGLA_AA_POD_EAST";
@@ -435,7 +435,7 @@ class Igla_AntiAir_Launcher_Static_kit: CA_Magazine {
 	};
 };
 
-class ZU23_AntiAir_Static_kit: CA_Magazine {
+class DZE_Item_Kit_Static_ZU23_AntiAir: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_DN_ZU23";
 	descriptionShort = "$STR_DN_ZU23";

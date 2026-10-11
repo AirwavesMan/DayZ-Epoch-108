@@ -12,7 +12,7 @@ class DZE_Sandbag: DZE_SandBag_Base {
 	icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
 	displayName = $STR_BUILT_SANDBAG;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSandbag";
+		DZE_refundKit = "DZE_Item_Kit_Sandbag";
 		DZE_refundArray[] = {};
 	};
 };
@@ -24,7 +24,7 @@ class DZE_BagFenceRound: DZE_SandBag_Base {
 	icon = "\Ca\misc3\data\Icons\icon_bagFenceRound_ca.paa";
 	displayName = $STR_EQUIP_NAME_SANDBAGS_ROUND;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "BagFenceRound_DZ_kit";
+		DZE_refundKit = "DZE_Item_Kit_BagFenceRound";
 		DZE_refundArray[] = {};
 	};
 };
@@ -43,8 +43,8 @@ class DZE_Land_HBarrier1: DZE_DefenseObject_Base {
 	DZE_offset[] = {0,2,0};
 	DZE_buildingSteps = 4;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSandbagLarge";
-		DZE_refundArray[] = {{{"ItemSandbag",3},{"ItemWire",1},{"ItemTankTrap",1}}};
+		DZE_refundKit = "DZE_Item_Kit_SandbagLarge";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Sandbag",3},{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",1}}};
 	};
 };
 
@@ -62,8 +62,8 @@ class DZE_Land_HBarrier3: DZE_DefenseObject_Base {
 	DZE_offset[] = {0,2.5,0};
 	DZE_buildingSteps = 8;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSandbagExLarge";
-		DZE_refundArray[] = {{{"ItemSandbagLarge",3}}};
+		DZE_refundKit = "DZE_Item_Kit_SandbagExLarge";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_SandbagLarge",3}}};
 	};
 };
 
@@ -81,8 +81,8 @@ class DZE_Land_HBarrier5: DZE_DefenseObject_Base {
 	DZE_offset[] = {0,4,0};
 	DZE_buildingSteps = 8;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSandbagExLarge5x";
-		DZE_refundArray[] = {{{"ItemSandbagExLarge",1},{"ItemSandbagLarge",2}}};
+		DZE_refundKit = "DZE_Item_Kit_SandbagExLarge5x";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_SandbagExLarge",1},{"DZE_Item_Kit_SandbagLarge",2}}};
 	};
 };
 
@@ -99,8 +99,8 @@ class DZE_Land_HBarrier5Curved: DZE_DefenseObject_Base {
 	DZE_offset[] = {0,4,0};
 	DZE_buildingSteps = 8;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSandbagExLarge5xCurved";
-		DZE_refundArray[] = {{{"ItemSandbagExLarge",1},{"ItemSandbagLarge",2}}};
+		DZE_refundKit = "DZE_Item_Kit_SandbagExLarge5xCurved";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_SandbagExLarge",1},{"DZE_Item_Kit_SandbagLarge",2}}};
 	};
 };
 
@@ -117,8 +117,8 @@ class DZE_Land_WarfareBarrier5x: DZE_DefenseObject_Base {
 	DZE_offset[] = {0,5,0};
 	DZE_buildingSteps = 8;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWarfareBarrier5x_kit";
-		DZE_refundArray[] = {{{"ItemSandbagLarge",5}}};
+		DZE_refundKit = "DZE_Item_Kit_WarfareBarrier5x";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_SandbagLarge",5}}};
 	};
 };
 
@@ -135,8 +135,8 @@ class DZE_Land_WarfareBarrier10x: DZE_DefenseObject_Base {
 	DZE_offset[] = {0,9,0};
 	DZE_buildingSteps = 8;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWarfareBarrier10x_kit";
-		DZE_refundArray[] = {{{"ItemWarfareBarrier5x_kit",2}}};
+		DZE_refundKit = "DZE_Item_Kit_WarfareBarrier10x";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WarfareBarrier5x",2}}};
 	};
 };
 
@@ -153,8 +153,8 @@ class DZE_Land_WarfareBarrier10xTall: DZE_DefenseObject_Base {
 	DZE_offset[] = {0,9,0};
 	DZE_buildingSteps = 8;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemWarfareBarrier10xTall_kit";
-		DZE_refundArray[] = {{{"ItemWarfareBarrier10x_kit",3}}};
+		DZE_refundKit = "DZE_Item_Kit_WarfareBarrier10xTall";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_WarfareBarrier10x",3}}};
 	};
 };
 
@@ -173,8 +173,8 @@ class DZE_SandNest: DZE_DefenseObject_Base {
 	DZE_offset[] = {0,4.5,-0.1};
 	DZE_buildingSteps = 5;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "sandbag_nest_kit";
-		DZE_refundArray[] = {{{"ItemSandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}}};
+		DZE_refundKit = "DZE_Item_Kit_Sandbag_Nest";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Sandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}}};
 	};
 };
 
@@ -192,8 +192,8 @@ class DZE_SandNestLarge: DZE_DefenseObject_Base {
 	DZE_offset[] = {0,8,0};
 	DZE_buildingSteps = 7;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "sandbag_nest_large_kit";
-		DZE_refundArray[] = {{{"ItemSandBagHeavyCorner_kit",4},{"sandbag_nest_kit",4}}};
+		DZE_refundKit = "DZE_Item_Kit_Sandbag_Nest_Large";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_SandBagHeavyCorner",4},{"DZE_Item_Kit_Sandbag_Nest",4}}};
 	};
 };
 
@@ -208,8 +208,8 @@ class DZE_HeavyBagFence: DZE_SandBag_Base {
 	destrType = "DestructBuilding";
 	armor = 5000;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSandbagHeavy_kit";
-		DZE_refundArray[] = {{{"ItemSandbag",2},{"PartWoodPile",1}}};
+		DZE_refundKit = "DZE_Item_Kit_SandbagHeavy";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Sandbag",2},{"PartWoodPile",1}}};
 	};
 };
 
@@ -226,8 +226,8 @@ class DZE_HeavyBagFenceCorner: DZE_SandBag_Base {
 	DZE_offset[] = {0,3,0};
 	DZE_buildingSteps = 4;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSandBagHeavyCorner_kit";
-		DZE_refundArray[] = {{{"ItemSandbagHeavy_kit",2}}};
+		DZE_refundKit = "DZE_Item_Kit_SandBagHeavyCorner";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_SandbagHeavy",2}}};
 	};
 };
 
@@ -244,7 +244,7 @@ class DZE_HeavyBagFenceRound: DZE_SandBag_Base {
 	DZE_offset[] = {0,4,0};
 	DZE_buildingSteps = 5;
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSandbagHeavyRound_kit";
-		DZE_refundArray[] = {{{"ItemSandbagHeavy_kit",3}}};
+		DZE_refundKit = "DZE_Item_Kit_SandbagHeavyRound";
+		DZE_refundArray[] = {{{"DZE_Item_Kit_SandbagHeavy",3}}};
 	};
 };

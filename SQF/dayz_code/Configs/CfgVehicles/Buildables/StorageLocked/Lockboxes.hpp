@@ -25,7 +25,7 @@ class DZE_LockboxStorage: DZE_Lockbox_Base {
 
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemLockbox";
+		DZE_refundKit = "DZE_Item_Kit_Lockbox";
 		DZE_neededTools[] = {};
 		DZE_refundArray[] = {};
 	};
@@ -48,7 +48,7 @@ class DZE_LockboxStorage2: DZE_LockboxStorage {
 	transportMaxBackpacks = 20;
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemLockbox2";
+		DZE_refundKit = "DZE_Item_Kit_Lockbox2";
 		DZE_neededTools[] = {};
 		DZE_refundArray[] = {};
 	};
@@ -68,7 +68,7 @@ class DZE_LockboxStorageWinter: DZE_Lockbox_Base {
 	DZE_lockedClass = "DZE_LockboxStorageWinterLocked";
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemLockboxWinter";
+		DZE_refundKit = "DZE_Item_Kit_LockboxWinter";
 		DZE_neededTools[] = {};
 		DZE_refundArray[] = {};
 	};
@@ -92,7 +92,7 @@ class DZE_LockboxStorageWinter2: DZE_LockboxStorageWinter {
 	transportMaxBackpacks = 20;
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemLockboxWinter2";
+		DZE_refundKit = "DZE_Item_Kit_LockboxWinter2";
 		DZE_neededTools[] = {};
 		DZE_refundArray[] = {};
 	};
@@ -110,7 +110,7 @@ class DZE_LockboxStorageBroken: DZE_Lockbox_Base {
 	scope = 2;
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN";
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemLockboxBroken";
+		DZE_refundKit = "DZE_Item_Kit_LockboxBroken";
 		DZE_refundArray[] = {};
 	};
 };
@@ -124,7 +124,7 @@ class DZE_LockboxStorage2Broken: DZE_Lockbox_Base {
 	transportMaxBackpacks = 20;
 	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemLockbox2Broken";
+		DZE_refundKit = "DZE_Item_Kit_Lockbox2Broken";
 		DZE_refundArray[] = {};
 	};
 };
@@ -135,7 +135,7 @@ class DZE_LockboxStorageWinterBroken: DZE_Lockbox_Base {
 	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemLockboxWinterBroken";
+		DZE_refundKit = "DZE_Item_Kit_LockboxWinterBroken";
 		DZE_refundArray[] = {};
 	};
 };
@@ -150,7 +150,7 @@ class DZE_LockboxStorageWinter2Broken: DZE_Lockbox_Base {
 	transportMaxBackpacks = 20;
 	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemLockboxWinter2Broken";
+		DZE_refundKit = "DZE_Item_Kit_LockboxWinter2Broken";
 		DZE_refundArray[] = {};
 	};
 };

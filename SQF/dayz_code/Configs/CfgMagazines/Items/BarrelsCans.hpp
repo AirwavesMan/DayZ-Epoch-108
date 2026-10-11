@@ -188,7 +188,7 @@ class ItemFuelBarrelEmpty: ItemFuelBarrel {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemFireBarrel_kit",1}};
+			output[] = {{"DZE_Item_Kit_FireBarrel",1}};
 			input[] = {{"ItemFuelBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
 		};
 	};
@@ -227,7 +227,7 @@ class ItemOilBarrelEmpty : CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemFireBarrel_kit",1}};
+			output[] = {{"DZE_Item_Kit_FireBarrel",1}};
 			input[] = {{"ItemOilBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
 		};
 	};	
@@ -248,7 +248,7 @@ class ItemMethylaminBarrelEmpty : CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemFireBarrel_kit",1}};
+			output[] = {{"DZE_Item_Kit_FireBarrel",1}};
 			input[] = {{"ItemMethylaminBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
 		};
 	};	

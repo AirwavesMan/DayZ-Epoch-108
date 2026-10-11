@@ -1,4 +1,4 @@
-class TrapBear : CA_Magazine {
+class DZE_Item_Kit_Trap_BearTrap : CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_BEARTRAP";
 	descriptionShort = "$STR_EQUIP_DESC_BEARTRAP";
@@ -13,28 +13,28 @@ class TrapBear : CA_Magazine {
 			script = "spawn DZE_fnc_modularBuild;";
 			create = "DZE_BearTrap";
 			require[] = {"DZE_Tool_Toolbox"};
-			consume[] = {"TrapBear"};
+			consume[] = {"DZE_Item_Kit_Trap_BearTrap"};
 		};
 		class Crafting {
 			text = "$STR_ITEM_NAME_BEAR_TRAP_FLARE";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemTrapBearTrapFlare",1}};
-			input[] = {{"equip_string",1},{"TrapBear",1},{"PartWoodPile",1},{"equip_duct_tape",1},{"HandRoadFlare",1}};
+			output[] = {{"DZE_Item_Kit_Trap_BearTrapFlare",1}};
+			input[] = {{"equip_string",1},{"DZE_Item_Kit_Trap_BearTrap",1},{"PartWoodPile",1},{"equip_duct_tape",1},{"HandRoadFlare",1}};
 		};
 		class Crafting1 {
 			text = "$STR_ITEM_NAME_BEAR_TRAP_SMOKE";
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemTrapBearTrapSmoke",1}};
-			input[] = {{"equip_string",1},{"TrapBear",1},{"PartWoodPile",1},{"equip_duct_tape",1},{"SmokeShell",1}};
+			output[] = {{"DZE_Item_Kit_Trap_BearTrapSmoke",1}};
+			input[] = {{"equip_string",1},{"DZE_Item_Kit_Trap_BearTrap",1},{"PartWoodPile",1},{"equip_duct_tape",1},{"SmokeShell",1}};
 		};		
 	};
 };
 
-class ItemTrapBearTrapFlare : TrapBear {
+class DZE_Item_Kit_Trap_BearTrapFlare : DZE_Item_Kit_Trap_BearTrap {
 	displayName = "$STR_ITEM_NAME_BEAR_TRAP_FLARE";
 	descriptionShort = "$STR_ITEM_DESC_BEAR_TRAP_FLARE";
 	model = "z\addons\dayz_communityassets\models\trap_beartrap_dropped_flare.p3d";
@@ -43,12 +43,12 @@ class ItemTrapBearTrapFlare : TrapBear {
 	class ItemActions : ItemActions {
 		class Build : Build {
 			create = "DZE_TrapBearTrapFlare";
-			consume[] = {"ItemTrapBearTrapFlare"};
+			consume[] = {"DZE_Item_Kit_Trap_BearTrapFlare"};
 		};
 	};
 };
 
-class ItemTrapBearTrapSmoke : TrapBear {
+class DZE_Item_Kit_Trap_BearTrapSmoke : DZE_Item_Kit_Trap_BearTrap {
 	displayName = "$STR_ITEM_NAME_BEAR_TRAP_SMOKE";
 	descriptionShort = "$STR_ITEM_DESC_BEAR_TRAP_SMOKE";
 	model = "z\addons\dayz_communityassets\models\trap_beartrap_dropped_smoke.p3d";
@@ -57,7 +57,7 @@ class ItemTrapBearTrapSmoke : TrapBear {
 	class ItemActions : ItemActions {
 		class Build : Build {
 			create = "DZE_TrapBearTrapSmoke";
-			consume[] = {"ItemTrapBearTrapSmoke"};
+			consume[] = {"DZE_Item_Kit_Trap_BearTrapSmoke"};
 		};
 	};
 };

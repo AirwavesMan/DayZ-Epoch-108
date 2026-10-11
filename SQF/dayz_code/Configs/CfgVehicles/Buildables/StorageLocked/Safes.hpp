@@ -26,7 +26,7 @@ class DZE_Safe: DZE_Safe_Base {
 
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSafe";
+		DZE_refundKit = "DZE_Item_Kit_Safe";
 		DZE_neededTools[] = {};
 		DZE_refundArray[] = {};
 	};
@@ -49,7 +49,7 @@ class DZE_Safe2: DZE_Safe {
 	transportMaxBackpacks = 20;
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSafe2";
+		DZE_refundKit = "DZE_Item_Kit_Safe2";
 		DZE_neededTools[] = {};
 		DZE_refundArray[] = {};
 	};
@@ -89,7 +89,7 @@ class DZE_SafeTall: DZE_Safe_Base {
 	
 
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSafeTall";
+		DZE_refundKit = "DZE_Item_Kit_SafeTall";
 		DZE_neededTools[] = {};
 		DZE_refundArray[] = {};
 	};
@@ -123,7 +123,7 @@ class DZE_SafeBroken: DZE_Safe_Base {
 	displayName = "$STR_EPOCH_SAFE_BROKEN";
 	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSafeBroken";
+		DZE_refundKit = "DZE_Item_Kit_SafeBroken";
 		DZE_refundArray[] = {};
 	};	
 };
@@ -136,7 +136,7 @@ class DZE_Safe2Broken: DZE_SafeBroken {
 	transportMaxBackpacks = 20;
 	
 	class RemoveObject: RemoveObject {		
-		DZE_refundKit = "ItemSafe2Broken";
+		DZE_refundKit = "DZE_Item_Kit_Safe2Broken";
 		DZE_refundArray[] = {};
 	};
 };
@@ -165,7 +165,7 @@ class DZE_SafeTallBroken: DZE_Safe_Base {
 		};
 	};
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemSafeTallBroken";
+		DZE_refundKit = "DZE_Item_Kit_SafeTallBroken";
 		DZE_refundArray[] = {};
 	};
 };

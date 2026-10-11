@@ -1,245 +1,242 @@
-class outhouse_kit 
+class DZE_Item_Kit_Outhouse
 {
 	weight = 50;
 };
-class wooden_shed_kit 
+class DZE_Item_Kit_Wooden_Shed
 {
 	weight = 75;
 };
-class wooden_shed_kit2
+class DZE_Item_Kit_Wooden_Shed_2
 {
 	weight = 150;
 };
-class wood_shack_kit 
+class DZE_Item_Kit_Wood_Shack
 {
 	weight = 50;
 };
-class wood_shack_kit2 
+class DZE_Item_Kit_Wood_Shack_2
 {
 	weight = 100;
 };
-class storage_shed_kit 
+class DZE_Item_Kit_Storage_Shed
 {
 	weight = 100;
 };
-class storage_shed_kit2 
+class DZE_Item_Kit_Storage_Shed_2
 {
 	weight = 200;
 };
-class ItemGunRackKit
+class DZE_Item_Kit_GunRack
 {
 	weight = 20;
 };
-class ItemGunRackKit2
+class DZE_Item_Kit_GunRack2
 {
 	weight = 40;
 };
-class ItemWoodCrateKit
+class DZE_Item_Kit_WoodCrate
 {
 	weight = 20;
 };
-class ItemWoodCrateKit2
+class DZE_Item_Kit_WoodCrate2
 {
 	weight = 40;
 };
-class ItemSafe
+class DZE_Item_Kit_Safe
 {
 	weight = 50; 
 };
-class ItemLockbox
+class DZE_Item_Kit_Lockbox
 {
 	weight = 15;
 };
-class StashSmall_kit 
+class DZE_Item_Kit_StashSmall
 { 
 	weight = 2; 
 };
-class ItemSafe2
+class DZE_Item_Kit_Safe2
 {
 	weight = 50;
 };
-class ItemSafeTall
+class DZE_Item_Kit_SafeTall
 {
 	weight = 100;
 };
-class ItemLockbox2
+class DZE_Item_Kit_Lockbox2
 {
 	weight = 15;
 };
-class ItemLockboxWinter
+class DZE_Item_Kit_LockboxWinter
 {
 	weight = 15;
 };
-class ItemLockboxWinter2
+class DZE_Item_Kit_LockboxWinter2
 {
 	weight = 15;
 };
-class ItemSafeBroken
+class DZE_Item_Kit_SafeBroken
 {
 	weight = 50;
 };
-class ItemSafe2Broken
+class DZE_Item_Kit_Safe2Broken
 {
 	weight = 50;
 };
-class ItemSafeTallBroken
+class DZE_Item_Kit_SafeTallBroken
 {
 	weight = 100;
 };
-class ItemLockboxBroken
+class DZE_Item_Kit_LockboxBroken
 {
 	weight = 15;
 };
-class ItemLockbox2Broken
+class DZE_Item_Kit_Lockbox2Broken
 {
 	weight = 15;
 };
-class ItemLockboxWinterBroken
+class DZE_Item_Kit_LockboxWinterBroken
 {
 	weight = 15;
 };
-class ItemLockboxWinter2Broken
+class DZE_Item_Kit_LockboxWinter2Broken
 {
 	weight = 15;
 };
-class cook_tripod_kit
+class DZE_Item_Kit_Cook_Tripod
 {
 	weight = 10;
 };
-class stoneoven_kit
+class DZE_Item_Kit_Stoneoven
 {
 	weight = 50;
 };
-class commode_kit
+class DZE_Item_Kit_Commode
 {
 	weight = 50;
 };
-class wardrobe_kit
+class DZE_Item_Kit_Wardrobe
 {
 	weight = 50;
 };
-class fridge_kit
+class DZE_Item_Kit_Fridge
 {
 	weight = 75;
 };
-class washing_machine_kit
+class DZE_Item_Kit_Washing_Machine
 {
 	weight = 75;
 };
-class server_rack_kit
+class DZE_Item_Kit_Server_Rack
 {
 	weight = 75;
 };
-class atm_kit
+class DZE_Item_Kit_Atm
 {
 	weight = 100;
 };
-class armchair_kit
+class DZE_Item_Kit_Armchair
 {
 	weight = 25;
 };
-class sofa_kit
+class DZE_Item_Kit_Sofa
 {
 	weight = 50;
 };
-class arcade_kit
+class DZE_Item_Kit_Arcade
 {
 	weight = 75;
 };
-class vendmachine1_kit
+class DZE_Item_Kit_Vendmachine1
 {
 	weight = 100;
 };
-class vendmachine2_kit
+class DZE_Item_Kit_Vendmachine2
 {
 	weight = 100;
 };
-class storage_crate_kit
+class DZE_Item_Kit_Storage_Crate
 {
 	weight = 10;
 };
-class advanced_workBench_kit
+class DZE_Item_Kit_Advanced_WorkBench
 {
 	weight = 35;
 };
 // DayZ Mod workbench
-class ItemWorkBench
+class DZE_Item_Kit_WorkBench
 {
 	weight = 10;
 };
-class ItemWorkBench_DZE
-{
-	weight = 10;
-};
-class camo_storage_crate_kit
+
+class DZE_Item_Kit_Camo_Storage_Crate
 {
 	weight = 21;
 };
-class ItemStorageBarrel1_kit
+class DZE_Item_Kit_StorageBarrel1
 {
 	weight = 25;
 };
-class ItemStorageBarrel2_kit
+class DZE_Item_Kit_StorageBarrel2
 {
 	weight = 25;
 };
-class ItemStorageBarrel3_kit
+class DZE_Item_Kit_StorageBarrel3
 {
 	weight = 25;
 };
-class ItemStorageBarrel4_kit
+class DZE_Item_Kit_StorageBarrel4
 {
 	weight = 25;
 };
-class ItemStorageBarrel5_kit
+class DZE_Item_Kit_StorageBarrel5
 {
 	weight = 25;
 };
-class ItemStorageBarrel6_kit
+class DZE_Item_Kit_StorageBarrel6
 {
 	weight = 25;
 };
-class ItemStorageBarrel7_kit
+class DZE_Item_Kit_StorageBarrel7
 {
 	weight = 25;
 };
-class ItemStorageBarrel8_kit
+class DZE_Item_Kit_StorageBarrel8
 {
 	weight = 25;
 };
-class rabbit_hutch_kit
+class DZE_Item_Kit_Rabbit_Hutch
 {
 	weight = 75;
 };
-class chicken_coop_kit
+class DZE_Item_Kit_Chicken_Coop
 {
 	weight = 45;
 };
-class doghouse_kit
+class DZE_Item_Kit_Doghouse
 {
 	weight = 15;
 };
-class postbox_kit
+class DZE_Item_Kit_Postbox
 {
 	weight = 10;
 };
-class wild_bee_hive_kit
+class DZE_Item_Kit_Wild_Bee_Hive
 {
 	weight = 55;
 };
-class cow_stable_kit
+class DZE_Item_Kit_Cow_Stable
 {
 	weight = 180;
 };
-class goat_stable_kit
+class DZE_Item_Kit_Goat_Stable
 {
 	weight = 180;
 };
-class sheep_stable_kit
+class DZE_Item_Kit_Sheep_Stable
 {
 	weight = 180;
 };
-class boar_stable_kit
+class DZE_Item_Kit_Boar_Stable
 {
 	weight = 180;
 };

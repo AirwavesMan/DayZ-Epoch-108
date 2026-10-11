@@ -77,7 +77,7 @@ class DZE_Veh_JetSki_Yellow_1: DZE_Veh_JetSki_Yellow {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_JetSki_Yellow_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_JetSki_Yellow_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -106,7 +106,7 @@ class DZE_Veh_JetSki_Green_1: DZE_Veh_JetSki_Green {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_JetSki_Green_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_JetSki_Green_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -135,7 +135,7 @@ class DZE_Veh_JetSki_Blue_1: DZE_Veh_JetSki_Blue {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_JetSki_Blue_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_JetSki_Blue_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -164,7 +164,7 @@ class DZE_Veh_JetSki_Red_1: DZE_Veh_JetSki_Red {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_JetSki_Red_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_JetSki_Red_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
 	};
 };
 
