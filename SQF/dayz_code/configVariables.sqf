@@ -111,9 +111,9 @@ DZE_Elevator_Classnames = [];
 
 // Uncomment the lines below to change the default loadout
 //DefaultMagazines = ["HandRoadFlare","ItemBandage","ItemPainkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
-//DefaultWeapons = ["Makarov_DZ","DZE_Tool_Flashlight"];
+//DefaultWeapons = ["DZE_Wep_Makarov","DZE_Tool_Flashlight"];
 //DefaultBackpack = "GymBag_Camo_DZE1";
-//DefaultBackpackItems = []; // Can include both weapons and magazines i.e. ["PDW_DZ","30Rnd_9x19_UZI"];
+//DefaultBackpackItems = []; // Can include both weapons and magazines i.e. ["DZE_Wep_PDW","30Rnd_9x19_UZI"];
 
 // Shared by base and storage management; storage-list changes are validated on the server.
 DZE_baseMaxFriends = 10; //Max friends allowed on a base. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.

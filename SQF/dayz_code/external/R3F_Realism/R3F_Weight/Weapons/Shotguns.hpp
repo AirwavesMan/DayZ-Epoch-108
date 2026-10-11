@@ -2,115 +2,94 @@
 {
 	weight = 4;
 };
-class Crossbow_DZ  
-{
+class DZE_Wep_Crossbow {
 	weight = 4;
 };
-class Crossbow_FL_DZ  
-{
+class DZE_Wep_Crossbow_FL {
 	weight = 4.015;
 };
-class Crossbow_CCO_DZ  
-{
+class DZE_Wep_Crossbow_CCO {
 	weight = 4.265;
 };
-class Crossbow_CCO_FL_DZ  
-{
+class DZE_Wep_Crossbow_CCO_FL {
 	weight = 4.28;
 };
-class Crossbow_Scope_DZ  
-{
+class DZE_Wep_Crossbow_Scope {
 	weight = 4.615;
 };
-class Crossbow_Scope_FL_DZ  
-{
+class DZE_Wep_Crossbow_Scope_FL {
 	weight = 4.63;
 };
-class Crossbow_MFL_DZ
-{
+class DZE_Wep_Crossbow_MFL {
 	weight = 4.025;
 };
-class Crossbow_CCO_MFL_DZ
-{
+class DZE_Wep_Crossbow_CCO_MFL {
 	weight = 4.285;
 };
-class Crossbow_Scope_MFL_DZ
-{
+class DZE_Wep_Crossbow_Scope_MFL {
 	weight = 4.655;
 };
 class M1014
 {
 	weight = 3.8;
 }; 
-class M1014_DZ
-{
+class DZE_Wep_M1014 {
 	weight = 3.8;
 };
-class M1014_CCO_DZ
-{
+class DZE_Wep_M1014_CCO {
 	weight = 4.065;
 }; 
-class M1014_Holo_DZ
-{
+class DZE_Wep_M1014_Holo {
 	weight = 4.05;
 }; 
 class Remington870_lamp
 {
 	weight = 3.625;
 }; 
-class Remington870_DZ
-{
+class DZE_Wep_Remington870 {
 	weight = 3.6;
 }; 
-class Remington870_FL_DZ
-{
+class DZE_Wep_Remington870_FL {
 	weight = 3.615;
 }; 
 class MR43
 {
 	weight = 3.3;
 }; 
-class MR43_DZ
-{
+class DZE_Wep_MR43 {
 	weight = 3.3;
 };
 class RedRyder
 {
 	weight = 1.11;
 };
-class RedRyder_DZ
-{
+class DZE_Wep_RedRyder {
 	weight = 1.11;
 };
 class Saiga12K
 {
 	weight = 3.5;
 };
-class Saiga12K_DZ
-{
+class DZE_Wep_Saiga12K {
 	weight = 3.5;
 };
 class Winchester1866
 {
 	weight = 4.8;
 };
-class Winchester1866_DZ
-{
+class DZE_Wep_Winchester1866 {
 	weight = 4.3;
 };
-class Remington870_MFL_DZ
-{
+class DZE_Wep_Remington870_MFL {
 	weight = 3.625;
 };
-class USAS12_DZ
-{
+class DZE_Wep_USAS12 {
 	weight = 5.5;
 };
 class AA12_PMC				
 { 	
 	weight = 5.2;
 };
-class AA12_DZ				
-{ 	
+class DZE_Wep_AA12 {
 	weight = 5.2;
 };

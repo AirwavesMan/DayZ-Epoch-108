@@ -3,7 +3,7 @@ Hunting[] =
 	//Weapons
 	{Loot_GROUP,		10,		shotgunsingleshot},
 	{Loot_GROUP,		1,		Chainsaws},
-	{Loot_WEAPON,		1,		DMR_Gh_DZ},
+	{Loot_WEAPON,		1,		DZE_Wep_DMR_Gh},
 	
 	//Tools
 	{Loot_GROUP,		5,		ToolsSurvival},

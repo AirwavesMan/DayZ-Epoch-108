@@ -1,8 +1,7 @@
-class PPK_DZ: M9
-{
-	scope = 2;	
-	displayName = $STR_DZ_WPN_PPK_NAME;
-	descriptionShort = $STR_DZ_WPN_PPK_DESC;
+class DZE_Wep_PPK: M9 {
+	scope = 2;
+	displayName = "$STR_DZ_WPN_PPK_NAME";
+	descriptionShort = "$STR_DZ_WPN_PPK_DESC";
 	model = "\RH_de\RH_ppk.p3d";
 	picture = "\RH_de\inv\ppk.paa";
 	begin1[] = {"\RH_de\sound\ppk.wss",0.794328,1,700};

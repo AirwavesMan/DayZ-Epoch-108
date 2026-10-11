@@ -1,9 +1,8 @@
-﻿class L110A1_DZ
+﻿class DZE_Wep_L110A1
 {
 	weight = 6.85;
 };
-class L110A1_CCO_DZ
-{
+class DZE_Wep_L110A1_CCO {
 	weight = 7.11;
 };
 class BAF_L110A1_Aim
@@ -14,12 +13,10 @@ class BAF_L110A1_Aim_Small
 {
 	weight = 7.11;
 };
-class L110A1_Holo_DZ
-{
+class DZE_Wep_L110A1_Holo {
 	weight = 7.1;
 };
-class BAF_L110A1_Aim_DZE
-{
+class DZE_Wep_BAF_L110A1_Aim_DZE {
 	weight = 7.11;
 };
 class M249_EP1
@@ -34,28 +31,24 @@ class M249_m145_EP1
 {
 	weight = 7.52;
 };
-class M249_m145_EP1_DZE
-{
+class DZE_Wep_M249_m145_EP1_DZE {
 	weight = 7.52;
 };
 class M60A4_EP1
 {
 	weight = 10.5;
 };
-class M60A4_EP1_DZE
-{
+class DZE_Wep_M60A4_EP1_DZE {
 	weight = 10.5;
 };
 class m240_scoped_EP1
 {
 	weight = 12.7;
 };
-class m240_scoped_EP1_DZE
-{
+class DZE_Wep_m240_scoped_EP1_DZE {
 	weight = 12.7;
 };
-class MG36_Camo_DZ  
-{
+class DZE_Wep_MG36_Camo {
 	weight = 3.63;
 };
 class MG36_camo  
@@ -70,36 +63,29 @@ class M240
 {
 	weight = 12.29;
 };
-class M240_DZ
-{
+class DZE_Wep_M240 {
 	weight = 12.29;
 };
-class M240_CCO_DZ
-{
+class DZE_Wep_M240_CCO {
 	weight = 12.55;
 };
-class M240_Holo_DZ
-{
+class DZE_Wep_M240_Holo {
 	weight = 12.54;
 };
 class M249
 {
 	weight = 6.85;
 };
-class M249_DZ
-{
+class DZE_Wep_M249 {
 	weight = 6.85;
 };
-class M249_Holo_DZ
-{
+class DZE_Wep_M249_Holo {
 	weight = 7.1;
 };
-class M249_CCO_DZ
-{
+class DZE_Wep_M249_CCO {
 	weight = 7.11;
 };
-class M249_EP1_DZ
-{
+class DZE_Wep_M249_EP1 {
 	weight = 6.85;
 };
 class Mk_48
@@ -110,24 +96,20 @@ class Mk_48_DZ
 {
 	weight = 8.2;
 };
-class Mk48_DZ
-{
+class DZE_Wep_Mk48 {
 	weight = 8.2;
 };
-class Mk48_CCO_DZ
-{
+class DZE_Wep_Mk48_CCO {
 	weight = 8.46;
 };
-class Mk48_Holo_DZ
-{
+class DZE_Wep_Mk48_Holo {
 	weight = 8.45;
 };
 class MG36  
 {
 	weight = 3.63;
 };
-class MG36_DZ  
-{
+class DZE_Wep_MG36 {
 	weight = 3.63;
 };
 class PK
@@ -138,84 +120,66 @@ class Pecheneg
 {
 	weight = 9;
 };
-class Pecheneg_DZ
-{
+class DZE_Wep_Pecheneg {
 	weight = 9;
 };
-class PKM_DZ
-{
+class DZE_Wep_PKM {
 	weight = 7.5;
 };
 class RPK_74
 {
 	weight = 5;
 };
-class RPK74_DZ
-{
+class DZE_Wep_RPK74 {
 	weight = 5;
 };
 class RPK_74_Large
 {
 	weight = 5;
 };
-class RPK74_Kobra_DZ
-{
+class DZE_Wep_RPK74_Kobra {
 	weight = 5.36;
 };
-class RPK74_PSO1_DZ
-{
+class DZE_Wep_RPK74_PSO1 {
 	weight = 5.62;
 };
-class RPK_DZ
-{
+class DZE_Wep_RPK {
 	weight = 5;
 };
-class RPK_Kobra_DZ
-{
+class DZE_Wep_RPK_Kobra {
 	weight = 5.36;
 };
-class RPK_PSO1_DZ
-{
+class DZE_Wep_RPK_PSO1 {
 	weight = 5.62;
 };
-class UK59_DZ
-{
+class DZE_Wep_UK59 {
 	weight = 8.6;
 };
-class L86A2_LSW_DZ  
-{
+class DZE_Wep_L86A2_LSW {
 	weight = 7.3;
 };
-class XM8_SAW_DZ  
-{
+class DZE_Wep_XM8_SAW {
 	weight = 2.9;
 };
-class XM8_DES_SAW_DZ  
-{
+class DZE_Wep_XM8_DES_SAW {
 	weight = 2.9;
 };
-class XM8_GREY_SAW_DZ  
-{
+class DZE_Wep_XM8_GREY_SAW {
 	weight = 2.9;
 };
-class Mk43_DZ  
-{
+class DZE_Wep_Mk43 {
 	weight = 10.5;
 };
-class MK43_Holo_DZ  
-{
+class DZE_Wep_MK43_Holo {
 	weight = 10.75;
 };
-class MK43_ACOG_DZ  
-{
+class DZE_Wep_MK43_ACOG {
 	weight = 10.91;
 };
-class Mk48_DES_CCO_DZ  
-{
+class DZE_Wep_Mk48_DES_CCO {
 	weight = 8.46;
 };
-class MK43_M145_DZ  
-{
+class DZE_Wep_MK43_M145 {
 	weight = 11.17;
 };
 class UK59_ACR  

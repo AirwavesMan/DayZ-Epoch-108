@@ -23,7 +23,7 @@ Spawns a weapon with the given classname.
 Syntax:
 	{Loot_WEAPON,		Chance,		Class}
 Example:
-	{Loot_WEAPON,		0.8,		AKM_DZ}
+	{Loot_WEAPON,		0.8,		DZE_Wep_AKM}
 */
 
 

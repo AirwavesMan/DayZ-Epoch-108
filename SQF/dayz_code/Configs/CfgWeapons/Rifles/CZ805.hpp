@@ -1,7 +1,7 @@
 class CZ805_A1_ACR;
-class CZ805_A1_DZ: CZ805_A1_ACR {
-	displayName = $STR_DZ_WPN_CZ_805A1_NAME;
-	descriptionShort = $STR_DZ_WPN_CZ_805A_DESC;	
+class DZE_Wep_CZ805_A1: CZ805_A1_ACR {
+	displayName = "$STR_DZ_WPN_CZ_805A1_NAME";
+	descriptionShort = "$STR_DZ_WPN_CZ_805A_DESC";
 	magazines[] =
 	{
 		30Rnd_556x45_G36,
@@ -9,13 +9,13 @@ class CZ805_A1_DZ: CZ805_A1_ACR {
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_Taped
-	};	
+	};
 };
 
 class CZ805_A1_GL_ACR;
-class CZ805_A1_GL_DZ: CZ805_A1_GL_ACR {
-	displayName = $STR_DZ_WPN_CZ_805A1_GL_NAME;
-	descriptionShort = $STR_DZ_WPN_CZ_805A_DESC;	
+class DZE_Wep_CZ805_A1_GL: CZ805_A1_GL_ACR {
+	displayName = "$STR_DZ_WPN_CZ_805A1_GL_NAME";
+	descriptionShort = "$STR_DZ_WPN_CZ_805A_DESC";
 	magazines[] =
 	{
 		30Rnd_556x45_G36,
@@ -23,13 +23,13 @@ class CZ805_A1_GL_DZ: CZ805_A1_GL_ACR {
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_Taped
-	};	
+	};
 };
 
 class CZ805_A2_ACR;
-class CZ805_A2_DZ: CZ805_A2_ACR {
-	displayName = $STR_DZ_WPN_CZ_805A2_NAME;
-	descriptionShort = $STR_DZ_WPN_CZ_805A_DESC;	
+class DZE_Wep_CZ805_A2: CZ805_A2_ACR {
+	displayName = "$STR_DZ_WPN_CZ_805A2_NAME";
+	descriptionShort = "$STR_DZ_WPN_CZ_805A_DESC";
 	magazines[] =
 	{
 		30Rnd_556x45_G36,
@@ -41,21 +41,21 @@ class CZ805_A2_DZ: CZ805_A2_ACR {
 };
 
 class CZ805_A2_SD_ACR;
-class CZ805_A2_SD_DZ: CZ805_A2_SD_ACR {
-	displayName = $STR_DZ_WPN_CZ_805A2_SD_NAME;
-	descriptionShort = $STR_DZ_WPN_CZ_805A_SD_DESC;	
+class DZE_Wep_CZ805_A2_SD: CZ805_A2_SD_ACR {
+	displayName = "$STR_DZ_WPN_CZ_805A2_SD_NAME";
+	descriptionShort = "$STR_DZ_WPN_CZ_805A_SD_DESC";
 	magazines[] =
 	{
 		30Rnd_556x45_G36SD,
 		30Rnd_556x45_StanagSD,
 		60Rnd_556x45_StanagSD_Taped,
 		100Rnd_556x45_BetaCMagSD
-	};	
+	};
 };
 
 class CZ805_B_GL_ACR;
-class CZ805_B_GL_DZ: CZ805_B_GL_ACR {	
-	displayName = $STR_DZ_WPN_CZ_805B_NAME;
-	descriptionShort = $STR_DZ_WPN_CZ_805B_DESC;	
+class DZE_Wep_CZ805_B_GL: CZ805_B_GL_ACR {
+	displayName = "$STR_DZ_WPN_CZ_805B_NAME";
+	descriptionShort = "$STR_DZ_WPN_CZ_805B_DESC";
 	magazines[] = {"20Rnd_762x51_B_SCAR"};
 };

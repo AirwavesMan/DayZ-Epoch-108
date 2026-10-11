@@ -1,24 +1,23 @@
-class MR43_Base : Rifle
-{
+class DZE_Wep_MR43_Base : Rifle {
 	scope = 2;
-	
-	descriptionShort = $STR_DZ_WPN_MR43_DESC;
-	
+	descriptionShort = "$STR_DZ_WPN_MR43_DESC";
+
 	magazines[] =
 	{
-		2Rnd_12Gauge_Buck,	
-		2Rnd_12Gauge_Slug		
+		2Rnd_12Gauge_Buck,
+		2Rnd_12Gauge_Slug
 	};
-	
+
 	handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons_E\Data\Anim\LeeEnfield.rtm"};
-	
+
 	distanceZoomMin = 100;
 	distanceZoomMax = 100;
-	
+
 	modes[] = {"Single","Double"};
-	
-	class Single : Mode_SemiAuto
-	{
+
+	class Single : Mode_SemiAuto {
+		recoil = "recoil_single_primary_9outof10";
+		recoilProne = "recoil_single_primary_prone_8outof10";
 		dispersion = 0.003;
 		soundContinuous = 0;
 		reloadTime = 0.01;
@@ -26,12 +25,11 @@ class MR43_Base : Rifle
 		DB_shotgun_1[] = {"dayz_weapons\sounds\DB_shotgun_1", 1.77828, 1, 1000};
 		soundBegin[] = {"DB_shotgun_1", 1};
 		drySound[] = {"ca\sounds\weapons\rifles\dry", 0.01, 1, 10};
+	};
+	class Double : Mode_Burst {
+		displayName = "$STR_DZ_WPN_MR43_DSMODE_NAME";
 		recoil = "recoil_single_primary_9outof10";
 		recoilProne = "recoil_single_primary_prone_8outof10";
-	};
-	class Double : Mode_Burst
-	{
-		displayName = $STR_DZ_WPN_MR43_DSMODE_NAME;
 		dispersion = 0.003;
 		soundContinuous = 0;
 		reloadTime = 0.001;
@@ -40,14 +38,11 @@ class MR43_Base : Rifle
 		DB_shotgun_1[] = {"dayz_weapons\sounds\DB_shotgun_1", 1.77828, 1, 1000};
 		soundBegin[] = {"DB_shotgun_1", 1};
 		drySound[] = {"ca\sounds\weapons\rifles\dry", 0.01, 1, 10};
-		recoil = "recoil_single_primary_9outof10";
-		recoilProne = "recoil_single_primary_prone_8outof10";
 	};
 };
 
-class MR43_DZ : MR43_Base
-{
+class DZE_Wep_MR43 : DZE_Wep_MR43_Base {
+	displayname = "$STR_DZ_WPN_MR43_NAME";
 	model = "\dayz_weapons\models\mr43.p3d";
 	picture = "\dayz_weapons\textures\equip_mr43_CA.paa";
-	displayname = $STR_DZ_WPN_MR43_NAME;
 };

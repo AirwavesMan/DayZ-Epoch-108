@@ -1,12 +1,12 @@
 //TODO: configure recoil, rate of fire etc (different from akm)
 
-class RPK_DZ : AK_47_M
-{
+class DZE_Wep_RPK : AK_47_M {
+	displayName = "$STR_DZ_WPN_RPK_NAME";
+	descriptionShort = "$STR_DZ_WPN_RPK_DESC";
 	model = "z\addons\dayz_communityweapons\rpk\rpk.p3d";
 	picture = "\z\addons\dayz_communityweapons\rpk\data\w_rpk_ca.paa";
-	displayName = $STR_DZ_WPN_RPK_NAME;
-	descriptionShort = $STR_DZ_WPN_RPK_DESC;
-	
+	weaponInfoType = "RscWeaponZeroing";
+
 	magazines[] =
 	{
 		75Rnd_762x39_RPK,
@@ -14,68 +14,62 @@ class RPK_DZ : AK_47_M
 		30Rnd_762x39_SA58,
 		60Rnd_762x39_AK47_Taped
 	};
-	
+
 	modes[] = {FullAuto,Single};
-	
+
 	//iron sight zeroing
-	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
 	discreteDistanceInitIndex = 0;
 	//iron sight zeroing end
-	
-	class Attachments
-	{
-		Attachment_Kobra = RPK_Kobra_DZ;
-		Attachment_PSO1 = RPK_PSO1_DZ;
+
+	class Attachments {
+		Attachment_Kobra = DZE_Wep_RPK_Kobra;
+		Attachment_PSO1 = DZE_Wep_RPK_PSO1;
 	};
-	
+
 	class ItemActions {};
 };
 
-class RPK_Kobra_DZ : RPK_DZ
-{
+class DZE_Wep_RPK_Kobra : DZE_Wep_RPK {
+	displayName = "$STR_DZ_WPN_RPK_KOBRA_NAME";
 	model = "z\addons\dayz_communityweapons\rpk\rpk_kobra.p3d";
 	picture = "\z\addons\dayz_communityweapons\rpk\data\w_rpk_kobra_ca.paa";
-	displayName = $STR_DZ_WPN_RPK_KOBRA_NAME;
-	
-	//kobra zeroing
 	weaponInfoType = "RscWeaponEmpty";
+
+	//kobra zeroing
 	discreteDistance[] = {};
 	discreteDistanceInitIndex = 0;
 	distanceZoomMin = 200;
 	distanceZoomMax = 200;
 	//kobra zeroing end
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveKobra
-		{
-			text = $STR_DZ_ATT_KOBRA_RMVE;
-			script = "; ['Attachment_Kobra',_id,'RPK_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveKobra {
+			text = "$STR_DZ_ATT_KOBRA_RMVE";
+			script = "; ['Attachment_Kobra',_id,'DZE_Wep_RPK'] call player_removeAttachment";
 		};
 	};
 };
 
-class RPK_PSO1_DZ : RPK_Kobra_DZ
-{
+class DZE_Wep_RPK_PSO1 : DZE_Wep_RPK_Kobra {
+	displayName = "$STR_DZ_WPN_RPK_PSO1_NAME";
 	model = "z\addons\dayz_communityweapons\rpk\rpk_pso.p3d";
 	picture = "\z\addons\dayz_communityweapons\rpk\data\w_rpk_pso_ca.paa";
-	displayName = $STR_DZ_WPN_RPK_PSO1_NAME;
-	
+	modelOptics = "\ca\weapons\optika_snpiere";
+
 	//PSO-1
 	optics = true;
 	opticsDisablePeripherialVision = true;
-	modelOptics = "\ca\weapons\optika_snpiere";
 	opticsPPEffects[]={"OpticsCHAbera3","OpticsBlur3"};
 	opticsZoomMin=0.0623; opticsZoomMax=0.0623;
 	distanceZoomMin= 200; distanceZoomMax= 200;
 
-	class OpticsModes
-	{
-		class Scope
-		{
+	class OpticsModes {
+		class Scope {
+			memoryPointCamera = "opticView";
+			cameraDir = "";
 			opticsID = 1;
 			useModelOptics = true;
 			opticsFlare = true;
@@ -85,14 +79,13 @@ class RPK_PSO1_DZ : RPK_Kobra_DZ
 			opticsZoomInit = 0.0623;
 			distanceZoomMin = 200;
 			distanceZoomMax = 200;
-			memoryPointCamera = "opticView";
 			visionMode[] = {"Normal"};
 			opticsPPEffects[] = {"OpticsCHAbera3","OpticsBlur3"};
-			cameraDir = "";
 		};
-		
-		class Ironsights
-		{
+
+		class Ironsights {
+			memoryPointCamera = "eye";
+			cameraDir = "";
 			opticsID = 2;
 			useModelOptics = false;
 			opticsFlare = false;
@@ -102,22 +95,18 @@ class RPK_PSO1_DZ : RPK_Kobra_DZ
 			opticsZoomInit = 0.5;
 			distanceZoomMin = 100;
 			distanceZoomMax = 100;
-			memoryPointCamera = "eye";
 			visionMode[] = {};
 			opticsPPEffects[] = {};
-			cameraDir = "";
 		};
 	};
 	//PSO-1 end
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemovePSO1
-		{
-			text = $STR_DZ_ATT_PSO1_RMVE;
-			script = "; ['Attachment_PSO1',_id,'RPK_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemovePSO1 {
+			text = "$STR_DZ_ATT_PSO1_RMVE";
+			script = "; ['Attachment_PSO1',_id,'DZE_Wep_RPK'] call player_removeAttachment";
 		};
 	};
 };

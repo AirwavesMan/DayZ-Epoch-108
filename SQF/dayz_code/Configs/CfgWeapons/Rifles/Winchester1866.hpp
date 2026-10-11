@@ -1,19 +1,19 @@
-class Winchester1866_Base : Rifle
-{
+class DZE_Wep_Winchester1866_Base : Rifle {
 	scope = 2;
-	descriptionShort = $STR_DZ_WPN_W1866_DESC;
-	
+	descriptionShort = "$STR_DZ_WPN_W1866_DESC";
+
 	magazines[] = {15Rnd_W1866_Slug};
-	
+
 	handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons_E\Data\Anim\LeeEnfield.rtm"};
-	
+
 	distanceZoomMin = 100;
 	distanceZoomMax = 100;
-	
+
 	modes[] = {"Single"};
-	
-	class Single : Mode_SemiAuto
-	{
+
+	class Single : Mode_SemiAuto {
+		recoil = "recoil_single_primary_9outof10";
+		recoilProne = "recoil_single_primary_prone_8outof10";
 		dispersion = 0.003;
 		soundContinuous = 0;
 		reloadTime = 0.5;
@@ -21,14 +21,11 @@ class Winchester1866_Base : Rifle
 		begin1[] = {"dayz_epoch_c\sounds\weapons\winchester_shot", 1.77828, 1, 1000};
 		soundBegin[] = {"begin1", 1};
 		drySound[] = {"ca\sounds\weapons\rifles\dry", 0.01, 1, 10};
-		recoil = "recoil_single_primary_9outof10";
-		recoilProne = "recoil_single_primary_prone_8outof10";
 	};
 };
 
-class Winchester1866_DZ : Winchester1866_Base
-{
+class DZE_Wep_Winchester1866 : DZE_Wep_Winchester1866_Base {
+	displayname = "$STR_DZ_WPN_W1866_NAME";
 	model = "\dayz_weapons\models\Winchester1866.p3d";
 	picture = "\dayz_weapons\textures\equip_winchester1866_CA.paa";
-	displayname = $STR_DZ_WPN_W1866_NAME;
 };

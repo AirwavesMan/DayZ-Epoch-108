@@ -2,64 +2,54 @@
 {
 	weight = 0.625;
 };
-class G17_DZ
-{
+class DZE_Wep_G17 {
 	weight = 0.625;
 };
-class G17_FL_DZ
-{
+class DZE_Wep_G17_FL {
 	weight = 0.64;
 };
-class G17_SD_DZ
-{
+class DZE_Wep_G17_SD {
 	weight = 0.96;
 };
-class G17_SD_FL_DZ
-{
+class DZE_Wep_G17_SD_FL {
 	weight = 0.975;
 };
 class revolver_EP1
 {
 	weight = 1.25;
 };
-class Revolver_DZ
-{
+class DZE_Wep_Revolver {
 	weight = 1.25;
 };
 class revolver_gold_EP1
 {
 	weight = 2;
 };
-class Revolver_Gold_DZ
-{
+class DZE_Wep_Revolver_Gold {
 	weight = 2;
 };
 class Colt1911
 {
 	weight = 1.12;
 };
-class M1911_DZ
-{
+class DZE_Wep_M1911 {
 	weight = 1.12;
 };
 class M9
 {
 	weight = 0.952;
 };
-class M9_DZ
-{
+class DZE_Wep_M9 {
 	weight = 0.952;
 };
 class M9SD
 {
 	weight = 1.287;
 };
-class M9_SD_DZ
-{
+class DZE_Wep_M9_SD {
 	weight = 1.287;
 };
-class M9_Camo_DZ
-{
+class DZE_Wep_M9_Camo {
 	weight = 1.287;
 };
 class Makarov
@@ -70,92 +60,70 @@ class MakarovSD
 {
 	weight = 1;
 };
-class Makarov_DZ
-{
+class DZE_Wep_Makarov {
 	weight = 0.73;
 };
-class Makarov_SD_DZ
-{
+class DZE_Wep_Makarov_SD {
 	weight = 1;
 };
-class MK22_DZ
-{
+class DZE_Wep_MK22 {
 	weight = 0.78;
 };
-class MK22_SD_DZ
-{
+class DZE_Wep_MK22_SD {
 	weight = 1.115;
 };
-class MK22_2_DZ
-{
+class DZE_Wep_MK22_2 {
 	weight = 0.78;
 };
-class MK22_2_SD_DZ
-{
+class DZE_Wep_MK22_2_SD {
 	weight = 1.115;
 };
-class P99_Green_SD_DZ
-{
+class DZE_Wep_P99_Green_SD {
 	weight = 1.035;
 };
-class P99_Green_DZ
-{
+class DZE_Wep_P99_Green {
 	weight = 0.7;
 };
-class P99_Black_SD_DZ
-{
+class DZE_Wep_P99_Black_SD {
 	weight = 1.035;
 };
-class P99_Black_DZ
-{
+class DZE_Wep_P99_Black {
 	weight = 0.7;
 };
-class P99_Silver_SD_DZ
-{
+class DZE_Wep_P99_Silver_SD {
 	weight = 1.035;
 };
-class P99_Silver_DZ
-{
+class DZE_Wep_P99_Silver {
 	weight = 0.7;
 };
-class Kimber_M1911_DZ
-{
+class DZE_Wep_Kimber_M1911 {
 	weight = 1.12;
 };
-class Kimber_M1911_SD_DZ
-{
+class DZE_Wep_Kimber_M1911_SD {
 	weight = 1.276;
 };
-class USP_DZ
-{
+class DZE_Wep_USP {
 	weight = 0.748;
 };
-class USP_SD_DZ
-{
+class DZE_Wep_USP_SD {
 	weight = 1.083;
 };
-class BrowningHP_DZ
-{
+class DZE_Wep_BrowningHP {
 	weight = 0.885;
 };
-class Colt_Anaconda_DZ
-{
+class DZE_Wep_Colt_Anaconda {
 	weight = 1.5;
 };
-class Colt_Anaconda_Gold_DZ
-{
+class DZE_Wep_Colt_Anaconda_Gold {
 	weight = 3.5;
 };
-class Colt_Bull_DZ
-{
+class DZE_Wep_Colt_Bull {
 	weight = 1.5;
 };
-class Colt_Python_DZ
-{
+class DZE_Wep_Colt_Python {
 	weight = 1.2;
 };
-class M1911_2_DZ
-{
+class DZE_Wep_M1911_2 {
 	weight = 1.12;
 };
 class CZ_75_D_COMPACT
@@ -174,95 +142,72 @@ class CZ_75_SP_01_PHANTOM_SD
 {
 	weight = 1.455;
 };
-class M9_Camo_SD_DZ
-{
+class DZE_Wep_M9_Camo_SD {
 	weight = 1.287;
 };
-class M93R_DZ
-{
+class DZE_Wep_M93R {
 	weight = 1.12;
 };
-class P226_DZ
-{
+class DZE_Wep_P226 {
 	weight = 0.802;
 };
-class P226_Silver_DZ
-{
+class DZE_Wep_P226_Silver {
 	weight = 0.802;
 };
-class P38_DZ
-{
+class DZE_Wep_P38 {
 	weight = 0.880;
 };
-class PPK_DZ
-{
+class DZE_Wep_PPK {
 	weight = 0.682;
 };
-class G17_MFL_DZ
-{
+class DZE_Wep_G17_MFL {
 	weight = 0.65;
 };
-class G17_SD_MFL_DZ
-{
+class DZE_Wep_G17_SD_MFL {
 	weight = 0.985;
 };
-class G18_DZ
-{
+class DZE_Wep_G18 {
 	weight = 0.58;
 };
-class Tokarew_TT33_DZ 		
-{ 	
+class DZE_Wep_Tokarew_TT33 {
 	weight = 0.854;
 };
-class Ruger_MK2_DZ 		
-{ 	
+class DZE_Wep_Ruger_MK2 {
 	weight = 0.88;
 };
-class APS_DZ		
-{ 	
+class DZE_Wep_APS {
 	weight = 1.02;
 };
-class APS_SD_DZ 
-{ 	
+class DZE_Wep_APS_SD {
 	weight = 1.355;
 };
-class TEC9_DZ 	
-{ 	
+class DZE_Wep_TEC9 {
 	weight = 1.4;
 };
-class Colt_Revolver_DZ 	
-{ 	
+class DZE_Wep_Colt_Revolver {
 	weight = 1.25;
 };
-class CZ75P_DZ 		
-{ 	
+class DZE_Wep_CZ75P {
 	weight = 1.12;
 };
-class CZ75D_DZ 		
-{ 	
+class DZE_Wep_CZ75D {
 	weight = 1.12;
 };
-class CZ75SP_DZ 	
-{ 		
+class DZE_Wep_CZ75SP {
 	weight = 1.12;
 };
-class CZ75SP_SD_DZ 	
-{ 	
+class DZE_Wep_CZ75SP_SD {
 	weight = 1.455;
 };
-class DesertEagle_DZ 
-{ 	
+class DZE_Wep_DesertEagle {
 	weight = 1.7;
 };
-class DesertEagle_Gold_DZ
-{
+class DZE_Wep_DesertEagle_Gold {
 	weight = 4;
 };
-class DesertEagle_Silver_DZ
-{
+class DZE_Wep_DesertEagle_Silver {
 	weight = 2.7;
 };
-class DesertEagle_Modern_DZ
-{
+class DZE_Wep_DesertEagle_Modern {
 	weight = 1.6;
 };

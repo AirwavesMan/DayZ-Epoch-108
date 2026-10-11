@@ -1,163 +1,141 @@
 class AK_107_kobra;
-class AK107_Kobra_DZ : AK_107_kobra 
-{
-	displayName = $STR_DZ_WPN_AK107_KOBRA_NAME;
+class DZE_Wep_AK107_Kobra : AK_107_kobra {
+	displayName = "$STR_DZ_WPN_AK107_KOBRA_NAME";
 	modes[] = {"Single","Burst","FullAuto"};
-	
+
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
 		60Rnd_545x39_AK_Taped,
 		75Rnd_545x39_RPK
 	};
-	
-	class Attachments
-	{
-		Attachment_GP25 = "AK107_GL_Kobra_DZ";
+
+	class Attachments {
+		Attachment_GP25 = "DZE_Wep_AK107_GL_Kobra";
 	};
-	
-	class ItemActions
-	{
-		class RemoveKobra
-		{
-			text = $STR_DZ_ATT_KOBRA_RMVE;
-			script = "; ['Attachment_Kobra',_id,'AK107_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveKobra {
+			text = "$STR_DZ_ATT_KOBRA_RMVE";
+			script = "; ['Attachment_Kobra',_id,'DZE_Wep_AK107'] call player_removeAttachment";
 		};
-	};	
+	};
 };
 
 class AK_107_CP;
-class AK107_DZ : AK_107_CP
-{
-	displayName = $STR_DZ_WPN_AK107_NAME;
+class DZE_Wep_AK107 : AK_107_CP {
+	displayName = "$STR_DZ_WPN_AK107_NAME";
 	modes[] = {"Single","Burst","FullAuto"};
-	
+
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
 		60Rnd_545x39_AK_Taped,
 		75Rnd_545x39_RPK
-	};	
-	
-	class Attachments
-	{
-		Attachment_Kobra = "AK107_Kobra_DZ";
-		Attachment_PSO1 = "AK107_PSO_DZ";
-		Attachment_GP25 = "AK107_GL_DZ";
 	};
-	
+
+	class Attachments {
+		Attachment_Kobra = "DZE_Wep_AK107_Kobra";
+		Attachment_PSO1 = "DZE_Wep_AK107_PSO";
+		Attachment_GP25 = "DZE_Wep_AK107_GL";
+	};
+
 	class ItemActions {};
 };
 
 class AK_107_GL_CP;
-class AK107_GL_DZ : AK_107_GL_CP
-{
-	displayName = $STR_DZ_WPN_AK107_GL_NAME;
+class DZE_Wep_AK107_GL : AK_107_GL_CP {
+	displayName = "$STR_DZ_WPN_AK107_GL_NAME";
 	modes[] = {"Single","Burst","FullAuto"};
-	
+
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
 		60Rnd_545x39_AK_Taped,
 		75Rnd_545x39_RPK
 	};
-		
-	class Attachments
-	{
-		Attachment_Kobra = "AK107_GL_Kobra_DZ";
-		Attachment_PSO1 = "AK107_GL_PSO_DZ";
+
+	class Attachments {
+		Attachment_Kobra = "DZE_Wep_AK107_GL_Kobra";
+		Attachment_PSO1 = "DZE_Wep_AK107_GL_PSO";
 	};
-	class ItemActions
-	{
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_GP25_RMVE;
-			script = "; ['Attachment_GP25',_id,'AK107_DZ'] call player_removeAttachment";
+	class ItemActions {
+		class RemoveGL {
+			text = "$STR_DZ_ATT_GP25_RMVE";
+			script = "; ['Attachment_GP25',_id,'DZE_Wep_AK107'] call player_removeAttachment";
 		};
-	};	
+	};
 };
 
 class AK_107_pso;
-class AK107_PSO_DZ : AK_107_pso
-{
-	displayName = $STR_DZ_WPN_AK107_PSO1_NAME;
+class DZE_Wep_AK107_PSO : AK_107_pso {
+	displayName = "$STR_DZ_WPN_AK107_PSO1_NAME";
 	modes[] = {"Single","Burst","FullAuto"};
-	
+
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
 		60Rnd_545x39_AK_Taped,
 		75Rnd_545x39_RPK
 	};
-		
-	class Attachments
-	{
-		Attachment_GP25 = "AK107_GL_PSO_DZ";
+
+	class Attachments {
+		Attachment_GP25 = "DZE_Wep_AK107_GL_PSO";
 	};
-	class ItemActions
-	{
-		class RemovePSO1
-		{
-			text = $STR_DZ_ATT_PSO1_RMVE;
-			script = "; ['Attachment_PSO1',_id,'AK107_DZ'] call player_removeAttachment";
+	class ItemActions {
+		class RemovePSO1 {
+			text = "$STR_DZ_ATT_PSO1_RMVE";
+			script = "; ['Attachment_PSO1',_id,'DZE_Wep_AK107'] call player_removeAttachment";
 		};
-	};	
+	};
 };
 
 class AK_107_GL_pso;
-class AK107_GL_PSO_DZ : AK_107_GL_pso
-{
-	displayName = $STR_DZ_WPN_AK107_GL_PSO1_NAME;
+class DZE_Wep_AK107_GL_PSO : AK_107_GL_pso {
+	displayName = "$STR_DZ_WPN_AK107_GL_PSO1_NAME";
 	modes[] = {"Single","Burst","FullAuto"};
-	
+
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
 		60Rnd_545x39_AK_Taped,
 		75Rnd_545x39_RPK
 	};
-		
+
 	class Attachments {};
-	class ItemActions
-	{
-		class RemovePSO1
-		{
-			text = $STR_DZ_ATT_PSO1_RMVE;
-			script = "; ['Attachment_PSO1',_id,'AK107_GL_DZ'] call player_removeAttachment";
+	class ItemActions {
+		class RemovePSO1 {
+			text = "$STR_DZ_ATT_PSO1_RMVE";
+			script = "; ['Attachment_PSO1',_id,'DZE_Wep_AK107_GL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_GP25_RMVE;
-			script = "; ['Attachment_GP25',_id,'AK107_PSO_DZ'] call player_removeAttachment";
-		};			
-	};		
+		class RemoveGL {
+			text = "$STR_DZ_ATT_GP25_RMVE";
+			script = "; ['Attachment_GP25',_id,'DZE_Wep_AK107_PSO'] call player_removeAttachment";
+		};
+	};
 };
 
 class AK_107_GL_kobra;
-class AK107_GL_Kobra_DZ : AK_107_GL_kobra
-{
-	displayName = $STR_DZ_WPN_AK107_GL_KOBRA_NAME;
+class DZE_Wep_AK107_GL_Kobra : AK_107_GL_kobra {
+	displayName = "$STR_DZ_WPN_AK107_GL_KOBRA_NAME";
 	modes[] = {"Single","Burst","FullAuto"};
-	
+
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
 		60Rnd_545x39_AK_Taped,
 		75Rnd_545x39_RPK
 	};
-		
+
 	class Attachments {};
-	class ItemActions
-	{
-		class RemoveKobra
-		{
-			text = $STR_DZ_ATT_KOBRA_RMVE;
-			script = "; ['Attachment_Kobra',_id,'AK107_GL_DZ'] call player_removeAttachment";
+	class ItemActions {
+		class RemoveKobra {
+			text = "$STR_DZ_ATT_KOBRA_RMVE";
+			script = "; ['Attachment_Kobra',_id,'DZE_Wep_AK107_GL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_GP25_RMVE;
-			script = "; ['Attachment_GP25',_id,'AK107_Kobra_DZ'] call player_removeAttachment";
-		};			
-	};	
+		class RemoveGL {
+			text = "$STR_DZ_ATT_GP25_RMVE";
+			script = "; ['Attachment_GP25',_id,'DZE_Wep_AK107_Kobra'] call player_removeAttachment";
+		};
+	};
 };

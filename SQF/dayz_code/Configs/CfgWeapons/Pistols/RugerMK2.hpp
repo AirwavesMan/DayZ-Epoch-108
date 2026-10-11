@@ -1,8 +1,7 @@
-class Ruger_MK2_DZ: Makarov
-{
+class DZE_Wep_Ruger_MK2: Makarov {
 	scope = 2;
-	displayName = $STR_DZ_WPN_RUGERMK2_NAME;
-	descriptionShort = $STR_DZ_WPN_RUGERMK2_DESC;	
+	displayName = "$STR_DZ_WPN_RUGERMK2_NAME";
+	descriptionShort = "$STR_DZ_WPN_RUGERMK2_DESC";
 	model = "\RH_de\RH_mk2.p3d";
 	picture = "\RH_de\inv\mk2.paa";
 	begin1[] = {"\RH_de\sound\Mk2.wss",0.316228,1,200};

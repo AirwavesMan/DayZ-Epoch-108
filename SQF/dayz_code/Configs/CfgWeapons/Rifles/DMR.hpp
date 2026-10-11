@@ -1,60 +1,49 @@
-class DMR_DZ : DMR // Works with NVG
-{
-	displayName = $STR_DZ_WPN_DMR_NAME;
-	
+class DZE_Wep_DMR : DMR { // Works with NVG
+	displayName = "$STR_DZ_WPN_DMR_NAME";
+
 	//A2OA DMR does not allow NVG after 2018-04-05 CorePatch
 	visionMode[] = {};
-	
-	class Attachments
-	{
-		Attachment_Ghillie = "DMR_Gh_DZ";
+
+	class Attachments {
+		Attachment_Ghillie = "DZE_Wep_DMR_Gh";
 	};
 };
 
-class DMR_SKN : DMR_DZ {};
+class DZE_Wep_DMR_SKN : DZE_Wep_DMR {};
 
-class DMR_Gh_DZ : DMR_DZ
-{
+class DZE_Wep_DMR_Gh : DZE_Wep_DMR {
+	displayName = "$STR_DZ_WPN_DMR_GH_NAME";
 	model = "z\addons\dayz_communityweapons\dmr\dmr_ghillie.p3d";
 	picture = "\z\addons\dayz_communityweapons\dmr\data\w_dmr_ghillie_ca.paa";
-	displayName = $STR_DZ_WPN_DMR_GH_NAME;
-	
 	memoryPointCamera = "opticView";
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveGhillie
-		{
-			text = $STR_DZ_ATT_GHIL_RMVE;
-			script = "; ['Attachment_Ghillie',_id,'DMR_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveGhillie {
+			text = "$STR_DZ_ATT_GHIL_RMVE";
+			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_DMR'] call player_removeAttachment";
 		};
 	};
 };
 
 //DMR without NVG support
 
-class DMR_DZE : DMR_DZ
-{		
+class DZE_Wep_DMR_NoNVG : DZE_Wep_DMR {
 	visionMode[] = {"Normal"};
-	
-	class Attachments
-	{
-		Attachment_Ghillie = "DMR_Gh_DZE";
+
+	class Attachments {
+		Attachment_Ghillie = "DZE_Wep_DMR_Gh_NoNVG";
 	};
 };
 
-class DMR_Gh_DZE : DMR_Gh_DZ
-{
+class DZE_Wep_DMR_Gh_NoNVG : DZE_Wep_DMR_Gh {
 	visionMode[] = {"Normal"};
-	
-	class ItemActions
-	{
-		class RemoveGhillie
-		{
-			text = $STR_DZ_ATT_GHIL_RMVE;
-			script = "; ['Attachment_Ghillie',_id,'DMR_DZE'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveGhillie {
+			text = "$STR_DZ_ATT_GHIL_RMVE";
+			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_DMR_NoNVG'] call player_removeAttachment";
 		};
 	};
 };

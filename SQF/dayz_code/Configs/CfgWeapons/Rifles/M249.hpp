@@ -1,12 +1,12 @@
-class M249_CCO_DZ : M249
-{
+class M249;
+class DZE_Wep_M249_CCO : M249 {
+	displayName = "$STR_DZ_WPN_M249_CCO_NAME";
 	model = "z\addons\dayz_communityweapons\m249\m249_cco.p3d";
 	picture = "\z\addons\dayz_communityweapons\m249\data\w_m249_cco_ca.paa";
-	displayName = $STR_DZ_WPN_M249_CCO_NAME;
-	
+
 	type = 1;
-	
-	magazines[] = 
+
+	magazines[] =
 	{
 		200Rnd_556x45_M249,
 		200Rnd_556x45_L110A1,
@@ -17,59 +17,52 @@ class M249_CCO_DZ : M249
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_Taped
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M249_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M249'] call player_removeAttachment";
 		};
 	};
 };
 
-class M249_DZ : M249_CCO_DZ
-{
+class DZE_Wep_M249 : DZE_Wep_M249_CCO {
+	displayName = "$STR_DZ_WPN_M249_NAME";
 	model = "ca\weapons\m249.p3d";
 	picture = "\z\addons\dayz_communityweapons\m249\data\w_m249_ca.paa";
-	displayName = $STR_DZ_WPN_M249_NAME;
-	
-	//iron sight zeroing
 	weaponInfoType = "RscWeaponZeroing";
+
+	//iron sight zeroing
 	discreteDistance[] = {300,400,500,600,700,800,900,1000};
 	discreteDistanceInitIndex = 0;
 	//iron sight zeroing end
-	
-	class Attachments
-	{
-		Attachment_CCO = "M249_CCO_DZ";
-		Attachment_Holo = "M249_Holo_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M249_CCO";
+		Attachment_Holo = "DZE_Wep_M249_Holo";
 	};
-	
+
 	class ItemActions {};
 };
 
-class M249_Holo_DZ : M249_CCO_DZ
-{
+class DZE_Wep_M249_Holo : DZE_Wep_M249_CCO {
+	displayName = "$STR_DZ_WPN_M249_HOLO_NAME";
 	model = "z\addons\dayz_communityweapons\m249\m249_holo.p3d";
 	picture = "\z\addons\dayz_communityweapons\m249\data\w_m249_holo_ca.paa";
-	displayName = $STR_DZ_WPN_M249_HOLO_NAME;
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M249_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M249'] call player_removeAttachment";
 		};
 	};
 };
 
 class M249_EP1;
-class M249_EP1_DZ: M249_EP1 { //Iron sight with shorter stock (slightly different look from M249_DZ) can also fire MG36 mags
+class DZE_Wep_M249_EP1: M249_EP1 { //Iron sight with shorter stock (slightly different look from DZE_Wep_M249) can also fire MG36 mags
 	type = 1;
-	
-	magazines[] = 
+
+	magazines[] =
 	{
 		200Rnd_556x45_M249,
 		200Rnd_556x45_L110A1,
@@ -79,14 +72,14 @@ class M249_EP1_DZ: M249_EP1 { //Iron sight with shorter stock (slightly differen
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_Taped
-	};	
+	};
 };
 
 class M249_m145_EP1;
-class M249_m145_EP1_DZE: M249_m145_EP1 {
+class DZE_Wep_M249_m145_EP1_DZE: M249_m145_EP1 {
 	type = 1;
-	
-	magazines[] = 
+
+	magazines[] =
 	{
 		200Rnd_556x45_M249,
 		200Rnd_556x45_L110A1,
@@ -96,5 +89,5 @@ class M249_m145_EP1_DZE: M249_m145_EP1 {
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_Taped
-	};	
+	};
 };

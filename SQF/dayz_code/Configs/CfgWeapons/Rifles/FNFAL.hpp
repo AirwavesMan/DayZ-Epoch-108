@@ -1,73 +1,64 @@
-class FNFAL_DZ : FN_FAL
-{
+class FN_FAL;
+class DZE_Wep_FNFAL : FN_FAL {
+	displayName = "$STR_DZ_WPN_FNFAL_NAME";
 	model = "z\addons\dayz_communityweapons\fnfal\fnfal.p3d";
 	picture = "\z\addons\dayz_communityweapons\fnfal\data\w_fnfal_ca.paa";
-	displayName = $STR_DZ_WPN_FNFAL_NAME;
-	
+
 	magazines[] = {20Rnd_762x51_FNFAL};
-	
+
 	modes[] = {Single, FullAuto};
-	
+
 	distanceZoomMin = 300;
 	distanceZoomMax = 300;
-	
-	class Attachments
-	{
-		Attachment_CCO = "FNFAL_CCO_DZ";
-		Attachment_Holo = "FNFAL_Holo_DZ";
-		Attachment_ANPVS4 = "FN_FAL_ANPVS4_DZE";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_FNFAL_CCO";
+		Attachment_Holo = "DZE_Wep_FNFAL_Holo";
+		Attachment_ANPVS4 = "DZE_Wep_FN_FAL_ANPVS4_DZE";
 	};
 };
 
-class FNFAL_CCO_DZ : FNFAL_DZ
-{
+class DZE_Wep_FNFAL_CCO : DZE_Wep_FNFAL {
+	displayName = "$STR_DZ_WPN_FNFAL_CCO_NAME";
 	model = "z\addons\dayz_communityweapons\fnfal\fnfal_cco.p3d";
 	picture = "\z\addons\dayz_communityweapons\fnfal\data\w_fnfal_cco_ca.paa";
-	displayName = $STR_DZ_WPN_FNFAL_CCO_NAME;
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'FNFAL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_FNFAL'] call player_removeAttachment";
 		};
 	};
 };
 
-class FNFAL_Holo_DZ : FNFAL_CCO_DZ
-{
+class DZE_Wep_FNFAL_Holo : DZE_Wep_FNFAL_CCO {
+	displayName = "$STR_DZ_WPN_FNFAL_HOLO_NAME";
 	model = "z\addons\dayz_communityweapons\fnfal\fnfal_holo.p3d";
 	picture = "\z\addons\dayz_communityweapons\fnfal\data\w_fnfal_holo_ca.paa";
-	displayName = $STR_DZ_WPN_FNFAL_HOLO_NAME;
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'FNFAL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_FNFAL'] call player_removeAttachment";
 		};
 	};
 };
 
-class FNFAL_ANPVS4_DZ : FN_FAL_ANPVS4
-{
+class FN_FAL_ANPVS4;
+class DZE_Wep_FNFAL_ANPVS4 : FN_FAL_ANPVS4 {
 	modes[] = {Single, FullAuto};
 };
 
-class FN_FAL_ANPVS4_DZE: FN_FAL_ANPVS4 {
+class DZE_Wep_FN_FAL_ANPVS4_DZE: FN_FAL_ANPVS4 {
 	visionMode[] = {"Normal", "NVG"};
 	modes[] = {Single, FullAuto};
-	
-	class ItemActions
-	{
-		class RemoveANPVS
-		{
-			text = $STR_DZ_ATT_ANPVS4_RMVE;
-			script = "; ['Attachment_ANPVS4',_id,'FNFAL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveANPVS {
+			text = "$STR_DZ_ATT_ANPVS4_RMVE";
+			script = "; ['Attachment_ANPVS4',_id,'DZE_Wep_FNFAL'] call player_removeAttachment";
 		};
-	};	
+	};
 };

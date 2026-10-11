@@ -44,7 +44,7 @@ InfectedCamp[] =
 	//Weapons
 	{Loot_GROUP,		10,		shotgunsingleshot},
 	{Loot_GROUP,		1,		Chainsaws},
-	{Loot_WEAPON,		4,		Crossbow_DZ},
+	{Loot_WEAPON,		4,		DZE_Wep_Crossbow},
 	{Loot_WEAPON,		5,		DZE_Melee_BaseBallBat},
 	
 	//Items

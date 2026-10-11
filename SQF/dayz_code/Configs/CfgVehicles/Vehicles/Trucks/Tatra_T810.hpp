@@ -496,7 +496,7 @@ class DZE_Veh_T810_Woodland: DZE_T810_Base {
 	};
 	class Upgrades {
 		ItemTruckORP[] = {"DZE_Veh_T810_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
-		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Woodland",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Woodland",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"DZE_Wep_PKM"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -509,7 +509,7 @@ class DZE_Veh_T810_Woodland_1: DZE_Veh_T810_Woodland {
 
 	class Upgrades {
 		ItemTruckAVE[] = {"DZE_Veh_T810_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
-		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"DZE_Wep_PKM"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -520,7 +520,7 @@ class DZE_Veh_T810_Woodland_2: DZE_Veh_T810_Woodland_1 {
 
 	class Upgrades {
 		ItemTruckLRK[] = {"DZE_Veh_T810_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
-		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"DZE_Wep_PKM"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -532,7 +532,7 @@ class DZE_Veh_T810_Woodland_3: DZE_Veh_T810_Woodland_2 {
 
 	class Upgrades {
 		ItemTruckTNK[] = {"DZE_Veh_T810_Woodland_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
-		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"DZE_Wep_PKM"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -541,7 +541,7 @@ class DZE_Veh_T810_Woodland_4: DZE_Veh_T810_Woodland_3 {
 	fuelCapacity = 615;
 
 	class Upgrades {
-		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Woodland_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Woodland_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"DZE_Wep_PKM"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -551,7 +551,7 @@ class DZE_Veh_T810_Desert: DZE_Veh_T810_Woodland {
 	hiddenSelectionsTextures[] = {"Ca\Wheeled_ACR\T810\data\cabin_desert_co.paa","Ca\Wheeled_ACR\T810\data\bed_desert_co.paa","Ca\Wheeled_ACR\T810\data\undercarriage_des_CO.paa","Ca\Wheeled_ACR\T810\data\T810_desert_mlod_CO.paa"};
 	class Upgrades {
 		ItemTruckORP[] = {"DZE_Veh_T810_Desert_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
-		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Desert",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Desert",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"DZE_Wep_PKM"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -564,7 +564,7 @@ class DZE_Veh_T810_Desert_1: DZE_Veh_T810_Desert {
 
 	class Upgrades {
 		ItemTruckAVE[] = {"DZE_Veh_T810_Desert_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
-		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Desert_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Desert_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"DZE_Wep_PKM"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -575,7 +575,7 @@ class DZE_Veh_T810_Desert_2: DZE_Veh_T810_Desert_1 {
 
 	class Upgrades {
 		ItemTruckLRK[] = {"DZE_Veh_T810_Desert_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
-		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Desert_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Desert_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"DZE_Wep_PKM"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -587,7 +587,7 @@ class DZE_Veh_T810_Desert_3: DZE_Veh_T810_Desert_2 {
 
 	class Upgrades {
 		ItemTruckTNK[] = {"DZE_Veh_T810_Desert_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
-		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Desert_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Desert_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"DZE_Wep_PKM"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -596,7 +596,7 @@ class DZE_Veh_T810_Desert_4: DZE_Veh_T810_Desert_3 {
 	fuelCapacity = 615;
 
 	class Upgrades {
-		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Desert_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"DZE_Veh_T810_PKT_Desert_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{"DZE_Wep_PKM"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
 	};
 };
 

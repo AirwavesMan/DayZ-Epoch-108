@@ -12,7 +12,7 @@ CrashSiteRU[] =
 {
 	// Weapons
 	{Loot_GROUP,		30,		weaponsRU},
-	{Loot_WEAPON,		1,		Anzio_20_DZ}, // High value weapon
+	{Loot_WEAPON,		1,		DZE_Wep_Anzio_20}, // High value weapon
 	
 	//Tools
 	{Loot_GROUP,		3,		ToolsMilitary},
@@ -53,10 +53,10 @@ CrashSiteUS[] =
 {
 	//Weapons
 	{Loot_GROUP,		30,		weaponsUS},
-	{Loot_WEAPON,		1,		M107_DZ}, // High value weapon
-	{Loot_WEAPON,		1,		M200_CheyTac_DZ}, // High value weapon
-	{Loot_WEAPON,		5,		ACR_WDL_NV_DZ}, // ACR WDL NV
-	{Loot_WEAPON,		5,		ACR_BL_NV_DZ}, // ACR BL NV
+	{Loot_WEAPON,		1,		DZE_Wep_m107}, // High value weapon
+	{Loot_WEAPON,		1,		DZE_Wep_M200_CheyTac}, // High value weapon
+	{Loot_WEAPON,		5,		DZE_Wep_ACR_WDL_NV}, // ACR WDL NV
+	{Loot_WEAPON,		5,		DZE_Wep_ACR_BL_NV}, // ACR BL NV
 
 	//Tools
 	{Loot_GROUP,		3,		ToolsMilitary},
@@ -97,8 +97,8 @@ CrashSiteEU[] =
 {
 	//Weapons
 	{Loot_GROUP,		30,		weaponsEU},
-	{Loot_WEAPON,		1,		BAF_AS50_scoped_DZ}, // High value weapon
-	{Loot_WEAPON,		1,		WA2000_DZ},
+	{Loot_WEAPON,		1,		DZE_Wep_BAF_AS50_scoped}, // High value weapon
+	{Loot_WEAPON,		1,		DZE_Wep_WA2000},
 
 	//Tools
 	{Loot_GROUP,		3,		ToolsMilitary},

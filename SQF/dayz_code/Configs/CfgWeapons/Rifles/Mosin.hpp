@@ -1,20 +1,18 @@
-#define MOSIN_FLASHLIGHT class FlashLight\
-{\
-	color[] = {0.9, 0.9, 0.7, 0.9};\
-	ambient[] = {0.1, 0.1, 0.1, 1.0};\
+#define MOSIN_FLASHLIGHT class FlashLight {\
 	position = "fl_start";\
 	direction = "fl_dir";\
+	color[] = {0.9, 0.9, 0.7, 0.9};\
+	ambient[] = {0.1, 0.1, 0.1, 1.0};\
 	angle = 40;\
 	scale[] = {1, 1, 0.5};\
 	brightness = 0.1;\
 };
 
-#define MOSIN_MFLASHLIGHT class FlashLight\
-{\
-	color[] = {0.9, 0.0, 0.0, 0.9};\
-	ambient[] = {0.1, 0.0, 0.0, 1.0};\
+#define MOSIN_MFLASHLIGHT class FlashLight {\
 	position = "fl_start";\
 	direction = "fl_dir";\
+	color[] = {0.9, 0.0, 0.0, 0.9};\
+	ambient[] = {0.1, 0.0, 0.0, 1.0};\
 	angle = 40;\
 	scale[] = {1, 1, 0.5};\
 	brightness = 0.08;\
@@ -24,8 +22,9 @@
 
 #define MOSIN_BROKEN magazines[] = {};
 
-class Mosin_Base : Rifle
-{
+class DZE_Wep_Mosin_Base : Rifle {
+	recoil = "recoil_single_primary_9outof10";
+	recoilProne = "recoil_single_primary_prone_8outof10";
 	magazineReloadTime = 7.5;
 	reloadMagazineSound[] = {z\addons\dayz_communityweapons\models\mosin_nagant\sound\reload.ogg, 0.010000, 1};
 	drySound[] = {"Ca\sounds\Weapons\rifles\dry",0.01,1,10};
@@ -33,379 +32,317 @@ class Mosin_Base : Rifle
 	dexterity = 1.6;
 	distanceZoomMin = 300;
 	distanceZoomMax = 300;
-	
+
 	magazines[] = {5Rnd_762x54_Mosin};
-	
+
 	//recoil = "Mosin_NagantRecoil";
 	//recoilProne = "Mosin_NagantRecoilProne";
-	recoil = "recoil_single_primary_9outof10";
-	recoilProne = "recoil_single_primary_prone_8outof10";
-	
+
 	dispersion = 0.00091;
 	reloadTime = 1.4;
 	//sound[] = {z\addons\dayz_communityweapons\models\mosin_nagant\sound\Mosin.ogg,1.778279,1,1000};
 	sound[] = {z\addons\dayz_communityweapons\models\mosin_nagant\sound\Mosin.ogg,db-20,1,800};
 };
 
-
-
 /* Iron sights */
 
-class Mosin_DZ : Mosin_Base
-{
+class DZE_Wep_Mosin : DZE_Wep_Mosin_Base {
 	scope = 2;
-	
+	displayName = "$STR_DZ_WPN_MOSIN_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891.paa";
-	displayName = $STR_DZ_WPN_MOSIN_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
 	weaponInfoType = "RscWeaponZeroing";
+
 	discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
 	discreteDistanceInitIndex = 2;
-	
-	class Attachments
-	{
-		Attachment_SCOPED = "Mosin_PU_DZ";
-		Attachment_FL = "Mosin_FL_DZ";
-		Attachment_MFL = "Mosin_MFL_DZ";
-		Attachment_BELT = "Mosin_Belt_DZ";
+
+	class Attachments {
+		Attachment_SCOPED = "DZE_Wep_Mosin_PU";
+		Attachment_FL = "DZE_Wep_Mosin_FL";
+		Attachment_MFL = "DZE_Wep_Mosin_MFL";
+		Attachment_BELT = "DZE_Wep_Mosin_Belt";
 	};
 };
 
-class Mosin_BR_DZ : Mosin_DZ
-{
+class DZE_Wep_Mosin_BR : DZE_Wep_Mosin {
 	MOSIN_BROKEN
 };
 
-class Mosin_FL_DZ : Mosin_DZ
-{
+class DZE_Wep_Mosin_FL : DZE_Wep_Mosin {
+	displayName = "$STR_DZ_WPN_MOSIN_FL_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_FL_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891_FL.paa";
-	displayName = $STR_DZ_WPN_MOSIN_FL_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+
 	MOSIN_FLASHLIGHT
-	
-	class Attachments
-	{
-		Attachment_SCOPED = "Mosin_PU_FL_DZ";
-		Attachment_BELT = "Mosin_Belt_FL_DZ";
+
+	class Attachments {
+		Attachment_SCOPED = "DZE_Wep_Mosin_PU_FL";
+		Attachment_BELT = "DZE_Wep_Mosin_Belt_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'Mosin_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
 		};
 	};
 };
 
-class Mosin_MFL_DZ : Mosin_DZ
-{
+class DZE_Wep_Mosin_MFL : DZE_Wep_Mosin {
+	displayName = "$STR_DZ_WPN_MOSIN_MFL_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_FL_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891_FL.paa";
-	displayName = $STR_DZ_WPN_MOSIN_MFL_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+
 	MOSIN_MFLASHLIGHT
-	
-	class Attachments
-	{
-		Attachment_SCOPED = "Mosin_PU_MFL_DZ";
-		Attachment_BELT = "Mosin_Belt_MFL_DZ";
+
+	class Attachments {
+		Attachment_SCOPED = "DZE_Wep_Mosin_PU_MFL";
+		Attachment_BELT = "DZE_Wep_Mosin_Belt_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'Mosin_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
 		};
 	};
 };
 
-class Mosin_Belt_DZ : Mosin_DZ
-{
+class DZE_Wep_Mosin_Belt : DZE_Wep_Mosin {
+	displayName = "$STR_DZ_WPN_MOSIN_BELT_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_belt_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891B.paa";
-	displayName = $STR_DZ_WPN_MOSIN_BELT_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+
 	MOSIN_BELT
-	
-	class Attachments
-	{
-		Attachment_SCOPED = "Mosin_PU_Belt_DZ";
-		Attachment_FL = "Mosin_Belt_FL_DZ";
-		Attachment_MFL = "Mosin_Belt_MFL_DZ";
+
+	class Attachments {
+		Attachment_SCOPED = "DZE_Wep_Mosin_PU_Belt";
+		Attachment_FL = "DZE_Wep_Mosin_Belt_FL";
+		Attachment_MFL = "DZE_Wep_Mosin_Belt_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveBelt
-		{
-			text = $STR_DZ_ATT_BELT_RMVE;
-			script = "; ['Attachment_BELT',_id,'Mosin_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveBelt {
+			text = "$STR_DZ_ATT_BELT_RMVE";
+			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
 		};
 	};
 };
 
-class Mosin_Belt_FL_DZ : Mosin_FL_DZ
-{
+class DZE_Wep_Mosin_Belt_FL : DZE_Wep_Mosin_FL {
+	displayName = "$STR_DZ_WPN_MOSIN_BELT_FL_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_belt_FL_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891B_FL.paa";
-	displayName = $STR_DZ_WPN_MOSIN_BELT_FL_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+
 	MOSIN_BELT
-	
-	class Attachments
-	{
-		Attachment_SCOPED = "Mosin_PU_Belt_FL_DZ";
+
+	class Attachments {
+		Attachment_SCOPED = "DZE_Wep_Mosin_PU_Belt_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveBelt
-		{
-			text = $STR_DZ_ATT_BELT_RMVE;
-			script = "; ['Attachment_BELT',_id,'Mosin_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveBelt {
+			text = "$STR_DZ_ATT_BELT_RMVE";
+			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin_FL'] call player_removeAttachment";
 		};
-		
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'Mosin_Belt_DZ'] call player_removeAttachment";
+
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_Mosin_Belt'] call player_removeAttachment";
 		};
 	};
 };
 
-class Mosin_Belt_MFL_DZ : Mosin_MFL_DZ
-{
+class DZE_Wep_Mosin_Belt_MFL : DZE_Wep_Mosin_MFL {
+	displayName = "$STR_DZ_WPN_MOSIN_BELT_MFL_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_belt_FL_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891B_FL.paa";
-	displayName = $STR_DZ_WPN_MOSIN_BELT_MFL_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+
 	MOSIN_BELT
-	
-	class Attachments
-	{
-		Attachment_SCOPED = "Mosin_PU_Belt_MFL_DZ";
+
+	class Attachments {
+		Attachment_SCOPED = "DZE_Wep_Mosin_PU_Belt_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveBelt
-		{
-			text = $STR_DZ_ATT_BELT_RMVE;
-			script = "; ['Attachment_BELT',_id,'Mosin_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveBelt {
+			text = "$STR_DZ_ATT_BELT_RMVE";
+			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin_MFL'] call player_removeAttachment";
 		};
-		
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'Mosin_Belt_DZ'] call player_removeAttachment";
+
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_Mosin_Belt'] call player_removeAttachment";
 		};
 	};
 };
-
-
 
 /* PU Scope */
 
-class Mosin_PU_DZ : Mosin_Base
-{
+class DZE_Wep_Mosin_PU : DZE_Wep_Mosin_Base {
 	scope = 2;
-	
+	displayName = "$STR_DZ_WPN_MOSIN_PU_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_scoped_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891S.paa";
-	displayName = $STR_DZ_WPN_MOSIN_PU_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+	weaponInfoType = "RscWeaponZeroing";
+
 	opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
 	opticsZoomInit = 0.083;
 	opticsZoomMin = 0.071945;
 	opticsZoomMax = 0.071945;
-	
-	weaponInfoType = "RscWeaponZeroing";
+
 	discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300};
 	discreteDistanceInitIndex = 2;
-	
-	class Attachments
-	{
-		Attachment_FL = "Mosin_PU_FL_DZ";
-		Attachment_MFL = "Mosin_PU_MFL_DZ";
-		Attachment_BELT = "Mosin_PU_Belt_DZ";
+
+	class Attachments {
+		Attachment_FL = "DZE_Wep_Mosin_PU_FL";
+		Attachment_MFL = "DZE_Wep_Mosin_PU_MFL";
+		Attachment_BELT = "DZE_Wep_Mosin_PU_Belt";
 	};
-	
-	class ItemActions
-	{
-		class RemoveScope
-		{
-			text = $STR_DZ_ATT_PU_RMVE;
-			script = "; ['Attachment_SCOPED',_id,'Mosin_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveScope {
+			text = "$STR_DZ_ATT_PU_RMVE";
+			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
 		};
 	};
 };
 
-class Mosin_PU_FL_DZ : Mosin_PU_DZ
-{
+class DZE_Wep_Mosin_PU_FL : DZE_Wep_Mosin_PU {
+	displayName = "$STR_DZ_WPN_MOSIN_PU_FL_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_scoped_FL_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891S_FL.paa";
-	displayName = $STR_DZ_WPN_MOSIN_PU_FL_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+
 	MOSIN_FLASHLIGHT
-	
-	class Attachments
-	{
-		Attachment_BELT = "Mosin_PU_Belt_FL_DZ";
+
+	class Attachments {
+		Attachment_BELT = "DZE_Wep_Mosin_PU_Belt_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveScope
-		{
-			text = $STR_DZ_ATT_PU_RMVE;
-			script = "; ['Attachment_SCOPED',_id,'Mosin_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveScope {
+			text = "$STR_DZ_ATT_PU_RMVE";
+			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin_FL'] call player_removeAttachment";
 		};
-		
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'Mosin_PU_DZ'] call player_removeAttachment";
+
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_Mosin_PU'] call player_removeAttachment";
 		};
 	};
 };
 
-class Mosin_PU_MFL_DZ : Mosin_PU_DZ
-{
+class DZE_Wep_Mosin_PU_MFL : DZE_Wep_Mosin_PU {
+	displayName = "$STR_DZ_WPN_MOSIN_PU_MFL_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_scoped_FL_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891S_FL.paa";
-	displayName = $STR_DZ_WPN_MOSIN_PU_MFL_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+
 	MOSIN_MFLASHLIGHT
-	
-	class Attachments
-	{
-		Attachment_BELT = "Mosin_PU_Belt_MFL_DZ";
+
+	class Attachments {
+		Attachment_BELT = "DZE_Wep_Mosin_PU_Belt_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveScope
-		{
-			text = $STR_DZ_ATT_PU_RMVE;
-			script = "; ['Attachment_SCOPED',_id,'Mosin_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveScope {
+			text = "$STR_DZ_ATT_PU_RMVE";
+			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin_MFL'] call player_removeAttachment";
 		};
-		
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'Mosin_PU_DZ'] call player_removeAttachment";
+
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_Mosin_PU'] call player_removeAttachment";
 		};
 	};
 };
 
-class Mosin_PU_Belt_DZ : Mosin_PU_DZ
-{
+class DZE_Wep_Mosin_PU_Belt : DZE_Wep_Mosin_PU {
+	displayName = "$STR_DZ_WPN_MOSIN_PU_BELT_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_belt_scoped_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891SB.paa";
-	displayName = $STR_DZ_WPN_MOSIN_PU_BELT_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+
 	MOSIN_BELT
-	
-	class Attachments
-	{
-		Attachment_FL = "Mosin_PU_Belt_FL_DZ";
-		Attachment_MFL = "Mosin_PU_Belt_MFL_DZ";
+
+	class Attachments {
+		Attachment_FL = "DZE_Wep_Mosin_PU_Belt_FL";
+		Attachment_MFL = "DZE_Wep_Mosin_PU_Belt_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveScope
-		{
-			text = $STR_DZ_ATT_PU_RMVE;
-			script = "; ['Attachment_SCOPED',_id,'Mosin_Belt_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveScope {
+			text = "$STR_DZ_ATT_PU_RMVE";
+			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin_Belt'] call player_removeAttachment";
 		};
-		
-		class RemoveBelt
-		{
-			text = $STR_DZ_ATT_BELT_RMVE;
-			script = "; ['Attachment_BELT',_id,'Mosin_PU_DZ'] call player_removeAttachment";
+
+		class RemoveBelt {
+			text = "$STR_DZ_ATT_BELT_RMVE";
+			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin_PU'] call player_removeAttachment";
 		};
 	};
 };
 
-class Mosin_PU_Belt_FL_DZ :  Mosin_PU_FL_DZ
-{
+class DZE_Wep_Mosin_PU_Belt_FL :  DZE_Wep_Mosin_PU_FL {
+	displayName = "$STR_DZ_WPN_MOSIN_PU_BELT_FL_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_belt_scoped_FL_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891SB_FL.paa";
-	displayName = $STR_DZ_WPN_MOSIN_PU_BELT_FL_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+
 	MOSIN_BELT
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveScope
-		{
-			text = $STR_DZ_ATT_PU_RMVE;
-			script = "; ['Attachment_SCOPED',_id,'Mosin_Belt_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveScope {
+			text = "$STR_DZ_ATT_PU_RMVE";
+			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin_Belt_FL'] call player_removeAttachment";
 		};
-		
-		class RemoveBelt
-		{
-			text = $STR_DZ_ATT_BELT_RMVE;
-			script = "; ['Attachment_BELT',_id,'Mosin_PU_FL_DZ'] call player_removeAttachment";
+
+		class RemoveBelt {
+			text = "$STR_DZ_ATT_BELT_RMVE";
+			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin_PU_FL'] call player_removeAttachment";
 		};
-		
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'Mosin_PU_Belt_DZ'] call player_removeAttachment";
+
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_Mosin_PU_Belt'] call player_removeAttachment";
 		};
 	};
 };
 
-class Mosin_PU_Belt_MFL_DZ :  Mosin_PU_MFL_DZ
-{
+class DZE_Wep_Mosin_PU_Belt_MFL :  DZE_Wep_Mosin_PU_MFL {
+	displayName = "$STR_DZ_WPN_MOSIN_PU_BELT_MFL_NAME";
+	descriptionShort = "$STR_DZ_WPN_MOSIN_DESC";
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_belt_scoped_FL_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891SB_FL.paa";
-	displayName = $STR_DZ_WPN_MOSIN_PU_BELT_MFL_NAME;
-	descriptionShort = $STR_DZ_WPN_MOSIN_DESC;
-	
+
 	MOSIN_BELT
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveScope
-		{
-			text = $STR_DZ_ATT_PU_RMVE;
-			script = "; ['Attachment_SCOPED',_id,'Mosin_Belt_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveScope {
+			text = "$STR_DZ_ATT_PU_RMVE";
+			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin_Belt_MFL'] call player_removeAttachment";
 		};
-		
-		class RemoveBelt
-		{
-			text = $STR_DZ_ATT_BELT_RMVE;
-			script = "; ['Attachment_BELT',_id,'Mosin_PU_MFL_DZ'] call player_removeAttachment";
+
+		class RemoveBelt {
+			text = "$STR_DZ_ATT_BELT_RMVE";
+			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin_PU_MFL'] call player_removeAttachment";
 		};
-		
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'Mosin_PU_Belt_DZ'] call player_removeAttachment";
+
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_Mosin_PU_Belt'] call player_removeAttachment";
 		};
 	};
 };

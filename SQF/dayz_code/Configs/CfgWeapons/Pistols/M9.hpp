@@ -1,90 +1,78 @@
-class M9_DZ: M9
-{
-	displayName = $STR_DZ_WPN_M9_NAME;
-	
+class DZE_Wep_M9: M9 {
+	displayName = "$STR_DZ_WPN_M9_NAME";
+
 	begin1[] = {"\RH_de\Sound\m93r.wss",0.794328,1,700};
 	soundBegin[] = {"begin1",1};
 	magazines[] = {"15Rnd_9x19_M9"};
-	
-	class Attachments
-	{
-		Attachment_Sup9 = "M9_SD_DZ";
+
+	class Attachments {
+		Attachment_Sup9 = "DZE_Wep_M9_SD";
 	};
 };
 
-class M9_SD_DZ: M9SD
-{
+class DZE_Wep_M9_SD: M9SD {
+	displayName = "$STR_DZ_WPN_M9_SD_NAME";
+	descriptionShort = "$STR_DZ_WPN_M9_SD_DESC";
 	//model = "z\addons\dayz_communityweapons\m9\m9_sd.p3d";
-	displayName = $STR_DZ_WPN_M9_SD_NAME;
-	descriptionShort = $STR_DZ_WPN_M9_SD_DESC;	
-	
+
 	begin1[] = {"\RH_de\Sound\m9sd.wss",0.316228,1,200};
 	soundBegin[] = {"begin1",1};
 	magazines[] = {"15Rnd_9x19_M9SD"};
-	
-	class ItemActions
-	{
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup9',_id,'M9_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup9',_id,'DZE_Wep_M9'] call player_removeAttachment";
 		};
 	};
 };
 
-class M9_Camo_DZ: M9_DZ
-{
+class DZE_Wep_M9_Camo: DZE_Wep_M9 {
 	model = "\RH_de\RH_m9c.p3d";
 	picture = "\RH_de\inv\m9c.paa";
-	
-	class Attachments
-	{
-		Attachment_Sup9 = "M9_Camo_SD_DZ";
+
+	class Attachments {
+		Attachment_Sup9 = "DZE_Wep_M9_Camo_SD";
 	};
 };
 
-class M9_Camo_SD_DZ:  M9_SD_DZ
-{
+class DZE_Wep_M9_Camo_SD:  DZE_Wep_M9_SD {
 	model = "\RH_de\RH_m9csd.p3d";
-	picture = "\RH_de\inv\m9csd.paa";	
-	
-	class ItemActions
-	{
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup9',_id,'M9_Camo_DZ'] call player_removeAttachment";
+	picture = "\RH_de\inv\m9csd.paa";
+
+	class ItemActions {
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup9',_id,'DZE_Wep_M9_Camo'] call player_removeAttachment";
 		};
 	};
 };
 
-class M93R_DZ: M9
-{
-	displayName = $STR_DZ_WPN_M93R_NAME;
-	descriptionShort = $STR_DZ_WPN_M93R_DESC;		
+class DZE_Wep_M93R: M9 {
+	displayName = "$STR_DZ_WPN_M93R_NAME";
+	descriptionShort = "$STR_DZ_WPN_M93R_DESC";
 	model = "\RH_de\RH_m93r.p3d";
 	picture = "\RH_de\inv\m93.paa";
 	UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 	modes[] = {"Single","Burst"};
-	
-	magazines[] = {"20Rnd_9x19_M93R","15Rnd_9x19_M9"};	
-	
-	class Single: Mode_SemiAuto
-	{
+
+	magazines[] = {"20Rnd_9x19_M93R","15Rnd_9x19_M9"};
+
+	class Single: Mode_SemiAuto {
+		recoil = "recoil_single_pistol_3outof3";
+		recoilProne = "recoil_single_pistol_prone_3outof3";
+		flash = "gunfire";
+		useActionTitle = "";
 		begin1[] = {"\RH_de\Sound\m93r.wss",0.794328,1,700};
 		soundBegin[] = {"begin1",1};
 		soundContinuous = 0;
 		dispersion = 0.011;
 		reloadTime = 0.055;
-		recoil = "recoil_single_pistol_3outof3";
-		recoilProne = "recoil_single_pistol_prone_3outof3";
 		ffCount = 1;
 		ffMagnitude = 0.5;
 		ffFrequency = 11;
-		flash = "gunfire";
 		flashSize = 0.1;
 		useAction = 0;
-		useActionTitle = "";
 		showToPlayer = 1;
 		aiRateOfFire = 0.5;
 		aiRateOfFireDistance = 50;
@@ -95,8 +83,11 @@ class M93R_DZ: M9
 		maxRange = 50;
 		maxRangeProbab = 0.05;
 	};
-	class Burst: Mode_Burst
-	{
+	class Burst: Mode_Burst {
+		recoil = "recoil_single_pistol_3outof3";
+		recoilProne = "recoil_single_pistol_prone_3outof3";
+		flash = "gunfire";
+		useActionTitle = "";
 		begin1[] = {"\RH_de\Sound\m93r.wss",0.794328,1,700};
 		soundBegin[] = {"begin1",1};
 		autofire = 0;
@@ -105,15 +96,11 @@ class M93R_DZ: M9
 		burst = 3;
 		dispersion = 0.011;
 		reloadTime = 0.055;
-		recoil = "recoil_single_pistol_3outof3";
-		recoilProne = "recoil_single_pistol_prone_3outof3";
 		ffCount = 3;
 		ffMagnitude = 0.5;
 		ffFrequency = 11;
-		flash = "gunfire";
 		flashSize = 0.1;
 		useAction = 0;
-		useActionTitle = "";
 		showToPlayer = 1;
 		aiRateOfFire = 0.055;
 		aiRateOfFireDistance = 50;

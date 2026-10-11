@@ -1,5 +1,5 @@
-class CZ550_DZ : Huntingrifle
-{
+class huntingrifle: M24 {};
+class DZE_Wep_CZ550 : Huntingrifle {
 	//model = "z\addons\dayz_communityweapons\CZ550\CZ550.p3d"; // has currently a shadow problem
 	model = "\ca\weapons2\huntingrifle\huntingrifle";
 	magazines[] = {5Rnd_17HMR};
@@ -9,11 +9,9 @@ class CZ550_DZ : Huntingrifle
 	optics = true;
 	modelOptics = "\ca\weapons\2Dscope_Hunter_12";
 
-	class OpticsModes : OpticsModes
-	{
+	class OpticsModes : OpticsModes {
 		class StepScope : StepScope {};
-		class Ironsights
-		{
+		class Ironsights {
 			opticsID = 2;
 			useModelOptics = false;
 			opticsFlare = false;
@@ -30,5 +28,5 @@ class CZ550_DZ : Huntingrifle
 		};
 	};
 	//CZ550_SCOPE end
-	*/ 
+	*/
 };

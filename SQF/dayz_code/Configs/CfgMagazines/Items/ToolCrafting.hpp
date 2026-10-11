@@ -68,7 +68,7 @@ class equip_Crossbow_Kit : CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {};
-			outputweapons[] = {"Crossbow_DZ"};
+			outputweapons[] = {"DZE_Wep_Crossbow"};
 			input[] = {{"equip_Crossbow_Kit",1},{"equip_crossbow_stock",1}};
 		};
 	};	
@@ -90,7 +90,7 @@ class equip_crossbow_stock : CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {};
-			outputweapons[] = {"Crossbow_DZ"};
+			outputweapons[] = {"DZE_Wep_Crossbow"};
 			input[] = {{"equip_Crossbow_Kit",1},{"equip_crossbow_stock",1}};
 		};
 	};	

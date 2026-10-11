@@ -42,8 +42,8 @@ MilitaryRU[] =
 
 MilitarySmallRU[] =
 {
-	{Loot_WEAPON,		8,		Makarov_DZ},
-	{Loot_WEAPON,		5,		Makarov_SD_DZ},
+	{Loot_WEAPON,		8,		DZE_Wep_Makarov},
+	{Loot_WEAPON,		5,		DZE_Wep_Makarov_SD},
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_GROUP,		3,		militaryclothes},
 	{Loot_MAGAZINE,		1,		PipeBomb}, // Satchel charges are very destructive and should be rare.
@@ -86,8 +86,8 @@ MilitaryUS[] =
 
 MilitarySmallUS[] =
 {
-	{Loot_WEAPON,		8,		M9_DZ},
-	{Loot_WEAPON,		5,		M9_SD_DZ},
+	{Loot_WEAPON,		8,		DZE_Wep_M9},
+	{Loot_WEAPON,		5,		DZE_Wep_M9_SD},
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_GROUP,		3,		militaryclothes},
 	{Loot_MAGAZINE,		1,		PipeBomb},
@@ -130,8 +130,8 @@ MilitaryEU[] =
 
 MilitarySmallEU[] =
 {
-	{Loot_WEAPON,		8,		G17_DZ},
-	{Loot_WEAPON,		5,		G17_SD_DZ},
+	{Loot_WEAPON,		8,		DZE_Wep_G17},
+	{Loot_WEAPON,		5,		DZE_Wep_G17_SD},
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_GROUP,		3,		militaryclothes},
 	{Loot_MAGAZINE,		1,		PipeBomb},
@@ -173,11 +173,11 @@ MilitaryCZ[] =
 
 MilitarySmallCZ[] =
 {
-	{Loot_WEAPON,		6,		Sa61_DZ},
-	{Loot_WEAPON,		3,		CZ75P_DZ},
-	{Loot_WEAPON,		3,		CZ75D_DZ},
-	{Loot_WEAPON,		3,		CZ75SP_DZ},
-	{Loot_WEAPON,		2,		CZ75SP_SD_DZ},
+	{Loot_WEAPON,		6,		DZE_Wep_Sa61},
+	{Loot_WEAPON,		3,		DZE_Wep_CZ75P},
+	{Loot_WEAPON,		3,		DZE_Wep_CZ75D},
+	{Loot_WEAPON,		3,		DZE_Wep_CZ75SP},
+	{Loot_WEAPON,		2,		DZE_Wep_CZ75SP_SD},
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_GROUP,		3,		militaryclothes},
 	{Loot_MAGAZINE,		1,		PipeBomb},

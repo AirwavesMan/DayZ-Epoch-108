@@ -1,5 +1,5 @@
-class SVU_PSO1_DZ: SVD_PSO1_DZ {
-	displayName = $STR_DZ_WPN_SVU_NAME;
+class DZE_Wep_SVU_PSO1: DZE_Wep_SVD_PSO1 {
+	displayName = "$STR_DZ_WPN_SVU_NAME";
 	model = "\RH_aks\RH_svu.p3d";
 	picture = "\RH_aks\inv\svu.paa";
 	handAnim[] = {"OFP2_ManSkeleton","\CA\weapons\Data\Anim\Bizon.rtm"};
@@ -8,15 +8,15 @@ class SVU_PSO1_DZ: SVD_PSO1_DZ {
 	magazines[] = {"10Rnd_762x54_SVD"};
 	class ItemActions {};
 	class Attachments {};
-	
+
 	class OpticsModes {
 		class Scope {
+			cameraDir = "";
+			memoryPointCamera = "opticView";
 			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 			discreteDistanceInitIndex = 2;
-			cameraDir = "";
 			distanceZoomMax = 300;
 			distanceZoomMin = 300;
-			memoryPointCamera = "opticView";
 			opticsDisablePeripherialVision = 1;
 			opticsFlare = 1;
 			opticsID = 1;
@@ -27,5 +27,5 @@ class SVU_PSO1_DZ: SVD_PSO1_DZ {
 			useModelOptics = 1;
 			visionMode[] = {"Normal"};
 		};
-	};	
+	};
 };

@@ -1,41 +1,33 @@
-class M24_DZ : M24
-{
+class DZE_Wep_M24 : M24 {
+	displayName = "$STR_DZ_WPN_M24_NAME";
 	model = "ca\weapons\m24_green.p3d";
-	displayName = $STR_DZ_WPN_M24_NAME;
-	
+
 	magazines[] = {5Rnd_762x51_M24};
-	
-	class Attachments
-	{
-		Attachment_Ghillie = "M24_Gh_DZ";
+
+	class Attachments {
+		Attachment_Ghillie = "DZE_Wep_M24_Gh";
 	};
 };
 
-class M24_Gh_DZ : M24_DZ
-{
+class DZE_Wep_M24_Gh : DZE_Wep_M24 {
+	displayName = "$STR_DZ_WPN_M24_GH_NAME";
 	model = "z\addons\dayz_communityweapons\m24\m24_ghillie.p3d";
 	picture = "\ca\weapons\data\equip\w_m24_camo_ca.paa";
-	
-	displayName = $STR_DZ_WPN_M24_GH_NAME;
-	
 	memoryPointCamera = "opticView";
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveGhillie
-		{
-			text = $STR_DZ_ATT_GHIL_RMVE;
-			script = "; ['Attachment_Ghillie',_id,'M24_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveGhillie {
+			text = "$STR_DZ_ATT_GHIL_RMVE";
+			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_M24'] call player_removeAttachment";
 		};
 	};
 };
 
 class M24_des_EP1;
-class M24_DES_DZ : M24_des_EP1
-{
-	displayName = $STR_DZ_WPN_M24_DESERT_NAME;
-	
+class DZE_Wep_M24_DES : M24_des_EP1 {
+	displayName = "$STR_DZ_WPN_M24_DESERT_NAME";
+
 	magazines[] = {5Rnd_762x51_M24};
 };

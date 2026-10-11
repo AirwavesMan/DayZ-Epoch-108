@@ -1,16 +1,18 @@
-class WA2000_DZ: m107
-{
+class DZE_Wep_WA2000: m107 {
 	scope = 2;
-	type = 1;
-	canlock	= 0;
-	displayname = $STR_DZ_WPN_WA2000_NAME;
-	descriptionShort = $STR_DZ_WPN_WA2000_DESC;
+	displayname = "$STR_DZ_WPN_WA2000_NAME";
+	descriptionShort = "$STR_DZ_WPN_WA2000_DESC";
 	model = "z\addons\dayz_epoch_w\wa2000\h4_wa2000.p3d";
 	picture = "\dayz_epoch_c\icons\weapons\w_wa2000_ca.paa";
 	UiPicture = "\CA\weapons\data\Ico\i_sniper_CA.paa";
+	modelOptics = "\ca\Weapons\2Dscope_MilDot_14";
+	recoil = "recoil_single_primary_8outof10";
+	recoilProne = "recoil_single_primary_prone_7outof10";
+	weaponInfoType = "RscWeaponZeroing";
+	type = 1;
+	canlock	= 0;
 	magazines[] = {6Rnd_762x51_WA2000};
 	handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons\data\Anim\M24.rtm"};
-	modelOptics = "\ca\Weapons\2Dscope_MilDot_14";
 	opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
 	opticsFlare = 1;
 	opticsDisablePeripherialVision = 1;
@@ -31,11 +33,8 @@ class WA2000_DZ: m107
 	midRangeProbab = 0.7;
 	maxRange = 1400;
 	maxRangeProbab = 0.05;
-	recoil = "recoil_single_primary_8outof10";
-	recoilProne = "recoil_single_primary_prone_7outof10";
-	dexterity = 0.45;	
-	class Library
-	{
+	dexterity = 0.45;
+	class Library {
 		libTextDesc = "The Walther WA 2000 is a semi-automatic bullpup sniper rifle produced by the Carl Walther GmbH Sportwaffen company from 1982 until 1988.<br/> Only 176 were built due to its high cost.";
 	};
 	htMin = 1;
@@ -44,11 +43,10 @@ class WA2000_DZ: m107
 	mfMax = 0;
 	mFact = 1;
 	tBody = 100;
-	weaponInfoType = "RscWeaponZeroing";
-	class OpticsModes
-	{
-		class StepScope
-		{
+	class OpticsModes {
+		class StepScope {
+			memoryPointCamera = "Konec hlavne";
+			cameraDir = "";
 			opticsID = 1;
 			useModelOptics = 1;
 			opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
@@ -57,10 +55,8 @@ class WA2000_DZ: m107
 			distanceZoomMin = 500;
 			opticsZoomMax = 0.0553;
 			distanceZoomMax = 200;
-			memoryPointCamera = "Konec hlavne";
 			opticsFlare = 1;
 			opticsDisablePeripherialVision = 1;
-			cameraDir = "";
 			visionMode[] = {"Normal"};
 			discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200};
 			discreteDistanceInitIndex = 4;

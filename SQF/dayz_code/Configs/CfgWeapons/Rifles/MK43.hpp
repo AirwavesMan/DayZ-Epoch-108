@@ -1,13 +1,13 @@
-class Mk43_DZ: M60A4_EP1_DZE {
-	displayName = $STR_DZ_WPN_MK43_NAME;
+class DZE_Wep_Mk43: DZE_Wep_M60A4_EP1_DZE {
+	displayName = "$STR_DZ_WPN_MK43_NAME";
 	model = "\RH_mgswp\RH_mk43.p3d";
 	picture = "\RH_mgswp\inv\mk43.paa";
 	handAnim[] = {"OFP2_ManSkeleton","\RH_mgswp\Anim\RH_mk43.rtm"};
 	reloadMagazineSound[] = {"\RH_mgswp\sound\m60e4_reload",0.0562341,1,25};
 	modes[] = {"manual","close","short","medium","far"};
-	
-	class manual: Mode_FullAuto
-	{
+
+	class manual: Mode_FullAuto {
+		displayName = "";
 		recoil = "recoil_auto_machinegun_8outof10";
 		recoilProne = "recoil_auto_machinegun_prone_5outof10";
 		dispersion = 0.0008;
@@ -24,10 +24,8 @@ class Mk43_DZ: M60A4_EP1_DZE {
 		maxRangeProbab = 0.04;
 		showToPlayer = 1;
 		reloadTime = 0.086;
-		displayName = "";
 	};
-	class close: manual
-	{
+	class close: manual {
 		burst = 10;
 		aiRateOfFire = 0.5;
 		aiRateOfFireDistance = 50;
@@ -39,8 +37,7 @@ class Mk43_DZ: M60A4_EP1_DZE {
 		maxRangeProbab = 0.04;
 		showToPlayer = 0;
 	};
-	class short: close
-	{
+	class short: close {
 		burst = 8;
 		aiRateOfFire = 2;
 		aiRateOfFireDistance = 300;
@@ -51,8 +48,7 @@ class Mk43_DZ: M60A4_EP1_DZE {
 		maxRange = 300;
 		maxRangeProbab = 0.04;
 	};
-	class medium: close
-	{
+	class medium: close {
 		burst = 12;
 		aiRateOfFire = 3;
 		aiRateOfFireDistance = 600;
@@ -63,8 +59,7 @@ class Mk43_DZ: M60A4_EP1_DZE {
 		maxRange = 600;
 		maxRangeProbab = 0.04;
 	};
-	class far: close
-	{
+	class far: close {
 		burst = 16;
 		aiRateOfFire = 5;
 		aiRateOfFireDistance = 1000;
@@ -74,50 +69,45 @@ class Mk43_DZ: M60A4_EP1_DZE {
 		midRangeProbab = 0.4;
 		maxRange = 900;
 		maxRangeProbab = 0.01;
-	};	
-	
-	class Attachments
-	{
-		Attachment_Holo = "MK43_Holo_DZ";
-		Attachment_ACOG = "MK43_ACOG_DZ";
+	};
+
+	class Attachments {
+		Attachment_Holo = "DZE_Wep_MK43_Holo";
+		Attachment_ACOG = "DZE_Wep_MK43_ACOG";
 	};
 };
 
-class MK43_Holo_DZ: Mk43_DZ
-{
-	displayName = $STR_DZ_WPN_MK43_HOLO_NAME;
+class DZE_Wep_MK43_Holo: DZE_Wep_Mk43 {
+	displayName = "$STR_DZ_WPN_MK43_HOLO_NAME";
 	model = "\RH_mgswp\RH_mk43eotech.p3d";
 	picture = "\RH_mgswp\inv\mk43eotech.paa";
-	irDistance = 150;
 	irLaserPos = "laser pos";
 	irLaserEnd = "laser dir";
-	
+	irDistance = 150;
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'MK43_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_Mk43'] call player_removeAttachment";
 		};
 	};
 };
 
-class MK43_ACOG_DZ: Mk43_DZ
-{
-	displayName = $STR_DZ_WPN_MK43_ACOG_NAME;
+class DZE_Wep_MK43_ACOG: DZE_Wep_Mk43 {
+	displayName = "$STR_DZ_WPN_MK43_ACOG_NAME";
 	model = "\RH_mgswp\RH_mk43acog.p3d";
 	picture = "\RH_mgswp\inv\mk43acog.paa";
-	irDistance = 150;
 	irLaserPos = "laser pos";
 	irLaserEnd = "laser dir";
 	modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x.p3d";
-	
-	class OpticsModes
-	{
-		class ACOG
-		{
+	irDistance = 150;
+
+	class OpticsModes {
+		class ACOG {
+			memoryPointCamera = "opticView";
+			cameraDir = "";
 			opticsID = 1;
 			useModelOptics = true;
 			opticsFlare = true;
@@ -127,14 +117,13 @@ class MK43_ACOG_DZ: Mk43_DZ
 			opticsZoomInit = 0.0623;
 			distanceZoomMin = 300;
 			distanceZoomMax = 300;
-			memoryPointCamera = "opticView";
 			visionMode[] = {"Normal"};
 			opticsPPEffects[] = {"OpticsCHAbera3","OpticsBlur3"};
-			cameraDir = "";
 		};
-		
-		class Iron
-		{
+
+		class Iron {
+			memoryPointCamera = "eye";
+			cameraDir = "";
 			opticsID = 2;
 			useModelOptics = false;
 			opticsFlare = false;
@@ -144,71 +133,63 @@ class MK43_ACOG_DZ: Mk43_DZ
 			opticsZoomInit = 0.5;
 			distanceZoomMin = 100;
 			distanceZoomMax = 100;
-			memoryPointCamera = "eye";
 			visionMode[] = {};
 			opticsPPEffects[] = {};
-			cameraDir = "";
 		};
 	};
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'MK43_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_Mk43'] call player_removeAttachment";
 		};
 	};
 };
 
-class MK43_M145_DZ: Mk43_DZ
-{
-	displayName = $STR_DZ_WPN_MK43_M145_NAME;
+class DZE_Wep_MK43_M145: DZE_Wep_Mk43 {
+	displayName = "$STR_DZ_WPN_MK43_M145_NAME";
 	model = "\RH_mgswp\RH_mk43elcan.p3d";
 	picture = "\RH_mgswp\inv\mk43elcan.paa";
-	irDistance = 150;	
 	irLaserPos = "laser pos";
 	irLaserEnd = "laser dir";
 	modelOptics = "\Ca\weapons_E\M249\M145.p3d";
-	
-	class OpticsModes
-	{
-		class Scope
-		{
+	irDistance = 150;
+
+	class OpticsModes {
+		class Scope {
+			memoryPointCamera = "opticView";
+			cameraDir = "";
+			opticsZoomMin = "0.28778/3.4";
+			opticsZoomMax = "0.28778/3.4";
+			opticsZoomInit = "0.28778/3.4";
 			opticsID = 1;
 			useModelOptics = 1;
 			opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
-			memoryPointCamera = "opticView";
 			visionMode[] = {"Normal"};
 			opticsFlare = 1;
 			opticsDisablePeripherialVision = 1;
 			distanceZoomMin = 300;
 			distanceZoomMax = 300;
-			cameraDir = "";
-			opticsZoomMin = "0.28778/3.4";
-			opticsZoomMax = "0.28778/3.4";
-			opticsZoomInit = "0.28778/3.4";
 			discretefov[] = {};
 			discreteInitIndex = 0;
 		};
-		class CQB: Scope
-		{
+		class CQB: Scope {
+			memoryPointCamera = "eye";
+			opticsZoomInit = "0.33333*2";
 			opticsID = 2;
 			useModelOptics = 0;
 			opticsPPEffects[] = {};
 			opticsFlare = 0;
 			opticsDisablePeripherialVision = 0;
-			memoryPointCamera = "eye";
 			visionMode[] = {};
 			opticsZoomMin = 0.33333;
 			opticsZoomMax = 1;
-			opticsZoomInit = "0.33333*2";
 			discretefov[] = {};
 			discreteInitIndex = 0;
 		};
-	};	
-	
+	};
+
 	class Attachments {};
 };

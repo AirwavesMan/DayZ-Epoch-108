@@ -1,16 +1,18 @@
-class M200_CheyTac_DZ: m107
-{
+class DZE_Wep_M200_CheyTac: m107 {
 	scope = 2;
-	type = 1;
-	canlock	= 0;
-	displayname = $STR_DZ_WPN_M200_CHEYTAC_NAME;
-	descriptionShort = $STR_DZ_WPN_M200_CHEYTAC_DESC;
+	displayname = "$STR_DZ_WPN_M200_CHEYTAC_NAME";
+	descriptionShort = "$STR_DZ_WPN_M200_CHEYTAC_DESC";
 	model = "\z\addons\dayz_epoch_w\m200\h4_cheytac.p3d";
 	picture = "\dayz_epoch_c\icons\weapons\icon_m200.paa";
 	UiPicture = "\CA\weapons\data\Ico\i_sniper_CA.paa";
+	modelOptics = "\ca\Weapons\2Dscope_MilDot_14";
+	recoil = "recoil_single_primary_9outof10";
+	recoilProne = "recoil_single_primary_prone_7outof10";
+	weaponInfoType = "RscWeaponZeroing";
+	type = 1;
+	canlock	= 0;
 	magazines[] = {5Rnd_408_CheyTac};
 	handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons_E\Data\Anim\M107b.rtm"};
-	modelOptics = "\ca\Weapons\2Dscope_MilDot_14";
 	opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
 	opticsFlare = 1;
 	opticsDisablePeripherialVision = 1;
@@ -31,13 +33,10 @@ class M200_CheyTac_DZ: m107
 	midRangeProbab = 0.7;
 	maxRange = 2400;
 	maxRangeProbab = 0.05;
-	recoil = "recoil_single_primary_9outof10";
-	recoilProne = "recoil_single_primary_prone_7outof10";
-	dexterity = 0.45;	
+	dexterity = 0.45;
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch_w\m200\data\dze_m200_co.paa"};
-	class Library
-	{
+	class Library {
 		libTextDesc = "The CheyTac Intervention is an American bolt-action sniper rifle manufactured by CheyTac LLC, which can also be classified as an anti-materiel rifle.<br/> It is fed by a 7-round detachable single-stack magazine containing .408 cartridges and its effective range is around 2500m.";
 	};
 	htMin = 1;
@@ -46,11 +45,10 @@ class M200_CheyTac_DZ: m107
 	mfMax = 0;
 	mFact = 1;
 	tBody = 100;
-	weaponInfoType = "RscWeaponZeroing";
-	class OpticsModes
-	{
-		class StepScope
-		{
+	class OpticsModes {
+		class StepScope {
+			memoryPointCamera = "Konec hlavne";
+			cameraDir = "";
 			opticsID = 1;
 			useModelOptics = 1;
 			opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
@@ -59,10 +57,8 @@ class M200_CheyTac_DZ: m107
 			distanceZoomMin = 500;
 			opticsZoomMax = 0.0553;
 			distanceZoomMax = 200;
-			memoryPointCamera = "Konec hlavne";
 			opticsFlare = 1;
 			opticsDisablePeripherialVision = 1;
-			cameraDir = "";
 			visionMode[] = {"Normal"};
 			discreteDistance[] = {300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1600,1800};
 			discreteDistanceInitIndex = 1;
@@ -70,10 +66,9 @@ class M200_CheyTac_DZ: m107
 	};
 };
 
-class M200_CheyTac_SD_DZ: M200_CheyTac_DZ
-{
-	displayname = $STR_DZ_WPN_M200_CHEYTAC_SD_NAME;
-	descriptionShort = $STR_DZ_WPN_M200_CHEYTAC_SD_DESC;
+class DZE_Wep_M200_CheyTac_SD: DZE_Wep_M200_CheyTac {
+	displayname = "$STR_DZ_WPN_M200_CHEYTAC_SD_NAME";
+	descriptionShort = "$STR_DZ_WPN_M200_CHEYTAC_SD_DESC";
 	model = "\z\addons\dayz_epoch_w\m200\h4_cheytac_sd.p3d";
 	picture = "\dayz_epoch_c\icons\weapons\icon_m200sd.paa";
 	magazines[] = {5Rnd_408_CheyTac_SD};

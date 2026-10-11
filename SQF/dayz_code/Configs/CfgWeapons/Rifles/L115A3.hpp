@@ -1,19 +1,18 @@
-class L115A3_Base : Rifle
-{
+class DZE_Wep_L115A3_Base : Rifle {
 	scope = 2;
-	descriptionShort = $STR_DZ_WPN_L115A3_DESC;
-	
+	descriptionShort = "$STR_DZ_WPN_L115A3_DESC";
+	modelOptics = "\ca\Weapons_baf\LRR_optic";
+	weaponInfoType = "RscWeaponZeroing";
+
 	magazines[] = {5Rnd_86x70_L115A1};
-	
+
 	handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons\data\Anim\M24.rtm"};
-	
+
 	dexterity = 1.7;
 	initSpeed = 936;
 
-	optics = true;		
-	modelOptics = "\ca\Weapons_baf\LRR_optic"; 
+	optics = true;
 	visionMode[] = {"Normal"};
-	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600,700,800,1000,1200,1400};
 	discreteDistanceInitIndex = 2;
 	opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
@@ -23,18 +22,17 @@ class L115A3_Base : Rifle
 	opticsZoomMax = 0.15; 	distanceZoomMax = 120;
 	discretefov[] = {0.0755,0.0249};
 	discreteInitIndex = 0;
-	
+
 	modes[] = {"Single"};
-	
-	class Single : Mode_SemiAuto
-	{
+
+	class Single : Mode_SemiAuto {
+		recoil = "recoil_single_primary_2outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		dispersion = 0.00018;
 		soundContinuous = 0;
 		reloadTime = 2;
 		backgroundReload = true;
-		recoil = "recoil_single_primary_2outof10";
-		recoilProne = "recoil_single_primary_prone_2outof10";
-		begin1[] = {"ca\sounds_baf\weapons\AS50_rel", db9, 1,1300}; 
+		begin1[] = {"ca\sounds_baf\weapons\AS50_rel", db9, 1,1300};
 		soundBegin[] = {begin1,1};
 		minRange = 2;
 		minRangeProbab = 0.10;
@@ -45,16 +43,14 @@ class L115A3_Base : Rifle
 	};
 };
 
-class L115A3_DZ : L115A3_Base
-{
+class DZE_Wep_L115A3 : DZE_Wep_L115A3_Base {
+	displayname = "$STR_DZ_WPN_L115A3_NAME";
 	model = "\ca\weapons_BAF\LRR_scoped_BAF";
-	picture = "\dayz_epoch_c\icons\weapons\L115Tan.paa";  
-	displayname = $STR_DZ_WPN_L115A3_NAME;
+	picture = "\dayz_epoch_c\icons\weapons\L115Tan.paa";
 };
 
-class L115A3_2_DZ : L115A3_DZ
-{
+class DZE_Wep_L115A3_2 : DZE_Wep_L115A3 {
+    displayname = "$STR_BAF_CFGWEAPONS_BAF_LRR_SCOPED_W0";
     model = "\ca\weapons_BAF\LRR_scoped_w_BAF";
-	picture = "\dayz_epoch_c\icons\weapons\L115Green.paa";  
-    displayname = $STR_BAF_CFGWEAPONS_BAF_LRR_SCOPED_W0;
+	picture = "\dayz_epoch_c\icons\weapons\L115Green.paa";
 };

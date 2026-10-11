@@ -1,29 +1,24 @@
-#define CROSSBOW_FLASHLIGHT class FlashLight\
-{\
-	color[] = {0.9, 0.9, 0.7, 0.9};\
-	ambient[] = {0.1, 0.1, 0.1, 1.0};\
+#define CROSSBOW_FLASHLIGHT class FlashLight {\
 	position = "fl_start";\
 	direction = "fl_dir";\
+	color[] = {0.9, 0.9, 0.7, 0.9};\
+	ambient[] = {0.1, 0.1, 0.1, 1.0};\
 	angle = 40;\
 	scale[] = {1, 1, 0.5};\
 	brightness = 0.1;\
 };
 
-#define CROSSBOW_MFLASHLIGHT class FlashLight\
-{\
-	color[] = {0.9, 0.0, 0.0, 0.9};\
-	ambient[] = {0.1, 0.0, 0.0, 1.0};\
+#define CROSSBOW_MFLASHLIGHT class FlashLight {\
 	position = "fl_start";\
 	direction = "fl_dir";\
+	color[] = {0.9, 0.0, 0.0, 0.9};\
+	ambient[] = {0.1, 0.0, 0.0, 1.0};\
 	angle = 40;\
 	scale[] = {1, 1, 0.5};\
 	brightness = 0.08;\
 };
 
-
-
-class Crossbow_Base : Rifle
-{
+class DZE_Wep_Crossbow_Base : Rifle {
 	magazines[] =
 	{
 		12Rnd_Quiver_Wood,
@@ -31,7 +26,7 @@ class Crossbow_Base : Rifle
 		1Rnd_Bolt_Explosive,
 		1Rnd_Bolt_Tranquilizer
 	};
-	
+
 	dexterity = 1.6;
 	magazineReloadTime = 0;
 	//reloadMagazineSound[] = {"", 1, 1};
@@ -50,235 +45,194 @@ class Crossbow_Base : Rifle
 	soundBullet[] = {"emptySound",1};
 };
 
-
-
 /*Iron sights*/
 
-class Crossbow_DZ : Crossbow_Base
-{
+class DZE_Wep_Crossbow : DZE_Wep_Crossbow_Base {
 	scope = 2;
-	
+	displayName = "$STR_DZ_WPN_CROSSBOW_NAME";
+	descriptionShort = "$STR_WPN_DESC_4";
 	model = "z\addons\community_crossbow\models\crossbow.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_icon.paa";
-	displayName = $STR_DZ_WPN_CROSSBOW_NAME;
-	descriptionShort = $STR_WPN_DESC_4;
-	
-	class Attachments
-	{
-		Attachment_CCO = "Crossbow_CCO_DZ";
-		Attachment_FL = "Crossbow_FL_DZ";
-		Attachment_MFL = "Crossbow_MFL_DZ";
-		Attachment_SCOPED = "Crossbow_Scope_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_Crossbow_CCO";
+		Attachment_FL = "DZE_Wep_Crossbow_FL";
+		Attachment_MFL = "DZE_Wep_Crossbow_MFL";
+		Attachment_SCOPED = "DZE_Wep_Crossbow_Scope";
 	};
 };
 
-class Crossbow_FL_DZ : Crossbow_DZ
-{
+class DZE_Wep_Crossbow_FL : DZE_Wep_Crossbow {
+	displayName = "$STR_DZ_WPN_CROSSBOW_FL_NAME";
 	model = "z\addons\community_crossbow\models\crossbow_fl.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_fl.paa";
-	displayName = $STR_DZ_WPN_CROSSBOW_FL_NAME;
-	
+
 	CROSSBOW_FLASHLIGHT
-	
-	class Attachments
-	{
-		Attachment_CCO = "Crossbow_CCO_FL_DZ";
-		Attachment_SCOPED = "Crossbow_Scope_FL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_Crossbow_CCO_FL";
+		Attachment_SCOPED = "DZE_Wep_Crossbow_Scope_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'Crossbow_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
 		};
 	};
 };
 
-class Crossbow_MFL_DZ : Crossbow_DZ
-{
+class DZE_Wep_Crossbow_MFL : DZE_Wep_Crossbow {
+	displayName = "$STR_DZ_WPN_CROSSBOW_MFL_NAME";
 	model = "z\addons\community_crossbow\models\crossbow_fl.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_fl.paa";
-	displayName = $STR_DZ_WPN_CROSSBOW_MFL_NAME;
-	
+
 	CROSSBOW_MFLASHLIGHT
-	
-	class Attachments
-	{
-		Attachment_CCO = "Crossbow_CCO_MFL_DZ";
-		Attachment_SCOPED = "Crossbow_Scope_MFL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_Crossbow_CCO_MFL";
+		Attachment_SCOPED = "DZE_Wep_Crossbow_Scope_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'Crossbow_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
 		};
 	};
 };
-
-
 
 /*CCO*/
 
-class Crossbow_CCO_DZ : Crossbow_DZ
-{
+class DZE_Wep_Crossbow_CCO : DZE_Wep_Crossbow {
+	displayName = "$STR_DZ_WPN_CROSSBOW_CCO_NAME";
 	model = "z\addons\community_crossbow\models\crossbow_cco.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_cco.paa";
-	displayName = $STR_DZ_WPN_CROSSBOW_CCO_NAME;
-	
-	class Attachments
-	{
-		Attachment_FL = "Crossbow_CCO_FL_DZ";
-		Attachment_MFL = "Crossbow_CCO_MFL_DZ";
+
+	class Attachments {
+		Attachment_FL = "DZE_Wep_Crossbow_CCO_FL";
+		Attachment_MFL = "DZE_Wep_Crossbow_CCO_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'Crossbow_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
 		};
 	};
 };
 
-class Crossbow_CCO_FL_DZ : Crossbow_CCO_DZ
-{
+class DZE_Wep_Crossbow_CCO_FL : DZE_Wep_Crossbow_CCO {
+	displayName = "$STR_DZ_WPN_CROSSBOW_CCO_FL_NAME";
 	model = "z\addons\community_crossbow\models\crossbow_cco_fl.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_scoped.paa";
-	displayName = $STR_DZ_WPN_CROSSBOW_CCO_FL_NAME;
-	
+
 	CROSSBOW_FLASHLIGHT
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'Crossbow_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_Crossbow_FL'] call player_removeAttachment";
 		};
-		
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'Crossbow_CCO_DZ'] call player_removeAttachment";
+
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_Crossbow_CCO'] call player_removeAttachment";
 		};
 	};
 };
 
-class Crossbow_CCO_MFL_DZ : Crossbow_CCO_DZ
-{
+class DZE_Wep_Crossbow_CCO_MFL : DZE_Wep_Crossbow_CCO {
+	displayName = "$STR_DZ_WPN_CROSSBOW_CCO_MFL_NAME";
 	model = "z\addons\community_crossbow\models\crossbow_cco_fl.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_scoped.paa";
-	displayName = $STR_DZ_WPN_CROSSBOW_CCO_MFL_NAME;
-	
+
 	CROSSBOW_MFLASHLIGHT
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'Crossbow_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_Crossbow_MFL'] call player_removeAttachment";
 		};
-		
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'Crossbow_CCO_DZ'] call player_removeAttachment";
+
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_Crossbow_CCO'] call player_removeAttachment";
 		};
 	};
 };
-
-
 
 /*Scope*/
 
-class Crossbow_Scope_DZ : Crossbow_DZ
-{
+class DZE_Wep_Crossbow_Scope : DZE_Wep_Crossbow {
+	displayName = "$STR_DZ_WPN_CROSSBOW_SCOPE_NAME";
 	model = "z\addons\community_crossbow\models\crossbow_scoped.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_cco.paa";
-	displayName = $STR_DZ_WPN_CROSSBOW_SCOPE_NAME;
-	
+
 	opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
 	opticsZoomInit = 0.071945;
 	opticsZoomMin = 0.071945;
 	opticsZoomMax = 0.071945;
 	distanceZoomMin = 110;
 	distanceZoomMax = 110;
-	
-	class Attachments
-	{
-		Attachment_FL = "Crossbow_Scope_FL_DZ";
-		Attachment_MFL = "Crossbow_Scope_MFL_DZ";
+
+	class Attachments {
+		Attachment_FL = "DZE_Wep_Crossbow_Scope_FL";
+		Attachment_MFL = "DZE_Wep_Crossbow_Scope_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveScope
-		{
-			text = $STR_DZ_ATT_PU_RMVE;
-			script = "; ['Attachment_SCOPED',_id,'Crossbow_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveScope {
+			text = "$STR_DZ_ATT_PU_RMVE";
+			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
 		};
 	};
 };
 
-class Crossbow_Scope_FL_DZ : Crossbow_Scope_DZ
-{
+class DZE_Wep_Crossbow_Scope_FL : DZE_Wep_Crossbow_Scope {
+	displayName = "$STR_DZ_WPN_CROSSBOW_SCOPE_FL_NAME";
 	model = "z\addons\community_crossbow\models\crossbow_scoped_fl.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_scoped_fl.paa";
-	displayName = $STR_DZ_WPN_CROSSBOW_SCOPE_FL_NAME;
-	
+
 	CROSSBOW_FLASHLIGHT
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveScope
-		{
-			text = $STR_DZ_ATT_PU_RMVE;
-			script = "; ['Attachment_SCOPED',_id,'Crossbow_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveScope {
+			text = "$STR_DZ_ATT_PU_RMVE";
+			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Crossbow_FL'] call player_removeAttachment";
 		};
-		
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'Crossbow_Scope_DZ'] call player_removeAttachment";
+
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_Crossbow_Scope'] call player_removeAttachment";
 		};
 	};
 };
 
-class Crossbow_Scope_MFL_DZ : Crossbow_Scope_DZ
-{
+class DZE_Wep_Crossbow_Scope_MFL : DZE_Wep_Crossbow_Scope {
+	displayName = "$STR_DZ_WPN_CROSSBOW_SCOPE_MFL_NAME";
 	model = "z\addons\community_crossbow\models\crossbow_scoped_fl.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_scoped_fl.paa";
-	displayName = $STR_DZ_WPN_CROSSBOW_SCOPE_MFL_NAME;
-	
+
 	CROSSBOW_MFLASHLIGHT
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveScope
-		{
-			text = $STR_DZ_ATT_PU_RMVE;
-			script = "; ['Attachment_SCOPED',_id,'Crossbow_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveScope {
+			text = "$STR_DZ_ATT_PU_RMVE";
+			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Crossbow_MFL'] call player_removeAttachment";
 		};
-		
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'Crossbow_Scope_DZ'] call player_removeAttachment";
+
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_Crossbow_Scope'] call player_removeAttachment";
 		};
 	};
 };

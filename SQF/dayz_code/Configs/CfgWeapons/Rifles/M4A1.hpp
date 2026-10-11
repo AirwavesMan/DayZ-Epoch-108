@@ -1,20 +1,18 @@
-#define M4A1_FLASHLIGHT class FlashLight\
-{\
-	color[] = {0.9, 0.9, 0.7, 0.9};\
-	ambient[] = {0.1, 0.1, 0.1, 1.0};\
+#define M4A1_FLASHLIGHT class FlashLight {\
 	position = "flash dir";\
 	direction = "flash";\
+	color[] = {0.9, 0.9, 0.7, 0.9};\
+	ambient[] = {0.1, 0.1, 0.1, 1.0};\
 	angle = 30;\
 	scale[] = {1, 1, 0.5};\
 	brightness = 0.1;\
 }
 
-#define M4A1_MFLASHLIGHT class FlashLight\
-{\
-	color[] = {0.9, 0.0, 0.0, 0.9};\
-	ambient[] = {0.1, 0.0, 0.0, 1.0};\
+#define M4A1_MFLASHLIGHT class FlashLight {\
 	position = "flash dir";\
 	direction = "flash";\
+	color[] = {0.9, 0.0, 0.0, 0.9};\
+	ambient[] = {0.1, 0.0, 0.0, 1.0};\
 	angle = 30;\
 	scale[] = {1, 1, 0.5};\
 	brightness = 0.08;\
@@ -24,10 +22,10 @@
 handAnim[]={"OFP2_ManSkeleton","\Ca\weapons\data\Anim\M16GL.rtm"}
 
 #define M4A1_ACOG modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x.p3d";\
-class OpticsModes\
-{\
-	class ACOG\
-	{\
+class OpticsModes {\
+	class ACOG {\
+		memoryPointCamera = "opticView";\
+		cameraDir = "";\
 		opticsID = 1;\
 		useModelOptics = true;\
 		opticsFlare = true;\
@@ -37,14 +35,13 @@ class OpticsModes\
 		opticsZoomInit = 0.0623;\
 		distanceZoomMin = 300;\
 		distanceZoomMax = 300;\
-		memoryPointCamera = "opticView";\
 		visionMode[] = {"Normal"};\
 		opticsPPEffects[] = {"OpticsCHAbera3","OpticsBlur3"};\
-		cameraDir = "";\
 	};\
 	\
-	class Iron\
-	{\
+	class Iron {\
+		memoryPointCamera = "eye";\
+		cameraDir = "";\
 		opticsID = 2;\
 		useModelOptics = false;\
 		opticsFlare = false;\
@@ -54,70 +51,62 @@ class OpticsModes\
 		opticsZoomInit = 0.5;\
 		distanceZoomMin = 100;\
 		distanceZoomMax = 100;\
-		memoryPointCamera = "eye";\
 		visionMode[] = {};\
 		opticsPPEffects[] = {};\
-		cameraDir = "";\
 	};\
 }
 
 //Iron sights
-	
-class M4A1_DZ : M4A1
-{
+
+class DZE_Wep_M4A1 : M4A1 {
+	displayName = "$STR_DZ_WPN_M4A1_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_NAME;
-	
+
 	handAnim[]={"OFP2_ManSkeleton","\Ca\weapons_E\SCAR\Data\Anim\SCAR.rtm"};
-	
-	magazines[] = 
+
+	magazines[] =
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_G36, 
+		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_Taped
 	};
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_CCO_DZ";
-		Attachment_Holo = "M4A1_Holo_DZ";
-		Attachment_ACOG = "M4A1_ACOG_DZ";
-		Attachment_M203 = "M4A1_GL_DZ";
-		Attachment_Sup556 = "M4A1_SD_DZ";
-		Attachment_FL = "M4A1_FL_DZ";
-		Attachment_MFL = "M4A1_MFL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_CCO";
+		Attachment_Holo = "DZE_Wep_M4A1_Holo";
+		Attachment_ACOG = "DZE_Wep_M4A1_ACOG";
+		Attachment_M203 = "DZE_Wep_M4A1_GL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_SD";
+		Attachment_FL = "DZE_Wep_M4A1_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_MFL";
 	};
 };
 
-class M4A1_FL_DZ : M4A1_DZ
-{
+class DZE_Wep_M4A1_FL : DZE_Wep_M4A1 {
+	displayName = "$STR_DZ_WPN_M4A1_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_FL_NAME;
-	
+
 	M4A1_FLASHLIGHT;
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_CCO_FL_DZ";
-		Attachment_Holo = "M4A1_Holo_FL_DZ";
-		Attachment_ACOG = "M4A1_ACOG_FL_DZ";
-		Attachment_M203 = "M4A1_GL_FL_DZ";
-		Attachment_Sup556 = "M4A1_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_CCO_FL";
+		Attachment_Holo = "DZE_Wep_M4A1_Holo_FL";
+		Attachment_ACOG = "DZE_Wep_M4A1_ACOG_FL";
+		Attachment_M203 = "DZE_Wep_M4A1_GL_FL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 			//script is formatted by ui_selectSlot to:
-			//"_id = 'M4A1_FL_DZ' ; ['Attachment_FL',_id,'M4A1_DZ'] call player_removeAttachment;"
-			
+			//"_id = 'DZE_Wep_M4A1_FL' ; ['Attachment_FL',_id,'DZE_Wep_M4A1'] call player_removeAttachment;"
+
 			//REGEX
 			//script = "\[Attachment_([_a-zA-Z0-9]+)\,[_a-zA-Z0-9]+\,([_a-zA-Z0-9]+)\] call player_removeAttachment";
 			//script = "; \['Attachment_$1',_id,'$2'\] call player_removeAttachment";
@@ -125,32 +114,28 @@ class M4A1_FL_DZ : M4A1_DZ
 	};
 };
 
-class M4A1_MFL_DZ : M4A1_DZ
-{
+class DZE_Wep_M4A1_MFL : DZE_Wep_M4A1 {
+	displayName = "$STR_DZ_WPN_M4A1_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_MFL_NAME;
-	
+
 	M4A1_MFLASHLIGHT;
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_CCO_MFL_DZ";
-		Attachment_Holo = "M4A1_Holo_MFL_DZ";
-		Attachment_ACOG = "M4A1_ACOG_MFL_DZ";
-		Attachment_M203 = "M4A1_GL_MFL_DZ";
-		Attachment_Sup556 = "M4A1_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_CCO_MFL";
+		Attachment_Holo = "DZE_Wep_M4A1_Holo_MFL";
+		Attachment_ACOG = "DZE_Wep_M4A1_ACOG_MFL";
+		Attachment_M203 = "DZE_Wep_M4A1_GL_MFL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 			//script is formatted by ui_selectSlot to:
-			//"_id = 'M4A1_MFL_DZ' ; ['Attachment_MFL',_id,'M4A1_DZ'] call player_removeAttachment;"
-			
+			//"_id = 'DZE_Wep_M4A1_MFL' ; ['Attachment_MFL',_id,'DZE_Wep_M4A1'] call player_removeAttachment;"
+
 			//REGEX
 			//script = "\[Attachment_([_a-zA-Z0-9]+)\,[_a-zA-Z0-9]+\,([_a-zA-Z0-9]+)\] call player_removeAttachment";
 			//script = "; \['Attachment_$1',_id,'$2'\] call player_removeAttachment";
@@ -158,14 +143,13 @@ class M4A1_MFL_DZ : M4A1_DZ
 	};
 };
 
-class M4A1_SD_DZ : M4A1_AIM_SD_camo
-{
+class DZE_Wep_M4A1_SD : M4A1_AIM_SD_camo {
+	displayName = "$STR_DZ_WPN_M4A1_SD_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_sd_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_SD_NAME;
-	
+
 	handAnim[]={"OFP2_ManSkeleton","\Ca\weapons_E\SCAR\Data\Anim\SCAR.rtm"};
-	
+
 	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
@@ -173,1435 +157,1185 @@ class M4A1_SD_DZ : M4A1_AIM_SD_camo
 		60Rnd_556x45_StanagSD_Taped,
 		100Rnd_556x45_BetaCMagSD
 	};
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_CCO_SD_DZ";
-		Attachment_Holo = "M4A1_Holo_SD_DZ";
-		Attachment_ACOG = "M4A1_ACOG_SD_DZ";
-		Attachment_M203 = "M4A1_GL_SD_DZ";
-		Attachment_FL = "M4A1_SD_FL_DZ";
-		Attachment_MFL = "M4A1_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_CCO_SD";
+		Attachment_Holo = "DZE_Wep_M4A1_Holo_SD";
+		Attachment_ACOG = "DZE_Wep_M4A1_ACOG_SD";
+		Attachment_M203 = "DZE_Wep_M4A1_GL_SD";
+		Attachment_FL = "DZE_Wep_M4A1_SD_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_SD_FL_DZ : M4A1_SD_DZ
-{
+class DZE_Wep_M4A1_SD_FL : DZE_Wep_M4A1_SD {
+	displayName = "$STR_DZ_WPN_M4A1_SD_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_SD_FL_NAME;
-	
+
 	M4A1_FLASHLIGHT;
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_CCO_SD_FL_DZ";
-		Attachment_Holo = "M4A1_Holo_SD_FL_DZ";
-		Attachment_ACOG = "M4A1_ACOG_SD_FL_DZ";
-		Attachment_M203 = "M4A1_GL_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_CCO_SD_FL";
+		Attachment_Holo = "DZE_Wep_M4A1_Holo_SD_FL";
+		Attachment_ACOG = "DZE_Wep_M4A1_ACOG_SD_FL";
+		Attachment_M203 = "DZE_Wep_M4A1_GL_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_SD_MFL_DZ : M4A1_SD_DZ
-{
+class DZE_Wep_M4A1_SD_MFL : DZE_Wep_M4A1_SD {
+	displayName = "$STR_DZ_WPN_M4A1_SD_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_SD_MFL_NAME;
-	
+
 	M4A1_MFLASHLIGHT;
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_CCO_SD_MFL_DZ";
-		Attachment_Holo = "M4A1_Holo_SD_MFL_DZ";
-		Attachment_ACOG = "M4A1_ACOG_SD_MFL_DZ";
-		Attachment_M203 = "M4A1_GL_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_CCO_SD_MFL";
+		Attachment_Holo = "DZE_Wep_M4A1_Holo_SD_MFL";
+		Attachment_ACOG = "DZE_Wep_M4A1_ACOG_SD_MFL";
+		Attachment_M203 = "DZE_Wep_M4A1_GL_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
 	};
 };
 
 //Grenade launcher
 
-class M4A1_GL_DZ : M4A1_DZ
-{
+class DZE_Wep_M4A1_GL : DZE_Wep_M4A1 {
+	displayName = "$STR_DZ_WPN_M4A1_GL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_NAME;
-	
+
 	M4A1_M203;
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_GL_CCO_DZ";
-		Attachment_Holo = "M4A1_GL_Holo_DZ";
-		Attachment_ACOG = "M4A1_GL_ACOG_DZ";
-		Attachment_Sup556 = "M4A1_GL_SD_DZ";
-		Attachment_FL = "M4A1_GL_FL_DZ";
-		Attachment_MFL = "M4A1_GL_MFL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO";
+		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo";
+		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG";
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_SD";
+		Attachment_FL = "DZE_Wep_M4A1_GL_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_GL_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_FL_DZ : M4A1_GL_DZ
-{
+class DZE_Wep_M4A1_GL_FL : DZE_Wep_M4A1_GL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_FL_NAME;
-	
+
 	M4A1_FLASHLIGHT;
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_GL_CCO_FL_DZ";
-		Attachment_Holo = "M4A1_GL_Holo_FL_DZ";
-		Attachment_ACOG = "M4A1_GL_ACOG_FL_DZ";
-		Attachment_Sup556 = "M4A1_GL_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO_FL";
+		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo_FL";
+		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG_FL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_GL_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_MFL_DZ : M4A1_GL_DZ
-{
+class DZE_Wep_M4A1_GL_MFL : DZE_Wep_M4A1_GL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_MFL_NAME;
-	
+
 	M4A1_MFLASHLIGHT;
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_GL_CCO_MFL_DZ";
-		Attachment_Holo = "M4A1_GL_Holo_MFL_DZ";
-		Attachment_ACOG = "M4A1_GL_ACOG_MFL_DZ";
-		Attachment_Sup556 = "M4A1_GL_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO_MFL";
+		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo_MFL";
+		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG_MFL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_GL_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_SD_DZ : M4A1_SD_DZ
-{
+class DZE_Wep_M4A1_GL_SD : DZE_Wep_M4A1_SD {
+	displayName = "$STR_DZ_WPN_M4A1_GL_SD_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_sd_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_SD_NAME;
-	
+
 	M4A1_M203;
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_GL_CCO_SD_DZ";
-		Attachment_Holo = "M4A1_GL_Holo_SD_DZ";
-		Attachment_ACOG = "M4A1_GL_ACOG_SD_DZ";
-		Attachment_FL = "M4A1_GL_SD_FL_DZ";
-		Attachment_MFL = "M4A1_GL_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO_SD";
+		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo_SD";
+		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG_SD";
+		Attachment_FL = "DZE_Wep_M4A1_GL_SD_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_GL_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_SD_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_SD_FL_DZ : M4A1_GL_SD_DZ
-{
+class DZE_Wep_M4A1_GL_SD_FL : DZE_Wep_M4A1_GL_SD {
+	displayName = "$STR_DZ_WPN_M4A1_GL_SD_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_SD_FL_NAME;
-	
+
 	M4A1_FLASHLIGHT;
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_GL_CCO_SD_FL_DZ";
-		Attachment_Holo = "M4A1_GL_Holo_SD_FL_DZ";
-		Attachment_ACOG = "M4A1_GL_ACOG_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO_SD_FL";
+		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo_SD_FL";
+		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_SD_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_FL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_GL_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_SD_MFL_DZ : M4A1_GL_SD_DZ
-{
+class DZE_Wep_M4A1_GL_SD_MFL : DZE_Wep_M4A1_GL_SD {
+	displayName = "$STR_DZ_WPN_M4A1_GL_SD_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_SD_MFL_NAME;
-	
+
 	M4A1_MFLASHLIGHT;
-	
-	class Attachments
-	{
-		Attachment_CCO = "M4A1_GL_CCO_SD_MFL_DZ";
-		Attachment_Holo = "M4A1_GL_Holo_SD_MFL_DZ";
-		Attachment_ACOG = "M4A1_GL_ACOG_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
+		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
+		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_SD_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_MFL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_GL_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
 		};
 	};
 };
-
-
 
 //CCO
 
-class M4A1_CCO_DZ : M4A1_DZ
-{
+class DZE_Wep_M4A1_CCO : DZE_Wep_M4A1 {
+	displayName = "$STR_DZ_WPN_M4A1_CCO_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_cco.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_CCO_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_CCO_DZ";
-		Attachment_Sup556 = "M4A1_CCO_SD_DZ";
-		Attachment_FL = "M4A1_CCO_FL_DZ";
-		Attachment_MFL = "M4A1_CCO_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO";
+		Attachment_Sup556 = "DZE_Wep_M4A1_CCO_SD";
+		Attachment_FL = "DZE_Wep_M4A1_CCO_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_CCO_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_CCO_FL_DZ : M4A1_FL_DZ
-{
+class DZE_Wep_M4A1_CCO_FL : DZE_Wep_M4A1_FL {
+	displayName = "$STR_DZ_WPN_M4A1_CCO_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_cco_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_CCO_FL_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_CCO_FL_DZ";
-		Attachment_Sup556 = "M4A1_CCO_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO_FL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_CCO_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_CCO_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_CCO_MFL_DZ : M4A1_MFL_DZ
-{
+class DZE_Wep_M4A1_CCO_MFL : DZE_Wep_M4A1_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_CCO_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_cco_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_CCO_MFL_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_CCO_MFL_DZ";
-		Attachment_Sup556 = "M4A1_CCO_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO_MFL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_CCO_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_CCO_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_CCO_SD_DZ : M4A1_SD_DZ
-{
+class DZE_Wep_M4A1_CCO_SD : DZE_Wep_M4A1_SD {
+	displayName = "$STR_DZ_WPN_M4A1_CCO_SD_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_cco_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_sd_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_CCO_SD_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_CCO_SD_DZ";
-		Attachment_FL = "M4A1_CCO_SD_FL_DZ";
-		Attachment_MFL = "M4A1_CCO_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO_SD";
+		Attachment_FL = "DZE_Wep_M4A1_CCO_SD_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_CCO_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_SD_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_CCO_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_CCO_SD_FL_DZ : M4A1_SD_FL_DZ
-{
+class DZE_Wep_M4A1_CCO_SD_FL : DZE_Wep_M4A1_SD_FL {
+	displayName = "$STR_DZ_WPN_M4A1_CCO_SD_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_cco_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_CCO_SD_FL_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_CCO_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_SD_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_CCO_FL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_CCO_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_CCO_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_CCO_SD'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_CCO_SD_MFL_DZ : M4A1_SD_MFL_DZ
-{
+class DZE_Wep_M4A1_CCO_SD_MFL : DZE_Wep_M4A1_SD_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_CCO_SD_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_cco_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_CCO_SD_MFL_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_CCO_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_SD_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_CCO_MFL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_CCO_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_CCO_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_CCO_SD'] call player_removeAttachment";
 		};
 	};
 };
 
 //Grenade launcher
 
-class M4A1_GL_CCO_DZ : M4A1_GL_DZ
-{
+class DZE_Wep_M4A1_GL_CCO : DZE_Wep_M4A1_GL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_CCO_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_cco.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_cco_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_CCO_NAME;
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_GL_CCO_SD_DZ";
-		Attachment_FL = "M4A1_GL_CCO_FL_DZ";
-		Attachment_MFL = "M4A1_GL_CCO_MFL_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_CCO_SD";
+		Attachment_FL = "DZE_Wep_M4A1_GL_CCO_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_GL_CCO_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_GL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_CCO_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_CCO_FL_DZ : M4A1_GL_FL_DZ
-{
+class DZE_Wep_M4A1_GL_CCO_FL : DZE_Wep_M4A1_GL_FL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_CCO_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_cco_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_cco_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_CCO_FL_NAME;
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_GL_CCO_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_CCO_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_GL_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_CCO_FL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_GL_CCO_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_CCO'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_CCO_MFL_DZ : M4A1_GL_MFL_DZ
-{
+class DZE_Wep_M4A1_GL_CCO_MFL : DZE_Wep_M4A1_GL_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_CCO_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_cco_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_cco_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_CCO_MFL_NAME;
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_GL_CCO_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_GL_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_CCO_MFL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_GL_CCO_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_CCO'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_CCO_SD_DZ : M4A1_GL_SD_DZ
-{
+class DZE_Wep_M4A1_GL_CCO_SD : DZE_Wep_M4A1_GL_SD {
+	displayName = "$STR_DZ_WPN_M4A1_GL_CCO_SD_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_cco_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_cco_sd_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_CCO_SD_NAME;
-	
-	class Attachments
-	{
-		Attachment_FL = "M4A1_GL_CCO_SD_FL_DZ";
-		Attachment_MFL = "M4A1_GL_CCO_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_FL = "DZE_Wep_M4A1_GL_CCO_SD_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_GL_SD_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_CCO_SD_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO_SD'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_CCO_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_CCO'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_CCO_SD_FL_DZ : M4A1_GL_SD_FL_DZ
-{
+class DZE_Wep_M4A1_GL_CCO_SD_FL : DZE_Wep_M4A1_GL_SD_FL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_CCO_SD_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_cco_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_cco_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_CCO_SD_FL_NAME;
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_GL_SD_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL_SD_FL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_CCO_SD_FL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO_SD_FL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_CCO_FL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_CCO_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_GL_CCO_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_CCO_SD'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_CCO_SD_MFL_DZ : M4A1_GL_SD_MFL_DZ
-{
+class DZE_Wep_M4A1_GL_CCO_SD_MFL : DZE_Wep_M4A1_GL_SD_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_CCO_SD_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_cco_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_cco_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_CCO_SD_MFL_NAME;
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_RMVE;
-			script = "; ['Attachment_CCO',_id,'M4A1_GL_SD_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveCCO {
+			text = "$STR_DZ_ATT_CCO_RMVE";
+			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL_SD_MFL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_CCO_SD_MFL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO_SD_MFL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_CCO_MFL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_CCO_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_GL_CCO_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_CCO_SD'] call player_removeAttachment";
 		};
 	};
 };
-
-
-
 
 //Holo
 
-class M4A1_Holo_DZ : M4A1_DZ
-{
+class DZE_Wep_M4A1_Holo : DZE_Wep_M4A1 {
+	displayName = "$STR_DZ_WPN_M4A1_HOLO_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_holo.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_HOLO_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_Holo_DZ";
-		Attachment_Sup556 = "M4A1_Holo_SD_DZ";
-		Attachment_FL = "M4A1_Holo_FL_DZ";
-		Attachment_MFL = "M4A1_Holo_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo";
+		Attachment_Sup556 = "DZE_Wep_M4A1_Holo_SD";
+		Attachment_FL = "DZE_Wep_M4A1_Holo_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_Holo_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_Holo_FL_DZ : M4A1_FL_DZ
-{
+class DZE_Wep_M4A1_Holo_FL : DZE_Wep_M4A1_FL {
+	displayName = "$STR_DZ_WPN_M4A1_HOLO_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_holo_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_HOLO_FL_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_Holo_FL_DZ";
-		Attachment_Sup556 = "M4A1_Holo_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo_FL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_Holo_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_Holo_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_Holo_MFL_DZ : M4A1_MFL_DZ
-{
+class DZE_Wep_M4A1_Holo_MFL : DZE_Wep_M4A1_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_HOLO_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_holo_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_HOLO_MFL_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_Holo_MFL_DZ";
-		Attachment_Sup556 = "M4A1_Holo_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo_MFL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_Holo_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_Holo_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_Holo_SD_DZ : M4A1_SD_DZ
-{
+class DZE_Wep_M4A1_Holo_SD : DZE_Wep_M4A1_SD {
+	displayName = "$STR_DZ_WPN_M4A1_HOLO_SD_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_holo_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_sd_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_HOLO_SD_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_Holo_SD_DZ";
-		Attachment_FL = "M4A1_Holo_SD_FL_DZ";
-		Attachment_MFL = "M4A1_Holo_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo_SD";
+		Attachment_FL = "DZE_Wep_M4A1_Holo_SD_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_Holo_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_SD_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_Holo_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_Holo_SD_FL_DZ : M4A1_SD_FL_DZ
-{
+class DZE_Wep_M4A1_Holo_SD_FL : DZE_Wep_M4A1_SD_FL {
+	displayName = "$STR_DZ_WPN_M4A1_HOLO_SD_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_holo_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_HOLO_SD_FL_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_Holo_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_SD_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_Holo_FL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_Holo_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_Holo_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_Holo_SD'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_Holo_SD_MFL_DZ : M4A1_SD_MFL_DZ
-{
+class DZE_Wep_M4A1_Holo_SD_MFL : DZE_Wep_M4A1_SD_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_HOLO_SD_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_holo_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_HOLO_SD_MFL_NAME;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_Holo_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_SD_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_Holo_MFL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_Holo_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_Holo_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_Holo_SD'] call player_removeAttachment";
 		};
 	};
 };
 
 //Grenade launcher
 
-class M4A1_GL_Holo_DZ : M4A1_GL_DZ
-{
+class DZE_Wep_M4A1_GL_Holo : DZE_Wep_M4A1_GL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_HOLO_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_holo.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_holo_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_HOLO_NAME;
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_GL_Holo_SD_DZ";
-		Attachment_FL = "M4A1_GL_Holo_FL_DZ";
-		Attachment_MFL = "M4A1_GL_Holo_MFL_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_Holo_SD";
+		Attachment_FL = "DZE_Wep_M4A1_GL_Holo_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_GL_Holo_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_GL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_Holo_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_Holo_FL_DZ : M4A1_GL_FL_DZ
-{
+class DZE_Wep_M4A1_GL_Holo_FL : DZE_Wep_M4A1_GL_FL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_HOLO_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_holo_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_holo_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_HOLO_FL_NAME;
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_GL_Holo_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_Holo_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_GL_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_Holo_FL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_GL_Holo_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_Holo'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_Holo_MFL_DZ : M4A1_GL_MFL_DZ
-{
+class DZE_Wep_M4A1_GL_Holo_MFL : DZE_Wep_M4A1_GL_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_HOLO_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_holo_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_holo_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_HOLO_MFL_NAME;
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_GL_Holo_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_GL_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_Holo_MFL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_GL_Holo_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_Holo'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_Holo_SD_DZ : M4A1_GL_SD_DZ
-{
+class DZE_Wep_M4A1_GL_Holo_SD : DZE_Wep_M4A1_GL_SD {
+	displayName = "$STR_DZ_WPN_M4A1_GL_HOLO_SD_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_holo_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_holo_sd_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_HOLO_SD_NAME;
-	
-	class Attachments
-	{
-		Attachment_FL = "M4A1_GL_Holo_SD_FL_DZ";
-		Attachment_MFL = "M4A1_GL_Holo_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_FL = "DZE_Wep_M4A1_GL_Holo_SD_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_GL_SD_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_Holo_SD_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo_SD'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_Holo_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_Holo'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_Holo_SD_FL_DZ : M4A1_GL_SD_FL_DZ
-{
+class DZE_Wep_M4A1_GL_Holo_SD_FL : DZE_Wep_M4A1_GL_SD_FL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_HOLO_SD_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_holo_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_holo_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_HOLO_SD_FL_NAME;
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_GL_SD_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL_SD_FL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_Holo_SD_FL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo_SD_FL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_Holo_FL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_Holo_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_GL_Holo_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_Holo_SD'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_Holo_SD_MFL_DZ : M4A1_GL_SD_MFL_DZ
-{
+class DZE_Wep_M4A1_GL_Holo_SD_MFL : DZE_Wep_M4A1_GL_SD_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_HOLO_SD_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_holo_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_holo_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_HOLO_SD_MFL_NAME;
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveHolo
-		{
-			text = $STR_DZ_ATT_HOLO_RMVE;
-			script = "; ['Attachment_Holo',_id,'M4A1_GL_SD_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveHolo {
+			text = "$STR_DZ_ATT_HOLO_RMVE";
+			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL_SD_MFL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_Holo_SD_MFL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo_SD_MFL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_Holo_MFL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_Holo_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_GL_Holo_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_Holo_SD'] call player_removeAttachment";
 		};
 	};
 };
-
-
 
 //ACOG
 
-class M4A1_ACOG_DZ : M4A1_DZ
-{
+class DZE_Wep_M4A1_ACOG : DZE_Wep_M4A1 {
+	displayName = "$STR_DZ_WPN_M4A1_ACOG_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_acog.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_acog_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_ACOG_NAME;
-	
+
 	M4A1_ACOG;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_ACOG_DZ";
-		Attachment_Sup556 = "M4A1_ACOG_SD_DZ";
-		Attachment_FL = "M4A1_ACOG_FL_DZ";
-		Attachment_MFL = "M4A1_ACOG_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG";
+		Attachment_Sup556 = "DZE_Wep_M4A1_ACOG_SD";
+		Attachment_FL = "DZE_Wep_M4A1_ACOG_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_ACOG_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_ACOG_FL_DZ : M4A1_FL_DZ
-{
+class DZE_Wep_M4A1_ACOG_FL : DZE_Wep_M4A1_FL {
+	displayName = "$STR_DZ_WPN_M4A1_ACOG_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_acog_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_acog_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_ACOG_FL_NAME;
-	
+
 	M4A1_ACOG;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_ACOG_FL_DZ";
-		Attachment_Sup556 = "M4A1_ACOG_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG_FL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_ACOG_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_ACOG_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_ACOG_MFL_DZ : M4A1_MFL_DZ
-{
+class DZE_Wep_M4A1_ACOG_MFL : DZE_Wep_M4A1_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_ACOG_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_acog_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_acog_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_ACOG_MFL_NAME;
-	
+
 	M4A1_ACOG;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_ACOG_MFL_DZ";
-		Attachment_Sup556 = "M4A1_ACOG_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG_MFL";
+		Attachment_Sup556 = "DZE_Wep_M4A1_ACOG_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_ACOG_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_ACOG_SD_DZ : M4A1_SD_DZ
-{
+class DZE_Wep_M4A1_ACOG_SD : DZE_Wep_M4A1_SD {
+	displayName = "$STR_DZ_WPN_M4A1_ACOG_SD_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_acog_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_acog_sd_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_ACOG_SD_NAME;
-	
+
 	M4A1_ACOG;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_ACOG_SD_DZ";
-		Attachment_FL = "M4A1_ACOG_SD_FL_DZ";
-		Attachment_MFL = "M4A1_ACOG_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG_SD";
+		Attachment_FL = "DZE_Wep_M4A1_ACOG_SD_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_ACOG_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_SD_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_ACOG_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_ACOG_SD_FL_DZ : M4A1_SD_FL_DZ
-{
+class DZE_Wep_M4A1_ACOG_SD_FL : DZE_Wep_M4A1_SD_FL {
+	displayName = "$STR_DZ_WPN_M4A1_ACOG_SD_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_acog_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_acog_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_ACOG_SD_FL_NAME;
-	
+
 	M4A1_ACOG;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_ACOG_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_SD_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_ACOG_FL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_ACOG_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_ACOG_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_ACOG_SD'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_ACOG_SD_MFL_DZ : M4A1_SD_MFL_DZ
-{
+class DZE_Wep_M4A1_ACOG_SD_MFL : DZE_Wep_M4A1_SD_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_ACOG_SD_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_acog_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_acog_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_ACOG_SD_MFL_NAME;
-	
+
 	M4A1_ACOG;
-	
-	class Attachments
-	{
-		Attachment_M203 = "M4A1_GL_ACOG_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_SD_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_ACOG_MFL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_ACOG_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_ACOG_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_ACOG_SD'] call player_removeAttachment";
 		};
 	};
 };
 
 //Grenade launcher
 
-class M4A1_GL_ACOG_DZ : M4A1_GL_DZ
-{
+class DZE_Wep_M4A1_GL_ACOG : DZE_Wep_M4A1_GL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_ACOG_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_acog.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_acog_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_ACOG_NAME;
-	
+
 	M4A1_ACOG;
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_GL_ACOG_SD_DZ";
-		Attachment_FL = "M4A1_GL_ACOG_FL_DZ";
-		Attachment_MFL = "M4A1_GL_ACOG_MFL_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_ACOG_SD";
+		Attachment_FL = "DZE_Wep_M4A1_GL_ACOG_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_GL_ACOG_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_GL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_ACOG_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_ACOG_FL_DZ : M4A1_GL_FL_DZ
-{
+class DZE_Wep_M4A1_GL_ACOG_FL : DZE_Wep_M4A1_GL_FL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_ACOG_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_acog_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_acog_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_ACOG_FL_NAME;
-	
+
 	M4A1_ACOG;
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_GL_ACOG_SD_FL_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_GL_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_ACOG_FL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_GL_ACOG_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_ACOG'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_ACOG_MFL_DZ : M4A1_GL_MFL_DZ
-{
+class DZE_Wep_M4A1_GL_ACOG_MFL : DZE_Wep_M4A1_GL_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_ACOG_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_acog_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_acog_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_ACOG_MFL_NAME;
-	
+
 	M4A1_ACOG;
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_GL_ACOG_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_GL_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_ACOG_MFL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_GL_ACOG_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_ACOG'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_ACOG_SD_DZ : M4A1_GL_SD_DZ
-{
+class DZE_Wep_M4A1_GL_ACOG_SD : DZE_Wep_M4A1_GL_SD {
+	displayName = "$STR_DZ_WPN_M4A1_GL_ACOG_SD_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_acog_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_acog_sd_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_ACOG_SD_NAME;
-	
+
 	M4A1_ACOG;
-	
-	class Attachments
-	{
-		Attachment_FL = "M4A1_GL_ACOG_SD_FL_DZ";
-		Attachment_MFL = "M4A1_GL_ACOG_SD_MFL_DZ";
+
+	class Attachments {
+		Attachment_FL = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
+		Attachment_MFL = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
 	};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_GL_SD_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_ACOG_SD_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG_SD'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_ACOG_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_ACOG'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_ACOG_SD_FL_DZ : M4A1_GL_SD_FL_DZ
-{
+class DZE_Wep_M4A1_GL_ACOG_SD_FL : DZE_Wep_M4A1_GL_SD_FL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_ACOG_SD_FL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_acog_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_acog_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_ACOG_SD_FL_NAME;
-	
+
 	M4A1_ACOG;
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_GL_SD_FL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL_SD_FL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_ACOG_SD_FL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG_SD_FL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_ACOG_FL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_ACOG_FL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL',_id,'M4A1_GL_ACOG_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_ACOG_SD'] call player_removeAttachment";
 		};
 	};
 };
 
-class M4A1_GL_ACOG_SD_MFL_DZ : M4A1_GL_SD_MFL_DZ
-{
+class DZE_Wep_M4A1_GL_ACOG_SD_MFL : DZE_Wep_M4A1_GL_SD_MFL {
+	displayName = "$STR_DZ_WPN_M4A1_GL_ACOG_SD_MFL_NAME";
 	model = "z\addons\dayz_communityweapons\m4a1\m4a1_gl_acog_sd_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_acog_sd_fl_ca.paa";
-	displayName = $STR_DZ_WPN_M4A1_GL_ACOG_SD_MFL_NAME;
-	
+
 	M4A1_ACOG;
-	
+
 	class Attachments {};
-	
-	class ItemActions
-	{
-		class RemoveACOG
-		{
-			text = $STR_DZ_ATT_ACOG_RMVE;
-			script = "; ['Attachment_ACOG',_id,'M4A1_GL_SD_MFL_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveACOG {
+			text = "$STR_DZ_ATT_ACOG_RMVE";
+			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL_SD_MFL'] call player_removeAttachment";
 		};
-		class RemoveGL
-		{
-			text = $STR_DZ_ATT_M203_RMVE;
-			script = "; ['Attachment_M203',_id,'M4A1_ACOG_SD_MFL_DZ'] call player_removeAttachment";
+		class RemoveGL {
+			text = "$STR_DZ_ATT_M203_RMVE";
+			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG_SD_MFL'] call player_removeAttachment";
 		};
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_GL_ACOG_MFL_DZ'] call player_removeAttachment";
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_ACOG_MFL'] call player_removeAttachment";
 		};
-		class RemoveFlashlight
-		{
-			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_MFL',_id,'M4A1_GL_ACOG_SD_DZ'] call player_removeAttachment";
+		class RemoveFlashlight {
+			text = "$STR_DZ_ATT_FL_RFL_RMVE";
+			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_ACOG_SD'] call player_removeAttachment";
 		};
 	};
 };
 
 //ice apo resistance mod m4
-class M4A1_Rusty_DZ : M4A1 {
-	M4A1_FLASHLIGHT;
-	
+class DZE_Wep_M4A1_Rusty : M4A1 {
 	scope = 2;
+	displayName = "$STR_DZE_WPN_M4RUSTY_NAME";
+	descriptionShort = "$STR_DZE_WPN_M4RUSTY_DESC";
 	model = "\ice_apo_weapons\M4_ironsight";
 	picture = "\ice_apo_weapons\Data\m4a1_ca.paa";
-	displayName = $STR_DZE_WPN_M4RUSTY_NAME;
-	descriptionShort = $STR_DZE_WPN_M4RUSTY_DESC;
-	magazines[] = 
+	selectionFireAnim = "zasleh";
+	M4A1_FLASHLIGHT;
+
+	magazines[] =
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_G36, 
+		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_Taped
 	};
-	selectionFireAnim = "zasleh";	
 	class Library {
 		libTextDesc = "This M4 rifle is in a very bad shape.";
 	};
 };
 
 class M4A1_AIM_camo;
-class M4A1_Camo_CCO_DZ: M4A1_AIM_camo {
-	magazines[] = 
+class DZE_Wep_M4A1_Camo_CCO: M4A1_AIM_camo {
+	magazines[] =
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_G36, 
+		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_Taped
 	};
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_Camo_CCO_SD_DZ";
-	};	
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_Camo_CCO_SD";
+	};
 };
 
-class M4A1_Camo_CCO_SD_DZ: M4A1_AIM_SD_camo {
+class DZE_Wep_M4A1_Camo_CCO_SD: M4A1_AIM_SD_camo {
 	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
@@ -1609,39 +1343,36 @@ class M4A1_Camo_CCO_SD_DZ: M4A1_AIM_SD_camo {
 		60Rnd_556x45_StanagSD_Taped,
 		100Rnd_556x45_BetaCMagSD
 	};
-	
-	class Attachments {};	
-	class ItemActions
-	{
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_Camo_CCO_DZ'] call player_removeAttachment";
+
+	class Attachments {};
+	class ItemActions {
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_Camo_CCO'] call player_removeAttachment";
 		};
-	};	
+	};
 };
 
 class M4A1_HWS_GL_camo;
-class M4A1_Camo_Holo_GL_DZ: M4A1_HWS_GL_camo {
-	displayName = $STR_DZ_WPN_M4A1_GL_HOLO_NAME;
-	magazines[] = 
+class DZE_Wep_M4A1_Camo_Holo_GL: M4A1_HWS_GL_camo {
+	displayName = "$STR_DZ_WPN_M4A1_GL_HOLO_NAME";
+	magazines[] =
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_G36, 
+		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_Taped
 	};
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "M4A1_Camo_Holo_GL_SD_DZ";
-	};	
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_M4A1_Camo_Holo_GL_SD";
+	};
 };
 
 class M4A1_HWS_GL_SD_Camo;
-class M4A1_Camo_Holo_GL_SD_DZ: M4A1_HWS_GL_SD_Camo {
-	displayName = $STR_DZ_WPN_M4A1_GL_HOLO_SD_NAME;
+class DZE_Wep_M4A1_Camo_Holo_GL_SD: M4A1_HWS_GL_SD_Camo {
+	displayName = "$STR_DZ_WPN_M4A1_GL_HOLO_SD_NAME";
 	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
@@ -1649,16 +1380,14 @@ class M4A1_Camo_Holo_GL_SD_DZ: M4A1_HWS_GL_SD_Camo {
 		60Rnd_556x45_StanagSD_Taped,
 		100Rnd_556x45_BetaCMagSD
 	};
-	
-	class Attachments {};	
-	class ItemActions
-	{
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'M4A1_Camo_Holo_GL_DZ'] call player_removeAttachment";
+
+	class Attachments {};
+	class ItemActions {
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_Camo_Holo_GL'] call player_removeAttachment";
 		};
-	};	
+	};
 };
 
 #undef M4A1_FLASHLIGHT

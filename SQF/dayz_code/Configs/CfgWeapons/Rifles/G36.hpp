@@ -1,8 +1,8 @@
-class G36K_Camo_DZ : G36C
-{
+class DZE_Wep_G36K_Camo : G36C {
+	displayName = "$STR_DZ_WPN_G36K_CAMO_NAME";
 	model = "z\addons\dayz_communityweapons\g36\g36k_camo.p3d";
 	picture = "\z\addons\dayz_communityweapons\g36\data\w_g36k_camo_ca.paa";
-	displayName = $STR_DZ_WPN_G36K_CAMO_NAME;
+	modelOptics = "z\addons\dayz_communityweapons\g36\2dscope_g36.p3d";
 	magazines[] =
 	{
 		30Rnd_556x45_G36,
@@ -14,32 +14,28 @@ class G36K_Camo_DZ : G36C
 	//G36 Optic
 	optics = true;
 	opticsDisablePeripherialVision = true;
-	modelOptics = "z\addons\dayz_communityweapons\g36\2dscope_g36.p3d";
 	opticsPPEffects[]={"OpticsCHAbera1","OpticsBlur2"};
 	opticsZoomMin=0.083; opticsZoomMax=0.083;
 	distanceZoomMin=100; distanceZoomMax=100;
-	
+
 	dexterity = 1.8;
-	
-	class Single : Single
-	{
-		dispersion = 0.0011;
-	};
-	
-	class Burst : Burst
-	{
-		dispersion = 0.0011;
-	};
-	
-	class FullAuto : FullAuto
-	{
+
+	class Single : Single {
 		dispersion = 0.0011;
 	};
 
-	class OpticsModes
-	{
-		class Kolimator
-		{
+	class Burst : Burst {
+		dispersion = 0.0011;
+	};
+
+	class FullAuto : FullAuto {
+		dispersion = 0.0011;
+	};
+
+	class OpticsModes {
+		class Kolimator {
+			memoryPointCamera = "eye";
+			cameraDir = "";
 			opticsID = 1;
 			useModelOptics = false;
 			opticsFlare = false;
@@ -49,14 +45,13 @@ class G36K_Camo_DZ : G36C
 			opticsZoomInit=0.5;
 			distanceZoomMin=100;
 			distanceZoomMax=100;
-			memoryPointCamera = "eye";
 			visionMode[] = {};
 			opticsPPEffects[]={"OpticsCHAbera1","OpticsBlur1"};
-			cameraDir = "";
 		};
-		
-		class Scope
-		{
+
+		class Scope {
+			memoryPointCamera = "opticView";
+			cameraDir = "";
 			opticsID = 2;
 			useModelOptics = true;
 			opticsFlare = true;
@@ -66,26 +61,23 @@ class G36K_Camo_DZ : G36C
 			opticsZoomInit= 0.083;
 			distanceZoomMin=200;
 			distanceZoomMax=200;
-			memoryPointCamera = "opticView";
 			visionMode[] = {"Normal"};
 			opticsPPEffects[]={"OpticsCHAbera1","OpticsBlur1"};
-			cameraDir = "";
 		};
 	};
 	//G36 Optic end
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "G36K_Camo_SD_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_G36K_Camo_SD";
 	};
 };
 
-class G36K_Camo_SD_DZ : G36_C_SD_eotech
-{
+class DZE_Wep_G36K_Camo_SD : G36_C_SD_eotech {
+	displayName = "$STR_DZ_WPN_G36K_CAMO_SD_NAME";
 	model = "z\addons\dayz_communityweapons\g36\g36k_camo_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\g36\data\w_g36k_camo_sd_ca.paa";
-	displayName = $STR_DZ_WPN_G36K_CAMO_SD_NAME;
-	
+	modelOptics = "z\addons\dayz_communityweapons\g36\2dscope_g36_noflash.p3d";
+
 	magazines[] =
 	{
 		30Rnd_556x45_G36SD,
@@ -93,36 +85,32 @@ class G36K_Camo_SD_DZ : G36_C_SD_eotech
 		60Rnd_556x45_StanagSD_Taped,
 		100Rnd_556x45_BetaCMagSD
 	};
-	
+
 	//G36 Optic
 	optics = true;
 	opticsDisablePeripherialVision = true;
-	modelOptics = "z\addons\dayz_communityweapons\g36\2dscope_g36_noflash.p3d";
 	opticsPPEffects[]={"OpticsCHAbera1","OpticsBlur2"};
 	opticsZoomMin=0.083; opticsZoomMax=0.083;
 	distanceZoomMin=100; distanceZoomMax=100;
-	
+
 	dexterity = 1.7;
-	
-	class Single : Single
-	{
-		dispersion = 0.0011;
-	};
-	
-	class Burst : Burst
-	{
-		dispersion = 0.0011;
-	};
-	
-	class FullAuto : FullAuto
-	{
+
+	class Single : Single {
 		dispersion = 0.0011;
 	};
 
-	class OpticsModes
-	{
-		class Kolimator
-		{
+	class Burst : Burst {
+		dispersion = 0.0011;
+	};
+
+	class FullAuto : FullAuto {
+		dispersion = 0.0011;
+	};
+
+	class OpticsModes {
+		class Kolimator {
+			memoryPointCamera = "eye";
+			cameraDir = "";
 			opticsID = 1;
 			useModelOptics = false;
 			opticsFlare = false;
@@ -132,14 +120,13 @@ class G36K_Camo_SD_DZ : G36_C_SD_eotech
 			opticsZoomInit=0.5;
 			distanceZoomMin=100;
 			distanceZoomMax=100;
-			memoryPointCamera = "eye";
 			visionMode[] = {};
 			opticsPPEffects[]={"OpticsCHAbera1","OpticsBlur1"};
-			cameraDir = "";
 		};
-		
-		class Scope
-		{
+
+		class Scope {
+			memoryPointCamera = "opticView";
+			cameraDir = "";
 			opticsID = 2;
 			useModelOptics = true;
 			opticsFlare = true;
@@ -149,81 +136,67 @@ class G36K_Camo_SD_DZ : G36_C_SD_eotech
 			opticsZoomInit= 0.083;
 			distanceZoomMin=200;
 			distanceZoomMax=200;
-			memoryPointCamera = "opticView";
 			visionMode[] = {"Normal"};
 			opticsPPEffects[]={"OpticsCHAbera1","OpticsBlur1"};
-			cameraDir = "";
 		};
 	};
 	//G36 Optic end
-	
-	class ItemActions
-	{
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'G36K_Camo_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_G36K_Camo'] call player_removeAttachment";
 		};
 	};
 };
 
-class G36K_DZ : G36K_Camo_DZ
-{
+class DZE_Wep_G36K : DZE_Wep_G36K_Camo {
+	displayName = "$STR_DZ_WPN_G36K_NAME";
     model = "\ca\weapons\G36\G36_K";
     picture = "\ca\weapons\G36\Data\Equip\w_g36k_ca.paa";
-	displayName = $STR_DZ_WPN_G36K_NAME;	
 	class Attachments {};
 };
 
-class G36A_Camo_DZ : G36K_Camo_DZ
-{
+class DZE_Wep_G36A_Camo : DZE_Wep_G36K_Camo {
+	displayName = "$STR_DZ_WPN_G36A_CAMO_NAME";
 	model = "z\addons\dayz_communityweapons\g36\g36a_camo.p3d";
 	picture = "\z\addons\dayz_communityweapons\g36\data\w_g36a_camo_ca.paa";
-	displayName = $STR_DZ_WPN_G36A_CAMO_NAME;
-	
+
 	dexterity = 1.66;
-	
-	class Single : Single
-	{
+
+	class Single : Single {
 		dispersion = 0.0007;
 	};
-	
-	class Burst : Burst
-	{
+
+	class Burst : Burst {
 		dispersion = 0.0007;
 	};
-	
-	class FullAuto : FullAuto
-	{
+
+	class FullAuto : FullAuto {
 		dispersion = 0.0007;
 	};
-	
-	class Attachments
-	{
-		Attachment_Sup556 = "G36A_Camo_SD_DZ";
+
+	class Attachments {
+		Attachment_Sup556 = "DZE_Wep_G36A_Camo_SD";
 	};
 };
 
-class G36A_Camo_SD_DZ : G36K_Camo_SD_DZ
-{
+class DZE_Wep_G36A_Camo_SD : DZE_Wep_G36K_Camo_SD {
+	displayName = "$STR_DZ_WPN_G36A_CAMO_SD_NAME";
 	model = "z\addons\dayz_communityweapons\g36\g36a_camo_sd";
 	picture = "\dayz_epoch_c\icons\weapons\G36A_Camo_SD.paa";
-	displayName = $STR_DZ_WPN_G36A_CAMO_SD_NAME;
-	
-	class ItemActions
-	{
-		class RemoveSuppressor
-		{
-			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'G36A_Camo_DZ'] call player_removeAttachment";
+
+	class ItemActions {
+		class RemoveSuppressor {
+			text = "$STR_ATTACHMENT_RMVE_Silencer";
+			script = "; ['Attachment_Sup556',_id,'DZE_Wep_G36A_Camo'] call player_removeAttachment";
 		};
 	};
 };
 
-class G36A_DZ : G36A_Camo_DZ
-{
+class DZE_Wep_G36A : DZE_Wep_G36A_Camo {
+	displayName = "$STR_DZ_WPN_G36A_NAME";
     model = "\ca\weapons\G36\G36";
     picture = "\ca\weapons\G36\Data\Equip\w_g36_ca.paa";
-	displayName = $STR_DZ_WPN_G36A_NAME;	
 	class Attachments {};
 };

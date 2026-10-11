@@ -1,25 +1,25 @@
-class PKM_DZ : PK //Iron sight PKM
-{
-	type = 1;
-	
+class PK: Rifle {
+	class manual;
+};
+class DZE_Wep_PKM : PK { //Iron sight PKM
+	displayName = "$STR_DZ_WPN_PKM_NAME";
 	model = "z\addons\dayz_communityweapons\pkm\pkm.p3d";
-	displayName = $STR_DZ_WPN_PKM_NAME;
-	
-	magazines[] = {100Rnd_762x54_PK};
-	
 	weaponInfoType = "RscWeaponZeroing";
+	type = 1;
+
+	magazines[] = {100Rnd_762x54_PK};
+
 	discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
 	discreteDistanceInitIndex = 2;
-	
+
 	modes[] = {FullAuto};
-	
-	class FullAuto : manual
-	{
+
+	class FullAuto : manual {
 		reloadTime = 0.08;
 	};
 };
 
-class Pecheneg_DZ: Pecheneg //PKP with long range scope
-{ 
+class Pecheneg;
+class DZE_Wep_Pecheneg: Pecheneg { //PKP with long range scope
 	type = 1;
 };

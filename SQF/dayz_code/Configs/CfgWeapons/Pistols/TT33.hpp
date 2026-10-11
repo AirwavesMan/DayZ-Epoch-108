@@ -1,8 +1,7 @@
-class Tokarew_TT33_DZ: Makarov
-{
+class DZE_Wep_Tokarew_TT33: Makarov {
 	scope = 2;
-	displayName = $STR_DZ_WPN_TT33_NAME;
-	descriptionShort = $STR_DZ_WPN_TT33_DESC;	
+	displayName = "$STR_DZ_WPN_TT33_NAME";
+	descriptionShort = "$STR_DZ_WPN_TT33_DESC";
 	model = "\RH_de\RH_tt33.p3d";
 	picture = "\RH_de\inv\tt33.paa";
 	begin1[] = {"\RH_de\sound\TT33.wss",0.794328,1,700};

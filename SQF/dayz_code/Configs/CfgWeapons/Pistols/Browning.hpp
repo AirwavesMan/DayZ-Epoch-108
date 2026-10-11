@@ -1,10 +1,9 @@
-class BrowningHP_DZ: M9
-{
+class DZE_Wep_BrowningHP: M9 {
 	scope = 2;
-	displayName = $STR_DZ_WPN_BROWNING_HP_NAME;
-	descriptionShort = $STR_DZ_WPN_BROWNING_HP_DESC;
+	displayName = "$STR_DZ_WPN_BROWNING_HP_NAME";
+	descriptionShort = "$STR_DZ_WPN_BROWNING_HP_DESC";
 	model = "\RH_de\RH_browninghp.p3d";
-	picture = "\RH_de\inv\browninghp.paa";	
+	picture = "\RH_de\inv\browninghp.paa";
 	begin1[] = {"\RH_de\sound\browninghp.wss",0.794328,1,700};
 	soundBegin[] = {"begin1",1};
 	drySound[] = {"\ca\Weapons\Data\Sound\T33_dry_v1",0.01,1,20};
