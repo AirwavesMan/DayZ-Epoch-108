@@ -5,21 +5,21 @@ class DZE_Tool_Sledge: ItemCore { // Epoch class
 	model = "\z\addons\dayz_epoch\models\sledge_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa";
 	DZE_brokenItem = "DZE_Tool_SledgeBroken";
-	DZE_swappedItem = "MeleeSledge";
+	DZE_swappedItem = "DZE_Melee_Sledge";
 	
 	class ItemActions {
 		class ToBack {
 			text = "$STR_ACTIONS_2BACK";
 			script = "spawn DZE_fnc_addToBack;";
 			use[] = {"DZE_Tool_Sledge"};
-			output[] = {"MeleeSledge"};
+			output[] = {"DZE_Melee_Sledge"};
 		};
 		
 		class Toolbelt {
 			text = "$STR_ACTIONS_RFROMTB";
 			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"DZE_Tool_Sledge"};
-			output[] = {"MeleeSledge"};
+			output[] = {"DZE_Melee_Sledge"};
 		};
 	};
 };

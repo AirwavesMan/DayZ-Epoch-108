@@ -84,9 +84,9 @@ local _missingItemText = '';
 
 			if (!_hasTool) then {
 				call {
-					if (_requiredItem == 'DZE_Tool_Crowbar') exitWith {_meleeClass = 'MeleeCrowbar'};
-					if (_requiredItem == 'DZE_Tool_Hatchet') exitWith {_meleeClass = 'MeleeHatchet'};
-					if (_requiredItem == 'DZE_Tool_Sledge') exitWith {_meleeClass = 'MeleeSledge'};
+					if (_requiredItem == 'DZE_Tool_Crowbar') exitWith {_meleeClass = 'DZE_Melee_Crowbar'};
+					if (_requiredItem == 'DZE_Tool_Hatchet') exitWith {_meleeClass = 'DZE_Melee_Hatchet'};
+					if (_requiredItem == 'DZE_Tool_Sledge') exitWith {_meleeClass = 'DZE_Melee_Sledge'};
 				};
 
 				if (_meleeClass != '') then {

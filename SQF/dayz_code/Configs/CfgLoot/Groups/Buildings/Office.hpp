@@ -9,7 +9,7 @@ Office[] =
 	{Loot_GROUP,		6,		shotgunsingleshot},
 	
 	//Melee
-	{Loot_WEAPON,		3,		MeleeBaseBallBat},
+	{Loot_WEAPON,		3,		DZE_Melee_BaseBallBat},
 	
 	//Backpacks
 	{Loot_GROUP,		4,		backpacks},

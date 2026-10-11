@@ -51,7 +51,7 @@ class Category_34 {
 	class DZE_Tool_Hatchet {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
-	class MeleeHatchet {
+	class DZE_Melee_Hatchet {
 		type = "trade_weapons";
 		buy[] = {-2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class DZE_Tool_Knife {
@@ -69,19 +69,19 @@ class Category_34 {
 	class DZE_Tool_Crowbar {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
-	class MeleeCrowbar {
+	class DZE_Melee_Crowbar {
 		type = "trade_weapons";
 		buy[] = {-2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class DZE_Tool_Machete {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
-	class MeleeMachete {
+	class DZE_Melee_Machete {
 		type = "trade_weapons";
 		buy[] = {-2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class DZE_Tool_FishingPole {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
-	class MeleeFishingPole {
+	class DZE_Melee_FishingPole {
 		type = "trade_weapons";
 		buy[] = {-2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class DZE_Tool_Pickaxe {
@@ -90,7 +90,7 @@ class Category_34 {
 	class DZE_Tool_Sledge {
 		type = "trade_weapons";
 		buy[] = {8,"ItemSilverBar10oz"};sell[] = {4,"ItemSilverBar10oz"};};
-	class MeleeSledge {
+	class DZE_Melee_Sledge {
 		type = "trade_weapons";
 		buy[] = {-8,"ItemSilverBar10oz"};sell[] = {4,"ItemSilverBar10oz"};};
 	class DZE_Tool_KeyKit {

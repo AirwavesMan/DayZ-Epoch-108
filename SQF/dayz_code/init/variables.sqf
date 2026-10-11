@@ -287,7 +287,7 @@ if (!isDedicated) then {
 	Dayz_meatraw = ["FoodBeefRaw","FoodMuttonRaw","FoodChickenRaw","FoodRabbitRaw","FoodBaconRaw","FoodGoatRaw","FoodDogRaw","FishRawTrout","FishRawSeaBass","FishRawTuna","FoodPotatoRaw"];
 	Dayz_meatcooked = ["FoodBeefCooked","FoodMuttonCooked","FoodChickenCooked","FoodRabbitCooked","FoodBaconCooked","FoodGoatCooked","FoodDogCooked","FishCookedTrout","FishCookedSeaBass","FishCookedTuna","FoodPotatoBaked"];
 	boil_tin_cans = ["TrashTinCan","FoodCanGriffEmpty","FoodCanBadguyEmpty","FoodCanBoneboyEmpty","FoodCanCornEmpty","FoodCanCurgonEmpty","FoodCanDemonEmpty","FoodCanFraggleosEmpty","FoodCanHerpyEmpty","FoodCanDerpyEmpty","FoodCanOrlokEmpty","FoodCanPowellEmpty","FoodCanTylersEmpty","FoodCanUnlabeledEmpty","FoodCanRusUnlabeledEmpty","FoodCanRusStewEmpty","FoodCanRusPorkEmpty","FoodCanRusPeasEmpty","FoodCanRusMilkEmpty","FoodCanRusCornEmpty","ItemSodaEmpty","ItemSodaClaysEmpty","ItemSodaDrwasteEmpty","ItemSodaFrankaEmpty","ItemSodaGrapeDrinkEmpty","ItemSodaLemonadeEmpty","ItemSodaLirikEmpty","ItemSodaLvgEmpty","ItemSodaMtngreenEmpty","ItemSodaMzlyEmpty","ItemSodaPeppsyEmpty","ItemSodaR4z0rEmpty","ItemSodaRabbitEmpty","ItemSodaRocketFuelEmpty","ItemSodaSacriteEmpty","ItemSodaSherbetEmpty","ItemSodaSmashtEmpty","FoodCanPotatoesEmpty","FoodCanBeefEmpty"];
-	MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeBaseBallBat","MeleeBaseBallBatBarbed","MeleeBaseBallBatNails","MeleeFishingPole","MeleeSledge"];
+	MeleeWeapons = ["DZE_Melee_Hatchet","DZE_Melee_Crowbar","DZE_Melee_Machete","DZE_Melee_BaseBallBat","DZE_Melee_BaseBallBatBarbed","DZE_Melee_BaseBallBatNails","DZE_Melee_FishingPole","DZE_Melee_Sledge"];
 	DZE_MeleeMagazines = ['Hatchet_Swing','Crowbar_Swing','Machete_Swing','Bat_Swing','BatBarbed_Swing','BatNails_Swing','Fishing_Swing','Sledge_Swing'];
 	MeleeAmmo = ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo","Bat_Swing_Ammo","BatBarbed_Swing_Ammo","BatNailed_Swing_Ammo","Fishing_Swing_Ammo","Sledge_Swing_Ammo","Chainsaw_Swing_Ammo"];
 	DZE_Knives = ["DZE_Tool_Knife","DZE_Tool_Knife5","DZE_Tool_Knife4","DZE_Tool_Knife3","DZE_Tool_Knife2","DZE_Tool_Knife1","DZE_Tool_KnifeBlunt"];
@@ -319,7 +319,7 @@ if (!isDedicated) then {
 	DZE_Workshops = ['DZE_Wooden_shed','DZE_Wooden_shed2','DZE_WoodShack','DZE_WoodShack2','DZE_WorkBench','DZE_Advanced_WorkBench','WorkBench'];
 	dayz_treeTypes = ["","MAP_t_picea1s","MAP_t_picea2s","MAP_t_picea3f","MAP_t_pinusN2s","MAP_t_pinusS2f","MAP_t_populus3s","MAP_t_betula2s","MAP_t_fagus2s","MAP_t_fagus2W","MAP_t_malus1s"];
 	DayZ_DropDrageeObjects = DayZ_SafeObjects;
-	Dayz_fishingItems = ["MeleeFishingPole"];
+	Dayz_fishingItems = ["DZE_Melee_FishingPole"];
 	DZE_refundStorageItemContents = DZE_isNewStorage; // array of non-lockable storage objects that will refund their contents when the object is removed
 	DZE_rocks = ["r_stone_01_ep1.p3d","r_tk_stone_01_ep1.p3d","r_tk_stone_02_ep1.p3d","r_tk_boulder_01_ep1.p3d","r_tk_boulder_02_ep1.p3d","r2_boulder1.p3d","r2_boulder2.p3d","r_boulder_03_ep1.p3d","r2_rock1.p3d","r2_rock2.p3d","r2_rocktower.p3d","r2_rockwall.p3d","r2_stone.p3d","skala3_3.p3d","skala3_2.p3d"];
 	DZE_WaterSources = ["Land_pumpa","Land_Barrel_water","Land_Misc_Well_C_EP1","Land_Misc_Well_L_EP1","land_smd_water_pump","DZE_Watertank","DZE_Watertower","Land_water_tank","MAP_water_tank"];

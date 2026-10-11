@@ -15,7 +15,7 @@ class DZE_Tool_FishingPole : ItemCore {
 			};
 			output[] =
 			{
-				"MeleeFishingPole"
+				"DZE_Melee_FishingPole"
 			};
 		};
 		
@@ -28,7 +28,7 @@ class DZE_Tool_FishingPole : ItemCore {
 			};
 			output[] =
 			{
-				"MeleeFishingPole"
+				"DZE_Melee_FishingPole"
 			};
 		};
 	};

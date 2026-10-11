@@ -1,4 +1,4 @@
-class MeleeSledge: MeleeWeapon {
+class DZE_Melee_Sledge: DZE_Melee_Weapon_Base {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_SledgeHammer";
 	descriptionShort = "$STR_EQUIP_SLEDGE_DESC";
@@ -11,7 +11,7 @@ class MeleeSledge: MeleeWeapon {
 		class Toolbelt {
 			text = "$STR_ACTIONS_2TB";
 			script = "spawn DZE_fnc_addToolbelt;";
-			use[] = {"MeleeSledge"};
+			use[] = {"DZE_Melee_Sledge"};
 			output[] = {"DZE_Tool_Sledge"};
 		};
 		

@@ -1,4 +1,4 @@
-class MeleeFishingPole : MeleeWeapon {
+class DZE_Melee_FishingPole : DZE_Melee_Weapon_Base {
 	scope = 2;	
 	displayName = "$STR_ITEM_NAME_FISHINGPOLE";
 	descriptionShort = "$STR_ITEM_DESC_FISHINGPOLE";
@@ -10,7 +10,7 @@ class MeleeFishingPole : MeleeWeapon {
 		class Toolbelt {
 			text = "$STR_ACTIONS_2TB";
 			script = "spawn DZE_fnc_addToolbelt";
-			use[] = {"MeleeFishingPole"};
+			use[] = {"DZE_Melee_FishingPole"};
 			output[] = {"DZE_Tool_FishingPole"};
 		};
 	};

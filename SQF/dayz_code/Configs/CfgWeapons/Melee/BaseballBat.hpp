@@ -1,10 +1,10 @@
-class MeleeBaseBallBat : MeleeWeapon {
+class DZE_Melee_BaseBallBat : DZE_Melee_Weapon_Base {
 	scope = 2;	
 	displayName = "$STR_EQUIP_NAME_BASEBALLBAT";
 	descriptionShort = "$STR_EQUIP_DESC_BASEBALLBAT";
 	model = "\z\addons\dayz_communityassets\models\baseball_bat_weaponized.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_baseball_bat_ca.paa";
-	droppeditem = "MeleeBaseBallBat";
+	droppeditem = "DZE_Melee_BaseBallBat";
 	magazines[] = {"Bat_Swing"};
 	
 	class Library {
@@ -18,9 +18,9 @@ class MeleeBaseBallBat : MeleeWeapon {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {};
-			outputweapons[] = {"MeleeBaseBallBatNails"};
+			outputweapons[] = {"DZE_Melee_BaseBallBatNails"};
 			input[] = {{"equip_nails",1}};
-			inputweapons[] = {"MeleeBaseBallBat"};
+			inputweapons[] = {"DZE_Melee_BaseBallBat"};
 		};
 		class Crafting1 {
 			text = "$STR_CRAFTING_BASEBALLBATBARBED";
@@ -28,20 +28,20 @@ class MeleeBaseBallBat : MeleeWeapon {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {};
-			outputweapons[] = {"MeleeBaseBallBatBarbed"};
+			outputweapons[] = {"DZE_Melee_BaseBallBatBarbed"};
 			input[] = {{"equip_nails",1},{"ItemWire",1}};
-			inputweapons[] = {"MeleeBaseBallBat"};
+			inputweapons[] = {"DZE_Melee_BaseBallBat"};
 		};		
 	};	
 };
 
-class MeleeBaseBallBatBarbed : MeleeWeapon {
+class DZE_Melee_BaseBallBatBarbed : DZE_Melee_Weapon_Base {
 	scope = 2;
 	displayName="$STR_EQUIP_NAME_BASEBALLBATBARBED";
 	descriptionShort="$STR_EQUIP_DESC_BASEBALLBATBARBED";
 	model="\z\addons\dayz_communityassets\models\baseball_bat_barbed_weaponized.p3d";
 	picture="\z\addons\dayz_communityassets\pictures\equip_baseball_bat_barbed_ca.paa";
-	droppeditem = "MeleeBaseBallBatBarbed";
+	droppeditem = "DZE_Melee_BaseBallBatBarbed";
 
 	
 	magazines[] = {"BatBarbed_Swing"};
@@ -52,13 +52,13 @@ class MeleeBaseBallBatBarbed : MeleeWeapon {
 	};
 };
 
-class MeleeBaseBallBatNails : MeleeWeapon {
+class DZE_Melee_BaseBallBatNails : DZE_Melee_Weapon_Base {
 	scope = 2;
 	displayName="$STR_EQUIP_NAME_BASEBALLBATNAILS";
 	descriptionShort="$STR_EQUIP_DESC_BASEBALLBATNAILS";
 	model="\z\addons\dayz_communityassets\models\baseball_bat_nails_weaponized.p3d";
 	picture="\z\addons\dayz_communityassets\pictures\equip_baseball_bat_nails_ca.paa";
-	droppeditem = "MeleeBaseBallBatNails";
+	droppeditem = "DZE_Melee_BaseBallBatNails";
 
 	
 	magazines[] = {"BatNails_Swing"};

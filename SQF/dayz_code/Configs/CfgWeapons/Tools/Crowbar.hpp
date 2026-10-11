@@ -5,7 +5,7 @@ class DZE_Tool_Crowbar : ItemCore {
 	model = "\dayz_equip\models\crowbar.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_crowbar_CA.paa";
 	DZE_brokenItem = "DZE_Tool_CrowbarBent";
-	DZE_swappedItem = "MeleeCrowbar";
+	DZE_swappedItem = "DZE_Melee_Crowbar";
 	
 	class ItemActions {
 		class Toolbelt {
@@ -15,7 +15,7 @@ class DZE_Tool_Crowbar : ItemCore {
 				"DZE_Tool_Crowbar"
 			};
 			output[] = {
-				"MeleeCrowbar"
+				"DZE_Melee_Crowbar"
 			};
 		};
 		
@@ -26,7 +26,7 @@ class DZE_Tool_Crowbar : ItemCore {
 				"DZE_Tool_Crowbar"
 			};
 			output[] = {
-				"MeleeCrowbar"
+				"DZE_Melee_Crowbar"
 			};
 		};
 	};

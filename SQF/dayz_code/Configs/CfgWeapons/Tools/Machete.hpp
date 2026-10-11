@@ -10,14 +10,14 @@ class DZE_Tool_Machete : ItemCore {
 			text = "$STR_ACTIONS_RFROMTB";
 			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"DZE_Tool_Machete"};
-			output[] = {"MeleeMachete"};
+			output[] = {"DZE_Melee_Machete"};
 		};
 		
 		class ToBack {
 			text = "$STR_ACTIONS_2BACK";
 			script = "spawn DZE_fnc_addToBack;";
 			use[] = {"DZE_Tool_Machete"};
-			output[] = {"MeleeMachete"};
+			output[] = {"DZE_Melee_Machete"};
 		};
 	};
 };

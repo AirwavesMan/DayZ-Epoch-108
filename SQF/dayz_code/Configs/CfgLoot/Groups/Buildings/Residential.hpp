@@ -3,7 +3,7 @@ Residential[] =
 	//Weapons
 	{Loot_GROUP,		8,		pistols},
 	{Loot_GROUP,		6,		shotgunsingleshot},
-	{Loot_WEAPON,		3,		MeleeBaseBallBat},
+	{Loot_WEAPON,		3,		DZE_Melee_BaseBallBat},
 	
 	//Tools
 	{Loot_GROUP,		10,		ToolsSurvival},

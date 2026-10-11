@@ -91,28 +91,28 @@ class DZE_Tool_Knife1 {
 class DZE_Tool_KnifeBlunt {
 	weight = 0.135;
 };
-class MeleeCrowbar {
+class DZE_Melee_Crowbar {
 	weight = 1;
 };
-class MeleeHatchet {
+class DZE_Melee_Hatchet {
 	weight = 1;
 };
-class MeleeSledge {
+class DZE_Melee_Sledge {
 	weight = 9.1;
 };
-class MeleeMachete {
+class DZE_Melee_Machete {
 	weight = 1;
 };
-class MeleeFishingPole {
+class DZE_Melee_FishingPole {
 	weight = 1;
 };
-class MeleeBaseBallBat {
+class DZE_Melee_BaseBallBat {
 	weight = 1;
 };
-class MeleeBaseBallBatBarbed {
+class DZE_Melee_BaseBallBatBarbed {
 	weight = 1.05;
 };
-class MeleeBaseBallBatNails {
+class DZE_Melee_BaseBallBatNails {
 	weight = 1.05;
 };
 class DZE_Tool_Hatchet {

@@ -1,4 +1,4 @@
-class MeleeCrowbar : MeleeWeapon {
+class DZE_Melee_Crowbar : DZE_Melee_Weapon_Base {
 	scope = 2;	
 	displayName = "$STR_EQUIP_NAME_CROWBAR";
 	descriptionShort = "$STR_EQUIP_DESC_CROWBAR";
@@ -11,7 +11,7 @@ class MeleeCrowbar : MeleeWeapon {
 		class Toolbelt {
 			text = "$STR_ACTIONS_2TB";
 			script = "spawn DZE_fnc_addToolbelt";
-			use[] = {"MeleeCrowbar"};
+			use[] = {"DZE_Melee_Crowbar"};
 			output[] = {"DZE_Tool_Crowbar"};
 		};
 		

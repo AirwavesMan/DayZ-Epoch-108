@@ -1,7 +1,7 @@
 class Category_11 {
-	class MeleeBaseBallBat {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
-	class MeleeBaseballbatBarbed {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
-	class MeleeBaseballbatNails {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
+	class DZE_Melee_BaseBallBat {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
+	class DZE_Melee_BaseBallBatBarbed {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
+	class DZE_Melee_BaseBallBatNails {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
 	class Saiga12K_DZ {type = "trade_weapons";buy[] = {300,"worth"};sell[] = {100,"worth"};};
 	class AA12_DZ {type = "trade_weapons";buy[] = {800,"worth"};sell[] = {500,"worth"};};		
 	class USAS12_DZ {type = "trade_weapons";buy[] = {700,"worth"};sell[] = {400,"worth"};};	

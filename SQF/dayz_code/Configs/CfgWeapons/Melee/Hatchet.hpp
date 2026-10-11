@@ -1,4 +1,4 @@
-class MeleeHatchet : MeleeWeapon {
+class DZE_Melee_Hatchet : DZE_Melee_Weapon_Base {
 	scope = 2;	
 	displayName = "$STR_EQUIP_NAME_HATCHET";
 	descriptionShort = "$STR_EQUIP_DESC_HATCHET";
@@ -11,7 +11,7 @@ class MeleeHatchet : MeleeWeapon {
 		class Toolbelt {
 			text = "$STR_ACTIONS_2TB";
 			script = "spawn DZE_fnc_addToolbelt";
-			use[] = {"MeleeHatchet"};
+			use[] = {"DZE_Melee_Hatchet"};
 			output[] = {"DZE_Tool_Hatchet"};
 		};
 		

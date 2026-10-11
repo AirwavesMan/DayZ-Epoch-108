@@ -49,14 +49,14 @@ class WeaponHolder_ItemSledge : WeaponHolderBase { // Epoch class. Needed for pl
 		init = "[(_this select 0),'cfgWeapons','DZE_Tool_Sledge'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
-class WeaponHolder_MeleeMachete: WeaponHolderBase {
+class WeaponHolder_DZE_Melee_Machete: WeaponHolderBase {
 	scope = 2;
 	displayName="$STR_EQUIP_NAME_MACHETE";
 	model="\z\addons\dayz_communityassets\models\machete.p3d";
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init="[(_this select 0),'cfgWeapons','MeleeMachete'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init="[(_this select 0),'cfgWeapons','DZE_Melee_Machete'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 class WeaponHolder_ItemJerrycanEmpty : WeaponHolderBase {
@@ -166,14 +166,14 @@ class WeaponHolder_ItemHatchet : WeaponHolderBase {
 	};
 };
 
-class WeaponHolder_MeleeCrowbar : WeaponHolderBase {
+class WeaponHolder_DZE_Melee_Crowbar : WeaponHolderBase {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_CROWBAR";
 	model = "\dayz_equip\models\crowbar.p3d";
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgWeapons','MeleeCrowbar'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgWeapons','DZE_Melee_Crowbar'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
 	};
 };
 

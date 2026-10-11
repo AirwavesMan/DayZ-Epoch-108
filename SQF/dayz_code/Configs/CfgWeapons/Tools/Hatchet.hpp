@@ -5,7 +5,7 @@ class DZE_Tool_Hatchet : ItemCore {
 	model = "\dayz_equip\models\hatchet.p3d";
 	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
 	DZE_brokenItem = "DZE_Tool_HatchetBroken";
-	DZE_swappedItem = "MeleeHatchet";
+	DZE_swappedItem = "DZE_Melee_Hatchet";
 
 
 	class ItemActions {
@@ -13,14 +13,14 @@ class DZE_Tool_Hatchet : ItemCore {
 			text = "$STR_ACTIONS_2BACK";
 			script = "spawn DZE_fnc_addToBack;";
 			use[] = {"DZE_Tool_Hatchet"};
-			output[] = {"MeleeHatchet"};
+			output[] = {"DZE_Melee_Hatchet"};
 		};
 
 		class Toolbelt {
 			text = "$STR_ACTIONS_RFROMTB";
 			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {"DZE_Tool_Hatchet"};
-			output[] = {"MeleeHatchet"};
+			output[] = {"DZE_Melee_Hatchet"};
 		};
 	};
 };

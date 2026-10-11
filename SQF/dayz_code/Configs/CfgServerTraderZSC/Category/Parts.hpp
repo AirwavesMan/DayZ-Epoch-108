@@ -51,7 +51,7 @@ class Category_34 {
 	class DZE_Tool_Hatchet {
 		type = "trade_weapons";
 		buy[] = {2,"worth"};sell[] = {1,"worth"};};
-	class MeleeHatchet {
+	class DZE_Melee_Hatchet {
 		type = "trade_weapons";
 		buy[] = {-1,"worth"};sell[] = {1,"worth"};};
 	class DZE_Tool_Knife {
@@ -69,19 +69,19 @@ class Category_34 {
 	class DZE_Tool_Crowbar {
 		type = "trade_weapons";
 		buy[] = {2,"worth"};sell[] = {1,"worth"};};
-	class MeleeCrowbar {
+	class DZE_Melee_Crowbar {
 		type = "trade_weapons";
 		buy[] = {-1,"worth"};sell[] = {1,"worth"};};
 	class DZE_Tool_Machete {
 		type = "trade_weapons";
 		buy[] = {2,"worth"};sell[] = {1,"worth"};};
-	class MeleeMachete {
+	class DZE_Melee_Machete {
 		type = "trade_weapons";
 		buy[] = {-1,"worth"};sell[] = {1,"worth"};};
 	class DZE_Tool_FishingPole {
 		type = "trade_weapons";
 		buy[] = {20,"worth"};sell[] = {10,"worth"};};
-	class MeleeFishingPole {
+	class DZE_Melee_FishingPole {
 		type = "trade_weapons";
 		buy[] = {-1,"worth"};sell[] = {10,"worth"};};
 	class DZE_Tool_Pickaxe {
@@ -90,7 +90,7 @@ class Category_34 {
 	class DZE_Tool_Sledge {
 		type = "trade_weapons";
 		buy[] = {80,"worth"};sell[] = {40,"worth"};};
-	class MeleeSledge {
+	class DZE_Melee_Sledge {
 		type = "trade_weapons";
 		buy[] = {-1,"worth"};sell[] = {40,"worth"};};
 	class DZE_Tool_KeyKit {
