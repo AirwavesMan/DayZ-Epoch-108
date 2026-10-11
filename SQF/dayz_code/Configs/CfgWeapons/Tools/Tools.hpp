@@ -12,6 +12,7 @@
 #include "Hammer.hpp"
 #include "Hatchet.hpp"
 #include "KeymakersKit.hpp"
+#include "Keys.hpp"
 #include "Knife.hpp"
 #include "Machete.hpp"
 #include "Map.hpp"

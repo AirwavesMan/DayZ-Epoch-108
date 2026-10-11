@@ -348,11 +348,11 @@ if (!isDedicated) then {
 	
 	if (DZE_Remote_Vehicle) then {
 		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [
-			["ItemKey",localize "STR_CL_RV_CA_EJECT","spawn remoteVehicle;","true",1],
-			["ItemKey",localize "STR_CL_RV_CA_ENGINE","spawn remoteVehicle;","true",2],
-			["ItemKey",localize "STR_CL_RV_CA_UNLOCK","spawn remoteVehicle;","true",3],
-			["ItemKey",localize "STR_CL_RV_CA_LOCK","spawn remoteVehicle;","true",4],
-			["ItemKey",localize "STR_CL_RV_CA_LIGHTS","spawn remoteVehicle;","true",5]		
+			["DZE_Key_Base",localize "STR_CL_RV_CA_EJECT","spawn remoteVehicle;","true",1],
+			["DZE_Key_Base",localize "STR_CL_RV_CA_ENGINE","spawn remoteVehicle;","true",2],
+			["DZE_Key_Base",localize "STR_CL_RV_CA_UNLOCK","spawn remoteVehicle;","true",3],
+			["DZE_Key_Base",localize "STR_CL_RV_CA_LOCK","spawn remoteVehicle;","true",4],
+			["DZE_Key_Base",localize "STR_CL_RV_CA_LIGHTS","spawn remoteVehicle;","true",5]
 		];
 	};	
 	

@@ -79,7 +79,7 @@ if (!isNull dayz_myBackpack) then {
 if (_charID != "0") then {
 	{
 		if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in DZE_itemKeys) then {
-			if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == _charID) then {
+			if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "DZE_keyID")) == _charID) then {
 				_keyName = _x;
 				_hasKey = true;
 			};

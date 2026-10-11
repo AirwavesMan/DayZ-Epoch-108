@@ -4,7 +4,7 @@
 	Usage: _result = call epoch_generateKey;
 	Returns array:
 	[bool, string]
-	[(key added successfully or not), ItemKey## class name]
+	[(key added successfully or not), DZE_Key_## class name]
 */
 
 private ["_isKeyOK","_keyColor","_keyNumber","_keySelected"];
@@ -15,8 +15,8 @@ _keyColor = DZE_keyColors call BIS_fnc_selectRandom;
 // then select number from 1 - 2500
 _keyNumber = (floor(random 2500)) + 1;
 
-// Combine to key (eg.ItemKeyYellow2494) classname
-_keySelected = format["ItemKey%1%2",_keyColor,_keyNumber];
+// Combine to key (eg.DZE_Key_Yellow2494) classname
+_keySelected = format["DZE_Key_%1%2",_keyColor,_keyNumber];
 
 _isKeyOK = isClass(configFile >> "CfgWeapons" >> _keySelected);
 

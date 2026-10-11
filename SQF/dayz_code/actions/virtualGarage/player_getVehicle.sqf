@@ -41,11 +41,11 @@ waitUntil {!isNil "PVDZE_spawnVehicleResult"};
 if (PVDZE_spawnVehicleResult != "0") then {
 	_keyID = "";
 	_charID = parseNumber PVDZE_spawnVehicleResult;
-	if ((_charID > 0) && (_charID <= 2500)) then {_keyID = format["ItemKeyGreen%1",_charID];};
-	if ((_charID > 2500) && (_charID <= 5000)) then {_keyID = format["ItemKeyRed%1",_charID-2500];};
-	if ((_charID > 5000) && (_charID <= 7500)) then {_keyID = format["ItemKeyBlue%1",_charID-5000];};
-	if ((_charID > 7500) && (_charID <= 10000)) then {_keyID = format["ItemKeyYellow%1",_charID-7500];};
-	if ((_charID > 10000) && (_charID <= 12500)) then {_keyID = format["ItemKeyBlack%1",_charID-10000];};
+	if ((_charID > 0) && (_charID <= 2500)) then {_keyID = format["DZE_Key_Green%1",_charID];};
+	if ((_charID > 2500) && (_charID <= 5000)) then {_keyID = format["DZE_Key_Red%1",_charID-2500];};
+	if ((_charID > 5000) && (_charID <= 7500)) then {_keyID = format["DZE_Key_Blue%1",_charID-5000];};
+	if ((_charID > 7500) && (_charID <= 10000)) then {_keyID = format["DZE_Key_Yellow%1",_charID-7500];};
+	if ((_charID > 10000) && (_charID <= 12500)) then {_keyID = format["DZE_Key_Black%1",_charID-10000];};
 	_keyName = getText(configFile >> "CfgWeapons" >> _keyID >> "displayName");
 
 	if (vg_removeKey) then {

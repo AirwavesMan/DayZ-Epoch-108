@@ -27,7 +27,7 @@ if(!_isOK) exitWith {diag_log ("HIVE: CARKEY DOES NOT EXIST: "+ str(_keySelected
 if(_donotusekey) then {
 	_characterID = _keySelected;
 } else {
-	_characterID = str(getNumber(configFile >> "CfgWeapons" >> _keySelected >> "keyid"));
+	_characterID = str(getNumber(configFile >> "CfgWeapons" >> _keySelected >> "DZE_keyID"));
 };
 
 _dir = 		_worldspace select 0;

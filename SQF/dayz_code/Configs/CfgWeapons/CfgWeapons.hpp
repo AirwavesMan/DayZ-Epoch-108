@@ -256,17 +256,12 @@ class CfgWeapons
 	#include "Pistols\CZ75.hpp"		
 	#include "Pistols\DesertEagle.hpp"	
 	
-	/* MELEE */
-	
-
-	
 	//	Melee Weapons
 	#include "Melee\Melee.hpp"
 
 	//	Tools
 	#include "Tools\Tools.hpp"
-	
-	#include "Item\ItemKeys.hpp"
+
 	#include "Item\Documents.hpp"
 	
 	#include "VehicleWeapons.hpp"

@@ -8,7 +8,7 @@ _containerFindKey = {
 	_weapTypes = (_this select 1) select 0;
 	{
 		if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in DZE_itemKeys) then {
-			if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == (_this select 0)) then {
+			if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "DZE_keyID")) == (_this select 0)) then {
 				_keys set [count _keys, _x];
 			};
 		};
@@ -22,7 +22,7 @@ if ((count _VehKey2) > 0) then {
 	} else {
 		{
 			if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in DZE_itemKeys) then {
-				if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == (_VehKey2 select 0)) then {
+				if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "DZE_keyID")) == (_VehKey2 select 0)) then {
 					_localResult2 = [player,_x,1] call BIS_fnc_invRemove;
 				};
 			};

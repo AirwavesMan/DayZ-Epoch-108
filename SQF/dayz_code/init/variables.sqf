@@ -448,7 +448,7 @@ if (!isDedicated) then {
 	keypadCancel = false; //Brute force fix
 	canbuild = true;
 	DZE_HeliAllowTowFrom = ['DZE_Veh_CH47F_Green','DZE_Veh_CH47F_Green_1','DZE_Veh_CH47F_Green_2','DZE_Veh_CH47F_Green_3','CH_47F_BAF','CH_47F_EP1','DZE_Veh_AW101','DZE_Veh_CH53E','DZE_Veh_CH53E_1','DZE_Veh_CH53E_2','DZE_Veh_CH53E_3'];
-	DZE_itemKeys = ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"];
+	DZE_itemKeys = ["DZE_Key_Yellow","DZE_Key_Blue","DZE_Key_Red","DZE_Key_Green","DZE_Key_Black"];
 	DZE_keyColors = ["Green","Red","Blue","Yellow","Black"];
 	s_player_lastTarget = [objNull,objNull];
 	if (toLower DZE_DeathMsgChat in ["global","side"]) then {enableRadio true;}; //Needed for scripted global chat to show, doesn't seem to have any adverse effects

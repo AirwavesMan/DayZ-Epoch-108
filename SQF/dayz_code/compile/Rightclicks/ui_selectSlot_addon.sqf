@@ -68,7 +68,7 @@ if (_button == 1) then {
 		_i = _i + 1;
 	};
 	
-	local _isKey = ((["ItemKey",_item] call fnc_inString) && (_item != "DZE_Tool_KeyKit"));
+	local _isKey = ['DZE_Key_',_item] call fnc_inString;
 	
 	{
 		local _classname   = _x select 0;
@@ -76,13 +76,13 @@ if (_button == 1) then {
 		local _execute     = _x select 2;
 		local _condition   = _x select 3;		
 
-		if ((_item == _classname || (_isKey && (_className == "ItemKey"))) && (call compile _condition)) then {
+		if ((_item == _classname || (_isKey && (_className == "DZE_Key_Base"))) && (call compile _condition)) then {
 			local _menu = _parent displayCtrl (1600 + _numActions);
 			_menu ctrlShow true;
 			_height = _height + (0.025 * safezoneH);
 			uiNamespace setVariable ['uiControl', _control];
 			_menu ctrlSetText _text;
-			if (_isKey && (_className == "ItemKey")) then {
+			if (_isKey && (_className == "DZE_Key_Base")) then {
 				if (count _this > 4) then {
 					local _option = _x select 4;
 					_menu ctrlSetEventHandler ["ButtonClick",format ["[%1,%2] %3",str _item,_option,_execute]];
