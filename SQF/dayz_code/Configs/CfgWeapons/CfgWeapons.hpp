@@ -15,7 +15,6 @@ class CfgWeapons {
 	
 	/* Dummy weapons */
 	#include "Throw.hpp"
-	#include "Loot.hpp"	
 	
 	/* RIFLES */
 	#include "Rifles\Rifles.hpp"
