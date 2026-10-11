@@ -1025,3 +1025,134 @@ class StashFile_40: CA_Magazine {
 	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
 	count = 1;
 };
+
+class DZE_Item_Document_Military: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_DOCUMENT_MILITARY";
+	descriptionShort = "$STR_EQUIP_DOCUMENT_MILITARY_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Document_Random: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_DOCUMENT_RANDOM";
+	descriptionShort = "$STR_EQUIP_DOCUMENT_RANDOM_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Document_Topsecret: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_DOCUMENT_TOPSECRET";
+	descriptionShort = "$STR_EQUIP_DOCUMENT_TOPSECRET_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Manual_Camera: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_MANUAL_CAMERA";
+	descriptionShort = "$STR_EQUIP_MANUAL_CAMERA_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Manual_Electronics: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_MANUAL_ELECTRONICS";
+	descriptionShort = "$STR_EQUIP_MANUAL_ELECTRONICS_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Manual_Repair: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_MANUAL_REPAIR";
+	descriptionShort = "$STR_EQUIP_MANUAL_REPAIR_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Map_Military: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_MAP_Military";
+	descriptionShort = "$STR_EQUIP_MAP_Military_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Map_Survivor: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_MAP_SURVIVOR";
+	descriptionShort = "$STR_EQUIP_MAP_SURVIVOR_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Notebook_Bio: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_NOTEBOOK_BIO";
+	descriptionShort = "$STR_EQUIP_NOTEBOOK_BIO_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Notebook_Che: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_NOTEBOOK_CHE";
+	descriptionShort = "$STR_EQUIP_NOTEBOOK_CHE_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Notebook_Herbs: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_NOTEBOOK_HERBS";
+	descriptionShort = "$STR_EQUIP_NOTEBOOK_HERBS_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Notebook_Phy: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_NOTEBOOK_PHY";
+	descriptionShort = "$STR_EQUIP_NOTEBOOK_PHY_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};
+class DZE_Item_Notebook_Secret: CA_Magazine {
+	scope = 2;
+	displayName = "$STR_EQUIP_NOTEBOOK_SECRET";
+	descriptionShort = "$STR_EQUIP_NOTEBOOK_SECRET_DESC";
+	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+	sfx = "document";
+	count = 1;
+	type = 256;
+};

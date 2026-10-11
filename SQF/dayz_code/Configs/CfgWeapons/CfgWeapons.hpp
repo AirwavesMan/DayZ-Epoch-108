@@ -261,8 +261,6 @@ class CfgWeapons
 
 	//	Tools
 	#include "Tools\Tools.hpp"
-
-	#include "Item\Documents.hpp"
 	
 	#include "VehicleWeapons.hpp"
 };

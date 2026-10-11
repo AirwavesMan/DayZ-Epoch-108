@@ -423,3 +423,55 @@ class StashFile_40
 {
 	weight = 0.3; 
 };
+
+class DZE_Item_Document_Military {
+	weight = 1;
+};
+
+class DZE_Item_Document_Random {
+	weight = 1;
+};
+
+class DZE_Item_Document_Topsecret {
+	weight = 1;
+};
+
+class DZE_Item_Manual_Camera {
+	weight = 1;
+};
+
+class DZE_Item_Manual_Electronics {
+	weight = 1;
+};
+
+class DZE_Item_Manual_Repair {
+	weight = 1;
+};
+
+class DZE_Item_Map_Military {
+	weight = 1;
+};
+
+class DZE_Item_Map_Survivor {
+	weight = 1;
+};
+
+class DZE_Item_Notebook_Bio {
+	weight = 1;
+};
+
+class DZE_Item_Notebook_Che {
+	weight = 1;
+};
+
+class DZE_Item_Notebook_Herbs {
+	weight = 1;
+};
+
+class DZE_Item_Notebook_Phy {
+	weight = 1;
+};
+
+class DZE_Item_Notebook_Secret {
+	weight = 1;
+};
