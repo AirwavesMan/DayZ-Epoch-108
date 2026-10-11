@@ -20,6 +20,6 @@ class DZE_Wep_PKM : PK { //Iron sight PKM
 };
 
 class Pecheneg;
-class DZE_Wep_Pecheneg: Pecheneg { //PKP with long range scope
+class DZE_Wep_PKP: Pecheneg { //PKP with long range scope
 	type = 1;
 };

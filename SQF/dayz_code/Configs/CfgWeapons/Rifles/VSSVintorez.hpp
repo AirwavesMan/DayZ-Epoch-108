@@ -1,5 +1,5 @@
 class VSS_vintorez;
-class DZE_Wep_VSS_vintorez_DZE: VSS_vintorez {
+class DZE_Wep_VSS_Vintorez: VSS_vintorez {
 	modelOptics = "\ca\weapons\optika_snpiere";
 	opticsPPEffects[] = {"OpticsCHAbera3", "OpticsBlur3"};
 	class OpticsModes {

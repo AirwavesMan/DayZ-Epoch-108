@@ -14,7 +14,7 @@ class DZE_Wep_FNFAL : FN_FAL {
 	class Attachments {
 		DZE_Item_Att_CCO = "DZE_Wep_FNFAL_CCO";
 		DZE_Item_Att_Holo = "DZE_Wep_FNFAL_Holo";
-		DZE_Item_Att_ANPVS4 = "DZE_Wep_FN_FAL_ANPVS4_DZE";
+		DZE_Item_Att_ANPVS4 = "DZE_Wep_FN_FAL_ANPVS4_NVSwitch";
 	};
 };
 
@@ -51,7 +51,7 @@ class DZE_Wep_FNFAL_ANPVS4 : FN_FAL_ANPVS4 {
 	modes[] = {Single, FullAuto};
 };
 
-class DZE_Wep_FN_FAL_ANPVS4_DZE: FN_FAL_ANPVS4 {
+class DZE_Wep_FN_FAL_ANPVS4_NVSwitch: FN_FAL_ANPVS4 {
 	visionMode[] = {"Normal", "NVG"};
 	modes[] = {Single, FullAuto};
 

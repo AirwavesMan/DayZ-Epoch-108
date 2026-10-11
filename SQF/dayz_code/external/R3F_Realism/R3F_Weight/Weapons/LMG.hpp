@@ -16,7 +16,7 @@ class BAF_L110A1_Aim_Small
 class DZE_Wep_L110A1_Holo {
 	weight = 7.1;
 };
-class DZE_Wep_BAF_L110A1_Aim_DZE {
+class DZE_Wep_L110A1_CCO_Laser {
 	weight = 7.11;
 };
 class M249_EP1
@@ -31,21 +31,21 @@ class M249_m145_EP1
 {
 	weight = 7.52;
 };
-class DZE_Wep_M249_m145_EP1_DZE {
+class DZE_Wep_M249_M145 {
 	weight = 7.52;
 };
 class M60A4_EP1
 {
 	weight = 10.5;
 };
-class DZE_Wep_M60A4_EP1_DZE {
+class DZE_Wep_M60A4 {
 	weight = 10.5;
 };
 class m240_scoped_EP1
 {
 	weight = 12.7;
 };
-class DZE_Wep_m240_scoped_EP1_DZE {
+class DZE_Wep_M240_M145 {
 	weight = 12.7;
 };
 class DZE_Wep_MG36_Camo {
@@ -76,16 +76,16 @@ class M249
 {
 	weight = 6.85;
 };
-class DZE_Wep_M249 {
+class DZE_Wep_M249_SAW {
 	weight = 6.85;
 };
-class DZE_Wep_M249_Holo {
+class DZE_Wep_M249_SAW_Holo {
 	weight = 7.1;
 };
-class DZE_Wep_M249_CCO {
+class DZE_Wep_M249_SAW_CCO {
 	weight = 7.11;
 };
-class DZE_Wep_M249_EP1 {
+class DZE_Wep_M249 {
 	weight = 6.85;
 };
 class Mk_48
@@ -120,7 +120,7 @@ class Pecheneg
 {
 	weight = 9;
 };
-class DZE_Wep_Pecheneg {
+class DZE_Wep_PKP {
 	weight = 9;
 };
 class DZE_Wep_PKM {

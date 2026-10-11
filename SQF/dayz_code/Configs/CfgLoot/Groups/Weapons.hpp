@@ -20,12 +20,12 @@ weaponsRU[] =
 	{Loot_WEAPON,		4,		DZE_Wep_SVU_PSO1},
 	{Loot_WEAPON,		1,		DZE_Wep_SVD_Gold},
 	{Loot_WEAPON,		4,		DZE_Wep_SVD},
-	{Loot_WEAPON,		1,		DZE_Wep_VSS_vintorez_DZE},
+	{Loot_WEAPON,		1,		DZE_Wep_VSS_Vintorez},
 	{Loot_WEAPON,		4,		DZE_Wep_Groza9_Sniper},
 	{Loot_WEAPON,		1,		DZE_Wep_Groza9_Sniper_SD},
 	{Loot_WEAPON,		4,		DZE_Wep_Groza1_Sniper},
 	{Loot_WEAPON,		1,		DZE_Wep_Groza1_Sniper_SD},
-	{Loot_WEAPON,		1,		DZE_Wep_KSVK_DZE}, // High value weapon, low spawn chance.
+	{Loot_WEAPON,		1,		DZE_Wep_KSVK}, // High value weapon, low spawn chance.
 	{Loot_WEAPON,		1,		DZE_Wep_Anzio_20}, // High value weapon, low spawn chance.
 	
 	// Submachine Guns
@@ -48,7 +48,7 @@ weaponsRU[] =
 	
 	// Machine Guns
 	{Loot_WEAPON,		3,		DZE_Wep_RPK74},
-	{Loot_WEAPON,		2,		DZE_Wep_Pecheneg},
+	{Loot_WEAPON,		2,		DZE_Wep_PKP},
 	{Loot_WEAPON,		3,		DZE_Wep_RPK},
 	{Loot_WEAPON,		3,		DZE_Wep_PKM}
 };
@@ -81,7 +81,7 @@ weaponsUS[] =
 	{Loot_WEAPON,		3,		DZE_Wep_DMR},
 	{Loot_WEAPON,		3,		DZE_Wep_MK14_Sniper},
 	{Loot_WEAPON,		3,		DZE_Wep_M21A5},
-	{Loot_WEAPON,		1,		DZE_Wep_m107}, // High value weapon, low spawn chance.
+	{Loot_WEAPON,		1,		DZE_Wep_M107}, // High value weapon, low spawn chance.
 	{Loot_WEAPON,		1,		DZE_Wep_MSR}, // High value weapon, low spawn chance.
 	
 	// Submachine Guns
@@ -109,14 +109,14 @@ weaponsUS[] =
 	{Loot_WEAPON,		6,		DZE_Wep_ACR_BL},
 	
 	// Machine Guns
-	{Loot_WEAPON,		3,		DZE_Wep_M60A4_EP1_DZE},
+	{Loot_WEAPON,		3,		DZE_Wep_M60A4},
 	{Loot_WEAPON,		3,		DZE_Wep_Mk43},
 	{Loot_WEAPON,		3,		DZE_Wep_MK43_M145},
-	{Loot_WEAPON,		5,		DZE_Wep_M249_m145_EP1_DZE},
-	{Loot_WEAPON,		3,		DZE_Wep_m240_scoped_EP1_DZE},
+	{Loot_WEAPON,		5,		DZE_Wep_M249_M145},
+	{Loot_WEAPON,		3,		DZE_Wep_M240_M145},
 	{Loot_WEAPON,		3,		DZE_Wep_M240},
-	{Loot_WEAPON,		5,		DZE_Wep_M249},
-	{Loot_WEAPON,		5,		DZE_Wep_M249_EP1}
+	{Loot_WEAPON,		5,		DZE_Wep_M249_SAW},
+	{Loot_WEAPON,		5,		DZE_Wep_M249}
 };
 
 weaponsEU[] =
@@ -148,9 +148,9 @@ weaponsEU[] =
 	{Loot_WEAPON,		2,		DZE_Wep_HK417_Sniper},
 	{Loot_WEAPON,		1,		DZE_Wep_RSASS},
 	{Loot_WEAPON,		4,		DZE_Wep_FNFAL},
-	{Loot_WEAPON,		3,		DZE_Wep_FN_FAL_ANPVS4_DZE}, //DZE_Wep_FNFAL_ANPVS4 is NV only _DZE is toggleable with attachment support
+	{Loot_WEAPON,		3,		DZE_Wep_FN_FAL_ANPVS4_NVSwitch}, //DZE_Wep_FNFAL_ANPVS4 is NV only _DZE is toggleable with attachment support
 	{Loot_WEAPON,		4,		DZE_Wep_G3},
-	{Loot_WEAPON,		1,		DZE_Wep_BAF_AS50_scoped}, // High value weapon, low spawn chance.
+	{Loot_WEAPON,		1,		DZE_Wep_AS50}, // High value weapon, low spawn chance.
 	{Loot_WEAPON,		1,		DZE_Wep_Barrett_MRAD_Sniper}, // High value weapon, low spawn chance.
 	
 	// Submachine Guns

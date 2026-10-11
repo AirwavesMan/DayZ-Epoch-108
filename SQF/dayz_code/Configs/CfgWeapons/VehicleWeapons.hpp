@@ -14,7 +14,7 @@ class pook_M60_side: M240_veh {
 	class medium;
 	class far;
 };
-class DZE_VehWep_pook_M60_side: pook_M60_side {
+class DZE_VehWep_Pook_M60_Side: pook_M60_side {
 	displayName = "$STR_DZ_WPN_SIDE_M60_NAME";
 	displayNameShort = "$STR_DZ_WPN_SIDE_M60_NAME";
 	magazines[] = {"pook_250Rnd_762x51","100Rnd_762x51_M240","200Rnd_762x51_M240","460Rnd_762x51_M240_ACR"};
@@ -36,7 +36,7 @@ class DZE_VehWep_pook_M60_side: pook_M60_side {
 	};
 };
 
-class DZE_VehWep_pook_M60_dual: DZE_VehWep_pook_M60_side {
+class DZE_VehWep_Pook_M60_Dual: DZE_VehWep_Pook_M60_Side {
 	displayName = "$STR_DZ_WPN_DUAL_M60_NAME";
 	displayNameShort = "$STR_DZ_WPN_DUAL_M60_NAME";
 	magazines[] = {"pook_1300Rnd_762x51_M60"};
@@ -58,7 +58,7 @@ class DZE_VehWep_pook_M60_dual: DZE_VehWep_pook_M60_side {
 	};
 };
 
-class DZE_VehWep_pook_M60_dual_m134: DZE_VehWep_pook_M60_dual {
+class DZE_VehWep_Pook_M60_Dual_M134: DZE_VehWep_Pook_M60_Dual {
 	displayName = "$STR_DZ_WPN_DUAL_M134_NAME";
 	displayNameShort = "$STR_DZ_WPN_DUAL_M134_NAME";
 	magazines[] = {"2000Rnd_762x51_M134","4000Rnd_762x51_M134"};

@@ -1,4 +1,4 @@
 class ksvk;
-class DZE_Wep_KSVK_DZE:ksvk {
+class DZE_Wep_KSVK:ksvk {
     type = 1;
 };

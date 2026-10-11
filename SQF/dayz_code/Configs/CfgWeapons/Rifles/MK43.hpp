@@ -1,4 +1,4 @@
-class DZE_Wep_Mk43: DZE_Wep_M60A4_EP1_DZE {
+class DZE_Wep_Mk43: DZE_Wep_M60A4 {
 	displayName = "$STR_DZ_WPN_MK43_NAME";
 	model = "\RH_mgswp\RH_mk43.p3d";
 	picture = "\RH_mgswp\inv\mk43.paa";

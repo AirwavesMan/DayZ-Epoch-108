@@ -40,7 +40,7 @@ class Anzio_20
 {
 	weight = 43;
 };
-class DZE_Wep_m107 {
+class DZE_Wep_M107 {
 	weight = 13.5;
 };
 class DMR
@@ -70,7 +70,7 @@ class ksvk
 {
 	weight = 12.9;
 };
-class DZE_Wep_KSVK_DZE {
+class DZE_Wep_KSVK {
 	weight = 12.9;
 };
 class DZE_Wep_M24_DES {
@@ -234,7 +234,7 @@ class DZE_Wep_SVD_Gold {
 class DZE_Wep_SVU_PSO1 {
 	weight = 5.9;
 };
-class DZE_Wep_VSS_vintorez_DZE {
+class DZE_Wep_VSS_Vintorez {
 	weight = 3.22;
 };
 class DZE_Wep_Mosin_BR {
@@ -285,10 +285,10 @@ class DZE_Wep_XM2010_TWS_SD {
 class DZE_Wep_Anzio_20 {
 	weight = 43;
 };
-class DZE_Wep_BAF_AS50_scoped {
+class DZE_Wep_AS50 {
 	weight = 14.5;
 };
-class DZE_Wep_m107_SKN {
+class DZE_Wep_M107_SKN {
 	weight = 13.5;
 };
 class M4SPR

@@ -26,7 +26,7 @@ if (_addAmmo && {!(_type in _skipAmmoFill)}) then {
 
 if (_type == "GNT_C185T") exitwith {
 	_vehicle removeWeapon "FFARLauncher_12";
-	_vehicle addWeapon "DZE_VehWep_pook_M60_dual";
+	_vehicle addWeapon "DZE_VehWep_Pook_M60_Dual";
 	_vehicle addMagazine "pook_1300Rnd_762x51_M60";
 	_vehicle addMagazine "pook_1300Rnd_762x51_M60";
 };

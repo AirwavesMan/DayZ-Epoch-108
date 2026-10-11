@@ -1,4 +1,4 @@
-class DZE_Wep_m107: m107 {
+class DZE_Wep_M107: m107 {
 	scope = 2;
 	displayname = "$STR_DZ_WPN_M107_NAME";
 	descriptionShort = "$STR_DZ_WPN_M107_DESC";
@@ -9,4 +9,4 @@ class DZE_Wep_m107: m107 {
 	soundBegin[] = {"begin1",1};
 };
 
-class DZE_Wep_m107_SKN : DZE_Wep_m107 {};
+class DZE_Wep_M107_SKN : DZE_Wep_M107 {};

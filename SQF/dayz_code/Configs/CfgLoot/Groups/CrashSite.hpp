@@ -53,7 +53,7 @@ CrashSiteUS[] =
 {
 	//Weapons
 	{Loot_GROUP,		30,		weaponsUS},
-	{Loot_WEAPON,		1,		DZE_Wep_m107}, // High value weapon
+	{Loot_WEAPON,		1,		DZE_Wep_M107}, // High value weapon
 	{Loot_WEAPON,		1,		DZE_Wep_M200_CheyTac}, // High value weapon
 	{Loot_WEAPON,		5,		DZE_Wep_ACR_WDL_NV}, // ACR WDL NV
 	{Loot_WEAPON,		5,		DZE_Wep_ACR_BL_NV}, // ACR BL NV
@@ -97,7 +97,7 @@ CrashSiteEU[] =
 {
 	//Weapons
 	{Loot_GROUP,		30,		weaponsEU},
-	{Loot_WEAPON,		1,		DZE_Wep_BAF_AS50_scoped}, // High value weapon
+	{Loot_WEAPON,		1,		DZE_Wep_AS50}, // High value weapon
 	{Loot_WEAPON,		1,		DZE_Wep_WA2000},
 
 	//Tools

@@ -271,7 +271,7 @@ class FN_FAL_ANPVS4
 class DZE_Wep_FNFAL_ANPVS4 {
 	weight = 7.75;
 };
-class DZE_Wep_FN_FAL_ANPVS4_DZE {
+class DZE_Wep_FN_FAL_ANPVS4_NVSwitch {
 	weight = 7.75;
 };
 class G36a

@@ -56,7 +56,7 @@ class DZE_Wep_L110A1 : DZE_Wep_L110A1_CCO {
 	class ItemActions {};
 };
 
-class DZE_Wep_BAF_L110A1_Aim_DZE: BAF_L110A1_Aim { //Slightly different scope from DZE_Wep_L110A1_CCO, otherwise identical
+class DZE_Wep_L110A1_CCO_Laser: BAF_L110A1_Aim { //Slightly different scope from DZE_Wep_L110A1_CCO, otherwise identical
 	type = 1;
 	magazines[] =
 	{

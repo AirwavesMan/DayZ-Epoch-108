@@ -1,5 +1,5 @@
 class M249;
-class DZE_Wep_M249_CCO : M249 {
+class DZE_Wep_M249_SAW_CCO : M249 {
 	displayName = "$STR_DZ_WPN_M249_CCO_NAME";
 	model = "z\addons\dayz_communityweapons\m249\m249_cco.p3d";
 	picture = "\z\addons\dayz_communityweapons\m249\data\w_m249_cco_ca.paa";
@@ -21,12 +21,12 @@ class DZE_Wep_M249_CCO : M249 {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M249'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M249_SAW'] call player_removeAttachment";
 		};
 	};
 };
 
-class DZE_Wep_M249 : DZE_Wep_M249_CCO {
+class DZE_Wep_M249_SAW : DZE_Wep_M249_SAW_CCO {
 	displayName = "$STR_DZ_WPN_M249_NAME";
 	model = "ca\weapons\m249.p3d";
 	picture = "\z\addons\dayz_communityweapons\m249\data\w_m249_ca.paa";
@@ -38,14 +38,14 @@ class DZE_Wep_M249 : DZE_Wep_M249_CCO {
 	//iron sight zeroing end
 
 	class Attachments {
-		DZE_Item_Att_CCO = "DZE_Wep_M249_CCO";
-		DZE_Item_Att_Holo = "DZE_Wep_M249_Holo";
+		DZE_Item_Att_CCO = "DZE_Wep_M249_SAW_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_M249_SAW_Holo";
 	};
 
 	class ItemActions {};
 };
 
-class DZE_Wep_M249_Holo : DZE_Wep_M249_CCO {
+class DZE_Wep_M249_SAW_Holo : DZE_Wep_M249_SAW_CCO {
 	displayName = "$STR_DZ_WPN_M249_HOLO_NAME";
 	model = "z\addons\dayz_communityweapons\m249\m249_holo.p3d";
 	picture = "\z\addons\dayz_communityweapons\m249\data\w_m249_holo_ca.paa";
@@ -53,13 +53,13 @@ class DZE_Wep_M249_Holo : DZE_Wep_M249_CCO {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M249'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M249_SAW'] call player_removeAttachment";
 		};
 	};
 };
 
 class M249_EP1;
-class DZE_Wep_M249_EP1: M249_EP1 { //Iron sight with shorter stock (slightly different look from DZE_Wep_M249) can also fire MG36 mags
+class DZE_Wep_M249: M249_EP1 { //Iron sight with shorter stock (slightly different look from DZE_Wep_M249_SAW) can also fire MG36 mags
 	type = 1;
 
 	magazines[] =
@@ -76,7 +76,7 @@ class DZE_Wep_M249_EP1: M249_EP1 { //Iron sight with shorter stock (slightly dif
 };
 
 class M249_m145_EP1;
-class DZE_Wep_M249_m145_EP1_DZE: M249_m145_EP1 {
+class DZE_Wep_M249_M145: M249_m145_EP1 {
 	type = 1;
 
 	magazines[] =

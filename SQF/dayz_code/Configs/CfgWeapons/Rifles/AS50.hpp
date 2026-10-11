@@ -1,5 +1,5 @@
 class BAF_AS50_scoped;
-class DZE_Wep_BAF_AS50_scoped : BAF_AS50_scoped {
+class DZE_Wep_AS50 : BAF_AS50_scoped {
 	displayname = "AS50";
 	type = 1;
 	canlock = 0;

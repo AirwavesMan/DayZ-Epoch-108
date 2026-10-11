@@ -44,6 +44,6 @@ class DZE_Wep_M240_Holo : DZE_Wep_M240_CCO {
 };
 
 class m240_scoped_EP1;
-class DZE_Wep_m240_scoped_EP1_DZE:m240_scoped_EP1 { //has m145 scope
+class DZE_Wep_M240_M145:m240_scoped_EP1 { //has m145 scope
 	type = 1;
 };

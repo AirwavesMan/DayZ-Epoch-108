@@ -53,7 +53,7 @@ class OpticsModes {\
 	};\
 }
 
-class DZE_Wep_MP7_base: MP5A5 {
+class DZE_Wep_MP7_Base: MP5A5 {
 	scope = 2;
 	displayName = "MP7";
 	descriptionShort = "HK MP7A1";
@@ -106,7 +106,7 @@ class DZE_Wep_MP7_base: MP5A5 {
 		libTextDesc = "The MP7 is a German Submachine Gun Manufactured by Heckler and Koch (HK) and Chambered for the HK 4.6�30mm Cartridge. It was Designed with the new Cartridge to Meet NATO Requirements Published in 1989, as these Requirements call for a Personal Defense Weapon (PDW) Class Firearm, with a greater ability to defeat body armor than current Weapons limited to conventional Pistol Cartridges. The MP7 went into Production in 2001. It is a direct Rival to the FN P90, also Developed in Response to NATO's Requirement. The Weapon has been revised since its Introduction and the current Production Version is the MP7A1.";
 	};
 };
-class DZE_Wep_MP7: DZE_Wep_MP7_base {
+class DZE_Wep_MP7: DZE_Wep_MP7_Base {
 	displayName = "$STR_DZ_WPN_MP7_NAME";
 	descriptionShort = "$STR_DZ_WPN_MP7_DESC";
 	model = "\C1987_Mp7\mp7.p3d";
@@ -365,7 +365,7 @@ class DZE_Wep_MP7_ACOG_MFL: DZE_Wep_MP7 {
 	};
 };
 
-class DZE_Wep_MP7_SD: DZE_Wep_MP7_base {
+class DZE_Wep_MP7_SD: DZE_Wep_MP7_Base {
 	displayName = "$STR_DZ_WPN_MP7_SD_NAME";
 	descriptionShort = "$STR_DZ_WPN_MP7_SD_DESC";
 	model = "\C1987_Mp7\mp7_sd.p3d";
