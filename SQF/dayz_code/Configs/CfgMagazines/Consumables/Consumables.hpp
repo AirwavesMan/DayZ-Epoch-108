@@ -79,7 +79,7 @@ class ItemSoda : FoodDrink
 	Nutrition[] = {90,0,100,0};
 	
 	consumeSound = "soda";
-	consumeOutput = "ItemSodaEmpty";
+	consumeOutput = "DZE_Item_Trash_Soda";
 	consumeDrop = true;
 };
 

@@ -34,7 +34,7 @@ class DZE_Item_Skin_Base : CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {{"ItemBandage",2}};
-			input[] = {{"DZE_Item_Skin_Base",1},{"ItemTrashToiletpaper",1}};
+			input[] = {{"DZE_Item_Skin_Base",1},{"DZE_Item_Trash_Toiletpaper",1}};
 		};
 	};
 	weight = 1;

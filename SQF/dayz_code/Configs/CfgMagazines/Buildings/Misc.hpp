@@ -146,7 +146,7 @@ class DZE_Item_Kit_Corrugated: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_Outhouse",1}};
-			input[] = {{"DZE_Item_Kit_Corrugated",1},{"PartWoodPlywood",3},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
+			input[] = {{"DZE_Item_Kit_Corrugated",1},{"PartWoodPlywood",3},{"PartWoodLumber",3},{"DZE_Item_Trash_Toiletpaper",1}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_216";

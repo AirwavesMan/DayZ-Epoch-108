@@ -41,7 +41,7 @@ menu_Profiteer1 = [
 /***************General Store*********/
 menu_Rita_Ensler_EP1 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_PACKAGEFOOD",27],[localize "STR_EPOCH_TRADER_CATEGORY_COOKMEAT",28],[localize "STR_EPOCH_TRADER_CATEGORY_DRINKS",29],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",30],[localize "STR_EPOCH_TRADER_CATEGORY_BACKPACKS",31],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",32]],
-	[["ItemTinBar","TrashJackDaniels",1,1,0]],
+	[["ItemTinBar","DZE_Item_Trash_WhiskyBottle",1,1,0]],
 	"neutral"
 ];
 
@@ -85,7 +85,7 @@ menu_CIV_EuroMan02_EP1 = [
 /***************General Store*********/
 menu_RU_WorkWoman5 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_PACKAGEFOOD",27],[localize "STR_EPOCH_TRADER_CATEGORY_COOKMEAT",28],[localize "STR_EPOCH_TRADER_CATEGORY_DRINKS",29],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",30],[localize "STR_EPOCH_TRADER_CATEGORY_BACKPACKS",31],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",32]],
-	[["ItemTinBar","TrashJackDaniels",1,1,0]],
+	[["ItemTinBar","DZE_Item_Trash_WhiskyBottle",1,1,0]],
 	"neutral"
 ];
 

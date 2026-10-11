@@ -21,8 +21,8 @@ if ({_x in _plasticBottles} count _magsPlayer > 0) then {
 };
 
 if (!_hasTinItem) exitWith {
-	local _tin1text	= getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
-	local _tin2text	= getText (configFile >> "CfgMagazines" >> "ItemSodaEmpty" >> "displayName");
+	local _tin1text	= getText (configFile >> "CfgMagazines" >> "DZE_Item_Trash_TinCan" >> "displayName");
+	local _tin2text	= getText (configFile >> "CfgMagazines" >> "DZE_Item_Trash_Soda" >> "displayName");
 	local _tintext	= format ["%1 / %2", _tin1text, _tin2text];
 	format [localize "str_player_31", _tintext, localize "str_player_31_fill"] call DZE_fnc_rollingMessages;
 	a_player_boil		= false;

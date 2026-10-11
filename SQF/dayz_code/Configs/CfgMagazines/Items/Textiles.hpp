@@ -103,7 +103,7 @@ class equip_string : CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Trap_TripwireCans",1}};
-			input[] = {{"equip_string",1},{"TrashTinCan",1},{"PartWoodPile",1},{"equip_duct_tape",1}};
+			input[] = {{"equip_string",1},{"DZE_Item_Trash_TinCan",1},{"PartWoodPile",1},{"equip_duct_tape",1}};
 		};	
 		class Crafting2 {
 			text = "$STR_ITEM_NAME_TRIPWIRE_FLARE";

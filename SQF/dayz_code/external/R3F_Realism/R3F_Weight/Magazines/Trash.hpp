@@ -1,192 +1,192 @@
-﻿class TrashJackDaniels 
+﻿class DZE_Item_Trash_WhiskyBottle
 {
 	weight = 0.02;
 };
-class ItemTrashRazor 
+class DZE_Item_Trash_Razor
 {
 	weight = 0.003;
 };
-class ItemTrashToiletpaper 
+class DZE_Item_Trash_Toiletpaper
 {
 	weight = 0.001;
 };
-class ItemSodaEmpty 
+class DZE_Item_Trash_Soda
 {
 	weight = 0.002;
 };
-class ItemSodaCokeEmpty 
+class DZE_Item_Trash_SodaCoke
 {
 	weight = 0.002;
 };
-class ItemSodaPepsiEmpty 
+class DZE_Item_Trash_SodaPepsi
 {
 	weight = 0.002;
 };
-class ItemSodaMdewEmpty 
+class DZE_Item_Trash_SodaMdew
 {
 	weight = 0.002;
 };
-class ItemSodaMtngreenEmpty
+class DZE_Item_Trash_SodaMtngreen
 {
 	weight = 0.002;
 };
-class ItemSodaR4z0rEmpty
+class DZE_Item_Trash_SodaR4z0r
 {
 	weight = 0.002;
 };
-class ItemSodaClaysEmpty
+class DZE_Item_Trash_SodaClays
 {
 	weight = 0.002;
 };
-class ItemSodaSmashtEmpty
+class DZE_Item_Trash_SodaSmasht
 {
 	weight = 0.002;
 };
-class ItemSodaDrwasteEmpty
+class DZE_Item_Trash_SodaDrwaste
 {
 	weight = 0.002;
 };
-class ItemSodaFrankaEmpty
+class DZE_Item_Trash_SodaFranka
 {
 	weight = 0.002;
 };
-class ItemSodaLemonadeEmpty
+class DZE_Item_Trash_SodaLemonade
 {
 	weight = 0.002;
 };
-class ItemSodaLirikEmpty
+class DZE_Item_Trash_SodaLirik
 {
 	weight = 0.002;
 };
-class ItemSodaLvgEmpty
+class DZE_Item_Trash_SodaLvg
 {
 	weight = 0.002;
 };
-class ItemSodaMzlyEmpty
+class DZE_Item_Trash_SodaMzly
 {
 	weight = 0.002;
 };
-class ItemSodaPeppsyEmpty
+class DZE_Item_Trash_SodaPeppsy
 {
 	weight = 0.002;
 };
-class ItemSodaRabbitEmpty
+class DZE_Item_Trash_SodaRabbit
 {
 	weight = 0.002;
 };
-class ItemSodaSacriteEmpty
+class DZE_Item_Trash_SodaSacrite
 {
 	weight = 0.002;
 };
-class ItemSodaRocketFuelEmpty
+class DZE_Item_Trash_SodaRocketFuel
 {
 	weight = 0.002;
 };
-class ItemSodaGrapeDrinkEmpty
+class DZE_Item_Trash_SodaGrapeDrink
 {
 	weight = 0.002;
 };
-class ItemSodaSherbetEmpty
+class DZE_Item_Trash_SodaSherbet
 {
 	weight = 0.002;
 };
-class TrashTinCan 
+class DZE_Item_Trash_TinCan
 {
 	weight = 0.003;
 };
-class FoodCanBeefEmpty
+class DZE_Item_Trash_FoodCanBeef
 {
 	weight = 0.003;
 };
-class FoodCanPotatoesEmpty
+class DZE_Item_Trash_FoodCanPotatoes
 {
 	weight = 0.003;
 };
-class FoodCanGriffEmpty
+class DZE_Item_Trash_FoodCanGriff
 {
 	weight = 0.003;
 };
-class FoodCanBadguyEmpty
+class DZE_Item_Trash_FoodCanBadguy
 {
 	weight = 0.003;
 };
-class FoodCanBoneboyEmpty
+class DZE_Item_Trash_FoodCanBoneboy
 {
 	weight = 0.003;
 };
-class FoodCanCornEmpty
+class DZE_Item_Trash_FoodCanCorn
 {
 	weight = 0.003;
 };
-class FoodCanCurgonEmpty
+class DZE_Item_Trash_FoodCanCurgon
 {
 	weight = 0.003;
 };
-class FoodCanDemonEmpty
+class DZE_Item_Trash_FoodCanDemon
 {
 	weight = 0.003;
 };
-class FoodCanFraggleosEmpty
+class DZE_Item_Trash_FoodCanFraggleos
 {
 	weight = 0.003;
 };
-class FoodCanHerpyEmpty
+class DZE_Item_Trash_FoodCanHerpy
 {
 	weight = 0.003;
 };
-class FoodCanDerpyEmpty
+class DZE_Item_Trash_FoodCanDerpy
 {
 	weight = 0.003;
 };
-class FoodCanOrlokEmpty
+class DZE_Item_Trash_FoodCanOrlok
 {
 	weight = 0.003;
 };
-class FoodCanPowellEmpty
+class DZE_Item_Trash_FoodCanPowell
 {
 	weight = 0.003;
 };
-class FoodCanTylersEmpty
+class DZE_Item_Trash_FoodCanTylers
 {
 	weight = 0.003;
 };
-class FoodCanUnlabeledEmpty
+class DZE_Item_Trash_FoodCanUnlabeled
 {
 	weight = 0.003;
 };
-class FoodCanRusUnlabeledEmpty
+class DZE_Item_Trash_FoodCanRusUnlabeled
 {
 	weight = 0.003;
 };
-class FoodCanRusStewEmpty
+class DZE_Item_Trash_FoodCanRusStew
 {
 	weight = 0.003;
 };
-class FoodCanRusPorkEmpty
+class DZE_Item_Trash_FoodCanRusPork
 {
 	weight = 0.003;
 };
-class FoodCanRusPeasEmpty
+class DZE_Item_Trash_FoodCanRusPeas
 {
 	weight = 0.003;
 };
-class FoodCanRusMilkEmpty
+class DZE_Item_Trash_FoodCanRusMilk
 {
 	weight = 0.003;
 };
-class FoodCanRusCornEmpty
+class DZE_Item_Trash_FoodCanRusCorn
 {
 	weight = 0.003;
 };
-class FoodChipsSulahoopsEmpty
+class DZE_Item_Trash_FoodChipsSulahoops
 {
 	weight = 0.003;
 };
-class FoodChipsMysticalesEmpty
+class DZE_Item_Trash_FoodChipsMysticales
 {
 	weight = 0.003;
 };
-class FoodChipsChocolateEmpty
+class DZE_Item_Trash_FoodChipsChocolate
 {
 	weight = 0.003;
 };

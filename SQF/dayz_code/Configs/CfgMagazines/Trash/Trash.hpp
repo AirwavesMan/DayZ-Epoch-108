@@ -1,11 +1,11 @@
-class ItemSodaEmpty : HandGrenade {
-	scope = 2;	
+class DZE_Item_Trash_Soda : HandGrenade {
+	scope = 2;
 	displayName = "$STR_EQUIP_NAME_EMPTY_SODA_CAN";
 	descriptionShort = "$STR_EQUIP_DESC_EMPTY_SODA_CAN";
 	model = "\dayz_equip\models\soda_coke_e.p3d";
 	picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
 	ammo = "SodaCan";
-	
+
 	class ItemActions {
 		class Drink {
 			text = "$STR_ACTIONS_DRINK2";
@@ -17,19 +17,19 @@ class ItemSodaEmpty : HandGrenade {
 			neednearby[] = {"fire"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"ItemAluminumBar",1}};
-			input[] = {{"ItemSodaEmpty",6}};
+			input[] = {{"DZE_Item_Trash_Soda",6}};
 		};
 	};
 };
-	
-class TrashTinCan : HandGrenade {
-	scope = 2;	
+
+class DZE_Item_Trash_TinCan : HandGrenade {
+	scope = 2;
 	displayName = "$STR_EQUIP_NAME_EMPTY_TIN_CAN";
 	descriptionShort = "$STR_EQUIP_DESC_EMPTY_TIN_CAN";
 	model = "\dayz_equip\models\trash_tincan.p3d";
 	picture = "\dayz_equip\textures\equip_tincan_ca.paa";
 	ammo = "TinCan";
-	
+
 	class ItemActions {
 		class Drink {
 			text = "$STR_ACTIONS_DRINK2";
@@ -41,7 +41,7 @@ class TrashTinCan : HandGrenade {
 			neednearby[] = {"fire"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"ItemTinBar",1}};
-			input[] = {{"TrashTinCan",6}};
+			input[] = {{"DZE_Item_Trash_TinCan",6}};
 		};
 	};
 };
