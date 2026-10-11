@@ -150,7 +150,7 @@ class DZE_Veh_Bell47_Gunship_M60_Olive: DZE_Bell47_Base {
 	threat[] = {0.05,0.1,0.01};
 	gunBeg[] = {"muzzle_1","muzzle_2"};
 	gunEnd[] = {"chamber_1","chamber_2"};
-	weapons[] = {"pook_M60_dual_DZ","pook_H13Grenades","CMFlareLauncher"};
+	weapons[] = {"DZE_VehWep_pook_M60_dual","pook_H13Grenades","CMFlareLauncher"};
 	magazines[] = {"pook_1300Rnd_762x51_M60","pook_12Rnd_Grenade_Camel","60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 
 	class Upgrades {
@@ -248,7 +248,7 @@ class DZE_Veh_Bell47_Transport_Olive: pook_H13_transport {
 
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
-			weapons[] = {"pook_M60_side_DZ","pook_H13Grenades"};
+			weapons[] = {"DZE_VehWep_pook_M60_side","pook_H13Grenades"};
 			//magazines[] = {"pook_250Rnd_762x51","pook_250Rnd_762x51","pook_250Rnd_762x51","pook_250Rnd_762x51","pook_250Rnd_762x51","pook_12Rnd_Grenade_Camel"};
 		};
 	};
@@ -508,7 +508,7 @@ class DZE_Veh_Bell47_Yellow_3: DZE_Veh_Bell47_Yellow_2 {
 
 class DZE_Veh_Bell47_Gunship_M134_Olive: DZE_Veh_Bell47_Gunship_M60_Olive {
 	displayName = "$STR_VEH_NAME_BELLH13_GUNSHIP";
-	weapons[] = {"pook_M60_dual_m134_DZ","pook_H13Grenades","CMFlareLauncher"};
+	weapons[] = {"DZE_VehWep_pook_M60_dual_m134","pook_H13Grenades","CMFlareLauncher"};
 	magazines[] = {"2000Rnd_762x51_M134","pook_12Rnd_Grenade_Camel","60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 
 	class Upgrades {

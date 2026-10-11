@@ -132,7 +132,7 @@ class DZE_Veh_C185T_TwinM60: DZE_Veh_C185T_Rockets {
 		ItemHeliAVE[] = {"DZE_Veh_C185T_TwinM60_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 
-	weapons[] = {"pook_M60_dual_DZ"};
+	weapons[] = {"DZE_VehWep_pook_M60_dual"};
 	magazines[] = {"pook_1300Rnd_762x51_M60"};
 };
 
