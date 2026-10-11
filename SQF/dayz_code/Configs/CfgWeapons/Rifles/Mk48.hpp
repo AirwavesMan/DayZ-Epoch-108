@@ -14,7 +14,7 @@ class DZE_Wep_Mk48_CCO : Mk_48 {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_Mk48'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_Mk48'] call player_removeAttachment";
 		};
 	};
 };
@@ -31,8 +31,8 @@ class DZE_Wep_Mk48 : DZE_Wep_Mk48_CCO {
 	//iron sight zeroing end
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_Mk48_CCO";
-		Attachment_Holo = "DZE_Wep_Mk48_Holo";
+		DZE_Item_Att_CCO = "DZE_Wep_Mk48_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_Mk48_Holo";
 	};
 
 	class ItemActions {};
@@ -46,7 +46,7 @@ class DZE_Wep_Mk48_Holo : DZE_Wep_Mk48_CCO {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_Mk48'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_Mk48'] call player_removeAttachment";
 		};
 	};
 };

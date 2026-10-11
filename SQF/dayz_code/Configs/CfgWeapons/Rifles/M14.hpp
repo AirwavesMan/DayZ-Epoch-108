@@ -13,9 +13,9 @@ class DZE_Wep_M14 : M14_EP1 {
 	//modes[] = {Single};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M14_CCO";
-		Attachment_Holo = "DZE_Wep_M14_Holo";
-		Attachment_Ghillie = "DZE_Wep_M14_Gh";
+		DZE_Item_Att_CCO = "DZE_Wep_M14_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_M14_Holo";
+		DZE_Item_Att_Ghillie = "DZE_Wep_M14_Gh";
 	};
 };
 
@@ -25,14 +25,14 @@ class DZE_Wep_M14_Gh : DZE_Wep_M14 {
 	picture = "\z\addons\dayz_communityweapons\m14\data\w_m14_ghillie_ca.paa";
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M14_CCO_Gh";
-		Attachment_Holo = "DZE_Wep_M14_Holo_Gh";
+		DZE_Item_Att_CCO = "DZE_Wep_M14_CCO_Gh";
+		DZE_Item_Att_Holo = "DZE_Wep_M14_Holo_Gh";
 	};
 
 	class ItemActions {
 		class RemoveGhillie {
 			text = "$STR_DZ_ATT_GHIL_RMVE";
-			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_M14'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Ghillie',_id,'DZE_Wep_M14'] call player_removeAttachment";
 		};
 	};
 };
@@ -45,13 +45,13 @@ class DZE_Wep_M14_CCO : DZE_Wep_M14 {
 	picture = "\z\addons\dayz_communityweapons\m14\data\w_m14_cco_ca.paa";
 
 	class Attachments {
-		Attachment_Ghillie = "DZE_Wep_M14_CCO_Gh";
+		DZE_Item_Att_Ghillie = "DZE_Wep_M14_CCO_Gh";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M14'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M14'] call player_removeAttachment";
 		};
 	};
 };
@@ -66,11 +66,11 @@ class DZE_Wep_M14_CCO_Gh : DZE_Wep_M14_CCO {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M14_Gh'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M14_Gh'] call player_removeAttachment";
 		};
 		class RemoveGhillie {
 			text = "$STR_DZ_ATT_GHIL_RMVE";
-			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_M14_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Ghillie',_id,'DZE_Wep_M14_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -83,13 +83,13 @@ class DZE_Wep_M14_Holo : DZE_Wep_M14 {
 	picture = "\z\addons\dayz_communityweapons\m14\data\w_m14_holo_ca.paa";
 
 	class Attachments {
-		Attachment_Ghillie = "DZE_Wep_M14_Holo_Gh";
+		DZE_Item_Att_Ghillie = "DZE_Wep_M14_Holo_Gh";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M14'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M14'] call player_removeAttachment";
 		};
 	};
 };
@@ -104,11 +104,11 @@ class DZE_Wep_M14_Holo_Gh : DZE_Wep_M14_Holo {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M14_Gh'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M14_Gh'] call player_removeAttachment";
 		};
 		class RemoveGhillie {
 			text = "$STR_DZ_ATT_GHIL_RMVE";
-			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_M14_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Ghillie',_id,'DZE_Wep_M14_Holo'] call player_removeAttachment";
 		};
 	};
 };

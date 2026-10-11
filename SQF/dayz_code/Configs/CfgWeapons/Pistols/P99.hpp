@@ -9,7 +9,7 @@ class DZE_Wep_P99_Black: M9 {
 	magazines[] = {"15Rnd_10x22_p99"};
 
 	class Attachments {
-		Attachment_Sup10 = "DZE_Wep_P99_Black_SD";
+		DZE_Item_Att_Sup10 = "DZE_Wep_P99_Black_SD";
 	};
 };
 
@@ -28,7 +28,7 @@ class DZE_Wep_P99_Black_SD: M9SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup10',_id,'DZE_Wep_P99_Black'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup10',_id,'DZE_Wep_P99_Black'] call player_removeAttachment";
 		};
 	};
 };
@@ -39,7 +39,7 @@ class DZE_Wep_P99_Green: DZE_Wep_P99_Black {
 	picture = "\C1987_P99\equip\p99_green.paa";
 
 	class Attachments {
-		Attachment_Sup10 = "DZE_Wep_P99_Green_SD";
+		DZE_Item_Att_Sup10 = "DZE_Wep_P99_Green_SD";
 	};
 };
 
@@ -51,7 +51,7 @@ class DZE_Wep_P99_Green_SD: DZE_Wep_P99_Black_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup10',_id,'DZE_Wep_P99_Green'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup10',_id,'DZE_Wep_P99_Green'] call player_removeAttachment";
 		};
 	};
 };
@@ -62,7 +62,7 @@ class DZE_Wep_P99_Silver: DZE_Wep_P99_Black {
 	picture = "\C1987_P99\equip\p99_silver.paa";
 
 	class Attachments {
-		Attachment_Sup10 = "DZE_Wep_P99_Silver_SD";
+		DZE_Item_Att_Sup10 = "DZE_Wep_P99_Silver_SD";
 	};
 };
 
@@ -74,7 +74,7 @@ class DZE_Wep_P99_Silver_SD: DZE_Wep_P99_Black_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup10',_id,'DZE_Wep_P99_Silver'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup10',_id,'DZE_Wep_P99_Silver'] call player_removeAttachment";
 		};
 	};
 };

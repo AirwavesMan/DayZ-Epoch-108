@@ -32,7 +32,7 @@ class DZE_Wep_SA58 : Sa58V_EP1 {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_SA58RIS = "DZE_Wep_SA58_RIS";
+		DZE_Item_Att_SA58RIS = "DZE_Wep_SA58_RIS";
 	};
 };
 
@@ -42,17 +42,17 @@ class DZE_Wep_SA58_RIS : DZE_Wep_SA58 {
 	picture = "\z\addons\dayz_communityweapons\sa58\data\w_sa58_ris_ca.paa";
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_SA58_CCO";
-		Attachment_Holo = "DZE_Wep_SA58_Holo";
-		Attachment_ACOG = "DZE_Wep_SA58_ACOG";
-		Attachment_FL = "DZE_Wep_SA58_RIS_FL";
-		Attachment_MFL = "DZE_Wep_SA58_RIS_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_SA58_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_SA58_Holo";
+		DZE_Item_Att_ACOG = "DZE_Wep_SA58_ACOG";
+		DZE_Item_Att_FL = "DZE_Wep_SA58_RIS_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_SA58_RIS_MFL";
 	};
 
 	class ItemActions {
 		class RemoveRIS {
 			text = "$STR_DZ_ATT_RIS_RMVE";
-			script = "; ['Attachment_SA58RIS',_id,'DZE_Wep_SA58'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SA58RIS',_id,'DZE_Wep_SA58'] call player_removeAttachment";
 		};
 	};
 };
@@ -65,15 +65,15 @@ class DZE_Wep_SA58_RIS_FL : DZE_Wep_SA58_RIS {
 	FLASHLIGHT;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_SA58_CCO_FL";
-		Attachment_Holo = "DZE_Wep_SA58_Holo_FL";
-		Attachment_ACOG = "DZE_Wep_SA58_ACOG_FL";
+		DZE_Item_Att_CCO = "DZE_Wep_SA58_CCO_FL";
+		DZE_Item_Att_Holo = "DZE_Wep_SA58_Holo_FL";
+		DZE_Item_Att_ACOG = "DZE_Wep_SA58_ACOG_FL";
 	};
 
 	class ItemActions {
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_SA58_RIS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_SA58_RIS'] call player_removeAttachment";
 		};
 	};
 };
@@ -86,15 +86,15 @@ class DZE_Wep_SA58_RIS_MFL : DZE_Wep_SA58_RIS {
 	MFLASHLIGHT;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_SA58_CCO_MFL";
-		Attachment_Holo = "DZE_Wep_SA58_Holo_MFL";
-		Attachment_ACOG = "DZE_Wep_SA58_ACOG_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_SA58_CCO_MFL";
+		DZE_Item_Att_Holo = "DZE_Wep_SA58_Holo_MFL";
+		DZE_Item_Att_ACOG = "DZE_Wep_SA58_ACOG_MFL";
 	};
 
 	class ItemActions {
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_SA58_RIS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_SA58_RIS'] call player_removeAttachment";
 		};
 	};
 };
@@ -111,14 +111,14 @@ class DZE_Wep_SA58_CCO : DZE_Wep_SA58_RIS {
 	distanceZoomMax = 200;
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_SA58_CCO_FL";
-		Attachment_MFL = "DZE_Wep_SA58_CCO_MFL";
+		DZE_Item_Att_FL = "DZE_Wep_SA58_CCO_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_SA58_CCO_MFL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_SA58_RIS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_SA58_RIS'] call player_removeAttachment";
 		};
 	};
 };
@@ -135,11 +135,11 @@ class DZE_Wep_SA58_CCO_FL : DZE_Wep_SA58_CCO {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_SA58_RIS_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_SA58_RIS_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_SA58_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_SA58_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -156,11 +156,11 @@ class DZE_Wep_SA58_CCO_MFL : DZE_Wep_SA58_CCO {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_SA58_RIS_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_SA58_RIS_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_SA58_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_SA58_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -171,14 +171,14 @@ class DZE_Wep_SA58_Holo : DZE_Wep_SA58_CCO {
 	picture = "\z\addons\dayz_communityweapons\sa58\data\w_sa58_holo_ca.paa";
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_SA58_Holo_FL";
-		Attachment_MFL = "DZE_Wep_SA58_Holo_MFL";
+		DZE_Item_Att_FL = "DZE_Wep_SA58_Holo_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_SA58_Holo_MFL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_SA58_RIS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_SA58_RIS'] call player_removeAttachment";
 		};
 	};
 };
@@ -195,11 +195,11 @@ class DZE_Wep_SA58_Holo_FL : DZE_Wep_SA58_Holo {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_SA58_RIS_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_SA58_RIS_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_SA58_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_SA58_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -216,11 +216,11 @@ class DZE_Wep_SA58_Holo_MFL : DZE_Wep_SA58_Holo {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_SA58_RIS_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_SA58_RIS_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_SA58_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_SA58_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -267,14 +267,14 @@ class DZE_Wep_SA58_ACOG : DZE_Wep_SA58_CCO {
 	};
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_SA58_ACOG_FL";
-		Attachment_MFL = "DZE_Wep_SA58_ACOG_MFL";
+		DZE_Item_Att_FL = "DZE_Wep_SA58_ACOG_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_SA58_ACOG_MFL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_SA58_RIS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_SA58_RIS'] call player_removeAttachment";
 		};
 	};
 };
@@ -291,11 +291,11 @@ class DZE_Wep_SA58_ACOG_FL : DZE_Wep_SA58_ACOG {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_SA58_RIS_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_SA58_RIS_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_SA58_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_SA58_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -312,11 +312,11 @@ class DZE_Wep_SA58_ACOG_MFL : DZE_Wep_SA58_ACOG {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_SA58_RIS_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_SA58_RIS_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_SA58_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_SA58_ACOG'] call player_removeAttachment";
 		};
 	};
 };

@@ -66,10 +66,10 @@ class DZE_Wep_M1A_SC16_BL: M14_EP1 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M1A_SC16_BL_CCO";
-		Attachment_Holo = "DZE_Wep_M1A_SC16_BL_HOLO";
-		Attachment_ACOG = "DZE_Wep_M1A_SC16_BL_ACOG";
-		Attachment_SCOPED = "DZE_Wep_M1A_SC16_BL_PU";
+		DZE_Item_Att_CCO = "DZE_Wep_M1A_SC16_BL_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_M1A_SC16_BL_HOLO";
+		DZE_Item_Att_ACOG = "DZE_Wep_M1A_SC16_BL_ACOG";
+		DZE_Item_Att_SCOPED = "DZE_Wep_M1A_SC16_BL_PU";
 	};
 };
 
@@ -85,7 +85,7 @@ class DZE_Wep_M1A_SC16_BL_ACOG: DZE_Wep_M1A_SC16_BL {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M1A_SC16_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M1A_SC16_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -104,7 +104,7 @@ class DZE_Wep_M1A_SC16_BL_CCO: DZE_Wep_M1A_SC16_BL {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M1A_SC16_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M1A_SC16_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -123,7 +123,7 @@ class DZE_Wep_M1A_SC16_BL_HOLO: DZE_Wep_M1A_SC16_BL {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M1A_SC16_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M1A_SC16_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -146,7 +146,7 @@ class DZE_Wep_M1A_SC16_BL_PU: DZE_Wep_M1A_SC16_BL {
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_M1A_SC16_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_M1A_SC16_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -209,10 +209,10 @@ class DZE_Wep_M1A_SC16_TAN: M14_EP1 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M1A_SC16_TAN_CCO";
-		Attachment_Holo = "DZE_Wep_M1A_SC16_TAN_HOLO";
-		Attachment_ACOG = "DZE_Wep_M1A_SC16_TAN_ACOG";
-		Attachment_SCOPED = "DZE_Wep_M1A_SC16_TAN_PU";
+		DZE_Item_Att_CCO = "DZE_Wep_M1A_SC16_TAN_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_M1A_SC16_TAN_HOLO";
+		DZE_Item_Att_ACOG = "DZE_Wep_M1A_SC16_TAN_ACOG";
+		DZE_Item_Att_SCOPED = "DZE_Wep_M1A_SC16_TAN_PU";
 	};
 };
 
@@ -228,7 +228,7 @@ class DZE_Wep_M1A_SC16_TAN_ACOG: DZE_Wep_M1A_SC16_TAN {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M1A_SC16_TAN'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M1A_SC16_TAN'] call player_removeAttachment";
 		};
 	};
 };
@@ -247,7 +247,7 @@ class DZE_Wep_M1A_SC16_TAN_CCO: DZE_Wep_M1A_SC16_TAN {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M1A_SC16_TAN'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M1A_SC16_TAN'] call player_removeAttachment";
 		};
 	};
 };
@@ -266,7 +266,7 @@ class DZE_Wep_M1A_SC16_TAN_HOLO: DZE_Wep_M1A_SC16_TAN {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M1A_SC16_TAN'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M1A_SC16_TAN'] call player_removeAttachment";
 		};
 	};
 };
@@ -291,7 +291,7 @@ class DZE_Wep_M1A_SC16_TAN_PU: DZE_Wep_M1A_SC16_TAN {
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_M1A_SC16_TAN'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_M1A_SC16_TAN'] call player_removeAttachment";
 		};
 	};
 };
@@ -353,10 +353,10 @@ class DZE_Wep_M1A_SC2_BL: M14_EP1 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M1A_SC2_BL_CCO";
-		Attachment_Holo = "DZE_Wep_M1A_SC2_BL_HOLO";
-		Attachment_ACOG = "DZE_Wep_M1A_SC2_BL_ACOG";
-		Attachment_SCOPED = "DZE_Wep_M1A_SC2_BL_PU";
+		DZE_Item_Att_CCO = "DZE_Wep_M1A_SC2_BL_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_M1A_SC2_BL_HOLO";
+		DZE_Item_Att_ACOG = "DZE_Wep_M1A_SC2_BL_ACOG";
+		DZE_Item_Att_SCOPED = "DZE_Wep_M1A_SC2_BL_PU";
 	};
 };
 
@@ -372,7 +372,7 @@ class DZE_Wep_M1A_SC2_BL_ACOG: DZE_Wep_M1A_SC2_BL {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M1A_SC2_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M1A_SC2_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -391,7 +391,7 @@ class DZE_Wep_M1A_SC2_BL_CCO: DZE_Wep_M1A_SC2_BL {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M1A_SC2_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M1A_SC2_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -410,7 +410,7 @@ class DZE_Wep_M1A_SC2_BL_HOLO: DZE_Wep_M1A_SC2_BL {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M1A_SC2_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M1A_SC2_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -435,7 +435,7 @@ class DZE_Wep_M1A_SC2_BL_PU: DZE_Wep_M1A_SC2_BL {
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_M1A_SC2_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_M1A_SC2_BL'] call player_removeAttachment";
 		};
 	};
 };

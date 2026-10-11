@@ -31,7 +31,7 @@ class DZE_Wep_PDW : UZI_EP1 {
 	magazines[] = {"30Rnd_9x19_UZI"};
 
 	class Attachments {
-		Attachment_Sup9 = "DZE_Wep_PDW_SD";
+		DZE_Item_Att_Sup9 = "DZE_Wep_PDW_SD";
 	};
 };
 
@@ -70,7 +70,7 @@ class DZE_Wep_PDW_SD : UZI_SD_EP1 {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup9',_id,'DZE_Wep_PDW'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup9',_id,'DZE_Wep_PDW'] call player_removeAttachment";
 		};
 	};
 };

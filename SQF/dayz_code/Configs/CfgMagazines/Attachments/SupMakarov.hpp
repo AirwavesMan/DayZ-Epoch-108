@@ -1,18 +1,15 @@
-class Attachment_SupMakarov : CA_Magazine
-{
+class DZE_Item_Att_SupMakarov : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;	
+	displayName = "$STR_DZ_ATT_SUP9PM_NAME";
+	descriptionShort = "$STR_DZ_ATT_SUP9PM_DESC";
 	model = "z\addons\dayz_communityassets\models\surpressor.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\attachment_silencer.paa";	
-	displayName = $STR_DZ_ATT_SUP9PM_NAME;
-	descriptionShort = $STR_DZ_ATT_SUP9PM_DESC;
-	
-	class ItemActions
-	{
-		class AttachToSecondary
-		{
-			text = $STR_DZ_ATT_ACT_TO_SECONDARY;
+	picture = "\z\addons\dayz_communityassets\pictures\attachment_silencer.paa";
+	count = 1;
+	type = 256;
+
+	class ItemActions {
+		class AttachToSecondary {
+			text = "$STR_DZ_ATT_ACT_TO_SECONDARY";
 			script = "; [_id,0] call player_attachAttachment";
 		};
 	};

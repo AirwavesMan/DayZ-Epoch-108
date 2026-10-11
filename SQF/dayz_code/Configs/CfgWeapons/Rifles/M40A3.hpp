@@ -8,7 +8,7 @@ class DZE_Wep_M40A3_Gh : M40A3 {
 	class ItemActions {
 		class RemoveGhillie {
 			text = "$STR_DZ_ATT_GHIL_RMVE";
-			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_M40A3'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Ghillie',_id,'DZE_Wep_M40A3'] call player_removeAttachment";
 		};
 	};
 };
@@ -20,7 +20,7 @@ class DZE_Wep_M40A3 : DZE_Wep_M40A3_Gh {
 	memoryPointCamera = "opticView";
 
 	class Attachments {
-		Attachment_Ghillie = "DZE_Wep_M40A3_Gh";
+		DZE_Item_Att_Ghillie = "DZE_Wep_M40A3_Gh";
 	};
 
 	class ItemActions {};

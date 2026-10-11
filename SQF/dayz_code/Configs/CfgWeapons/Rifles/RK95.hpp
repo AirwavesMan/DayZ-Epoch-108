@@ -94,9 +94,9 @@ class DZE_Wep_RK95: DZE_Wep_AKM {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_RK95_CCO";
-		Attachment_Sup762 = "DZE_Wep_RK95_SD";
-		Attachment_ACOG = "DZE_Wep_RK95_ACOG";
+		DZE_Item_Att_CCO = "DZE_Wep_RK95_CCO";
+		DZE_Item_Att_Sup762 = "DZE_Wep_RK95_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_RK95_ACOG";
 	};
 };
 
@@ -121,14 +121,14 @@ class DZE_Wep_RK95_SD: DZE_Wep_RK95 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_RK95_CCO_SD";
-		Attachment_ACOG = "DZE_Wep_RK95_ACOG_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_RK95_CCO_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_RK95_ACOG_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup762',_id,'DZE_Wep_RK95'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup762',_id,'DZE_Wep_RK95'] call player_removeAttachment";
 		};
 	};
 };
@@ -146,11 +146,11 @@ class DZE_Wep_RK95_CCO_SD: DZE_Wep_RK95_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup762',_id,'DZE_Wep_RK95_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup762',_id,'DZE_Wep_RK95_CCO'] call player_removeAttachment";
 		};
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_RK95_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_RK95_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -174,11 +174,11 @@ class DZE_Wep_RK95_ACOG_SD: DZE_Wep_RK95_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup762',_id,'DZE_Wep_RK95_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup762',_id,'DZE_Wep_RK95_ACOG'] call player_removeAttachment";
 		};
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_RK95_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_RK95_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -192,13 +192,13 @@ class DZE_Wep_RK95_CCO: DZE_Wep_RK95 {
 	distanceZoomMax = 322;
 
 	class Attachments {
-		Attachment_Sup762 = "DZE_Wep_RK95_CCO_SD";
+		DZE_Item_Att_Sup762 = "DZE_Wep_RK95_CCO_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_RK95'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_RK95'] call player_removeAttachment";
 		};
 	};
 };
@@ -218,13 +218,13 @@ class DZE_Wep_RK95_ACOG: DZE_Wep_RK95 {
 	opticsDisablePeripherialVision = 1;
 
 	class Attachments {
-		Attachment_Sup762 = "DZE_Wep_RK95_ACOG_SD";
+		DZE_Item_Att_Sup762 = "DZE_Wep_RK95_ACOG_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_RK95'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_RK95'] call player_removeAttachment";
 		};
 	};
 };

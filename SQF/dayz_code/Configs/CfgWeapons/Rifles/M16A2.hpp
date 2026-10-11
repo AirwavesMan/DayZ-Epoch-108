@@ -9,7 +9,7 @@ class DZE_Wep_M16A2 : M16A2 {
 		60Rnd_556x45_Stanag_Taped
 	};
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M16A2_GL";
+		DZE_Item_Att_M203 = "DZE_Wep_M16A2_GL";
 	};
 };
 
@@ -26,7 +26,7 @@ class DZE_Wep_M16A2_GL : M16A2GL {
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M16A2'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M16A2'] call player_removeAttachment";
 		};
 	};
 };

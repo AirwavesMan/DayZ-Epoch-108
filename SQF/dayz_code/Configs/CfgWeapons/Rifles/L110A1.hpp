@@ -19,7 +19,7 @@ class DZE_Wep_L110A1_CCO : BAF_L110A1_Aim {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_L110A1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_L110A1'] call player_removeAttachment";
 		};
 	};
 };
@@ -32,7 +32,7 @@ class DZE_Wep_L110A1_Holo : DZE_Wep_L110A1_CCO {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_L110A1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_L110A1'] call player_removeAttachment";
 		};
 	};
 };
@@ -49,8 +49,8 @@ class DZE_Wep_L110A1 : DZE_Wep_L110A1_CCO {
 	//iron sight zeroing end
 
 	class Attachments {
-		Attachment_CCO = DZE_Wep_L110A1_CCO;
-		Attachment_Holo = DZE_Wep_L110A1_Holo;
+		DZE_Item_Att_CCO = DZE_Wep_L110A1_CCO;
+		DZE_Item_Att_Holo = DZE_Wep_L110A1_Holo;
 	};
 
 	class ItemActions {};

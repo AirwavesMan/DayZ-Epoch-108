@@ -68,7 +68,7 @@ class DZE_Wep_G36K_Camo : G36C {
 	//G36 Optic end
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_G36K_Camo_SD";
+		DZE_Item_Att_Sup556 = "DZE_Wep_G36K_Camo_SD";
 	};
 };
 
@@ -145,7 +145,7 @@ class DZE_Wep_G36K_Camo_SD : G36_C_SD_eotech {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_G36K_Camo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_G36K_Camo'] call player_removeAttachment";
 		};
 	};
 };
@@ -177,7 +177,7 @@ class DZE_Wep_G36A_Camo : DZE_Wep_G36K_Camo {
 	};
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_G36A_Camo_SD";
+		DZE_Item_Att_Sup556 = "DZE_Wep_G36A_Camo_SD";
 	};
 };
 
@@ -189,7 +189,7 @@ class DZE_Wep_G36A_Camo_SD : DZE_Wep_G36K_Camo_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_G36A_Camo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_G36A_Camo'] call player_removeAttachment";
 		};
 	};
 };

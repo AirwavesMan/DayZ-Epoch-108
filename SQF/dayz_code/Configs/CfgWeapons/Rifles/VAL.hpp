@@ -46,8 +46,8 @@ class DZE_Wep_VAL: DZE_Wep_Groza9 {
 	reloadMagazineSound[] = {"\RH_aks\sound\val_reload.wss",0.056234,1,20};
 
 	class Attachments {
-		Attachment_Kobra = "DZE_Wep_VAL_Kobra";
-		Attachment_PSO1 = "DZE_Wep_VAL_PSO1";
+		DZE_Item_Att_Kobra = "DZE_Wep_VAL_Kobra";
+		DZE_Item_Att_PSO1 = "DZE_Wep_VAL_PSO1";
 	};
 };
 
@@ -63,7 +63,7 @@ class DZE_Wep_VAL_Kobra: DZE_Wep_VAL {
 	class ItemActions {
 		class RemoveKobra {
 			text = "$STR_DZ_ATT_KOBRA_RMVE";
-			script = "; ['Attachment_Kobra',_id,'DZE_Wep_VAL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Kobra',_id,'DZE_Wep_VAL'] call player_removeAttachment";
 		};
 	};
 };
@@ -85,7 +85,7 @@ class DZE_Wep_VAL_PSO1: DZE_Wep_VAL {
 	class ItemActions {
 		class RemovePSO1 {
 			text = "$STR_DZ_ATT_PSO1_RMVE";
-			script = "; ['Attachment_PSO1',_id,'DZE_Wep_VAL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_PSO1',_id,'DZE_Wep_VAL'] call player_removeAttachment";
 		};
 	};
 };

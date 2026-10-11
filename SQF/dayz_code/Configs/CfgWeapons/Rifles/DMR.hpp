@@ -5,7 +5,7 @@ class DZE_Wep_DMR : DMR { // Works with NVG
 	visionMode[] = {};
 
 	class Attachments {
-		Attachment_Ghillie = "DZE_Wep_DMR_Gh";
+		DZE_Item_Att_Ghillie = "DZE_Wep_DMR_Gh";
 	};
 };
 
@@ -22,7 +22,7 @@ class DZE_Wep_DMR_Gh : DZE_Wep_DMR {
 	class ItemActions {
 		class RemoveGhillie {
 			text = "$STR_DZ_ATT_GHIL_RMVE";
-			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_DMR'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Ghillie',_id,'DZE_Wep_DMR'] call player_removeAttachment";
 		};
 	};
 };
@@ -33,7 +33,7 @@ class DZE_Wep_DMR_NoNVG : DZE_Wep_DMR {
 	visionMode[] = {"Normal"};
 
 	class Attachments {
-		Attachment_Ghillie = "DZE_Wep_DMR_Gh_NoNVG";
+		DZE_Item_Att_Ghillie = "DZE_Wep_DMR_Gh_NoNVG";
 	};
 };
 
@@ -43,7 +43,7 @@ class DZE_Wep_DMR_Gh_NoNVG : DZE_Wep_DMR_Gh {
 	class ItemActions {
 		class RemoveGhillie {
 			text = "$STR_DZ_ATT_GHIL_RMVE";
-			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_DMR_NoNVG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Ghillie',_id,'DZE_Wep_DMR_NoNVG'] call player_removeAttachment";
 		};
 	};
 };

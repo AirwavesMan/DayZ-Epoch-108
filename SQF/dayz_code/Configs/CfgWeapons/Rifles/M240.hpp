@@ -8,8 +8,8 @@ class DZE_Wep_M240 : M240 {
 	magazines[] = {100Rnd_762x51_M240};
 
 	class Attachments {
-		Attachment_CCO = DZE_Wep_M240_CCO;
-		Attachment_Holo = DZE_Wep_M240_Holo;
+		DZE_Item_Att_CCO = DZE_Wep_M240_CCO;
+		DZE_Item_Att_Holo = DZE_Wep_M240_Holo;
 	};
 };
 
@@ -23,7 +23,7 @@ class DZE_Wep_M240_CCO : DZE_Wep_M240 {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M240'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M240'] call player_removeAttachment";
 		};
 	};
 };
@@ -38,7 +38,7 @@ class DZE_Wep_M240_Holo : DZE_Wep_M240_CCO {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M240'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M240'] call player_removeAttachment";
 		};
 	};
 };

@@ -46,10 +46,10 @@ class DZE_Wep_G36C : G36C {
 		60Rnd_556x45_Stanag_Taped
 	};
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_G36C_CCO";
-		Attachment_Holo = "DZE_Wep_G36C_Holo";
-		Attachment_ACOG = "DZE_Wep_G36C_ACOG";
-		Attachment_Sup556 = "DZE_Wep_G36C_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_G36C_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_G36C_Holo";
+		DZE_Item_Att_ACOG = "DZE_Wep_G36C_ACOG";
+		DZE_Item_Att_Sup556 = "DZE_Wep_G36C_SD";
 	};
 };
 
@@ -67,15 +67,15 @@ class DZE_Wep_G36C_SD : G36_C_SD_eotech {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_G36C_CCO_SD";
-		Attachment_Holo = "DZE_Wep_G36C_Holo_SD";
-		Attachment_ACOG = "DZE_Wep_G36C_ACOG_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_G36C_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_G36C_Holo_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_G36C_ACOG_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_G36C'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_G36C'] call player_removeAttachment";
 		};
 	};
 };
@@ -86,13 +86,13 @@ class DZE_Wep_G36C_CCO : DZE_Wep_G36C {
 	picture = "\z\addons\dayz_communityweapons\g36c\data\w_g36c_cco_ca.paa";
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_G36C_CCO_SD";
+		DZE_Item_Att_Sup556 = "DZE_Wep_G36C_CCO_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_G36C'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_G36C'] call player_removeAttachment";
 		};
 	};
 };
@@ -107,11 +107,11 @@ class DZE_Wep_G36C_CCO_SD : DZE_Wep_G36C_SD {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_G36C_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_G36C_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_G36C_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_G36C_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -122,13 +122,13 @@ class DZE_Wep_G36C_Holo : DZE_Wep_G36C {
 	picture = "\z\addons\dayz_communityweapons\g36c\data\w_g36c_holo_ca.paa";
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_G36C_Holo_SD";
+		DZE_Item_Att_Sup556 = "DZE_Wep_G36C_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_G36C'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_G36C'] call player_removeAttachment";
 		};
 	};
 };
@@ -143,11 +143,11 @@ class DZE_Wep_G36C_Holo_SD : DZE_Wep_G36C_SD {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_G36C_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_G36C_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_G36C_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_G36C_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -160,13 +160,13 @@ class DZE_Wep_G36C_ACOG : DZE_Wep_G36C {
 	G36C_ACOG;
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_G36C_ACOG_SD";
+		DZE_Item_Att_Sup556 = "DZE_Wep_G36C_ACOG_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_G36C'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_G36C'] call player_removeAttachment";
 		};
 	};
 };
@@ -183,11 +183,11 @@ class DZE_Wep_G36C_ACOG_SD : DZE_Wep_G36C_SD {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_G36C_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_G36C_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_G36C_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_G36C_ACOG'] call player_removeAttachment";
 		};
 	};
 };

@@ -22,8 +22,8 @@ class DZE_Wep_M1014 : M1014 {
 	distanceZoomMax=50;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M1014_CCO";
-		Attachment_Holo = "DZE_Wep_M1014_Holo";
+		DZE_Item_Att_CCO = "DZE_Wep_M1014_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_M1014_Holo";
 	};
 };
 
@@ -40,7 +40,7 @@ class DZE_Wep_M1014_CCO : DZE_Wep_M1014 {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M1014'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M1014'] call player_removeAttachment";
 		};
 	};
 };
@@ -53,7 +53,7 @@ class DZE_Wep_M1014_Holo : DZE_Wep_M1014_CCO {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M1014'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M1014'] call player_removeAttachment";
 		};
 	};
 };

@@ -53,9 +53,9 @@ class DZE_Wep_Kriss: DZE_Wep_MP5 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_Kriss_CCO";
-		Attachment_Holo = "DZE_Wep_Kriss_Holo";
-		Attachment_Sup45 = "DZE_Wep_Kriss_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_Kriss_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_Kriss_Holo";
+		DZE_Item_Att_Sup45 = "DZE_Wep_Kriss_SD";
 	};
 };
 
@@ -68,13 +68,13 @@ class DZE_Wep_Kriss_CCO: DZE_Wep_Kriss {
 	distanceZoomMax = 100;
 
 	class Attachments {
-		Attachment_Sup45 = "DZE_Wep_Kriss_CCO_SD";
+		DZE_Item_Att_Sup45 = "DZE_Wep_Kriss_CCO_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_Kriss'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_Kriss'] call player_removeAttachment";
 		};
 	};
 };
@@ -88,13 +88,13 @@ class DZE_Wep_Kriss_Holo: DZE_Wep_Kriss {
 	distanceZoomMax = 100;
 
 	class Attachments {
-		Attachment_Sup45 = "DZE_Wep_Kriss_Holo_SD";
+		DZE_Item_Att_Sup45 = "DZE_Wep_Kriss_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_Kriss'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_Kriss'] call player_removeAttachment";
 		};
 	};
 };
@@ -156,14 +156,14 @@ class DZE_Wep_Kriss_SD: DZE_Wep_MP5_SD {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_Kriss_CCO_SD";
-		Attachment_Holo = "DZE_Wep_Kriss_Holo_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_Kriss_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_Kriss_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup45',_id,'DZE_Wep_Kriss'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup45',_id,'DZE_Wep_Kriss'] call player_removeAttachment";
 		};
 	};
 };
@@ -181,11 +181,11 @@ class DZE_Wep_Kriss_CCO_SD: DZE_Wep_Kriss_SD {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_Kriss_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_Kriss_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup45',_id,'DZE_Wep_Kriss_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup45',_id,'DZE_Wep_Kriss_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -203,11 +203,11 @@ class DZE_Wep_Kriss_Holo_SD: DZE_Wep_Kriss_SD {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_Kriss_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_Kriss_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup45',_id,'DZE_Wep_Kriss_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup45',_id,'DZE_Wep_Kriss_Holo'] call player_removeAttachment";
 		};
 	};
 };

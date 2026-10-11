@@ -105,7 +105,7 @@ class DZE_Wep_AN94: AK_74 {
 	};
 
 	class Attachments {
-		Attachment_GP25 = "DZE_Wep_AN94_GL";
+		DZE_Item_Att_GP25 = "DZE_Wep_AN94_GL";
 	};
 };
 class DZE_Wep_AN94_GL: DZE_Wep_AN94 {
@@ -126,7 +126,7 @@ class DZE_Wep_AN94_GL: DZE_Wep_AN94 {
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_GP25_RMVE";
-			script = "; ['Attachment_GP25',_id,'DZE_Wep_AN94'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_GP25',_id,'DZE_Wep_AN94'] call player_removeAttachment";
 		};
 	};
 };

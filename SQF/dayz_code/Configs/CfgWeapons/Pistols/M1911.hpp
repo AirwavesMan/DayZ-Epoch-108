@@ -20,7 +20,7 @@ class DZE_Wep_Kimber_M1911: DZE_Wep_M1911 {
 	reloadMagazineSound[] = {"\RH_de\sound\m1911_reload.wss",0.1,1,20};
 
 	class Attachments {
-		Attachment_Sup45 = "DZE_Wep_Kimber_M1911_SD";
+		DZE_Item_Att_Sup45 = "DZE_Wep_Kimber_M1911_SD";
 	};
 };
 
@@ -36,7 +36,7 @@ class DZE_Wep_Kimber_M1911_SD: DZE_Wep_M1911 {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup45',_id,'DZE_Wep_Kimber_M1911'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup45',_id,'DZE_Wep_Kimber_M1911'] call player_removeAttachment";
 		};
 	};
 };

@@ -20,7 +20,7 @@ class DZE_Wep_USP : Colt1911 {
 	};
 
 	class Attachments {
-		Attachment_Sup45 = "DZE_Wep_USP_SD";
+		DZE_Item_Att_Sup45 = "DZE_Wep_USP_SD";
 	};
 };
 
@@ -37,7 +37,7 @@ class DZE_Wep_USP_SD: DZE_Wep_USP {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup45',_id,'DZE_Wep_USP'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup45',_id,'DZE_Wep_USP'] call player_removeAttachment";
 		};
 	};
 };

@@ -11,7 +11,7 @@ class DZE_Wep_MK22: M9 {
 	magazines[] = {"8Rnd_9x19_MK22"};
 
 	class Attachments {
-		Attachment_Sup9 = "DZE_Wep_MK22_SD";
+		DZE_Item_Att_Sup9 = "DZE_Wep_MK22_SD";
 	};
 };
 
@@ -20,7 +20,7 @@ class DZE_Wep_MK22_2: DZE_Wep_MK22 {
 	picture = "\RH_de\inv\mk22v.paa";
 
 	class Attachments {
-		Attachment_Sup9 = "DZE_Wep_MK22_2_SD";
+		DZE_Item_Att_Sup9 = "DZE_Wep_MK22_2_SD";
 	};
 };
 
@@ -39,7 +39,7 @@ class DZE_Wep_MK22_SD: M9SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup9',_id,'DZE_Wep_MK22'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup9',_id,'DZE_Wep_MK22'] call player_removeAttachment";
 		};
 	};
 };
@@ -51,7 +51,7 @@ class DZE_Wep_MK22_2_SD: DZE_Wep_MK22_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup9',_id,'DZE_Wep_MK22_2'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup9',_id,'DZE_Wep_MK22_2'] call player_removeAttachment";
 		};
 	};
 };

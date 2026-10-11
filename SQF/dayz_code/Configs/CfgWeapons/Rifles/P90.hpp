@@ -53,9 +53,9 @@ class DZE_Wep_P90: DZE_Wep_MP5 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_P90_CCO";
-		Attachment_Holo = "DZE_Wep_P90_Holo";
-		Attachment_Sup57 = "DZE_Wep_P90_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_P90_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_P90_Holo";
+		DZE_Item_Att_Sup57 = "DZE_Wep_P90_SD";
 	};
 };
 
@@ -65,13 +65,13 @@ class DZE_Wep_P90_CCO: DZE_Wep_P90 {
 	picture = "\RH_smg\inv\p90aim.paa";
 
 	class Attachments {
-		Attachment_Sup57 = "DZE_Wep_P90_CCO_SD";
+		DZE_Item_Att_Sup57 = "DZE_Wep_P90_CCO_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_P90'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_P90'] call player_removeAttachment";
 		};
 	};
 };
@@ -82,13 +82,13 @@ class DZE_Wep_P90_Holo: DZE_Wep_P90 {
 	picture = "\RH_smg\inv\p90eot.paa";
 
 	class Attachments {
-		Attachment_Sup57 = "DZE_Wep_P90_Holo_SD";
+		DZE_Item_Att_Sup57 = "DZE_Wep_P90_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_P90'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_P90'] call player_removeAttachment";
 		};
 	};
 };
@@ -150,14 +150,14 @@ class DZE_Wep_P90_SD: DZE_Wep_MP5_SD {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_P90_CCO_SD";
-		Attachment_Holo = "DZE_Wep_P90_Holo_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_P90_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_P90_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup57',_id,'DZE_Wep_P90'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup57',_id,'DZE_Wep_P90'] call player_removeAttachment";
 		};
 	};
 };
@@ -172,11 +172,11 @@ class DZE_Wep_P90_CCO_SD: DZE_Wep_P90_SD {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_P90_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_P90_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup57',_id,'DZE_Wep_P90_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup57',_id,'DZE_Wep_P90_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -191,11 +191,11 @@ class DZE_Wep_P90_Holo_SD: DZE_Wep_P90_SD {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_P90_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_P90_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup57',_id,'DZE_Wep_P90_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup57',_id,'DZE_Wep_P90_Holo'] call player_removeAttachment";
 		};
 	};
 };

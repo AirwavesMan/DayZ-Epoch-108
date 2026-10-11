@@ -14,8 +14,8 @@ class DZE_Wep_Bizon : bizon {
 	discreteDistanceInitIndex = 1;
 
 	class Attachments {
-		Attachment_Kobra = "DZE_Wep_Bizon_Kobra";
-		Attachment_Sup9 = "DZE_Wep_Bizon_SD";
+		DZE_Item_Att_Kobra = "DZE_Wep_Bizon_Kobra";
+		DZE_Item_Att_Sup9 = "DZE_Wep_Bizon_SD";
 	};
 };
 
@@ -25,13 +25,13 @@ class DZE_Wep_Bizon_Kobra : DZE_Wep_Bizon {
 	picture = "\RH_aks\inv\bizonk.paa";
 
 	class Attachments {
-		Attachment_Sup9 = "DZE_Wep_Bizon_Kobra_SD";
+		DZE_Item_Att_Sup9 = "DZE_Wep_Bizon_Kobra_SD";
 	};
 
 	class ItemActions {
 		class RemoveKobra {
 			text = "$STR_DZ_ATT_KOBRA_RMVE";
-			script = "; ['Attachment_Kobra',_id,'DZE_Wep_Bizon'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Kobra',_id,'DZE_Wep_Bizon'] call player_removeAttachment";
 		};
 	};
 };
@@ -52,13 +52,13 @@ class DZE_Wep_Bizon_SD : bizon_silenced {
 	discreteDistanceInitIndex = 1;
 
 	class Attachments {
-		Attachment_Kobra = "DZE_Wep_Bizon_Kobra_SD";
+		DZE_Item_Att_Kobra = "DZE_Wep_Bizon_Kobra_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup9',_id,'DZE_Wep_Bizon'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup9',_id,'DZE_Wep_Bizon'] call player_removeAttachment";
 		};
 	};
 };
@@ -73,11 +73,11 @@ class DZE_Wep_Bizon_Kobra_SD : DZE_Wep_Bizon_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup9',_id,'DZE_Wep_Bizon_Kobra'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup9',_id,'DZE_Wep_Bizon_Kobra'] call player_removeAttachment";
 		};
 		class RemoveKobra {
 			text = "$STR_DZ_ATT_KOBRA_RMVE";
-			script = "; ['Attachment_Kobra',_id,'DZE_Wep_Bizon_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Kobra',_id,'DZE_Wep_Bizon_SD'] call player_removeAttachment";
 		};
 	};
 };

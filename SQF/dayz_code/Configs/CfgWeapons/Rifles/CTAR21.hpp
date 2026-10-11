@@ -46,8 +46,8 @@ class DZE_Wep_CTAR21: M4A1 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_CTAR21_CCO";
-		Attachment_ACOG = "DZE_Wep_CTAR21_ACOG";
+		DZE_Item_Att_CCO = "DZE_Wep_CTAR21_CCO";
+		DZE_Item_Att_ACOG = "DZE_Wep_CTAR21_ACOG";
 	};
 };
 
@@ -61,7 +61,7 @@ class DZE_Wep_CTAR21_CCO: DZE_Wep_CTAR21 {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_CTAR21'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_CTAR21'] call player_removeAttachment";
 		};
 	};
 };
@@ -111,7 +111,7 @@ class DZE_Wep_CTAR21_ACOG: DZE_Wep_CTAR21 {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_CTAR21'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_CTAR21'] call player_removeAttachment";
 		};
 	};
 };

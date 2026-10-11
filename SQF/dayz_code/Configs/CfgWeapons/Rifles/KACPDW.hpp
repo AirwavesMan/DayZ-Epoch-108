@@ -48,9 +48,9 @@ class DZE_Wep_KAC_PDW: Rifle {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_KAC_PDW_CCO";
-		Attachment_Holo = "DZE_Wep_KAC_PDW_HOLO";
-		Attachment_ACOG = "DZE_Wep_KAC_PDW_ACOG";
+		DZE_Item_Att_CCO = "DZE_Wep_KAC_PDW_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_KAC_PDW_HOLO";
+		DZE_Item_Att_ACOG = "DZE_Wep_KAC_PDW_ACOG";
 	};
 };
 
@@ -65,7 +65,7 @@ class DZE_Wep_KAC_PDW_CCO: DZE_Wep_KAC_PDW {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_KAC_PDW'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_KAC_PDW'] call player_removeAttachment";
 		};
 	};
 };
@@ -81,7 +81,7 @@ class DZE_Wep_KAC_PDW_HOLO: DZE_Wep_KAC_PDW {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_KAC_PDW'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_KAC_PDW'] call player_removeAttachment";
 		};
 	};
 };
@@ -132,7 +132,7 @@ class DZE_Wep_KAC_PDW_ACOG: DZE_Wep_KAC_PDW {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_KAC_PDW'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_KAC_PDW'] call player_removeAttachment";
 		};
 	};
 };

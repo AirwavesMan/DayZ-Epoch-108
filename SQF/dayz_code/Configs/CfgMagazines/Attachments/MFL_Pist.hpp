@@ -1,23 +1,19 @@
-class Attachment_MFL_Pist : CA_Magazine
-{
+class DZE_Item_Att_MFL_Pist : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;	
+	displayName = "$STR_DZ_ATT_MFL_PST_NAME";
+	descriptionShort = "$STR_DZ_ATT_MFL_PST_DESC";
 	model = "\z\addons\dayz_communityweapons\attachments\flashlight_pistol\flashlight_pistol.p3d";
-	picture = "\z\addons\dayz_communityweapons\attachments\flashlight_pistol\data\m_flashlight_pistol_ca.paa";	
-	displayName = $STR_DZ_ATT_MFL_PST_NAME;
-	descriptionShort = $STR_DZ_ATT_MFL_PST_DESC;
-	
-	class ItemActions
-	{
-		class AttachToSecondary
-		{
-			text = $STR_DZ_ATT_ACT_TO_SECONDARY;
+	picture = "\z\addons\dayz_communityweapons\attachments\flashlight_pistol\data\m_flashlight_pistol_ca.paa";
+	count = 1;
+	type = 256;
+
+	class ItemActions {
+		class AttachToSecondary {
+			text = "$STR_DZ_ATT_ACT_TO_SECONDARY";
 			script = "; [_id,0] call player_attachAttachment";
 		};
-		class AttachToPrimary
-		{
-			text = $STR_DZ_ATT_ACT_TO_PRIMARY;
+		class AttachToPrimary {
+			text = "$STR_DZ_ATT_ACT_TO_PRIMARY";
 			script = "; [_id,1] call player_attachAttachment";
 		};
 	};

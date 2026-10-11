@@ -31,7 +31,7 @@ class DZE_Wep_Barrett_MRAD_Iron: m107 {
 		};
 	};
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_Barrett_MRAD_CCO";
+		DZE_Item_Att_CCO = "DZE_Wep_Barrett_MRAD_CCO";
 	};
 };
 class DZE_Wep_Barrett_MRAD_CCO: DZE_Wep_Barrett_MRAD_Iron {
@@ -43,7 +43,7 @@ class DZE_Wep_Barrett_MRAD_CCO: DZE_Wep_Barrett_MRAD_Iron {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_Barrett_MRAD_Iron'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_Barrett_MRAD_Iron'] call player_removeAttachment";
 		};
 	};
 };

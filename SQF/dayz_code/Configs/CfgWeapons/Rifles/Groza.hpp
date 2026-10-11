@@ -42,8 +42,8 @@ class DZE_Wep_Groza9: DZE_Wep_AKM {
 	};
 
 	class Attachments {
-		Attachment_GP25 = "DZE_Wep_Groza9_GL";
-		Attachment_Sup939 = "DZE_Wep_Groza9_SD";
+		DZE_Item_Att_GP25 = "DZE_Wep_Groza9_GL";
+		DZE_Item_Att_Sup939 = "DZE_Wep_Groza9_SD";
 	};
 };
 
@@ -93,7 +93,7 @@ class DZE_Wep_Groza9_GL: DZE_Wep_Groza9 {
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_GP25_RMVE";
-			script = "; ['Attachment_GP25',_id,'DZE_Wep_Groza9'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_GP25',_id,'DZE_Wep_Groza9'] call player_removeAttachment";
 		};
 	};
 };
@@ -131,7 +131,7 @@ class DZE_Wep_Groza9_SD: DZE_Wep_Groza9 {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup939',_id,'DZE_Wep_Groza9'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup939',_id,'DZE_Wep_Groza9'] call player_removeAttachment";
 		};
 	};
 };
@@ -215,7 +215,7 @@ class DZE_Wep_Groza1: DZE_Wep_AKM {
 	};
 
 	class Attachments {
-		Attachment_Sup762 = "DZE_Wep_Groza1_SD";
+		DZE_Item_Att_Sup762 = "DZE_Wep_Groza1_SD";
 	};
 };
 
@@ -298,7 +298,7 @@ class DZE_Wep_Groza1_SD: DZE_Wep_Groza1 {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup762',_id,'DZE_Wep_Groza1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup762',_id,'DZE_Wep_Groza1'] call player_removeAttachment";
 		};
 	};
 };

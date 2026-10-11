@@ -65,10 +65,10 @@ class DZE_Wep_MK14: M14_EP1 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_MK14_CCO";
-		Attachment_Holo = "DZE_Wep_MK14_Holo";
-		Attachment_ACOG = "DZE_Wep_MK14_ACOG";
-		Attachment_Sup762 = "DZE_Wep_MK14_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_MK14_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_MK14_Holo";
+		DZE_Item_Att_ACOG = "DZE_Wep_MK14_ACOG";
+		DZE_Item_Att_Sup762 = "DZE_Wep_MK14_SD";
 	};
 };
 
@@ -81,12 +81,12 @@ class DZE_Wep_MK14_CCO: DZE_Wep_MK14 {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_MK14'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_MK14'] call player_removeAttachment";
 		};
 	};
 
 	class Attachments {
-		Attachment_Sup762 = "DZE_Wep_MK14_CCO_SD";
+		DZE_Item_Att_Sup762 = "DZE_Wep_MK14_CCO_SD";
 	};
 };
 
@@ -97,13 +97,13 @@ class DZE_Wep_MK14_Holo: DZE_Wep_MK14 {
 	handAnim[] = {"OFP2_ManSkeleton","\RH_mgswp\anim\RH_M4cs.rtm"};
 
 	class Attachments {
-		Attachment_Sup762 = "DZE_Wep_MK14_Holo_SD";
+		DZE_Item_Att_Sup762 = "DZE_Wep_MK14_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_MK14'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_MK14'] call player_removeAttachment";
 		};
 	};
 };
@@ -117,13 +117,13 @@ class DZE_Wep_MK14_ACOG: DZE_Wep_MK14 {
 	MK14_ACOG;
 
 	class Attachments {
-		Attachment_Sup762 = "DZE_Wep_MK14_ACOG_SD";
+		DZE_Item_Att_Sup762 = "DZE_Wep_MK14_ACOG_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_MK14'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_MK14'] call player_removeAttachment";
 		};
 	};
 };
@@ -203,15 +203,15 @@ class DZE_Wep_MK14_SD: M14_EP1 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_MK14_CCO_SD";
-		Attachment_Holo = "DZE_Wep_MK14_Holo_SD";
-		Attachment_ACOG = "DZE_Wep_MK14_ACOG_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_MK14_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_MK14_Holo_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_MK14_ACOG_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup762',_id,'DZE_Wep_MK14'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup762',_id,'DZE_Wep_MK14'] call player_removeAttachment";
 		};
 	};
 };
@@ -227,11 +227,11 @@ class DZE_Wep_MK14_CCO_SD: DZE_Wep_MK14_SD {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_MK14_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_MK14_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup762',_id,'DZE_Wep_MK14_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup762',_id,'DZE_Wep_MK14_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -247,11 +247,11 @@ class DZE_Wep_MK14_Holo_SD: DZE_Wep_MK14_SD {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_MK14_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_MK14_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup762',_id,'DZE_Wep_MK14_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup762',_id,'DZE_Wep_MK14_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -270,11 +270,11 @@ class DZE_Wep_MK14_ACOG_SD: DZE_Wep_MK14_SD {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_MK14_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_MK14_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup762',_id,'DZE_Wep_MK14_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup762',_id,'DZE_Wep_MK14_ACOG'] call player_removeAttachment";
 		};
 	};
 };

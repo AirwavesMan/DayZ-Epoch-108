@@ -23,8 +23,8 @@ class DZE_Wep_RPK : AK_47_M {
 	//iron sight zeroing end
 
 	class Attachments {
-		Attachment_Kobra = DZE_Wep_RPK_Kobra;
-		Attachment_PSO1 = DZE_Wep_RPK_PSO1;
+		DZE_Item_Att_Kobra = DZE_Wep_RPK_Kobra;
+		DZE_Item_Att_PSO1 = DZE_Wep_RPK_PSO1;
 	};
 
 	class ItemActions {};
@@ -48,7 +48,7 @@ class DZE_Wep_RPK_Kobra : DZE_Wep_RPK {
 	class ItemActions {
 		class RemoveKobra {
 			text = "$STR_DZ_ATT_KOBRA_RMVE";
-			script = "; ['Attachment_Kobra',_id,'DZE_Wep_RPK'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Kobra',_id,'DZE_Wep_RPK'] call player_removeAttachment";
 		};
 	};
 };
@@ -106,7 +106,7 @@ class DZE_Wep_RPK_PSO1 : DZE_Wep_RPK_Kobra {
 	class ItemActions {
 		class RemovePSO1 {
 			text = "$STR_DZ_ATT_PSO1_RMVE";
-			script = "; ['Attachment_PSO1',_id,'DZE_Wep_RPK'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_PSO1',_id,'DZE_Wep_RPK'] call player_removeAttachment";
 		};
 	};
 };

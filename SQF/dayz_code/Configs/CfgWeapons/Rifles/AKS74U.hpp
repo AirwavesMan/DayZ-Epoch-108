@@ -13,13 +13,13 @@ class DZE_Wep_AKS74U_Kobra : AKS_74_U {
 	};
 
 	class Attachments {
-		Attachment_Sup545 = "DZE_Wep_AKS74U_Kobra_SD";
+		DZE_Item_Att_Sup545 = "DZE_Wep_AKS74U_Kobra_SD";
 	};
 
 	class ItemActions {
 		class RemoveKobra {
 			text = "$STR_DZ_ATT_KOBRA_RMVE";
-			script = "; ['Attachment_Kobra',_id,'DZE_Wep_AKS74U'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Kobra',_id,'DZE_Wep_AKS74U'] call player_removeAttachment";
 		};
 	};
 };
@@ -39,12 +39,12 @@ class DZE_Wep_AKS74U_Kobra_SD : AKS_74_UN_kobra {
 	class ItemActions {
 		class RemoveKobra {
 			text = "$STR_DZ_ATT_KOBRA_RMVE";
-			script = "; ['Attachment_Kobra',_id,'DZE_Wep_AKS74U_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Kobra',_id,'DZE_Wep_AKS74U_SD'] call player_removeAttachment";
 		};
 
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup545',_id,'DZE_Wep_AKS74U_Kobra'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup545',_id,'DZE_Wep_AKS74U_Kobra'] call player_removeAttachment";
 		};
 	};
 };
@@ -59,8 +59,8 @@ class DZE_Wep_AKS74U : DZE_Wep_AKS74U_Kobra {
 	discreteDistanceInitIndex = 0;
 
 	class Attachments {
-		Attachment_Kobra = "DZE_Wep_AKS74U_Kobra";
-		Attachment_Sup545 = "DZE_Wep_AKS74U_SD";
+		DZE_Item_Att_Kobra = "DZE_Wep_AKS74U_Kobra";
+		DZE_Item_Att_Sup545 = "DZE_Wep_AKS74U_SD";
 	};
 
 	class ItemActions {};
@@ -76,13 +76,13 @@ class DZE_Wep_AKS74U_SD : DZE_Wep_AKS74U_Kobra_SD {
 	discreteDistanceInitIndex = 0;
 
 	class Attachments {
-		Attachment_Kobra = "DZE_Wep_AKS74U_Kobra_SD";
+		DZE_Item_Att_Kobra = "DZE_Wep_AKS74U_Kobra_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup545',_id,'DZE_Wep_AKS74U'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup545',_id,'DZE_Wep_AKS74U'] call player_removeAttachment";
 		};
 	};
 };

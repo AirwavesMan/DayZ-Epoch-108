@@ -12,7 +12,7 @@ class DZE_Wep_Scorpion_Evo3_CCO: Evo_mrad_ACR {
 	magazines[] = {"30Rnd_9x19_MP5"};
 
 	class Attachments {
-		Attachment_Sup9 = "DZE_Wep_Scorpion_Evo3_CCO_SD";
+		DZE_Item_Att_Sup9 = "DZE_Wep_Scorpion_Evo3_CCO_SD";
 	};
 };
 
@@ -25,7 +25,7 @@ class DZE_Wep_Scorpion_Evo3_CCO_SD: evo_sd_ACR {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup9',_id,'DZE_Wep_Scorpion_Evo3_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup9',_id,'DZE_Wep_Scorpion_Evo3_CCO'] call player_removeAttachment";
 		};
 	};
 };

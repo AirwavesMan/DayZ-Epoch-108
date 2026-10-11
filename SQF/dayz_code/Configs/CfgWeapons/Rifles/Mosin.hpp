@@ -58,10 +58,10 @@ class DZE_Wep_Mosin : DZE_Wep_Mosin_Base {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_SCOPED = "DZE_Wep_Mosin_PU";
-		Attachment_FL = "DZE_Wep_Mosin_FL";
-		Attachment_MFL = "DZE_Wep_Mosin_MFL";
-		Attachment_BELT = "DZE_Wep_Mosin_Belt";
+		DZE_Item_Att_SCOPED = "DZE_Wep_Mosin_PU";
+		DZE_Item_Att_FL = "DZE_Wep_Mosin_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_Mosin_MFL";
+		DZE_Item_Att_BELT = "DZE_Wep_Mosin_Belt";
 	};
 };
 
@@ -78,14 +78,14 @@ class DZE_Wep_Mosin_FL : DZE_Wep_Mosin {
 	MOSIN_FLASHLIGHT
 
 	class Attachments {
-		Attachment_SCOPED = "DZE_Wep_Mosin_PU_FL";
-		Attachment_BELT = "DZE_Wep_Mosin_Belt_FL";
+		DZE_Item_Att_SCOPED = "DZE_Wep_Mosin_PU_FL";
+		DZE_Item_Att_BELT = "DZE_Wep_Mosin_Belt_FL";
 	};
 
 	class ItemActions {
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
 		};
 	};
 };
@@ -99,14 +99,14 @@ class DZE_Wep_Mosin_MFL : DZE_Wep_Mosin {
 	MOSIN_MFLASHLIGHT
 
 	class Attachments {
-		Attachment_SCOPED = "DZE_Wep_Mosin_PU_MFL";
-		Attachment_BELT = "DZE_Wep_Mosin_Belt_MFL";
+		DZE_Item_Att_SCOPED = "DZE_Wep_Mosin_PU_MFL";
+		DZE_Item_Att_BELT = "DZE_Wep_Mosin_Belt_MFL";
 	};
 
 	class ItemActions {
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
 		};
 	};
 };
@@ -120,15 +120,15 @@ class DZE_Wep_Mosin_Belt : DZE_Wep_Mosin {
 	MOSIN_BELT
 
 	class Attachments {
-		Attachment_SCOPED = "DZE_Wep_Mosin_PU_Belt";
-		Attachment_FL = "DZE_Wep_Mosin_Belt_FL";
-		Attachment_MFL = "DZE_Wep_Mosin_Belt_MFL";
+		DZE_Item_Att_SCOPED = "DZE_Wep_Mosin_PU_Belt";
+		DZE_Item_Att_FL = "DZE_Wep_Mosin_Belt_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_Mosin_Belt_MFL";
 	};
 
 	class ItemActions {
 		class RemoveBelt {
 			text = "$STR_DZ_ATT_BELT_RMVE";
-			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_BELT',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
 		};
 	};
 };
@@ -142,18 +142,18 @@ class DZE_Wep_Mosin_Belt_FL : DZE_Wep_Mosin_FL {
 	MOSIN_BELT
 
 	class Attachments {
-		Attachment_SCOPED = "DZE_Wep_Mosin_PU_Belt_FL";
+		DZE_Item_Att_SCOPED = "DZE_Wep_Mosin_PU_Belt_FL";
 	};
 
 	class ItemActions {
 		class RemoveBelt {
 			text = "$STR_DZ_ATT_BELT_RMVE";
-			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_BELT',_id,'DZE_Wep_Mosin_FL'] call player_removeAttachment";
 		};
 
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_Mosin_Belt'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_Mosin_Belt'] call player_removeAttachment";
 		};
 	};
 };
@@ -167,18 +167,18 @@ class DZE_Wep_Mosin_Belt_MFL : DZE_Wep_Mosin_MFL {
 	MOSIN_BELT
 
 	class Attachments {
-		Attachment_SCOPED = "DZE_Wep_Mosin_PU_Belt_MFL";
+		DZE_Item_Att_SCOPED = "DZE_Wep_Mosin_PU_Belt_MFL";
 	};
 
 	class ItemActions {
 		class RemoveBelt {
 			text = "$STR_DZ_ATT_BELT_RMVE";
-			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_BELT',_id,'DZE_Wep_Mosin_MFL'] call player_removeAttachment";
 		};
 
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_Mosin_Belt'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_Mosin_Belt'] call player_removeAttachment";
 		};
 	};
 };
@@ -202,15 +202,15 @@ class DZE_Wep_Mosin_PU : DZE_Wep_Mosin_Base {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_Mosin_PU_FL";
-		Attachment_MFL = "DZE_Wep_Mosin_PU_MFL";
-		Attachment_BELT = "DZE_Wep_Mosin_PU_Belt";
+		DZE_Item_Att_FL = "DZE_Wep_Mosin_PU_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_Mosin_PU_MFL";
+		DZE_Item_Att_BELT = "DZE_Wep_Mosin_PU_Belt";
 	};
 
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_Mosin'] call player_removeAttachment";
 		};
 	};
 };
@@ -224,18 +224,18 @@ class DZE_Wep_Mosin_PU_FL : DZE_Wep_Mosin_PU {
 	MOSIN_FLASHLIGHT
 
 	class Attachments {
-		Attachment_BELT = "DZE_Wep_Mosin_PU_Belt_FL";
+		DZE_Item_Att_BELT = "DZE_Wep_Mosin_PU_Belt_FL";
 	};
 
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_Mosin_FL'] call player_removeAttachment";
 		};
 
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_Mosin_PU'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_Mosin_PU'] call player_removeAttachment";
 		};
 	};
 };
@@ -249,18 +249,18 @@ class DZE_Wep_Mosin_PU_MFL : DZE_Wep_Mosin_PU {
 	MOSIN_MFLASHLIGHT
 
 	class Attachments {
-		Attachment_BELT = "DZE_Wep_Mosin_PU_Belt_MFL";
+		DZE_Item_Att_BELT = "DZE_Wep_Mosin_PU_Belt_MFL";
 	};
 
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_Mosin_MFL'] call player_removeAttachment";
 		};
 
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_Mosin_PU'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_Mosin_PU'] call player_removeAttachment";
 		};
 	};
 };
@@ -274,19 +274,19 @@ class DZE_Wep_Mosin_PU_Belt : DZE_Wep_Mosin_PU {
 	MOSIN_BELT
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_Mosin_PU_Belt_FL";
-		Attachment_MFL = "DZE_Wep_Mosin_PU_Belt_MFL";
+		DZE_Item_Att_FL = "DZE_Wep_Mosin_PU_Belt_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_Mosin_PU_Belt_MFL";
 	};
 
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin_Belt'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_Mosin_Belt'] call player_removeAttachment";
 		};
 
 		class RemoveBelt {
 			text = "$STR_DZ_ATT_BELT_RMVE";
-			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin_PU'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_BELT',_id,'DZE_Wep_Mosin_PU'] call player_removeAttachment";
 		};
 	};
 };
@@ -304,17 +304,17 @@ class DZE_Wep_Mosin_PU_Belt_FL :  DZE_Wep_Mosin_PU_FL {
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin_Belt_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_Mosin_Belt_FL'] call player_removeAttachment";
 		};
 
 		class RemoveBelt {
 			text = "$STR_DZ_ATT_BELT_RMVE";
-			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin_PU_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_BELT',_id,'DZE_Wep_Mosin_PU_FL'] call player_removeAttachment";
 		};
 
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_Mosin_PU_Belt'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_Mosin_PU_Belt'] call player_removeAttachment";
 		};
 	};
 };
@@ -332,17 +332,17 @@ class DZE_Wep_Mosin_PU_Belt_MFL :  DZE_Wep_Mosin_PU_MFL {
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Mosin_Belt_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_Mosin_Belt_MFL'] call player_removeAttachment";
 		};
 
 		class RemoveBelt {
 			text = "$STR_DZ_ATT_BELT_RMVE";
-			script = "; ['Attachment_BELT',_id,'DZE_Wep_Mosin_PU_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_BELT',_id,'DZE_Wep_Mosin_PU_MFL'] call player_removeAttachment";
 		};
 
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_Mosin_PU_Belt'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_Mosin_PU_Belt'] call player_removeAttachment";
 		};
 	};
 };

@@ -235,12 +235,12 @@ class DZE_Wep_ACR_WDL : DZE_Wep_ACR_DZ_BASE {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_WDL_CCO";
-		Attachment_Holo = "DZE_Wep_ACR_WDL_Holo";
-		Attachment_ACOG = "DZE_Wep_ACR_WDL_ACOG";
-		Attachment_M203 = "DZE_Wep_ACR_WDL_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_WDL_TWS";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_WDL_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_WDL_Holo";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_WDL_ACOG";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_WDL_TWS";
 	};
 };
 
@@ -252,17 +252,17 @@ class DZE_Wep_ACR_WDL_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_WDL_CCO_SD";
-		Attachment_Holo = "DZE_Wep_ACR_WDL_Holo_SD";
-		Attachment_ACOG = "DZE_Wep_ACR_WDL_ACOG_SD";
-		Attachment_M203 = "DZE_Wep_ACR_WDL_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_WDL_TWS_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_WDL_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_WDL_Holo_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_WDL_ACOG_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_WDL_TWS_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
 		};
 	};
 };
@@ -275,17 +275,17 @@ class DZE_Wep_ACR_WDL_GL : DZE_Wep_ACR_WDL {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_WDL_CCO_GL";
-		Attachment_Holo = "DZE_Wep_ACR_WDL_Holo_GL";
-		Attachment_ACOG = "DZE_Wep_ACR_WDL_ACOG_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_WDL_TWS_GL";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_WDL_CCO_GL";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_WDL_Holo_GL";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_WDL_ACOG_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_WDL_TWS_GL";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
 		};
 	};
 };
@@ -298,20 +298,20 @@ class DZE_Wep_ACR_WDL_GL_SD : DZE_Wep_ACR_WDL_SD {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_WDL_CCO_GL_SD";
-		Attachment_Holo = "DZE_Wep_ACR_WDL_Holo_GL_SD";
-		Attachment_ACOG = "DZE_Wep_ACR_WDL_ACOG_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_WDL_TWS_GL_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_WDL_CCO_GL_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_WDL_Holo_GL_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_WDL_ACOG_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_WDL_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -322,14 +322,14 @@ class DZE_Wep_ACR_WDL_CCO : DZE_Wep_ACR_WDL {
 	model = "\fhq_remington\acr\acr_wdl_aim.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_WDL_CCO_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_CCO_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_CCO_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_CCO_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
 		};
 	};
 };
@@ -340,17 +340,17 @@ class DZE_Wep_ACR_WDL_CCO_SD : DZE_Wep_ACR_WDL_SD {
 	model = "\fhq_remington\acr\acr_wdl_aim_sd.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_WDL_CCO_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_CCO_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_WDL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_WDL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -363,17 +363,17 @@ class DZE_Wep_ACR_WDL_CCO_GL : DZE_Wep_ACR_WDL_GL {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_CCO_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_CCO_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_WDL_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_WDL_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -391,15 +391,15 @@ class DZE_Wep_ACR_WDL_CCO_GL_SD : DZE_Wep_ACR_WDL_GL_SD {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_WDL_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_WDL_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_CCO_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_CCO_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_CCO_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_CCO_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -410,14 +410,14 @@ class DZE_Wep_ACR_WDL_Holo : DZE_Wep_ACR_WDL {
 	model = "\fhq_remington\acr\acr_wdl_hws.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_WDL_Holo_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_Holo_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_Holo_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
 		};
 	};
 };
@@ -428,17 +428,17 @@ class DZE_Wep_ACR_WDL_Holo_SD : DZE_Wep_ACR_WDL_SD {
 	model = "\fhq_remington\acr\acr_wdl_hws_sd.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_WDL_Holo_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_Holo_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_WDL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_WDL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -451,17 +451,17 @@ class DZE_Wep_ACR_WDL_Holo_GL : DZE_Wep_ACR_WDL_GL {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_Holo_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_Holo_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_WDL_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_WDL_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -479,15 +479,15 @@ class DZE_Wep_ACR_WDL_Holo_GL_SD : DZE_Wep_ACR_WDL_GL_SD {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_WDL_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_WDL_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_Holo_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_Holo_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_Holo_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_Holo_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -500,14 +500,14 @@ class DZE_Wep_ACR_WDL_ACOG : DZE_Wep_ACR_WDL {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_WDL_ACOG_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_ACOG_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_ACOG_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_ACOG_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
 		};
 	};
 };
@@ -520,17 +520,17 @@ class DZE_Wep_ACR_WDL_ACOG_SD : DZE_Wep_ACR_WDL_SD {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_WDL_ACOG_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_ACOG_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_WDL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_WDL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -543,17 +543,17 @@ class DZE_Wep_ACR_WDL_ACOG_GL : DZE_Wep_ACR_WDL_GL {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_ACOG_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_ACOG_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_WDL_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_WDL_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -571,15 +571,15 @@ class DZE_Wep_ACR_WDL_ACOG_GL_SD : DZE_Wep_ACR_WDL_GL_SD {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_WDL_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_WDL_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_ACOG_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_ACOG_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_ACOG_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_ACOG_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -595,14 +595,14 @@ class DZE_Wep_ACR_WDL_TWS : DZE_Wep_ACR_DZ_BASE {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_TWS_SD";
-		Attachment_M203 = "DZE_Wep_ACR_WDL_TWS_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_TWS_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_TWS_GL";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_WDL'] call player_removeAttachment";
 		};
 	};
 };
@@ -616,17 +616,17 @@ class DZE_Wep_ACR_WDL_TWS_GL : DZE_Wep_ACR_WDL_GL {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_TWS_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_WDL_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_WDL_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_TWS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_TWS'] call player_removeAttachment";
 		};
 	};
 };
@@ -641,17 +641,17 @@ class DZE_Wep_ACR_WDL_TWS_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_WDL_TWS_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_WDL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_WDL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_TWS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_TWS'] call player_removeAttachment";
 		};
 	};
 };
@@ -670,15 +670,15 @@ class DZE_Wep_ACR_WDL_TWS_GL_SD : DZE_Wep_ACR_WDL_GL_SD {
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_WDL_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_WDL_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_TWS_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_TWS_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_TWS_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_TWS_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -693,8 +693,8 @@ class DZE_Wep_ACR_WDL_NV : DZE_Wep_ACR_DZ_BASE {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_WDL_NV_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_NV_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_NV_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_NV_SD";
 	};
 };
 
@@ -707,12 +707,12 @@ class DZE_Wep_ACR_WDL_NV_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_WDL_NV_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_WDL_NV_GL_SD";
 	};
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_NV'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_NV'] call player_removeAttachment";
 		};
 	};
 };
@@ -726,12 +726,12 @@ class DZE_Wep_ACR_WDL_NV_GL : DZE_Wep_ACR_WDL_GL {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_WDL_NV_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_WDL_NV_GL_SD";
 	};
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_NV'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_NV'] call player_removeAttachment";
 		};
 	};
 };
@@ -749,11 +749,11 @@ class DZE_Wep_ACR_WDL_NV_GL_SD : DZE_Wep_ACR_WDL_GL_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_WDL_NV_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_WDL_NV_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_WDL_NV_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_WDL_NV_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -769,12 +769,12 @@ class DZE_Wep_ACR_BL : DZE_Wep_ACR_DZ_BASE {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_BL_CCO";
-		Attachment_Holo = "DZE_Wep_ACR_BL_Holo";
-		Attachment_ACOG = "DZE_Wep_ACR_BL_ACOG";
-		Attachment_M203 = "DZE_Wep_ACR_BL_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_BL_TWS";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_BL_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_BL_Holo";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_BL_ACOG";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_BL_TWS";
 	};
 };
 
@@ -788,17 +788,17 @@ class DZE_Wep_ACR_BL_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_BL_CCO_SD";
-		Attachment_Holo = "DZE_Wep_ACR_BL_Holo_SD";
-		Attachment_ACOG = "DZE_Wep_ACR_BL_ACOG_SD";
-		Attachment_M203 = "DZE_Wep_ACR_BL_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_BL_TWS_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_BL_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_BL_Holo_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_BL_ACOG_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_BL_TWS_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -813,17 +813,17 @@ class DZE_Wep_ACR_BL_GL : DZE_Wep_ACR_BL {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_BL_CCO_GL";
-		Attachment_Holo = "DZE_Wep_ACR_BL_Holo_GL";
-		Attachment_ACOG = "DZE_Wep_ACR_BL_ACOG_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_BL_TWS_GL";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_BL_CCO_GL";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_BL_Holo_GL";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_BL_ACOG_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_BL_TWS_GL";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -836,20 +836,20 @@ class DZE_Wep_ACR_BL_GL_SD : DZE_Wep_ACR_BL_SD {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_BL_CCO_GL_SD";
-		Attachment_Holo = "DZE_Wep_ACR_BL_Holo_GL_SD";
-		Attachment_ACOG = "DZE_Wep_ACR_BL_ACOG_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_BL_TWS_GL_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_BL_CCO_GL_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_BL_Holo_GL_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_BL_ACOG_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_BL_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -862,14 +862,14 @@ class DZE_Wep_ACR_BL_CCO : DZE_Wep_ACR_BL {
 	model = "\fhq_remington\acr\acr_blk_aim.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_BL_CCO_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_CCO_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_CCO_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_CCO_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -880,17 +880,17 @@ class DZE_Wep_ACR_BL_CCO_SD : DZE_Wep_ACR_BL_SD {
 	model = "\fhq_remington\acr\acr_blk_aim_sd.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_BL_CCO_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_CCO_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_BL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_BL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -905,17 +905,17 @@ class DZE_Wep_ACR_BL_CCO_GL : DZE_Wep_ACR_BL_GL {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_CCO_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_CCO_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_BL_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_BL_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -933,15 +933,15 @@ class DZE_Wep_ACR_BL_CCO_GL_SD : DZE_Wep_ACR_BL_GL_SD {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_BL_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_BL_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_CCO_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_CCO_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_CCO_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_CCO_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -954,14 +954,14 @@ class DZE_Wep_ACR_BL_Holo : DZE_Wep_ACR_BL {
 	model = "\fhq_remington\acr\acr_blk_hws.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_BL_Holo_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_Holo_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_Holo_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -972,17 +972,17 @@ class DZE_Wep_ACR_BL_Holo_SD : DZE_Wep_ACR_BL_SD {
 	model = "\fhq_remington\acr\acr_blk_hws_sd.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_BL_Holo_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_Holo_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_BL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_BL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -997,17 +997,17 @@ class DZE_Wep_ACR_BL_Holo_GL : DZE_Wep_ACR_BL_GL {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_Holo_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_Holo_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_BL_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_BL_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -1025,15 +1025,15 @@ class DZE_Wep_ACR_BL_Holo_GL_SD : DZE_Wep_ACR_BL_GL_SD {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_BL_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_BL_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_Holo_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_Holo_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_Holo_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_Holo_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -1048,14 +1048,14 @@ class DZE_Wep_ACR_BL_ACOG : DZE_Wep_ACR_BL {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_BL_ACOG_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_ACOG_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_ACOG_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_ACOG_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -1068,17 +1068,17 @@ class DZE_Wep_ACR_BL_ACOG_SD : DZE_Wep_ACR_BL_SD {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_BL_ACOG_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_ACOG_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_BL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_BL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1093,17 +1093,17 @@ class DZE_Wep_ACR_BL_ACOG_GL : DZE_Wep_ACR_BL_GL {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_ACOG_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_ACOG_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_BL_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_BL_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1121,15 +1121,15 @@ class DZE_Wep_ACR_BL_ACOG_GL_SD : DZE_Wep_ACR_BL_GL_SD {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_BL_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_BL_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_ACOG_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_ACOG_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_ACOG_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_ACOG_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -1145,14 +1145,14 @@ class DZE_Wep_ACR_BL_TWS : DZE_Wep_ACR_DZ_BASE {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_TWS_SD";
-		Attachment_M203 = "DZE_Wep_ACR_BL_TWS_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_TWS_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_TWS_GL";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_BL'] call player_removeAttachment";
 		};
 	};
 };
@@ -1166,17 +1166,17 @@ class DZE_Wep_ACR_BL_TWS_GL : DZE_Wep_ACR_BL_GL {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_TWS_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_BL_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_BL_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_TWS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_TWS'] call player_removeAttachment";
 		};
 	};
 };
@@ -1191,17 +1191,17 @@ class DZE_Wep_ACR_BL_TWS_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_BL_TWS_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_BL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_BL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_TWS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_TWS'] call player_removeAttachment";
 		};
 	};
 };
@@ -1220,15 +1220,15 @@ class DZE_Wep_ACR_BL_TWS_GL_SD : DZE_Wep_ACR_BL_GL_SD {
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_BL_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_BL_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_TWS_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_TWS_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_TWS_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_TWS_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -1243,8 +1243,8 @@ class DZE_Wep_ACR_BL_NV : DZE_Wep_ACR_DZ_BASE {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_BL_NV_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_NV_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_NV_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_NV_SD";
 	};
 };
 
@@ -1257,12 +1257,12 @@ class DZE_Wep_ACR_BL_NV_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_BL_NV_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_BL_NV_GL_SD";
 	};
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_NV'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_NV'] call player_removeAttachment";
 		};
 	};
 };
@@ -1276,12 +1276,12 @@ class DZE_Wep_ACR_BL_NV_GL : DZE_Wep_ACR_BL_GL {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_BL_NV_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_BL_NV_GL_SD";
 	};
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_NV'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_NV'] call player_removeAttachment";
 		};
 	};
 };
@@ -1299,11 +1299,11 @@ class DZE_Wep_ACR_BL_NV_GL_SD : DZE_Wep_ACR_BL_GL_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_BL_NV_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_BL_NV_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_BL_NV_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_BL_NV_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -1319,12 +1319,12 @@ class DZE_Wep_ACR_DES : DZE_Wep_ACR_DZ_BASE {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_DES_CCO";
-		Attachment_Holo = "DZE_Wep_ACR_DES_Holo";
-		Attachment_ACOG = "DZE_Wep_ACR_DES_ACOG";
-		Attachment_M203 = "DZE_Wep_ACR_DES_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_SD";
-		Attachment_Tws = "DZE_Wep_ACR_DES_TWS";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_DES_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_DES_Holo";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_DES_ACOG";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_DES_TWS";
 	};
 };
 
@@ -1338,17 +1338,17 @@ class DZE_Wep_ACR_DES_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_DES_CCO_SD";
-		Attachment_Holo = "DZE_Wep_ACR_DES_Holo_SD";
-		Attachment_ACOG = "DZE_Wep_ACR_DES_ACOG_SD";
-		Attachment_M203 = "DZE_Wep_ACR_DES_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_DES_TWS_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_DES_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_DES_Holo_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_DES_ACOG_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_DES_TWS_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
 		};
 	};
 };
@@ -1363,17 +1363,17 @@ class DZE_Wep_ACR_DES_GL : DZE_Wep_ACR_DES {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_DES_CCO_GL";
-		Attachment_Holo = "DZE_Wep_ACR_DES_Holo_GL";
-		Attachment_ACOG = "DZE_Wep_ACR_DES_ACOG_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_DES_TWS_GL";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_DES_CCO_GL";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_DES_Holo_GL";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_DES_ACOG_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_DES_TWS_GL";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
 		};
 	};
 };
@@ -1386,20 +1386,20 @@ class DZE_Wep_ACR_DES_GL_SD : DZE_Wep_ACR_DES_SD {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_DES_CCO_GL_SD";
-		Attachment_Holo = "DZE_Wep_ACR_DES_Holo_GL_SD";
-		Attachment_ACOG = "DZE_Wep_ACR_DES_ACOG_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_DES_TWS_GL_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_DES_CCO_GL_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_DES_Holo_GL_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_DES_ACOG_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_DES_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -1412,14 +1412,14 @@ class DZE_Wep_ACR_DES_CCO : DZE_Wep_ACR_DES {
 	model = "\fhq_remington\acr\acr_tan_aim.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_DES_CCO_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_CCO_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_CCO_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_CCO_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
 		};
 	};
 };
@@ -1430,17 +1430,17 @@ class DZE_Wep_ACR_DES_CCO_SD : DZE_Wep_ACR_DES_SD {
 	model = "\fhq_remington\acr\acr_tan_aim_sd.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_DES_CCO_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_CCO_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_DES_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_DES_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -1455,17 +1455,17 @@ class DZE_Wep_ACR_DES_CCO_GL : DZE_Wep_ACR_DES_GL {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_CCO_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_CCO_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_DES_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_DES_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -1483,15 +1483,15 @@ class DZE_Wep_ACR_DES_CCO_GL_SD : DZE_Wep_ACR_DES_GL_SD {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_DES_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_DES_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_CCO_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_CCO_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_CCO_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_CCO_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -1504,14 +1504,14 @@ class DZE_Wep_ACR_DES_Holo : DZE_Wep_ACR_DES {
 	model = "\fhq_remington\acr\acr_tan_hws.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_DES_Holo_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_Holo_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_Holo_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
 		};
 	};
 };
@@ -1522,17 +1522,17 @@ class DZE_Wep_ACR_DES_Holo_SD : DZE_Wep_ACR_DES_SD {
 	model = "\fhq_remington\acr\acr_tan_hws_sd.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_DES_Holo_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_Holo_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_DES_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_DES_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -1547,17 +1547,17 @@ class DZE_Wep_ACR_DES_Holo_GL : DZE_Wep_ACR_DES_GL {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_Holo_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_Holo_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_DES_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_DES_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -1575,15 +1575,15 @@ class DZE_Wep_ACR_DES_Holo_GL_SD : DZE_Wep_ACR_DES_GL_SD {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_DES_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_DES_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_Holo_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_Holo_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_Holo_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_Holo_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -1598,14 +1598,14 @@ class DZE_Wep_ACR_DES_ACOG : DZE_Wep_ACR_DES {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_DES_ACOG_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_ACOG_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_ACOG_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_ACOG_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
 		};
 	};
 };
@@ -1618,17 +1618,17 @@ class DZE_Wep_ACR_DES_ACOG_SD : DZE_Wep_ACR_DES_SD {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_DES_ACOG_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_ACOG_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_DES_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_DES_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1643,17 +1643,17 @@ class DZE_Wep_ACR_DES_ACOG_GL : DZE_Wep_ACR_DES_GL {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_ACOG_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_ACOG_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_DES_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_DES_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1671,15 +1671,15 @@ class DZE_Wep_ACR_DES_ACOG_GL_SD : DZE_Wep_ACR_DES_GL_SD {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_DES_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_DES_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_ACOG_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_ACOG_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_ACOG_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_ACOG_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -1695,14 +1695,14 @@ class DZE_Wep_ACR_DES_TWS : DZE_Wep_ACR_DZ_BASE {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_TWS_SD";
-		Attachment_M203 = "DZE_Wep_ACR_DES_TWS_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_TWS_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_TWS_GL";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_DES'] call player_removeAttachment";
 		};
 	};
 };
@@ -1716,17 +1716,17 @@ class DZE_Wep_ACR_DES_TWS_GL : DZE_Wep_ACR_DES_GL {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_TWS_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_DES_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_DES_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_TWS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_TWS'] call player_removeAttachment";
 		};
 	};
 };
@@ -1741,17 +1741,17 @@ class DZE_Wep_ACR_DES_TWS_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_DES_TWS_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_DES_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_DES_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_TWS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_TWS'] call player_removeAttachment";
 		};
 	};
 };
@@ -1770,15 +1770,15 @@ class DZE_Wep_ACR_DES_TWS_GL_SD : DZE_Wep_ACR_DES_GL_SD {
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_DES_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_DES_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_TWS_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_TWS_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_TWS_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_TWS_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -1793,8 +1793,8 @@ class DZE_Wep_ACR_DES_NV : DZE_Wep_ACR_DZ_BASE {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_DES_NV_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_NV_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_NV_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_NV_SD";
 	};
 };
 
@@ -1807,12 +1807,12 @@ class DZE_Wep_ACR_DES_NV_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_DES_NV_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_DES_NV_GL_SD";
 	};
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_NV'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_NV'] call player_removeAttachment";
 		};
 	};
 };
@@ -1826,12 +1826,12 @@ class DZE_Wep_ACR_DES_NV_GL : DZE_Wep_ACR_DES_GL {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_DES_NV_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_DES_NV_GL_SD";
 	};
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_NV'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_NV'] call player_removeAttachment";
 		};
 	};
 };
@@ -1849,11 +1849,11 @@ class DZE_Wep_ACR_DES_NV_GL_SD : DZE_Wep_ACR_DES_GL_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_DES_NV_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_DES_NV_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_DES_NV_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_DES_NV_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -1869,12 +1869,12 @@ class DZE_Wep_ACR_SNOW : DZE_Wep_ACR_DZ_BASE {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_SNOW_CCO";
-		Attachment_Holo = "DZE_Wep_ACR_SNOW_Holo";
-		Attachment_ACOG = "DZE_Wep_ACR_SNOW_ACOG";
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_SD";
-		Attachment_Tws = "DZE_Wep_ACR_SNOW_TWS";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_SNOW_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_SNOW_Holo";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_SNOW_ACOG";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_SNOW_TWS";
 	};
 };
 
@@ -1888,17 +1888,17 @@ class DZE_Wep_ACR_SNOW_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	discreteDistanceInitIndex = 2;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_SNOW_CCO_SD";
-		Attachment_Holo = "DZE_Wep_ACR_SNOW_Holo_SD";
-		Attachment_ACOG = "DZE_Wep_ACR_SNOW_ACOG_SD";
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_SNOW_TWS_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_SNOW_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_SNOW_Holo_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_SNOW_ACOG_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_SNOW_TWS_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
 		};
 	};
 };
@@ -1913,17 +1913,17 @@ class DZE_Wep_ACR_SNOW_GL : DZE_Wep_ACR_SNOW {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_SNOW_CCO_GL";
-		Attachment_Holo = "DZE_Wep_ACR_SNOW_Holo_GL";
-		Attachment_ACOG = "DZE_Wep_ACR_SNOW_ACOG_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_SNOW_TWS_GL";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_SNOW_CCO_GL";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_SNOW_Holo_GL";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_SNOW_ACOG_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_SNOW_TWS_GL";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
 		};
 	};
 };
@@ -1936,20 +1936,20 @@ class DZE_Wep_ACR_SNOW_GL_SD : DZE_Wep_ACR_SNOW_SD {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_ACR_SNOW_CCO_GL_SD";
-		Attachment_Holo = "DZE_Wep_ACR_SNOW_Holo_GL_SD";
-		Attachment_ACOG = "DZE_Wep_ACR_SNOW_ACOG_GL_SD";
-		Attachment_Tws = "DZE_Wep_ACR_SNOW_TWS_GL_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_ACR_SNOW_CCO_GL_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_ACR_SNOW_Holo_GL_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_ACR_SNOW_ACOG_GL_SD";
+		DZE_Item_Att_Tws = "DZE_Wep_ACR_SNOW_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -1962,14 +1962,14 @@ class DZE_Wep_ACR_SNOW_CCO : DZE_Wep_ACR_SNOW {
 	model = "\fhq_remington\acr\acr_snw_aim.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_CCO_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_CCO_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_CCO_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_CCO_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
 		};
 	};
 };
@@ -1980,17 +1980,17 @@ class DZE_Wep_ACR_SNOW_CCO_SD : DZE_Wep_ACR_SNOW_SD {
 	model = "\fhq_remington\acr\acr_snw_aim_sd.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_CCO_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_CCO_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_SNOW_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_SNOW_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -2005,17 +2005,17 @@ class DZE_Wep_ACR_SNOW_CCO_GL : DZE_Wep_ACR_SNOW_GL {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_CCO_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_CCO_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_SNOW_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_SNOW_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -2033,15 +2033,15 @@ class DZE_Wep_ACR_SNOW_CCO_GL_SD : DZE_Wep_ACR_SNOW_GL_SD {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_ACR_SNOW_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_ACR_SNOW_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_CCO_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_CCO_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_CCO_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_CCO_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -2054,14 +2054,14 @@ class DZE_Wep_ACR_SNOW_Holo : DZE_Wep_ACR_SNOW {
 	model = "\fhq_remington\acr\acr_snw_hws.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_Holo_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_Holo_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_Holo_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
 		};
 	};
 };
@@ -2072,17 +2072,17 @@ class DZE_Wep_ACR_SNOW_Holo_SD : DZE_Wep_ACR_SNOW_SD {
 	model = "\fhq_remington\acr\acr_snw_hws_sd.p3d";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_Holo_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_Holo_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_SNOW_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_SNOW_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -2097,17 +2097,17 @@ class DZE_Wep_ACR_SNOW_Holo_GL : DZE_Wep_ACR_SNOW_GL {
 	ACR_M203;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_Holo_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_Holo_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_SNOW_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_SNOW_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -2125,15 +2125,15 @@ class DZE_Wep_ACR_SNOW_Holo_GL_SD : DZE_Wep_ACR_SNOW_GL_SD {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_ACR_SNOW_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_ACR_SNOW_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_Holo_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_Holo_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_Holo_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_Holo_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -2148,14 +2148,14 @@ class DZE_Wep_ACR_SNOW_ACOG : DZE_Wep_ACR_SNOW {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_ACOG_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_ACOG_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_ACOG_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_ACOG_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
 		};
 	};
 };
@@ -2168,17 +2168,17 @@ class DZE_Wep_ACR_SNOW_ACOG_SD : DZE_Wep_ACR_SNOW_SD {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_ACOG_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_ACOG_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_SNOW_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_SNOW_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -2193,17 +2193,17 @@ class DZE_Wep_ACR_SNOW_ACOG_GL : DZE_Wep_ACR_SNOW_GL {
 	ACR_ACOG;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_ACOG_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_ACOG_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_SNOW_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_SNOW_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -2221,15 +2221,15 @@ class DZE_Wep_ACR_SNOW_ACOG_GL_SD : DZE_Wep_ACR_SNOW_GL_SD {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_ACR_SNOW_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_ACR_SNOW_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_ACOG_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_ACOG_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_ACOG_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_ACOG_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -2245,14 +2245,14 @@ class DZE_Wep_ACR_SNOW_TWS : DZE_Wep_ACR_DZ_BASE {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_TWS_SD";
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_TWS_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_TWS_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_TWS_GL";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_SNOW'] call player_removeAttachment";
 		};
 	};
 };
@@ -2266,17 +2266,17 @@ class DZE_Wep_ACR_SNOW_TWS_GL : DZE_Wep_ACR_SNOW_GL {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_TWS_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_SNOW_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_SNOW_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_TWS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_TWS'] call player_removeAttachment";
 		};
 	};
 };
@@ -2291,17 +2291,17 @@ class DZE_Wep_ACR_SNOW_TWS_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	ACR_TWS;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_TWS_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_TWS_GL_SD";
 	};
 
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_SNOW_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_SNOW_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_TWS'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_TWS'] call player_removeAttachment";
 		};
 	};
 };
@@ -2320,15 +2320,15 @@ class DZE_Wep_ACR_SNOW_TWS_GL_SD : DZE_Wep_ACR_SNOW_GL_SD {
 	class ItemActions {
 		class RemoveTWS {
 			text = "$STR_ATTACHMENT_RMVE_TWS";
-			script = "; ['Attachment_Tws',_id,'DZE_Wep_ACR_SNOW_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Tws',_id,'DZE_Wep_ACR_SNOW_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_TWS_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_TWS_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_TWS_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_TWS_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -2343,8 +2343,8 @@ class DZE_Wep_ACR_SNOW_NV : DZE_Wep_ACR_DZ_BASE {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_NV_GL";
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_NV_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_NV_GL";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_NV_SD";
 	};
 };
 
@@ -2357,12 +2357,12 @@ class DZE_Wep_ACR_SNOW_NV_SD : DZE_Wep_ACR_SD_DZ_BASE {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_ACR_SNOW_NV_GL_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_ACR_SNOW_NV_GL_SD";
 	};
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_NV'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_NV'] call player_removeAttachment";
 		};
 	};
 };
@@ -2376,12 +2376,12 @@ class DZE_Wep_ACR_SNOW_NV_GL : DZE_Wep_ACR_SNOW_GL {
 	ACR_NV;
 
 	class Attachments {
-		Attachment_Sup68 = "DZE_Wep_ACR_SNOW_NV_GL_SD";
+		DZE_Item_Att_Sup68 = "DZE_Wep_ACR_SNOW_NV_GL_SD";
 	};
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_NV'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_NV'] call player_removeAttachment";
 		};
 	};
 };
@@ -2400,11 +2400,11 @@ class DZE_Wep_ACR_SNOW_NV_GL_SD : DZE_Wep_ACR_SNOW_GL_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup68',_id,'DZE_Wep_ACR_SNOW_NV_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup68',_id,'DZE_Wep_ACR_SNOW_NV_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_ACR_SNOW_NV_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_ACR_SNOW_NV_SD'] call player_removeAttachment";
 		};
 	};
 };

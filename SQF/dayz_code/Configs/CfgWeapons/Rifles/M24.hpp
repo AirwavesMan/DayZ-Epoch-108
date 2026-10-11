@@ -5,7 +5,7 @@ class DZE_Wep_M24 : M24 {
 	magazines[] = {5Rnd_762x51_M24};
 
 	class Attachments {
-		Attachment_Ghillie = "DZE_Wep_M24_Gh";
+		DZE_Item_Att_Ghillie = "DZE_Wep_M24_Gh";
 	};
 };
 
@@ -20,7 +20,7 @@ class DZE_Wep_M24_Gh : DZE_Wep_M24 {
 	class ItemActions {
 		class RemoveGhillie {
 			text = "$STR_DZ_ATT_GHIL_RMVE";
-			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_M24'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Ghillie',_id,'DZE_Wep_M24'] call player_removeAttachment";
 		};
 	};
 };

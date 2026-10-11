@@ -21,7 +21,7 @@ class DZE_Wep_M249_CCO : M249 {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M249'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M249'] call player_removeAttachment";
 		};
 	};
 };
@@ -38,8 +38,8 @@ class DZE_Wep_M249 : DZE_Wep_M249_CCO {
 	//iron sight zeroing end
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M249_CCO";
-		Attachment_Holo = "DZE_Wep_M249_Holo";
+		DZE_Item_Att_CCO = "DZE_Wep_M249_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_M249_Holo";
 	};
 
 	class ItemActions {};
@@ -53,7 +53,7 @@ class DZE_Wep_M249_Holo : DZE_Wep_M249_CCO {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M249'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M249'] call player_removeAttachment";
 		};
 	};
 };

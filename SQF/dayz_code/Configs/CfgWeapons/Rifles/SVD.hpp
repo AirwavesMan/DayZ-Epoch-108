@@ -20,14 +20,14 @@ class DZE_Wep_SVD_PSO1 : SVD {
 	};
 
 	class Attachments {
-		Attachment_Ghillie = "DZE_Wep_SVD_PSO1_Gh";
-		Attachment_Ghillie_Desert = "DZE_Wep_SVD_PSO1_Gh_DES";
+		DZE_Item_Att_Ghillie = "DZE_Wep_SVD_PSO1_Gh";
+		DZE_Item_Att_Ghillie_Desert = "DZE_Wep_SVD_PSO1_Gh_DES";
 	};
 
 	class ItemActions {
 		class RemovePSO1 {
 			text = "$STR_DZ_ATT_PSO1_RMVE";
-			script = "; ['Attachment_PSO1',_id,'DZE_Wep_SVD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_PSO1',_id,'DZE_Wep_SVD'] call player_removeAttachment";
 		};
 	};
 };
@@ -42,11 +42,11 @@ class DZE_Wep_SVD_PSO1_Gh : DZE_Wep_SVD_PSO1 {
 	class ItemActions {
 		class RemoveGhillie {
 			text = "$STR_DZ_ATT_GHIL_RMVE";
-			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_SVD_PSO1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Ghillie',_id,'DZE_Wep_SVD_PSO1'] call player_removeAttachment";
 		};
 		class RemovePSO1 {
 			text = "$STR_DZ_ATT_PSO1_RMVE";
-			script = "; ['Attachment_PSO1',_id,'DZE_Wep_SVD_Gh'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_PSO1',_id,'DZE_Wep_SVD_Gh'] call player_removeAttachment";
 		};
 	};
 };
@@ -65,9 +65,9 @@ class DZE_Wep_SVD : DZE_Wep_SVD_PSO1 {
 	};
 
 	class Attachments {
-		Attachment_Ghillie = "DZE_Wep_SVD_Gh";
-		Attachment_PSO1 = "DZE_Wep_SVD_PSO1";
-		Attachment_NSPU = "DZE_Wep_SVD_NSPU";
+		DZE_Item_Att_Ghillie = "DZE_Wep_SVD_Gh";
+		DZE_Item_Att_PSO1 = "DZE_Wep_SVD_PSO1";
+		DZE_Item_Att_NSPU = "DZE_Wep_SVD_NSPU";
 	};
 
 	class ItemActions {};
@@ -79,13 +79,13 @@ class DZE_Wep_SVD_Gh : DZE_Wep_SVD {
 	picture = "\z\addons\dayz_communityweapons\SVD\data\w_SVD_Gh_ca.paa";
 
 	class Attachments {
-		Attachment_PSO1 = "DZE_Wep_SVD_PSO1_Gh";
+		DZE_Item_Att_PSO1 = "DZE_Wep_SVD_PSO1_Gh";
 	};
 
 	class ItemActions {
 		class RemoveGhillie {
 			text = "$STR_DZ_ATT_GHIL_RMVE";
-			script = "; ['Attachment_Ghillie',_id,'DZE_Wep_SVD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Ghillie',_id,'DZE_Wep_SVD'] call player_removeAttachment";
 		};
 	};
 };
@@ -98,7 +98,7 @@ class DZE_Wep_SVD_PSO1_Gh_DES : DZE_Wep_SVD_PSO1_Gh {
 	class ItemActions {
 		class RemoveGhillie {
 			text = "$STR_DZ_ATT_GHIL_RMVE";
-			script = "; ['Attachment_Ghillie_Desert',_id,'DZE_Wep_SVD_PSO1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Ghillie_Desert',_id,'DZE_Wep_SVD_PSO1'] call player_removeAttachment";
 		};
 	};
 };
@@ -140,7 +140,7 @@ class DZE_Wep_SVD_NSPU : DZE_Wep_SVD_PSO1 {
 	class ItemActions {
 		class RemoveNSPU {
 			text = "$STR_DZ_ATT_NSPU_RMVE";
-			script = "; ['Attachment_NSPU',_id,'DZE_Wep_SVD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_NSPU',_id,'DZE_Wep_SVD'] call player_removeAttachment";
 		};
 	};
 

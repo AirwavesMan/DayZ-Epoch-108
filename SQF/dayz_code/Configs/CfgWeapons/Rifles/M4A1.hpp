@@ -75,13 +75,13 @@ class DZE_Wep_M4A1 : M4A1 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_CCO";
-		Attachment_Holo = "DZE_Wep_M4A1_Holo";
-		Attachment_ACOG = "DZE_Wep_M4A1_ACOG";
-		Attachment_M203 = "DZE_Wep_M4A1_GL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_SD";
-		Attachment_FL = "DZE_Wep_M4A1_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_Holo";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_ACOG";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_MFL";
 	};
 };
 
@@ -93,19 +93,19 @@ class DZE_Wep_M4A1_FL : DZE_Wep_M4A1 {
 	M4A1_FLASHLIGHT;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_CCO_FL";
-		Attachment_Holo = "DZE_Wep_M4A1_Holo_FL";
-		Attachment_ACOG = "DZE_Wep_M4A1_ACOG_FL";
-		Attachment_M203 = "DZE_Wep_M4A1_GL_FL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_SD_FL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_CCO_FL";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_Holo_FL";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_ACOG_FL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_FL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 			//script is formatted by ui_selectSlot to:
-			//"_id = 'DZE_Wep_M4A1_FL' ; ['Attachment_FL',_id,'DZE_Wep_M4A1'] call player_removeAttachment;"
+			//"_id = 'DZE_Wep_M4A1_FL' ; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1'] call player_removeAttachment;"
 
 			//REGEX
 			//script = "\[Attachment_([_a-zA-Z0-9]+)\,[_a-zA-Z0-9]+\,([_a-zA-Z0-9]+)\] call player_removeAttachment";
@@ -122,19 +122,19 @@ class DZE_Wep_M4A1_MFL : DZE_Wep_M4A1 {
 	M4A1_MFLASHLIGHT;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_CCO_MFL";
-		Attachment_Holo = "DZE_Wep_M4A1_Holo_MFL";
-		Attachment_ACOG = "DZE_Wep_M4A1_ACOG_MFL";
-		Attachment_M203 = "DZE_Wep_M4A1_GL_MFL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_SD_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_CCO_MFL";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_Holo_MFL";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_ACOG_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 			//script is formatted by ui_selectSlot to:
-			//"_id = 'DZE_Wep_M4A1_MFL' ; ['Attachment_MFL',_id,'DZE_Wep_M4A1'] call player_removeAttachment;"
+			//"_id = 'DZE_Wep_M4A1_MFL' ; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1'] call player_removeAttachment;"
 
 			//REGEX
 			//script = "\[Attachment_([_a-zA-Z0-9]+)\,[_a-zA-Z0-9]+\,([_a-zA-Z0-9]+)\] call player_removeAttachment";
@@ -159,18 +159,18 @@ class DZE_Wep_M4A1_SD : M4A1_AIM_SD_camo {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_CCO_SD";
-		Attachment_Holo = "DZE_Wep_M4A1_Holo_SD";
-		Attachment_ACOG = "DZE_Wep_M4A1_ACOG_SD";
-		Attachment_M203 = "DZE_Wep_M4A1_GL_SD";
-		Attachment_FL = "DZE_Wep_M4A1_SD_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_SD_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_Holo_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_ACOG_SD";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_SD_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 		};
 	};
 };
@@ -183,20 +183,20 @@ class DZE_Wep_M4A1_SD_FL : DZE_Wep_M4A1_SD {
 	M4A1_FLASHLIGHT;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_CCO_SD_FL";
-		Attachment_Holo = "DZE_Wep_M4A1_Holo_SD_FL";
-		Attachment_ACOG = "DZE_Wep_M4A1_ACOG_SD_FL";
-		Attachment_M203 = "DZE_Wep_M4A1_GL_SD_FL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_CCO_SD_FL";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_Holo_SD_FL";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_ACOG_SD_FL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -209,20 +209,20 @@ class DZE_Wep_M4A1_SD_MFL : DZE_Wep_M4A1_SD {
 	M4A1_MFLASHLIGHT;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_CCO_SD_MFL";
-		Attachment_Holo = "DZE_Wep_M4A1_Holo_SD_MFL";
-		Attachment_ACOG = "DZE_Wep_M4A1_ACOG_SD_MFL";
-		Attachment_M203 = "DZE_Wep_M4A1_GL_SD_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_CCO_SD_MFL";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_Holo_SD_MFL";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_ACOG_SD_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -237,18 +237,18 @@ class DZE_Wep_M4A1_GL : DZE_Wep_M4A1 {
 	M4A1_M203;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO";
-		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo";
-		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG";
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_SD";
-		Attachment_FL = "DZE_Wep_M4A1_GL_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_GL_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_GL_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_GL_Holo";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_GL_ACOG";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_GL_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_GL_MFL";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 		};
 	};
 };
@@ -261,20 +261,20 @@ class DZE_Wep_M4A1_GL_FL : DZE_Wep_M4A1_GL {
 	M4A1_FLASHLIGHT;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO_FL";
-		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo_FL";
-		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG_FL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_SD_FL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_GL_CCO_FL";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_GL_Holo_FL";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_GL_ACOG_FL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -287,20 +287,20 @@ class DZE_Wep_M4A1_GL_MFL : DZE_Wep_M4A1_GL {
 	M4A1_MFLASHLIGHT;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO_MFL";
-		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo_MFL";
-		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG_MFL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_SD_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_GL_CCO_MFL";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_GL_Holo_MFL";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_GL_ACOG_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -313,21 +313,21 @@ class DZE_Wep_M4A1_GL_SD : DZE_Wep_M4A1_SD {
 	M4A1_M203;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO_SD";
-		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo_SD";
-		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG_SD";
-		Attachment_FL = "DZE_Wep_M4A1_GL_SD_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_GL_SD_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_GL_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_GL_Holo_SD";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_GL_ACOG_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_GL_SD_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_GL_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
 	};
 };
@@ -340,23 +340,23 @@ class DZE_Wep_M4A1_GL_SD_FL : DZE_Wep_M4A1_GL_SD {
 	M4A1_FLASHLIGHT;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO_SD_FL";
-		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo_SD_FL";
-		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_GL_CCO_SD_FL";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_GL_Holo_SD_FL";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -369,23 +369,23 @@ class DZE_Wep_M4A1_GL_SD_MFL : DZE_Wep_M4A1_GL_SD {
 	M4A1_MFLASHLIGHT;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
-		Attachment_Holo = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
-		Attachment_ACOG = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
+		DZE_Item_Att_Holo = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
+		DZE_Item_Att_ACOG = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -398,16 +398,16 @@ class DZE_Wep_M4A1_CCO : DZE_Wep_M4A1 {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO";
-		Attachment_Sup556 = "DZE_Wep_M4A1_CCO_SD";
-		Attachment_FL = "DZE_Wep_M4A1_CCO_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_CCO_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_CCO";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_CCO_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_CCO_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_CCO_MFL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 		};
 	};
 };
@@ -418,18 +418,18 @@ class DZE_Wep_M4A1_CCO_FL : DZE_Wep_M4A1_FL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_fl_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO_FL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_CCO_SD_FL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_CCO_FL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_CCO_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -440,18 +440,18 @@ class DZE_Wep_M4A1_CCO_MFL : DZE_Wep_M4A1_MFL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_fl_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO_MFL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_CCO_SD_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_CCO_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_CCO_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -462,19 +462,19 @@ class DZE_Wep_M4A1_CCO_SD : DZE_Wep_M4A1_SD {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_sd_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO_SD";
-		Attachment_FL = "DZE_Wep_M4A1_CCO_SD_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_CCO_SD_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_CCO_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_CCO_SD_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_CCO_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -485,21 +485,21 @@ class DZE_Wep_M4A1_CCO_SD_FL : DZE_Wep_M4A1_SD_FL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_sd_fl_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO_SD_FL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_CCO_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_CCO_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_CCO_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_CCO_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_CCO_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -510,21 +510,21 @@ class DZE_Wep_M4A1_CCO_SD_MFL : DZE_Wep_M4A1_SD_MFL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_cco_sd_fl_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_CCO_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_CCO_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_CCO_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_CCO_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -537,19 +537,19 @@ class DZE_Wep_M4A1_GL_CCO : DZE_Wep_M4A1_GL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_cco_ca.paa";
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_CCO_SD";
-		Attachment_FL = "DZE_Wep_M4A1_GL_CCO_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_GL_CCO_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_CCO_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_GL_CCO_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_GL_CCO_MFL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -560,21 +560,21 @@ class DZE_Wep_M4A1_GL_CCO_FL : DZE_Wep_M4A1_GL_FL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_cco_fl_ca.paa";
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_CCO_SD_FL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_CCO_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_CCO_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_GL_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -585,21 +585,21 @@ class DZE_Wep_M4A1_GL_CCO_MFL : DZE_Wep_M4A1_GL_MFL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_cco_fl_ca.paa";
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_CCO_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_GL_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -610,22 +610,22 @@ class DZE_Wep_M4A1_GL_CCO_SD : DZE_Wep_M4A1_GL_SD {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_cco_sd_ca.paa";
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_M4A1_GL_CCO_SD_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_GL_CCO_SD_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_GL_CCO_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_CCO_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -640,19 +640,19 @@ class DZE_Wep_M4A1_GL_CCO_SD_FL : DZE_Wep_M4A1_GL_SD_FL {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL_SD_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_GL_SD_FL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO_SD_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_CCO_SD_FL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_CCO_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_CCO_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_CCO_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_GL_CCO_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -667,19 +667,19 @@ class DZE_Wep_M4A1_GL_CCO_SD_MFL : DZE_Wep_M4A1_GL_SD_MFL {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_M4A1_GL_SD_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_M4A1_GL_SD_MFL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_CCO_SD_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_CCO_SD_MFL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_CCO_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_CCO_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_CCO_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_GL_CCO_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -692,16 +692,16 @@ class DZE_Wep_M4A1_Holo : DZE_Wep_M4A1 {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo";
-		Attachment_Sup556 = "DZE_Wep_M4A1_Holo_SD";
-		Attachment_FL = "DZE_Wep_M4A1_Holo_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_Holo_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_Holo";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_Holo_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_Holo_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_Holo_MFL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 		};
 	};
 };
@@ -712,18 +712,18 @@ class DZE_Wep_M4A1_Holo_FL : DZE_Wep_M4A1_FL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_fl_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo_FL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_Holo_SD_FL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_Holo_FL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_Holo_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -734,18 +734,18 @@ class DZE_Wep_M4A1_Holo_MFL : DZE_Wep_M4A1_MFL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_fl_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo_MFL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_Holo_SD_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_Holo_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_Holo_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -756,19 +756,19 @@ class DZE_Wep_M4A1_Holo_SD : DZE_Wep_M4A1_SD {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_sd_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo_SD";
-		Attachment_FL = "DZE_Wep_M4A1_Holo_SD_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_Holo_SD_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_Holo_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_Holo_SD_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_Holo_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -779,21 +779,21 @@ class DZE_Wep_M4A1_Holo_SD_FL : DZE_Wep_M4A1_SD_FL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_sd_fl_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo_SD_FL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_Holo_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_Holo_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_Holo_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_Holo_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_Holo_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -804,21 +804,21 @@ class DZE_Wep_M4A1_Holo_SD_MFL : DZE_Wep_M4A1_SD_MFL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_holo_sd_fl_ca.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_Holo_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_Holo_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_Holo_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_Holo_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -831,19 +831,19 @@ class DZE_Wep_M4A1_GL_Holo : DZE_Wep_M4A1_GL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_holo_ca.paa";
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_Holo_SD";
-		Attachment_FL = "DZE_Wep_M4A1_GL_Holo_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_GL_Holo_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_Holo_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_GL_Holo_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_GL_Holo_MFL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -854,21 +854,21 @@ class DZE_Wep_M4A1_GL_Holo_FL : DZE_Wep_M4A1_GL_FL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_holo_fl_ca.paa";
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_Holo_SD_FL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_Holo_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_Holo_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_GL_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -879,21 +879,21 @@ class DZE_Wep_M4A1_GL_Holo_MFL : DZE_Wep_M4A1_GL_MFL {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_holo_fl_ca.paa";
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_Holo_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_GL_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -904,22 +904,22 @@ class DZE_Wep_M4A1_GL_Holo_SD : DZE_Wep_M4A1_GL_SD {
 	picture = "\z\addons\dayz_communityweapons\m4a1\data\w_m4a1_gl_holo_sd_ca.paa";
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_M4A1_GL_Holo_SD_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_GL_Holo_SD_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_GL_Holo_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_Holo_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_Holo'] call player_removeAttachment";
 		};
 	};
 };
@@ -934,19 +934,19 @@ class DZE_Wep_M4A1_GL_Holo_SD_FL : DZE_Wep_M4A1_GL_SD_FL {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL_SD_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_GL_SD_FL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo_SD_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_Holo_SD_FL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_Holo_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_Holo_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_Holo_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_GL_Holo_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -961,19 +961,19 @@ class DZE_Wep_M4A1_GL_Holo_SD_MFL : DZE_Wep_M4A1_GL_SD_MFL {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_M4A1_GL_SD_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_M4A1_GL_SD_MFL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_Holo_SD_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_Holo_SD_MFL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_Holo_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_Holo_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_Holo_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_GL_Holo_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -988,16 +988,16 @@ class DZE_Wep_M4A1_ACOG : DZE_Wep_M4A1 {
 	M4A1_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG";
-		Attachment_Sup556 = "DZE_Wep_M4A1_ACOG_SD";
-		Attachment_FL = "DZE_Wep_M4A1_ACOG_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_ACOG_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_ACOG";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_ACOG_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_ACOG_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_ACOG_MFL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1'] call player_removeAttachment";
 		};
 	};
 };
@@ -1010,18 +1010,18 @@ class DZE_Wep_M4A1_ACOG_FL : DZE_Wep_M4A1_FL {
 	M4A1_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG_FL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_ACOG_SD_FL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_ACOG_FL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_ACOG_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1034,18 +1034,18 @@ class DZE_Wep_M4A1_ACOG_MFL : DZE_Wep_M4A1_MFL {
 	M4A1_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG_MFL";
-		Attachment_Sup556 = "DZE_Wep_M4A1_ACOG_SD_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_ACOG_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_ACOG_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1058,19 +1058,19 @@ class DZE_Wep_M4A1_ACOG_SD : DZE_Wep_M4A1_SD {
 	M4A1_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG_SD";
-		Attachment_FL = "DZE_Wep_M4A1_ACOG_SD_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_ACOG_SD_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_ACOG_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_ACOG_SD_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_ACOG_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1083,21 +1083,21 @@ class DZE_Wep_M4A1_ACOG_SD_FL : DZE_Wep_M4A1_SD_FL {
 	M4A1_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_SD_FL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_ACOG_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_ACOG_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_ACOG_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_ACOG_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -1110,21 +1110,21 @@ class DZE_Wep_M4A1_ACOG_SD_MFL : DZE_Wep_M4A1_SD_MFL {
 	M4A1_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
+		DZE_Item_Att_M203 = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_SD_MFL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_ACOG_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_ACOG_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_ACOG_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_ACOG_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -1139,19 +1139,19 @@ class DZE_Wep_M4A1_GL_ACOG : DZE_Wep_M4A1_GL {
 	M4A1_ACOG;
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_ACOG_SD";
-		Attachment_FL = "DZE_Wep_M4A1_GL_ACOG_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_GL_ACOG_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_ACOG_SD";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_GL_ACOG_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_GL_ACOG_MFL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_GL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1164,21 +1164,21 @@ class DZE_Wep_M4A1_GL_ACOG_FL : DZE_Wep_M4A1_GL_FL {
 	M4A1_ACOG;
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_GL_FL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_ACOG_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_GL_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1191,21 +1191,21 @@ class DZE_Wep_M4A1_GL_ACOG_MFL : DZE_Wep_M4A1_GL_MFL {
 	M4A1_ACOG;
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_GL_MFL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_ACOG_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_GL_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1218,22 +1218,22 @@ class DZE_Wep_M4A1_GL_ACOG_SD : DZE_Wep_M4A1_GL_SD {
 	M4A1_ACOG;
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
-		Attachment_MFL = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
+		DZE_Item_Att_FL = "DZE_Wep_M4A1_GL_ACOG_SD_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_M4A1_GL_ACOG_SD_MFL";
 	};
 
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_GL_SD'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_ACOG_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_ACOG'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_ACOG'] call player_removeAttachment";
 		};
 	};
 };
@@ -1250,19 +1250,19 @@ class DZE_Wep_M4A1_GL_ACOG_SD_FL : DZE_Wep_M4A1_GL_SD_FL {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL_SD_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_GL_SD_FL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG_SD_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_ACOG_SD_FL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_ACOG_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_ACOG_FL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_M4A1_GL_ACOG_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_M4A1_GL_ACOG_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -1279,19 +1279,19 @@ class DZE_Wep_M4A1_GL_ACOG_SD_MFL : DZE_Wep_M4A1_GL_SD_MFL {
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_M4A1_GL_SD_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_M4A1_GL_SD_MFL'] call player_removeAttachment";
 		};
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_M4A1_ACOG_SD_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_M4A1_ACOG_SD_MFL'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_GL_ACOG_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_GL_ACOG_MFL'] call player_removeAttachment";
 		};
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_M4A1_GL_ACOG_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_M4A1_GL_ACOG_SD'] call player_removeAttachment";
 		};
 	};
 };
@@ -1331,7 +1331,7 @@ class DZE_Wep_M4A1_Camo_CCO: M4A1_AIM_camo {
 	};
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_Camo_CCO_SD";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_Camo_CCO_SD";
 	};
 };
 
@@ -1348,7 +1348,7 @@ class DZE_Wep_M4A1_Camo_CCO_SD: M4A1_AIM_SD_camo {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_Camo_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_Camo_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -1366,7 +1366,7 @@ class DZE_Wep_M4A1_Camo_Holo_GL: M4A1_HWS_GL_camo {
 	};
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_M4A1_Camo_Holo_GL_SD";
+		DZE_Item_Att_Sup556 = "DZE_Wep_M4A1_Camo_Holo_GL_SD";
 	};
 };
 
@@ -1385,7 +1385,7 @@ class DZE_Wep_M4A1_Camo_Holo_GL_SD: M4A1_HWS_GL_SD_Camo {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_M4A1_Camo_Holo_GL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_M4A1_Camo_Holo_GL'] call player_removeAttachment";
 		};
 	};
 };

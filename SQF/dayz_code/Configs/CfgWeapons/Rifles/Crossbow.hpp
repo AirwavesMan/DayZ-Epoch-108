@@ -55,10 +55,10 @@ class DZE_Wep_Crossbow : DZE_Wep_Crossbow_Base {
 	picture = "\z\addons\community_crossbow\icons\crossbow_icon.paa";
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_Crossbow_CCO";
-		Attachment_FL = "DZE_Wep_Crossbow_FL";
-		Attachment_MFL = "DZE_Wep_Crossbow_MFL";
-		Attachment_SCOPED = "DZE_Wep_Crossbow_Scope";
+		DZE_Item_Att_CCO = "DZE_Wep_Crossbow_CCO";
+		DZE_Item_Att_FL = "DZE_Wep_Crossbow_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_Crossbow_MFL";
+		DZE_Item_Att_SCOPED = "DZE_Wep_Crossbow_Scope";
 	};
 };
 
@@ -70,14 +70,14 @@ class DZE_Wep_Crossbow_FL : DZE_Wep_Crossbow {
 	CROSSBOW_FLASHLIGHT
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_Crossbow_CCO_FL";
-		Attachment_SCOPED = "DZE_Wep_Crossbow_Scope_FL";
+		DZE_Item_Att_CCO = "DZE_Wep_Crossbow_CCO_FL";
+		DZE_Item_Att_SCOPED = "DZE_Wep_Crossbow_Scope_FL";
 	};
 
 	class ItemActions {
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
 		};
 	};
 };
@@ -90,14 +90,14 @@ class DZE_Wep_Crossbow_MFL : DZE_Wep_Crossbow {
 	CROSSBOW_MFLASHLIGHT
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_Crossbow_CCO_MFL";
-		Attachment_SCOPED = "DZE_Wep_Crossbow_Scope_MFL";
+		DZE_Item_Att_CCO = "DZE_Wep_Crossbow_CCO_MFL";
+		DZE_Item_Att_SCOPED = "DZE_Wep_Crossbow_Scope_MFL";
 	};
 
 	class ItemActions {
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
 		};
 	};
 };
@@ -110,14 +110,14 @@ class DZE_Wep_Crossbow_CCO : DZE_Wep_Crossbow {
 	picture = "\z\addons\community_crossbow\icons\crossbow_cco.paa";
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_Crossbow_CCO_FL";
-		Attachment_MFL = "DZE_Wep_Crossbow_CCO_MFL";
+		DZE_Item_Att_FL = "DZE_Wep_Crossbow_CCO_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_Crossbow_CCO_MFL";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
 		};
 	};
 };
@@ -134,12 +134,12 @@ class DZE_Wep_Crossbow_CCO_FL : DZE_Wep_Crossbow_CCO {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_Crossbow_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_Crossbow_FL'] call player_removeAttachment";
 		};
 
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_Crossbow_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_Crossbow_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -156,12 +156,12 @@ class DZE_Wep_Crossbow_CCO_MFL : DZE_Wep_Crossbow_CCO {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_Crossbow_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_Crossbow_MFL'] call player_removeAttachment";
 		};
 
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_Crossbow_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_Crossbow_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -181,14 +181,14 @@ class DZE_Wep_Crossbow_Scope : DZE_Wep_Crossbow {
 	distanceZoomMax = 110;
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_Crossbow_Scope_FL";
-		Attachment_MFL = "DZE_Wep_Crossbow_Scope_MFL";
+		DZE_Item_Att_FL = "DZE_Wep_Crossbow_Scope_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_Crossbow_Scope_MFL";
 	};
 
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_Crossbow'] call player_removeAttachment";
 		};
 	};
 };
@@ -205,12 +205,12 @@ class DZE_Wep_Crossbow_Scope_FL : DZE_Wep_Crossbow_Scope {
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Crossbow_FL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_Crossbow_FL'] call player_removeAttachment";
 		};
 
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_Crossbow_Scope'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_Crossbow_Scope'] call player_removeAttachment";
 		};
 	};
 };
@@ -227,12 +227,12 @@ class DZE_Wep_Crossbow_Scope_MFL : DZE_Wep_Crossbow_Scope {
 	class ItemActions {
 		class RemoveScope {
 			text = "$STR_DZ_ATT_PU_RMVE";
-			script = "; ['Attachment_SCOPED',_id,'DZE_Wep_Crossbow_MFL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_SCOPED',_id,'DZE_Wep_Crossbow_MFL'] call player_removeAttachment";
 		};
 
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_Crossbow_Scope'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_Crossbow_Scope'] call player_removeAttachment";
 		};
 	};
 };

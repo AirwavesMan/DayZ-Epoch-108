@@ -47,8 +47,8 @@ class DZE_Wep_HK53A3: M4A1 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_HK53A3_CCO";
-		Attachment_Holo = "DZE_Wep_HK53A3_Holo";
+		DZE_Item_Att_CCO = "DZE_Wep_HK53A3_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_HK53A3_Holo";
 	};
 };
 
@@ -65,7 +65,7 @@ class DZE_Wep_HK53A3_CCO: DZE_Wep_HK53A3 {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_HK53A3'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_HK53A3'] call player_removeAttachment";
 		};
 	};
 };
@@ -83,7 +83,7 @@ class DZE_Wep_HK53A3_Holo: DZE_Wep_HK53A3 {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_HK53A3'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_HK53A3'] call player_removeAttachment";
 		};
 	};
 };

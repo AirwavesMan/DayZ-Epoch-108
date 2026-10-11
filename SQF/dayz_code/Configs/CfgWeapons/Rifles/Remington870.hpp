@@ -57,8 +57,8 @@ class DZE_Wep_Remington870 : DZE_Wep_Remington870_Base {
 	picture = "\dayz_weapons\textures\equip_remington870_CA.paa";
 
 	class Attachments {
-		Attachment_FL = "DZE_Wep_Remington870_FL";
-		Attachment_MFL = "DZE_Wep_Remington870_MFL";
+		DZE_Item_Att_FL = "DZE_Wep_Remington870_FL";
+		DZE_Item_Att_MFL = "DZE_Wep_Remington870_MFL";
 	};
 };
 
@@ -74,7 +74,7 @@ class DZE_Wep_Remington870_FL : DZE_Wep_Remington870 {
 	class ItemActions {
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_FL',_id,'DZE_Wep_Remington870'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_FL',_id,'DZE_Wep_Remington870'] call player_removeAttachment";
 		};
 	};
 };
@@ -91,7 +91,7 @@ class DZE_Wep_Remington870_MFL : DZE_Wep_Remington870 {
 	class ItemActions {
 		class RemoveFlashlight {
 			text = "$STR_DZ_ATT_FL_RFL_RMVE";
-			script = "; ['Attachment_MFL',_id,'DZE_Wep_Remington870'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_MFL',_id,'DZE_Wep_Remington870'] call player_removeAttachment";
 		};
 	};
 };

@@ -41,9 +41,9 @@ class DZE_Wep_Famas: M4A1 {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_Famas_CCO";
-		Attachment_Holo = "DZE_Wep_Famas_Holo";
-		Attachment_Sup556 = "DZE_Wep_Famas_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_Famas_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_Famas_Holo";
+		DZE_Item_Att_Sup556 = "DZE_Wep_Famas_SD";
 	};
 };
 
@@ -53,13 +53,13 @@ class DZE_Wep_Famas_CCO: DZE_Wep_Famas {
 	picture = "\C1987_Famas\equip\famas_f1_aim.paa";
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_Famas_CCO_SD";
+		DZE_Item_Att_Sup556 = "DZE_Wep_Famas_CCO_SD";
 	};
 
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_Famas'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_Famas'] call player_removeAttachment";
 		};
 	};
 };
@@ -70,13 +70,13 @@ class DZE_Wep_Famas_Holo: DZE_Wep_Famas {
 	picture = "\C1987_Famas\equip\famas_f1_eot.paa";
 
 	class Attachments {
-		Attachment_Sup556 = "DZE_Wep_Famas_Holo_SD";
+		DZE_Item_Att_Sup556 = "DZE_Wep_Famas_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_Famas'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_Famas'] call player_removeAttachment";
 		};
 	};
 };
@@ -125,14 +125,14 @@ class DZE_Wep_Famas_SD: M4A1_AIM_SD_camo {
 	};
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_Famas_CCO_SD";
-		Attachment_Holo = "DZE_Wep_Famas_Holo_SD";
+		DZE_Item_Att_CCO = "DZE_Wep_Famas_CCO_SD";
+		DZE_Item_Att_Holo = "DZE_Wep_Famas_Holo_SD";
 	};
 
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_Famas'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_Famas'] call player_removeAttachment";
 		};
 	};
 };
@@ -147,11 +147,11 @@ class DZE_Wep_Famas_CCO_SD: DZE_Wep_Famas_SD {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_Famas_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_Famas_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_Famas_CCO'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_Famas_CCO'] call player_removeAttachment";
 		};
 	};
 };
@@ -166,11 +166,11 @@ class DZE_Wep_Famas_Holo_SD: DZE_Wep_Famas_SD {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_Famas_SD'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_Famas_SD'] call player_removeAttachment";
 		};
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup556',_id,'DZE_Wep_Famas_Holo'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup556',_id,'DZE_Wep_Famas_Holo'] call player_removeAttachment";
 		};
 	};
 };

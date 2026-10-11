@@ -81,9 +81,9 @@ class DZE_Wep_SteyrAug_A3_Green: DZE_Wep_SteyrAug_A3_base {
 	distanceZoomMax = 300;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_SteyrAug_A3_GL_Green";
-		Attachment_Holo = "DZE_Wep_SteyrAug_A3_Holo_Green";
-		Attachment_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_Green";
+		DZE_Item_Att_M203 = "DZE_Wep_SteyrAug_A3_GL_Green";
+		DZE_Item_Att_Holo = "DZE_Wep_SteyrAug_A3_Holo_Green";
+		DZE_Item_Att_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_Green";
 	};
 };
 
@@ -92,9 +92,9 @@ class DZE_Wep_SteyrAug_A3_Black: DZE_Wep_SteyrAug_A3_Green {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_black.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_SteyrAug_A3_GL_Black";
-		Attachment_Holo = "DZE_Wep_SteyrAug_A3_Holo_Black";
-		Attachment_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_Black";
+		DZE_Item_Att_M203 = "DZE_Wep_SteyrAug_A3_GL_Black";
+		DZE_Item_Att_Holo = "DZE_Wep_SteyrAug_A3_Holo_Black";
+		DZE_Item_Att_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_Black";
 	};
 };
 
@@ -103,9 +103,9 @@ class DZE_Wep_SteyrAug_A3_Blue: DZE_Wep_SteyrAug_A3_Green {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_blue.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_SteyrAug_A3_GL_Blue";
-		Attachment_Holo = "DZE_Wep_SteyrAug_A3_Holo_Blue";
-		Attachment_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_Blue";
+		DZE_Item_Att_M203 = "DZE_Wep_SteyrAug_A3_GL_Blue";
+		DZE_Item_Att_Holo = "DZE_Wep_SteyrAug_A3_Holo_Blue";
+		DZE_Item_Att_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_Blue";
 	};
 };
 
@@ -116,12 +116,12 @@ class DZE_Wep_SteyrAug_A3_ACOG_Green: DZE_Wep_SteyrAug_A3_Green {
 	Steyr_ACOG;
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_SteyrAug_A3_ACOG_GL_Green";
+		DZE_Item_Att_M203 = "DZE_Wep_SteyrAug_A3_ACOG_GL_Green";
 	};
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_SteyrAug_A3_Green'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_SteyrAug_A3_Green'] call player_removeAttachment";
 		};
 	};
 };
@@ -131,12 +131,12 @@ class DZE_Wep_SteyrAug_A3_ACOG_Black: DZE_Wep_SteyrAug_A3_ACOG_Green {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_acog_black.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_SteyrAug_A3_ACOG_GL_Black";
+		DZE_Item_Att_M203 = "DZE_Wep_SteyrAug_A3_ACOG_GL_Black";
 	};
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_SteyrAug_A3_Black'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_SteyrAug_A3_Black'] call player_removeAttachment";
 		};
 	};
 };
@@ -145,12 +145,12 @@ class DZE_Wep_SteyrAug_A3_ACOG_Blue: DZE_Wep_SteyrAug_A3_ACOG_Green {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_acog_blue.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_SteyrAug_A3_ACOG_GL_Blue";
+		DZE_Item_Att_M203 = "DZE_Wep_SteyrAug_A3_ACOG_GL_Blue";
 	};
 	class ItemActions {
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_SteyrAug_A3_Blue'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_SteyrAug_A3_Blue'] call player_removeAttachment";
 		};
 	};
 };
@@ -162,12 +162,12 @@ class DZE_Wep_SteyrAug_A3_Holo_Green: DZE_Wep_SteyrAug_A3_base {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_eotech_green.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_SteyrAug_A3_Holo_GL_Green";
+		DZE_Item_Att_M203 = "DZE_Wep_SteyrAug_A3_Holo_GL_Green";
 	};
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_SteyrAug_A3_Green'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_SteyrAug_A3_Green'] call player_removeAttachment";
 		};
 	};
 };
@@ -176,12 +176,12 @@ class DZE_Wep_SteyrAug_A3_Holo_Black: DZE_Wep_SteyrAug_A3_Holo_Green {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_eotech_black.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_SteyrAug_A3_Holo_GL_Black";
+		DZE_Item_Att_M203 = "DZE_Wep_SteyrAug_A3_Holo_GL_Black";
 	};
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_SteyrAug_A3_Black'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_SteyrAug_A3_Black'] call player_removeAttachment";
 		};
 	};
 };
@@ -190,12 +190,12 @@ class DZE_Wep_SteyrAug_A3_Holo_Blue: DZE_Wep_SteyrAug_A3_Holo_Green {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_eotech_blue.paa";
 
 	class Attachments {
-		Attachment_M203 = "DZE_Wep_SteyrAug_A3_Holo_GL_Blue";
+		DZE_Item_Att_M203 = "DZE_Wep_SteyrAug_A3_Holo_GL_Blue";
 	};
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_SteyrAug_A3_Blue'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_SteyrAug_A3_Blue'] call player_removeAttachment";
 		};
 	};
 };
@@ -209,14 +209,14 @@ class DZE_Wep_SteyrAug_A3_GL_Green: DZE_Wep_SteyrAug_A3_Green {
 	handAnim[] = {"OFP2_ManSkeleton","\MIDF_Weapons\data\anim\A3_GL.rtm"};
 
 	class Attachments {
-		Attachment_Holo = "DZE_Wep_SteyrAug_A3_Holo_GL_Green";
-		Attachment_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_GL_Green";
+		DZE_Item_Att_Holo = "DZE_Wep_SteyrAug_A3_Holo_GL_Green";
+		DZE_Item_Att_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_GL_Green";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_SteyrAug_A3_Green'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_SteyrAug_A3_Green'] call player_removeAttachment";
 		};
 	};
 };
@@ -225,14 +225,14 @@ class DZE_Wep_SteyrAug_A3_GL_Black: DZE_Wep_SteyrAug_A3_GL_Green {
 	model = "\MIDF_Weapons\Aug_a3\aug_a3_gl_black.p3d";
 
 	class Attachments {
-		Attachment_Holo = "DZE_Wep_SteyrAug_A3_Holo_GL_Black";
-		Attachment_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_GL_Black";
+		DZE_Item_Att_Holo = "DZE_Wep_SteyrAug_A3_Holo_GL_Black";
+		DZE_Item_Att_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_GL_Black";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_SteyrAug_A3_Black'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_SteyrAug_A3_Black'] call player_removeAttachment";
 		};
 	};
 };
@@ -241,14 +241,14 @@ class DZE_Wep_SteyrAug_A3_GL_Blue: DZE_Wep_SteyrAug_A3_GL_Green {
 	model = "\MIDF_Weapons\Aug_a3\aug_a3_gl_blue.p3d";
 
 	class Attachments {
-		Attachment_Holo = "DZE_Wep_SteyrAug_A3_Holo_GL_Blue";
-		Attachment_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_GL_Blue";
+		DZE_Item_Att_Holo = "DZE_Wep_SteyrAug_A3_Holo_GL_Blue";
+		DZE_Item_Att_ACOG = "DZE_Wep_SteyrAug_A3_ACOG_GL_Blue";
 	};
 
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_SteyrAug_A3_Blue'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_SteyrAug_A3_Blue'] call player_removeAttachment";
 		};
 	};
 };
@@ -265,11 +265,11 @@ class DZE_Wep_SteyrAug_A3_ACOG_GL_Green: DZE_Wep_SteyrAug_A3_ACOG_Green {
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_SteyrAug_A3_ACOG_Green'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_SteyrAug_A3_ACOG_Green'] call player_removeAttachment";
 		};
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_SteyrAug_A3_GL_Green'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_SteyrAug_A3_GL_Green'] call player_removeAttachment";
 		};
 	};
 };
@@ -280,11 +280,11 @@ class DZE_Wep_SteyrAug_A3_ACOG_GL_Black: DZE_Wep_SteyrAug_A3_ACOG_GL_Green {
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_SteyrAug_A3_ACOG_Black'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_SteyrAug_A3_ACOG_Black'] call player_removeAttachment";
 		};
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_SteyrAug_A3_GL_Black'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_SteyrAug_A3_GL_Black'] call player_removeAttachment";
 		};
 	};
 };
@@ -295,11 +295,11 @@ class DZE_Wep_SteyrAug_A3_ACOG_GL_Blue: DZE_Wep_SteyrAug_A3_ACOG_GL_Green {
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_SteyrAug_A3_ACOG_Blue'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_SteyrAug_A3_ACOG_Blue'] call player_removeAttachment";
 		};
 		class RemoveACOG {
 			text = "$STR_DZ_ATT_ACOG_RMVE";
-			script = "; ['Attachment_ACOG',_id,'DZE_Wep_SteyrAug_A3_GL_Blue'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ACOG',_id,'DZE_Wep_SteyrAug_A3_GL_Blue'] call player_removeAttachment";
 		};
 	};
 };
@@ -316,11 +316,11 @@ class DZE_Wep_SteyrAug_A3_Holo_GL_Green: DZE_Wep_SteyrAug_A3_base {
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_SteyrAug_A3_Holo_Green'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_SteyrAug_A3_Holo_Green'] call player_removeAttachment";
 		};
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_SteyrAug_A3_GL_Green'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_SteyrAug_A3_GL_Green'] call player_removeAttachment";
 		};
 	};
 };
@@ -331,11 +331,11 @@ class DZE_Wep_SteyrAug_A3_Holo_GL_Black: DZE_Wep_SteyrAug_A3_Holo_GL_Green {
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_SteyrAug_A3_Holo_Black'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_SteyrAug_A3_Holo_Black'] call player_removeAttachment";
 		};
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_SteyrAug_A3_GL_Black'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_SteyrAug_A3_GL_Black'] call player_removeAttachment";
 		};
 	};
 };
@@ -346,11 +346,11 @@ class DZE_Wep_SteyrAug_A3_Holo_GL_Blue: DZE_Wep_SteyrAug_A3_Holo_GL_Green {
 	class ItemActions {
 		class RemoveGL {
 			text = "$STR_DZ_ATT_M203_RMVE";
-			script = "; ['Attachment_M203',_id,'DZE_Wep_SteyrAug_A3_Holo_Blue'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_M203',_id,'DZE_Wep_SteyrAug_A3_Holo_Blue'] call player_removeAttachment";
 		};
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_SteyrAug_A3_GL_Blue'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_SteyrAug_A3_GL_Blue'] call player_removeAttachment";
 		};
 	};
 };

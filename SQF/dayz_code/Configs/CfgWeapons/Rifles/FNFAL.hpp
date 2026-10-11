@@ -12,9 +12,9 @@ class DZE_Wep_FNFAL : FN_FAL {
 	distanceZoomMax = 300;
 
 	class Attachments {
-		Attachment_CCO = "DZE_Wep_FNFAL_CCO";
-		Attachment_Holo = "DZE_Wep_FNFAL_Holo";
-		Attachment_ANPVS4 = "DZE_Wep_FN_FAL_ANPVS4_DZE";
+		DZE_Item_Att_CCO = "DZE_Wep_FNFAL_CCO";
+		DZE_Item_Att_Holo = "DZE_Wep_FNFAL_Holo";
+		DZE_Item_Att_ANPVS4 = "DZE_Wep_FN_FAL_ANPVS4_DZE";
 	};
 };
 
@@ -28,7 +28,7 @@ class DZE_Wep_FNFAL_CCO : DZE_Wep_FNFAL {
 	class ItemActions {
 		class RemoveCCO {
 			text = "$STR_DZ_ATT_CCO_RMVE";
-			script = "; ['Attachment_CCO',_id,'DZE_Wep_FNFAL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_CCO',_id,'DZE_Wep_FNFAL'] call player_removeAttachment";
 		};
 	};
 };
@@ -41,7 +41,7 @@ class DZE_Wep_FNFAL_Holo : DZE_Wep_FNFAL_CCO {
 	class ItemActions {
 		class RemoveHolo {
 			text = "$STR_DZ_ATT_HOLO_RMVE";
-			script = "; ['Attachment_Holo',_id,'DZE_Wep_FNFAL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Holo',_id,'DZE_Wep_FNFAL'] call player_removeAttachment";
 		};
 	};
 };
@@ -58,7 +58,7 @@ class DZE_Wep_FN_FAL_ANPVS4_DZE: FN_FAL_ANPVS4 {
 	class ItemActions {
 		class RemoveANPVS {
 			text = "$STR_DZ_ATT_ANPVS4_RMVE";
-			script = "; ['Attachment_ANPVS4',_id,'DZE_Wep_FNFAL'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_ANPVS4',_id,'DZE_Wep_FNFAL'] call player_removeAttachment";
 		};
 	};
 };

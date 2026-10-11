@@ -19,7 +19,7 @@ class DZE_Wep_CZ75SP: CZ_75_SP_01_PHANTOM {
 	magazines[] = {"18Rnd_9x19_Phantom"};
 
 	class Attachments {
-		Attachment_Sup9 = "DZE_Wep_CZ75SP_SD";
+		DZE_Item_Att_Sup9 = "DZE_Wep_CZ75SP_SD";
 	};
 };
 
@@ -32,7 +32,7 @@ class DZE_Wep_CZ75SP_SD: CZ_75_SP_01_PHANTOM_SD {
 	class ItemActions {
 		class RemoveSuppressor {
 			text = "$STR_ATTACHMENT_RMVE_Silencer";
-			script = "; ['Attachment_Sup9',_id,'DZE_Wep_CZ75SP'] call player_removeAttachment";
+			script = "; ['DZE_Item_Att_Sup9',_id,'DZE_Wep_CZ75SP'] call player_removeAttachment";
 		};
 	};
 };
