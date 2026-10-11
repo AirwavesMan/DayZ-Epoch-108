@@ -31,10 +31,10 @@ if (!local _unit) exitWith {
 	call {
 		if (_type == Loot_MAGAZINE) exitWith {
 			if (dayz_classicBloodBagSystem && _item in dayz_typedBags) then {
-				if (_item in ["emptyBloodBag","bloodTester","bloodBagAPOS","bloodBagABPOS"]) then { // reduce ItemBloodBag output slightly since typed bags spawn in bulk
-					_item = ["ItemBandage","ItemPainkiller","ItemMorphine","ItemHeatPack","ItemAntibacterialWipe"] call BIS_fnc_selectRandom;
+				if (_item in ["DZE_Item_Medi_EmptyBloodBag","DZE_Item_Medi_BloodTester","DZE_Item_Medi_BloodBagAPOS","DZE_Item_Medi_BloodBagABPOS"]) then { // reduce DZE_Item_Medi_Bloodbag output slightly since typed bags spawn in bulk
+					_item = ["DZE_Item_Medi_Bandage","DZE_Item_Medi_Painkiller","DZE_Item_Medi_Morphine","DZE_Item_Medi_HeatPack","DZE_Item_Medi_AntibacterialWipe"] call BIS_fnc_selectRandom;
 				} else {
-					_item = "ItemBloodbag";
+					_item = "DZE_Item_Medi_Bloodbag";
 				};
 			};
 			_unit addMagazine _item;

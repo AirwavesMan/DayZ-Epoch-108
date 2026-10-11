@@ -6,7 +6,7 @@ private ["_finished","_isDead","_unit"];
 _unit = (_this select 3) select 0;
 call fnc_usec_medic_removeActions;
 
-player removeMagazine "ItemEpinephrine";
+player removeMagazine "DZE_Item_Medi_Epinephrine";
 _finished = ["Medic",1] call fn_loopAction;
 
 _isDead = _unit getVariable["USEC_isDead",false];
@@ -20,7 +20,7 @@ if (!_isDead && {_finished}) then {
 
 	format [localize "str_actions_medical_general_give",(localize "STR_EQUIP_NAME_14"),_unit call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;
 } else {
-	player addMagazine "ItemEpinephrine";
+	player addMagazine "DZE_Item_Medi_Epinephrine";
 };
 
 r_action = false;

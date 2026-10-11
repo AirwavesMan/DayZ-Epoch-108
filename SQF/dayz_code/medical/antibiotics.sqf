@@ -14,7 +14,7 @@ if (isNil "_medsUsed") then {
 			// Set antibiotics if not defined (used when giving to somebody)
 			_medsUsed = _x;
 		};
-	} count ["ItemAntibiotic","ItemAntibiotic1","ItemAntibiotic2","ItemAntibiotic3","ItemAntibiotic4","ItemAntibiotic5","ItemAntibiotic6"];
+	} count ["DZE_Item_Medi_Antibiotic","DZE_Item_Medi_Antibiotic1","DZE_Item_Medi_Antibiotic2","DZE_Item_Medi_Antibiotic3","DZE_Item_Medi_Antibiotic4","DZE_Item_Medi_Antibiotic5","DZE_Item_Medi_Antibiotic6"];
 };
 
 _msg = localize "str_actions_medical_misplaced_antibiotics";

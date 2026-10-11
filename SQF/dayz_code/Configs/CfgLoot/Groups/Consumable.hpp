@@ -3,7 +3,7 @@ Consumable[] =
 	{Loot_MAGAZINE,		1,		ItemWaterBottleUnfilled}, //TODO: replace with canteen to better fit Epoch lootPosSmall
 	{Loot_MAGAZINE,		1,		ItemWaterBottleSafe},
 	{Loot_MAGAZINE,		1,		ItemWaterBottle},
-	{Loot_MAGAZINE,		1,		ItemHeatPack},
+	{Loot_MAGAZINE,		1,		DZE_Item_Medi_HeatPack},
 	{Loot_MAGAZINE,		1,		ItemSodaCoke},
 	{Loot_MAGAZINE,		1,		ItemSodaPepsi},
 	{Loot_MAGAZINE,		1,		ItemSodaMdew},

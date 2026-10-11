@@ -10,7 +10,7 @@ ZombieStalkerScientist[] =
 ZombieStalkerScientistViral[] =
 {
 	{Loot_GROUP,		10,		ZombieStalkerScientist},
-	{Loot_MAGAZINE,		1,		ItemAntibiotic1}
+	{Loot_MAGAZINE,		1,		DZE_Item_Medi_Antibiotic1}
 };
 
 ZombieStalkerDuty[] =
@@ -25,7 +25,7 @@ ZombieStalkerDuty[] =
 ZombieStalkerDutyViral[] =
 {
 	{Loot_GROUP,		10,		ZombieStalkerDuty},
-	{Loot_MAGAZINE,		1,		ItemAntibiotic1}
+	{Loot_MAGAZINE,		1,		DZE_Item_Medi_Antibiotic1}
 };
 
 ZombieStalkerMilitary[] =
@@ -40,7 +40,7 @@ ZombieStalkerMilitary[] =
 ZombieStalkerMilitaryViral[] =
 {
 	{Loot_GROUP,		10,		ZombieStalkerMilitary},
-	{Loot_MAGAZINE,		1,		ItemAntibiotic1}
+	{Loot_MAGAZINE,		1,		DZE_Item_Medi_Antibiotic1}
 };
 
 ZombieStalkerNeutral[] =
@@ -55,7 +55,7 @@ ZombieStalkerNeutral[] =
 ZombieStalkerNeutralViral[] =
 {
 	{Loot_GROUP,		10,		ZombieStalkerNeutral},
-	{Loot_MAGAZINE,		1,		ItemAntibiotic1}
+	{Loot_MAGAZINE,		1,		DZE_Item_Medi_Antibiotic1}
 };
 
 ZombieStalkerFreedom[] =
@@ -70,7 +70,7 @@ ZombieStalkerFreedom[] =
 ZombieStalkerFreedomViral[] =
 {
 	{Loot_GROUP,		10,		ZombieStalkerFreedom},
-	{Loot_MAGAZINE,		1,		ItemAntibiotic1}
+	{Loot_MAGAZINE,		1,		DZE_Item_Medi_Antibiotic1}
 };
 
 ZombieStalkerMonolith[] =
@@ -85,5 +85,5 @@ ZombieStalkerMonolith[] =
 ZombieStalkerMonolithViral[] =
 {
 	{Loot_GROUP,		10,		ZombieStalkerMonolith},
-	{Loot_MAGAZINE,		1,		ItemAntibiotic1}
+	{Loot_MAGAZINE,		1,		DZE_Item_Medi_Antibiotic1}
 };

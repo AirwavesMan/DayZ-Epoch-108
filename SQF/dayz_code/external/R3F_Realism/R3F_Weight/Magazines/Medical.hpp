@@ -1,224 +1,224 @@
-﻿class ItemAntibacterialWipe 
+﻿class DZE_Item_Medi_AntibacterialWipe
 {
 	weight = 0.003;
 };
-class ItemSepsisBandage 
+class DZE_Item_Medi_BandageSepsis
 {
 	weight = 0.1;
 };
-class ItemBandage 
+class DZE_Item_Medi_Bandage
 {
 	weight = 0.05;
 };
-class ItemPainkiller
+class DZE_Item_Medi_Painkiller
 {
 	weight = 0.1;
 };
-class ItemMorphine
+class DZE_Item_Medi_Morphine
 {
 	weight = 0.1;
 };
-class ItemEpinephrine
+class DZE_Item_Medi_Epinephrine
 {
 	weight = 0.1;
 };
-class ItemHeatPack
+class DZE_Item_Medi_HeatPack
 {
 	weight = 0.05;
 };
-class ItemBloodbag
+class DZE_Item_Medi_Bloodbag
 {
 	weight = 2;
 };
-class ItemAntibiotic
+class DZE_Item_Medi_Antibiotic
 {
 	weight = 0.1;
 };
-class ItemAntibiotic6
+class DZE_Item_Medi_Antibiotic6
 {
 	weight = 0.08;
 };
-class ItemAntibiotic5
+class DZE_Item_Medi_Antibiotic5
 {
 	weight = 0.06;
 };
-class ItemAntibiotic4
+class DZE_Item_Medi_Antibiotic4
 {
 	weight = 0.04;
 };
-class ItemAntibiotic3
+class DZE_Item_Medi_Antibiotic3
 {
 	weight = 0.02;
 };
-class ItemAntibiotic2
+class DZE_Item_Medi_Antibiotic2
 {
 	weight = 0.009;
 };
-class ItemAntibiotic1
+class DZE_Item_Medi_Antibiotic1
 {
 	weight = 0.005;
 };
-class ItemAntibioticEmpty
+class DZE_Item_Medi_AntibioticEmpty
 {
 	weight = 0.002;
 };
-class bloodBagANEG
+class DZE_Item_Medi_BloodBagANEG
 {
 	weight = 2;
 };
-class bloodBagAPOS
+class DZE_Item_Medi_BloodBagAPOS
 {
 	weight = 2;
 };
-class bloodBagBNEG
+class DZE_Item_Medi_BloodBagBNEG
 {
 	weight = 2;
 };
-class bloodBagBPOS
+class DZE_Item_Medi_BloodBagBPOS
 {
 	weight = 2;
 };
-class bloodBagABNEG
+class DZE_Item_Medi_BloodBagABNEG
 {
 	weight = 2;
 };
-class bloodBagABPOS
+class DZE_Item_Medi_BloodBagABPOS
 {
 	weight = 2;
 };
-class bloodBagONEG
+class DZE_Item_Medi_BloodBagONEG
 {
 	weight = 2;
 };
-class bloodBagOPOS
+class DZE_Item_Medi_BloodBagOPOS
 {
 	weight = 2;
 };
-class wholeBloodBagANEG
+class DZE_Item_Medi_WholeBloodBagANEG
 {
 	weight = 2;
 };
-class wholeBloodBagAPOS
+class DZE_Item_Medi_WholeBloodBagAPOS
 {
 	weight = 2;
 };
-class wholeBloodBagBNEG
+class DZE_Item_Medi_WholeBloodBagBNEG
 {
 	weight = 2;
 };
-class wholeBloodBagBPOS
+class DZE_Item_Medi_WholeBloodBagBPOS
 {
 	weight = 2;
 };
-class wholeBloodBagABNEG
+class DZE_Item_Medi_WholeBloodBagABNEG
 {
 	weight = 2;
 };
-class wholeBloodBagABPOS
+class DZE_Item_Medi_WholeBloodBagABPOS
 {
 	weight = 2;
 };
-class wholeBloodBagONEG
+class DZE_Item_Medi_WholeBloodBagONEG
 {
 	weight = 2;
 };
-class wholeBloodBagOPOS
+class DZE_Item_Medi_WholeBloodBagOPOS
 {
 	weight = 2;
 };
-class bloodTester
+class DZE_Item_Medi_BloodTester
 {
 	weight = 0.1;
 };
-class transfusionKit
+class DZE_Item_Medi_TransfusionKit
 {
 	weight = 0.1;
 };
-class emptyBloodBag
+class DZE_Item_Medi_EmptyBloodBag
 {
 	weight = 0.003;
 };
-class ItemPainkiller6 
+class DZE_Item_Medi_Painkiller6
 { 
 	weight = 0.08; 
 };
-class ItemPainkiller5 
+class DZE_Item_Medi_Painkiller5
 { 
 	weight = 0.06; 
 };
-class ItemPainkiller4 
+class DZE_Item_Medi_Painkiller4
 { 
 	weight = 0.04; 
 };
-class ItemPainkiller3 
+class DZE_Item_Medi_Painkiller3
 { 
 	weight = 0.02; 
 };
-class ItemPainkiller2 
+class DZE_Item_Medi_Painkiller2
 { 
 	weight = 0.009; 
 };
-class ItemPainkiller1 
+class DZE_Item_Medi_Painkiller1
 { 
 	weight = 0.005; 
 };
-class ItemPainkillerEmpty 
+class DZE_Item_Medi_PainkillerEmpty
 { 
 	weight = 0.002; 
 };
-class equip_woodensplint 
+class DZE_Item_Medi_Woodensplint
 { 
 	weight = 2; 
 };
-class equip_gauze 
+class DZE_Item_Medi_Gauze
 { 
 	weight = 0.3; 
 };
-class equip_gauzepackaged 
+class DZE_Item_Medi_Gauzepackaged
 { 
 	weight = 0.4; 
 };
-class equip_herb_box 
+class DZE_Item_Medi_Herb_Box
 { 
 	weight = 0.8; 
 };
-class ItemBloodbagInfected
+class DZE_Item_Medi_BloodbagInfected
 {
 	weight = 2;
 };
-class ItemBloodbagZombie
+class DZE_Item_Medi_BloodbagZombie
 {
 	weight = 2;
 };
-class ItemBloodbagMutant
+class DZE_Item_Medi_BloodbagMutant
 {
 	weight = 2;
 };
-class ItemBloodbagRabbit
+class DZE_Item_Medi_BloodbagRabbit
 {
 	weight = 1;
 };
-class ItemBloodbagChicken
+class DZE_Item_Medi_BloodbagChicken
 {
 	weight = 1;
 };
-class ItemBloodbagDog
+class DZE_Item_Medi_BloodbagDog
 {
 	weight = 2;
 };
-class ItemBloodbagCow
+class DZE_Item_Medi_BloodbagCow
 {
 	weight = 2;
 };
-class ItemBloodbagBoar
+class DZE_Item_Medi_BloodbagBoar
 {
 	weight = 2;
 };
-class ItemBloodbagGoat
+class DZE_Item_Medi_BloodbagGoat
 {
 	weight = 2;
 };
-class ItemBloodbagSheep
+class DZE_Item_Medi_BloodbagSheep
 {
 	weight = 2;
 };

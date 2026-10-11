@@ -8,8 +8,8 @@ Hospital[] =
 
 HospitalSmall[] =
 {
-	{Loot_MAGAZINE,		1,		equip_gauze},
-	{Loot_MAGAZINE,		1,		equip_gauzepackaged},	
+	{Loot_MAGAZINE,		1,		DZE_Item_Medi_Gauze},
+	{Loot_MAGAZINE,		1,		DZE_Item_Medi_Gauzepackaged},
 	{Loot_GROUP,		10,		MedicalLow},
 	{Loot_GROUP,		5,		MedicalHigh}
 };

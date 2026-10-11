@@ -71,9 +71,9 @@ class equip_rag : CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
-			output[] = {{"ItemBandage",2}};
+			output[] = {{"DZE_Item_Medi_Bandage",2}};
 			outputweapons[] = {};
-			input[] = {{"equip_gauze",2},{"equip_rag",1},{"equip_string",1}};
+			input[] = {{"DZE_Item_Medi_Gauze",2},{"equip_rag",1},{"equip_string",1}};
 		};
 	};	
 };
@@ -93,9 +93,9 @@ class equip_string : CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
-			output[] = {{"ItemBandage",2}};
+			output[] = {{"DZE_Item_Medi_Bandage",2}};
 			outputweapons[] = {};
-			input[] = {{"equip_gauze",2},{"equip_rag",1},{"equip_string",1}};
+			input[] = {{"DZE_Item_Medi_Gauze",2},{"equip_rag",1},{"equip_string",1}};
 		};
 		class Crafting1 {
 			text = "$STR_ITEM_NAME_TRIPWIRE_CANS";

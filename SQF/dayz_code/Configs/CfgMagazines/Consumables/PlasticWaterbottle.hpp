@@ -106,7 +106,7 @@ class ItemPlasticWaterBottleBoiled : ItemWaterBottle
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"ItemPlasticWaterBottleHerbal",1}};
-			input[] = {{"equip_herb_box",1},{"ItemPlasticWaterBottleBoiled",1}};
+			input[] = {{"DZE_Item_Medi_Herb_Box",1},{"ItemPlasticWaterBottleBoiled",1}};
 		};
 		class Empty
 		{

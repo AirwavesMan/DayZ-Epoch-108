@@ -27,7 +27,7 @@ if (_finished) then {
 		format [localize "str_actions_medical_general_self",_displayName] call DZE_fnc_rollingMessages;
 	} else {
 		//Give humanity reward to player giving the morphine to another player.
-		local _humanityGain = [25,50] select (_item == "ItemMorphine");
+		local _humanityGain = [25,50] select (_item == "DZE_Item_Medi_Morphine");
 		_humanityGain call player_humanityChange;
 
 		PVDZ_send = [_unit,"Morphine",[_unit,player,_item]];

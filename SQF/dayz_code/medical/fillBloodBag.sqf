@@ -5,7 +5,7 @@ call gear_ui_init;
 closeDialog 0;
 
 local _player = player;
-local _emptyBloodBag = "emptyBloodBag";
+local _emptyBloodBag = "DZE_Item_Medi_EmptyBloodBag";
 local _hasEmptyBloodBag = _emptyBloodBag in magazines player;
 local _bloodLevel = _player getVariable ["USEC_BloodQty", 0];
 local _bloodAmount = 4000;
@@ -49,11 +49,11 @@ if (_count == 1) then {
 		local _bloodType = _player getVariable ["blood_type", false];
 		local _rh = _player getVariable ["rh_factor", false];
 		local _bloodbag = call {
-			if (dayz_classicBloodBagSystem) exitwith {"ItemBloodbag"};			
-			if (_bloodType == "A") exitwith {if (_rh) then {"wholeBloodBagAPOS"} else {"wholeBloodBagANEG"};};
-			if (_bloodType == "B") exitwith {if (_rh) then {"wholeBloodBagBPOS"} else {"wholeBloodBagBNEG"};};
-			if (_bloodType == "AB") exitwith {if (_rh) then {"wholeBloodBagABPOS"} else {"wholeBloodBagABNEG"};};
-			if (_bloodType == "O") exitwith {if (_rh) then {"wholeBloodBagOPOS"} else {"wholeBloodBagONEG"};};
+			if (dayz_classicBloodBagSystem) exitwith {"DZE_Item_Medi_Bloodbag"};
+			if (_bloodType == "A") exitwith {if (_rh) then {"DZE_Item_Medi_WholeBloodBagAPOS"} else {"DZE_Item_Medi_WholeBloodBagANEG"};};
+			if (_bloodType == "B") exitwith {if (_rh) then {"DZE_Item_Medi_WholeBloodBagBPOS"} else {"DZE_Item_Medi_WholeBloodBagBNEG"};};
+			if (_bloodType == "AB") exitwith {if (_rh) then {"DZE_Item_Medi_WholeBloodBagABPOS"} else {"DZE_Item_Medi_WholeBloodBagABNEG"};};
+			if (_bloodType == "O") exitwith {if (_rh) then {"DZE_Item_Medi_WholeBloodBagOPOS"} else {"DZE_Item_Medi_WholeBloodBagONEG"};};
 		};
 		_player addMagazine _bloodbag;
 	};

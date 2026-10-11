@@ -696,9 +696,9 @@ class FSM
 						 "				if (_x != ""CSGAS"") then {" \n
                          "					if (_x == ""BoltSteel"") then { _x = ""1Rnd_Arrow_Wood"" }; // Convert BoltSteel to WoodenArrow" \n
                          "					if (dayz_classicBloodBagSystem) then {" \n
-                         "						if (_x in dayz_typedBags) then {_x = ""ItemBloodbag""};" \n
+                         "						if (_x in dayz_typedBags) then {_x = ""DZE_Item_Medi_Bloodbag""};" \n
                          "					} else {" \n
-                         "						if (_x == ""ItemBloodbag"") then { _x = ""bloodBagONEG"" }; // Convert ItemBloodbag into universal blood type/rh bag" \n
+                         "						if (_x == ""DZE_Item_Medi_Bloodbag"") then { _x = ""DZE_Item_Medi_BloodBagONEG"" }; // Convert DZE_Item_Medi_Bloodbag into universal blood type/rh bag" \n
                          "					};" \n
                          "					dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
                          "				};" \n

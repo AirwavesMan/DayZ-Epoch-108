@@ -5,7 +5,7 @@ _unit = (_this select 3) select 0;
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE_fnc_rollingMessages;};
 dayz_actionInProgress = true;
 
-player removeMagazine "ItemAntibacterialWipe";
+player removeMagazine "DZE_Item_Medi_AntibacterialWipe";
 
 call fnc_usec_medic_removeActions;
 r_action = false;
@@ -38,7 +38,7 @@ if (_finished) then {
 		format[localize "str_actions_medical_gave_wipes",_unit call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;
 	};
 } else {
-	player addMagazine "ItemAntibacterialWipe";
+	player addMagazine "DZE_Item_Medi_AntibacterialWipe";
 };
 
 dayz_actionInProgress = false;

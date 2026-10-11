@@ -16,7 +16,7 @@ if (_button == 1) then {
 	local _item = gearSlotData _control;
 	
 	if ( //No right click action
-		(!DZE_SelfTransfuse && {_item in ["ItemBloodbag","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"]})
+		(!DZE_SelfTransfuse && {_item in ["DZE_Item_Medi_Bloodbag","DZE_Item_Medi_WholeBloodBagANEG","DZE_Item_Medi_WholeBloodBagAPOS","DZE_Item_Medi_WholeBloodBagBNEG","DZE_Item_Medi_WholeBloodBagBPOS","DZE_Item_Medi_WholeBloodBagABNEG","DZE_Item_Medi_WholeBloodBagABPOS","DZE_Item_Medi_WholeBloodBagONEG","DZE_Item_Medi_WholeBloodBagOPOS"]})
 	) exitWith {};
 	
 	if (mouseOverCarry) then {

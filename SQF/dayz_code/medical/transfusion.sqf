@@ -21,23 +21,23 @@ if (!dayz_classicBloodBagSystem) then {
 	local _bloodTestdone = _unit getVariable ["blood_testdone", false]; //Get status of blood test of receiving unit
 	local _bloodResult = _bloodType + _rhVal; // Combine strings for convenience
 	
-	local _bloodBagArrayNeeded = ["bloodBagONEG"];
+	local _bloodBagArrayNeeded = ["DZE_Item_Medi_BloodBagONEG"];
 
 	if (_bloodTestdone) then { // if the recipient does not know his blood type, only O- can apply
 		_bloodBagArrayNeeded = call {
-			if (_bloodResult == "APOS") exitWith {["bloodBagAPOS","bloodBagANEG","bloodBagONEG","bloodBagOPOS"];};
-			if (_bloodResult == "ANEG") exitWith {["bloodBagANEG","bloodBagONEG"];};
-			if (_bloodResult == "BPOS") exitWith {["bloodBagBPOS","bloodBagBNEG","bloodBagONEG","bloodBagOPOS"];};
-			if (_bloodResult == "BNEG") exitWith {["bloodBagBNEG","bloodBagONEG"];};
-			if (_bloodResult == "ABPOS") exitWith {["bloodBagABPOS","bloodBagABNEG","bloodBagANEG","bloodBagAPOS","bloodBagBNEG","bloodBagBPOS","bloodBagONEG","bloodBagOPOS"];};
-			if (_bloodResult == "ABNEG") exitWith {["bloodBagABNEG","bloodBagANEG","bloodBagBNEG","bloodBagONEG"];};
-			if (_bloodResult == "OPOS") exitWith {["bloodBagOPOS","bloodBagONEG"];};
-			if (_bloodResult == "ONEG") exitWith {["bloodBagONEG"];};
+			if (_bloodResult == "APOS") exitWith {["DZE_Item_Medi_BloodBagAPOS","DZE_Item_Medi_BloodBagANEG","DZE_Item_Medi_BloodBagONEG","DZE_Item_Medi_BloodBagOPOS"];};
+			if (_bloodResult == "ANEG") exitWith {["DZE_Item_Medi_BloodBagANEG","DZE_Item_Medi_BloodBagONEG"];};
+			if (_bloodResult == "BPOS") exitWith {["DZE_Item_Medi_BloodBagBPOS","DZE_Item_Medi_BloodBagBNEG","DZE_Item_Medi_BloodBagONEG","DZE_Item_Medi_BloodBagOPOS"];};
+			if (_bloodResult == "BNEG") exitWith {["DZE_Item_Medi_BloodBagBNEG","DZE_Item_Medi_BloodBagONEG"];};
+			if (_bloodResult == "ABPOS") exitWith {["DZE_Item_Medi_BloodBagABPOS","DZE_Item_Medi_BloodBagABNEG","DZE_Item_Medi_BloodBagANEG","DZE_Item_Medi_BloodBagAPOS","DZE_Item_Medi_BloodBagBNEG","DZE_Item_Medi_BloodBagBPOS","DZE_Item_Medi_BloodBagONEG","DZE_Item_Medi_BloodBagOPOS"];};
+			if (_bloodResult == "ABNEG") exitWith {["DZE_Item_Medi_BloodBagABNEG","DZE_Item_Medi_BloodBagANEG","DZE_Item_Medi_BloodBagBNEG","DZE_Item_Medi_BloodBagONEG"];};
+			if (_bloodResult == "OPOS") exitWith {["DZE_Item_Medi_BloodBagOPOS","DZE_Item_Medi_BloodBagONEG"];};
+			if (_bloodResult == "ONEG") exitWith {["DZE_Item_Medi_BloodBagONEG"];};
 		};
 	};
 
 	local _bagFound = (_bagUsed in _bloodBagArrayNeeded);
-	local _bloodBagWholeNeeded = "wholeBloodBag" + _bloodResult;
+	local _bloodBagWholeNeeded = 'DZE_Item_Medi_WholeBloodBag' + _bloodResult;
 	local _wholeBagFound = (_bagUsed == _bloodBagWholeNeeded);
 
 	call { // Options are listed top to bottom in order of precedence

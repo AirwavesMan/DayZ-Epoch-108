@@ -16,7 +16,7 @@ DZE_SafeZoneZombieLoot = false;  // Enable spawning of Zombies and loot in posit
 dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
 infectedWaterHoles = []; //Needed for non-cherno maps.
 dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
-dayz_classicBloodBagSystem = true; // disable blood types system and use the single classic ItemBloodbag
+dayz_classicBloodBagSystem = true; // disable blood types system and use the single classic DZE_Item_Medi_Bloodbag
 dayz_enableFlies = true; // Enable flies on dead bodies (negatively impacts FPS).
 
 //	Building
@@ -110,7 +110,7 @@ DZE_addVehicleAmmo = false; // Adds ammo to all spawned, bought, claimed and upg
 DZE_Elevator_Classnames = [];
 
 // Uncomment the lines below to change the default loadout
-//DefaultMagazines = ["HandRoadFlare","ItemBandage","ItemPainkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
+//DefaultMagazines = ["HandRoadFlare","DZE_Item_Medi_Bandage","DZE_Item_Medi_Painkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
 //DefaultWeapons = ["DZE_Wep_Makarov","DZE_Tool_Flashlight"];
 //DefaultBackpack = "GymBag_Camo_DZE1";
 //DefaultBackpackItems = []; // Can include both weapons and magazines i.e. ["DZE_Wep_PDW","30Rnd_9x19_UZI"];
@@ -331,7 +331,7 @@ if (!isDedicated) then {
 		FORMAT -- (no comma after last array entry)
 		[_classname,_text,_execute,_condition],
 		PARAMETERS
-		_classname  : the name of the class to click on (example = "ItemBloodbag")
+		_classname  : the name of the class to click on (example = "DZE_Item_Medi_Bloodbag")
 		_text       : the text for the option that is displayed when right clicking on the item (example = "Self Transfuse")
 		_execute    : compiled code to execute when the option is selected (example = "execVM 'my\scripts\self_transfuse.sqf';")
 		_condition  : compiled code evaluated to determine whether or not the option is displayed (example = {true})

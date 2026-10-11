@@ -14,7 +14,7 @@ if (isNil "_medsUsed") then {
 			// Set painkillers if not defined (used when giving to somebody)
 			_medsUsed = _x;
 		};
-	} count ["ItemPainkiller","ItemPainkiller1","ItemPainkiller2","ItemPainkiller3","ItemPainkiller4","ItemPainkiller5","ItemPainkiller6"];
+	} count ["DZE_Item_Medi_Painkiller","DZE_Item_Medi_Painkiller1","DZE_Item_Medi_Painkiller2","DZE_Item_Medi_Painkiller3","DZE_Item_Medi_Painkiller4","DZE_Item_Medi_Painkiller5","DZE_Item_Medi_Painkiller6"];
 };
 
 if !(isNil "_medsUsed") then {

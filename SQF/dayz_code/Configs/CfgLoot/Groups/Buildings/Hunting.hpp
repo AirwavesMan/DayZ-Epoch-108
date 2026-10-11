@@ -8,7 +8,7 @@ Hunting[] =
 	//Tools
 	{Loot_GROUP,		5,		ToolsSurvival},
 	{Loot_MAGAZINE,		2,		ItemWaterbottleUnfilled},
-	{Loot_MAGAZINE,		2,		ItemHeatPack},
+	{Loot_MAGAZINE,		2,		DZE_Item_Medi_HeatPack},
 	{Loot_MAGAZINE,		2,		FoodMRE},
 	{Loot_MAGAZINE,		2,		FoodNutmix},
 	{Loot_MAGAZINE,		1,		ItemDocument},
@@ -22,7 +22,7 @@ Hunting[] =
 	//Other
 	{Loot_GROUP,		3,		tents},
 	{Loot_MAGAZINE,		1,		equip_tent_poles},
-	{Loot_MAGAZINE,		2,		ItemBandage},
+	{Loot_MAGAZINE,		2,		DZE_Item_Medi_Bandage},
 	{Loot_MAGAZINE,		3,		DZE_Item_Kit_Trap_BearTrap},
 	{Loot_MAGAZINE,		3,		12Rnd_Quiver_Wood},
 	{Loot_MAGAZINE,		2,		1Rnd_Bolt_Tranquilizer},

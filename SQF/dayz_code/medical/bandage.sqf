@@ -25,18 +25,18 @@ if (_finished) then {
 	if (_unit == player) then {
 	//Self Healing
 		//Self Healing
-		[player, player, if (_item == "ItemSepsisBandage") then {true} else {false}] call player_medBandage;
-		_msg = ["str_actions_medical_bandage_self","str_actions_medical_sepsisbandage_self"] select (_item == "ItemSepsisBandage");
+		[player, player, if (_item == "DZE_Item_Medi_BandageSepsis") then {true} else {false}] call player_medBandage;
+		_msg = ["str_actions_medical_bandage_self","str_actions_medical_sepsisbandage_self"] select (_item == "DZE_Item_Medi_BandageSepsis");
 		localize _msg call DZE_fnc_rollingMessages;
 	} else {
 		// Heal another player
-		PVDZ_send = [_unit,"Bandage",[_unit, player, if (_item == "ItemSepsisBandage") then {true} else {false}]];
+		PVDZ_send = [_unit,"Bandage",[_unit, player, if (_item == "DZE_Item_Medi_BandageSepsis") then {true} else {false}]];
 		publicVariableServer "PVDZ_send";
 
 		//Give humanity
 		20 call player_humanityChange;
 
-		_msg = ["str_actions_medical_gave_bandage","str_actions_medical_gave_sepsisbandage"] select (_item == "ItemSepsisBandage");
+		_msg = ["str_actions_medical_gave_bandage","str_actions_medical_gave_sepsisbandage"] select (_item == "DZE_Item_Medi_BandageSepsis");
 		format[localize _msg,_unit call DZE_fnc_getNamePlayer] call DZE_fnc_rollingMessages;
 	};
 } else {

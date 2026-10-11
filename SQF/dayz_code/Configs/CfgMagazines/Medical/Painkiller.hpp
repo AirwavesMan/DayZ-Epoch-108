@@ -1,113 +1,96 @@
-class ItemPainkiller : CA_Magazine
-{
+class DZE_Item_Medi_Painkiller : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;	
+	displayName = "$STR_EQUIP_NAME_PAINKILLER";
+	descriptionShort = "$STR_EQUIP_DESC_PAINKILLER";
 	model = "\dayz_equip\models\med_painkiller_gear.p3d";
 	picture = "\dayz_equip\textures\equip_painkiller_ca.paa";
-	displayName = $STR_EQUIP_NAME_PAINKILLER;
-	descriptionShort = $STR_EQUIP_DESC_PAINKILLER;
-	
-	class medical
-	{
+	count = 1;
+	type = 256;
+
+	class medical {
+		qtyRemaining = "DZE_Item_Medi_Painkiller6";
 		chance = 1.10; //100%
 		amount = -1;
-		qtyRemaining = "ItemPainkiller6";
 	};
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_TAKE_PAINKILLER;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_TAKE_PAINKILLER";
 			script = "spawn player_useMeds;";
 		};
 		class Combine {
-			text = $STR_ANTIBIOTICS_COMBINE;
+			text = "$STR_ANTIBIOTICS_COMBINE";
 			script = "spawn player_combinePainkiller;";
 		};
 	};
 };
 
-class ItemPainkiller6 : ItemPainkiller
-{
-	displayName = $STR_EQUIP_NAME_PAINKILLER_6;
-	descriptionShort = $STR_EQUIP_DESC_PAINKILLER_6;
-	
-	class medical
-	{
+class DZE_Item_Medi_Painkiller6 : DZE_Item_Medi_Painkiller {
+	displayName = "$STR_EQUIP_NAME_PAINKILLER_6";
+	descriptionShort = "$STR_EQUIP_DESC_PAINKILLER_6";
+
+	class medical {
+		qtyRemaining = "DZE_Item_Medi_Painkiller5";
 		amount = 6;
-		qtyRemaining = "ItemPainkiller5";
 	};
 };
 
-class ItemPainkiller5 : ItemPainkiller
-{
-	displayName = $STR_EQUIP_NAME_PAINKILLER_5;
-	descriptionShort = $STR_EQUIP_DESC_PAINKILLER_5;
-	
-	class medical
-	{
+class DZE_Item_Medi_Painkiller5 : DZE_Item_Medi_Painkiller {
+	displayName = "$STR_EQUIP_NAME_PAINKILLER_5";
+	descriptionShort = "$STR_EQUIP_DESC_PAINKILLER_5";
+
+	class medical {
+		qtyRemaining = "DZE_Item_Medi_Painkiller4";
 		amount = 5;
-		qtyRemaining = "ItemPainkiller4";
 	};
 };
 
-class ItemPainkiller4 : ItemPainkiller
-{
-	displayName = $STR_EQUIP_NAME_PAINKILLER_4;
-	descriptionShort = $STR_EQUIP_DESC_PAINKILLER_4;
-	
-	class medical
-	{
+class DZE_Item_Medi_Painkiller4 : DZE_Item_Medi_Painkiller {
+	displayName = "$STR_EQUIP_NAME_PAINKILLER_4";
+	descriptionShort = "$STR_EQUIP_DESC_PAINKILLER_4";
+
+	class medical {
+		qtyRemaining = "DZE_Item_Medi_Painkiller3";
 		amount = 4;
-		qtyRemaining = "ItemPainkiller3";
 	};
 };
 
-class ItemPainkiller3 : ItemPainkiller
-{
-	displayName = $STR_EQUIP_NAME_PAINKILLER_3;
-	descriptionShort = $STR_EQUIP_DESC_PAINKILLER_3;
-	
-	class medical
-	{
+class DZE_Item_Medi_Painkiller3 : DZE_Item_Medi_Painkiller {
+	displayName = "$STR_EQUIP_NAME_PAINKILLER_3";
+	descriptionShort = "$STR_EQUIP_DESC_PAINKILLER_3";
+
+	class medical {
+		qtyRemaining = "DZE_Item_Medi_Painkiller2";
 		amount = 3;
-		qtyRemaining = "ItemPainkiller2";
 	};
 };
 
-class ItemPainkiller2 : ItemPainkiller
-{
-	displayName = $STR_EQUIP_NAME_PAINKILLER_2;
-	descriptionShort = $STR_EQUIP_DESC_PAINKILLER_2;
-	
-	class medical
-	{
+class DZE_Item_Medi_Painkiller2 : DZE_Item_Medi_Painkiller {
+	displayName = "$STR_EQUIP_NAME_PAINKILLER_2";
+	descriptionShort = "$STR_EQUIP_DESC_PAINKILLER_2";
+
+	class medical {
+		qtyRemaining = "DZE_Item_Medi_Painkiller1";
 		amount = 2;
-		qtyRemaining = "ItemPainkiller1";
 	};
 };
 
-class ItemPainkiller1 : ItemPainkiller
-{
-	displayName = $STR_EQUIP_NAME_PAINKILLER_1;
-	descriptionShort = $STR_EQUIP_DESC_PAINKILLER_1;
-	
-	class medical
-	{
+class DZE_Item_Medi_Painkiller1 : DZE_Item_Medi_Painkiller {
+	displayName = "$STR_EQUIP_NAME_PAINKILLER_1";
+	descriptionShort = "$STR_EQUIP_DESC_PAINKILLER_1";
+
+	class medical {
+		qtyRemaining = "DZE_Item_Medi_PainkillerEmpty";
 		amount = 1;
-		qtyRemaining = "ItemPainkillerEmpty";
 	};
 };
 
-class ItemPainkillerEmpty : CA_Magazine
-{
+class DZE_Item_Medi_PainkillerEmpty : CA_Magazine {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_PAINKILLER_EMPTY;
-	descriptionShort = $STR_EQUIP_DESC_PAINKILLER_EMPTY;
-	count = 1;
-	type = 256;	
+	displayName = "$STR_EQUIP_NAME_PAINKILLER_EMPTY";
+	descriptionShort = "$STR_EQUIP_DESC_PAINKILLER_EMPTY";
 	model = "\dayz_equip\models\med_painkiller_gear.p3d";
 	picture = "\dayz_epoch_c\icons\equipment\ItemPainkillerEmpty.paa";
+	count = 1;
+	type = 256;
 };

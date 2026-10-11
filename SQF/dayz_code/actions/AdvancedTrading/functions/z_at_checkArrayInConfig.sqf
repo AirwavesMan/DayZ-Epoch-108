@@ -44,8 +44,8 @@ _processGear = {
 		_y = _x;
 		_swap = false;
 		_swap2 = false;
-		if (_y == "ItemBloodbag" && dayz_classicBloodBagSystem) then {
-			_y = "bloodBagONEG";
+		if (_y == "DZE_Item_Medi_Bloodbag" && dayz_classicBloodBagSystem) then {
+			_y = "DZE_Item_Medi_BloodBagONEG";
 			_swap = true;
 		};
 		if (_y == _myVehType && {_baseVehicle != ""}) then {
@@ -68,7 +68,7 @@ _processGear = {
 
 				_sell = getArray(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y >> "sell");
 				_buy = getArray(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y >> "buy");
-				if (_swap) then {_y = "ItemBloodbag"};
+				if (_swap) then {_y = "DZE_Item_Medi_Bloodbag"};
 				call {
 					if (_passedType == "trade_items") exitwith
 					{

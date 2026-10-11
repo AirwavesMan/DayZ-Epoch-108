@@ -32,7 +32,7 @@ _arrayOfTraderCat = Z_traderData;
 				_BcurrencyQty = _buy select 0;
 				_ScurrencyQty = _sell select 0;
 				if (dayz_classicBloodBagSystem && _y in dayz_typedBags) then {
-					if (_y == "bloodBagONEG") then {_y = "ItemBloodbag";} else {_ignore = true;};
+					if (_y == "DZE_Item_Medi_BloodBagONEG") then {_y = "DZE_Item_Medi_Bloodbag";} else {_ignore = true;};
 				};
 
 				if (_type == "trade_items") then {

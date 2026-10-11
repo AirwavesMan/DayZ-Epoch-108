@@ -1,323 +1,281 @@
-class bloodBagBase : CA_Magazine
-{
+class DZE_Item_Medi_BloodBagBase : CA_Magazine {
 	scope = 0;
-	count = 1;
-	type = 256;	
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bbag_full_ca.paa";
+	count = 1;
+	type = 256;
 };
 
-class bloodBagANEG : bloodBagBase
-{
+class DZE_Item_Medi_BloodBagANEG : DZE_Item_Medi_BloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_bloodBagANEG;
+	displayName = "$STR_BLD_name_bloodBagANEG";
+	descriptionShort = "$STR_BLD_desc_bloodBagANEG";
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_A.p3d";
-	descriptionShort = $STR_BLD_desc_bloodBagANEG;
 };
 
-class bloodBagAPOS : bloodBagBase
-{
+class DZE_Item_Medi_BloodBagAPOS : DZE_Item_Medi_BloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_bloodBagAPOS;
+	displayName = "$STR_BLD_name_bloodBagAPOS";
+	descriptionShort = "$STR_BLD_desc_bloodBagAPOS";
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_A.p3d";
-	descriptionShort = $STR_BLD_desc_bloodBagAPOS;
 };
 
-class bloodBagBNEG : bloodBagBase
-{
+class DZE_Item_Medi_BloodBagBNEG : DZE_Item_Medi_BloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_bloodBagBNEG;
+	displayName = "$STR_BLD_name_bloodBagBNEG";
+	descriptionShort = "$STR_BLD_desc_bloodBagBNEG";
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_B.p3d";
-	descriptionShort = $STR_BLD_desc_bloodBagBNEG;
 };
 
-class bloodBagBPOS : bloodBagBase
-{
+class DZE_Item_Medi_BloodBagBPOS : DZE_Item_Medi_BloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_bloodBagBPOS;
+	displayName = "$STR_BLD_name_bloodBagBPOS";
+	descriptionShort = "$STR_BLD_desc_bloodBagBPOS";
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_B.p3d";
-	descriptionShort = $STR_BLD_desc_bloodBagBPOS;
 };
 
-class bloodBagABNEG : bloodBagBase
-{
+class DZE_Item_Medi_BloodBagABNEG : DZE_Item_Medi_BloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_bloodBagABNEG;
+	displayName = "$STR_BLD_name_bloodBagABNEG";
+	descriptionShort = "$STR_BLD_desc_bloodBagABNEG";
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_AB.p3d";
-	descriptionShort = $STR_BLD_desc_bloodBagABNEG;
 };
 
-class bloodBagABPOS : bloodBagBase
-{
+class DZE_Item_Medi_BloodBagABPOS : DZE_Item_Medi_BloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_bloodBagABPOS;
+	displayName = "$STR_BLD_name_bloodBagABPOS";
+	descriptionShort = "$STR_BLD_desc_bloodBagABPOS";
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_AB.p3d";
-	descriptionShort = $STR_BLD_desc_bloodBagABPOS;
 };
 
-class bloodBagONEG : bloodBagBase
-{
+class DZE_Item_Medi_BloodBagONEG : DZE_Item_Medi_BloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_bloodBagONEG;
+	displayName = "$STR_BLD_name_bloodBagONEG";
+	descriptionShort = "$STR_BLD_desc_bloodBagONEG";
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_O.p3d";
-	descriptionShort = $STR_BLD_desc_bloodBagONEG;
 };
 
-class bloodBagOPOS : bloodBagBase
-{
+class DZE_Item_Medi_BloodBagOPOS : DZE_Item_Medi_BloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_bloodBagOPOS;
+	displayName = "$STR_BLD_name_bloodBagOPOS";
+	descriptionShort = "$STR_BLD_desc_bloodBagOPOS";
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_O.p3d";
-	descriptionShort = $STR_BLD_desc_bloodBagOPOS;
 };
 
 //Whole blood bags -- Can only be obtained by taking blood from another player.
-class wholeBloodBagBase : bloodBagBase
-{
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_BLD_use;
+class DZE_Item_Medi_WholeBloodBagBase : DZE_Item_Medi_BloodBagBase {
+	class ItemActions {
+		class Use {
+			text = "$STR_BLD_use";
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
-class wholeBloodBagANEG : wholeBloodBagBase
-{
+class DZE_Item_Medi_WholeBloodBagANEG : DZE_Item_Medi_WholeBloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_wholeBloodBagANEG;
+	displayName = "$STR_BLD_name_wholeBloodBagANEG";
+	descriptionShort = "$STR_BLD_desc_wholeBloodBagANEG";
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_A.p3d";
-	descriptionShort = $STR_BLD_desc_wholeBloodBagANEG;
 };
-class wholeBloodBagAPOS : wholeBloodBagBase
-{
+class DZE_Item_Medi_WholeBloodBagAPOS : DZE_Item_Medi_WholeBloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_wholeBloodBagAPOS;
+	displayName = "$STR_BLD_name_wholeBloodBagAPOS";
+	descriptionShort = "$STR_BLD_desc_wholeBloodBagAPOS";
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_A.p3d";
-	descriptionShort = $STR_BLD_desc_wholeBloodBagAPOS;
 };
-class wholeBloodBagBNEG : wholeBloodBagBase
-{
+class DZE_Item_Medi_WholeBloodBagBNEG : DZE_Item_Medi_WholeBloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_wholeBloodBagBNEG;
+	displayName = "$STR_BLD_name_wholeBloodBagBNEG";
+	descriptionShort = "$STR_BLD_desc_wholeBloodBagBNEG";
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_B.p3d";
-	descriptionShort = $STR_BLD_desc_wholeBloodBagBNEG;
 };
-class wholeBloodBagBPOS : wholeBloodBagBase
-{
+class DZE_Item_Medi_WholeBloodBagBPOS : DZE_Item_Medi_WholeBloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_wholeBloodBagBPOS;
+	displayName = "$STR_BLD_name_wholeBloodBagBPOS";
+	descriptionShort = "$STR_BLD_desc_wholeBloodBagBPOS";
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_B.p3d";
-	descriptionShort = $STR_BLD_desc_wholeBloodBagBPOS;
 };
-class wholeBloodBagABNEG : wholeBloodBagBase
-{
+class DZE_Item_Medi_WholeBloodBagABNEG : DZE_Item_Medi_WholeBloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_wholeBloodBagABNEG;
+	displayName = "$STR_BLD_name_wholeBloodBagABNEG";
+	descriptionShort = "$STR_BLD_desc_wholeBloodBagABNEG";
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_AB.p3d";
-	descriptionShort = $STR_BLD_desc_wholeBloodBagABNEG;
 };
-class wholeBloodBagABPOS : wholeBloodBagBase
-{
+class DZE_Item_Medi_WholeBloodBagABPOS : DZE_Item_Medi_WholeBloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_wholeBloodBagABPOS;
+	displayName = "$STR_BLD_name_wholeBloodBagABPOS";
+	descriptionShort = "$STR_BLD_desc_wholeBloodBagABPOS";
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_AB.p3d";
-	descriptionShort = $STR_BLD_desc_wholeBloodBagABPOS;
 };
-class wholeBloodBagONEG : wholeBloodBagBase
-{
+class DZE_Item_Medi_WholeBloodBagONEG : DZE_Item_Medi_WholeBloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_wholeBloodBagONEG;
+	displayName = "$STR_BLD_name_wholeBloodBagONEG";
+	descriptionShort = "$STR_BLD_desc_wholeBloodBagONEG";
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_O.p3d";
-	descriptionShort = $STR_BLD_desc_wholeBloodBagONEG;
 };
-class wholeBloodBagOPOS : wholeBloodBagBase
-{
+class DZE_Item_Medi_WholeBloodBagOPOS : DZE_Item_Medi_WholeBloodBagBase {
 	scope = 2;
-	displayName = $STR_BLD_name_wholeBloodBagOPOS;
+	displayName = "$STR_BLD_name_wholeBloodBagOPOS";
+	descriptionShort = "$STR_BLD_desc_wholeBloodBagOPOS";
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_O.p3d";
-	descriptionShort = $STR_BLD_desc_wholeBloodBagOPOS;
 };
 
 //MISC tools needed
-class bloodTester : CA_Magazine
-{
+class DZE_Item_Medi_BloodTester : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;	
+	displayName = "$STR_BLD_name_bloodTester";
+	descriptionShort = "$STR_BLD_desc_bloodTester";
 	model = "z\addons\dayz_communityassets\models\blood_test.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_blood_test_ca.paa";
-	displayName = $STR_BLD_name_bloodTester;
-	descriptionShort = $STR_BLD_desc_bloodTester;
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_BLD_use_bloodTester;
+	count = 1;
+	type = 256;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_BLD_use_bloodTester";
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
-class transfusionKit : CA_Magazine
-{
+class DZE_Item_Medi_TransfusionKit : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;	
+	displayName = "$STR_BLD_name_transfusionKit";
+	descriptionShort = "$STR_BLD_desc_transfusionKit";
 	model = "z\addons\dayz_communityassets\models\blood_transfuse.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bloodbag_transfuse_CA.paa";
-	displayName = $STR_BLD_name_transfusionKit;
-	descriptionShort = $STR_BLD_desc_transfusionKit;
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_BLD_use_transfusionKit;
+	count = 1;
+	type = 256;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_BLD_use_transfusionKit";
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
-class emptyBloodBag : CA_Magazine
-{
+class DZE_Item_Medi_EmptyBloodBag : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;	
+	displayName = "$STR_BLD_name_emptyBloodBag";
+	descriptionShort = "$STR_BLD_desc_emptyBloodBag";
 	model = "z\addons\dayz_communityassets\models\bbag_empty.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bbag_empty_ca.paa";
-	displayName = $STR_BLD_name_emptyBloodBag;
-	descriptionShort = $STR_BLD_desc_emptyBloodBag;
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_BLD_take;
+	count = 1;
+	type = 256;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_BLD_take";
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
 //Classic blood bag
-class ItemBloodbag: CA_Magazine
-{
+class DZE_Item_Medi_Bloodbag: CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;
-	displayName = $STR_EQUIP_NAME_BLOOD_BAG;
+	displayName = "$STR_EQUIP_NAME_BLOOD_BAG";
+	descriptionShort = "$STR_EQUIP_DESC_BLOOD_BAG";
 	model = "\dayz_equip\models\bloodbag.p3d";
 	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
-	descriptionShort = $STR_EQUIP_DESC_BLOOD_BAG;
-	
-	class ItemActions 
-	{
-		class Use 
-		{
-			text = $STR_BLD_use;
+	count = 1;
+	type = 256;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_BLD_use";
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
-class ItemBloodbagInfected: CA_Magazine
-{
+class DZE_Item_Medi_BloodbagInfected: CA_Magazine {
 	scope = 2;
-	count = 1;
 	displayName = "$STR_EPOCH_BLOODBAG_INFECTED";
-	model = "\dayz_equip\models\bloodbag.p3d";
-	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
 	descriptionShort = "$STR_EPOCH_BLOODBAG_INFECTED_DESC";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	count = 1;
 };
 
-class ItemBloodbagZombie: CA_Magazine
-{
+class DZE_Item_Medi_BloodbagZombie: CA_Magazine {
 	scope = 2;
-	count = 1;
 	displayName = "$STR_EPOCH_BLOODBAG_ZOMBIE";
-	model = "\dayz_equip\models\bloodbag.p3d";
-	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
 	descriptionShort = "$STR_EPOCH_BLOODBAG_ZOMBIE_DESC";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	count = 1;
 };
 
-class ItemBloodbagMutant: CA_Magazine
-{
+class DZE_Item_Medi_BloodbagMutant: CA_Magazine {
 	scope = 2;
-	count = 1;
 	displayName = "$STR_EPOCH_BLOODBAG_MUTANT";
-	model = "\dayz_equip\models\bloodbag.p3d";
-	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
 	descriptionShort = "$STR_EPOCH_BLOODBAG_MUTANT_DESC";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	count = 1;
 };
 
-class ItemBloodbagRabbit: CA_Magazine
-{
+class DZE_Item_Medi_BloodbagRabbit: CA_Magazine {
 	scope = 2;
-	count = 1;
 	displayName = "$STR_EPOCH_BLOODBAG_RABBIT";
-	model = "\dayz_equip\models\bloodbag.p3d";
-	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
 	descriptionShort = "$STR_EPOCH_BLOODBAG_RABBIT_DESC";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	count = 1;
 };
 
-class ItemBloodbagChicken: CA_Magazine
-{
+class DZE_Item_Medi_BloodbagChicken: CA_Magazine {
 	scope = 2;
-	count = 1;
 	displayName = "$STR_EPOCH_BLOODBAG_CHICKEN";
-	model = "\dayz_equip\models\bloodbag.p3d";
-	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
 	descriptionShort = "$STR_EPOCH_BLOODBAG_CHICKEN_DESC";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	count = 1;
 };
 
-class ItemBloodbagDog: CA_Magazine
-{
+class DZE_Item_Medi_BloodbagDog: CA_Magazine {
 	scope = 2;
-	count = 1;
 	displayName = "$STR_EPOCH_BLOODBAG_DOG";
-	model = "\dayz_equip\models\bloodbag.p3d";
-	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
 	descriptionShort = "$STR_EPOCH_BLOODBAG_DOG_DESC";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	count = 1;
 };
 
-class ItemBloodbagCow: CA_Magazine
-{
+class DZE_Item_Medi_BloodbagCow: CA_Magazine {
 	scope = 2;
-	count = 1;
 	displayName = "$STR_EPOCH_BLOODBAG_COW";
-	model = "\dayz_equip\models\bloodbag.p3d";
-	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
 	descriptionShort = "$STR_EPOCH_BLOODBAG_COW_DESC";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	count = 1;
 };
 
-class ItemBloodbagBoar: CA_Magazine
-{
+class DZE_Item_Medi_BloodbagBoar: CA_Magazine {
 	scope = 2;
-	count = 1;
 	displayName = "$STR_EPOCH_BLOODBAG_BOAR";
-	model = "\dayz_equip\models\bloodbag.p3d";
-	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
 	descriptionShort = "$STR_EPOCH_BLOODBAG_BOAR_DESC";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	count = 1;
 };
 
-class ItemBloodbagGoat: CA_Magazine
-{
+class DZE_Item_Medi_BloodbagGoat: CA_Magazine {
 	scope = 2;
-	count = 1;
 	displayName = "$STR_EPOCH_BLOODBAG_GOAT";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_GOAT_DESC";
 	model = "\dayz_equip\models\bloodbag.p3d";
 	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
-	descriptionShort = "$STR_EPOCH_BLOODBAG_GOAT_DESC";
+	count = 1;
 };
 
-class ItemBloodbagSheep: CA_Magazine
-{
+class DZE_Item_Medi_BloodbagSheep: CA_Magazine {
 	scope = 2;
-	count = 1;
 	displayName = "$STR_EPOCH_BLOODBAG_SHEEP";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_SHEEP_DESC";
 	model = "\dayz_equip\models\bloodbag.p3d";
 	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
-	descriptionShort = "$STR_EPOCH_BLOODBAG_SHEEP_DESC";
+	count = 1;
 };

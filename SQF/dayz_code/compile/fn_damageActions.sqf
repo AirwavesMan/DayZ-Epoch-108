@@ -121,9 +121,9 @@ if (isPlayer cursorTarget && _hasPatient) then {
 		player reveal _unit;
 
 		//Arrays
-		local _antibiotics = ["ItemAntibiotic","ItemAntibiotic1","ItemAntibiotic2","ItemAntibiotic3","ItemAntibiotic4","ItemAntibiotic5","ItemAntibiotic6"];
-		local _painkillers = ["ItemPainkiller","ItemPainkiller1","ItemPainkiller2","ItemPainkiller3","ItemPainkiller4","ItemPainkiller5","ItemPainkiller6"];
-		local _bloodBags = ["bloodBagANEG","bloodBagAPOS","bloodBagBNEG","bloodBagBPOS","bloodBagABNEG","bloodBagABPOS","bloodBagONEG","bloodBagOPOS","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"];
+		local _antibiotics = ["DZE_Item_Medi_Antibiotic","DZE_Item_Medi_Antibiotic1","DZE_Item_Medi_Antibiotic2","DZE_Item_Medi_Antibiotic3","DZE_Item_Medi_Antibiotic4","DZE_Item_Medi_Antibiotic5","DZE_Item_Medi_Antibiotic6"];
+		local _painkillers = ["DZE_Item_Medi_Painkiller","DZE_Item_Medi_Painkiller1","DZE_Item_Medi_Painkiller2","DZE_Item_Medi_Painkiller3","DZE_Item_Medi_Painkiller4","DZE_Item_Medi_Painkiller5","DZE_Item_Medi_Painkiller6"];
+		local _bloodBags = ["DZE_Item_Medi_BloodBagANEG","DZE_Item_Medi_BloodBagAPOS","DZE_Item_Medi_BloodBagBNEG","DZE_Item_Medi_BloodBagBPOS","DZE_Item_Medi_BloodBagABNEG","DZE_Item_Medi_BloodBagABPOS","DZE_Item_Medi_BloodBagONEG","DZE_Item_Medi_BloodBagOPOS","DZE_Item_Medi_WholeBloodBagANEG","DZE_Item_Medi_WholeBloodBagAPOS","DZE_Item_Medi_WholeBloodBagBNEG","DZE_Item_Medi_WholeBloodBagBPOS","DZE_Item_Medi_WholeBloodBagABNEG","DZE_Item_Medi_WholeBloodBagABPOS","DZE_Item_Medi_WholeBloodBagONEG","DZE_Item_Medi_WholeBloodBagOPOS"];
 
 		//Var checks
 		local _unconscious = _unit getVariable ["NORRN_unconscious", false];
@@ -138,15 +138,15 @@ if (isPlayer cursorTarget && _hasPatient) then {
 
 		//Magazine checks
 		local _playerMagazines = magazines player;
-		local _hasBandage = "ItemBandage" in _playerMagazines;
-		local _hasSepsisBandage = "ItemSepsisBandage" in _playerMagazines;
-		local _hasEpi = "ItemEpinephrine" in _playerMagazines;
-		local _hasMorphine = "ItemMorphine" in _playerMagazines;
-		local _hasSplint = "equip_woodensplint" in _playerMagazines;
+		local _hasBandage = "DZE_Item_Medi_Bandage" in _playerMagazines;
+		local _hasSepsisBandage = "DZE_Item_Medi_BandageSepsis" in _playerMagazines;
+		local _hasEpi = "DZE_Item_Medi_Epinephrine" in _playerMagazines;
+		local _hasMorphine = "DZE_Item_Medi_Morphine" in _playerMagazines;
+		local _hasSplint = "DZE_Item_Medi_Woodensplint" in _playerMagazines;
 		local _hasPainkillers = Array_Any(_playerMagazines, {_this in _painkillers});
 		local _hasAntibiotics = Array_Any(_playerMagazines, {_this in _antibiotics});
-		local _hasABWipes = "ItemAntibacterialWipe" in _playerMagazines;
-		local _hasBloodBag = "ItemBloodbag" in _playerMagazines;
+		local _hasABWipes = "DZE_Item_Medi_AntibacterialWipe" in _playerMagazines;
+		local _hasBloodBag = "DZE_Item_Medi_Bloodbag" in _playerMagazines;
 		
 		if !(dayz_classicBloodBagSystem) then {
 			_hasBloodBag = Array_Any(_playerMagazines, {_this in _bloodBags});
@@ -179,13 +179,13 @@ if (isPlayer cursorTarget && _hasPatient) then {
 		//Allow player to bandage
 		if(_injured && _hasBandage) then {
 			r_action = true;
-			_action = _unit addAction [localize "str_actions_medical_04", "\z\addons\dayz_code\medical\bandage.sqf",[_unit,"ItemBandage"], 0, true, true];
+			_action = _unit addAction [localize "str_actions_medical_04", "\z\addons\dayz_code\medical\bandage.sqf",[_unit,"DZE_Item_Medi_Bandage"], 0, true, true];
 			r_player_actions set [count r_player_actions,_action];
 		};
 		//Allow player to give sepsis bandage
 		if((_injured || _hasSepsis) && _hasSepsisBandage) then {
 			r_action = true;
-			_action = _unit addAction [localize "str_actions_medical_04_sepsis", "\z\addons\dayz_code\medical\bandage.sqf",[_unit,"ItemSepsisBandage"], 0, true, true];
+			_action = _unit addAction [localize "str_actions_medical_04_sepsis", "\z\addons\dayz_code\medical\bandage.sqf",[_unit,"DZE_Item_Medi_BandageSepsis"], 0, true, true];
 			r_player_actions set [count r_player_actions,_action];
 		};
 		//Allow player to give antibacterial wipe
@@ -203,13 +203,13 @@ if (isPlayer cursorTarget && _hasPatient) then {
 		//Allow player to give Morphine
 		if((_legsBroke || _armsBroke) && _hasMorphine) then {
 			r_action = true;
-			_action = _unit addAction [localize "str_actions_medical_06", "\z\addons\dayz_code\medical\brokeBones.sqf",[_unit,"ItemMorphine"], 0, true, true];
+			_action = _unit addAction [localize "str_actions_medical_06", "\z\addons\dayz_code\medical\brokeBones.sqf",[_unit,"DZE_Item_Medi_Morphine"], 0, true, true];
 			r_player_actions set [count r_player_actions,_action];
 		};
-		//Allow player to give equip_woodensplint
+		//Allow player to give DZE_Item_Medi_Woodensplint
 		if((_legsBroke || _armsBroke) && _hasSplint) then {
 			r_action = true;
-			_action = _unit addAction [localize "str_actions_medical_06_splint", "\z\addons\dayz_code\medical\brokeBones.sqf",[_unit,"equip_woodensplint"], 0, true, true];
+			_action = _unit addAction [localize "str_actions_medical_06_splint", "\z\addons\dayz_code\medical\brokeBones.sqf",[_unit,"DZE_Item_Medi_Woodensplint"], 0, true, true];
 			r_player_actions set [count r_player_actions,_action];
 		};
 		//Allow player to give Painkillers
@@ -222,7 +222,7 @@ if (isPlayer cursorTarget && _hasPatient) then {
 		if(_lowBlood && _hasBloodBag) then {
 			r_action = true;
 			if (dayz_classicBloodBagSystem) then {
-				_action = _unit addAction [localize "str_actions_medical_08", "\z\addons\dayz_code\medical\transfusion.sqf",[_unit,"ItemBloodbag"], 0, true, true];
+				_action = _unit addAction [localize "str_actions_medical_08", "\z\addons\dayz_code\medical\transfusion.sqf",[_unit,"DZE_Item_Medi_Bloodbag"], 0, true, true];
 				r_player_actions set [count r_player_actions,_action];
 			} else {
 				local _tempArray = [];

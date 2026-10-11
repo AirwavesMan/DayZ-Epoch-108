@@ -15,7 +15,7 @@ if (dialog) then {
 	_abc closeDisplay 0;
 };
 
-_hasTester = "bloodTester" in magazines player;
+_hasTester = "DZE_Item_Medi_BloodTester" in magazines player;
 _antiA_displayed = false;
 _antiB_displayed = false;
 _antiD_displayed = false;
@@ -123,7 +123,7 @@ _watered = r_A_watered or r_B_watered or r_D_watered or r_control_watered;
 	if (r_water_clicked && {!_water_displayed}) then {
 		_waterBottle ctrlSetText _waterBottleClickedImage;
 		_water_displayed = true;
-		player removeMagazine "bloodTester";
+		player removeMagazine "DZE_Item_Medi_BloodTester";
 	};
 
 	//display water marks

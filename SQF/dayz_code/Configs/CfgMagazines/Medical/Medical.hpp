@@ -2,203 +2,177 @@
 #include "Antibiotic.hpp"
 #include "Painkiller.hpp"
 
-class ItemAntibacterialWipe : CA_Magazine
-{
+class DZE_Item_Medi_AntibacterialWipe : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 16;	
+	displayName = "$STR_ITEM_NAME_WIPES";
+	descriptionShort = "$STR_ITEM_DESC_WIPES";
 	model = "\z\addons\dayz_communityassets\models\antiseptic.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_antiseptic_ca.paa";
-	displayName = $STR_ITEM_NAME_WIPES;
-	descriptionShort = $STR_ITEM_DESC_WIPES;
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_ACTIONS_MEDICAL_WIPE;
+	count = 1;
+	type = 16;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_ACTIONS_MEDICAL_WIPE";
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
-class ItemBandage : CA_Magazine
-{
+class DZE_Item_Medi_Bandage : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 16;	
+	displayName = "$STR_EQUIP_NAME_BANDAGE";
+	descriptionShort = "$STR_EQUIP_DESC_BANDAGE";
 	model = "\dayz_equip\models\fad.p3d";
 	picture = "\dayz_equip\textures\equip_fad_ca.paa";
-	displayName = $STR_EQUIP_NAME_BANDAGE;
-	descriptionShort = $STR_EQUIP_DESC_BANDAGE;
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_BANDAGE_SELF;
+	count = 1;
+	type = 16;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_BANDAGE_SELF";
 			script = "spawn player_useMeds;";
 		};
-		class Crafting
-		{
-			text = $STR_CRAFTING_SEPSISBANDAGE;
+		class Crafting {
+			text = "$STR_CRAFTING_SEPSISBANDAGE";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"ItemSepsisBandage",1}};
+			output[] = {{"DZE_Item_Medi_BandageSepsis",1}};
 			outputweapons[] = {};
-			input[] = {{"ItemBandage",1},{"equip_comfreyleafs",1}};
-		};		
+			input[] = {{"DZE_Item_Medi_Bandage",1},{"equip_comfreyleafs",1}};
+		};
 	};
 };
 
-class ItemSepsisBandage : CA_Magazine
-{
+class DZE_Item_Medi_BandageSepsis : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 16;	
+	displayName = "$STR_EQUIP_NAME_SEPSISBANDAGE";
+	descriptionShort = "$STR_EQUIP_DESC_SEPSISBANDAGE";
 	model = "\dayz_equip\models\fad.p3d";
 	picture = "\dayz_equip\textures\equip_fad_ca.paa";
-	displayName = $STR_EQUIP_NAME_SEPSISBANDAGE;
-	descriptionShort = $STR_EQUIP_DESC_SEPSISBANDAGE;
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_BANDAGE_SELF;
+	count = 1;
+	type = 16;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_BANDAGE_SELF";
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
-class ItemEpinephrine : CA_Magazine
-{
+class DZE_Item_Medi_Epinephrine : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;	
+	displayName = "$STR_EQUIP_NAME_EPI_PEN";
+	descriptionShort = "$STR_EQUIP_DESC_EPI_PEN";
 	model = "\dayz_equip\models\epi.p3d";
 	picture = "\dayz_equip\textures\equip_epi_ca.paa";
-	displayName = $STR_EQUIP_NAME_EPI_PEN;
-	descriptionShort = $STR_EQUIP_DESC_EPI_PEN;
+	count = 1;
+	type = 256;
 };
 
-class ItemMorphine : CA_Magazine
-{
+class DZE_Item_Medi_Morphine : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;	
+	displayName = "$STR_EQUIP_NAME_MORPHINE";
+	descriptionShort = "$STR_EQUIP_DESC_MORPHINE";
 	model = "\dayz_equip\models\morphine.p3d";
 	picture = "\dayz_equip\textures\equip_morphine_ca.paa";
-	displayName = $STR_EQUIP_NAME_MORPHINE;
-	descriptionShort = $STR_EQUIP_DESC_MORPHINE;
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_TAKE_MORPHINE;
+	count = 1;
+	type = 256;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_TAKE_MORPHINE";
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
-class ItemHeatPack : CA_Magazine
-{
+class DZE_Item_Medi_HeatPack : CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;	
+	displayName = "$STR_EQUIP_NAME_HEAT_PACK";
+	descriptionShort = "$STR_EQUIP_DESC_HEAT_PACK";
 	model = "\dayz_equip\models\Heat_pack.p3d";
 	picture = "\dayz_equip\textures\equip_heat_pack_ca.paa";
-	displayName = $STR_EQUIP_NAME_HEAT_PACK;
-	descriptionShort = $STR_EQUIP_DESC_HEAT_PACK;
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_ACTIONS_HEATPACK;
+	count = 1;
+	type = 256;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_ACTIONS_HEATPACK";
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
-class equip_woodensplint : CA_Magazine {
+class DZE_Item_Medi_Woodensplint : CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_ITEM_NAME_WOODENSPLINT;
-	descriptionShort = $STR_ITEM_DESC_WOODENSPLINT;
+	displayName = "$STR_ITEM_NAME_WOODENSPLINT";
+	descriptionShort = "$STR_ITEM_DESC_WOODENSPLINT";
 	model = "\z\addons\dayz_communityassets\models\woodensplint.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_woodensplint_ca.paa";
+	count = 1;
 	type = 256;
-	
-	class ItemActions 
-	{
-		class Use 
-		{
-			text = $STR_ACTIONS_BRACE_LEG;
+
+	class ItemActions {
+		class Use {
+			text = "$STR_ACTIONS_BRACE_LEG";
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
-class equip_gauze : CA_Magazine 
-{
+class DZE_Item_Medi_Gauze : CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_ITEM_NAME_equip_gauze;
-	descriptionShort = $STR_ITEM_DESC_equip_gauze;
+	displayName = "$STR_ITEM_NAME_equip_gauze";
+	descriptionShort = "$STR_ITEM_DESC_equip_gauze";
 	model = "\z\addons\dayz_communityassets\models\gauze.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_gauze_ca.paa";
+	count = 1;
 	type = 256;
-	
-	class ItemActions
-	{
-		class Crafting
-		{
-			text = $STR_EPOCH_PLAYER_269;
+
+	class ItemActions {
+		class Crafting {
+			text = "$STR_EPOCH_PLAYER_269";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
-			output[] = {{"ItemBandage",2}};
+			output[] = {{"DZE_Item_Medi_Bandage",2}};
 			outputweapons[] = {};
-			input[] = {{"equip_gauze",2},{"equip_rag",1},{"equip_string",1}};
+			input[] = {{"DZE_Item_Medi_Gauze",2},{"equip_rag",1},{"equip_string",1}};
 		};
-	};	
+	};
 };
 
-class equip_gauzepackaged : CA_Magazine 
-{
+class DZE_Item_Medi_Gauzepackaged : CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_ITEM_NAME_equip_gauzepackaged;
-	descriptionShort = $STR_ITEM_DESC_equip_gauzepackaged;
+	displayName = "$STR_ITEM_NAME_equip_gauzepackaged";
+	descriptionShort = "$STR_ITEM_DESC_equip_gauzepackaged";
 	model = "\z\addons\dayz_communityassets\models\gauze_package.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_gauze_package_ca.paa";
+	count = 1;
 	type = 256;
-	
-	class ItemActions
-	{
-		class Crafting
-		{
-			text = $STR_CRAFTING_PACKAGEGAUZE;
+
+	class ItemActions {
+		class Crafting {
+			text = "$STR_CRAFTING_PACKAGEGAUZE";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
-			output[] = {{"equip_gauze",3}};
+			output[] = {{"DZE_Item_Medi_Gauze",3}};
 			outputweapons[] = {};
-			input[] = {{"equip_gauzepackaged",1}};
+			input[] = {{"DZE_Item_Medi_Gauzepackaged",1}};
 		};
-	};	
+	};
 };
 
-class equip_herb_box : CA_Magazine 
-{
+class DZE_Item_Medi_Herb_Box : CA_Magazine {
 	scope = 2;
+	displayName = "$STR_EQUIP_NAME_HERBBOX";
+	descriptionShort = "$STR_EQUIP_DESC_HERBBOX";
+	model = "\z\addons\dayz_communityassets\models\herb_box.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_herb_box_ca.paa";
 	count = 1;
 	type = 256;
-	displayName = $STR_EQUIP_NAME_HERBBOX;
-	descriptionShort = $STR_EQUIP_DESC_HERBBOX;
-	model = "\z\addons\dayz_communityassets\models\herb_box.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_herb_box_ca.paa";	
 };

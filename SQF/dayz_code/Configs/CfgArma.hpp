@@ -493,9 +493,9 @@ class CfgSurvival {
 		class Default {
 			RandomMagazines = 3;
 			//weapons[] = {"Makarov"};
-			//GuaranteedMagazines[] = {"ItemBandage","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","HandRoadFlare"};
-			GuaranteedMagazines[] = {"ItemBandage","HandRoadFlare"};
-			RandomPossibilitieMagazines[] = {"ItemBandage","ItemPainkiller"};
+			//GuaranteedMagazines[] = {"DZE_Item_Medi_Bandage","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","HandRoadFlare"};
+			GuaranteedMagazines[] = {"DZE_Item_Medi_Bandage","HandRoadFlare"};
+			RandomPossibilitieMagazines[] = {"DZE_Item_Medi_Bandage","DZE_Item_Medi_Painkiller"};
 			backpackWeapon = "";
 			//backpack = "DZ_Patrol_Pack_EP1";
 		};

@@ -84,7 +84,7 @@ class ItemPlank: CA_Magazine {
 			Script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
-			output[] = {{"equip_woodensplint",1}};
+			output[] = {{"DZE_Item_Medi_Woodensplint",1}};
 			input[] = {{"ItemPlank",1},{"equip_duct_tape",1},{"equip_string",1}};
 		};
 		class Crafting2 {
@@ -193,7 +193,7 @@ class PartWoodPile: CA_Magazine {
 			Script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
-			output[] = {{"equip_woodensplint",1}};
+			output[] = {{"DZE_Item_Medi_Woodensplint",1}};
 			input[] = {{"PartWoodPile",1},{"equip_duct_tape",1},{"equip_string",1}};
 		};
 	};
@@ -272,7 +272,7 @@ class PartWoodLumber: CA_Magazine {
 			Script = ";['Crafting7','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
-			output[] = {{"equip_woodensplint",1}};
+			output[] = {{"DZE_Item_Medi_Woodensplint",1}};
 			input[] = {{"PartWoodLumber",1},{"equip_duct_tape",1},{"equip_string",1}};
 		};
 		class Crafting8 {

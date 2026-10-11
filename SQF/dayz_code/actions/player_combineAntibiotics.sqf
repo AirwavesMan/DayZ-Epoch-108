@@ -5,7 +5,7 @@ private ["_total", "_full", "_remain", "_amount"];
 
 _total = 0;
 {
-	if (configName inheritsFrom (configfile >> "CfgMagazines" >> _x) == "ItemAntibiotic") then {
+	if (configName inheritsFrom (configfile >> "CfgMagazines" >> _x) == "DZE_Item_Medi_Antibiotic") then {
 		_amount = getNumber(configFile >> "CfgMagazines" >> _x >> "medical" >> "amount");
 		if(_amount > 0) then {
 			_total = _total + _amount;
@@ -19,11 +19,11 @@ _remain = _total % 6;
 
 for "_i" from 1 to _full do
 {
-	player addMagazine "ItemAntibiotic6";
+	player addMagazine "DZE_Item_Medi_Antibiotic6";
 };
 
 if(_remain > 0 ) then {
-	player addMagazine "ItemAntibiotic" + str(_remain);
+	player addMagazine "DZE_Item_Medi_Antibiotic" + str(_remain);
 };
 
 dayz_actionInProgress = false;

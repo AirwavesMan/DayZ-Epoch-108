@@ -17,12 +17,12 @@ _transfusionInfection = if (DZE_selfTransfuse_Values select 1 <= 0) then {false}
 _duration = if ((_unit getVariable ["USEC_BloodQty", 0]) <= 4000) then {3} else {2};
 
 if (!dayz_classicBloodBagSystem) then {
-	// A player can only self blood bag with a whole typed bag or the classic ItemBloodbag.
-	// If not using dayz_classicBloodBagSystem then the player needs to know his/her blood type or use wholeBloodBagONEG.
+	// A player can only self blood bag with a whole typed bag or the classic DZE_Item_Medi_Bloodbag.
+	// If not using dayz_classicBloodBagSystem then the player needs to know his/her blood type or use DZE_Item_Medi_WholeBloodBagONEG.
 	_bloodType = _unit getVariable ["blood_type", ""];
 	_rhVal = if (_unit getVariable ["rh_factor", false]) then {"POS"} else {"NEG"};
-	_bloodBagWholeNeeded = "wholeBloodBag" + _bloodType + _rhVal;
-	_wholeBag = _bagUsed in ["wholeBloodBagONEG",_bloodBagWholeNeeded];
+	_bloodBagWholeNeeded = 'DZE_Item_Medi_WholeBloodBag' + _bloodType + _rhVal;
+	_wholeBag = _bagUsed in ["DZE_Item_Medi_WholeBloodBagONEG",_bloodBagWholeNeeded];
 	if (!_wholeBag) then {_badBag = true;};
 };
 

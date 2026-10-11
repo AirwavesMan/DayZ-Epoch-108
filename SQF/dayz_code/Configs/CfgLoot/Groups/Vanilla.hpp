@@ -10,7 +10,7 @@ VanillaSurvival[] =
 	{Loot_MAGAZINE,		1,		equip_rag}, // Used to craft bandages
 	{Loot_MAGAZINE,		1,		equip_string}, // Used in multiple crafting recipes
 	{Loot_MAGAZINE,		1,		equip_duct_tape}, // Repair broken stuff - craft a sling
-	{Loot_MAGAZINE,		1,		equip_herb_box}, // Combine with ItemWaterBottle to make Herbal Tea
+	{Loot_MAGAZINE,		1,		DZE_Item_Medi_Herb_Box}, // Combine with ItemWaterBottle to make Herbal Tea
 	{Loot_MAGAZINE,		1,		equip_nails}, // Combine with baseball bat, upgrade storage buildings
 	{Loot_MAGAZINE,		1,		equip_hose} // Need this to siphon gas with fuel container - very useful
 };

@@ -43,22 +43,22 @@ class MedBox0 : CardboardBox {
 	
 	class transportmagazines {
 		class _xx_ItemBandage {
-			magazine = "ItemBandage";
+			magazine = "DZE_Item_Medi_Bandage";
 			count = 6;
 		};
 		
 		class _xx_ItemEpinephrine {
-			magazine = "ItemEpinephrine";
+			magazine = "DZE_Item_Medi_Epinephrine";
 			count = 2;
 		};
 		
 		class _xx_ItemMorphine {
-			magazine = "ItemMorphine";
+			magazine = "DZE_Item_Medi_Morphine";
 			count = 3;
 		};
 		
 		class _xx_ItemPainkiller {
-			magazine = "ItemPainkiller";
+			magazine = "DZE_Item_Medi_Painkiller";
 			count = 1;
 		};
 	};
@@ -72,32 +72,32 @@ class MedBox1 : CardboardBox {
 	
 	class transportmagazines {
 		class _xx_ItemBandage {
-			magazine = "ItemBandage";
+			magazine = "DZE_Item_Medi_Bandage";
 			count = 3;
 		};
 		
 		class _xx_ItemEpinephrine {
-			magazine = "ItemEpinephrine";
+			magazine = "DZE_Item_Medi_Epinephrine";
 			count = 2;
 		};
 		
 		class _xx_ItemMorphine {
-			magazine = "ItemMorphine";
+			magazine = "DZE_Item_Medi_Morphine";
 			count = 5;
 		};
 		
 		class _xx_ItemBloodbag {
-			magazine = "emptyBloodBag";
+			magazine = "DZE_Item_Medi_EmptyBloodBag";
 			count = 2;
 		};
 		
 		class _xx_ItemPainkiller {
-			magazine = "ItemPainkiller";
+			magazine = "DZE_Item_Medi_Painkiller";
 			count = 2;
 		};
 		
 		class _xx_ItemAntibiotic {
-			magazine = "ItemAntibiotic";
+			magazine = "DZE_Item_Medi_Antibiotic";
 			count = 1;
 		};
 	};	
@@ -111,35 +111,35 @@ class MedBox2 : CardboardBox {
 	
 	class transportmagazines {
 		class _xx_ItemBandage {
-			magazine = "ItemBandage";
+			magazine = "DZE_Item_Medi_Bandage";
 			count = 3;
 		};
 		class _xx_transfusionKit {
-			magazine = "transfusionKit";
+			magazine = "DZE_Item_Medi_TransfusionKit";
 			count = 4;
 		};
 		class _xx_ItemMorphine {
-			magazine = "ItemMorphine";
+			magazine = "DZE_Item_Medi_Morphine";
 			count = 3;
 		};
 		class _xx_bloodBagOPOS {
-			magazine = "bloodBagOPOS";
+			magazine = "DZE_Item_Medi_BloodBagOPOS";
 			count = 1;
 		};
 		class _xx_bloodBagABPOS {
-			magazine = "bloodBagABPOS";
+			magazine = "DZE_Item_Medi_BloodBagABPOS";
 			count = 1;
 		};
 		class _xx_bloodBagBPOS {
-			magazine = "bloodBagBPOS";
+			magazine = "DZE_Item_Medi_BloodBagBPOS";
 			count = 1;
 		};
 		class _xx_bloodBagAPOS {
-			magazine = "bloodBagAPOS";
+			magazine = "DZE_Item_Medi_BloodBagAPOS";
 			count = 1;
 		};
 		class _xx_bloodTester {
-			magazine = "bloodTester";
+			magazine = "DZE_Item_Medi_BloodTester";
 			count = 2;
 		};
 	};
