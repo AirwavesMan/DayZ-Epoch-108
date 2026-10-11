@@ -100,7 +100,7 @@ if (!_isNew) then {
 	_playerCoins = _primary select 10;
 	_BankCoins = _primary select 11;
 	_hiveVer = _primary select 12;
-	if !(_model in AllPlayers) then {_model = "Survivor2_DZ";};
+	if !(_model in AllPlayers) then {_model = "DZE_Man_Survivor2";};
 } else {
 	_isInfected = if (DZE_PlayerZed) then {_primary select 3} else {0};
 	_model = _primary select 4;
@@ -109,9 +109,9 @@ if (!_isNew) then {
 	_BankCoins = _primary select 7;
 	_hiveVer = _primary select 8;
 	if (isNil "_model") then {
-		_model = "Survivor2_DZ";
+		_model = "DZE_Man_Survivor2";
 	} else {
-		if (_model == "") then {_model = "Survivor2_DZ";};
+		if (_model == "") then {_model = "DZE_Man_Survivor2";};
 	};
 	
 	//Record initial inventory only if not player zombie 

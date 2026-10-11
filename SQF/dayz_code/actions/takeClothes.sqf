@@ -22,8 +22,9 @@ _clothesTaken = _body getVariable["clothesTaken",false];
 if (_clothesTaken) exitWith {dayz_actionInProgress = false; localize "STR_CL_TC_ALREADY_TAKEN" call DZE_fnc_rollingMessages;};
 
 _skin = typeOf _body;
-_itemNew = _skin;
-_itemNew = "Skin_" + _itemNew;
+_itemNew = if (toUpper ([_skin, 0, 7] call DZE_fnc_subSelect) == 'DZE_MAN_') then {
+	'DZE_Item_Skin_' + ([_skin, 8, count toArray _skin] call DZE_fnc_subSelect)
+} else {''};
 _okSkin = isClass (configFile >> "CfgMagazines" >> _itemNew);
 
 if (!_okSkin || _skin in DZE_Disable_Take_Clothes) exitWith {dayz_actionInProgress = false; format[localize "STR_CL_TC_NOT_SUPPORTED",_skin] call DZE_fnc_rollingMessages;};

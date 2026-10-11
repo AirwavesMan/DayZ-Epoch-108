@@ -46,20 +46,22 @@ _text = getText (_config >> _item >> "displayName");
 if (!_hasclothesitem) exitWith {format[localize "str_player_31",_text,localize "str_player_31_wear"] call DZE_fnc_rollingMessages; dayz_actionInProgress = false;};
 
 _myModel = (typeOf player);
-_itemNew = "Skin_" + _myModel;
+_itemNew = if (toUpper ([_myModel, 0, 7] call DZE_fnc_subSelect) == 'DZE_MAN_') then {
+	'DZE_Item_Skin_' + ([_myModel, 8, count toArray _myModel] call DZE_fnc_subSelect)
+} else {''};
 _morphHandle = nil;
 
 if ( (isClass(_config >> _itemNew)) ) then {
 	if ( (isClass(_config >> _item)) ) then {
 		// Current sex of player skin
-		_currentSex = getText (_config >> _itemNew >> "sex");
+		_currentSex = getText (_config >> _itemNew >> 'DZE_gender');
 		// Sex of new skin
-		_newSex = getText (_config >> _item >> "sex");
+		_newSex = getText (_config >> _item >> 'DZE_gender');
 		//diag_log ("Debug Clothes: sex In: " + str(_currentSex) + " Out: " + str(_newSex));
 
 		if(_currentSex == _newSex) then {
 			// Get model name from config
-			_model = getText (_config >> _item >> "playerModel");
+			_model = getText (_config >> _item >> 'DZE_playerModel');
 			if (_model != _myModel) then {
 				if(([player,_item] call BIS_fnc_invRemove) == 1) then {
 					player addMagazine _itemNew;

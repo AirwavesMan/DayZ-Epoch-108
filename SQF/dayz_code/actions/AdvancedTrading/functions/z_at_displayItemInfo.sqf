@@ -126,7 +126,7 @@ if (_displayText != "") then {
 if (DZE_R3F_WEIGHT) then {
 	private "_weight";
 
-	_weight = [getNumber(configFile >> "CfgWeight" >> "Magazines" >> _class >> "weight"),1] select ((configName(inheritsFrom(configFile >> "cfgMagazines" >> _class))) == "SkinBase");
+	_weight = [getNumber(configFile >> "CfgWeight" >> "Magazines" >> _class >> "weight"),1] select ((configName(inheritsFrom(configFile >> "cfgMagazines" >> _class))) == "DZE_Item_Skin_Base");
 	_formattedText = _formattedText + format [
 		"<t color='#bcbcbc' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2 %3</t>"
 		,localize "STR_EPOCH_WEIGHT",_weight,localize "STR_R3F_WEIGHT_English"

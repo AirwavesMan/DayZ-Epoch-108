@@ -509,17 +509,17 @@ class FSM
                          "//Not Equal Failure" \n
                          "" \n
                          "if (isNil ""_model"") then {" \n
-                         "	_model = ""Survivor2_DZ"";" \n
+                         "	_model = ""DZE_Man_Survivor2"";" \n
                          "	diag_log (""PLOGIN: Model was nil, loading as survivor"");" \n
                          "};" \n
                          "" \n
                          "if (_model == """") then {" \n
-                         "	_model = ""Survivor2_DZ"";" \n
+                         "	_model = ""DZE_Man_Survivor2"";" \n
                          "	diag_log (""PLOGIN: Model was empty, loading as survivor"");" \n
                          "};" \n
                          "" \n
                          "if (_model == ""Survivor1_DZ"") then {" \n
-                         "	_model = ""Survivor2_DZ"";" \n
+                         "	_model = ""DZE_Man_Survivor2"";" \n
                          "};" \n
                          "_isHack = false;" \n
                          "if (_model == ""hacker"") then {" \n
@@ -610,15 +610,15 @@ class FSM
                         itemno = 17;
                         init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Phase_One'];};" \n
                          "if ((!isNil ""dayz_selectGender"") && {(!isNil ""DZE_defaultSkin"") && (_isInfected == 0)}) then {" \n
-                         "	if (dayz_selectGender == ""Survivor2_DZ"") then {" \n
+                         "	if (dayz_selectGender == ""DZE_Man_Survivor2"") then {" \n
                          "		_rand = (DZE_defaultSkin select 0) call BIS_fnc_selectRandom;" \n
-                         "		_model = getText (configFile >> ""CfgMagazines"" >> ""Skins"" >> _rand >> ""playerModel""); //MALE" \n
+                         "		_model = getText (configFile >> ""CfgMagazines"" >> ""Skins"" >> _rand >> ""DZE_playerModel""); //MALE" \n
                          "		if (_model == """") then {" \n
                          "				_model = _rand;" \n
                          "		};" \n
                          "	} else {" \n
                          "		_rand = (DZE_defaultSkin select 1) call BIS_fnc_selectRandom;" \n
-                         "		_model = getText (configFile >> ""CfgMagazines"" >> ""Skins"" >> _rand >> ""playerModel""); //FEMALE" \n
+                         "		_model = getText (configFile >> ""CfgMagazines"" >> ""Skins"" >> _rand >> ""DZE_playerModel""); //FEMALE" \n
                          "		if (_model == """") then {" \n
                          "				_model = _rand;" \n
                          "		};" \n
@@ -1528,7 +1528,7 @@ class FSM
                          "" \n
                          "dayz_loadScreenMsg = localize 'STR_UI_GENDER_TITLE';" \n
                          "_timeNem=diag_tickTime;" \n
-                         "_model = 'Survivor2_DZ';" \n
+                         "_model = 'DZE_Man_Survivor2';" \n
                          "dayz_preloadFinished=nil;//do not remove this"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
@@ -1772,7 +1772,7 @@ class FSM
                                         to="Character_Type_6";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _timeNemGender) > 60)"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/"dayz_selectGender = ""Survivor2_DZ"";"/*%FSM</ACTION""">*/;
+                                        action=/*%FSM<ACTION""">*/"dayz_selectGender = ""DZE_Man_Survivor2"";"/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
                                 /*%FSM<LINK "Gender__Selected">*/

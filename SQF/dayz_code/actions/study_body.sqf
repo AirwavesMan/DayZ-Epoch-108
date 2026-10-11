@@ -14,7 +14,7 @@ _killingBlow = _body getVariable ["KillingBlow",[objNull,false]];
 */
 
 // "His/Her name was %1, it appears he/she died from %2"
-_message = ["str_player_studybody","str_player_studybody_female"] select (_body isKindOf "SurvivorW2_DZ");
+_message = ["str_player_studybody","str_player_studybody_female"] select (_body isKindOf "DZE_Man_SurvivorW2");
 
 format[localize _message,_name,_methodStr] call DZE_fnc_rollingMessages;
 

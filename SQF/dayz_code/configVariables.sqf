@@ -174,9 +174,9 @@ if (!isDedicated) then {
 	DZE_R3F_WEIGHT = false; // Enable R3F weight. Players carrying too much will be overburdened and forced to move slowly.
 	DZE_CombatTimer = 30; // Time how long a player is in combat after shooting or other combat actions
 
-	DZE_defaultSkin = [["Survivor2_DZ","Rocker1_DZ","Rocker2_DZ","Rocker3_DZ","Rocker4_DZ","Priest_DZ","Functionary1_EP1_DZ","Doctor_DZ","Assistant_DZ","Worker1_DZ","Worker3_DZ","Worker4_DZ","TK_CIV_Takistani01_EP1_DZ","TK_CIV_Takistani03_EP1_DZ","TK_CIV_Takistani04_EP1_DZ","TK_CIV_Takistani06_EP1_DZ","Firefighter1_DZ","Firefighter2_DZ","Firefighter3_DZ","Firefighter4_DZ","Firefighter5_DZ","Firefighter_Officer1_DZ","Firefighter_Officer2_DZ","Postman1_DZ","Postman2_DZ","Postman3_DZ","Postman4_DZ","SchoolTeacher_DZ","Gardener_DZ","RU_Policeman2_DZ","Hunter_DZ","Civilian1_DZ","Civilian3_DZ","Civilian5_DZ","Civilian7_DZ","Civilian9_DZ","Civilian11_DZ","Civilian13_DZ","Prisoner1_DZ","Prisoner2_DZ","Prisoner3_DZ","Reporter_DZ","MafiaBoss_DZ","Dealer_DZ","BusinessMan_DZ","Paramedic_DZ","Garbage_Man_DZ"],["SurvivorW2_DZ","SurvivorWcombat_DZ","SurvivorWdesert_DZ","SurvivorWurban_DZ","SurvivorWpink_DZ","SurvivorW3_DZ"]]; // Default player skin for fresh spawns, selected randomly DZE_defaultSkin = [["Male skin1","Male skin2"],["Female skin1","Female skin2"]], comment out the whole line to disable this feature.
+	DZE_defaultSkin = [["DZE_Man_Survivor2","DZE_Man_Rocker1","DZE_Man_Rocker2","DZE_Man_Rocker3","DZE_Man_Rocker4","DZE_Man_Priest","DZE_Man_Functionary1_EP1","DZE_Man_Doctor","DZE_Man_Assistant","DZE_Man_Worker1","DZE_Man_Worker3","DZE_Man_Worker4","DZE_Man_TK_CIV_Takistani01_EP1","DZE_Man_TK_CIV_Takistani03_EP1","DZE_Man_TK_CIV_Takistani04_EP1","DZE_Man_TK_CIV_Takistani06_EP1","DZE_Man_Firefighter1","DZE_Man_Firefighter2","DZE_Man_Firefighter3","DZE_Man_Firefighter4","DZE_Man_Firefighter5","DZE_Man_Firefighter_Officer1","DZE_Man_Firefighter_Officer2","DZE_Man_Postman1","DZE_Man_Postman2","DZE_Man_Postman3","DZE_Man_Postman4","DZE_Man_SchoolTeacher","DZE_Man_Gardener","DZE_Man_RU_Policeman2","DZE_Man_Hunter","DZE_Man_Civilian1","DZE_Man_Civilian3","DZE_Man_Civilian5","DZE_Man_Civilian7","DZE_Man_Civilian9","DZE_Man_Civilian11","DZE_Man_Civilian13","DZE_Man_Prisoner1","DZE_Man_Prisoner2","DZE_Man_Prisoner3","DZE_Man_Reporter","DZE_Man_MafiaBoss","DZE_Man_Dealer","DZE_Man_BusinessMan","DZE_Man_Paramedic","DZE_Man_Garbage_Man"],["DZE_Man_SurvivorW2","DZE_Man_SurvivorWcombat","DZE_Man_SurvivorWdesert","DZE_Man_SurvivorWurban","DZE_Man_SurvivorWpink","DZE_Man_SurvivorW3"]]; // Default player skin for fresh spawns, selected randomly DZE_defaultSkin = [["Male skin1","Male skin2"],["Female skin1","Female skin2"]], comment out the whole line to disable this feature.
 	dayz_tameDogs = false; // Allow taming dogs with raw meat. Note dog behavior is experimental and buggy.
-	DZE_WarmClothes = []; //Array of warm clothes, type of player model must be added: E.g. ["MVD_Soldier_DZ","GUE_Soldier_2_DZ"];
+	DZE_WarmClothes = []; //Array of warm clothes, type of player model must be added: E.g. ["DZE_Man_MVD_Soldier","DZE_Man_GUE_Soldier_2"];
 	DZE_TempVars = [7, 15, 4, 4, 2, 6, 8, 3, 2, 0.25, 0.75, 0.5, 12, 33]; //[vehicle, fire, building, moving, sun, heatpack, warm clothes, water, standing, rain, wind, night, snow, shivering] water, standing, rain, wind and night factors have a negative impact on temperature. The greater they are the quicker the player gets cold. To disable shivering set it to 26.
 	DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 allow player to hold two primary weapons, one on back and one in their hands.
 	dayz_quickSwitch = false; //Turns on forced animation for weapon switch. (hotkeys 1,2,3) False = enable animations, True = disable animations
@@ -185,7 +185,7 @@ if (!isDedicated) then {
 	DZE_ForceNameTagsInTrader = false; // Force name display when looking at player up close in traders. Overrides player choice.
 	DZE_HumanityTargetDistance = 25; // Distance to show name tags (red for bandit, blue for hero, green for friend)
 	DZE_HeartBeat = false; // Enable heartbeat sound when looking at bandit (<= -3000 humanity) up close
-	DZE_RestrictSkins = []; // Clothes that players are not allowed to wear. i.e. ["Skin_GUE_Soldier_CO_DZ","Skin_GUE_Soldier_2_DZ"] etc.
+	DZE_RestrictSkins = []; // Clothes that players are not allowed to wear. i.e. ["DZE_Item_Skin_GUE_Soldier_CO","DZE_Item_Skin_GUE_Soldier_2"] etc.
 	DZE_VanillaUICombatIcon = true; //Display or hide combat UI icon if using DZE_UI = "vanilla"; otherwise it has no affect.
 	timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 	dayz_maxGlobalZeds = 500; // Maximum allowed zeds on the map
@@ -323,7 +323,7 @@ if (!isDedicated) then {
 	
 	// Take Clothes
 	DZE_Take_Clothes = false;	// Allows to take the clothing from dead players and AIs	
-	DZE_Disable_Take_Clothes = []; // Enter the skins you do not want to be allowed to be recovered from dead bodies. E.g.: DZE_Disable_Take_Clothes = ["Doctor_DZ","Assistant_DZ","Worker1_DZ"];
+	DZE_Disable_Take_Clothes = []; // Enter the skins you do not want to be allowed to be recovered from dead bodies. E.g.: DZE_Disable_Take_Clothes = ["DZE_Man_Doctor","DZE_Man_Assistant","DZE_Man_Worker1"];
 	
 	/*
 		DZE_CLICK_ACTIONS
