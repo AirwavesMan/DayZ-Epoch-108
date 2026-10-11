@@ -11,7 +11,7 @@ class DZE_Veh_Mi24D_CDF: Mi24_D {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi24D_CDF_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi24D_CDF_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -22,7 +22,7 @@ class DZE_Veh_Mi24D_CDF_1: DZE_Veh_Mi24D_CDF {
 	damageResistance = 0.00276; // base 0.00138
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi24D_CDF_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi24D_CDF_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -33,7 +33,7 @@ class DZE_Veh_Mi24D_CDF_2: DZE_Veh_Mi24D_CDF_1 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi24D_CDF_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi24D_CDF_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -55,7 +55,7 @@ class DZE_Veh_Mi24V_Woodland: Mi24_D_CZ_ACR {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi24V_Woodland_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi24V_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -66,7 +66,7 @@ class DZE_Veh_Mi24V_Woodland_1: DZE_Veh_Mi24V_Woodland {
 	damageResistance = 0.00276; // base 0.00138
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi24V_Woodland_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi24V_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -77,7 +77,7 @@ class DZE_Veh_Mi24V_Woodland_2: DZE_Veh_Mi24V_Woodland_1 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi24V_Woodland_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi24V_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -99,7 +99,7 @@ class DZE_Veh_Mi24D_TK: Mi24_D_TK_EP1 {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi24D_TK_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi24D_TK_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -110,7 +110,7 @@ class DZE_Veh_Mi24D_TK_1: DZE_Veh_Mi24D_TK {
 	damageResistance = 0.00276; // base 0.00138
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi24D_TK_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi24D_TK_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -121,7 +121,7 @@ class DZE_Veh_Mi24D_TK_2: DZE_Veh_Mi24D_TK_1 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi24D_TK_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi24D_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -143,7 +143,7 @@ class DZE_Veh_Mi24P: Mi24_P {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi24P_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi24P_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -154,7 +154,7 @@ class DZE_Veh_Mi24P_1: DZE_Veh_Mi24P {
 	damageResistance = 0.00276; // base 0.00138
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi24P_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi24P_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -165,7 +165,7 @@ class DZE_Veh_Mi24P_2: DZE_Veh_Mi24P_1 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi24P_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi24P_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -187,7 +187,7 @@ class DZE_Veh_Mi24V_RU: Mi24_V {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi24V_RU_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi24V_RU_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -198,7 +198,7 @@ class DZE_Veh_Mi24V_RU_1: DZE_Veh_Mi24V_RU {
 	damageResistance = 0.00276; // base 0.00138
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi24V_RU_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi24V_RU_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -209,7 +209,7 @@ class DZE_Veh_Mi24V_RU_2: DZE_Veh_Mi24V_RU_1 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi24V_RU_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi24V_RU_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

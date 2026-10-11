@@ -1,14 +1,14 @@
 class DZE_WoodCrate: DZE_Storage_Base {
-	model = "\ca\misc\drevena_bedna.p3d";
 	scope = 2;
+	displayName = "$STR_EPOCH_WOODCRATE";
+	model = "\ca\misc\drevena_bedna.p3d";
 	destrType = "DestructBuilding";
 	DZE_offset[] = {0,2,0};
 	armor = 200;
-	displayName = $STR_EPOCH_WOODCRATE;
 	transportMaxMagazines = 50;
 	transportMaxWeapons = 5;
 	transportMaxBackpacks = 1;
-	DZE_upgradeBuilding[] = {"DZE_WoodCrate2",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",2},{"ItemPlank",2},{"equip_nails",1}}};
+	DZE_upgradeBuilding[] = {"DZE_WoodCrate2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"PartWoodPlywood",2},{"ItemPlank",2},{"equip_nails",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodCrateKit";
 		DZE_refundArray[] = {};
@@ -16,9 +16,9 @@ class DZE_WoodCrate: DZE_Storage_Base {
 };
 
 class DZE_WoodCrate2: DZE_WoodCrate {
+	displayName = "$STR_EPOCH_WOODCRATE2";
 	DZE_upgradeBuilding[] = {};
 	armor = 400;
-	displayName = $STR_EPOCH_WOODCRATE2;
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 10;
 	transportMaxBackpacks = 2;
@@ -31,8 +31,8 @@ class DZE_WoodCrate2: DZE_WoodCrate {
 
 class DZE_StorageCrate: DZE_Storage_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_STORAGECRATE";
 	model = "z\addons\dayz_buildings\models\item_storage.p3d";
-	displayName = $STR_EPOCH_STORAGECRATE;
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	DZE_offset[] = {0,2,-0.05};
@@ -48,8 +48,8 @@ class DZE_StorageCrate: DZE_Storage_Base {
 
 class DZE_CamoStorageCrate: DZE_Storage_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_CAMO_STORAGE_CRATE";
 	model = "\z\addons\dayz_epoch_v\base_building\storage\dze_camo_ammobednaX.p3d";
-	displayName = $STR_EPOCH_CAMO_STORAGE_CRATE;
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;	
 	DZE_buildingSteps = 3;

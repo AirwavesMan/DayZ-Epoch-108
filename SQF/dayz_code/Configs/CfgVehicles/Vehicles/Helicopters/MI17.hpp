@@ -12,9 +12,9 @@ class Mi17_base: Helicopter  {
 };
 
 class DZE_Veh_Mi17: Mi17_base	 {
+	scope = 2;
 	displayName = "$STR_VEH_NAME_MI17";
 	vehicleClass = "DZE Vehicles Helicopters";
-	scope = 2;
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -29,21 +29,21 @@ class DZE_Veh_Mi17: Mi17_base	 {
 
 	class Turrets: Turrets  {
 		class MainTurret: MainTurret  {
+			gunnerCompartments = "compartment3";
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 		};
 		class BackTurret: BackTurret {
+			gunnerCompartments = "compartment3";
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 		};
 	};
 
 	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -54,7 +54,7 @@ class DZE_Veh_Mi17_1: DZE_Veh_Mi17 {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -65,7 +65,7 @@ class DZE_Veh_Mi17_2: DZE_Veh_Mi17_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -75,9 +75,9 @@ class DZE_Veh_Mi17_3: DZE_Veh_Mi17_2 {
 };
 
 class DZE_Veh_Mi17_TK: Mi17_base  {
+	scope = 2;
 	displayName = "$STR_VEH_NAME_MI17_TK";
 	vehicleClass = "DZE Vehicles Helicopters";
-	scope = 2;
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -92,21 +92,21 @@ class DZE_Veh_Mi17_TK: Mi17_base  {
 
 	class Turrets: Turrets  {
 		class MainTurret: MainTurret  {
+			gunnerCompartments = "compartment3";
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 		};
 		class BackTurret: BackTurret {
+			gunnerCompartments = "compartment3";
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 		};
 	};
 
 	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_TK_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_TK_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -117,7 +117,7 @@ class DZE_Veh_Mi17_TK_1: DZE_Veh_Mi17_TK {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_TK_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_TK_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -128,7 +128,7 @@ class DZE_Veh_Mi17_TK_2: DZE_Veh_Mi17_TK_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_TK_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -138,9 +138,9 @@ class DZE_Veh_Mi17_TK_3: DZE_Veh_Mi17_TK_2 {
 };
 
 class DZE_Veh_Mi17_UN: Mi17_base  {
+	scope = 2;
 	displayName = "$STR_VEH_NAME_MI17_UN";
 	vehicleClass = "DZE Vehicles Helicopters";
-	scope = 2;
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -155,21 +155,21 @@ class DZE_Veh_Mi17_UN: Mi17_base  {
 
 	class Turrets: Turrets  {
 		class MainTurret: MainTurret  {
+			gunnerCompartments = "compartment3";
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 		};
 		class BackTurret: BackTurret {
+			gunnerCompartments = "compartment3";
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 		};
 	};
 
 	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_UN_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_UN_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -180,7 +180,7 @@ class DZE_Veh_Mi17_UN_1: DZE_Veh_Mi17_UN {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_UN_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_UN_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -191,7 +191,7 @@ class DZE_Veh_Mi17_UN_2: DZE_Veh_Mi17_UN_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_UN_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_UN_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -201,9 +201,9 @@ class DZE_Veh_Mi17_UN_3: DZE_Veh_Mi17_UN_2 {
 };
 
 class DZE_Veh_Mi17_CDF: Mi17_base {
+	scope = 2;
 	displayName = "$STR_VEH_NAME_MI17_CDF";
 	vehicleClass = "DZE Vehicles Helicopters";
-	scope = 2;
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -218,21 +218,21 @@ class DZE_Veh_Mi17_CDF: Mi17_base {
 
 	class Turrets: Turrets  {
 		class MainTurret: MainTurret  {
+			gunnerCompartments = "compartment3";
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 		};
 		class BackTurret: BackTurret {
+			gunnerCompartments = "compartment3";
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 		};
 	};
 
 	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_CDF_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_CDF_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -243,7 +243,7 @@ class DZE_Veh_Mi17_CDF_1: DZE_Veh_Mi17_CDF {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_CDF_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_CDF_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -254,7 +254,7 @@ class DZE_Veh_Mi17_CDF_2: DZE_Veh_Mi17_CDF_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_CDF_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_CDF_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -264,9 +264,12 @@ class DZE_Veh_Mi17_CDF_3: DZE_Veh_Mi17_CDF_2 {
 };
 
 class DZE_Veh_Mi171Sh: Mi17_base {
+	scope = 2;
 	displayName = "$STR_VEH_NAME_MI17_SH";
 	vehicleClass = "DZE Vehicles Helicopters";
-	scope = 2;
+	model = "\CorePatch\CorePatch_Mi8\models\Mi_171";
+	picture = "\ca\air\data\ico\mi17_HIP_CA.paa";
+	Icon = "\ca\air\data\map_ico\icomap_mi17_CA.paa";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -278,9 +281,6 @@ class DZE_Veh_Mi171Sh: Mi17_base {
 	fuelCapacity = 1870;
 	hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 	hiddenSelectionsTextures[] = {"\CA\air_E\data\mi17_body_ACR_CO.paa", "\CA\air_E\data\mi17_det_ACR_CO.paa", "\ca\air_E\Data\mi17_decals2_ACR_CA.paa", "\ca\air\data\mi8_decals_ca.paa"};
-	model = "\CorePatch\CorePatch_Mi8\models\Mi_171";
-	picture = "\ca\air\data\ico\mi17_HIP_CA.paa";
-	Icon = "\ca\air\data\map_ico\icomap_mi17_CA.paa";
 	mapSize = 25;
 	accuracy = 1000;	// accuracy needed to recognize type of this target
 	weapons[] = {"CMFlareLauncher"};
@@ -297,10 +297,11 @@ class DZE_Veh_Mi171Sh: Mi17_base {
 
 	class Turrets: Turrets {
 		class LeftTurret: MainTurret {
+			gunnerName = "$STR_POSITION_DOORGUNNER";
+			gunnerCompartments = "compartment3";
 			proxyIndex = 2;
 			commanding = -1;
 			primaryGunner = 0;
-			gunnerName = "$STR_POSITION_DOORGUNNER";
 			maxElev = 30;
 			initElev = 11;
 			minTurn = 20;
@@ -308,16 +309,16 @@ class DZE_Veh_Mi171Sh: Mi17_base {
 			initTurn = 80;
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 		};
 
 		class BackTurret: BackTurret {
 			gunnerName = "$STR_POSITION_REARGUNNER";
+			gunnerAction = "Mi171_Gunner_EP1";
+			gunnerInAction = "Mi171_Gunner_EP1";
+			gunnerCompartments = "compartment3";
 			primaryGunner = 1;
 			commanding = -3;
 			proxyIndex = 3;
-			gunnerAction = "Mi171_Gunner_EP1";
-			gunnerInAction = "Mi171_Gunner_EP1";
 			minTurn = 130;
 			maxTurn = 230;
 			initTurn = 180;
@@ -326,16 +327,24 @@ class DZE_Veh_Mi171Sh: Mi17_base {
 			initElev = 0;
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 		};
 
 		class RightTurret: MainTurret {
-			proxyIndex = 1;
 			gunnerName = "$STR_POSITION_CREWCHIEF";
 			body = "Turret_3";
 			gun = "Gun_3";
 			animationSourceBody = "Turret_3";
 			animationSourceGun = "Gun_3";
+			stabilizedInAxes = "StabilizedInAxesNone";
+			gunBeg = "muzzle_3"; // endpoint of the gun
+			gunEnd = "chamber_3"; // chamber of the gun
+			gunnerAction = "Mi8_Gunner";
+			gunnerInAction = "Mi8_Gunner";
+			memoryPointGun = "muzzle_3";
+			memoryPointGunnerOptics = "gunnerview3";
+			selectionFireAnim = "zasleh3";
+			gunnerCompartments = "compartment3";
+			proxyIndex = 1;
 			minElev = -49;
 			maxElev = 30;
 			initElev = 11;
@@ -343,19 +352,10 @@ class DZE_Veh_Mi171Sh: Mi17_base {
 			maxTurn = -30;
 			initTurn = -70;
 			weapons[] = {PKT_3};
-			stabilizedInAxes = "StabilizedInAxesNone";
-			gunBeg = "muzzle_3";	// endpoint of the gun
-			gunEnd = "chamber_3";	// chamber of the gun
-			gunnerAction = "Mi8_Gunner";
-			gunnerInAction = "Mi8_Gunner";
-			memoryPointGun = "muzzle_3";
-			memoryPointGunnerOptics = "gunnerview3";
-			selectionFireAnim = "zasleh3";
 			primaryGunner = 0;
 			commanding = -1;
 			magazines[] = {"100Rnd_762x54_PK"};
 
-			gunnerCompartments = "compartment3";
 
 			// endpoint of the gun
 			// chamber of the gun
@@ -405,31 +405,31 @@ class DZE_Veh_Mi171Sh: Mi17_base {
 		class HUDoff {
 			displayName = "$STR_AM_HUDON";
 			displayNameDefault = "$STR_AM_HUDON";
-			priority = 0;
 			position = "zamerny";
+			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=0)";
+			statement = "this animate [""HUDAction"",0];this animate [""HUDaction_Hide"",0]";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=0)";
-			statement = "this animate [""HUDAction"",0];this animate [""HUDaction_Hide"",0]";
 		};
 		class HUDon {
 			displayName = "$STR_AM_HUDOFF";
 			displayNameDefault = "$STR_AM_HUDOFF";
-			priority = 0;
 			position = "zamerny";
+			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=1)";
+			statement = "this animate [""HUDAction"",1];this animate [""HUDaction_Hide"",1]";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=1)";
-			statement = "this animate [""HUDAction"",1];this animate [""HUDaction_Hide"",1]";
 		};
 	};
 
 	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi171Sh_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi171Sh_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -440,7 +440,7 @@ class DZE_Veh_Mi171Sh_1: DZE_Veh_Mi171Sh {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi171Sh_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi171Sh_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -451,7 +451,7 @@ class DZE_Veh_Mi171Sh_2: DZE_Veh_Mi171Sh_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi171Sh_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi171Sh_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -466,7 +466,7 @@ class DZE_Veh_Mi17_Desert: DZE_Veh_Mi17 {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body5_co.paa","\dayz_epoch_c\skins\mi17\mi17_det2_co.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_Desert_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_Desert_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -477,7 +477,7 @@ class DZE_Veh_Mi17_Desert_1: DZE_Veh_Mi17_Desert {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_Desert_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_Desert_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -488,7 +488,7 @@ class DZE_Veh_Mi17_Desert_2: DZE_Veh_Mi17_Desert_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_Desert_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_Desert_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -503,7 +503,7 @@ class DZE_Veh_Mi17_Green: DZE_Veh_Mi17 {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body2_co.paa","\dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_Green_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_Green_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -514,7 +514,7 @@ class DZE_Veh_Mi17_Green_1: DZE_Veh_Mi17_Green {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_Green_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_Green_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -525,7 +525,7 @@ class DZE_Veh_Mi17_Green_2: DZE_Veh_Mi17_Green_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_Green_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_Green_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -540,7 +540,7 @@ class DZE_Veh_Mi17_Blue: DZE_Veh_Mi17 {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body3_co.paa","\dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_Blue_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_Blue_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -551,7 +551,7 @@ class DZE_Veh_Mi17_Blue_1: DZE_Veh_Mi17_Blue {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_Blue_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_Blue_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -562,7 +562,7 @@ class DZE_Veh_Mi17_Blue_2: DZE_Veh_Mi17_Blue_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_Blue_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_Blue_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -577,7 +577,7 @@ class DZE_Veh_Mi17_Black: DZE_Veh_Mi17 {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body4_co.paa","\dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_Black_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_Black_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -588,7 +588,7 @@ class DZE_Veh_Mi17_Black_1: DZE_Veh_Mi17_Black {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_Black_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_Black_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -599,7 +599,7 @@ class DZE_Veh_Mi17_Black_2: DZE_Veh_Mi17_Black_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_Black_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_Black_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -613,7 +613,7 @@ class DZE_Veh_Mi17_Rusty: DZE_Veh_Mi17_CDF {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi8_body_crash_co.paa","ca\air\data\mi8_det_g_co.paa","ca\air\data\clear_empty.paa","ca\air\data\mi8_decals_ca.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_Rusty_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_Rusty_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -624,7 +624,7 @@ class DZE_Veh_Mi17_Rusty_1: DZE_Veh_Mi17_Rusty {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_Rusty_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_Rusty_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -635,7 +635,7 @@ class DZE_Veh_Mi17_Rusty_2: DZE_Veh_Mi17_Rusty_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_Rusty_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_Rusty_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -649,7 +649,7 @@ class DZE_Veh_Mi17_Winter: DZE_Veh_Mi17_TK {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body_winter.paa", "\dayz_epoch_c\skins\mi17\mi17_det_winter.paa", "\ca\air\data\clear_empty.paa", "\ca\air\data\mi8_decals_ca.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_Winter_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_Winter_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -660,7 +660,7 @@ class DZE_Veh_Mi17_Winter_1: DZE_Veh_Mi17_Winter {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_Winter_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_Winter_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -671,7 +671,7 @@ class DZE_Veh_Mi17_Winter_2: DZE_Veh_Mi17_Winter_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_Winter_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -699,7 +699,7 @@ class DZE_Veh_Mi17_Civilian: Mi17_Civilian {
 	radartype = 0;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_Civilian_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_Civilian_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -710,7 +710,7 @@ class DZE_Veh_Mi17_Civilian_1: DZE_Veh_Mi17_Civilian {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_Civilian_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_Civilian_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -721,7 +721,7 @@ class DZE_Veh_Mi17_Civilian_2: DZE_Veh_Mi17_Civilian_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_Civilian_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_Civilian_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -747,7 +747,7 @@ class DZE_Veh_Mi17_MedEvac_CDF: Mi17_medevac_CDF {
 	radartype = 0;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_MedEvac_CDF_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_MedEvac_CDF_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -758,7 +758,7 @@ class DZE_Veh_Mi17_MedEvac_CDF_1: DZE_Veh_Mi17_MedEvac_CDF {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_MedEvac_CDF_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_MedEvac_CDF_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -769,7 +769,7 @@ class DZE_Veh_Mi17_MedEvac_CDF_2: DZE_Veh_Mi17_MedEvac_CDF_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_MedEvac_CDF_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_MedEvac_CDF_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -795,7 +795,7 @@ class DZE_Veh_Mi17_MedEvac_INS: Mi17_medevac_Ins {
 	radartype = 0;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_MedEvac_INS_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_MedEvac_INS_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -806,7 +806,7 @@ class DZE_Veh_Mi17_MedEvac_INS_1: DZE_Veh_Mi17_MedEvac_INS {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_MedEvac_INS_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_MedEvac_INS_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -817,7 +817,7 @@ class DZE_Veh_Mi17_MedEvac_INS_2: DZE_Veh_Mi17_MedEvac_INS_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_MedEvac_INS_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_MedEvac_INS_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -843,7 +843,7 @@ class DZE_Veh_Mi17_MedEvac_RU: Mi17_medevac_RU {
 	radartype = 0;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi17_MedEvac_RU_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi17_MedEvac_RU_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -854,7 +854,7 @@ class DZE_Veh_Mi17_MedEvac_RU_1: DZE_Veh_Mi17_MedEvac_RU {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi17_MedEvac_RU_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi17_MedEvac_RU_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -865,7 +865,7 @@ class DZE_Veh_Mi17_MedEvac_RU_2: DZE_Veh_Mi17_MedEvac_RU_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi17_MedEvac_RU_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi17_MedEvac_RU_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -887,7 +887,7 @@ class DZE_Veh_Mi8MTV3_RU: Mi17_rockets_RU {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi8MTV3_RU_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi8MTV3_RU_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -898,7 +898,7 @@ class DZE_Veh_Mi8MTV3_RU_1: DZE_Veh_Mi8MTV3_RU {
 	damageResistance = 0.00344; // base 0.00172
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi8MTV3_RU_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi8MTV3_RU_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -909,7 +909,7 @@ class DZE_Veh_Mi8MTV3_RU_2: DZE_Veh_Mi8MTV3_RU_1 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi8MTV3_RU_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi8MTV3_RU_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -931,7 +931,7 @@ class DZE_Veh_Mi171Sh_Rockets: Mi171Sh_rockets_CZ_EP1 {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Mi171Sh_Rockets_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Mi171Sh_Rockets_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -942,7 +942,7 @@ class DZE_Veh_Mi171Sh_Rockets_1: DZE_Veh_Mi171Sh_Rockets {
 	damageResistance = 0.00344; // base 0.00172
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Mi171Sh_Rockets_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Mi171Sh_Rockets_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -953,7 +953,7 @@ class DZE_Veh_Mi171Sh_Rockets_2: DZE_Veh_Mi171Sh_Rockets_1 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Mi171Sh_Rockets_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Mi171Sh_Rockets_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

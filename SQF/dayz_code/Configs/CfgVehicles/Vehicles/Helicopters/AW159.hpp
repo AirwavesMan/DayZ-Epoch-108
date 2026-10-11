@@ -29,30 +29,32 @@ class DZE_Veh_AW159_M240: AW159_Lynx_BAF {
 			animationSourceGun = "obsGun";
 			stabilizedInAxes = "StabilizedInAxesBoth";
 			memoryPointGunnerOptics = "commanderview";
+			gunBeg = "commanderview";
+			gunEnd = "laserstart";
+			memoryPointGun = "laserstart";
+			turretInfoType = "RscWeaponZeroing";
+			gunnerAction = "AW159_Pilot_BAF";
+			gunnerGetInAction = "GetInLow";
+			gunnerGetOutAction = "GetOutLow";
+			gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64";
+			gunnerCompartments = "compartment3";
 			minElev = -40;
 			maxElev = 20;
 			initElev = 0;
 			minTurn = -120;
 			maxTurn = 120;
 			initTurn = 0;
-			gunBeg = "commanderview";
-			gunEnd = "laserstart";
-			memoryPointGun = "laserstart";
-			turretInfoType = "RscWeaponZeroing";
 			discreteDistance[] = {300,400,500,600,700,800};
 			discreteDistanceInitIndex = 1;
 			weapons[] = {"M240BC_veh"};
 			soundServo[] = {"\ca\sounds\vehicles\servos\turret-1",0.01,1.0,30};
 			magazines[] = {"100Rnd_762x51_M240","100Rnd_762x51_M240","100Rnd_762x51_M240"};
 			inGunnerMayFire = 1;
-			gunnerAction = "AW159_Pilot_BAF";
-			gunnerGetInAction = "GetInLow";
-			gunnerGetOutAction = "GetOutLow";
 			gunnerOpticsEffect[] = {};
-			gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64";
 			class OpticsIn {
 				class Wide {
 					opticsDisplayName = "W";
+					gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64";
 					initAngleX = 0;
 					minAngleX = -30;
 					maxAngleX = 30;
@@ -63,14 +65,13 @@ class DZE_Veh_AW159_M240: AW159_Lynx_BAF {
 					minFov = 0.466;
 					maxFov = 0.466;
 					visionMode[] = {"Normal"};
-					gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64";
 				};
 				class Medium: Wide {
 					opticsDisplayName = "M";
+					gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64_2";
 					initFov = 0.093;
 					minFov = 0.093;
 					maxFov = 0.093;
-					gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64_2";
 				};
 				class Narrow: Wide {
 					opticsDisplayName = "N";
@@ -82,6 +83,7 @@ class DZE_Veh_AW159_M240: AW159_Lynx_BAF {
 			};
 			class OpticsOut {
 				class Monocular {
+					gunnerOpticsModel = "";
 					initAngleX = 0;
 					minAngleX = -30;
 					maxAngleX = 30;
@@ -92,21 +94,19 @@ class DZE_Veh_AW159_M240: AW159_Lynx_BAF {
 					minFov = 0.133;
 					maxFov = 1.1;
 					visionMode[] = {"Normal"};
-					gunnerOpticsModel = "";
 					gunnerOpticsEffect[] = {};
 				};
 			};
 			startEngine = 0;
 			gunnerHasFlares = 0;
 
-			gunnerCompartments = "compartment3";
 		};
 	};
 
 	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_AW159_M240_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_AW159_M240_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -117,7 +117,7 @@ class DZE_Veh_AW159_M240_1: DZE_Veh_AW159_M240 {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_AW159_M240_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_AW159_M240_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -128,7 +128,7 @@ class DZE_Veh_AW159_M240_2: DZE_Veh_AW159_M240_1 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_AW159_M240_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_AW159_M240_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -153,7 +153,7 @@ class DZE_Veh_AW159_CRV7: AW159_Lynx_BAF {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_AW159_CRV7_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_AW159_CRV7_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -164,7 +164,7 @@ class DZE_Veh_AW159_CRV7_1: DZE_Veh_AW159_CRV7 {
 	damageResistance = 0.0111; // base 0.00555
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_AW159_CRV7_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_AW159_CRV7_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -175,7 +175,7 @@ class DZE_Veh_AW159_CRV7_2: DZE_Veh_AW159_CRV7_1 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_AW159_CRV7_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_AW159_CRV7_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

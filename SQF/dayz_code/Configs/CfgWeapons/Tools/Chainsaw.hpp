@@ -1,13 +1,13 @@
-class ChainSaw: Rifle
-{
+class DZE_Tool_ChainSaw: Rifle {
 	scope = 2;
-	emptySound[] = {"",10,1};
-	soundBullet[] = {"emptySound",1};
+	displayName = "$STR_EPOCH_CHAINSAW";
+	descriptionShort = "$STR_EPOCH_DESC_CHAINSAW";
 	model = "\z\addons\dayz_epoch\models\chainsaw.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_chainsaw_CA.paa";
-	displayName = $STR_EPOCH_CHAINSAW;
 	cursor = "";
 	cursoraim = "\ca\Weapons\Data\clear_empty";
+	emptySound[] = {"",10,1};
+	soundBullet[] = {"emptySound",1};
 
 	modes[] = {"manual"};
 	handAnim[]=
@@ -15,10 +15,13 @@ class ChainSaw: Rifle
 		"OFP2_ManSkeleton",
 		"\z\addons\dayz_code\anim\saw_idle.rtm"
 	};
-	class manual: Mode_FullAuto
-	{
+	class manual: Mode_FullAuto {
+		displayName = "$STR_EPOCH_CHAINSAW_GAS";
 		recoil = "recoil_auto_machinegun_10outof10";
 		recoilProne = "recoil_auto_machinegun_prone_10outof10";
+		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
+		modelOptics = "-";
+		useActionTitle = "";
 		dispersion = 0.2;
 
 		begin1[] = {"\dayz_sfx\chainsaw\running2.ogg",1.77828,1,1000};
@@ -27,9 +30,7 @@ class ChainSaw: Rifle
 		distanceZoomMin = 50;
 		distanceZoomMax = 50;
 		canDrop = 0;
-		UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 		optics = 1;
-		modelOptics = "-";
 
 		burst = 1;
 		multiplier = 1;
@@ -38,7 +39,6 @@ class ChainSaw: Rifle
 		soundBurst = 0;
 
 		useAction = 0;
-		useActionTitle = "";
 
 		// from hatchet
 		minRange = 0.5;
@@ -51,7 +51,6 @@ class ChainSaw: Rifle
 		showToPlayer = 1;
 		//reloadTime = 0.0708762;
 		reloadTime = 0.12;
-		displayName = $STR_EPOCH_CHAINSAW_GAS;
 	};
 	aiDispersionCoefY = 21;
 	aiDispersionCoefX = 21;
@@ -59,101 +58,90 @@ class ChainSaw: Rifle
 	reloadMagazineSound[] = {"\dayz_sfx\chainsaw\start-attempt.ogg",0.1,1,20};
 	drySound[] = {"\dayz_sfx\chainsaw\start-attempt.ogg",0.01,1,10};
 	magazines[] = {"CSGAS"};
-	class Library
-	{
-		libTextDesc = $STR_EPOCH_DESC_CHAINSAW;
+	class Library {
+		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW";
 	};
-	descriptionShort = $STR_EPOCH_DESC_CHAINSAW;
 };
-class ChainSawB : ChainSaw {
+class DZE_Tool_ChainSawB : DZE_Tool_ChainSaw {
+	displayName = "$STR_EPOCH_CHAINSAW_BLUE";
+	descriptionShort = "$STR_EPOCH_DESC_CHAINSAW_BLUE";
 	model = "\z\addons\dayz_epoch\models\chainsaw_B.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_chainsawB_CA.paa";
-	displayName = $STR_EPOCH_CHAINSAW_BLUE;
-	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_BLUE;
-	class Library
-	{
-		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_BLUE;
+	class Library {
+		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW_BLUE";
 	};	
 };
-class ChainSawG : ChainSaw {
+class DZE_Tool_ChainSawG : DZE_Tool_ChainSaw {
+	displayName = "$STR_EPOCH_CHAINSAW_GREEN";
+	descriptionShort = "$STR_EPOCH_DESC_CHAINSAW_GREEN";
 	model = "\z\addons\dayz_epoch\models\chainsaw_G.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_chainsawG_CA.paa";
-	displayName = $STR_EPOCH_CHAINSAW_GREEN;
-	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_GREEN;
-	class Library
-	{
-		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_GREEN;
+	class Library {
+		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW_GREEN";
 	};	
 };
-class ChainSawP : ChainSaw {
+class DZE_Tool_ChainSawP : DZE_Tool_ChainSaw {
+	displayName = "$STR_EPOCH_CHAINSAW_PINK";
+	descriptionShort = "$STR_EPOCH_DESC_CHAINSAW_PINK";
 	model = "\z\addons\dayz_epoch\models\chainsaw_P.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_chainsawP_CA.paa";
-	displayName = $STR_EPOCH_CHAINSAW_PINK;
-	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_PINK;
-	class Library
-	{
-		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_PINK;
+	class Library {
+		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW_PINK";
 	};	
 };
-class ChainSawR : ChainSaw {
+class DZE_Tool_ChainSawR : DZE_Tool_ChainSaw {
+	displayName = "$STR_EPOCH_CHAINSAW_RED";
+	descriptionShort = "$STR_EPOCH_DESC_CHAINSAW_RED";
 	model = "\z\addons\dayz_epoch\models\chainsaw_R.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_chainsawR_CA.paa";
-	displayName = $STR_EPOCH_CHAINSAW_RED;
-	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_RED;
-	class Library
-	{
-		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_RED;
+	class Library {
+		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW_RED";
 	};	
 };
 
-class ChainSawBroken : ChainSaw {
-	magazines[] = {};
-	displayName = $STR_EPOCH_CHAINSAW_BROKEN;
-	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_BROKEN;
+class DZE_Tool_ChainSawBroken : DZE_Tool_ChainSaw {
+	displayName = "$STR_EPOCH_CHAINSAW_BROKEN";
+	descriptionShort = "$STR_EPOCH_DESC_CHAINSAW_BROKEN";
 	picture = "\dayz_epoch_c\icons\tools\ItemChainsawBroken.paa";
-	class Library
-	{
-		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_BROKEN;
+	magazines[] = {};
+	class Library {
+		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW_BROKEN";
 	};	
 };
 
-class ChainSawBBroken : ChainSawB {
-	magazines[] = {};
-	displayName = $STR_EPOCH_CHAINSAW_BLUE_BROKEN;
-	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_BLUE_BROKEN;
+class DZE_Tool_ChainSawBBroken : DZE_Tool_ChainSawB {
+	displayName = "$STR_EPOCH_CHAINSAW_BLUE_BROKEN";
+	descriptionShort = "$STR_EPOCH_DESC_CHAINSAW_BLUE_BROKEN";
 	picture = "\dayz_epoch_c\icons\tools\ItemChainsawBlueBroken.paa";
-	class Library
-	{
-		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_BLUE_BROKEN;
+	magazines[] = {};
+	class Library {
+		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW_BLUE_BROKEN";
 	};		
 };
-class ChainSawGBroken : ChainSawG {
-	magazines[] = {};
-	displayName = $STR_EPOCH_CHAINSAW_GREEN_BROKEN;
-	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_GREEN_BROKEN;
+class DZE_Tool_ChainSawGBroken : DZE_Tool_ChainSawG {
+	displayName = "$STR_EPOCH_CHAINSAW_GREEN_BROKEN";
+	descriptionShort = "$STR_EPOCH_DESC_CHAINSAW_GREEN_BROKEN";
 	picture = "\dayz_epoch_c\icons\tools\ItemChainsawGreenBroken.paa";
-	class Library
-	{
-		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_GREEN_BROKEN;
+	magazines[] = {};
+	class Library {
+		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW_GREEN_BROKEN";
 	};		
 };
-class ChainSawPBroken : ChainSawP {
-	magazines[] = {};
-	displayName = $STR_EPOCH_CHAINSAW_PINK_BROKEN;
-	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_PINK_BROKEN;
+class DZE_Tool_ChainSawPBroken : DZE_Tool_ChainSawP {
+	displayName = "$STR_EPOCH_CHAINSAW_PINK_BROKEN";
+	descriptionShort = "$STR_EPOCH_DESC_CHAINSAW_PINK_BROKEN";
 	picture = "\dayz_epoch_c\icons\tools\ItemChainsawPinkBroken.paa";
-	class Library
-	{
-		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_PINK_BROKEN;
+	magazines[] = {};
+	class Library {
+		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW_PINK_BROKEN";
 	};	
 };
-class ChainSawRBroken : ChainSawR {
-	magazines[] = {};
-	displayName = $STR_EPOCH_CHAINSAW_RED_BROKEN;
-	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_RED_BROKEN;
+class DZE_Tool_ChainSawRBroken : DZE_Tool_ChainSawR {
+	displayName = "$STR_EPOCH_CHAINSAW_RED_BROKEN";
+	descriptionShort = "$STR_EPOCH_DESC_CHAINSAW_RED_BROKEN";
 	picture = "\dayz_epoch_c\icons\tools\ItemChainsawRedBroken.paa";
-	class Library
-	{
-		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_RED_BROKEN;
+	magazines[] = {};
+	class Library {
+		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW_RED_BROKEN";
 	};
 };

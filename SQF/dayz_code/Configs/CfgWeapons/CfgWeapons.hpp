@@ -302,51 +302,10 @@ class CfgWeapons
 	#include "Melee\Machete.hpp"
 	#include "Melee\BaseballBat.hpp"
 	#include "Melee\FishingPole.hpp"
-	#include "Melee\MeleeSledgehammer.hpp"	
-	
+	#include "Melee\MeleeSledgehammer.hpp"
+
 	/* TOOLS */
-	
-	#include "Tools\Binocular.hpp"
-	#include "Tools\NVG.hpp"
-	#include "Tools\BinocularVector.hpp"
-	#include "Tools\Chainsaw.hpp"
-	
-	#include "Tools\Map.hpp"
-	#include "Tools\Compass.hpp"
-	#include "Tools\GPS.hpp"
-	#include "Tools\Watch.hpp"
-	
-	#include "Tools\Knife.hpp"
-	#include "Tools\Matchbox.hpp"
-	
-	#include "Tools\Toolbox.hpp"
-	#include "Tools\Etool.hpp"
-	
-	#include "Tools\FishingPole.hpp"
-	#include "Tools\Shovel.hpp"
-	#include "Tools\Pickaxe.hpp"
-	#include "Tools\Sledgehammer.hpp"
-	
-	#include "Tools\Crowbar.hpp"
-	#include "Tools\Hatchet.hpp"
-	#include "Tools\Machete.hpp"
-	
-	#include "Tools\Flashlights.hpp"
-	
-	#include "Tools\Radio.hpp"
-	#include "Tools\ItemKeyKit.hpp"
-	
-	#include "Tools\APSI.hpp"
-	#include "Tools\Masks.hpp"
-	#include "Tools\Solder.hpp"
-	#include "Tools\Cuffs.hpp"
-	#include "Tools\Hammer.hpp"
-	#include "Tools\Saw.hpp"
-	#include "Tools\Smartphone.hpp"
-	#include "Tools\Scissors.hpp"
-	#include "Tools\ScrewExtractor.hpp"
-	#include "Tools\Wrench.hpp"
-	#include "Tools\MutantHeart.hpp"
+	#include "Tools\Tools.hpp"
 	
 	#include "Item\ItemKeys.hpp"
 	#include "Item\Documents.hpp"

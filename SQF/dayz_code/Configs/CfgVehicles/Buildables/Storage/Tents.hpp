@@ -1,10 +1,10 @@
 class DZE_Tent_Base: DZE_Storage_Base {
-	destrType = DestructTent;
+	displayName = "$STR_VEH_NAME_TENT";
 	model = "\z\addons\dayz_communityassets\models\tent_a.p3d";
-	icon = "\Ca\buildings\Icons\i_Astan_CA.paa";	
-	displayName = $STR_VEH_NAME_TENT;
-	armor = 40;	
+	icon = "\Ca\buildings\Icons\i_Astan_CA.paa";
 	vehicleClass = "DayZ Epoch 1071 Tents";
+	destrType = DestructTent;
+	armor = 40;
 	
     DZE_bypassBase = 1;
 	DZE_allowRotation = 0;
@@ -21,53 +21,53 @@ class DZE_TentStorage_Base: DZE_Tent_Base {
 	transportMaxBackpacks = 1;
 	
 	class RemoveObject: RemoveObject {
-		DZE_refundKit = "ItemTent";		
+		DZE_refundKit = "ItemTent";
 	};
 };
 
 class DZE_TentStorage: DZE_TentStorage_Base {
 	scope = 2;
-	DZE_upgradeBuilding[] = {"DZE_TentStorage0",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
+	DZE_upgradeBuilding[] = {"DZE_TentStorage0",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
 };
 
 class DZE_TentStorage0: DZE_TentStorage {
-	displayName = $STR_VEH_NAME_TENT1;
+	displayName = "$STR_VEH_NAME_TENT1";
 	armor = 50;	
 	transportMaxMagazines = 85;
 	transportMaxWeapons = 12;
 	transportMaxBackpacks = 2;	
-	DZE_upgradeBuilding[] = {"DZE_TentStorage1",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1},{"equip_tent_poles",1}}};
+	DZE_upgradeBuilding[] = {"DZE_TentStorage1",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1},{"equip_tent_poles",1}}};
 };
 
 class DZE_TentStorage1: DZE_TentStorage0 {
-	displayName = $STR_VEH_NAME_TENT2;
+	displayName = "$STR_VEH_NAME_TENT2";
 	armor = 60;
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 15;
 	transportMaxBackpacks = 3;	
-	DZE_upgradeBuilding[] = {"DZE_TentStorage2",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",2},{"equip_tent_poles",2}}};
+	DZE_upgradeBuilding[] = {"DZE_TentStorage2",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",2},{"equip_tent_poles",2}}};
 };
 
 class DZE_TentStorage2: DZE_TentStorage1 {
-	displayName = $STR_VEH_NAME_TENT3;
+	displayName = "$STR_VEH_NAME_TENT3";
 	armor = 70;
 	transportMaxMagazines = 115;
 	transportMaxWeapons = 18;
 	transportMaxBackpacks = 4;	
-	DZE_upgradeBuilding[] = {"DZE_TentStorage3",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",2},{"ItemBurlap",1},{"equip_tent_poles",1}}};
+	DZE_upgradeBuilding[] = {"DZE_TentStorage3",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",2},{"ItemBurlap",1},{"equip_tent_poles",1}}};
 };
 
 class DZE_TentStorage3: DZE_TentStorage2 {
-	displayName = $STR_VEH_NAME_TENT4;
+	displayName = "$STR_VEH_NAME_TENT4";
 	armor = 80;
 	transportMaxMagazines = 130;
 	transportMaxWeapons = 21;
 	transportMaxBackpacks = 5;	
-	DZE_upgradeBuilding[] = {"DZE_TentStorage4",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_rope",2},{"ItemBurlap",2},{"equip_tent_poles",4}}};
+	DZE_upgradeBuilding[] = {"DZE_TentStorage4",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_rope",2},{"ItemBurlap",2},{"equip_tent_poles",4}}};
 };
 
 class DZE_TentStorage4: DZE_TentStorage3 {
-	displayName = $STR_VEH_NAME_TENT5;
+	displayName = "$STR_VEH_NAME_TENT5";
 	armor = 90;
 	transportMaxMagazines = 145;
 	transportMaxWeapons = 25;
@@ -76,9 +76,9 @@ class DZE_TentStorage4: DZE_TentStorage3 {
 };
 
 class DZE_TentStorageWinter: DZE_TentStorage_Base {
-	displayName = $STR_VEH_NAME_TENTWINTER;
+	displayName = "$STR_VEH_NAME_TENTWINTER";
 	model = "\z\addons\dayz_epoch_v\base_building\storage\tents\dze_a_tent.p3d";
-	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter0",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
+	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter0",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
 	
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemTentWinter";
@@ -86,43 +86,43 @@ class DZE_TentStorageWinter: DZE_TentStorage_Base {
 };
 
 class DZE_TentStorageWinter0: DZE_TentStorageWinter {
-	displayName = $STR_VEH_NAME_TENTWINTER1;
+	displayName = "$STR_VEH_NAME_TENTWINTER1";
 	armor = 50;	
 	transportMaxMagazines = 85;
 	transportMaxWeapons = 12;
 	transportMaxBackpacks = 2;	
-	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter1",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1},{"equip_tent_poles",1}}};
+	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter1",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1},{"equip_tent_poles",1}}};
 };
 
 class DZE_TentStorageWinter1: DZE_TentStorageWinter0 {
-	displayName = $STR_VEH_NAME_TENTWINTER2;
+	displayName = "$STR_VEH_NAME_TENTWINTER2";
 	armor = 60;
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 15;
 	transportMaxBackpacks = 3;	
-	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter2",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",2},{"equip_tent_poles",2}}};
+	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter2",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",2},{"equip_tent_poles",2}}};
 };
 
 class DZE_TentStorageWinter2: DZE_TentStorageWinter1 {
-	displayName = $STR_VEH_NAME_TENTWINTER3;
+	displayName = "$STR_VEH_NAME_TENTWINTER3";
 	armor = 70;
 	transportMaxMagazines = 115;
 	transportMaxWeapons = 18;
 	transportMaxBackpacks = 4;
-	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter3",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",2},{"ItemBurlap",1},{"equip_tent_poles",1}}};
+	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter3",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",2},{"ItemBurlap",1},{"equip_tent_poles",1}}};
 };
 
 class DZE_TentStorageWinter3: DZE_TentStorageWinter2 {
-	displayName = $STR_VEH_NAME_TENTWINTER4;
+	displayName = "$STR_VEH_NAME_TENTWINTER4";
 	armor = 80;
 	transportMaxMagazines = 130;
 	transportMaxWeapons = 21;
 	transportMaxBackpacks = 5;	
-	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter4",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_rope",2},{"ItemBurlap",2},{"equip_tent_poles",4}}};
+	DZE_upgradeBuilding[] = {"DZE_TentStorageWinter4",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_rope",2},{"ItemBurlap",2},{"equip_tent_poles",4}}};
 };
 
 class DZE_TentStorageWinter4: DZE_TentStorageWinter3 {	
-	displayName = $STR_VEH_NAME_TENTWINTER5;
+	displayName = "$STR_VEH_NAME_TENTWINTER5";
 	armor = 90;
 	transportMaxMagazines = 145;
 	transportMaxWeapons = 25;
@@ -132,9 +132,9 @@ class DZE_TentStorageWinter4: DZE_TentStorageWinter3 {
 
 class DZE_DesertTentStorage: DZE_TentStorage_Base {
 	scope = 2;
+	displayname = "$STR_VEH_NAME_DESERT_TENT";
 	model = "\dayz_epoch_b\models\astan.p3d";
-	displayname = $STR_VEH_NAME_DESERT_TENT;
-	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage0",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
+	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage0",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
 	
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemDesertTent";
@@ -142,43 +142,43 @@ class DZE_DesertTentStorage: DZE_TentStorage_Base {
 };
 
 class DZE_DesertTentStorage0: DZE_DesertTentStorage {
-	displayname = $STR_VEH_NAME_DESERT_TENT1;
+	displayname = "$STR_VEH_NAME_DESERT_TENT1";
 	armor = 50;	
 	transportMaxMagazines = 85;
 	transportMaxWeapons = 12;
 	transportMaxBackpacks = 2;
-	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage1",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1},{"equip_tent_poles",1}}};
+	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage1",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1},{"equip_tent_poles",1}}};
 };
 
 class DZE_DesertTentStorage1: DZE_DesertTentStorage0 {
-	displayname = $STR_VEH_NAME_DESERT_TENT2;
+	displayname = "$STR_VEH_NAME_DESERT_TENT2";
 	armor = 60;
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 15;
 	transportMaxBackpacks = 3;
-	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage2",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",2},{"equip_tent_poles",2}}};
+	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage2",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",2},{"equip_tent_poles",2}}};
 };
 
 class DZE_DesertTentStorage2: DZE_DesertTentStorage1 {
-	displayname = $STR_VEH_NAME_DESERT_TENT3;
+	displayname = "$STR_VEH_NAME_DESERT_TENT3";
 	armor = 70;
 	transportMaxMagazines = 115;
 	transportMaxWeapons = 18;
 	transportMaxBackpacks = 4;
-	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage3",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",2},{"ItemBurlap",1},{"equip_tent_poles",1}}};
+	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage3",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",2},{"ItemBurlap",1},{"equip_tent_poles",1}}};
 };
 
 class DZE_DesertTentStorage3: DZE_DesertTentStorage2 {
-	displayname = $STR_VEH_NAME_DESERT_TENT4;
+	displayname = "$STR_VEH_NAME_DESERT_TENT4";
 	armor = 80;
 	transportMaxMagazines = 130;
 	transportMaxWeapons = 21;
 	transportMaxBackpacks = 5;	
-	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage4",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_rope",2},{"ItemBurlap",2},{"equip_tent_poles",4}}};
+	DZE_upgradeBuilding[] = {"DZE_DesertTentStorage4",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_rope",2},{"ItemBurlap",2},{"equip_tent_poles",4}}};
 };
 
 class DZE_DesertTentStorage4: DZE_DesertTentStorage3 {
-	displayname = $STR_VEH_NAME_DESERT_TENT5;
+	displayname = "$STR_VEH_NAME_DESERT_TENT5";
 	armor = 90;
 	transportMaxMagazines = 145;
 	transportMaxWeapons = 25;
@@ -187,8 +187,8 @@ class DZE_DesertTentStorage4: DZE_DesertTentStorage3 {
 };
 
 class DZE_DomeTentStorage_base: DZE_Tent_Base {	
-	displayname = $STR_VEH_NAME_DOME_TENT;
-	model = "\z\addons\dayz_communityassets\models\tent_dome.p3d";	
+	displayname = "$STR_VEH_NAME_DOME_TENT";
+	model = "\z\addons\dayz_communityassets\models\tent_dome.p3d";
 	armor = 50;
 	transportMaxMagazines = 90;
 	transportMaxWeapons = 10;
@@ -201,48 +201,48 @@ class DZE_DomeTentStorage_base: DZE_Tent_Base {
 
 class DZE_DomeTentStorage: DZE_Tent_Base {
 	scope = 2;
-	DZE_upgradeBuilding[] = {"DZE_DomeTentStorage0",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
+	DZE_upgradeBuilding[] = {"DZE_DomeTentStorage0",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
 };
 
 class DZE_DomeTentStorage0: DZE_DomeTentStorage {
+	displayname = "$STR_VEH_NAME_DOME_TENT1";
 	armor = 60;
-	displayname = $STR_VEH_NAME_DOME_TENT1;
 	transportMaxMagazines = 110;
 	transportMaxWeapons = 15;
 	transportMaxBackpacks = 5;	
-	DZE_upgradeBuilding[] = {"DZE_DomeTentStorage1",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1},{"equip_tent_poles",1}}};
+	DZE_upgradeBuilding[] = {"DZE_DomeTentStorage1",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1},{"equip_tent_poles",1}}};
 };
 
 class DZE_DomeTentStorage1: DZE_DomeTentStorage0 {
+	displayname = "$STR_VEH_NAME_DOME_TENT2";
 	armor = 70;
-	displayname = $STR_VEH_NAME_DOME_TENT2;
 	transportMaxMagazines = 130;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 10;
-	DZE_upgradeBuilding[] = {"DZE_DomeTentStorage2",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",2},{"equip_tent_poles",2}}};
+	DZE_upgradeBuilding[] = {"DZE_DomeTentStorage2",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",2},{"equip_tent_poles",2}}};
 };
 
 class DZE_DomeTentStorage2: DZE_DomeTentStorage1 {	
+	displayname = "$STR_VEH_NAME_DOME_TENT3";
 	armor = 80;
-	displayname = $STR_VEH_NAME_DOME_TENT3;
 	transportMaxMagazines = 160;
 	transportMaxWeapons = 35;
 	transportMaxBackpacks = 15;
-	DZE_upgradeBuilding[] = {"DZE_DomeTentStorage3",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",2},{"ItemBurlap",1},{"equip_tent_poles",1}}};
+	DZE_upgradeBuilding[] = {"DZE_DomeTentStorage3",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",2},{"ItemBurlap",1},{"equip_tent_poles",1}}};
 };
 
 class DZE_DomeTentStorage3: DZE_DomeTentStorage2 {
+	displayname = "$STR_VEH_NAME_DOME_TENT4";
 	armor = 90;
-	displayname = $STR_VEH_NAME_DOME_TENT4;
 	transportMaxMagazines = 190;
 	transportMaxWeapons = 45;
 	transportMaxBackpacks = 20;
-	DZE_upgradeBuilding[] = {"DZE_DomeTentStorage4",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_rope",2},{"ItemBurlap",2},{"equip_tent_poles",4}}};
+	DZE_upgradeBuilding[] = {"DZE_DomeTentStorage4",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_rope",2},{"ItemBurlap",2},{"equip_tent_poles",4}}};
 };
 
 class DZE_DomeTentStorage4: DZE_DomeTentStorage3 {
+	displayname = "$STR_VEH_NAME_DOME_TENT5";
 	armor = 100;
-	displayname = $STR_VEH_NAME_DOME_TENT5;
 	transportMaxMagazines = 220;
 	transportMaxWeapons = 55;
 	transportMaxBackpacks = 25;
@@ -251,54 +251,54 @@ class DZE_DomeTentStorage4: DZE_DomeTentStorage3 {
 
 class DZE_WinterDomeTentStorage: DZE_DomeTentStorage_base {
 	scope = 2;
-	model = "\z\addons\dayz_epoch_v\base_building\storage\tents\dze_dome_tent.p3d";	
-	displayname = $STR_VEH_NAME_WINTER_DOME_TENT;
+	displayname = "$STR_VEH_NAME_WINTER_DOME_TENT";
+	model = "\z\addons\dayz_epoch_v\base_building\storage\tents\dze_dome_tent.p3d";
 	transportMaxMagazines = 75;
-	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage0",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
+	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage0",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWinterDomeTent";
 	};
 };
 
 class DZE_WinterDomeTentStorage0: DZE_WinterDomeTentStorage {
+	displayname = "$STR_VEH_NAME_WINTER_DOME_TENT1";
 	armor = 60;
-	displayname = $STR_VEH_NAME_WINTER_DOME_TENT1;
 	transportMaxMagazines = 110;
 	transportMaxWeapons = 15;
 	transportMaxBackpacks = 5;	
-	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage1",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1},{"equip_tent_poles",1}}};
+	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage1",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",1},{"equip_tent_poles",1}}};
 };
 
 class DZE_WinterDomeTentStorage1: DZE_WinterDomeTentStorage0 {
+	displayname = "$STR_VEH_NAME_WINTER_DOME_TENT2";
 	armor = 70;
-	displayname = $STR_VEH_NAME_WINTER_DOME_TENT2;
 	transportMaxMagazines = 130;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 10;
-	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage2",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",2},{"equip_tent_poles",2}}};
+	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage2",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",1},{"ItemCanvas",2},{"equip_tent_poles",2}}};
 };
 
 class DZE_WinterDomeTentStorage2: DZE_WinterDomeTentStorage1 {
+	displayname = "$STR_VEH_NAME_WINTER_DOME_TENT3";
 	armor = 80;
-	displayname = $STR_VEH_NAME_WINTER_DOME_TENT3;
 	transportMaxMagazines = 160;
 	transportMaxWeapons = 35;
 	transportMaxBackpacks = 15;
-	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage3",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_string",2},{"ItemBurlap",1},{"equip_tent_poles",1}}};
+	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage3",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_string",2},{"ItemBurlap",1},{"equip_tent_poles",1}}};
 };
 
 class DZE_WinterDomeTentStorage3: DZE_WinterDomeTentStorage2 {
+	displayname = "$STR_VEH_NAME_WINTER_DOME_TENT4";
 	armor = 90;
-	displayname = $STR_VEH_NAME_WINTER_DOME_TENT4;
 	transportMaxMagazines = 190;
 	transportMaxWeapons = 45;
 	transportMaxBackpacks = 20;
-	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage4",{"ItemToolbox","DZE_Tool_Knife"},{{"equip_rope",2},{"ItemBurlap",2},{"equip_tent_poles",4}}};
+	DZE_upgradeBuilding[] = {"DZE_WinterDomeTentStorage4",{"DZE_Tool_Toolbox","DZE_Tool_Knife"},{{"equip_rope",2},{"ItemBurlap",2},{"equip_tent_poles",4}}};
 };
 
 class DZE_WinterDomeTentStorage4: DZE_WinterDomeTentStorage3 {	
+	displayname = "$STR_VEH_NAME_WINTER_DOME_TENT5";
 	armor = 100;
-	displayname = $STR_VEH_NAME_WINTER_DOME_TENT5;
 	transportMaxMagazines = 220;
 	transportMaxWeapons = 55;
 	transportMaxBackpacks = 25;

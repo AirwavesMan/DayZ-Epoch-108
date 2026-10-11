@@ -1,10 +1,15 @@
 class DZE_SUV_Armored_Base: Car {
 	scope = 0;
+	displayName = "SUV (Armored)";
+	vehicleClass = "DZE Vehicles Cars";
+	model = "\Ca\Wheeled_PMC\ArmoredSUV\armoredSUV_PMC.p3d";
+	icon = "\ca\Wheeled_PMC\data\ui\Icon_suv_minigun_PMC.paa";
+	picture = "\ca\Wheeled_PMC\data\ui\Picture_suv_minigun_PMC_ca.paa";
+	driverAction = "SUV_Driver_EP1";
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
 	DZE_MACRO_VEHICLE_SIDE
 	brakeDistance = 19;
-	vehicleClass = "DZE Vehicles Cars";
 	htMin = 60;
 	htMax = 1800;
 	afMax = 200;
@@ -12,10 +17,6 @@ class DZE_SUV_Armored_Base: Car {
 	mFact = 1;
 	tBody = 200;
 	expansion = 4;
-	displayName = "SUV (Armored)";
-	model = "\Ca\Wheeled_PMC\ArmoredSUV\armoredSUV_PMC.p3d";
-	icon = "\ca\Wheeled_PMC\data\ui\Icon_suv_minigun_PMC.paa";
-	picture = "\ca\Wheeled_PMC\data\ui\Picture_suv_minigun_PMC_ca.paa";
 	mapSize = 7;
 	maxSpeed = 230;
 	accuracy = 0.2;
@@ -25,7 +26,6 @@ class DZE_SUV_Armored_Base: Car {
 	fuelCapacity = 130;
 	supplyRadius = 1.3;
 	weapons[] = {"MiniCarHorn"};
-	driverAction = "SUV_Driver_EP1";
 	cargoAction[] = {"SUV_Cargo_EP1","SUV_Cargo02_EP1","SUV_Cargo01_EP1"};
 	outsideSoundFilter = 1;
 	insideSoundCoef = 0.8;
@@ -55,116 +55,116 @@ class DZE_SUV_Armored_Base: Car {
 	soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
 	class SoundEvents {
 		class AccelerationIn {
-			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_int_accelerate_3_x",0.562341,1};
 			limit = "0.4";
 			expression = "(engineOn*(1-camPos))*gmeterZ";
+			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_int_accelerate_3_x",0.562341,1};
 		};
 		class AccelerationOut {
-			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_accelerate_3",0.562341,1,200};
 			limit = "0.4";
 			expression = "(engineOn*camPos)*gmeterZ";
+			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_accelerate_3",0.562341,1,200};
 		};
 	};
 	class Sounds {
 		class Engine {
-			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_low",0.177828,1.4,100};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "camPos*engineOn*((rpm factor[0.3, 0.4]) min (rpm factor[0.7, 0.5]))";
+			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_low",0.177828,1.4,100};
 		};
 		class EngineHighOut {
-			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_high",1,0.8,300};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "camPos*engineOn*(rpm factor[0.5, 0.8])";
+			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_high",1,0.8,300};
 		};
 		class IdleOut {
-			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_idle",0.562341,1,100};
 			frequency = "1";
 			volume = "engineOn*camPos*(rpm factor[0.4, 0])";
+			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_idle",0.562341,1,100};
 		};
 		class TiresRockOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.316228,1,30};
 		};
 		class TiresSandOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.316228,1,30};
 		};
 		class TiresGrassOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass2",0.316228,1,30};
 		};
 		class TiresMudOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.316228,1,30};
 		};
 		class TiresGravelOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.316228,1,30};
 		};
 		class TiresAsphaltOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.316228,1,30};
 		};
 		class NoiseOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise2",0.1,1,30};
 			frequency = "1";
 			volume = "camPos*(damper0 max 0.03)*(speed factor[0, 8])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise2",0.1,1,30};
 		};
 		class EngineLowIn {
-			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_int_low_x",0.316228,1.4};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "(1-camPos)*engineOn*((rpm factor[0.3, 0.4]) min (rpm factor[0.7, 0.45]))";
+			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_int_low_x",0.316228,1.4};
 		};
 		class EngineHighIn {
-			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_int_high_x",1,0.8};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "(1-camPos)*engineOn*(rpm factor[0.5, 0.8])";
+			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_int_high_x",1,0.8};
 		};
 		class IdleIn {
-			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_int_idle_x",0.316228,1};
 			frequency = "1";
 			volume = "engineOn*(rpm factor[0.4, 0])*(1-camPos)";
+			sound[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_int_idle_x",0.316228,1};
 		};
 		class TiresRockIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",0.316228,1};
 			frequency = "1";
 			volume = "(1-camPos)*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",0.316228,1};
 		};
 		class TiresSandIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",0.316228,1};
 			frequency = "1";
 			volume = "(1-camPos)*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",0.316228,1};
 		};
 		class TiresGrassIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass2",0.316228,1};
 			frequency = "1";
 			volume = "(1-camPos)*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass2",0.316228,1};
 		};
 		class TiresMudIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",0.316228,1};
 			frequency = "1";
 			volume = "(1-camPos)*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",0.316228,1};
 		};
 		class TiresGravelIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",0.316228,1};
 			frequency = "1";
 			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",0.316228,1};
 		};
 		class TiresAsphaltIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",0.316228,1};
 			frequency = "1";
 			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",0.316228,1};
 		};
 		class NoiseIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\noise2",0.177828,1};
 			frequency = "1";
 			volume = "(damper0 max 0.03)*(speed factor[0, 8])*(1-camPos)";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\noise2",0.177828,1};
 		};
 		class Movement {
 			sound = "soundEnviron";
@@ -221,24 +221,24 @@ class DZE_SUV_Armored_Base: Car {
 		class OpenHatch {
 			displayName = "$STR_AM_OPENGUNNER";
 			displayNameDefault = "$STR_AM_OPENGUNNER";
-			priority = 0;
 			position = "zamerny";
+			condition = "this animationPhase 'HideGun_01' == 1";
+			statement = "this animate ['HideGun_01',0]; this animate ['CloseCover1',0]; this animate ['CloseCover2',0];";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "this animationPhase 'HideGun_01' == 1";
-			statement = "this animate ['HideGun_01',0]; this animate ['CloseCover1',0]; this animate ['CloseCover2',0];";
 		};
 		class CloseHatch {
 			displayName = "$STR_AM_CLOSEGUNNER";
 			displayNameDefault = "$STR_AM_CLOSEGUNNER";
-			priority = 0;
 			position = "zamerny";
+			condition = "isNull (this turretUnit [0]) && (this animationPhase 'HideGun_01' == 0)";
+			statement = "this animate ['HideGun_01',1]; this spawn {uiSleep 1; _this animate ['CloseCover1',1]; _this animate ['CloseCover2',1];};";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "isNull (this turretUnit [0]) && (this animationPhase 'HideGun_01' == 0)";
-			statement = "this animate ['HideGun_01',1]; this spawn {uiSleep 1; _this animate ['CloseCover1',1]; _this animate ['CloseCover2',1];};";
 		};
 	};
 };
@@ -257,20 +257,20 @@ class DZE_Veh_SUV_Armored_M134: DZE_SUV_Armored_Base {
 		class MainTurret: MainTurret {
 			body = "mainTurret";
 			gun = "mainGun";
+			animationSourceHatch = "";
+			stabilizedInAxes = "StabilizedInAxesNone";
+			gunBeg = "muzzle_1";
+			gunEnd = "chamber_1";
+			gunnerAction = "ArmoredSUV_Gunner_PMC";
 			viewGunnerInExternal = 1;
 			minElev = -30;
 			maxElev = 45;
 			initElev = 0;
 			soundServo[] = {"\ca\sounds\vehicles\servos\turret-1",0.031622775,1,15};
-			animationSourceHatch = "";
-			stabilizedInAxes = "StabilizedInAxesNone";
-			gunBeg = "muzzle_1";
-			gunEnd = "chamber_1";
 			weapons[] = {"M134"};
 			maxHorizontalRotSpeed = 1.8;
 			maxVerticalRotSpeed = 1.8;
 			magazines[] = {"2000Rnd_762x51_M134"};
-			gunnerAction = "ArmoredSUV_Gunner_PMC";
 		};
 	};
 	class AnimationSources: AnimationSources {
@@ -299,7 +299,7 @@ class DZE_Veh_SUV_Armored_M134: DZE_SUV_Armored_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Armored_M134_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",4},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Armored_M134_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",4},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -311,7 +311,7 @@ class DZE_Veh_SUV_Armored_M134_1: DZE_Veh_SUV_Armored_M134 {
 	terrainCoef = 1.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Armored_M134_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",10},{"ItemScrews",1}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Armored_M134_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",10},{"ItemScrews",1}}};
 	};
 };
 
@@ -351,7 +351,7 @@ class DZE_Veh_SUV_Armored_M134_2: DZE_Veh_SUV_Armored_M134_1 {
 		};
 	};
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Armored_M134_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Armored_M134_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -362,7 +362,7 @@ class DZE_Veh_SUV_Armored_M134_3: DZE_Veh_SUV_Armored_M134_2 {
 	transportMaxBackpacks = 15;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Armored_M134_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",6},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Armored_M134_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",6},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -382,7 +382,7 @@ class DZE_Veh_SUV_Armored_PKT: DZE_Veh_SUV_Armored_M134 {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Armored_PKT_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",4},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Armored_PKT_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",4},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -394,7 +394,7 @@ class DZE_Veh_SUV_Armored_PKT_1: DZE_Veh_SUV_Armored_PKT {
 	terrainCoef = 1.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Armored_PKT_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",10},{"ItemScrews",1}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Armored_PKT_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",10},{"ItemScrews",1}}};
 	};
 };
 
@@ -434,7 +434,7 @@ class DZE_Veh_SUV_Armored_PKT_2: DZE_Veh_SUV_Armored_PKT_1 {
 		};
 	};
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Armored_PKT_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Armored_PKT_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -445,7 +445,7 @@ class DZE_Veh_SUV_Armored_PKT_3: DZE_Veh_SUV_Armored_PKT_2 {
 	transportMaxBackpacks = 15;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Armored_PKT_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",6},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Armored_PKT_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",6},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 

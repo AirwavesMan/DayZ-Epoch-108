@@ -792,9 +792,9 @@
 
 // extensions
 #define getRootConfig(cls)                      DZR_SYSTEM_VARS getVariable [cls, 'CfgWeapons'] /// **** TODO **** default should test multiple root configs
-#define ihave_CROWBAR                           'ItemCrowbar' in p_items || {'MeleeCrowbar' in [p_primaryWeapon, dayz_onBack]}
+#define ihave_CROWBAR                           'DZE_Tool_Crowbar' in p_items || {'MeleeCrowbar' in [p_primaryWeapon, dayz_onBack]}
 #define ihave_FISHING_POLE                      p_currentWeapon == 'MeleeFishingPole'
-#define ihave_PICKAXE                           'ItemPickaxe' in p_items
+#define ihave_PICKAXE                           'DZE_Tool_Pickaxe' in p_items
 #define ihave_WOODPILE                          'PartWoodPile' in p_magazines
 #define itemToMelee(cls)                        getText (configFile >> 'CfgWeapons' >> cls >> 'DZE_swappedItem')
 #define meleeToItem(cls)                        itemToMelee(cls)

@@ -1,12 +1,12 @@
 class Offroad_DSHKM_Gue;
 class DZE_Veh_Offroad_DShKM: Offroad_DSHKM_Gue {
+	displayName = "$STR_VEH_NAME_PICKUP_DSHKM";
+	vehicleClass = "DZE Vehicles Cars";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
-	displayName = "$STR_VEH_NAME_PICKUP_DSHKM";
-	vehicleClass = "DZE Vehicles Cars";
 	class HitPoints;
 	class HitLFWheel;
 	class HitLBWheel;
@@ -21,7 +21,7 @@ class DZE_Veh_Offroad_DShKM: Offroad_DSHKM_Gue {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Offroad_DShKM_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Offroad_DShKM_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -32,7 +32,7 @@ class DZE_Veh_Offroad_DShKM_1: DZE_Veh_Offroad_DShKM {
 	maxSpeed = 170; // Offroad_DSHKM_base 150 | car 100
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Offroad_DShKM_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Offroad_DShKM_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 // Armmor 2
@@ -74,7 +74,7 @@ class DZE_Veh_Offroad_DShKM_2: DZE_Veh_Offroad_DShKM_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Offroad_DShKM_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Offroad_DShKM_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 
 };
@@ -86,7 +86,7 @@ class DZE_Veh_Offroad_DShKM_3: DZE_Veh_Offroad_DShKM_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades	{
-		ItemTNK[] = {"DZE_Veh_Offroad_DShKM_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Offroad_DShKM_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -98,13 +98,13 @@ class DZE_Veh_Offroad_DShKM_4: DZE_Veh_Offroad_DShKM_3 {
 
 class Offroad_SPG9_Gue;
 class DZE_Veh_Offroad_SPG9_GUE: Offroad_SPG9_Gue {
+	displayName = "$STR_VEH_NAME_PICKUP_GUE_SPG9";
+	vehicleClass = "DZE Vehicles Cars";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
-	displayName = "$STR_VEH_NAME_PICKUP_GUE_SPG9";
-	vehicleClass = "DZE Vehicles Cars";
 	class HitPoints;
 	class HitLFWheel;
 	class HitLBWheel;
@@ -119,7 +119,7 @@ class DZE_Veh_Offroad_SPG9_GUE: Offroad_SPG9_Gue {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Offroad_SPG9_GUE_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Offroad_SPG9_GUE_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -130,7 +130,7 @@ class DZE_Veh_Offroad_SPG9_GUE_1: DZE_Veh_Offroad_SPG9_GUE {
 	maxSpeed = 170; // Offroad_SPG9_base 150 | car 100
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Offroad_SPG9_GUE_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Offroad_SPG9_GUE_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 // Armor 2
@@ -172,7 +172,7 @@ class DZE_Veh_Offroad_SPG9_GUE_2: DZE_Veh_Offroad_SPG9_GUE_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Offroad_SPG9_GUE_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Offroad_SPG9_GUE_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 
 };
@@ -184,7 +184,7 @@ class DZE_Veh_Offroad_SPG9_GUE_3: DZE_Veh_Offroad_SPG9_GUE_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades	{
-		ItemTNK[] = {"DZE_Veh_Offroad_SPG9_GUE_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Offroad_SPG9_GUE_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -196,13 +196,13 @@ class DZE_Veh_Offroad_SPG9_GUE_4: DZE_Veh_Offroad_SPG9_GUE_3 {
 
 class Offroad_SPG9_TK_GUE_EP1;
 class DZE_Veh_Offroad_SPG9_TK: Offroad_SPG9_TK_GUE_EP1 {
+	displayName = "$STR_VEH_NAME_PICKUP_TK_GUE_SPG9";
+	vehicleClass = "DZE Vehicles Cars";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
-	displayName = "$STR_VEH_NAME_PICKUP_TK_GUE_SPG9";
-	vehicleClass = "DZE Vehicles Cars";
 	class HitPoints;
 	class HitLFWheel;
 	class HitLBWheel;
@@ -217,7 +217,7 @@ class DZE_Veh_Offroad_SPG9_TK: Offroad_SPG9_TK_GUE_EP1 {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Offroad_SPG9_TK_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Offroad_SPG9_TK_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -228,7 +228,7 @@ class DZE_Veh_Offroad_SPG9_TK_1: DZE_Veh_Offroad_SPG9_TK {
 	maxSpeed = 170; // Offroad_SPG9_base 150 | car 100
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Offroad_SPG9_TK_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Offroad_SPG9_TK_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 // Armor 2
@@ -270,7 +270,7 @@ class DZE_Veh_Offroad_SPG9_TK_2: DZE_Veh_Offroad_SPG9_TK_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Offroad_SPG9_TK_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Offroad_SPG9_TK_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 
 };
@@ -282,7 +282,7 @@ class DZE_Veh_Offroad_SPG9_TK_3: DZE_Veh_Offroad_SPG9_TK_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades	{
-		ItemTNK[] = {"DZE_Veh_Offroad_SPG9_TK_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Offroad_SPG9_TK_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

@@ -32,26 +32,27 @@ class DZE_Veh_UH1Y_M134: UH1_Base {
 
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
+			gunnerCompartments = "Compartment3";
 			//gunnerOpticsModel = "\ca\Weapons\optika_empty";
 			magazines[] = {"2000Rnd_762x51_M134"};
 
 			//gunnerOpticsModel = "\ca\Weapons\optika_empty";
 
-			gunnerCompartments = "Compartment3";
 		};
 		class RightDoorGun: RightDoorGun {
+			gunnerCompartments = "Compartment3";
 			//gunnerOpticsModel = "\ca\Weapons\optika_empty";
 			visionMode[] = {"Normal","NVG"};
 			magazines[] = {"2000Rnd_762x51_M134"};
 
 			//gunnerOpticsModel = "\ca\Weapons\optika_empty";
 
-			gunnerCompartments = "Compartment3";
 		};
 		class CoPilotObs: CoPilotObs {
 			class OpticsIn {
 				class Wide {
 					opticsDisplayName = "W";
+					gunnerOpticsModel = "\ca\weapons\optika_SOFLAM";
 					initAngleX = 0;
 					minAngleX = -30;
 					maxAngleX = 30;
@@ -63,14 +64,13 @@ class DZE_Veh_UH1Y_M134: UH1_Base {
 					maxFov = 0.466;
 					visionMode[] = {"Normal","NVG"};
 					thermalMode[] = {};
-					gunnerOpticsModel = "\ca\weapons\optika_SOFLAM";
 				};
 				class Medium: Wide {
 					opticsDisplayName = "M";
+					gunnerOpticsModel = "\ca\weapons\optika_SOFLAM";
 					initFov = 0.093;
 					minFov = 0.093;
 					maxFov = 0.093;
-					gunnerOpticsModel = "\ca\weapons\optika_SOFLAM";
 				};
 				class Narrow: Wide {
 					opticsDisplayName = "N";
@@ -91,46 +91,46 @@ class DZE_Veh_UH1Y_M134: UH1_Base {
 		class HUDoff {
 			displayName = "$STR_AM_HUDON";
 			displayNameDefault = "$STR_AM_HUDON";
-			priority = 0;
 			position = "zamerny";
+			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=1)";
+			statement = "this animate [""HUDAction"",1];this animate [""HUDAction_1"",1]";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=1)";
-			statement = "this animate [""HUDAction"",1];this animate [""HUDAction_1"",1]";
 		};
 		class HUDon {
 			displayName = "$STR_AM_HUDOFF";
 			displayNameDefault = "$STR_AM_HUDOFF";
-			priority = 0;
 			position = "zamerny";
+			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=0)";
+			statement = "this animate [""HUDAction"",0];this animate [""HUDAction_1"",0]";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=0)";
-			statement = "this animate [""HUDAction"",0];this animate [""HUDAction_1"",0]";
 		};
 		class Fold {
 			displayName = "$STR_AM_PACK";
 			displayNameDefault = "$STR_AM_PACK";
-			priority = 0;
 			position = "zamerny";
+			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 0} && {diag_tickTime - (this getVariable ['engineOffTime',0]) > 20}";
+			statement = "this animate ['mainrotor_folded',0]; this animate ['mainrotor_unfolded',1];";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 0} && {diag_tickTime - (this getVariable ['engineOffTime',0]) > 20}";
-			statement = "this animate ['mainrotor_folded',0]; this animate ['mainrotor_unfolded',1];";
 		};
 		class Unfold {
 			displayName = "$STR_AM_UNPACK";
 			displayNameDefault = "$STR_AM_UNPACK";
-			priority = 0;
 			position = "zamerny";
+			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 1}";
+			statement = "this animate ['mainrotor_folded',1]; this animate ['mainrotor_unfolded',0];";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 1}";
-			statement = "this animate ['mainrotor_folded',1]; this animate ['mainrotor_unfolded',0];";
 		};
 	};
 
@@ -138,7 +138,7 @@ class DZE_Veh_UH1Y_M134: UH1_Base {
 	enableManualFire = 0;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_UH1Y_M134_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_UH1Y_M134_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -149,7 +149,7 @@ class DZE_Veh_UH1Y_M134_1: DZE_Veh_UH1Y_M134 {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_UH1Y_M134_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_UH1Y_M134_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -160,7 +160,7 @@ class DZE_Veh_UH1Y_M134_2: DZE_Veh_UH1Y_M134_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_UH1Y_M134_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_UH1Y_M134_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -184,7 +184,7 @@ class DZE_Veh_UH1Y_M240: DZE_Veh_UH1Y_M134 {
 	};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_UH1Y_M240_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_UH1Y_M240_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -195,7 +195,7 @@ class DZE_Veh_UH1Y_M240_1: DZE_Veh_UH1Y_M240 {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_UH1Y_M240_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_UH1Y_M240_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -206,7 +206,7 @@ class DZE_Veh_UH1Y_M240_2: DZE_Veh_UH1Y_M240_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_UH1Y_M240_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_UH1Y_M240_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -232,7 +232,7 @@ class DZE_Veh_UH1Y_FFAR: UH1Y {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_UH1Y_FFAR_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_UH1Y_FFAR_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 
 	class EventHandlers: DefaultEventhandlers {
@@ -243,46 +243,46 @@ class DZE_Veh_UH1Y_FFAR: UH1Y {
 		class HUDoff {
 			displayName = "$STR_AM_HUDON";
 			displayNameDefault = "$STR_AM_HUDON";
-			priority = 0;
 			position = "zamerny";
+			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=1)";
+			statement = "this animate [""HUDAction"",1];this animate [""HUDAction_1"",1]";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=1)";
-			statement = "this animate [""HUDAction"",1];this animate [""HUDAction_1"",1]";
 		};
 		class HUDon {
 			displayName = "$STR_AM_HUDOFF";
 			displayNameDefault = "$STR_AM_HUDOFF";
-			priority = 0;
 			position = "zamerny";
+			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=0)";
+			statement = "this animate [""HUDAction"",0];this animate [""HUDAction_1"",0]";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=0)";
-			statement = "this animate [""HUDAction"",0];this animate [""HUDAction_1"",0]";
 		};
 		class Fold {
 			displayName = "$STR_AM_PACK";
 			displayNameDefault = "$STR_AM_PACK";
-			priority = 0;
 			position = "zamerny";
+			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 0} && {diag_tickTime - (this getVariable ['engineOffTime',0]) > 20}";
+			statement = "this animate ['mainrotor_folded',0]; this animate ['mainrotor_unfolded',1];";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 0} && {diag_tickTime - (this getVariable ['engineOffTime',0]) > 20}";
-			statement = "this animate ['mainrotor_folded',0]; this animate ['mainrotor_unfolded',1];";
 		};
 		class Unfold {
 			displayName = "$STR_AM_UNPACK";
 			displayNameDefault = "$STR_AM_UNPACK";
-			priority = 0;
 			position = "zamerny";
+			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 1}";
+			statement = "this animate ['mainrotor_folded',1]; this animate ['mainrotor_unfolded',0];";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 1}";
-			statement = "this animate ['mainrotor_folded',1]; this animate ['mainrotor_unfolded',0];";
 		};
 	};
 };
@@ -294,7 +294,7 @@ class DZE_Veh_UH1Y_FFAR_1: DZE_Veh_UH1Y_FFAR {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_UH1Y_FFAR_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_UH1Y_FFAR_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -305,7 +305,7 @@ class DZE_Veh_UH1Y_FFAR_2: DZE_Veh_UH1Y_FFAR_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_UH1Y_FFAR_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_UH1Y_FFAR_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

@@ -79,7 +79,7 @@ if (_found) then {
 		_weapons = weapons player;
 
 		// Make sure player did not drop pickaxe
-		if (!_finished || !("ItemPickaxe" in _weapons)) exitWith {
+		if (!_finished || !("DZE_Tool_Pickaxe" in _weapons)) exitWith {
 			_isOk	 = false;
 			_proceed = false;
 		};
@@ -102,7 +102,7 @@ if (_found) then {
 	};
 
 	if (_proceed) then {
-		['ItemPickaxe'] call DZE_fnc_toolBreak;
+		['DZE_Tool_Pickaxe'] call DZE_fnc_toolBreak;
 	} else {
 		localize "str_mining_canceled" call DZE_fnc_rollingMessages;
 	};

@@ -1,6 +1,13 @@
 class DZE_Dingo_Base: Car {
 	scope = 0;
 	displayName = "$STR_ACR_DN_DINGO_MG";
+	model = "\CA\Wheeled_ACR\Dingo\AMT_Dingo2a2_MG";
+	Picture = "\Ca\Wheeled_ACR\Data\UI\Picture_Dingo2MG_CA.paa";
+	Icon = "\Ca\Wheeled_ACR\Data\UI\Icon_Dingo2_CA.paa";
+	memoryPointSupply = "zamerny";
+	driverAction = "HMMWV_Driver_EP1";
+	unitInfoType = "UnitInfoShip";
+	vehicleClass = "DZE Vehicles Cars";
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 100;
 	transportMaxBackpacks = 6;
@@ -10,10 +17,6 @@ class DZE_Dingo_Base: Car {
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
 	wheelCircumference = 3.5168;
-	model = "\CA\Wheeled_ACR\Dingo\AMT_Dingo2a2_MG";
-	Picture = "\Ca\Wheeled_ACR\Data\UI\Picture_Dingo2MG_CA.paa";
-	Icon = "\Ca\Wheeled_ACR\Data\UI\Icon_Dingo2_CA.paa";
-	memoryPointSupply = "zamerny";
 	mapSize = 5;
 	damperSize = 0.2;
 	damperForce = 1;
@@ -43,29 +46,26 @@ class DZE_Dingo_Base: Car {
 	class Library {
 		libTextDesc = "$STR_ACR_LIB_DINGO";
 	};
-	driverAction = "HMMWV_Driver_EP1";
 	cargoAction[] = {"HMMWV_Cargo_EP1","HMMWV_Cargo02_EP1"};
 	cargoIsCoDriver[] = {1,0};
 	castDriverShadow = 0;
 	radarType = 0;
-	unitInfoType = "UnitInfoShip";
-	vehicleClass = "DZE Vehicles Cars";
 	threat[] = {1,0.1,0.4};
 	crewVulnerable = 1;
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
 			gun = "mainGun";
 			body = "mainTurret";
+			gunnerAction = "HMMWV_Gunner04_EP1";
+			stabilizedInAxes = "StabilizedInAxesBoth";
+			gunnerOpticsModel = "\ca\Weapons\2Dscope_RWS";
 			hasGunner = 1;
 			weapons[] = {"M240_veh"};
 			magazines[] = {"100Rnd_762x51_M240","100Rnd_762x51_M240","100Rnd_762x51_M240","100Rnd_762x51_M240"};
 			minElev = -25;
 			maxElev = 60;
-			gunnerAction = "HMMWV_Gunner04_EP1";
 			viewGunnerInExternal = 0;
 			castGunnerShadow = 1;
-			stabilizedInAxes = "StabilizedInAxesBoth";
-			gunnerOpticsModel = "\ca\Weapons\2Dscope_RWS";
 			gunnerForceOptics = 1;
 			class ViewOptics {
 				initAngleX = 0;
@@ -90,10 +90,10 @@ class DZE_Dingo_Base: Car {
 	};
 	class HitPoints: HitPoints {
 		class HitEngine {
-			armor = 0.5;
-			material = -1;
 			name = "engine";
 			visual = "";
+			armor = 0.5;
+			material = -1;
 			passThrough = 1;
 		};
 		class HitGlass1: HitGlass1 {
@@ -125,10 +125,10 @@ class DZE_Dingo_Base: Car {
 			armor = 0.15;
 		};
 		class HitFuel {
-			armor = 0.14;
-			material = -1;
 			name = "fueltank";
 			visual = "";
+			armor = 0.14;
+			material = -1;
 			passThrough = 1;
 		};
 	};
@@ -165,116 +165,116 @@ class DZE_Dingo_Base: Car {
 	soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
 	class SoundEvents {
 		class AccelerationIn {
-			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_int_acce",0.1,1.0};
 			limit = "0.15";
 			expression = "engineOn*(1-camPos)*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
+			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_int_acce",0.1,1.0};
 		};
 		class AccelerationOut {
-			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_ext_acce",0.1,1.0,200};
 			limit = "0.15";
 			expression = "engineOn*camPos*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
+			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_ext_acce",0.1,1.0,200};
 		};
 	};
 	class Sounds {
 		class Engine {
-			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_ext_mid",1.0,1.5,200};
 			frequency = "(1.0+rpm)*0.3";
 			volume = "engineOn*camPos*((rpm factor[0.2, 0.4])+ (rpm factor[0.8, 0.5]))";
+			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_ext_mid",1.0,1.5,200};
 		};
 		class EngineHighOut {
-			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_ext_high",1.0,1.5,250};
 			frequency = "(1.0+rpm)*0.3";
 			volume = "engineOn*camPos*(rpm factor[0.3, 0.9])";
+			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_ext_high",1.0,1.5,250};
 		};
 		class IdleOut {
-			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_ext_idle",1.0,1.0,200};
 			frequency = "1";
 			volume = "engineOn*camPos*(rpm factor[0.6, 0.05])";
+			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_ext_idle",1.0,1.0,200};
 		};
 		class TiresRockOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.31622776,1.0,30};
 			frequency = "1";
 			volume = "camPos*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.31622776,1.0,30};
 		};
 		class TiresSandOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.31622776,1.0,30};
 			frequency = "1";
 			volume = "camPos*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.31622776,1.0,30};
 		};
 		class TiresGrassOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass2",0.31622776,1.0,30};
 			frequency = "1";
 			volume = "camPos*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass2",0.31622776,1.0,30};
 		};
 		class TiresMudOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.31622776,1.0,30};
 			frequency = "1";
 			volume = "camPos*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.31622776,1.0,30};
 		};
 		class TiresGravelOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.31622776,1.0,30};
 			frequency = "1";
 			volume = "camPos*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.31622776,1.0,30};
 		};
 		class TiresAsphaltOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.31622776,1.0,30};
 			frequency = "1";
 			volume = "camPos*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.31622776,1.0,30};
 		};
 		class NoiseOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise2",0.056234132,1.0,30};
 			frequency = "1";
 			volume = "camPos*(damper0 max 0.03)*(speed factor[0, 8])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise2",0.056234132,1.0,30};
 		};
 		class EngineLowIn {
-			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_int_mid",1.0,1.0,200};
 			frequency = "(1.0+rpm)*0.3";
 			volume = "engineOn*(1-camPos)*((rpm factor[0.4, 0.2])+ (rpm factor[0.8, 0.5]))";
+			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_int_mid",1.0,1.0,200};
 		};
 		class EngineHighIn {
-			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_int_high",1.0,1.0,250};
 			frequency = "(1.0+rpm)*0.3";
 			volume = "engineOn*(1-camPos)*(rpm factor[0.3, 0.9])";
+			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_int_high",1.0,1.0,250};
 		};
 		class IdleIn {
-			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_int_idle",1.0,1.0,200};
 			frequency = "1";
 			volume = "engineOn*(1-camPos)*(rpm factor[0.3, 0.05])";
+			sound[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_int_idle",1.0,1.0,200};
 		};
 		class TiresRockIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",1.0,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",1.0,1.0};
 		};
 		class TiresSandIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",1.0,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",1.0,1.0};
 		};
 		class TiresGrassIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass2",1.0,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass2",1.0,1.0};
 		};
 		class TiresMudIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",1.0,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",1.0,1.0};
 		};
 		class TiresGravelIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",1.0,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",1.0,1.0};
 		};
 		class TiresAsphaltIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",1.0,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",1.0,1.0};
 		};
 		class NoiseIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\noise2",0.0056234132,1.0};
 			frequency = "1";
 			volume = "(damper0 max 0.03)*(speed factor[0, 8])*(1-camPos)";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\noise2",0.0056234132,1.0};
 		};
 		class Movement {
 			sound = "soundEnviron";
@@ -303,7 +303,7 @@ class DZE_Veh_Dingo_M240_Woodland: DZE_Dingo_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Dingo_M240_Woodland_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Dingo_M240_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -315,7 +315,7 @@ class DZE_Veh_Dingo_M240_Woodland_1: DZE_Veh_Dingo_M240_Woodland {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Dingo_M240_Woodland_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Dingo_M240_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -325,7 +325,7 @@ class DZE_Veh_Dingo_M240_Woodland_2: DZE_Veh_Dingo_M240_Woodland_1 {
 	damageResistance = 0.013; // base 0.00562
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Dingo_M240_Woodland_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Dingo_M240_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -336,7 +336,7 @@ class DZE_Veh_Dingo_M240_Woodland_3: DZE_Veh_Dingo_M240_Woodland_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Dingo_M240_Woodland_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_Dingo_M240_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -350,7 +350,7 @@ class DZE_Veh_Dingo_M240_Desert: DZE_Veh_Dingo_M240_Woodland {
 	HiddenSelectionsTextures[] = {"\ca\wheeled_acr\dingo\data\ACR_karosse_des_co","\ca\wheeled_acr\dingo\data\ACR_DES_a_teile_co","\ca\wheeled_acr\dingo\data\FLW100_DES_co","\ca\wheeled_acr\dingo\data\FLW200_DES_co"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Dingo_M240_Desert_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Dingo_M240_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -362,7 +362,7 @@ class DZE_Veh_Dingo_M240_Desert_1: DZE_Veh_Dingo_M240_Desert {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Dingo_M240_Desert_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Dingo_M240_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -372,7 +372,7 @@ class DZE_Veh_Dingo_M240_Desert_2: DZE_Veh_Dingo_M240_Desert_1 {
 	damageResistance = 0.013; // base 0.00562
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Dingo_M240_Desert_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Dingo_M240_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -383,7 +383,7 @@ class DZE_Veh_Dingo_M240_Desert_3: DZE_Veh_Dingo_M240_Desert_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Dingo_M240_Desert_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_Dingo_M240_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -402,16 +402,16 @@ class DZE_Veh_Dingo_MK19_Woodland: DZE_Dingo_Base {
 		class MainTurret: MainTurret {
 			gun = "mainGun";
 			body = "mainTurret";
+			gunnerAction = "HMMWV_Gunner04_EP1";
+			stabilizedInAxes = "StabilizedInAxesBoth";
+			gunnerOpticsModel = "\ca\Weapons\2Dscope_RWS";
 			hasGunner = 1;
 			weapons[] = {"MK19"};
 			magazines[] = {"48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19"};
 			minElev = -25;
 			maxElev = 60;
-			gunnerAction = "HMMWV_Gunner04_EP1";
 			viewGunnerInExternal = 0;
 			castGunnerShadow = 1;
-			stabilizedInAxes = "StabilizedInAxesBoth";
-			gunnerOpticsModel = "\ca\Weapons\2Dscope_RWS";
 			gunnerForceOptics = 1;
 			class ViewOptics {
 				initAngleX = 0;
@@ -447,7 +447,7 @@ class DZE_Veh_Dingo_MK19_Woodland: DZE_Dingo_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Dingo_MK19_Woodland_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Dingo_MK19_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -459,7 +459,7 @@ class DZE_Veh_Dingo_MK19_Woodland_1: DZE_Veh_Dingo_MK19_Woodland {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Dingo_MK19_Woodland_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Dingo_MK19_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -469,7 +469,7 @@ class DZE_Veh_Dingo_MK19_Woodland_2: DZE_Veh_Dingo_MK19_Woodland_1 {
 	damageResistance = 0.013; // base 0.00562
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Dingo_MK19_Woodland_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Dingo_MK19_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -480,7 +480,7 @@ class DZE_Veh_Dingo_MK19_Woodland_3: DZE_Veh_Dingo_MK19_Woodland_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Dingo_MK19_Woodland_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_Dingo_MK19_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -494,7 +494,7 @@ class DZE_Veh_Dingo_MK19_Desert: DZE_Veh_Dingo_MK19_Woodland {
 	HiddenSelectionsTextures[] = {"\ca\wheeled_acr\dingo\data\ACR_karosse_des_co","\ca\wheeled_acr\dingo\data\ACR_DES_a_teile_co","\ca\wheeled_acr\dingo\data\FLW100_DES_co","\ca\wheeled_acr\dingo\data\FLW200_DES_co"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Dingo_MK19_Desert_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Dingo_MK19_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -506,7 +506,7 @@ class DZE_Veh_Dingo_MK19_Desert_1: DZE_Veh_Dingo_MK19_Desert {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Dingo_MK19_Desert_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Dingo_MK19_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -516,7 +516,7 @@ class DZE_Veh_Dingo_MK19_Desert_2: DZE_Veh_Dingo_MK19_Desert_1 {
 	damageResistance = 0.013; // base 0.00562
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Dingo_MK19_Desert_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Dingo_MK19_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -527,7 +527,7 @@ class DZE_Veh_Dingo_MK19_Desert_3: DZE_Veh_Dingo_MK19_Desert_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Dingo_MK19_Desert_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_Dingo_MK19_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 

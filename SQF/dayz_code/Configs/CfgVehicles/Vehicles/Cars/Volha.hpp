@@ -1,10 +1,10 @@
 class VolhaLimo_TK_CIV_EP1;
 class DZE_Veh_Volha_Black: VolhaLimo_TK_CIV_EP1 {
+	displayname = "$STR_VEH_NAME_GAZ_BLACK";
+	vehicleClass = "DZE Vehicles Cars";
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
 	DZE_MACRO_VEHICLE_SIDE
-	displayname = "$STR_VEH_NAME_GAZ_BLACK";
-	vehicleClass = "DZE Vehicles Cars";
 	fuelCapacity = 100;
 	class HitPoints;
 	class HitLFWheel;
@@ -20,7 +20,7 @@ class DZE_Veh_Volha_Black: VolhaLimo_TK_CIV_EP1 {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Volha_Black_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Volha_Black_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -31,7 +31,7 @@ class DZE_Veh_Volha_Black_1: DZE_Veh_Volha_Black {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Volha_Black_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Volha_Black_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -73,7 +73,7 @@ class DZE_Veh_Volha_Black_2: DZE_Veh_Volha_Black_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Volha_Black_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Volha_Black_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -84,7 +84,7 @@ class DZE_Veh_Volha_Black_3: DZE_Veh_Volha_Black_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Volha_Black_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Volha_Black_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -95,11 +95,11 @@ class DZE_Veh_Volha_Black_4: DZE_Veh_Volha_Black_3 {
 
 class Volha_1_TK_CIV_EP1;
 class DZE_Veh_Volha_Blue: Volha_1_TK_CIV_EP1 {
+	displayname = "$STR_VEH_NAME_GAZ_BLUE";
+	vehicleClass = "DZE Vehicles Cars";
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
 	DZE_MACRO_VEHICLE_SIDE
-	displayname = "$STR_VEH_NAME_GAZ_BLUE";
-	vehicleClass = "DZE Vehicles Cars";
 	fuelCapacity = 100;
 	class HitPoints;
 	class HitLFWheel;
@@ -115,7 +115,7 @@ class DZE_Veh_Volha_Blue: Volha_1_TK_CIV_EP1 {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Volha_Blue_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Volha_Blue_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -126,7 +126,7 @@ class DZE_Veh_Volha_Blue_1: DZE_Veh_Volha_Blue {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Volha_Blue_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Volha_Blue_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -168,7 +168,7 @@ class DZE_Veh_Volha_Blue_2: DZE_Veh_Volha_Blue_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Volha_Blue_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Volha_Blue_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -179,7 +179,7 @@ class DZE_Veh_Volha_Blue_3: DZE_Veh_Volha_Blue_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Volha_Blue_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Volha_Blue_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -190,11 +190,11 @@ class DZE_Veh_Volha_Blue_4: DZE_Veh_Volha_Blue_3 {
 
 class Volha_2_TK_CIV_EP1;
 class DZE_Veh_Volha_Grey: Volha_2_TK_CIV_EP1 {
+	displayname = "$STR_VEH_NAME_GAZ_GREY";
+	vehicleClass = "DZE Vehicles Cars";
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
 	DZE_MACRO_VEHICLE_SIDE
-	displayname = "$STR_VEH_NAME_GAZ_GREY";
-	vehicleClass = "DZE Vehicles Cars";
 	fuelCapacity = 100;
 	class HitPoints;
 	class HitLFWheel;
@@ -210,7 +210,7 @@ class DZE_Veh_Volha_Grey: Volha_2_TK_CIV_EP1 {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Volha_Grey_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Volha_Grey_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -221,7 +221,7 @@ class DZE_Veh_Volha_Grey_1: DZE_Veh_Volha_Grey {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Volha_Grey_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Volha_Grey_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -263,7 +263,7 @@ class DZE_Veh_Volha_Grey_2: DZE_Veh_Volha_Grey_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Volha_Grey_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Volha_Grey_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -274,7 +274,7 @@ class DZE_Veh_Volha_Grey_3: DZE_Veh_Volha_Grey_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Volha_Grey_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Volha_Grey_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

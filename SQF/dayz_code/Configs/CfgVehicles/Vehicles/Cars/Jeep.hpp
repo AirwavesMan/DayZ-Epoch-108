@@ -3,6 +3,7 @@ class DZE_Jeep_Base: DZE_Car_Base {
 	displayname = "Old Jeep";
 	model = "\z\addons\dayz_epoch_v\vehicles\jeep\h4_jeep";
 	picture = "\dayz_epoch_c\icons\vehicles\jeep.paa";
+	driveraction = "HMMWV_Driver";
 	armor = 25;
 	transportsoldier = 1;
 	transportmaxweapons = 15;
@@ -12,7 +13,6 @@ class DZE_Jeep_Base: DZE_Car_Base {
 	maxSpeed = 110;
 	terraincoef	= 2.0;
 	weapons[] = {minicarhorn};
-	driveraction = "HMMWV_Driver";
 	cargoaction[] = {"Skodovka_Cargo01"};
 	//class HitPoints;
 	hiddenselectionstextures[]=
@@ -50,116 +50,116 @@ class DZE_Jeep_Base: DZE_Car_Base {
 	class NVGMarkers {};
 	class SoundEvents {
 		class AccelerationIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\int\int-acceleration1",0.1,1};
 			limit = "0.8";
 			expression = "(engineOn*(1-camPos))*gmeterZ";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\int\int-acceleration1",0.1,1};
 		};
 		class AccelerationOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\turspecial1",0.1,1,200};
 			limit = "0.8";
 			expression = "(engineOn*camPos)*gmeterZ";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\turspecial1",0.1,1,200};
 		};
 	};
 	class Sounds {
 		class Engine {
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_Low_1b",1,1,300};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "camPos*engineOn*((rpm factor[0.15, 0.4]) min (rpm factor[0.7, 0.5]))";
+			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_Low_1b",1,1,300};
 		};
 		class EngineHighOut {
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_High_1b",1,1,400};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "camPos*engineOn*(rpm factor[0.5, 0.8])";
+			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_High_1b",1,1,400};
 		};
 		class IdleOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\idle_2",0.562341,1,100};
 			frequency = "1";
 			volume = "engineOn*camPos*(rpm factor[0.3, 0])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\idle_2",0.562341,1,100};
 		};
 		class TiresRockOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.316228,1,30};
 		};
 		class TiresSandOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.316228,1,30};
 		};
 		class TiresGrassOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass2",0.316228,1,30};
 		};
 		class TiresMudOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.316228,1,30};
 		};
 		class TiresGravelOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.316228,1,30};
 		};
 		class TiresAsphaltOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.316228,1,30};
 		};
 		class NoiseOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise2",0.177828,1,30};
 			frequency = "1";
 			volume = "camPos*(damper0 max 0.03)*(speed factor[0, 8])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise2",0.177828,1,30};
 		};
 		class EngineLowIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_Low_1b",1,1};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "(1-camPos)*engineOn*((rpm factor[0.2, 0.4]) min (rpm factor[0.8, 0.6]))";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_Low_1b",1,1};
 		};
 		class EngineHighIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_High_1b",1,1};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "(1-camPos)*engineOn*(rpm factor[0.5, 1.0])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_High_1b",1,1};
 		};
 		class IdleIn {
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\idle_2",0.316228,1};
 			frequency = "1";
 			volume = "engineOn*(rpm factor[0.4, 0])*(1-camPos)";
+			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\idle_2",0.316228,1};
 		};
 		class TiresRockIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",1,1};
 		};
 		class TiresSandIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",1,1};
 		};
 		class TiresGrassIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass2",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass2",1,1};
 		};
 		class TiresMudIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",1,1};
 		};
 		class TiresGravelIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",1,1};
 		};
 		class TiresAsphaltIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",1,1};
 		};
 		class NoiseIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\noise2",0.446684,1};
 			frequency = "1";
 			volume = "(damper0 max 0.03)*(speed factor[0, 8])*(1-camPos)";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\noise2",0.446684,1};
 		};
 		class Movement {
 			sound = "soundEnviron";
@@ -185,7 +185,7 @@ class DZE_Veh_OldJeep: DZE_Jeep_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_OldJeep_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_OldJeep_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -210,7 +210,7 @@ class DZE_Veh_OldJeep_1: DZE_Veh_OldJeep {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_OldJeep_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_OldJeep_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -246,7 +246,7 @@ class DZE_Veh_OldJeep_2: DZE_Veh_OldJeep_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_OldJeep_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_OldJeep_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -258,7 +258,7 @@ class DZE_Veh_OldJeep_3: DZE_Veh_OldJeep_2 {
     transportMaxBackpacks = 10;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_OldJeep_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_OldJeep_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 

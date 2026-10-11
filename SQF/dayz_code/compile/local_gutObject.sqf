@@ -12,7 +12,7 @@ call {
 	
 	if (_bodyType == "z_bloodsucker") exitWith {
 		_qty = 1;
-		_rawfoodtype = "ItemMutantHeart"; // toolbelt item
+		_rawfoodtype = "DZE_Tool_MutantHeart"; // toolbelt item
 	};
 	// default is animal
 	_rawfoodtype = getText (configFile >> "CfgSurvival" >> "Meat" >> _bodyType >> "rawfoodtype");
@@ -20,7 +20,7 @@ call {
 
 if (local _body) then {
 	for "_i" from 1 to _qty do {
-		if (_rawfoodtype == "ItemMutantHeart") then {
+		if (_rawfoodtype == "DZE_Tool_MutantHeart") then {
 			_body addWeapon _rawfoodtype;
 		} else {
 			_body addMagazine _rawfoodtype;

@@ -1,19 +1,18 @@
-class ItemCrowbar : ItemCore
-{
+class DZE_Tool_Crowbar : ItemCore {
 	scope = 2;	
+	displayName = "$STR_EQUIP_NAME_CROWBAR";
+	descriptionShort = "$STR_EQUIP_DESC_CROWBAR";
 	model = "\dayz_equip\models\crowbar.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_crowbar_CA.paa";
-	displayName = $STR_EQUIP_NAME_CROWBAR;
-	descriptionShort = $STR_EQUIP_DESC_CROWBAR;
-	DZE_brokenItem = "ItemCrowbarBent";
+	DZE_brokenItem = "DZE_Tool_CrowbarBent";
 	DZE_swappedItem = "MeleeCrowbar";
 	
 	class ItemActions {
 		class Toolbelt {
-			text = $STR_ACTIONS_RFROMTB;
+			text = "$STR_ACTIONS_RFROMTB";
 			script = "spawn DZE_fnc_addToolbelt;";
 			use[] = {
-				"ItemCrowbar"
+				"DZE_Tool_Crowbar"
 			};
 			output[] = {
 				"MeleeCrowbar"
@@ -21,10 +20,10 @@ class ItemCrowbar : ItemCore
 		};
 		
 		class ToBack {
-			text = $STR_ACTIONS_2BACK;
+			text = "$STR_ACTIONS_2BACK";
 			script = "spawn DZE_fnc_addToBack;";
 			use[] = {
-				"ItemCrowbar"
+				"DZE_Tool_Crowbar"
 			};
 			output[] = {
 				"MeleeCrowbar"
@@ -33,26 +32,23 @@ class ItemCrowbar : ItemCore
 	};
 };
 
-class ItemCrowbarBent : ItemCore
-{
+class DZE_Tool_CrowbarBent : ItemCore {
 	scope = 2;	
+	displayName = "$STR_EQUIP_NAME_CROWBARBENT";
+	descriptionShort = "$STR_EQUIP_DESC_CROWBARBENT";
 	model = "\dayz_equip\models\crowbar.p3d";
 	picture = "\dayz_epoch_c\icons\tools\ItemCrowbarBroken.paa";
-	displayName = $STR_EQUIP_NAME_CROWBARBENT;
-	descriptionShort = $STR_EQUIP_DESC_CROWBARBENT;
 	
-	class ItemActions
-	{
-		class Repair
-		{
-			text = $STR_ACTIONS_FIX_CROWBAR;
+	class ItemActions {
+		class Repair {
+			text = "$STR_ACTIONS_FIX_CROWBAR";
 			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
 			neednearby[] = {"fire"};
-			requiretools[] = {"ItemToolbox"};
+			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {};
-			outputweapons[] = {"ItemCrowbar"};
+			outputweapons[] = {"DZE_Tool_Crowbar"};
 			input[] = {{"PartGeneric",1}};
-			inputweapons[] = {"ItemCrowbarBent"};
+			inputweapons[] = {"DZE_Tool_CrowbarBent"};
 		};		
 	};	
 };

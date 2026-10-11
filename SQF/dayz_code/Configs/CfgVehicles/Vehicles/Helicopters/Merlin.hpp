@@ -16,7 +16,7 @@ class DZE_Veh_AW101: BAF_Merlin_HC3_D {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_AW101_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_AW101_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -27,7 +27,7 @@ class DZE_Veh_AW101_1: DZE_Veh_AW101 {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_AW101_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_AW101_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -38,7 +38,7 @@ class DZE_Veh_AW101_2: DZE_Veh_AW101_1 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_AW101_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_AW101_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

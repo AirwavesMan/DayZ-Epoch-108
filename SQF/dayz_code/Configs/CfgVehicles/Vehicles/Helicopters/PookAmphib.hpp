@@ -28,7 +28,7 @@ class DZE_Veh_Bell47_Amphib_Olive: DZE_Bell47_Amphib_Base {
 	hiddenSelectionsTextures[] = {"pook_h13\data\mi17_body_co.paa", "ca\air\data\clear_empty.paa", "\pook_h13\data\logo\csar.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_Olive_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_Olive_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -39,7 +39,7 @@ class DZE_Veh_Bell47_Amphib_Olive_1: DZE_Veh_Bell47_Amphib_Olive {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_Olive_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_Olive_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -50,7 +50,7 @@ class DZE_Veh_Bell47_Amphib_Olive_2: DZE_Veh_Bell47_Amphib_Olive_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_Olive_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_Olive_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -65,7 +65,7 @@ class DZE_Veh_Bell47_Amphib_CDF: DZE_Bell47_Amphib_Base {
 	hiddenSelectionsTextures[] = {"\CA\air\Data\mi8_body_g_cdf_co.paa", "ca\air\data\clear_empty.paa", "\pook_h13\data\logo\patrolczech.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_CDF_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_CDF_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -76,7 +76,7 @@ class DZE_Veh_Bell47_Amphib_CDF_1: DZE_Veh_Bell47_Amphib_CDF {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_CDF_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_CDF_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -87,7 +87,7 @@ class DZE_Veh_Bell47_Amphib_CDF_2: DZE_Veh_Bell47_Amphib_CDF_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_CDF_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_CDF_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -102,7 +102,7 @@ class DZE_Veh_Bell47_Amphib_TK: DZE_Bell47_Amphib_Base {
 	hiddenSelectionsTextures[] = {"\CA\air_e\Data\mi17_body_ind_co.paa", "ca\air\data\clear_empty.paa", "\pook_h13\data\logo\patrolrussian.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_TK_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_TK_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -113,7 +113,7 @@ class DZE_Veh_Bell47_Amphib_TK_1: DZE_Veh_Bell47_Amphib_TK {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_TK_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_TK_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -124,7 +124,7 @@ class DZE_Veh_Bell47_Amphib_TK_2: DZE_Veh_Bell47_Amphib_TK_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_TK_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -139,7 +139,7 @@ class DZE_Veh_Bell47_Amphib_INS: DZE_Bell47_Amphib_Base {
 	hiddenSelectionsTextures[] = {"CA\air\Data\mi8_body_g_vsr_co.paa", "ca\air\data\clear_empty.paa", "ca\air\data\clear_empty.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_INS_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_INS_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -150,7 +150,7 @@ class DZE_Veh_Bell47_Amphib_INS_1: DZE_Veh_Bell47_Amphib_INS {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_INS_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_INS_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -161,7 +161,7 @@ class DZE_Veh_Bell47_Amphib_INS_2: DZE_Veh_Bell47_Amphib_INS_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_INS_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_INS_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -176,7 +176,7 @@ class DZE_Veh_Bell47_Amphib_UN: DZE_Bell47_Amphib_Base {
 	hiddenSelectionsTextures[] = {"\CA\air_e\Data\mi17_body_un_co.paa", "ca\air\data\clear_empty.paa", "\pook_h13\data\logo\marinepatrol.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_UN_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_UN_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -187,7 +187,7 @@ class DZE_Veh_Bell47_Amphib_UN_1: DZE_Veh_Bell47_Amphib_UN {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_UN_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_UN_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -198,7 +198,7 @@ class DZE_Veh_Bell47_Amphib_UN_2: DZE_Veh_Bell47_Amphib_UN_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_UN_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_UN_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -213,7 +213,7 @@ class DZE_Veh_Bell47_Amphib_PMC: DZE_Bell47_Amphib_Base {
 	hiddenSelectionsTextures[] = {"CA\air\Data\mi8_body_g_vsr_co.paa", "ca\air\data\clear_empty.paa", "\pook_h13\data\logo\CSAR.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_PMC_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_PMC_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -224,7 +224,7 @@ class DZE_Veh_Bell47_Amphib_PMC_1: DZE_Veh_Bell47_Amphib_PMC {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_PMC_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_PMC_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -235,7 +235,7 @@ class DZE_Veh_Bell47_Amphib_PMC_2: DZE_Veh_Bell47_Amphib_PMC_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_PMC_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_PMC_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -250,7 +250,7 @@ class DZE_Veh_Bell47_Amphib_GUE: DZE_Bell47_Amphib_Base {
 	hiddenSelectionsTextures[] = {"CA\air\Data\mi8_body_g_vsr_co.paa", "ca\air\data\clear_empty.paa", "ca\air\data\clear_empty.paa"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_GUE_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_GUE_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -261,7 +261,7 @@ class DZE_Veh_Bell47_Amphib_GUE_1: DZE_Veh_Bell47_Amphib_GUE {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_GUE_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_GUE_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -272,7 +272,7 @@ class DZE_Veh_Bell47_Amphib_GUE_2: DZE_Veh_Bell47_Amphib_GUE_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_GUE_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_GUE_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -290,7 +290,7 @@ class DZE_Veh_Bell47_Amphib_CIV: DZE_Bell47_Amphib_Base {
 	magazines[] = {};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_CIV_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_CIV_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -301,7 +301,7 @@ class DZE_Veh_Bell47_Amphib_CIV_1: DZE_Veh_Bell47_Amphib_CIV {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_CIV_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_CIV_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -312,7 +312,7 @@ class DZE_Veh_Bell47_Amphib_CIV_2: DZE_Veh_Bell47_Amphib_CIV_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_CIV_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_CIV_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -330,7 +330,7 @@ class DZE_Veh_Bell47_Amphib_CIV_RU: DZE_Bell47_Amphib_Base {
 	magazines[] = {};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_CIV_RU_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Bell47_Amphib_CIV_RU_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -341,7 +341,7 @@ class DZE_Veh_Bell47_Amphib_CIV_RU_1: DZE_Veh_Bell47_Amphib_CIV_RU {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_CIV_RU_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Bell47_Amphib_CIV_RU_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -352,7 +352,7 @@ class DZE_Veh_Bell47_Amphib_CIV_RU_2: DZE_Veh_Bell47_Amphib_CIV_RU_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_CIV_RU_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Bell47_Amphib_CIV_RU_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

@@ -13,7 +13,7 @@ _text = getText (_config >> "displayName");
 _haskey = _this in weapons player;
 if (!_haskey) exitWith {dayz_actionInProgress = false; format[localize "str_player_30",_text] call DZE_fnc_rollingMessages;};
 
-_hastoolweapon = "ItemKeyKit" in weapons player;
+_hastoolweapon = "DZE_Tool_KeyKit" in weapons player;
 if (!_hastoolweapon) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_57" call DZE_fnc_rollingMessages;};
 
 _pos = [player] call FNC_GetPos;

@@ -6,15 +6,23 @@ class Submarine: ship {
 };
 
 class DZE_Veh_Submarine_Base: Submarine {
-	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
-	DZE_MACRO_VEHICLE_SIDE
 	displayName	= "Submarine";
 	model = "\z\addons\dayz_epoch_v\vehicles\sub\epoch_sub_01.p3d";
 	picture	= "\ca\water\data\ico\pbx_CA.paa";
 	Icon = "\Ca\water\Data\map_ico\icomap_rubber_CA.paa";
-	mapSize = 6;
 	vehicleClass = "DZE Vehicles Boats";
+	memoryPointsGetInDriver 	= "pos driver";
+	memoryPointsGetInDriverDir 	= "pos driver dir";
+	memoryPointsGetInCargo 		= "pos cargo";
+	memoryPointsGetInCargoDir 	= "pos cargo dir";
+	leftWaterEffect = "subspray";
+	rightWaterEffect = "subspray";
+	leftEngineEffect = "subspray";
+	rightEngineEffect = "subspray";
+	DZE_MACRO_VEHICLE_CANSEE_NORMAL
+
+	DZE_MACRO_VEHICLE_SIDE
+	mapSize = 6;
 	maxSpeed = 60;
 	brakeDistance = 20;
 	armor = 40;
@@ -29,15 +37,7 @@ class DZE_Veh_Submarine_Base: Submarine {
 	weapons[] = {};
 	magazines[] = {};
 	precision = 10;
-	memoryPointsGetInDriver 	= "pos driver";
-	memoryPointsGetInDriverDir 	= "pos driver dir";
-	memoryPointsGetInCargo 		= "pos cargo";
-	memoryPointsGetInCargoDir 	= "pos cargo dir";
 //need to remove the spray, submarine is not a speedboat
-	leftWaterEffect = "subspray";
-	rightWaterEffect = "subspray";
-	leftEngineEffect = "subspray";
-	rightEngineEffect = "subspray";
 	destrType = DestructWreck;
 	class DestructionEffects;
 
@@ -62,18 +62,18 @@ class DZE_Veh_Submarine_Base: Submarine {
 //anim sources
 	class AnimationSources {
 		class dive {
-			AnimPeriod = 12;
 			source = "user";
+			AnimPeriod = 12;
 			InitPhase = 0;
 		};
 		class peri_trans {
-			AnimPeriod = 3;
 			source = "user";
+			AnimPeriod = 3;
 			InitPhase = 0;
 		};
 		class IndicatorSonar {
-			AnimPeriod = 1;
 			source = "user";
+			AnimPeriod = 1;
 			InitPhase = 0;
 		};
 	};
@@ -82,12 +82,12 @@ class DZE_Veh_Submarine_Base: Submarine {
 		class dive {
 			displayName = "Dive";
 			displayNameDefault = "";
-			onlyforplayer = true;
 			position = "zamerny";
-			radius = 1;
-			priority = 99;
 			condition = "(player == (driver this)) && {(surfaceIsWater position this) && {(((getPosATL this) select 2) > 10) && (this animationphase ""dive"" <= 0.5)}}";
 			statement = "this animate [""dive"", 1]";
+			onlyforplayer = true;
+			radius = 1;
+			priority = 99;
 		};
 		class surface: dive {
 			displayName = "Surface";
@@ -98,24 +98,24 @@ class DZE_Veh_Submarine_Base: Submarine {
 //damage
 	class HitPoints: HitPoints {
         class HitBody {
+	name = "karoserie";
+	visual = "zbytek";
             armor = 0.85;
             material = -1;
-            name = "karoserie";
-            visual = "zbytek";
             passThrough = 1;
         };
         class HitEngine  {
+	name = "motor";
+	visual = "zbytek";
             armor = 1.2;
             material = 60;
-            name = "motor";
-            visual = "zbytek";
             passThrough = 1;
         };
         class HitFuel  {
+	name="palivo";
+	visual=""; // no visible fuel tank destruction effects
             armor=0.3;
             material = -1;
-            name="palivo";
-            visual=""; // no visible fuel tank destruction effects
             passThrough =0.5;
         };
     };
@@ -151,34 +151,34 @@ class DZE_Veh_Submarine_Base: Submarine {
 	soundEngineOffExt[] = {"ca\sounds\vehicles\water\rhib\ext-boat-stop-01", db0, 1.0, 150};
 	class Sounds {
 		class Engine {
-			sound[] =  {"ca\sounds\vehicles\water\rhib\ext-boat-engine-low-01", db0, 0.9, 300};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "engineOn*(rpm factor[0.5, 0.1])";
+			sound[] =  {"ca\sounds\vehicles\water\rhib\ext-boat-engine-low-01", db0, 0.9, 300};
 		};
 		class EngineHighOut {
-			sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-high-01", db0, 0.8, 300};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "engineOn*(rpm factor[0.4, 1.3])";
+			sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-high-01", db0, 0.8, 300};
 		};
 		class IdleOut {
-			sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-idle-03", db-5, 1.0, 150};
 			frequency = "1";
 			volume = "engineOn*(rpm factor[0.3, 0])";
+			sound[] = {"ca\sounds\vehicles\water\rhib\ext-boat-engine-idle-03", db-5, 1.0, 150};
 		};
 		class WaternoiseOutW0 {
-			sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-water-noise-nospeed", db-8, 1.0, 100};
 			frequency = "1";
 			volume = "(speed factor[7, 0])";
+			sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-water-noise-nospeed", db-8, 1.0, 100};
 		};
 		class WaternoiseOutW1 {
-			sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-boat-lospd-noise-02", db-8, 1.0, 100};
 			frequency = "1";
 			volume = "((speed factor[2, 12]) min (speed factor[12, 2]))";
+			sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-boat-lospd-noise-02", db-8, 1.0, 100};
 		};
 		class WaternoiseOutW2 {
-			sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-boat-hispd-noise-02", db-8, 1.0, 100};
 			frequency = "1";
 			volume = "(speed factor[9, 18.7])";
+			sound[] = {"ca\sounds\vehicles\water\water_sfx\ext-boat-hispd-noise-02", db-8, 1.0, 100};
 		};
 	};
 	class ViewPilot: ViewPilot {
@@ -195,12 +195,12 @@ class DZE_Veh_Submarine_Base: Submarine {
 //searchlight
 	class Reflectors {
 		class main_reflector {
-			color[] = {0.8, 0.8, 0.9, 1.0};
-			ambient[] = {0.1, 0.1, 0.1, 1.0};
 			position = "light";
 			direction = "lightEnd";
 			hitpoint = "light";
 			selection = "light";
+			color[] = {0.8, 0.8, 0.9, 1.0};
+			ambient[] = {0.1, 0.1, 0.1, 1.0};
 			size = 1.0;
 			brightness = 5.0;
 		};
@@ -209,12 +209,12 @@ class DZE_Veh_Submarine_Base: Submarine {
 
 class DZE_Veh_Submarine: DZE_Veh_Submarine_Base {
 	scope = 2;
+	displayName	= "$STR_VEH_NAME_SUBMARINE";
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Submarine_1",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Submarine_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 
-	displayName	= "$STR_VEH_NAME_SUBMARINE";
 	transportMaxMagazines = 360;
 	transportMaxWeapons = 80;
 	transportMaxBackpacks = 20;
@@ -227,7 +227,7 @@ class DZE_Veh_Submarine_1: DZE_Veh_Submarine {
 	damageResistance = 0.00636;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Submarine_2",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Submarine_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -238,7 +238,7 @@ class DZE_Veh_Submarine_2: DZE_Veh_Submarine_1 {
 	transportMaxBackpacks = 40;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Submarine_3",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Submarine_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

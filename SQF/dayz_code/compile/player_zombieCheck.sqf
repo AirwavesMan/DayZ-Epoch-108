@@ -77,7 +77,7 @@ local _cantSee = false;
 							if (_isZombie) then {
 								[_x, "zombie"] spawn player_zombieAttack;
 							} else {
-								local _noAttack = (DZE_MutantHeartProtect && {_refObj hasWeapon "ItemMutantHeart"});
+								local _noAttack = (DZE_MutantHeartProtect && {_refObj hasWeapon "DZE_Tool_MutantHeart"});
 								if (!_noAttack && !_inVehicle) then {
 									_x spawn player_mutantAttack;
 									local _skin = _x getVariable ["mutantSkin", "act_krovosos_new1"]; // Set textures locally on each client to prevent issues with RESec

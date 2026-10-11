@@ -15,7 +15,7 @@ class DZE_Veh_Sedan_White: car_sedan {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Sedan_White_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Sedan_White_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -40,7 +40,7 @@ class DZE_Veh_Sedan_White_1: DZE_Veh_Sedan_White {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Sedan_White_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Sedan_White_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -82,7 +82,7 @@ class DZE_Veh_Sedan_White_2: DZE_Veh_Sedan_White_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Sedan_White_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Sedan_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -94,7 +94,7 @@ class DZE_Veh_Sedan_White_3: DZE_Veh_Sedan_White_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Sedan_White_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Sedan_White_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -131,7 +131,7 @@ class DZE_Veh_Sedan_Taxi: GLT_M300_ST {
 	class HitGlass4;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Sedan_Taxi_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Sedan_Taxi_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -142,7 +142,7 @@ class DZE_Veh_Sedan_Taxi_1: DZE_Veh_Sedan_Taxi {
 	terrainCoef = 2;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Sedan_Taxi_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Sedan_Taxi_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -184,7 +184,7 @@ class DZE_Veh_Sedan_Taxi_2: DZE_Veh_Sedan_Taxi_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Sedan_Taxi_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Sedan_Taxi_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -195,7 +195,7 @@ class DZE_Veh_Sedan_Taxi_3: DZE_Veh_Sedan_Taxi_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Sedan_Taxi_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Sedan_Taxi_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

@@ -49,8 +49,8 @@ if (count _requiredItems == 0) exitWith {true};
 
 local _items = items player;
 local _weapons = weapons player;
-local _shovels = ['ItemShovel','ItemEtool'];
-local _chainsaws = ['ChainSaw','ChainSawB','ChainSawP','ChainSawG','ChainSawR'];
+local _shovels = ['DZE_Tool_Shovel','DZE_Tool_Etool'];
+local _chainsaws = ['DZE_Tool_ChainSaw','DZE_Tool_ChainSawB','DZE_Tool_ChainSawP','DZE_Tool_ChainSawG','DZE_Tool_ChainSawR'];
 local _missingItems = [];
 local _hasRequiredItems = true;
 local _requiredItem = '';
@@ -73,7 +73,7 @@ local _missingItemText = '';
 				if (_requiredItem == 'DZE_Tool_Matchbox') exitWith {
 					{if ((_x in _items) || {_x in _weapons}) exitWith {_hasTool = true};} count DZE_Matchboxes;
 				};
-				if (_requiredItem == 'ChainSaw') exitWith {
+				if (_requiredItem == 'DZE_Tool_ChainSaw') exitWith {
 					{if (_x in _weapons) exitWith {_hasTool = true};} count _chainsaws;
 					if (!_hasTool && {dayz_onBack in _chainsaws}) then {_hasTool = true};
 				};
@@ -84,9 +84,9 @@ local _missingItemText = '';
 
 			if (!_hasTool) then {
 				call {
-					if (_requiredItem == 'ItemCrowbar') exitWith {_meleeClass = 'MeleeCrowbar'};
-					if (_requiredItem == 'ItemHatchet') exitWith {_meleeClass = 'MeleeHatchet'};
-					if (_requiredItem == 'ItemSledge') exitWith {_meleeClass = 'MeleeSledge'};
+					if (_requiredItem == 'DZE_Tool_Crowbar') exitWith {_meleeClass = 'MeleeCrowbar'};
+					if (_requiredItem == 'DZE_Tool_Hatchet') exitWith {_meleeClass = 'MeleeHatchet'};
+					if (_requiredItem == 'DZE_Tool_Sledge') exitWith {_meleeClass = 'MeleeSledge'};
 				};
 
 				if (_meleeClass != '') then {
@@ -106,8 +106,8 @@ local _missingItemText = '';
 				if (_requiredItem in _shovels) then {
 					_missingItemText = format [
 						localize 'STR_CRAFTING_NEEDED_TOOLS_SHOVEL_ETOOL',
-						getText (configFile >> 'CfgWeapons' >> 'ItemShovel' >> 'displayName'),
-						getText (configFile >> 'CfgWeapons' >> 'ItemEtool' >> 'displayName')
+						getText (configFile >> 'CfgWeapons' >> 'DZE_Tool_Shovel' >> 'displayName'),
+						getText (configFile >> 'CfgWeapons' >> 'DZE_Tool_Etool' >> 'displayName')
 					];
 				} else {
 					_missingItemText = getText (configFile >> 'CfgWeapons' >> _requiredItem >> 'displayName');

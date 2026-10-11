@@ -1,5 +1,5 @@
 /*
-	This function simulates turning "ItemAPSI_DZE" on and off to protect against EVR storms.
+	This function simulates turning "DZE_Tool_APSI" on and off to protect against EVR storms.
 	Players need to have post-processing effects enabled in order to see the film grain effects.
 */
 
@@ -30,7 +30,7 @@ if (player getVariable["APSIState",false]) then {
 			if !(player getVariable["APSIState",false]) exitWith {
 				//diag_log "Player has turned the APSI off";
 			};
-			if !(player hasWeapon "ItemAPSI_DZE") exitWith {
+			if !(player hasWeapon "DZE_Tool_APSI") exitWith {
 				DZE_APSI_SFX ppEffectEnable false;
 				playSound "ns_apsi_off";
 				player setVariable["APSIState",false];

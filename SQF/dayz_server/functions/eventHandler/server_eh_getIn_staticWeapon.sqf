@@ -24,7 +24,7 @@
 
 local _weapon = _this select 0;
 local _nearestBase = ([_weapon,false] call DZE_fnc_findBases) select 2;
-diag_log "Test1";
+
 if (isNull _nearestBase) exitWith {};
 
 local _player = _this select 2;
@@ -32,8 +32,7 @@ local _playerUID = getPlayerUID _player;
 
 local _baseFriends = _nearestBase getVariable 'baseFriends'; // owner is index 0.
 local _isBaseFriend = false;
-systemChat "Test";
-diag_log "Test2";
+
 {
 	if ((_x select 0) == _playerUID) exitWith {_isBaseFriend = true;};
 } count _baseFriends;

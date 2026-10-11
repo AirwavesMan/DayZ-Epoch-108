@@ -40,7 +40,7 @@ if (_add) then {
 	_inviter = _uid select 0;
 	_recipient = _uid select 1;
 	dayz_activeInvites set [count dayz_activeInvites,_uid];
-	if (!isDedicated && {_recipient == getPlayerUID player} && {!dayz_requireRadio or {dayz_requireRadio && {"ItemRadio" in items player}}}) then {
+	if (!isDedicated && {_recipient == getPlayerUID player} && {!dayz_requireRadio or {dayz_requireRadio && {"DZE_Tool_Radio" in items player}}}) then {
 		private "_name";
 
 		_name = toString(_uid select 2);

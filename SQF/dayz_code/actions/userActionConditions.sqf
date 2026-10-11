@@ -1,5 +1,5 @@
 #define CAN_DO (!r_drag_sqf && !r_player_unconscious && getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder") != 1)
-#define HAS_TOOLBOX ("ItemToolbox" in items player)
+#define HAS_TOOLBOX ("DZE_Tool_Toolbox" in items player)
 #define IN_VEHICLE (vehicle player != player)
 #define IS_ALIVE (damage _object < 1)
 #define IS_DAMAGED (damage _object > 0)

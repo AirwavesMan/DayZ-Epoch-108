@@ -3,7 +3,7 @@ Farm[] =
 	//Weapons
 	{Loot_GROUP,		6,		shotgunsingleshot},
 	{Loot_GROUP,		1,		Chainsaws},
-	{Loot_WEAPON,		1,		ItemFishingPole},
+	{Loot_WEAPON,		1,		DZE_Tool_FishingPole},
 
 	//Tools
 	{Loot_VEHICLE,		5,		WeaponHolder_ItemHatchet},

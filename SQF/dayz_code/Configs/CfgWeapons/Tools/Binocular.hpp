@@ -1,14 +1,14 @@
-class Binocular : Default
-{
+class Binocular;
+
+class DZE_Tool_Binocular: Binocular {
 	modelOptics = "z\addons\dayz_communityweapons\binocular\2dscope_binocular.p3d";
 };
 
-class BinocularBroken : Default
-{
+class DZE_Tool_BinocularBroken : Default {
 	scope = 2;
-	type = 4096;
-	displayName = $STR_EQUIP_BROKEN_BINOCULAR;
-	descriptionShort = $STR_EQUIP_BROKEN_BINOCULAR_DESC;
+	displayName = "$STR_EQUIP_BROKEN_BINOCULAR";
+	descriptionShort = "$STR_EQUIP_BROKEN_BINOCULAR_DESC";
 	model = "\ca\weapons\dalekohled_proxy";
 	picture = "\dayz_epoch_c\icons\tools\ItemBinocularBroken.paa";
+	type = 4096;
 };

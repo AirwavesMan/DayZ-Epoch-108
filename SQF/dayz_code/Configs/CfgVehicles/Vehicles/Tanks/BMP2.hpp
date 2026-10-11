@@ -1,5 +1,6 @@
 class BMP2_HQ_CDF;
 class DZE_Veh_BMP2_HQ_CDF: BMP2_HQ_CDF {
+	scope = 2;
 	displayName = "$STR_VEH_NAME_BMP2_CDF";
 	vehicleClass = "DZE Vehicles Tanks";
 
@@ -16,10 +17,9 @@ class DZE_Veh_BMP2_HQ_CDF: BMP2_HQ_CDF {
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
 
-	scope = 2;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_HQ_CDF_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_HQ_CDF_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -30,7 +30,7 @@ class DZE_Veh_BMP2_HQ_CDF_1: DZE_Veh_BMP2_HQ_CDF {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_HQ_CDF_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_HQ_CDF_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -40,7 +40,7 @@ class DZE_Veh_BMP2_HQ_CDF_2: DZE_Veh_BMP2_HQ_CDF_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_HQ_CDF_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_HQ_CDF_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -51,7 +51,7 @@ class DZE_Veh_BMP2_HQ_CDF_3: DZE_Veh_BMP2_HQ_CDF_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_HQ_CDF_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_HQ_CDF_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -62,6 +62,7 @@ class DZE_Veh_BMP2_HQ_CDF_4: DZE_Veh_BMP2_HQ_CDF_3 {
 
 class BMP2_HQ_INS;
 class DZE_Veh_BMP2_HQ_INS: BMP2_HQ_INS {
+	scope = 2;
 	displayName = "$STR_VEH_NAME_BMP2_INS";
 	vehicleClass = "DZE Vehicles Tanks";
 
@@ -78,10 +79,9 @@ class DZE_Veh_BMP2_HQ_INS: BMP2_HQ_INS {
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
 
-	scope = 2;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_HQ_INS_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_HQ_INS_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -92,7 +92,7 @@ class DZE_Veh_BMP2_HQ_INS_1: DZE_Veh_BMP2_HQ_INS {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_HQ_INS_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_HQ_INS_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -102,7 +102,7 @@ class DZE_Veh_BMP2_HQ_INS_2: DZE_Veh_BMP2_HQ_INS_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_HQ_INS_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_HQ_INS_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -113,7 +113,7 @@ class DZE_Veh_BMP2_HQ_INS_3: DZE_Veh_BMP2_HQ_INS_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_HQ_INS_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_HQ_INS_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -124,6 +124,7 @@ class DZE_Veh_BMP2_HQ_INS_4: DZE_Veh_BMP2_HQ_INS_3 {
 
 class BMP2_HQ_TK_EP1;
 class DZE_Veh_BMP2_HQ_TK: BMP2_HQ_TK_EP1 {
+	scope = 2;
 	displayName = "$STR_VEH_NAME_BMP2_TK";
 	vehicleClass = "DZE Vehicles Tanks";
 
@@ -140,10 +141,9 @@ class DZE_Veh_BMP2_HQ_TK: BMP2_HQ_TK_EP1 {
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
 
-	scope = 2;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_HQ_TK_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_HQ_TK_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -154,7 +154,7 @@ class DZE_Veh_BMP2_HQ_TK_1: DZE_Veh_BMP2_HQ_TK {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_HQ_TK_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_HQ_TK_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -164,7 +164,7 @@ class DZE_Veh_BMP2_HQ_TK_2: DZE_Veh_BMP2_HQ_TK_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_HQ_TK_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_HQ_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -175,7 +175,7 @@ class DZE_Veh_BMP2_HQ_TK_3: DZE_Veh_BMP2_HQ_TK_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_HQ_TK_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_HQ_TK_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -202,7 +202,7 @@ class DZE_Veh_BMP2_Ambulance_INS: BMP2_Ambul_INS {
 	attendant = 0;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_Ambulance_INS_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_Ambulance_INS_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -214,7 +214,7 @@ class DZE_Veh_BMP2_Ambulance_INS_1: DZE_Veh_BMP2_Ambulance_INS {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_Ambulance_INS_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_Ambulance_INS_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -225,7 +225,7 @@ class DZE_Veh_BMP2_Ambulance_INS_2: DZE_Veh_BMP2_Ambulance_INS_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_Ambulance_INS_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_Ambulance_INS_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -237,7 +237,7 @@ class DZE_Veh_BMP2_Ambulance_INS_3: DZE_Veh_BMP2_Ambulance_INS_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_Ambulance_INS_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_Ambulance_INS_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -265,7 +265,7 @@ class DZE_Veh_BMP2_Ambulance_CDF: BMP2_Ambul_CDF {
 	attendant = 0;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_Ambulance_CDF_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_Ambulance_CDF_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -277,7 +277,7 @@ class DZE_Veh_BMP2_Ambulance_CDF_1: DZE_Veh_BMP2_Ambulance_CDF {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_Ambulance_CDF_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_Ambulance_CDF_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -288,7 +288,7 @@ class DZE_Veh_BMP2_Ambulance_CDF_2: DZE_Veh_BMP2_Ambulance_CDF_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_Ambulance_CDF_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_Ambulance_CDF_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -300,7 +300,7 @@ class DZE_Veh_BMP2_Ambulance_CDF_3: DZE_Veh_BMP2_Ambulance_CDF_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_Ambulance_CDF_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_Ambulance_CDF_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -316,7 +316,7 @@ class DZE_Veh_BMP2_Ambulance_Winter: DZE_Veh_BMP2_Ambulance_CDF {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\bmp\bmp2_01_camo_winter_co.paa","\dayz_epoch_c\skins\bmp\bmp2_02_camo_winter_co.paa"};
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_Ambulance_Winter_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_Ambulance_Winter_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -328,7 +328,7 @@ class DZE_Veh_BMP2_Ambulance_Winter_1: DZE_Veh_BMP2_Ambulance_Winter {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_Ambulance_Winter_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_Ambulance_Winter_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -339,7 +339,7 @@ class DZE_Veh_BMP2_Ambulance_Winter_2: DZE_Veh_BMP2_Ambulance_Winter_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_Ambulance_Winter_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_Ambulance_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -351,7 +351,7 @@ class DZE_Veh_BMP2_Ambulance_Winter_3: DZE_Veh_BMP2_Ambulance_Winter_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_Ambulance_Winter_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_Ambulance_Winter_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -364,15 +364,15 @@ class DZE_Veh_BMP2_Ambulance_Winter_4: DZE_Veh_BMP2_Ambulance_Winter_3 {
 class BMP2_INS;
 class DZE_Veh_BMP2_Rusty: BMP2_INS {
 	scope = 2;
+	displayName = "$STR_VEH_NAME_BMP2_RUST";
+	vehicleClass = "DZE Vehicles Tanks";
 	DZE_MACRO_VEHICLE_CANSEE_ARMORED
 
-	vehicleClass = "DZE Vehicles Tanks";
 	DZE_MACRO_VEHICLE_SIDE
-	displayName = "$STR_VEH_NAME_BMP2_RUST";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\bmp\bmp2_01_wrecked_co.paa","\dayz_epoch_c\skins\bmp\bmp2_02_wrecked_co.paa"};
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_Rusty_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_Rusty_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -383,7 +383,7 @@ class DZE_Veh_BMP2_Rusty_1: DZE_Veh_BMP2_Rusty {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_Rusty_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_Rusty_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -393,7 +393,7 @@ class DZE_Veh_BMP2_Rusty_2: DZE_Veh_BMP2_Rusty_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_Rusty_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_Rusty_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -404,7 +404,7 @@ class DZE_Veh_BMP2_Rusty_3: DZE_Veh_BMP2_Rusty_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_Rusty_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_Rusty_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -415,14 +415,14 @@ class DZE_Veh_BMP2_Rusty_4: DZE_Veh_BMP2_Rusty_3 {
 
 class DZE_Veh_BMP2_Winter: BMP2_INS {
 	scope = 2;
+	displayName = "$STR_VEH_NAME_BMP2_WINTER";
+	vehicleClass = "DZE Vehicles Tanks";
 	DZE_MACRO_VEHICLE_CANSEE_ARMORED
 
-	vehicleClass = "DZE Vehicles Tanks";
-	displayName = "$STR_VEH_NAME_BMP2_WINTER";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\bmp\bmp2_01_winter.paa","\dayz_epoch_c\skins\bmp\bmp2_02_winter.paa"};
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_Winter_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_Winter_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -433,7 +433,7 @@ class DZE_Veh_BMP2_Winter_1: DZE_Veh_BMP2_Winter {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_Winter_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_Winter_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -443,7 +443,7 @@ class DZE_Veh_BMP2_Winter_2: DZE_Veh_BMP2_Winter_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_Winter_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -454,7 +454,7 @@ class DZE_Veh_BMP2_Winter_3: DZE_Veh_BMP2_Winter_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_Winter_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_Winter_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -480,7 +480,7 @@ class DZE_Veh_BMP2_Woodland: BMP2_ACR {
 	supplyRadius = 1.8;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_Woodland_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -491,7 +491,7 @@ class DZE_Veh_BMP2_Woodland_1: DZE_Veh_BMP2_Woodland {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_Woodland_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -501,7 +501,7 @@ class DZE_Veh_BMP2_Woodland_2: DZE_Veh_BMP2_Woodland_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_Woodland_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -512,7 +512,7 @@ class DZE_Veh_BMP2_Woodland_3: DZE_Veh_BMP2_Woodland_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_Woodland_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_Woodland_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -538,7 +538,7 @@ class DZE_Veh_BMP2_CDF: BMP2_CDF {
 	supplyRadius = 1.8;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_CDF_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_CDF_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -549,7 +549,7 @@ class DZE_Veh_BMP2_CDF_1: DZE_Veh_BMP2_CDF {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_CDF_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_CDF_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -559,7 +559,7 @@ class DZE_Veh_BMP2_CDF_2: DZE_Veh_BMP2_CDF_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_CDF_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_CDF_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -570,7 +570,7 @@ class DZE_Veh_BMP2_CDF_3: DZE_Veh_BMP2_CDF_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_CDF_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_CDF_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -596,7 +596,7 @@ class DZE_Veh_BMP2_Desert: BMP2_Des_ACR {
 	supplyRadius = 1.8;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_Desert_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_Desert_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -607,7 +607,7 @@ class DZE_Veh_BMP2_Desert_1: DZE_Veh_BMP2_Desert {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_Desert_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_Desert_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -617,7 +617,7 @@ class DZE_Veh_BMP2_Desert_2: DZE_Veh_BMP2_Desert_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_Desert_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_Desert_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -628,7 +628,7 @@ class DZE_Veh_BMP2_Desert_3: DZE_Veh_BMP2_Desert_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_Desert_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_Desert_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -654,7 +654,7 @@ class DZE_Veh_BMP2_GUE: BMP2_Gue {
 	supplyRadius = 1.8;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_GUE_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_GUE_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -665,7 +665,7 @@ class DZE_Veh_BMP2_GUE_1: DZE_Veh_BMP2_GUE {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_GUE_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_GUE_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -675,7 +675,7 @@ class DZE_Veh_BMP2_GUE_2: DZE_Veh_BMP2_GUE_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_GUE_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_GUE_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -686,7 +686,7 @@ class DZE_Veh_BMP2_GUE_3: DZE_Veh_BMP2_GUE_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_GUE_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_GUE_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -712,7 +712,7 @@ class DZE_Veh_BMP2_TK: BMP2_TK_EP1 {
 	supplyRadius = 1.8;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_TK_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_TK_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -723,7 +723,7 @@ class DZE_Veh_BMP2_TK_1: DZE_Veh_BMP2_TK {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_TK_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_TK_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -733,7 +733,7 @@ class DZE_Veh_BMP2_TK_2: DZE_Veh_BMP2_TK_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_TK_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -744,7 +744,7 @@ class DZE_Veh_BMP2_TK_3: DZE_Veh_BMP2_TK_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_TK_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_TK_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -770,7 +770,7 @@ class DZE_Veh_BMP2_UN: BMP2_UN_EP1 {
 	supplyRadius = 1.8;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BMP2_UN_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BMP2_UN_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -781,7 +781,7 @@ class DZE_Veh_BMP2_UN_1: DZE_Veh_BMP2_UN {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BMP2_UN_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BMP2_UN_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -791,7 +791,7 @@ class DZE_Veh_BMP2_UN_2: DZE_Veh_BMP2_UN_1 {
 	damageResistance = 0.035; // base 0.01796
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BMP2_UN_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BMP2_UN_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -802,7 +802,7 @@ class DZE_Veh_BMP2_UN_3: DZE_Veh_BMP2_UN_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BMP2_UN_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BMP2_UN_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 

@@ -10,7 +10,7 @@ class DZE_Veh_MTVR_Woodland: MTVR {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_MTVR_Woodland_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckORP[] = {"DZE_Veh_MTVR_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
 
@@ -22,7 +22,7 @@ class DZE_Veh_MTVR_Woodland_1: DZE_Veh_MTVR_Woodland {
 	turnCoef = 7.0;  // base 5.0
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_MTVR_Woodland_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_MTVR_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 
@@ -32,7 +32,7 @@ class DZE_Veh_MTVR_Woodland_2: DZE_Veh_MTVR_Woodland_1 {
 	damageResistance = 0.0255; // base 0.00243
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_MTVR_Woodland_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_MTVR_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -43,7 +43,7 @@ class DZE_Veh_MTVR_Woodland_3: DZE_Veh_MTVR_Woodland_2 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_MTVR_Woodland_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckTNK[] = {"DZE_Veh_MTVR_Woodland_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
 
@@ -64,7 +64,7 @@ class DZE_Veh_MTVR_Desert: MTVR_DES_EP1 {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_MTVR_Desert_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckORP[] = {"DZE_Veh_MTVR_Desert_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
 
@@ -76,7 +76,7 @@ class DZE_Veh_MTVR_Desert_1: DZE_Veh_MTVR_Desert {
 	turnCoef = 7.0;  // base 5.0
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_MTVR_Desert_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_MTVR_Desert_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 
@@ -86,7 +86,7 @@ class DZE_Veh_MTVR_Desert_2: DZE_Veh_MTVR_Desert_1 {
 	damageResistance = 0.0255; // base 0.00243
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_MTVR_Desert_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_MTVR_Desert_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -97,7 +97,7 @@ class DZE_Veh_MTVR_Desert_3: DZE_Veh_MTVR_Desert_2 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_MTVR_Desert_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckTNK[] = {"DZE_Veh_MTVR_Desert_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
 
@@ -108,13 +108,13 @@ class DZE_Veh_MTVR_Desert_4: DZE_Veh_MTVR_Desert_3 {
 
 class MtvrRefuel_DES_EP1;
 class DZE_Veh_MTVR_Fuel_Desert: MtvrRefuel_DES_EP1 {
+	displayName = "$STR_VEH_NAME_MTVR_DESERT_REFUEL";
+	vehicleClass = "DZE Vehicles Trucks";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
-	displayName = "$STR_VEH_NAME_MTVR_DESERT_REFUEL";
-	vehicleClass = "DZE Vehicles Trucks";
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;
 	transportMaxBackpacks = 5;
@@ -123,7 +123,7 @@ class DZE_Veh_MTVR_Fuel_Desert: MtvrRefuel_DES_EP1 {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_MTVR_Fuel_Desert_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckORP[] = {"DZE_Veh_MTVR_Fuel_Desert_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
 class DZE_Veh_MTVR_Fuel_Desert_1: DZE_Veh_MTVR_Fuel_Desert {
@@ -134,7 +134,7 @@ class DZE_Veh_MTVR_Fuel_Desert_1: DZE_Veh_MTVR_Fuel_Desert {
 	turnCoef = 7.0;  // base 5.0
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_MTVR_Fuel_Desert_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_MTVR_Fuel_Desert_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 class DZE_Veh_MTVR_Fuel_Desert_2: DZE_Veh_MTVR_Fuel_Desert_1 {
@@ -143,7 +143,7 @@ class DZE_Veh_MTVR_Fuel_Desert_2: DZE_Veh_MTVR_Fuel_Desert_1 {
 	damageResistance = 0.0255; // base 0.00243
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_MTVR_Fuel_Desert_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_MTVR_Fuel_Desert_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 class DZE_Veh_MTVR_Fuel_Desert_3: DZE_Veh_MTVR_Fuel_Desert_2 {
@@ -153,7 +153,7 @@ class DZE_Veh_MTVR_Fuel_Desert_3: DZE_Veh_MTVR_Fuel_Desert_2 {
 	transportMaxBackpacks = 10;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_MTVR_Fuel_Desert_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
+		ItemTruckTNK[] = {"DZE_Veh_MTVR_Fuel_Desert_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
 	};
 };
 class DZE_Veh_MTVR_Fuel_Desert_4: DZE_Veh_MTVR_Fuel_Desert_3 {
@@ -163,13 +163,13 @@ class DZE_Veh_MTVR_Fuel_Desert_4: DZE_Veh_MTVR_Fuel_Desert_3 {
 
 class MtvrRefuel;
 class DZE_Veh_MTVR_Fuel_Woodland: MtvrRefuel {
+	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_REFUEL";
+	vehicleClass = "DZE Vehicles Trucks";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
-	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_REFUEL";
-	vehicleClass = "DZE Vehicles Trucks";
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;
 	transportMaxBackpacks = 5;
@@ -178,7 +178,7 @@ class DZE_Veh_MTVR_Fuel_Woodland: MtvrRefuel {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_MTVR_Fuel_Woodland_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckORP[] = {"DZE_Veh_MTVR_Fuel_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
 class DZE_Veh_MTVR_Fuel_Woodland_1: DZE_Veh_MTVR_Fuel_Woodland {
@@ -189,7 +189,7 @@ class DZE_Veh_MTVR_Fuel_Woodland_1: DZE_Veh_MTVR_Fuel_Woodland {
 	turnCoef = 7.0;  // base 5.0
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_MTVR_Fuel_Woodland_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_MTVR_Fuel_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 class DZE_Veh_MTVR_Fuel_Woodland_2: DZE_Veh_MTVR_Fuel_Woodland_1 {
@@ -198,7 +198,7 @@ class DZE_Veh_MTVR_Fuel_Woodland_2: DZE_Veh_MTVR_Fuel_Woodland_1 {
 	damageResistance = 0.0255; // base 0.00243
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_MTVR_Fuel_Woodland_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_MTVR_Fuel_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 class DZE_Veh_MTVR_Fuel_Woodland_3: DZE_Veh_MTVR_Fuel_Woodland_2 {
@@ -208,7 +208,7 @@ class DZE_Veh_MTVR_Fuel_Woodland_3: DZE_Veh_MTVR_Fuel_Woodland_2 {
 	transportMaxBackpacks = 10;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_MTVR_Fuel_Woodland_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
+		ItemTruckTNK[] = {"DZE_Veh_MTVR_Fuel_Woodland_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
 	};
 };
 class DZE_Veh_MTVR_Fuel_Woodland_4: DZE_Veh_MTVR_Fuel_Woodland_3 {
@@ -218,13 +218,13 @@ class DZE_Veh_MTVR_Fuel_Woodland_4: DZE_Veh_MTVR_Fuel_Woodland_3 {
 
 class MtvrRepair;
 class DZE_Veh_MTVR_MaterialTransport_Woodland: MtvrRepair {
+	displayName = "$STR_VEH_NAME_MTVR_AMMO";
+	vehicleClass = "DZE Vehicles Trucks";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
-	displayName = "$STR_VEH_NAME_MTVR_AMMO";
-	vehicleClass = "DZE Vehicles Trucks";
 	transportMaxWeapons = 25;
 	transportMaxMagazines = 300;
 	transportMaxBackpacks = 8;
@@ -232,7 +232,7 @@ class DZE_Veh_MTVR_MaterialTransport_Woodland: MtvrRepair {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_MTVR_MaterialTransport_Woodland_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckORP[] = {"DZE_Veh_MTVR_MaterialTransport_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
 
@@ -244,7 +244,7 @@ class DZE_Veh_MTVR_MaterialTransport_Woodland_1: DZE_Veh_MTVR_MaterialTransport_
 	turnCoef = 7.0;  // base 5.0
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_MTVR_MaterialTransport_Woodland_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_MTVR_MaterialTransport_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 
@@ -254,7 +254,7 @@ class DZE_Veh_MTVR_MaterialTransport_Woodland_2: DZE_Veh_MTVR_MaterialTransport_
 	damageResistance = 0.0255;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_MTVR_MaterialTransport_Woodland_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",6},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_MTVR_MaterialTransport_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",6},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -265,7 +265,7 @@ class DZE_Veh_MTVR_MaterialTransport_Woodland_3: DZE_Veh_MTVR_MaterialTransport_
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_MTVR_MaterialTransport_Woodland_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckTNK[] = {"DZE_Veh_MTVR_MaterialTransport_Woodland_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
 
@@ -276,13 +276,13 @@ class DZE_Veh_MTVR_MaterialTransport_Woodland_4: DZE_Veh_MTVR_MaterialTransport_
 
 class MtvrReammo;
 class DZE_Veh_MTVR_WeaponTransport_Woodland: MtvrReammo {
+	displayName = "$STR_VEH_NAME_MTVR_WEAPONS";
+	vehicleClass = "DZE Vehicles Trucks";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
-	displayName = "$STR_VEH_NAME_MTVR_WEAPONS";
-	vehicleClass = "DZE Vehicles Trucks";
 	transportMaxWeapons = 75;
 	transportMaxMagazines = 100;
 	transportMaxBackpacks = 8;
@@ -290,7 +290,7 @@ class DZE_Veh_MTVR_WeaponTransport_Woodland: MtvrReammo {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_MTVR_WeaponTransport_Woodland_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckORP[] = {"DZE_Veh_MTVR_WeaponTransport_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
 
@@ -302,7 +302,7 @@ class DZE_Veh_MTVR_WeaponTransport_Woodland_1: DZE_Veh_MTVR_WeaponTransport_Wood
 	turnCoef = 7.0;  // base 5.0
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_MTVR_WeaponTransport_Woodland_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_MTVR_WeaponTransport_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 
@@ -312,7 +312,7 @@ class DZE_Veh_MTVR_WeaponTransport_Woodland_2: DZE_Veh_MTVR_WeaponTransport_Wood
 	damageResistance = 0.0255;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_MTVR_WeaponTransport_Woodland_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",6},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_MTVR_WeaponTransport_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",6},{"ItemScrews",2}}};
 	};
 };
 
@@ -323,7 +323,7 @@ class DZE_Veh_MTVR_WeaponTransport_Woodland_3: DZE_Veh_MTVR_WeaponTransport_Wood
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_MTVR_WeaponTransport_Woodland_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckTNK[] = {"DZE_Veh_MTVR_WeaponTransport_Woodland_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
 
@@ -346,7 +346,7 @@ class DZE_Veh_MTVR_Open_Woodland: MTVR {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_MTVR_Open_Woodland_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckORP[] = {"DZE_Veh_MTVR_Open_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
 
@@ -358,7 +358,7 @@ class DZE_Veh_MTVR_Open_Woodland_1: DZE_Veh_MTVR_Open_Woodland {
 	turnCoef = 7.0;  // base 5.0
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_MTVR_Open_Woodland_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_MTVR_Open_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 
@@ -368,7 +368,7 @@ class DZE_Veh_MTVR_Open_Woodland_2: DZE_Veh_MTVR_Open_Woodland_1 {
 	damageResistance = 0.0255; // base 0.00243
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_MTVR_Open_Woodland_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_MTVR_Open_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -379,7 +379,7 @@ class DZE_Veh_MTVR_Open_Woodland_3: DZE_Veh_MTVR_Open_Woodland_2 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_MTVR_Open_Woodland_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckTNK[] = {"DZE_Veh_MTVR_Open_Woodland_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
 

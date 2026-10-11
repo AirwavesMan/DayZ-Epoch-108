@@ -23,10 +23,10 @@ _consume = ([] + getArray (_config >> "magazines")) select 0;
 
 if (_item == dayz_onBack && carryClick) then {
 	call {
-		if (dayZ_onBack == "MeleeHatchet") exitWith {_item = "ItemHatchet"; dayz_onBack = ""; player setVariable ["dayz_onBack",dayz_onBack,true];};
-		if (dayZ_onBack == "MeleeCrowbar") exitWith {_item = "ItemCrowbar"; dayz_onBack = "";player setVariable ["dayz_onBack",dayz_onBack,true];};
-		if (dayZ_onBack == "MeleeMachete") exitWith {_item = "ItemMachete"; dayz_onBack = "";player setVariable ["dayz_onBack",dayz_onBack,true];};
-		if (dayZ_onBack == "MeleeSledge") exitWith {_item = "ItemSledge"; dayz_onBack = "";player setVariable ["dayz_onBack",dayz_onBack,true];};
+		if (dayZ_onBack == "MeleeHatchet") exitWith {_item = "DZE_Tool_Hatchet"; dayz_onBack = ""; player setVariable ["dayz_onBack",dayz_onBack,true];};
+		if (dayZ_onBack == "MeleeCrowbar") exitWith {_item = "DZE_Tool_Crowbar"; dayz_onBack = "";player setVariable ["dayz_onBack",dayz_onBack,true];};
+		if (dayZ_onBack == "MeleeMachete") exitWith {_item = "DZE_Tool_Machete"; dayz_onBack = "";player setVariable ["dayz_onBack",dayz_onBack,true];};
+		if (dayZ_onBack == "MeleeSledge") exitWith {_item = "DZE_Tool_Sledge"; dayz_onBack = "";player setVariable ["dayz_onBack",dayz_onBack,true];};
 	};
 	carryClick = false;
 	((findDisplay 106) displayCtrl 1209) ctrlSetText "";

@@ -1,17 +1,17 @@
 class DZE_Veh_HMMWV_SOV_Desert: DZE_HMMWV_Base {
-	expansion = 1;
 	scope = 2;
+	displayName = "$STR_VEH_NAME_HMMWV_SOV";
+	model = "\ca\wheeled_e\HMMWV\M998A2_sov";
+	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_sov_CA.paa";
+	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_sov_CA.paa";
+	driverAction = "HMMWV_Driver_EP1";
+	expansion = 1;
 	transportSoldier = 4;
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 70;
 	transportMaxBackpacks = 4;
-	model = "\ca\wheeled_e\HMMWV\M998A2_sov";
-	displayName = "$STR_VEH_NAME_HMMWV_SOV";
 	damageResistance = 0.00581;
 	threat[] = {1,0.3,0.3};
-	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_sov_CA.paa";
-	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_sov_CA.paa";
-	driverAction = "HMMWV_Driver_EP1";
 	cargoAction[] = {"HMMWV_Cargo01_EP1","HMMWV_Cargo02_EP1","HMMWV_Cargo03_EP1","HMMWV_Cargo04_EP1"};
 	outsideSoundFilter = 0;
 	insideSoundCoef = 1;
@@ -41,116 +41,116 @@ class DZE_Veh_HMMWV_SOV_Desert: DZE_HMMWV_Base {
 	soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
 	class SoundEvents {
 		class AccelerationIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\int\int-acceleration1",0.1,1};
 			limit = "0.8";
 			expression = "(engineOn*(1-camPos))*gmeterZ";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\int\int-acceleration1",0.1,1};
 		};
 		class AccelerationOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\turspecial1",0.1,1,200};
 			limit = "0.8";
 			expression = "(engineOn*camPos)*gmeterZ";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\turspecial1",0.1,1,200};
 		};
 	};
 	class Sounds {
 		class Engine {
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_Low_1b",1,1,300};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "camPos*engineOn*((rpm factor[0.15, 0.4]) min (rpm factor[0.7, 0.5]))";
+			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_Low_1b",1,1,300};
 		};
 		class EngineHighOut {
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_High_1b",1,1,400};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "camPos*engineOn*(rpm factor[0.5, 0.8])";
+			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_High_1b",1,1,400};
 		};
 		class IdleOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\idle_2",0.562341,1,100};
 			frequency = "1";
 			volume = "engineOn*camPos*(rpm factor[0.3, 0])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\idle_2",0.562341,1,100};
 		};
 		class TiresRockOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.316228,1,30};
 		};
 		class TiresSandOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.316228,1,30};
 		};
 		class TiresGrassOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass2",0.316228,1,30};
 		};
 		class TiresMudOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.316228,1,30};
 		};
 		class TiresGravelOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.316228,1,30};
 		};
 		class TiresAsphaltOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.316228,1,30};
 			frequency = "1";
 			volume = "camPos*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.316228,1,30};
 		};
 		class NoiseOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise2",0.177828,1,30};
 			frequency = "1";
 			volume = "camPos*(damper0 max 0.03)*(speed factor[0, 8])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise2",0.177828,1,30};
 		};
 		class EngineLowIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_Low_1b",1,1};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "(1-camPos)*engineOn*((rpm factor[0.2, 0.4]) min (rpm factor[0.8, 0.6]))";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_Low_1b",1,1};
 		};
 		class EngineHighIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_High_1b",1,1};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "(1-camPos)*engineOn*(rpm factor[0.5, 1.0])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_High_1b",1,1};
 		};
 		class IdleIn {
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\idle_2",0.316228,1};
 			frequency = "1";
 			volume = "engineOn*(rpm factor[0.4, 0])*(1-camPos)";
+			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\idle_2",0.316228,1};
 		};
 		class TiresRockIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",1,1};
 		};
 		class TiresSandIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",1,1};
 		};
 		class TiresGrassIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass2",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass2",1,1};
 		};
 		class TiresMudIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",1,1};
 		};
 		class TiresGravelIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",1,1};
 		};
 		class TiresAsphaltIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",1,1};
 			frequency = "1";
 			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",1,1};
 		};
 		class NoiseIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\noise2",0.446684,1};
 			frequency = "1";
 			volume = "(damper0 max 0.03)*(speed factor[0, 8])*(1-camPos)";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\noise2",0.446684,1};
 		};
 		class Movement {
 			sound = "soundEnviron";
@@ -160,10 +160,10 @@ class DZE_Veh_HMMWV_SOV_Desert: DZE_HMMWV_Base {
 	};
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
+			gunnerAction = "HMMWV_Gunner03_EP1";
 			weapons[] = {"MK19"};
 			magazines[] = {"48Rnd_40mm_MK19"};
 			soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1",0.01,1,10};
-			gunnerAction = "HMMWV_Gunner03_EP1";
 			class GunFire: WeaponCloudsMGun {
 				interval = 0.01;
 			};
@@ -175,10 +175,17 @@ class DZE_Veh_HMMWV_SOV_Desert: DZE_HMMWV_Base {
 		};
 		class SideTurret: MainTurret {
 			gunnerName = "$STR_POSITION_FRONTGUNNER";
+			gunnerAction = "HMMWV_Gunner02_EP1";
+			gunBeg = "usti hlavne_2";
+			gunEnd = "konec hlavne_2";
+			body = "SideTurret";
+			gun = "SideGun";
+			memoryPointGunnerOptics = "gunnerview_2";
+			animationSourceBody = "SideTurret";
+			animationSourceGun = "SideGun";
 			weapons[] = {"M240_veh"};
 			magazines[] = {"100Rnd_762x51_M240"};
 			soundServo[] = {"\ca\wheeled\Data\Sound\servo3",0.0001,1.1};
-			gunnerAction = "HMMWV_Gunner02_EP1";
 			commanding = 1;
 			primaryGunner = 1;
 			primaryObserver = 1;
@@ -187,13 +194,6 @@ class DZE_Veh_HMMWV_SOV_Desert: DZE_HMMWV_Base {
 			maxElev = 20;
 			minTurn = -65;
 			maxTurn = 35;
-			gunBeg = "usti hlavne_2";
-			gunEnd = "konec hlavne_2";
-			body = "SideTurret";
-			gun = "SideGun";
-			memoryPointGunnerOptics = "gunnerview_2";
-			animationSourceBody = "SideTurret";
-			animationSourceGun = "SideGun";
 			LODTurnedOut = 1200;
 			LODTurnedIn = 1200;
 		};
@@ -223,7 +223,7 @@ class DZE_Veh_HMMWV_SOV_Desert: DZE_HMMWV_Base {
 	hiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_regular_1_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_SOV_Desert_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_SOV_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -235,7 +235,7 @@ class DZE_Veh_HMMWV_SOV_Desert_1: DZE_Veh_HMMWV_SOV_Desert  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_SOV_Desert_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_SOV_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -278,7 +278,7 @@ class DZE_Veh_HMMWV_SOV_Desert_2: DZE_Veh_HMMWV_SOV_Desert_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_SOV_Desert_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_SOV_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -289,7 +289,7 @@ class DZE_Veh_HMMWV_SOV_Desert_3: DZE_Veh_HMMWV_SOV_Desert_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_SOV_Desert_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_SOV_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 

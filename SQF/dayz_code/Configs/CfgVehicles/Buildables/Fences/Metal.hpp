@@ -1,9 +1,9 @@
 class DZE_Fence_corrugated: DZE_Building_Base {
+	scope = 2;
+	displayName = "$STR_EPOCH_CORRUGATEDFENCE";
 	model = "\ca\structures\wall\Wall_Tin_4";
 	armor = 600;
-	scope = 2;
 	DZE_offset[] = {0,3,-0.1};
-	displayName = $STR_EPOCH_CORRUGATEDFENCE;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemCorrugated";
 		DZE_refundArray[] = {};
@@ -12,11 +12,11 @@ class DZE_Fence_corrugated: DZE_Building_Base {
 
 class DZE_MetalFence_1_foundation: DZE_Fence_Base {
 	scope = 2;
+	displayName = "$STR_BLD_name_MetalFence_1_foundation";
 	model = "z\addons\dayz_buildings\models\metal_fence1_foundation.p3d";
-	displayName = $STR_BLD_name_MetalFence_1_foundation;
 	DZE_offset[] = {0,4,0};
 	DZE_allowRotation = 0;
-	DZE_upgradeBuilding[] = {"DZE_MetalFence_1_frame",{"ItemToolbox","ItemSledge"},{{"ItemPlank",4},{"ItemRSJ",1}}};
+	DZE_upgradeBuilding[] = {"DZE_MetalFence_1_frame",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemPlank",4},{"ItemRSJ",1}}};
 	armor = 1000;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metalfence_foundation_kit";
@@ -26,9 +26,9 @@ class DZE_MetalFence_1_foundation: DZE_Fence_Base {
 
 class DZE_MetalFence_1_frame: DZE_Fence_Base {
 	scope = 2;
+	displayName = "$STR_BLD_name_MetalFence_1_frame";
 	model = "z\addons\dayz_buildings\models\metal_fence1_stage1.p3d";
-	displayName = $STR_BLD_name_MetalFence_1_frame;	
-	DZE_upgradeBuilding[] = {"DZE_MetalFence_halfpanel",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_MetalFence_halfpanel",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
 	armor = 1500;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metalfence_frame_kit";
@@ -38,9 +38,9 @@ class DZE_MetalFence_1_frame: DZE_Fence_Base {
 
 class DZE_MetalFence_halfpanel: DZE_Fence_Base {
 	scope = 2;
+	displayName = "$STR_BLD_name_MetalFence_halfpanel";
 	model = "z\addons\dayz_buildings\models\metal_fence1_stage2.p3d";
-	displayName = $STR_BLD_name_MetalFence_halfpanel;	
-	DZE_upgradeBuilding[] = {"DZE_MetalFence_thirdpanel",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_MetalFence_thirdpanel",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
 	armor = 2000;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metalfence_halfpanel_kit";
@@ -50,9 +50,9 @@ class DZE_MetalFence_halfpanel: DZE_Fence_Base {
 
 class DZE_MetalFence_thirdpanel: DZE_Fence_Base {
 	scope = 2;
+	displayName = "$STR_BLD_name_MetalFence_thirdpanel";
 	model = "z\addons\dayz_buildings\models\metal_fence1_stage3.p3d";
-	displayName = $STR_BLD_name_MetalFence_thirdpanel;	
-	DZE_upgradeBuilding[] = {"DZE_MetalFence_1",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
+	DZE_upgradeBuilding[] = {"DZE_MetalFence_1",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
 	armor = 2500;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metalfence_thirdpanel_kit";
@@ -62,9 +62,9 @@ class DZE_MetalFence_thirdpanel: DZE_Fence_Base {
 
 class DZE_MetalFence_1: DZE_Fence_Base {
 	scope = 2;
+	displayName = "$STR_BLD_name_MetalFence_1";
 	model = "z\addons\dayz_buildings\models\metal_fence1.p3d";
-	displayName = $STR_BLD_name_MetalFence_1;	
-	DZE_upgradeBuilding[] = {"DZE_MetalFence_2",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
+	DZE_upgradeBuilding[] = {"DZE_MetalFence_2",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
 	armor = 3000;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metalfence_1_kit";
@@ -74,9 +74,9 @@ class DZE_MetalFence_1: DZE_Fence_Base {
 
 class DZE_MetalFence_2: DZE_Fence_Base {
 	scope = 2;
+	displayName = "$STR_BLD_name_MetalFence_2";
 	model = "z\addons\dayz_buildings\models\metal_fence2.p3d";
-	displayName = $STR_BLD_name_MetalFence_2;	
-	DZE_upgradeBuilding[] = {"DZE_MetalFence_3",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
+	DZE_upgradeBuilding[] = {"DZE_MetalFence_3",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
 	armor = 3500;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metalfence_2_kit";
@@ -86,9 +86,9 @@ class DZE_MetalFence_2: DZE_Fence_Base {
 
 class DZE_MetalFence_3: DZE_Fence_Base {
 	scope = 2;
+	displayName = "$STR_BLD_name_MetalFence_3";
 	model = "z\addons\dayz_buildings\models\metal_fence3.p3d";
-	displayName = $STR_BLD_name_MetalFence_3;	
-	DZE_upgradeBuilding[] = {"DZE_MetalFence_4",{"ItemToolbox","ItemSledge"},{{"ItemScrews",1},{"ItemRSJ",4}}};
+	DZE_upgradeBuilding[] = {"DZE_MetalFence_4",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemScrews",1},{"ItemRSJ",4}}};
 	armor = 4000;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metalfence_3_kit";
@@ -98,9 +98,9 @@ class DZE_MetalFence_3: DZE_Fence_Base {
 
 class DZE_MetalFence_4: DZE_Fence_Base {
 	scope = 2;
+	displayName = "$STR_BLD_name_MetalFence_4";
 	model = "z\addons\dayz_buildings\models\metal_fence4.p3d";
-	displayName = $STR_BLD_name_MetalFence_4;	
-	DZE_upgradeBuilding[] = {"DZE_MetalFence_5",{"ItemToolbox","ItemSledge"},{{"ItemScrews",1},{"ItemRSJ",2}}};
+	DZE_upgradeBuilding[] = {"DZE_MetalFence_5",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemScrews",1},{"ItemRSJ",2}}};
 	armor = 4500;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metalfence_4_kit";
@@ -110,9 +110,9 @@ class DZE_MetalFence_4: DZE_Fence_Base {
 
 class DZE_MetalFence_5: DZE_Fence_Base {
 	scope = 2;
+	displayName = "$STR_BLD_name_MetalFence_5";
 	model = "z\addons\dayz_buildings\models\metal_fence5.p3d";
-	displayName = $STR_BLD_name_MetalFence_5;	
-	DZE_upgradeBuilding[] = {"DZE_MetalFence_6",{"ItemToolbox","ItemSledge"},{{"ItemScrews",1},{"ItemPole",4},{"equip_metal_sheet",4}}};
+	DZE_upgradeBuilding[] = {"DZE_MetalFence_6",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemScrews",1},{"ItemPole",4},{"equip_metal_sheet",4}}};
 	armor = 5000;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metalfence_5_kit";
@@ -122,9 +122,9 @@ class DZE_MetalFence_5: DZE_Fence_Base {
 
 class DZE_MetalFence_6: DZE_Fence_Base {
 	scope = 2;
+	displayName = "$STR_BLD_name_MetalFence_6";
 	model = "z\addons\dayz_buildings\models\metal_fence6.p3d";
-	displayName = $STR_BLD_name_MetalFence_6;	
-	DZE_upgradeBuilding[] = {"DZE_MetalFence_7",{"ItemToolbox","ItemSledge"},{{"ItemScrews",1},{"ItemPole",6},{"PartGeneric",2}}};
+	DZE_upgradeBuilding[] = {"DZE_MetalFence_7",{"DZE_Tool_Toolbox","DZE_Tool_Sledge"},{{"ItemScrews",1},{"ItemPole",6},{"PartGeneric",2}}};
 	armor = 5500;
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "metalfence_6_kit";
@@ -134,9 +134,9 @@ class DZE_MetalFence_6: DZE_Fence_Base {
 
 class DZE_MetalFence_7: DZE_Fence_Base {
 	scope = 2;
-	armor = 5500;
+	displayName = "$STR_BLD_name_MetalFence_7";
 	model = "z\addons\dayz_buildings\models\metal_fence7.p3d";
-	displayName = $STR_BLD_name_MetalFence_7;		
+	armor = 5500;
 	ladders[]={{"ladderstart","ladderend"}};
 	//GhostPreview = "DZE_MetalFence_7_Preview";
 	DZE_upgradeBuilding[] = {};

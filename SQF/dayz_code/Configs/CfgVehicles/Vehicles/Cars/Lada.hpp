@@ -24,7 +24,7 @@ class DZE_Veh_Lada_White: Lada1 {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Lada_White_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Lada_White_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -35,7 +35,7 @@ class DZE_Veh_Lada_White_1: DZE_Veh_Lada_White {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Lada_White_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Lada_White_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -77,7 +77,7 @@ class DZE_Veh_Lada_White_2: DZE_Veh_Lada_White_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Lada_White_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Lada_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -88,7 +88,7 @@ class DZE_Veh_Lada_White_3: DZE_Veh_Lada_White_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Lada_White_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Lada_White_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -123,7 +123,7 @@ class DZE_Veh_Lada_Red: Lada2 {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Lada_Red_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Lada_Red_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -134,7 +134,7 @@ class DZE_Veh_Lada_Red_1: DZE_Veh_Lada_Red {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Lada_Red_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Lada_Red_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -176,7 +176,7 @@ class DZE_Veh_Lada_Red_2: DZE_Veh_Lada_Red_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Lada_Red_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Lada_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -187,7 +187,7 @@ class DZE_Veh_Lada_Red_3: DZE_Veh_Lada_Red_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Lada_Red_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Lada_Red_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -222,7 +222,7 @@ class DZE_Veh_Lada_Police: LadaLM {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Lada_Police_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Lada_Police_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -233,7 +233,7 @@ class DZE_Veh_Lada_Police_1: DZE_Veh_Lada_Police {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Lada_Police_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Lada_Police_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -275,7 +275,7 @@ class DZE_Veh_Lada_Police_2: DZE_Veh_Lada_Police_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Lada_Police_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Lada_Police_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -286,7 +286,7 @@ class DZE_Veh_Lada_Police_3: DZE_Veh_Lada_Police_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Lada_Police_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Lada_Police_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -321,7 +321,7 @@ class DZE_Veh_Lada_Green: Lada1_TK_CIV_EP1 {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Lada_Green_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Lada_Green_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -332,7 +332,7 @@ class DZE_Veh_Lada_Green_1: DZE_Veh_Lada_Green {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Lada_Green_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Lada_Green_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -374,7 +374,7 @@ class DZE_Veh_Lada_Green_2: DZE_Veh_Lada_Green_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Lada_Green_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Lada_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -385,7 +385,7 @@ class DZE_Veh_Lada_Green_3: DZE_Veh_Lada_Green_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Lada_Green_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Lada_Green_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -420,7 +420,7 @@ class DZE_Veh_Lada_Hippy: Lada2_TK_CIV_EP1 {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Lada_Hippy_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Lada_Hippy_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -431,7 +431,7 @@ class DZE_Veh_Lada_Hippy_1: DZE_Veh_Lada_Hippy {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Lada_Hippy_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Lada_Hippy_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -473,7 +473,7 @@ class DZE_Veh_Lada_Hippy_2: DZE_Veh_Lada_Hippy_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Lada_Hippy_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Lada_Hippy_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -484,7 +484,7 @@ class DZE_Veh_Lada_Hippy_3: DZE_Veh_Lada_Hippy_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Lada_Hippy_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Lada_Hippy_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -519,7 +519,7 @@ class DZE_Veh_Lada_Yellow: GLT_M300_LT {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Lada_Yellow_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Lada_Yellow_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -530,7 +530,7 @@ class DZE_Veh_Lada_Yellow_1: DZE_Veh_Lada_Yellow {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Lada_Yellow_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Lada_Yellow_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -572,7 +572,7 @@ class DZE_Veh_Lada_Yellow_2: DZE_Veh_Lada_Yellow_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Lada_Yellow_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Lada_Yellow_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -583,7 +583,7 @@ class DZE_Veh_Lada_Yellow_3: DZE_Veh_Lada_Yellow_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Lada_Yellow_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Lada_Yellow_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

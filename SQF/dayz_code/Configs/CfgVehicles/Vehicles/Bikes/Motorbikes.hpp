@@ -8,13 +8,13 @@ class Motorcycle: LandVehicle {
 
 class Old_moto_TK_Civ_EP1;
 class DZE_Veh_Motorbike_White: Old_moto_TK_Civ_EP1 {
-
-	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Motorbike_White_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",2},{"ItemScrews",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_MOTORBIKE_WHITE";
 	vehicleClass = "DZE Vehicles Motorbikes";
+
+	class Upgrades {
+		ItemORP[] = {"DZE_Veh_Motorbike_White_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",2},{"ItemScrews",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -25,13 +25,13 @@ class DZE_Veh_Motorbike_White: Old_moto_TK_Civ_EP1 {
 
 class TT650_Civ;
 class DZE_Veh_TT650_RedWhite: TT650_Civ {
-
-	class Upgrades {
-		ItemORP[] = {"DZE_Veh_TT650_RedWhite_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",2},{"ItemScrews",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_MOTORBIKE_TT650_REDWHITE";
 	vehicleClass = "DZE Vehicles Motorbikes";
+
+	class Upgrades {
+		ItemORP[] = {"DZE_Veh_TT650_RedWhite_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",2},{"ItemScrews",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -42,13 +42,13 @@ class DZE_Veh_TT650_RedWhite: TT650_Civ {
 
 class TT650_TK_CIV_EP1;
 class DZE_Veh_TT650_Rusty: TT650_TK_CIV_EP1 {
-
-	class Upgrades {
-		ItemORP[] = {"DZE_Veh_TT650_Rusty_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",2},{"ItemScrews",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_MOTORBIKE_TT650_RUSTY";
 	vehicleClass = "DZE Vehicles Motorbikes";
+
+	class Upgrades {
+		ItemORP[] = {"DZE_Veh_TT650_Rusty_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",2},{"ItemScrews",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -59,13 +59,13 @@ class DZE_Veh_TT650_Rusty: TT650_TK_CIV_EP1 {
 
 class TT650_Ins;
 class DZE_Veh_TT650_FireRed: TT650_Ins {
-
-	class Upgrades {
-		ItemORP[] = {"DZE_Veh_TT650_FireRed_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",2},{"ItemScrews",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_MOTORBIKE_TT650_FIRERED";
 	vehicleClass = "DZE Vehicles Motorbikes";
+
+	class Upgrades {
+		ItemORP[] = {"DZE_Veh_TT650_FireRed_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",2},{"ItemScrews",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -76,13 +76,13 @@ class DZE_Veh_TT650_FireRed: TT650_Ins {
 
 class M1030_US_DES_EP1;
 class DZE_Veh_M1030_Green: M1030_US_DES_EP1 {
-
-	class Upgrades {
-		ItemORP[] = {"DZE_Veh_M1030_Green_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",2},{"ItemScrews",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_MOTORBIKE_M1030_GREEN";
 	vehicleClass = "DZE Vehicles Motorbikes";
+
+	class Upgrades {
+		ItemORP[] = {"DZE_Veh_M1030_Green_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",2},{"ItemScrews",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -98,7 +98,7 @@ class DZE_Veh_Motorbike_White_1: DZE_Veh_Motorbike_White {
 	terrainCoef = 2.1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Motorbike_White_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Motorbike_White_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -107,7 +107,7 @@ class DZE_Veh_Motorbike_White_2: DZE_Veh_Motorbike_White_1 {
 	armor = 60;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Motorbike_White_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Motorbike_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -117,7 +117,7 @@ class DZE_Veh_Motorbike_White_3: DZE_Veh_Motorbike_White_2 {
 	transportMaxMagazines = 10;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Motorbike_White_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Motorbike_White_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -135,7 +135,7 @@ class DZE_Veh_TT650_RedWhite_1: DZE_Veh_TT650_RedWhite {
 	terrainCoef = 2.1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_TT650_RedWhite_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_TT650_RedWhite_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -144,7 +144,7 @@ class DZE_Veh_TT650_RedWhite_2: DZE_Veh_TT650_RedWhite_1 {
 	armor = 100;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_TT650_RedWhite_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_TT650_RedWhite_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -154,7 +154,7 @@ class DZE_Veh_TT650_RedWhite_3: DZE_Veh_TT650_RedWhite_2 {
 	transportMaxMagazines = 10;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_TT650_RedWhite_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_TT650_RedWhite_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -172,7 +172,7 @@ class DZE_Veh_TT650_Rusty_1: DZE_Veh_TT650_Rusty {
 	terrainCoef = 2.1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_TT650_Rusty_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_TT650_Rusty_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -181,7 +181,7 @@ class DZE_Veh_TT650_Rusty_2: DZE_Veh_TT650_Rusty_1 {
 	armor = 100;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_TT650_Rusty_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_TT650_Rusty_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -191,7 +191,7 @@ class DZE_Veh_TT650_Rusty_3: DZE_Veh_TT650_Rusty_2 {
 	transportMaxMagazines = 10;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_TT650_Rusty_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_TT650_Rusty_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -209,7 +209,7 @@ class DZE_Veh_TT650_FireRed_1: DZE_Veh_TT650_FireRed {
 	terrainCoef = 2.1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_TT650_FireRed_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_TT650_FireRed_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -218,7 +218,7 @@ class DZE_Veh_TT650_FireRed_2: DZE_Veh_TT650_FireRed_1 {
 	armor = 100;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_TT650_FireRed_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_TT650_FireRed_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -228,7 +228,7 @@ class DZE_Veh_TT650_FireRed_3: DZE_Veh_TT650_FireRed_2 {
 	transportMaxMagazines = 10;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_TT650_FireRed_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_TT650_FireRed_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -246,7 +246,7 @@ class DZE_Veh_M1030_Green_1: DZE_Veh_M1030_Green {
 	terrainCoef = 2.1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_M1030_Green_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_M1030_Green_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -255,7 +255,7 @@ class DZE_Veh_M1030_Green_2: DZE_Veh_M1030_Green_1 {
 	armor = 100;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_M1030_Green_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_M1030_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -265,7 +265,7 @@ class DZE_Veh_M1030_Green_3: DZE_Veh_M1030_Green_2 {
 	transportMaxMagazines = 10;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_M1030_Green_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_M1030_Green_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

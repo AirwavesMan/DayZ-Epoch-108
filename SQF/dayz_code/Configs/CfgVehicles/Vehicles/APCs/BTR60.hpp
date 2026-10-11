@@ -1,9 +1,9 @@
 class BTR60_TK_EP1;
 class DZE_Veh_BTR60_Woodland: BTR60_TK_EP1 {
 	scope = 2;
-
 	displayName = "$STR_VEH_NAME_BTR60_WOOD";
 	vehicleClass = "DZE Vehicles APCs";
+
 
 
 	DZE_MACRO_VEHICLE_SIDE
@@ -17,7 +17,7 @@ class DZE_Veh_BTR60_Woodland: BTR60_TK_EP1 {
 	crewVulnerable = 1;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BTR60_Woodland_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BTR60_Woodland_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -29,7 +29,7 @@ class DZE_Veh_BTR60_Woodland_1: DZE_Veh_BTR60_Woodland {
 	turnCoef = 6;  // base 4
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BTR60_Woodland_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BTR60_Woodland_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -39,7 +39,7 @@ class DZE_Veh_BTR60_Woodland_2: DZE_Veh_BTR60_Woodland_1 {
 	damageResistance = 0.037; // base 0.01849
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BTR60_Woodland_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BTR60_Woodland_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -50,7 +50,7 @@ class DZE_Veh_BTR60_Woodland_3: DZE_Veh_BTR60_Woodland_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BTR60_Woodland_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BTR60_Woodland_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -64,7 +64,7 @@ class DZE_Veh_BTR60_Green: DZE_Veh_BTR60_Woodland {
 	hiddenSelectionsTextures[] = {"\CorePatch\CorePatch_Vehicles\textures\btr60_body_gue_co.paa","\CorePatch\CorePatch_Vehicles\textures\btr60_details_gue_co.paa"};
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BTR60_Green_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BTR60_Green_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -76,7 +76,7 @@ class DZE_Veh_BTR60_Green_1: DZE_Veh_BTR60_Green {
 	turnCoef = 6;  // base 4
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BTR60_Green_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BTR60_Green_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -86,7 +86,7 @@ class DZE_Veh_BTR60_Green_2: DZE_Veh_BTR60_Green_1 {
 	damageResistance = 0.037; // base 0.01849
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BTR60_Green_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BTR60_Green_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -97,7 +97,7 @@ class DZE_Veh_BTR60_Green_3: DZE_Veh_BTR60_Green_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BTR60_Green_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BTR60_Green_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 

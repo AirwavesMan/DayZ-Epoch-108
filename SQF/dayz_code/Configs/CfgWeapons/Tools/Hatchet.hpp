@@ -1,72 +1,62 @@
-class ItemHatchet : ItemCore
-{
+class DZE_Tool_Hatchet : ItemCore {
 	scope = 2;
+	displayName = "$STR_EQUIP_NAME_HATCHET";
+	descriptionShort = "$STR_EQUIP_DESC_HATCHET";
 	model = "\dayz_equip\models\hatchet.p3d";
 	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
-	displayName = $STR_EQUIP_NAME_HATCHET;
-	descriptionShort = $STR_EQUIP_DESC_HATCHET;
-	DZE_brokenItem = "ItemHatchetBroken";
+	DZE_brokenItem = "DZE_Tool_HatchetBroken";
 	DZE_swappedItem = "MeleeHatchet";
 
 
-	class ItemActions
-	{
-		class ToBack
-		{
-			text = $STR_ACTIONS_2BACK;
+	class ItemActions {
+		class ToBack {
+			text = "$STR_ACTIONS_2BACK";
 			script = "spawn DZE_fnc_addToBack;";
-			use[] = {"ItemHatchet"};
+			use[] = {"DZE_Tool_Hatchet"};
 			output[] = {"MeleeHatchet"};
 		};
 
-		class Toolbelt
-		{
-			text = $STR_ACTIONS_RFROMTB;
+		class Toolbelt {
+			text = "$STR_ACTIONS_RFROMTB";
 			script = "spawn DZE_fnc_addToolbelt;";
-			use[] = {"ItemHatchet"};
+			use[] = {"DZE_Tool_Hatchet"};
 			output[] = {"MeleeHatchet"};
 		};
 	};
 };
 
-class ItemHatchetBroken : ItemCore
-{
+class DZE_Tool_HatchetBroken : ItemCore {
 	scope = 2;
+	displayName = "$STR_name_ItemHatchetBroken";
+	descriptionShort = "$STR_desc_ItemHatchetBroken";
 	picture = "\dayz_epoch_c\icons\tools\ItemHatchetBroken.paa";
 	model = "\dayz_equip\models\hatchet.p3d";
-	displayName = $STR_name_ItemHatchetBroken;
-	descriptionShort = $STR_desc_ItemHatchetBroken;
 
-	class ItemActions
-	{
-		class Repair
-		{
-			text = $STR_ACTIONS_FIX_HATCHET;
+	class ItemActions {
+		class Repair {
+			text = "$STR_ACTIONS_FIX_HATCHET";
 			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {};
-			outputweapons[] = {"ItemHatchet"};
+			outputweapons[] = {"DZE_Tool_Hatchet"};
 			input[] = {{"equip_duct_tape",1},{"equip_lever",1}};
-			inputweapons[] = {"ItemHatchetBroken"};
+			inputweapons[] = {"DZE_Tool_HatchetBroken"};
 		};
 	};
 };
 
-class ItemHatchetBlunt : ItemCore
-{
+class DZE_Tool_HatchetBlunt : ItemCore {
 	scope = 2;
+	displayName = "$STR_EQUIP_NAME_HATCHET_DULL";
+	descriptionShort = "$STR_EQUIP_DESC_HATCHET_DULL";
 	picture = "\dayz_epoch_c\icons\tools\ItemHatchetBroken.paa";
 	model = "\dayz_equip\models\hatchet.p3d";
-	displayName = $STR_EQUIP_NAME_HATCHET_DULL;
-	descriptionShort = $STR_EQUIP_DESC_HATCHET_DULL;
 
-	class ItemActions
-	{
-		class SharpenHatchet
-		{
-			text = $STR_ACTIONS_SHARPEN_HATCHET;
-			script = "; ['ItemHatchetBlunt','ItemHatchet'] spawn DZE_fnc_sharpenTool;";
+	class ItemActions {
+		class SharpenHatchet {
+			text = "$STR_ACTIONS_SHARPEN_HATCHET";
+			script = "; ['DZE_Tool_HatchetBlunt','DZE_Tool_Hatchet'] spawn DZE_fnc_sharpenTool;";
 		};
 	};
 };

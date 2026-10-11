@@ -16,7 +16,7 @@ if (count _this > 2) then {
 _message = [_type,_message] call fnc_localizeMessage;
 
 if (_type == "radio") exitWith {
-	if (player hasWeapon "ItemRadio") then {
+	if (player hasWeapon "DZE_Tool_Radio") then {
 		if (player getVariable["radiostate",true]) then {
 			systemChat ("[RADIO] " + _message);
 			playSound "Radio_Message_Sound";
@@ -25,7 +25,7 @@ if (_type == "radio") exitWith {
 };
 
 if (_type == "IWAC") exitWith {
-	if (player hasWeapon "ItemRadio") then {
+	if (player hasWeapon "DZE_Tool_Radio") then {
 		if (player getVariable["radiostate",true]) then {
 			_message call DZE_fnc_rollingMessages;
 			playSound "IWAC_Message_Sound";

@@ -275,9 +275,9 @@ shotgunsingleshot[] = { // Residential Spawns
 };
 
 Chainsaws[] = {
-	{Loot_WEAPON,		1,		ChainSaw},
-	{Loot_WEAPON,		1,		ChainSawB},
-	{Loot_WEAPON,		1,		ChainSawG},
-	{Loot_WEAPON,		1,		ChainSawP},
-	{Loot_WEAPON,		1,		ChainSawR}
+	{Loot_WEAPON,		1,		DZE_Tool_ChainSaw},
+	{Loot_WEAPON,		1,		DZE_Tool_ChainSawB},
+	{Loot_WEAPON,		1,		DZE_Tool_ChainSawG},
+	{Loot_WEAPON,		1,		DZE_Tool_ChainSawP},
+	{Loot_WEAPON,		1,		DZE_Tool_ChainSawR}
 };

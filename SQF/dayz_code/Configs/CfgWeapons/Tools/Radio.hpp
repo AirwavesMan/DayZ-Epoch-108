@@ -1,41 +1,36 @@
-class ItemRadio : ItemCore
-{
+class ItemRadio;
+
+class DZE_Tool_Radio: ItemRadio {
 	model = "\nst\ns_dayz\items\radio\radio_dzn.p3d";
-	class ItemActions
-	{
-		class Power
-		{
-			text = $STR_EPOCH_RADIO_STATE;
+	class ItemActions {
+		class Power {
+			text = "$STR_EPOCH_RADIO_STATE";
 			script = "call fnc_radioState;";
 		};
-		class Groups
-		{
-			text = $STR_EPOCH_GROUPS_KEY;
+		class Groups {
+			text = "$STR_EPOCH_GROUPS_KEY";
 			script = ";if (!isNil 'dayz_groupInit') then {[] spawn dayz_openGroupDialog;};";
 		};
 	};
 };
 
-class ItemRadioBroken_DZE : ItemCore 
-{
+class DZE_Tool_RadioBroken : ItemCore {
 	scope = 2;
-	displayName = $STR_EQUIP_BROKEN_RADIO;
+	displayName = "$STR_EQUIP_BROKEN_RADIO";
+	descriptionShort = "$STR_EQUIP_BROKEN_RADIO_DESC";
 	model = "\nst\ns_dayz\items\radio\radio_dzn.p3d";
 	picture = "\dayz_epoch_c\icons\tools\ItemRadioBroken.paa";
-	descriptionShort = $STR_EQUIP_BROKEN_RADIO_DESC;
 	
-	class ItemActions
-	{
-		class Repair
-		{
-			text = $STR_ACTIONS_FIX_RADIO;
+	class ItemActions {
+		class Repair {
+			text = "$STR_ACTIONS_FIX_RADIO";
 			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemSolder_DZE"};
+			requiretools[] = {"DZE_Tool_Solder"};
 			output[] = {};
-			outputweapons[] = {"ItemRadio"};
+			outputweapons[] = {"DZE_Tool_Radio"};
 			input[] = {{"equip_floppywire",1},{"equip_scrapelectronics",1}};
-			inputweapons[] = {"ItemRadioBroken_DZE"};
+			inputweapons[] = {"DZE_Tool_RadioBroken"};
 		};		
 	};	
 };

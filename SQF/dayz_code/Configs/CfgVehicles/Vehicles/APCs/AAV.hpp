@@ -1,9 +1,9 @@
 class AAV;
 class DZE_Veh_AAVP7A1: AAV {
 	scope = 2;
-	
 	displayName = "$STR_VEH_NAME_AAV";
-	vehicleClass = "DZE Vehicles APCs";	
+	vehicleClass = "DZE Vehicles APCs";
+
 	
 
 	DZE_MACRO_VEHICLE_SIDE
@@ -17,7 +17,7 @@ class DZE_Veh_AAVP7A1: AAV {
 	supplyRadius = 5;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_AAVP7A1_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_AAVP7A1_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};	
 };
 
@@ -28,7 +28,7 @@ class DZE_Veh_AAVP7A1_1: DZE_Veh_AAVP7A1 {
 	turnCoef = 0.5;  // base 1
 	
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_AAVP7A1_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_AAVP7A1_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -38,7 +38,7 @@ class DZE_Veh_AAVP7A1_2: DZE_Veh_AAVP7A1_1 {
 	damageResistance = 0.023; // base 0.01168
 	
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_AAVP7A1_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_AAVP7A1_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -49,7 +49,7 @@ class DZE_Veh_AAVP7A1_3: DZE_Veh_AAVP7A1_2 {
 	transportmaxbackpacks = 12;
 	
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_AAVP7A1_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_AAVP7A1_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 

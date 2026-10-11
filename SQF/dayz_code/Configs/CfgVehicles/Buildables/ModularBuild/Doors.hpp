@@ -7,63 +7,63 @@ class DZE_ModularDoor_Base: DZE_Modular_Base {
 };
 
 class DZE_Land_WoodDoor_Base: DZE_ModularDoor_Base {
-	model = "\z\addons\dayz_epoch\models\small_wall_door_anim.p3d";
-	/* path to the object */
 	displayName = "Wood Door Base";
-	/* entry in Stringtable.xml */
+	model = "\z\addons\dayz_epoch\models\small_wall_door_anim.p3d";
 	nameSound = "";
+	icon = "\ca\data\data\Unknown_object.paa";
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
+	/* path to the object */
+	/* entry in Stringtable.xml */
 	mapSize = 8;
 	/* Size of the icon */
-	icon = "\ca\data\data\Unknown_object.paa";
 	/* Path to the picture shown in the editor. */
 	accuracy = 1000;
 	armor = 2500;
 	/* "Lifepoints", if you like to call it that way.*/
 	DZE_offset[] = {0,1.5,0};
 
-	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 };
 
 class DZE_Land_WoodDoorLocked_Base: DZE_ModularDoor_Base {
-	model = "\z\addons\dayz_epoch\models\small_wall_door_anim.p3d";
 	displayName = "Wood Door Base";
+	model = "\z\addons\dayz_epoch\models\small_wall_door_anim.p3d";
 	nameSound = "";
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	mapSize = 8;
 	accuracy = 1000;
 	armor = 2500;
 	DZE_offset[] = {0,1.5,0};
 
-	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Frame";
 	DZE_lockable = 3;
 };
 
 class DZE_CinderWallDoor_Base: DZE_ModularDoor_Base {
-	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";
 	displayName = "Block Garage Door Base";
+	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";
 	nameSound = "";
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	mapSize = 8;
 	accuracy = 1000;
 	armor = 4000;
 	DZE_offset[] = {0,1.5,0};
 
-	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 };
 
 class DZE_CinderWallDoorLocked_Base: DZE_ModularDoor_Base {
-	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";
 	displayName = "Block Garage Door Base";
+	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";
 	nameSound = "";
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	mapSize = 8;
 	accuracy = 1000;
 	armor = 4000;
 	DZE_offset[] = {0,1.5,0};
 	DZE_lockable = 3;
-	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 };
 
 class DZE_Land_WoodDoor: DZE_Land_WoodDoor_Base {
 	scope = 2;
-	displayName = $STR_EPOCH_WALLWITHDOOR;
+	displayName = "$STR_EPOCH_WALLWITHDOOR";
 	//GhostPreview = "DZE_WoodDoor_Preview";
 	DZE_upgradeBuilding[] = {"DZE_Land_WoodDoorLocked",{},{{"ItemComboLock",1}}};
 
@@ -83,8 +83,8 @@ class DZE_Land_WoodDoor: DZE_Land_WoodDoor_Base {
 
 class DZE_Land_WoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_WALLWITHDOORLOCKED";
 	model = "\z\addons\dayz_epoch\models\small_wall_door_locked_anim.p3d";
-	displayName = $STR_EPOCH_WALLWITHDOORLOCKED;
 	//GhostPreview = "DZE_WoodDoor_Preview";
 	downgradeBuilding[] = {"DZE_Land_WoodDoor",{{"ItemComboLock",1}}};
 
@@ -110,8 +110,8 @@ class DZE_Land_WoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 
 class DZE_Land_LargeWoodDoor: DZE_Land_WoodDoor_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_LARGEWALLWITHDOOR";
 	model = "\z\addons\dayz_epoch\models\large_wall_door_anim.p3d";
-	displayName = $STR_EPOCH_LARGEWALLWITHDOOR;
 	//GhostPreview = "DZE_LargeWoodDoor_Preview";
 	DZE_upgradeBuilding[] = {"DZE_Land_LargeWoodDoorLocked",{},{{"ItemComboLock",1}}};
 
@@ -131,8 +131,8 @@ class DZE_Land_LargeWoodDoor: DZE_Land_WoodDoor_Base {
 
 class DZE_Land_LargeWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_LARGEWALLWITHDOORLOCKED";
 	model = "\z\addons\dayz_epoch\models\large_wall_door_locked_anim.p3d";
-	displayName = $STR_EPOCH_LARGEWALLWITHDOORLOCKED;
 	//GhostPreview = "DZE_LargeWoodDoor_Preview";
 	downgradeBuilding[] = {"DZE_Land_LargeWoodDoor",{{"ItemComboLock",1}}};
 
@@ -158,8 +158,8 @@ class DZE_Land_LargeWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 
 class DZE_Land_GarageWoodDoor: DZE_Land_WoodDoor_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_WOODGARAGEDOOR";
 	model = "\z\addons\dayz_epoch\models\Garage_door_anim.p3d";
-	displayName = $STR_EPOCH_WOODGARAGEDOOR;
 	//GhostPreview = "DZE_GarageWoodDoor_Preview";
 	DZE_upgradeBuilding[] = {"DZE_Land_GarageWoodDoorLocked",{},{{"ItemComboLock",1}}};
 
@@ -179,8 +179,8 @@ class DZE_Land_GarageWoodDoor: DZE_Land_WoodDoor_Base {
 
 class DZE_Land_GarageWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_WOODGARAGEDOORLOCKED";
 	model = "\z\addons\dayz_epoch\models\Garage_door_locked_anim.p3d";
-	displayName = $STR_EPOCH_WOODGARAGEDOORLOCKED;
 	//GhostPreview = "DZE_GarageWoodDoor_Preview";
 	downgradeBuilding[] = {"DZE_Land_GarageWoodDoor",{{"ItemComboLock",1}}};
 
@@ -206,13 +206,14 @@ class DZE_Land_GarageWoodDoorLocked: DZE_Land_WoodDoorLocked_Base {
 
 class DZE_Land_WoodGate: DZE_Land_WoodDoor_Base {
 	scope = 2;
-	armor = 3200;
+	displayName = "$STR_EPOCH_WOODGATE";
 	model = "\z\addons\dayz_epoch_v\base_building\wood\high_wood_garage\high_wood_garage.p3d";
-	displayName = $STR_EPOCH_WOODGATE;
 	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_GATE";
 	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_GATE";
 	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCKGATE";
 	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCKGATE";
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
+	armor = 3200;
 	//GhostPreview = "DZE_WoodGate_Preview";
 	DZE_upgradeBuilding[] = {"DZE_Land_WoodGateLocked",{},{{"ItemComboLock",1}}};
 
@@ -232,7 +233,6 @@ class DZE_Land_WoodGate: DZE_Land_WoodDoor_Base {
 
 	
 
-	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodGate";
 		DZE_refundArray[] = {{{"ItemWoodGateFrame",1},{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
@@ -241,13 +241,14 @@ class DZE_Land_WoodGate: DZE_Land_WoodDoor_Base {
 
 class DZE_Land_WoodGateLocked: DZE_Land_WoodDoorLocked_Base {
 	scope = 2;
-	armor = 3200;
+	displayName = "$STR_EPOCH_WOODGATELOCKED";
 	model = "\z\addons\dayz_epoch_v\base_building\wood\high_wood_garage\high_wood_garage_locked.p3d";
-	displayName = $STR_EPOCH_WOODGATELOCKED;
 	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_GATE";
 	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_GATE";
 	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCKGATE";
 	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCKGATE";
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
+	armor = 3200;
 	//GhostPreview = "DZE_WoodGate_Preview";
 	downgradeBuilding[] = {"DZE_Land_WoodGate",{{"ItemComboLock",1}}};
 
@@ -273,7 +274,6 @@ class DZE_Land_WoodGateLocked: DZE_Land_WoodDoorLocked_Base {
 
 	
 
-	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodGateLocked";
 		DZE_refundArray[] = {};
@@ -282,8 +282,9 @@ class DZE_Land_WoodGateLocked: DZE_Land_WoodDoorLocked_Base {
 
 class DZE_Land_WoodOpenTopGarageDoor: DZE_Land_WoodDoor_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_WOODOPENTOPGARAGEDOOR";
 	model = "\z\addons\dayz_epoch_v\base_building\wood\garage_notop\wood_garage_notop.p3d";
-	displayName = $STR_EPOCH_WOODOPENTOPGARAGEDOOR;
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	//GhostPreview = "DZE_Wood_GarageOpenTop_Preview";
 	DZE_upgradeBuilding[] = {"DZE_Land_WoodOpenTopGarageLocked",{},{{"ItemComboLock",1}}};
 
@@ -303,7 +304,6 @@ class DZE_Land_WoodOpenTopGarageDoor: DZE_Land_WoodDoor_Base {
 
 	
 
-	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodOpenTopGarageDoor";
 		DZE_refundArray[] = {{{"ItemWoodWallLg",1},{"PartWoodLumber",2}}};
@@ -312,8 +312,9 @@ class DZE_Land_WoodOpenTopGarageDoor: DZE_Land_WoodDoor_Base {
 
 class DZE_Land_WoodOpenTopGarageLocked: DZE_Land_WoodDoorLocked_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED";
 	model = "\z\addons\dayz_epoch_v\base_building\wood\garage_notop\locked_wood_garage_notop.p3d";
-	displayName = $STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED;
+	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	//GhostPreview = "DZE_Wood_GarageOpenTop_Preview";
 	downgradeBuilding[] = {"DZE_Land_WoodOpenTopGarageDoor",{{"ItemComboLock",1}}};
 
@@ -339,7 +340,6 @@ class DZE_Land_WoodOpenTopGarageLocked: DZE_Land_WoodDoorLocked_Base {
 
 	
 
-	DZE_destroyedRuin = "DZE_Land_Wood_Wreck_Third";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "ItemWoodOpenTopGarageDoorLocked";
 		DZE_refundArray[] = {};
@@ -348,8 +348,8 @@ class DZE_Land_WoodOpenTopGarageLocked: DZE_Land_WoodDoorLocked_Base {
 
 class DZE_CinderWallDoorLocked: DZE_CinderWallDoorLocked_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_BLOCKGARAGEDOORLOCKED";
 	model = "\z\addons\dayz_epoch\models\steel_garage_locked.p3d";
-	displayName = $STR_EPOCH_BLOCKGARAGEDOORLOCKED;
 	//GhostPreview = "DZE_CinderWallDoorway_Preview";
 	downgradeBuilding[] = {"DZE_CinderWallDoor",{{"ItemComboLock",1}}};
 
@@ -375,7 +375,7 @@ class DZE_CinderWallDoorLocked: DZE_CinderWallDoorLocked_Base {
 
 class DZE_CinderWallDoor: DZE_CinderWallDoor_Base {
 	scope = 2;
-	displayName = $STR_EPOCH_BLOCKGARAGEDOOR;
+	displayName = "$STR_EPOCH_BLOCKGARAGEDOOR";
 	//GhostPreview = "DZE_CinderWallDoorway_Preview";
 	DZE_upgradeBuilding[] = {"DZE_CinderWallDoorLocked",{},{{"ItemComboLock",1}}};
 
@@ -395,8 +395,8 @@ class DZE_CinderWallDoor: DZE_CinderWallDoor_Base {
 
 class DZE_CinderWallDoorSmallLocked: DZE_CinderWallDoorLocked_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_BLOCKDOORLOCKED";
 	model = "\z\addons\dayz_epoch\models\Steel_door_locked.p3d";
-	displayName = $STR_EPOCH_BLOCKDOORLOCKED;
 	//GhostPreview = "DZE_CinderWallSmallDoorway_Preview";
 	downgradeBuilding[] = {"DZE_CinderWallDoorSmall",{{"ItemComboLock",1}}};
 
@@ -422,8 +422,8 @@ class DZE_CinderWallDoorSmallLocked: DZE_CinderWallDoorLocked_Base {
 
 class DZE_CinderWallDoorSmall: DZE_CinderWallDoor_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_BLOCKDOOR";
 	model = "\z\addons\dayz_epoch\models\Steel_door.p3d";
-	displayName = $STR_EPOCH_BLOCKDOOR;
 	//GhostPreview = "DZE_CinderWallSmallDoorway_Preview";
 	DZE_upgradeBuilding[] = {"DZE_CinderWallDoorSmallLocked",{},{{"ItemComboLock",1}}};
 
@@ -443,13 +443,13 @@ class DZE_CinderWallDoorSmall: DZE_CinderWallDoor_Base {
 
 class DZE_CinderGate: DZE_CinderWallDoor_Base {
 	scope = 2;
-	armor = 4600;
+	displayName = "$STR_EPOCH_CINDERGATE";
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_high_garage\high_steel_garage_door.p3d";
-	displayName = $STR_EPOCH_CINDERGATE;
 	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_GATE";
 	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_GATE";
 	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCKGATE";
 	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCKGATE";
+	armor = 4600;
 	//GhostPreview = "DZE_CinderGate_Preview";
 	DZE_upgradeBuilding[] = {"DZE_CinderGateLocked",{},{{"ItemComboLock",1}}};
 
@@ -475,13 +475,13 @@ class DZE_CinderGate: DZE_CinderWallDoor_Base {
 
 class DZE_CinderGateLocked: DZE_CinderWallDoorLocked_Base {
 	scope = 2;
-	armor = 4600;
+	displayName = "$STR_EPOCH_CINDERGATELOCKED";
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_high_garage\high_steel_garage_locked.p3d";
-	displayName = $STR_EPOCH_CINDERGATELOCKED;
 	DZE_doorOpenText = "$STR_BLD_ACTIONS_OPEN_GATE";
 	DZE_doorCloseText = "$STR_BLD_ACTIONS_CLOSE_GATE";
 	DZE_doorLockText = "$STR_BLD_ACTIONS_LOCKGATE";
 	DZE_doorUnlockText = "$STR_BLD_ACTIONS_UNLOCKGATE";
+	armor = 4600;
 	//GhostPreview = "DZE_CinderGate_Preview";
 	downgradeBuilding[] = {"DZE_CinderGate",{{"ItemComboLock",1}}};
 
@@ -513,8 +513,8 @@ class DZE_CinderGateLocked: DZE_CinderWallDoorLocked_Base {
 
 class DZE_CinderGarageOpenTop: DZE_CinderWallDoor_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_CINDEROPENTOPGARAGEDOOR";
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\CinderGaragenotop\cindergarage_notop.p3d";
-	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEDOOR;
 	//GhostPreview = "DZE_CinderGarageOpenTop_Preview";
 	DZE_upgradeBuilding[] = {"DZE_CinderGarageOpenTopLocked",{},{{"ItemComboLock",1}}};
 
@@ -540,8 +540,8 @@ class DZE_CinderGarageOpenTop: DZE_CinderWallDoor_Base {
 
 class DZE_CinderGarageOpenTopLocked: DZE_CinderWallDoorLocked_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED";
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\CinderGaragenotop\locked_cindergarage_notop.p3d";
-	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED;
 	//GhostPreview = "DZE_CinderGarageOpenTop_Preview";
 	downgradeBuilding[] = {"DZE_CinderGarageOpenTop",{{"ItemComboLock",1}}};
 
@@ -573,8 +573,8 @@ class DZE_CinderGarageOpenTopLocked: DZE_CinderWallDoorLocked_Base {
 
 class DZE_CinderDoorHatch: DZE_CinderWallDoor_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_BLOCKDOOR_HATCH";
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinderdoor_hatch.p3d";
-	displayName = $STR_EPOCH_BLOCKDOOR_HATCH;
 	//GhostPreview = "DZE_CinderDoorHatch_Preview";
 	DZE_upgradeBuilding[] = {"DZE_CinderDoorHatchLocked",{},{{"ItemComboLock",1}}};
 
@@ -600,8 +600,8 @@ class DZE_CinderDoorHatch: DZE_CinderWallDoor_Base {
 
 class DZE_CinderDoorHatchLocked: DZE_CinderWallDoorLocked_Base {
 	scope = 2;
+	displayName = "$STR_EPOCH_BLOCKDOORLOCKED_HATCH";
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinder_door_hatch_locked.p3d";
-	displayName = $STR_EPOCH_BLOCKDOORLOCKED_HATCH;
 	//GhostPreview = "DZE_CinderDoorHatch_Preview";
 	downgradeBuilding[] = {"DZE_CinderDoorHatch",{{"ItemComboLock",1}}};
 
@@ -633,9 +633,10 @@ class DZE_CinderDoorHatchLocked: DZE_CinderWallDoorLocked_Base {
 
 class DZE_Door: DZE_CinderWallDoor_Base {
 	scope = 2;
-	armor = 1200;
+	displayName = "$STR_EPOCH_DOOR";
 	model = "\z\addons\dayz_epoch\models\Steel_door_single.p3d";
-	displayName = $STR_EPOCH_DOOR;
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
+	armor = 1200;
 	//GhostPreview = "DZE_DoorFrame_Preview";
 	DZE_upgradeBuilding[] = {"DZE_DoorLocked",{},{{"ItemComboLock",1}}};
 
@@ -648,7 +649,6 @@ class DZE_Door: DZE_CinderWallDoor_Base {
 	};
 
 
-	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "door_kit";
 		DZE_refundArray[] = {{{"door_frame_kit",1},{"ItemTankTrap",1},{"ItemPole",1}}};
@@ -657,9 +657,10 @@ class DZE_Door: DZE_CinderWallDoor_Base {
 
 class DZE_DoorLocked: DZE_CinderWallDoorLocked_Base {
 	scope = 2;
-	armor = 1200;
+	displayName = "$STR_EPOCH_DOORLOCKED";
 	model = "\z\addons\dayz_epoch\models\Steel_door_locked_single.p3d";
-	displayName = $STR_EPOCH_DOORLOCKED;
+	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
+	armor = 1200;
 	//GhostPreview = "DZE_DoorFrame_Preview";
 	downgradeBuilding[] = {"DZE_Door",{{"ItemComboLock",1}}};
 
@@ -678,7 +679,6 @@ class DZE_DoorLocked: DZE_CinderWallDoorLocked_Base {
 	};
 
 
-	DZE_destroyedRuin = "DZE_Land_Wreck_Cinder";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "door_locked_kit";
 		DZE_refundArray[] = {};
@@ -692,13 +692,13 @@ class DZE_DoorLocked: DZE_CinderWallDoorLocked_Base {
 class WoodenGate_Base;
 class WoodenGate_1: WoodenGate_Base {
 	class Upgrade {
-		//to next stage
-		requiredTools[] = {"ItemEtool","ItemToolbox"};
-		requiredParts[] = {"ItemLog","ItemComboLock"};
 		create = "WoodenGate_2";
+		//to next stage
+		requiredTools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
+		requiredParts[] = {"ItemLog","ItemComboLock"};
 	};
 
 	class Disassembly {
-		requiredTools[] = {"ItemToolbox"};
+		requiredTools[] = {"DZE_Tool_Toolbox"};
 	};
 };

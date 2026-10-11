@@ -64,7 +64,7 @@ if (_inVehicle) then {
 
 if (_doNothing) exitWith {};
 
-/*if ("ItemMap_Debug" in items player) then {
+/*if ("DZE_Tool_Map_Debug" in items player) then {
 	deleteMarkerLocal "MaxZeds";
 	deleteMarkerLocal "Counter";
 	deleteMarkerLocal "Loot30";

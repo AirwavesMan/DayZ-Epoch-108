@@ -1,12 +1,12 @@
 class Ikarus;
 class DZE_Veh_Bus_Blue: Ikarus {
+	displayname = "$STR_VEH_NAME_IKARUS_BLUE";
+	vehicleClass = "DZE Vehicles Cars";
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_Bus_Blue_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckORP[] = {"DZE_Veh_Bus_Blue_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 
-	vehicleClass = "DZE Vehicles Cars";
-	displayname = "$STR_VEH_NAME_IKARUS_BLUE";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -17,13 +17,13 @@ class DZE_Veh_Bus_Blue: Ikarus {
 
 class Ikarus_TK_CIV_EP1;
 class DZE_Veh_Bus_Red: Ikarus_TK_CIV_EP1 {
+	displayname = "$STR_VEH_NAME_IKARUS_RED";
+	vehicleClass = "DZE Vehicles Cars";
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_Bus_Red_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckORP[] = {"DZE_Veh_Bus_Red_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 
-	vehicleClass = "DZE Vehicles Cars";
-	displayname = "$STR_VEH_NAME_IKARUS_RED";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -33,16 +33,16 @@ class DZE_Veh_Bus_Red: Ikarus_TK_CIV_EP1 {
 };
 
 class DZE_Veh_Bus_White: DZE_Veh_Bus_Blue {
-
-	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_Bus_White_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
-	};
-
-	DZE_MACRO_VEHICLE_SIDE
 	displayname = "$STR_VEH_NAME_IKARUS_WHITE";
 	model = "\sra_civilian\wheeled\bus\bus_city.p3d";
 	driverAction = "CityBus_Driver";
 	nameSound = "bus";
+
+	class Upgrades {
+		ItemTruckORP[] = {"DZE_Veh_Bus_White_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+
+	DZE_MACRO_VEHICLE_SIDE
 	cargoAction[] = {"Truck_Cargo03","Truck_Cargo01","Truck_Cargo04","Truck_Cargo01","Truck_Cargo01","Truck_Cargo03","Truck_Cargo01","Truck_Cargo04","Truck_Cargo01","Truck_Cargo02","Truck_Cargo02","Truck_Cargo01"};
 	dammageFull[] = {"\sra_civilian\wheeled\bus\bus_city_glass_ca.paa","\sra_civilian\wheeled\bus\bus_city_glassbr2_ca.paa","\sra_civilian\wheeled\bus\bus_city_glass_ca.paa","\sra_civilian\wheeled\bus\bus_city_glassbr2_ca.paa"};
 	dammageHalf[] = {"\sra_civilian\wheeled\bus\bus_city_glass_ca.paa","\sra_civilian\wheeled\bus\bus_city_glassbr1_ca.paa","\sra_civilian\wheeled\bus\bus_city_glass_ca.paa","\sra_civilian\wheeled\bus\bus_city_glassbr1_ca.paa"};
@@ -51,8 +51,8 @@ class DZE_Veh_Bus_White: DZE_Veh_Bus_Blue {
 	class AnimationSources {
 		class HitGlass1 {
 			hitpoint = "HitGlass1";
-			raw = 1;
 			source = "Hit";
+			raw = 1;
 		};
 		class HitGlass2: HitGlass1 {
 			hitpoint = "HitGlass2";
@@ -89,8 +89,8 @@ class DZE_Veh_Bus_White: DZE_Veh_Bus_Blue {
 		};
 		class HitLFWheel {
 			hitpoint = "HitLFWheel";
-			raw = 1;
 			source = "Hit";
+			raw = 1;
 		};
 		class HitRFWheel: HitLFWheel {
 			hitpoint = "HitRFWheel";
@@ -120,11 +120,11 @@ class DZE_Veh_Bus_White: DZE_Veh_Bus_Blue {
 	};
 	class HitPoints {
 		class HitGlass1 {
+			name = "sklo_p";
+			visual = "sklo_p";
 			armor = 0.1;
 			material = -1;
-			name = "sklo_p";
 			passThrough = 0;
-			visual = "sklo_p";
 		};
 		class HitGlass2: HitGlass1 {
 			name = "sklo_p1";
@@ -173,32 +173,32 @@ class DZE_Veh_Bus_White: DZE_Veh_Bus_Blue {
 		class HitRGlass: HitGlass1{};
 		class HitLGlass: HitGlass1{};
 		class HitBody {
+			name = "karoserie";
+			visual = "karoserie";
 			armor = 1;
 			material = -1;
-			name = "karoserie";
 			passThrough = 1;
-			visual = "karoserie";
 		};
 		class HitFuel {
+			name = "palivo";
+			visual = "palivo";
 			armor = 0.3;
 			material = -1;
-			name = "palivo";
 			passThrough = 0.5;
-			visual = "palivo";
 		};
 		class HitEngine {
+			name = "motor";
+			visual = "motor";
 			armor = 0.4;
 			material = -1;
-			name = "motor";
 			passThrough = 0.2;
-			visual = "motor";
 		};
 		class HitLFWheel {
+			name = "levy predni tlumic";
+			visual = "levy predni";
 			armor = 0.15;
 			material = -1;
-			name = "levy predni tlumic";
 			passThrough = 0.3;
-			visual = "levy predni";
 		};
 		class HitLBWheel: HitLFWheel {
 			name = "levy zadni tlumic";
@@ -221,14 +221,14 @@ class DZE_Veh_Bus_White: DZE_Veh_Bus_Blue {
 
 class DZE_Veh_Bus_Armored: DZE_Car_Base {
 	scope = 2;
-
-	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_Bus_Armored_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
-	};
-
+	displayName	= "$STR_VEH_NAME_IKARUS_ARMORED";
 	model = "z\addons\dayz_epoch_v\vehicles\citybus\dze_citybus";
 	picture = "\dayz_epoch_c\icons\vehicles\ArmoredBus.paa";
-	displayName	= "$STR_VEH_NAME_IKARUS_ARMORED";
+
+	class Upgrades {
+		ItemTruckORP[] = {"DZE_Veh_Bus_Armored_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+
 	maxSpeed = 85;
 	turnCoef = 1.2;
 	armor = 100;
@@ -291,14 +291,14 @@ class DZE_Veh_Bus_Armored: DZE_Car_Base {
 
 	class SoundEvents {
 		class AccelerationIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\int\int-bus-acce-1", db-5, 1.0};
 			limit = "0.15";
 			expression = "engineOn*(1-camPos)*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\int\int-bus-acce-1", db-5, 1.0};
 		};
 		class AccelerationOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\ext\ext-bus-acce-1", db-5, 1.0, 280};
 			limit = "0.15";
 			expression = "engineOn*camPos*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\ext\ext-bus-acce-1", db-5, 1.0, 280};
 		};
 	};
 
@@ -307,109 +307,109 @@ class DZE_Veh_Bus_Armored: DZE_Car_Base {
 	//    EXTERNAL SOUNDS BUS            */
 	/* --------------------------------- */
 		class Engine {
-			sound[] =  {"\ca\sounds\Vehicles\Wheeled\BUS\ext\ext-bus-low-2", db0, 1.0, 350};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "engineOn*camPos*(thrust factor[0.7, 0.2])";
+			sound[] =  {"\ca\sounds\Vehicles\Wheeled\BUS\ext\ext-bus-low-2", db0, 1.0, 350};
 		};
 		class EngineHighOut {
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\BUS\ext\ext-bus-high-4", db0, 1.0, 450};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "engineOn*camPos*(thrust factor[0.5, 0.9])";
+			sound[] = {"\ca\sounds\Vehicles\Wheeled\BUS\ext\ext-bus-high-4", db0, 1.0, 450};
 		};
 		class IdleOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\ext\ext-bus-idle-1", db-10, 1.0, 150};
 			frequency = "1";
 			volume = "engineOn*camPos*(rpm factor[0.4, 0])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\ext\ext-bus-idle-1", db-10, 1.0, 150};
 		};
 
 		class TiresRockOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2", db-15, 1.0, 30};
 			frequency = "1";
 			volume = "camPos*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2", db-15, 1.0, 30};
 		};
 		class TiresSandOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2", db-15, 1.0, 30};
 			frequency = "1";
 			volume = "camPos*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2", db-15, 1.0, 30};
 		};
 		class TiresGrassOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3", db-15, 1.0, 30};
 			frequency = "1";
 			volume = "camPos*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3", db-15, 1.0, 30};
 		};
 		class TiresMudOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2", db-15, 1.0, 30};
 			frequency = "1";
 			volume = "camPos*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2", db-15, 1.0, 30};
 		};
 		class TiresGravelOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2", db-15, 1.0, 30};
 			frequency = "1";
 			volume = "camPos*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2", db-15, 1.0, 30};
 		};
 		class TiresAsphaltOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3", db-25, 1.0, 30};
 			frequency = "1";
 			volume = "camPos*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3", db-25, 1.0, 30};
 		};
 		class NoiseOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\ext-noise3", db-15, 1.0, 30};
 			frequency = "1";
 			volume = "camPos*(damper0 max 0.04)*(speed factor[0, 8])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\ext-noise3", db-15, 1.0, 30};
 		};
 	/* --------------------------------- */
   //        INTERNAL SOUNDS BUS 	  	 */
 	/* --------------------------------- */
 		class EngineLowIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\int\int-bus-low-2", db-0, 1.0};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "((engineOn*thrust) factor[0.65, 0.2])*(1-camPos)";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\int\int-bus-low-2", db-0, 1.0};
 		};
 		class EngineHighIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\int\int-bus-high-4", db-0, 0.95};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "((engineOn*thrust) factor[0.55, 1.0])*(1-camPos)";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\int\int-bus-high-4", db-0, 0.95};
 		};
 		class IdleIn {
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\BUS\int\int-bus-idle-1", db-5, 1.0};
 			frequency = "1";
 			volume = "engineOn*(rpm factor[0.3, 0])*(1-camPos)";
+			sound[] = {"\ca\sounds\Vehicles\Wheeled\BUS\int\int-bus-idle-1", db-5, 1.0};
 		};
 
 		class TiresRockIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2", db-15, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2", db-15, 1.0};
 		};
 		class TiresSandIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2", db-15, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2", db-15, 1.0};
 		};
 		class TiresGrassIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3", db-15, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3", db-15, 1.0};
 		};
 		class TiresMudIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2", db-15, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2", db-15, 1.0};
 		};
 		class TiresGravelIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2", db-15, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2", db-15, 1.0};
 		};
 		class TiresAsphaltIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3", db-20, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3", db-20, 1.0};
 		};
 		class NoiseIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\int-noise3", db-10, 1.0};
 			frequency = "1";
 			volume = "(damper0 max 0.04)*(speed factor[0, 8])*(1-camPos)"; //definice INSIDE zvuku
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\int-noise3", db-10, 1.0};
 		};
 		// original environment sound, suppressed now
 		class Movement {
@@ -427,7 +427,7 @@ class DZE_Veh_Bus_Blue_1: DZE_Veh_Bus_Blue {
 	terrainCoef = 3.5;
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_Bus_Blue_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_Bus_Blue_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 
@@ -437,7 +437,7 @@ class DZE_Veh_Bus_Blue_2: DZE_Veh_Bus_Blue_1 {
 	damageResistance = 0.00524;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_Blue_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Bus_Blue_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -448,7 +448,7 @@ class DZE_Veh_Bus_Blue_3: DZE_Veh_Bus_Blue_2 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_Bus_Blue_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckTNK[] = {"DZE_Veh_Bus_Blue_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
 
@@ -466,7 +466,7 @@ class DZE_Veh_Bus_Red_1: DZE_Veh_Bus_Red {
 	terrainCoef = 3.5;
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_Bus_Red_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_Bus_Red_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 
@@ -476,7 +476,7 @@ class DZE_Veh_Bus_Red_2: DZE_Veh_Bus_Red_1 {
 	damageResistance = 0.00524;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_Red_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Bus_Red_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -487,7 +487,7 @@ class DZE_Veh_Bus_Red_3: DZE_Veh_Bus_Red_2 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_Bus_Red_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckTNK[] = {"DZE_Veh_Bus_Red_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
 
@@ -505,7 +505,7 @@ class DZE_Veh_Bus_White_1: DZE_Veh_Bus_White {
 	terrainCoef = 3.5;
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_Bus_White_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_Bus_White_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 
@@ -515,7 +515,7 @@ class DZE_Veh_Bus_White_2: DZE_Veh_Bus_White_1 {
 	damageResistance = 0.00524;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_White_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Bus_White_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -526,7 +526,7 @@ class DZE_Veh_Bus_White_3: DZE_Veh_Bus_White_2 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_Bus_White_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckTNK[] = {"DZE_Veh_Bus_White_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
 
@@ -544,7 +544,7 @@ class DZE_Veh_Bus_Armored_1: DZE_Veh_Bus_Armored {
 	terrainCoef = 1.4;
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_Bus_Armored_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"DZE_Veh_Bus_Armored_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 
@@ -553,7 +553,7 @@ class DZE_Veh_Bus_Armored_2: DZE_Veh_Bus_Armored_1 {
 	armor = 200;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_Armored_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"DZE_Veh_Bus_Armored_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -564,7 +564,7 @@ class DZE_Veh_Bus_Armored_3: DZE_Veh_Bus_Armored_2 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_Bus_Armored_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckTNK[] = {"DZE_Veh_Bus_Armored_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
 

@@ -6,7 +6,7 @@ while {true} do {
 	_group = player call dayz_filterGroup;
 	_inGroup = count _group > 1;
 
-	if (dayz_requireRadio && {_inGroup} && {!("ItemRadio" in items player)}) then {
+	if (dayz_requireRadio && {_inGroup} && {!("DZE_Tool_Radio" in items player)}) then {
 		_lastGroup = group player;
 		[player] joinSilent grpNull;
 		if (!isNull findDisplay 80000) then {findDisplay 80000 closeDisplay 2;};
@@ -18,7 +18,7 @@ while {true} do {
 			dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
 		};
 
-		if (!isNull _lastGroup && {"ItemRadio" in items player}) then {
+		if (!isNull _lastGroup && {"DZE_Tool_Radio" in items player}) then {
 			_oldGroup = group player;
 			[player] joinSilent _lastGroup;
 			if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
@@ -29,7 +29,7 @@ while {true} do {
 		};
 
 		if (visibleMap or !isNull (uiNamespace getVariable["BIS_RscMiniMap",displayNull])) then {
-			_hasGPS = "ItemGPS" in items player;
+			_hasGPS = "DZE_Tool_GPS" in items player;
 			_markBody = (dayz_markBody == 1 or (dayz_markBody == 2 && {_hasGPS}));
 			_markGroup = (dayz_markGroup == 1 or (dayz_markGroup == 2 && {_hasGPS}));
 			_markSelf = (dayz_markSelf == 1 or (dayz_markSelf == 2 && {_hasGPS}));

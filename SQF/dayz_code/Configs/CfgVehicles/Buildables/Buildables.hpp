@@ -1,19 +1,19 @@
 // All -> Static -> Building -> NonStrategic -> HouseBase -> House
 class DZE_Building_Base: House {
 	scope = 0;
-	// side = 3;
+	displayName = "";
 	icon = "\ca\data\data\Unknown_object.paa";
 	nameSound = "house";
+	placement = "vertical";
+	vehicleClass = "DayZ Epoch 1071 Base";
+	destrType = "DestructNo";
+	// side = 3;
 	// simulation = "house";
 	// picture = "pictureStaticObject";
-	placement = "vertical";
 	// ladders[] = {};
-	vehicleClass = "DayZ Epoch 1071 Base";
-	displayName = "";
 	mapSize = 11;
 	animated = 1;
 	armor = 100;
-	destrType = "DestructNo";	
 	// damageResistance = 0.004;
 	// reversed = 0;
 	// hasDriver = 0;
@@ -45,8 +45,8 @@ class DZE_Building_Base: House {
 		class DestroyPhase1 {
 			simulation = "destroy";
 			type = "DelayedDestruction";
-			lifeTime = 2.5;
 			position = "";
+			lifeTime = 2.5;
 			intensity = 1;
 			interval = 1;
 		};
@@ -71,8 +71,8 @@ class DZE_Building_Base: House {
 	DZE_perBaseLimit = 0;			//	-1 prevents building; 0 disables the limit; >0 limits this exact class per base
 	
 	class RemoveObject {
-		DZE_neededTools[] = {"ItemToolbox","ItemCrowbar"};
 		DZE_refundKit = "";
+		DZE_neededTools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
 		DZE_refundArray[] = {};
 	};
 };

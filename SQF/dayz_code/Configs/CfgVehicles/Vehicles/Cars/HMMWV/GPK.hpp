@@ -1,8 +1,11 @@
 class DZE_Veh_HMMWV_GPK_Desert: DZE_HMMWV_Base  {
-	expansion = 1;
 	scope = 2;
-	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
 	displayName = "$STR_VEH_NAME_HMMWV_GPK";
+	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
+	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_m2gpk_CA.paa";
+	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_m2gpk_CA.paa";
+	driverAction = "HMMWV_Driver_EP1";
+	expansion = 1;
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 70;
 	transportMaxBackpacks = 4;
@@ -10,12 +13,9 @@ class DZE_Veh_HMMWV_GPK_Desert: DZE_HMMWV_Base  {
 	transportSoldier = 3;
 	armor = 80;
 	damageResistance = 0.03099;
-	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_m2gpk_CA.paa";
-	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_m2gpk_CA.paa";
 	class Library {
 		libTextDesc = "The High Mobility Multipurpose Wheeled Vehicle (HMMWV) replaced the M151 ï¿½Willysï¿½ jeep in US Army service. The HMMWV was designed to fill myriad roles, including that of light tactical commander's vehicle, special purpose shelter carrier, and mobile weapons platform. The HMMWV is equipped with a high-performance diesel engine and four-wheel drive, making it capable of negotiating very difficult terrain. <br/>This one is equipped with an M2 heavy machine gun which is effective against infantry or unarmored vehicles. It is also supplemented with the GPK (Gunner Protection Kit).";
 	};
-	driverAction = "HMMWV_Driver_EP1";
 	cargoAction[] = {"HMMWV_Cargo_EP1","HMMWV_Cargo01_EP1","HMMWV_Cargo02_EP1"};
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -24,15 +24,15 @@ class DZE_Veh_HMMWV_GPK_Desert: DZE_HMMWV_Base  {
 		class MainTurret: MainTurret {
 			body = "mainTurret";
 			gun = "mainGun";
+			gunnerAction = "HMMWV_Gunner_EP1";
+			stabilizedInAxes = "StabilizedInAxesBoth";
 			weapons[] = {"M2"};
 			magazines[] = {"100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2"};
 			soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1",0.01,1,10};
 			minElev = -25;
 			maxElev = 60;
-			gunnerAction = "HMMWV_Gunner_EP1";
 			viewGunnerInExternal = 1;
 			castGunnerShadow = 1;
-			stabilizedInAxes = "StabilizedInAxesBoth";
 			class ViewOptics {
 				initAngleX = 0;
 				minAngleX = -30;
@@ -68,7 +68,7 @@ class DZE_Veh_HMMWV_GPK_Desert: DZE_HMMWV_Base  {
 	hiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_1_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_regular_1_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_gpk_tower_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_GPK_Desert_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_GPK_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -80,7 +80,7 @@ class DZE_Veh_HMMWV_GPK_Desert_1: DZE_Veh_HMMWV_GPK_Desert  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_GPK_Desert_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_GPK_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -123,7 +123,7 @@ class DZE_Veh_HMMWV_GPK_Desert_2: DZE_Veh_HMMWV_GPK_Desert_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_GPK_Desert_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_GPK_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -134,7 +134,7 @@ class DZE_Veh_HMMWV_GPK_Desert_3: DZE_Veh_HMMWV_GPK_Desert_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_GPK_Desert_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_GPK_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -148,7 +148,7 @@ class DZE_Veh_HMMWV_GPK_Winter: DZE_Veh_HMMWV_GPK_Desert {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\hmmwv\hmmwv_body_canvas_1_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_hood_canvas_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_regular_1_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_gpk_tower_winter_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_GPK_Winter_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_GPK_Winter_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -160,7 +160,7 @@ class DZE_Veh_HMMWV_GPK_Winter_1: DZE_Veh_HMMWV_GPK_Winter  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_GPK_Winter_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_GPK_Winter_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -203,7 +203,7 @@ class DZE_Veh_HMMWV_GPK_Winter_2: DZE_Veh_HMMWV_GPK_Winter_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_GPK_Winter_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_GPK_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -214,7 +214,7 @@ class DZE_Veh_HMMWV_GPK_Winter_3: DZE_Veh_HMMWV_GPK_Winter_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_GPK_Winter_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_GPK_Winter_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -228,10 +228,10 @@ class DZE_Veh_HMMWV_AGS30_Desert: DZE_Veh_HMMWV_GPK_Desert {
 	model = "\Ca\Wheeled_ACR\HMMWV\M1114_AGS_ACR.p3d";
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
-			weapons[] = {"AGS30"};
-			magazines[] = {"29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30"};
 			gunnerAction = "LR_Gunner01_EP1";
 			gunnerOpticsModel = "\ca\weapons\optika_AGS30.p3d";
+			weapons[] = {"AGS30"};
+			magazines[] = {"29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30"};
 			class GunFire: WeaponCloudsMGun {
 				interval = 0.01;
 			};
@@ -258,7 +258,7 @@ class DZE_Veh_HMMWV_AGS30_Desert: DZE_Veh_HMMWV_GPK_Desert {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_AGS30_Desert_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_AGS30_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -270,7 +270,7 @@ class DZE_Veh_HMMWV_AGS30_Desert_1: DZE_Veh_HMMWV_AGS30_Desert  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_AGS30_Desert_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_AGS30_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -313,7 +313,7 @@ class DZE_Veh_HMMWV_AGS30_Desert_2: DZE_Veh_HMMWV_AGS30_Desert_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_AGS30_Desert_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_AGS30_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -324,7 +324,7 @@ class DZE_Veh_HMMWV_AGS30_Desert_3: DZE_Veh_HMMWV_AGS30_Desert_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_AGS30_Desert_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_AGS30_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -359,7 +359,7 @@ class DZE_Veh_HMMWV_DShKM_Desert: DZE_Veh_HMMWV_GPK_Desert {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_DShKM_Desert_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_DShKM_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -371,7 +371,7 @@ class DZE_Veh_HMMWV_DShKM_Desert_1: DZE_Veh_HMMWV_DShKM_Desert  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_DShKM_Desert_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_DShKM_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -414,7 +414,7 @@ class DZE_Veh_HMMWV_DShKM_Desert_2: DZE_Veh_HMMWV_DShKM_Desert_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_DShKM_Desert_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_DShKM_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -425,7 +425,7 @@ class DZE_Veh_HMMWV_DShKM_Desert_3: DZE_Veh_HMMWV_DShKM_Desert_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_DShKM_Desert_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_DShKM_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 

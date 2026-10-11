@@ -1,6 +1,6 @@
 class DZE_Veh_HMMWV_M2_Woodland: DZE_HMMWV_Base {
-	displayName = "$STR_VEH_NAME_HMMWV_M2";
 	scope = 2;
+	displayName = "$STR_VEH_NAME_HMMWV_M2";
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 
@@ -29,7 +29,7 @@ class DZE_Veh_HMMWV_M2_Woodland: DZE_HMMWV_Base {
 	hiddenSelectionsTextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_M2_Woodland_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_M2_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -41,7 +41,7 @@ class DZE_Veh_HMMWV_M2_Woodland_1: DZE_Veh_HMMWV_M2_Woodland  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_M2_Woodland_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_M2_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -84,7 +84,7 @@ class DZE_Veh_HMMWV_M2_Woodland_2: DZE_Veh_HMMWV_M2_Woodland_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_M2_Woodland_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_M2_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -95,7 +95,7 @@ class DZE_Veh_HMMWV_M2_Woodland_3: DZE_Veh_HMMWV_M2_Woodland_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_M2_Woodland_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_M2_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 

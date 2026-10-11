@@ -1,6 +1,6 @@
 Boat[] =
 {
-	{Loot_WEAPON,		1,		ItemFishingPole},
+	{Loot_WEAPON,		1,		DZE_Tool_FishingPole},
 	{Loot_GROUP,		9,		Generic}
 };
 

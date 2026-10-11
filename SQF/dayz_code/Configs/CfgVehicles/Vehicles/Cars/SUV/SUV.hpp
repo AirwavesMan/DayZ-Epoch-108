@@ -14,9 +14,9 @@ class SUV_Base_EP1: Car {
 };
 
 class DZE_Veh_SUV_Black: SUV_Base_EP1 {
+	scope = 2;
 	displayName = "$STR_VEH_NAME_SUV_BLACK";
 	vehicleClass = "DZE Vehicles Cars";
-	scope = 2;
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -24,79 +24,79 @@ class DZE_Veh_SUV_Black: SUV_Base_EP1 {
 
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
+			name = "wheel_1_1_steering";
+			visual = "";
 			armor = 0.15;
 			material = -1;
-			name = "wheel_1_1_steering";
 			passThrough = 0.3;
-			visual = "";
 		};
 		class HitLBWheel: HitLBWheel {
+			name = "wheel_1_2_steering";
+			visual = "";
 			armor = 0.15;
 			material = -1;
-			name = "wheel_1_2_steering";
 			passThrough = 0.3;
-			visual = "";
 		};
 		class HitRFWheel: HitRFWheel {
+			name = "wheel_2_1_steering";
+			visual = "";
 			armor = 0.15;
 			material = -1;
-			name = "wheel_2_1_steering";
 			passThrough = 0.3;
-			visual = "";
 		};
 		class HitRBWheel: HitRBWheel {
+			name = "wheel_2_2_steering";
+			visual = "";
 			armor = 0.15;
 			material = -1;
-			name = "wheel_2_2_steering";
 			passThrough = 0.3;
-			visual = "";
 		};
 		class HitFuel: HitFuel {
+			name = "palivo";
+			visual = "";
 			armor = 0.14;
 			material = -1;
-			name = "palivo";
 			passThrough = 1;
-			visual = "";
 		};
 		class HitEngine: HitEngine {
+			name = "motor";
+			visual = "";
 			armor = 0.5;
 			material = -1;
-			name = "motor";
 			passThrough = 1;
-			visual = "";
 		};
 		class HitGlass1: HitGlass1 {
+			name = "glass1";
+			visual = "glass1";
 			armor = 0.1;
 			material = -1;
-			name = "glass1";
 			passThrough = 0;
-			visual = "glass1";
 		};
 		class HitGlass2: HitGlass2 {
+			name = "glass2";
+			visual = "glass2";
 			armor = 0.1;
 			material = -1;
-			name = "glass2";
 			passThrough = 0;
-			visual = "glass2";
 		};
 		class HitGlass3: HitGlass3 {
+			name = "glass3";
+			visual = "glass3";
 			armor = 0.1;
 			material = -1;
-			name = "glass3";
 			passThrough = 0;
-			visual = "glass3";
 		};
 		class HitGlass4: HitGlass4 {
+			name = "glass4";
+			visual = "glass4";
 			armor = 0.1;
 			material = -1;
-			name = "glass4";
 			passThrough = 0;
-			visual = "glass4";
 		};
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Black_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Black_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -108,7 +108,7 @@ class DZE_Veh_SUV_Black_1: DZE_Veh_SUV_Black {
 	terrainCoef = 1.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Black_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Black_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -150,7 +150,7 @@ class DZE_Veh_SUV_Black_2: DZE_Veh_SUV_Black_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Black_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Black_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -161,7 +161,7 @@ class DZE_Veh_SUV_Black_3: DZE_Veh_SUV_Black_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Black_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Black_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -176,7 +176,7 @@ class DZE_Veh_SUV_Camo: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\camo10.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Camo_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Camo_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -188,7 +188,7 @@ class DZE_Veh_SUV_Camo_1: DZE_Veh_SUV_Camo {
 	terrainCoef = 1.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Camo_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Camo_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -230,7 +230,7 @@ class DZE_Veh_SUV_Camo_2: DZE_Veh_SUV_Camo_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Camo_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Camo_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -241,7 +241,7 @@ class DZE_Veh_SUV_Camo_3: DZE_Veh_SUV_Camo_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Camo_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Camo_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -256,7 +256,7 @@ class DZE_Veh_SUV_Blue: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_blue_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Blue_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Blue_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -268,7 +268,7 @@ class DZE_Veh_SUV_Blue_1: DZE_Veh_SUV_Blue {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Blue_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Blue_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -310,7 +310,7 @@ class DZE_Veh_SUV_Blue_2: DZE_Veh_SUV_Blue_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Blue_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Blue_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -321,7 +321,7 @@ class DZE_Veh_SUV_Blue_3: DZE_Veh_SUV_Blue_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Blue_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Blue_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -336,7 +336,7 @@ class DZE_Veh_SUV_Green: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_green_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Green_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Green_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -348,7 +348,7 @@ class DZE_Veh_SUV_Green_1: DZE_Veh_SUV_Green {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Green_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Green_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -390,7 +390,7 @@ class DZE_Veh_SUV_Green_2: DZE_Veh_SUV_Green_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Green_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -401,7 +401,7 @@ class DZE_Veh_SUV_Green_3: DZE_Veh_SUV_Green_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Green_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Green_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -416,7 +416,7 @@ class DZE_Veh_SUV_Yellow: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_yellow_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Yellow_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Yellow_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -428,7 +428,7 @@ class DZE_Veh_SUV_Yellow_1: DZE_Veh_SUV_Yellow {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Yellow_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Yellow_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -470,7 +470,7 @@ class DZE_Veh_SUV_Yellow_2: DZE_Veh_SUV_Yellow_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Yellow_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Yellow_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -481,7 +481,7 @@ class DZE_Veh_SUV_Yellow_3: DZE_Veh_SUV_Yellow_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Yellow_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Yellow_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -496,7 +496,7 @@ class DZE_Veh_SUV_Red: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_red_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Red_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Red_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -508,7 +508,7 @@ class DZE_Veh_SUV_Red_1: DZE_Veh_SUV_Red {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Red_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Red_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -550,7 +550,7 @@ class DZE_Veh_SUV_Red_2: DZE_Veh_SUV_Red_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Red_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -561,7 +561,7 @@ class DZE_Veh_SUV_Red_3: DZE_Veh_SUV_Red_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Red_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Red_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -576,7 +576,7 @@ class DZE_Veh_SUV_White: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_white_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_White_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_White_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -588,7 +588,7 @@ class DZE_Veh_SUV_White_1: DZE_Veh_SUV_White {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_White_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_White_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -630,7 +630,7 @@ class DZE_Veh_SUV_White_2: DZE_Veh_SUV_White_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_White_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -641,7 +641,7 @@ class DZE_Veh_SUV_White_3: DZE_Veh_SUV_White_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_White_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_White_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -656,7 +656,7 @@ class DZE_Veh_SUV_Pink: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_pink_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Pink_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Pink_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -668,7 +668,7 @@ class DZE_Veh_SUV_Pink_1: DZE_Veh_SUV_Pink {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Pink_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Pink_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -710,7 +710,7 @@ class DZE_Veh_SUV_Pink_2: DZE_Veh_SUV_Pink_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Pink_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Pink_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -721,7 +721,7 @@ class DZE_Veh_SUV_Pink_3: DZE_Veh_SUV_Pink_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Pink_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Pink_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -736,7 +736,7 @@ class DZE_Veh_SUV_Grey: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_charcoal_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Grey_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Grey_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -748,7 +748,7 @@ class DZE_Veh_SUV_Grey_1: DZE_Veh_SUV_Grey {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Grey_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Grey_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -790,7 +790,7 @@ class DZE_Veh_SUV_Grey_2: DZE_Veh_SUV_Grey_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Grey_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Grey_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -801,7 +801,7 @@ class DZE_Veh_SUV_Grey_3: DZE_Veh_SUV_Grey_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Grey_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Grey_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -816,7 +816,7 @@ class DZE_Veh_SUV_Orange: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_orange_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Orange_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Orange_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -828,7 +828,7 @@ class DZE_Veh_SUV_Orange_1: DZE_Veh_SUV_Orange {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Orange_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Orange_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -870,7 +870,7 @@ class DZE_Veh_SUV_Orange_2: DZE_Veh_SUV_Orange_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Orange_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Orange_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -881,7 +881,7 @@ class DZE_Veh_SUV_Orange_3: DZE_Veh_SUV_Orange_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Orange_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Orange_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -896,7 +896,7 @@ class DZE_Veh_SUV_Silver: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_silver_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Silver_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Silver_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -908,7 +908,7 @@ class DZE_Veh_SUV_Silver_1: DZE_Veh_SUV_Silver {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Silver_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Silver_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -950,7 +950,7 @@ class DZE_Veh_SUV_Silver_2: DZE_Veh_SUV_Silver_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Silver_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Silver_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -961,7 +961,7 @@ class DZE_Veh_SUV_Silver_3: DZE_Veh_SUV_Silver_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Silver_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Silver_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -976,7 +976,7 @@ class DZE_Veh_SUV_Winter: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\suv\camo_winter.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Winter_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_Winter_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -988,7 +988,7 @@ class DZE_Veh_SUV_Winter_1: DZE_Veh_SUV_Winter {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Winter_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_Winter_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -1030,7 +1030,7 @@ class DZE_Veh_SUV_Winter_2: DZE_Veh_SUV_Winter_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Winter_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -1041,7 +1041,7 @@ class DZE_Veh_SUV_Winter_3: DZE_Veh_SUV_Winter_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Winter_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_Winter_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -1056,7 +1056,7 @@ class DZE_Veh_SUV_BlueWhite: DZE_Veh_SUV_Black {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\suv\suv_body_bluewhite.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_BlueWhite_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_SUV_BlueWhite_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -1068,7 +1068,7 @@ class DZE_Veh_SUV_BlueWhite_1: DZE_Veh_SUV_BlueWhite {
 	brakeDistance = 14; // 19
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_BlueWhite_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_SUV_BlueWhite_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -1110,7 +1110,7 @@ class DZE_Veh_SUV_BlueWhite_2: DZE_Veh_SUV_BlueWhite_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_BlueWhite_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_SUV_BlueWhite_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -1121,7 +1121,7 @@ class DZE_Veh_SUV_BlueWhite_3: DZE_Veh_SUV_BlueWhite_2 {
 	transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_BlueWhite_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_SUV_BlueWhite_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

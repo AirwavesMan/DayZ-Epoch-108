@@ -1,8 +1,8 @@
 class DZE_Tool_Knife_Base : ItemCore {
 	scope = 0;	
+	displayName = "$STR_TOOL_DISPLAY_NAME_KNIFE";
 	model = "\dayz_equip\models\knife_gear.p3d";
 	picture = "\dayz_equip\textures\equip_knife_ca.paa";
-	displayName = "$STR_TOOL_DISPLAY_NAME_KNIFE";
 	
 	class ItemActions {
 		class Use {
@@ -14,9 +14,9 @@ class DZE_Tool_Knife_Base : ItemCore {
 
 class DZE_Tool_Knife : DZE_Tool_Knife_Base {
 	scope = 2;
+	descriptionShort = "$STR_TOOL_DESC_SHORT_KNIFE";
 	model = "\dayz_equip\models\knife_gear.p3d"; // Some mods override this. We leave this here just to be sure.
 	picture = "\dayz_equip\textures\equip_knife_ca.paa";
-	descriptionShort = "$STR_TOOL_DESC_SHORT_KNIFE";
 	DZE_sharpnessRemaining = "DZE_Tool_Knife5";
 };
 

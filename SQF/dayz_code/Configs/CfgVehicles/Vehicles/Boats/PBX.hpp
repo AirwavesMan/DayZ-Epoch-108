@@ -1,12 +1,12 @@
 class PBX;
 class DZE_Veh_PBX: PBX {
-
-	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_PBX_1",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
-	};
-
 	displayName = "$STR_VEH_NAME_PBX";
 	vehicleClass = "DZE Vehicles Boats";
+
+	class Upgrades {
+		ItemAVE[] = {"DZE_Veh_PBX_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -21,13 +21,13 @@ class DZE_Veh_PBX: PBX {
 
 class Zodiac;
 class DZE_Veh_CRRC: Zodiac {
-
-	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_CRRC_1",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
-	};
-
 	displayName = "$STR_VEH_NAME_CRRC";
 	vehicleClass = "DZE Vehicles Boats";
+
+	class Upgrades {
+		ItemAVE[] = {"DZE_Veh_CRRC_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -46,7 +46,7 @@ class DZE_Veh_PBX_1: DZE_Veh_PBX {
 	armor = 40;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_PBX_2",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_PBX_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -57,7 +57,7 @@ class DZE_Veh_PBX_2: DZE_Veh_PBX_1 {
 	transportMaxBackpacks = 2;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_PBX_3",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_PBX_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -74,7 +74,7 @@ class DZE_Veh_CRRC_1: DZE_Veh_CRRC {
 	armor = 40;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_CRRC_2",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_CRRC_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -85,7 +85,7 @@ class DZE_Veh_CRRC_2: DZE_Veh_CRRC_1 {
 	transportMaxBackpacks = 2;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_CRRC_3",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_CRRC_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

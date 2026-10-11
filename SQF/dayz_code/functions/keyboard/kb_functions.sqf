@@ -75,7 +75,7 @@ kb_openGroups = {
 	// params: [displayOrControl, key, shift, ctrl, alt] https://community.bistudio.com/wiki/User_Interface_Event_Handlers#onKeyDown
 
 	if (dayz_groupSystem) then {
-		if (dayz_requireRadio && {!('ItemRadio' in p_items)}) then {
+		if (dayz_requireRadio && {!('DZE_Tool_Radio' in p_items)}) then {
 			localize 'STR_EPOCH_NEED_RADIO' call DZE_fnc_rollingMessages;
 		} else {
 			if (isNull findDisplay 80000) then {

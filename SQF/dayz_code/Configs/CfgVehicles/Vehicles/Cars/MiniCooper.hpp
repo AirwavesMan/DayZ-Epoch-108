@@ -3,6 +3,7 @@ class DZE_MiniCooper_Base: DZE_Car_Base {
 	displayname = "Mini Cooper";
 	model = "\z\addons\dayz_epoch_v\vehicles\mini\dze_cooper_s";
 	picture = "\dayz_epoch_c\icons\vehicles\minicooper.paa";
+	driverAction = "Golf_Driver";
 	transportsoldier = 1;
 	fuelCapacity = 100;
 	class HitPoints;
@@ -18,7 +19,6 @@ class DZE_MiniCooper_Base: DZE_Car_Base {
 	class HitGlass4;
 	maxSpeed = 110;
 	weapons[] = {"SportCarHorn"};
-	driverAction = "Golf_Driver";
 	cargoaction[] = {"Hatchback_Cargo01"};
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -72,120 +72,120 @@ class DZE_MiniCooper_Base: DZE_Car_Base {
 
 	class SoundEvents {
 		class AccelerationIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-acce-1", db-1, 1.0};
 			limit = "0.15";
 			expression = "engineOn*(1-camPos)*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-acce-1", db-1, 1.0};
 		};
 		class AccelerationOut {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-acce-1", db-5, 1.0, 250};
 			limit = "0.15";
 			expression = "engineOn*camPos*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-acce-1", db-5, 1.0, 250};
 		};
 	};
 	class Sounds {
 		class Engine {
-			sound[] =  {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-low-1", db-8, 1.0, 300};
 			frequency = "(randomizer*0.05+1.25)*rpm";
 			volume = "camPos*engineOn*((rpm factor[0.25, 0.4]) min (rpm factor[0.6, 0.45]))";
+			sound[] =  {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-low-1", db-8, 1.0, 300};
 		};
 		class EngineHighOut {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-high-1", db-8, 0.8, 450};
 			frequency = "(randomizer*0.05+1.1)*rpm";
 			volume = "camPos*engineOn*(rpm factor[0.5, 0.9])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-high-1", db-8, 0.8, 450};
 		};
 		class IdleOut {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-idle-1", db-10, 1.0, 100};
 			frequency = "1";
 			volume = "engineOn*camPos*(rpm factor[0.4, 0])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-idle-1", db-10, 1.0, 100};
 		};
 		class TiresRockOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2", db-25, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*rock*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2", db-25, 1.0, 40};
 		};
 		class TiresSandOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2", db-25, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*sand*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2", db-25, 1.0, 40};
 		};
 		class TiresGrassOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3", db-25, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*grass*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3", db-25, 1.0, 40};
 		};
 		class TiresMudOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2", db-25, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*mud*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2", db-25, 1.0, 40};
 		};
 		class TiresGravelOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2", db-25, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*gravel*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2", db-25, 1.0, 40};
 		};
 		class TiresAsphaltOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3", db-25, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*asphalt*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3", db-25, 1.0, 40};
 		};
 		class NoiseOut {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\ext\noise2", db-25, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*(damper0 max 0.036)*(speed factor[0, 8])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\ext\noise2", db-25, 1.0, 40};
 		};
 	/* --------------------------------- */
 	//			 INTERNAL SOUNDS GOLF				 //
 	/* --------------------------------- */
 		class EngineLowIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-low-1", db-3, 1.0};
 			frequency = "(randomizer*0.05+1.3)*rpm";
 			volume = "(1-camPos)*engineOn*((rpm factor[0.3, 0.5]) min (rpm factor[0.7, 0.52]))";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-low-1", db-3, 1.0};
 		};
 		class EngineHighIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-high-1", db-3, 0.95};
 			frequency = "(randomizer*0.05+1.2)*rpm";
 			volume = "(1-camPos)*engineOn*(rpm factor[0.6, 1.0])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-high-1", db-3, 0.95};
 		};
 		class IdleIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-idle-1", db-5, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*engineOn*(rpm factor[0.4, 0])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-idle-1", db-5, 1.0};
 		};
 
 		class TiresRockIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2", db-23, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2", db-23, 1.0};
 		};
 		class TiresSandIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2", db-23, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2", db-23, 1.0};
 		};
 		class TiresGrassIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3", db-23, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3", db-23, 1.0};
 		};
 		class TiresMudIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2", db-23, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2", db-23, 1.0};
 		};
 		class TiresGravelIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2", db-23, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2", db-23, 1.0};
 		};
 		class TiresAsphaltIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3", db-25, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3", db-25, 1.0};
 		};
 		class NoiseIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\int\noise2", db-20, 1.0};
 			frequency = "1";
 			volume = "(damper0 max 0.03)*(speed factor[0, 8])*(1-camPos)"; //definice INSIDE zvuku
+			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\int\noise2", db-20, 1.0};
 		};
 		// original environment sound, suppressed now
 		class Movement {
@@ -202,7 +202,7 @@ class DZE_Veh_MiniCooper_Red: DZE_MiniCooper_Base {
 	terrainCoef = 5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_MiniCooper_Red_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_MiniCooper_Red_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -214,7 +214,7 @@ class DZE_Veh_MiniCooper_Red_1: DZE_Veh_MiniCooper_Red {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_MiniCooper_Red_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_MiniCooper_Red_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -257,7 +257,7 @@ class DZE_Veh_MiniCooper_Red_2: DZE_Veh_MiniCooper_Red_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_MiniCooper_Red_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_MiniCooper_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -269,7 +269,7 @@ class DZE_Veh_MiniCooper_Red_3: DZE_Veh_MiniCooper_Red_2 {
     transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_MiniCooper_Red_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_MiniCooper_Red_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

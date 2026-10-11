@@ -3,7 +3,7 @@ dayz_actionInProgress = true;
 
 private ["_dir","_classname","_b0x1337","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool","_finished"];
 
-_hasTool = "ItemCrowbar" in items player;
+_hasTool = "DZE_Tool_Crowbar" in items player;
 if(!_hasTool) exitWith {
 	localize "str_epoch_player_76" call DZE_fnc_rollingMessages;
 	dayz_actionInProgress = false;

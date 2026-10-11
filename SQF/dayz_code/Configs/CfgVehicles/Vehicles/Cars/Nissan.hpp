@@ -77,136 +77,136 @@ class DZE_Nissan350Z_Base: DZE_Car_Base {
 	soundArmorCrash[] = {"ArmorCrash0", 0.25, "ArmorCrash1", 0.25, "ArmorCrash2", 0.25, "ArmorCrash3", 0.25};
 	class SoundEvents {
 		class AccelerationIn {
+			expression = "engineOn*(1-camPos)*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
 			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-acce-1", 0.891251, 1.0};
 			limit = 0.15;
-			expression = "engineOn*(1-camPos)*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
 		};
 
 		class AccelerationOut {
+			expression = "engineOn*camPos*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
 			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-acce-1", 0.562341, 1.0, 250};
 			limit = 0.15;
-			expression = "engineOn*camPos*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
 		};
 	};
 	class Sounds {
 		class Engine {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-low-1", 0.398107, 1.0, 300};
 			frequency = "(randomizer*0.05+1.25)*rpm";
 			volume = "camPos*engineOn*((rpm factor[0.25, 0.4]) min (rpm factor[0.6, 0.45]))";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-low-1", 0.398107, 1.0, 300};
 		};
 
 		class EngineHighOut {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-high-1", 0.398107, 0.8, 450};
 			frequency = "(randomizer*0.05+1.1)*rpm";
 			volume = "camPos*engineOn*(rpm factor[0.5, 0.9])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-high-1", 0.398107, 0.8, 450};
 		};
 
 		class IdleOut {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-idle-1", 0.316228, 1.0, 100};
 			frequency = "1";
 			volume = "engineOn*camPos*(rpm factor[0.4, 0])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\ext\ext-golf-idle-1", 0.316228, 1.0, 100};
 		};
 
 		class TiresRockOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2", 0.0562341, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*rock*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2", 0.0562341, 1.0, 40};
 		};
 
 		class TiresSandOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2", 0.0562341, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*sand*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2", 0.0562341, 1.0, 40};
 		};
 
 		class TiresGrassOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3", 0.0562341, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*grass*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3", 0.0562341, 1.0, 40};
 		};
 
 		class TiresMudOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2", 0.0562341, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*mud*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2", 0.0562341, 1.0, 40};
 		};
 
 		class TiresGravelOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2", 0.0562341, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*gravel*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2", 0.0562341, 1.0, 40};
 		};
 
 		class TiresAsphaltOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3", 0.0562341, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*asphalt*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3", 0.0562341, 1.0, 40};
 		};
 
 		class NoiseOut {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\ext\noise2", 0.0562341, 1.0, 40};
 			frequency = "1";
 			volume = "camPos*(damper0 max 0.036)*(speed factor[0, 8])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\ext\noise2", 0.0562341, 1.0, 40};
 		};
 
 		class EngineLowIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-low-1", 0.707946, 1.0};
 			frequency = "(randomizer*0.05+1.3)*rpm";
 			volume = "(1-camPos)*engineOn*((rpm factor[0.3, 0.5]) min (rpm factor[0.7, 0.52]))";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-low-1", 0.707946, 1.0};
 		};
 
 		class EngineHighIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-high-1", 0.707946, 0.95};
 			frequency = "(randomizer*0.05+1.2)*rpm";
 			volume = "(1-camPos)*engineOn*(rpm factor[0.6, 1.0])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-high-1", 0.707946, 0.95};
 		};
 
 		class IdleIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-idle-1", 0.562341, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*engineOn*(rpm factor[0.4, 0])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\GOLF\int\int-golf-idle-1", 0.562341, 1.0};
 		};
 
 		class TiresRockIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2", 0.0707946, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2", 0.0707946, 1.0};
 		};
 
 		class TiresSandIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2", 0.0707946, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2", 0.0707946, 1.0};
 		};
 
 		class TiresGrassIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3", 0.0707946, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3", 0.0707946, 1.0};
 		};
 
 		class TiresMudIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2", 0.0707946, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2", 0.0707946, 1.0};
 		};
 
 		class TiresGravelIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2", 0.0707946, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2", 0.0707946, 1.0};
 		};
 
 		class TiresAsphaltIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3", 0.0562341, 1.0};
 			frequency = "1";
 			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3", 0.0562341, 1.0};
 		};
 
 		class NoiseIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\int\noise2", 0.1, 1.0};
 			frequency = "1";
 			volume = "(damper0 max 0.03)*(speed factor[0, 8])*(1-camPos)";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\int\noise2", 0.1, 1.0};
 		};
 
 		class Movement {
@@ -228,7 +228,7 @@ class DZE_Veh_Nissan350Z_Orange: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_Orange_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_Orange_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -253,7 +253,7 @@ class DZE_Veh_Nissan350Z_Orange_1: DZE_Veh_Nissan350Z_Orange {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_Orange_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_Orange_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -289,7 +289,7 @@ class DZE_Veh_Nissan350Z_Orange_2: DZE_Veh_Nissan350Z_Orange_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_Orange_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_Orange_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -301,7 +301,7 @@ class DZE_Veh_Nissan350Z_Orange_3: DZE_Veh_Nissan350Z_Orange_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_Orange_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_Orange_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 
@@ -322,7 +322,7 @@ class DZE_Veh_Nissan350Z_Blue: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_Blue_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_Blue_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -347,7 +347,7 @@ class DZE_Veh_Nissan350Z_Blue_1: DZE_Veh_Nissan350Z_Blue {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_Blue_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_Blue_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -383,7 +383,7 @@ class DZE_Veh_Nissan350Z_Blue_2: DZE_Veh_Nissan350Z_Blue_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_Blue_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_Blue_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -395,7 +395,7 @@ class DZE_Veh_Nissan350Z_Blue_3: DZE_Veh_Nissan350Z_Blue_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_Blue_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_Blue_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 
@@ -416,7 +416,7 @@ class DZE_Veh_Nissan350Z_Mod: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_Mod_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_Mod_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -441,7 +441,7 @@ class DZE_Veh_Nissan350Z_Mod_1: DZE_Veh_Nissan350Z_Mod {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_Mod_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_Mod_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -477,7 +477,7 @@ class DZE_Veh_Nissan350Z_Mod_2: DZE_Veh_Nissan350Z_Mod_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_Mod_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_Mod_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -489,7 +489,7 @@ class DZE_Veh_Nissan350Z_Mod_3: DZE_Veh_Nissan350Z_Mod_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_Mod_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_Mod_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 
@@ -510,7 +510,7 @@ class DZE_Veh_Nissan350Z_Gold: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_Gold_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_Gold_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -535,7 +535,7 @@ class DZE_Veh_Nissan350Z_Gold_1: DZE_Veh_Nissan350Z_Gold {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_Gold_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_Gold_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -571,7 +571,7 @@ class DZE_Veh_Nissan350Z_Gold_2: DZE_Veh_Nissan350Z_Gold_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_Gold_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_Gold_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -583,7 +583,7 @@ class DZE_Veh_Nissan350Z_Gold_3: DZE_Veh_Nissan350Z_Gold_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_Gold_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_Gold_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 
@@ -604,7 +604,7 @@ class DZE_Veh_Nissan350Z_Green: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_Green_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_Green_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -629,7 +629,7 @@ class DZE_Veh_Nissan350Z_Green_1: DZE_Veh_Nissan350Z_Green {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_Green_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_Green_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -665,7 +665,7 @@ class DZE_Veh_Nissan350Z_Green_2: DZE_Veh_Nissan350Z_Green_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_Green_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -677,7 +677,7 @@ class DZE_Veh_Nissan350Z_Green_3: DZE_Veh_Nissan350Z_Green_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_Green_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_Green_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 
@@ -698,7 +698,7 @@ class DZE_Veh_Nissan350Z_Black: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_Black_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_Black_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -723,7 +723,7 @@ class DZE_Veh_Nissan350Z_Black_1: DZE_Veh_Nissan350Z_Black {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_Black_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_Black_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -759,7 +759,7 @@ class DZE_Veh_Nissan350Z_Black_2: DZE_Veh_Nissan350Z_Black_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_Black_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_Black_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -771,7 +771,7 @@ class DZE_Veh_Nissan350Z_Black_3: DZE_Veh_Nissan350Z_Black_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_Black_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_Black_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 
@@ -792,7 +792,7 @@ class DZE_Veh_Nissan350Z_Pink: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_Pink_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_Pink_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -817,7 +817,7 @@ class DZE_Veh_Nissan350Z_Pink_1: DZE_Veh_Nissan350Z_Pink {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_Pink_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_Pink_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -853,7 +853,7 @@ class DZE_Veh_Nissan350Z_Pink_2: DZE_Veh_Nissan350Z_Pink_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_Pink_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_Pink_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -865,7 +865,7 @@ class DZE_Veh_Nissan350Z_Pink_3: DZE_Veh_Nissan350Z_Pink_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_Pink_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_Pink_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 
@@ -886,7 +886,7 @@ class DZE_Veh_Nissan350Z_Red: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_Red_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_Red_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -911,7 +911,7 @@ class DZE_Veh_Nissan350Z_Red_1: DZE_Veh_Nissan350Z_Red {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_Red_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_Red_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -947,7 +947,7 @@ class DZE_Veh_Nissan350Z_Red_2: DZE_Veh_Nissan350Z_Red_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_Red_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -959,7 +959,7 @@ class DZE_Veh_Nissan350Z_Red_3: DZE_Veh_Nissan350Z_Red_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_Red_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_Red_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 
@@ -980,7 +980,7 @@ class DZE_Veh_Nissan350Z_Ruben: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_Ruben_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_Ruben_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -1005,7 +1005,7 @@ class DZE_Veh_Nissan350Z_Ruben_1: DZE_Veh_Nissan350Z_Ruben {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_Ruben_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_Ruben_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -1041,7 +1041,7 @@ class DZE_Veh_Nissan350Z_Ruben_2: DZE_Veh_Nissan350Z_Ruben_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_Ruben_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_Ruben_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -1053,7 +1053,7 @@ class DZE_Veh_Nissan350Z_Ruben_3: DZE_Veh_Nissan350Z_Ruben_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_Ruben_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_Ruben_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 
@@ -1074,7 +1074,7 @@ class DZE_Veh_Nissan350Z_V: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_V_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_V_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -1099,7 +1099,7 @@ class DZE_Veh_Nissan350Z_V_1: DZE_Veh_Nissan350Z_V {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_V_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_V_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -1135,7 +1135,7 @@ class DZE_Veh_Nissan350Z_V_2: DZE_Veh_Nissan350Z_V_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_V_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_V_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -1147,7 +1147,7 @@ class DZE_Veh_Nissan350Z_V_3: DZE_Veh_Nissan350Z_V_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_V_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_V_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 
@@ -1168,7 +1168,7 @@ class DZE_Veh_Nissan350Z_Yellow: DZE_Nissan350Z_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Nissan350Z_Yellow_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Nissan350Z_Yellow_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -1193,7 +1193,7 @@ class DZE_Veh_Nissan350Z_Yellow_1: DZE_Veh_Nissan350Z_Yellow {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Nissan350Z_Yellow_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Nissan350Z_Yellow_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -1229,7 +1229,7 @@ class DZE_Veh_Nissan350Z_Yellow_2: DZE_Veh_Nissan350Z_Yellow_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Nissan350Z_Yellow_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Nissan350Z_Yellow_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -1241,7 +1241,7 @@ class DZE_Veh_Nissan350Z_Yellow_3: DZE_Veh_Nissan350Z_Yellow_2 {
     transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Nissan350Z_Yellow_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Nissan350Z_Yellow_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemJerrycan",4},{"ItemScrews",1}}};
 	};
 };
 

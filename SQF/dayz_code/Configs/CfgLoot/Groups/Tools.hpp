@@ -5,36 +5,36 @@
 ToolsSurvival[] =
 {
 	{Loot_TOOL,		1,		DZE_Tool_Knife},
-	{Loot_TOOL,		1,		ItemMap},
-	{Loot_TOOL,		1,		ItemWatch},
-	{Loot_TOOL,		1,		ItemCompass},
+	{Loot_TOOL,		1,		DZE_Tool_Map},
+	{Loot_TOOL,		1,		DZE_Tool_Watch},
+	{Loot_TOOL,		1,		DZE_Tool_Compass},
 	{Loot_TOOL,		1,		DZE_Tool_Matchbox},
-	{Loot_TOOL,		1,		ItemFlashlight},
-	{Loot_TOOL,		1,		Binocular}
+	{Loot_TOOL,		1,		DZE_Tool_Flashlight},
+	{Loot_TOOL,		1,		DZE_Tool_Binocular}
 };
 
 // This list contains large tools that should not be called in small groups
 ToolsBuilding[] =
 {
-	{Loot_TOOL,		1,		ItemSledge}, // Sledge hammer should be a bit more rare than everything else.
+	{Loot_TOOL,		1,		DZE_Tool_Sledge}, // Sledge hammer should be a bit more rare than everything else.
 	{Loot_MAGAZINE,	2,		ItemSledgeHandle},
 	{Loot_MAGAZINE,	2,		ItemSledgeHead},
-	{Loot_TOOL,		3,		ItemKeyKit},
-	{Loot_TOOL,		6,		ItemToolbox},
-	{Loot_TOOL,		4,		Handsaw_DZE},
-	{Loot_TOOL,		4,		Hammer_DZE},
-	{Loot_TOOL,		4,		ItemShovel} 
+	{Loot_TOOL,		3,		DZE_Tool_KeyKit},
+	{Loot_TOOL,		6,		DZE_Tool_Toolbox},
+	{Loot_TOOL,		4,		DZE_Tool_Handsaw},
+	{Loot_TOOL,		4,		DZE_Tool_Hammer},
+	{Loot_TOOL,		4,		DZE_Tool_Shovel}
 };
 
 // Small tools that can spawn anywhere
 ToolsMilitary[] =
 {
 	{Loot_TOOL,		1,		DZE_Tool_Knife},
-	{Loot_TOOL,		1,		ItemGPS},
-	{Loot_TOOL,		1,		ItemCompass},
-	{Loot_TOOL,		1,		ItemFlashlightRed},
-	{Loot_TOOL,		1,		Binocular},
-	{Loot_TOOL,		1,		NVGoggles},
-	{Loot_TOOL,		1,		Binocular_Vector},
-	{Loot_TOOL,		1,		ItemEtool} //Equal to ItemShovel just the military version
+	{Loot_TOOL,		1,		DZE_Tool_GPS},
+	{Loot_TOOL,		1,		DZE_Tool_Compass},
+	{Loot_TOOL,		1,		DZE_Tool_FlashlightRed},
+	{Loot_TOOL,		1,		DZE_Tool_Binocular},
+	{Loot_TOOL,		1,		DZE_Tool_NVGoggles},
+	{Loot_TOOL,		1,		DZE_Tool_BinocularVector},
+	{Loot_TOOL,		1,		DZE_Tool_Etool} //Equal to DZE_Tool_Shovel just the military version
 };

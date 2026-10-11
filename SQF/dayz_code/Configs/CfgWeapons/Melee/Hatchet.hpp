@@ -1,33 +1,28 @@
-class MeleeHatchet : MeleeWeapon
-{
+class MeleeHatchet : MeleeWeapon {
 	scope = 2;	
+	displayName = "$STR_EQUIP_NAME_HATCHET";
+	descriptionShort = "$STR_EQUIP_DESC_HATCHET";
 	model = "\dayz_weapons\models\Hatchet_weaponized";
 	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
-	displayName = $STR_EQUIP_NAME_HATCHET;
-	descriptionShort = $STR_EQUIP_DESC_HATCHET;	
+	droppeditem = "DZE_Tool_Hatchet";
 	magazines[] = {"Hatchet_Swing"};	
-	droppeditem = "ItemHatchet";
 	
-	class ItemActions
-	{		
-		class Toolbelt
-		{
-			text = $STR_ACTIONS_2TB;
+	class ItemActions {
+		class Toolbelt {
+			text = "$STR_ACTIONS_2TB";
 			script = "spawn DZE_fnc_addToolbelt";
 			use[] = {"MeleeHatchet"};
-			output[] = {"ItemHatchet"};
+			output[] = {"DZE_Tool_Hatchet"};
 		};
 		
-		class Drop
-		{
-			text = $STR_ACTIONS_DROP;
+		class Drop {
+			text = "$STR_ACTIONS_DROP";
 			script = "spawn player_dropWeapon;";
 			use[] = {"Hatchet_Swing"};	
 		};
 	};
 	
-	class Library
-	{
-		libTextDesc = $STR_EQUIP_DESC_HATCHET;
+	class Library {
+		libTextDesc = "$STR_EQUIP_DESC_HATCHET";
 	};
 };

@@ -1,14 +1,17 @@
 class DZE_MTVRBird_Base: Helicopter {
 	scope = 0;
 	displayName = "MTVR Bird";
-	destrType = DestructWreck;
 	model = "\z\addons\dayz_epoch_v\vehicles\mtvrcopter\scropter";
 	picture = "\dayz_epoch_c\icons\vehicles\mtvr_bird.paa";
 	icon = "\ca\air_e\data\UI\Icon_ah6j_CA.paa";
 	vehicleClass = "DZE Vehicles Helicopters";
+	nameSound = "chopper";
+	driverAction = "AH6j_Pilot_EP1";
+	getInAction = "GetInHigh";
+	getOutAction = "GetOutHigh";
+	destrType = DestructWreck;
 	mapSize = 8;
 	maxSpeed = 135;
-	nameSound = "chopper";
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -22,9 +25,6 @@ class DZE_MTVRBird_Base: Helicopter {
 	cargoAction[] = {"UH1Y_Cargo01"};
 	transportAmmo = 0;
 	supplyRadius = 2.5;
-	driverAction = "AH6j_Pilot_EP1";
-	getInAction = "GetInHigh";
-	getOutAction = "GetOutHigh";
 	hasGunner = 0;
 	threat[] = {0,0,0};
 	extCameraPosition[]	= {0,2,-15};
@@ -56,36 +56,36 @@ class DZE_MTVRBird_Base: Helicopter {
 	soundEngineOffExt[] = {"\ca\sounds\Air\Mi17\ext\ext-Mi17-stop-01a",0.7943282,1.0,800};
 	class Sounds {
 		class Engine {
-			sound[] = {"\ca\sounds\air\Mi17\ext\ext-sovietheli-engine-6",5.623413,1.0,900};
 			frequency = "rotorSpeed";
 			volume = "camPos*((rotorSpeed-0.72)*4)";
+			sound[] = {"\ca\sounds\air\Mi17\ext\ext-sovietheli-engine-6",5.623413,1.0,900};
 		};
 		class RotorLowOut {
-			sound[] = {"\ca\sounds\air\Mi17\ext\ext-Mi17-rotor-low-2",1.7782794,1.0,1400};
 			frequency = "rotorSpeed";
 			volume = "camPos*(0 max (rotorSpeed-0.1))";
+			sound[] = {"\ca\sounds\air\Mi17\ext\ext-Mi17-rotor-low-2",1.7782794,1.0,1400};
 			cone[] = {1.6,3.14,2.0,0.95};
 		};
 		class RotorHighOut {
-			sound[] = {"\ca\sounds\air\Mi17\ext\ext-Mi17-rotor-high-2",3.1622777,1.0,1700};
 			frequency = "rotorSpeed";
 			volume = "camPos*10*(0 max (rotorThrust-0.9))";
+			sound[] = {"\ca\sounds\air\Mi17\ext\ext-Mi17-rotor-high-2",3.1622777,1.0,1700};
 			cone[] = {1.6,3.14,2.0,0.95};
 		};
 		class EngineIn {
-			sound[] = {"\ca\sounds\air\Mi17\int\int-sovietheli-engine-3",1.0,1.0};
 			frequency = "rotorSpeed";
 			volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
+			sound[] = {"\ca\sounds\air\Mi17\int\int-sovietheli-engine-3",1.0,1.0};
 		};
 		class RotorLowIn {
-			sound[] = {"\ca\sounds\air\Mi17\int\int-Mi17-rotor-low-2",1.7782794,1.0};
 			frequency = "rotorSpeed";
 			volume = "(1-camPos)*(0 max (rotorSpeed-0.1))";
+			sound[] = {"\ca\sounds\air\Mi17\int\int-Mi17-rotor-low-2",1.7782794,1.0};
 		};
 		class RotorHighIn {
-			sound[] = {"\ca\sounds\air\Mi17\int\int-Mi17-rotor-high-2",1.7782794,1.0};
 			frequency = "rotorSpeed";
 			volume = "(1-camPos)*3*(rotorThrust-0.9)";
+			sound[] = {"\ca\sounds\air\Mi17\int\int-Mi17-rotor-high-2",1.7782794,1.0};
 		};
 	};
 
@@ -103,12 +103,12 @@ class DZE_MTVRBird_Base: Helicopter {
 
 	class Reflectors {
 		class Light {
-			color[] = {0.8, 0.8, 1.0, 1.0};
-			ambient[] = {0.07, 0.07, 0.07, 1.0};
 			position = "L svetlo";
 			direction = "konec l svetla";
 			hitpoint = "svetlo L";
 			selection = "L svetlo";
+			color[] = {0.8, 0.8, 1.0, 1.0};
+			ambient[] = {0.07, 0.07, 0.07, 1.0};
 			size = 1;
 			brightness = 1.0;
 		};
@@ -137,7 +137,7 @@ class DZE_Veh_MTVRBird: DZE_MTVRBird_Base {
 	displayName = "$STR_VEH_NAME_MTVR_BIRD";
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_MTVRBird_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_MTVRBird_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -148,7 +148,7 @@ class DZE_Veh_MTVRBird_1: DZE_Veh_MTVRBird {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_MTVRBird_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_MTVRBird_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -159,7 +159,7 @@ class DZE_Veh_MTVRBird_2: DZE_Veh_MTVRBird_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_MTVRBird_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_MTVRBird_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

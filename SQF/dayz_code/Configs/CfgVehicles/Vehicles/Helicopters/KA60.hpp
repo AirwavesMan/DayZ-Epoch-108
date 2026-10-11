@@ -25,6 +25,16 @@ class DZE_Veh_Ka60_PKT: Ka60_GL_PMC {
 		class MainTurret: MainTurret {
 			body = "mainTurret";
 			gun = "mainGun";
+			animationSourceHatch = "";
+			stabilizedInAxes = "StabilizedInAxesBoth";
+			gunBeg = "muzzle_1";
+			gunEnd = "chamber_1";
+			turretInfoType = "RscWeaponZeroing";
+			gunnerName = "$STR_POSITION_DOORGUNNER";
+			gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64";
+			gunnerAction = "Mi8_Gunner";
+			gunnerInAction = "Mi8_Gunner";
+			gunnerCompartments = "compartment3";
 			minElev = -50;
 			maxElev = 30;
 			initElev = 0;
@@ -32,11 +42,6 @@ class DZE_Veh_Ka60_PKT: Ka60_GL_PMC {
 			maxTurn = 155;
 			initTurn = 80;
 			soundServo[] = {"",0.01,1.0};
-			animationSourceHatch = "";
-			stabilizedInAxes = "StabilizedInAxesBoth";
-			gunBeg = "muzzle_1";
-			gunEnd = "chamber_1";
-			turretInfoType = "RscWeaponZeroing";
 			discreteDistance[] = {300,400,500,600,700,800};
 			discreteDistanceInitIndex = 1;
 			gunnerForceOptics = 0;
@@ -44,16 +49,13 @@ class DZE_Veh_Ka60_PKT: Ka60_GL_PMC {
 			maxHorizontalRotSpeed = 1.6;
 			maxVerticalRotSpeed = 1.6;
 			magazines[] = {"100Rnd_762x54_PK","100Rnd_762x54_PK","100Rnd_762x54_PK"};
-			gunnerName = "$STR_POSITION_DOORGUNNER";
-			gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64";
-			gunnerAction = "Mi8_Gunner";
-			gunnerInAction = "Mi8_Gunner";
 			commanding = -2;
 			primaryGunner = 1;
 
 			class OpticsIn {
 				class Wide {
 					opticsDisplayName = "W";
+					gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64";
 					initAngleX = 0;
 					minAngleX = -30;
 					maxAngleX = 30;
@@ -64,14 +66,13 @@ class DZE_Veh_Ka60_PKT: Ka60_GL_PMC {
 					minFov = 0.1;
 					maxFov = 0.1;
 					visionMode[] = {"Normal"};
-					gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64";
 				};
 				class Medium: Wide {
 					opticsDisplayName = "M";
+					gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64";
 					initFov = 0.063;
 					minFov = 0.063;
 					maxFov = 0.063;
-					gunnerOpticsModel = "\ca\air_e\gunnerOptics_ah64";
 				};
 				class Narrow: Wide {
 					opticsDisplayName = "N";
@@ -83,6 +84,7 @@ class DZE_Veh_Ka60_PKT: Ka60_GL_PMC {
 			};
 			class OpticsOut {
 				class Monocular {
+					gunnerOpticsModel = "";
 					initAngleX = 0;
 					minAngleX = -30;
 					maxAngleX = 30;
@@ -93,7 +95,6 @@ class DZE_Veh_Ka60_PKT: Ka60_GL_PMC {
 					minFov = 0.133;
 					maxFov = 1.1;
 					visionMode[] = {"Normal"};
-					gunnerOpticsModel = "";
 					gunnerOpticsEffect[] = {};
 				};
 			};
@@ -108,14 +109,13 @@ class DZE_Veh_Ka60_PKT: Ka60_GL_PMC {
 				minFov = 0.25;
 				maxFov = 1.1;
 			};
-			gunnerCompartments = "compartment3";
 		};
 	};
 
 	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Ka60_PKT_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Ka60_PKT_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -126,7 +126,7 @@ class DZE_Veh_Ka60_PKT_1: DZE_Veh_Ka60_PKT {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Ka60_PKT_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Ka60_PKT_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -137,7 +137,7 @@ class DZE_Veh_Ka60_PKT_2: DZE_Veh_Ka60_PKT_1 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Ka60_PKT_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Ka60_PKT_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -158,7 +158,7 @@ class DZE_Veh_Ka60_M32: Ka60_GL_PMC {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Ka60_M32_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Ka60_M32_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -169,7 +169,7 @@ class DZE_Veh_Ka60_M32_1: DZE_Veh_Ka60_M32 {
 	damageResistance = 0.008; // base 0.004
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Ka60_M32_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Ka60_M32_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -180,7 +180,7 @@ class DZE_Veh_Ka60_M32_2: DZE_Veh_Ka60_M32_1 {
 	transportMaxBackpacks = 2;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Ka60_M32_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Ka60_M32_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -202,7 +202,7 @@ class DZE_Veh_Ka60_Rockets: Ka60_PMC {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Ka60_Rockets_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_Ka60_Rockets_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -213,7 +213,7 @@ class DZE_Veh_Ka60_Rockets_1: DZE_Veh_Ka60_Rockets {
 	damageResistance = 0.008; // base 0.004
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Ka60_Rockets_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_Ka60_Rockets_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -224,7 +224,7 @@ class DZE_Veh_Ka60_Rockets_2: DZE_Veh_Ka60_Rockets_1 {
 	transportMaxBackpacks = 2;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Ka60_Rockets_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_Ka60_Rockets_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

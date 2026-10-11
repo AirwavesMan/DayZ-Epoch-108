@@ -152,7 +152,7 @@ if (isNil "keyboard_keys") then {
 		_handled = [displayNull,_dikCode,_shiftState] call dze_filterCheats;
 	};
 	local _openGroups = {
-		if (dayz_requireRadio && {!("ItemRadio" in items player)}) then {
+		if (dayz_requireRadio && {!("DZE_Tool_Radio" in items player)}) then {
 			localize "STR_EPOCH_NEED_RADIO" call DZE_fnc_rollingMessages;
 		} else {
 			if (isNull findDisplay 80000) then {

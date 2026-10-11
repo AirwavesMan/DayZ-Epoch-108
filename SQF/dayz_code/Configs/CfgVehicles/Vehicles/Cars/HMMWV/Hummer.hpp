@@ -1,30 +1,30 @@
 class DZE_Veh_Hummer: DZE_Veh_HMMWV_Woodland {
 	displayName = "$STR_VEH_NAME_HUMMER";
+	model = "\SRA_civilian\Wheeled\HMMWV\hmmwv";
 	hiddenSelections[] = {"camo1","camo2","camo3"};
 	hiddenSelectionsTextures[] = {"\sra_civilian\wheeled\hmmwv\hmmwv_body_co.paa","\sra_civilian\wheeled\hmmwv\hmmwv_hood_co.paa","\sra_civilian\wheeled\hmmwv\hmmwv_regular_co.paa"};
-	model = "\SRA_civilian\Wheeled\HMMWV\hmmwv";
 
 	class HitPoints: HitPoints {
 		class HitBody {
+			name = "karoserie";
+			visual = "karoserie";
 			armor = 2;
 			material = -1;
-			name = "karoserie";
 			passThrough = 0;
-			visual = "karoserie";
 		};
 		class HitEngine: HitBody {
 			name = "motor";
 			visual = "motor";
 		};
 		class HitFuel: HitBody {
-			armor = 1;
 			name = "palivo";
 			visual = "palivo";
+			armor = 1;
 		};
 		class HitGlass1: HitGlass1 {
-			armor = 1;
 			name = "glass1";
 			visual = "glass1";
+			armor = 1;
 			passThrough = 0;
 		};
 		class HitGlass2: HitGlass1 {
@@ -44,11 +44,11 @@ class DZE_Veh_Hummer: DZE_Veh_HMMWV_Woodland {
 			visual = "glass5";
 		};
 		class HitLFWheel {
+			name = "levy predni tlumic";
+			visual = "";
 			armor = 0.35;
 			material = -1;
-			name = "levy predni tlumic";
 			passThrough = 0.3;
-			visual = "";
 		};
 		class HitLBWheel: HitLFWheel {
 			name = "levy zadni tlumic";
@@ -67,7 +67,7 @@ class DZE_Veh_Hummer: DZE_Veh_HMMWV_Woodland {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Hummer_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Hummer_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -79,7 +79,7 @@ class DZE_Veh_Hummer_1: DZE_Veh_Hummer  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Hummer_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Hummer_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -122,7 +122,7 @@ class DZE_Veh_Hummer_2: DZE_Veh_Hummer_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Hummer_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Hummer_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -133,7 +133,7 @@ class DZE_Veh_Hummer_3: DZE_Veh_Hummer_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Hummer_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_Hummer_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 

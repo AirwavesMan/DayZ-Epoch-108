@@ -1,12 +1,12 @@
 class GNT_C185C;
 class DZE_Veh_C185C_White: GNT_C185C {
-
-	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_C185C_White_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_CESSNA_WHITE";
 	vehicleClass = "DZE Vehicles Planes";
+
+	class Upgrades {
+		ItemHeliAVE[] = {"DZE_Veh_C185C_White_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -25,13 +25,13 @@ class DZE_Veh_C185C_White: GNT_C185C {
 
 class GNT_C185R;
 class DZE_Veh_C185R_Yellow: GNT_C185R {
-
-	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_C185R_Yellow_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_CESSNA_YELLOW";
 	vehicleClass = "DZE Vehicles Planes";
+
+	class Upgrades {
+		ItemHeliAVE[] = {"DZE_Veh_C185R_Yellow_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -50,13 +50,13 @@ class DZE_Veh_C185R_Yellow: GNT_C185R {
 
 class GNT_C185;
 class DZE_Veh_C185_Orange: GNT_C185 {
-
-	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_C185_Orange_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_CESSNA_ORANGE";
 	vehicleClass = "DZE Vehicles Planes";
+
+	class Upgrades {
+		ItemHeliAVE[] = {"DZE_Veh_C185_Orange_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -75,13 +75,13 @@ class DZE_Veh_C185_Orange: GNT_C185 {
 
 class GNT_C185U;
 class DZE_Veh_C185U_Camo: GNT_C185U {
-
-	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_C185U_Camo_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_CESSNA_CAMO";
 	vehicleClass = "DZE Vehicles Planes";
+
+	class Upgrades {
+		ItemHeliAVE[] = {"DZE_Veh_C185U_Camo_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -100,13 +100,13 @@ class DZE_Veh_C185U_Camo: GNT_C185U {
 
 class GNT_C185T;
 class DZE_Veh_C185T_Rockets: GNT_C185T {
-
-	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_C185T_Rockets_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_CESSNA_ROCKETS";
 	vehicleClass = "DZE Vehicles Planes";
+
+	class Upgrades {
+		ItemHeliAVE[] = {"DZE_Veh_C185T_Rockets_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -126,25 +126,25 @@ class DZE_Veh_C185T_Rockets: GNT_C185T {
 };
 
 class DZE_Veh_C185T_TwinM60: DZE_Veh_C185T_Rockets {
+	displayName = "$STR_VEH_NAME_CESSNA_M60";
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_C185T_TwinM60_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_C185T_TwinM60_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 
-	displayName = "$STR_VEH_NAME_CESSNA_M60";
 	weapons[] = {"pook_M60_dual_DZ"};
 	magazines[] = {"pook_1300Rnd_762x51_M60"};
 };
 
 class GNT_C185F;
 class DZE_Veh_C185F_Amphibian: GNT_C185F {
-
-	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_C185F_Amphibian_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
-	};
-
 	displayName = "$STR_VEH_NAME_CESSNA_AMPHIBIAN";
 	vehicleClass = "DZE Vehicles Planes";
+
+	class Upgrades {
+		ItemHeliAVE[] = {"DZE_Veh_C185F_Amphibian_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -170,7 +170,7 @@ class DZE_Veh_C185C_White_1: DZE_Veh_C185C_White {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_C185C_White_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_C185C_White_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -181,7 +181,7 @@ class DZE_Veh_C185C_White_2: DZE_Veh_C185C_White_1 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_C185C_White_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_C185C_White_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -198,7 +198,7 @@ class DZE_Veh_C185R_Yellow_1: DZE_Veh_C185R_Yellow {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_C185R_Yellow_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_C185R_Yellow_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -209,7 +209,7 @@ class DZE_Veh_C185R_Yellow_2: DZE_Veh_C185R_Yellow_1 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_C185R_Yellow_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_C185R_Yellow_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -226,7 +226,7 @@ class DZE_Veh_C185_Orange_1: DZE_Veh_C185_Orange {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_C185_Orange_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_C185_Orange_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -237,7 +237,7 @@ class DZE_Veh_C185_Orange_2: DZE_Veh_C185_Orange_1 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_C185_Orange_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_C185_Orange_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -254,7 +254,7 @@ class DZE_Veh_C185U_Camo_1: DZE_Veh_C185U_Camo {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_C185U_Camo_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_C185U_Camo_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -265,7 +265,7 @@ class DZE_Veh_C185U_Camo_2: DZE_Veh_C185U_Camo_1 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_C185U_Camo_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_C185U_Camo_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -282,7 +282,7 @@ class DZE_Veh_C185T_Rockets_1: DZE_Veh_C185T_Rockets {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_C185T_Rockets_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_C185T_Rockets_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -293,7 +293,7 @@ class DZE_Veh_C185T_Rockets_2: DZE_Veh_C185T_Rockets_1 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_C185T_Rockets_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_C185T_Rockets_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -310,7 +310,7 @@ class DZE_Veh_C185T_TwinM60_1: DZE_Veh_C185T_TwinM60 {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_C185T_TwinM60_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_C185T_TwinM60_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -321,7 +321,7 @@ class DZE_Veh_C185T_TwinM60_2: DZE_Veh_C185T_TwinM60_1 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_C185T_TwinM60_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_C185T_TwinM60_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -338,7 +338,7 @@ class DZE_Veh_C185F_Amphibian_1: DZE_Veh_C185F_Amphibian {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_C185F_Amphibian_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_C185F_Amphibian_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -349,7 +349,7 @@ class DZE_Veh_C185F_Amphibian_2: DZE_Veh_C185F_Amphibian_1 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_C185F_Amphibian_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_C185F_Amphibian_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

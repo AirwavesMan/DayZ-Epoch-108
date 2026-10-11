@@ -14,7 +14,7 @@ class DZE_Veh_M113_Ambulance_UN: M113Ambul_UN_EP1 {
 	supplyRadius = 1.8;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_M113_Ambulance_UN_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_M113_Ambulance_UN_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -25,7 +25,7 @@ class DZE_Veh_M113_Ambulance_UN_1: DZE_Veh_M113_Ambulance_UN {
 	turnCoef = 2.5;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_M113_Ambulance_UN_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_M113_Ambulance_UN_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -35,7 +35,7 @@ class DZE_Veh_M113_Ambulance_UN_2: DZE_Veh_M113_Ambulance_UN_1 {
 	damageResistance = 0.064; // base 0.03249
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_M113_Ambulance_UN_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_M113_Ambulance_UN_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -46,7 +46,7 @@ class DZE_Veh_M113_Ambulance_UN_3: DZE_Veh_M113_Ambulance_UN_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_M113_Ambulance_UN_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_M113_Ambulance_UN_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -61,7 +61,7 @@ class DZE_Veh_M113_Ambulance_TK: DZE_Veh_M113_Ambulance_UN {
 	hiddenSelectionsTextures[] = {"\ca\Tracked_E\M113\Data\m113a3_01_TK_co.paa"};
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_M113_Ambulance_TK_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_M113_Ambulance_TK_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -72,7 +72,7 @@ class DZE_Veh_M113_Ambulance_TK_1: DZE_Veh_M113_Ambulance_TK {
 	turnCoef = 2.5;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_M113_Ambulance_TK_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_M113_Ambulance_TK_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -82,7 +82,7 @@ class DZE_Veh_M113_Ambulance_TK_2: DZE_Veh_M113_Ambulance_TK_1 {
 	damageResistance = 0.064; // base 0.03249
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_M113_Ambulance_TK_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_M113_Ambulance_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -93,7 +93,7 @@ class DZE_Veh_M113_Ambulance_TK_3: DZE_Veh_M113_Ambulance_TK_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_M113_Ambulance_TK_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_M113_Ambulance_TK_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -117,7 +117,7 @@ class DZE_Veh_M113_UN: M113_UN_EP1 {
 	supplyRadius = 1.8;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_M113_UN_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_M113_UN_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -128,7 +128,7 @@ class DZE_Veh_M113_UN_1: DZE_Veh_M113_UN {
 	turnCoef = 2.5;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_M113_UN_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_M113_UN_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -138,7 +138,7 @@ class DZE_Veh_M113_UN_2: DZE_Veh_M113_UN_1 {
 	damageResistance = 0.064; // base 0.03249
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_M113_UN_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_M113_UN_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -149,7 +149,7 @@ class DZE_Veh_M113_UN_3: DZE_Veh_M113_UN_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_M113_UN_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_M113_UN_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -164,7 +164,7 @@ class DZE_Veh_M113_TK: DZE_Veh_M113_UN {
 	hiddenSelectionsTextures[] = {"\ca\Tracked_E\M113\Data\m113a3_01_TK_co.paa"};
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_M113_TK_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_M113_TK_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -175,7 +175,7 @@ class DZE_Veh_M113_TK_1: DZE_Veh_M113_TK {
 	turnCoef = 2.5;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_M113_TK_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_M113_TK_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -185,7 +185,7 @@ class DZE_Veh_M113_TK_2: DZE_Veh_M113_TK_1 {
 	damageResistance = 0.064; // base 0.03249
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_M113_TK_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_M113_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -196,7 +196,7 @@ class DZE_Veh_M113_TK_3: DZE_Veh_M113_TK_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_M113_TK_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_M113_TK_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 

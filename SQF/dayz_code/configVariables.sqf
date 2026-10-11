@@ -111,7 +111,7 @@ DZE_Elevator_Classnames = [];
 
 // Uncomment the lines below to change the default loadout
 //DefaultMagazines = ["HandRoadFlare","ItemBandage","ItemPainkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
-//DefaultWeapons = ["Makarov_DZ","ItemFlashlight"];
+//DefaultWeapons = ["Makarov_DZ","DZE_Tool_Flashlight"];
 //DefaultBackpack = "GymBag_Camo_DZE1";
 //DefaultBackpackItems = []; // Can include both weapons and magazines i.e. ["PDW_DZ","30Rnd_9x19_UZI"];
 
@@ -338,9 +338,9 @@ if (!isDedicated) then {
 	*/
 
 	DZE_CLICK_ACTIONS = [		
-	/*	["ItemGPS",localize "STR_CL_CA_SCAN_NEARBY","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_ZOMBIE_COUNT = count (player nearEntities ['zZombie_Base',CA_GPS_RANGE]); CA_MAN_COUNT = count (player nearEntities ['CAManBase',CA_GPS_RANGE]); format[localize 'STR_CL_CA_SCAN',CA_GPS_RANGE,CA_MAN_COUNT - CA_ZOMBIE_COUNT,count (player nearEntities ['zZombie_Base',CA_GPS_RANGE]),count (player nearEntities ['allVehicles',CA_GPS_RANGE]) - CA_MAN_COUNT] call DZE_fnc_rollingMessages;","true"],
-		["ItemGPS",localize "STR_CL_CA_RANGE_UP","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_GPS_RANGE = (CA_GPS_RANGE + 100) min 2500; format[localize 'STR_CL_CA_RANGE_GPS',CA_GPS_RANGE] call DZE_fnc_rollingMessages;","true"],
-		["ItemGPS",localize "STR_CL_CA_RANGE_DOWN","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_GPS_RANGE = (CA_GPS_RANGE - 100) max 1000; format[localize 'STR_CL_CA_RANGE_GPS',CA_GPS_RANGE] call DZE_fnc_rollingMessages;","true"]
+	/*	["DZE_Tool_GPS",localize "STR_CL_CA_SCAN_NEARBY","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_ZOMBIE_COUNT = count (player nearEntities ['zZombie_Base',CA_GPS_RANGE]); CA_MAN_COUNT = count (player nearEntities ['CAManBase',CA_GPS_RANGE]); format[localize 'STR_CL_CA_SCAN',CA_GPS_RANGE,CA_MAN_COUNT - CA_ZOMBIE_COUNT,count (player nearEntities ['zZombie_Base',CA_GPS_RANGE]),count (player nearEntities ['allVehicles',CA_GPS_RANGE]) - CA_MAN_COUNT] call DZE_fnc_rollingMessages;","true"],
+		["DZE_Tool_GPS",localize "STR_CL_CA_RANGE_UP","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_GPS_RANGE = (CA_GPS_RANGE + 100) min 2500; format[localize 'STR_CL_CA_RANGE_GPS',CA_GPS_RANGE] call DZE_fnc_rollingMessages;","true"],
+		["DZE_Tool_GPS",localize "STR_CL_CA_RANGE_DOWN","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_GPS_RANGE = (CA_GPS_RANGE - 100) max 1000; format[localize 'STR_CL_CA_RANGE_GPS',CA_GPS_RANGE] call DZE_fnc_rollingMessages;","true"]
 	*/
 	];	
 	
@@ -360,7 +360,7 @@ if (!isDedicated) then {
 	
 	if (DZE_LocateVehicle) then {
 		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [
-			["ItemGPS",localize "STR_CL_LV_LOCATE_VEHICLES","[] spawn locateVehicle;","true"]
+			["DZE_Tool_GPS",localize "STR_CL_LV_LOCATE_VEHICLES","[] spawn locateVehicle;","true"]
 		];
 	};
 	
@@ -419,7 +419,7 @@ if (!isDedicated) then {
 		DZE_EVRHandleVehicles = true; // Enable/Disable that vehicles getting effected by the EVR Storm, the EVR Storm turns off the vehicle engine if enabled.
 		DZE_EVRProtectInside = true; // Skips the unconscious animation, pain and blood loss when the player is inside a building.
 		DZE_EVRDamageItemsChance = .20; // Chance that an EVR storm will damage items in inventory. From 0 to 1. Chance applies to each item. Set to 0 to disable.
-		DZE_EVRDamageItems = [["Binocular_Vector","Binocular_VectorBroken"],["NVGoggles_DZE","ItemNVGFullBroken_DZE"],["NVGoggles","ItemNVGBroken_DZE"],["ItemGPS","ItemGPSBroken_DZE"],["ItemRadio","ItemRadioBroken_DZE"],["Smartphone_DZE","SmartphoneBroken_DZE"]]; // [item (input), damaged item (output)]. Items that have a chance to be damaged by EMP.
+		DZE_EVRDamageItems = [["DZE_Tool_BinocularVector","DZE_Tool_BinocularVectorBroken"],["DZE_Tool_NVGogglesFull","DZE_Tool_NVGFullBroken"],["DZE_Tool_NVGoggles","DZE_Tool_NVGBroken"],["DZE_Tool_GPS","DZE_Tool_GPSBroken"],["DZE_Tool_Radio","DZE_Tool_RadioBroken"],["DZE_Tool_Smartphone","DZE_Tool_SmartphoneBroken"]]; // [item (input), damaged item (output)]. Items that have a chance to be damaged by EMP.
 		DZE_EVRBloodLoss = [4000,8000]; // Random number of blood loss if a player does not have an APSI and/or is not inside a building [min, max]. Player will not die, there is a minimum of 1000 after the calculation
 		DZE_EVRSafezoneExempt = true; // Players in safe zones are exempt from the effects of the EVR storms.
 	};

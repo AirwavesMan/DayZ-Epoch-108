@@ -1,23 +1,24 @@
 class DZE_AutoGyro_Base: Plane {
 	scope = 0;
+	displayName = "AutoGyro";
+	faction = "CIV";
+	driverAction = "UH60_Pilot";
+	vehicleClass = "DZE Vehicles Planes";
+	model = "\CSJ_GyroAC\CSJ_GyroP";
+	getInAction = "GetInLow";
+	picture = "\CSJ_GyroAC\data\gyropic.paa";
+	Icon = "\CSJ_GyroAC\data\gyroIcon.paa";
+	destrType = "DestructWreck";
+	nameSound = "plane";
+	landingAoa = "rad 2";
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_AIR
 
-	faction = "CIV";
 	cabinOpening = 0;
-	driverAction = "UH60_Pilot";
-	vehicleClass = "DZE Vehicles Planes";
-	model = "\CSJ_GyroAC\CSJ_GyroP";
-	displayName = "AutoGyro";
-	getInAction = "GetInLow";
 	transportSoldier = 0;
-	picture = "\CSJ_GyroAC\data\gyropic.paa";
-	Icon = "\CSJ_GyroAC\data\gyroIcon.paa";
-	destrType = "DestructWreck";
 	secondaryExplosion = 0;
 	gearRetracting = 0;
-	nameSound = "plane";
 	mapSize = 8;
 	fov = 0.5;
 	side = 3;
@@ -37,7 +38,6 @@ class DZE_AutoGyro_Base: Plane {
 	audible = 8;
 	maxSpeed = 150;
 	landingSpeed = 80;
-	landingAoa = "rad 2";
 	armor = 20;
 	ejectSpeed[] = {0,0,0};
 	ejectDamageLimit = 0.8;
@@ -82,18 +82,18 @@ class DZE_AutoGyro_Base: Plane {
 		class rotateLeft {
 			displayName = "rotate aircraft left";
 			position = "osa leve smerovky";
-			onlyforplayer = 0;
-			radius = 2;
 			condition = "(Count (Crew this)==0) and ((getpos this select 2) <1) and (!isengineon this)";
 			statement = "this exec ""\CSJ_GyroAC\scripts\CSJ_rotateGyroLeft.sqs"" ";
+			onlyforplayer = 0;
+			radius = 2;
 		};
 		class rotateRight {
 			displayName = "rotate aircraft right";
 			position = "osa leve smerovky";
-			onlyforplayer = 0;
-			radius = 2;
 			condition = "(Count (Crew this)==0) and ((getpos this select 2) <1) and (!isengineon this)";
 			statement = "this exec ""\CSJ_GyroAC\scripts\CSJ_rotateGyroRight.sqs"" ";
+			onlyforplayer = 0;
+			radius = 2;
 		};
 		/*class push {
 			displayName = "$STR_ACTIONS_PUSH";
@@ -113,14 +113,14 @@ class DZE_AutoGyro_Base: Plane {
 	};
 	class Sounds {
 		class Engine {
-			sound[] = {"\CSJ_GyroAC\camel1.wss",1,1,800};
 			frequency = "rpm";
 			volume = "(camPos)*(engineOn*(rpm factor[0.55, 1.0]))*1.7";
+			sound[] = {"\CSJ_GyroAC\camel1.wss",1,1,800};
 		};
 		class EngineIn {
-			sound[] = {"\CSJ_GyroAC\camel1.wss",1,1};
 			frequency = "rpm";
 			volume = "(1-camPos)*(engineOn*(rpm factor[0.55, 1.0]))*1.7";
+			sound[] = {"\CSJ_GyroAC\camel1.wss",1,1};
 		};
 	};
 };
@@ -128,18 +128,18 @@ class DZE_AutoGyro_Base: Plane {
 class DZE_Veh_AutoGyro: DZE_AutoGyro_Base {
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_AutoGyro_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_AutoGyro_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
 class DZE_Veh_AutoGyro_Enclosed: DZE_AutoGyro_Base {
+	displayName = "AutoGyro enclosed";
+	model = "\CSJ_GyroAC\CSJ_GyroCover";
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_AutoGyro_Enclosed_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_AutoGyro_Enclosed_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 
-	model = "\CSJ_GyroAC\CSJ_GyroCover";
-	displayName = "AutoGyro enclosed";
 
 	class Library {
 		libTextDesc = "Auto_Gyro Enclosed(CSJ)";
@@ -152,7 +152,7 @@ class DZE_Veh_AutoGyro_1: DZE_Veh_AutoGyro {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_AutoGyro_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_AutoGyro_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -162,7 +162,7 @@ class DZE_Veh_AutoGyro_2: DZE_Veh_AutoGyro_1 {
 	transportMaxMagazines = 40;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_AutoGyro_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_AutoGyro_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -179,7 +179,7 @@ class DZE_Veh_AutoGyro_Enclosed_1: DZE_Veh_AutoGyro_Enclosed {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_AutoGyro_Enclosed_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_AutoGyro_Enclosed_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -189,7 +189,7 @@ class DZE_Veh_AutoGyro_Enclosed_2: DZE_Veh_AutoGyro_Enclosed_1 {
 	transportMaxMagazines = 40;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_AutoGyro_Enclosed_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_AutoGyro_Enclosed_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

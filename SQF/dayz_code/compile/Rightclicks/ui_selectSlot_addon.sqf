@@ -36,7 +36,7 @@ if (_button == 1) then {
 	local _cfgActions = _conf >> "ItemActions";
 	local _numActions = (count _cfgActions);
 	local _height = 0;
-	if (!dayz_groupSystem && {_item == "ItemRadio"}) then {_numActions = 1;}; // Used to bypass the group action when not enabled.
+	if (!dayz_groupSystem && {_item == "DZE_Tool_Radio"}) then {_numActions = 1;}; // Used to bypass the group action when not enabled.
 	
 	local _i = 0;
 	//Populate Menu
@@ -68,7 +68,7 @@ if (_button == 1) then {
 		_i = _i + 1;
 	};
 	
-	local _isKey = ((["ItemKey",_item] call fnc_inString) && (_item != "ItemKeyKit"));
+	local _isKey = ((["ItemKey",_item] call fnc_inString) && (_item != "DZE_Tool_KeyKit"));
 	
 	{
 		local _classname   = _x select 0;

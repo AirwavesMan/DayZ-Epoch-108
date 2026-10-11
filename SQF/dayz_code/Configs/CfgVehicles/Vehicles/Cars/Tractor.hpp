@@ -1,9 +1,9 @@
 class Tractor;
 class DZE_Veh_Tractor: Tractor {
-	vehicleClass = "DZE Vehicles Cars";
 	displayname = "$STR_VEH_NAME_TRACTOR";
+	vehicleClass = "DZE Vehicles Cars";
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Tractor_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Tractor_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 
 	DZE_MACRO_VEHICLE_SIDE
@@ -16,12 +16,12 @@ class DZE_Veh_Tractor: Tractor {
 
 	class Reflectors {
 		class Left {
-			color[] = {0.9,0.8,0.8,1.0};
-			ambient[] = {0.1,0.1,0.1,1.0};
 			position = "L svetlo";
 			direction = "konec L svetla";
 			hitpoint = "L svetlo";
 			selection = "L svetlo";
+			color[] = {0.9,0.8,0.8,1.0};
+			ambient[] = {0.1,0.1,0.1,1.0};
 			size = 1;
 			brightness = 0.5;
 			angle = 90;
@@ -37,10 +37,10 @@ class DZE_Veh_Tractor: Tractor {
 
 class tractorOld;
 class DZE_Veh_OldTractor: tractorOld {
-	vehicleClass = "DZE Vehicles Cars";
 	displayname = "$STR_VEH_NAME_TRACTOR_OLD";
+	vehicleClass = "DZE Vehicles Cars";
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_OldTractor_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_OldTractor_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 
 	DZE_MACRO_VEHICLE_SIDE
@@ -49,12 +49,12 @@ class DZE_Veh_OldTractor: tractorOld {
 
 	class Reflectors {
 		class Left {
-			color[] = {0.9,0.8,0.8,1.0};
-			ambient[] = {0.1,0.1,0.1,1.0};
 			position = "L svetlo";
 			direction = "konec L svetla";
 			hitpoint = "L svetlo";
 			selection = "L svetlo";
+			color[] = {0.9,0.8,0.8,1.0};
+			ambient[] = {0.1,0.1,0.1,1.0};
 			size = 1;
 			brightness = 0.5;
 			angle = 90;
@@ -64,11 +64,11 @@ class DZE_Veh_OldTractor: tractorOld {
 
 class DZE_Veh_Tractor_Armored: DZE_Veh_Tractor {
 	displayname = "$STR_VEH_NAME_TRACTOR_ARMORED";
-	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Tractor_Armored_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
-	};
 	model = "\z\addons\dayz_epoch_v\vehicles\tractor\dze_tractor";
 	picture = "\dayz_epoch_c\icons\vehicles\ArmoredTractor.paa";
+	class Upgrades {
+		ItemORP[] = {"DZE_Veh_Tractor_Armored_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+	};
 	armor = 120;
 	maxSpeed = 75;
 	terrainCoef = 0.5;
@@ -120,7 +120,7 @@ class DZE_Veh_Tractor_1: DZE_Veh_Tractor {
 	terrainCoef = 0.7;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Tractor_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Tractor_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -130,7 +130,7 @@ class DZE_Veh_Tractor_2: DZE_Veh_Tractor_1 {
 	armor = 50;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Tractor_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Tractor_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -142,7 +142,7 @@ class DZE_Veh_Tractor_3: DZE_Veh_Tractor_2 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Tractor_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Tractor_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -160,7 +160,7 @@ class DZE_Veh_OldTractor_1: DZE_Veh_OldTractor {
 	terrainCoef = 0.7;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_OldTractor_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_OldTractor_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -170,7 +170,7 @@ class DZE_Veh_OldTractor_2: DZE_Veh_OldTractor_1 {
 	armor = 50;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_OldTractor_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_OldTractor_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -182,7 +182,7 @@ class DZE_Veh_OldTractor_3: DZE_Veh_OldTractor_2 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_OldTractor_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_OldTractor_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -200,7 +200,7 @@ class DZE_Veh_Tractor_Armored_1: DZE_Veh_Tractor_Armored {
 	terrainCoef = 0.35;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Tractor_Armored_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Tractor_Armored_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -210,7 +210,7 @@ class DZE_Veh_Tractor_Armored_2: DZE_Veh_Tractor_Armored_1 {
 	armor = 240;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Tractor_Armored_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Tractor_Armored_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -222,7 +222,7 @@ class DZE_Veh_Tractor_Armored_3: DZE_Veh_Tractor_Armored_2 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Tractor_Armored_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Tractor_Armored_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

@@ -36,45 +36,45 @@ class DZE_Veh_CH53E: USEC_ch53_E {
 		class RampOpen {
 			displayName = "$STR_EPOCH_OPEN_RAMP";
 			position = "ramp action";
-			showWindow = 0;
-			radius = 5;
 			condition = "this animationPhase ""ramp_bottom"" < 0.50;";
 			statement = "if(((getPos this) select 2) < 2) then {this animate [""ramp_bottom"",1];this animate [""ramp_top"",1];} else {this animate [""ramp_bottom"",0.56];this animate [""ramp_top"",1];};";
+			showWindow = 0;
+			radius = 5;
 			onlyforplayer = 0;
 		};
 		class RampClose {
 			displayName = "$STR_EPOCH_CLOSE_RAMP";
 			position = "ramp action";
-			showWindow = 0;
-			radius = 5;
 			condition = "this animationPhase ""ramp_bottom"" > 0.50;";
 			statement = "this animate [""ramp_bottom"",0];this animate [""ramp_top"",0];";
+			showWindow = 0;
+			radius = 5;
 			onlyforplayer = 0;
 		};
 		class LandingGear_down {
 			displayName = "$STR_ACTION_GEAR_DOWN";
 			position = "ramp action";
-			showWindow = 0;
-			onlyforplayer = 0;
 			shortcut = "landGear";
-			radius = 5;
 			condition = "(this animationPhase ""gear_nose_1"" > 0.9)&&(player == driver this)";
 			statement = "[this] execvm ""\usec_ch53\scripts\ch53_geardown.sqf""";
+			showWindow = 0;
+			onlyforplayer = 0;
+			radius = 5;
 		};
 		class LandingGear_up {
 			displayName = "$STR_ACTION_GEAR_UP";
 			position = "ramp action";
-			showWindow = 0;
-			onlyforplayer = 0;
 			shortcut = "landGear";
-			radius = 5;
 			condition = "(this animationPhase ""gear_nose_1"" < 0.1)&&(player == driver this)";
 			statement = "[this] execvm ""\usec_ch53\scripts\ch53_gearup.sqf""";
+			showWindow = 0;
+			onlyforplayer = 0;
+			radius = 5;
 		};
 	};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_CH53E_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_CH53E_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -85,7 +85,7 @@ class DZE_Veh_CH53E_1: DZE_Veh_CH53E {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_CH53E_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_CH53E_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -96,7 +96,7 @@ class DZE_Veh_CH53E_2: DZE_Veh_CH53E_1 {
 	transportMaxBackpacks = 30;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_CH53E_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_CH53E_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

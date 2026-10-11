@@ -1,13 +1,13 @@
 class JetSkiYanahui_Case_Yellow;
 class DZE_Veh_JetSki_Yellow: JetSkiYanahui_Case_Yellow {
 	scope = 2;
-
-	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_JetSki_Yellow_1",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
-	};
-
 	displayName = "$STR_VEH_NAME_JETSKI_YELLOW";
 	vehicleClass = "DZE Vehicles Boats";
+
+	class Upgrades {
+		ItemAVE[] = {"DZE_Veh_JetSki_Yellow_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -19,13 +19,13 @@ class DZE_Veh_JetSki_Yellow: JetSkiYanahui_Case_Yellow {
 class JetSkiYanahui_Case_Green;
 class DZE_Veh_JetSki_Green: JetSkiYanahui_Case_Green {
 	scope = 2;
-
-	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_JetSki_Green_1",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
-	};
-
 	displayName = "$STR_VEH_NAME_JETSKI_GREEN";
 	vehicleClass = "DZE Vehicles Boats";
+
+	class Upgrades {
+		ItemAVE[] = {"DZE_Veh_JetSki_Green_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -37,13 +37,13 @@ class DZE_Veh_JetSki_Green: JetSkiYanahui_Case_Green {
 class JetSkiYanahui_Case_Blue;
 class DZE_Veh_JetSki_Blue: JetSkiYanahui_Case_Blue {
 	scope = 2;
-
-	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_JetSki_Blue_1",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
-	};
-
 	displayName = "$STR_VEH_NAME_JETSKI_BLUE";
 	vehicleClass = "DZE Vehicles Boats";
+
+	class Upgrades {
+		ItemAVE[] = {"DZE_Veh_JetSki_Blue_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -55,13 +55,13 @@ class DZE_Veh_JetSki_Blue: JetSkiYanahui_Case_Blue {
 class JetSkiYanahui_Case_Red;
 class DZE_Veh_JetSki_Red: JetSkiYanahui_Case_Red {
 	scope = 2;
-
-	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_JetSki_Red_1",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
-	};
-
 	displayName = "$STR_VEH_NAME_JETSKI_RED";
 	vehicleClass = "DZE Vehicles Boats";
+
+	class Upgrades {
+		ItemAVE[] = {"DZE_Veh_JetSki_Red_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+	};
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -77,7 +77,7 @@ class DZE_Veh_JetSki_Yellow_1: DZE_Veh_JetSki_Yellow {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_JetSki_Yellow_2",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_JetSki_Yellow_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -88,7 +88,7 @@ class DZE_Veh_JetSki_Yellow_2: DZE_Veh_JetSki_Yellow_1 {
 	transportMaxBackpacks = 2;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_JetSki_Yellow_3",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_JetSki_Yellow_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -106,7 +106,7 @@ class DZE_Veh_JetSki_Green_1: DZE_Veh_JetSki_Green {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_JetSki_Green_2",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_JetSki_Green_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -117,7 +117,7 @@ class DZE_Veh_JetSki_Green_2: DZE_Veh_JetSki_Green_1 {
 	transportMaxBackpacks = 2;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_JetSki_Green_3",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_JetSki_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -135,7 +135,7 @@ class DZE_Veh_JetSki_Blue_1: DZE_Veh_JetSki_Blue {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_JetSki_Blue_2",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_JetSki_Blue_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -146,7 +146,7 @@ class DZE_Veh_JetSki_Blue_2: DZE_Veh_JetSki_Blue_1 {
 	transportMaxBackpacks = 2;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_JetSki_Blue_3",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_JetSki_Blue_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
@@ -164,7 +164,7 @@ class DZE_Veh_JetSki_Red_1: DZE_Veh_JetSki_Red {
 	damageResistance = 0.01826;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_JetSki_Red_2",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_JetSki_Red_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -175,7 +175,7 @@ class DZE_Veh_JetSki_Red_2: DZE_Veh_JetSki_Red_1 {
 	transportMaxBackpacks = 2;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_JetSki_Red_3",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_JetSki_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

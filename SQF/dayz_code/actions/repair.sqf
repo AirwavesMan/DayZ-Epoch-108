@@ -19,7 +19,7 @@ dayz_myCursorTarget = objNull;
 _nameType = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 _namePart = getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
-if ("ItemToolbox" in items player && {_part in magazines player}) then {
+if ("DZE_Tool_Toolbox" in items player && {_part in magazines player}) then {
 	[player,(getPosATL player),30,"repair"] spawn fnc_alertZombies;
 
 	_finished = ["Medic",1] call fn_loopAction;

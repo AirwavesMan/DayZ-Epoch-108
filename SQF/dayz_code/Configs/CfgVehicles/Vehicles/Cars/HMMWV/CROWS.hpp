@@ -1,6 +1,6 @@
 class DZE_Veh_HMMWV_CROWS_MK19: DZE_HMMWV_Base {
-	displayName = "$STR_VEH_NAME_HMMWV_CROWS_MK19";
 	scope = 2;
+	displayName = "$STR_VEH_NAME_HMMWV_CROWS_MK19";
 	model = "\ca\wheeled_e\HMMWV\M998_crows_Mk19";
 	picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_crows_CA.paa";
 	icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_crows_CA.paa";
@@ -20,11 +20,14 @@ class DZE_Veh_HMMWV_CROWS_MK19: DZE_HMMWV_Base {
 		class MainTurret: MainTurret {
 			body = "mainTurret";
 			gun = "mainGun";
+			turretInfoType = "RscWeaponRangeZeroing";
+			gunnerAction = "HMMWV_Gunner04_EP1";
+			gunnerOpticsModel = "\ca\Weapons\2Dscope_RWS";
+			stabilizedInAxes = "StabilizedInAxesBoth";
 			weapons[] = {"MK19BC", "SmokeLauncher"};
 			magazines[] = {"48Rnd_40mm_MK19", "48Rnd_40mm_MK19", "48Rnd_40mm_MK19", "48Rnd_40mm_MK19", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
 			soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1", 0.01, 1, 10};
 			viewGunnerInExternal = 0;
-			turretInfoType = "RscWeaponRangeZeroing";
 			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 			discreteDistanceInitIndex = 2;
 			class ViewOptics {
@@ -40,13 +43,10 @@ class DZE_Veh_HMMWV_CROWS_MK19: DZE_HMMWV_Base {
 				visionMode[] = {"Normal", "Ti", "NVG"};
 				thermalMode[] = {2, 3};
 			};
-			gunnerAction = "HMMWV_Gunner04_EP1";
-			gunnerOpticsModel = "\ca\Weapons\2Dscope_RWS";
 			gunnerForceOptics = 1;
 			class GunFire: WeaponCloudsMGun {
 				interval = 0.01;
 			};
-			stabilizedInAxes = "StabilizedInAxesBoth";
 		};
 	};
 	class Damage {
@@ -61,7 +61,7 @@ class DZE_Veh_HMMWV_CROWS_MK19: DZE_HMMWV_Base {
 	smokeLauncherAngle = 120;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_CROWS_MK19_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_CROWS_MK19_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -73,7 +73,7 @@ class DZE_Veh_HMMWV_CROWS_MK19_1: DZE_Veh_HMMWV_CROWS_MK19  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_CROWS_MK19_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_CROWS_MK19_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -116,7 +116,7 @@ class DZE_Veh_HMMWV_CROWS_MK19_2: DZE_Veh_HMMWV_CROWS_MK19_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_CROWS_MK19_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_CROWS_MK19_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -127,7 +127,7 @@ class DZE_Veh_HMMWV_CROWS_MK19_3: DZE_Veh_HMMWV_CROWS_MK19_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_CROWS_MK19_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_CROWS_MK19_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -137,8 +137,8 @@ class DZE_Veh_HMMWV_CROWS_MK19_4: DZE_Veh_HMMWV_CROWS_MK19_3 {
 };
 
 class DZE_Veh_HMMWV_CROWS_M2: DZE_HMMWV_Base {
-	displayName = "$STR_VEH_NAME_HMMWV_CROWS_M2";
 	scope = 2;
+	displayName = "$STR_VEH_NAME_HMMWV_CROWS_M2";
 	model = "\ca\wheeled_e\HMMWV\M998_crows";
 	picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_crows_CA.paa";
 	icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_crows_CA.paa";
@@ -157,8 +157,11 @@ class DZE_Veh_HMMWV_CROWS_M2: DZE_HMMWV_Base {
 		class MainTurret: MainTurret {
 			body = "mainTurret";
 			gun = "mainGun";
-			weapons[] = {"M2BC", "SmokeLauncher"};
 			turretInfoType = "RscWeaponRangeZeroing";
+			gunnerAction = "HMMWV_Gunner04_EP1";
+			gunnerOpticsModel = "\ca\Weapons\2Dscope_RWS";
+			stabilizedInAxes = "StabilizedInAxesBoth";
+			weapons[] = {"M2BC", "SmokeLauncher"};
 			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
 			magazines[] = {"100Rnd_127x99_M2", "100Rnd_127x99_M2", "100Rnd_127x99_M2", "100Rnd_127x99_M2", "100Rnd_127x99_M2", "100Rnd_127x99_M2", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
 			minElev = -25;
@@ -177,10 +180,7 @@ class DZE_Veh_HMMWV_CROWS_M2: DZE_HMMWV_Base {
 				visionMode[] = {"Normal", "NVG", "Ti"};
 				thermalMode[] = {2, 3};
 			};
-			gunnerAction = "HMMWV_Gunner04_EP1";
-			gunnerOpticsModel = "\ca\Weapons\2Dscope_RWS";
 			gunnerForceOptics = 1;
-			stabilizedInAxes = "StabilizedInAxesBoth";
 			discreteDistanceInitIndex = 2;
 		};
 	};
@@ -210,7 +210,7 @@ class DZE_Veh_HMMWV_CROWS_M2: DZE_HMMWV_Base {
 	smokeLauncherAngle = 120;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_CROWS_M2_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_CROWS_M2_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -222,7 +222,7 @@ class DZE_Veh_HMMWV_CROWS_M2_1: DZE_Veh_HMMWV_CROWS_M2  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_CROWS_M2_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_CROWS_M2_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -265,7 +265,7 @@ class DZE_Veh_HMMWV_CROWS_M2_2: DZE_Veh_HMMWV_CROWS_M2_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_CROWS_M2_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_CROWS_M2_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -276,7 +276,7 @@ class DZE_Veh_HMMWV_CROWS_M2_3: DZE_Veh_HMMWV_CROWS_M2_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_CROWS_M2_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_CROWS_M2_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 

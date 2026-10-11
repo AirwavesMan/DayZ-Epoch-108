@@ -1,10 +1,11 @@
 class DZE_Veh_HMMWV_Avenger_Woodland: DZE_HMMWV_Base {
-	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_WDL";
 	scope = 2;
+	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_WDL";
 	model = "\ca\wheeled2\HMMWV\M998A2_Avenger\M998A2_Avenger.p3d";
 	picture = "\Ca\wheeled2\data\ui\Picture_M998A2_CA.paa";
 	Icon = "\Ca\wheeled2\data\ui\Icon_M998A2_CA.paa";
 	driverAction = "HMMWV_Driver_EP1";
+	irScanGround = "false";
 	cargoAction[] = {"HMMWV_Cargo01"};
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -17,7 +18,6 @@ class DZE_Veh_HMMWV_Avenger_Woodland: DZE_HMMWV_Base {
 	irScanRangeMin = 0;
 	irScanRangeMax = 1500;
 	irScanToEyeFactor = 3;
-	irScanGround = "false";
 	class HitPoints: HitPoints {
 		class HitGlass5: HitGlass1 {
 			name = "glass5";
@@ -31,6 +31,10 @@ class DZE_Veh_HMMWV_Avenger_Woodland: DZE_HMMWV_Base {
 			gunnerGetInAction = "GetInMedium";
 			gunnerGetOutAction = "GetOutMedium";
 			memoryPointGun = "machinegun";
+			gunnerOpticsModel = "\ca\weapons\2Dscope_Avenger";
+			gunnerCompartments = "Compartment2";
+			stabilizedInAxes = "StabilizedInAxesBoth";
+			turretInfoType = "RscWeaponRangeZeroing";
 			weapons[] = {"StingerLaucher", "M3P"};
 			magazines[] = {"8Rnd_Stinger", "250Rnd_127x99_M3P", "250Rnd_127x99_M3P"};
 			minElev = -10;
@@ -39,7 +43,6 @@ class DZE_Veh_HMMWV_Avenger_Woodland: DZE_HMMWV_Base {
 			minTurn = -180;
 			maxTurn = 180;
 			initTurn = 0;
-			gunnerOpticsModel = "\ca\weapons\2Dscope_Avenger";
 			class ViewOptics {
 				initAngleX = 0;
 				minAngleX = -30;
@@ -55,16 +58,13 @@ class DZE_Veh_HMMWV_Avenger_Woodland: DZE_HMMWV_Base {
 			};
 			class HitPoints: HitPoints {
 				class HitTurret {
-					armor = 0.8;
-					material = -1;
 					name = "vez";
 					visual = "vez";
+					armor = 0.8;
+					material = -1;
 					passThrough = 1;
 				};
 			};
-			gunnerCompartments = "Compartment2";
-			stabilizedInAxes = "StabilizedInAxesBoth";
-			turretInfoType = "RscWeaponRangeZeroing";
 			viewGunnerInExternal = 0;
 		};
 	};
@@ -83,7 +83,7 @@ class DZE_Veh_HMMWV_Avenger_Woodland: DZE_HMMWV_Base {
 	hiddenSelectionsTextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa", "\ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_1_co.paa", "\ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_3_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_Avenger_Woodland_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_Avenger_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -95,7 +95,7 @@ class DZE_Veh_HMMWV_Avenger_Woodland_1: DZE_Veh_HMMWV_Avenger_Woodland  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_Avenger_Woodland_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_Avenger_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -138,7 +138,7 @@ class DZE_Veh_HMMWV_Avenger_Woodland_2: DZE_Veh_HMMWV_Avenger_Woodland_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_Avenger_Woodland_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_Avenger_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -149,7 +149,7 @@ class DZE_Veh_HMMWV_Avenger_Woodland_3: DZE_Veh_HMMWV_Avenger_Woodland_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_Avenger_Woodland_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_Avenger_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -159,12 +159,13 @@ class DZE_Veh_HMMWV_Avenger_Woodland_4: DZE_Veh_HMMWV_Avenger_Woodland_3 {
 };
 
 class DZE_Veh_HMMWV_Avenger_Desert: DZE_HMMWV_Base {
-	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_DES";
 	scope = 2;
+	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_DES";
 	model = "\ca\wheeled_e\HMMWV\M998A2_Avenger.p3d";
 	picture = "\Ca\wheeled2\data\ui\Picture_M998A2_CA.paa";
 	Icon = "\Ca\wheeled2\data\ui\Icon_M998A2_CA.paa";
 	driverAction = "HMMWV_Driver_EP1";
+	irScanGround = "false";
 	cargoAction[] = {"HMMWV_Cargo01"};
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -177,7 +178,6 @@ class DZE_Veh_HMMWV_Avenger_Desert: DZE_HMMWV_Base {
 	irScanRangeMin = 0;
 	irScanRangeMax = 1500;
 	irScanToEyeFactor = 3;
-	irScanGround = "false";
 	class HitPoints: HitPoints {
 		class HitGlass5: HitGlass1 {
 			name = "glass5";
@@ -191,6 +191,10 @@ class DZE_Veh_HMMWV_Avenger_Desert: DZE_HMMWV_Base {
 			gunnerGetInAction = "GetInMedium";
 			gunnerGetOutAction = "GetOutMedium";
 			memoryPointGun = "machinegun";
+			gunnerOpticsModel = "\ca\weapons\2Dscope_Avenger";
+			gunnerCompartments = "Compartment2";
+			stabilizedInAxes = "StabilizedInAxesBoth";
+			turretInfoType = "RscWeaponRangeZeroing";
 			weapons[] = {"StingerLaucher", "M3P"};
 			magazines[] = {"8Rnd_Stinger", "250Rnd_127x99_M3P", "250Rnd_127x99_M3P"};
 			minElev = -10;
@@ -199,7 +203,6 @@ class DZE_Veh_HMMWV_Avenger_Desert: DZE_HMMWV_Base {
 			minTurn = -180;
 			maxTurn = 180;
 			initTurn = 0;
-			gunnerOpticsModel = "\ca\weapons\2Dscope_Avenger";
 			class ViewOptics {
 				initAngleX = 0;
 				minAngleX = -30;
@@ -215,16 +218,13 @@ class DZE_Veh_HMMWV_Avenger_Desert: DZE_HMMWV_Base {
 			};
 			class HitPoints: HitPoints {
 				class HitTurret {
-					armor = 0.8;
-					material = -1;
 					name = "vez";
 					visual = "vez";
+					armor = 0.8;
+					material = -1;
 					passThrough = 1;
 				};
 			};
-			gunnerCompartments = "Compartment2";
-			stabilizedInAxes = "StabilizedInAxesBoth";
-			turretInfoType = "RscWeaponRangeZeroing";
 			viewGunnerInExternal = 0;
 		};
 	};
@@ -243,7 +243,7 @@ class DZE_Veh_HMMWV_Avenger_Desert: DZE_HMMWV_Base {
 	hiddenSelectionsTextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa", "\CA\wheeled_E\HMMWV\Data\M998A2_Avenger_1_US_CO.paa", "\CA\wheeled_E\HMMWV\Data\M998A2_Avenger_3_US_CO.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_Avenger_Desert_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_Avenger_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -255,7 +255,7 @@ class DZE_Veh_HMMWV_Avenger_Desert_1: DZE_Veh_HMMWV_Avenger_Desert  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_Avenger_Desert_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_Avenger_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -298,7 +298,7 @@ class DZE_Veh_HMMWV_Avenger_Desert_2: DZE_Veh_HMMWV_Avenger_Desert_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_Avenger_Desert_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_Avenger_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -309,7 +309,7 @@ class DZE_Veh_HMMWV_Avenger_Desert_3: DZE_Veh_HMMWV_Avenger_Desert_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_Avenger_Desert_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_Avenger_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 

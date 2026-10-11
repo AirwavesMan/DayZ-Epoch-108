@@ -10,7 +10,7 @@ _hitpoint = _array select 2;
 _type = typeOf _vehicle;
 _isOK = false;
 _brokenPart = false;
-_hasToolbox = "ItemToolbox" in items player;
+_hasToolbox = "DZE_Tool_Toolbox" in items player;
 
 _nameType = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 _namePart = getText(configFile >> "cfgMagazines" >> _part >> "displayName");

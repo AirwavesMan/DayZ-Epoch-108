@@ -11,7 +11,7 @@ class DZE_Veh_TowingTractor: TowingTractor {
 	supplyRadius = 1.2;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_TowingTractor_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_TowingTractor_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -23,7 +23,7 @@ class DZE_Veh_TowingTractor_1: DZE_Veh_TowingTractor {
 	terrainCoef = 2.5; // native 4
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_TowingTractor_2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_TowingTractor_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -33,7 +33,7 @@ class DZE_Veh_TowingTractor_2: DZE_Veh_TowingTractor_1 {
 	armor = 50; // native 20
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_TowingTractor_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_TowingTractor_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -45,7 +45,7 @@ class DZE_Veh_TowingTractor_3: DZE_Veh_TowingTractor_2 {
 	transportMaxBackpacks = 4; // native 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_TowingTractor_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_TowingTractor_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

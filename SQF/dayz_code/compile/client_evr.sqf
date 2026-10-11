@@ -6,7 +6,7 @@
 */
 
 fnc_evr = {
-	local _hasAPSI = (player hasWeapon "ItemAPSI_DZE" && {player getVariable ["APSIState", false]});
+	local _hasAPSI = (player hasWeapon "DZE_Tool_APSI" && {player getVariable ["APSIState", false]});
 
 	call {
 		if (_this == "Stage1") exitWith {
@@ -380,7 +380,7 @@ fnc_evr = {
 			_effect ppEffectAdjust [1.0, 1.0, -0.1, [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 5.0],[0.4,0.0,0.0, 0.7]];
 			_effect ppEffectCommit 1;
 			
-			_hasAPSI = (player hasWeapon "ItemAPSI_DZE" && {player getVariable ["APSIState", false]}); // A player can enable the APSI last minute, so we check just before the knockout.
+			_hasAPSI = (player hasWeapon "DZE_Tool_APSI" && {player getVariable ["APSIState", false]}); // A player can enable the APSI last minute, so we check just before the knockout.
 			
 			// Using this technique from fn_unconscious
 			disableUserInput true; disableUserInput true;

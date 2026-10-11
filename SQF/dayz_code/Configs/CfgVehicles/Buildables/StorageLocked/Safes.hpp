@@ -9,25 +9,25 @@ class DZE_Safe_Base: DZE_StorageLockable_Base {
 };
 
 class DZE_Safe_Locked_Base: DZE_Safe_Base {
+	DZE_sfx = "safeopen";
 	transportMaxMagazines = 0;
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;	
 	
 	DZE_lockable = 4;
 	
-	DZE_sfx = "safeopen";
 };
 
 class DZE_Safe: DZE_Safe_Base {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE";
 	DZE_lockedClass = "DZE_SafeLocked";
-	
 	DZE_sfx = "safeclose";
 
+
 	class RemoveObject: RemoveObject {
-		DZE_neededTools[] = {};
 		DZE_refundKit = "ItemSafe";
+		DZE_neededTools[] = {};
 		DZE_refundArray[] = {};
 	};
 };
@@ -36,41 +36,42 @@ class DZE_SafeLocked: DZE_Safe_Locked_Base {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE_LOCKED";
 	DZE_unlockedClass = "DZE_Safe";
-	DZE_upgradeBuilding[] = {"DZE_Safe2Locked",{"ItemToolbox","ItemSolder_DZE"},{{"equip_metal_sheet",4},{"ItemScrews",2},{"equip_scrapelectronics",4},{"equip_floppywire",2}}};
+	DZE_upgradeBuilding[] = {"DZE_Safe2Locked",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{{"equip_metal_sheet",4},{"ItemScrews",2},{"equip_scrapelectronics",4},{"equip_floppywire",2}}};
 };
 
 class DZE_Safe2: DZE_Safe {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE+";
+	DZE_lockedClass = "DZE_Safe2Locked";
 	armor = 1600;
 	transportMaxMagazines = 400;
 	transportMaxWeapons = 50;
 	transportMaxBackpacks = 20;
-	DZE_lockedClass = "DZE_Safe2Locked";
 
 	class RemoveObject: RemoveObject {
-		DZE_neededTools[] = {};
 		DZE_refundKit = "ItemSafe2";
+		DZE_neededTools[] = {};
 		DZE_refundArray[] = {};
 	};
 };
 
 class DZE_Safe2Locked: DZE_Safe_Locked_Base {
 	scope = 2;
-	displayName = "$STR_EPOCH_SAFE_LOCKED+";	
-	armor = 1600;
+	displayName = "$STR_EPOCH_SAFE_LOCKED+";
 	DZE_unlockedClass = "DZE_Safe2";
+	armor = 1600;
 };
 
 class DZE_SafeTall: DZE_Safe_Base {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE";
 	model = "\z\addons\dayz_epoch_v\props\safe_tall\tallsafe.p3d";
+	DZE_lockedClass = "DZE_SafeTallLocked";
+	DZE_sfxClose = "safeclose";
 	armor = 2600;
 	transportMaxMagazines = 600;
 	transportMaxWeapons = 75;
 	transportMaxBackpacks = 30;
-	DZE_lockedClass = "DZE_SafeTallLocked";
 	
 	class AnimationSources {
 		class Open_door {
@@ -86,11 +87,10 @@ class DZE_SafeTall: DZE_Safe_Base {
 		};
 	};
 	
-	DZE_sfxClose = "safeclose";
 
 	class RemoveObject: RemoveObject {
-		DZE_neededTools[] = {};
 		DZE_refundKit = "ItemSafeTall";
+		DZE_neededTools[] = {};
 		DZE_refundArray[] = {};
 	};
 };
@@ -99,8 +99,8 @@ class DZE_SafeTallLocked: DZE_Safe_Locked_Base {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE_LOCKED";
 	model = "\z\addons\dayz_epoch_v\props\safe_tall\tallsafe.p3d";
-	armor = 2600;
 	DZE_unlockedClass = "DZE_SafeTall";
+	armor = 2600;
 	
 	class AnimationSources {
 		class Open_door {

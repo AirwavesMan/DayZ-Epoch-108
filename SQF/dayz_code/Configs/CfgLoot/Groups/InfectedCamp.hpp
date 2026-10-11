@@ -31,12 +31,12 @@ InfectedCampWreck[] =
 InfectedCamp[] =
 {
 	//Tools
-	{Loot_WEAPON,		1,		ItemWatch},
-	{Loot_WEAPON,		1,		ItemCompass},
-	{Loot_WEAPON,		1,		ItemFlashlight},
+	{Loot_WEAPON,		1,		DZE_Tool_Watch},
+	{Loot_WEAPON,		1,		DZE_Tool_Compass},
+	{Loot_WEAPON,		1,		DZE_Tool_Flashlight},
 	{Loot_WEAPON,		1,		DZE_Tool_Knife},
-	{Loot_WEAPON,		1,		Binocular},
-	{Loot_WEAPON,		1,		ItemCrowbar},
+	{Loot_WEAPON,		1,		DZE_Tool_Binocular},
+	{Loot_WEAPON,		1,		DZE_Tool_Crowbar},
 	
 	//Pistols
 	{Loot_GROUP,		5,		pistols},

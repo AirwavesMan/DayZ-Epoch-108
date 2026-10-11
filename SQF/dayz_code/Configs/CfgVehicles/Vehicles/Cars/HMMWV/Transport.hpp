@@ -1,15 +1,15 @@
 class DZE_Veh_HMMWV_M1035_Desert: DZE_HMMWV_Base {
 	scope = 2;
-	model = "\ca\wheeled_e\HMMWV\M1035_transport";
 	displayName = "$STR_VEH_NAME_HMMWV_DES";
-	transportSoldier = 3;
+	model = "\ca\wheeled_e\HMMWV\M1035_transport";
 	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_transport_CA.paa";
 	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_transport_CA.paa";
+	driverAction = "HMMWV_Driver_EP1";
+	transportSoldier = 3;
 	class Turrets{};
 	class Library {
 		libTextDesc = "$STR_EP1_LIB_HMMWV_M1035_DES";
 	};
-	driverAction = "HMMWV_Driver_EP1";
 	cargoAction[] = {"HMMWV_Cargo_EP1","HMMWV_Cargo01_EP1","HMMWV_Cargo02_EP1"};
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
@@ -26,7 +26,7 @@ class DZE_Veh_HMMWV_M1035_Desert: DZE_HMMWV_Base {
 	hiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_canvas_1_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_canvas_1_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_M1035_Desert_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_M1035_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -38,7 +38,7 @@ class DZE_Veh_HMMWV_M1035_Desert_1: DZE_Veh_HMMWV_M1035_Desert  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_M1035_Desert_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_M1035_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -81,7 +81,7 @@ class DZE_Veh_HMMWV_M1035_Desert_2: DZE_Veh_HMMWV_M1035_Desert_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_M1035_Desert_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_M1035_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -92,7 +92,7 @@ class DZE_Veh_HMMWV_M1035_Desert_3: DZE_Veh_HMMWV_M1035_Desert_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_M1035_Desert_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_M1035_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -102,16 +102,16 @@ class DZE_Veh_HMMWV_M1035_Desert_4: DZE_Veh_HMMWV_M1035_Desert_3 {
 };
 
 class DZE_Veh_HMMWV_Woodland: DZE_HMMWV_Base {
-	accuracy = 0.32;
+	scope = 2;
 	displayName = "$STR_VEH_NAME_HMMWV";
+	icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
+	model = "ca\wheeled_E\HMMWV\HMMWV";
+	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";
+	accuracy = 0.32;
 	hasgunner = 0;
 	hiddenSelections[] = {"Camo1"};
 	hiddenSelectionsTextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
-	icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
 	mapsize = 5;
-	model = "ca\wheeled_E\HMMWV\HMMWV";
-	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";
-	scope = 2;
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 
@@ -125,7 +125,7 @@ class DZE_Veh_HMMWV_Woodland: DZE_HMMWV_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_Woodland_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -137,7 +137,7 @@ class DZE_Veh_HMMWV_Woodland_1: DZE_Veh_HMMWV_Woodland  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_Woodland_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -180,7 +180,7 @@ class DZE_Veh_HMMWV_Woodland_2: DZE_Veh_HMMWV_Woodland_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_Woodland_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -191,7 +191,7 @@ class DZE_Veh_HMMWV_Woodland_3: DZE_Veh_HMMWV_Woodland_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_Woodland_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -206,7 +206,7 @@ class DZE_Veh_HMMWV_Desert: DZE_Veh_HMMWV_Woodland {
 	hiddenSelectionsTextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_Desert_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -218,7 +218,7 @@ class DZE_Veh_HMMWV_Desert_1: DZE_Veh_HMMWV_Desert  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_Desert_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -261,7 +261,7 @@ class DZE_Veh_HMMWV_Desert_2: DZE_Veh_HMMWV_Desert_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_Desert_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -272,7 +272,7 @@ class DZE_Veh_HMMWV_Desert_3: DZE_Veh_HMMWV_Desert_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_Desert_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
@@ -286,7 +286,7 @@ class DZE_Veh_HMMWV_Winter: DZE_Veh_HMMWV_Woodland {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\hmmwv\hmmwv_body_winter_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_Winter_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_HMMWV_Winter_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -298,7 +298,7 @@ class DZE_Veh_HMMWV_Winter_1: DZE_Veh_HMMWV_Winter  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_Winter_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_HMMWV_Winter_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -341,7 +341,7 @@ class DZE_Veh_HMMWV_Winter_2: DZE_Veh_HMMWV_Winter_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_Winter_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_HMMWV_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -352,7 +352,7 @@ class DZE_Veh_HMMWV_Winter_3: DZE_Veh_HMMWV_Winter_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_Winter_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		ItemTNK[] = {"DZE_Veh_HMMWV_Winter_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 

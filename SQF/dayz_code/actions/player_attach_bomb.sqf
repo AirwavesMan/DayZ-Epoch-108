@@ -4,8 +4,8 @@ dayz_actionInProgress = true;
 private ["_theBomb","_vehicle","_curFuel","_newFuel","_timeLeft","_hasToolbox","_hasCarBomb","_dis","_sfx","_alreadyBombed","_hasCrowbar","_finished"];
 
 _vehicle = 		_this select 3;
-_hasToolbox = 	"ItemToolbox" in items player;
-_hasCrowbar = 	"ItemCrowbar" in items player;
+_hasToolbox = 	"DZE_Tool_Toolbox" in items player;
+_hasCrowbar = 	"DZE_Tool_Crowbar" in items player;
 _hasCarBomb = "ItemCarBomb" in magazines player;
 _alreadyBombed = _vehicle getVariable["hasBomb",false];
 

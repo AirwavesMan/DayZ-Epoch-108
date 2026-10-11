@@ -1,17 +1,17 @@
 class DZE_Veh_Octavia_White: Car {
 	scope = 2;
+	displayName = "$STR_VEH_NAME_OCTAVIA_WHITE";
+	model = "\Corepatch\CorePatch_Vehicles\models\Octavia_ACR";
+	icon = "\Ca\Wheeled_ACR\Data\UI\Icon_Octavia_CA.paa";
+	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_Octavia_CA.paa";
+	vehicleClass = "DZE Vehicles Cars";
+	DriverAction = "Golf_Driver";
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
 
 	DZE_MACRO_VEHICLE_SIDE
-	model = "\Corepatch\CorePatch_Vehicles\models\Octavia_ACR";
-	displayName = "$STR_VEH_NAME_OCTAVIA_WHITE";
-	icon = "\Ca\Wheeled_ACR\Data\UI\Icon_Octavia_CA.paa";
-	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_Octavia_CA.paa";
 	class Library {
 		libTextDesc = "$STR_ACR_LIB_OCTAVIA";
 	};
-	vehicleClass = "DZE Vehicles Cars";
-	DriverAction = "Golf_Driver";
 	cargoAction[] = {"Golf_Cargo01","Golf_Cargo02","Golf_Cargo02"};
 	cargoIsCoDriver[] = {0};
 	transportSoldier = 3;
@@ -34,15 +34,15 @@ class DZE_Veh_Octavia_White: Car {
 	hiddenSelectionsTextures[] = {"\Ca\Wheeled_ACR\Octavia\Data\car_body_co.paa"};
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
-			armor = 0.3;
 			name = "wheel_1_1_steering";
+			armor = 0.3;
 		};
 		class HitLBWheel: HitLBWheel {
 			armor = 0.3;
 		};
 		class HitRFWheel: HitRFWheel {
-			armor = 0.3;
 			name = "wheel_2_1_steering";
+			armor = 0.3;
 		};
 		class HitRBWheel: HitRBWheel {
 			armor = 0.3;
@@ -79,116 +79,116 @@ class DZE_Veh_Octavia_White: Car {
 	soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
 	class SoundEvents {
 		class AccelerationIn {
-			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_int_acce2",1.0,1.0};
 			limit = "0.15";
 			expression = "engineOn*(1-camPos)*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
+			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_int_acce2",1.0,1.0};
 		};
 		class AccelerationOut {
-			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_ext_acce2",1.0,1.0,200};
 			limit = "0.15";
 			expression = "engineOn*camPos*2*gmeterZ*((speed factor[1.5, 5]) min (speed factor[5, 1.5]))";
+			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_ext_acce2",1.0,1.0,200};
 		};
 	};
 	class Sounds {
 		class Engine {
-			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_ext_mid2",1.0,1.0,200};
 			frequency = "(1.0+rpm)*0.3";
 			volume = "engineOn*camPos*((rpm factor[0.3, 0.4])+ (rpm factor[0.8, 0.5]))";
+			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_ext_mid2",1.0,1.0,200};
 		};
 		class EngineHighOut {
-			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_ext_high",1.0,1.0,250};
 			frequency = "(1.0+rpm)*0.3";
 			volume = "engineOn*camPos*(rpm factor[0.3, 0.8])";
+			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_ext_high",1.0,1.0,250};
 		};
 		class IdleOut {
-			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_ext_idle",1.0,1.0,200};
 			frequency = "1";
 			volume = "engineOn*camPos*(rpm factor[0.4, 0.0])";
+			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_ext_idle",1.0,1.0,200};
 		};
 		class TiresRockOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.056234132,1.0,40};
 			frequency = "1";
 			volume = "camPos*rock*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.056234132,1.0,40};
 		};
 		class TiresSandOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.056234132,1.0,40};
 			frequency = "1";
 			volume = "camPos*sand*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.056234132,1.0,40};
 		};
 		class TiresGrassOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3",0.056234132,1.0,40};
 			frequency = "1";
 			volume = "camPos*grass*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3",0.056234132,1.0,40};
 		};
 		class TiresMudOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.056234132,1.0,40};
 			frequency = "1";
 			volume = "camPos*mud*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.056234132,1.0,40};
 		};
 		class TiresGravelOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.056234132,1.0,40};
 			frequency = "1";
 			volume = "camPos*gravel*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.056234132,1.0,40};
 		};
 		class TiresAsphaltOut {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.056234132,1.0,40};
 			frequency = "1";
 			volume = "camPos*asphalt*(speed factor[4, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.056234132,1.0,40};
 		};
 		class NoiseOut {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\ext\noise2",0.017782794,1.0,40};
 			frequency = "1";
 			volume = "camPos*(damper0 max 0.036)*(speed factor[0, 8])";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\ext\noise2",0.017782794,1.0,40};
 		};
 		class EngineLowIn {
-			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_int_mid2",0.70794576,1.0};
 			frequency = "(1.0+rpm)*0.3";
 			volume = "(1-camPos)*engineOn*((rpm factor[0.3, 0.4])+ (rpm factor[0.8, 0.5]))";
+			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_int_mid2",0.70794576,1.0};
 		};
 		class EngineHighIn {
-			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_int_high",0.70794576,1.0};
 			frequency = "(1.0+rpm)*0.3";
 			volume = "(1-camPos)*engineOn*(rpm factor[0.3, 0.8])";
+			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_int_high",0.70794576,1.0};
 		};
 		class IdleIn {
-			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_int_idle",1.0,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*engineOn*(rpm factor[0.4, 0.0])";
+			sound[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_int_idle",1.0,1.0};
 		};
 		class TiresRockIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",0.017782794,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*rock*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",0.017782794,1.0};
 		};
 		class TiresSandIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",0.017782794,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*sand*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",0.017782794,1.0};
 		};
 		class TiresGrassIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3",0.017782794,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*grass*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3",0.017782794,1.0};
 		};
 		class TiresMudIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",0.017782794,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*mud*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",0.017782794,1.0};
 		};
 		class TiresGravelIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",0.017782794,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",0.017782794,1.0};
 		};
 		class TiresAsphaltIn {
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",0.017782794,1.0};
 			frequency = "1";
 			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
+			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",0.017782794,1.0};
 		};
 		class NoiseIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\int\noise3",0.017782794,1.0};
 			frequency = "1";
 			volume = "(damper0 max 0.03)*(speed factor[0, 8])*(1-camPos)";
+			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\int\noise3",0.017782794,1.0};
 		};
 		class Movement {
 			sound = "soundEnviron";
@@ -197,7 +197,7 @@ class DZE_Veh_Octavia_White: Car {
 		};
 	};
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Octavia_White_1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		ItemORP[] = {"DZE_Veh_Octavia_White_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
@@ -208,7 +208,7 @@ class DZE_Veh_Octavia_White_1: DZE_Veh_Octavia_White {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Octavia_White_2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"DZE_Veh_Octavia_White_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
@@ -249,7 +249,7 @@ class DZE_Veh_Octavia_White_2: DZE_Veh_Octavia_White_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Octavia_White_3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+		ItemLRK[] = {"DZE_Veh_Octavia_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
@@ -260,7 +260,7 @@ class DZE_Veh_Octavia_White_3: DZE_Veh_Octavia_White_2 {
     transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Octavia_White_4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		ItemTNK[] = {"DZE_Veh_Octavia_White_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 

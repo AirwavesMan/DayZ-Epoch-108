@@ -1,32 +1,28 @@
-class Handsaw_DZE: ItemCore
-{
+class DZE_Tool_Handsaw: ItemCore {
 	scope = 2;
-	displayName = $STR_EQUIP_SAW;
-	descriptionShort = $STR_EQUIP_SAW_DESC;	
+	displayName = "$STR_EQUIP_SAW";
+	descriptionShort = "$STR_EQUIP_SAW_DESC";
 	picture = "\dayz_epoch_c\icons\tools\ItemSaw.paa";
-    model = "\z\addons\dayz_epoch_w\items\handsaw.p3d";
+	model = "\z\addons\dayz_epoch_w\items\handsaw.p3d";
 };
 
-class HandsawBroken_DZE: ItemCore
-{
+class DZE_Tool_HandsawBroken: ItemCore {
 	scope = 2;
-	displayName = $STR_EQUIP_SAW_BROKEN;
-	descriptionShort = $STR_EQUIP_SAW_BROKEN_DESC;	
+	displayName = "$STR_EQUIP_SAW_BROKEN";
+	descriptionShort = "$STR_EQUIP_SAW_BROKEN_DESC";
 	picture = "\dayz_epoch_c\icons\tools\ItemSawBroken.paa";
-    model = "\z\addons\dayz_epoch_w\items\handsaw.p3d";
+	model = "\z\addons\dayz_epoch_w\items\handsaw.p3d";
 	
-	class ItemActions
-	{
-		class Repair
-		{
-			text = $STR_ACTIONS_FIX_SAW;
+	class ItemActions {
+		class Repair {
+			text = "$STR_ACTIONS_FIX_SAW";
 			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {};
-			outputweapons[] = {"Handsaw_DZE"};
+			outputweapons[] = {"DZE_Tool_Handsaw"};
 			input[] = {{"PartGeneric",1}};
-			inputweapons[] = {"HandsawBroken_DZE"};
+			inputweapons[] = {"DZE_Tool_HandsawBroken"};
 		};		
 	};
 };

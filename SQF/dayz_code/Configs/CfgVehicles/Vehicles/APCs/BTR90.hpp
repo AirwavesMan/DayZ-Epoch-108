@@ -1,9 +1,9 @@
 class BTR90;
 class DZE_Veh_BTR90: BTR90 {
 	scope = 2;
-
 	displayName = "$STR_VEH_NAME_BTR90";
 	vehicleClass = "DZE Vehicles APCs";
+
 
 
 	DZE_MACRO_VEHICLE_SIDE
@@ -17,7 +17,7 @@ class DZE_Veh_BTR90: BTR90 {
 	crewVulnerable = 1;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BTR90_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BTR90_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -29,7 +29,7 @@ class DZE_Veh_BTR90_1: DZE_Veh_BTR90 {
 	turnCoef = 6;  // base 4
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BTR90_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BTR90_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -39,7 +39,7 @@ class DZE_Veh_BTR90_2: DZE_Veh_BTR90_1 {
 	damageResistance = 0.048; // base 0.02432
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BTR90_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BTR90_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -50,7 +50,7 @@ class DZE_Veh_BTR90_3: DZE_Veh_BTR90_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BTR90_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BTR90_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 
@@ -62,9 +62,9 @@ class DZE_Veh_BTR90_4: DZE_Veh_BTR90_3 {
 class BTR90_HQ;
 class DZE_Veh_BTR90_HQ: BTR90_HQ {
 	scope = 2;
-
 	displayName = "$STR_VEH_NAME_BTR90_HQ";
 	vehicleClass = "DZE Vehicles APCs";
+
 
 
 	DZE_MACRO_VEHICLE_SIDE
@@ -80,7 +80,7 @@ class DZE_Veh_BTR90_HQ: BTR90_HQ {
 	crewVulnerable = 1;
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_BTR90_HQ_1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		ItemTankORP[] = {"DZE_Veh_BTR90_HQ_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -92,7 +92,7 @@ class DZE_Veh_BTR90_HQ_1: DZE_Veh_BTR90_HQ {
 	turnCoef = 6;  // base 4
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_BTR90_HQ_2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		ItemTankAVE[] = {"DZE_Veh_BTR90_HQ_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
 	};
 };
 
@@ -102,7 +102,7 @@ class DZE_Veh_BTR90_HQ_2: DZE_Veh_BTR90_HQ_1 {
 	damageResistance = 0.048; // base 0.02432
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_BTR90_HQ_3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTankLRK[] = {"DZE_Veh_BTR90_HQ_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
@@ -113,7 +113,7 @@ class DZE_Veh_BTR90_HQ_3: DZE_Veh_BTR90_HQ_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_BTR90_HQ_4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		ItemTankTNK[] = {"DZE_Veh_BTR90_HQ_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
 	};
 };
 

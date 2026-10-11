@@ -12,7 +12,7 @@ class DZE_Veh_AH1Z: AH1Z {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_AH1Z_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_AH1Z_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 
 	class EventHandlers: DefaultEventhandlers {
@@ -23,24 +23,24 @@ class DZE_Veh_AH1Z: AH1Z {
 		class Fold {
 			displayName = "$STR_AM_PACK";
 			displayNameDefault = "$STR_AM_PACK";
-			priority = 0;
 			position = "zamerny";
+			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 0} && {diag_tickTime - (this getVariable ['engineOffTime',0]) > 20}";
+			statement = "this animate ['mainrotor_folded',0]; this animate ['mainrotor_unfolded',1]; this animate ['rotorshaft_unfolded',1];";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 0} && {diag_tickTime - (this getVariable ['engineOffTime',0]) > 20}";
-			statement = "this animate ['mainrotor_folded',0]; this animate ['mainrotor_unfolded',1]; this animate ['rotorshaft_unfolded',1];";
 		};
 		class Unfold {
 			displayName = "$STR_AM_UNPACK";
 			displayNameDefault = "$STR_AM_UNPACK";
-			priority = 0;
 			position = "zamerny";
+			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 1}";
+			statement = "this animate ['mainrotor_folded',1]; this animate ['mainrotor_unfolded',0]; this animate ['rotorshaft_unfolded',0];";
+			priority = 0;
 			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
-			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 1}";
-			statement = "this animate ['mainrotor_folded',1]; this animate ['mainrotor_unfolded',0]; this animate ['rotorshaft_unfolded',0];";
 		};
 	};
 };
@@ -52,7 +52,7 @@ class DZE_Veh_AH1Z_1: DZE_Veh_AH1Z {
 	damageResistance = 0.01186; // base 0.00593
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_AH1Z_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_AH1Z_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -63,7 +63,7 @@ class DZE_Veh_AH1Z_2: DZE_Veh_AH1Z_1 {
 	transportMaxBackpacks = 2;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_AH1Z_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_AH1Z_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

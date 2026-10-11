@@ -32,30 +32,30 @@ class DZE_Veh_MH60S: MH60S {
 
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
-			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
-			discreteDistanceInitIndex = 2;
 			gunnerCompartments = "compartment3";
-			initElev = 5;
-			initTurn = 80;
 			body = "mainTurret";
 			gun = "mainGun";
+			stabilizedInAxes = "StabilizedInAxesNone";
+			gunBeg = "muzzle_1"; // endpoint of the gun
+			gunEnd = "chamber_1"; // chamber of the gun
+			turretInfoType = "RscWeaponZeroing";
+			gunnerName = "$STR_POSITION_CREWCHIEF";
+			gunnerOpticsModel = "\ca\weapons\optika_empty";
+			gunnerAction = "MH60_Gunner";
+			gunnerInAction = "MH60_Gunner";
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+			discreteDistanceInitIndex = 2;
+			initElev = 5;
+			initTurn = 80;
 			minElev = -80;
 			maxElev = 25;
 			minTurn = 30;
 			maxTurn = 150;
 			soundServo[] = {"",0.01,1};
-			stabilizedInAxes = "StabilizedInAxesNone";
-			gunBeg = "muzzle_1";	// endpoint of the gun
-			gunEnd = "chamber_1";	// chamber of the gun
-			turretInfoType = "RscWeaponZeroing";
 			weapons[] = {"M240BC_veh"};
 
-			gunnerName = "$STR_POSITION_CREWCHIEF";
-			gunnerOpticsModel = "\ca\weapons\optika_empty";
 			gunnerOutOpticsShowCursor = 1;
 			gunnerOpticsShowCursor = 1;
-			gunnerAction = "MH60_Gunner";
-			gunnerInAction = "MH60_Gunner";
 			primaryGunner = 1;
 			class ViewOptics {
 				initAngleX = 0;
@@ -76,26 +76,26 @@ class DZE_Veh_MH60S: MH60S {
 			gun = "Gun_2";
 			animationSourceBody = "Turret_2";
 			animationSourceGun = "Gun_2";
-			weapons[] = {"M240BC_veh_2"};
 			animationSourceHatch = "";
 			selectionFireAnim = "zasleh_1";
-			proxyIndex = 2;
 			gunnerName = "$STR_POSITION_DOORGUNNER";
+			stabilizedInAxes = "StabilizedInAxesNone";
+			gunBeg = "muzzle_2"; // endpoint of the gun
+			gunEnd = "chamber_2"; // chamber of the gun
+			memoryPointGun = "machinegun_2";
+			memoryPointGunnerOptics = "gunnerview_2";
+			weapons[] = {"M240BC_veh_2"};
+			proxyIndex = 2;
 			commanding = -2;
 			minTurn = -150;
 			maxTurn = -30;
 			initTurn = -80;
-			stabilizedInAxes = "StabilizedInAxesNone";
-			gunBeg = "muzzle_2";	// endpoint of the gun
-			gunEnd = "chamber_2";	// chamber of the gun
 			primaryGunner = 0;
-			memoryPointGun = "machinegun_2";
-			memoryPointGunnerOptics = "gunnerview_2";
 		};
 	};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_MH60S_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_MH60S_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -106,7 +106,7 @@ class DZE_Veh_MH60S_1: DZE_Veh_MH60S {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_MH60S_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_MH60S_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -117,7 +117,7 @@ class DZE_Veh_MH60S_2: DZE_Veh_MH60S_1 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_MH60S_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_MH60S_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -158,6 +158,15 @@ class DZE_Veh_UH60M: UH60M_EP1 {
 		class MainTurret: MainTurret {
 			body = "mainTurret";
 			gun = "mainGun";
+			animationSourceHatch = "";
+			stabilizedInAxes = "StabilizedInAxesNone";
+			gunBeg = "muzzle_1";
+			gunEnd = "chamber_1";
+			gunnerName = "$STR_POSITION_CREWCHIEF";
+			gunnerOpticsModel = "\ca\weapons\optika_empty";
+			gunnerAction = "UH60M_Gunner_EP1";
+			gunnerInAction = "UH60M_Gunner_EP1";
+			gunnerCompartments = "compartment3";
 			minElev = -60;
 			maxElev = 30;
 			initElev = 0;
@@ -165,18 +174,10 @@ class DZE_Veh_UH60M: UH60M_EP1 {
 			maxTurn = 183;
 			initTurn = 0;
 			soundServo[] = {"",0.01,1};
-			animationSourceHatch = "";
-			stabilizedInAxes = "StabilizedInAxesNone";
-			gunBeg = "muzzle_1";
-			gunEnd = "chamber_1";
 			weapons[] = {"M134"};
 
-			gunnerName = "$STR_POSITION_CREWCHIEF";
-			gunnerOpticsModel = "\ca\weapons\optika_empty";
 			gunnerOutOpticsShowCursor = 1;
 			gunnerOpticsShowCursor = 1;
-			gunnerAction = "UH60M_Gunner_EP1";
-			gunnerInAction = "UH60M_Gunner_EP1";
 			commanding = -2;
 			primaryGunner = 1;
 			class ViewOptics {
@@ -190,19 +191,23 @@ class DZE_Veh_UH60M: UH60M_EP1 {
 				minFov = 0.25;
 				maxFov = 1.1;
 			};
-			gunnerCompartments = "compartment3";
 		};
 		class RightDoorGun: RightDoorGun {
 			body = "Turret_2";
 			gun = "Gun_2";
 			animationSourceBody = "Turret_2";
 			animationSourceGun = "Gun_2";
-			weapons[] = {"M134_2"};
-
 			stabilizedInAxes = "StabilizedInAxesNone";
 			selectionFireAnim = "zasleh_1";
-			proxyIndex = 2;
 			gunnerName = "$STR_POSITION_DOORGUNNER";
+			gunBeg = "muzzle_2";
+			gunEnd = "chamber_2";
+			memoryPointGun = "machinegun_1";
+			memoryPointGunnerOptics = "gunnerview_2";
+			gunnerCompartments = "compartment3";
+			weapons[] = {"M134_2"};
+
+			proxyIndex = 2;
 			commanding = -3;
 			minElev = -60;
 			maxElev = 30;
@@ -210,18 +215,13 @@ class DZE_Veh_UH60M: UH60M_EP1 {
 			minTurn = -183;
 			maxTurn = 7;
 			initTurn = 0;
-			gunBeg = "muzzle_2";
-			gunEnd = "chamber_2";
 			primaryGunner = 0;
-			memoryPointGun = "machinegun_1";
-			memoryPointGunnerOptics = "gunnerview_2";
-			gunnerCompartments = "compartment3";
 		};
 	};
 	enableManualFire = 0;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_UH60M_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_UH60M_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -232,7 +232,7 @@ class DZE_Veh_UH60M_1: DZE_Veh_UH60M {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_UH60M_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_UH60M_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -243,7 +243,7 @@ class DZE_Veh_UH60M_2: DZE_Veh_UH60M_1 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_UH60M_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_UH60M_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 
@@ -271,7 +271,7 @@ class DZE_Veh_HH60M_MedEvac: UH60M_MEV_EP1 {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_HH60M_MedEvac_1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"DZE_Veh_HH60M_MedEvac_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -282,7 +282,7 @@ class DZE_Veh_HH60M_MedEvac_1: DZE_Veh_HH60M_MedEvac {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_HH60M_MedEvac_2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliLRK[] = {"DZE_Veh_HH60M_MedEvac_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 
@@ -293,7 +293,7 @@ class DZE_Veh_HH60M_MedEvac_2: DZE_Veh_HH60M_MedEvac_1 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_HH60M_MedEvac_3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		ItemHeliTNK[] = {"DZE_Veh_HH60M_MedEvac_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
 	};
 };
 

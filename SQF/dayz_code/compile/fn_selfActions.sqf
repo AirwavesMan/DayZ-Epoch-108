@@ -261,8 +261,8 @@ if (_canUseTargetActions) then {
 	local _hasFuel5 = "ItemFuelcan" in _magazinesPlayer;
 	local _hasEmptyFuelCan = (("ItemJerrycanEmpty" in _magazinesPlayer) || ("ItemFuelcanEmpty" in _magazinesPlayer) || ("ItemFuelBarrelEmpty" in _magazinesPlayer));
 	local _itemsPlayer = items player;
-	local _hasToolbox = "ItemToolbox" in _itemsPlayer;
-	local _hasKeymakerskit = "ItemKeyKit" in _itemsPlayer;
+	local _hasToolbox = "DZE_Tool_Toolbox" in _itemsPlayer;
+	local _hasKeymakerskit = "DZE_Tool_KeyKit" in _itemsPlayer;
 	local _isAlive = alive _cursorTarget;
 	local _targetConfig = configFile >> 'CfgVehicles' >> _typeOfCursorTarget;
 	local _text = getText (_targetConfig >> 'displayName');
@@ -941,7 +941,7 @@ if (_canUseTargetActions) then {
 		};
 
 		if (DZE_Bury_Body) then {
-			local _hasShovel = ("ItemEtool" in _itemsPlayer || "ItemShovel" in _itemsPlayer);
+			local _hasShovel = ("DZE_Tool_Etool" in _itemsPlayer || "DZE_Tool_Shovel" in _itemsPlayer);
 			if (_hasShovel && !(_cursorTarget getVariable ["bodyButchered",false])) then {
 				if (s_player_bury_human < 0) then {
 					s_player_bury_human = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_BA_BURY"],"\z\addons\dayz_code\actions\buryActions.sqf",[_cursorTarget,"bury"],0,false,true];
