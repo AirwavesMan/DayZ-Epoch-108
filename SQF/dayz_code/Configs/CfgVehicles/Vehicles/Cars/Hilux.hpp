@@ -12,8 +12,8 @@ class DZE_Veh_Hilux_Tan: hilux1_civil_1_open {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Hilux_Tan_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Hilux_Tan_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -36,8 +36,8 @@ class DZE_Veh_Hilux_Tan_1: DZE_Veh_Hilux_Tan {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Hilux_Tan_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Hilux_Tan_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -79,8 +79,8 @@ class DZE_Veh_Hilux_Tan_2: DZE_Veh_Hilux_Tan_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Hilux_Tan_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Hilux_Tan_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -91,8 +91,8 @@ class DZE_Veh_Hilux_Tan_3: DZE_Veh_Hilux_Tan_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Hilux_Tan_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Hilux_Tan_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -101,7 +101,7 @@ class DZE_Veh_Hilux_Tan_4: DZE_Veh_Hilux_Tan_3 {
 	fuelCapacity = 210; // car 100
 
 	class Upgrades {
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -119,8 +119,8 @@ class DZE_Veh_Hilux_Covered_Red: hilux1_civil_2_covered {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Hilux_Covered_Red_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Hilux_Covered_Red_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_TK",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -143,8 +143,8 @@ class DZE_Veh_Hilux_Covered_Red_1: DZE_Veh_Hilux_Covered_Red {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Hilux_Covered_Red_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Hilux_Covered_Red_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_TK_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -186,8 +186,8 @@ class DZE_Veh_Hilux_Covered_Red_2: DZE_Veh_Hilux_Covered_Red_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Hilux_Covered_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Hilux_Covered_Red_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_TK_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -198,8 +198,8 @@ class DZE_Veh_Hilux_Covered_Red_3: DZE_Veh_Hilux_Covered_Red_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Hilux_Covered_Red_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Hilux_Covered_Red_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_TK_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -208,7 +208,7 @@ class DZE_Veh_Hilux_Covered_Red_4: DZE_Veh_Hilux_Covered_Red_3 {
 	fuelCapacity = 210; // car 100
 
 	class Upgrades {
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_TK_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -226,8 +226,8 @@ class DZE_Veh_Hilux_White: hilux1_civil_3_open {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Hilux_White_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Hilux_White_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_INS",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -250,8 +250,8 @@ class DZE_Veh_Hilux_White_1: DZE_Veh_Hilux_White {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Hilux_White_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Hilux_White_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_INS_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -293,8 +293,8 @@ class DZE_Veh_Hilux_White_2: DZE_Veh_Hilux_White_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Hilux_White_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Hilux_White_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_INS_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -305,8 +305,8 @@ class DZE_Veh_Hilux_White_3: DZE_Veh_Hilux_White_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Hilux_White_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Hilux_White_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_INS_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -315,6 +315,6 @@ class DZE_Veh_Hilux_White_4: DZE_Veh_Hilux_White_3 {
 	fuelCapacity = 210; // car 100
 
 	class Upgrades {
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_INS_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };

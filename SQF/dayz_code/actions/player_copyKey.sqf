@@ -23,7 +23,7 @@ if (_isNear == 0) exitWith {dayz_actionInProgress = false; localize "str_epoch_p
 call gear_ui_init;
 
 // require one tin bar per key
-_hasTinBar = 	"ItemTinBar" in magazines player;
+_hasTinBar = 	'DZE_Item_Cur_TinBar' in magazines player;
 if (!_hasTinBar) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_59" call DZE_fnc_rollingMessages;};
 
 [player,(getPosATL player),20,"repair"] spawn fnc_alertZombies;
@@ -31,7 +31,7 @@ if (!_hasTinBar) exitWith {dayz_actionInProgress = false; localize "str_epoch_pl
 _finished = ["Medic",1] call fn_loopAction;
 
 if (_finished) then {
-	_num_removed = ([player,"ItemTinBar"] call BIS_fnc_invRemove);
+	_num_removed = ([player,'DZE_Item_Cur_TinBar'] call BIS_fnc_invRemove);
 
 	if(_num_removed == 1) then {
 		_create = _item;

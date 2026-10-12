@@ -4,15 +4,15 @@ Industrial[] =
 	{Loot_GROUP,		15,		ToolsBuilding},
 	{Loot_VEHICLE,		8,		WeaponHolder_ItemCrowbar},
 	{Loot_VEHICLE,		3,		WeaponHolder_ItemGenerator},
-	
+
 	//Items
-	{Loot_MAGAZINE,		2,		MortarBucket},
-	{Loot_MAGAZINE,		6,		CinderBlocks},
-	{Loot_MAGAZINE,		3,		CementBag},
-	{Loot_MAGAZINE,		2,		ItemConcreteBlock},
-	{Loot_MAGAZINE,		3,		ItemRSJ},
+	{Loot_MAGAZINE,		2,		DZE_Item_Conc_MortarBucket},
+	{Loot_MAGAZINE,		6,		DZE_Item_Conc_CinderBlocks},
+	{Loot_MAGAZINE,		3,		DZE_Item_Conc_CementBag},
+	{Loot_MAGAZINE,		2,		DZE_Item_Conc_ConcreteBlock},
+	{Loot_MAGAZINE,		3,		DZE_Item_Metal_Steel_Beam},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Fuel_Pump},
-	
+
 	//Other
 	{Loot_GROUP,		15,		Parts},
 	{Loot_GROUP,		6,		VanillaConstruction},

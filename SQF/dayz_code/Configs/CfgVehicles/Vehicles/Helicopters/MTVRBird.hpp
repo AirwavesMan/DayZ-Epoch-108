@@ -16,7 +16,6 @@ class DZE_MTVRBird_Base: Helicopter {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_AIR
-
 	accuracy = 0.3;
 	armor = 35;
 	damageResistance = 0.01039;
@@ -43,6 +42,7 @@ class DZE_MTVRBird_Base: Helicopter {
 	occludeSoundsWhenIn = db-5;
 	obstructSoundsWhenIn = db-10;
 	cargoIsCoDriver[] = {0};
+
 	class turrets {};
 	irScanRangeMin = 500;
 	irScanRangeMax = 1000;
@@ -137,7 +137,7 @@ class DZE_Veh_MTVRBird: DZE_MTVRBird_Base {
 	displayName = "$STR_VEH_NAME_MTVR_BIRD";
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_MTVRBird_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliAVE[] = {"DZE_Veh_MTVRBird_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliAVE",1},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -148,7 +148,7 @@ class DZE_Veh_MTVRBird_1: DZE_Veh_MTVRBird {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_MTVRBird_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliLRK[] = {"DZE_Veh_MTVRBird_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -159,7 +159,7 @@ class DZE_Veh_MTVRBird_2: DZE_Veh_MTVRBird_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_MTVRBird_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		DZE_Item_Upgrade_HeliTNK[] = {"DZE_Veh_MTVRBird_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliTNK",1},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Barrel_Fuel",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",1},{"DZE_Item_Elec_Floppywire",1}}};
 	};
 };
 

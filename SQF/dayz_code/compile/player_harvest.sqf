@@ -34,7 +34,7 @@ if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {
 					DZE_TEMP_treedmg = 1;
 					DZE_WoodCounter = nil;
 				};
-				_itemOut = [["PartWoodPile","PartWoodPile","ItemLog"] call BIS_fnc_selectRandom,"PartWoodLumber"] select (_ammo == "Chainsaw_Swing_Ammo");
+				_itemOut = [['DZE_Item_Wood_Pile','DZE_Item_Wood_Pile','DZE_Item_Wood_Log'] call BIS_fnc_selectRandom,'DZE_Item_Wood_Lumber'] select (_ammo == "Chainsaw_Swing_Ammo");
 				[_itemOut,1,1] call fn_dropItem;
 
 				[player,60,false,getPosATL player] spawn player_alertZombies;

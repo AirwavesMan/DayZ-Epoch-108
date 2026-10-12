@@ -1,40 +1,30 @@
-class ItemGoldBar  
-{
+class DZE_Item_Cur_GoldBar {
 	weight = 0.01;
 };
-class ItemGoldBar2oz
-{
+class DZE_Item_Cur_GoldBar2oz {
 	weight = 0.02;
 };
-class ItemGoldBar3oz
-{
+class DZE_Item_Cur_GoldBar3oz {
 	weight = 0.03;
 };
-class ItemGoldBar4oz
-{
+class DZE_Item_Cur_GoldBar4oz {
 	weight = 0.04;
 };
-class ItemGoldBar5oz
-{
+class DZE_Item_Cur_GoldBar5oz {
 	weight = 0.05;
 };
-class ItemGoldBar6oz
-{
+class DZE_Item_Cur_GoldBar6oz {
 	weight = 0.06;
 };
-class ItemGoldBar7oz
-{
+class DZE_Item_Cur_GoldBar7oz {
 	weight = 0.07;
 };
-class ItemGoldBar8oz
-{
+class DZE_Item_Cur_GoldBar8oz {
 	weight = 0.08;
 };
-class ItemGoldBar9oz
-{
+class DZE_Item_Cur_GoldBar9oz {
 	weight = 0.09;
 };
-class ItemGoldBar10oz
-{
+class DZE_Item_Cur_GoldBar10oz {
 	weight = 0.1;
 };

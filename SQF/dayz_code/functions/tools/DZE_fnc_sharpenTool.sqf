@@ -33,7 +33,7 @@ local _output = _this select 1; // Item to be returned.
 call gear_ui_init;
 closeDialog 1;
 
-local _waterBottles = ['ItemWaterBottle','ItemWaterBottleInfected','ItemWaterBottleSafe','ItemWaterBottleBoiled','ItemWaterBottleHerbal','ItemPlasticWaterBottle','ItemPlasticWaterBottleInfected','ItemPlasticWaterBottleSafe','ItemPlasticWaterBottleBoiled','ItemPlasticWaterBottleHerbal'];
+local _waterBottles = ['DZE_Item_Waterbottle','DZE_Item_Waterbottle_Infected','DZE_Item_Waterbottle_Safe','DZE_Item_Waterbottle_Boiled','DZE_Item_Waterbottle_Herbal','DZE_Item_Waterbottle_PET','DZE_Item_Waterbottle_PET_Infected','DZE_Item_Waterbottle_PET_Safe','DZE_Item_Waterbottle_PET_Boiled','DZE_Item_Waterbottle_PET_Herbal'];
 local _magazines = magazines player;
 local _waterUsed = '';
 {
@@ -46,7 +46,7 @@ if (_waterUsed == '') exitWith {
 	dayz_actionInProgress = false;
 };
 
-local _brick = 'equip_brick';
+local _brick = 'DZE_Item_Conc_Brick';
 // A sharpening brick is required.
 if !(_brick in _magazines) exitWith {
 	local _brickDisplayName = getText (configFile >> 'CfgMagazines' >> _brick >> 'displayName');

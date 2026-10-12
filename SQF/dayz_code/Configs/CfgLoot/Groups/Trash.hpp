@@ -45,5 +45,5 @@ Trash[] =
 	{Loot_MAGAZINE,		3,		DZE_Item_Trash_Soda},
 	{Loot_MAGAZINE,		1,		DZE_Item_Trash_Toiletpaper},
 	{Loot_MAGAZINE,		1,		DZE_Item_Trash_Razor},
-	{Loot_MAGAZINE,		1,		ItemCards}
+	{Loot_MAGAZINE,		1,		DZE_Item_Misc_Cards}
 };

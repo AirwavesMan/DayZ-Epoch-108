@@ -110,7 +110,7 @@ if (_inVehicle) then {
 					s_player_lockUnlockInside set [count s_player_lockUnlockInside,_unlock];
 					s_player_lockUnlockInside_ctrl = 1;
 				} else {
-					if ('ItemHotwireKit' in (magazines player)) then {
+					if ('DZE_Item_Misc_HotwireKit' in (magazines player)) then {
 						_unlock = DZE_myVehicle addAction [format[localize "STR_EPOCH_ACTIONS_HOTWIRE",_text], "\z\addons\dayz_code\actions\hotwire_veh.sqf",DZE_myVehicle, 2, true, true];
 					} else {
 						_unlock = DZE_myVehicle addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_VEHLOCKED"], "",DZE_myVehicle, 2, true, true];
@@ -256,10 +256,10 @@ if (_canUseTargetActions) then {
 	local _isLocked = locked _cursorTarget;
 	local _isFuel = false;
 	local _magazinesPlayer = magazines player;
-	local _hasBarrel = "ItemFuelBarrel" in _magazinesPlayer;
-	local _hasFuel20 = "ItemJerrycan" in _magazinesPlayer;
-	local _hasFuel5 = "ItemFuelcan" in _magazinesPlayer;
-	local _hasEmptyFuelCan = (("ItemJerrycanEmpty" in _magazinesPlayer) || ("ItemFuelcanEmpty" in _magazinesPlayer) || ("ItemFuelBarrelEmpty" in _magazinesPlayer));
+	local _hasBarrel = 'DZE_Item_Barrel_Fuel' in _magazinesPlayer;
+	local _hasFuel20 = 'DZE_Item_JerryCan_Fuel' in _magazinesPlayer;
+	local _hasFuel5 = 'DZE_Item_Can_Fuel' in _magazinesPlayer;
+	local _hasEmptyFuelCan = (('DZE_Item_JerryCan_Empty' in _magazinesPlayer) || ('DZE_Item_Can_Empty' in _magazinesPlayer) || ('DZE_Item_Barrel_Empty' in _magazinesPlayer));
 	local _itemsPlayer = items player;
 	local _hasToolbox = "DZE_Tool_Toolbox" in _itemsPlayer;
 	local _hasKeymakerskit = "DZE_Tool_KeyKit" in _itemsPlayer;
@@ -386,7 +386,7 @@ if (_canUseTargetActions) then {
 		//Allow player to fill vehicle 210L
 		if (_hasBarrel && _canRefuel) then {
 			if (s_player_fillfuel210 < 0) then {
-				s_player_fillfuel210 = player addAction [format[localize "str_actions_medical_10",_text,"210"], "\z\addons\dayz_code\actions\refuel.sqf",["ItemFuelBarrel",_cursorTarget], 0, true, true];
+				s_player_fillfuel210 = player addAction [format[localize "str_actions_medical_10",_text,"210"], "\z\addons\dayz_code\actions\refuel.sqf",['DZE_Item_Barrel_Fuel',_cursorTarget], 0, true, true];
 			};
 		} else {
 			DZE_REMOVE_ACTION(player,s_player_fillfuel210);
@@ -395,7 +395,7 @@ if (_canUseTargetActions) then {
 		//Allow player to fill vehicle 20L
 		if (_hasFuel20 && _canRefuel) then {
 			if (s_player_fillfuel20 < 0) then {
-				s_player_fillfuel20 = player addAction [format[localize "str_actions_medical_10",_text,"20"], "\z\addons\dayz_code\actions\refuel.sqf",["ItemJerrycan",_cursorTarget], 0, true, true];
+				s_player_fillfuel20 = player addAction [format[localize "str_actions_medical_10",_text,"20"], "\z\addons\dayz_code\actions\refuel.sqf",['DZE_Item_JerryCan_Fuel',_cursorTarget], 0, true, true];
 			};
 		} else {
 			DZE_REMOVE_ACTION(player,s_player_fillfuel20);
@@ -404,7 +404,7 @@ if (_canUseTargetActions) then {
 		//Allow player to fill vehicle 5L
 		if (_hasFuel5 && _canRefuel) then {
 			if (s_player_fillfuel5 < 0) then {
-				s_player_fillfuel5 = player addAction [format[localize "str_actions_medical_10",_text,"5"], "\z\addons\dayz_code\actions\refuel.sqf",["ItemFuelcan",_cursorTarget], 0, true, true];
+				s_player_fillfuel5 = player addAction [format[localize "str_actions_medical_10",_text,"5"], "\z\addons\dayz_code\actions\refuel.sqf",['DZE_Item_Can_Fuel',_cursorTarget], 0, true, true];
 			};
 		} else {
 			DZE_REMOVE_ACTION(player,s_player_fillfuel5);
@@ -592,7 +592,7 @@ if (_canUseTargetActions) then {
 
 /*
 	//Carbomb
-	local _hasCarBomb = "ItemCarBomb" in _magazinesPlayer;
+	local _hasCarBomb = 'DZE_Item_Expl_CarBomb' in _magazinesPlayer;
 	if (((_cursorTarget isKindOf "Car") || (_cursorTarget isKindOf "Air") || (_cursorTarget isKindOf "Motorcycle")) && _hasCarBomb) then {
 		if (s_player_attach_bomb < 0) then {
 			s_player_attach_bomb = player addAction [localize "str_bombAttach", "\z\addons\dayz_code\actions\player_attach_bomb.sqf",_cursorTarget, 3, true, true];
@@ -701,7 +701,7 @@ if (_canUseTargetActions) then {
 					s_player_lockunlock set [count s_player_lockunlock,_unlock];
 					s_player_lockUnlock_crtl = 1;
 				} else {
-					if ('ItemHotwireKit' in _magazinesPlayer) then {
+					if ('DZE_Item_Misc_HotwireKit' in _magazinesPlayer) then {
 						_unlock = player addAction [format[localize "STR_EPOCH_ACTIONS_HOTWIRE",_text], "\z\addons\dayz_code\actions\hotwire_veh.sqf",_cursorTarget, 2, true, true];
 					} else {
 						_unlock = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_VEHLOCKED"], "",_cursorTarget, 2, false, true];
@@ -1055,7 +1055,7 @@ if (_canUseTargetActions) then {
 				local _itemName2 = '';
 				{
 					_itemName2 = getText (configFile >> 'CfgMagazines' >> (_x select 1) >> 'displayName');
-					if (_x select 1 in ["ItemDogTagBandit","ItemDogTagHero"]) then {
+					if (_x select 1 in ['DZE_Item_DogTag_Bandit','DZE_Item_DogTag_Hero']) then {
 						_buy = player addAction [format[localize "STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS",(_x select 3),_itemName2,(_x select 4),localize "str_actions_stats_hm"], "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",[(_x select 0),(_x select 1),(_x select 2),(_x select 3),(_x select 4)],1, true, true];
 					} else {
 						_itemName1 = getText (configFile >> 'CfgMagazines' >> (_x select 0) >> 'displayName');
@@ -1085,7 +1085,7 @@ if (_canUseTargetActions) then {
 			DZE_REMOVE_ACTION(player,s_player_tamedog);
 		};
 		if (_isDog && _isAlive && _isOwner) then {
-			local _hasbottleitem = ({_x in ["ItemWaterBottle","ItemWaterBottleInfected","ItemWaterBottleSafe","ItemWaterBottleBoiled","ItemPlasticWaterBottle","ItemPlasticWaterBottleInfected","ItemPlasticWaterBottleSafe","ItemPlasticWaterBottleBoiled"]} count _magazinesPlayer) > 0;
+			local _hasbottleitem = ({_x in ['DZE_Item_Waterbottle','DZE_Item_Waterbottle_Infected','DZE_Item_Waterbottle_Safe','DZE_Item_Waterbottle_Boiled','DZE_Item_Waterbottle_PET','DZE_Item_Waterbottle_PET_Infected','DZE_Item_Waterbottle_PET_Safe','DZE_Item_Waterbottle_PET_Boiled']} count _magazinesPlayer) > 0;
 
 			if (_hasRawMeat) then {
 				if (s_player_feeddog < 0) then {

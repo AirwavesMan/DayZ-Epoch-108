@@ -1,4 +1,4 @@
-class ItemCanvas: CA_Magazine {
+class DZE_Item_Tex_Canvas: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_CANVAS";
 	descriptionShort = "$STR_EPOCH_CANVAS_DESC";
@@ -6,15 +6,15 @@ class ItemCanvas: CA_Magazine {
 	picture = "\z\addons\dayz_epoch\pictures\equip_canvas_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_194";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"ItemBurlap",1}};
-			input[] = {{"ItemCanvas",2}};
+			output[] = {{"DZE_Item_Tex_Burlap",1}};
+			input[] = {{"DZE_Item_Tex_Canvas",2}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_CRAFT_SMALL_STASH";
@@ -22,20 +22,20 @@ class ItemCanvas: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Kit_StashSmall",1}};
-			input[] = {{"ItemCanvas",1},{"PartWoodPile",2}};
-		};		
+			input[] = {{"DZE_Item_Tex_Canvas",1},{"DZE_Item_Wood_Pile",2}};
+		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_193";
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Kit_Sun_Shade",1}};
-			input[] = {{"ItemCanvas",1},{"PartWoodLumber",4}};
+			input[] = {{"DZE_Item_Tex_Canvas",1},{"DZE_Item_Wood_Lumber",4}};
 		};
 	};
 };
 
-class ItemBurlap: CA_Magazine {
+class DZE_Item_Tex_Burlap: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BURLAP";
 	descriptionShort = "$STR_EPOCH_BURLAP_DESC";
@@ -43,7 +43,7 @@ class ItemBurlap: CA_Magazine {
 	picture = "\z\addons\dayz_epoch\pictures\equip_burlap_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_195";
@@ -51,12 +51,12 @@ class ItemBurlap: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Sandbag",1}};
-			input[] = {{"ItemBurlap",3}};
+			input[] = {{"DZE_Item_Tex_Burlap",3}};
 		};
 	};
 };
 
-class equip_rag : CA_Magazine {
+class DZE_Item_Tex_Rag: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_rag";
 	descriptionShort = "$STR_ITEM_DESC_equip_rag";
@@ -64,7 +64,7 @@ class equip_rag : CA_Magazine {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_rag_clean_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_269";
@@ -73,12 +73,12 @@ class equip_rag : CA_Magazine {
 			requiretools[] = {"DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Medi_Bandage",2}};
 			outputweapons[] = {};
-			input[] = {{"DZE_Item_Medi_Gauze",2},{"equip_rag",1},{"equip_string",1}};
+			input[] = {{"DZE_Item_Medi_Gauze",2},{"DZE_Item_Tex_Rag",1},{"DZE_Item_Tex_String",1}};
 		};
-	};	
+	};
 };
 
-class equip_string : CA_Magazine {
+class DZE_Item_Tex_String: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_string";
 	descriptionShort = "$STR_ITEM_DESC_equip_string";
@@ -86,7 +86,7 @@ class equip_string : CA_Magazine {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_string_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_269";
@@ -95,7 +95,7 @@ class equip_string : CA_Magazine {
 			requiretools[] = {"DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Medi_Bandage",2}};
 			outputweapons[] = {};
-			input[] = {{"DZE_Item_Medi_Gauze",2},{"equip_rag",1},{"equip_string",1}};
+			input[] = {{"DZE_Item_Medi_Gauze",2},{"DZE_Item_Tex_Rag",1},{"DZE_Item_Tex_String",1}};
 		};
 		class Crafting1 {
 			text = "$STR_ITEM_NAME_TRIPWIRE_CANS";
@@ -103,36 +103,36 @@ class equip_string : CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Trap_TripwireCans",1}};
-			input[] = {{"equip_string",1},{"DZE_Item_Trash_TinCan",1},{"PartWoodPile",1},{"equip_duct_tape",1}};
-		};	
+			input[] = {{"DZE_Item_Tex_String",1},{"DZE_Item_Trash_TinCan",1},{"DZE_Item_Wood_Pile",1},{"DZE_Item_Plastic_Duct_Tape",1}};
+		};
 		class Crafting2 {
 			text = "$STR_ITEM_NAME_TRIPWIRE_FLARE";
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Trap_TripwireFlare",1}};
-			input[] = {{"equip_string",1},{"HandRoadFlare",1},{"PartWoodPile",1},{"equip_duct_tape",1}};
-		};	
+			input[] = {{"DZE_Item_Tex_String",1},{"DZE_Item_Flares_RoadFlare",1},{"DZE_Item_Wood_Pile",1},{"DZE_Item_Plastic_Duct_Tape",1}};
+		};
 		class Crafting3 {
 			text = "$STR_ITEM_NAME_TRIPWIRE_GRENADE";
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Trap_TripwireGrenade",1}};
-			input[] = {{"equip_string",1},{"HandGrenade_West",1},{"PartWoodPile",1},{"equip_duct_tape",1}};
-		};	
+			input[] = {{"DZE_Item_Tex_String",1},{"HandGrenade_West",1},{"DZE_Item_Wood_Pile",1},{"DZE_Item_Plastic_Duct_Tape",1}};
+		};
 		class Crafting4 {
 			text = "$STR_ITEM_NAME_TRIPWIRE_SMOKE";
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Trap_TripwireSmoke",1}};
-			input[] = {{"equip_string",1},{"SmokeShell",1},{"PartWoodPile",1},{"equip_duct_tape",1}};
-		};		
-	};	
+			input[] = {{"DZE_Item_Tex_String",1},{"SmokeShell",1},{"DZE_Item_Wood_Pile",1},{"DZE_Item_Plastic_Duct_Tape",1}};
+		};
+	};
 };
 
-class equip_rope : CA_Magazine {
+class DZE_Item_Tex_Rope: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_rope";
 	descriptionShort = "$STR_ITEM_DESC_equip_rope";
@@ -140,15 +140,15 @@ class equip_rope : CA_Magazine {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_rope_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_BLD_craft_equip_rope"; //"String"
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {}; 
+			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
-			output[] = {{"equip_string",2}};
-			input[] = {{"equip_rope",1}};
+			output[] = {{"DZE_Item_Tex_String",2}};
+			input[] = {{"DZE_Item_Tex_Rope",1}};
 		};
 	};
 };

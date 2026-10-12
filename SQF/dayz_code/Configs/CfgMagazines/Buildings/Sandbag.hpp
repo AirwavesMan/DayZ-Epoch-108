@@ -6,7 +6,7 @@ class DZE_Item_Kit_Sandbag: CA_Magazine {
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Build {
 			text = "$STR_ACTION_BUILD";
@@ -31,7 +31,7 @@ class DZE_Item_Kit_Sandbag: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Sandbag_Nest",1}};
-			input[] = {{"DZE_Item_Kit_Sandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}};
+			input[] = {{"DZE_Item_Kit_Sandbag",4},{"DZE_Item_Wood_Plywood",2},{"DZE_Item_Wood_Lumber",4}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_298";
@@ -47,7 +47,7 @@ class DZE_Item_Kit_Sandbag: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_SandbagHeavy",1}};
-			input[] = {{"DZE_Item_Kit_Sandbag",2},{"PartWoodPile",1}};
+			input[] = {{"DZE_Item_Kit_Sandbag",2},{"DZE_Item_Wood_Pile",1}};
 		};
 	};
 };
@@ -60,7 +60,7 @@ class DZE_Item_Kit_BagFenceRound: CA_Magazine {
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Build {
 			text = "$STR_EPOCH_PLAYER_299";

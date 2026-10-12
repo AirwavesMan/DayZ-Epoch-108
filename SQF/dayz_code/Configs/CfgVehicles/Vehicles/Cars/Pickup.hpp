@@ -13,8 +13,8 @@ class DZE_Veh_Datsun_Blue: datsun1_civil_1_open {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Datsun_Blue_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Datsun_Blue_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -37,8 +37,8 @@ class DZE_Veh_Datsun_Blue_1: DZE_Veh_Datsun_Blue {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Datsun_Blue_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Datsun_Blue_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -80,8 +80,8 @@ class DZE_Veh_Datsun_Blue_2: DZE_Veh_Datsun_Blue_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Datsun_Blue_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Datsun_Blue_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -92,8 +92,8 @@ class DZE_Veh_Datsun_Blue_3: DZE_Veh_Datsun_Blue_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Datsun_Blue_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Datsun_Blue_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -102,7 +102,7 @@ class DZE_Veh_Datsun_Blue_4: DZE_Veh_Datsun_Blue_3 {
 	fuelCapacity = 210; // car 100
 
 	class Upgrades {
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -117,8 +117,8 @@ class DZE_Veh_Datsun_Green: DZE_Veh_Datsun_Blue {
 	class HitPoints;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Datsun_Green_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Datsun_Green_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -141,8 +141,8 @@ class DZE_Veh_Datsun_Green_1: DZE_Veh_Datsun_Green {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Datsun_Green_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Datsun_Green_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -184,8 +184,8 @@ class DZE_Veh_Datsun_Green_2: DZE_Veh_Datsun_Green_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Datsun_Green_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Datsun_Green_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -196,8 +196,8 @@ class DZE_Veh_Datsun_Green_3: DZE_Veh_Datsun_Green_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Datsun_Green_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Datsun_Green_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -206,7 +206,7 @@ class DZE_Veh_Datsun_Green_4: DZE_Veh_Datsun_Green_3 {
 	fuelCapacity = 210; // car 100
 
 	class Upgrades {
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_GUE_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_GUE_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -225,8 +225,8 @@ class DZE_Veh_Datsun_Covered_Tan: datsun1_civil_2_covered {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Datsun_Covered_Tan_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Datsun_Covered_Tan_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_TK",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -249,8 +249,8 @@ class DZE_Veh_Datsun_Covered_Tan_1: DZE_Veh_Datsun_Covered_Tan {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Datsun_Covered_Tan_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Datsun_Covered_Tan_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_TK_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -292,8 +292,8 @@ class DZE_Veh_Datsun_Covered_Tan_2: DZE_Veh_Datsun_Covered_Tan_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Datsun_Covered_Tan_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Datsun_Covered_Tan_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_TK_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -304,8 +304,8 @@ class DZE_Veh_Datsun_Covered_Tan_3: DZE_Veh_Datsun_Covered_Tan_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Datsun_Covered_Tan_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Datsun_Covered_Tan_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_TK_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -314,7 +314,7 @@ class DZE_Veh_Datsun_Covered_Tan_4: DZE_Veh_Datsun_Covered_Tan_3 {
 	fuelCapacity = 210; // car 100
 
 	class Upgrades {
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_TK_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_TK_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -329,7 +329,7 @@ class DZE_Veh_Datsun_Covered_Red: DZE_Veh_Datsun_Covered_Tan {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Datsun_Covered_Red_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Datsun_Covered_Red_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -353,7 +353,7 @@ class DZE_Veh_Datsun_Covered_Red_1: DZE_Veh_Datsun_Covered_Red {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Datsun_Covered_Red_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Datsun_Covered_Red_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -395,7 +395,7 @@ class DZE_Veh_Datsun_Covered_Red_2: DZE_Veh_Datsun_Covered_Red_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Datsun_Covered_Red_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Datsun_Covered_Red_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -406,7 +406,7 @@ class DZE_Veh_Datsun_Covered_Red_3: DZE_Veh_Datsun_Covered_Red_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Datsun_Covered_Red_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Datsun_Covered_Red_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -432,8 +432,8 @@ class DZE_Veh_Datsun_Grey: datsun1_civil_3_open {
 	supplyRadius = 1.5;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Datsun_Grey_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Datsun_Grey_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_INS",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -456,8 +456,8 @@ class DZE_Veh_Datsun_Grey_1: DZE_Veh_Datsun_Grey {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Datsun_Grey_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Datsun_Grey_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_INS_1",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -499,8 +499,8 @@ class DZE_Veh_Datsun_Grey_2: DZE_Veh_Datsun_Grey_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Datsun_Grey_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Datsun_Grey_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_INS_2",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -511,8 +511,8 @@ class DZE_Veh_Datsun_Grey_3: DZE_Veh_Datsun_Grey_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Datsun_Grey_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Datsun_Grey_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_INS_3",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -521,7 +521,7 @@ class DZE_Veh_Datsun_Grey_4: DZE_Veh_Datsun_Grey_3 {
 	fuelCapacity = 210; // car 100
 
 	class Upgrades {
-		ItemARM[] = {"DZE_Veh_Pickup_PKT_INS_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"ItemARM",1},{"PartGeneric",2},{"ItemPole",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarARM[] = {"DZE_Veh_Pickup_PKT_INS_4",{"DZE_Tool_Toolbox"},{"DZE_Wep_PKM"},{{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -533,8 +533,8 @@ class DZE_Veh_Pickup_PKT_GUE: Pickup_PK_GUE {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
 	terrainCoef = 2.5;
+
 
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
@@ -553,7 +553,7 @@ class DZE_Veh_Pickup_PKT_GUE: Pickup_PK_GUE {
 	class HitGlass4; // External class reference
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Pickup_PKT_GUE_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Pickup_PKT_GUE_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -564,7 +564,7 @@ class DZE_Veh_Pickup_PKT_GUE_1: DZE_Veh_Pickup_PKT_GUE {
 	terrainCoef = 1.8;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Pickup_PKT_GUE_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Pickup_PKT_GUE_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -606,7 +606,7 @@ class DZE_Veh_Pickup_PKT_GUE_2: DZE_Veh_Pickup_PKT_GUE_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Pickup_PKT_GUE_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Pickup_PKT_GUE_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -617,7 +617,7 @@ class DZE_Veh_Pickup_PKT_GUE_3: DZE_Veh_Pickup_PKT_GUE_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Pickup_PKT_GUE_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Pickup_PKT_GUE_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -634,8 +634,8 @@ class DZE_Veh_Pickup_PKT_TK: Pickup_PK_TK_GUE_EP1 {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
 	terrainCoef = 2.5;
+
 
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
@@ -654,7 +654,7 @@ class DZE_Veh_Pickup_PKT_TK: Pickup_PK_TK_GUE_EP1 {
 	class HitGlass4; // External class reference
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Pickup_PKT_TK_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Pickup_PKT_TK_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -665,7 +665,7 @@ class DZE_Veh_Pickup_PKT_TK_1: DZE_Veh_Pickup_PKT_TK {
 	terrainCoef = 1.8;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Pickup_PKT_TK_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Pickup_PKT_TK_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -707,7 +707,7 @@ class DZE_Veh_Pickup_PKT_TK_2: DZE_Veh_Pickup_PKT_TK_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Pickup_PKT_TK_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Pickup_PKT_TK_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -718,7 +718,7 @@ class DZE_Veh_Pickup_PKT_TK_3: DZE_Veh_Pickup_PKT_TK_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Pickup_PKT_TK_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Pickup_PKT_TK_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -735,8 +735,8 @@ class DZE_Veh_Pickup_PKT_INS: Pickup_PK_INS {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
 	terrainCoef = 2.5;
+
 
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
@@ -755,7 +755,7 @@ class DZE_Veh_Pickup_PKT_INS: Pickup_PK_INS {
 	class HitGlass4; // External class reference
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Pickup_PKT_INS_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Pickup_PKT_INS_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -766,7 +766,7 @@ class DZE_Veh_Pickup_PKT_INS_1: DZE_Veh_Pickup_PKT_INS {
 	terrainCoef = 1.8;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Pickup_PKT_INS_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Pickup_PKT_INS_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -808,7 +808,7 @@ class DZE_Veh_Pickup_PKT_INS_2: DZE_Veh_Pickup_PKT_INS_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Pickup_PKT_INS_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Pickup_PKT_INS_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -819,7 +819,7 @@ class DZE_Veh_Pickup_PKT_INS_3: DZE_Veh_Pickup_PKT_INS_2 {
     transportMaxBackpacks = 4; // car 2
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Pickup_PKT_INS_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Pickup_PKT_INS_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 

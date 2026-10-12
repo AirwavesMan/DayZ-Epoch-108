@@ -2,25 +2,25 @@ Supermarket[] =
 {
 	//Tools
 	{Loot_GROUP,		5,		ToolsSurvival},
-	
+
 	//Pistols
 	{Loot_GROUP,		5,		pistols},
-	
+
 	//Rifles
 	{Loot_GROUP,		1,		shotgunsingleshot},
-	
+
 	//Backpacks
 	{Loot_GROUP,		5,		backpacks},
-	
+
 	//Items
-	{Loot_MAGAZINE,		1,		ItemMixOil},
-	{Loot_MAGAZINE,		1,		PartPlywoodPack},
+	{Loot_MAGAZINE,		1,		DZE_Item_ChainGas_MixOil},
+	{Loot_MAGAZINE,		1,		DZE_Item_Wood_PlywoodPack},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Net_Forest},
-	
+
 	// Piles
 	{Loot_PILE,			5,		Consumable, 1, 3},
 	{Loot_PILE,			5,		AmmoCivilian, 1, 3},
-	
+
 	//Groups
 	{Loot_GROUP,		30,		Consumable},
 	{Loot_GROUP,		10,		Generic},
@@ -33,8 +33,8 @@ Supermarket[] =
 SupermarketSmall[] =
 {
 	{Loot_GROUP,		1,		ToolsSurvival},
-	{Loot_MAGAZINE,		2,		ItemMixOil},
-	{Loot_MAGAZINE,		1,		ItemComboLock},
+	{Loot_MAGAZINE,		2,		DZE_Item_ChainGas_MixOil},
+	{Loot_MAGAZINE,		1,		DZE_Item_Locks_ComboLock},
 	{Loot_GROUP,		3,		VanillaSurvival},
 	{Loot_GROUP,		30,		Consumable},
 	{Loot_GROUP,		10,		GenericSmall},

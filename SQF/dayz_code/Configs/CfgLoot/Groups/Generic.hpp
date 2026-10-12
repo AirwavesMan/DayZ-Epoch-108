@@ -1,10 +1,10 @@
 Generic[] =
 {
 	{Loot_MAGAZINE,		1,		1Rnd_Arrow_Wood},
-	{Loot_MAGAZINE,		1,		HandRoadFlare},
-	{Loot_MAGAZINE,		1,		HandChemGreen},
-	{Loot_MAGAZINE,		1,		HandChemBlue},
-	{Loot_MAGAZINE,		1,		HandChemRed},
+	{Loot_MAGAZINE,		1,		DZE_Item_Flares_RoadFlare},
+	{Loot_MAGAZINE,		1,		DZE_Item_Flares_ChemGreen},
+	{Loot_MAGAZINE,		1,		DZE_Item_Flares_ChemBlue},
+	{Loot_MAGAZINE,		1,		DZE_Item_Flares_ChemRed},
 	{Loot_MAGAZINE,		1,		5Rnd_17HMR},
 	{Loot_MAGAZINE,		2,		10Rnd_303British},
 	{Loot_MAGAZINE,		2,		15Rnd_W1866_Slug},
@@ -26,10 +26,10 @@ tents[] = {
 
 GenericSmall[] =
 {	
-	{Loot_MAGAZINE,		1,		HandRoadFlare},
-	{Loot_MAGAZINE,		1,		HandChemGreen},
-	{Loot_MAGAZINE,		1,		HandChemBlue},
-	{Loot_MAGAZINE,		1,		HandChemRed},
+	{Loot_MAGAZINE,		1,		DZE_Item_Flares_RoadFlare},
+	{Loot_MAGAZINE,		1,		DZE_Item_Flares_ChemGreen},
+	{Loot_MAGAZINE,		1,		DZE_Item_Flares_ChemBlue},
+	{Loot_MAGAZINE,		1,		DZE_Item_Flares_ChemRed},
 	{Loot_MAGAZINE,		1,		5Rnd_17HMR},
 	{Loot_MAGAZINE,		2,		10Rnd_303British},
 	{Loot_MAGAZINE,		2,		15Rnd_W1866_Slug},

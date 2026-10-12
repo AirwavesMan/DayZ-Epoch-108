@@ -1,354 +1,282 @@
 //FoodandDrinks
-class bulk
-{
+class DZE_Item_Bulk_Base {
 	weight = 5;
 };
 
-class bulk_empty
-{
+class DZE_Item_Bulk_Empty {
 	weight = 3;
 };
 
-class bulk_ItemSodaCoke 
-{
+class DZE_Item_Bulk_SodaCoke {
 	weight = 4.98;
 };
 
-class bulk_ItemSodaCokeFull
-{
+class DZE_Item_Bulk_SodaCokeFull {
 	weight = 6.96;
 };
 
-class bulk_ItemSodaPepsi
-{
+class DZE_Item_Bulk_SodaPepsi {
 	weight = 4.98;
 };
 
-class bulk_ItemSodaPepsiFull 
-{
+class DZE_Item_Bulk_SodaPepsiFull {
 	weight = 6.96;
 };
 
-class bulk_FoodbaconCooked 
-{
+class DZE_Item_Bulk_BaconCooked {
 	weight = 4.8;
 };
 
-class bulk_FoodbaconCookedFull
-{
+class DZE_Item_Bulk_BaconCookedFull {
 	weight = 6.6;
 };
 
-class bulk_equip_garlic_bulbFull
-{
+class DZE_Item_Bulk_Garlic_BulbFull {
 	weight = 4;
 };
 
-class bulk_FishCookedSeaBassFull
-{
+class DZE_Item_Bulk_FishCookedSeaBassFull {
 	weight = 48;
 };
 
-class bulk_FishCookedTroutFull
-{
+class DZE_Item_Bulk_FishCookedTroutFull {
 	weight = 19.8;
 };
 
-class bulk_FishCookedTunaFull
-{
+class DZE_Item_Bulk_FishCookedTunaFull {
 	weight = 180;
 };
 
-class bulk_FoodBeefCookedFull
-{
+class DZE_Item_Bulk_BeefCookedFull {
 	weight = 7.8;
 };
 
-class bulk_FoodCarrotFull
-{
+class DZE_Item_Bulk_CarrotFull {
 	weight = 4.2;
 };
-class bulk_FoodChickenCookedFull
-{
+class DZE_Item_Bulk_ChickenCookedFull {
 	weight = 15;
 };
 
-class bulk_FoodDogCookedFull
-{
+class DZE_Item_Bulk_DogCookedFull {
 	weight = 15;
 };
 
-class bulk_FoodGoatCookedFull
-{
+class DZE_Item_Bulk_GoatCookedFull {
 	weight = 15;
 };
 
-class bulk_FoodMuttonCookedFull
-{
+class DZE_Item_Bulk_MuttonCookedFull {
 	weight = 15;
 };
 
-class bulk_FoodPotatoRawFull
-{
+class DZE_Item_Bulk_PotatoRawFull {
 	weight = 6.6;
 };
 
-class bulk_FoodPumpkinFull
-{
+class DZE_Item_Bulk_PumpkinFull {
 	weight = 15;
 };
 
-class bulk_FoodRabbitCookedFull
-{
+class DZE_Item_Bulk_RabbitCookedFull {
 	weight = 15;
 };
 
 // Ammo
-class bulk_17Rnd_9x19_glock17
-{
+class DZE_Item_Bulk_17Rnd_9x19_Glock17 {
 	weight = 6.48;
 };
 
-class bulk_15Rnd_9x19_M9SD
-{
+class DZE_Item_Bulk_15Rnd_9x19_M9SD {
 	weight = 6.12;
 };
 
-class bulk_30Rnd_9x19_MP5SD
-{
+class DZE_Item_Bulk_30Rnd_9x19_MP5SD {
 	weight = 7.8;
 };
 
-class bulk_30Rnd_556x45_StanagSD
-{
+class DZE_Item_Bulk_30Rnd_556x45_StanagSD {
 	weight = 9.12;
 };
 
 //BuildingSupplies
-class bulk_ItemSandbag
-{
+class DZE_Item_Bulk_Sandbag {
 	weight = 123;
 };
 
-class bulk_ItemTankTrap
-{
+class DZE_Item_Bulk_TankTrap {
 	weight = 93;
 };
 
-class bulk_ItemTankTrapHalf
-{
+class DZE_Item_Bulk_TankTrapHalf {
 	weight = 48;
 };
 
-class bulk_ItemWire
-{
+class DZE_Item_Bulk_Wire {
 	weight = 33;
 };
 
-class bulk_ItemWireHalf
-{
+class DZE_Item_Bulk_WireHalf {
 	weight = 18;
 };
 
-class bulk_PartGeneric
-{
+class DZE_Item_Bulk_Metal_Parts {
 	weight = 63;
 };
 
-class bulk_PartGenericHalf
-{
+class DZE_Item_Bulk_GenericHalf {
 	weight = 33;
 };
 
-class bulk_ItemSandbagHalf
-{
+class DZE_Item_Bulk_SandbagHalf {
 	weight = 63;
 };
 
-class bulk_ItemComboLockFull
-{
+class DZE_Item_Bulk_ComboLockFull {
 	weight = 8;
 };
 
 //Animal craftables
-class bulk_ItemAnimalSkinFull
-{
+class DZE_Item_Bulk_AnimalSkinFull {
 	weight = 101;
 };
-class bulk_ItemSkinRabbitFull
-{
+class DZE_Item_Bulk_SkinRabbitFull {
 	weight = 41;
 };
-class bulk_ItemSkinCowFull
-{
+class DZE_Item_Bulk_SkinCowFull {
 	weight = 149;
 };
-class bulk_ItemSkinGoatFull
-{
+class DZE_Item_Bulk_SkinGoatFull {
 	weight = 77;
 };
-class bulk_ItemSkinBoarFull
-{
+class DZE_Item_Bulk_SkinBoarFull {
 	weight = 107;
 };
-class bulk_ItemSkinDogFull
-{
+class DZE_Item_Bulk_SkinDogFull {
 	weight = 77;
 };
-class bulk_ItemSkinSheepFull
-{
+class DZE_Item_Bulk_SkinSheepFull {
 	weight = 77;
 };
-class bulk_ItemWoolFull
-{
+class DZE_Item_Bulk_WoolFull {
 	weight = 41;
 };
-class bulk_ItemLeatherFull
-{
+class DZE_Item_Bulk_LeatherFull {
 	weight = 89;
 };
 
 //Misc
-class bulk_equip_aa_batteryFull
-{
+class DZE_Item_Bulk_AA_BatteryFull {
 	weight = 5.12;
 };
 
-class bulk_equip_d_batteryFull
-{
+class DZE_Item_Bulk_D_BatteryFull {
 	weight = 5.24;
 };
 
-class bulk_equip_duct_tapeFull
-{
+class DZE_Item_Bulk_Duct_TapeFull {
 	weight = 5.48;
 };
 
-class bulk_equip_feathersFull
-{
+class DZE_Item_Bulk_FeathersFull {
 	weight = 5.12;
 };
 
-class bulk_equip_floppywireFull
-{
+class DZE_Item_Bulk_FloppywireFull {
 	weight = 5.12;
 };
 
-class bulk_equip_nailsFull
-{
+class DZE_Item_Bulk_NailsFull {
 	weight = 5.12;
 };
 
-class bulk_equip_pvc_boxFull
-{
+class DZE_Item_Bulk_Pvc_BoxFull {
 	weight = 5.24;
 };
 
-class bulk_equip_ragFull
-{
+class DZE_Item_Bulk_RagFull {
 	weight = 5.36;
 };
 
-class bulk_equip_ropeFull
-{
+class DZE_Item_Bulk_RopeFull {
 	weight = 6.2;
 };
 
-class bulk_equip_scrapelectronicsFull
-{
+class DZE_Item_Bulk_ScrapelectronicsFull {
 	weight = 11;
 };
 
-class bulk_equip_stringFull
-{
+class DZE_Item_Bulk_StringFull {
 	weight = 5.6;
 };
 
-class bulk_HandChemBlueFull
-{
+class DZE_Item_Bulk_ChemBlueFull {
 	weight = 4;
 };
 
-class bulk_HandChemGreenFull
-{
+class DZE_Item_Bulk_ChemGreenFull {
 	weight = 4;
 };
-class bulk_HandChemRedFull
-{
+class DZE_Item_Bulk_ChemRedFull {
 	weight = 4;
 };
 
-class bulk_HandRoadFlareFull
-{
+class DZE_Item_Bulk_RoadFlareFull {
 	weight = 8;
 };
 
-class bulk_ItemC4ChargeFull
-{
+class DZE_Item_Bulk_C4ChargeFull {
 	weight = 14.6;
 };
 
-class bulk_ItemDogTagFull
-{
+class DZE_Item_Bulk_DogTagFull {
 	weight = 3;
 };
 
-class bulk_ItemHotwireKitFull
-{
+class DZE_Item_Bulk_HotwireKitFull {
 	weight = 27;
 };
 
-class bulk_ItemKosmosSmokesFull
-{
+class DZE_Item_Bulk_KosmosSmokesFull {
 	weight = 3;
 };
 
-class bulk_ItemLightBulbFull
-{
+class DZE_Item_Bulk_LightBulbFull {
 	weight = 3.24;
 };
 
-class bulk_ItemMixOilFull
-{
+class DZE_Item_Bulk_MixOilFull {
 	weight = 6;
 };
 
-class bulk_ItemScrewsFull
-{
+class DZE_Item_Bulk_ScrewsFull {
 	weight = 9;
 };
 
-class bulk_PartGlassFull
-{
+class DZE_Item_Bulk_GlassFull {
 	weight = 147;
 };
 
-class bulk_PartWheelFull
-{
+class DZE_Item_Bulk_WheelFull {
 	weight = 123;
 };
 
-class bulk_PipeBombFull
-{
+class DZE_Item_Bulk_PipeBombFull {
 	weight = 51;
 };
 
-class bulk_ItemFertilizerFull
-{
+class DZE_Item_Bulk_FertilizerFull {
 	weight = 33;
 };
 
-class bulk_ItemKiloBlackTeaFull
-{
+class DZE_Item_Bulk_KiloBlackTeaFull {
 	weight = 15;
 };
 
-class bulk_ItemKiloHempFull
-{
+class DZE_Item_Bulk_KiloHempFull {
 	weight = 15;
 };
 
-class bulk_ItemKiloTobaccoFull
-{
+class DZE_Item_Bulk_KiloTobaccoFull {
 	weight = 15;
 };

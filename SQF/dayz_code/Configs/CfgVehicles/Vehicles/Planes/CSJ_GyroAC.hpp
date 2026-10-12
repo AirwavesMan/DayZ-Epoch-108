@@ -14,7 +14,6 @@ class DZE_AutoGyro_Base: Plane {
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_AIR
-
 	cabinOpening = 0;
 	transportSoldier = 0;
 	secondaryExplosion = 0;
@@ -22,6 +21,7 @@ class DZE_AutoGyro_Base: Plane {
 	mapSize = 8;
 	fov = 0.5;
 	side = 3;
+
 	//soundEngine[] = {"\CSJ_GyroAC\camel1.wss",5.62341,1.8};
 	soundEngineOnInt[] = {"ca\sounds\Air\MV22\ext_start",0.562341,1};
 	soundEngineOnExt[] = {"ca\sounds\Air\MV22\ext_start",0.562341,1,800};
@@ -104,7 +104,9 @@ class DZE_AutoGyro_Base: Plane {
 			statement = "this exec ""\CSJ_GyroAC\scripts\CSJ_moveGyro.sqs"" ";
 		};*/
 		//CSJ_moveGyro.sqs uses excessive setPos per second which makes BEServer.cfg MaxSetPosPerInterval filter useless
-		class PushPlane {ACTION_PUSH;};
+		class PushPlane {
+			ACTION_PUSH;
+		};
 		//class Repair {ACTION_REPAIR; radius = 4;};
 		//class Salvage {ACTION_SALVAGE; radius = 4;};
 	};
@@ -128,7 +130,7 @@ class DZE_AutoGyro_Base: Plane {
 class DZE_Veh_AutoGyro: DZE_AutoGyro_Base {
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_AutoGyro_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliAVE[] = {"DZE_Veh_AutoGyro_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliAVE",1},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -137,7 +139,7 @@ class DZE_Veh_AutoGyro_Enclosed: DZE_AutoGyro_Base {
 	model = "\CSJ_GyroAC\CSJ_GyroCover";
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_AutoGyro_Enclosed_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliAVE[] = {"DZE_Veh_AutoGyro_Enclosed_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliAVE",1},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 
 
@@ -152,7 +154,7 @@ class DZE_Veh_AutoGyro_1: DZE_Veh_AutoGyro {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_AutoGyro_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliLRK[] = {"DZE_Veh_AutoGyro_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -162,7 +164,7 @@ class DZE_Veh_AutoGyro_2: DZE_Veh_AutoGyro_1 {
 	transportMaxMagazines = 40;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_AutoGyro_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		DZE_Item_Upgrade_HeliTNK[] = {"DZE_Veh_AutoGyro_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliTNK",1},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Barrel_Fuel",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",1},{"DZE_Item_Elec_Floppywire",1}}};
 	};
 };
 
@@ -179,7 +181,7 @@ class DZE_Veh_AutoGyro_Enclosed_1: DZE_Veh_AutoGyro_Enclosed {
 	armor = 40;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_AutoGyro_Enclosed_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliLRK[] = {"DZE_Veh_AutoGyro_Enclosed_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -189,7 +191,7 @@ class DZE_Veh_AutoGyro_Enclosed_2: DZE_Veh_AutoGyro_Enclosed_1 {
 	transportMaxMagazines = 40;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_AutoGyro_Enclosed_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		DZE_Item_Upgrade_HeliTNK[] = {"DZE_Veh_AutoGyro_Enclosed_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliTNK",1},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Barrel_Fuel",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",1},{"DZE_Item_Elec_Floppywire",1}}};
 	};
 };
 

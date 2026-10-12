@@ -5,7 +5,6 @@ class DZE_ScrapAPC_Base: DZE_Car_Base {
 	model = "\z\addons\dayz_epoch_v\vehicles\scrap_apc\scrap_apc";
 	picture = "\dayz_epoch_c\icons\vehicles\ScrapAPC.paa";
 	DZE_MACRO_VEHICLE_CANSEE_ARMORED
-
 	armor = 80;
 	damageResistance = 0.032;
 	transportSoldier = 4;
@@ -19,6 +18,7 @@ class DZE_ScrapAPC_Base: DZE_Car_Base {
 	driverAction = suv_driver_ep1;
 	cargoAction[] = {BTR40_Cargo_EP1,UAZ_Cargo01};
 	hiddenSelections[] = {"camo1","camo2"};
+
 	hiddenSelectionsTextures[]=
 	{
 		"\z\addons\dayz_epoch_v\vehicles\scrap_apc\data\apc_main_co.paa",
@@ -47,24 +47,24 @@ class DZE_ScrapAPC_Base: DZE_Car_Base {
 	soundEngineOnExt[] = {"\ca\Sounds_E\Wheeled_E\BTR60\btr60_ext_on", db0, 1.0, 100};
 	soundEngineOffInt[] ={"\ca\Sounds_E\Wheeled_E\BTR60\btr60_ext_off", db0, 1.0};
 	soundEngineOffExt[] ={"\ca\Sounds_E\Wheeled_E\BTR60\btr60_ext_off", db0, 1.0, 100};
-
 	buildCrash0[]={"Ca\sounds\Vehicles\Crash\tank_building_01", db-3, 1,150};
 	buildCrash1[]={"Ca\sounds\Vehicles\Crash\tank_building_02", db-3, 1,150};
 	buildCrash2[]={"Ca\sounds\Vehicles\Crash\tank_building_03", db-3, 1,150};
 	buildCrash3[]={"Ca\sounds\Vehicles\Crash\tank_building_04", db-3, 1,150};
 	soundBuildingCrash[]={buildCrash0, 0.25, buildCrash1, 0.25, buildCrash2, 0.25, buildCrash3, 0.25};
-
 	WoodCrash0[]={"Ca\sounds\Vehicles\Crash\tank_wood_01", db-3, 1,150};
 	WoodCrash1[]={"Ca\sounds\Vehicles\Crash\tank_wood_02", db-3, 1,150};
 	WoodCrash2[]={"Ca\sounds\Vehicles\Crash\tank_wood_03", db-3, 1,150};
 	WoodCrash3[]={"Ca\sounds\Vehicles\Crash\tank_wood_04", db-3, 1,150};
 	soundWoodCrash[]={woodCrash0, 0.25, woodCrash1, 0.25, woodCrash2, 0.25, woodCrash3, 0.25};
-
 	ArmorCrash0[]={"Ca\sounds\Vehicles\Crash\tank_vehicle_01", db-3, 1,150};
 	ArmorCrash1[]={"Ca\sounds\Vehicles\Crash\tank_vehicle_02", db-3, 1,150};
 	ArmorCrash2[]={"Ca\sounds\Vehicles\Crash\tank_vehicle_03", db-3, 1,150};
 	ArmorCrash3[]={"Ca\sounds\Vehicles\Crash\tank_vehicle_04", db-3, 1,150};
 	soundArmorCrash[]={ArmorCrash0, 0.25, ArmorCrash1, 0.25, ArmorCrash2, 0.25, ArmorCrash3, 0.25};
+
+
+
 
 	class SoundEvents {
 		class AccelerationIn {
@@ -198,7 +198,7 @@ class DZE_Veh_ScrapAPC: DZE_ScrapAPC_Base {
 	displayName = "$STR_VEH_NAME_SCRAP_APC";
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_ScrapAPC_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankORP[] = {"DZE_Veh_ScrapAPC_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankORP",1},{"DZE_Item_Parts_Engine",6},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -210,7 +210,7 @@ class DZE_Veh_ScrapAPC_1: DZE_Veh_ScrapAPC {
 	terrainCoef = 1.2; // base 2.8
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_ScrapAPC_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankAVE[] = {"DZE_Veh_ScrapAPC_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankAVE",1},{"DZE_Item_Metal_Sheet",8},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -220,7 +220,7 @@ class DZE_Veh_ScrapAPC_2: DZE_Veh_ScrapAPC_1 {
 	damageResistance = 0.064;
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_ScrapAPC_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankLRK[] = {"DZE_Veh_ScrapAPC_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -231,7 +231,7 @@ class DZE_Veh_ScrapAPC_3: DZE_Veh_ScrapAPC_2 {
 	transportMaxBackpacks = 10;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_ScrapAPC_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		DZE_Item_Upgrade_TankTNK[] = {"DZE_Veh_ScrapAPC_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankTNK",1},{"DZE_Item_Parts_Fueltank",6},{"DZE_Item_Barrel_Fuel",4}}};
 	};
 };
 

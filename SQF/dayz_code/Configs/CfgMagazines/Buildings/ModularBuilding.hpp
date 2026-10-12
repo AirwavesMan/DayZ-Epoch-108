@@ -236,7 +236,7 @@ class DZE_Item_Kit_Half_Cinder_Wall: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Full_Cinder_Wall",1}};
-			input[] = {{"DZE_Item_Kit_Half_Cinder_Wall",1},{"CinderBlocks",4},{"MortarBucket",1}};
+			input[] = {{"DZE_Item_Kit_Half_Cinder_Wall",1},{"DZE_Item_Conc_CinderBlocks",4},{"DZE_Item_Conc_MortarBucket",1}};
 		};
 	};
 };
@@ -309,7 +309,7 @@ class DZE_Item_Kit_Cinderwall_Window: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_Cinderwall_Window_Locked",1}};
-			input[] = {{"DZE_Item_Kit_Cinderwall_Window",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_Cinderwall_Window",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -355,7 +355,7 @@ class DZE_Item_Kit_Cinder_Door_Frame: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Cinder_Door",1}};
-			input[] = {{"DZE_Item_Kit_Cinder_Door_Frame",1},{"ItemPole",1},{"DZE_Item_Kit_TankTrap",1}};
+			input[] = {{"DZE_Item_Kit_Cinder_Door_Frame",1},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Kit_TankTrap",1}};
 		};
 	};
 };
@@ -382,7 +382,7 @@ class DZE_Item_Kit_Cinder_Door: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_Cinder_Door_Kit_Locked",1}};
-			input[] = {{"DZE_Item_Kit_Cinder_Door",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_Cinder_Door",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_PLAYER_238_2";
@@ -436,7 +436,7 @@ class DZE_Item_Kit_Cinder_Door_Hatch: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_Cinder_Door_Hatch_Kit_Locked",1}};
-			input[] = {{"DZE_Item_Kit_Cinder_Door_Hatch",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_Cinder_Door_Hatch",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -482,7 +482,7 @@ class DZE_Item_Kit_Cinder_Garage_Frame: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Cinder_Garage",1}};
-			input[] = {{"DZE_Item_Kit_Cinder_Garage_Frame",1},{"ItemPole",3},{"DZE_Item_Kit_TankTrap",3}};
+			input[] = {{"DZE_Item_Kit_Cinder_Garage_Frame",1},{"DZE_Item_Metal_Pole",3},{"DZE_Item_Kit_TankTrap",3}};
 		};
 	};
 };
@@ -509,7 +509,7 @@ class DZE_Item_Kit_Cinder_Garage: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_Cinder_Garage_Kit_Locked",1}};
-			input[] = {{"DZE_Item_Kit_Cinder_Garage",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_Cinder_Garage",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -555,7 +555,7 @@ class DZE_Item_Kit_Cinder_Garage_Top_Open_Frame: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Cinder_Garage_Top_Open",1}};
-			input[] = {{"DZE_Item_Kit_Cinder_Garage_Top_Open_Frame",1},{"ItemPole",3},{"DZE_Item_Kit_TankTrap",3}};
+			input[] = {{"DZE_Item_Kit_Cinder_Garage_Top_Open_Frame",1},{"DZE_Item_Metal_Pole",3},{"DZE_Item_Kit_TankTrap",3}};
 		};
 	};
 };
@@ -582,7 +582,7 @@ class DZE_Item_Kit_Cinder_Garage_Top_Open: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_Cinder_Garage_Top_Open_Kit_Locked",1}};
-			input[] = {{"DZE_Item_Kit_Cinder_Garage_Top_Open",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_Cinder_Garage_Top_Open",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -628,7 +628,7 @@ class DZE_Item_Kit_Cinder_Gate_Frame: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Cinder_Gate",1}};
-			input[] = {{"DZE_Item_Kit_Cinder_Gate_Frame",1},{"equip_metal_sheet",6},{"ItemRSJ",2},{"ItemScrews",2}};
+			input[] = {{"DZE_Item_Kit_Cinder_Gate_Frame",1},{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Steel_Beam",2},{"DZE_Item_Metal_Screws",2}};
 		};
 	};
 };
@@ -656,7 +656,7 @@ class DZE_Item_Kit_Cinder_Gate: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_Cinder_Gate_Kit_Locked",1}};
-			input[] = {{"DZE_Item_Kit_Cinder_Gate",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_Cinder_Gate",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -702,7 +702,7 @@ class DZE_Item_Kit_Cinder_Bunker: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_Cinder_Bunker_Kit_Locked",1}};
-			input[] = {{"DZE_Item_Kit_Cinder_Bunker",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_Cinder_Bunker",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -957,7 +957,7 @@ class DZE_Item_Kit_WoodStairs: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodStairsSupport",1}};
-			input[] = {{"DZE_Item_Kit_WoodStairs",1},{"PartWoodLumber",2}};
+			input[] = {{"DZE_Item_Kit_WoodStairs",1},{"DZE_Item_Wood_Lumber",2}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_ACTION_WOODFLOORSTAIRS";
@@ -1095,7 +1095,7 @@ class DZE_Item_Kit_WoodWall: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodWallWindow",1}};
-			input[] = {{"DZE_Item_Kit_WoodWall",1},{"PartGlass",1}};
+			input[] = {{"DZE_Item_Kit_WoodWall",1},{"DZE_Item_Parts_Glass",1}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_236";
@@ -1103,7 +1103,7 @@ class DZE_Item_Kit_WoodWall: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodWallLg",1}};
-			input[] = {{"DZE_Item_Kit_WoodWall",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+			input[] = {{"DZE_Item_Kit_WoodWall",1},{"DZE_Item_Wood_Plywood",1},{"DZE_Item_Wood_Lumber",1}};
 		};
 	};
 };
@@ -1203,7 +1203,7 @@ class DZE_Item_Kit_WoodWallDoor: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodWallWithDoor",1}};
-			input[] = {{"DZE_Item_Kit_WoodWallDoor",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+			input[] = {{"DZE_Item_Kit_WoodWallDoor",1},{"DZE_Item_Wood_Plywood",1},{"DZE_Item_Wood_Lumber",1}};
 		};
 	};
 };
@@ -1230,7 +1230,7 @@ class DZE_Item_Kit_WoodWallWithDoor: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_WoodWallWithDoorLocked",1}};
-			input[] = {{"DZE_Item_Kit_WoodWallWithDoor",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_WoodWallWithDoor",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -1276,7 +1276,7 @@ class DZE_Item_Kit_WoodWallGarageDoor: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_WoodWallGarageDoorLocked",1}};
-			input[] = {{"DZE_Item_Kit_WoodWallGarageDoor",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_WoodWallGarageDoor",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -1322,7 +1322,7 @@ class DZE_Item_Kit_WoodOpenTopGarageDoor: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_WoodOpenTopGarageDoorLocked",1}};
-			input[] = {{"DZE_Item_Kit_WoodOpenTopGarageDoor",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_WoodOpenTopGarageDoor",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -1376,7 +1376,7 @@ class DZE_Item_Kit_WoodWallLg: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodWallWindowLg",1}};
-			input[] = {{"DZE_Item_Kit_WoodWallLg",1},{"PartGlass",1}};
+			input[] = {{"DZE_Item_Kit_WoodWallLg",1},{"DZE_Item_Parts_Glass",1}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_240";
@@ -1384,7 +1384,7 @@ class DZE_Item_Kit_WoodWallLg: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodWallGarageDoor",1}};
-			input[] = {{"DZE_Item_Kit_WoodWallLg",1},{"PartWoodLumber",2}};
+			input[] = {{"DZE_Item_Kit_WoodWallLg",1},{"DZE_Item_Wood_Lumber",2}};
 		};
 		class Crafting3 {
 			text = "$STR_EPOCH_PLAYER_240_1";
@@ -1392,7 +1392,7 @@ class DZE_Item_Kit_WoodWallLg: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodOpenTopGarageDoor",1}};
-			input[] = {{"DZE_Item_Kit_WoodWallLg",1},{"PartWoodLumber",2}};
+			input[] = {{"DZE_Item_Kit_WoodWallLg",1},{"DZE_Item_Wood_Lumber",2}};
 		};
 	};
 };
@@ -1438,7 +1438,7 @@ class DZE_Item_Kit_WoodWallDoorLg: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodWallWithDoorLg",1}};
-			input[] = {{"DZE_Item_Kit_WoodWallDoorLg",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+			input[] = {{"DZE_Item_Kit_WoodWallDoorLg",1},{"DZE_Item_Wood_Plywood",1},{"DZE_Item_Wood_Lumber",1}};
 		};
 	};
 };
@@ -1465,7 +1465,7 @@ class DZE_Item_Kit_WoodWallWithDoorLg: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_WoodWallWithDoorLgLocked",1}};
-			input[] = {{"DZE_Item_Kit_WoodWallWithDoorLg",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_WoodWallWithDoorLg",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -1511,7 +1511,7 @@ class DZE_Item_Kit_WoodGateFrame: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodGate",1}};
-			input[] = {{"DZE_Item_Kit_WoodGateFrame",1},{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}};
+			input[] = {{"DZE_Item_Kit_WoodGateFrame",1},{"DZE_Item_Wood_Plywood",8},{"DZE_Item_Wood_Lumber",2},{"DZE_Item_Metal_Nails",1}};
 		};
 	};
 };
@@ -1538,7 +1538,7 @@ class DZE_Item_Kit_WoodGate: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_WoodGateLocked",1}};
-			input[] = {{"DZE_Item_Kit_WoodGate",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_WoodGate",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };
@@ -1584,7 +1584,7 @@ class DZE_Item_Kit_Door_Frame: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Door",1}};
-			input[] = {{"DZE_Item_Kit_Door_Frame",1},{"ItemPole",1},{"DZE_Item_Kit_TankTrap",1}};
+			input[] = {{"DZE_Item_Kit_Door_Frame",1},{"DZE_Item_Metal_Pole",1},{"DZE_Item_Kit_TankTrap",1}};
 		};
 	};
 };
@@ -1611,7 +1611,7 @@ class DZE_Item_Kit_Door: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_Door_Locked",1}};
-			input[] = {{"DZE_Item_Kit_Door",1},{"ItemComboLock",1}};
+			input[] = {{"DZE_Item_Kit_Door",1},{"DZE_Item_Locks_ComboLock",1}};
 		};
 	};
 };

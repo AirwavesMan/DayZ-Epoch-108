@@ -7,7 +7,7 @@ class DZE_GunRack: DZE_Storage_Base {
 	transportMaxMagazines = 10;
 	transportMaxBackpacks = 0;
 	DZE_offset[] = {0,2,0};
-	DZE_upgradeBuilding[] = {"DZE_GunRack2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"ItemPlank",4},{"equip_nails",1}}};
+	DZE_upgradeBuilding[] = {"DZE_GunRack2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"DZE_Item_Wood_Plank",4},{"DZE_Item_Metal_Nails",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_GunRack";
 		DZE_refundArray[] = {};
@@ -64,7 +64,7 @@ class DZE_WorkBench2: DZE_Building_Base {
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_WorkBench";
 		DZE_refundArray[] = {};
-	};	
+	};
 };
 
 class DZE_Advanced_WorkBench: DZE_Building_Base {
@@ -76,9 +76,9 @@ class DZE_Advanced_WorkBench: DZE_Building_Base {
 	DZE_preventUnderground = 0;
 	DZE_offset[] = {0,2,0};
 	mapSize = 2;
-	transportMaxWeapons = 45;	
+	transportMaxWeapons = 45;
 	transportMaxMagazines = 30;
-	transportmaxbackpacks = 1;	
+	transportmaxbackpacks = 1;
 	armor = 400;
 	DZE_buildingSteps = 3;
 	class RemoveObject: RemoveObject {
@@ -96,7 +96,7 @@ class DZE_CookTripod: DZE_Storage_Base {
 	DZE_offset[] = {0,2,0};
 	DZE_allowRotation = 0;
 	mapSize = 2;
-	transportMaxWeapons = 0;	
+	transportMaxWeapons = 0;
 	transportMaxMagazines = 15;
 	transportmaxbackpacks = 0;
 	armor = 500;
@@ -115,7 +115,7 @@ class DZE_Stoneoven: DZE_Storage_Base {
 	DZE_offset[] = {0,2,0};
 	mapSize = 2;
 	armor = 400;
-	transportMaxWeapons = 1;	
+	transportMaxWeapons = 1;
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 0;
 	DZE_buildingSteps = 2;
@@ -131,7 +131,7 @@ class DZE_Commode: DZE_Storage_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\storage\case_bedroom_b";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	transportMaxWeapons = 5;	
+	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
@@ -147,7 +147,7 @@ class DZE_Wardrobe: DZE_Storage_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\storage\Dhangar_whiteskrin";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	transportMaxWeapons = 5;	
+	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
@@ -163,7 +163,7 @@ class DZE_Fridge: DZE_Storage_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\storage\fridge";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	transportMaxWeapons = 7;	
+	transportMaxWeapons = 7;
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
@@ -179,7 +179,7 @@ class DZE_Washing_Machine: DZE_Storage_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\storage\washing_machine";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	transportMaxWeapons = 2;	
+	transportMaxWeapons = 2;
 	transportMaxMagazines = 15;
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2,0};
@@ -195,7 +195,7 @@ class DZE_Server_Rack: DZE_Storage_Base {
 	model = "\z\addons\dayz_epoch_v\props\server\dze_server";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	transportMaxWeapons = 15;	
+	transportMaxWeapons = 15;
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 1;
 	DZE_offset[] = {0,2,0};
@@ -211,7 +211,7 @@ class DZE_ATM: DZE_Storage_Base {
 	model = "\z\addons\dayz_epoch_v\props\atm\dze_atm";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	transportMaxWeapons = 5;	
+	transportMaxWeapons = 5;
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 4;
 	DZE_offset[] = {0,2,0};
@@ -227,9 +227,9 @@ class DZE_Armchair: DZE_Storage_Base {
 	model = "\z\addons\dayz_epoch_v\base_building\storage\armchair";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	transportMaxWeapons = 1;	
+	transportMaxWeapons = 1;
 	transportMaxMagazines = 5;
-	transportmaxbackpacks = 1;	
+	transportmaxbackpacks = 1;
 	DZE_offset[] = {0,2.5,0};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Armchair";
@@ -243,7 +243,7 @@ class DZE_Sofa: DZE_Storage_Base {
 	model = "\z\addons\dayz_epoch_v\props\sofa\sofa";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	transportMaxWeapons = 5;	
+	transportMaxWeapons = 5;
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 3;
 	DZE_offset[] = {0,2.5,0};
@@ -259,9 +259,9 @@ class DZE_Arcade: DZE_Storage_Base {
 	model = "\z\addons\dayz_epoch_v\props\arcade\neagea";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	transportMaxWeapons = 15;	
+	transportMaxWeapons = 15;
 	transportMaxMagazines = 35;
-	transportmaxbackpacks = 5;	
+	transportmaxbackpacks = 5;
 	DZE_offset[] = {0,2,0};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Arcade";
@@ -275,7 +275,7 @@ class DZE_Vendmachine1: DZE_Storage_Base {
 	model = "\z\addons\dayz_epoch_v\props\vending\vendmachine_2";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
-	transportMaxWeapons = 15;	
+	transportMaxWeapons = 15;
 	transportMaxMagazines = 45;
 	transportmaxbackpacks = 5;
 	DZE_offset[] = {0,2,0};
@@ -293,7 +293,7 @@ class DZE_Vendmachine2: DZE_Storage_Base {
 	mapSize = 2;
 	DZE_buildingSteps = 1;
 	DZE_offset[] = {0,2,0};
-	transportMaxWeapons = 15;	
+	transportMaxWeapons = 15;
 	transportMaxMagazines = 45;
 	transportmaxbackpacks = 5;
 	class RemoveObject: RemoveObject {

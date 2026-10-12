@@ -1,135 +1,134 @@
-class RepairParts : AllVehicles
-{
+class RepairParts: AllVehicles {
 	class HitEngine {
-		part = "PartEngine";
+		part = "DZE_Item_Parts_Engine";
 	};
 	class HitRGlass {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitLGlass {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitBody {
-		part = "PartGeneric";
+		part = "DZE_Item_Metal_Parts";
 	};
 	class HitFuel {
-		part = "PartFueltank";
+		part = "DZE_Item_Parts_Fueltank";
 	};
 	class HitLFWheel {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class HitRFWheel {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class HitLF2Wheel {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class HitRF2Wheel {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class HitLMWheel {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class HitRMWheel {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class HitLBWheel {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class HitRBWheel {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class HitFWheel {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class HitBWheel {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class wheel_1_damper {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class wheel_2_damper {
-		part = "PartWheel";
+		part = "DZE_Item_Parts_Wheel";
 	};
 	class HitGlass1 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass2 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass3 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass4 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass5 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass6 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass7 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass8 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass9 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass10 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass11 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass12 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass13 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass14 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass15 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass16 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass17 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass18 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass19 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitGlass20 {
-		part = "PartGlass";
+		part = "DZE_Item_Parts_Glass";
 	};
 	class HitVRotor {
-		part = "PartGeneric";
+		part = "DZE_Item_Metal_Parts";
 	};
 	class HitHRotor {
-		part = "PartVRotor";
+		part = "DZE_Item_Parts_VRotor";
 	};
 	class HitAvionics {
-		part = "PartGeneric";
+		part = "DZE_Item_Metal_Parts";
 	};
 	class HitMissiles {
-		part = "PartGeneric";
+		part = "DZE_Item_Metal_Parts";
 	};
 	class HitHull {
-		part = "PartGeneric";
+		part = "DZE_Item_Metal_Parts";
 	};
 	class HitLTrack {
-		part = "PartGeneric";
+		part = "DZE_Item_Metal_Parts";
 	};
 	class HitRTrack {
-		part = "PartGeneric";
+		part = "DZE_Item_Metal_Parts";
 	};
 };

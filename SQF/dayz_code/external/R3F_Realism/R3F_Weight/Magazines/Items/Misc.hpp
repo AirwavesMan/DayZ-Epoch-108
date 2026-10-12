@@ -1,90 +1,72 @@
-class ItemHotwireKit
-{
+class DZE_Item_Misc_HotwireKit {
 	weight = 2;
 };
 
-class ItemCards
-{
+class DZE_Item_Misc_Cards {
 	weight = 0.1;
 };
 
-class ItemKosmosSmokes
-{
+class DZE_Item_Cig_Kosmos {
 	weight = 0.1;
 };
 
-class ItemKosmosSmokesOpen
-{
+class DZE_Item_Cig_KosmosOpen {
 	weight = 0.1;
 };
 
-class equip_nails 
-{
+class DZE_Item_Metal_Nails {
 	weight = 0.5;
 };
 
-class ItemScrews
-{
+class DZE_Item_Metal_Screws {
 	weight = 0.5;
 };
 
-class equip_duct_tape 
-{
+class DZE_Item_Plastic_Duct_Tape {
 	weight = 0.4;
 };
 
-class equip_feathers
-{
+class DZE_Item_Hide_Feathers {
 	weight = 0.01;
 };
 
-class equip_pvc_box
-{
+class DZE_Item_Plastic_PVC_Box {
 	weight = 0.2;
 };
 
-class equip_hobo_fishing_kit
-{
+class DZE_Item_Farm_Hobo_Fishing_Kit {
 	weight = 2.8;
 };
 
-class equip_hose 
-{
+class DZE_Item_Plastic_Hose {
 	weight = 0.15;
 };
 
-class equip_hose_clamp
-{
+class DZE_Item_Plastic_Hose_Clamp {
 	weight = 0.1;
 };
 
-class Item_coni
-{
+class DZE_Item_Plastic_Coni {
 	weight = 0.5;
 };
 
-class Item_Connector_I
-{
+class DZE_Item_Plastic_Connector_I {
 	weight = 0.5;
 };
 
-class Item_Connector_L
-{
+class DZE_Item_Plastic_Connector_L {
 	weight = 0.5;
 };
 
-class Item_Connector_T
-{
+class DZE_Item_Plastic_Connector_T {
 	weight = 0.5;
 };
 
-class equip_tin_powder
-{
+class DZE_Item_Misc_Tin_Powder {
 	weight = 0.1;
 };
 
-class equip_slugsinacan
-{
+class DZE_Item_Misc_SlugsInACan {
 	weight = 0.1;
 };
 
@@ -117,155 +99,123 @@ class IR_Strobe_Target
 {
 	weight = 0.4;
 };
-class ItemBucket
-{
+class DZE_Item_Bucket_Empty {
 	weight = 1;
 };
-class ItemSuitcase
-{
+class DZE_Item_Misc_Suitcase {
 	weight = 5;
 };
-class ItemSuitcaseDiamonds
-{
+class DZE_Item_Gems_Suitcase_Diamonds {
 	weight = 6;
 };
-class ItemSuitcaseBomb
-{
+class DZE_Item_Expl_SuitcaseBomb {
 	weight = 8;
 };
-class ItemPlasticParts
-{
+class DZE_Item_Plastic_Parts {
 	weight = 4;
 };
-class ItemCeramicParts
-{
+class DZE_Item_Misc_CeramicParts {
 	weight = 3;
 };
-class ItemWeaponPartsPistol
-{
+class DZE_Item_WepParts_Pistol {
 	weight = 4;
 };
-class ItemWeaponPartsSMG
-{
+class DZE_Item_WepParts_SMG {
 	weight = 5;
 };
-class ItemWeaponPartsShotgun
-{
+class DZE_Item_WepParts_Shotgun {
 	weight = 5;
 };
-class ItemWeaponPartsRifle
-{
+class DZE_Item_WepParts_Rifle {
 	weight = 7;
 };
-class ItemWeaponPartsSniperRifle
-{
+class DZE_Item_WepParts_SniperRifle {
 	weight = 7.5;
 };
-class ItemWeaponPartsMG
-{
+class DZE_Item_WepParts_MG {
 	weight = 9;
 };
-class ItemWeaponPartsUnknown
-{
+class DZE_Item_WepParts_Unknown {
 	weight = 8.5;
 };
-class ItemWeaponPartsBad
-{
+class DZE_Item_WepParts_Bad {
 	weight = 8;
 };
-class ItemWeaponPartsNormal
-{
+class DZE_Item_WepParts_Normal {
 	weight = 9;
 };
-class ItemWeaponPartsGood
-{
+class DZE_Item_WepParts_Good {
 	weight = 9.5;
 };
-class ItemWeaponPartsExecellent
-{
+class DZE_Item_WepParts_Excellent {
 	weight = 10;
 };
-class ItemGunPowderSmall
-{
+class DZE_Item_GunPowder_Small {
 	weight = 2;
 };
-class ItemGunPowder
-{
+class DZE_Item_GunPowder_Normal {
 	weight = 8;
 };
-class ItemGunPowderBig
-{
+class DZE_Item_GunPowder_Big {
 	weight = 16;
 };
-class ItemFuelcanWater
+class DZE_Item_Can_Water
 {
 	weight = 5;
 };
-class ItemFuelcanMilk
+class DZE_Item_Can_Milk
 {
 	weight = 5;
 };
-class ItemJerrycanWater
+class DZE_Item_JerryCan_Water
 {
 	weight = 20;
 };
-class ItemJerrycanMilk
+class DZE_Item_JerryCan_Milk
 {
 	weight = 20;
 };
-class ItemFuelBarrelWater
+class DZE_Item_Barrel_Water
 {
 	weight = 210;
 };
-class ItemFuelBarrelMilk
+class DZE_Item_Barrel_Milk
 {
 	weight = 210;
 };
-class ItemBucketWater
-{
+class DZE_Item_Bucket_Water {
 	weight = 10;
 };
-class ItemBucketFuel
-{
+class DZE_Item_Bucket_Fuel {
 	weight = 10;
 };
-class ItemBucketMilk
-{
+class DZE_Item_Bucket_Milk {
 	weight = 10;
 };
-class ItemBackpackUpgrade_1
-{
+class DZE_Item_BagUpgrade_1 {
 	weight = 2;
 };
-class ItemBackpackUpgrade_2
-{
+class DZE_Item_BagUpgrade_2 {
 	weight = 4;
 };
-class ItemBackpackUpgrade_3
-{
+class DZE_Item_BagUpgrade_3 {
 	weight = 6;
 };
-class FoodCanFrozen1
-{
+class DZE_Item_Frozen_Food_Can1 {
 	weight = 0.25;	
 };
-class FoodCanFrozen2
-{
+class DZE_Item_Frozen_Food_Can2 {
 	weight = 0.25;	
 };
-class ItemSodaFrozen1
-{
+class DZE_Item_Frozen_Drink_Soda1 {
 	weight = 0.25;
 };
-class ItemSodaFrozen2
-{
+class DZE_Item_Frozen_Drink_Soda2 {
 	weight = 0.25;
 };
-class ItemDung
-{
+class DZE_Item_Farm_Dung {
 	weight = 2.5;
 };
-class ItemSunFlowerOil
-{
+class DZE_Item_Farm_SunFlowerOil {
 	weight = 0.6;
 };

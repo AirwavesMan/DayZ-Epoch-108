@@ -37,7 +37,7 @@ InfectedCamp[] =
 	{Loot_WEAPON,		1,		DZE_Tool_Knife},
 	{Loot_WEAPON,		1,		DZE_Tool_Binocular},
 	{Loot_WEAPON,		1,		DZE_Tool_Crowbar},
-	
+
 	//Pistols
 	{Loot_GROUP,		5,		pistols},
 
@@ -46,16 +46,16 @@ InfectedCamp[] =
 	{Loot_GROUP,		1,		Chainsaws},
 	{Loot_WEAPON,		4,		DZE_Wep_Crossbow},
 	{Loot_WEAPON,		5,		DZE_Melee_BaseBallBat},
-	
+
 	//Items
-	{Loot_MAGAZINE,		3,		equip_rope},
+	{Loot_MAGAZINE,		3,		DZE_Item_Tex_Rope},
 	{Loot_MAGAZINE,		3,		DZE_Item_Medi_Herb_Box},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Wire},
 	{Loot_MAGAZINE,		4,		DZE_Item_Kit_TankTrap},
-	{Loot_MAGAZINE,		6,		PartWoodPile},
+	{Loot_MAGAZINE,		6,		DZE_Item_Wood_Pile},
 	{Loot_GROUP,		6,		militaryclothes},
-	{Loot_MAGAZINE,		2,		ItemBookBible},
-	
+	{Loot_MAGAZINE,		2,		DZE_Item_Docu_BookBible},
+
 	//Groups
 	{Loot_GROUP,		15,		MedicalLow},
 	{Loot_GROUP,		10,		MedicalHigh},

@@ -6,14 +6,14 @@ class DZE_Veh_Jackal_L2A1_Desert: BAF_Jackal2_L2A1_D {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 15;
 	transportMaxBackpacks = 5;
 	supplyRadius = 1.5;
 
+
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Jackal_L2A1_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Jackal_L2A1_Desert_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -25,7 +25,7 @@ class DZE_Veh_Jackal_L2A1_Desert_1: DZE_Veh_Jackal_L2A1_Desert {
 	terrainCoef = 1; //base 3
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Jackal_L2A1_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Jackal_L2A1_Desert_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -35,7 +35,7 @@ class DZE_Veh_Jackal_L2A1_Desert_2: DZE_Veh_Jackal_L2A1_Desert_1 {
 	damageResistance = 0.015; // base 0.00719
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Jackal_L2A1_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Jackal_L2A1_Desert_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -46,7 +46,7 @@ class DZE_Veh_Jackal_L2A1_Desert_3: DZE_Veh_Jackal_L2A1_Desert_2 {
 	transportMaxBackpacks = 10;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Jackal_L2A1_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Jackal_L2A1_Desert_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 
@@ -60,7 +60,7 @@ class DZE_Veh_Jackal_L2A1_Woodland: DZE_Veh_Jackal_L2A1_Desert {
 	model = "\CorePatch\CorePatch_Vehicles\models\Jackal_L2A1_W_BAF";
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Jackal_L2A1_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Jackal_L2A1_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -72,7 +72,7 @@ class DZE_Veh_Jackal_L2A1_Woodland_1: DZE_Veh_Jackal_L2A1_Woodland {
 	terrainCoef = 1; //base 3
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Jackal_L2A1_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Jackal_L2A1_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -82,7 +82,7 @@ class DZE_Veh_Jackal_L2A1_Woodland_2: DZE_Veh_Jackal_L2A1_Woodland_1 {
 	damageResistance = 0.015; // base 0.00719
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Jackal_L2A1_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Jackal_L2A1_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -93,7 +93,7 @@ class DZE_Veh_Jackal_L2A1_Woodland_3: DZE_Veh_Jackal_L2A1_Woodland_2 {
 	transportMaxBackpacks = 10;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Jackal_L2A1_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Jackal_L2A1_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 
@@ -110,14 +110,14 @@ class DZE_Veh_Jackal_MK19_Desert: BAF_Jackal2_GMG_D {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 15;
 	transportMaxBackpacks = 5;
 	supplyRadius = 1.5;
 
+
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Jackal_MK19_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Jackal_MK19_Desert_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -129,7 +129,7 @@ class DZE_Veh_Jackal_MK19_Desert_1: DZE_Veh_Jackal_MK19_Desert {
 	terrainCoef = 1; //base 3
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Jackal_MK19_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Jackal_MK19_Desert_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -139,7 +139,7 @@ class DZE_Veh_Jackal_MK19_Desert_2: DZE_Veh_Jackal_MK19_Desert_1 {
 	damageResistance = 0.015; // base 0.00719
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Jackal_MK19_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Jackal_MK19_Desert_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -150,7 +150,7 @@ class DZE_Veh_Jackal_MK19_Desert_3: DZE_Veh_Jackal_MK19_Desert_2 {
 	transportMaxBackpacks = 10;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Jackal_MK19_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Jackal_MK19_Desert_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 
@@ -164,7 +164,7 @@ class DZE_Veh_Jackal_MK19_Woodland: DZE_Veh_Jackal_MK19_Desert {
 	model = "\CorePatch\CorePatch_Vehicles\models\Jackal_GMG_W_BAF";
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Jackal_MK19_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Jackal_MK19_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -176,7 +176,7 @@ class DZE_Veh_Jackal_MK19_Woodland_1: DZE_Veh_Jackal_MK19_Woodland {
 	terrainCoef = 1; //base 3
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Jackal_MK19_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Jackal_MK19_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -186,7 +186,7 @@ class DZE_Veh_Jackal_MK19_Woodland_2: DZE_Veh_Jackal_MK19_Woodland_1 {
 	damageResistance = 0.015; // base 0.00719
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Jackal_MK19_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Jackal_MK19_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -197,7 +197,7 @@ class DZE_Veh_Jackal_MK19_Woodland_3: DZE_Veh_Jackal_MK19_Woodland_2 {
 	transportMaxBackpacks = 10;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Jackal_MK19_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Jackal_MK19_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 

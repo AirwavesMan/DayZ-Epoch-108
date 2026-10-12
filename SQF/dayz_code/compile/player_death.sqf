@@ -66,7 +66,7 @@ if (!isNull _source) then {
 	_sourceVehicleType = typeOf (vehicle _source);
 	_sourceWeapon = currentWeapon _source;
 	_sourceWeapon = call {
-		if (_ammo in ["PipeBomb","Mine","MineE"]) exitwith {_ammo};
+		if (_ammo in ['PipeBomb','Mine','MineE']) exitwith {'DZE_Item_Expl_' + _ammo};
 		if ({_sourceVehicleType isKindOf _x} count ["LandVehicle","Air","Ship"] > 0) exitwith {_sourceVehicleType};
 		if (_sourceWeapon == "Throw") exitwith {(weaponState _source) select 3};
 		_sourceWeapon;
@@ -158,8 +158,8 @@ if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) th
 	_body setVariable ["KillingBlow",[_realSource,_humankill],true];
 
 	call {
-		if (_humanityBody >= DZE_Hero) exitwith {_body addMagazine "ItemDogTagHero";};
-		if (_humanityBody <= DZE_Bandit) exitwith {_body addMagazine "ItemDogTagBandit";};
+		if (_humanityBody >= DZE_Hero) exitwith {_body addMagazine 'DZE_Item_DogTag_Hero';};
+		if (_humanityBody <= DZE_Bandit) exitwith {_body addMagazine 'DZE_Item_DogTag_Bandit';};
 	};
 };
 

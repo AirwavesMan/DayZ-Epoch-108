@@ -84,44 +84,44 @@ if (_canAfford) then {
 
 		if (_briefcase_100oz > 0) then {
 			for "_x" from 1 to _briefcase_100oz do {
-				player addMagazine "ItemBriefcase100oz";
-				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _briefcase_100oz, "ItemBriefcase100oz"];
+				player addMagazine 'DZE_Item_Cur_BriefcaseG_100oz';
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _briefcase_100oz, 'DZE_Item_Cur_BriefcaseG_100oz'];
 			};
 		};
 		if (_gold_10oz > 0) then {
 			if (_gold_10oz == 1) then {
-				player addMagazine "ItemGoldBar10oz";
+				player addMagazine 'DZE_Item_Cur_GoldBar10oz';
 				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_10oz, "ItemGoldBar10z"];
 			} else {
-				player addMagazine format["ItemBriefcase%1oz",floor(_gold_10oz*10)];
-				//diag_log format["DEBUG TRADER CHANG MADE: ItemBriefcase%1oz", floor(_gold_10oz*10)];
+				player addMagazine format['DZE_Item_Cur_BriefcaseG_%1oz',floor(_gold_10oz*10)];
+				//diag_log format["DEBUG TRADER CHANG MADE: DZE_Item_Cur_BriefcaseG_%1oz", floor(_gold_10oz*10)];
 			};
 		};
 		if (_gold_1oz > 0) then {
 			if (_gold_1oz == 1) then {
-				player addMagazine "ItemGoldBar";
-				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_1oz, "ItemGoldBar"];
+				player addMagazine 'DZE_Item_Cur_GoldBar';
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_1oz, 'DZE_Item_Cur_GoldBar'];
 			} else {
-				player addMagazine format["ItemGoldBar%1oz",_gold_1oz];
-				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_1oz, "ItemGoldBar"];
+				player addMagazine format['DZE_Item_Cur_GoldBar%1oz',_gold_1oz];
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_1oz, 'DZE_Item_Cur_GoldBar'];
 			};
 		};
 		if (_silver_10oz > 0) then {
 			if (_silver_10oz == 1) then {
-				player addMagazine "ItemSilverBar10oz";
-				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_10oz, "ItemSilverBar10oz"];
+				player addMagazine 'DZE_Item_Cur_SilverBar10oz';
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_10oz, 'DZE_Item_Cur_SilverBar10oz'];
 			} else {
-				player addMagazine format["ItemBriefcaseS%1oz",floor(_silver_10oz*10)];
-				//diag_log format["DEBUG TRADER CHANG MADE: ItemBriefcaseS%1oz", floor(_silver_10oz*10)];
+				player addMagazine format['DZE_Item_Cur_BriefcaseS_%1oz',floor(_silver_10oz*10)];
+				//diag_log format["DEBUG TRADER CHANG MADE: DZE_Item_Cur_BriefcaseS_%1oz", floor(_silver_10oz*10)];
 			};
 		};
 		if (_silver_1oz > 0) then {
 			if (_silver_1oz == 1) then {
-				player addMagazine "ItemSilverBar";
-				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_1oz, "ItemSilverBar"];
+				player addMagazine 'DZE_Item_Cur_SilverBar';
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_1oz, 'DZE_Item_Cur_SilverBar'];
 			} else {
-				player addMagazine format["ItemSilverBar%1oz",_silver_1oz];
-				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_1oz, "ItemSilverBar"];
+				player addMagazine format['DZE_Item_Cur_SilverBar%1oz',_silver_1oz];
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_1oz, 'DZE_Item_Cur_SilverBar'];
 			};
 		};
 		_successful = true;

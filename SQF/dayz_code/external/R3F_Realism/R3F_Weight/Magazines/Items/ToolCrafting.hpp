@@ -1,24 +1,19 @@
-class equip_lever 
-{
+class DZE_Item_Tool_Lever {
 	weight = 0.5;
 };
 
-class ItemSledgeHead
-{
+class DZE_Item_Tool_SledgeHead {
 	weight = 9;
 };
 
-class ItemSledgeHandle
-{
+class DZE_Item_Tool_SledgeHandle {
 	weight = 1;
 };
 
-class equip_Crossbow_Kit
-{
+class DZE_Item_Tool_Crossbow_Kit {
 	weight = 4;
 };
 
-class equip_crossbow_stock
-{
+class DZE_Item_Tool_Crossbow_Stock {
 	weight = 4;
 };

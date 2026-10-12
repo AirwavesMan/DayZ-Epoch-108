@@ -15,7 +15,6 @@ class DZE_Camel_Base: Plane {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_AIR
-
 	weapons[] = {"TwinVickers","pook_H13Grenades"};
 	magazines[] = {"500Rnd_TwinVickers","pook_12Rnd_Grenade_Camel"};
 	gunnerHasFlares = false;
@@ -51,6 +50,7 @@ class DZE_Camel_Base: Plane {
 	soundEngineOffInt[] = {"\CYBP\cybp_camels\Data\Sound\Camel_stop.wss",0.400341,1.0};
 	soundEngineOffExt[] = {"\CYBP\cybp_camels\Data\Sound\Camel_stop.wss",0.884328,1.0,800};
 	insideSoundCoef = 1.0;
+
 
 	class HitPoints {
 		class HitHull {
@@ -186,7 +186,7 @@ class DZE_Veh_Camel_West: DZE_Camel_Base {
 	displayName = "$STR_VEH_NAME_CAMEL_WEST";
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Camel_West_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliAVE[] = {"DZE_Veh_Camel_West_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliAVE",1},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 
 };
@@ -197,10 +197,10 @@ class DZE_Veh_Camel_East: DZE_Camel_Base {
 	picture = "CYBP\CYBP_Camels\data\ico\BIScamel2_CA.paa";
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Camel_East_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliAVE[] = {"DZE_Veh_Camel_East_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliAVE",1},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
-
 	hiddenSelectionsTextures[] = {"CYBP\CYBP_Camels\data\camel_east_co.paa","","CYBP\CYBP_Camels\data\clear_empty.paa"};
+
 
 	class Damage {
 		tex[] = {};
@@ -216,9 +216,8 @@ class DZE_Veh_Camel_Civil: DZE_Camel_Base {
 	memoryPointsGetInCargoDir = "pos driver dir";
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_Camel_Civil_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliAVE[] = {"DZE_Veh_Camel_Civil_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliAVE",1},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
-
 	weapons[] = {};
 	magazines[] = {};
 	hiddenSelectionsTextures[] = {"CYBP\CYBP_Camels\data\clear_empty.paa","","CYBP\CYBP_Camels\data\clear_empty.paa"};
@@ -227,6 +226,7 @@ class DZE_Veh_Camel_Civil: DZE_Camel_Base {
 	cargoGetOutAction[] = {"GetOutLow"};
 	cargoAction[] = {"Mi8_Cargo","Mi8_Cargo"};
 	cargoCompartments[] = {"Compartment2"};
+
 
 	class AnimationSources: AnimationSources {
 		class MGHide {
@@ -248,7 +248,7 @@ class DZE_Veh_Camel_West_1: DZE_Veh_Camel_West {
 	damageResistance = 0.00906;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Camel_West_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliLRK[] = {"DZE_Veh_Camel_West_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -259,7 +259,7 @@ class DZE_Veh_Camel_West_2: DZE_Veh_Camel_West_1 {
 	transportMaxBackpacks = 6;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Camel_West_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		DZE_Item_Upgrade_HeliTNK[] = {"DZE_Veh_Camel_West_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliTNK",1},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Barrel_Fuel",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",1},{"DZE_Item_Elec_Floppywire",1}}};
 	};
 };
 
@@ -277,7 +277,7 @@ class DZE_Veh_Camel_East_1: DZE_Veh_Camel_East {
 	damageResistance = 0.00906;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Camel_East_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliLRK[] = {"DZE_Veh_Camel_East_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -288,7 +288,7 @@ class DZE_Veh_Camel_East_2: DZE_Veh_Camel_East_1 {
 	transportMaxBackpacks = 6;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Camel_East_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		DZE_Item_Upgrade_HeliTNK[] = {"DZE_Veh_Camel_East_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliTNK",1},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Barrel_Fuel",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",1},{"DZE_Item_Elec_Floppywire",1}}};
 	};
 };
 
@@ -306,7 +306,7 @@ class DZE_Veh_Camel_Civil_1: DZE_Veh_Camel_Civil {
 	damageResistance = 0.00906;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_Camel_Civil_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliLRK[] = {"DZE_Veh_Camel_Civil_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -317,7 +317,7 @@ class DZE_Veh_Camel_Civil_2: DZE_Veh_Camel_Civil_1 {
 	transportMaxBackpacks = 6;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_Camel_Civil_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		DZE_Item_Upgrade_HeliTNK[] = {"DZE_Veh_Camel_Civil_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliTNK",1},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Barrel_Fuel",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",1},{"DZE_Item_Elec_Floppywire",1}}};
 	};
 };
 

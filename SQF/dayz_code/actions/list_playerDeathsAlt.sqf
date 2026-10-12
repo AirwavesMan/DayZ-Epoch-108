@@ -1,6 +1,6 @@
 private [];
 
-player removeMagazine "ItemNewspaper";
+player removeMagazine 'DZE_Item_Docu_Newspaper';
 
 PVDZE_plr_DeathB = [player];
 publicVariableServer  "PVDZE_plr_DeathB";

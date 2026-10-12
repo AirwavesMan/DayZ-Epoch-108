@@ -2,10 +2,8 @@
 #include "version.hpp"
 #include "Configs\CfgNonAIVehicles.hpp" //Axeman lights
 
-class CfgPatches
-{
-	class dayz_code
-	{
+class CfgPatches {
+	class dayz_code {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -13,13 +11,13 @@ class CfgPatches
 		{
 			"pook_h13",
 			"map_eu",
-			
+
 			//dayz_anim references all CA addons
 			"dayz_anim",
-			
+
 			//dayz addons
 			"dayz",
-			"dayz_buildings", // Overwrite classes that use vanilla ItemPadlock with Epoch ItemComboLock
+			"dayz_buildings", // Overwrite classes that use vanilla DZE_Item_Locks_Padlock with Epoch DZE_Item_Locks_ComboLock
 			"dayz_communityassets",
 			"dayz_communityweapons",
 			"dayz_equip",
@@ -27,42 +25,37 @@ class CfgPatches
 			"dayz_vehicles",
 			"dayz_weapons",
 			"community_crossbow",
-			
+
 			//shacktac addons
 			"st_bunnyhop",
 			"st_collision",
 			"st_evasive",
-			
+
 			//Extra Epoch Addons
 			"asc_eu_lights"
 		};
 	};
 };
 
-class CfgMods
-{
-	class DayZ
-	{
+class CfgMods {
+	class DayZ {
 		dir = "DayZ_Epoch";
 		name = "DayZ Epoch";
 		picture = "z\addons\dayz_code\gui\loadingscreen.paa";
+		action = "http://www.dayzepoch.com";
 		hidePicture = 0;
 		hideName = 0;
-		action = "http://www.dayzepoch.com";
 		version = DayZVersion;
 		hiveVersion = 0.96;
 		//requiredAddons[] = {"Chernarus"}; // No need to load for other maps
 	};
 };
 
-class CfgAddons
-{
+class CfgAddons {
 	//access = 1;
 	class PreloadBanks {};
-	class PreloadAddons
-	{
-		class dayz
-		{
+	class PreloadAddons {
+		class dayz {
 			list[] =
 			{
 				"csj_gyroac", // do not move down!
@@ -85,7 +78,7 @@ class CfgAddons
 				"nst",
 				"dayz_epoch_b",
 				"CfgVehicles",
-				"dayz_epoch_c"				
+				"dayz_epoch_c"
 			};
 		};
 	};
@@ -133,11 +126,9 @@ class DefaultEventhandlers {
 #include "Configs\RscDisplay\virtualGarage.hpp"
 //#include "Configs\RscDisplay\tradermenu.hpp"
 
-class CfgTasks
-{
+class CfgTasks {
 	//agentTasks[] = {"ZedMainTask"};
-	class ZedMainTask
-	{
+	class ZedMainTask {
 		name = "Zed Main Task";
 		//fsm = "\ca\animals2\Data\scripts\main.fsm";
 		fsm = "\z\AddOns\dayz_code\system\main.fsm";

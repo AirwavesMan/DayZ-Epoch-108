@@ -16,9 +16,9 @@ if (isNil "_fuelAmount") then {
 	_cursorTarget setVariable ["FuelAmount", _fuelAmount, true];
 };
 
-local _qty5	= {_x == "ItemFuelcanEmpty"} count _magazines;
-local _qty20	= {_x == "ItemJerrycanEmpty"} count _magazines;
-local _qty210	= {_x == "ItemFuelBarrelEmpty"} count _magazines;
+local _qty5	= {_x == 'DZE_Item_Can_Empty'} count _magazines;
+local _qty20	= {_x == 'DZE_Item_JerryCan_Empty'} count _magazines;
+local _qty210	= {_x == 'DZE_Item_Barrel_Empty'} count _magazines;
 local _qty	= _qty5 + _qty20 + _qty210;
 
 local _fuelNeeded = (_qty5 * 5) + (_qty20 * 20) + (_qty210 * 210);
@@ -45,12 +45,12 @@ if (_qty > 0) then {
 		if (_fuelAmount >= 5) then {
 			_fuelAmount = _fuelAmount - 5;
 			_cursorTarget setVariable ["FuelAmount", _fuelAmount, true];
-			local _removed = [player, "ItemFuelcanEmpty", 1] call BIS_fnc_invRemove;
+			local _removed = [player, 'DZE_Item_Can_Empty', 1] call BIS_fnc_invRemove;
 			if (_removed == 0) then {
 				_finished = false;
 				breakTo "main";
 			};
-			player addMagazine "ItemFuelcan";
+			player addMagazine 'DZE_Item_Can_Fuel';
 		} else {
 			_qty = _qty - 1;
 		};
@@ -62,12 +62,12 @@ if (_qty > 0) then {
 		if (_fuelAmount >= 20) then {
 			_fuelAmount = _fuelAmount - 20;
 			_cursorTarget setVariable ["FuelAmount", _fuelAmount, true];
-			local _removed = [player, "ItemJerrycanEmpty", 1] call BIS_fnc_invRemove;
+			local _removed = [player, 'DZE_Item_JerryCan_Empty', 1] call BIS_fnc_invRemove;
 			if (_removed == 0) then {
 				_finished = false;
 				breakTo "main";
 			};
-			player addMagazine "ItemJerrycan";
+			player addMagazine 'DZE_Item_JerryCan_Fuel';
 		} else {
 			_qty = _qty - 1;
 		};
@@ -79,12 +79,12 @@ if (_qty > 0) then {
 		if (_fuelAmount >= 210) then {
 			_fuelAmount = _fuelAmount - 210;
 			_cursorTarget setVariable ["FuelAmount", _fuelAmount, true];
-			local _removed = [player, "ItemFuelBarrelEmpty", 1] call BIS_fnc_invRemove;
+			local _removed = [player, 'DZE_Item_Barrel_Empty', 1] call BIS_fnc_invRemove;
 			if (_removed == 0) then {
 				_finished = false;
 				breakTo "main";
 			};
-			player addMagazine "ItemFuelBarrel";
+			player addMagazine 'DZE_Item_Barrel_Fuel';
 		} else {
 			_qty = _qty - 1;
 		};

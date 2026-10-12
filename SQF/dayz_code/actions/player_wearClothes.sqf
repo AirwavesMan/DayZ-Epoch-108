@@ -7,7 +7,7 @@ if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call DZE
 
 if (vehicle player != player) exitWith {localize "str_player_fail_wear1" call DZE_fnc_rollingMessages;};
 //if (!isNull (unitBackpack player)) exitWith {localize "STR_EPOCH_ACTIONS_9" call DZE_fnc_rollingMessages;};
-if ("CSGAS" in (magazines player)) exitWith {localize "STR_EPOCH_ACTIONS_10" call DZE_fnc_rollingMessages;};
+if ('DZE_Mag_CSGAS' in (magazines player)) exitWith {localize "STR_EPOCH_ACTIONS_10" call DZE_fnc_rollingMessages;};
 
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
 if (_playerNear) exitWith {localize "STR_EPOCH_PLAYER_84" call DZE_fnc_rollingMessages;};

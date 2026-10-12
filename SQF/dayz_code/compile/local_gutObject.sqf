@@ -7,7 +7,7 @@ local _time = diag_tickTime;
 call {
 	if (_body isKindOf "zZombie_base") exitWith {
 		_qty = 1;
-		_rawfoodtype = "ItemZombieParts";
+		_rawfoodtype = 'DZE_Item_Zombie_Parts';
 	};
 	
 	if (_bodyType == "z_bloodsucker") exitWith {
@@ -30,7 +30,7 @@ if (local _body) then {
 	if (_bodyType in ["Cock","Hen"]) then {
 		local _amount = (floor (random 4)) + 2;
 		for "_x" from 1 to _amount do {
-			_body addMagazine "equip_feathers";
+			_body addMagazine 'DZE_Item_Hide_Feathers';
 		};
 	};	
 

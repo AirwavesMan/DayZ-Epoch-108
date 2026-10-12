@@ -270,7 +270,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 					_weaponqty = _inventory select 0 select 1;
 					{_object addWeaponCargoGlobal [_x, _weaponqty select _foreachindex];} foreach _weaponcargo;
 					_magqty = _inventory select 1 select 1;
-					{if (_x != "CSGAS") then {_object addMagazineCargoGlobal [_x, _magqty select _foreachindex];};} foreach _magcargo;
+					{if (_x != 'DZE_Mag_CSGAS') then {_object addMagazineCargoGlobal [_x, _magqty select _foreachindex];};} foreach _magcargo;
 					_backpackqty = _inventory select 2 select 1;
 					{_object addBackpackCargoGlobal [_x, _backpackqty select _foreachindex];} foreach _backpackcargo;
 				};
@@ -411,7 +411,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		_weaponqty = _inventory select 0 select 1;
 		{_object addWeaponCargoGlobal [_x, _weaponqty select _foreachindex];} foreach _weaponcargo;
 		_magqty = _inventory select 1 select 1;
-		{if (_x != "CSGAS") then {_object addMagazineCargoGlobal [_x, _magqty select _foreachindex];};} foreach _magcargo;
+		{if (_x != 'DZE_Mag_CSGAS') then {_object addMagazineCargoGlobal [_x, _magqty select _foreachindex];};} foreach _magcargo;
 		_backpackqty = _inventory select 2 select 1;
 		{_object addBackpackCargoGlobal [_x, _backpackqty select _foreachindex];} foreach _backpackcargo;
 	};

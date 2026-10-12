@@ -1,10 +1,10 @@
-class DZE_Tool_FishingPole : ItemCore {
-	scope = 2;	
+class DZE_Tool_FishingPole: ItemCore {
+	scope = 2;
 	displayName = "$STR_ITEM_NAME_FISHINGPOLE";
 	descriptionShort = "$STR_ITEM_DESC_FISHINGPOLE";
 	model = "\z\addons\dayz_communityassets\models\fishing_rod_loot_item.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_fishingpole_CA.paa";
-	
+
 	class ItemActions {
 		class Toolbelt {
 			text = "$STR_ACTIONS_RFROMTB";
@@ -18,7 +18,7 @@ class DZE_Tool_FishingPole : ItemCore {
 				"DZE_Melee_FishingPole"
 			};
 		};
-		
+
 		class ToBack {
 			text = "$STR_ACTIONS_2BACK";
 			script = "spawn DZE_fnc_addToBack;";
@@ -34,13 +34,13 @@ class DZE_Tool_FishingPole : ItemCore {
 	};
 };
 
-class DZE_Tool_FishingPoleBroken : ItemCore {
-	scope = 2;	
+class DZE_Tool_FishingPoleBroken: ItemCore {
+	scope = 2;
 	displayName = "$STR_ITEM_NAME_FISHINGPOLEBROKEN";
 	descriptionShort = "$STR_ITEM_DESC_FISHINGPOLE_BROKEN";
 	model = "\z\addons\dayz_communityassets\models\fishing_rod_loot_item.p3d";
 	picture = "\dayz_epoch_c\icons\tools\ItemFishingpoleBroken.paa";
-	
+
 	class ItemActions {
 		class Repair {
 			text = "$STR_ACTIONS_FIX_FISHINGPOLE";
@@ -49,8 +49,8 @@ class DZE_Tool_FishingPoleBroken : ItemCore {
 			requiretools[] = {};
 			output[] = {};
 			outputweapons[] = {"DZE_Tool_FishingPole"};
-			input[] = {{"equip_duct_tape",1},{"equip_lever",1}};
+			input[] = {{"DZE_Item_Plastic_Duct_Tape",1},{"DZE_Item_Tool_Lever",1}};
 			inputweapons[] = {"DZE_Tool_FishingPoleBroken"};
-		};		
-	};	
+		};
+	};
 };

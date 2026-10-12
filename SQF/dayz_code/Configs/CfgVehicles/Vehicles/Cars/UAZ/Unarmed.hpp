@@ -21,7 +21,7 @@ class DZE_Veh_UAZ_CDF: UAZ_CDF {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_UAZ_CDF_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_UAZ_CDF_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -32,7 +32,7 @@ class DZE_Veh_UAZ_CDF_1: DZE_Veh_UAZ_CDF {
 	terrainCoef = 1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_UAZ_CDF_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_UAZ_CDF_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -74,7 +74,7 @@ class DZE_Veh_UAZ_CDF_2: DZE_Veh_UAZ_CDF_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_CDF_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_UAZ_CDF_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -85,7 +85,7 @@ class DZE_Veh_UAZ_CDF_3: DZE_Veh_UAZ_CDF_2 {
 	transportMaxBackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_UAZ_CDF_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_UAZ_CDF_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -117,7 +117,7 @@ class DZE_Veh_UAZ_INS: UAZ_INS {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_UAZ_INS_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_UAZ_INS_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -128,7 +128,7 @@ class DZE_Veh_UAZ_INS_1: DZE_Veh_UAZ_INS {
 	terrainCoef = 1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_UAZ_INS_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_UAZ_INS_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -170,7 +170,7 @@ class DZE_Veh_UAZ_INS_2: DZE_Veh_UAZ_INS_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_INS_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_UAZ_INS_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -181,7 +181,7 @@ class DZE_Veh_UAZ_INS_3: DZE_Veh_UAZ_INS_2 {
 	transportMaxBackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_UAZ_INS_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_UAZ_INS_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -213,7 +213,7 @@ class DZE_Veh_UAZ_RU: UAZ_RU {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_UAZ_RU_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_UAZ_RU_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -224,7 +224,7 @@ class DZE_Veh_UAZ_RU_1: DZE_Veh_UAZ_RU {
 	terrainCoef = 1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_UAZ_RU_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_UAZ_RU_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -266,7 +266,7 @@ class DZE_Veh_UAZ_RU_2: DZE_Veh_UAZ_RU_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_RU_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_UAZ_RU_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -277,7 +277,7 @@ class DZE_Veh_UAZ_RU_3: DZE_Veh_UAZ_RU_2 {
 	transportMaxBackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_UAZ_RU_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_UAZ_RU_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -309,7 +309,7 @@ class DZE_Veh_UAZ_TK: UAZ_Unarmed_TK_EP1 {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_UAZ_TK_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_UAZ_TK_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -320,7 +320,7 @@ class DZE_Veh_UAZ_TK_1: DZE_Veh_UAZ_TK {
 	terrainCoef = 1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_UAZ_TK_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_UAZ_TK_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -362,7 +362,7 @@ class DZE_Veh_UAZ_TK_2: DZE_Veh_UAZ_TK_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_TK_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_UAZ_TK_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -373,7 +373,7 @@ class DZE_Veh_UAZ_TK_3: DZE_Veh_UAZ_TK_2 {
 	transportMaxBackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_UAZ_TK_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_UAZ_TK_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -405,7 +405,7 @@ class DZE_Veh_UAZ_UN: UAZ_Unarmed_UN_EP1 {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_UAZ_UN_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_UAZ_UN_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -416,7 +416,7 @@ class DZE_Veh_UAZ_UN_1: DZE_Veh_UAZ_UN {
 	terrainCoef = 1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_UAZ_UN_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_UAZ_UN_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -458,7 +458,7 @@ class DZE_Veh_UAZ_UN_2: DZE_Veh_UAZ_UN_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_UN_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_UAZ_UN_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -469,7 +469,7 @@ class DZE_Veh_UAZ_UN_3: DZE_Veh_UAZ_UN_2 {
 	transportMaxBackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_UAZ_UN_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_UAZ_UN_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -501,7 +501,7 @@ class DZE_Veh_UAZ_Civil: UAZ_Unarmed_TK_CIV_EP1 {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_UAZ_Civil_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_UAZ_Civil_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -512,7 +512,7 @@ class DZE_Veh_UAZ_Civil_1: DZE_Veh_UAZ_Civil {
 	terrainCoef = 1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_UAZ_Civil_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_UAZ_Civil_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -554,7 +554,7 @@ class DZE_Veh_UAZ_Civil_2: DZE_Veh_UAZ_Civil_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_Civil_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_UAZ_Civil_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -565,7 +565,7 @@ class DZE_Veh_UAZ_Civil_3: DZE_Veh_UAZ_Civil_2 {
 	transportMaxBackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_UAZ_Civil_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_UAZ_Civil_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -597,7 +597,7 @@ class DZE_Veh_UAZ_Rusty: UAZ_Unarmed_TK_CIV_EP1 {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_UAZ_Rusty_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_UAZ_Rusty_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -608,7 +608,7 @@ class DZE_Veh_UAZ_Rusty_1: DZE_Veh_UAZ_Rusty {
 	terrainCoef = 1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_UAZ_Rusty_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_UAZ_Rusty_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -650,7 +650,7 @@ class DZE_Veh_UAZ_Rusty_2: DZE_Veh_UAZ_Rusty_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_Rusty_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_UAZ_Rusty_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -661,7 +661,7 @@ class DZE_Veh_UAZ_Rusty_3: DZE_Veh_UAZ_Rusty_2 {
 	transportMaxBackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_UAZ_Rusty_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_UAZ_Rusty_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -693,7 +693,7 @@ class DZE_Veh_UAZ_Winter: UAZ_Unarmed_TK_EP1 {
 	supplyRadius = 1.3;
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_UAZ_Winter_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_UAZ_Winter_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -704,7 +704,7 @@ class DZE_Veh_UAZ_Winter_1: DZE_Veh_UAZ_Winter {
 	terrainCoef = 1;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_UAZ_Winter_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_UAZ_Winter_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -746,7 +746,7 @@ class DZE_Veh_UAZ_Winter_2: DZE_Veh_UAZ_Winter_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_UAZ_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_UAZ_Winter_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -757,7 +757,7 @@ class DZE_Veh_UAZ_Winter_3: DZE_Veh_UAZ_Winter_2 {
 	transportMaxBackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_UAZ_Winter_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_UAZ_Winter_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 

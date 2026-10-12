@@ -17,8 +17,8 @@ ToolsSurvival[] =
 ToolsBuilding[] =
 {
 	{Loot_TOOL,		1,		DZE_Tool_Sledge}, // Sledge hammer should be a bit more rare than everything else.
-	{Loot_MAGAZINE,	2,		ItemSledgeHandle},
-	{Loot_MAGAZINE,	2,		ItemSledgeHead},
+	{Loot_MAGAZINE,	2,		DZE_Item_Tool_SledgeHandle},
+	{Loot_MAGAZINE,	2,		DZE_Item_Tool_SledgeHead},
 	{Loot_TOOL,		3,		DZE_Tool_KeyKit},
 	{Loot_TOOL,		6,		DZE_Tool_Toolbox},
 	{Loot_TOOL,		4,		DZE_Tool_Handsaw},

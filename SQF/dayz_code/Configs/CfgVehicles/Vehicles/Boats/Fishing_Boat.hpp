@@ -4,20 +4,20 @@ class DZE_Veh_FishingBoat: Fishing_Boat {
 	vehicleClass = "DZE Vehicles Boats";
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_FishingBoat_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_FishingBoat_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
-
 	armor = 10;
+
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
 	transportMaxWeapons = 40;
 	transportMaxMagazines = 400;
 	transportMaxBackpacks = 8;
 	damageResistance = 0.00318;
 	supplyRadius = 3;
+
 };
 
 class DZE_Veh_FishingBoat_1: DZE_Veh_FishingBoat {
@@ -27,7 +27,7 @@ class DZE_Veh_FishingBoat_1: DZE_Veh_FishingBoat {
 	damageResistance = 0.00636;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_FishingBoat_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_FishingBoat_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -38,7 +38,7 @@ class DZE_Veh_FishingBoat_2: DZE_Veh_FishingBoat_1 {
 	transportMaxBackpacks = 16;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_FishingBoat_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_FishingBoat_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 

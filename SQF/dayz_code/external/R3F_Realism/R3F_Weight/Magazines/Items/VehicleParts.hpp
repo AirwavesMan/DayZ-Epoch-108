@@ -1,42 +1,32 @@
-class PartWheel 
-{
+class DZE_Item_Parts_Wheel {
 	weight = 10;
 };
-class PartFueltank 
-{
+class DZE_Item_Parts_Fueltank {
 	weight = 10;
 };
-class PartGlass 
-{
+class DZE_Item_Parts_Glass {
 	weight = 6;
 };
-class PartEngine 
-{
+class DZE_Item_Parts_Engine {
 	weight = 25;
 };
-class PartVRotor 
-{
+class DZE_Item_Parts_VRotor {
 	weight = 50;
 };
-class PartFueltankBroken
-{
+class DZE_Item_Parts_FueltankBroken {
 	weight = 10;
 };
-class PartWheelBroken
-{
+class DZE_Item_Parts_WheelBroken {
 	weight = 10;
 };
-class PartEngineBroken
-{
+class DZE_Item_Parts_EngineBroken {
 	weight = 25;
 };
-class PartVRotorBroken
-{
+class DZE_Item_Parts_VRotorBroken {
 	weight = 50;
 };
-class PartGlassBroken
-{
+class DZE_Item_Parts_GlassBroken {
 	weight = 6;
 };
-	
-// PartGeneric can be found under Items\Metal.hpp
+
+// DZE_Item_Metal_Parts can be found under Items\Metal.hpp

@@ -1,29 +1,23 @@
-class ItemStone 
-{
+class DZE_Item_Conc_Stone {
 	weight = 10;
 };
 
-class ItemConcreteBlock 
-{
+class DZE_Item_Conc_ConcreteBlock {
 	weight = 15;
 };
 
-class CinderBlocks
-{
+class DZE_Item_Conc_CinderBlocks {
 	weight = 108;
 };
 
-class MortarBucket
-{
+class DZE_Item_Conc_MortarBucket {
 	weight = 3;
 };
 
-class equip_brick 
-{
+class DZE_Item_Conc_Brick {
 	weight = 0.5;
 };
 
-class CementBag
-{
+class DZE_Item_Conc_CementBag {
 	weight = 50;
 };

@@ -20,7 +20,7 @@ if (count _this > 7) then {
 local _checkItems = true; //	Activate this to log all items within the '_watchClasses'. Specify the quantity with '_watchNumber' when the sold items will be logged.
 
 if (_checkItems) then {
-	local _watchClasses = ["ItemBriefcase40oz","ItemBriefcase50oz","ItemBriefcase60oz","ItemBriefcase70oz","ItemBriefcase80oz","ItemBriefcase90oz","ItemBriefcase100oz","ItemTopaz","ItemObsidian","ItemSapphire","ItemAmethyst","ItemEmerald","ItemCitrine","ItemRuby"]; // Items to be logged
+	local _watchClasses = ['DZE_Item_Cur_BriefcaseG_40oz','DZE_Item_Cur_BriefcaseG_50oz','DZE_Item_Cur_BriefcaseG_60oz','DZE_Item_Cur_BriefcaseG_70oz','DZE_Item_Cur_BriefcaseG_80oz','DZE_Item_Cur_BriefcaseG_90oz','DZE_Item_Cur_BriefcaseG_100oz','DZE_Item_Gems_Topaz','DZE_Item_Gems_Obsidian','DZE_Item_Gems_Sapphire','DZE_Item_Gems_Amethyst','DZE_Item_Gems_Emerald','DZE_Item_Gems_Citrine','DZE_Item_Gems_Ruby']; // Items to be logged
 	local _watchNumber = 4; // Minimum number of quantity before logging occurs
 
 	if (_quantity >= _watchNumber && {_className in _watchClasses} && {_buyOrSell == 1}) then {

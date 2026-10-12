@@ -693,7 +693,7 @@ class FSM
                          "			//Magazines" \n
                          "			_countr = 0;" \n
                          "			{" \n
-						 "				if (_x != ""CSGAS"") then {" \n
+						 "				if (_x != ""DZE_Mag_CSGAS"") then {" \n
                          "					if (_x == ""BoltSteel"") then { _x = ""1Rnd_Arrow_Wood"" }; // Convert BoltSteel to WoodenArrow" \n
                          "					if (dayz_classicBloodBagSystem) then {" \n
                          "						if (_x in dayz_typedBags) then {_x = ""DZE_Item_Medi_Bloodbag""};" \n

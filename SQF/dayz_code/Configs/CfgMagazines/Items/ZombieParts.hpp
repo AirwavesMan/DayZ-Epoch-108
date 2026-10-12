@@ -1,269 +1,242 @@
-class ItemZombieParts: CA_Magazine
-{
+class DZE_Item_Zombie_Parts: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_DESC;
+	count = 1;
 };
 
-class ItemZombieHead: CA_Magazine
-{
+class DZE_Item_Zombie_Head: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_HEAD;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_HEAD";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_HEAD_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_HEAD_DESC;
+	count = 1;
 };
 
-class ItemZombieLeg: CA_Magazine
-{
+class DZE_Item_Zombie_Leg: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_LEG;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_LEG";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_LEG_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_LEG_DESC;
+	count = 1;
 };
 
-class ItemZombieArm: CA_Magazine
-{
+class DZE_Item_Zombie_Arm: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_ARM;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_ARM";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_ARM_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_ARM_DESC;
+	count = 1;
 };
 
-class ItemZombieBrain: CA_Magazine
-{
+class DZE_Item_Zombie_Brain: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_BRAIN;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_BRAIN";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_BRAIN_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_BRAIN_DESC;
+	count = 1;
 };
 
-class ItemZombieHand: CA_Magazine
-{
+class DZE_Item_Zombie_Hand: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_HAND;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_HAND";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_HAND_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_HAND_DESC;
+	count = 1;
 };
 
-class ItemZombieFinger: CA_Magazine
-{
+class DZE_Item_Zombie_Finger: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_FINGER;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_FINGER";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_FINGER_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_FINGER_DESC;
+	count = 1;
 };
 
-class ItemZombieFoot: CA_Magazine
-{
+class DZE_Item_Zombie_Foot: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_FOOT;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_FOOT";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_FOOT_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_FOOT_DESC;
+	count = 1;
 };
 
-class ItemZombieToe: CA_Magazine
-{
+class DZE_Item_Zombie_Toe: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_TOE;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_TOE";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_TOE_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_TOE_DESC;
+	count = 1;
 };
 
-class ItemZombieLiver: CA_Magazine
-{
+class DZE_Item_Zombie_Liver: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_LIVER;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_LIVER";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_LIVER_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_LIVER_DESC;
+	count = 1;
 };
 
-class ItemZombieHeart: CA_Magazine
-{
+class DZE_Item_Zombie_Heart: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_HEART;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_HEART";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_HEART_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_HEART_DESC;
+	count = 1;
 };
 
-class ItemZombieEyes: CA_Magazine
-{
+class DZE_Item_Zombie_Eyes: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_EYES;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_EYES";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_EYES_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_EYES_DESC;
+	count = 1;
 };
 
-class ItemZombieTongue: CA_Magazine
-{
+class DZE_Item_Zombie_Tongue: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_TONGUE;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_TONGUE";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_TONGUE_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_TONGUE_DESC;
+	count = 1;
 };
 
-class ItemZombieTeeth: CA_Magazine
-{
+class DZE_Item_Zombie_Teeth: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_TEETH;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_TEETH";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_TEETH_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_TEETH_DESC;
+	count = 1;
 };
 
-class ItemZombieskin: CA_Magazine
-{
+class DZE_Item_Zombie_Skin: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_SKIN;
+	displayName = "$STR_EPOCH_ZOMBIEPARTS_SKIN";
+	descriptionShort = "$STR_EPOCH_ZOMBIEPARTS_SKIN_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_SKIN_DESC;
+	count = 1;
 };
 
-class ItemMutantHeartMag: CA_Magazine
-{
+class DZE_Item_Mutant_HeartMag: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_HEART;
+	displayName = "$STR_EPOCH_MUTANTPARTS_HEART";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_HEART_DESC";
 	picture = "\dayz_epoch_c\icons\tools\heart_icon_ca.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_HEART_DESC;
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
+	count = 1;
 };
 
-class ItemMutantHead: CA_Magazine
-{
+class DZE_Item_Mutant_Head: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_HEAD;
+	displayName = "$STR_EPOCH_MUTANTPARTS_HEAD";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_HEAD_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_HEAD_DESC;
+	count = 1;
 };
 
-class ItemMutantLeg: CA_Magazine
-{
+class DZE_Item_Mutant_Leg: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_LEG;
+	displayName = "$STR_EPOCH_MUTANTPARTS_LEG";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_LEG_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_LEG_DESC;
+	count = 1;
 };
 
-class ItemMutantArm: CA_Magazine
-{
+class DZE_Item_Mutant_Arm: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_ARM;
+	displayName = "$STR_EPOCH_MUTANTPARTS_ARM";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_ARM_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_ARM_DESC;
+	count = 1;
 };
 
-class ItemMutantBrain: CA_Magazine
-{
+class DZE_Item_Mutant_Brain: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_BRAIN;
+	displayName = "$STR_EPOCH_MUTANTPARTS_BRAIN";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_BRAIN_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_BRAIN_DESC;
+	count = 1;
 };
 
-class ItemMutantClaw: CA_Magazine
-{
+class DZE_Item_Mutant_Claw: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_CLAW;
+	displayName = "$STR_EPOCH_MUTANTPARTS_CLAW";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_CLAW_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_CLAW_DESC;
+	count = 1;
 };
 
-class ItemMutantFoot: CA_Magazine
-{
+class DZE_Item_Mutant_Foot: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_FOOT;
+	displayName = "$STR_EPOCH_MUTANTPARTS_FOOT";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_FOOT_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_FOOT_DESC;
+	count = 1;
 };
 
-class ItemMutantLiver: CA_Magazine
-{
+class DZE_Item_Mutant_Liver: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_LIVER;
+	displayName = "$STR_EPOCH_MUTANTPARTS_LIVER";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_LIVER_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_LIVER_DESC;
+	count = 1;
 };
 
-class ItemMutantEyes: CA_Magazine
-{
+class DZE_Item_Mutant_Eyes: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_EYES;
+	displayName = "$STR_EPOCH_MUTANTPARTS_EYES";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_EYES_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_EYES_DESC;
+	count = 1;
 };
 
-class ItemMutantTongue: CA_Magazine
-{
+class DZE_Item_Mutant_Tongue: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_TONGUE;
+	displayName = "$STR_EPOCH_MUTANTPARTS_TONGUE";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_TONGUE_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_TONGUE_DESC;
+	count = 1;
 };
 
-class ItemMutantTeeth: CA_Magazine
-{
+class DZE_Item_Mutant_Teeth: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_TEETH;
+	displayName = "$STR_EPOCH_MUTANTPARTS_TEETH";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_TEETH_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_TEETH_DESC;
+	count = 1;
 };
 
-class ItemMutantSkin: CA_Magazine
-{
+class DZE_Item_Mutant_Skin: CA_Magazine {
 	scope = 2;
-	count = 1;
-	displayName = $STR_EPOCH_MUTANTPARTS_SKIN;
+	displayName = "$STR_EPOCH_MUTANTPARTS_SKIN";
+	descriptionShort = "$STR_EPOCH_MUTANTPARTS_SKIN_DESC";
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_MUTANTPARTS_SKIN_DESC;
+	count = 1;
 };

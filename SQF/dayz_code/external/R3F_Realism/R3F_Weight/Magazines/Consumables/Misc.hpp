@@ -1,36 +1,27 @@
-class FoodSteakWithPotatos
-{
+class DZE_Item_Food_SteakWithPotatos {
 	weight = 0.4;
 };
-class FoodSushi
-{
+class DZE_Item_Food_Sushi {
 	weight = 0.4;
 };
-class FoodPumpkinSoup
-{
+class DZE_Item_Food_PumpkinSoup {
 	weight = 0.3;
 };
-class FoodCarrotSoup
-{
+class DZE_Item_Food_CarrotSoup {
 	weight = 0.3;
 };
-class FoodPotatoSoup
-{
+class DZE_Item_Food_PotatoSoup {
 	weight = 0.3;	
 };
-class FoodGarlicSoup
-{
+class DZE_Item_Food_GarlicSoup {
 	weight = 0.3;
 };
-class FoodVegetablePlate
-{
+class DZE_Item_Food_VegetablePlate {
 	weight = 0.3;
 };
-class ItemHoneyTea
-{
+class DZE_Item_Food_HoneyTea {
 	weight = 1;
 };
-class ItemHoney
-{
+class DZE_Item_Food_Honey {
 	weight = 0.2;
 };

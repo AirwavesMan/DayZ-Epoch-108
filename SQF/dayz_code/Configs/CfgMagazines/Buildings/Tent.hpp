@@ -1,4 +1,4 @@
-class DZE_Item_Kit_Tent : CA_Magazine {
+class DZE_Item_Kit_Tent: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_CAMPING_TENT";
 	descriptionShort = "$STR_EQUIP_DESC_CAMPING_TENT";
@@ -6,7 +6,7 @@ class DZE_Item_Kit_Tent : CA_Magazine {
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Build {
 			text = "$STR_PITCH_TENT";
@@ -20,12 +20,12 @@ class DZE_Item_Kit_Tent : CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Kit_Net_Forest",1}};
-			input[] = {{"DZE_Item_Kit_Tent",2},{"equip_tent_poles",2}};
+			input[] = {{"DZE_Item_Kit_Tent",2},{"DZE_Item_Metal_Tent_Poles",2}};
 		};
 	};
 };
 
-class DZE_Item_Kit_Tent_Winter : CA_Magazine {
+class DZE_Item_Kit_Tent_Winter: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_VEH_NAME_TENTWINTER";
 	descriptionShort = "$STR_EQUIP_DESC_CAMPING_TENT";
@@ -33,7 +33,7 @@ class DZE_Item_Kit_Tent_Winter : CA_Magazine {
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Build {
 			text = "$STR_PITCH_TENT";
@@ -47,12 +47,12 @@ class DZE_Item_Kit_Tent_Winter : CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Kit_Net_Winter",1}};
-			input[] = {{"DZE_Item_Kit_Tent_Winter",2},{"equip_tent_poles",2}};
+			input[] = {{"DZE_Item_Kit_Tent_Winter",2},{"DZE_Item_Metal_Tent_Poles",2}};
 		};
 	};
 };
 
-class DZE_Item_Kit_Tent_Dome : CA_Magazine {
+class DZE_Item_Kit_Tent_Dome: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_VEH_NAME_DOME_TENT";
 	descriptionShort = "$STR_EQUIP_DESC_CAMPING_TENT";
@@ -74,12 +74,12 @@ class DZE_Item_Kit_Tent_Dome : CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Kit_Net_Forest",1}};
-			input[] = {{"DZE_Item_Kit_Tent_Dome",2},{"equip_tent_poles",2}};
+			input[] = {{"DZE_Item_Kit_Tent_Dome",2},{"DZE_Item_Metal_Tent_Poles",2}};
 		};
 	};
 };
 
-class DZE_Item_Kit_Tent_Dome_Winter : CA_Magazine {
+class DZE_Item_Kit_Tent_Dome_Winter: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_VEH_NAME_WINTER_DOME_TENT";
 	descriptionShort = "$STR_EQUIP_DESC_CAMPING_TENT";
@@ -87,7 +87,7 @@ class DZE_Item_Kit_Tent_Dome_Winter : CA_Magazine {
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Build {
 			text = "$STR_PITCH_TENT";
@@ -101,12 +101,12 @@ class DZE_Item_Kit_Tent_Dome_Winter : CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Kit_Net_Winter",1}};
-			input[] = {{"DZE_Item_Kit_Tent_Dome_Winter",2},{"equip_tent_poles",2}};
+			input[] = {{"DZE_Item_Kit_Tent_Dome_Winter",2},{"DZE_Item_Metal_Tent_Poles",2}};
 		};
 	};
 };
 
-class DZE_Item_Kit_Tent_Desert : CA_Magazine {
+class DZE_Item_Kit_Tent_Desert: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_VEH_NAME_DESERT_TENT";
 	descriptionShort = "$STR_EQUIP_DESC_CAMPING_TENT";
@@ -128,7 +128,7 @@ class DZE_Item_Kit_Tent_Desert : CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Kit_Net_Desert",1}};
-			input[] = {{"DZE_Item_Kit_Tent_Desert",2},{"equip_tent_poles",2}};
+			input[] = {{"DZE_Item_Kit_Tent_Desert",2},{"DZE_Item_Metal_Tent_Poles",2}};
 		};
 	};
 };

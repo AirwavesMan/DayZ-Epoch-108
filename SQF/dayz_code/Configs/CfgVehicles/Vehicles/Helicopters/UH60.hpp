@@ -12,10 +12,8 @@ class DZE_Veh_MH60S: MH60S {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_AIR
-
 	weapons[] = {"CMFlareLauncher"};
 	magazines[] = {"120Rnd_CMFlareMagazine"};
-
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 100;
 	transportMaxBackpacks = 6;
@@ -27,8 +25,10 @@ class DZE_Veh_MH60S: MH60S {
 	supplyRadius = 2.6;
 	enableManualFire = 0;
 	fuelCapacity = 2760;
-
 	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
+
+
+
 
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
@@ -53,10 +53,10 @@ class DZE_Veh_MH60S: MH60S {
 			maxTurn = 150;
 			soundServo[] = {"",0.01,1};
 			weapons[] = {"M240BC_veh"};
-
 			gunnerOutOpticsShowCursor = 1;
 			gunnerOpticsShowCursor = 1;
 			primaryGunner = 1;
+
 			class ViewOptics {
 				initAngleX = 0;
 				minAngleX = -30;
@@ -95,7 +95,7 @@ class DZE_Veh_MH60S: MH60S {
 	};
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_MH60S_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliAVE[] = {"DZE_Veh_MH60S_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliAVE",1},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -106,7 +106,7 @@ class DZE_Veh_MH60S_1: DZE_Veh_MH60S {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_MH60S_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliLRK[] = {"DZE_Veh_MH60S_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -117,7 +117,7 @@ class DZE_Veh_MH60S_2: DZE_Veh_MH60S_1 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_MH60S_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		DZE_Item_Upgrade_HeliTNK[] = {"DZE_Veh_MH60S_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliTNK",1},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Barrel_Fuel",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",1},{"DZE_Item_Elec_Floppywire",1}}};
 	};
 };
 
@@ -141,18 +141,18 @@ class DZE_Veh_UH60M: UH60M_EP1 {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_AIR
-
 	weapons[] = {"CMFlareLauncher"};
 	magazines[] = {"120Rnd_CMFlareMagazine"};
-
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 100;
 	transportMaxBackpacks = 6;
 	fuelCapacity = 2760;
 	radartype = 0;
 	supplyRadius = 2.6;
-
 	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
+
+
+
 
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
@@ -175,11 +175,11 @@ class DZE_Veh_UH60M: UH60M_EP1 {
 			initTurn = 0;
 			soundServo[] = {"",0.01,1};
 			weapons[] = {"M134"};
-
 			gunnerOutOpticsShowCursor = 1;
 			gunnerOpticsShowCursor = 1;
 			commanding = -2;
 			primaryGunner = 1;
+
 			class ViewOptics {
 				initAngleX = 0;
 				minAngleX = -30;
@@ -206,7 +206,6 @@ class DZE_Veh_UH60M: UH60M_EP1 {
 			memoryPointGunnerOptics = "gunnerview_2";
 			gunnerCompartments = "compartment3";
 			weapons[] = {"M134_2"};
-
 			proxyIndex = 2;
 			commanding = -3;
 			minElev = -60;
@@ -216,12 +215,13 @@ class DZE_Veh_UH60M: UH60M_EP1 {
 			maxTurn = 7;
 			initTurn = 0;
 			primaryGunner = 0;
+
 		};
 	};
 	enableManualFire = 0;
 
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_UH60M_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliAVE[] = {"DZE_Veh_UH60M_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliAVE",1},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -232,7 +232,7 @@ class DZE_Veh_UH60M_1: DZE_Veh_UH60M {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_UH60M_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliLRK[] = {"DZE_Veh_UH60M_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -243,7 +243,7 @@ class DZE_Veh_UH60M_2: DZE_Veh_UH60M_1 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_UH60M_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		DZE_Item_Upgrade_HeliTNK[] = {"DZE_Veh_UH60M_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliTNK",1},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Barrel_Fuel",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",1},{"DZE_Item_Elec_Floppywire",1}}};
 	};
 };
 
@@ -261,7 +261,6 @@ class DZE_Veh_HH60M_MedEvac: UH60M_MEV_EP1 {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_AIR
-
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 100;
 	transportMaxBackpacks = 6;
@@ -270,8 +269,9 @@ class DZE_Veh_HH60M_MedEvac: UH60M_MEV_EP1 {
 	radartype = 0;
 	supplyRadius = 2.6;
 
+
 	class Upgrades {
-		ItemHeliAVE[] = {"DZE_Veh_HH60M_MedEvac_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliAVE[] = {"DZE_Veh_HH60M_MedEvac_1",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliAVE",1},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -282,7 +282,7 @@ class DZE_Veh_HH60M_MedEvac_1: DZE_Veh_HH60M_MedEvac {
 	damageResistance = 0.02078;
 
 	class Upgrades {
-		ItemHeliLRK[] = {"DZE_Veh_HH60M_MedEvac_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		DZE_Item_Upgrade_HeliLRK[] = {"DZE_Veh_HH60M_MedEvac_2",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",1},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",2},{"DZE_Item_Elec_Floppywire",2}}};
 	};
 };
 
@@ -293,7 +293,7 @@ class DZE_Veh_HH60M_MedEvac_2: DZE_Veh_HH60M_MedEvac_1 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemHeliTNK[] = {"DZE_Veh_HH60M_MedEvac_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+		DZE_Item_Upgrade_HeliTNK[] = {"DZE_Veh_HH60M_MedEvac_3",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{},{{"DZE_Item_Upgrade_HeliTNK",1},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Barrel_Fuel",1},{"DZE_Item_Cur_TinBar",1},{"DZE_Item_Elec_Scrapelectronics",1},{"DZE_Item_Elec_Floppywire",1}}};
 	};
 };
 

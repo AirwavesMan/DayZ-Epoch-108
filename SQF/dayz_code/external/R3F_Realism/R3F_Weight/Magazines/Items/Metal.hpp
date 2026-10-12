@@ -1,44 +1,35 @@
-class PartGeneric 
-{
+class DZE_Item_Metal_Parts {
 	weight = 5;
 };
 
-class ItemPole
-{
+class DZE_Item_Metal_Pole {
 	weight = 10;
 };
 
-class ItemMetalSheet 
-{
+class DZE_Item_Metal_Corrugated_Sheet {
 	weight = 10;
 };
 
-class equip_metal_sheet 
-{
+class DZE_Item_Metal_Sheet {
 	weight = 5;
 };
 
-class equip_metal_sheet_rusted
-{
+class DZE_Item_Metal_Sheet_Rusted {
 	weight = 5;
 };
 
-class ItemRSJ
-{
+class DZE_Item_Metal_Steel_Beam {
 	weight = 60;
 };
 
-class equip_1inch_metal_pipe 
-{
+class DZE_Item_Metal_1Inch_Pipe {
 	weight = 0.4;
 };
 
-class equip_2inch_metal_pipe 
-{
+class DZE_Item_Metal_2Inch_Pipe {
 	weight = 0.8;
 };
 
-class equip_tent_poles
-{
+class DZE_Item_Metal_Tent_Poles {
 	weight = 0.3;
 };

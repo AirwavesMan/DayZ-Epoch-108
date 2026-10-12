@@ -248,11 +248,11 @@ class DZE_Veh_SUV_Armored_M134: DZE_SUV_Armored_Base {
 	displayName = "$STR_VEH_NAME_SUV_ARMORED";
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
-
 	armor = 80;
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 150;
 	transportMaxBackpacks = 10;
+
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
 			body = "mainTurret";
@@ -299,7 +299,7 @@ class DZE_Veh_SUV_Armored_M134: DZE_SUV_Armored_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Armored_M134_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",4},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_SUV_Armored_M134_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",4},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -311,7 +311,7 @@ class DZE_Veh_SUV_Armored_M134_1: DZE_Veh_SUV_Armored_M134 {
 	terrainCoef = 1.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Armored_M134_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",10},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_SUV_Armored_M134_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",10},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -351,7 +351,7 @@ class DZE_Veh_SUV_Armored_M134_2: DZE_Veh_SUV_Armored_M134_1 {
 		};
 	};
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Armored_M134_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_SUV_Armored_M134_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -362,7 +362,7 @@ class DZE_Veh_SUV_Armored_M134_3: DZE_Veh_SUV_Armored_M134_2 {
 	transportMaxBackpacks = 15;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Armored_M134_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",6},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_SUV_Armored_M134_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 
@@ -382,7 +382,7 @@ class DZE_Veh_SUV_Armored_PKT: DZE_Veh_SUV_Armored_M134 {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_SUV_Armored_PKT_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",4},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_SUV_Armored_PKT_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",4},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -394,7 +394,7 @@ class DZE_Veh_SUV_Armored_PKT_1: DZE_Veh_SUV_Armored_PKT {
 	terrainCoef = 1.5;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_SUV_Armored_PKT_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",10},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_SUV_Armored_PKT_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",10},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -434,7 +434,7 @@ class DZE_Veh_SUV_Armored_PKT_2: DZE_Veh_SUV_Armored_PKT_1 {
 		};
 	};
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_SUV_Armored_PKT_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_SUV_Armored_PKT_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -445,7 +445,7 @@ class DZE_Veh_SUV_Armored_PKT_3: DZE_Veh_SUV_Armored_PKT_2 {
 	transportMaxBackpacks = 15;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_SUV_Armored_PKT_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",6},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_SUV_Armored_PKT_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 

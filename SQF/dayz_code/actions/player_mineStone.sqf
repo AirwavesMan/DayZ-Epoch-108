@@ -88,7 +88,7 @@ if (_found) then {
 			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 
 			// Drop item to ground
-			["ItemStone",1,1] call fn_dropItem;	// item, magazine, amount
+			['DZE_Item_Conc_Stone',1,1] call fn_dropItem;	// item, magazine, amount
 
 			_counter = _counter + 1;
 		};

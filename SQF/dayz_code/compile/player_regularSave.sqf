@@ -13,7 +13,7 @@
         Nothing
 */
 
-local _magazineArray = (magazines player) - ["CSGAS","Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing"];
+local _magazineArray = (magazines player) - ['DZE_Mag_CSGAS',"Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing"];
 
 PVDZ_plr_Save = [player,_magazineArray];
 publicVariableServer "PVDZ_plr_Save";

@@ -7,7 +7,7 @@ private ["_vehicle","_curFuel","_newFuel","_finished","_location1","_location2",
 
 _vehicle = _this select 3;
 player removeAction s_player_siphonfuel;
-_hasHose = "equip_hose" in magazines player;
+_hasHose = 'DZE_Item_Plastic_Hose' in magazines player;
 
 if (!_hasHose) exitWith {dayz_actionInProgress = false; localize "str_siphon_hose" call DZE_fnc_rollingMessages; };
 

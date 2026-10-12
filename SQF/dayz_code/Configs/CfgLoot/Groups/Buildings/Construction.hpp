@@ -2,15 +2,15 @@ Construction[] =
 {
 	//Items
 	{Loot_VEHICLE,		3,		WeaponHolder_ItemGenerator},
-	{Loot_MAGAZINE,		1,		ItemComboLock},
+	{Loot_MAGAZINE,		1,		DZE_Item_Locks_ComboLock},
 	{Loot_MAGAZINE,		6,		DZE_Item_Kit_Sandbag},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Wire},
 	{Loot_MAGAZINE,		4,		DZE_Item_Kit_TankTrap},
-	{Loot_MAGAZINE,		2,		equip_hose},
-	{Loot_MAGAZINE,		2,		MortarBucket},
-	{Loot_MAGAZINE,		6,		CinderBlocks},
+	{Loot_MAGAZINE,		2,		DZE_Item_Plastic_Hose},
+	{Loot_MAGAZINE,		2,		DZE_Item_Conc_MortarBucket},
+	{Loot_MAGAZINE,		6,		DZE_Item_Conc_CinderBlocks},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Fuel_Pump},
-	
+
 	//Other
 	{Loot_GROUP,		15,		Parts},
 	{Loot_GROUP,		5,		VanillaConstruction},

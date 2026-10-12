@@ -1,4 +1,4 @@
-class PartFueltank : CA_Magazine {
+class DZE_Item_Parts_Fueltank: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_FUELTANK";
 	descriptionShort = "$STR_EQUIP_DESC_FUELTANK";
@@ -6,20 +6,20 @@ class PartFueltank : CA_Magazine {
 	picture = "\dayz_equip\textures\equip_fueltank_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_212";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"PartGeneric",1}};
-			input[] = {{"PartFueltank",1}};
+			output[] = {{"DZE_Item_Metal_Parts",1}};
+			input[] = {{"DZE_Item_Parts_Fueltank",1}};
 		};
 	};
 };
-	
-class PartWheel : CA_Magazine {
+
+class DZE_Item_Parts_Wheel: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_CAR_WHEEL";
 	descriptionShort = "$STR_EQUIP_DESC_CAR_WHEEL";
@@ -29,7 +29,7 @@ class PartWheel : CA_Magazine {
 	type = 256;
 };
 
-class PartEngine : CA_Magazine {
+class DZE_Item_Parts_Engine: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_ENGINE";
 	descriptionShort = "$STR_EQUIP_DESC_ENGINE";
@@ -37,20 +37,20 @@ class PartEngine : CA_Magazine {
 	picture = "\dayz_equip\textures\equip_engine_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_212";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"PartGeneric",2}};
-			input[] = {{"PartEngine",1}};
+			output[] = {{"DZE_Item_Metal_Parts",2}};
+			input[] = {{"DZE_Item_Parts_Engine",1}};
 		};
 	};
 };
 
-class PartVRotor : CA_Magazine {
+class DZE_Item_Parts_VRotor: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_MAIN_ROTOR";
 	descriptionShort = "$STR_EQUIP_DESC_MAIN_ROTOR";
@@ -58,20 +58,20 @@ class PartVRotor : CA_Magazine {
 	picture = "\dayz_equip\textures\equip_vrotor_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_212";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"PartGeneric",3}};
-			input[] = {{"PartVRotor",1}};
+			output[] = {{"DZE_Item_Metal_Parts",3}};
+			input[] = {{"DZE_Item_Parts_VRotor",1}};
 		};
 	};
 };
 
-class PartGlass : CA_Magazine {
+class DZE_Item_Parts_Glass: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WINDSCREEN_GLASS";
 	descriptionShort = "$STR_EQUIP_DESC_WINDSCREEN_GLASS";
@@ -79,7 +79,7 @@ class PartGlass : CA_Magazine {
 	picture = "\dayz_equip\textures\equip_carglass_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_ACTION_GLASS_FLOOR_QUARTER";
@@ -87,12 +87,12 @@ class PartGlass : CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
 			output[] = {{"DZE_Item_Kit_Glass_Floor_Quarter",1}};
-			input[] = {{"ItemPole",8},{"PartGlass",4}};
+			input[] = {{"DZE_Item_Metal_Pole",8},{"DZE_Item_Parts_Glass",4}};
 		};
-	};	
+	};
 };
 
-class PartFueltankBroken : CA_Magazine {
+class DZE_Item_Parts_FueltankBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BROKEN_FUELTANK";
 	descriptionShort = "$STR_EPOCH_BROKEN_FUELTANK_DESC";
@@ -100,20 +100,20 @@ class PartFueltankBroken : CA_Magazine {
 	picture = "\dayz_epoch_c\icons\vehicleparts\equip_fueltank_broken_ca";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_212";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"PartGeneric",1}};
-			input[] = {{"PartFueltankBroken",1}};
+			output[] = {{"DZE_Item_Metal_Parts",1}};
+			input[] = {{"DZE_Item_Parts_FueltankBroken",1}};
 		};
 	};
 };
-	
-class PartWheelBroken : CA_Magazine {
+
+class DZE_Item_Parts_WheelBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BROKEN_CARWHEEL";
 	descriptionShort = "$STR_EPOCH_BROKEN_CARWHEEL_DESC";
@@ -123,7 +123,7 @@ class PartWheelBroken : CA_Magazine {
 	type = 256;
 };
 
-class PartEngineBroken : CA_Magazine {
+class DZE_Item_Parts_EngineBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BROKEN_ENGINEPARTS";
 	descriptionShort = "$STR_EPOCH_BROKEN_ENGINEPARTS_DESC";
@@ -131,20 +131,20 @@ class PartEngineBroken : CA_Magazine {
 	picture = "\dayz_epoch_c\icons\vehicleparts\equip_engine_broken_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_212";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"PartGeneric",2}};
-			input[] = {{"PartEngineBroken",1}};
+			output[] = {{"DZE_Item_Metal_Parts",2}};
+			input[] = {{"DZE_Item_Parts_EngineBroken",1}};
 		};
 	};
 };
 
-class PartVRotorBroken : CA_Magazine {
+class DZE_Item_Parts_VRotorBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BROKEN_ROTOR";
 	descriptionShort = "$STR_EPOCH_BROKEN_ROTOR_DESC";
@@ -152,20 +152,20 @@ class PartVRotorBroken : CA_Magazine {
 	picture = "\dayz_epoch_c\icons\vehicleparts\equip_vrotor_broken_ca.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_212";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar"};
-			output[] = {{"PartGeneric",3}};
-			input[] = {{"PartVRotorBroken",1}};
+			output[] = {{"DZE_Item_Metal_Parts",3}};
+			input[] = {{"DZE_Item_Parts_VRotorBroken",1}};
 		};
 	};
 };
 
-class PartGlassBroken : CA_Magazine {
+class DZE_Item_Parts_GlassBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BROKEN_GLASS";
 	descriptionShort = "$STR_EPOCH_BROKEN_GLASS_DESC";
@@ -176,5 +176,5 @@ class PartGlassBroken : CA_Magazine {
 };
 
 
-	
-// PartGeneric can be found under Items\Metal.hpp
+
+// DZE_Item_Metal_Parts can be found under Items\Metal.hpp

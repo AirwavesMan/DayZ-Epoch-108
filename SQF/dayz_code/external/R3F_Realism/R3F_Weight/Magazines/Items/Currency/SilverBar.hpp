@@ -1,40 +1,30 @@
-class ItemSilverBar 
-{
+class DZE_Item_Cur_SilverBar {
 	weight = 0.01;
 };
-class ItemSilverBar2oz 
-{
+class DZE_Item_Cur_SilverBar2oz {
 	weight = 0.02;
 };
-class ItemSilverBar3oz 
-{
+class DZE_Item_Cur_SilverBar3oz {
 	weight = 0.03;
 };
-class ItemSilverBar4oz 
-{
+class DZE_Item_Cur_SilverBar4oz {
 	weight = 0.04;
 };
-class ItemSilverBar5oz 
-{
+class DZE_Item_Cur_SilverBar5oz {
 	weight = 0.05;
 };
-class ItemSilverBar6oz 
-{
+class DZE_Item_Cur_SilverBar6oz {
 	weight = 0.06;
 };
-class ItemSilverBar7oz 
-{
+class DZE_Item_Cur_SilverBar7oz {
 	weight = 0.07;
 };
-class ItemSilverBar8oz 
-{
+class DZE_Item_Cur_SilverBar8oz {
 	weight = 0.08;
 };
-class ItemSilverBar9oz 
-{
+class DZE_Item_Cur_SilverBar9oz {
 	weight = 0.09;
 };
-class ItemSilverBar10oz 
-{
+class DZE_Item_Cur_SilverBar10oz {
 	weight = 0.1;
 };

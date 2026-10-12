@@ -11,7 +11,7 @@ Church[] =
 	{Loot_GROUP,		4,		backpacks},
 	
 	//Items
-	{Loot_MAGAZINE,		4,		ItemBookBible},
+	{Loot_MAGAZINE,		4,		DZE_Item_Docu_BookBible},
 	
 	//Groups
 	{Loot_GROUP,		5,		VanillaSurvival},

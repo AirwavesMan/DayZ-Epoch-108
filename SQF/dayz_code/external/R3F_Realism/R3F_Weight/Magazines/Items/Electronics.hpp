@@ -1,130 +1,99 @@
-class equip_aa_battery
-{
+class DZE_Item_Elec_Aa_Battery {
 	weight = 0.01;
 };
 
-class equip_d_battery
-{
+class DZE_Item_Elec_D_Battery {
 	weight = 0.02;
 };
-class equip_aa_battery_empty
-{
+class DZE_Item_Elec_Aa_Battery_Empty {
 	weight = 0.01;
 };
-class equip_d_battery_empty
-{
+class DZE_Item_Elec_D_Battery_Empty {
 	weight = 0.02;
 };
 
-class equip_floppywire
-{
+class DZE_Item_Elec_Floppywire {
 	weight = 0.01;
 };
-class equip_satawire
-{
+class DZE_Item_Elec_Satawire {
 	weight = 0.01;
 };
-class equip_scrapelectronics 
-{
+class DZE_Item_Elec_Scrapelectronics {
 	weight = 0.5;
 };
-class equip_graphicscard
-{
+class DZE_Item_Elec_Graphicscard {
 	weight = 0.6;
 };
-class equip_graphicscard_broken
-{
+class DZE_Item_Elec_Graphicscard_Broken {
 	weight = 0.6;
 };
-class equip_soundcard
-{
+class DZE_Item_Elec_Soundcard {
 	weight = 0.3;
 };
-class equip_soundcard_broken
-{
+class DZE_Item_Elec_Soundcard_Broken {
 	weight = 0.3;
 };
-class equip_pcicard
-{
+class DZE_Item_Elec_Pcicard {
 	weight = 0.35;
 };
-class equip_pcicard_broken
-{
+class DZE_Item_Elec_Pcicard_Broken {
 	weight = 0.35;
 };
-class ItemLightBulb
-{
+class DZE_Item_Elec_LightBulb {
 	weight = 0.02;
 };
-class ItemLightBulbBroken
-{
+class DZE_Item_Elec_LightBulbBroken {
 	weight = 0.02;
 };
 class Laserbatteries
 {
 	weight = 0.005;
 };
-class ItemNotebook
-{
+class DZE_Item_Elec_Notebook {
 	weight = 3;
 };
-class ItemNotebookBroken
-{
+class DZE_Item_Elec_NotebookBroken {
 	weight = 3;
 };
-class ItemSmallTV
-{
+class DZE_Item_Elec_SmallTV {
 	weight = 7;
 };
-class ItemSmallTVBroken
-{
+class DZE_Item_Elec_SmallTVBroken {
 	weight = 7;
 };
-class ItemBigTV
-{
+class DZE_Item_Elec_BigTV {
 	weight = 14;
 };
-class ItemBigTVBroken
-{
+class DZE_Item_Elec_BigTVBroken {
 	weight = 14;
 };
-class ItemSatelitePhone
-{
+class DZE_Item_Elec_SatelitePhone {
 	weight = 12;
 };
-class ItemSatelitePhoneBroken
-{
+class DZE_Item_Elec_SatelitePhoneBroken {
 	weight = 12;
 };
-class ItemPC
-{
+class DZE_Item_Elec_PC {
 	weight = 10;
 };
-class ItemPCBroken
-{
+class DZE_Item_Elec_PCBroken {
 	weight = 10;
 };
-class ItemDesktopRadio
-{
+class DZE_Item_Elec_DesktopRadio {
 	weight = 7;
 };
-class ItemDesktopRadioBroken
-{
+class DZE_Item_Elec_DesktopRadioBroken {
 	weight = 7;
 };
-class ItemMusicRadio1
-{
+class DZE_Item_Elec_MusicRadio1 {
 	weight = 1;
 };
-class ItemMusicRadio1Broken
-{
+class DZE_Item_Elec_MusicRadio1Broken {
 	weight = 1;
 };
-class ItemMusicRadio2
-{
+class DZE_Item_Elec_MusicRadio2 {
 	weight = 1;
 };
-class ItemMusicRadio2Broken
-{
+class DZE_Item_Elec_MusicRadio2Broken {
 	weight = 1;
 };

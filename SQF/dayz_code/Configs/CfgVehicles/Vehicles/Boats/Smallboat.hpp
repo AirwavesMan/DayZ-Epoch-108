@@ -4,18 +4,18 @@ class DZE_Veh_Smallboat_1: Smallboat_1 {
 	vehicleClass = "DZE Vehicles Boats";
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Smallboat_1_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Smallboat_1_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 200;
 	transportMaxBackpacks = 4;
 	supplyRadius = 3;
+
 };
 
 class DZE_Veh_Smallboat_2: DZE_Veh_Smallboat_1 {
@@ -23,7 +23,7 @@ class DZE_Veh_Smallboat_2: DZE_Veh_Smallboat_1 {
 	model = "\CA\water2\small_boat\smallboat_2";
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Smallboat_2_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Smallboat_2_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 
 };
@@ -35,7 +35,7 @@ class DZE_Veh_Smallboat_1_1: DZE_Veh_Smallboat_1 {
 	damageResistance = 0.01764;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Smallboat_1_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Smallboat_1_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -46,7 +46,7 @@ class DZE_Veh_Smallboat_1_2: DZE_Veh_Smallboat_1_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Smallboat_1_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Smallboat_1_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -64,7 +64,7 @@ class DZE_Veh_Smallboat_2_1: DZE_Veh_Smallboat_2 {
 	damageResistance = 0.01764;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Smallboat_2_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Smallboat_2_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -75,7 +75,7 @@ class DZE_Veh_Smallboat_2_2: DZE_Veh_Smallboat_2_1 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Smallboat_2_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Smallboat_2_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 

@@ -9,7 +9,7 @@ class DZE_Veh_T72_Rusty: T72_INS {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\t72\T72_1_wrecked_co.paa","\dayz_epoch_c\skins\t72\T72_2_wrecked_co.paa","\dayz_epoch_c\skins\t72\T72_3_wrecked_co.paa"};
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_T72_Rusty_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankORP[] = {"DZE_Veh_T72_Rusty_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankORP",1},{"DZE_Item_Parts_Engine",6},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -20,7 +20,7 @@ class DZE_Veh_T72_Rusty_1: DZE_Veh_T72_Rusty {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_T72_Rusty_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankAVE[] = {"DZE_Veh_T72_Rusty_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankAVE",1},{"DZE_Item_Metal_Sheet",8},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -30,7 +30,7 @@ class DZE_Veh_T72_Rusty_2: DZE_Veh_T72_Rusty_1 {
 	damageResistance = 0.0106; // base 0.00544
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_T72_Rusty_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankLRK[] = {"DZE_Veh_T72_Rusty_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -41,7 +41,7 @@ class DZE_Veh_T72_Rusty_3: DZE_Veh_T72_Rusty_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_T72_Rusty_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		DZE_Item_Upgrade_TankTNK[] = {"DZE_Veh_T72_Rusty_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankTNK",1},{"DZE_Item_Parts_Fueltank",6},{"DZE_Item_Barrel_Fuel",4}}};
 	};
 };
 
@@ -60,7 +60,7 @@ class DZE_Veh_T72_Winter: T72_INS {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\t72\T72_1_winter_co.paa","\dayz_epoch_c\skins\t72\T72_2_winter_co.paa","\dayz_epoch_c\skins\t72\T72_3_winter_co.paa"};
 
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_T72_Winter_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankORP[] = {"DZE_Veh_T72_Winter_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankORP",1},{"DZE_Item_Parts_Engine",6},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -71,7 +71,7 @@ class DZE_Veh_T72_Winter_1: DZE_Veh_T72_Winter {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_T72_Winter_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankAVE[] = {"DZE_Veh_T72_Winter_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankAVE",1},{"DZE_Item_Metal_Sheet",8},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -81,7 +81,7 @@ class DZE_Veh_T72_Winter_2: DZE_Veh_T72_Winter_1 {
 	damageResistance = 0.0106; // base 0.00544
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_T72_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankLRK[] = {"DZE_Veh_T72_Winter_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -92,7 +92,7 @@ class DZE_Veh_T72_Winter_3: DZE_Veh_T72_Winter_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_T72_Winter_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		DZE_Item_Upgrade_TankTNK[] = {"DZE_Veh_T72_Winter_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankTNK",1},{"DZE_Item_Parts_Fueltank",6},{"DZE_Item_Barrel_Fuel",4}}};
 	};
 };
 
@@ -111,14 +111,14 @@ class DZE_Veh_T72M4: T72_ACR {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_ARMORED
-
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 6;
 	supplyRadius = 1.8;
 
+
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_T72M4_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankORP[] = {"DZE_Veh_T72M4_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankORP",1},{"DZE_Item_Parts_Engine",6},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -129,7 +129,7 @@ class DZE_Veh_T72M4_1: DZE_Veh_T72M4 {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_T72M4_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankAVE[] = {"DZE_Veh_T72M4_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankAVE",1},{"DZE_Item_Metal_Sheet",8},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -139,7 +139,7 @@ class DZE_Veh_T72M4_2: DZE_Veh_T72M4_1 {
 	damageResistance = 0.00974; // base 0.005
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_T72M4_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankLRK[] = {"DZE_Veh_T72M4_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -150,7 +150,7 @@ class DZE_Veh_T72M4_3: DZE_Veh_T72M4_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_T72M4_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		DZE_Item_Upgrade_TankTNK[] = {"DZE_Veh_T72M4_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankTNK",1},{"DZE_Item_Parts_Fueltank",6},{"DZE_Item_Barrel_Fuel",4}}};
 	};
 };
 
@@ -169,14 +169,14 @@ class DZE_Veh_T72_CDF: T72_CDF {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_ARMORED
-
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 6;
 	supplyRadius = 1.8;
 
+
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_T72_CDF_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankORP[] = {"DZE_Veh_T72_CDF_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankORP",1},{"DZE_Item_Parts_Engine",6},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -187,7 +187,7 @@ class DZE_Veh_T72_CDF_1: DZE_Veh_T72_CDF {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_T72_CDF_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankAVE[] = {"DZE_Veh_T72_CDF_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankAVE",1},{"DZE_Item_Metal_Sheet",8},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -197,7 +197,7 @@ class DZE_Veh_T72_CDF_2: DZE_Veh_T72_CDF_1 {
 	damageResistance = 0.0106; // base 0.00544
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_T72_CDF_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankLRK[] = {"DZE_Veh_T72_CDF_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -208,7 +208,7 @@ class DZE_Veh_T72_CDF_3: DZE_Veh_T72_CDF_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_T72_CDF_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		DZE_Item_Upgrade_TankTNK[] = {"DZE_Veh_T72_CDF_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankTNK",1},{"DZE_Item_Parts_Fueltank",6},{"DZE_Item_Barrel_Fuel",4}}};
 	};
 };
 
@@ -227,14 +227,14 @@ class DZE_Veh_T72_GUE: T72_Gue {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_ARMORED
-
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 6;
 	supplyRadius = 1.8;
 
+
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_T72_GUE_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankORP[] = {"DZE_Veh_T72_GUE_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankORP",1},{"DZE_Item_Parts_Engine",6},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -245,7 +245,7 @@ class DZE_Veh_T72_GUE_1: DZE_Veh_T72_GUE {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_T72_GUE_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankAVE[] = {"DZE_Veh_T72_GUE_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankAVE",1},{"DZE_Item_Metal_Sheet",8},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -255,7 +255,7 @@ class DZE_Veh_T72_GUE_2: DZE_Veh_T72_GUE_1 {
 	damageResistance = 0.0106; // base 0.00544
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_T72_GUE_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankLRK[] = {"DZE_Veh_T72_GUE_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -266,7 +266,7 @@ class DZE_Veh_T72_GUE_3: DZE_Veh_T72_GUE_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_T72_GUE_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		DZE_Item_Upgrade_TankTNK[] = {"DZE_Veh_T72_GUE_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankTNK",1},{"DZE_Item_Parts_Fueltank",6},{"DZE_Item_Barrel_Fuel",4}}};
 	};
 };
 
@@ -285,14 +285,14 @@ class DZE_Veh_T72_RU: T72_RU {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_ARMORED
-
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 6;
 	supplyRadius = 1.8;
 
+
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_T72_RU_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankORP[] = {"DZE_Veh_T72_RU_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankORP",1},{"DZE_Item_Parts_Engine",6},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -303,7 +303,7 @@ class DZE_Veh_T72_RU_1: DZE_Veh_T72_RU {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_T72_RU_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankAVE[] = {"DZE_Veh_T72_RU_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankAVE",1},{"DZE_Item_Metal_Sheet",8},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -313,7 +313,7 @@ class DZE_Veh_T72_RU_2: DZE_Veh_T72_RU_1 {
 	damageResistance = 0.0106; // base 0.00544
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_T72_RU_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankLRK[] = {"DZE_Veh_T72_RU_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -324,7 +324,7 @@ class DZE_Veh_T72_RU_3: DZE_Veh_T72_RU_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_T72_RU_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		DZE_Item_Upgrade_TankTNK[] = {"DZE_Veh_T72_RU_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankTNK",1},{"DZE_Item_Parts_Fueltank",6},{"DZE_Item_Barrel_Fuel",4}}};
 	};
 };
 
@@ -343,14 +343,14 @@ class DZE_Veh_T72_TK: T72_TK_EP1 {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_ARMORED
-
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 6;
 	supplyRadius = 1.8;
 
+
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_T72_TK_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankORP[] = {"DZE_Veh_T72_TK_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankORP",1},{"DZE_Item_Parts_Engine",6},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -361,7 +361,7 @@ class DZE_Veh_T72_TK_1: DZE_Veh_T72_TK {
 	turnCoef = 2.0;  // base 1
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_T72_TK_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankAVE[] = {"DZE_Veh_T72_TK_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankAVE",1},{"DZE_Item_Metal_Sheet",8},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -371,7 +371,7 @@ class DZE_Veh_T72_TK_2: DZE_Veh_T72_TK_1 {
 	damageResistance = 0.0106; // base 0.00544
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_T72_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankLRK[] = {"DZE_Veh_T72_TK_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -382,7 +382,7 @@ class DZE_Veh_T72_TK_3: DZE_Veh_T72_TK_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_T72_TK_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		DZE_Item_Upgrade_TankTNK[] = {"DZE_Veh_T72_TK_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankTNK",1},{"DZE_Item_Parts_Fueltank",6},{"DZE_Item_Barrel_Fuel",4}}};
 	};
 };
 

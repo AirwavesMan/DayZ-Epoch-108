@@ -18,7 +18,7 @@ class DZE_Tool_BinocularVectorBroken : Default {
 			requiretools[] = {"DZE_Tool_Solder"};
 			output[] = {};
 			outputweapons[] = {"DZE_Tool_BinocularVector"};
-			input[] = {{"equip_floppywire",1},{"equip_scrapelectronics",1}};
+			input[] = {{"DZE_Item_Elec_Floppywire",1},{"DZE_Item_Elec_Scrapelectronics",1}};
 			inputweapons[] = {"DZE_Tool_BinocularVectorBroken"};
 		};		
 	};		

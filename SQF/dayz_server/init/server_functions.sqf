@@ -181,7 +181,7 @@ server_hiveReadWriteLarge = {
 
 array_reduceSize = {
 	local _array1 = _this select 0;
-	local _array = _array1 - ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing","CSGAS"];
+	local _array = _array1 - ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing",'DZE_Mag_CSGAS'];
 	local _count = _this select 1;
 	local _num = count _array;
 	if (_num > _count) then {

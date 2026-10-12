@@ -34,7 +34,7 @@ Spawns a magazine with the given classnane.
 Syntax:
 	{Loot_MAGAZINE,		Chance,		Class}
 Example:
-	{Loot_MAGAZINE,		4,			ItemWaterBottle}
+	{Loot_MAGAZINE,		4,			DZE_Item_Waterbottle}
 */
 
 

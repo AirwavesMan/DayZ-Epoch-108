@@ -1,0 +1,6 @@
+#include "Briefcase.hpp"
+#include "GoldBar.hpp"
+#include "SilverBar.hpp"
+#include "CopperBar.hpp"
+#include "AluminumBar.hpp"
+#include "TinBar.hpp"	

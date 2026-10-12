@@ -4,15 +4,15 @@ class DZE_Veh_Bus_Blue: Ikarus {
 	vehicleClass = "DZE Vehicles Cars";
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_Bus_Blue_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TruckORP[] = {"DZE_Veh_Bus_Blue_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",6},{"DZE_Item_Metal_Screws",2}}};
 	};
 
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
 	supplyRadius = 1.8;
+
 };
 
 class Ikarus_TK_CIV_EP1;
@@ -21,15 +21,15 @@ class DZE_Veh_Bus_Red: Ikarus_TK_CIV_EP1 {
 	vehicleClass = "DZE Vehicles Cars";
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_Bus_Red_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TruckORP[] = {"DZE_Veh_Bus_Red_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",6},{"DZE_Item_Metal_Screws",2}}};
 	};
 
 
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
 	supplyRadius = 1.8;
+
 };
 
 class DZE_Veh_Bus_White: DZE_Veh_Bus_Blue {
@@ -39,7 +39,7 @@ class DZE_Veh_Bus_White: DZE_Veh_Bus_Blue {
 	nameSound = "bus";
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_Bus_White_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TruckORP[] = {"DZE_Veh_Bus_White_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",6},{"DZE_Item_Metal_Screws",2}}};
 	};
 
 	DZE_MACRO_VEHICLE_SIDE
@@ -226,9 +226,8 @@ class DZE_Veh_Bus_Armored: DZE_Car_Base {
 	picture = "\dayz_epoch_c\icons\vehicles\ArmoredBus.paa";
 
 	class Upgrades {
-		ItemTruckORP[] = {"DZE_Veh_Bus_Armored_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TruckORP[] = {"DZE_Veh_Bus_Armored_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",6},{"DZE_Item_Metal_Screws",2}}};
 	};
-
 	maxSpeed = 85;
 	turnCoef = 1.2;
 	armor = 100;
@@ -237,6 +236,7 @@ class DZE_Veh_Bus_Armored: DZE_Car_Base {
     transportMaxBackpacks = 10;
 	transportSoldier = 12;
 	driverAction = CityBus_Driver;
+
 	cargoAction[] =
 	{
 		Truck_Cargo03,Truck_Cargo01,Truck_Cargo04,Truck_Cargo01,Truck_Cargo01,
@@ -268,13 +268,11 @@ class DZE_Veh_Bus_Armored: DZE_Car_Base {
 	soundEngineOnExt[] = {"ca\sounds\vehicles\Wheeled\BUS\ext\ext-bus-start-1", db-5, 1.0, 280};
 	soundEngineOffInt[] ={"ca\sounds\vehicles\Wheeled\BUS\int\int-bus-stop-1", db-5, 1.0};
 	soundEngineOffExt[] ={"ca\sounds\vehicles\Wheeled\BUS\ext\ext-bus-stop-1", db-5, 1.0, 280};
-
 	buildCrash0[]={"Ca\sounds\Vehicles\Crash\crash_building_01", db-3, 1, 200};
 	buildCrash1[]={"Ca\sounds\Vehicles\Crash\crash_building_02", db-3, 1, 200};
 	buildCrash2[]={"Ca\sounds\Vehicles\Crash\crash_building_03", db-3, 1, 200};
 	buildCrash3[]={"Ca\sounds\Vehicles\Crash\crash_building_04", db-3, 1, 200};
 	soundBuildingCrash[]={buildCrash0, 0.25, buildCrash1, 0.25, buildCrash2, 0.25, buildCrash3, 0.25};
-
 	WoodCrash0[]={"Ca\sounds\Vehicles\Crash\crash_mix_wood_01", db-3, 1, 200};
 	WoodCrash1[]={"Ca\sounds\Vehicles\Crash\crash_mix_wood_02", db-3, 1, 200};
 	WoodCrash2[]={"Ca\sounds\Vehicles\Crash\crash_mix_wood_03", db-3, 1, 200};
@@ -282,12 +280,14 @@ class DZE_Veh_Bus_Armored: DZE_Car_Base {
 	WoodCrash4[]={"Ca\sounds\Vehicles\Crash\crash_mix_wood_05", db-3, 1, 200};
 	WoodCrash5[]={"Ca\sounds\Vehicles\Crash\crash_mix_wood_06", db-3, 1, 200};
 	soundWoodCrash[]={woodCrash0, 0.166, woodCrash1, 0.166, woodCrash2, 0.166, woodCrash3, 0.166,woodCrash4, 0.166,woodCrash5, 0.166};
-
 	ArmorCrash0[]={"Ca\sounds\Vehicles\Crash\crash_vehicle_01", db-3, 1, 200};
 	ArmorCrash1[]={"Ca\sounds\Vehicles\Crash\crash_vehicle_02", db-3, 1, 200};
 	ArmorCrash2[]={"Ca\sounds\Vehicles\Crash\crash_vehicle_03", db-3, 1, 200};
 	ArmorCrash3[]={"Ca\sounds\Vehicles\Crash\crash_vehicle_04", db-3, 1, 200};
 	soundArmorCrash[]={ArmorCrash0, 0.25, ArmorCrash1, 0.25, ArmorCrash2, 0.25, ArmorCrash3, 0.25};
+
+
+
 
 	class SoundEvents {
 		class AccelerationIn {
@@ -427,7 +427,7 @@ class DZE_Veh_Bus_Blue_1: DZE_Veh_Bus_Blue {
 	terrainCoef = 3.5;
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_Bus_Blue_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_TruckAVE[] = {"DZE_Veh_Bus_Blue_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckAVE",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -437,7 +437,7 @@ class DZE_Veh_Bus_Blue_2: DZE_Veh_Bus_Blue_1 {
 	damageResistance = 0.00524;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_Blue_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TruckLRK[] = {"DZE_Veh_Bus_Blue_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -448,7 +448,7 @@ class DZE_Veh_Bus_Blue_3: DZE_Veh_Bus_Blue_2 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_Bus_Blue_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		DZE_Item_Upgrade_TruckTNK[] = {"DZE_Veh_Bus_Blue_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",3},{"DZE_Item_Barrel_Fuel",2}}};
 	};
 };
 
@@ -466,7 +466,7 @@ class DZE_Veh_Bus_Red_1: DZE_Veh_Bus_Red {
 	terrainCoef = 3.5;
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_Bus_Red_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_TruckAVE[] = {"DZE_Veh_Bus_Red_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckAVE",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -476,7 +476,7 @@ class DZE_Veh_Bus_Red_2: DZE_Veh_Bus_Red_1 {
 	damageResistance = 0.00524;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_Red_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TruckLRK[] = {"DZE_Veh_Bus_Red_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -487,7 +487,7 @@ class DZE_Veh_Bus_Red_3: DZE_Veh_Bus_Red_2 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_Bus_Red_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		DZE_Item_Upgrade_TruckTNK[] = {"DZE_Veh_Bus_Red_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",3},{"DZE_Item_Barrel_Fuel",2}}};
 	};
 };
 
@@ -505,7 +505,7 @@ class DZE_Veh_Bus_White_1: DZE_Veh_Bus_White {
 	terrainCoef = 3.5;
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_Bus_White_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_TruckAVE[] = {"DZE_Veh_Bus_White_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckAVE",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -515,7 +515,7 @@ class DZE_Veh_Bus_White_2: DZE_Veh_Bus_White_1 {
 	damageResistance = 0.00524;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_White_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TruckLRK[] = {"DZE_Veh_Bus_White_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -526,7 +526,7 @@ class DZE_Veh_Bus_White_3: DZE_Veh_Bus_White_2 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_Bus_White_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		DZE_Item_Upgrade_TruckTNK[] = {"DZE_Veh_Bus_White_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",3},{"DZE_Item_Barrel_Fuel",2}}};
 	};
 };
 
@@ -544,7 +544,7 @@ class DZE_Veh_Bus_Armored_1: DZE_Veh_Bus_Armored {
 	terrainCoef = 1.4;
 
 	class Upgrades {
-		ItemTruckAVE[] = {"DZE_Veh_Bus_Armored_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_TruckAVE[] = {"DZE_Veh_Bus_Armored_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckAVE",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Sheet",5},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -553,7 +553,7 @@ class DZE_Veh_Bus_Armored_2: DZE_Veh_Bus_Armored_1 {
 	armor = 200;
 
 	class Upgrades {
-		ItemTruckLRK[] = {"DZE_Veh_Bus_Armored_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TruckLRK[] = {"DZE_Veh_Bus_Armored_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -564,7 +564,7 @@ class DZE_Veh_Bus_Armored_3: DZE_Veh_Bus_Armored_2 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemTruckTNK[] = {"DZE_Veh_Bus_Armored_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		DZE_Item_Upgrade_TruckTNK[] = {"DZE_Veh_Bus_Armored_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TruckTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",3},{"DZE_Item_Barrel_Fuel",2}}};
 	};
 };
 

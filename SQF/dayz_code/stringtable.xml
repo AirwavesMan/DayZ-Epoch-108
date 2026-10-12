@@ -29737,6 +29737,138 @@
 			<German>Leerer Koffer</German>
 			<Russian>Пустой чемоданчик</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_ADD_10OZALUMINUM">
+			<English>Add 10oz Aluminum</English>
+			<German>10oz Aluminium hinzufügen</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_ADD_10OZCOPPER">
+			<English>Add 10oz Copper</English>
+			<German>10oz Kupfer hinzufügen</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_ADD_10OZTIN">
+			<English>Add 10oz Tin</English>
+			<German>10oz Zinn hinzufügen</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_1X10OZALUMINUM">
+			<English>Briefcase (Contains: 1 x 10oz Aluminum Bar)</English>
+			<German>Koffer (Enthält: 1 x 10oz Aluminiumbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_2X10OZALUMINUM">
+			<English>Briefcase (Contains: 2 x 10oz Aluminum Bar)</English>
+			<German>Koffer (Enthält: 2 x 10oz Aluminiumbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_3X10OZALUMINUM">
+			<English>Briefcase (Contains: 3 x 10oz Aluminum Bar)</English>
+			<German>Koffer (Enthält: 3 x 10oz Aluminiumbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_4X10OZALUMINUM">
+			<English>Briefcase (Contains: 4 x 10oz Aluminum Bar)</English>
+			<German>Koffer (Enthält: 4 x 10oz Aluminiumbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_5X10OZALUMINUM">
+			<English>Briefcase (Contains: 5 x 10oz Aluminum Bar)</English>
+			<German>Koffer (Enthält: 5 x 10oz Aluminiumbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_6X10OZALUMINUM">
+			<English>Briefcase (Contains: 6 x 10oz Aluminum Bar)</English>
+			<German>Koffer (Enthält: 6 x 10oz Aluminiumbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_7X10OZALUMINUM">
+			<English>Briefcase (Contains: 7 x 10oz Aluminum Bar)</English>
+			<German>Koffer (Enthält: 7 x 10oz Aluminiumbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_8X10OZALUMINUM">
+			<English>Briefcase (Contains: 8 x 10oz Aluminum Bar)</English>
+			<German>Koffer (Enthält: 8 x 10oz Aluminiumbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_9X10OZALUMINUM">
+			<English>Briefcase (Contains: 9 x 10oz Aluminum Bar)</English>
+			<German>Koffer (Enthält: 9 x 10oz Aluminiumbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_10X10OZALUMINUM">
+			<English>Briefcase (Contains: 10 x 10oz Aluminum Bar)</English>
+			<German>Koffer (Enthält: 10 x 10oz Aluminiumbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_1X10OZCOPPER">
+			<English>Briefcase (Contains: 1 x 10oz Copper Bar)</English>
+			<German>Koffer (Enthält: 1 x 10oz Kupferbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_2X10OZCOPPER">
+			<English>Briefcase (Contains: 2 x 10oz Copper Bar)</English>
+			<German>Koffer (Enthält: 2 x 10oz Kupferbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_3X10OZCOPPER">
+			<English>Briefcase (Contains: 3 x 10oz Copper Bar)</English>
+			<German>Koffer (Enthält: 3 x 10oz Kupferbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_4X10OZCOPPER">
+			<English>Briefcase (Contains: 4 x 10oz Copper Bar)</English>
+			<German>Koffer (Enthält: 4 x 10oz Kupferbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_5X10OZCOPPER">
+			<English>Briefcase (Contains: 5 x 10oz Copper Bar)</English>
+			<German>Koffer (Enthält: 5 x 10oz Kupferbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_6X10OZCOPPER">
+			<English>Briefcase (Contains: 6 x 10oz Copper Bar)</English>
+			<German>Koffer (Enthält: 6 x 10oz Kupferbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_7X10OZCOPPER">
+			<English>Briefcase (Contains: 7 x 10oz Copper Bar)</English>
+			<German>Koffer (Enthält: 7 x 10oz Kupferbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_8X10OZCOPPER">
+			<English>Briefcase (Contains: 8 x 10oz Copper Bar)</English>
+			<German>Koffer (Enthält: 8 x 10oz Kupferbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_9X10OZCOPPER">
+			<English>Briefcase (Contains: 9 x 10oz Copper Bar)</English>
+			<German>Koffer (Enthält: 9 x 10oz Kupferbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_10X10OZCOPPER">
+			<English>Briefcase (Contains: 10 x 10oz Copper Bar)</English>
+			<German>Koffer (Enthält: 10 x 10oz Kupferbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_1X10OZTIN">
+			<English>Briefcase (Contains: 1 x 10oz Tin Bar)</English>
+			<German>Koffer (Enthält: 1 x 10oz Zinnbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_2X10OZTIN">
+			<English>Briefcase (Contains: 2 x 10oz Tin Bar)</English>
+			<German>Koffer (Enthält: 2 x 10oz Zinnbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_3X10OZTIN">
+			<English>Briefcase (Contains: 3 x 10oz Tin Bar)</English>
+			<German>Koffer (Enthält: 3 x 10oz Zinnbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_4X10OZTIN">
+			<English>Briefcase (Contains: 4 x 10oz Tin Bar)</English>
+			<German>Koffer (Enthält: 4 x 10oz Zinnbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_5X10OZTIN">
+			<English>Briefcase (Contains: 5 x 10oz Tin Bar)</English>
+			<German>Koffer (Enthält: 5 x 10oz Zinnbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_6X10OZTIN">
+			<English>Briefcase (Contains: 6 x 10oz Tin Bar)</English>
+			<German>Koffer (Enthält: 6 x 10oz Zinnbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_7X10OZTIN">
+			<English>Briefcase (Contains: 7 x 10oz Tin Bar)</English>
+			<German>Koffer (Enthält: 7 x 10oz Zinnbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_8X10OZTIN">
+			<English>Briefcase (Contains: 8 x 10oz Tin Bar)</English>
+			<German>Koffer (Enthält: 8 x 10oz Zinnbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_9X10OZTIN">
+			<English>Briefcase (Contains: 9 x 10oz Tin Bar)</English>
+			<German>Koffer (Enthält: 9 x 10oz Zinnbarren)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_10X10OZTIN">
+			<English>Briefcase (Contains: 10 x 10oz Tin Bar)</English>
+			<German>Koffer (Enthält: 10 x 10oz Zinnbarren)</German>
+		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_1X10OZGOLD">
 			<English>Briefcase (Contains: 1 x 10oz Gold Bar)</English>
 			<German>Koffer (Inhalt: 1 x 10oz Goldbarren)</German>
@@ -30865,6 +30997,86 @@
 			<German>Aluminiumbarren</German>
 			<Russian>Алюминиевый слиток.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_2OZALUMINUM">
+			<English>2oz Aluminum</English>
+			<German>2oz Aluminium</German>
+			<Russian>2 унций алюминия</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_2OZALUMINUM_DESC">
+			<English>2oz Aluminum Bar</English>
+			<German>2oz Aluminiumbarren</German>
+			<Russian>Алюминиевый слиток (2 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_3OZALUMINUM">
+			<English>3oz Aluminum</English>
+			<German>3oz Aluminium</German>
+			<Russian>3 унций алюминия</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_3OZALUMINUM_DESC">
+			<English>3oz Aluminum Bar</English>
+			<German>3oz Aluminiumbarren</German>
+			<Russian>Алюминиевый слиток (3 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_4OZALUMINUM">
+			<English>4oz Aluminum</English>
+			<German>4oz Aluminium</German>
+			<Russian>4 унций алюминия</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_4OZALUMINUM_DESC">
+			<English>4oz Aluminum Bar</English>
+			<German>4oz Aluminiumbarren</German>
+			<Russian>Алюминиевый слиток (4 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_5OZALUMINUM">
+			<English>5oz Aluminum</English>
+			<German>5oz Aluminium</German>
+			<Russian>5 унций алюминия</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_5OZALUMINUM_DESC">
+			<English>5oz Aluminum Bar</English>
+			<German>5oz Aluminiumbarren</German>
+			<Russian>Алюминиевый слиток (5 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_6OZALUMINUM">
+			<English>6oz Aluminum</English>
+			<German>6oz Aluminium</German>
+			<Russian>6 унций алюминия</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_6OZALUMINUM_DESC">
+			<English>6oz Aluminum Bar</English>
+			<German>6oz Aluminiumbarren</German>
+			<Russian>Алюминиевый слиток (6 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_7OZALUMINUM">
+			<English>7oz Aluminum</English>
+			<German>7oz Aluminium</German>
+			<Russian>7 унций алюминия</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_7OZALUMINUM_DESC">
+			<English>7oz Aluminum Bar</English>
+			<German>7oz Aluminiumbarren</German>
+			<Russian>Алюминиевый слиток (7 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_8OZALUMINUM">
+			<English>8oz Aluminum</English>
+			<German>8oz Aluminium</German>
+			<Russian>8 унций алюминия</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_8OZALUMINUM_DESC">
+			<English>8oz Aluminum Bar</English>
+			<German>8oz Aluminiumbarren</German>
+			<Russian>Алюминиевый слиток (8 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_9OZALUMINUM">
+			<English>9oz Aluminum</English>
+			<German>9oz Aluminium</German>
+			<Russian>9 унций алюминия</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_9OZALUMINUM_DESC">
+			<English>9oz Aluminum Bar</English>
+			<German>9oz Aluminiumbarren</German>
+			<Russian>Алюминиевый слиток (9 унций).</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_10OZALUMINUM">
 			<English>10oz Aluminum</English>
 			<German>10oz Aluminium</German>
@@ -30893,6 +31105,86 @@
 			<English>Copper Bar</English>
 			<German>Kupferbarren</German>
 			<Russian>Медный слиток.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_2OZCOPPER">
+			<English>2oz Copper</English>
+			<German>2oz Kupfer</German>
+			<Russian>2 унций меди</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_2OZCOPPER_DESC">
+			<English>2oz Copper Bar</English>
+			<German>2oz Kupferbarren</German>
+			<Russian>Слиток меди (2 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_3OZCOPPER">
+			<English>3oz Copper</English>
+			<German>3oz Kupfer</German>
+			<Russian>3 унций меди</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_3OZCOPPER_DESC">
+			<English>3oz Copper Bar</English>
+			<German>3oz Kupferbarren</German>
+			<Russian>Слиток меди (3 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_4OZCOPPER">
+			<English>4oz Copper</English>
+			<German>4oz Kupfer</German>
+			<Russian>4 унций меди</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_4OZCOPPER_DESC">
+			<English>4oz Copper Bar</English>
+			<German>4oz Kupferbarren</German>
+			<Russian>Слиток меди (4 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_5OZCOPPER">
+			<English>5oz Copper</English>
+			<German>5oz Kupfer</German>
+			<Russian>5 унций меди</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_5OZCOPPER_DESC">
+			<English>5oz Copper Bar</English>
+			<German>5oz Kupferbarren</German>
+			<Russian>Слиток меди (5 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_6OZCOPPER">
+			<English>6oz Copper</English>
+			<German>6oz Kupfer</German>
+			<Russian>6 унций меди</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_6OZCOPPER_DESC">
+			<English>6oz Copper Bar</English>
+			<German>6oz Kupferbarren</German>
+			<Russian>Слиток меди (6 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_7OZCOPPER">
+			<English>7oz Copper</English>
+			<German>7oz Kupfer</German>
+			<Russian>7 унций меди</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_7OZCOPPER_DESC">
+			<English>7oz Copper Bar</English>
+			<German>7oz Kupferbarren</German>
+			<Russian>Слиток меди (7 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_8OZCOPPER">
+			<English>8oz Copper</English>
+			<German>8oz Kupfer</German>
+			<Russian>8 унций меди</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_8OZCOPPER_DESC">
+			<English>8oz Copper Bar</English>
+			<German>8oz Kupferbarren</German>
+			<Russian>Слиток меди (8 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_9OZCOPPER">
+			<English>9oz Copper</English>
+			<German>9oz Kupfer</German>
+			<Russian>9 унций меди</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_9OZCOPPER_DESC">
+			<English>9oz Copper Bar</English>
+			<German>9oz Kupferbarren</German>
+			<Russian>Слиток меди (9 унций).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_10OZCOPPER">
 			<English>10oz Copper</English>
@@ -31103,6 +31395,86 @@
 			<English>Tin Bar</English>
 			<German>Zinnbarren</German>
 			<Russian>Оловянный слиток.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_2OZTIN">
+			<English>2oz Tin</English>
+			<German>2oz Zinn</German>
+			<Russian>2 унций олова</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_2OZTIN_DESC">
+			<English>2oz Tin Bar</English>
+			<German>2oz Zinnbarren</German>
+			<Russian>Слиток олова (2 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_3OZTIN">
+			<English>3oz Tin</English>
+			<German>3oz Zinn</German>
+			<Russian>3 унций олова</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_3OZTIN_DESC">
+			<English>3oz Tin Bar</English>
+			<German>3oz Zinnbarren</German>
+			<Russian>Слиток олова (3 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_4OZTIN">
+			<English>4oz Tin</English>
+			<German>4oz Zinn</German>
+			<Russian>4 унций олова</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_4OZTIN_DESC">
+			<English>4oz Tin Bar</English>
+			<German>4oz Zinnbarren</German>
+			<Russian>Слиток олова (4 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_5OZTIN">
+			<English>5oz Tin</English>
+			<German>5oz Zinn</German>
+			<Russian>5 унций олова</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_5OZTIN_DESC">
+			<English>5oz Tin Bar</English>
+			<German>5oz Zinnbarren</German>
+			<Russian>Слиток олова (5 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_6OZTIN">
+			<English>6oz Tin</English>
+			<German>6oz Zinn</German>
+			<Russian>6 унций олова</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_6OZTIN_DESC">
+			<English>6oz Tin Bar</English>
+			<German>6oz Zinnbarren</German>
+			<Russian>Слиток олова (6 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_7OZTIN">
+			<English>7oz Tin</English>
+			<German>7oz Zinn</German>
+			<Russian>7 унций олова</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_7OZTIN_DESC">
+			<English>7oz Tin Bar</English>
+			<German>7oz Zinnbarren</German>
+			<Russian>Слиток олова (7 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_8OZTIN">
+			<English>8oz Tin</English>
+			<German>8oz Zinn</German>
+			<Russian>8 унций олова</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_8OZTIN_DESC">
+			<English>8oz Tin Bar</English>
+			<German>8oz Zinnbarren</German>
+			<Russian>Слиток олова (8 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_9OZTIN">
+			<English>9oz Tin</English>
+			<German>9oz Zinn</German>
+			<Russian>9 унций олова</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_9OZTIN_DESC">
+			<English>9oz Tin Bar</English>
+			<German>9oz Zinnbarren</German>
+			<Russian>Слиток олова (9 унций).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_10OZTIN">
 			<English>10oz Tin</English>

@@ -6,8 +6,8 @@ ZombieHunter[] =
 	{Loot_MAGAZINE,		3,		DZE_Item_Medi_Bandage},
 	{Loot_MAGAZINE,		1,		5Rnd_17HMR},
 	{Loot_MAGAZINE,		2,		10Rnd_303British},
-	{Loot_MAGAZINE,		2,		ItemMixOil},
-	{Loot_MAGAZINE,		2,		ItemDocument}
+	{Loot_MAGAZINE,		2,		DZE_Item_ChainGas_MixOil},
+	{Loot_MAGAZINE,		2,		DZE_Item_Docu_Document}
 };
 
 ZombieHunterViral[] =

@@ -7,9 +7,9 @@ player removeAction s_player_thaw;
 a_player_boil		= true;
 //s_player_boil		= -1;
 
-local _bottleText	= getText (configFile >> "CfgMagazines" >> "ItemWaterBottle" >> "displayName");
-local _waterbottles	= ["ItemWaterBottleInfected","ItemWaterBottle","ItemWaterBottleSafe","ItemWaterbottle1oz","ItemWaterbottle2oz","ItemWaterbottle3oz","ItemWaterbottle4oz","ItemWaterbottle5oz","ItemWaterbottle6oz","ItemWaterbottle7oz","ItemWaterbottle8oz","ItemWaterbottle9oz","ItemPlasticWaterBottle","ItemPlasticWaterBottleInfected","ItemPlasticWaterBottleSafe","ItemPlasticWaterbottle1oz","ItemPlasticWaterbottle2oz","ItemPlasticWaterbottle3oz","ItemPlasticWaterbottle4oz","ItemPlasticWaterbottle5oz","ItemPlasticWaterbottle6oz","ItemPlasticWaterbottle7oz","ItemPlasticWaterbottle8oz","ItemPlasticWaterbottle9oz"];
-local _plasticBottles	= ["ItemPlasticWaterBottle","ItemPlasticWaterBottleInfected","ItemPlasticWaterBottleSafe","ItemPlasticWaterbottle1oz","ItemPlasticWaterbottle2oz","ItemPlasticWaterbottle3oz","ItemPlasticWaterbottle4oz","ItemPlasticWaterbottle5oz","ItemPlasticWaterbottle6oz","ItemPlasticWaterbottle7oz","ItemPlasticWaterbottle8oz","ItemPlasticWaterbottle9oz"];
+local _bottleText	= getText (configFile >> "CfgMagazines" >> 'DZE_Item_Waterbottle' >> "displayName");
+local _waterbottles	= ['DZE_Item_Waterbottle_Infected','DZE_Item_Waterbottle','DZE_Item_Waterbottle_Safe','DZE_Item_Waterbottle_1oz','DZE_Item_Waterbottle_2oz','DZE_Item_Waterbottle_3oz','DZE_Item_Waterbottle_4oz','DZE_Item_Waterbottle_5oz','DZE_Item_Waterbottle_6oz','DZE_Item_Waterbottle_7oz','DZE_Item_Waterbottle_8oz','DZE_Item_Waterbottle_9oz','DZE_Item_Waterbottle_PET','DZE_Item_Waterbottle_PET_Infected','DZE_Item_Waterbottle_PET_Safe','DZE_Item_Waterbottle_PET_1oz','DZE_Item_Waterbottle_PET_2oz','DZE_Item_Waterbottle_PET_3oz','DZE_Item_Waterbottle_PET_4oz','DZE_Item_Waterbottle_PET_5oz','DZE_Item_Waterbottle_PET_6oz','DZE_Item_Waterbottle_PET_7oz','DZE_Item_Waterbottle_PET_8oz','DZE_Item_Waterbottle_PET_9oz'];
+local _plasticBottles	= ['DZE_Item_Waterbottle_PET','DZE_Item_Waterbottle_PET_Infected','DZE_Item_Waterbottle_PET_Safe','DZE_Item_Waterbottle_PET_1oz','DZE_Item_Waterbottle_PET_2oz','DZE_Item_Waterbottle_PET_3oz','DZE_Item_Waterbottle_PET_4oz','DZE_Item_Waterbottle_PET_5oz','DZE_Item_Waterbottle_PET_6oz','DZE_Item_Waterbottle_PET_7oz','DZE_Item_Waterbottle_PET_8oz','DZE_Item_Waterbottle_PET_9oz'];
 local _magsPlayer	= magazines player;
 local _qty		= {_x in _waterbottles} count _magsPlayer;
 local _hasTinItem	= true;
@@ -56,21 +56,21 @@ if (_qty > 0) then {
 
 		if (dayz_waterBottleBreaking && {[DZE_bottleBreakChance] call fn_chance}) then {
 			if (_bottle in _plasticBottles) then {
-				player addMagazine "ItemPlasticWaterbottleDmg";
+				player addMagazine 'DZE_Item_Waterbottle_PET_Dmg';
 			} else {
-				player addMagazine "ItemWaterBottleDmg";
+				player addMagazine 'DZE_Item_Waterbottle_Dmg';
 			};
 			localize "str_waterbottle_broke" call DZE_fnc_rollingMessages;
 		} else {
 			if (_bottle in _plasticBottles) then {
-				if (_bottle in ["ItemPlasticWaterBottleInfected","ItemPlasticWaterBottleSafe"]) then {
-					player addMagazine "ItemPlasticWaterbottleBoiled";
+				if (_bottle in ['DZE_Item_Waterbottle_PET','DZE_Item_Waterbottle_PET_Infected','DZE_Item_Waterbottle_PET_Safe']) then {
+					player addMagazine 'DZE_Item_Waterbottle_PET_Boiled';
 				} else {
 					player addMagazine (_bottle + "Boiled");
 				};
 			} else {
-				if (_bottle in ["ItemWaterBottleInfected","ItemWaterBottleSafe"]) then {
-					player addMagazine "ItemWaterBottleBoiled";
+				if (_bottle in ['DZE_Item_Waterbottle','DZE_Item_Waterbottle_Infected','DZE_Item_Waterbottle_Safe']) then {
+					player addMagazine 'DZE_Item_Waterbottle_Boiled';
 				} else {
 					player addMagazine (_bottle + "Boiled");
 				};

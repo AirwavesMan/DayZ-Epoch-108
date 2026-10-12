@@ -9,7 +9,6 @@ class DZE_Veh_HMMWV_Avenger_Woodland: DZE_HMMWV_Base {
 	cargoAction[] = {"HMMWV_Cargo01"};
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
-
 	transportSoldier = 1;
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 70;
@@ -18,6 +17,7 @@ class DZE_Veh_HMMWV_Avenger_Woodland: DZE_HMMWV_Base {
 	irScanRangeMin = 0;
 	irScanRangeMax = 1500;
 	irScanToEyeFactor = 3;
+
 	class HitPoints: HitPoints {
 		class HitGlass5: HitGlass1 {
 			name = "glass5";
@@ -83,7 +83,7 @@ class DZE_Veh_HMMWV_Avenger_Woodland: DZE_HMMWV_Base {
 	hiddenSelectionsTextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa", "\ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_1_co.paa", "\ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_3_co.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_Avenger_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_HMMWV_Avenger_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -95,7 +95,7 @@ class DZE_Veh_HMMWV_Avenger_Woodland_1: DZE_Veh_HMMWV_Avenger_Woodland  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_Avenger_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_HMMWV_Avenger_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -138,7 +138,7 @@ class DZE_Veh_HMMWV_Avenger_Woodland_2: DZE_Veh_HMMWV_Avenger_Woodland_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_Avenger_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_HMMWV_Avenger_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -149,7 +149,7 @@ class DZE_Veh_HMMWV_Avenger_Woodland_3: DZE_Veh_HMMWV_Avenger_Woodland_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_Avenger_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_HMMWV_Avenger_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 
@@ -169,7 +169,6 @@ class DZE_Veh_HMMWV_Avenger_Desert: DZE_HMMWV_Base {
 	cargoAction[] = {"HMMWV_Cargo01"};
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
-
 	transportSoldier = 1;
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 70;
@@ -178,6 +177,7 @@ class DZE_Veh_HMMWV_Avenger_Desert: DZE_HMMWV_Base {
 	irScanRangeMin = 0;
 	irScanRangeMax = 1500;
 	irScanToEyeFactor = 3;
+
 	class HitPoints: HitPoints {
 		class HitGlass5: HitGlass1 {
 			name = "glass5";
@@ -243,7 +243,7 @@ class DZE_Veh_HMMWV_Avenger_Desert: DZE_HMMWV_Base {
 	hiddenSelectionsTextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa", "\CA\wheeled_E\HMMWV\Data\M998A2_Avenger_1_US_CO.paa", "\CA\wheeled_E\HMMWV\Data\M998A2_Avenger_3_US_CO.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_Avenger_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_HMMWV_Avenger_Desert_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -255,7 +255,7 @@ class DZE_Veh_HMMWV_Avenger_Desert_1: DZE_Veh_HMMWV_Avenger_Desert  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_Avenger_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_HMMWV_Avenger_Desert_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -298,7 +298,7 @@ class DZE_Veh_HMMWV_Avenger_Desert_2: DZE_Veh_HMMWV_Avenger_Desert_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_Avenger_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_HMMWV_Avenger_Desert_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -309,7 +309,7 @@ class DZE_Veh_HMMWV_Avenger_Desert_3: DZE_Veh_HMMWV_Avenger_Desert_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_Avenger_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_HMMWV_Avenger_Desert_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 

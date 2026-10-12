@@ -1,4 +1,4 @@
-class equip_aa_battery : CA_Magazine {
+class DZE_Item_Elec_Aa_Battery: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_aa_battery";
 	descriptionShort = "$STR_ITEM_DESC_equip_aa_battery";
@@ -8,7 +8,7 @@ class equip_aa_battery : CA_Magazine {
 	type = 256;
 };
 
-class equip_aa_battery_empty : CA_Magazine {
+class DZE_Item_Elec_Aa_Battery_Empty: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_aa_battery_empty";
 	descriptionShort = "$STR_ITEM_DESC_equip_aa_battery_empty";
@@ -18,7 +18,7 @@ class equip_aa_battery_empty : CA_Magazine {
 	type = 256;
 };
 
-class equip_d_battery : CA_Magazine {
+class DZE_Item_Elec_D_Battery: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_d_battery";
 	descriptionShort = "$STR_ITEM_DESC_equip_d_battery";
@@ -28,7 +28,7 @@ class equip_d_battery : CA_Magazine {
 	type = 256;
 };
 
-class equip_d_battery_empty : CA_Magazine {
+class DZE_Item_Elec_D_Battery_Empty: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_d_battery_empty";
 	descriptionShort = "$STR_ITEM_DESC_equip_d_battery_empty";
@@ -38,7 +38,7 @@ class equip_d_battery_empty : CA_Magazine {
 	type = 256;
 };
 
-class equip_floppywire : CA_Magazine {
+class DZE_Item_Elec_Floppywire: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_floppywire";
 	descriptionShort = "$STR_ITEM_DESC_equip_floppywire";
@@ -48,7 +48,7 @@ class equip_floppywire : CA_Magazine {
 	type = 256;
 };
 
-class equip_satawire : CA_Magazine {
+class DZE_Item_Elec_Satawire: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_satawire";
 	descriptionShort = "$STR_ITEM_DESC_equip_satawire";
@@ -58,7 +58,7 @@ class equip_satawire : CA_Magazine {
 	type = 256;
 };
 
-class equip_scrapelectronics : CA_Magazine {
+class DZE_Item_Elec_Scrapelectronics: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_scrapelectronics";
 	descriptionShort = "$STR_ITEM_DESC_equip_scrapelectronics";
@@ -68,7 +68,7 @@ class equip_scrapelectronics : CA_Magazine {
 	type = 256;
 };
 
-class equip_graphicscard : CA_Magazine {
+class DZE_Item_Elec_Graphicscard: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_graphicscard";
 	descriptionShort = "$STR_ITEM_DESC_equip_graphicscard";
@@ -78,7 +78,7 @@ class equip_graphicscard : CA_Magazine {
 	type = 256;
 };
 
-class equip_graphicscard_broken : CA_Magazine {
+class DZE_Item_Elec_Graphicscard_Broken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_graphicscard_broken";
 	descriptionShort = "$STR_ITEM_DESC_equip_graphicscard_broken";
@@ -88,7 +88,7 @@ class equip_graphicscard_broken : CA_Magazine {
 	type = 256;
 };
 
-class equip_soundcard : CA_Magazine {
+class DZE_Item_Elec_Soundcard: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_soundcard";
 	descriptionShort = "$STR_ITEM_DESC_equip_soundcard";
@@ -98,7 +98,7 @@ class equip_soundcard : CA_Magazine {
 	type = 256;
 };
 
-class equip_soundcard_broken : CA_Magazine {
+class DZE_Item_Elec_Soundcard_Broken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_soundcard_broken";
 	descriptionShort = "$STR_ITEM_DESC_equip_soundcard_broken";
@@ -108,7 +108,7 @@ class equip_soundcard_broken : CA_Magazine {
 	type = 256;
 };
 
-class equip_pcicard : CA_Magazine {
+class DZE_Item_Elec_Pcicard: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_pcicard";
 	descriptionShort = "$STR_ITEM_DESC_equip_pcicard";
@@ -118,7 +118,7 @@ class equip_pcicard : CA_Magazine {
 	type = 256;
 };
 
-class equip_pcicard_broken : CA_Magazine {
+class DZE_Item_Elec_Pcicard_Broken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_pcicard_broken";
 	descriptionShort = "$STR_ITEM_DESC_equip_pcicard_broken";
@@ -128,7 +128,7 @@ class equip_pcicard_broken : CA_Magazine {
 	type = 256;
 };
 
-class ItemLightBulb: CA_Magazine {
+class DZE_Item_Elec_LightBulb: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LIGHTBULB";
 	descriptionShort = "$STR_EPOCH_LIGHTBULB_DESC";
@@ -136,7 +136,7 @@ class ItemLightBulb: CA_Magazine {
 	picture = "\z\addons\dayz_epoch\pictures\equip_bulb_CA.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_196";
@@ -144,12 +144,12 @@ class ItemLightBulb: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Etool","DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Light_Pole",1}};
-			input[] = {{"ItemLightBulb",1},{"PartGeneric",1},{"PartWoodLumber",6}};
+			input[] = {{"DZE_Item_Elec_LightBulb",1},{"DZE_Item_Metal_Parts",1},{"DZE_Item_Wood_Lumber",6}};
 		};
 	};
 };
 
-class ItemLightBulbBroken: CA_Magazine {
+class DZE_Item_Elec_LightBulbBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LIGHTBULB_BROKEN";
 	descriptionShort = "$STR_EPOCH_LIGHTBULB_BROKEN_DESC";
@@ -159,7 +159,7 @@ class ItemLightBulbBroken: CA_Magazine {
 	type = 256;
 };
 
-class ItemNotebook: CA_Magazine {
+class DZE_Item_Elec_Notebook: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_ITEM_NOTEBOOK";
 	descriptionShort = "$STR_EPOCH_ITEM_NOTEBOOK_DESC";
@@ -169,7 +169,7 @@ class ItemNotebook: CA_Magazine {
 	type = 256;
 };
 
-class ItemNotebookBroken: CA_Magazine {
+class DZE_Item_Elec_NotebookBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_NOTEBOOK_BROKEN";
 	descriptionShort = "$STR_EPOCH_NOTEBOOK_BROKEN_DESC";
@@ -179,7 +179,7 @@ class ItemNotebookBroken: CA_Magazine {
 	type = 256;
 };
 
-class ItemSmallTV: CA_Magazine {
+class DZE_Item_Elec_SmallTV: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SMALL_TV";
 	descriptionShort = "$STR_EPOCH_SMALL_TV_DESC";
@@ -189,7 +189,7 @@ class ItemSmallTV: CA_Magazine {
 	type = 256;
 };
 
-class ItemSmallTVBroken: CA_Magazine {
+class DZE_Item_Elec_SmallTVBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SMALL_TV_BROKEN";
 	descriptionShort = "$STR_EPOCH_SMALL_TV_BROKEN_DESC";
@@ -199,7 +199,7 @@ class ItemSmallTVBroken: CA_Magazine {
 	type = 256;
 };
 
-class ItemBigTV: CA_Magazine {
+class DZE_Item_Elec_BigTV: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BIG_TV";
 	descriptionShort = "$STR_EPOCH_BIG_TV_DESC";
@@ -209,7 +209,7 @@ class ItemBigTV: CA_Magazine {
 	type = 256;
 };
 
-class ItemBigTVBroken: CA_Magazine {
+class DZE_Item_Elec_BigTVBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BIG_TV_BROKEN";
 	descriptionShort = "$STR_EPOCH_BIG_TV_BROKEN_DESC";
@@ -219,7 +219,7 @@ class ItemBigTVBroken: CA_Magazine {
 	type = 256;
 };
 
-class ItemSatelitePhone: CA_Magazine {
+class DZE_Item_Elec_SatelitePhone: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SATELLITE_PHONE";
 	descriptionShort = "$STR_EPOCH_SATELLITE_PHONE_DESC";
@@ -229,7 +229,7 @@ class ItemSatelitePhone: CA_Magazine {
 	type = 256;
 };
 
-class ItemSatelitePhoneBroken: CA_Magazine {
+class DZE_Item_Elec_SatelitePhoneBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SATELLITE_PHONE_BROKEN";
 	descriptionShort = "$STR_EPOCH_SATELLITE_PHONE_BROKEN_DESC";
@@ -239,7 +239,7 @@ class ItemSatelitePhoneBroken: CA_Magazine {
 	type = 256;
 };
 
-class ItemPC: CA_Magazine {
+class DZE_Item_Elec_PC: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PC";
 	descriptionShort = "$STR_EPOCH_PC_DESC";
@@ -249,7 +249,7 @@ class ItemPC: CA_Magazine {
 	type = 256;
 };
 
-class ItemPCBroken: CA_Magazine {
+class DZE_Item_Elec_PCBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PC_BROKEN";
 	descriptionShort = "$STR_EPOCH_PC_BROKEN_DESC";
@@ -259,7 +259,7 @@ class ItemPCBroken: CA_Magazine {
 	type = 256;
 };
 
-class ItemDesktopRadio: CA_Magazine {
+class DZE_Item_Elec_DesktopRadio: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_DESKTOP_RADIO";
 	descriptionShort = "$STR_EPOCH_DESKTOP_RADIO_DESC";
@@ -269,7 +269,7 @@ class ItemDesktopRadio: CA_Magazine {
 	type = 256;
 };
 
-class ItemDesktopRadioBroken: CA_Magazine {
+class DZE_Item_Elec_DesktopRadioBroken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_DESKTOP_RADIO_BROKEN";
 	descriptionShort = "$STR_EPOCH_DESKTOP_RADIO_BROKEN_DESC";
@@ -279,7 +279,7 @@ class ItemDesktopRadioBroken: CA_Magazine {
 	type = 256;
 };
 
-class ItemMusicRadio1: CA_Magazine {
+class DZE_Item_Elec_MusicRadio1: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_RADIO_MUSIC1";
 	descriptionShort = "$STR_EPOCH_RADIO_MUSIC1_DESC";
@@ -289,7 +289,7 @@ class ItemMusicRadio1: CA_Magazine {
 	type = 256;
 };
 
-class ItemMusicRadio1Broken: CA_Magazine {
+class DZE_Item_Elec_MusicRadio1Broken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_RADIO_MUSIC1_BROKEN";
 	descriptionShort = "$STR_EPOCH_RADIO_MUSIC1_BROKEN_DESC";
@@ -299,7 +299,7 @@ class ItemMusicRadio1Broken: CA_Magazine {
 	type = 256;
 };
 
-class ItemMusicRadio2: CA_Magazine {
+class DZE_Item_Elec_MusicRadio2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_RADIO_MUSIC2";
 	descriptionShort = "$STR_EPOCH_RADIO_MUSIC2_DESC";
@@ -309,7 +309,7 @@ class ItemMusicRadio2: CA_Magazine {
 	type = 256;
 };
 
-class ItemMusicRadio2Broken: CA_Magazine {
+class DZE_Item_Elec_MusicRadio2Broken: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_RADIO_MUSIC2_BROKEN";
 	descriptionShort = "$STR_EPOCH_RADIO_MUSIC2_BROKEN_DESC";

@@ -57,7 +57,7 @@ class DZE_Tool_ChainSaw: Rifle {
 	dexterity = 0.51;
 	reloadMagazineSound[] = {"\dayz_sfx\chainsaw\start-attempt.ogg",0.1,1,20};
 	drySound[] = {"\dayz_sfx\chainsaw\start-attempt.ogg",0.01,1,10};
-	magazines[] = {"CSGAS"};
+	magazines[] = {"DZE_Mag_CSGAS"};
 	class Library {
 		libTextDesc = "$STR_EPOCH_DESC_CHAINSAW";
 	};

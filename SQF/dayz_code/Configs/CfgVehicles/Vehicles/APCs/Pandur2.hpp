@@ -9,16 +9,16 @@ class DZE_Veh_Pandur2: Pandur2_ACR {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_ARMORED
-
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 6;
-
 	supplyRadius = 1.8;
 	crewVulnerable = 1;
 
+
+
 	class Upgrades {
-		ItemTankORP[] = {"DZE_Veh_Pandur2_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankORP[] = {"DZE_Veh_Pandur2_1",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankORP",1},{"DZE_Item_Parts_Engine",6},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -30,7 +30,7 @@ class DZE_Veh_Pandur2_1: DZE_Veh_Pandur2 {
 	turnCoef = 5;  // base 4
 
 	class Upgrades {
-		ItemTankAVE[] = {"DZE_Veh_Pandur2_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankAVE[] = {"DZE_Veh_Pandur2_2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankAVE",1},{"DZE_Item_Metal_Sheet",8},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -40,7 +40,7 @@ class DZE_Veh_Pandur2_2: DZE_Veh_Pandur2_1 {
 	damageResistance = 0.048; // base 0.01199
 
 	class Upgrades {
-		ItemTankLRK[] = {"DZE_Veh_Pandur2_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_TankLRK[] = {"DZE_Veh_Pandur2_3",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -51,7 +51,7 @@ class DZE_Veh_Pandur2_3: DZE_Veh_Pandur2_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTankTNK[] = {"DZE_Veh_Pandur2_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+		DZE_Item_Upgrade_TankTNK[] = {"DZE_Veh_Pandur2_4",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar"},{},{{"DZE_Item_Upgrade_TankTNK",1},{"DZE_Item_Parts_Fueltank",6},{"DZE_Item_Barrel_Fuel",4}}};
 	};
 };
 

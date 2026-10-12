@@ -8,6 +8,22 @@ class CfgWeapons {
 		canlock = LockNo;
 	};
 	
+	class Put: Default {
+		class PutMuzzle;
+		class TimeBombMuzzle: PutMuzzle {
+			magazines[] = {"TimeBomb", "DZE_Item_Expl_TimeBomb"};
+		};
+		class PipeBombMuzzle: PutMuzzle {
+			magazines[] = {"PipeBomb", "DZE_Item_Expl_PipeBomb"};
+		};
+		class MineMuzzle: PutMuzzle {
+			magazines[] = {"Mine", "DZE_Item_Expl_Mine"};
+		};
+		class MineEMuzzle: PutMuzzle {
+			magazines[] = {"MineE", "DZE_Item_Expl_MineE"};
+		};
+	};
+
 	class ItemCore;
 	class Rifle;
 	class Pistol;

@@ -1,4 +1,4 @@
-class equip_lever : CA_Magazine {
+class DZE_Item_Tool_Lever: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_LEVER";
 	descriptionShort = "$STR_EQUIP_DESC_LEVER";
@@ -8,7 +8,7 @@ class equip_lever : CA_Magazine {
 	type = 256;
 };
 
-class ItemSledgeHead : CA_Magazine {
+class DZE_Item_Tool_SledgeHead: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SLEDGEHAMMERHEAD";
 	descriptionShort = "$STR_EPOCH_SLEDGEHAMMERHEAD_DESC";
@@ -25,12 +25,12 @@ class ItemSledgeHead : CA_Magazine {
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {};
 			outputweapons[] = {"DZE_Tool_Sledge"};
-			input[] = {{"ItemSledgeHead",1},{"ItemSledgeHandle",1}};
+			input[] = {{"DZE_Item_Tool_SledgeHead",1},{"DZE_Item_Tool_SledgeHandle",1}};
 		};
 	};
 };
 
-class ItemSledgeHandle : CA_Magazine {
+class DZE_Item_Tool_SledgeHandle: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_SLEDGEHAMMERHANDLE";
 	descriptionShort = "$STR_EPOCH_SLEDGEHAMMERHANDLE_DESC";
@@ -47,12 +47,12 @@ class ItemSledgeHandle : CA_Magazine {
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {};
 			outputweapons[] = {"DZE_Tool_Sledge"};
-			input[] = {{"ItemSledgeHead",1},{"ItemSledgeHandle",1}};
+			input[] = {{"DZE_Item_Tool_SledgeHead",1},{"DZE_Item_Tool_SledgeHandle",1}};
 		};
 	};
 };
 
-class equip_Crossbow_Kit : CA_Magazine {
+class DZE_Item_Tool_Crossbow_Kit: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_CROSSBOW_KIT";
 	descriptionShort = "$STR_ITEM_DESC_CROSSBOW_KIT";
@@ -60,7 +60,7 @@ class equip_Crossbow_Kit : CA_Magazine {
 	picture = "\z\addons\community_crossbow\textures\Crossbow_kit.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_CRAFTING_CROSSBOW";
@@ -69,12 +69,12 @@ class equip_Crossbow_Kit : CA_Magazine {
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {};
 			outputweapons[] = {"DZE_Wep_Crossbow"};
-			input[] = {{"equip_Crossbow_Kit",1},{"equip_crossbow_stock",1}};
+			input[] = {{"DZE_Item_Tool_Crossbow_Kit",1},{"DZE_Item_Tool_Crossbow_Stock",1}};
 		};
-	};	
+	};
 };
 
-class equip_crossbow_stock : CA_Magazine {
+class DZE_Item_Tool_Crossbow_Stock: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_CROSSBOW_STOCK";
 	descriptionShort = "$STR_ITEM_DESC_CROSSBOW_STOCK";
@@ -82,7 +82,7 @@ class equip_crossbow_stock : CA_Magazine {
 	picture = "\z\addons\community_crossbow\icons\crossbow_stock.paa";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_CRAFTING_CROSSBOW";
@@ -91,7 +91,7 @@ class equip_crossbow_stock : CA_Magazine {
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {};
 			outputweapons[] = {"DZE_Wep_Crossbow"};
-			input[] = {{"equip_Crossbow_Kit",1},{"equip_crossbow_stock",1}};
+			input[] = {{"DZE_Item_Tool_Crossbow_Kit",1},{"DZE_Item_Tool_Crossbow_Stock",1}};
 		};
-	};	
+	};
 };

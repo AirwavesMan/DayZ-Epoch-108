@@ -1,56 +1,42 @@
-class FoodbeefCooked
-{
+class DZE_Item_Meat_Cooked_Beef {
 	weight = 1;
 };
-class FoodmuttonCooked
-{
+class DZE_Item_Meat_Cooked_Mutton {
 	weight = 1;
 };
-class FoodchickenCooked
-{
+class DZE_Item_Meat_Cooked_Chicken {
 	weight = 1;
 };
-class FoodrabbitCooked
-{
+class DZE_Item_Meat_Cooked_Rabbit {
 	weight = 1;
 };
-class FoodbaconCooked
-{
+class DZE_Item_Meat_Cooked_Bacon {
 	weight = 1;
 };
-class FoodGoatCooked
-{
+class DZE_Item_Meat_Cooked_Goat {
 	weight = 1;
 };
-class FoodGoatRaw
-{
+class DZE_Item_Meat_Raw_Goat {
 	weight = 1;
 };
-class FoodmuttonRaw
-{
+class DZE_Item_Meat_Raw_Mutton {
 	weight = 1;
 };
-class FoodchickenRaw
-{
+class DZE_Item_Meat_Raw_Chicken {
 	weight = 1;
 };
-class FoodBaconRaw
-{
+class DZE_Item_Meat_Raw_Bacon {
 	weight = 1;
 };
-class FoodRabbitRaw
-{
+class DZE_Item_Meat_Raw_Rabbit {
 	weight = 1;
 };
-class FoodbeefRaw
-{
+class DZE_Item_Meat_Raw_Beef {
 	weight = 1;
 };
-class FoodDogRaw
-{
+class DZE_Item_Meat_Raw_Dog {
 	weight = 1;
 };
-class FoodDogCooked
-{
+class DZE_Item_Meat_Cooked_Dog {
 	weight = 1;
 };

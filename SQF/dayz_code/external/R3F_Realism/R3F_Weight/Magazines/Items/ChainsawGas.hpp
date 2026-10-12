@@ -1,29 +1,28 @@
 // For Chainsaw
-class ItemMixOil
-{
+class DZE_Item_ChainGas_MixOil {
 	weight = 0.25;
 };
-class ItemJerryMixed 
-{
+
+class DZE_Item_ChainGas_JerryMixed {
 	weight = 10;
 };
-class ItemJerryMixed4 
-{
+
+class DZE_Item_ChainGas_JerryMixed4 {
 	weight = 8;
 };
-class ItemJerryMixed3 
-{
+
+class DZE_Item_ChainGas_JerryMixed3 {
 	weight = 6;
 };
-class ItemJerryMixed2 
-{
+
+class DZE_Item_ChainGas_JerryMixed2 {
 	weight = 4;
 };
-class ItemJerryMixed1 
-{
+
+class DZE_Item_ChainGas_JerryMixed1 {
 	weight = 2;
 };
-class CSGAS 
-{ 
-	weight = 2; 
+
+class DZE_Mag_CSGAS {
+	weight = 2;
 };

@@ -19,7 +19,7 @@ class DZE_Melee_BaseBallBat : DZE_Melee_Weapon_Base {
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {};
 			outputweapons[] = {"DZE_Melee_BaseBallBatNails"};
-			input[] = {{"equip_nails",1}};
+			input[] = {{"DZE_Item_Metal_Nails",1}};
 			inputweapons[] = {"DZE_Melee_BaseBallBat"};
 		};
 		class Crafting1 {
@@ -29,7 +29,7 @@ class DZE_Melee_BaseBallBat : DZE_Melee_Weapon_Base {
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {};
 			outputweapons[] = {"DZE_Melee_BaseBallBatBarbed"};
-			input[] = {{"equip_nails",1},{"DZE_Item_Kit_Wire",1}};
+			input[] = {{"DZE_Item_Metal_Nails",1},{"DZE_Item_Kit_Wire",1}};
 			inputweapons[] = {"DZE_Melee_BaseBallBat"};
 		};		
 	};	

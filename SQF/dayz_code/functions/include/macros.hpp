@@ -795,7 +795,7 @@
 #define ihave_CROWBAR                           'DZE_Tool_Crowbar' in p_items || {'DZE_Melee_Crowbar' in [p_primaryWeapon, dayz_onBack]}
 #define ihave_FISHING_POLE                      p_currentWeapon == 'DZE_Melee_FishingPole'
 #define ihave_PICKAXE                           'DZE_Tool_Pickaxe' in p_items
-#define ihave_WOODPILE                          'PartWoodPile' in p_magazines
+#define ihave_WOODPILE                          'DZE_Item_Wood_Pile' in p_magazines
 #define itemToMelee(cls)                        getText (configFile >> 'CfgWeapons' >> cls >> 'DZE_swappedItem')
 #define meleeToItem(cls)                        itemToMelee(cls)
 

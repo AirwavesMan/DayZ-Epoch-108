@@ -16,7 +16,7 @@ class DZE_Item_Trash_Soda : HandGrenade {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"fire"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemAluminumBar",1}};
+			output[] = {{"DZE_Item_Cur_AluminumBar",1}};
 			input[] = {{"DZE_Item_Trash_Soda",6}};
 		};
 	};
@@ -40,7 +40,7 @@ class DZE_Item_Trash_TinCan : HandGrenade {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"fire"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"ItemTinBar",1}};
+			output[] = {{"DZE_Item_Cur_TinBar",1}};
 			input[] = {{"DZE_Item_Trash_TinCan",6}};
 		};
 	};

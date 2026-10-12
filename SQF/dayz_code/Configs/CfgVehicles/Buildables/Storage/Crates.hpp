@@ -8,7 +8,7 @@ class DZE_WoodCrate: DZE_Storage_Base {
 	transportMaxMagazines = 50;
 	transportMaxWeapons = 5;
 	transportMaxBackpacks = 1;
-	DZE_upgradeBuilding[] = {"DZE_WoodCrate2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"PartWoodPlywood",2},{"ItemPlank",2},{"equip_nails",1}}};
+	DZE_upgradeBuilding[] = {"DZE_WoodCrate2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"DZE_Item_Wood_Plywood",2},{"DZE_Item_Wood_Plank",2},{"DZE_Item_Metal_Nails",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_WoodCrate";
 		DZE_refundArray[] = {};
@@ -37,7 +37,7 @@ class DZE_StorageCrate: DZE_Storage_Base {
 	mapSize = 2;
 	DZE_offset[] = {0,2,-0.05};
 	DZE_allowRotation = 0;
-	transportMaxWeapons = 3;	
+	transportMaxWeapons = 3;
 	transportMaxMagazines = 60;
 	transportmaxbackpacks = 1;
 	class RemoveObject: RemoveObject { // new
@@ -51,10 +51,10 @@ class DZE_CamoStorageCrate: DZE_Storage_Base {
 	displayName = "$STR_EPOCH_CAMO_STORAGE_CRATE";
 	model = "\z\addons\dayz_epoch_v\base_building\storage\dze_camo_ammobednaX.p3d";
 	icon = "\ca\data\data\Unknown_object.paa";
-	mapSize = 2;	
+	mapSize = 2;
 	DZE_buildingSteps = 3;
 	DZE_offset[] = {0,2,-0.15};
-	transportMaxWeapons = 15;	
+	transportMaxWeapons = 15;
 	transportMaxMagazines = 55;
 	transportmaxbackpacks = 6;
 	class RemoveObject: RemoveObject { // new

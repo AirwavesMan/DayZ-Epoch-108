@@ -10,22 +10,22 @@ class FoodBox0 : CardboardBox {
 	
 	class transportmagazines {
 		class _xx_FoodCanBakedBeans {
-			magazine = "FoodCanBakedBeans";
+			magazine = "DZE_Item_Food_CanBakedBeans";
 			count = 6;
 		};
 		
 		class _xx_FoodCanSardines {
-			magazine = "FoodCanSardines";
+			magazine = "DZE_Item_Food_CanSardines";
 			count = 6;
 		};
 		
 		class _xx_ItemSodaCoke {
-			magazine = "ItemSodaLirik";
+			magazine = "DZE_Item_Drink_SodaLirik";
 			count = 6;
 		};
 		
 		class _xx_ItemSodaGrapeDrink {
-			magazine = "ItemSodaGrapeDrink";
+			magazine = "DZE_Item_Drink_SodaGrapeDrink";
 			count = 6;
 		};
 	};

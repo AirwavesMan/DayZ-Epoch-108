@@ -12,7 +12,7 @@ class DZE_Tool_HammerBroken: ItemCore {
 	descriptionShort = "$STR_EQUIP_HAMMER_BROKEN_DESC";
 	picture = "\dayz_epoch_c\icons\tools\ItemHammerBroken.paa";
 	model = "\z\addons\dayz_epoch_w\items\hammer.p3d";
-	
+
 	class ItemActions {
 		class Repair {
 			text = "$STR_ACTIONS_FIX_HAMMER";
@@ -21,8 +21,8 @@ class DZE_Tool_HammerBroken: ItemCore {
 			requiretools[] = {};
 			output[] = {};
 			outputweapons[] = {"DZE_Tool_Hammer"};
-			input[] = {{"equip_duct_tape",1},{"equip_lever",1}};
+			input[] = {{"DZE_Item_Plastic_Duct_Tape",1},{"DZE_Item_Tool_Lever",1}};
 			inputweapons[] = {"DZE_Tool_HammerBroken"};
-		};		
+		};
 	};
 };

@@ -52,7 +52,7 @@ class Throw : GrenadeLauncher
 	class RoadFlareMuzzle : ThrowMuzzle
 	{
 		displayName = $STR_MAG_ACTION_4;
-		magazines[] = {"HandRoadFlare"};
+		magazines[] = {"DZE_Item_Flares_RoadFlare"};
 		
 		begin1[] = {"dayz_weapons\sounds\roadflare_start", 1.77828, 1, 1000};
 		soundBegin[] = {"begin1", 1};
@@ -61,7 +61,7 @@ class Throw : GrenadeLauncher
 	class ChemLightMuzzle : ThrowMuzzle
 	{
 		displayName = $STR_MAG_ACTION_CHEMLIGHT;
-		magazines[] = {"HandChemGreen", "HandChemRed", "HandChemBlue"};
+		magazines[] = {"DZE_Item_Flares_ChemGreen", "DZE_Item_Flares_ChemRed", "DZE_Item_Flares_ChemBlue"};
 	};
 	
 	class TrashMuzzle : ThrowMuzzle

@@ -1,6 +1,6 @@
 // Military and Military Industrial buildings spawn matching loot based on RU, US, EU and CZ groups.
 
-MilitaryIndustrial[] = 
+MilitaryIndustrial[] =
 {
 	{Loot_NONE,		1,		MilitaryIndustrialRU, MilitaryIndustrialSmallRU}, //Russian Weapons, Attachments, Ammo
 	{Loot_NONE,		1,		MilitaryIndustrialUS, MilitaryIndustrialSmallUS},	//American Weapons, Attachments, Ammo
@@ -10,8 +10,8 @@ MilitaryIndustrial[] =
 
 MilitaryIndustrialRU[] = {
 	{Loot_GROUP,		15,		Parts},
-	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		4,		FoodMRE},
+	{Loot_MAGAZINE,		1,		DZE_Item_Parts_VRotor},
+	{Loot_MAGAZINE,		4,		DZE_Item_Food_MRE},
 	{Loot_GROUP,		1,		FuelBarrel},
 	{Loot_VEHICLE,		1,		WeaponHolder_ItemGenerator},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Fuel_Pump},
@@ -21,7 +21,7 @@ MilitaryIndustrialRU[] = {
 	{Loot_PILE,			5,		Trash, 1, 2},
 	{Loot_PILE,			3,		Consumable, 1, 2},
 	{Loot_GROUP, 		10, 	MilitaryRU},
-	{Loot_MAGAZINE,		4,		ItemScrews}
+	{Loot_MAGAZINE,		4,		DZE_Item_Metal_Screws}
 };
 
 MilitaryIndustrialSmallRU[] = {
@@ -30,8 +30,8 @@ MilitaryIndustrialSmallRU[] = {
 
 MilitaryIndustrialUS[] = {
 	{Loot_GROUP,		15,		Parts},
-	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		4,		FoodMRE},
+	{Loot_MAGAZINE,		1,		DZE_Item_Parts_VRotor},
+	{Loot_MAGAZINE,		4,		DZE_Item_Food_MRE},
 	{Loot_GROUP,		1,		FuelBarrel},
 	{Loot_VEHICLE,		1,		WeaponHolder_ItemGenerator},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Fuel_Pump},
@@ -41,7 +41,7 @@ MilitaryIndustrialUS[] = {
 	{Loot_PILE,			5,		Trash, 1, 2},
 	{Loot_PILE,			3,		Consumable, 1, 2},
 	{Loot_GROUP, 		10, 	MilitaryUS},
-	{Loot_MAGAZINE,		4,		ItemScrews}
+	{Loot_MAGAZINE,		4,		DZE_Item_Metal_Screws}
 };
 
 MilitaryIndustrialSmallUS[] = {
@@ -50,8 +50,8 @@ MilitaryIndustrialSmallUS[] = {
 
 MilitaryIndustrialEU[] = {
 	{Loot_GROUP,		15,		Parts},
-	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		4,		FoodMRE},
+	{Loot_MAGAZINE,		1,		DZE_Item_Parts_VRotor},
+	{Loot_MAGAZINE,		4,		DZE_Item_Food_MRE},
 	{Loot_GROUP,		1,		FuelBarrel},
 	{Loot_VEHICLE,		1,		WeaponHolder_ItemGenerator},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Fuel_Pump},
@@ -61,7 +61,7 @@ MilitaryIndustrialEU[] = {
 	{Loot_PILE,			5,		Trash, 1, 2},
 	{Loot_PILE,			3,		Consumable, 1, 2},
 	{Loot_GROUP, 		10, 	MilitaryEU},
-	{Loot_MAGAZINE,		4,		ItemScrews}
+	{Loot_MAGAZINE,		4,		DZE_Item_Metal_Screws}
 };
 
 MilitaryIndustrialSmallEU[] = {
@@ -70,8 +70,8 @@ MilitaryIndustrialSmallEU[] = {
 
 MilitaryIndustrialCZ[] = {
 	{Loot_GROUP,		15,		Parts},
-	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		4,		FoodMRE},
+	{Loot_MAGAZINE,		1,		DZE_Item_Parts_VRotor},
+	{Loot_MAGAZINE,		4,		DZE_Item_Food_MRE},
 	{Loot_GROUP,		1,		FuelBarrel},
 	{Loot_VEHICLE,		1,		WeaponHolder_ItemGenerator},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Fuel_Pump},
@@ -81,7 +81,7 @@ MilitaryIndustrialCZ[] = {
 	{Loot_PILE,			5,		Trash, 1, 2},
 	{Loot_PILE,			3,		Consumable, 1, 2},
 	{Loot_GROUP, 		10, 	MilitaryCZ},
-	{Loot_MAGAZINE,		4,		ItemScrews}
+	{Loot_MAGAZINE,		4,		DZE_Item_Metal_Screws}
 };
 
 MilitaryIndustrialSmallCZ[] = {

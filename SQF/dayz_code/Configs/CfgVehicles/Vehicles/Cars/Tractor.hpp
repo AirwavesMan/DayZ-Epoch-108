@@ -3,7 +3,7 @@ class DZE_Veh_Tractor: Tractor {
 	displayname = "$STR_VEH_NAME_TRACTOR";
 	vehicleClass = "DZE Vehicles Cars";
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Tractor_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Tractor_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 
 	DZE_MACRO_VEHICLE_SIDE
@@ -40,7 +40,7 @@ class DZE_Veh_OldTractor: tractorOld {
 	displayname = "$STR_VEH_NAME_TRACTOR_OLD";
 	vehicleClass = "DZE Vehicles Cars";
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_OldTractor_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_OldTractor_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 
 	DZE_MACRO_VEHICLE_SIDE
@@ -67,7 +67,7 @@ class DZE_Veh_Tractor_Armored: DZE_Veh_Tractor {
 	model = "\z\addons\dayz_epoch_v\vehicles\tractor\dze_tractor";
 	picture = "\dayz_epoch_c\icons\vehicles\ArmoredTractor.paa";
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Tractor_Armored_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Tractor_Armored_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",1},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 	armor = 120;
 	maxSpeed = 75;
@@ -84,8 +84,8 @@ class DZE_Veh_Tractor_Armored: DZE_Veh_Tractor {
 			armor = 2;
 		};
 	};
-
 	hiddenselections[] = {"camo1","camo2"};
+
 	hiddenselectionstextures[]=
 	{
 		"\z\addons\dayz_epoch_v\vehicles\tractor\data\tractor_2_rusty_co.paa",
@@ -120,7 +120,7 @@ class DZE_Veh_Tractor_1: DZE_Veh_Tractor {
 	terrainCoef = 0.7;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Tractor_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Tractor_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -130,7 +130,7 @@ class DZE_Veh_Tractor_2: DZE_Veh_Tractor_1 {
 	armor = 50;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Tractor_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Tractor_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -142,7 +142,7 @@ class DZE_Veh_Tractor_3: DZE_Veh_Tractor_2 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Tractor_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Tractor_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -160,7 +160,7 @@ class DZE_Veh_OldTractor_1: DZE_Veh_OldTractor {
 	terrainCoef = 0.7;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_OldTractor_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_OldTractor_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -170,7 +170,7 @@ class DZE_Veh_OldTractor_2: DZE_Veh_OldTractor_1 {
 	armor = 50;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_OldTractor_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_OldTractor_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -182,7 +182,7 @@ class DZE_Veh_OldTractor_3: DZE_Veh_OldTractor_2 {
 	transportMaxBackpacks = 4;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_OldTractor_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_OldTractor_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 
@@ -200,7 +200,7 @@ class DZE_Veh_Tractor_Armored_1: DZE_Veh_Tractor_Armored {
 	terrainCoef = 0.35;
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Tractor_Armored_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Tractor_Armored_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -210,7 +210,7 @@ class DZE_Veh_Tractor_Armored_2: DZE_Veh_Tractor_Armored_1 {
 	armor = 240;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Tractor_Armored_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Tractor_Armored_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -222,7 +222,7 @@ class DZE_Veh_Tractor_Armored_3: DZE_Veh_Tractor_Armored_2 {
 	transportMaxBackpacks = 20;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Tractor_Armored_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Tractor_Armored_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 

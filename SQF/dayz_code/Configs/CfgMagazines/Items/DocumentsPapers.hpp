@@ -1,4 +1,4 @@
-class ItemDocument: CA_Magazine {
+class DZE_Item_Docu_Document: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_DOCUMENT";
 	descriptionShort = "$STR_EPOCH_DOCUMENT_DESC";
@@ -7,7 +7,7 @@ class ItemDocument: CA_Magazine {
 	sfx = "document";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_188";
@@ -15,13 +15,13 @@ class ItemDocument: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			randomOutput = 1;
-			output[] = {{"ItemLetter",1},{"ItemDocumentRamp",1},{"ItemBook1",1},{"ItemBook2",1},{"ItemBook3",1},{"ItemBook4",1},{"ItemNewspaper",1},{"ItemORP",1},{"ItemAVE",1},{"ItemLRK",1},{"ItemTNK",1},{"ItemARM",1},{"ItemTruckORP",1},{"ItemTruckAVE",1},{"ItemTruckLRK",1},{"ItemTruckTNK",1},{"ItemTruckARM",1},{"ItemHeliAVE",1},{"ItemHeliLRK",1},{"ItemHeliTNK",1},{"ItemPlotDeed",1}};
-			input[] = {{"ItemDocument",1}};
+			output[] = {{"DZE_Item_Docu_Letter",1},{"DZE_Item_Docu_WoodRamp",1},{"DZE_Item_Docu_Book1",1},{"DZE_Item_Docu_Book2",1},{"DZE_Item_Docu_Book3",1},{"DZE_Item_Docu_Book4",1},{"DZE_Item_Docu_Newspaper",1},{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Upgrade_CarARM",1},{"DZE_Item_Upgrade_TruckORP",1},{"DZE_Item_Upgrade_TruckAVE",1},{"DZE_Item_Upgrade_TruckLRK",1},{"DZE_Item_Upgrade_TruckTNK",1},{"DZE_Item_Upgrade_TruckARM",1},{"DZE_Item_Upgrade_HeliAVE",1},{"DZE_Item_Upgrade_HeliLRK",1},{"DZE_Item_Upgrade_HeliTNK",1},{"DZE_Item_Docu_PlotDeed",1}};
+			input[] = {{"DZE_Item_Docu_Document",1}};
 		};
 	};
 };
 
-class ItemPlotDeed: CA_Magazine {
+class DZE_Item_Docu_PlotDeed: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLOTDEED";
 	descriptionShort = "$STR_EPOCH_PLOTDEED_DESC";
@@ -30,7 +30,7 @@ class ItemPlotDeed: CA_Magazine {
 	sfx = "document";
 	count = 1;
 	type = 256;
-	
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLOTDEED_ACTION";
@@ -38,12 +38,12 @@ class ItemPlotDeed: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Plot_Pole",1}};
-			input[] = {{"ItemPlotDeed",1},{"ItemGoldBar10oz",2}};
+			input[] = {{"DZE_Item_Docu_PlotDeed",1},{"DZE_Item_Cur_GoldBar10oz",2}};
 		};
 	};
 };
 
-class ItemLetter: CA_Magazine {
+class DZE_Item_Docu_Letter: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LETTER";
 	descriptionShort = "$STR_EPOCH_LETTER_DESC";
@@ -53,7 +53,7 @@ class ItemLetter: CA_Magazine {
 	type = 256;
 };
 
-class ItemBook1: CA_Magazine {
+class DZE_Item_Docu_Book1: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_ROMANCENOVEL";
 	descriptionShort = "$STR_EPOCH_ROMANCENOVEL_DESC";
@@ -63,7 +63,7 @@ class ItemBook1: CA_Magazine {
 	type = 256;
 };
 
-class ItemBook2: CA_Magazine {
+class DZE_Item_Docu_Book2: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_ROMANCENOVEL";
 	descriptionShort = "$STR_EPOCH_ROMANCENOVEL_DESC2";
@@ -73,7 +73,7 @@ class ItemBook2: CA_Magazine {
 	type = 256;
 };
 
-class ItemBook3: CA_Magazine {
+class DZE_Item_Docu_Book3: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BOOK";
 	descriptionShort = "$STR_EPOCH_BOOK_DESC";
@@ -83,7 +83,7 @@ class ItemBook3: CA_Magazine {
 	type = 256;
 };
 
-class ItemBook4: CA_Magazine {
+class DZE_Item_Docu_Book4: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_BOOK";
 	descriptionShort = "$STR_EPOCH_BOOK_DESC";
@@ -93,7 +93,7 @@ class ItemBook4: CA_Magazine {
 	type = 256;
 };
 
-class ItemNewspaper: CA_Magazine {
+class DZE_Item_Docu_Newspaper: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_TORNNEWSPAPER";
 	descriptionShort = "$STR_EPOCH_TORNNEWSPAPER_DESC";
@@ -110,7 +110,7 @@ class ItemNewspaper: CA_Magazine {
 	};
 };
 
-class ItemDocumentRamp: CA_Magazine {
+class DZE_Item_Docu_WoodRamp: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WOODRAMP";
 	descriptionShort = "$STR_EPOCH_WOODRAMP_DESC";
@@ -126,12 +126,12 @@ class ItemDocumentRamp: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Wood_Ramp",1}};
-			input[] = {{"ItemDocumentRamp",1},{"PartWoodLumber",8}};
+			input[] = {{"DZE_Item_Docu_WoodRamp",1},{"DZE_Item_Wood_Lumber",8}};
 		};
 	};
 };
 
-class ItemBookBible : CA_Magazine {
+class DZE_Item_Docu_BookBible: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_BOOK_NAME_BIBLE";
 	descriptionShort = "$STR_BOOK_DESC_BIBLE";
@@ -141,7 +141,7 @@ class ItemBookBible : CA_Magazine {
 	type = 256;
 };
 
-class ItemTrashPaper : CA_Magazine {
+class DZE_Item_Docu_Paper: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_name_ItemTrashPaper";
 	descriptionShort = "$STR_desc_ItemTrashPaper";
@@ -151,7 +151,7 @@ class ItemTrashPaper : CA_Magazine {
 	type = 256;
 };
 
-class ItemTrashPaperMusic : CA_Magazine {
+class DZE_Item_Docu_PaperMusic: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_name_ItemTrashPaperMusic";
 	descriptionShort = "$STR_desc_ItemTrashPaperMusic";
@@ -161,7 +161,7 @@ class ItemTrashPaperMusic : CA_Magazine {
 	type = 256;
 };
 
-class equip_paper_sheet : CA_Magazine {
+class DZE_Item_Docu_Paper_Sheet: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_paper_sheet";
 	descriptionShort = "$STR_ITEM_DESC_equip_paper_sheet";
@@ -170,7 +170,7 @@ class equip_paper_sheet : CA_Magazine {
 	type = 256;
 };
 
-class equip_note : CA_Magazine {
+class DZE_Item_Docu_Note: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_note";
 	descriptionShort = "$STR_ITEM_DESC_equip_note";
@@ -179,315 +179,7 @@ class equip_note : CA_Magazine {
 	type = 256;
 };
 
-// Vehicle upgrade parts
-class ItemORP: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_ORP";
-	descriptionShort = "$STR_EPOCH_VEHUP_ORP_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up1.p3d";
-	picture = "\dayz_epoch_c\icons\documents\car_offroad.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemAVE: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_AVE";
-	descriptionShort = "$STR_EPOCH_VEHUP_AVE_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up2.p3d";
-	picture = "\dayz_epoch_c\icons\documents\car_armor.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemLRK: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_LRK";
-	descriptionShort = "$STR_EPOCH_VEHUP_LRK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up3.p3d";
-	picture = "\dayz_epoch_c\icons\documents\car_cargo.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemTNK: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_TNK";
-	descriptionShort = "$STR_EPOCH_VEHUP_TNK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up4.p3d";
-	picture = "\dayz_epoch_c\icons\documents\car_fuel.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemARM: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_ARM";
-	descriptionShort = "$STR_EPOCH_VEHUP_ARM_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_car_weps.p3d";
-	picture = "\dayz_epoch_c\icons\documents\car_weapon.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-
-class ItemTruckORP: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_ORP_TRUCK";
-	descriptionShort = "$STR_EPOCH_VEHUP_ORP_TRUCK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_truck1.p3d";
-	picture = "\dayz_epoch_c\icons\documents\truck_offroad.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemTruckAVE: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_AVE_TRUCK";
-	descriptionShort = "$STR_EPOCH_VEHUP_AVE_TRUCK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_truck2.p3d";
-	picture = "\dayz_epoch_c\icons\documents\truck_armor.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemTruckLRK: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_LRK_TRUCK";
-	descriptionShort = "$STR_EPOCH_VEHUP_LRK_TRUCK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_truck3.p3d";
-	picture = "\dayz_epoch_c\icons\documents\truck_cargo.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemTruckTNK: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_TNK_TRUCK";
-	descriptionShort = "$STR_EPOCH_VEHUP_TNK_TRUCK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_truck4.p3d";
-	picture = "\dayz_epoch_c\icons\documents\truck_fuel.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemTruckARM: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_ARM_TRUCK";
-	descriptionShort = "$STR_EPOCH_VEHUP_ARM_TRUCK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_truck_weps.p3d";
-	picture = "\dayz_epoch_c\icons\documents\truck_weapon.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemTankORP: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_ORP_TANK";
-	descriptionShort = "$STR_EPOCH_VEHUP_ORP_TANK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_bmp1.p3d";
-	picture = "\dayz_epoch_c\icons\documents\bmp_offroad.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemTankAVE: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_AVE_TANK";
-	descriptionShort = "$STR_EPOCH_VEHUP_AVE_TANK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_bmp2.p3d";
-	picture = "\dayz_epoch_c\icons\documents\bmp_armor.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemTankLRK: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_LRK_TANK";
-	descriptionShort = "$STR_EPOCH_VEHUP_LRK_TANK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_bmp3.p3d";
-	picture = "\dayz_epoch_c\icons\documents\bmp_cargo.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemTankTNK: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_TNK_TANK";
-	descriptionShort = "$STR_EPOCH_VEHUP_TNK_TANK_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_bmp4.p3d";
-	picture = "\dayz_epoch_c\icons\documents\bmp_fuel.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemHeliAVE: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_AVE_HELI";
-	descriptionShort = "$STR_EPOCH_VEHUP_AVE_HELI_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_heli1.p3d";
-	picture = "\dayz_epoch_c\icons\documents\heli_armor.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemHeliLRK: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_LRK_HELI";
-	descriptionShort = "$STR_EPOCH_VEHUP_LRK_HELI_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_heli2.p3d";
-	picture = "\dayz_epoch_c\icons\documents\heli_cargo.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class ItemHeliTNK: CA_Magazine {
-	scope = 2;
-	displayName = "$STR_EPOCH_VEHUP_TNK_HELI";
-	descriptionShort = "$STR_EPOCH_VEHUP_TNK_HELI_DESC";
-	model = "\z\addons\dayz_epoch\models\doc_Up_heli3.p3d";
-	picture = "\dayz_epoch_c\icons\documents\heli_fuel.paa";
-	sfx = "document";
-	count = 1;
-	type = 256;
-	
-	class ItemActions {
-		class Upgrades {
-			text = "$STR_EPOCH_PLAYER_UPGRADEV";
-			script = "spawn player_upgradeVehicle;";
-		};
-	};
-};
-
-class Blueprint_01: CA_Magazine {
+class DZE_Item_Blueprint_01: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_01";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_01";
@@ -495,7 +187,8 @@ class Blueprint_01: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_02: CA_Magazine {
+
+class DZE_Item_Blueprint_02: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_02";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_02";
@@ -503,7 +196,8 @@ class Blueprint_02: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_03: CA_Magazine {
+
+class DZE_Item_Blueprint_03: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_03";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_03";
@@ -511,7 +205,8 @@ class Blueprint_03: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_04: CA_Magazine {
+
+class DZE_Item_Blueprint_04: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_04";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_04";
@@ -519,7 +214,8 @@ class Blueprint_04: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_05: CA_Magazine {
+
+class DZE_Item_Blueprint_05: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_05";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_05";
@@ -527,7 +223,8 @@ class Blueprint_05: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_06: CA_Magazine {
+
+class DZE_Item_Blueprint_06: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_06";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_06";
@@ -535,7 +232,8 @@ class Blueprint_06: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_07: CA_Magazine {
+
+class DZE_Item_Blueprint_07: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_07";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_07";
@@ -543,7 +241,8 @@ class Blueprint_07: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_08: CA_Magazine {
+
+class DZE_Item_Blueprint_08: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_08";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_08";
@@ -551,7 +250,8 @@ class Blueprint_08: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_09: CA_Magazine {
+
+class DZE_Item_Blueprint_09: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_09";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_09";
@@ -559,7 +259,8 @@ class Blueprint_09: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_10: CA_Magazine {
+
+class DZE_Item_Blueprint_10: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_10";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_10";
@@ -567,7 +268,8 @@ class Blueprint_10: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_11: CA_Magazine {
+
+class DZE_Item_Blueprint_11: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_11";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_11";
@@ -575,7 +277,8 @@ class Blueprint_11: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_12: CA_Magazine {
+
+class DZE_Item_Blueprint_12: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_12";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_12";
@@ -583,7 +286,8 @@ class Blueprint_12: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_13: CA_Magazine {
+
+class DZE_Item_Blueprint_13: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_13";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_13";
@@ -591,7 +295,8 @@ class Blueprint_13: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_14: CA_Magazine {
+
+class DZE_Item_Blueprint_14: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_14";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_14";
@@ -599,7 +304,8 @@ class Blueprint_14: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_15: CA_Magazine {
+
+class DZE_Item_Blueprint_15: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_15";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_15";
@@ -607,7 +313,8 @@ class Blueprint_15: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_16: CA_Magazine {
+
+class DZE_Item_Blueprint_16: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_16";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_16";
@@ -615,7 +322,8 @@ class Blueprint_16: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_17: CA_Magazine {
+
+class DZE_Item_Blueprint_17: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_17";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_17";
@@ -623,7 +331,8 @@ class Blueprint_17: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_18: CA_Magazine {
+
+class DZE_Item_Blueprint_18: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_18";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_18";
@@ -631,7 +340,8 @@ class Blueprint_18: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_19: CA_Magazine {
+
+class DZE_Item_Blueprint_19: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_19";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_19";
@@ -639,7 +349,8 @@ class Blueprint_19: CA_Magazine {
 	model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
 	count = 1;
 };
-class Blueprint_20: CA_Magazine {
+
+class DZE_Item_Blueprint_20: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_BLUEPRINT_20";
 	descriptionShort = "$STR_ITEM_DESC_BLUEPRINT_20";
@@ -648,7 +359,7 @@ class Blueprint_20: CA_Magazine {
 	count = 1;
 };
 
-class PileBooks: CA_Magazine {
+class DZE_Item_Docu_PileBooks: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_PILEOFBOOKS";
 	descriptionShort = "$STR_ITEM_DESC_PILEOFBOOKS";
@@ -657,7 +368,7 @@ class PileBooks: CA_Magazine {
 	count = 1;
 };
 
-class PileMedBooks: CA_Magazine {
+class DZE_Item_Docu_PileMedBooks: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_PILEOFMEDBOOKS";
 	descriptionShort = "$STR_ITEM_DESC_PILEOFMEDBOOKS";
@@ -666,7 +377,7 @@ class PileMedBooks: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_01: CA_Magazine {
+class DZE_Item_StashFile_01: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_01";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_01";
@@ -675,7 +386,7 @@ class StashFile_01: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_02: CA_Magazine {
+class DZE_Item_StashFile_02: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_02";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_02";
@@ -684,7 +395,7 @@ class StashFile_02: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_03: CA_Magazine {
+class DZE_Item_StashFile_03: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_03";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_03";
@@ -693,7 +404,7 @@ class StashFile_03: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_04: CA_Magazine {
+class DZE_Item_StashFile_04: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_04";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_04";
@@ -702,7 +413,7 @@ class StashFile_04: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_05: CA_Magazine {
+class DZE_Item_StashFile_05: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_05";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_05";
@@ -711,7 +422,7 @@ class StashFile_05: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_06: CA_Magazine {
+class DZE_Item_StashFile_06: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_06";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_06";
@@ -720,7 +431,7 @@ class StashFile_06: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_07: CA_Magazine {
+class DZE_Item_StashFile_07: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_07";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_07";
@@ -729,7 +440,7 @@ class StashFile_07: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_08: CA_Magazine {
+class DZE_Item_StashFile_08: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_08";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_08";
@@ -738,7 +449,7 @@ class StashFile_08: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_09: CA_Magazine {
+class DZE_Item_StashFile_09: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_09";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_09";
@@ -747,7 +458,7 @@ class StashFile_09: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_10: CA_Magazine {
+class DZE_Item_StashFile_10: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_10";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_10";
@@ -756,7 +467,7 @@ class StashFile_10: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_11: CA_Magazine {
+class DZE_Item_StashFile_11: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_11";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_11";
@@ -765,7 +476,7 @@ class StashFile_11: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_12: CA_Magazine {
+class DZE_Item_StashFile_12: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_12";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_12";
@@ -774,7 +485,7 @@ class StashFile_12: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_13: CA_Magazine {
+class DZE_Item_StashFile_13: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_13";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_13";
@@ -783,7 +494,7 @@ class StashFile_13: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_14: CA_Magazine {
+class DZE_Item_StashFile_14: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_14";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_14";
@@ -792,7 +503,7 @@ class StashFile_14: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_15: CA_Magazine {
+class DZE_Item_StashFile_15: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_15";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_15";
@@ -801,7 +512,7 @@ class StashFile_15: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_16: CA_Magazine {
+class DZE_Item_StashFile_16: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_16";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_16";
@@ -810,7 +521,7 @@ class StashFile_16: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_17: CA_Magazine {
+class DZE_Item_StashFile_17: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_17";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_17";
@@ -819,7 +530,7 @@ class StashFile_17: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_18: CA_Magazine {
+class DZE_Item_StashFile_18: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_18";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_18";
@@ -828,7 +539,7 @@ class StashFile_18: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_19: CA_Magazine {
+class DZE_Item_StashFile_19: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_19";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_19";
@@ -837,7 +548,7 @@ class StashFile_19: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_20: CA_Magazine {
+class DZE_Item_StashFile_20: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_20";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_20";
@@ -846,7 +557,7 @@ class StashFile_20: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_21: CA_Magazine {
+class DZE_Item_StashFile_21: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_21";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_21";
@@ -855,7 +566,7 @@ class StashFile_21: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_22: CA_Magazine {
+class DZE_Item_StashFile_22: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_22";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_22";
@@ -864,7 +575,7 @@ class StashFile_22: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_23: CA_Magazine {
+class DZE_Item_StashFile_23: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_23";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_23";
@@ -873,7 +584,7 @@ class StashFile_23: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_24: CA_Magazine {
+class DZE_Item_StashFile_24: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_24";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_24";
@@ -882,7 +593,7 @@ class StashFile_24: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_25: CA_Magazine {
+class DZE_Item_StashFile_25: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_25";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_25";
@@ -891,7 +602,7 @@ class StashFile_25: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_26: CA_Magazine {
+class DZE_Item_StashFile_26: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_26";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_26";
@@ -900,7 +611,7 @@ class StashFile_26: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_27: CA_Magazine {
+class DZE_Item_StashFile_27: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_27";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_27";
@@ -909,7 +620,7 @@ class StashFile_27: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_28: CA_Magazine {
+class DZE_Item_StashFile_28: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_28";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_28";
@@ -918,7 +629,7 @@ class StashFile_28: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_29: CA_Magazine {
+class DZE_Item_StashFile_29: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_29";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_29";
@@ -927,7 +638,7 @@ class StashFile_29: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_30: CA_Magazine {
+class DZE_Item_StashFile_30: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_30";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_30";
@@ -936,7 +647,7 @@ class StashFile_30: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_31: CA_Magazine {
+class DZE_Item_StashFile_31: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_31";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_31";
@@ -945,7 +656,7 @@ class StashFile_31: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_32: CA_Magazine {
+class DZE_Item_StashFile_32: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_32";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_32";
@@ -954,7 +665,7 @@ class StashFile_32: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_33: CA_Magazine {
+class DZE_Item_StashFile_33: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_33";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_33";
@@ -963,7 +674,7 @@ class StashFile_33: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_34: CA_Magazine {
+class DZE_Item_StashFile_34: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_34";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_34";
@@ -972,7 +683,7 @@ class StashFile_34: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_35: CA_Magazine {
+class DZE_Item_StashFile_35: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_35";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_35";
@@ -981,7 +692,7 @@ class StashFile_35: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_36: CA_Magazine {
+class DZE_Item_StashFile_36: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_36";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_36";
@@ -990,7 +701,7 @@ class StashFile_36: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_37: CA_Magazine {
+class DZE_Item_StashFile_37: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_37";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_37";
@@ -999,7 +710,7 @@ class StashFile_37: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_38: CA_Magazine {
+class DZE_Item_StashFile_38: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_38";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_38";
@@ -1008,7 +719,7 @@ class StashFile_38: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_39: CA_Magazine {
+class DZE_Item_StashFile_39: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_39";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_39";
@@ -1017,7 +728,7 @@ class StashFile_39: CA_Magazine {
 	count = 1;
 };
 
-class StashFile_40: CA_Magazine {
+class DZE_Item_StashFile_40: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_STASHFILE_40";
 	descriptionShort = "$STR_ITEM_DESC_STASHFILE_40";
@@ -1026,7 +737,7 @@ class StashFile_40: CA_Magazine {
 	count = 1;
 };
 
-class DZE_Item_Document_Military: CA_Magazine {
+class DZE_Item_Docu_Document_Military: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_DOCUMENT_MILITARY";
 	descriptionShort = "$STR_EQUIP_DOCUMENT_MILITARY_DESC";
@@ -1036,7 +747,8 @@ class DZE_Item_Document_Military: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Document_Random: CA_Magazine {
+
+class DZE_Item_Docu_Document_Random: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_DOCUMENT_RANDOM";
 	descriptionShort = "$STR_EQUIP_DOCUMENT_RANDOM_DESC";
@@ -1046,7 +758,8 @@ class DZE_Item_Document_Random: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Document_Topsecret: CA_Magazine {
+
+class DZE_Item_Docu_Document_Topsecret: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_DOCUMENT_TOPSECRET";
 	descriptionShort = "$STR_EQUIP_DOCUMENT_TOPSECRET_DESC";
@@ -1056,7 +769,8 @@ class DZE_Item_Document_Topsecret: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Manual_Camera: CA_Magazine {
+
+class DZE_Item_Docu_Manual_Camera: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_MANUAL_CAMERA";
 	descriptionShort = "$STR_EQUIP_MANUAL_CAMERA_DESC";
@@ -1066,7 +780,8 @@ class DZE_Item_Manual_Camera: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Manual_Electronics: CA_Magazine {
+
+class DZE_Item_Docu_Manual_Electronics: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_MANUAL_ELECTRONICS";
 	descriptionShort = "$STR_EQUIP_MANUAL_ELECTRONICS_DESC";
@@ -1076,7 +791,8 @@ class DZE_Item_Manual_Electronics: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Manual_Repair: CA_Magazine {
+
+class DZE_Item_Docu_Manual_Repair: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_MANUAL_REPAIR";
 	descriptionShort = "$STR_EQUIP_MANUAL_REPAIR_DESC";
@@ -1086,7 +802,8 @@ class DZE_Item_Manual_Repair: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Map_Military: CA_Magazine {
+
+class DZE_Item_Docu_Map_Military: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_MAP_Military";
 	descriptionShort = "$STR_EQUIP_MAP_Military_DESC";
@@ -1096,7 +813,8 @@ class DZE_Item_Map_Military: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Map_Survivor: CA_Magazine {
+
+class DZE_Item_Docu_Map_Survivor: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_MAP_SURVIVOR";
 	descriptionShort = "$STR_EQUIP_MAP_SURVIVOR_DESC";
@@ -1106,7 +824,8 @@ class DZE_Item_Map_Survivor: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Notebook_Bio: CA_Magazine {
+
+class DZE_Item_Docu_Notebook_Bio: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NOTEBOOK_BIO";
 	descriptionShort = "$STR_EQUIP_NOTEBOOK_BIO_DESC";
@@ -1116,7 +835,8 @@ class DZE_Item_Notebook_Bio: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Notebook_Che: CA_Magazine {
+
+class DZE_Item_Docu_Notebook_Che: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NOTEBOOK_CHE";
 	descriptionShort = "$STR_EQUIP_NOTEBOOK_CHE_DESC";
@@ -1126,7 +846,8 @@ class DZE_Item_Notebook_Che: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Notebook_Herbs: CA_Magazine {
+
+class DZE_Item_Docu_Notebook_Herbs: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NOTEBOOK_HERBS";
 	descriptionShort = "$STR_EQUIP_NOTEBOOK_HERBS_DESC";
@@ -1136,7 +857,8 @@ class DZE_Item_Notebook_Herbs: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Notebook_Phy: CA_Magazine {
+
+class DZE_Item_Docu_Notebook_Phy: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NOTEBOOK_PHY";
 	descriptionShort = "$STR_EQUIP_NOTEBOOK_PHY_DESC";
@@ -1146,7 +868,8 @@ class DZE_Item_Notebook_Phy: CA_Magazine {
 	count = 1;
 	type = 256;
 };
-class DZE_Item_Notebook_Secret: CA_Magazine {
+
+class DZE_Item_Docu_Notebook_Secret: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NOTEBOOK_SECRET";
 	descriptionShort = "$STR_EQUIP_NOTEBOOK_SECRET_DESC";

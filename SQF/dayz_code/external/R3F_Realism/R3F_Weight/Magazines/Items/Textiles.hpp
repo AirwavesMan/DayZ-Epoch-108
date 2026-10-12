@@ -1,60 +1,46 @@
-class ItemCanvas 
-{
+class DZE_Item_Tex_Canvas {
 	weight = 4;
 };
 
-class ItemBurlap 
-{
+class DZE_Item_Tex_Burlap {
 	weight = 8;
 };
 
-class equip_rag
-{
+class DZE_Item_Tex_Rag {
 	weight = 0.3;
 };
 
-class equip_string
-{
+class DZE_Item_Tex_String {
 	weight = 0.05;
 };
 
-class equip_rope 
-{
+class DZE_Item_Tex_Rope {
 	weight = 0.1;
 };
-class ItemSkinRabbit
-{
+class DZE_Item_Hide_Rabbit {
 	weight = 3;
 };
-class ItemSkinCow
-{
+class DZE_Item_Hide_Cow {
 	weight = 12;
 };
-class ItemSkinGoat
-{
+class DZE_Item_Hide_Goat {
 	weight = 6;
 };
-class ItemSkinBoar
-{
+class DZE_Item_Hide_Boar {
 	weight = 8;
 };
-class ItemSkinDog
-{
+class DZE_Item_Hide_Dog {
 	weight = 6;
 };
-class ItemSkinSheep
-{
+class DZE_Item_Hide_Sheep {
 	weight = 6;
 };
-class ItemWool
-{
+class DZE_Item_Hide_Wool {
 	weight = 3;
 };
-class ItemAnimalSkin
-{
+class DZE_Item_Hide_AnimalSkin {
 	weight = 8;
 };
-class ItemLeather
-{
+class DZE_Item_Hide_Leather {
 	weight = 7;
 };

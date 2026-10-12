@@ -21,49 +21,49 @@ _GemTotal2 = _total;
 	_gem = _x;
 	_value = DZE_GemWorthList select _forEachIndex;
 	call {
-		if (_gem == 'ItemTopaz') exitwith {
+		if (_gem == 'DZE_Item_Gems_Topaz') exitwith {
 			_ItemTopaz = floor(_GemTotal2 / _value);
 			if (_ItemTopaz >= 1) then {
 				_GemTotal = (_value * _ItemTopaz) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-		if (_gem == 'ItemObsidian') exitwith {
+		if (_gem == 'DZE_Item_Gems_Obsidian') exitwith {
 			_ItemObsidian = floor(_GemTotal2 / _value);
 			if (_ItemObsidian >= 1) then {
 				_GemTotal = (_value * _ItemObsidian) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-		if (_gem == 'ItemSapphire') exitwith {
+		if (_gem == 'DZE_Item_Gems_Sapphire') exitwith {
 			_ItemSapphire = floor(_GemTotal2 / _value);
 			if (_ItemSapphire >= 1) then {
 				_GemTotal = (_value * _ItemSapphire) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-		if (_gem == 'ItemAmethyst') exitwith {
+		if (_gem == 'DZE_Item_Gems_Amethyst') exitwith {
 			_ItemAmethyst = floor(_GemTotal2 / _value);
 			if (_ItemAmethyst >= 1) then {
 				_GemTotal = (_value * _ItemAmethyst) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-		if (_gem == 'ItemEmerald') exitwith {
+		if (_gem == 'DZE_Item_Gems_Emerald') exitwith {
 			_ItemEmerald = floor(_GemTotal2 / _value);
 			if (_ItemEmerald >= 1) then {
 				_GemTotal = (_value * _ItemEmerald) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-		if (_gem == 'ItemCitrine') exitwith {
+		if (_gem == 'DZE_Item_Gems_Citrine') exitwith {
 			_ItemCitrine = floor(_GemTotal2 / _value);
 			if (_ItemCitrine >= 1) then {
 				_GemTotal = (_value * _ItemCitrine) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-		if (_gem == 'ItemRuby') exitwith {
+		if (_gem == 'DZE_Item_Gems_Ruby') exitwith {
 			_ItemRuby = floor(_GemTotal2 / _value);
 			if (_ItemRuby >= 1) then {
 				_GemTotal = (_value * _ItemRuby) + _GemTotal;
@@ -114,7 +114,7 @@ if (_noIMG) then {
 	};
 } else {
 	if (_briefcase_100oz > 0) then {
-		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemBriefcase100oz' >> 'picture');
+		_pic = getText (configFile >> 'CfgMagazines' >> 'DZE_Item_Cur_BriefcaseG_100oz' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_briefcase_100oz,_pic, _string,_fontSize];
 	};
 };
@@ -123,7 +123,7 @@ if (_gold_10oz > 0) then {
 	if (_noIMG) then {
 		_array set [count _array, format["%1x %2",_gold_10oz,if (_localize) then {localize "STR_EPOCH_10OZGOLD"} else {"10oz Gold"}]];
 	} else {
-		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemGoldBar10oz' >> 'picture');
+		_pic = getText (configFile >> 'CfgMagazines' >> 'DZE_Item_Cur_GoldBar10oz' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_gold_10oz,_pic, _string,_fontSize];
 	};
 };
@@ -131,7 +131,7 @@ if (_gold_1oz > 0) then {
 	if (_noIMG) then {
 		_array set [count _array, format["%1x %2",_gold_1oz,if (_localize) then {localize "STR_EPOCH_GOLD"} else {"Gold"}]];
 	} else {
-		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemGoldBar' >> 'picture');
+		_pic = getText (configFile >> 'CfgMagazines' >> 'DZE_Item_Cur_GoldBar' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_gold_1oz,_pic, _string,_fontSize];
 	};
 };
@@ -139,7 +139,7 @@ if (_silver_10oz > 0) then {
 	if (_noIMG) then {
 		_array set [count _array, format["%1x %2",_silver_10oz,if (_localize) then {localize "STR_EPOCH_10OZSILVER"} else {"10oz Silver"}]];
 	} else {
-		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemSilverBar10oz' >> 'picture');
+		_pic = getText (configFile >> 'CfgMagazines' >> 'DZE_Item_Cur_SilverBar10oz' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_silver_10oz,_pic, _string,_fontSize];
 	};
 };
@@ -147,7 +147,7 @@ if (_silver_1oz > 0) then {
 	if (_noIMG) then {
 		_array set [count _array, format["%1x %2",_silver_1oz,if (_localize) then {localize "STR_EPOCH_SILVER"} else {"Silver"}]];
 	} else {
-		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemSilverBar' >> 'picture');
+		_pic = getText (configFile >> 'CfgMagazines' >> 'DZE_Item_Cur_SilverBar' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_silver_1oz,_pic, _string,_fontSize];
 	};
 };

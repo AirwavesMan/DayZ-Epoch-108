@@ -114,49 +114,49 @@ if (_return_change > 0) then {
 		_gem = _x;
 		_value = DZE_GemWorthList select _forEachIndex;
 		call {
-			if (_gem == 'ItemTopaz') exitwith {
+			if (_gem == 'DZE_Item_Gems_Topaz') exitwith {
 				_ItemTopaz = floor(_GemTotal2 / _value);
 				if (_ItemTopaz >= 1) then {
 					_GemTotal = (_value * _ItemTopaz) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			if (_gem == 'ItemObsidian') exitwith {
+			if (_gem == 'DZE_Item_Gems_Obsidian') exitwith {
 				_ItemObsidian = floor(_GemTotal2 / _value);
 				if (_ItemObsidian >= 1) then {
 					_GemTotal = (_value * _ItemObsidian) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			if (_gem == 'ItemSapphire') exitwith {
+			if (_gem == 'DZE_Item_Gems_Sapphire') exitwith {
 				_ItemSapphire = floor(_GemTotal2 / _value);
 				if (_ItemSapphire >= 1) then {
 					_GemTotal = (_value * _ItemSapphire) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			if (_gem == 'ItemAmethyst') exitwith {
+			if (_gem == 'DZE_Item_Gems_Amethyst') exitwith {
 				_ItemAmethyst = floor(_GemTotal2 / _value);
 				if (_ItemAmethyst >= 1) then {
 					_GemTotal = (_value * _ItemAmethyst) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			if (_gem == 'ItemEmerald') exitwith {
+			if (_gem == 'DZE_Item_Gems_Emerald') exitwith {
 				_ItemEmerald = floor(_GemTotal2 / _value);
 				if (_ItemEmerald >= 1) then {
 					_GemTotal = (_value * _ItemEmerald) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			if (_gem == 'ItemCitrine') exitwith {
+			if (_gem == 'DZE_Item_Gems_Citrine') exitwith {
 				_ItemCitrine = floor(_GemTotal2 / _value);
 				if (_ItemCitrine >= 1) then {
 					_GemTotal = (_value * _ItemCitrine) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			if (_gem == 'ItemRuby') exitwith {
+			if (_gem == 'DZE_Item_Gems_Ruby') exitwith {
 				_ItemRuby = floor(_GemTotal2 / _value);
 				if (_ItemRuby >= 1) then {
 					_GemTotal = (_value * _ItemRuby) + _GemTotal;
@@ -187,71 +187,71 @@ if (_return_change > 0) then {
 
 	if (_ItemTopaz > 0) then {
 		for "_x" from 1 to _ItemTopaz do {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemTopaz"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Gems_Topaz'] call _addRegularMag; };
 		};
 	};
 	if (_ItemObsidian > 0) then {
 		for "_x" from 1 to _ItemObsidian do {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemObsidian"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Gems_Obsidian'] call _addRegularMag; };
 		};
 	};
 	if (_ItemSapphire > 0) then {
 		for "_x" from 1 to _ItemSapphire do {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemSapphire"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Gems_Sapphire'] call _addRegularMag; };
 		};
 	};
 	if (_ItemAmethyst > 0) then {
 		for "_x" from 1 to _ItemAmethyst do {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemAmethyst"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Gems_Amethyst'] call _addRegularMag; };
 		};
 	};
 	if (_ItemEmerald > 0) then {
 		for "_x" from 1 to _ItemEmerald do {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemEmerald"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Gems_Emerald'] call _addRegularMag; };
 		};
 	};
 	if (_ItemCitrine > 0) then {
 		for "_x" from 1 to _ItemCitrine do {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemCitrine"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Gems_Citrine'] call _addRegularMag; };
 		};
 	};
 	if (_ItemRuby > 0) then {
 		for "_x" from 1 to _ItemRuby do {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemRuby"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Gems_Ruby'] call _addRegularMag; };
 		};
 	};
 
 	if (_briefcase_100oz > 0) then {
 		for "_x" from 1 to _briefcase_100oz do {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemBriefcase100oz"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Cur_BriefcaseG_100oz'] call _addRegularMag; };
 		};
 	};
 	if (_gold_10oz > 0) then {
 		if (_gold_10oz == 1) then {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemGoldBar10oz"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Cur_GoldBar10oz'] call _addRegularMag; };
 		} else {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format["ItemBriefcase%1oz",floor(_gold_10oz*10)]] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format['DZE_Item_Cur_BriefcaseG_%1oz',floor(_gold_10oz*10)]] call _addRegularMag; };
 		};
 	};
 	if (_gold_1oz > 0) then {
 		if (_gold_1oz == 1) then {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemGoldBar"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Cur_GoldBar'] call _addRegularMag; };
 		} else {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format["ItemGoldBar%1oz",_gold_1oz]] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format['DZE_Item_Cur_GoldBar%1oz',_gold_1oz]] call _addRegularMag; };
 		};
 	};
 	if (_silver_10oz > 0) then {
 		if (_silver_10oz == 1) then {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemSilverBar10oz"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Cur_SilverBar10oz'] call _addRegularMag; };
 		} else {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format["ItemBriefcaseS%1oz",floor(_silver_10oz*10)]] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format['DZE_Item_Cur_BriefcaseS_%1oz',floor(_silver_10oz*10)]] call _addRegularMag; };
 		};
 	};
 	if (_silver_1oz > 0) then {
 		if (_silver_1oz == 1) then {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemSilverBar"] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,'DZE_Item_Cur_SilverBar'] call _addRegularMag; };
 		} else {
-			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format["ItemSilverBar%1oz",_silver_1oz]] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format['DZE_Item_Cur_SilverBar%1oz',_silver_1oz]] call _addRegularMag; };
 		};
 	};
 

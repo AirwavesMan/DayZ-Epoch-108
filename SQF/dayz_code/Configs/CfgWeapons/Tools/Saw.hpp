@@ -12,7 +12,7 @@ class DZE_Tool_HandsawBroken: ItemCore {
 	descriptionShort = "$STR_EQUIP_SAW_BROKEN_DESC";
 	picture = "\dayz_epoch_c\icons\tools\ItemSawBroken.paa";
 	model = "\z\addons\dayz_epoch_w\items\handsaw.p3d";
-	
+
 	class ItemActions {
 		class Repair {
 			text = "$STR_ACTIONS_FIX_SAW";
@@ -21,8 +21,8 @@ class DZE_Tool_HandsawBroken: ItemCore {
 			requiretools[] = {};
 			output[] = {};
 			outputweapons[] = {"DZE_Tool_Handsaw"};
-			input[] = {{"PartGeneric",1}};
+			input[] = {{"DZE_Item_Metal_Parts",1}};
 			inputweapons[] = {"DZE_Tool_HandsawBroken"};
-		};		
+		};
 	};
 };

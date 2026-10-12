@@ -70,9 +70,9 @@ if (_isOk) then {
 		if !(_holder getVariable ["fullRefund",true]) then {
 			//Trap was already triggered, refund all parts except grenade
 			player removeMagazine _classname;
-			["equip_string",1,1] call fn_dropItem;
-			["PartWoodPile",1,1] call fn_dropItem;
-			["equip_duct_tape",1,1] call fn_dropItem;
+			['DZE_Item_Tex_String',1,1] call fn_dropItem;
+			['DZE_Item_Wood_Pile',1,1] call fn_dropItem;
+			['DZE_Item_Plastic_Duct_Tape',1,1] call fn_dropItem;
 		};
 		PVDZ_obj_Destroy = [netID player,netID _holder,dayz_authKey];
 		publicVariableServer "PVDZ_obj_Destroy";

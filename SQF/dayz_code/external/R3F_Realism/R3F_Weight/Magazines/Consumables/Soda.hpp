@@ -1,84 +1,63 @@
-class ItemSodaMdew
-{
+class DZE_Item_Drink_SodaMdew {
 	weight = 0.33;
 };
-class ItemSodaPepsi
-{
+class DZE_Item_Drink_SodaPepsi {
 	weight = 0.33;
 };
-class ItemSodaCoke
-{
+class DZE_Item_Drink_Coke {
 	weight = 0.33;
 };
-class ItemSodaMtngreen 
-{
+class DZE_Item_Drink_SodaMtngreen {
 	weight = 0.33;
 };
-class ItemSodaR4z0r 
-{
+class DZE_Item_Drink_SodaR4z0r {
 	weight = 0.33;
 };
-class ItemSodaClays 
-{
+class DZE_Item_Drink_SodaClays {
 	weight = 0.33;
 };
-class ItemSodaSmasht 
-{
+class DZE_Item_Drink_SodaSmasht {
 	weight = 0.33;
 };
-class ItemSodaDrwaste 
-{
+class DZE_Item_Drink_SodaDrwaste {
 	weight = 0.33;
 };
-class ItemSodaFranka 
-{
+class DZE_Item_Drink_SodaFranka {
 	weight = 0.33;
 };
-class ItemSodaLemonade 
-{
+class DZE_Item_Drink_SodaLemonade {
 	weight = 0.33;
 };
-class ItemSodaLirik 
-{
+class DZE_Item_Drink_SodaLirik {
 	weight = 0.33;
 };
-class ItemSodaLvg 
-{
+class DZE_Item_Drink_SodaLvg {
 	weight = 0.33;
 };
-class ItemSodaMzly 
-{
+class DZE_Item_Drink_SodaMzly {
 	weight = 0.33;
 };
-class ItemSodaPeppsy 
-{
+class DZE_Item_Drink_SodaPeppsy {
 	weight = 0.33;
 };
-class ItemSodaRabbit 
-{
+class DZE_Item_Drink_SodaRabbit {
 	weight = 0.33;
 };
-class ItemSodaSacrite 
-{
+class DZE_Item_Drink_SodaSacrite {
 	weight = 0.33;
 };
-class ItemSodaRocketFuel 
-{
+class DZE_Item_Drink_SodaRocketFuel {
 	weight = 0.33;
 };
-class ItemSodaGrapeDrink 
-{
+class DZE_Item_Drink_SodaGrapeDrink {
 	weight = 0.33;
 };
-class ItemSherbet 
-{
+class DZE_Item_Drink_Sherbet {
 	weight = 0.33;
 };
-class ItemSodaRbull 
-{
+class DZE_Item_Drink_SodaRbull {
 	weight = 0.33;
 };
-class ItemSodaOrangeSherbet 
-{
+class DZE_Item_Drink_SodaOrangeSherbet {
 	weight = 0.33;
 };

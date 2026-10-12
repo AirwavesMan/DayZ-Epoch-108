@@ -48,7 +48,7 @@ while {_i < _rounded} do {
 	_result = [player,_itemtocreate] call BIS_fnc_invAdd;
 
 	if (_rnd < 0.5) then {
-		 [player,"equip_string"] call BIS_fnc_invAdd;
+		 [player,'DZE_Item_Tex_String'] call BIS_fnc_invAdd;
 	};
 	uiSleep 0.03;
 

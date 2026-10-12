@@ -61,7 +61,7 @@ local _wheelSwitchAPC = (_isBTR60 || _isBTR90 || _isLAV25 || _isRM70);
 	_configVeh = configFile >> "cfgVehicles" >> "RepairParts" >> _hitpoint;
 	_part = getText(_configVeh >> "part");
 	if (_part == "") then {
-		_part = "PartGeneric";
+		_part = 'DZE_Item_Metal_Parts';
 		// Handle parts not listed in RepairParts config.
 		// Additional vehicle addons may be loaded with non-standard hitpoint names.
 		{

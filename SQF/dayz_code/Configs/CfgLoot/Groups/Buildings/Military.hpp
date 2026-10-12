@@ -32,7 +32,7 @@ MilitaryRU[] =
 	{Loot_CONTAINER,	1,		DZ_ExplosiveBoxRU, AmmoBoxRU5, 3, 7},	//Grenades
 
 	//Other
-	{Loot_MAGAZINE,		3,		FoodMRE},
+	{Loot_MAGAZINE,		3,		DZE_Item_Food_MRE},
 	{Loot_PILE,			15,		AmmoRU, 1, 4},
 	{Loot_GROUP,		8,		AttachmentsRU},
 	{Loot_PILE,			10,		MedicalLow, 1, 2},
@@ -46,7 +46,7 @@ MilitarySmallRU[] =
 	{Loot_WEAPON,		5,		DZE_Wep_Makarov_SD},
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_GROUP,		3,		militaryclothes},
-	{Loot_MAGAZINE,		1,		PipeBomb}, // Satchel charges are very destructive and should be rare.
+	{Loot_MAGAZINE,		1,		DZE_Item_Expl_PipeBomb}, // Satchel charges are very destructive and should be rare.
 	{Loot_GROUP,		30,		AmmoRU},
 	{Loot_GROUP,		15,		AttachmentsRU},
 	{Loot_GROUP,		10,		MedicalLow},
@@ -76,7 +76,7 @@ MilitaryUS[] =
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxUS5, 7, 14},	//6.80x43
 	
 	//Other
-	{Loot_MAGAZINE,		3,		FoodMRE},
+	{Loot_MAGAZINE,		3,		DZE_Item_Food_MRE},
 	{Loot_PILE,			15,		AmmoUS, 1, 4},
 	{Loot_GROUP,		6,		AttachmentsUS},
 	{Loot_PILE,			10,		MedicalLow, 1, 2},
@@ -90,7 +90,7 @@ MilitarySmallUS[] =
 	{Loot_WEAPON,		5,		DZE_Wep_M9_SD},
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_GROUP,		3,		militaryclothes},
-	{Loot_MAGAZINE,		1,		PipeBomb},
+	{Loot_MAGAZINE,		1,		DZE_Item_Expl_PipeBomb},
 	{Loot_GROUP,		30,		AmmoUS},
 	{Loot_GROUP,		15,		AttachmentsUS},
 	{Loot_GROUP,		10,		MedicalLow},
@@ -120,7 +120,7 @@ MilitaryEU[] =
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxEU5, 7, 14},	//5.7x28, .45ACP
 
 	//Other
-	{Loot_MAGAZINE,		3,		FoodMRE},
+	{Loot_MAGAZINE,		3,		DZE_Item_Food_MRE},
 	{Loot_PILE,			15,		AmmoEU, 1, 4},
 	{Loot_GROUP,		6,		AttachmentsEU},
 	{Loot_PILE,			10,		MedicalLow, 1, 2},
@@ -134,7 +134,7 @@ MilitarySmallEU[] =
 	{Loot_WEAPON,		5,		DZE_Wep_G17_SD},
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_GROUP,		3,		militaryclothes},
-	{Loot_MAGAZINE,		1,		PipeBomb},
+	{Loot_MAGAZINE,		1,		DZE_Item_Expl_PipeBomb},
 	{Loot_GROUP,		30,		AmmoEU},
 	{Loot_GROUP,		15,		AttachmentsEU},
 	{Loot_GROUP,		10,		MedicalLow},
@@ -162,7 +162,7 @@ MilitaryCZ[] =
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxCZ3, 7, 14},
 
 	//Other
-	{Loot_MAGAZINE,		3,		FoodMRE},
+	{Loot_MAGAZINE,		3,		DZE_Item_Food_MRE},
 	{Loot_MAGAZINE,		1,		MAAWS_HEAT}, // MAAWS added exclusively to CZ group. They should be fairly rare.
 	{Loot_PILE,			15,		AmmoCZ, 1, 4},
 	{Loot_GROUP,		6,		AttachmentsCZ},
@@ -180,7 +180,7 @@ MilitarySmallCZ[] =
 	{Loot_WEAPON,		2,		DZE_Wep_CZ75SP_SD},
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_GROUP,		3,		militaryclothes},
-	{Loot_MAGAZINE,		1,		PipeBomb},
+	{Loot_MAGAZINE,		1,		DZE_Item_Expl_PipeBomb},
 	{Loot_MAGAZINE,		1,		MAAWS_HEAT},
 	{Loot_GROUP,		30,		AmmoCZ},
 	{Loot_GROUP,		15,		AttachmentsCZ},

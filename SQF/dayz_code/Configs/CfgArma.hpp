@@ -493,8 +493,8 @@ class CfgSurvival {
 		class Default {
 			RandomMagazines = 3;
 			//weapons[] = {"Makarov"};
-			//GuaranteedMagazines[] = {"DZE_Item_Medi_Bandage","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","HandRoadFlare"};
-			GuaranteedMagazines[] = {"DZE_Item_Medi_Bandage","HandRoadFlare"};
+			//GuaranteedMagazines[] = {"DZE_Item_Medi_Bandage","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","DZE_Item_Flares_RoadFlare"};
+			GuaranteedMagazines[] = {"DZE_Item_Medi_Bandage","DZE_Item_Flares_RoadFlare"};
 			RandomPossibilitieMagazines[] = {"DZE_Item_Medi_Bandage","DZE_Item_Medi_Painkiller"};
 			backpackWeapon = "";
 			//backpack = "DZ_Patrol_Pack_EP1";
@@ -507,7 +507,7 @@ class CfgSurvival {
 		};
 		class Cow: Default {
 			yield = 6;
-			rawfoodtype = "FoodbeefRaw";
+			rawfoodtype = "DZE_Item_Meat_Raw_Beef";
 		};
 		class Cow01: Cow {};
 		class Cow02: Cow {};
@@ -516,32 +516,32 @@ class CfgSurvival {
 		class Cow01_EP1: Cow {};
 		class Goat: Default {
 			yield = 4;
-			rawfoodtype = "FoodgoatRaw";
+			rawfoodtype = "DZE_Item_Meat_Raw_Goat";
 		};
 		class Goat01_EP1: Goat {};
 		class Goat02_EP1: Goat {};
 		class Sheep: Default {
 			yield = 4;
-			rawfoodtype = "FoodmuttonRaw";
+			rawfoodtype = "DZE_Item_Meat_Raw_Mutton";
 		};
 		class Sheep01_EP1: Sheep {};
 		class Sheep02_EP1: Sheep {};
 		class WildBoar: Default {
 			yield = 4;
-			rawfoodtype = "FoodbaconRaw";
+			rawfoodtype = "DZE_Item_Meat_Raw_Bacon";
 		};
 		class Hen: Default {
 			yield = 2;
-			rawfoodtype = "FoodchickenRaw";
+			rawfoodtype = "DZE_Item_Meat_Raw_Chicken";
 		};
 		class Cock: Hen {};
 		class Fin: Default {
-			rawfoodtype = "FoodDogRaw";
+			rawfoodtype = "DZE_Item_Meat_Raw_Dog";
 		};
 		class Pastor: Fin {};
 		class Rabbit: Default {
 			yield = 2;
-			rawfoodtype = "FoodrabbitRaw";
+			rawfoodtype = "DZE_Item_Meat_Raw_Rabbit";
 		};
 	};
 	class Plants {

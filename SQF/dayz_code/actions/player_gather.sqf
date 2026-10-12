@@ -4,8 +4,8 @@ _plant = _this;
 
 if (_plant getVariable["Gathering",false]) exitWith {};
 _originalCount = getNumber (configFile >> "CfgVehicles" >> (typeOf _plant) >> "TransportMagazines" >> "_xx_leaf" >> "count");
-if !([ [[["equip_comfreyleafs"],[_originalCount]],[[],[]]] , [getMagazineCargo _plant, getWeaponCargo _plant] ] call BIS_fnc_areEqual) then {
-	//diag_log [ [getMagazineCargo _plant, getWeaponCargo _plant], "!=", [[["equip_comfreyleafs"],[_originalCount]],[[],[]]] ];
+if !([ [[['DZE_Item_Farm_Comfreyleafs'],[_originalCount]],[[],[]]] , [getMagazineCargo _plant, getWeaponCargo _plant] ] call BIS_fnc_areEqual) then {
+	//diag_log [ [getMagazineCargo _plant, getWeaponCargo _plant], "!=", [[['DZE_Item_Farm_Comfreyleafs'],[_originalCount]],[[],[]]] ];
 	_plant setVariable["Gathering",true]; // avoid multiple call because the fn_selfActions is called in an infinite loop
 	_plant spawn { // in background to be called after fn_selfActions
 		private ["_mags","_weps","_item","_magcounts","_wepcounts","_plant"];

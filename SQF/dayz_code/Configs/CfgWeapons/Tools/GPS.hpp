@@ -19,7 +19,7 @@ class DZE_Tool_GPSBroken : ItemCore {
 			requiretools[] = {"DZE_Tool_Solder"};
 			output[] = {};
 			outputweapons[] = {"DZE_Tool_GPS"};
-			input[] = {{"equip_floppywire",1},{"equip_scrapelectronics",1}};
+			input[] = {{"DZE_Item_Elec_Floppywire",1},{"DZE_Item_Elec_Scrapelectronics",1}};
 			inputweapons[] = {"DZE_Tool_GPSBroken"};
 		};		
 	};	

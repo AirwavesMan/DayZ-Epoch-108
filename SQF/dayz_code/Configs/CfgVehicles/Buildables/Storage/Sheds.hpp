@@ -28,7 +28,7 @@ class DZE_StorageShed: DZE_Storage_Base {
 			onlyForPlayer = 1;
 		};
 	};
-	DZE_upgradeBuilding[] = {"DZE_StorageShed2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar","DZE_Tool_Sledge"},{{"equip_metal_sheet",4},{"ItemMetalSheet",2},{"ItemScrews",2}}};
+	DZE_upgradeBuilding[] = {"DZE_StorageShed2",{"DZE_Tool_Toolbox","DZE_Tool_Crowbar","DZE_Tool_Sledge"},{{"DZE_Item_Metal_Sheet",4},{"DZE_Item_Metal_Corrugated_Sheet",2},{"DZE_Item_Metal_Screws",2}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Storage_Shed";
 		DZE_refundArray[] = {};
@@ -60,7 +60,7 @@ class DZE_WoodShack: DZE_Storage_Base {
 	transportMaxWeapons = 10;
 	transportMaxBackpacks = 5;
 	DZE_buildingSteps = 4;
-	DZE_upgradeBuilding[] = {"DZE_WoodShack2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"PartWoodPlywood",4},{"equip_nails",2}}};
+	DZE_upgradeBuilding[] = {"DZE_WoodShack2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"DZE_Item_Wood_Plywood",4},{"DZE_Item_Metal_Nails",2}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Wood_Shack";
 		DZE_refundArray[] = {};
@@ -92,7 +92,7 @@ class DZE_Wooden_shed: DZE_Storage_Base {
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 10;
 	DZE_buildingSteps = 5;
-	DZE_upgradeBuilding[] = {"DZE_Wooden_shed2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"PartWoodPlywood",8},{"equip_nails",2}}};
+	DZE_upgradeBuilding[] = {"DZE_Wooden_shed2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"DZE_Item_Wood_Plywood",8},{"DZE_Item_Metal_Nails",2}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Wooden_Shed";
 		DZE_refundArray[] = {};

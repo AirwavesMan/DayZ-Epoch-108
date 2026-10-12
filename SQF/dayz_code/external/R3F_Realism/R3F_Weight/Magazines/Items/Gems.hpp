@@ -1,64 +1,48 @@
-class ItemTopaz
-{
+class DZE_Item_Gems_Topaz {
 	weight = 2;
 };
-class ItemObsidian
-{
+class DZE_Item_Gems_Obsidian {
 	weight = 2;
 };
-class ItemSapphire
-{
+class DZE_Item_Gems_Sapphire {
 	weight = 2;
 };
-class ItemAmethyst
-{
+class DZE_Item_Gems_Amethyst {
 	weight = 2;
 };
-class ItemEmerald
-{
+class DZE_Item_Gems_Emerald {
 	weight = 2;
 };
-class ItemCitrine
-{
+class DZE_Item_Gems_Citrine {
 	weight = 2;
 };
-class ItemRuby
-{
+class DZE_Item_Gems_Ruby {
 	weight = 2;
 };
-class ItemGemSuitcase_Emtpy
-{
+class DZE_Item_Gems_Suitcase_Empty {
 	weight = 1;
 };
-class ItemGemSuitcase_Topaz
-{
+class DZE_Item_Gems_Suitcase_Topaz {
 	weight = 21;
 };
-class ItemGemSuitcase_Obisidian
-{
+class DZE_Item_Gems_Suitcase_Obsidian {
 	weight = 21;
 };
-class ItemGemSuitcase_Sapphire
-{
+class DZE_Item_Gems_Suitcase_Sapphire {
 	weight = 21;
 };
-class ItemGemSuitcase_Amethyst
-{
+class DZE_Item_Gems_Suitcase_Amethyst {
 	weight = 21;
 };
-class ItemGemSuitcase_Emerald
-{
+class DZE_Item_Gems_Suitcase_Emerald {
 	weight = 21;
 };
-class ItemGemSuitcase_Citrine
-{
+class DZE_Item_Gems_Suitcase_Citrine {
 	weight = 21;
 };
-class ItemGemSuitcase_Ruby
-{
+class DZE_Item_Gems_Suitcase_Ruby {
 	weight = 21;
 };
-class ItemGemSuitcase_All
-{
+class DZE_Item_Gems_Suitcase_All {
 	weight = 15;
 };

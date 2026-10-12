@@ -30,7 +30,7 @@ if (count _magazines > 0) then {
 	_objWpnQty = _magazines select 1;
 	_counter = 0;
 	{
-		if (_x != "CSGAS") then {
+		if (_x != 'DZE_Mag_CSGAS') then {
 			_holder addMagazineCargoGlobal [_x,(_objWpnQty select _counter)];
 			_counter = _counter + 1;
 		};

@@ -1,69 +1,55 @@
-class PipeBomb
-{
+class DZE_Item_Expl_PipeBomb {
 	weight = 4;
 };
 
-class TimeBomb
-{
+class DZE_Item_Expl_TimeBomb {
 	weight = 4;
 };
 
-class Mine
-{
+class DZE_Item_Expl_Mine {
 	weight = 8;
 };
 
-class MineE
-{
+class DZE_Item_Expl_MineE {
 	weight = 8;
 };
 
-class ItemC4Charge
-{
+class DZE_Item_Expl_C4Charge {
 	weight = 4;
 };
 
-class ItemCarBomb
-{
+class DZE_Item_Expl_CarBomb {
 	weight = 4;
 };
 
-class PMC_ied_v1 
-{
+class PMC_ied_v1 {
 	weight = 20; 
 };
 
-class PMC_ied_v2 
-{
+class PMC_ied_v2 {
 	weight = 20; 
 };
 
-class PMC_ied_v3 
-{
+class PMC_ied_v3 {
 	weight = 20; 
 };
 
-class PMC_ied_v4 
-{
+class PMC_ied_v4 {
 	weight = 20; 
 };
 
-class BAF_ied_v1 
-{
+class BAF_ied_v1 {
 	weight = 20; 
 };
 
-class BAF_ied_v2 
-{
+class BAF_ied_v2 {
 	weight = 20; 
 };
 
-class BAF_ied_v3 
-{
+class BAF_ied_v3 {
 	weight = 20; 
 };
 
-class BAF_ied_v4 
-{
+class BAF_ied_v4 {
 	weight = 20; 
 };	

@@ -1,4 +1,4 @@
-class DZE_Tool_Hatchet : ItemCore {
+class DZE_Tool_Hatchet: ItemCore {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_HATCHET";
 	descriptionShort = "$STR_EQUIP_DESC_HATCHET";
@@ -25,7 +25,7 @@ class DZE_Tool_Hatchet : ItemCore {
 	};
 };
 
-class DZE_Tool_HatchetBroken : ItemCore {
+class DZE_Tool_HatchetBroken: ItemCore {
 	scope = 2;
 	displayName = "$STR_name_ItemHatchetBroken";
 	descriptionShort = "$STR_desc_ItemHatchetBroken";
@@ -40,13 +40,13 @@ class DZE_Tool_HatchetBroken : ItemCore {
 			requiretools[] = {};
 			output[] = {};
 			outputweapons[] = {"DZE_Tool_Hatchet"};
-			input[] = {{"equip_duct_tape",1},{"equip_lever",1}};
+			input[] = {{"DZE_Item_Plastic_Duct_Tape",1},{"DZE_Item_Tool_Lever",1}};
 			inputweapons[] = {"DZE_Tool_HatchetBroken"};
 		};
 	};
 };
 
-class DZE_Tool_HatchetBlunt : ItemCore {
+class DZE_Tool_HatchetBlunt: ItemCore {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_HATCHET_DULL";
 	descriptionShort = "$STR_EQUIP_DESC_HATCHET_DULL";

@@ -212,12 +212,12 @@ class DZE_Veh_Submarine: DZE_Veh_Submarine_Base {
 	displayName	= "$STR_VEH_NAME_SUBMARINE";
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Submarine_1",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Submarine_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1},{"DZE_Item_Metal_Parts",6},{"DZE_Item_Metal_Screws",4}}};
 	};
-
 	transportMaxMagazines = 360;
 	transportMaxWeapons = 80;
 	transportMaxBackpacks = 20;
+
 };
 
 class DZE_Veh_Submarine_1: DZE_Veh_Submarine {
@@ -227,7 +227,7 @@ class DZE_Veh_Submarine_1: DZE_Veh_Submarine {
 	damageResistance = 0.00636;
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Submarine_2",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Submarine_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Kit_WoodCrate",1},{"DZE_Item_Kit_GunRack",1},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -238,7 +238,7 @@ class DZE_Veh_Submarine_2: DZE_Veh_Submarine_1 {
 	transportMaxBackpacks = 40;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Submarine_3",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Submarine_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",2},{"DZE_Item_Parts_Fueltank",1},{"DZE_Item_JerryCan_Fuel",2},{"DZE_Item_Metal_Screws",1}}};
 	};
 };
 

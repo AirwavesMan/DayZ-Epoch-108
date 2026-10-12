@@ -110,7 +110,7 @@ DZE_addVehicleAmmo = false; // Adds ammo to all spawned, bought, claimed and upg
 DZE_Elevator_Classnames = [];
 
 // Uncomment the lines below to change the default loadout
-//DefaultMagazines = ["HandRoadFlare","DZE_Item_Medi_Bandage","DZE_Item_Medi_Painkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
+//DefaultMagazines = ['DZE_Item_Flares_RoadFlare',"DZE_Item_Medi_Bandage","DZE_Item_Medi_Painkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
 //DefaultWeapons = ["DZE_Wep_Makarov","DZE_Tool_Flashlight"];
 //DefaultBackpack = "GymBag_Camo_DZE1";
 //DefaultBackpackItems = []; // Can include both weapons and magazines i.e. ["DZE_Wep_PDW","30Rnd_9x19_UZI"];
@@ -200,7 +200,7 @@ if (!isDedicated) then {
 	dayz_temperature_override = false; // Set to true to disable all temperature changes.
 	dayz_nutritionValuesSystem = true; //true, Enables nutrition system, false, disables nutrition system.
 	DZE_DisableVehicleUpgrade = []; // List of vehicles that cannot be upgraded with manuals E.g.: ['DZE_Veh_SUV_Armored_M134','DZE_Veh_LandRover_Desert']
-	DZE_debrisRefundParts = ["PartEngine","PartGeneric","PartFueltank","PartWheel","PartGlass","ItemJerrycan"]; // Dynamic debris wrecks refund
+	DZE_debrisRefundParts = ['DZE_Item_Parts_Engine','DZE_Item_Metal_Parts','DZE_Item_Parts_Fueltank','DZE_Item_Parts_Wheel','DZE_Item_Parts_Glass','DZE_Item_JerryCan_Fuel']; // Dynamic debris wrecks refund
 
 	// Build restrictions
 	DZE_NoBuildNear = []; //Array of object class names that are blacklisted to build near. i.e ["Land_Mil_ControlTower","Land_SS_hangar"] etc.
@@ -241,8 +241,8 @@ if (!isDedicated) then {
 	// Trader Menu
 	DZE_serverLogTrades = true; // Log trades to server RPT (sent with publicVariableServer on every trade)
 	DZE_GemChance = 0.4;	// Chance of gem occurrence in an Ore Vein, valid values from 0.01 - 1, 0.4 = 40% Chance
-	DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
-	DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; // Array of gem prices, only works with config traders. Set DZE_GemWorthArray=[]; to disable return change in gems.
+	DZE_GemOccurance = [['DZE_Item_Gems_Topaz',10], ['DZE_Item_Gems_Obsidian',8], ['DZE_Item_Gems_Sapphire',6], ['DZE_Item_Gems_Amethyst',4], ['DZE_Item_Gems_Emerald',3], ['DZE_Item_Gems_Citrine',2], ['DZE_Item_Gems_Ruby',1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
+	DZE_GemWorthArray = [['DZE_Item_Gems_Topaz',15000], ['DZE_Item_Gems_Obsidian',20000], ['DZE_Item_Gems_Sapphire',25000], ['DZE_Item_Gems_Amethyst',30000], ['DZE_Item_Gems_Emerald',35000], ['DZE_Item_Gems_Citrine',40000], ['DZE_Item_Gems_Ruby',45000]]; // Array of gem prices, only works with config traders. Set DZE_GemWorthArray=[]; to disable return change in gems.
 	DZE_SaleRequiresKey = false; // Require the player has the key for a vehicle in order to sell it. The key can be in the player's toolbelt, backpack, or the vehicle's inventory.
 	DZE_keepVehicleKey = false; // Keep the vehicle key when the vehicle is sold? (Useful on servers with the key changer mod)
 	Z_AllowTakingMoneyFromBackpack = true; // Allow traders to take money from backpacks when buying with default currency.

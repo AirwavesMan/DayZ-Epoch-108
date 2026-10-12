@@ -53,11 +53,11 @@ class DZE_WoodenGate_foundation: DZE_Modular_Base {
 	armor = 1000;
 	mapSize = 8;
 	DZE_offset[] = {0,4,0};
-	DZE_upgradeBuilding[] = {"DZE_WoodenGate_1",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
+	DZE_upgradeBuilding[] = {"DZE_WoodenGate_1",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"DZE_Item_Wood_Plank",8},{"DZE_Item_Metal_Nails",1},{"DZE_Item_Locks_ComboLock",1}}};
 
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Woodfence_Gate_Foundation";
-		DZE_refundArray[] = {{{"ItemLog",6}}};
+		DZE_refundArray[] = {{{"DZE_Item_Wood_Log",6}}};
 	};
 };
 
@@ -73,8 +73,8 @@ class DZE_WoodenGate_1: DZE_Building_Base {
 	mapSize = 8;
 	DZE_offset[] = {0,4,0};
 	armor = 2000;
-	DZE_upgradeBuilding[] = {"DZE_WoodenGate_2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"ItemPlank",10},{"equip_nails",1}}};
-	
+	DZE_upgradeBuilding[] = {"DZE_WoodenGate_2",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"DZE_Item_Wood_Plank",10},{"DZE_Item_Metal_Nails",1}}};
+
 	class AnimationSources {
 		class DoorR {
 			source = "User";
@@ -88,12 +88,12 @@ class DZE_WoodenGate_1: DZE_Building_Base {
 			initPhase = 0;
 		};
 	};
-
-
 	DZE_lockable = 3;
+
+
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Woodfence_Gate_1";
-		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_Foundation",1},{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_Foundation",1},{"DZE_Item_Wood_Plank",8},{"DZE_Item_Metal_Nails",1},{"DZE_Item_Locks_ComboLock",1}}};
 	};
 };
 
@@ -102,11 +102,11 @@ class DZE_WoodenGate_2: DZE_WoodenGate_1 {
 	displayName = "$STR_BLD_name_WoodenGate_2";
 	model = "z\addons\dayz_buildings\models\gates\gate2_dzam.p3d";
 	icon = "\ca\data\data\Unknown_object.paa";
-	mapSize = 8;	
+	mapSize = 8;
 	DZE_offset[] = {0,4,0};
 	armor = 2500;
-	DZE_upgradeBuilding[] = {"DZE_WoodenGate_3",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"ItemPlank",10},{"equip_nails",1}}};
-	
+	DZE_upgradeBuilding[] = {"DZE_WoodenGate_3",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"DZE_Item_Wood_Plank",10},{"DZE_Item_Metal_Nails",1}}};
+
 	class AnimationSources {
 		class DoorR {
 			source = "User";
@@ -120,12 +120,12 @@ class DZE_WoodenGate_2: DZE_WoodenGate_1 {
 			initPhase = 0;
 		};
 	};
-
-	
 	DZE_lockable = 3;
+
+
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Woodfence_Gate_2";
-		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_1",1},{"ItemPlank",10},{"equip_nails",1}}};
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_1",1},{"DZE_Item_Wood_Plank",10},{"DZE_Item_Metal_Nails",1}}};
 	};
 };
 
@@ -135,10 +135,10 @@ class DZE_WoodenGate_3: DZE_WoodenGate_2 {
 	model = "z\addons\dayz_buildings\models\gates\gate3_dzam.p3d";
 	icon = "\ca\data\data\Unknown_object.paa";
 	armor = 3000;
-	mapSize = 8;	
+	mapSize = 8;
 	DZE_offset[] = {0,4,0};
-	DZE_upgradeBuilding[] = {"DZE_WoodenGate_4",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"ItemPlank",10},{"equip_nails",1}}};
-	
+	DZE_upgradeBuilding[] = {"DZE_WoodenGate_4",{"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"},{{"DZE_Item_Wood_Plank",10},{"DZE_Item_Metal_Nails",1}}};
+
 	class AnimationSources {
 		class DoorR {
 			source = "User";
@@ -152,12 +152,12 @@ class DZE_WoodenGate_3: DZE_WoodenGate_2 {
 			initPhase = 0;
 		};
 	};
-
-	
 	DZE_lockable = 3;
+
+
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Woodfence_Gate_3";
-		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_2",1},{"ItemPlank",10},{"equip_nails",1}}};
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_2",1},{"DZE_Item_Wood_Plank",10},{"DZE_Item_Metal_Nails",1}}};
 	};
 };
 
@@ -167,9 +167,9 @@ class DZE_WoodenGate_4: DZE_WoodenGate_3 {
 	icon = "\ca\data\data\Unknown_object.paa";
 	model = "z\addons\dayz_buildings\models\gates\gate4_dzam.p3d";
 	armor = 3500;
-	mapSize = 8;	
+	mapSize = 8;
 	DZE_offset[] = {0,4,0};
-	
+
 	class AnimationSources {
 		class DoorR {
 			source = "User";
@@ -183,11 +183,11 @@ class DZE_WoodenGate_4: DZE_WoodenGate_3 {
 			initPhase = 0;
 		};
 	};
-
-	
 	DZE_lockable = 3;
+
+
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Woodfence_Gate_4";
-		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_3",1},{"ItemPlank",10},{"equip_nails",1}}};
+		DZE_refundArray[] = {{{"DZE_Item_Kit_Woodfence_Gate_3",1},{"DZE_Item_Wood_Plank",10},{"DZE_Item_Metal_Nails",1}}};
 	};
 };

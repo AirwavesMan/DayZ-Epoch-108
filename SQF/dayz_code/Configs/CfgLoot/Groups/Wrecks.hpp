@@ -1,16 +1,16 @@
 DZE_Ore_Vein_Ruin_Iron[] =
 {
-	{Loot_MAGAZINE,		1,		PartOre,10,10}
+	{Loot_MAGAZINE,		1,		DZE_Item_Ore_Iron,10,10}
 };
 
 DZE_Ore_Vein_Ruin_Silver[] =
 {
-	{Loot_MAGAZINE,		1,		PartOreSilver,10,10}
+	{Loot_MAGAZINE,		1,		DZE_Item_Ore_Silver,10,10}
 };
 
 DZE_Ore_Vein_Ruin_Gold[] =
 {
-	{Loot_MAGAZINE,		1,		PartOreGold,10,10}
+	{Loot_MAGAZINE,		1,		DZE_Item_Ore_Gold,10,10}
 };
 
 DZE_Supply_Crate_Ruin[] =

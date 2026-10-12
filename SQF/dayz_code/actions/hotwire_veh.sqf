@@ -9,14 +9,14 @@ s_player_lockUnlock_crtl = 1;
 {DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
 s_player_lockUnlockInside_ctrl = 1;
 
-_removed = ([player,"ItemHotwireKit",1] call BIS_fnc_invRemove);
+_removed = ([player,'DZE_Item_Misc_HotwireKit',1] call BIS_fnc_invRemove);
 
 if (_removed == 1) then {
 	[player,(getPosATL player),40,"repair"] spawn fnc_alertZombies;
 
 	_finished = ["Medic",1] call fn_loopAction;
 	if (!_finished) exitWith {
-		player addMagazine "ItemHotwireKit";
+		player addMagazine 'DZE_Item_Misc_HotwireKit';
 	};
 
 	-100 call player_humanityChange; // Player loses humanity for hotwiring a vehicle

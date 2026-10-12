@@ -1,112 +1,84 @@
-class ItemPlasticWaterBottle
-{
+class DZE_Item_Waterbottle_PET {
 	weight = 1;
 };
-class ItemPlasticWaterBottleBoiled
-{
+class DZE_Item_Waterbottle_PET_Boiled {
 	weight = 1;
 };
-class ItemPlasticWaterBottleInfected
-{
+class DZE_Item_Waterbottle_PET_Infected {
 	weight = 1;
 };
-class ItemPlasticWaterBottleSafe
-{
+class DZE_Item_Waterbottle_PET_Safe {
 	weight = 1;
 };
-class ItemPlasticWaterBottleHerbal
-{
+class DZE_Item_Waterbottle_PET_Herbal {
 	weight = 1;
 };
-class ItemPlasticWaterbottleUnfilled 
-{
+class DZE_Item_Waterbottle_PET_Unfilled {
 	weight = 1;
 };
-class ItemPlasticWaterbottleDmg 
-{
+class DZE_Item_Waterbottle_PET_Dmg {
 	weight = 1;
 };
-class ItemPlasticWaterbottle1oz
-{
+class DZE_Item_Waterbottle_PET_1oz {
 	weight = 0.1;
 };
-class ItemPlasticWaterbottle2oz
-{
+class DZE_Item_Waterbottle_PET_2oz {
 	weight = 0.2;
 };
-class ItemPlasticWaterbottle3oz
-{
+class DZE_Item_Waterbottle_PET_3oz {
 	weight = 0.3;
 };
-class ItemPlasticWaterbottle4oz
-{
+class DZE_Item_Waterbottle_PET_4oz {
 	weight = 0.4;
 };
-class ItemPlasticWaterbottle5oz
-{
+class DZE_Item_Waterbottle_PET_5oz {
 	weight = 0.5;
 };
-class ItemPlasticWaterbottle6oz
-{
+class DZE_Item_Waterbottle_PET_6oz {
 	weight = 0.6;
 };
-class ItemPlasticWaterbottle7oz
-{
+class DZE_Item_Waterbottle_PET_7oz {
 	weight = 0.7;
 };
-class ItemPlasticWaterbottle8oz
-{
+class DZE_Item_Waterbottle_PET_8oz {
 	weight = 0.8;
 };
-class ItemPlasticWaterbottle9oz
-{
+class DZE_Item_Waterbottle_PET_9oz {
 	weight = 0.9;
 };
-class ItemPlasticWaterbottle1ozBoiled
-{
+class DZE_Item_Waterbottle_PET_1ozBoiled {
 	weight = 0.1;
 };
-class ItemPlasticWaterbottle2ozBoiled
-{
+class DZE_Item_Waterbottle_PET_2ozBoiled {
 	weight = 0.2;
 };
-class ItemPlasticWaterbottle3ozBoiled
-{
+class DZE_Item_Waterbottle_PET_3ozBoiled {
 	weight = 0.3;
 };
-class ItemPlasticWaterbottle4ozBoiled
-{
+class DZE_Item_Waterbottle_PET_4ozBoiled {
 	weight = 0.4;
 };
-class ItemPlasticWaterbottle5ozBoiled
-{
+class DZE_Item_Waterbottle_PET_5ozBoiled {
 	weight = 0.5;
 };
-class ItemPlasticWaterbottle6ozBoiled
-{
+class DZE_Item_Waterbottle_PET_6ozBoiled {
 	weight = 0.6;
 };
-class ItemPlasticWaterbottle7ozBoiled
-{
+class DZE_Item_Waterbottle_PET_7ozBoiled {
 	weight = 0.7;
 };
-class ItemPlasticWaterbottle8ozBoiled
-{
+class DZE_Item_Waterbottle_PET_8ozBoiled {
 	weight = 0.8;
 };
-class ItemPlasticWaterbottle9ozBoiled
-{
+class DZE_Item_Waterbottle_PET_9ozBoiled {
 	weight = 0.9;
 };
-class ItemPlasticWaterBottleCoffee
-{
+class DZE_Item_Waterbottle_PET_Coffee {
 	weight = 1;	
 };
-class ItemPlasticWaterBottleBlackTea
-{
+class DZE_Item_Waterbottle_PET_BlackTea {
 	weight = 1;	
 };
-class ItemPlasticWaterBottleFrozen
-{
+class DZE_Item_Waterbottle_PET_Frozen {
 	weight = 1;	
 };

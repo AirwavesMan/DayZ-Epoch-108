@@ -16,7 +16,7 @@ switch (_type) do {
 	case 0: {
 		// expanded to allow all meats as input
 		_removed = 0;
-		_itemIn = "FoodRaw";
+		_itemIn = 'DZE_Food_Raw_Base';
 		_countIn = 1;
 		{
 			if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
@@ -31,13 +31,13 @@ switch (_type) do {
 
 	};
 	case 1: {
-		_bottles = ["ItemWaterBottle","ItemWaterBottleInfected","ItemWaterBottleSafe","ItemWaterBottleBoiled","ItemPlasticWaterBottle","ItemPlasticWaterBottleInfected","ItemPlasticWaterBottleSafe","ItemPlasticWaterBottleBoiled"];
+		_bottles = ['DZE_Item_Waterbottle','DZE_Item_Waterbottle_Infected','DZE_Item_Waterbottle_Safe','DZE_Item_Waterbottle_Boiled','DZE_Item_Waterbottle_PET','DZE_Item_Waterbottle_PET_Infected','DZE_Item_Waterbottle_PET_Safe','DZE_Item_Waterbottle_PET_Boiled'];
 		{
 			if (_x in _bottles) exitwith {
-				if (_x in ["ItemWaterBottle","ItemWaterBottleInfected","ItemWaterBottleSafe","ItemWaterBottleBoiled"]) then {
-					player addMagazine "ItemWaterbottleUnfilled";
+				if (_x in ['DZE_Item_Waterbottle','DZE_Item_Waterbottle_Infected','DZE_Item_Waterbottle_Safe','DZE_Item_Waterbottle_Boiled']) then {
+					player addMagazine 'DZE_Item_Waterbottle_Unfilled';
 				} else {
-					player addMagazine "ItemPlasticWaterbottleUnfilled";
+					player addMagazine 'DZE_Item_Waterbottle_PET_Unfilled';
 				};
 				player removeMagazine _x;
 			};

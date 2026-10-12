@@ -3,19 +3,19 @@ Castle[] =
 	//Tools
 	{Loot_GROUP,		5,		ToolsSurvival},
 	{Loot_VEHICLE,		1,		WeaponHolder_ItemHatchet},
-	
+
 	//Weapons
 	{Loot_GROUP,		5,		shotgunsingleshot},
-	
+
 	//Backpacks
 	{Loot_GROUP,		4,		backpacks},
-	
+
 	//Items
 	{Loot_MAGAZINE,		4,		DZE_Item_Kit_Sandbag},
-	{Loot_MAGAZINE,		2,		equip_Crossbow_Kit},
-	{Loot_MAGAZINE,		2,		equip_crossbow_stock},
-	{Loot_MAGAZINE,		2,		ItemComboLock},
-	{Loot_MAGAZINE,		1,		equip_tent_poles},
+	{Loot_MAGAZINE,		2,		DZE_Item_Tool_Crossbow_Kit},
+	{Loot_MAGAZINE,		2,		DZE_Item_Tool_Crossbow_Stock},
+	{Loot_MAGAZINE,		2,		DZE_Item_Locks_ComboLock},
+	{Loot_MAGAZINE,		1,		DZE_Item_Metal_Tent_Poles},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Net_Forest},
 
 	//Groups

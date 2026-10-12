@@ -8,14 +8,14 @@ Farm[] =
 	//Tools
 	{Loot_VEHICLE,		5,		WeaponHolder_ItemHatchet},
 	{Loot_GROUP,		4,		ToolsBuilding},
-	
+
 	//Items
-	{Loot_MAGAZINE,		1,		equip_tent_poles},
+	{Loot_MAGAZINE,		1,		DZE_Item_Metal_Tent_Poles},
 	{Loot_MAGAZINE,		4,		DZE_Item_Kit_Sandbag},
 	{Loot_MAGAZINE,		1,		DZE_Item_Kit_Trap_BearTrap},
-	{Loot_MAGAZINE,		2,		PartPlankPack},
-	{Loot_MAGAZINE,		1,		ItemLightBulb},
-	
+	{Loot_MAGAZINE,		2,		DZE_Item_Wood_PlankPack},
+	{Loot_MAGAZINE,		1,		DZE_Item_Elec_LightBulb},
+
 	//Groups
 	{Loot_GROUP,		10,		AmmoCivilian},
 	{Loot_GROUP,		1,		AttachmentsGeneric},

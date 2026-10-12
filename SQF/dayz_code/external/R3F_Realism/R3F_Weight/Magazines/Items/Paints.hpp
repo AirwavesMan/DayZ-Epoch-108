@@ -1,28 +1,21 @@
-class equip_paint
-{
+class DZE_Item_Paints_Paint {
 	weight = 9.5;
 };
-class equip_paint_generic
-{
+class DZE_Item_Paints_Generic {
 	weight = 9.5;
 };
-class equip_paint_black
-{
+class DZE_Item_Paints_Black {
 	weight = 9.5;
 };
-class equip_paint_white
-{
+class DZE_Item_Paints_White {
 	weight = 9.5;
 };
-class equip_paint_blue
-{
+class DZE_Item_Paints_Blue {
 	weight = 9.5;
 };
-class equip_paint_green
-{
+class DZE_Item_Paints_Green {
 	weight = 9.5;
 };
-class equip_paint_red
-{
+class DZE_Item_Paints_Red {
 	weight = 9.5;
 };

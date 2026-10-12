@@ -58,7 +58,7 @@ class DZE_Item_Kit_WorkBench: CA_Magazine {
 		};
 	};
 };
- 
+
 class DZE_Item_Kit_Wood_Ramp: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_WOODRAMP";
@@ -138,7 +138,7 @@ class DZE_Item_Kit_Corrugated: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_Wooden_Shed",1}};
-			input[] = {{"DZE_Item_Kit_Corrugated",2},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+			input[] = {{"DZE_Item_Kit_Corrugated",2},{"DZE_Item_Wood_Plywood",4},{"DZE_Item_Wood_Lumber",4}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_PLAYER_217";
@@ -146,7 +146,7 @@ class DZE_Item_Kit_Corrugated: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_Outhouse",1}};
-			input[] = {{"DZE_Item_Kit_Corrugated",1},{"PartWoodPlywood",3},{"PartWoodLumber",3},{"DZE_Item_Trash_Toiletpaper",1}};
+			input[] = {{"DZE_Item_Kit_Corrugated",1},{"DZE_Item_Wood_Plywood",3},{"DZE_Item_Wood_Lumber",3},{"DZE_Item_Trash_Toiletpaper",1}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_216";
@@ -154,7 +154,7 @@ class DZE_Item_Kit_Corrugated: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Crowbar","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_Storage_Shed",1}};
-			input[] = {{"DZE_Item_Kit_Corrugated",4},{"PartWoodPlywood",2},{"PartWoodLumber",2}};
+			input[] = {{"DZE_Item_Kit_Corrugated",4},{"DZE_Item_Wood_Plywood",2},{"DZE_Item_Wood_Lumber",2}};
 		};
 	};
 };
@@ -191,7 +191,7 @@ class DZE_Item_Kit_Wire: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Barbed_Gate",1}};
-			input[] = {{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",2},{"ItemPole",2}};
+			input[] = {{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",2},{"DZE_Item_Metal_Pole",2}};
 		};
 	};
 };
@@ -249,7 +249,7 @@ class DZE_Item_Kit_TankTrap: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_Barbed_Gate",1}};
-			input[] = {{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",2},{"ItemPole",2}};
+			input[] = {{"DZE_Item_Kit_Wire",1},{"DZE_Item_Kit_TankTrap",2},{"DZE_Item_Metal_Pole",2}};
 		};
 	};
 };
@@ -799,7 +799,7 @@ class DZE_Item_Kit_Concrete_Barrier: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
 			output[] = {{"DZE_Item_Kit_Concrete_Wall",1}};
-			input[] = {{"DZE_Item_Kit_Concrete_Barrier",5},{"CementBag",2}};
+			input[] = {{"DZE_Item_Kit_Concrete_Barrier",5},{"DZE_Item_Conc_CementBag",2}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_ACTION_CRAFT_CONCRETE_PIPE";
@@ -807,7 +807,7 @@ class DZE_Item_Kit_Concrete_Barrier: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
 			output[] = {{"DZE_Item_Kit_Concrete_Pipe",1}};
-			input[] = {{"DZE_Item_Kit_Concrete_Barrier",6},{"CementBag",2}};
+			input[] = {{"DZE_Item_Kit_Concrete_Barrier",6},{"DZE_Item_Conc_CementBag",2}};
 		};
 	};
 };
@@ -861,7 +861,7 @@ class DZE_Item_Kit_Concrete_Wall: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
 			output[] = {{"DZE_Item_Kit_Dragonteeth",1}};
-			input[] = {{"DZE_Item_Kit_Concrete_Wall",1},{"ItemStone",6},{"CementBag",4}};
+			input[] = {{"DZE_Item_Kit_Concrete_Wall",1},{"DZE_Item_Conc_Stone",6},{"DZE_Item_Conc_CementBag",4}};
 		};
 	};
 };
@@ -907,7 +907,7 @@ class DZE_Item_Kit_Dragonteeth: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Sledge"};
 			output[] = {{"DZE_Item_Kit_Dragonteeth_Big",1}};
-			input[] = {{"DZE_Item_Kit_Dragonteeth",1},{"ItemStone",6},{"CementBag",4}};
+			input[] = {{"DZE_Item_Kit_Dragonteeth",1},{"DZE_Item_Conc_Stone",6},{"DZE_Item_Conc_CementBag",4}};
 		};
 	};
 };

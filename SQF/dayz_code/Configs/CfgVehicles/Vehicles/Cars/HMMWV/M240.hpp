@@ -7,13 +7,13 @@ class DZE_Veh_HMMWV_M240_Woodland: DZE_HMMWV_Base {
 	accuracy = 0.32;
 
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
-
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 70;
 	transportMaxBackpacks = 4;
 	armor = 80;
 	damageResistance = 0.03099;
 	mapSize = 5;
+
 	class AnimationSources: AnimationSources {
 		class ReloadAnim {
 			source = "reload";
@@ -71,7 +71,7 @@ class DZE_Veh_HMMWV_M240_Woodland: DZE_HMMWV_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_M240_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_HMMWV_M240_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -83,7 +83,7 @@ class DZE_Veh_HMMWV_M240_Woodland_1: DZE_Veh_HMMWV_M240_Woodland  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_M240_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_HMMWV_M240_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -126,7 +126,7 @@ class DZE_Veh_HMMWV_M240_Woodland_2: DZE_Veh_HMMWV_M240_Woodland_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_M240_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_HMMWV_M240_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -137,7 +137,7 @@ class DZE_Veh_HMMWV_M240_Woodland_3: DZE_Veh_HMMWV_M240_Woodland_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_M240_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_HMMWV_M240_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 
@@ -151,7 +151,7 @@ class DZE_Veh_HMMWV_M240_Winter: DZE_Veh_HMMWV_M240_Woodland {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\hmmwv\hmmwv_body_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_parts_1_winter_ca.paa"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_HMMWV_M240_Winter_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_HMMWV_M240_Winter_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -163,7 +163,7 @@ class DZE_Veh_HMMWV_M240_Winter_1: DZE_Veh_HMMWV_M240_Winter  {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_HMMWV_M240_Winter_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_HMMWV_M240_Winter_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -206,7 +206,7 @@ class DZE_Veh_HMMWV_M240_Winter_2: DZE_Veh_HMMWV_M240_Winter_1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_HMMWV_M240_Winter_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_HMMWV_M240_Winter_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -217,7 +217,7 @@ class DZE_Veh_HMMWV_M240_Winter_3: DZE_Veh_HMMWV_M240_Winter_2 {
 	transportMaxBackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_HMMWV_M240_Winter_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_HMMWV_M240_Winter_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 

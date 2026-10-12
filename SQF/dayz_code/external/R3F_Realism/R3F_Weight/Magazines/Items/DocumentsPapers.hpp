@@ -1,477 +1,384 @@
-class ItemDocument
-{
+class DZE_Item_Docu_Document {
 	weight = 0.1;
 };
 
-class ItemPlotDeed 
-{
+class DZE_Item_Docu_PlotDeed {
 	weight = 0.1;
 };
 
-class ItemLetter
-{
+class DZE_Item_Docu_Letter {
 	weight = 0.1;
 };
 
-class ItemBook1
-{
+class DZE_Item_Docu_Book1 {
 	weight = 0.5;
 };
 
-class ItemBook2
-{
+class DZE_Item_Docu_Book2 {
 	weight = 0.5;
 };
 
-class ItemBook3
-{
+class DZE_Item_Docu_Book3 {
 	weight = 0.5;
 };
 
-class ItemBook4
-{
+class DZE_Item_Docu_Book4 {
 	weight = 0.5;
 };
 
-class ItemNewspaper
-{
+class DZE_Item_Docu_Newspaper {
 	weight = 0.1;
 };
 
-class ItemDocumentRamp
-{
+class DZE_Item_Docu_WoodRamp {
 	weight = 0.1;
 };
 
-class ItemBookBible
-{
+class DZE_Item_Docu_BookBible {
 	weight = 1;
 };
 
-class ItemTrashPaper
-{
+class DZE_Item_Docu_Paper {
 	weight = 0.01;
 };
 
-class ItemTrashPaperMusic
-{
+class DZE_Item_Docu_PaperMusic {
 	weight = 0.01;
 };
 
-class equip_paper_sheet
-{
+class DZE_Item_Docu_Paper_Sheet {
 	weight = 0.01;
 };
 
-class equip_note
-{
+class DZE_Item_Docu_Note {
 	weight = 0.01;
 };
 
 // Vehicle upgrade parts
-class ItemORP
-{
+class DZE_Item_Upgrade_CarORP {
 	weight = 0.6;
 };
 
-class ItemAVE
-{
+class DZE_Item_Upgrade_CarAVE {
 	weight = 0.6;
 };
 
-class ItemLRK
-{
+class DZE_Item_Upgrade_CarLRK {
 	weight = 0.6;
 };
 
-class ItemTNK
-{
+class DZE_Item_Upgrade_CarTNK {
 	weight = 0.6;
 };
 
-class ItemARM
-{
+class DZE_Item_Upgrade_CarARM {
 	weight = 0.6;
 }; 
 
-class ItemTruckORP
-{
+class DZE_Item_Upgrade_TruckORP {
 	weight = 0.6;
 };
 
-class ItemTruckAVE
-{
+class DZE_Item_Upgrade_TruckAVE {
 	weight = 0.6;
 };
 
-class ItemTruckLRK
-{
+class DZE_Item_Upgrade_TruckLRK {
 	weight = 0.6;
 };
 
-class ItemTruckTNK
-{
+class DZE_Item_Upgrade_TruckTNK {
 	weight = 0.6;
 };
 
-class ItemTruckARM
-{
+class DZE_Item_Upgrade_TruckARM {
 	weight = 0.6;
 };
 
-class ItemTankORP
-{
+class DZE_Item_Upgrade_TankORP {
 	weight = 0.6;
 };
 
-class ItemTankAVE
-{
+class DZE_Item_Upgrade_TankAVE {
 	weight = 0.6;
 };
 
-class ItemTankLRK
-{
+class DZE_Item_Upgrade_TankLRK {
 	weight = 0.6;
 };
 
-class ItemTankTNK
-{
+class DZE_Item_Upgrade_TankTNK {
 	weight = 0.6;
 };
 
-class ItemHeliAVE
-{
+class DZE_Item_Upgrade_HeliAVE {
 	weight = 0.6;
 };
 
-class ItemHeliLRK
-{
+class DZE_Item_Upgrade_HeliLRK {
 	weight = 0.6;
 };
 
-class ItemHeliTNK
-{
+class DZE_Item_Upgrade_HeliTNK {
 	weight = 0.6;
 };
 
-class Blueprint_01
-{
+class DZE_Item_Blueprint_01 {
 	weight = 0.3; 
 };
 
-class Blueprint_02
-{
+class DZE_Item_Blueprint_02 {
 	weight = 0.3; 
 };
 
-class Blueprint_03
-{
+class DZE_Item_Blueprint_03 {
 	weight = 0.3; 
 };
 
-class Blueprint_04
-{
+class DZE_Item_Blueprint_04 {
 	weight = 0.3; 
 };
 
-class Blueprint_05
-{
+class DZE_Item_Blueprint_05 {
 	weight = 0.3; 
 };
 
-class Blueprint_06
-{
+class DZE_Item_Blueprint_06 {
 	weight = 0.3; 
 };
 
-class Blueprint_07
-{
+class DZE_Item_Blueprint_07 {
 	weight = 0.3; 
 };
 
-class Blueprint_08
-{
+class DZE_Item_Blueprint_08 {
 	weight = 0.3; 
 };
 
-class Blueprint_09
-{
+class DZE_Item_Blueprint_09 {
 	weight = 0.3; 
 };
 
-class Blueprint_10
-{
+class DZE_Item_Blueprint_10 {
 	weight = 0.3; 
 };
 
-class Blueprint_11
-{
+class DZE_Item_Blueprint_11 {
 	weight = 0.3; 
 };
 
-class Blueprint_12
-{
+class DZE_Item_Blueprint_12 {
 	weight = 0.3; 
 };
 
-class Blueprint_13
-{
+class DZE_Item_Blueprint_13 {
 	weight = 0.3; 
 };
 
-class Blueprint_14
-{
+class DZE_Item_Blueprint_14 {
 	weight = 0.3; 
 };
 
-class Blueprint_15
-{
+class DZE_Item_Blueprint_15 {
 	weight = 0.3; 
 };
 
-class Blueprint_16
-{
+class DZE_Item_Blueprint_16 {
 	weight = 0.3; 
 };
 
-class Blueprint_17
-{
+class DZE_Item_Blueprint_17 {
 	weight = 0.3; 
 };
 
-class Blueprint_18
-{
+class DZE_Item_Blueprint_18 {
 	weight = 0.3; 
 };
 
-class Blueprint_19
-{
+class DZE_Item_Blueprint_19 {
 	weight = 0.3; 
 };
 
-class Blueprint_20
-{
+class DZE_Item_Blueprint_20 {
 	weight = 0.3; 
 };
 
-class PileBooks
-{
+class DZE_Item_Docu_PileBooks {
 	weight = 4.5; 
 };
 
-class PileMedBooks
-{
+class DZE_Item_Docu_PileMedBooks {
 	weight = 6.5; 
 };
-class StashFile_01
-{
+class DZE_Item_StashFile_01 {
 	weight = 0.3; 
 };
-class StashFile_02
-{
+class DZE_Item_StashFile_02 {
 	weight = 0.3; 
 };
-class StashFile_03
-{
+class DZE_Item_StashFile_03 {
 	weight = 0.3; 
 };
-class StashFile_04
-{
+class DZE_Item_StashFile_04 {
 	weight = 0.3; 
 };
-class StashFile_05
-{
+class DZE_Item_StashFile_05 {
 	weight = 0.3; 
 };
-class StashFile_06
-{
+class DZE_Item_StashFile_06 {
 	weight = 0.3; 
 };
-class StashFile_07
-{
+class DZE_Item_StashFile_07 {
 	weight = 0.3; 
 };
-class StashFile_08
-{
+class DZE_Item_StashFile_08 {
 	weight = 0.3; 
 };
-class StashFile_09
-{
+class DZE_Item_StashFile_09 {
 	weight = 0.3; 
 };
-class StashFile_10
-{
+class DZE_Item_StashFile_10 {
 	weight = 0.3; 
 };
-class StashFile_11
-{
+class DZE_Item_StashFile_11 {
 	weight = 0.3; 
 };
-class StashFile_12
-{
+class DZE_Item_StashFile_12 {
 	weight = 0.3; 
 };
-class StashFile_13
-{
+class DZE_Item_StashFile_13 {
 	weight = 0.3; 
 };
-class StashFile_14
-{
+class DZE_Item_StashFile_14 {
 	weight = 0.3; 
 };
-class StashFile_15
-{
+class DZE_Item_StashFile_15 {
 	weight = 0.3; 
 };
-class StashFile_16
-{
+class DZE_Item_StashFile_16 {
 	weight = 0.3; 
 };
-class StashFile_17
-{
+class DZE_Item_StashFile_17 {
 	weight = 0.3; 
 };
-class StashFile_18
-{
+class DZE_Item_StashFile_18 {
 	weight = 0.3; 
 };
-class StashFile_19
-{
+class DZE_Item_StashFile_19 {
 	weight = 0.3; 
 };
-class StashFile_20
-{
+class DZE_Item_StashFile_20 {
 	weight = 0.3; 
 };
-class StashFile_21
-{
+class DZE_Item_StashFile_21 {
 	weight = 0.3; 
 };
-class StashFile_22
-{
+class DZE_Item_StashFile_22 {
 	weight = 0.3; 
 };
-class StashFile_23
-{
+class DZE_Item_StashFile_23 {
 	weight = 0.3; 
 };
-class StashFile_24
-{
+class DZE_Item_StashFile_24 {
 	weight = 0.3; 
 };
-class StashFile_25
-{
+class DZE_Item_StashFile_25 {
 	weight = 0.3; 
 };
-class StashFile_26
-{
+class DZE_Item_StashFile_26 {
 	weight = 0.3; 
 };
-class StashFile_27
-{
+class DZE_Item_StashFile_27 {
 	weight = 0.3; 
 };
-class StashFile_28
-{
+class DZE_Item_StashFile_28 {
 	weight = 0.3; 
 };
-class StashFile_29
-{
+class DZE_Item_StashFile_29 {
 	weight = 0.3; 
 };
-class StashFile_30
-{
+class DZE_Item_StashFile_30 {
 	weight = 0.3; 
 };
-class StashFile_31
-{
+class DZE_Item_StashFile_31 {
 	weight = 0.3; 
 };
-class StashFile_32
-{
+class DZE_Item_StashFile_32 {
 	weight = 0.3; 
 };
-class StashFile_33
-{
+class DZE_Item_StashFile_33 {
 	weight = 0.3; 
 };
-class StashFile_34
-{
+class DZE_Item_StashFile_34 {
 	weight = 0.3; 
 };
-class StashFile_35
-{
+class DZE_Item_StashFile_35 {
 	weight = 0.3; 
 };
-class StashFile_36
-{
+class DZE_Item_StashFile_36 {
 	weight = 0.3; 
 };
-class StashFile_37
-{
+class DZE_Item_StashFile_37 {
 	weight = 0.3; 
 };
-class StashFile_38
-{
+class DZE_Item_StashFile_38 {
 	weight = 0.3; 
 };
-class StashFile_39
-{
+class DZE_Item_StashFile_39 {
 	weight = 0.3; 
 };
-class StashFile_40
-{
+class DZE_Item_StashFile_40 {
 	weight = 0.3; 
 };
 
-class DZE_Item_Document_Military {
+class DZE_Item_Docu_Document_Military {
 	weight = 1;
 };
 
-class DZE_Item_Document_Random {
+class DZE_Item_Docu_Document_Random {
 	weight = 1;
 };
 
-class DZE_Item_Document_Topsecret {
+class DZE_Item_Docu_Document_Topsecret {
 	weight = 1;
 };
 
-class DZE_Item_Manual_Camera {
+class DZE_Item_Docu_Manual_Camera {
 	weight = 1;
 };
 
-class DZE_Item_Manual_Electronics {
+class DZE_Item_Docu_Manual_Electronics {
 	weight = 1;
 };
 
-class DZE_Item_Manual_Repair {
+class DZE_Item_Docu_Manual_Repair {
 	weight = 1;
 };
 
-class DZE_Item_Map_Military {
+class DZE_Item_Docu_Map_Military {
 	weight = 1;
 };
 
-class DZE_Item_Map_Survivor {
+class DZE_Item_Docu_Map_Survivor {
 	weight = 1;
 };
 
-class DZE_Item_Notebook_Bio {
+class DZE_Item_Docu_Notebook_Bio {
 	weight = 1;
 };
 
-class DZE_Item_Notebook_Che {
+class DZE_Item_Docu_Notebook_Che {
 	weight = 1;
 };
 
-class DZE_Item_Notebook_Herbs {
+class DZE_Item_Docu_Notebook_Herbs {
 	weight = 1;
 };
 
-class DZE_Item_Notebook_Phy {
+class DZE_Item_Docu_Notebook_Phy {
 	weight = 1;
 };
 
-class DZE_Item_Notebook_Secret {
+class DZE_Item_Docu_Notebook_Secret {
 	weight = 1;
 };

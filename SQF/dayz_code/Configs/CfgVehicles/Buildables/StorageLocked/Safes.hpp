@@ -1,21 +1,21 @@
 class DZE_Safe_Base: DZE_StorageLockable_Base {
 	model = "\z\addons\dayz_epoch\models\safe.p3d";
 	DZE_offset[] = {0,2.5,0};
-	
 	armor = 800;
 	transportMaxMagazines = 200;
 	transportMaxWeapons = 25;
-	transportMaxBackpacks = 10;	
+	transportMaxBackpacks = 10;
+
 };
 
 class DZE_Safe_Locked_Base: DZE_Safe_Base {
 	DZE_sfx = "safeopen";
 	transportMaxMagazines = 0;
 	transportMaxWeapons = 0;
-	transportMaxBackpacks = 0;	
-	
+	transportMaxBackpacks = 0;
 	DZE_lockable = 4;
-	
+
+
 };
 
 class DZE_Safe: DZE_Safe_Base {
@@ -36,7 +36,7 @@ class DZE_SafeLocked: DZE_Safe_Locked_Base {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE_LOCKED";
 	DZE_unlockedClass = "DZE_Safe";
-	DZE_upgradeBuilding[] = {"DZE_Safe2Locked",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{{"equip_metal_sheet",4},{"ItemScrews",2},{"equip_scrapelectronics",4},{"equip_floppywire",2}}};
+	DZE_upgradeBuilding[] = {"DZE_Safe2Locked",{"DZE_Tool_Toolbox","DZE_Tool_Solder"},{{"DZE_Item_Metal_Sheet",4},{"DZE_Item_Metal_Screws",2},{"DZE_Item_Elec_Scrapelectronics",4},{"DZE_Item_Elec_Floppywire",2}}};
 };
 
 class DZE_Safe2: DZE_Safe {
@@ -72,7 +72,7 @@ class DZE_SafeTall: DZE_Safe_Base {
 	transportMaxMagazines = 600;
 	transportMaxWeapons = 75;
 	transportMaxBackpacks = 30;
-	
+
 	class AnimationSources {
 		class Open_door {
 			source = "user";
@@ -86,7 +86,7 @@ class DZE_SafeTall: DZE_Safe_Base {
 			initPhase = 0;
 		};
 	};
-	
+
 
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_SafeTall";
@@ -101,7 +101,7 @@ class DZE_SafeTallLocked: DZE_Safe_Locked_Base {
 	model = "\z\addons\dayz_epoch_v\props\safe_tall\tallsafe.p3d";
 	DZE_unlockedClass = "DZE_SafeTall";
 	armor = 2600;
-	
+
 	class AnimationSources {
 		class Open_door {
 			source = "user";
@@ -121,11 +121,11 @@ class DZE_SafeTallLocked: DZE_Safe_Locked_Base {
 class DZE_SafeBroken: DZE_Safe_Base {
 	scope = 2;
 	displayName = "$STR_EPOCH_SAFE_BROKEN";
-	
+
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_SafeBroken";
 		DZE_refundArray[] = {};
-	};	
+	};
 };
 
 class DZE_Safe2Broken: DZE_SafeBroken {
@@ -134,8 +134,8 @@ class DZE_Safe2Broken: DZE_SafeBroken {
 	transportMaxMagazines = 400;
 	transportMaxWeapons = 50;
 	transportMaxBackpacks = 20;
-	
-	class RemoveObject: RemoveObject {		
+
+	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Safe2Broken";
 		DZE_refundArray[] = {};
 	};
@@ -149,7 +149,7 @@ class DZE_SafeTallBroken: DZE_Safe_Base {
 	transportMaxMagazines = 600;
 	transportMaxWeapons = 75;
 	transportMaxBackpacks = 30;
-	
+
 	//	Broken Tall Safe has always open door
 	class AnimationSources {
 		class Open_door {

@@ -1,4 +1,4 @@
-class ItemLog: CA_Magazine {
+class DZE_Item_Wood_Log: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_BLD_name_ItemLog"; //"Wooden Log"
 	descriptionShort = "$STR_BLD_desc_ItemLog"; //"Rough Wooden Log"
@@ -6,9 +6,9 @@ class ItemLog: CA_Magazine {
 	model = "z\addons\dayz_buildings\models\logs.p3d";
 	count = 1;
 	type = 256;
-	
 	DZE_burnTimer = 1200;
-	
+
+
 	class ItemActions {
 		class Build {
 			text = "$STR_ACTIONS_MAKEFIRE";
@@ -21,24 +21,24 @@ class ItemLog: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Hatchet","DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"PartWoodLumber",2}};
-			input[] = {{"ItemLog",1}};
+			output[] = {{"DZE_Item_Wood_Lumber",2}};
+			input[] = {{"DZE_Item_Wood_Log",1}};
 		};
 		class Crafting1 {
 			text = "$STR_BLD_craft_ItemLog"; //"Wooden Plank"
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Hatchet","DZE_Tool_Handsaw"};
-			output[] = {{"ItemPlank",2}};
-			input[] = {{"ItemLog",1}};
+			output[] = {{"DZE_Item_Wood_Plank",2}};
+			input[] = {{"DZE_Item_Wood_Log",1}};
 		};
 		class Crafting2 {
 			text = "$STR_EQUIP_NAME_WOOD_PILE"; //"Wood Piles"
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {}; 
+			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Hatchet"};
-			output[] = {{"PartWoodPile",4}};
-			input[] = {{"ItemLog",1}};
+			output[] = {{"DZE_Item_Wood_Pile",4}};
+			input[] = {{"DZE_Item_Wood_Log",1}};
 		};
 		class Crafting3 {
 			text = "$STR_EPOCH_PLAYER_256";
@@ -46,7 +46,7 @@ class ItemLog: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Hammer","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_Deer_Stand",1}};
-			input[] = {{"ItemLog",8},{"ItemPlank",2},{"equip_nails",2}};
+			input[] = {{"DZE_Item_Wood_Log",8},{"DZE_Item_Wood_Plank",2},{"DZE_Item_Metal_Nails",2}};
 		};
 		class Crafting4 {
 			text = "$STR_BLD_name_WoodenGate_Foundation";
@@ -54,12 +54,12 @@ class ItemLog: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_Woodfence_Gate_Foundation",1}};
-			input[] = {{"ItemLog",6}};
+			input[] = {{"DZE_Item_Wood_Log",6}};
 		};
 	};
 };
 
-class ItemPlank: CA_Magazine {
+class DZE_Item_Wood_Plank: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_BLD_name_ItemPlank"; //"Sawn Planks"
 	descriptionShort = "$STR_BLD_desc_ItemPlank"; //"Saw Planks"
@@ -67,17 +67,17 @@ class ItemPlank: CA_Magazine {
 	model = "z\addons\dayz_buildings\models\planks.p3d";
 	count = 1;
 	type = 256;
-	
 	DZE_burnTimer = 500;
+
 
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EQUIP_NAME_WOOD_PILE"; //"Wood Piles"
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {}; 
+			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Hatchet"};
-			output[] = {{"PartWoodPile",2}};
-			input[] = {{"ItemPlank",1}};
+			output[] = {{"DZE_Item_Wood_Pile",2}};
+			input[] = {{"DZE_Item_Wood_Plank",1}};
 		};
 		class Crafting1 {
 			text = "$STR_CRAFTING_SPLINT";
@@ -85,15 +85,15 @@ class ItemPlank: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Medi_Woodensplint",1}};
-			input[] = {{"ItemPlank",1},{"equip_duct_tape",1},{"equip_string",1}};
+			input[] = {{"DZE_Item_Wood_Plank",1},{"DZE_Item_Plastic_Duct_Tape",1},{"DZE_Item_Tex_String",1}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_255";
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
-			output[] = {{"bulk_empty",1}};
-			input[] = {{"ItemPlank",2},{"PartGeneric",1}};
+			output[] = {{"DZE_Item_Bulk_Empty",1}};
+			input[] = {{"DZE_Item_Wood_Plank",2},{"DZE_Item_Metal_Parts",1}};
 		};
 		class Crafting3 {
 			text = "$STR_EPOCH_PLAYER_260_1";
@@ -101,7 +101,7 @@ class ItemPlank: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_Advanced_WorkBench",1}};
-			input[] = {{"ItemPlank",4},{"PartWoodPlywood",4},{"equip_nails",2}};
+			input[] = {{"DZE_Item_Wood_Plank",4},{"DZE_Item_Wood_Plywood",4},{"DZE_Item_Metal_Nails",2}};
 		};
 		class Crafting4 {
 			text = "$STR_EPOCH_ACTION_CRAFT_STORAGE_CRATE";
@@ -109,7 +109,7 @@ class ItemPlank: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_Storage_Crate",1}};
-			input[] = {{"ItemPlank",6},{"equip_nails",1}};
+			input[] = {{"DZE_Item_Wood_Plank",6},{"DZE_Item_Metal_Nails",1}};
 		};
 		class Crafting5 {
 			text = "$STR_EPOCH_ACTION_CRAFT_CAMO_STORAGE_CRATE";
@@ -117,7 +117,7 @@ class ItemPlank: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_Camo_Storage_Crate",1}};
-			input[] = {{"ItemPlank",2},{"PartWoodLumber",6},{"DZE_Item_Kit_Net_Forest",1},{"equip_nails",1}};
+			input[] = {{"DZE_Item_Wood_Plank",2},{"DZE_Item_Wood_Lumber",6},{"DZE_Item_Kit_Net_Forest",1},{"DZE_Item_Metal_Nails",1}};
 		};
 		class Crafting6 {
 			text = "$STR_EPOCH_ACTION_CRAFT_SIMPLE_FOOTBRIDGE";
@@ -125,7 +125,7 @@ class ItemPlank: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Kit_Simple_Footbridge",1}};
-			input[] = {{"ItemPlank",3}};
+			input[] = {{"DZE_Item_Wood_Plank",3}};
 		};
 		class Crafting7 {
 			text = "$STR_EPOCH_ACTION_CRAFT_WOODEN_FOOTBRIDGE";
@@ -133,20 +133,20 @@ class ItemPlank: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_Wooden_Footbridge",1}};
-			input[] = {{"ItemPlank",3},{"PartWoodLumber",2},{"equip_nails",1}};
+			input[] = {{"DZE_Item_Wood_Plank",3},{"DZE_Item_Wood_Lumber",2},{"DZE_Item_Metal_Nails",1}};
 		};
 		class Crafting8 {
 			text = "$STR_EPOCH_ACTION_CRAFT_WOODEN_PALLET";
 			script = ";['Crafting8','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
-			output[] = {{"equip_wood_pallet",1}};
-			input[] = {{"ItemPlank",7},{"equip_nails",1}};
+			output[] = {{"DZE_Item_Wood_Pallet",1}};
+			input[] = {{"DZE_Item_Wood_Plank",7},{"DZE_Item_Metal_Nails",1}};
 		};
 	};
 };
 
-class PartWoodPile: CA_Magazine {	
+class DZE_Item_Wood_Pile: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_WOOD_PILE";
 	descriptionShort = "$STR_EQUIP_DESC_WOOD_PILE";
@@ -154,9 +154,9 @@ class PartWoodPile: CA_Magazine {
 	picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
 	count = 1;
 	type = 256;
-	
 	DZE_burnTimer = 300;
-	
+
+
 	class ItemActions {
 		class Build {
 			text = "$STR_ACTIONS_MAKEFIRE";
@@ -169,8 +169,8 @@ class PartWoodPile: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"PartWoodLumber",1}};
-			input[] = {{"PartWoodPile",2}};
+			output[] = {{"DZE_Item_Wood_Lumber",1}};
+			input[] = {{"DZE_Item_Wood_Pile",2}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_PLAYER_243";
@@ -178,7 +178,7 @@ class PartWoodPile: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
 			output[] = {{"1Rnd_Arrow_Wood",5}};
-			input[] = {{"PartWoodPile",1},{"equip_feathers",2}};
+			input[] = {{"DZE_Item_Wood_Pile",1},{"DZE_Item_Hide_Feathers",2}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_244";
@@ -186,7 +186,7 @@ class PartWoodPile: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Kit_Stick_Fence",1}};
-			input[] = {{"PartWoodPile",6}};
+			input[] = {{"DZE_Item_Wood_Pile",6}};
 		};
 		class Crafting3 {
 			text = "$STR_CRAFTING_SPLINT";
@@ -194,12 +194,12 @@ class PartWoodPile: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Medi_Woodensplint",1}};
-			input[] = {{"PartWoodPile",1},{"equip_duct_tape",1},{"equip_string",1}};
+			input[] = {{"DZE_Item_Wood_Pile",1},{"DZE_Item_Plastic_Duct_Tape",1},{"DZE_Item_Tex_String",1}};
 		};
 	};
 };
 
-class PartWoodLumber: CA_Magazine {
+class DZE_Item_Wood_Lumber: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LUMBER";
 	descriptionShort = "$STR_EPOCH_LUMBER_DESC";
@@ -207,17 +207,17 @@ class PartWoodLumber: CA_Magazine {
 	picture = "\z\addons\dayz_epoch\pictures\equip_wood_planks_CA.paa";
 	count = 1;
 	type = 256;
-	
 	DZE_burnTimer = 400;
-	
+
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_254";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
-			output[] = {{"PartWoodPlywood",1}};
-			input[] = {{"PartWoodLumber",2}};
+			output[] = {{"DZE_Item_Wood_Plywood",1}};
+			input[] = {{"DZE_Item_Wood_Lumber",2}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_ACTION_WOODHANDRAIL";
@@ -225,7 +225,7 @@ class PartWoodLumber: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_WoodHandRail",2}};
-			input[] = {{"PartWoodLumber",6},{"equip_nails",1}};
+			input[] = {{"DZE_Item_Wood_Lumber",6},{"DZE_Item_Metal_Nails",1}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_ACTION_WOODPILLAR";
@@ -233,7 +233,7 @@ class PartWoodLumber: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_WoodPillar",2}};
-			input[] = {{"PartWoodLumber",8},{"equip_nails",1}};
+			input[] = {{"DZE_Item_Wood_Lumber",8},{"DZE_Item_Metal_Nails",1}};
 		};
 		class Crafting3 {
 			text = "$STR_EPOCH_PLAYER_257";
@@ -241,7 +241,7 @@ class PartWoodLumber: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_WoodStairs",1}};
-			input[] = {{"PartWoodLumber",8},{"equip_nails",2}};
+			input[] = {{"DZE_Item_Wood_Lumber",8},{"DZE_Item_Metal_Nails",2}};
 		};
 		class Crafting4 {
 			text = "$STR_EPOCH_PLAYER_258";
@@ -249,15 +249,15 @@ class PartWoodLumber: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_WoodLadder",1}};
-			input[] = {{"PartWoodLumber",8},{"equip_nails",2}};
+			input[] = {{"DZE_Item_Wood_Lumber",8},{"DZE_Item_Metal_Nails",2}};
 		};
 		class Crafting5 {
 			text = "$STR_EPOCH_PLAYER_259";
 			Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"PartPlankPack",1}};
-			input[] = {{"PartWoodLumber",3}};
+			output[] = {{"DZE_Item_Wood_PlankPack",1}};
+			input[] = {{"DZE_Item_Wood_Lumber",3}};
 		};
 		class Crafting6 {
 			text = "$STR_EPOCH_PLAYER_277";
@@ -265,7 +265,7 @@ class PartWoodLumber: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_GunRack",1}};
-			input[] = {{"PartWoodPlywood",1},{"PartWoodLumber",4},{"equip_nails",1}};
+			input[] = {{"DZE_Item_Wood_Plywood",1},{"DZE_Item_Wood_Lumber",4},{"DZE_Item_Metal_Nails",1}};
 		};
 		class Crafting7 {
 			text = "$STR_CRAFTING_SPLINT";
@@ -273,7 +273,7 @@ class PartWoodLumber: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Medi_Woodensplint",1}};
-			input[] = {{"PartWoodLumber",1},{"equip_duct_tape",1},{"equip_string",1}};
+			input[] = {{"DZE_Item_Wood_Lumber",1},{"DZE_Item_Plastic_Duct_Tape",1},{"DZE_Item_Tex_String",1}};
 		};
 		class Crafting8 {
 			text = "$STR_EPOCH_ACTION_CRAFT_WOODEN_FOOTBRIDGE";
@@ -281,12 +281,12 @@ class PartWoodLumber: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_Wooden_Footbridge",1}};
-			input[] = {{"PartWoodLumber",2},{"ItemPlank",3},{"equip_nails",1}};
+			input[] = {{"DZE_Item_Wood_Lumber",2},{"DZE_Item_Wood_Plank",3},{"DZE_Item_Metal_Nails",1}};
 		};
 	};
 };
 
-class PartWoodPlywood: CA_Magazine {
+class DZE_Item_Wood_Plywood: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLYWOOD";
 	descriptionShort = "$STR_EPOCH_PLYWOOD_DESC";
@@ -294,9 +294,9 @@ class PartWoodPlywood: CA_Magazine {
 	picture = "\z\addons\dayz_epoch\pictures\equip_plywood_CA.paa";
 	count = 1;
 	type = 256;
-	
 	DZE_burnTimer = 300;
-	
+
+
 	class ItemActions {
 		class Crafting {
 			text = "$STR_EPOCH_PLAYER_260";
@@ -304,7 +304,7 @@ class PartWoodPlywood: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
 			output[] = {{"DZE_Item_Kit_WorkBench_Epoch",1}};
-			input[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
+			input[] = {{"DZE_Item_Wood_Plywood",1},{"DZE_Item_Wood_Lumber",2}};
 		};
 		class Crafting1 {
 			text = "$STR_EPOCH_PLAYER_261";
@@ -312,7 +312,7 @@ class PartWoodPlywood: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_Wood_Shack",1}};
-			input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",4},{"equip_nails",2}};
+			input[] = {{"DZE_Item_Wood_Plywood",4},{"DZE_Item_Wood_Lumber",4},{"DZE_Item_Metal_Nails",2}};
 		};
 		class Crafting2 {
 			text = "$STR_EPOCH_PLAYER_262";
@@ -320,7 +320,7 @@ class PartWoodPlywood: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodFloorQuarter",1}};
-			input[] = {{"PartWoodPlywood",3},{"PartWoodLumber",3}};
+			input[] = {{"DZE_Item_Wood_Plywood",3},{"DZE_Item_Wood_Lumber",3}};
 		};
 		class Crafting3 {
 			text = "$STR_EPOCH_PLAYER_263";
@@ -328,15 +328,15 @@ class PartWoodPlywood: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw"};
 			output[] = {{"DZE_Item_Kit_WoodWallThird",1}};
-			input[] = {{"PartWoodPlywood",3},{"PartWoodLumber",3}};
+			input[] = {{"DZE_Item_Wood_Plywood",3},{"DZE_Item_Wood_Lumber",3}};
 		};
 		class Crafting4 {
 			text = "$STR_EPOCH_PLAYER_264";
 			Script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox"};
-			output[] = {{"PartPlywoodPack",1}};
-			input[] = {{"PartWoodPlywood",3}};
+			output[] = {{"DZE_Item_Wood_PlywoodPack",1}};
+			input[] = {{"DZE_Item_Wood_Plywood",3}};
 		};
 		class Crafting5 {
 			text = "$STR_EPOCH_PLAYER_304";
@@ -344,12 +344,12 @@ class PartWoodPlywood: CA_Magazine {
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_WoodCrate",1}};
-			input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",2},{"equip_nails",1}};
+			input[] = {{"DZE_Item_Wood_Plywood",4},{"DZE_Item_Wood_Lumber",2},{"DZE_Item_Metal_Nails",1}};
 		};
 	};
 };
 
-class PartPlankPack: CA_Magazine {
+class DZE_Item_Wood_PlankPack: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_LUMBERPACK";
 	descriptionShort = "$STR_EPOCH_LUMBERPACK_DESC";
@@ -364,13 +364,13 @@ class PartPlankPack: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"PartWoodLumber",3}};
-			input[] = {{"PartPlankPack",1}};
+			output[] = {{"DZE_Item_Wood_Lumber",3}};
+			input[] = {{"DZE_Item_Wood_PlankPack",1}};
 		};
 	};
 };
 
-class PartPlywoodPack: CA_Magazine {
+class DZE_Item_Wood_PlywoodPack: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EPOCH_PLYWOODPACK";
 	descriptionShort = "$STR_EPOCH_PLYWOODPACK_DESC";
@@ -385,13 +385,13 @@ class PartPlywoodPack: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"};
-			output[] = {{"PartWoodPlywood",3}};
-			input[] = {{"PartPlywoodPack",1}};
+			output[] = {{"DZE_Item_Wood_Plywood",3}};
+			input[] = {{"DZE_Item_Wood_PlywoodPack",1}};
 		};
 	};
 };
 
-class equip_wood_pallet: CA_Magazine {
+class DZE_Item_Wood_Pallet: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_wood_pallet";
 	descriptionShort = "$STR_ITEM_DESC_equip_wood_pallet";
@@ -408,12 +408,12 @@ class equip_wood_pallet: CA_Magazine {
 			neednearby[] = {"workshop"};
 			requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Handsaw","DZE_Tool_Hammer"};
 			output[] = {{"DZE_Item_Kit_Windbreak",1}};
-			input[] = {{"equip_wood_pallet",2},{"PartWoodLumber",2},{"equip_nails",1}};
+			input[] = {{"DZE_Item_Wood_Pallet",2},{"DZE_Item_Wood_Lumber",2},{"DZE_Item_Metal_Nails",1}};
 		};
 	};
 };
 
-class equip_crate: CA_Magazine {
+class DZE_Item_Wood_Crate: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_crate";
 	descriptionShort = "$STR_ITEM_DESC_equip_crate";

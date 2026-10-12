@@ -40,7 +40,7 @@ _dir = getDir player;
 _classname = "WeaponHolder";
 
 //return empty crate to inventory
-player addMagazine "bulk_empty";
+player addMagazine 'DZE_Item_Bulk_Empty';
 
 ["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 

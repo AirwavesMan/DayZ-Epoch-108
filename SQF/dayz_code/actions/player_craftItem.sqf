@@ -39,7 +39,7 @@ class ItemActions
 		neednearby[] = {"workshop","fire"};
 		requiretools[] = {"DZE_Tool_Toolbox","DZE_Tool_Knife"}; // (cfgweapons only)
 		output[] = {{"DZE_Item_Kit_Tent",1}}; // (CfgMagazines, qty)
-		input[] = {{"ItemCanvas",2},{"ItemPole",2}}; // (CfgMagazines, qty)
+		input[] = {{'DZE_Item_Tex_Canvas',2},{'DZE_Item_Metal_Pole',2}}; // (CfgMagazines, qty)
 		inputstrict = true; // (CfgMagazines input without inheritsFrom) Optional
 		inputweapons[] = {"DZE_Tool_Toolbox"}; // consume toolbox (cfgweapons only)
 		outputweapons[] = {"DZE_Tool_Toolbox"}; // return toolbox (cfgweapons only)
@@ -65,8 +65,8 @@ _selectedRecipeOutput = [];
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_player_unconscious && {!r_drag_sqf} && {!_onLadder});
 _boiled = false;
-_boiledWaterBottles = ["ItemPlasticWaterBottleSafe","ItemWaterBottleSafe","ItemPlasticWaterBottleHerbal","ItemWaterBottleHerbal","ItemWaterbottle9ozBoiled","ItemWaterbottle8ozBoiled","ItemWaterbottle7ozBoiled","ItemWaterbottle6ozBoiled","ItemWaterbottle5ozBoiled","ItemWaterbottle4ozBoiled","ItemWaterbottle3ozBoiled","ItemWaterbottle2ozBoiled","ItemWaterbottle1ozBoiled","ItemWaterBottleBoiled","ItemPlasticWaterbottle9ozBoiled","ItemPlasticWaterbottle8ozBoiled","ItemPlasticWaterbottle7ozBoiled","ItemPlasticWaterbottle6ozBoiled","ItemPlasticWaterbottle5ozBoiled","ItemPlasticWaterbottle4ozBoiled","ItemPlasticWaterbottle3ozBoiled","ItemPlasticWaterbottle2ozBoiled","ItemPlasticWaterbottle1ozBoiled","ItemPlasticWaterBottleBoiled"];
-_plasticWaterBottles = ["ItemPlasticWaterbottle","ItemPlasticWaterbottleInfected","ItemPlasticWaterbottleSafe","ItemPlasticWaterBottleHerbal","ItemPlasticWaterBottleBoiled","ItemPlasticWaterbottle1oz","ItemPlasticWaterbottle2oz","ItemPlasticWaterbottle3oz","ItemPlasticWaterbottle4oz","ItemPlasticWaterbottle5oz","ItemPlasticWaterbottle6oz","ItemPlasticWaterbottle7oz","ItemPlasticWaterbottle8oz","ItemPlasticWaterbottle9oz","ItemPlasticWaterbottle1ozBoiled","ItemPlasticWaterbottle2ozBoiled","ItemPlasticWaterbottle3ozBoiled","ItemPlasticWaterbottle4ozBoiled","ItemPlasticWaterbottle5ozBoiled","ItemPlasticWaterbottle6ozBoiled","ItemPlasticWaterbottle7ozBoiled","ItemPlasticWaterbottle8ozBoiled","ItemPlasticWaterbottle9ozBoiled"];
+_boiledWaterBottles = ['DZE_Item_Waterbottle_PET_Safe','DZE_Item_Waterbottle_Safe','DZE_Item_Waterbottle_PET_Herbal','DZE_Item_Waterbottle_Herbal','DZE_Item_Waterbottle_9ozBoiled','DZE_Item_Waterbottle_8ozBoiled','DZE_Item_Waterbottle_7ozBoiled','DZE_Item_Waterbottle_6ozBoiled','DZE_Item_Waterbottle_5ozBoiled','DZE_Item_Waterbottle_4ozBoiled','DZE_Item_Waterbottle_3ozBoiled','DZE_Item_Waterbottle_2ozBoiled','DZE_Item_Waterbottle_1ozBoiled','DZE_Item_Waterbottle_Boiled','DZE_Item_Waterbottle_PET_9ozBoiled','DZE_Item_Waterbottle_PET_8ozBoiled','DZE_Item_Waterbottle_PET_7ozBoiled','DZE_Item_Waterbottle_PET_6ozBoiled','DZE_Item_Waterbottle_PET_5ozBoiled','DZE_Item_Waterbottle_PET_4ozBoiled','DZE_Item_Waterbottle_PET_3ozBoiled','DZE_Item_Waterbottle_PET_2ozBoiled','DZE_Item_Waterbottle_PET_1ozBoiled','DZE_Item_Waterbottle_PET_Boiled'];
+_plasticWaterBottles = ['DZE_Item_Waterbottle_PET','DZE_Item_Waterbottle_PET_Infected','DZE_Item_Waterbottle_PET_Safe','DZE_Item_Waterbottle_PET_Herbal','DZE_Item_Waterbottle_PET_Boiled','DZE_Item_Waterbottle_PET_1oz','DZE_Item_Waterbottle_PET_2oz','DZE_Item_Waterbottle_PET_3oz','DZE_Item_Waterbottle_PET_4oz','DZE_Item_Waterbottle_PET_5oz','DZE_Item_Waterbottle_PET_6oz','DZE_Item_Waterbottle_PET_7oz','DZE_Item_Waterbottle_PET_8oz','DZE_Item_Waterbottle_PET_9oz','DZE_Item_Waterbottle_PET_1ozBoiled','DZE_Item_Waterbottle_PET_2ozBoiled','DZE_Item_Waterbottle_PET_3ozBoiled','DZE_Item_Waterbottle_PET_4ozBoiled','DZE_Item_Waterbottle_PET_5ozBoiled','DZE_Item_Waterbottle_PET_6ozBoiled','DZE_Item_Waterbottle_PET_7ozBoiled','DZE_Item_Waterbottle_PET_8ozBoiled','DZE_Item_Waterbottle_PET_9ozBoiled'];
 
 // Need Near Requirements
 _needNear = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "neednearby");
@@ -171,7 +171,7 @@ if (_canDo) then {
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
 							if ((_x == _itemIn) || (!_selectedRecipeInputStrict && {_configParent == _itemIn})) then {
 								// Get lowest waterlevel
-								if ((_x == "ItemWaterbottle") || (_configParent == "ItemWaterbottle")) then {
+								if ((_x == 'DZE_Item_Waterbottle') || (_configParent == 'DZE_Item_Waterbottle')) then {
 									_waterLevel = getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz");
 									if (_waterLevel_lowest == 0 || _waterLevel < _waterLevel_lowest) then {
 										_waterLevel_lowest = _waterLevel;
@@ -183,7 +183,7 @@ if (_canDo) then {
 						{
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
 							if ((_removed < _countIn) && {(_x == _itemIn) || (!_selectedRecipeInputStrict && {_configParent == _itemIn})}) then {
-								if (((_x != "ItemWaterbottle") && (_configParent != "ItemWaterbottle")) || {(_waterLevel_lowest == 0) || ((_waterLevel_lowest > 0) && {getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz") == _waterLevel_lowest})}) then {
+								if (((_x != 'DZE_Item_Waterbottle') && (_configParent != 'DZE_Item_Waterbottle')) || {(_waterLevel_lowest == 0) || ((_waterLevel_lowest > 0) && {getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz") == _waterLevel_lowest})}) then {
 									_num_removed = ([player,_x] call BIS_fnc_invRemove);
 								} else {
 									_num_removed = 0;
@@ -192,7 +192,7 @@ if (_canDo) then {
 								_removed_total = _removed_total + _num_removed;
 								if (_num_removed >= 1) then {
 									//diag_log format["debug remove: %1 of: %2", _configParent, _x];
-									if ((_x == "ItemWaterbottle") || (_configParent == "ItemWaterbottle")) then {
+									if ((_x == 'DZE_Item_Waterbottle') || (_configParent == 'DZE_Item_Waterbottle')) then {
 										_waterLevel = floor((getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz")) - 1);
 										if (_x in _boiledWaterBottles) then {
 											_boiled = true;
@@ -241,23 +241,23 @@ if (_canDo) then {
 							{
 								_itemOut = _x select 0;
 								_countOut = _x select 1;
-								if (_itemOut == "ItemWaterbottleUnfilled") then {
+								if (_itemOut == 'DZE_Item_Waterbottle_Unfilled') then {
 									{
 										if (_x in _plasticWaterBottles) then {
-											_itemOut = "ItemPlasticWaterbottleUnfilled";
+											_itemOut = 'DZE_Item_Waterbottle_PET_Unfilled';
 											if (_waterLevel > 0) then {
 												if (_boiled) then {
-													_itemOut = format["ItemPlasticWaterbottle%1ozBoiled",_waterLevel];
+													_itemOut = format["DZE_Item_Waterbottle_PET%1ozBoiled",_waterLevel];
 												} else {
-													_itemOut = format["ItemPlasticWaterbottle%1oz",_waterLevel];
+													_itemOut = format["DZE_Item_Waterbottle_PET%1oz",_waterLevel];
 												};
 											};
 										} else {
 											if (_waterLevel > 0) then {
 												if (_boiled) then {
-													_itemOut = format["ItemWaterbottle%1ozBoiled",_waterLevel];
+													_itemOut = format['DZE_Item_Waterbottle%1ozBoiled',_waterLevel];
 												} else {
-													_itemOut = format["ItemWaterbottle%1oz",_waterLevel];
+													_itemOut = format['DZE_Item_Waterbottle%1oz',_waterLevel];
 												};
 											};
 										};

@@ -2,7 +2,7 @@
 #include "Antibiotic.hpp"
 #include "Painkiller.hpp"
 
-class DZE_Item_Medi_AntibacterialWipe : CA_Magazine {
+class DZE_Item_Medi_AntibacterialWipe: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_WIPES";
 	descriptionShort = "$STR_ITEM_DESC_WIPES";
@@ -19,7 +19,7 @@ class DZE_Item_Medi_AntibacterialWipe : CA_Magazine {
 	};
 };
 
-class DZE_Item_Medi_Bandage : CA_Magazine {
+class DZE_Item_Medi_Bandage: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_BANDAGE";
 	descriptionShort = "$STR_EQUIP_DESC_BANDAGE";
@@ -40,12 +40,12 @@ class DZE_Item_Medi_Bandage : CA_Magazine {
 			requiretools[] = {};
 			output[] = {{"DZE_Item_Medi_BandageSepsis",1}};
 			outputweapons[] = {};
-			input[] = {{"DZE_Item_Medi_Bandage",1},{"equip_comfreyleafs",1}};
+			input[] = {{"DZE_Item_Medi_Bandage",1},{"DZE_Item_Farm_Comfreyleafs",1}};
 		};
 	};
 };
 
-class DZE_Item_Medi_BandageSepsis : CA_Magazine {
+class DZE_Item_Medi_BandageSepsis: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_SEPSISBANDAGE";
 	descriptionShort = "$STR_EQUIP_DESC_SEPSISBANDAGE";
@@ -62,7 +62,7 @@ class DZE_Item_Medi_BandageSepsis : CA_Magazine {
 	};
 };
 
-class DZE_Item_Medi_Epinephrine : CA_Magazine {
+class DZE_Item_Medi_Epinephrine: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_EPI_PEN";
 	descriptionShort = "$STR_EQUIP_DESC_EPI_PEN";
@@ -72,7 +72,7 @@ class DZE_Item_Medi_Epinephrine : CA_Magazine {
 	type = 256;
 };
 
-class DZE_Item_Medi_Morphine : CA_Magazine {
+class DZE_Item_Medi_Morphine: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_MORPHINE";
 	descriptionShort = "$STR_EQUIP_DESC_MORPHINE";
@@ -89,7 +89,7 @@ class DZE_Item_Medi_Morphine : CA_Magazine {
 	};
 };
 
-class DZE_Item_Medi_HeatPack : CA_Magazine {
+class DZE_Item_Medi_HeatPack: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_HEAT_PACK";
 	descriptionShort = "$STR_EQUIP_DESC_HEAT_PACK";
@@ -106,7 +106,7 @@ class DZE_Item_Medi_HeatPack : CA_Magazine {
 	};
 };
 
-class DZE_Item_Medi_Woodensplint : CA_Magazine {
+class DZE_Item_Medi_Woodensplint: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_WOODENSPLINT";
 	descriptionShort = "$STR_ITEM_DESC_WOODENSPLINT";
@@ -123,7 +123,7 @@ class DZE_Item_Medi_Woodensplint : CA_Magazine {
 	};
 };
 
-class DZE_Item_Medi_Gauze : CA_Magazine {
+class DZE_Item_Medi_Gauze: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_gauze";
 	descriptionShort = "$STR_ITEM_DESC_equip_gauze";
@@ -140,12 +140,12 @@ class DZE_Item_Medi_Gauze : CA_Magazine {
 			requiretools[] = {"DZE_Tool_Knife"};
 			output[] = {{"DZE_Item_Medi_Bandage",2}};
 			outputweapons[] = {};
-			input[] = {{"DZE_Item_Medi_Gauze",2},{"equip_rag",1},{"equip_string",1}};
+			input[] = {{"DZE_Item_Medi_Gauze",2},{"DZE_Item_Tex_Rag",1},{"DZE_Item_Tex_String",1}};
 		};
 	};
 };
 
-class DZE_Item_Medi_Gauzepackaged : CA_Magazine {
+class DZE_Item_Medi_Gauzepackaged: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_ITEM_NAME_equip_gauzepackaged";
 	descriptionShort = "$STR_ITEM_DESC_equip_gauzepackaged";
@@ -167,7 +167,7 @@ class DZE_Item_Medi_Gauzepackaged : CA_Magazine {
 	};
 };
 
-class DZE_Item_Medi_Herb_Box : CA_Magazine {
+class DZE_Item_Medi_Herb_Box: CA_Magazine {
 	scope = 2;
 	displayName = "$STR_EQUIP_NAME_HERBBOX";
 	descriptionShort = "$STR_EQUIP_DESC_HERBBOX";

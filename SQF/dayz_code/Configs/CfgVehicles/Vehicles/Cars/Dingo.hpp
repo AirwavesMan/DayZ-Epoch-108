@@ -15,7 +15,6 @@ class DZE_Dingo_Base: Car {
 	DZE_MACRO_VEHICLE_SIDE
 	DZE_MACRO_VEHICLE_CLEAR_CARGO
 	DZE_MACRO_VEHICLE_CANSEE_NORMAL
-
 	wheelCircumference = 3.5168;
 	mapSize = 5;
 	damperSize = 0.2;
@@ -43,6 +42,7 @@ class DZE_Dingo_Base: Car {
 	soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1",0.01,1.0,10};
 	soundEnviron[] = {"",0.56234133,1};
 	transportSoldier = 4;
+
 	class Library {
 		libTextDesc = "$STR_ACR_LIB_DINGO";
 	};
@@ -303,7 +303,7 @@ class DZE_Veh_Dingo_M240_Woodland: DZE_Dingo_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Dingo_M240_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Dingo_M240_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -315,7 +315,7 @@ class DZE_Veh_Dingo_M240_Woodland_1: DZE_Veh_Dingo_M240_Woodland {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Dingo_M240_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Dingo_M240_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -325,7 +325,7 @@ class DZE_Veh_Dingo_M240_Woodland_2: DZE_Veh_Dingo_M240_Woodland_1 {
 	damageResistance = 0.013; // base 0.00562
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Dingo_M240_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Dingo_M240_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -336,7 +336,7 @@ class DZE_Veh_Dingo_M240_Woodland_3: DZE_Veh_Dingo_M240_Woodland_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Dingo_M240_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Dingo_M240_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 
@@ -350,7 +350,7 @@ class DZE_Veh_Dingo_M240_Desert: DZE_Veh_Dingo_M240_Woodland {
 	HiddenSelectionsTextures[] = {"\ca\wheeled_acr\dingo\data\ACR_karosse_des_co","\ca\wheeled_acr\dingo\data\ACR_DES_a_teile_co","\ca\wheeled_acr\dingo\data\FLW100_DES_co","\ca\wheeled_acr\dingo\data\FLW200_DES_co"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Dingo_M240_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Dingo_M240_Desert_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -362,7 +362,7 @@ class DZE_Veh_Dingo_M240_Desert_1: DZE_Veh_Dingo_M240_Desert {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Dingo_M240_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Dingo_M240_Desert_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -372,7 +372,7 @@ class DZE_Veh_Dingo_M240_Desert_2: DZE_Veh_Dingo_M240_Desert_1 {
 	damageResistance = 0.013; // base 0.00562
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Dingo_M240_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Dingo_M240_Desert_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -383,7 +383,7 @@ class DZE_Veh_Dingo_M240_Desert_3: DZE_Veh_Dingo_M240_Desert_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Dingo_M240_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Dingo_M240_Desert_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 
@@ -447,7 +447,7 @@ class DZE_Veh_Dingo_MK19_Woodland: DZE_Dingo_Base {
 	};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Dingo_MK19_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Dingo_MK19_Woodland_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -459,7 +459,7 @@ class DZE_Veh_Dingo_MK19_Woodland_1: DZE_Veh_Dingo_MK19_Woodland {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Dingo_MK19_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Dingo_MK19_Woodland_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -469,7 +469,7 @@ class DZE_Veh_Dingo_MK19_Woodland_2: DZE_Veh_Dingo_MK19_Woodland_1 {
 	damageResistance = 0.013; // base 0.00562
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Dingo_MK19_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Dingo_MK19_Woodland_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -480,7 +480,7 @@ class DZE_Veh_Dingo_MK19_Woodland_3: DZE_Veh_Dingo_MK19_Woodland_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Dingo_MK19_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Dingo_MK19_Woodland_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 
@@ -494,7 +494,7 @@ class DZE_Veh_Dingo_MK19_Desert: DZE_Veh_Dingo_MK19_Woodland {
 	HiddenSelectionsTextures[] = {"\ca\wheeled_acr\dingo\data\ACR_karosse_des_co","\ca\wheeled_acr\dingo\data\ACR_DES_a_teile_co","\ca\wheeled_acr\dingo\data\FLW100_DES_co","\ca\wheeled_acr\dingo\data\FLW200_DES_co"};
 
 	class Upgrades {
-		ItemORP[] = {"DZE_Veh_Dingo_MK19_Desert_1",{"DZE_Tool_Toolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarORP[] = {"DZE_Veh_Dingo_MK19_Desert_1",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarORP",1},{"DZE_Item_Parts_Engine",2},{"DZE_Item_Parts_Wheel",4},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -506,7 +506,7 @@ class DZE_Veh_Dingo_MK19_Desert_1: DZE_Veh_Dingo_MK19_Desert {
 	terrainCoef = 1; //base 2
 
 	class Upgrades {
-		ItemAVE[] = {"DZE_Veh_Dingo_MK19_Desert_2",{"DZE_Tool_Toolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+		DZE_Item_Upgrade_CarAVE[] = {"DZE_Veh_Dingo_MK19_Desert_2",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarAVE",1 },{"DZE_Item_Metal_Sheet",6},{"DZE_Item_Metal_Screws",4}}};
 	};
 };
 
@@ -516,7 +516,7 @@ class DZE_Veh_Dingo_MK19_Desert_2: DZE_Veh_Dingo_MK19_Desert_1 {
 	damageResistance = 0.013; // base 0.00562
 
 	class Upgrades {
-		ItemLRK[] = {"DZE_Veh_Dingo_MK19_Desert_3",{"DZE_Tool_Toolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"ItemScrews",2}}};
+		DZE_Item_Upgrade_CarLRK[] = {"DZE_Veh_Dingo_MK19_Desert_3",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarLRK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Kit_WoodCrate",2},{"DZE_Item_Kit_GunRack",2},{"DZE_Item_Metal_Screws",2}}};
 	};
 };
 
@@ -527,7 +527,7 @@ class DZE_Veh_Dingo_MK19_Desert_3: DZE_Veh_Dingo_MK19_Desert_2 {
 	transportMaxBackpacks = 12;
 
 	class Upgrades {
-		ItemTNK[] = {"DZE_Veh_Dingo_MK19_Desert_4",{"DZE_Tool_Toolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+		DZE_Item_Upgrade_CarTNK[] = {"DZE_Veh_Dingo_MK19_Desert_4",{"DZE_Tool_Toolbox"},{},{{"DZE_Item_Upgrade_CarTNK",1},{"DZE_Item_Metal_Parts",4},{"DZE_Item_Parts_Fueltank",2},{"DZE_Item_Barrel_Fuel",1}}};
 	};
 };
 

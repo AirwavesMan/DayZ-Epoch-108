@@ -1,21 +1,19 @@
-class ItemComboLock: CA_Magazine
-{
+class DZE_Item_Locks_ComboLock: CA_Magazine {
 	scope = 2;
-	count = 1;
-	type = 256;
-	displayName = $STR_EPOCH_COMBINATIONLOCK;
+	displayName = "$STR_EPOCH_COMBINATIONLOCK";
+	descriptionShort = "$STR_EPOCH_COMBINATIONLOCK_DESC";
 	model = "\z\addons\dayz_epoch\models\combo_lock_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_combolock_ca.paa";
-	descriptionShort = $STR_EPOCH_COMBINATIONLOCK_DESC;
-};
-
-class ItemPadlock: CA_Magazine //Vanilla lock, left in config for potential admin use, but all scripts changed to use Epoch ItemComboLock
-{
-	scope = 2;
 	count = 1;
 	type = 256;
-	displayName = $STR_BLD_name_ItemPadlock;//"Padlock"
+};
+
+class DZE_Item_Locks_Padlock: CA_Magazine { //Vanilla lock, left in config for potential admin use, but all scripts changed to use Epoch DZE_Item_Locks_ComboLock
+	scope = 2;
+	displayName = "$STR_BLD_name_ItemPadlock";//"Padlock"
+	descriptionShort = "$STR_BLD_desc_ItemPadlock";//"Padlock - Used for securing Workshop's and Houses."
 	picture = "\z\addons\dayz_buildings\equip\padlock.paa";
 	model = "z\addons\dayz_buildings\models\padlock.p3d";
-	descriptionShort = $STR_BLD_desc_ItemPadlock;//"Padlock - Used for securing Workshop's and Houses."
+	count = 1;
+	type = 256;
 };

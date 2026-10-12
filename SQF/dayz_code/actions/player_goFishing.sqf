@@ -94,10 +94,10 @@ while {_isOk} do {
             // Just the one fish for now
             _itemOut = [];
             _itemOut = switch (true) do {
-                case ((_num > 30) and (_num <= 45)) : { ["FishRawTrout","FishRawTrout","FishRawTrout","FishRawTrout","FishRawTrout","FishRawTrout","FishRawTrout"]; };
-                case ((_num > 45) and (_num <= 60)) : { ["FishRawTrout","FishRawTrout","FishRawTrout","FishRawTrout","FishRawTrout","FishRawSeaBass","FishRawSeaBass"]; };
-                case ((_num > 60)) : { ["FishRawTrout","FishRawTrout","FishRawTrout","FishRawTrout","FishRawSeaBass","FishRawSeaBass","FishRawTuna"]; };                
-                default { ["FishRawTrout"]; };
+                case ((_num > 30) and (_num <= 45)) : { ['DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout']; };
+                case ((_num > 45) and (_num <= 60)) : { ['DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_SeaBass','DZE_Item_Food_Fish_Raw_SeaBass']; };
+                case ((_num > 60)) : { ['DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_Trout','DZE_Item_Food_Fish_Raw_SeaBass','DZE_Item_Food_Fish_Raw_SeaBass','DZE_Item_Food_Fish_Raw_Tuna']; };
+                default { ['DZE_Item_Food_Fish_Raw_Trout']; };
             };
             _itemOut = _itemOut call BIS_fnc_selectRandom;
             _text = getText (configFile >> "CfgMagazines" >> _itemOut >> "displayName");

@@ -35,7 +35,7 @@ class DZE_MetalFloor_Quarter: DZE_Modular_Base {
 	//GhostPreview = "DZE_MetalFloor_Quarter_Preview";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Metal_Floor_Quarter";
-		DZE_refundArray[] = {{{"ItemPole",4},{"equip_metal_sheet",4}}};
+		DZE_refundArray[] = {{{"DZE_Item_Metal_Pole",4},{"DZE_Item_Metal_Sheet",4}}};
 	};
 };
 
@@ -61,10 +61,10 @@ class DZE_DoorFrame: DZE_Modular_Base {
 	DZE_offset[] = {0,1.5,0};
 	armor = 1200;
 	//GhostPreview = "DZE_DoorFrame_Preview";
-	DZE_upgradeBuilding[] = {"DZE_Door",{"DZE_Tool_Toolbox"},{{"ItemPole",1},{"DZE_Item_Kit_TankTrap",1}}};
+	DZE_upgradeBuilding[] = {"DZE_Door",{"DZE_Tool_Toolbox"},{{"DZE_Item_Metal_Pole",1},{"DZE_Item_Kit_TankTrap",1}}};
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Door_Frame";
-		DZE_refundArray[] = {{{"ItemPole",4},{"DZE_Item_Kit_TankTrap",4},{"PartGeneric",2}}};
+		DZE_refundArray[] = {{{"DZE_Item_Metal_Pole",4},{"DZE_Item_Kit_TankTrap",4},{"DZE_Item_Metal_Parts",2}}};
 	};
 };
 
@@ -77,7 +77,7 @@ class DZE_MetalPillar: DZE_Modular_Base {
 	//GhostPreview = "DZE_MetalPillar_Preview";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Metal_Pillar";
-		DZE_refundArray[] = {{{"ItemPole",1},{"equip_metal_sheet",2}}};
+		DZE_refundArray[] = {{{"DZE_Item_Metal_Pole",1},{"DZE_Item_Metal_Sheet",2}}};
 	};
 };
 
@@ -117,7 +117,7 @@ class DZE_GlassFloor_Quarter: DZE_Modular_Base {
 	//GhostPreview = "DZE_GlassFloor_Quarter_Preview";
 	class RemoveObject: RemoveObject {
 		DZE_refundKit = "DZE_Item_Kit_Glass_Floor_Quarter";
-		DZE_refundArray[] = {{{"ItemPole",8},{"PartGlass",4}}};
+		DZE_refundArray[] = {{{"DZE_Item_Metal_Pole",8},{"DZE_Item_Parts_Glass",4}}};
 	};
 };
 
